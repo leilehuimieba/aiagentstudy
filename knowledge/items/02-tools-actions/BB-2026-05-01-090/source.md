@@ -1,0 +1,105 @@
+# Source Evidence
+
+- Title: 科技爱好者周刊（第 394 期）：第二次 API 开放浪潮
+- BestBlogs URL: https://www.bestblogs.dev/article/1f0d1cae
+- Original publisher URL: http://www.ruanyifeng.com/blog/2026/04/weekly-issue-394.html
+- Original link text: 查看原文 →
+
+## Captured Page Metadata
+
+- Browser title: 科技爱好者周刊（第 394 期）：第二次 API 开放浪潮 | BestBlogs.dev
+- Description: 本期周刊的核心观点是，随着大模型达到生产可用临界点，AI 自动化需要调用外部平台，正推动第二次 API 开放浪潮，其开放程度、易用性和使用目的均与第一次截然不同。
+- Date: 2026-04-23
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- 我的早报: https://www.bestblogs.dev/reading/brief
+- 我的关注: https://www.bestblogs.dev/reading/follow
+- 为你推荐: https://www.bestblogs.dev/reading/feed
+- 内容广场: https://www.bestblogs.dev/explore
+- 每日早报: https://www.bestblogs.dev/explore/brief
+- 精选周刊: https://www.bestblogs.dev/explore/newsletter
+- 主题解读: https://www.bestblogs.dev/explore/topics
+- 内容来源: https://www.bestblogs.dev/explore/sources
+- 阅读历史: https://www.bestblogs.dev/library/history
+- 我的收藏: https://www.bestblogs.dev/library/bookmarks
+- 我的笔记: https://www.bestblogs.dev/library/highlights
+- 我的回顾: https://www.bestblogs.dev/library/review
+- 设置: https://www.bestblogs.dev/settings
+- 帮助中心: https://www.bestblogs.dev/docs
+- 阮一峰的网络日志: https://www.bestblogs.dev/articles?sourceid=ed2bfb
+- 查看原文 →: http://www.ruanyifeng.com/blog/2026/04/weekly-issue-394.html
+- 开源: https://github.com/ruanyf/weekly
+- 投稿: https://github.com/ruanyf/weekly/issues
+- 《谁在招人》: https://github.com/ruanyf/weekly/issues/9454
+- 邮件联系: http://www.ruanyifeng.com/cdn-cgi/l/email-protection#80f9e9e6e5eee7aef2f5e1eec0e7ede1e9ecaee3efed
+- [email protected]: http://www.ruanyifeng.com/cdn-cgi/l/email-protection
+- via: https://x.com/steventey/status/1689986179746197504
+- ProgrammableWeb: https://en.wikipedia.org/wiki/ProgrammableWeb
+- 转变: https://brandur.org/second-wave-api-first
+- 人形机器人的半马比赛: https://news.sina.com.cn/zx/gj/2026-04-19/doc-inhvackq0239220.shtml
+- 现场视频: https://x.com/xiaohu/status/2045786816213815411
+- H2 人形机器人: https://www.unitree.com/cn/H2
+- GPT Image 2.0 模型: https://openai.com/zh-Hans-CN/index/introducing-chatgpt-images-2-0/
+- ChatGPT.com: https://chatgpt.com/images
+- Flipbook: https://flipbook.page/
+- Awesome 仓库: https://github.com/YouMind-OpenLab/awesome-gpt-image-2
+- @DophinL: https://github.com/ruanyf/weekly/issues/9728
+- 提示词仓库: https://github.com/ZeroLu/awesome-gpt-image
+- @ZeroLu: https://github.com/ruanyf/weekly/issues/9727
+- 有人: https://mattstromawn.com/writing/expansion-artifacts/
+- 车载厕所: https://chejiahao.autohome.com.cn/info/25229950
+- 不要使用 Ollama: https://sleepingrobots.com/dreams/stop-using-ollama/
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- LM Studio: https://lmstudio.ai/
+- npmx 的功能: https://nesbitt.io/2026/04/16/features-everyone-should-steal-from-npmx.html
+- npmx.dev: https://npmx.dev/package/egg
+- 不要过长的链式调用: https://allthingssmitty.com/2026/04/20/why-i-dont-chain-everything-in-javascript-anymore/
+- 异步编程技术的演变和实际成果: https://causality.blog/essays/what-async-promised/
+- 被动雷达的工作原理: https://www.passiveradar.com/how-passive-radar-works/
+- Little Snitch for Linux: https://obdev.at/products/littlesnitch-linux/index.html
+- Little Snitch: https://www.obdev.at/products/littlesnitch/index.html
+- quien: https://github.com/retlehs/quien/
+- ggsql: https://ggsql.org/
+- 介绍文章: https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/
+- Himi Recorder: https://github.com/jrainlau/himi-recorder
+- @jrainlau: https://github.com/ruanyf/weekly/issues/9663
+- Tab Harbor: https://github.com/V-IOLE-T/tab-harbor
+- @V-IOLE-T: https://github.com/ruanyf/weekly/issues/9665
+- Tab Out: https://github.com/zarazhangrui/tab-out
+- @Acorn2: https://github.com/ruanyf/weekly/issues/9687
+- animal-island-ui: https://github.com/guokaigdg/animal-island-ui
+- @guokaigdg: https://github.com/ruanyf/weekly/issues/9668
+- CUPS Web: https://github.com/hanxi/cups-web
+- @hanxi: https://github.com/ruanyf/weekly/issues/8587
+- Blog Helper: https://github.com/thinkycx/blog-helper
+- @thinkycx: https://github.com/ruanyf/weekly/issues/9677
+- HiKid: https://github.com/xiaochong/hi-kid
+- @Hao4Wang: https://github.com/ruanyf/weekly/issues/9689
+- Kite Desktop: https://github.com/eryajf/kite-desktop
+- @eryajf: https://github.com/ruanyf/weekly/issues/9719
+- Project River: https://github.com/Lionad-Morotar/project-river
+- 在线体验: https://lionad-morotar.github.io/project-river
+- @Lionad-Morotar: https://github.com/ruanyf/weekly/issues/9722
+- OpenAI Privacy Filter: https://github.com/openai/privacy-filter
+- 介绍文章: https://openai.com/index/introducing-openai-privacy-filter/
+- LinkAI Gateway: https://github.com/ruanyf/weekly/issues/9657
+- @star7th: https://github.com/ruanyf/weekly/issues/9657
+- Nezha: https://github.com/hanshuaikang/nezha
+- @hanshuaikang: https://github.com/ruanyf/weekly/issues/9714
+- WatermarkZero: https://watermarkzero.org/
+- @liuyan-wjy: https://github.com/ruanyf/weekly/issues/9664
+- mini-cc: https://github.com/you-want/mini-cc
+- @RainyNight9: https://github.com/ruanyf/weekly/issues/9681
+- The Listening Museum: https://sheets.works/data-viz/keyboard-sounds
+- 软件工程定律: https://lawsofsoftwareengineering.com/
+- 帕金森定律: https://lawsofsoftwareengineering.com/laws/parkinsons-law/
+- 5x5 像素的英文字体: https://maurycyz.com/projects/mcufont/
+- 里海石油城: https://www.cnn.com/2024/11/06/climate/oil-rocks-neft-daslari-caspian-sea-city/index.html
+- 雅虎: https://gemini.google.com/app/1833a525ff94d60a
+- 《Figma 的困境》: https://finance.yahoo.com/quote/FIG/
+- jsomers.net: https://jsomers.net/blog/the-paper-computer
+- 《古典维护者的挽歌》: https://www.joanwestenberg.com/the-rime-of-the-ancient-maintainer/
+- 冷启动的破解之道: https://www.ruanyifeng.com/blog/2025/05/weekly-issue-347.html
+- 饮水鸟玩具: https://www.ruanyifeng.com/blog/2024/04/weekly-issue-297.html

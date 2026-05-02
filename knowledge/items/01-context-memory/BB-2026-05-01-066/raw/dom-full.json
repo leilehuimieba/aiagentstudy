@@ -1,0 +1,344 @@
+{
+  "content": "Peek under the hood of most “production agents” shipping today and you won’t find intelligence. You’ll find custom plumbing, fragile session logic, shared service accounts, and a security model held together by hope. This can be so much better.\n\nIf you’ve spent the last 18 months putting agents into production, you already know the models and tools have gotten dramatically better. You also know the problems that are still burning your on-call rotation are not problems you can prompt your way out of. We are running into a stack ceiling, and it is quietly creating a governance and reliability gap that the next generation of agentic systems cannot grow through.\n\nRight now the industry is living with what I’d call excessive agency: autonomous systems given broad permissions to get things done, then left to discover - at runtime, in production - that a schema drifted, an API changed, or a downstream service started returning PII it wasn’t supposed to. Agents mark tasks “complete” while leaving a trail of corrupted state behind them. The humans find out on Monday.\n\nThis is not a failure of the people building agents. It is a failure of the stack they’re building on.\n\nHere are the four architectural bets I think every serious team has to make in the next twelve months.\n\n1) Agents need identities, not shared credentials\n\nEvery engineer who has shipped agents to production knows this specific flavor of dread: you have agents doing useful work, and effectively zero visibility into which tools they touched, which data they moved, or which credentials they used to do it. I call this governance debt - the silent accumulation of security and audit risk that eventually forces a full rewrite, usually right after the first incident that reaches the CISO.\n\nThe root cause is that most agents today are ghosts. They don’t have identities. They borrow a service account, inherit a human’s OAuth token, and “promise” - in application code, in a prompt - to stay inside the lines. In a real enterprise environment, a promise in a prompt is not a policy.\n\nMy bet is that agent identity has to move from the application layer down into the platform layer.\n\nThe difference is between bolted-on vs. embedded security. Bolted-on looks like middleware in front of every tool call, politely asking the agent to behave: easy to bypass, expensive in latency, and invisible to your existing IAM. Embedded looks like a badge reader welded into a steel frame. The agent has a distinct, unforgeable identity recognized at the network and platform level, and policy is enforced at the source. If the agent reaches for a database it isn’t cleared for, the connection never opens. No middleware, no vibes.\n\nDone right, this turns “a fleet of liabilities” into something that looks a lot more like a managed workforce: every action attributable, every permission auditable, every agent revocable with one call.\n\n2) Agents need universal context, not scraped windows\n\nContext management is a tax every builder is currently paying. Teams are burning a huge share of their engineering hours (and tokens) on undifferentiated plumbing - custom serialization, bespoke session stores, hand-rolled memory layers - just to keep an agent from forgetting its mission halfway through a multi-step task.\n\nWorse, the context agents can get their hands on is usually siloed. A browser-based agent can see the open tab. A desktop wrapper can see the files a user happened to drag in. Neither of them can easily reason across the systems where the business actually lives - the CRM, the ERP, the data warehouse, the ticketing system, the transcripts, the project plans - at the same time.\n\nAgents need universal context that integrates at the platform level. If we don’t fix this, we should be honest that the ceiling of agentic AI is “slightly better spreadsheet autocomplete,” and we should stop writing vision pieces about it.\n\n3) Agents need to survive your laptop closing\n\nHere’s the uncomfortable version of this: a lot of what ships today as “an agent” isn’t yet ready to deploy across a business.\n\nI want to be precise, because the frontier has genuinely moved in the last six months. Environments like Claude Code, OpenClaw, and similar platforms are capable - persistent task state, scheduled execution, multi-agent coordination, and long-running sessions that survive disconnects are no longer aspirational. These are not toys. The question has moved on.\n\nThe question now is whether an agent can run for a week instead of an hour. Whether it can cross three handoffs, two credential rotations, and an approval gate without a human babysitting the session. Whether the work it did on Tuesday is auditable on Friday by someone who wasn’t in the room. A session that survives a dropped WebSocket is table stakes. A mission that survives a quarter is the bar enterprises actually need.\n\nReal work doesn’t fit in a session, and most of it doesn’t fit in a day either. A procurement workflow spans weeks and a dozen handoffs. A compliance audit runs for a month. An incident investigation outlives three on-call rotations.\n\nMost agents today hit a hard ceiling - sometimes time-based, sometimes token-based, sometimes governance-based - and when they hit it, the mission fails and a human picks up the pieces from wherever the transcript ended.\n\nEnterprise-grade autonomy requires durable, cloud-native execution with a much higher floor than “the session stayed up.” Concretely, that means:\n\nState and checkpointing that survives restarts, disconnects, redeploys, and model version changes by default - not bolted on with a local Redis and a prayer.\n\nContext that outlives the window: long-horizon memory, summarization, and handoff between agent instances, so a multi-week task doesn’t die because a single run exhausted its tokens.\n\nMissions that outlive sessions: agents that stay on the job across days, handoffs, and credential rotations, with an auditable trail of what happened while you were asleep.\n\nFirst-class human-in-the-loop primitives, so the agent can pause and ask for permission to do something new instead of silently deciding it has the authority.\n\nPersistence with guardrails. That’s the bar. Anything less and you’re building demos that happen to run for a long time.\n\n4) Agents need platforms\n\nThe pattern I see most often in strong teams is the saddest one: brilliant engineers draining their bandwidth into stack problems that do not differentiate their product. Custom memory. Bespoke eval harnesses. Homegrown observability. Handwritten retry logic. A tracing system that almost works. None of this is the hard part of the agentic era, and none of it is what your users are paying you for.\n\nThe real value lives in domain reasoning and business logic - the judgment calls that are specific to your company, your customers, your regulatory environment. Everything underneath should be the platform you build on, not the plumbing you build.\n\nThis is why the maturation of open primitives matters right now. Open-source orchestration frameworks exist precisely so the scaffolding isn’t locked behind any single vendor’s roadmap. The model that worked for cloud compute, containers, and CI/CD - start local on open primitives, graduate to a managed platform when you’re ready to scale - is the model agent platforms need to copy.\n\nTeams should be able to prototype on their laptop with the same building blocks they’ll run in production, and cross that boundary without a rewrite.\n\nThat’s the engineering standard that lets teams stop fighting plumbing and get back to the product.\n\nThe five-year horizon\n\nThe teams that pull ahead in the next five years will not pull ahead by being smarter at writing boilerplate. They’ll pull ahead by choosing the right agent foundation and spending their engineering hours on the problems only they can solve.\n\nEvery month spent rebuilding the common stack - identity, context, persistence, orchestration - is a month not spent on the logic that actually makes your agents worth deploying.\n\nThe agent stack has to become a solved problem. The only real question is whether you want to solve it yourself, again, or build on a foundation that was engineered for agents from the ground up.\n\nMy bet is on the latter. I think yours should be too.\n\n ",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/b79e265b#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=88b8b1",
+      "text": "Elevate",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://addyo.substack.com/p/the-agent-stack-bet",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2023817132581208353?entry=related_article",
+      "text": "Anthropic 发布 Claude Sonnet 4.6，支持 100 万 Token 上下文窗口",
+      "title": "Anthropic 宣布推出 Claude Sonnet 4.6，在编程、推理方面迎来重大升级，并支持 100 万 Token 的超长上下文窗口。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/a647d6a?entry=related_article",
+      "text": "State of the Claw — Peter Steinberger",
+      "title": "OpenClaw 创始人兼 OpenAI 工程师 Peter Steinberger 讨论了 OpenClaw 项目前所未有的增长和安全挑战，分享了他独特的 AI 辅助开发工作流，并探讨了 AI 时代不断演变的'工程师品味'概念。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/504ce725?entry=related_article",
+      "text": "长周期应用开发中的 Harness 设计",
+      "title": "本文探讨了 Anthropic 用于长周期自主编程的多智能体 Harness 设计（规划者、生成者、评估者），详细介绍了如何克服上下文焦虑和自我评估偏差，从而构建复杂的全栈应用。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/1369401?entry=related_article",
+      "text": "关于代码智能体、AutoResearch 与 AI 循环时代的安德烈·卡帕西",
+      "title": "安德烈·卡帕西探讨从手动编程到智能体编排的范式转变、AI 研究的自动化，以及对软件工程和教育的深远影响。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型",
+      "title": "OpenAI 宣布推出 GPT-5.5，这是一款专为理解复杂目标和自主完成任务而设计的新模型，现已在 ChatGPT 和 Codex 中上线。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/048d846e?entry=related_article",
+      "text": "长时间运行的智能体",
+      "title": "本文为从业者提供了关于长时间运行 AI 智能体的全面分析，详细阐述了核心工程挑战（有限上下文、无持久状态、无法自我验证）以及 Anthropic、Cursor 和 Google 所采用的趋同架构模式（大脑/双手/会话分离、规划者/执行者/评判者角色）。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/7bbc3383?entry=related_article",
+      "text": "IDE 的终结？",
+      "title": "本文探讨了软件开发从 IDE 中逐行手动编辑向“控制平面”模型的转变，后者专注于编排和监督自主 AI 智能体。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/fa58a61b?entry=related_article",
+      "text": "在 Google 14 年学到的另外 14 条经验",
+      "title": "Addy Osmani 分享了他在 Google 任职期间总结的 14 条高级工程领导力经验，重点关注团队系统、决策速度以及 AI 时代人类判断价值的转变。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文",
+      "title": "Anthropic 宣布推出 Claude Opus 4.6，具备更强的规划能力、优化的智能体表现，并开启了 1M token 上下文窗口的 Beta 测试。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+      "text": "Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次",
+      "title": "软件界传奇人物 Martin Fowler 和 Kent Beck 探讨了 AI 如何重新定义软件工程，并强调 TDD 和模块化等核心实践对于人机协作依然至关重要。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "本文认为，当前生产级 AI 智能体的发展受到有缺陷的底层技术栈的阻碍，并概述了团队为构建可靠、企业级的智能体系统必须做出的四项关键架构押注——智能体身份、通用上下文、持久化执行和平台采用。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AI 智能体, 智能体架构, 生产级 AI, AI 治理, AI 可靠性",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "智能体技术栈的押注 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "本文认为，当前生产级 AI 智能体的发展受到有缺陷的底层技术栈的阻碍，并概述了团队为构建可靠、企业级的智能体系统必须做出的四项关键架构押注——智能体身份、通用上下文、持久化执行和平台采用。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/b79e265b",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/b79e265b/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-18 17:16:43",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Addy Osmani",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "智能体架构",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "生产级 AI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 治理",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 可靠性",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "智能体技术栈的押注 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "本文认为，当前生产级 AI 智能体的发展受到有缺陷的底层技术栈的阻碍，并概述了团队为构建可靠、企业级的智能体系统必须做出的四项关键架构押注——智能体身份、通用上下文、持久化执行和平台采用。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/b79e265b/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "智能体技术栈的押注 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/b79e265b"
+}

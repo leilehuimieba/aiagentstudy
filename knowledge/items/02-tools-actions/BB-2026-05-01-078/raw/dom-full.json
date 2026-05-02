@@ -1,0 +1,374 @@
+{
+  "content": "Most ChatGPT users already know how to use AI for one-off tasks—like drafting, summarizing, brainstorming, or answering questions. The next phase of AI use is broader and more embedded in day-to-day work. Instead of helping with isolated moments, AI is increasingly being used to support repeatable workflows that depend on shared systems, standard handoffs, consistent outputs, and real-world constraints like timing, accuracy, and process.\n\nThat’s where workspace agents in ChatGPT fit. They’re designed to be used for repeatable workflows—work you’d otherwise do manually, re-explaining the steps each time, and copying information between tools. Learn more about workspace agents in our blog post.\n\nIf you’re new to agent building, let’s focus on the core concepts first so when you start building, you’ll know how to set up your workspace agent for consistent results.\n\nWhat is an agent?\n\nGenerally speaking, an agent is a system that carries out a task with three components: a trigger, a process that may include specialized skills, and tools or systems it can connect to.\n\nComponent\n\n\t\n\nDescription\n\n\t\n\nExamples\n\n\n\n\nTrigger\n\n\t\n\nWhat starts the agent\n\n\t\n\nA schedule (“Every weekday at 9am”) or a manual run (“Run now”).\n\n\n\n\nProcess and skills\n\n\t\n\nThe steps the agent follows to complete the task the way you expect\n\n\t\n\nReviewing inputs, checking for missing information, drafting an output, and handing it off or taking the next action.\n\n\n\n\nTools and systems\n\n\t\n\nThe approved tools and integrations the agent can use to gather information and, if allowed, take actions.\n\n\t\n\nSlack, a CRM, internal documentation, a ticketing system, or a shared document\n\nAgents are most useful when the work is:\n\nRepeatable: The same task comes up regularly\nStructured: There’s a clear format for the output (so you can tell if the agent is doing a good job)\nTime-based or event-driven: It runs on a cadence or is triggered by an event\nTool-based: It requires reading from or writing to systems your team uses\n\nFor open-ended thinking, brainstorming, or exploratory writing, regular chat is often a better fit—especially for one-off tasks.\n\nAgents are also different from traditional API workflows you may have built in the past. Traditional workflows in other tools are often deterministic, meaning each step is explicitly defined, and the system follows the same path each time unless you change the logic. Agents are more probabilistic. They still operate within instructions, tools, and guardrails, but they use a model to interpret context, make bounded decisions, and adjust how they move through the work.\n\nAnatomy of an agent\n\nA helpful way to design a workspace agent is to break it into parts. Think about what you would clarify before handing work to a person: what they are responsible for, when they should begin, what should make them pause or stop, which tools and information they can use, the process they should follow, and the rules they must stay within.\n\nAn agent may require access to apps. Learn more about apps in ChatGPT.⁠\n(opens in a new window)\n\n↗ 在新标签页打开嵌入内容\n\nSee some examples of agent breakdowns below:\n\n\n\n\n\t\n\nMarketing campaign summary agent\n\n\t\n\nProduct feedback triage agent\n\n\t\n\nSales pipeline summary agent\n\n\n\n\nObjective: What is the overall goal of the agent?\n\n\t\n\nAnalyze campaign performance and recommend optimizations\n\n\t\n\nSummarize new product feedback and route to the right owners\n\n\t\n\nMonitor pipeline changes and highlight risks and opportunities\n\n\n\n\nTrigger: What starts the work?\n\n\t\n\nEvery Monday at 10 AM\n\n\t\n\nForm submission from Slack\n\n\t\n\nEvery weekday at 8 AM\n\n\n\n\nProcess: What steps should it follow?\n\n\t\n\nPull KPIs, identify trends, draft a summary, propose next steps, assign owners\n\n\t\n\nReview feedback, group related items, summarize key themes, suggest owners for follow-up\n\n\t\n\nReview pipeline, flag risks, propose next steps\n\n\n\n\nTools: What systems or applications do you need access to?\n\n\t\n\nAnalytics tools and a shared summary document\n\n\t\n\nSlack, ticketing system, and a summary document\n\n\t\n\nCRM, email or Slack, and a pipeline tracker\n\n\n\n\nGovernance: What controls do you need? When should it stop and escalate?\n\n\t\n\nDraft recommendations; approval required before budget changes\n\n\t\n\nCreate draft tickets; escalate high-priority issues; approval required before submission\n\n\t\n\nDraft insights and recommendations; notify owners; no direct outreach without approval\n\nAgent workflow examples\n\nThe examples below can be thought of as agent workflow patterns: common, repeatable patterns of work that show up across teams and functions. Each one represents a core type of workflow an agent can carry out. The specific tools, data, and outputs may vary, but the underlying pattern stays consistent.\n\nWorkflow\n\n\t\n\nHow it works\n\n\t\n\nExample use cases\n\n\n\n\nBriefing\n\nPull information from multiple places, distill it, and package it into something decision-ready.\n\n\t\n\n1) Collect inputs\n\n2) Compare and extract key signals\n\n3) Summarize for audience \n\n4) Share as doc, memo, or briefing\n\n\t\n\nSales: Build account briefing from CRM, calls, Slack, and news. \n\nMarketing: Compile campaign or competitor recaps from analytics, social, and docs. \n\nExec: Produce daily industry briefs with recommendations\n\n\n\n\nTriage and routing\n\nProcess inbound items and ensure they reach the right next step\n\n\t\n\n1) Review inbound items \n\n2) Categorize and prioritize \n\n3) Route or create next-step artifact\n\n4) Notify owner and requester\n\n\t\n\nSupport: Turn feedback into bugs, feature requests, or follow-ups. \n\nIT/Ops: Handle internal requests in Slack and route by urgency. \n\nRecruiting: Screen inbound candidates and move them into the right path.\n\n\n\n\nAnalysis and recommendation\n\nInterpret data or evidence, form a point of view, and turn that into a first deliverable.\n\n\t\n\n1) Pull source data \n\n2) Analyze patterns, gaps, and tradeoffs \n\n3) Form recommendation \n\n4) Draft memo, deck, spreadsheet, or email\n\n\t\n\nFinance: Reconcile budget vs. actuals and draft a manager memo. \n\nProduct/Research: Analyze user feedback and propose priorities. \n\nProcurement: Compare vendor quotes, create decision matrix, and draft PO email.\n\n\n\n\nContent creation\n\nCreate or update content, then tailor it for a specific audience or channel.\n\n\t\n\n1) Generate first draft from notes or source material\n\n2) Edit for tone and accuracy \n\n3) Tailor to audience and channel \n\n4) Publish or send\n\n\t\n\nMarketing: Turn a brief into campaign assets and circulate for feedback. \n\nManager: Turn notes into onboarding plan or training module. \n\nSales: Write follow-up emails, QBR summaries, or stakeholder recaps.\n\n\n\n\nPlanning and coordination\n\nTurn goals into scheduled work and system updates\n\n\t\n\n1) Build plan from constraints \n\n2) Check dependencies and availability \n\n3) Take action or prepare action \n\n4) Update systems and notify people\n\n\t\n\nPM/Chief of Staff: Block work, schedule meetings, and update trackers. \n\nEvents: Coordinate off-sites, registrations, or travel plans. \n\nAdmin: Manage forms, reminders, orders, bookings, and follow-ups.\n\nUsing an agent in ChatGPT\n\nYou may start by using agents your organization has already built. Begin by understanding what the agent is designed to do well—what tasks it supports, which tools it relies on, and the kind of output it produces.\n\n↗ 在新标签页打开嵌入内容\n\nStart with a few low-risk requests to see how it behaves. Try simple inputs first, then review the results to understand how it approaches the task.\n\nKeep in mind that even a well-built agent still benefits from human judgment. You are often the one who knows the broader context, the stakes of the task, and what a good answer should look like.\n\nBuilding your own agent in ChatGPT\n\nOnce you understand the basics and have identified a strong use case, you can start building your own workspace agent. You may even already have skills built in ChatGPT. Workspace agents can use skills in their instructions.\n\nNote: in ChatGPT Enterprise, access to build agents is controlled by your workspace administrators.\n\n↗ 在新标签页打开嵌入内容\nStart in plain language: In the agent builder chat, describe the job the agent should do, what a successful outcome looks like, and any constraints it needs to follow. The builder can translate this into a clear workflow with defined steps, which you can keep refining in chat or edit directly in the workflow and instructions.\nChoose tools and connectors: Select the approved apps the agent can use to complete the workflow. You can also describe the systems the agent needs to access, and the builder will guide you through adding and authenticating them.\nChoose a trigger: Decide when the agent should run. An agent trigger is the event that starts the agent running. For workspace agents, it can be human-triggered (someone asks it to do something), schedule-triggered (it runs at a set time). You can use the agent builder chat to set up your trigger using plain language.\nAdd guardrails: Set boundaries, required approvals, and any human-in-the-loop checkpoints for sensitive actions. You can add these directly into the agent builder chat, and the agent builder will modify the instructions.\nTesting your agent using preview\n\nAgent building works best as an iterative process. In ChatGPT, the builder is part of that loop. As you test your agent, use the conversation to understand what happened, spot issues, and refine the instructions step-by-step.\n\n↗ 在新标签页打开嵌入内容\n\nStart with a few realistic examples, including both straightforward requests and messier ones with missing context or ambiguity. This helps you see how the agent behaves and where it may need clearer instructions or guardrails.\n\nEditing your agent\n\nAs you test your agent, it’s expected that the first version won’t be perfect. When something feels off, there are two effective ways to improve it.\n\nUpdate the instructions directly: Make small, specific changes in the editor, such as clarifying a step, adjusting the output format, or adding a constraint.\nCoach it in natural language: When the issue is less clear, use the builder conversation to work through it. You can point out what it missed, ask open-ended questions, or have it explain its reasoning to surface gaps in the instructions.\n\nAfter making changes, test again to confirm the update worked.\n\nScaling your agents to your team\n\nWorkspace agents are designed for shared, repeatable work. Sharing an agent gives your team a consistent way to complete a task instead of reinventing the process each time.\n\nWhen you share an agent, be explicit about what it’s for. In the description, include the task it handles, when to use it, what inputs to provide, and what kind of output to expect. Shared agents work best when they’re tied to a specific, recurring workflow your team already understands. Including one or two example prompts can also give others a clear starting point and make adoption smoother.\n\nRemember that workspace admins manage connector and feature access through role-based access control (RBAC), so teammates may need the appropriate permissions for the agent to work with systems like Slack, Gmail, or other tools.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/80a29c25#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=8749b9",
+      "text": "OpenAI Blog",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://openai.com/academy/workspace-agents",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "text": "blog post",
+      "title": ""
+    },
+    {
+      "href": "https://chatgpt.com/features/apps/?openaicom-did=E0C0D89E-4EAB-4959-B14E-14FC1220687F&openaicom_referred=true",
+      "text": "apps in ChatGPT.⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1177399057?controls=1&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1180648098?h=3d562f0195&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&controls=1&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1179656803?h=ff42ef19e0&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&controls=1&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1180606828?h=c1d2866a0d&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&controls=1&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/52f8c2e7?entry=related_article",
+      "text": "通过 Responses API 中的 WebSockets 加速智能体工作流",
+      "title": "OpenAI 工程师详细介绍了他们如何重新设计 Responses API 以使用持久的 WebSocket 连接，通过消除冗余的网络开销并让 GPT‑5.3‑Codex‑Spark 等更快的模型充分发挥其推理速度潜力，将智能体工作流延迟降低了高达 40%。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型",
+      "title": "OpenAI 宣布推出 GPT-5.5，这是一款专为理解复杂目标和自主完成任务而设计的新模型，现已在 ChatGPT 和 Codex 中上线。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a6d9083a?entry=related_article",
+      "text": "GPT-5.5 发布",
+      "title": "OpenAI 发布其迄今为止能力最强的模型 GPT-5.5，在智能体编程、知识工作和科学研究方面取得显著进步，同时保持了 GPT-5.4 的延迟并提升了 Token 效率。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/d8c375d8?entry=related_article",
+      "text": "Codex 几乎无所不能",
+      "title": "OpenAI 宣布对 Codex 进行重大更新，将其能力从编码扩展到计算机操作、网页交互、图像生成，并通过记忆、自动化等新功能以及超过 90 个插件，在软件开发全生命周期实现更深度的集成。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2023817132581208353?entry=related_article",
+      "text": "Anthropic 发布 Claude Sonnet 4.6，支持 100 万 Token 上下文窗口",
+      "title": "Anthropic 宣布推出 Claude Sonnet 4.6，在编程、推理方面迎来重大升级，并支持 100 万 Token 的超长上下文窗口。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+      "text": "Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次",
+      "title": "软件界传奇人物 Martin Fowler 和 Kent Beck 探讨了 AI 如何重新定义软件工程，并强调 TDD 和模块化等核心实践对于人机协作依然至关重要。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e792cb18?entry=related_article",
+      "text": "ChatGPT 中引入工作区智能体",
+      "title": "OpenAI 引入了工作区智能体，这是 ChatGPT 内一类新型的、可共享的、长期运行的 AI 智能体，专为业务团队设计，旨在自动化复杂工作流、与组织工具集成，并在企业级控制下运行。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文",
+      "title": "Anthropic 宣布推出 Claude Opus 4.6，具备更强的规划能力、优化的智能体表现，并开启了 1M token 上下文窗口的 Beta 测试。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/816f23c9?entry=related_article",
+      "text": "用于 Codex 编排的开源规范：Symphony",
+      "title": "OpenAI 推出了 Symphony，这是一套开源规范，能将 Linear 这类问题追踪器转变为编码智能体的常开型编排器。通过将智能体的工作与人类注意力解耦，成功将落地拉取请求的数量提升了 500%。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/504ce725?entry=related_article",
+      "text": "长周期应用开发中的 Harness 设计",
+      "title": "本文探讨了 Anthropic 用于长周期自主编程的多智能体 Harness 设计（规划者、生成者、评估者），详细介绍了如何克服上下文焦虑和自我评估偏差，从而构建复杂的全栈应用。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "这篇来自 OpenAI 博客的文章介绍了 ChatGPT 中工作区智能体的概念，解释了其核心组件、设计结构、常见工作流模式，并提供了使用、构建、测试和扩展这些智能体以完成可重复、结构化业务任务的实用指南。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AI 智能体, ChatGPT, 工作流自动化, 企业级 AI, 智能体设计",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "工作区智能体 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "这篇来自 OpenAI 博客的文章介绍了 ChatGPT 中工作区智能体的概念，解释了其核心组件、设计结构、常见工作流模式，并提供了使用、构建、测试和扩展这些智能体以完成可重复、结构化业务任务的实用指南。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/80a29c25",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/80a29c25/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-22 10:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "OpenAI",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ChatGPT",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "工作流自动化",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "企业级 AI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "智能体设计",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "工作区智能体 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "这篇来自 OpenAI 博客的文章介绍了 ChatGPT 中工作区智能体的概念，解释了其核心组件、设计结构、常见工作流模式，并提供了使用、构建、测试和扩展这些智能体以完成可重复、结构化业务任务的实用指南。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/80a29c25/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "工作区智能体 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/80a29c25"
+}

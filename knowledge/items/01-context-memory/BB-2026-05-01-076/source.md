@@ -1,0 +1,86 @@
+# Source Evidence
+
+- Title: Claude Code 手册：AI 辅助开发构建的专业指南
+- BestBlogs URL: https://www.bestblogs.dev/article/199cbc01
+- Original publisher URL: https://www.freecodecamp.org/news/claude-code-handbook/
+- Original link text: 查看原文 →
+
+## Captured Page Metadata
+
+- Browser title: Claude Code 手册：AI 辅助开发构建的专业指南 | BestBlogs.dev
+- Description: 一份关于 Anthropic 智能体 AI 开发工具 Claude Code 的全面专业指南，详细介绍了其功能、模型选择以及向 AI 辅助软件工程的变革性转变。
+- Date: 2026-03-25
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- 我的早报: https://www.bestblogs.dev/reading/brief
+- 我的关注: https://www.bestblogs.dev/reading/follow
+- 为你推荐: https://www.bestblogs.dev/reading/feed
+- 内容广场: https://www.bestblogs.dev/explore
+- 每日早报: https://www.bestblogs.dev/explore/brief
+- 精选周刊: https://www.bestblogs.dev/explore/newsletter
+- 主题解读: https://www.bestblogs.dev/explore/topics
+- 内容来源: https://www.bestblogs.dev/explore/sources
+- 阅读历史: https://www.bestblogs.dev/library/history
+- 我的收藏: https://www.bestblogs.dev/library/bookmarks
+- 我的笔记: https://www.bestblogs.dev/library/highlights
+- 我的回顾: https://www.bestblogs.dev/library/review
+- 设置: https://www.bestblogs.dev/settings
+- 帮助中心: https://www.bestblogs.dev/docs
+- freeCodeCamp.org: https://www.bestblogs.dev/articles?sourceid=074370
+- 查看原文 →: https://www.freecodecamp.org/news/claude-code-handbook/
+- Chapter 1: The Context That Made Claude Code Necessary: https://www.bestblogs.dev/article/199cbc01#heading-chapter-1-the-context-that-made-claude-code-necessary
+- Chapter 2: Anthropic — Background and Purpose: https://www.bestblogs.dev/article/199cbc01#heading-chapter-2-anthropic--background-and-purpose
+- Chapter 3: The Claude Model Family: https://www.bestblogs.dev/article/199cbc01#heading-chapter-3-the-claude-model-family
+- Chapter 4: What Claude Code Is: https://www.bestblogs.dev/article/199cbc01#heading-chapter-4-what-claude-code-is
+- Chapter 5: Why the Development Community Required This: https://www.bestblogs.dev/article/199cbc01#heading-chapter-5-why-the-development-community-required-this
+- Chapter 6: Installation and Initial Setup: https://www.bestblogs.dev/article/199cbc01#heading-chapter-6-installation-and-initial-setup
+- Chapter 7: VS Code and the Claude Code Extension: https://www.bestblogs.dev/article/199cbc01#heading-chapter-7-vs-code-and-the-claude-code-extension
+- Chapter 8: Subscriptions, Token Costs, and Usage: https://www.bestblogs.dev/article/199cbc01#heading-chapter-8-subscriptions-token-costs-and-usage
+- Chapter 9: Working in Your First Session: https://www.bestblogs.dev/article/199cbc01#heading-chapter-9-working-in-your-first-session
+- Chapter 10: Prompt Discipline — Inputs Determine Outputs: https://www.bestblogs.dev/article/199cbc01#heading-chapter-10-prompt-discipline--inputs-determine-outputs
+- Chapter 11: Planning as a Core Practice: https://www.bestblogs.dev/article/199cbc01#heading-chapter-11-planning-as-a-core-practice
+- Chapter 12: Building Feature by Feature: https://www.bestblogs.dev/article/199cbc01#heading-chapter-12-building-feature-by-feature
+- Chapter 13: How Claude Code Actually Works: https://www.bestblogs.dev/article/199cbc01#heading-chapter-13-how-claude-code-actually-works
+- Chapter 14: Architecting Applications Well with Claude Code: https://www.bestblogs.dev/article/199cbc01#heading-chapter-14-architecting-applications-well-with-claude-code
+- Chapter 15: Plan Mode, Edit Mode, and Operational Modes: https://www.bestblogs.dev/article/199cbc01#heading-chapter-15-plan-mode-edit-mode-and-operational-modes
+- Chapter 16: Context Windows and Session Management: https://www.bestblogs.dev/article/199cbc01#heading-chapter-16-context-windows-and-session-management
+- Chapter 17: MCP Servers and External Integrations: https://www.bestblogs.dev/article/199cbc01#heading-chapter-17-mcp-servers-and-external-integrations
+- Chapter 18: Agents, Sub-Agents, and Parallel Workflows: https://www.bestblogs.dev/article/199cbc01#heading-chapter-18-agents-sub-agents-and-parallel-workflows
+- Chapter 19: Skills, Rules, and Persistent Instructions: https://www.bestblogs.dev/article/199cbc01#heading-chapter-19-skills-rules-and-persistent-instructions
+- Chapter 20: Autonomous Loops — Conditions for Use: https://www.bestblogs.dev/article/199cbc01#heading-chapter-20-autonomous-loops--conditions-for-use
+- Chapter 21: Code Review, Security, and Verification: https://www.bestblogs.dev/article/199cbc01#heading-chapter-21-code-review-security-and-verification
+- Chapter 22: Starter Project Blueprints: https://www.bestblogs.dev/article/199cbc01#heading-chapter-22-starter-project-blueprints
+- Chapter 23: The Current Frontier of Claude Code: https://www.bestblogs.dev/article/199cbc01#heading-chapter-23-the-current-frontier-of-claude-code
+- Chapter 24: Software Engineering as a Discipline: https://www.bestblogs.dev/article/199cbc01#heading-chapter-24-software-engineering-as-a-discipline
+- Chapter 25: A Structured Path Forward: https://www.bestblogs.dev/article/199cbc01#heading-chapter-25-a-structured-path-forward
+- original scaling laws paper: https://arxiv.org/abs/2001.08361
+- github.com/modelcontextprotocol/servers: https://github.com/modelcontextprotocol/servers
+- claude.ai: https://claude.ai/
+- code.claude.ai: https://code.claude.ai/
+- The Bitter Lesson: http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+- A Philosophy of Software Design: https://www.goodreads.com/book/show/39996759-a-philosophy-of-software-design
+- Fundamentals of Software Architecture: https://fundamentalsofsoftwarearchitecture.com/
+- The Odin Project: https://www.theodinproject.com/
+- freeCodeCamp: https://www.freecodecamp.org/
+- https://www.lunartech.ai/our-careers: https://www.lunartech.ai/our-careers
+- The AI Engineering Handbook: How to Start a Career and Excel as an AI Engineer: https://www.lunartech.ai/download/the-ai-engineering-handbook
+- LunarTech Lab: https://labs.lunartech.ai/
+- LunarTech Academy: https://academy.lunartech.ai/courses
+- LunarTech NewsLetter: https://substack.com/@lunartech
+- LinkedIn: https://www.linkedin.com/in/tatev-karen-aslanyan/
+- academy.lunartech.ai: http://academy.lunartech.ai/
+- 如何为大型 Next.js 应用构建可复用的架构: https://www.bestblogs.dev/article/cb35eff4?entry=related_article
+- Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次: https://www.bestblogs.dev/video/862b9f1?entry=related_article
+- OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型: https://www.bestblogs.dev/status/2047376561205325845?entry=related_article
+- Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文: https://www.bestblogs.dev/status/2019467372609040752?entry=related_article
+- 如何为内部数据构建 MCP 服务端: https://www.bestblogs.dev/article/07976ac7?entry=related_article
+- 如何构建具备知识反思能力的自学习 RAG 系统: https://www.bestblogs.dev/article/a3a25526?entry=related_article
+- AI 如何改变了编写整洁代码的经济学: https://www.bestblogs.dev/article/0ac78bce?entry=related_article
+- Anthropic 推出 Project Glasswing 与 Claude Mythos Preview: https://www.bestblogs.dev/status/2041578392852517128?entry=related_article
+- 如何将 PostgreSQL 用作缓存、队列和搜索引擎: https://www.bestblogs.dev/article/ddd77b41?entry=related_article
+- Claude Opus 4.7 正式发布: https://www.bestblogs.dev/article/3b1c0638?entry=related_article
+- 阅读: https://www.bestblogs.dev/reading/brief
+- 发现: https://www.bestblogs.dev/explore
+- 我的: https://www.bestblogs.dev/settings

@@ -1,0 +1,299 @@
+{
+  "content": "PODCAST\n93\n⭐ 精选内容\n#427.对话 Claude Code 负责人：从工程师到“开发者”的范式转移\n\n对话 Anthropic 负责人，探讨了 AI 编程工具 Claude Code 如何重塑软件工程，预示了从“程序员”向“开发者”的范式转移。\n\n跨国串门儿计划\n关注\n·\n02-19\n·\n01:00:00\n·\n21 个章节\n·\n查看原文 →\n00:00\n01:00:00\n1x\n章节导览\n21 个章节 · 01:00:00\nCH.1\n云代码改变软件开发：工程师转型与未来展望\n00:00▶\nCH.2\n重返 anthropic：使命感与产品创新的抉择\n02:24\nCH.3\nAI 编程革新：从 4%到五分之一的 commit，软件开发行业巨变\n03:47\nCH.4\n2025 年底：代码编写或将告别 IDE，AI 主导编程新时代\n10:05\nCH.5\nAI 编程新时代：云智能引领工作流程革新\n13:05\nCH.6\nAI 编程助手提升开发效率与模型快速迭代的挑战\n15:19\nCH.7\n资源匮乏激发 AI 潜力：工程师与 Token 的创新实践\n17:55\nCH.8\n编程：工具与艺术的双重体验\n20:32\nCH.9\n编程技能演进与 AI 影响：从底层逻辑到高阶构思\n22:29\nCH.10\nAI 重塑职业生态：智能体技术引领岗位变革\n26:21\nCH.11\n跨学科全才与 AI 工具：重塑团队角色与产品开发原则\n29:48\nCH.12\n模型潜在需求驱动的产品创新与安全实践\n35:47\nCH.13\nAI 安全与真实世界测试：对齐、机械可解释性与评估\n38:15\nCH.14\nAI 模型开发：释放通用性与长远规划的重要性\n41:33\nCH.15\n云代码进阶技巧与编程助手市场洞察\n45:20\nCH.16\nAGI 实现后的未来生活与对 Anthropic 成长的深刻见解\n47:46\nCH.17\n科技与科幻：书籍推荐与个人成长之路\n50:54\nCH.18\n从日本到 Anthropic：AI 领袖的科幻阅读与产品偏好\n53:28\nCH.19\n智能助手 Cowk：改变生活的科技革新与使用技巧分享\n54:33\nCH.20\n运用常识判断与社交平台活跃体验\n57:06\nCH.21\n开发者分享：从 Threads 到 Twitter 的代码之旅与社区互动\n57:59\n📝 实时字幕\n跟随播放\n全部字幕\nCH.1\n云代码改变软件开发：工程师转型与未来展望\n00:00 — 02:24\n00:00\n1\n\n我现在的代码百分之百都是由 cloud code 写的。从去年 11 月到现在，我一行代码都没有亲手改过。我现在每天会提交十个、20 个甚至 34 个 PR 说实话就在咱们录音的这会儿，我后台就有五个 agent 在跑着。\n\n00:15\n2\n\n就在咱们录音的时候，对，那你还会怀念亲手写代码的感觉吗？\n\n00:21\n1\n\n我现在的编程体验比以前任何时候都好，因为我再也不用去处理那些琐碎的细节了。现在每个工程师的生产力提升了 200%。\n\n00:30\n2\n\n总有人在问，这一两年里还需不需要去学？\n\n00:33\n1\n\n一两年后这可能都不重要了，写代码这个问题基本上已经被解决了。我能想象这样一个世界，每个人都能变成任何人。\n\n00:43\n2\n\n随时随地都能开发软件。那软件编写方式的下一个重大转变会是什么？\n\n00:49\n1\n\n好，开始主动出主意了。他会查看反馈，看错报告，还会根据遥测数据来修复 bug 或者决定发布什么。他越来越像个同事了。\n\n00:58\n2\n\n听节目的很多都是产品经理，他们现在可能听得出了一身冷汗。\n\n01:03\n1\n\n我觉得到今年年底，每个人都会是产品经理，而且每个人都能写代码。软件工程师这个头衔会慢慢消失，取而代之的是开发者 builder，这对很多人来说可能会挺痛苦的。\n\n01:16\n2\n\n今天我的嘉宾是 boss turney，他是 anthropic 的 cloud code 负责人，很难形容 cloud code 对世界产生了影响。这期节目播出的时候，正好是 cloud COD 的发布一周年。在这短短的时间里，他彻底改变了软件工程师的工作，现在也开始影响科技行业的其他岗位，这也是我们今天要聊的话题。\n\n01:36\n2\n\nCloud co 本身也是 anthropic 整体增长的核心动力，过去一年，他们刚完成一轮融资，估值超过了 3500 亿美元，就像我提到的，cloud code 的增长还在加速。就在过去一个月，他们的日活用户翻了一倍。Boss 本人也是一个非常有想法有深度的人。聊天中我们还发现我俩竟然出生在乌克兰同一个城市。太巧了，我之前完全不知道。非常感谢 bad man Jenny nan 和 micro ger 为这次对话提供的建议。别忘了去访问 lenny product path dot com，那里有专门给 lenny newsletter 订阅者的专属福利。在听完赞助商的一段阶段介绍后，我们马上开始。Boss， 非常感谢你能来，欢迎来到我们的节目，谢谢。\n\n02:23\n1\n\n很高兴能来。\n\n02:24\n2\n\n我想先从一个比较劲爆的问题开始，大概六个月前，不知道大家还记不记得你当时离开了 anthropic，去了 curse r 结果两周后你又回到了 anthropic，这中间到底发生了什么？我好像还没听过真实的版本。\n\n点击任意行跳转 · 悬停可向 AI 提问\n\n内容简介\n\n📝 本期播客简介\n\n本期我们克隆了：硅谷顶尖创投播客《Lenny's Podcast》Head of Claude Code: What happens after coding is solved | Boris Cherny\n\n本期嘉宾 Boris Cherny 的观点可能会让所有程序员感到震撼。作为 Anthropic 的 Claude Code 负责人，他透露自己从去年十一月起就没亲手写过一行代码，却能每天提交多达 30 个 PR。在这期节目中，Boris 深入探讨了 AI 如何在短短一年内“吞噬”软件开发行业——目前 GitHub 上 4% 的 commit 已由 Claude 完成。他将分享 Claude Code 从一个简单的终端工具成长为行业巨头的幕后故事，揭示为何“软件工程师”这一头衔即将消失，并被“开发者（Builder）”取代。无论你是担心失业的产品经理，还是寻求效率突破的工程师，这期关于“指数级增长”和“潜在需求”的对话都将重塑你对 AI 时代的认知。\n\n👨‍⚕️ 本期嘉宾\n\nBoris Cherny，Anthropic 的 Claude Code 负责人。他曾是 Meta 的资深工程师，负责全公司的代码质量与效率。他也是《Programming TypeScript》一书的作者。在 Anthropic，他领导团队开发了改变软件工程范式的 Claude Code 以及新一代 AI 智能体 Cowork。\n\n⏱️ 时间戳\n\n00:00 开场 & 嘉宾介绍\n\n职业生涯的戏剧性转折\n\n02:05 闪离 Cursor 回归 Anthropic：使命感与“安全性”的召唤\n\n03:33 震撼的数据：AI 已贡献全球 4% 的代码提交量\n\nClaude Code 的进化之路\n\n05:46 诞生纪实：从一个无人问津的终端“小玩意”到公司内外的爆款\n\n07:21 为什么坚持终端界面？资源匮乏如何激发产品创新\n\n09:15 激进预测：2025 年底，我们可能不再需要 IDE\n\nAI 时代的极致效率\n\n11:34 创始人的日常：一行代码不写，每天提交 30 个 PR\n\n12:42 下一个前沿：当 AI 开始像同事一样主动提出产品建议\n\n15:06 200% 的生产力提升：为什么“资源少给点”反而更好\n\n18:44 编程的本质：从“手艺活”的美感回归到“解决问题”的手段\n\n范式转移：从工程师到“开发者”\n\n21:23 印刷机隐喻：AI 时代的识字率普及与创造力解放\n\n24:25 角色重叠：为什么每个人都将成为产品经理和开发者\n\n28:21 职业建议：在 AI 时代，跨学科的“全才”比专才更吃香\n\n产品与技术心法\n\n31:02 “潜在需求”原则：如何通过用户的“误用”发现下一个爆款\n\n34:26 让模型自己带路：不要把 AI 关进死板的工作流盒子里\n\n35:08 Cowork 幕后：用 Claude Code 在 10 天内构建出千万级应用\n\n41:32 惨痛的教训：永远为“六个月后的模型”做开发\n\n实用技巧与 AGI 展望\n\n44:57 进阶指南：为什么用最贵的模型（Opus 4.6）反而更省钱\n\n46:41 终极梦想：AGI 实现后，我想去日本农村全职做味噌\n\n48:31 闪电问答：改变思维的技术书与科幻推荐\n\n🌟 精彩内容\n\n💡 100% AI 驱动的工作流\n\nBoris 分享了他极端的效率实验：从去年底开始，他所有的代码工作都交给了 Claude Code。他不再纠结于语法和细节，而是专注于架构和意图。这种方式让他即便在管理团队的同时，依然能保持远超常人的代码产出。\n\n“我现在的编程体验比以前任何时候都好，因为我再也不用去处理那些琐碎的细节了。”\n\n🛠️ “潜在需求”与产品直觉\n\nBoris 提出了一个深刻的产品观点：观察用户如何“滥用”你的产品。当他看到数据科学家费劲地在终端里用编程工具做 SQL 分析时，他意识到非技术人员对 AI 智能体有着巨大的渴望，这直接促成了桌面端应用 Cowork 的诞生。\n\n“当你看到用户这样‘滥用’产品来解决问题时，这就是一个极强的信号。”\n\n🚀 为“六个月后的模型”开发\n\n很多开发者试图通过复杂的逻辑（脚手架）来弥补当前模型的不足。Boris 认为这是徒劳的。他主张押注通用模型的进化速度，宁愿忍受短期的不完美，也要确保产品形态能完美适配下一代更强的模型。\n\n“如果你是为六个月后的模型做准备，等新模型一发布，你的产品会瞬间爆发。”\n\n📚 印刷机时刻：编程的民主化\n\nBoris 将 AI 编程比作古腾堡的印刷机。正如印刷机让识字不再是少数僧侣的特权，AI 也将让编程成为每个人的基本技能。他认为这虽然会对现有职业产生冲击，但最终会像文艺复兴一样，释放人类整体的创造潜能。\n\n“真正的乐趣是决定要做什么，去构思、去思考大系统和未来。”\n\n🍱 工程师的“长周期”思考\n\n有趣的是，这位处于 AI 浪潮巅峰的工程师，在生活中却痴迷于极慢的“味噌制作”。他认为这种需要数年发酵的过程能帮他平衡旧金山的极速节奏，学会以更长的时间维度去思考技术与社会的演进。\n\n“味噌最有趣的地方在于它让你学会以‘长周期’来思考，这跟搞工程完全不同。”\n\n🌐 播客信息补充\n\n翻译克隆自：Lenny's Podcast\n\n本播客采用原有人声声线进行播客音频制作，也可能会有一些地方听起来怪怪的\n\n使用 AI 进行翻译，因此可能会有一些地方不通顺；\n\n如果有后续想要听中文版的其他外文播客，也欢迎联系微信：iEvenight\n\n云代码改变软件开发：工程师转型与未来展望\nCH.1 · 00:00 — 02:24\n00:00 / 01:00:00\n1x",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/podcast/77f3363#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceid=938310",
+      "text": "跨国串门儿计划",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/6997386f66e2c30377d209aa",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.listennotes.com/podcasts/lennys-podcast/head-of-claude-code-what-Sxb8JKV4qX6/",
+      "text": "Head of Claude Code: What happens after coding is solved | Boris Cherny",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "对话 Anthropic 负责人，探讨了 AI 编程工具 Claude Code 如何重塑软件工程，预示了从“程序员”向“开发者”的范式转移。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AI编程, Claude Code, 软件工程范式, Anthropic, 智能体(Agent)",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "#427.对话 Claude Code 负责人：从工程师到“开发者”的范式转移 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "对话 Anthropic 负责人，探讨了 AI 编程工具 Claude Code 如何重塑软件工程，预示了从“程序员”向“开发者”的范式转移。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/podcast/77f3363",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/podcast/77f3363/opengraph-image?1d026723476286db",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-19 16:24:43",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "跨国串门儿计划",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AI编程",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Claude Code",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "软件工程范式",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Anthropic",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "智能体(Agent)",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "#427.对话 Claude Code 负责人：从工程师到“开发者”的范式转移 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "对话 Anthropic 负责人，探讨了 AI 编程工具 Claude Code 如何重塑软件工程，预示了从“程序员”向“开发者”的范式转移。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/podcast/77f3363/twitter-image?50b31ff74c5c8e3d",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "#427.对话 Claude Code 负责人：从工程师到“开发者”的范式转移 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/podcast/77f3363"
+}

@@ -1,0 +1,659 @@
+{
+  "content": "1\nGPT-5.5 发布\nOpenAI Blog\nopenai.com\n04-23\n4169 字 · 约 17 分钟\n95\n\nOpenAI 正式发布 GPT-5.5，标志着大语言模型从单纯的对话交互向「自主智能体」能力的重大跨越。该模型在维持 GPT-5.4 响应延迟的基础上，显著提升了推理深度与执行效率。其核心优势集中在 Agent 编程、计算机操控以及前沿科学研究领域，在 Terminal-Bench 2.0 和 OSWorld 等复杂任务基准测试中均刷新了纪录。通过引入更严密的防御机制与「网络安全信任访问」计划，GPT-5.5 在处理高风险任务时展现了极高的可靠性。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#a6d9083a",
+      "text": "1\nGPT-5.5 发布",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#95d5e07c",
+      "text": "2\nDeepSeek-V4 预览版：迈入百万上下文普惠时代",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#f12b487",
+      "text": "3\n这就是 ChatGPT 图像 2.0",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#80a29c25",
+      "text": "4\n工作区智能体",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#ef138a82",
+      "text": "5\nKimi K2.6 发布并开源，全面精进代码和 Agent 集群能力",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#2732488",
+      "text": "6\nAI 如何改变软件工程：与 Gergely Orosz (@pragmaticengineer) 的对话",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#cade0910",
+      "text": "7\n构建智能体云：我们在 2026 年智能体周期间发布的一切",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#34499204",
+      "text": "8\n使用 MCP 构建能够接入生产系统的智能体 | Claude",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#b79e265b",
+      "text": "9\n智能体技术栈的押注",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#f5d1601a",
+      "text": "10\n从第一性原理思考 Agentic Engineering",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#1d18d5d0",
+      "text": "11\n从提需求到部署发布，全 AI 全自动化后，研发效能全面跃升",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#9dd92132",
+      "text": "12\n从玩具到生产力：用真实项目讲透 AI Agent 的 Harness Engineering",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#6ff088c",
+      "text": "13\nGarry Tan 的 Claude Code 设置内幕",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#2c13d25",
+      "text": "14\nSam Altman + Greg Brockman - 关于 OpenAI 的重大重置",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#8bdc88d",
+      "text": "15\nOpenAI 联合创始人 Greg Brockman 谈 AI 竞赛、Sam Altman 解雇风波与 AGI 未来",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#f4e0a74",
+      "text": "16\n138. 对罗福莉 3.5 小时访谈：AI 范式已然巨变！OpenClaw、Agent 范式很吃后训练、卡的分配、组织平权",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#efcd424a",
+      "text": "17\nShopify 的 AI 相变：2026 年使用量激增，无限的 Opus-4.6 Token 预算，Tangle，Tangent，SimGym —— 对话 Shopify CTO Mikhail Parakhin",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#5d4cc2f",
+      "text": "18\nAnthropic 产品团队如何比任何人都快 | Cat Wu（Claude Code 产品负责人）",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#56f3366c",
+      "text": "19\n当我们在讨论 Harness 的时候，我们在讨论什么 | 深度对谈: MiniMax × Hermes Agent",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue92#1f0d1cae",
+      "text": "20\n科技爱好者周刊（第 394 期）：第二次 API 开放浪潮",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a6d9083a?entry=newsletter_page",
+      "text": "GPT-5.5 发布",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8749b9",
+      "text": "OpenAI Blog",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/introducing-gpt-5-5",
+      "text": "openai.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/95d5e07c?entry=newsletter_page",
+      "text": "DeepSeek-V4 预览版：迈入百万上下文普惠时代",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_14cc4c",
+      "text": "DeepSeek",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/f12b487?entry=newsletter_page",
+      "text": "这就是 ChatGPT 图像 2.0",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_d90853",
+      "text": "OpenAI",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=-7JSa_luc6k",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/80a29c25?entry=newsletter_page",
+      "text": "工作区智能体",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8749b9",
+      "text": "OpenAI Blog",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/academy/workspace-agents",
+      "text": "openai.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/ef138a82?entry=newsletter_page",
+      "text": "Kimi K2.6 发布并开源，全面精进代码和 Agent 集群能力",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_7cdc83",
+      "text": "月之暗面 Kimi",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488415&idx=1&sn=e494d0a74bc414a45f65d327bc97cd22",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/2732488?entry=newsletter_page",
+      "text": "AI 如何改变软件工程：与 Gergely Orosz (@pragmaticengineer) 的对话",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_db1f86",
+      "text": "AI Engineer",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=CS5Cmz5FssI",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/cade0910?entry=newsletter_page",
+      "text": "构建智能体云：我们在 2026 年智能体周期间发布的一切",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_903ae3",
+      "text": "The Cloudflare Blog",
+      "title": ""
+    },
+    {
+      "href": "https://blog.cloudflare.com/agents-week-in-review/",
+      "text": "blog.cloudflare.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/34499204?entry=newsletter_page",
+      "text": "使用 MCP 构建能够接入生产系统的智能体 | Claude",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_154bc38a",
+      "text": "Claude Blog",
+      "title": ""
+    },
+    {
+      "href": "https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp",
+      "text": "claude.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/b79e265b?entry=newsletter_page",
+      "text": "智能体技术栈的押注",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_88b8b1",
+      "text": "Elevate",
+      "title": ""
+    },
+    {
+      "href": "https://addyo.substack.com/p/the-agent-stack-bet",
+      "text": "addyo.substack.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/f5d1601a?entry=newsletter_page",
+      "text": "从第一性原理思考 Agentic Engineering",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_efac5b",
+      "text": "腾讯云开发者",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695386&idx=1&sn=7b4ec46bedf2b841680912d6be029a81",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1d18d5d0?entry=newsletter_page",
+      "text": "从提需求到部署发布，全 AI 全自动化后，研发效能全面跃升",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_958ae8",
+      "text": "腾讯技术工程",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801307&idx=1&sn=ca2c68447c2abe444b2bdda380b7c849",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/9dd92132?entry=newsletter_page",
+      "text": "从玩具到生产力：用真实项目讲透 AI Agent 的 Harness Engineering",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_26c5f1",
+      "text": "阿里云开发者",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559631&idx=1&sn=13935cb98e1b389c3afa8a10a17e9c3a",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/6ff088c?entry=newsletter_page",
+      "text": "Garry Tan 的 Claude Code 设置内幕",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_d8821f",
+      "text": "Y Combinator",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=wkv2ifxPpF8",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/2c13d25?entry=newsletter_page",
+      "text": "Sam Altman + Greg Brockman - 关于 OpenAI 的重大重置",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_27b30480",
+      "text": "Core Memory Podcast",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=NCKQL0op30E",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/8bdc88d?entry=newsletter_page",
+      "text": "OpenAI 联合创始人 Greg Brockman 谈 AI 竞赛、Sam Altman 解雇风波与 AGI 未来",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_a840b664",
+      "text": "The Knowledge Project Podcast",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=6JoUcQ1qmAc",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/f4e0a74?entry=newsletter_page",
+      "text": "138. 对罗福莉 3.5 小时访谈：AI 范式已然巨变！OpenClaw、Agent 范式很吃后训练、卡的分配、组织平权",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_31d080",
+      "text": "张小珺Jùn｜商业访谈录",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69eae15a1e94ae692107cc50",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/efcd424a?entry=newsletter_page",
+      "text": "Shopify 的 AI 相变：2026 年使用量激增，无限的 Opus-4.6 Token 预算，Tangle，Tangent，SimGym —— 对话 Shopify CTO Mikhail Parakhin",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_fc479e",
+      "text": "Latent Space",
+      "title": ""
+    },
+    {
+      "href": "https://www.latent.space/p/shopify",
+      "text": "latent.space",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/5d4cc2f?entry=newsletter_page",
+      "text": "Anthropic 产品团队如何比任何人都快 | Cat Wu（Claude Code 产品负责人）",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8e0b51",
+      "text": "Lenny's Podcast",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=PplmzlgE0kg",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/56f3366c?entry=newsletter_page",
+      "text": "当我们在讨论 Harness 的时候，我们在讨论什么 | 深度对谈: MiniMax × Hermes Agent",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_f63517",
+      "text": "十字路口Crossing",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649107318&idx=1&sn=d1b544111c7d3e43cade7a0a906aa46f",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1f0d1cae?entry=newsletter_page",
+      "text": "科技爱好者周刊（第 394 期）：第二次 API 开放浪潮",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_ed2bfb",
+      "text": "阮一峰的网络日志",
+      "title": ""
+    },
+    {
+      "href": "http://www.ruanyifeng.com/blog/2026/04/weekly-issue-394.html",
+      "text": "ruanyifeng.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 92 期 AI 精选文章推荐。\n\n最近两周像是模型层的一次集中爆发。OpenAI 发布 **GPT-5.5**，Terminal-Bench 2.0 跑到 82.7%、OSWorld 78.7%，延迟持平 5.4 但 token 消耗下降；DeepSeek 把 *...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "bestblogs, AI 阅读，个性化阅读，高质量内容，每日早报，技术阅读，内容发现，AI 初评，专家精审，阅读工作流",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 92 期：模型周 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 92 期 AI 精选文章推荐。\n\n最近两周像是模型层的一次集中爆发。OpenAI 发布 **GPT-5.5**，Terminal-Bench 2.0 跑到 82.7%、OSWorld 78.7%，延迟持平 5.4 但 token 消耗下降；DeepSeek 把 *...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/newsletter/issue92",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue92/opengraph-image?5b2ed8584a9655d4",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "04-24",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 92 期：模型周 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 92 期 AI 精选文章推荐。\n\n最近两周像是模型层的一次集中爆发。OpenAI 发布 **GPT-5.5**，Terminal-Bench 2.0 跑到 82.7%、OSWorld 78.7%，延迟持平 5.4 但 token 消耗下降；DeepSeek 把 *...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue92/twitter-image?43c24b48d6d9249c",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "BestBlogs.dev 第 92 期：模型周 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/newsletter/issue92"
+}

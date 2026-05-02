@@ -1,0 +1,334 @@
+{
+  "content": "文｜晓静\n\n编辑｜徐青阳\n\n2025年11月，谷歌发布的Gemini 3 Pro曾短暂封王，但很快就被OpenAI和Anthropic的新模型挤下了宝座。\n\nAI世界的王座更替，比手机发布会还快。\n\n就在2026年2月19日深夜，谷歌带着名为“Gemini 3.1 Pro”的新模型杀了回来。官方数据看着挺吸引人：在一项衡量AI解决全新逻辑问题能力的“怪考题”ARC-AGI-2上，Gemini3.1 Pro的得分直接翻了一倍多，冲到77.1%。\n\n第三方机构Artificial Analysis的测试也显示，Gemini3.1 Pro的综合智能指数已经悄悄爬到了第一，把Claude Opus 4.6甩在了身后。\n\n强调硬核推理、编码能力和成本控制，摆出一副要跟开发者和企业用户“务实合作”的姿态。\n\n幻觉率继续降低，在测试模型是否“不懂装懂”的AA-Omniscience幻觉率上，Gemini3.1 Pro比前代模型大降了38%。\n\n最关键的是，性能涨了，价格却没变。谷歌这次，似乎是铁了心要用“加量不加价”的策略，把丢掉的头衔再抢回来。\n\n01\n“三级思考”模式\n\n之前的Gemini 3 Pro可能会让人觉得它够快、够强，但有时候答案还是有点“飘”。这次的Gemini3.1 Pro，谷歌把重点放在了“核心推理能力”上，换句话说，就是让它更会“动脑子”了。\n\n这最直观地体现在名为ARC-AGI-2的测试里。这个测试考的不是死记硬背，全是些没见过的新逻辑题，专门用来检验AI真正的推理能力。\n\nGemini 3.1 Pro的得分在各项标准测试中均超越同类竞品\n\nGemini 3 Pro之前的得分是31.1%，而Gemini3.1 Pro一口气冲到了77.1%。谷歌DeepMind的老板戴密斯·哈萨比斯（Demis Hassabis）也特地发文说，这标志着模型在核心推理和问题解决能力上有了重大改进。\n\n但真正的杀手锏，还不是得分。Gemini 3.1 Pro这次引入了一个“三级思考”模式——低、中、高。你可以把它理解为给模型装了一个可以调节的“算力旋钮”。简单说，就是用户可以根据任务难度，自己决定让模型花多少时间思考。\n\n之前的Gemini 3 Pro只有两档：低和高。这次Gemini3.1 Pro在中间加了一档，同时调整了“高”模式的含义。调到高的时候，模型会进入类似Deep Think的状态。Deep Think是谷歌上周更新的推理模型，特点是花更多时间处理复杂问题。现在Gemini3.1 Pro自己就能做这件事，不用单独切换。\n\n这个功能主要解决一个实际问题。以前开发者处理不同难度的任务，往往需要准备多个模型，简单对话用一个，复杂推理用另一个。接口不同，计费不同，还得自己写逻辑判断该调用哪个。时间长了，这套东西维护起来比较麻烦。\n\n现在一个模型就够了。常规任务用低档，可以快速返回；复杂任务用高档，让它多花点时间处理。不用来回切换，也不用维护多个模型。\n\n02 \n\n“抢王座”，跑分获胜\n\n既然是来“抢王座”的，就免不了要和OpenAI的GPT-5.2、Anthropic的Claude Opus 4.6这些老对手掰掰手腕。\n\n从纸面数据看，Gemini 3.1 Pro这次确实挺能打。Artificial Analysis的智能指数测试里，它在10项评估中拿下了6项第一，包括Terminal-Bench Hard（编码）、GPQA Diamond（科学知识）和Humanity's Last Exam（推理知识）。\n\n在Artificial Analysis的智能指数测试中，Gemini 3.1 Pro吊打对手\n\n尤其在测试模型是否“不懂装懂”的AA-Omniscience幻觉率上，Gemini3.1 Pro比前代狂降了38个百分点，这意味着它现在更清楚自己“不知道什么”，而不是瞎编一通。\n\n在AA-Omniscience测试中，Gemini 3.1 Pro幻觉率大幅下降\n\n在一项针对研究级物理推理问题的CritPt测试中，Gemini3.1 Pro更是拿下了18%的分数，比第二名的模型高出5个百分点以上。Artificial Analysis对此评价称，这表明谷歌这次在底层智能上确实下了狠功夫。\n\n不过，AI圈的竞争从来不只是“考高分”。在更贴近用户体验的Arena排行榜上，情况就没那么一边倒了。\n\n这个榜单靠用户给不同模型的回答投票排名，比的不是逻辑对错，而是谁的回答看起来更“顺眼”。目前，在纯文本任务上，Claude Opus 4.6依然领先Gemini 3.1 Pro 4分，在代码任务上，Opus系列和GPT-5.2也还保持着微弱优势。\n\nArena的排名可能会奖励那些回答“看起来正确”但未必真正正确的模型，而Gemini 3.1 Pro这次在减少幻觉上的进步，恰恰是为了追求“真正的正确”。\n\n当然，也不是所有方面都完美。\n\n虽然Artificial Analysis的数据显示，Gemini3.1 Pro在现实世界的智能体任务上有进步，得分从56.9%涨到了68.5%，但在这个领域，Claude Sonnet 4.6和GPT-5.2等对手依然跑在前面。\n\n03 \n不只是编码，还能读懂《呼啸山庄》的“氛围”\n\n跑分和排名终究是数字，Gemini 3.1 Pro到底能干什么？\n\n最让人印象深刻的是它的“创意编程”能力。比如，让它为《呼啸山庄》设计一个现代风格的个人作品集网站。Gemini3.1 Pro不只是简单总结书的内容，可以“推理”出小说那种阴郁、狂野的氛围，然后把它转化成一个时尚、现代的界面设计。 \n\n另一个例子是3D交互。Gemini3.1 Pro能直接生成一段代码，创造一个复杂的3D欧椋鸟群模拟。你甚至可以用手去追踪和操控鸟群，鸟群飞舞的同时，还有根据它们运动变化生成的背景音乐。\n\n来自初创公司Cartwheel的联合创始人安德鲁·卡尔（Andrew Carr）在试用后就发现，这个模型对3D空间变换的理解比之前强了一大截，以前做3D动画时老是搞错的旋转顺序问题，在Gemini3.1 Pro上居然被完美解决了。\n\n对于普通用户来说，最实用的可能是生成动画SVG。以前你想做个网页小动画，可能要懂设计、会剪辑。现在，直接给Gemini 3.1 Pro一句描述，它就能生成一段纯代码构建的动画，不仅在任何屏幕上放大都清晰，文件还特别小。这被不少人看作是“氛围编程”的开始。\n\n强大的推理能力还让Gemini3.1 Pro打破了复杂API与人性化设计之间的壁垒。谷歌展示的一个例子里，模型直接构建出一个实时的航天数据看板，完美接入公开的遥测数据流，将国际空间站的实时运行轨迹清晰地展现在你眼前，将一堆冷冰冰的数据接口变成了普通人也能看懂的交互界面。\n\nGemini3.1 Pro直接接入遥测数据流，构建航天数据交互界面\n\n值得一提的是，此前参与了Gemini 3 Deep Think研究的姚顺宇也在社交平台上介绍了这项新突破。他特别提到，这次的升级只是开始，“后续还会有更好的模型持续推出”。\n\n04 \n价格不变\n\n说了这么多，最关键的问题来了：Gemini3.1 Pro什么时候能用？贵不贵？\n\n现在就能用，而且不涨价。从2月19日开始，Gemini 3.1 Pro就以预览版的形式逐步上线了。\n\n普通用户打开Gemini应用或者NotebookLM（目前仅限Pro和Ultra订阅者）就能尝鲜，开发者则可以通过Google AI Studio、Gemini CLI，或者在Android Studio里直接调用Gemini API。至于企业客户，Gemini3.1 Pro已经出现在Vertex AI和Gemini Enterprise里了。\n\n最让人意外的是定价。Gemini 3.1 Pro保持了和Gemini3 Pro完全一样的价格：输入每百万tokens 2美元起，输出每百万tokens 12美元起。Artificial Analysis算了一笔账：跑完他们整个智能指数测试集，Gemini 3.1 Pro的花费还不到Claude Opus 4.6的一半。 \n\n谷歌DeepMind的首席科学家杰夫·迪恩（Jeff Dean）也站出来力挺，他放出了一个并排对比视频，展示Gemini3.1 Pro生成的动画明显比上一代更清晰、更流畅。\n\n谷歌CEO桑达尔·皮查伊（Sundar Pichai）亲自下场，强调了这次在核心推理能力上的翻倍提升，并表示新模型非常适合处理那些“将创意项目变为现实”的复杂任务。\n\n最后，值得注意的是，这次只是“3.1”而不是“3.5”或“4.0”。\n\n特约编译金鹿对本文亦有贡献",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/9e0fdd94#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=b475c7",
+      "text": "腾讯科技",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691565054&idx=1&sn=9b94c9bd90484f1026f813f5bb7174f4",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/27ae03d7?entry=related_article",
+      "text": "Gemini 3.1 Pro Released",
+      "title": "Google has released Gemini 3.1 Pro, featuring a core improvement in reasoning capabilities (doubling ARC-AGI-2 scores) and showcasing multiple application demos ranging from code generation to end-to-end products."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/4734ede9?entry=related_article",
+      "text": "Understanding GPT-5.4: Surpassing Human Experts in 83% of Tasks, with an $80 Cost Just to Say Hello",
+      "title": "OpenAI releases its flagship model GPT-5.4, featuring native Computer Use capabilities and an agent-oriented design, outperforming human experts in 83% of professional tasks."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/5b7ab5d5?entry=related_article",
+      "text": "Understanding Harness Engineering: Finding the Shell That Keeps AI from Going Rogue—Insights from 14 Engineering Articles | Hao's Trend Talk",
+      "title": "This article provides an in-depth analysis of \"Harness Engineering,\" a core technology in the AI Agent field. It reveals how to compensate for model shortcomings through a three-layer management architecture and proposes the logic of \"Compensation Surface Migration\" that evolves with model capabilities."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/c7d5f93e?entry=related_article",
+      "text": "Harness is Hot Now, But It Might Already Be Obsolete | Hao's Paper Chat",
+      "title": "This article provides an in-depth interpretation of Yandex's paper 'Reasoning Shift' on how large models actively 'slack off' in long contexts, and combines it with Anthropic's research on emotion vectors to explore the possibility of solving Agent long-term task degradation from the model's internal mechanisms rather than external engineering scaffolds."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/71f5de13?entry=related_article",
+      "text": "Why Did Hermes Take Over from OpenClaw in Just Two Months?",
+      "title": "This article provides an in-depth comparison between the rising open-source AI Agent star Hermes and its predecessor OpenClaw, arguing that Hermes' success stems not from functional superiority but from encapsulating decision complexity—such as skill auto-evolution and proactive memory management—within underlying deterministic rules. This engineering safety net allowed it to deliver an automated 'gets better with use' experience precisely when the underlying technology was just barely sufficient."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/0eb56b31?entry=related_article",
+      "text": "Q1 2026: AI Agents Come of Age | 2026 Q1 AI Trend White Paper",
+      "title": "This article provides an in-depth analysis of four structural trends in AI Agents for Q1 2026: long-horizon productization, harness engineering, recursive R&D, and the Skill ecosystem, revealing the flywheel effect as Agents evolve from tools into independent 'new colleagues'."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/092337e9?entry=related_article",
+      "text": "Cyber Arena: 9 LLMs Battle in 'Romance of the Three Kingdoms'—Who Holds the Mandate of Heaven?",
+      "title": "This article deeply evaluates the strategic reasoning, diplomatic maneuvering, and resource management capabilities of 9 flagship LLMs through a 'Romance of the Three Kingdoms' strategy game tournament, while sharing development practices for AI-native games."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8a16b2e5?entry=related_article",
+      "text": "Just Now, Sam Altman Dropped GPT-5.4! Netizens: A Single 'Hi' Burned $80",
+      "title": "OpenAI released GPT-5.4, marking a milestone evolution from conversational assistants to versatile task-execution agents by natively integrating computer use, deep reasoning, and million-token context capabilities."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Google releases Gemini 3.1 Pro, significantly boosting reasoning capabilities through an innovative 'three-level thinking' mode, doubling its ARC-AGI-2 score...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Gemini 3.1 Pro, Google DeepMind, Reasoning Model, ARC-AGI-2, Thinking Modes",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Google to Reclaim the Throne? Gemini 3.1 Pro Reasoning Sc...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Google releases Gemini 3.1 Pro, significantly boosting reasoning capabilities through an innovative 'three-level thinking' mode, doubling its ARC-AGI-2 score...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/9e0fdd94",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/9e0fdd94/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-20 02:03:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "腾讯科技",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Gemini 3.1 Pro",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Google DeepMind",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Reasoning Model",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ARC-AGI-2",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Thinking Modes",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Google to Reclaim the Throne? Gemini 3.1 Pro Reasoning Sc...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Google releases Gemini 3.1 Pro, significantly boosting reasoning capabilities through an innovative 'three-level thinking' mode, doubling its ARC-AGI-2 score...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/9e0fdd94/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Google to Reclaim the Throne? Gemini 3.1 Pro Reasoning Sc...",
+  "url": "https://www.bestblogs.dev/en/article/9e0fdd94"
+}

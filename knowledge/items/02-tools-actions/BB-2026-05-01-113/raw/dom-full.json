@@ -1,0 +1,294 @@
+{
+  "content": "VIDEO\n94\n⭐ Featured\nBoris Cherny: How We Built Claude Code\n\nBoris Cherny, creator of Claude Code, discusses the tool's evolution at Anthropic, emphasizing a 'build for the future' philosophy, multi-agent orchestration, and the radical 150% productivity boost in AI-native engineering.\n\n⭐ Why It's FeaturedClaude Code creator Boris Cherny traces the full arc from accidental prototype to paradigm-shifting tool, anchored by one core philosophy: build for the model six months from now, not today. He shares that he no longer writes a single line of code by hand since Opus 4.5, and digs into multi-agent system design, the right way to use ClaudeMD, and why the most valuable skill for engineers in a rapidly evolving model landscape is no longer technical expertise — it's beginner's mind and first-principles thinking.\n\nExpand\nY Combinator\nFollow\n·\n02-17\n·\nView Source →\nBoris Cherny: How We Built Claude Code\n内容概要\n\nAnthropic 的 Claude Code 创作者 Boris Cherny 做客 Y Combinator 播客，深入探讨了这款基于终端的 AI 编程助手的起源、发展及其令人惊讶的成功。他详细讲述了 Claude Code 如何从一个简单的原型演变成一个大幅提升工程师生产力的变革性工具，分享了“为未来的 AI 模型构建产品而非当下模型”的产品哲学，并探讨了多智能体系统在软件工程中展现出的意想不到的涌现能力。\n\n目录\n\n介绍与 Claude Code 的起源\n\nClaudeMD 的演进与使用\n\n新的工程范式与招聘\n\n多智能体系统与 Claude Teams\n\n计划模式的未来\n\n为终端进行设计\n\n苦涩的教训与给开发者的建议\n\n加入 Anthropic 与 AI 安全\n\nClaude 在 Co-work 中的应用与总结\n\n介绍与 Claude Code 的起源\n\nBoris Cherny: 在 Anthropic，我们的理念是不为今天的模型构建产品，而是为六个月后的模型构建产品。这也是我给那些基于 LLM 创业的创始人的一贯建议：试着去思考模型目前还不擅长的前沿领域是什么，因为它迟早会变得擅长。\n\n整个 Claude Code 都在被不断地重写。现在的 Claude Code 中没有任何一部分是六个月前就存在的。你尝试一个想法，把它交给用户，与用户交流，从中学习，最终你可能会得到一个好主意，当然有时也会失败。\n\n主持人: 你在脑海中是否也会想，也许六个月后你就不需要那么明确地提示它了？比如模型本身就足够聪明，可以自己解决问题，甚至可能一个月后就不再需要计划模式 (Plan mode) 了？\n\nBoris Cherny: 天哪。\n\n主持人: 欢迎收看新一期的 Light Cone。今天我们请到了一位非常特别的嘉宾，Claude Code 的创作者兼工程师 Boris Cherny。Boris，感谢你的加入。\n\nBoris Cherny: 感谢邀请。\n\n主持人: 感谢你创造了这个让我连续三周熬夜的东西。我对 Claude Code 非常着迷，它感觉就像火箭助推器一样。这种感觉对人们来说已经持续了几个月了吗？我想大概是在 11 月底的时候，我的很多朋友都说感觉发生了一些变化。\n\nBoris Cherny: 我记得当我刚创造出 Claude Code 时，我还不知道自己是否真的做成了一件事，只是隐约有这种感觉。那段时间我经常失眠，连续三个月都是这样。那是在 2024 年 9 月。整整三个月我没有休过一天假，周末和每天晚上都在工作。我当时就觉得这东西可能会火，但我还不知道它是否实用，因为它当时还不会写代码。\n\n主持人: 如果回顾从那时到现在的过程，当下最让你感到惊讶的是什么？\n\nBoris Cherny: 令人难以置信的是我们仍然在使用终端。终端本应只是个起点，我没想到它会是终点。第二点是它居然是有用的，因为在刚开始的时候它并不怎么会写代码。甚至在我们 2 月份发布 GA 版本时，它大概也只能写我 10% 的代码。我并没有怎么用它来写代码，它表现得并不好，我大部分代码还是手写的。\n\n所以，它最终在我们预期它会变好的方面确实变好了，证明我们的押注得到了回报，尽管这在当时并不明显。在 Anthropic，我们的思考方式是我们不为今天的模型构建，而是为六个月后的模型构建。这也是我给基于 LLM 构建产品的创始人的建议：去思考目前模型还不擅长的领域，因为它迟早会变好，你只需要耐心等待。\n\n主持人: 回到最初，你还记得第一次产生这个想法是什么时候吗？能给我们讲讲那个过程吗？是一次灵光乍现，还是说你脑海中的最初版本是怎样的？\n\nBoris Cherny: 说来有趣，它的诞生非常偶然。我认为在 Anthropic，编程很长一段时间以来都是我们的发力点，我们认为通向安全 AGI 的路径就是通过编程。这一直是我们的核心理念。实现它的方式是教模型如何编码，然后教它如何使用工具，最后教它如何使用计算机。\n\n你可以从我加入 Anthropic 的第一个团队看出来，那个团队叫 Anthropic Labs 团队，它产出了三个产品：Claude Code、MCP 和桌面应用。你可以看出这些东西是如何交织在一起的。具体到我们构建的产品，并没有人要求我构建一个命令行界面 (CLI)。我们只是觉得可能是时候构建某种编程产品了，因为模型似乎已经准备好了，但还没有人真正构建出能够利用这种能力的产品。\n\n所以在当时，这种产品悬殊感更加疯狂，因为根本没有人做过这个。于是我开始自己捣鼓。我当时想，我们要构建一个编程产品，首先我必须了解如何使用 API，因为那时我还没有用过 Anthropic 的 API。因此我只写了一个简单的终端应用来调用 API。这是一个小型的聊天应用，因为当时大多数非程序员使用的 AI 应用就是聊天，所以我就做了个聊天的东西。\n\n后来模型支持了工具使用，我想尝试一下，因为我不太懂这个。我觉得工具使用听起来很酷，但可能不太实用，就想试试看。\n\n主持人: 你把它建在终端里，只是因为这是最快能跑起来的方式吗？\n\nBoris Cherny: 是的，因为我不需要去构建 UI。当时只有我一个人。\n\n主持人: 像 Cursor 和 Windsurf 这样的 IDE 当时正在兴起。你有没有面临压力，或者收到很多建议，说我们应该把它做成插件或者直接做一个全功能的 IDE？\n\nBoris Cherny: 没有任何压力，因为我们自己都不知道要建什么。团队当时处于探索模式，我们只是隐约知道想在编程领域做点什么，但并不清楚具体做什么，也没人有足够的信心。这是我的工作去弄清楚。\n\n所以我给了模型一个 bash 工具，这是我给它的第一个工具，因为那其实就是我们文档里的示例。示例是用 Python 写的，我把它移植到了 TypeScript，因为那是我的开发语言。我不知道模型用 bash 能做什么，所以我让它去读取一个文件，它用 cat 命令读取了。我觉得很酷。然后我问它你还能做什么？我问它我正在听什么音乐？它写了一段 Apple script 来控制我的 Mac 并在音乐播放器中查找音乐。\n\n这还是在 Sonnet 3.5 的时候。我本来不认为模型能做到这一点。那是我第一次感受到 AGI 的时刻，我当时觉得天哪，模型只是想使用工具，这就是它想要的全部。\n\n主持人: 这很吸引人。Claude Code 能够在如此优雅简单的终端形式下工作得这么好，其实有点反直觉。终端存在了很长时间，它似乎是一个很好的设计约束，催生了许多有趣的开发者体验。它感觉不像是在工作，对开发者来说只是觉得好玩，我不需要去考虑文件都在哪里，而这几乎是偶然发生的？\n\nBoris Cherny: 是的，是个意外。我记得终端开始在内部流行起来是在做完原型的两三天后，我开始把它给我的团队试用（吃狗粮）。因为如果你想出了一个看起来有用的主意，第一件事就是把它给别人，看他们怎么用。结果第二天我来到办公室，坐在我对面的工程师 Robert 的电脑上就已经运行了 Claude Code，他正在用它写代码。我当时很惊讶，问他在干嘛，这东西还没准备好，只是个原型。但在那种形式下它已经很有用了。\n\n我记得在 2024 年 11 月或 12 月我们进行外部发布评审时，Dario 问我，内部日活曲线几乎是垂直的，你是不是在强迫工程师使用它？我回答说没有，我只是发了个帖子，大家就互相安利了。所以这真的是个意外，我们从 CLI 开始因为它的成本最低，然后就一直保持了这种形式。\n\nClaudeMD 的演进与使用\n\n主持人: 在 2024 年那段时期，工程师们是怎么使用它的？他们已经用它来交付代码了吗？还是用不同的方式？\n\nBoris Cherny: 当时模型在编码方面还不太行。我个人用它来自动化 git 流程。我现在可能已经忘记了大部分 git 命令，因为 Claude Code 帮我做这事已经太久了。早期的用例包括自动化 bash 命令、操作 Kubernetes 等。也有人尝试用它写代码。我认为第一个真正的编码用例是写单元测试，因为风险较低。虽然模型表现还很差，但大家在慢慢摸索使用方法。\n\n我们观察到人们开始为自己编写 Markdown 文件，然后让模型读取该文件，这就是 ClaudeMD 的由来。对我来说，产品中最重要的原则就是潜在需求 (Latent demand)，这个产品的每一个部分都是基于终端最初的潜在需求构建的。\n\n还有一个有趣的原则是，你可以为模型构建脚手架 (Scaffolding) 以稍微提高性能，在特定领域可能提升 10% 到 20%。但随着下一个模型的发布，这种收益基本上会被抹平。所以你要么不断重建脚手架，要么直接等待下一个模型。ClaudeMD 和脚手架就是这种原则的体现。这就是我们一直保留 CLI 的原因，因为我们觉得无论构建什么 UI，六个月后都会随着模型的快速进步而变得不适用。\n\n主持人: 你刚才提到你的 ClaudeMD 其实很短，这几乎和人们的预期相反。为什么会这样？里面都写了什么？\n\nBoris Cherny: 我来之前看了一下。我的文件里只有两行。第一行是：每当提交 PR 时启用自动合并。这样只要有人通过了，代码就会合并，我就可以继续写代码，不需要来回拉扯。第二行是：每当提交 PR 时，把它发到我们内部的团队确认频道里，这样别人确认后我就可以继续推进。\n\n其他的指令都在我们代码库里的公共 ClaudeMD 中，整个团队每周都会去维护它。很多时候我看到别人的 PR 里犯了可以避免的错误，我就会直接在 PR 里 @Claude 说：把这个加到 ClaudeMD 里。我一周会这样做很多次。\n\n主持人: 你们会压缩 ClaudeMD 吗？我有时会收到提示说文件已经有几千个 token 了，遇到这种情况你们怎么处理？\n\nBoris Cherny: 我们的 ClaudeMD 其实很短，大概几千个 token。如果你遇到这种情况，我的建议是删掉你的 ClaudeMD 然后重新开始。很多人试图过度设计这个东西。实际上模型的能力在不断变化，你需要做的是用最少的内容让模型回到正轨。如果你删除了文件后模型做错了，你再一点点加回去。你会发现，随着模型的更新，你需要添加的东西越来越少。\n\n我自认为是一个比较普通的工程师，我不怎么用高级工具，比如我不用 Vim，我用 VS Code 因为它简单。\n\n主持人: 真的吗？我以为你在终端里构建了这个东西，你一定是个死忠的 Vim 用户。\n\nBoris Cherny: 团队里确实有这样的人。但这也是我很早就学到的一点：每个工程师使用开发工具的习惯都不同。没有一种工具适合所有人。我认为这也是 Claude Code 能做得这么好的原因之一，我把它看作是我自己会使用并且觉得合理的产品。要使用 Claude Code，你不需要懂 Vim、Tmux 或者 SSH，你只需要打开它，它就会引导你。\n\n主持人: 你如何决定终端输出的详细程度？有时候确实需要仔细检查，内部会对输出长短有争论吗？\n\nBoris Cherny: 我很喜欢详细输出。有时模型偏离了方向，我可以通过快速阅读发现它搞错了，然后按下 Esc 停止它，这通常能阻止一堆 Bug 的产生，这种情况往往发生在我没有正确使用计划模式的时候。\n\n这个详细程度我们经常调整。大概六个月前，我尝试在内部隐藏 bash 的输出，只提供摘要，我觉得那些冗长的命令没人在乎。结果给员工用了一天，大家都抗议说要看原始输出，因为在跑 Kubernetes 任务时这些信息很有用。\n\n最近我们隐藏了文件读取和搜索的细节，改成了摘要提示（比如读取了一个文件，搜索了一个模式）。这是我们六个月前无法上线的改动，因为当时模型还不成熟，经常读错文件，需要用户去 Debug。但现在模型在正确的轨道上运行得很好，工具使用也很熟练，摘要反而更好。\n\n我们在内部测试了一个月，但在 GitHub 上发布后用户不喜欢，他们想要看细节。这是很好的反馈，所以我们加了一个 verbose 模式，用户可以在配置里开启。虽然还有人不喜欢，但这很棒，因为我最喜欢听取反馈并不断迭代，直到做出人们真正想要的东西。\n\n主持人: 我现在真的很享受修复 Bug。只要有好的日志，让模型去检查具体的对象，它就能搜日志、找出问题，甚至可以通过隧道直接查看生产数据库。这太疯狂了。Bug 修复快要变成单纯的复制 Markdown 了，很快可能就是纯粹的 MCP。这就像是一个自动修复 Bug、自动生成测试的创业工厂。\n\nBoris Cherny: 是的，这很有趣。Dan Chipper 经常谈论这个观点：每当模型犯错时，试着把它放进 ClaudeMD 或技能库里，让它变得可复用。但我经常在这一点上感到挣扎。大家都在说智能体能做这个做那个，但实际上它们的能力随着每一次模型更新都在变。有时团队新来的人比我更会用 Claude Code，这让我不断感到惊讶。\n\n比如有一次我们试图调试一个内存泄漏问题，我做了堆转储，在 DevTools 里查看，翻阅代码，试图找出问题。结果团队里的另一位工程师直接问 Claude Code 能不能运行并分析一下。Claude Code 自己写了个小工具来分析堆转储，然后比我更快地找到了泄漏点。我的思维有时还停留在六个月前，这需要我不断去重新适应。\n\n新的工程范式与招聘\n\n主持人: 对技术创始人来说，如何才能更好地适应最新模型的发布？听起来刚毕业的、没有太多固有思维的人，可能比经验丰富的工程师更适应。专家们如何能变得更好？\n\nBoris Cherny: 我认为是保持初学者心态和谦逊。作为工程师，我们习惯了拥有非常强烈的观点，资深工程师通常因此受到奖励。在以前的大公司，雇佣架构师时看重的是丰富的经验和强烈的观点。但实际上，随着模型变得越来越好，很多过去的经验都不再适用了，观点也应该随之改变。我认为现在最重要的技能是具备科学思维，能够从第一性原理出发思考问题。\n\n主持人: 现在招聘团队成员时，你如何筛选具备这种特质的人？\n\nBoris Cherny: 我有时会问一个问题：举一个你犯错的例子。这是一个很好的问题，甚至不是编码问题。你可以看出人们是否能在事后认识到错误，是否愿意承担责任，以及是否从中吸取了教训。很多资深人士，除了部分创始人类型的人以外，往往不愿意承担错误的责任。对我个人而言，我可能有一半的时间是错的，我的很多想法很糟糕，你必须去尝试。和用户交流，学习，最终可能会找到好主意。这种技能过去对创始人很重要，现在对每个工程师都很重要。\n\n主持人: 你会根据候选人与智能体协作的 Claude Code 记录来决定是否录用他们吗？我们正在尝试这个。\n\nBoris Cherny: 我认为这会起作用。你可以从中看出一个人的思考方式：他们是否看日志？智能体偏离轨道时他们能纠正吗？他们使用计划模式吗？在计划时是否考虑了测试？他们是否具备系统思维？这些都能从记录中反映出来。你可以想象一个雷达图来评估某人的 Claude Code 技能水平。\n\n主持人: 这些技能会是什么？\n\nBoris Cherny: 我认为包括系统思维、测试习惯、设计和产品感知，也许还有自动化能力。我在 ClaudeMD 里最喜欢的一条指令是：对于每一个计划，判断它是过度设计、设计不足还是设计完美，并说明原因。\n\n我们在观察团队中最高效的工程师时发现，情况非常两极分化。一端是极端专家，比如他们比任何人都懂开发工具或 JavaScript 运行时系统；另一端是超级通才，他们跨越产品和工程、产品和设计等领域。我非常喜欢那些会做一些“奇怪”事情的人。以前这可能是一个危险信号，但现在，比如我们团队的一个工程师 Daisy，她刚加入不久就提交了一个 PR 给 Claude Code 加新功能。她没有直接写功能，而是先提交了一个 PR 给 Claude Code 提供一个工具来测试任意工具是否有效，然后让 Claude 自己去写那个测试工具。\n\n这种打破常规的思维非常有趣，因为现在还没多少人理解这一点。我们使用 SDK 自动化了几乎所有的开发环节：代码审查、安全审查、标记问题、发布到生产环境等。外部人员也开始逐渐弄清楚如何使用 LLM 进行这种新的自动化，这是一种新技能。\n\n多智能体系统与 Claude Teams\n\n主持人: 我最近在辅导创始人时发现一个有趣的现象：有远见的创始人脑海里有一个完整的产品设想，通过 Claude Code 他们能发挥出 50 倍的效率。而为他们工作的工程师因为脑海里没有那个完整的产品蓝图，可能只能发挥出 5 倍的效率。你听到过类似的故事吗？\n\nBoris Cherny: 我们刚刚推出了 Claude Teams 团队功能，这就是一种解决方式，当然你自己搭一套也很容易。\n\n主持人: Claude Teams 的愿景是什么？仅仅是协作吗？\n\nBoris Cherny: 这是人们正在探索的智能体拓扑结构这一全新领域。其中一个子理念是互不相关的上下文窗口。即多个智能体拥有全新的上下文窗口，没有被彼此或之前的上下文污染。如果你在问题上投入更多的上下文，这就像是一种测试时计算 (Test time compute)，可以获得更强的能力。如果搭配正确的拓扑结构，智能体之间以正确的方式沟通，它们就能构建更大的项目。\n\nTeams 是一种尝试，后续还会有更多。第一个成功的重大例子是我们的插件功能，它完全是由一个智能体集群在一个周末建成的。运行了几天，几乎没有人工干预。\n\n主持人: 你们是怎么设置的？是给出一个期望结果的说明文档，然后让它自己弄清楚细节去运行吗？\n\nBoris Cherny: 团队里的一个工程师给了 Claude 一个需求文档，让它使用 Asana 面板。然后 Claude 就在 Asana 上创建了一堆任务，并生成了一堆智能体。主 Claude 给它们下达指令，它们自己就搞定了。\n\n主持人: 独立智能体在没有全局文档上下文的情况下也能完成？\n\nBoris Cherny: 是的。今天大多数的智能体实际上是由主 Claude 在代码中递归调用的子智能体。我们管它叫 Mama Claude。\n\n主持人: 我的 Claude 建议我多这样做来调试 Bug。并行启动多个子智能体，有的看日志，有的看代码路径。这似乎是解决棘手 Bug 的必然趋势。\n\nBoris Cherny: 我也经常这样做。如果任务看起来很难，我会根据难度调整它使用的子智能体数量，如果是非常难的研究任务，我可能会说使用 3 个、5 个甚至 10 个子智能体并行研究。\n\n主持人: 那为什么不把这个写进 ClaudeMD 文件里？\n\nBoris Cherny: 这要视情况而定。ClaudeMD 是个快捷方式，如果你发现自己反复做某件事，就把它放进去，否则直接提示模型就行。\n\n计划模式的未来\n\n主持人: 刚才提到六个月后可能就不需要这么明确的提示了，计划模式会不会很快就不需要了？\n\nBoris Cherny: 天哪，我认为计划模式的寿命可能是有限的。\n\n主持人: 这对大家来说是个阿尔法信息。没有计划模式的世界会是什么样？你只要在提示词层面描述一下，它就能一次性完成吗？\n\nBoris Cherny: 我们已经开始尝试这个了，因为现在 Claude Code 可以自行进入计划模式。实际上计划模式没有什么大秘密，它只是在提示词中加了一句话：请不要写代码。你其实可以自己直接说这句话。\n\n主持人: 听起来 Claude Code 的很多功能开发都非常符合 YC 的理念：与用户交谈，然后去实现它。而不是先有一个宏大的计划。\n\nBoris Cherny: 是的，完全如此。比如计划模式，我们看到用户会让 Claude 构思一个想法并做计划，但先不要写代码。这有不同版本，有时是讨论想法，有时是写复杂的规格说明。我是在一个周日晚上 10 点，看了看 GitHub 的 Issue 和内部反馈，然后花了 30 分钟写出来的，当晚就发布了。\n\n随着模型能力的提升，以前需要让 Claude 制定计划，然后在执行时还要一直盯着以防它跑偏。现在有了 Opus 4.5（大约是从 4.6 开始变得非常好），只要计划是好的，它就会保持在正轨上，几乎每次都能准确地完成任务。所以以前你需要在计划前后都盯着它，现在只需要在计划之前盯着。也许下一步你根本不需要盯着了，只要给个提示，它自己就能搞定。\n\n主持人: 下一步就是 Claude 直接与你的用户交谈。\n\nBoris Cherny: 有趣的是，我们现在就在做这个。我们的模型在内部会互相交谈，也会经常在 Slack 上和用户交谈。我的模型偶尔还会发推特。\n\n主持人: 不是吧。它会在推特上发什么？\n\nBoris Cherny: 有时候只是回复别人，因为它喜欢用浏览器。一个常见的模式是，我让模型构建一些东西，它查看代码库，看到某个工程师修改过代码，然后它就在 Slack 上给那个工程师发消息询问细节，得到回复后再继续工作。\n\n为终端进行设计\n\n主持人: 你对终端被挖掘出这么大潜力感到惊讶。在这个充满多智能体集群的世界里，你觉得终端还能走多远？需要一个新的 UI 吗？\n\nBoris Cherny: 如果你一年前问我，我会说终端还有三个月的寿命，然后我们就会转向下一个东西。你可以看到我们在尝试不同的形式：Web 端、桌面应用、移动端、Slack、GitHub，以及 VS Code 和 JetBrains 的插件。我之前对 CLI 的消亡预测错了，所以我可能不适合做预测。\n\n主持人: 终端实际上是用 React 写的，这可能很多人不知道。\n\nBoris Cherny: 刚开始做的时候，我有过前端工程的经验，我也算是个混合型人才（设计、用户研究、写代码都会）。我们要为终端构建东西，但我 Vim 用得很烂，怎么为像我这样的人在终端里做个好用的工具呢？愉悦感非常重要。就像 YC 强调的：做人们喜欢的东西。\n\n为终端设计真的很难。你只有比如 80x100 的字符网格，256 种颜色，单一字号，没有鼠标交互。其实终端是可以启用鼠标交互的。\n\n主持人: 哦，Claude Code 里怎么做到？\n\nBoris Cherny: 我们没有在 Claude Code 里做，因为我们做过几次原型，感觉很糟糕，这涉及滚动虚拟化等很麻烦的权衡，因为终端没有 DOM。\n\n主持人: 感觉就像以前的 BBS 游戏一样。\n\nBoris Cherny: 哈哈，这是极高的赞誉！没人写过关于构建现代终端应用 UX 的文章，以前的老终端应用看起来太笨重复杂。所以我们必须重新发明很多东西。比如那个终端加载的动画 Spinner，我们大概迭代了 50 到 100 次，80% 都没上线。试一下感觉不好就换下一个。借助 Claude Code，我们可以在几小时内做 20 个原型并挑选出最好的，这在过去可能需要两周。这种快速迭代让我们能做出令人愉悦的产品。\n\n苦涩的教训与给开发者的建议\n\n主持人: 你对开发工具领域的创业者有什么建议？应该优先考虑工程师体验，还是考虑智能体会怎么想？\n\nBoris Cherny: 我的建议是，思考模型想做什么，并找出如何让它变得更简单的方法。当模型想要使用工具与世界互动时，不要把它关在一个盒子里限制它的 API 交互，而是要看它试图做什么，并为它提供技术和产品上的解决方案，就像你为普通用户解决潜在需求一样。\n\n关于模型的建议有两个：第一，不要为今天的模型构建，要为六个月后的模型构建。如果不这样，等你找到了当前产品 PMF 时，别人已经利用新模型超越你了。第二，在我们的办公区墙上挂着 Rich Sutton 的《苦涩的教训》(The Bitter Lesson)：更通用的模型总是会击败更具体的模型。简单来说就是：永远不要对立于模型的发展下注。每次我们在决定是花工程时间做脚手架来提升一点点性能，还是等下个模型自带该能力时，都要权衡这一点。\n\n主持人: 你们多久重写一次 Claude Code 的代码库？\n\nBoris Cherny: 整个 Claude Code 一直在被重写。我们每隔几周就会下线一些工具，同时添加新工具。现在的代码库里几乎没有六个月前的代码了，大概 80% 都是近几个月写的。代码的保质期缩短到几个月，这是另一个阿尔法。\n\n主持人: Steve Yegge 写了篇博客说，Anthropic 的工程师目前的平均生产力是 Google 巅峰时期工程师的 1000 倍，这数据太疯狂了。\n\nBoris Cherny: 在我们内部，不仅是技术人员每天都在用 Claude Code，甚至一半的销售团队、整个设计团队和财务团队都在用（他们更倾向于使用有虚拟机的 Co-work）。我们统计过，去年团队规模翻倍，但人均提交的 PR 数量增长了约 70%。自 Claude Code 发布以来，Anthropic 工程师的生产力增长了 150%。我以前在 Meta 负责整个公司的代码质量，那时想要提升 2% 的生产力都需要几百人干一整年。现在这种 100% 以上的增长真的是前所未闻的。\n\n加入 Anthropic 与 AI 安全\n\n主持人: 作为建设者你本可以去任何地方，是什么驱使你加入 Anthropic 的？\n\nBoris Cherny: 当时我住在日本乡下，每天早上看 Hacker News 发现全是 AI 相关的消息。我开始试用早期产品，比如 Claude 2，那感觉真是让我叹为观止。作为一名开发者，我从未有过这种感觉。\n\n后来我和 Anthropic 的朋友交流，遇到了创始人之一 Ben Mann。他和我见面后，立刻打动了我。有两点原因：首先，它像一个研究实验室一样运作，产品本身很小，最重要的是构建一个安全的模型，这与我多年做产品的经历不同，让我产生了共鸣。其次，团队使命感极强。我是个重度科幻迷，深知这东西失控会有多糟。今年将发生疯狂的变革，最坏的情况下后果不堪设想。在 Anthropic 的餐厅或走廊里，大家都在谈论 AI 安全，这是每个人最关心的事情，我想待在这样的地方。\n\n主持人: 如果顺着指数级曲线预测，接下来会发生什么？\n\nBoris Cherny: Dario 曾预测 Anthropic 90% 的代码将由 Claude 编写，这是真的。对我个人而言，自从 Opus 4.5 之后，这个比例是 100%。我卸载了 IDE，不再手写一行代码。在整个 Anthropic，这个比例大概在 70% 到 90% 之间。我们认为编程对所有人来说都将基本被解决。未来“软件工程师”这个头衔可能会消失，或者只作为一种遗留称呼，大家更像是构建者或产品经理。团队里的每个人都在写代码，不仅是工程师，产品经理、设计师、财务人员都在写。\n\n这是下限。上限则更令人敬畏，比如达到 ASL4 级别（模型实现递归自我改进）。如果有灾难性的滥用（例如设计生物病毒），后果不堪设想，这也是我们正在极力防止发生的事情。\n\nClaude 在 Co-work 中的应用与总结\n\n主持人: Claude Code 和 Co-work 之间是什么关系？是分支吗？还是让 Claude Code 重新写了一个面向非技术人员的版本？\n\nBoris Cherny: 还是那句话：潜在需求。我们看到推特上有人用它来监控番茄、恢复损坏硬盘里的婚礼照片、处理财务。在公司内部，非技术人员为了用它，不惜费力去安装终端。所以我们决定在桌面应用中做一个简单的 GUI 包装器，底层依然是完全相同的 Claude Code 智能体。\n\nFelix 和团队（他曾是 Electron 的早期贡献者）大概花了 10 天就建好了，100% 是由 Claude Code 编写的。针对非技术用户，我们在虚拟机中运行代码，增加了删除保护、权限提示等安全护栏，一切都很自然。\n\n主持人: Boris，非常感谢你创造了这个让我失眠的东西，它让我重新找回了创造者和创始人的感觉。这三周令人振奋。谢谢你的加入。\n\nBoris Cherny: 感谢邀请，多给我们提 Bug 吧。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/video/f884575#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/videos?sourceid=d8821f",
+      "text": "Y Combinator",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=PQU9o_5rHC4",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Boris Cherny, creator of Claude Code, discusses the tool's evolution at Anthropic, emphasizing a 'build for the future' philosophy, multi-agent orchestration...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Claude Code, Anthropic, AI Coding, Multi-agent Systems, Developer Productivity",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Boris Cherny: How We Built Claude Code | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Boris Cherny, creator of Claude Code, discusses the tool's evolution at Anthropic, emphasizing a 'build for the future' philosophy, multi-agent orchestration...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/video/f884575",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/video/f884575/opengraph-image?64edf17c38836472",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-17 15:00:42",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Y Combinator",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Claude Code",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Anthropic",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI Coding",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Multi-agent Systems",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Developer Productivity",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Boris Cherny: How We Built Claude Code | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Boris Cherny, creator of Claude Code, discusses the tool's evolution at Anthropic, emphasizing a 'build for the future' philosophy, multi-agent orchestration...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/video/f884575/twitter-image?8c88273a7af11d7e",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Boris Cherny: How We Built Claude Code | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/en/video/f884575"
+}

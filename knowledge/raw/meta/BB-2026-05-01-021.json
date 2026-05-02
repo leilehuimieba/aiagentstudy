@@ -1,0 +1,127 @@
+﻿{
+  "metas": [
+    {
+      "content": "2026 年春天，AI 编程工具从代码补全跃迁到智能体执行：Claude Code 走 CLI + 多形态融合，Cursor 押注 IDE 原生 + BYO 模型，Codex CLI 是 OpenAI 的开源终端 agent。本横评从 8 个维度比对三家，给出 4 类典型角色的选型建议与避坑要点。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "topic-code-assistant, ai-coding, harness-engineering, ai-agent",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "AI 编程工具横评 2026 春：Claude Code、Cursor、Codex CLI 怎么选 | BestB...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "2026 年春天，AI 编程工具从代码补全跃迁到智能体执行：Claude Code 走 CLI + 多形态融合，Cursor 押注 IDE 原生 + BYO 模型，Codex CLI 是 OpenAI 的开源终端 agent。本横评从 8 个维度比对三家，给出 4 类典型角色的选型建议与避坑要点。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/explore/topics/ai-coding-tools-2026-spring",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/explore/topics/ai-coding-tools-2026-spring/opengraph-image?93bc0944c4cadf0e",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-29T05:22:26Z",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "2026-04-29T05:58:51Z",
+      "name": null,
+      "property": "article:modified_time"
+    },
+    {
+      "content": "topic-code-assistant",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ai-coding",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "harness-engineering",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ai-agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "AI 编程工具横评 2026 春：Claude Code、Cursor、Codex CLI 怎么选 | BestB...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "2026 年春天，AI 编程工具从代码补全跃迁到智能体执行：Claude Code 走 CLI + 多形态融合，Cursor 押注 IDE 原生 + BYO 模型，Codex CLI 是 OpenAI 的开源终端 agent。本横评从 8 个维度比对三家，给出 4 类典型角色的选型建议与避坑要点。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://image.jido.dev/20260421222430_hqdefault.jpg",
+      "name": "twitter:image",
+      "property": null
+    }
+  ],
+  "text": "跳转到主要内容\nBestBlogs\n搜索\nCtrl+K\n切换语言\n切换主题\nCH\n对比\n2026-04-29\nAI 编程工具横评 2026 春：Claude Code、Cursor、Codex CLI 怎么选\n\n2026 年春天，AI 编程工具从代码补全跃迁到智能体执行：Claude Code 走 CLI + 多形态融合，Cursor 押注 IDE 原生 + BYO 模型，Codex CLI 是 OpenAI 的开源终端 agent。本横评从 8 个维度比对三家，给出 4 类典型角色的选型建议与避坑要点。\n\n分享：\nTwitter\n微信\n复制链接\n对比维度\n维度\tClaude Code\nAnthropic 的 CLI-first 智能体，跨终端、IDE、桌面、Web 同源\n\tCursor\nAnysphere 的 IDE 原生 AI 编辑器，自研 Composer + 任意主流模型\n\tCodex CLI\nOpenAI 的开源终端编程智能体，可与 Codex 云端 agent 协同\n\n形态与切入点\t\n终端 CLI + VS Code + JetBrains + Desktop + Web + iOS（同一引擎，CLAUDE.md 与 MCP 跨形态共享）\n\t\nVS Code 衍生 IDE 主导，3.x 起补齐 Cursor CLI、Slack 与 GitHub PR Review，桌面形态仍以编辑器为中心\n\t\n本地 Codex CLI（Apache-2.0 开源）+ chatgpt.com/codex 云端 agent，IDE 通过 VS Code/Cursor/Windsurf 插件接入\n\n模型基础\t\nClaude Opus 4.7 主驱动，SWE-bench Verified 87.6%；可切到 Sonnet 4.5 控成本；通过 Bedrock / Foundry / Vertex 多云路由\n\t\n自研 Composer 2 + Tab autocomplete 模型；Cursor 3.x 默认开放 OpenAI / Anthropic / Gemini / xAI 全部前沿模型供切换\n\t\n默认 GPT-5.5（Terminal-Bench 2.0 82.7% / SWE-bench Pro 58.6%）+ Codex 专用变体；不支持替换非 OpenAI 模型\n\n上下文与会话管理\t\nOpus 4.7 默认 1M token，可压缩对话、自动写 CLAUDE.md auto memory；新版 Routines 可调度跨日任务\n\t\n全代码库语义索引 + Composer Hot Context；Multitask + Worktrees 支持并行多分支开发\n\t\nGPT-5.4 起原生 1M 上下文；Cloud Codex 在沙箱仓库内执行多小时任务，CLI 支持本地 ~/.codex 状态\n\n多智能体与自动化\t\nsub-agents、Skills、Hooks、Routines、Agent SDK 一体化；GitHub Actions / GitLab CI / Slack / Chrome 内建编排\n\t\nComposer 自动模式 + Cloud Agents；3.x 引入 Multitask 并行；高级编排能力较 Claude Code 略浅\n\t\nCloud Codex 可并行多任务、Codex Spark 研究预览；CLI 接 GitHub Action，可自动写 PR\n\nMCP 与生态协同\t\nAnthropic 原创 MCP，原生 server/client + Hooks + Skills；Slack、Chrome、GitHub Action 官方一等公民\n\t\nCursor 3.x 已上线 MCP/Skills/Hooks，VS Code 插件生态可复用；与 Slack、GitHub PR、Bugbot 形成闭环\n\t\nCLI 已宣布 MCP 支持，但官方文档零散；IDE 集成依赖 VS Code/Cursor/Windsurf 第三方插件\n\n企业治理与安全\t\nBedrock / Foundry / Vertex 三朵云直连企业账号；auto mode 配合可审计的安全策略；YC × Anthropic、SpaceX 之外多家 Fortune 500 已落地\n\t\n云端 agent 可在自有基础设施运行；SAML/OIDC SSO、AI 代码审计 API、SCIM 座位管理；SpaceX 战略合作扩展计算栈\n\t\nChatGPT Enterprise / Edu 内含；CLI 以 sandbox + 批准模式控制写权限；私有化部署主要靠 API 直连\n\n学习曲线与开发者体验\t\n需要熟悉终端与 CLAUDE.md 协议；但 Anthropic 把 Onboarding 文档、Agent SDK、Skills 写得最完整，Garry Tan 等创始人公开分享配置\n\t\nIDE 原生体验，Tab 自动补全 + 自然语言 prompt 即可起步；多数开发者数小时就能产出 PR\n\t\nCLI 上手简单（npm install），但 Cloud / IDE / API 三条路径文档分散；高阶组合需要拼接\n\n定价与可用性\t\nPro $17–20/月含 Claude Code；Max ≥$100/月给 5–20 倍额度；Team Standard $20–25/座，Team Premium $100–125/座；Enterprise 含 SSO/审计\n\n价格出处：claude.com/pricing 2026-04\n\n\t\nHobby Free；Pro $20/月，Pro+ $60/月（3 倍额度），Ultra $200/月（20 倍额度）；Teams $40/座，Bugbot $40/座加购；Enterprise 自定义\n\n价格出处：cursor.com/pricing 2026-04\n\n\t\nCodex CLI 开源免费；C",
+  "title": "AI 编程工具横评 2026 春：Claude Code、Cursor、Codex CLI 怎么选 | BestB...",
+  "url": "https://www.bestblogs.dev/explore/topics/ai-coding-tools-2026-spring"
+}

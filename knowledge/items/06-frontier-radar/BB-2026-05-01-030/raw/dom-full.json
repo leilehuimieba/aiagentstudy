@@ -1,0 +1,539 @@
+{
+  "content": "为什么值得关注\n\nDeepSeek-V4 值得做成 Topic，不是因为它只带来一个“百万上下文”的标题，而是因为它把过去一年 DeepSeek 的几条技术线合到了一起：从 V3.2-Exp 的稀疏注意力，到 V3.2 的工具调用思考，再到 V4 的 Pro / Flash 双版本、1M 上下文默认化、Agentic Coding 优化和开源权重发布。对开发者来说，这意味着长文档、代码仓库、复杂工具调用轨迹不再只是“能塞进上下文”，还要以可承受的推理成本跑起来。12\n\n事件时间线\n2025-09-29\n\nDeepSeek-V3.2-Exp 发布，引入稀疏注意力机制，提升训练与推理效率，并同步降价。\n\n2025-12-01\n\nDeepSeek-V3.2 正式版发布，强化 Agent 能力，并首次把“思考”融入工具调用。\n\n2026-03-20\n\nDeepLearning.AI 报道 DeepSeek 的华为布局，说明 DeepSeek 生态叙事已从模型延伸到硬件适配。\n\n2026-04-24\n\nDeepSeek-V4 预览版正式发布，包含 V4-Pro 与 V4-Flash，官网、App、API、开源权重和技术报告同步上线。\n\n2026-04-25\n\n量子位基于技术报告补充解读 V4 的 mHC、混合注意力、Muon 优化器、KV cache 压缩和国产芯片适配等细节。\n\n核心变化与亮点\n\nDeepSeek-V4 这次最容易被传播的标签是“1M 上下文”，但如果只把它理解为窗口长度增加，会错过真正重要的变化。V4 更像是 DeepSeek 把过去几代模型的效率路线做了一次集中发布：V3 系列已经证明 MoE、MLA、FP8 与低成本训练可以把开源模型推到前沿附近；V3.2-Exp 开始把稀疏注意力和 API 降价放在一起讲；V3.2 又把 Agent 场景里的工具调用思考单独拉出来强化。到了 V4，DeepSeek 把这些线索合并成 Pro / Flash 两个版本：Pro 负责拉高推理、知识和 Agentic Coding 的上限，Flash 负责把相近能力压到更低成本、更高吞吐的 API 服务里。这个产品拆分很关键，因为它说明 DeepSeek 不再只是在“发一个最强模型”，而是在给真实工作流提供不同的性价比档位。134\n\n官方模型规格表：Pro / Flash 在参数、激活参数、预训练数据、上下文长度、开源与 API 服务上的差异。\n\n1. 1M 上下文的重点不是“能装下”，而是“跑得起”\n\n百万上下文过去常常是模型展示能力的一部分，但 V4 试图把它变成默认服务能力。官方明确说 1M 上下文将成为 DeepSeek 官方服务标配，这背后真正要解决的是 KV cache、注意力计算和显存成本，而不是简单扩大窗口。量子位对技术报告的解读提到，V4 通过混合注意力、压缩和稀疏选择等机制，把长上下文场景中的缓存与计算压力降下来；这与行业里围绕 KV cache 压缩、注意力变体、长序列稀疏化的研究方向一致。换句话说，V4 的亮点不只是“可以读更长”，而是把长文档分析、代码仓库理解、批量资料审阅、长链路工具调用放到更接近生产可用的成本区间。对于开发者和企业用户，这比单次 benchmark 更有现实意义。2242526\n\n量子位技术报告解读图：CSA 先压缩 KV，再通过 lightning indexer 做 top-k 选择，解释了 1M 上下文降成本的技术路径。\n\n这张结构图说明 V4 不是简单把窗口拉长，而是把注意力计算拆成“压缩、索引、选择、再计算”的流水线；下面的官方效率图则展示了这种设计最终落到计算量和 KV cache 上的结果。\n\n官方长上下文效率图：对比 V3.2、V4-Pro 与 V4-Flash 在百万 token 序列下的单 token 计算量和累计 KV cache 大小。\n\n2. Pro / Flash 双版本说明模型发布正在产品化\n\nV4-Pro 和 V4-Flash 的分工很像一条成熟 API 产品线的开始：Pro 面向复杂推理、世界知识、代码和 Agent 任务；Flash 面向高频调用、低延迟、低成本和更广覆盖。此前很多模型发布会把所有能力放到一个模型名下，开发者只能自己在价格、速度和能力之间做取舍。V4 的双版本策略把这个取舍前置到官方产品设计里：复杂任务用 Pro，常规交互和成本敏感场景用 Flash。它也解释了为什么官方同时兼容 OpenAI 与 Anthropic API 格式，这降低了迁移门槛，让团队可以在现有调用层里切入 DeepSeek，而不是重写整套集成。1\n\n官方 API 表：展示 deepseek-v4-pro 与 deepseek-v4-flash 的输入、输出价格和 1M 上下文配置。\n\n3. Agent 能力不是口号，而是从 V3.2 延续过来的路线\n\nV4 的 Agent 叙事不是凭空出现的。V3.2 已经把“思考融入工具调用”作为重要更新，官方 X 动态也把 API、工具使用思维和技术报告连接在一起。V4 在这个基础上进一步面向 Agentic Coding、长文档生成、复杂自动化工作流优化。这里的核心变化是：模型不只是回答问题，而是要在长上下文里保持状态、调用工具、阅读代码、改写文件、验证结果。新智元对 V3.2 Agentic 能力的解读、Cursor Composer 等 agentic coding 产品案例，都说明行业关注点正在从“模型是否聪明”转向“模型能否在完整工作流里稳定交付”。V4 的意义正是在这个方向上继续加码。4891036\n\n4. 技术报告里的关键词：mHC、混合注意力、Muon 与硬件适配\n\n量子位对 V4 技术报告的解读把几个关键词拉了出来：mHC 架构、混合注意力机制、Muon 优化器、KV cache 压缩以及国产芯片适配。它们共同指向一个主题：DeepSeek 仍然在围绕“更高效地训练和服务超大模型”做系统工程，而不是只堆参数。mHC 试图改善超大规模模型训练中的稳定性，混合注意力服务于长上下文效率，Muon 代表优化器路线的探索，硬件适配则对应中国模型公司绕不开的算力约束。结合 DeepSeek-V3 的降本论文、华为昇腾与 DeepSeek 的推理性能报道，以及 UE8M0 FP8 引发的国产芯片讨论，V4 可以看作 DeepSeek 继续把算法、训练、推理和硬件协同放在同一张工程图里。213141517\n\n量子位技术报告解读图：从普通残差连接、Hyper-Connections 到 manifold-constrained Hyper-Connections 的结构变化。\n\n5. Benchmark 需要看，也需要谨慎看\n\n官方 benchmark 图能说明 V4 的目标很明确：在知识、推理、长上下文和 Agentic Capabilities 之间取得平衡，而不是只刷单一榜单。V4-Pro 在 Codeforces、Apex Shortlist、Terminal Bench、Toolathlon 等项目上的表现被放在 Claude、GPT、Gemini、Kimi、GLM 旁边比较，这对读者理解它的定位很有帮助。但 Topic 页面应把这些数字标注为“官方评测”而不是独立结论。真正有价值的后续验证，是看它在真实代码仓库、企业知识库、长文档审阅、多工具 Agent 中能否稳定复现成本和效果优势。12\n\n官方 benchmark 图：覆盖 Knowledge & Reasoning 与 Agentic Capabilities，但解读时应保留“官方评测，需独立复测”的边界。\n\n6. 开源竞争进入“持续追赶”阶段\n\nV4 不是孤立事件。它发布前后，Kimi、Qwen、Gemma、GLM、Seed-OSS 等开放或开源模型都在快速迭代：有的强调 1M 或 512K 长上下文，有的强调编程与 Agent，有的强调端侧、多模态或硬件生态。LangChain 对开源模型跨越临界点的判断、ByteByteGo 对开源 LLM 架构的梳理、Andrew Ng 对中国开放权重模型和半导体优势的评价，都说明 V4 应该被放进更大的竞争框架中理解。它不是“开源模型第一次追上闭源”，也不是“闭源模型已经失去优势”，而是一个更务实的信号：开放模型正在用更快的发布节奏、更低成本和更贴近工程的能力，持续压缩闭源前沿的领先窗口。202329303132\n\n量子位报道中的社区评价截图：讨论 DeepSeek、Kimi、Qwen 在受限算力下通过架构创新提高训练和推理效率。\n\n7. 阅读这次发布时应保持的边界\n\n这个 Topic 不应把所有官方 benchmark 都直接写成确定结论。更稳妥的读法是把信息分成三层：第一层是 official_fact，例如 V4 预览版发布、Pro / Flash 双版本、1M 上下文、API 与开源权重同步上线；第二层是 official_claim，例如官方 benchmark、Agentic Coding 反馈、与闭源模型的对比；第三层是 reported_analysis 与 community_evaluation，例如技术报告解读、社区对效率路线的评价、真实用户对成本和稳定性的观察。第三层可以帮助理解方向，但不能替代独立复测。对读者来说，最值得跟进的不是一句“是否超越某模型”，而是 V4 会不会在真实代码仓库、企业知识库、长文档审阅和多工具 Agent 中带来可复现的成本与效果改善。\n\n各方观点\nofficial\n官方把 V4 定位为全新系列预览版，强调 Pro / Flash 双版本、1M 上下文、Agent 能力和开源权重。\n— DeepSeek\ntechnical-analysis\n量子位的解读把重点放在 mHC、混合注意力、Muon 优化器和 KV cache 成本下降，提醒读者不要只看参数规模。\n— 量子位\narchitecture-context\n开源 LLM 的竞争正在围绕 MoE、注意力机制和后训练展开，V4 应放在这个架构演进背景中理解。\n— ByteByteGo / Ahead of AI\necosystem\n吴恩达此前强调中国在开放权重模型与半导体上的优势，V4 的发布进一步强化了这个观察维度。\n— Andrew Ng\ncompetitive-landscape\nV4 发布前后，Kimi、Qwen、Gemma 等开放模型也在快速更新，说明“开源追赶闭源”已经是持续竞争，而不是单点事件。\n— LangChain / Kimi / Qwen / Google DeepMind\n编辑后记\n\n这版 Topic 的重点不是替 DeepSeek 的 benchmark 背书，而是帮助读者判断 V4 为什么重要、它从哪里来、它与开源模型竞争和 Agent 工作流有什么关系。页面发布前建议人工校对官方指标表述，尤其是与 GPT、Gemini、Claude 的对比，只保留“官方声称 / 第三方解读 / 需独立评测”的清晰边界。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/explore/topics/deepseek-v4-preview-release#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "内容广场",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "每日早报",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "精选周刊",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "内容来源",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/95d5e07c",
+      "text": "DeepSeek-V4 预览版：迈入百万上下文普惠时代\nDeepSeek\n· 2026-04-24\n\n官方发布原文，作为事实基准。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1d95c0b8",
+      "text": "DeepSeek V4 报告太详尽了！484 天换代之路全公开\nhenry\n· 2026-04-25\n\n技术报告解读，补充架构、优化器、缓存和硬件细节。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/ad609b64",
+      "text": "DeepSeek-V3.2-Exp 发布，训练推理提效，API 同步降价\nDeepSeek\n· 2025-09-29\n\n理解 V4 之前的 V3.2-Exp 稀疏注意力与降价铺垫。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/8e9e40fc",
+      "text": "DeepSeek V3.2 正式版：强化 Agent 能力，融入思考推理\nDeepSeek\n· 2025-12-01\n\nV3.2 官方发布，解释工具调用思考的前置路线。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/8b791a1e",
+      "text": "DeepSeek-V3.2 系列开源，性能直接对标 Gemini-3.0-Pro\n衡宇\n· 2025-12-01\n\nV3.2 第三方报道，提供对标 Gemini 的脉络。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/28cc488d",
+      "text": "V3→R1→V3.2｜一文看懂 DeepSeek 技术演进\n赛博禅心\n· 2025-12-06\n\nDeepSeek 从 V3 到 R1 再到 V3.2 的技术演进梳理。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/2154bfa1",
+      "text": "DeepSeek 新模型被硅谷夸疯了！用二维视觉压缩一维文字，单 GPU 能跑，\"谷歌核心机密被开源\"\n一水\n· 2025-10-20\n\nDeepSeek-OCR 的社区反应和技术解读。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/43fd95",
+      "text": "华为+DeepSeek，推理性能创新高！技术报告也公布出来了\n十三\n· 2025-05-19\n\n华为昇腾与 DeepSeek 推理性能合作背景。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/bfe01c",
+      "text": "开源 Qwen 凌晨暴击闭源 Claude！刷新 AI 编程 SOTA，支持 1M 上下文\n闻乐\n· 2025-07-23\n\nQwen3-Coder 的 1M 上下文参照。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e5afa665",
+      "text": "Open Models have crossed a threshold\nLangChain Accounts\n· 2026-04-02\n\nLangChain 对开源模型跨越临界点的判断。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/95d5e07c",
+      "text": "DeepSeek-V4 预览版：迈入百万上下文普惠时代",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1d95c0b8",
+      "text": "DeepSeek V4 报告太详尽了！484 天换代之路全公开",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/ad609b64",
+      "text": "DeepSeek-V3.2-Exp 发布，训练推理提效，API 同步降价",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/8e9e40fc",
+      "text": "DeepSeek V3.2 正式版：强化 Agent 能力，融入思考推理",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/2bc0d468",
+      "text": "DeepSeek V3.2 正式版：强化 Agent 能力，融入思考推理",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/8b791a1e",
+      "text": "DeepSeek-V3.2 系列开源，性能直接对标 Gemini-3.0-Pro",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/90b743df",
+      "text": "DeepSeek-V3.2｜技术报告解读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/1995452658149405148",
+      "text": "DeepSeek Open Sources V3.2 and V3.2-Speciale Models with Tech Report",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/1995452654659805334",
+      "text": "DeepSeek Announces API Updates for V3.2 and V3.2-Speciale, Adds Thinking in Tool-Use",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/28cc488d",
+      "text": "V3→R1→V3.2｜一文看懂 DeepSeek 技术演进",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c432600a",
+      "text": "DeepSeek V3.2 爆火，Agentic 性能暴涨 40%解密",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/04d94504",
+      "text": "全新开源的 DeepSeek-OCR，可能是最近最惊喜的模型。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/2154bfa1",
+      "text": "DeepSeek 新模型被硅谷夸疯了！用二维视觉压缩一维文字，单 GPU 能跑，\"谷歌核心机密被开源\"",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/7d3aa7",
+      "text": "DeepSeek 一句话让国产芯片集体暴涨！背后的 UE8M0 FP8 到底是个啥",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/43fd95",
+      "text": "华为+DeepSeek，推理性能创新高！技术报告也公布出来了",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/cf41733c",
+      "text": "Attacks On Data Centers， Qwen3.5 In All Sizes， DeepSeek’s Huawei Play， and more...",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/920266",
+      "text": "如何重现 DeepSeek 推理性能突破",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1c1a59",
+      "text": "梁文锋署名 DeepSeek 新论文：公开 V3 大模型降本方法",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/25d067",
+      "text": "DeepSeek 复盘：128 天后，为什么用户流量一直在下跌？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/1950941108000964654",
+      "text": "Andrew Ng: China's AI Momentum Poses Path to Surpass U.S.",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/b054a44",
+      "text": "AI Christmas Special: 2025 Year in Review + 2026 Predictions!",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/64421ce5",
+      "text": "栏目对话和访谈：Sebastian Raschka 和 Nathan Lambert 在 Lex Fridman 播客深度解读 AI 现状：中美竞争、模型对比、规模定律、AGI 时间线。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/acd4481",
+      "text": "Vol.86 同一代技术，两个系统，181 页 PPT 全记录 AI 行业的 2025",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e94961a3",
+      "text": "The Architecture Behind Open-Source LLMs",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/16388334",
+      "text": "A Visual Guide to Attention Variants in Modern LLMs",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/50669f01",
+      "text": "谷歌新论文把内存股价干崩了！KV cache 压缩 6 倍，网友：硅谷成真了 profile-avatar",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/f6da23d9",
+      "text": "你不知道的大模型训练：原理、路径与新实践 - Tw93",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/bfe01c",
+      "text": "开源 Qwen 凌晨暴击闭源 Claude！刷新 AI 编程 SOTA，支持 1M 上下文",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/789504",
+      "text": "字节突然开源 Seed-OSS，512K 上下文主流 4 倍长度，推理能力刷纪录",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e5afa665",
+      "text": "Open Models have crossed a threshold",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/ef138a82",
+      "text": "Kimi K2.6 发布并开源，全面精进代码和 Agent 集群能力",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/8c23d079",
+      "text": "Qwen3.6-27B：无需 MoE 路由，旗舰级编程能力",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/7983caa",
+      "text": "Gemma， DeepMind's Family of Open Models — Omar Sanseviero， Google DeepMind",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2044768734234243427",
+      "text": "⚡ Meet Qwen3.6-35B-A3B：Now Open-Source！🚀🚀 A spa",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2039736628659269901",
+      "text": "Excited to launch Gemma 4: the best open models in",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/4927608",
+      "text": "Building Cursor Composer – Lee Robinson， Cursor",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "DeepSeek 发布 V4 预览版，推出 Pro 与 Flash 两个版本，标配 1M 上下文，并同步开放 API、开源权重和技术报告。它的关键意义不只是又一次模型升级，而是把长上下文效率、Agent 能力、开源生态和国产硬件适配放进同一个发布事件里。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "llm, model-releases, open-source, ai-agent, performance-optimization, attention-mechanisms, mixture-of-experts, ai-coding, domain-ai",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "DeepSeek-V4 预览版发布 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "DeepSeek 发布 V4 预览版，推出 Pro 与 Flash 两个版本，标配 1M 上下文，并同步开放 API、开源权重和技术报告。它的关键意义不只是又一次模型升级，而是把长上下文效率、Agent 能力、开源生态和国产硬件适配放进同一个发布事件里。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/explore/topics/deepseek-v4-preview-release",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/explore/topics/deepseek-v4-preview-release/opengraph-image?93bc0944c4cadf0e",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-26T01:12:43Z",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "2026-04-29T04:56:08Z",
+      "name": null,
+      "property": "article:modified_time"
+    },
+    {
+      "content": "llm",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "model-releases",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "open-source",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ai-agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "performance-optimization",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "attention-mechanisms",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "mixture-of-experts",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ai-coding",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "domain-ai",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "DeepSeek-V4 预览版发布 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "DeepSeek 发布 V4 预览版，推出 Pro 与 Flash 两个版本，标配 1M 上下文，并同步开放 API、开源权重和技术报告。它的关键意义不只是又一次模型升级，而是把长上下文效率、Agent 能力、开源生态和国产硬件适配放进同一个发布事件里。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://image.jido.dev/20251127045457_a9475855",
+      "name": "twitter:image",
+      "property": null
+    }
+  ],
+  "title": "DeepSeek-V4 预览版发布 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/explore/topics/deepseek-v4-preview-release"
+}

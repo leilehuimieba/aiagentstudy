@@ -1,0 +1,354 @@
+{
+  "content": "A while back, I wrote down 21 lessons from my time at Google. The response caught me off guard because of which ones stuck. It wasn’t tech-specific advice. It was the stuff about people, decisions, and the messy reality of building things together.\n\nThat made me realize I’d left a lot on the table. The first list skewed toward individual craft - how to write better code, how to think about your career. But some of the hardest lessons I’ve learned aren’t about how you work. They’re about how teams work: how decisions actually get made, where coordination breaks down, what separates the groups that ship from the ones that spin.\n\nThese lessons pick up where the first left off. They’re less about being a better individual engineer and more about the systems around the engineering.\n\n1. The best engineers pick the right problems to solve.\n\nEvery yes is an implicit no to something else.\n\nI’ve watched talented engineers burn out because they said yes to everything - every bug, every feature request, every “quick favor.” Their calendar filled up with other people’s priorities, and their own roadmap became a graveyard of half-finished ideas.\n\nSometimes it’s just because they truly do care so much about the product. Protect your bandwidth from “nice to have” the same way you protect production from outages. The skill is doing the right things and letting the wrong things stay undone.\n\nThe engineers who create disproportionate impact aren’t necessarily faster or smarter. They’re more ruthless about what deserves their attention. They’ve learned that the opportunity cost of working on the wrong thing is working on the wrong thing.\n\n2. If you can’t say what decision you’re asking for, you’re not ready for the meeting.\n\nMost meetings fail not because they’re unnecessary, but because they’re disguised journaling. I’ve sat through hundreds of hours where smart people talked around a problem without ever naming what they needed. The meeting ends with vibes and no owner.\n\nI learned to start with the ask: approve, choose, unblock, or inform.\n\nJust those four words changed how I prepare for every meeting. If I can’t pick one, I’m not ready to take anyone’s time. And when I’m on the receiving end, I’ve started asking “what decision do you need from me?” within the first two minutes. It sounds blunt, but people are usually relieved - they often didn’t realize they hadn’t defined it themselves.\n\nThe hidden cost of vague meetings isn’t just the hour you lose. It’s the week of drift that follows while everyone waits for clarity that never came.\n\n3. “We should” is not a plan. “On Tuesday, I will” is a plan.\n\nThe difference between motion and progress is specificity.\n\nTeams drown in intentions. I’ve watched roadmaps fill up with “we should improve the onboarding flow” and “we should reduce latency” and “we should document the API.” Months later, the same items are still there, gathering dust and guilt. You might think that’s a solved problem now that we have agentic engineering, but not quite.\n\nConvert talk into the smallest next action someone can actually do, then put a name and a date on it. Not “we should improve onboarding” but “On Tuesday, Sarah will run three user sessions and document the top friction points.”\n\nThis is about respecting that humans need traction to make progress. Vague intentions create anxiety. Specific commitments create momentum. The plan doesn’t have to be perfect - it just has to be concrete enough that someone can actually start.\n\n4. Slow code is sometimes a symptom. Slow decisions are always a problem.\n\nSpeed is about removing the friction that makes smart people hesitate. “Bias towards action” when you can.\n\nWhen a project drags, the instinct is to blame velocity: people aren’t working hard enough, the codebase is messy, there aren’t enough engineers. But in my experience, slow code is often a symptom. Slow decisions are the disease.\n\nIf decisions routinely take weeks or months, look deeper. Missing context means people can’t evaluate tradeoffs. Unclear ownership means everyone’s waiting for someone else to decide. Fear of accountability means people hedge instead of commit.\n\nThe fastest engineering team I ever worked with wasn’t the one with the best programmers. It was the one where decisions happened in hours instead of weeks because the authority was clear, the context was shared, and being wrong wasn’t a career risk.\n\n5. Reliability is a product feature. Treat it like one.\n\nUsers don’t praise reliability but they do notice its absence.\n\nThis creates a dangerous dynamic: reliability work is invisible until it fails, which means it’s perpetually under-resourced compared to shiny new features.\n\nError budgets are one way to make the tradeoff explicit. If your service has an SLO of 99.9% uptime, you have a “budget” of 0.1% downtime to spend on innovation. Burn through it, and you focus on reliability until you’ve earned it back. This is a framework for having honest conversations about risk.\n\nThe teams that maintain both velocity and reliability don’t do it through heroics. They do it by treating reliability as a first-class product feature with its own roadmap, its own metrics, and its own advocates.\n\nYou wouldn’t ship a feature without product review. Don’t ship a system without some kind of reliability discussion.\n\n6. You can’t “communication” your way out of a bad interface between teams.\n\nTeam interaction modes exist for a reason: collaboration (working closely together), service (clear API and SLAs), or facilitation (one team helping another build capability).\n\nMost cross-team pain isn’t about effort or good intentions. It’s about unclear boundaries and messy contracts. I’ve watched teams “improve communication” by adding more meetings, more Slack channels, more syncs - and it doesn’t make things better.\n\nThe problem isn’t that people aren’t talking. It’s that the interface between teams is undefined. Who owns what? What’s the contract? What can team A depend on team B for, and vice versa?\n\nChoose deliberately, and you’ll need fewer meetings to make things work. Try to paper over a bad interface with communication, and you’ll burn out your most collaborative people while the underlying dysfunction remains.\n\n7. The best escalation comes with a proposal.\n\n“Here’s the problem” is half the job. I used to think my role was to identify issues and bring them to leadership. That’s necessary but insufficient.\n\n“Here are two options, the tradeoffs, and what I recommend” is how you get unblocked and earn trust. It shows you’ve done the thinking. It gives decision-makers something super specific to react to instead of an open-ended problem to solve.\n\nIt makes their job easier, which makes them more likely to give you what you need.\n\nThe difference between “I need help” and “I need you to choose between A and B, and here’s why I lean toward B” is the difference between being a problem-raiser and being a problem-solver.\n\nBoth identify issues. Only one earns increasing trust and autonomy.\n\n8. Avoid hero culture. Build systems that don’t require heroes.\n\nThe hero is burned out, undocumented, and a single point of failure.\n\nIf one person saving the day is a recurring pattern, that’s a failure mode rather than a badge of honor. I’ve seen teams celebrate their heroes while ignoring the dysfunction that made heroism necessary.\n\nWhen they leave - and they always leave eventually - the team discovers that no one else really knows how things work. The celebration of heroism masks a systemic problem: the path for “normal humans on a normal day” doesn’t work.\n\nMake the normal path the default. Document the system. Spread the knowledge. Design for the average Tuesday, not the exceptional crisis. Heroes should be unnecessary, and if they’re necessary, you should be working to make them unnecessary.\n\n9. Make observability part of the feature.\n\nA feature without telemetry is a liability in disguise.\n\nIf you ship a feature without knowing how it behaves in production, you shipped uncertainty.\n\nI’ve watched teams celebrate launches only to discover weeks later that their feature was silently failing for 20% of users. They had no logs, no metrics, no dashboards but a gap where understanding should be. This can cause all kinds of pain if you want to fix it, including unshipping just to properly A/B test with observability in place.\n\nLogs, traces, dashboards, and alerts aren’t “ops work.” They’re how you learn. They’re how you know whether the thing you built actually works for real people doing real things in real conditions.\n\nThe best engineers I know treat observability as part of the definition of done. Not “I wrote the code” but “I wrote the code and I can see it working.”\n\n10. Small PRs are kindness. Especially if the PR is AI generated.\n\nSmall changes are easier to review, easier to reason about, and easier to revert.\n\nI used to write large pull requests. I liked the idea of a complete feature being reviewable at once. I was optimizing for my convenience at the expense of my reviewers’ sanity. Smaller PRs are often better for everyone.\n\nThey ship faster because they don’t sit in a review queue while someone tries to find an hour to understand your thousand-line diff. If you want teammates to trust your pace, make your work reviewable.\n\nThe hidden benefit is that small PRs force you to think in increments. Instead of one monolithic change, you build up capability piece by piece. Each piece gets feedback. Each piece can be rolled back independently. It’s slower per-PR but faster to actual production.\n\n11. When you add a team, you add edges, not just nodes.\n\nCoordination cost grows faster than headcount.\n\nThis is why “just throw more people at the problem” often fails, and why adding heads late in a project can make it later. Every new person adds communication overhead with everyone they need to coordinate with. The graph gets denser, not just larger.\n\nI’ve seen managers genuinely puzzled when a team doubled in size but output barely changed. The answer is always the same: the new edges ate the new capacity. More people meant more alignment meetings, more context-sharing, more waiting for decisions that now required more stakeholders.\n\nThe solution isn’t to stop hiring. It’s to be intentional about reducing edges. Clear ownership. Autonomous teams with minimal dependencies. Interfaces that let people work in parallel instead of in lockstep. The best organizations aren’t the ones with the most people - they’re the ones with the most leverage per person.\n\n12. The migration is never just a migration\n\nEvery migration is a negotiation between the system you have, the system you want, and the people who didn’t ask for either.\n\nI’ve seen migrations estimated at one quarter stretch to years. Not because the technical work was wrong, but because nobody accounted for the human work: convincing teams to prioritize your migration over their roadmap, supporting the long tail of edge cases nobody knew existed, and maintaining two systems in parallel while the old one refuses to die.\n\nThe technical plan is the easy part. The hard part is designing for coexistence. You will run old and new simultaneously for longer than you think. You will discover that the “legacy” system encodes decisions nobody documented and workflows nobody remembers designing but everyone depends on. You will need a adoption strategy that doesn’t require every team to drop what they’re doing at once.\n\nThe migrations that actually finish share three traits: a sponsor who stays engaged past the kickoff, a team that really owns the migration instead of treating it as a side quest, and a clear deprecation date that people believe is real. Without all three, you get a migration that’s perpetually “almost done” - which is worse than not starting, because now you’re paying the cost of two systems indefinitely.\n\nIf you’re not willing to fund the finish, don’t start the migration.\n\n13. AI makes drafts cheap. Taste becomes expensive.\n\nEveryone can generate code now. The barrier to producing code, content, designs - it’s largely collapsing. AI will write you ten versions of anything in the time it used to take to write one.\n\nThe differentiator is choosing: what to build, what to delete, what to simplify, what not to ship, and what “good” looks like. Taste - the ability to distinguish between options and pick the right one - becomes the scarce resource.\n\nUse AI to explore options fast, then apply judgment ruthlessly. The engineers who thrive in this environment won’t be the ones who generate the most. They’ll be the ones who curate the best.\n\nProduction is cheap. Editing is expensive. Selection is everything.\n\n14. Trust is a latency optimization for teams.\n\nThis is the highest-leverage thing you can build. Not a system but credibility.\n\nWhen people trust you, they don’t need five meetings to approve a decision. They assume competence, good intent, and follow-through. Decisions that would take weeks in a low-trust environment take hours in a high-trust one.\n\nEvery time you deliver on a promise, every time you’re honest about a mistake, every time you make someone else’s life easier, you’re depositing into an account that will pay dividends for years.\n\nI’ve watched engineers with modest technical skills accomplish enormous things because everyone trusted them. I’ve watched brilliant engineers accomplish little because nobody would take their calls.\n\nThe code doesn’t matter if you can’t get anyone to ship it with you.\n\nA final thought\n\nThe first time around, I said these lessons come down to staying curious, staying humble, and remembering that the work is about people. I still believe that.\n\nBut if this second list has a through-line, it’s something more specific: the work is about making it easier for normal people to do extraordinary things on a normal day. A career in engineering gives you plenty of time to learn these things the hard way and I’ve certainly learned a lot during my time at Google so far.\n\n \n\nI hope a few of them save you a scar or two. And if they do, share what you’ve figured out with someone earlier in the journey.\n\nThat’s how the good lessons travel.\n\n ",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/fa58a61b#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=88b8b1",
+      "text": "Elevate",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://addyo.substack.com/p/14-more-lessons-from-14-years-at",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://addyosmani.com/blog/21-lessons/",
+      "text": "21 lessons from my time at Google",
+      "title": ""
+    },
+    {
+      "href": "https://addyosmani.com/blog/agentic-engineering/",
+      "text": "agentic engineering",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/b79e265b?entry=related_article",
+      "text": "智能体技术栈的押注",
+      "title": "本文认为，当前生产级 AI 智能体的发展受到有缺陷的底层技术栈的阻碍，并概述了团队为构建可靠、企业级的智能体系统必须做出的四项关键架构押注——智能体身份、通用上下文、持久化执行和平台采用。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/72e3cf5?entry=related_article",
+      "text": "Claude Code 负责人：当编程问题被解决后会发生什么 | Boris Cherny",
+      "title": "Anthropic 的 Claude Code 负责人 Boris Cherny 讨论了向 100% AI 生成软件开发的转型，以及像 Co-work 这样的自主智能体的兴起。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文",
+      "title": "Anthropic 宣布推出 Claude Opus 4.6，具备更强的规划能力、优化的智能体表现，并开启了 1M token 上下文窗口的 Beta 测试。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/7bbc3383?entry=related_article",
+      "text": "IDE 的终结？",
+      "title": "本文探讨了软件开发从 IDE 中逐行手动编辑向“控制平面”模型的转变，后者专注于编排和监督自主 AI 智能体。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/048d846e?entry=related_article",
+      "text": "长时间运行的智能体",
+      "title": "本文为从业者提供了关于长时间运行 AI 智能体的全面分析，详细阐述了核心工程挑战（有限上下文、无持久状态、无法自我验证）以及 Anthropic、Cursor 和 Google 所采用的趋同架构模式（大脑/双手/会话分离、规划者/执行者/评判者角色）。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/1369401?entry=related_article",
+      "text": "关于代码智能体、AutoResearch 与 AI 循环时代的安德烈·卡帕西",
+      "title": "安德烈·卡帕西探讨从手动编程到智能体编排的范式转变、AI 研究的自动化，以及对软件工程和教育的深远影响。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+      "text": "Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次",
+      "title": "软件界传奇人物 Martin Fowler 和 Kent Beck 探讨了 AI 如何重新定义软件工程，并强调 TDD 和模块化等核心实践对于人机协作依然至关重要。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/504ce725?entry=related_article",
+      "text": "长周期应用开发中的 Harness 设计",
+      "title": "本文探讨了 Anthropic 用于长周期自主编程的多智能体 Harness 设计（规划者、生成者、评估者），详细介绍了如何克服上下文焦虑和自我评估偏差，从而构建复杂的全栈应用。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/8f3d453?entry=related_article",
+      "text": "与 Boris Cherny 共同构建 Claude Code",
+      "title": "Claude Code 的创建者 Boris Cherny 探讨了他 100% 由 AI 驱动的工作流、Anthropic 独特的工程文化，以及为什么在 AI 时代软件工程师正从“抄写员”转变为“作者”。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/f884575?entry=related_article",
+      "text": "Boris Cherny：我们如何打造 Claude Code",
+      "title": "Claude Code 创始人 Boris Cherny 探讨了该工具在 Anthropic 的演进过程，强调了“为未来构建”的理念、多智能体编排，以及 AI 原生工程中 150% 的激进生产力提升。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Addy Osmani 分享了他在 Google 任职期间总结的 14 条高级工程领导力经验，重点关注团队系统、决策速度以及 AI 时代人类判断价值的转变。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "工程领导力, 软件工程, 团队动态, 决策制定, 工程管理",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "在 Google 14 年学到的另外 14 条经验 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Addy Osmani 分享了他在 Google 任职期间总结的 14 条高级工程领导力经验，重点关注团队系统、决策速度以及 AI 时代人类判断价值的转变。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/fa58a61b",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/fa58a61b/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-12 15:30:32",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Addy Osmani",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "工程领导力",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "软件工程",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "团队动态",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "决策制定",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "工程管理",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "在 Google 14 年学到的另外 14 条经验 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Addy Osmani 分享了他在 Google 任职期间总结的 14 条高级工程领导力经验，重点关注团队系统、决策速度以及 AI 时代人类判断价值的转变。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/fa58a61b/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "在 Google 14 年学到的另外 14 条经验 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/fa58a61b"
+}

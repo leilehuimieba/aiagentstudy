@@ -1,0 +1,112 @@
+﻿{
+  "content": "VIDEO\n93\n⭐ 精选内容\nHow to Build the Future: Demis Hassabis\n\nGoogle DeepMind CEO Demis Hassabis 解释为何他将 2030 年设为 AGI 时间线，哪些架构缺口仍未解决，蒸馏如何重塑模型部署，以及为何今天创业的创始人必须将 AGI 到来纳入路线图。\n\n⭐ 推荐理由诺贝尔奖得主、DeepMind CEO Demis Hassabis 亲述 AGI 剩余技术缺口：持续学习（灾难性遗忘）、长期推理和高效记忆系统仍未解决。他将锯齿状智能定义为当前智能体最核心的失效模式，并解释蒸馏将使前沿级智能在边缘设备普及。需要将 AGI 时间线纳入产品路线图的创始人和研究者必读，提供了目前最权威的第一手判断。\n\n展开\nY Combinator\n关注\n·\n04-29\n·\n7 个章节\n·\n查看原文 →\n构建未来：Demis Hassabis 谈 AGI 路径、架构缺口与深科技创业\n章节导览\n7 个章节\nCH.1\nIntroduction and AGI Outlook\n00:00\nCH.2\nAGI Architecture Gaps\n02:01\nCH.3\nDistillation and Model Efficiency\n05:28\nCH.4\nAgent Evolution and Reasoning\n08:00\nCH.5\nOpen Source and Multimodality\n11:48\nCH.6\nAI in Science and Biology\n14:01\nCH.7\nAdvice for Deep Tech Startups\n15:51\n📝 实时字幕\n跟随播放\n全部字幕\n00:00\n\nContinual learning, long-term reasoning, some aspects of memory—these are still unsolved. I think all of these are going to be required for AGI.\n\n00:07\n\nDepending on what your AGI timeline is—mine's like 2030 or something like this—then if you start off on a deep tech journey today, you have to just consider AGI appearing in the middle of that journey.\n\n00:13\n\nIt's not bad necessarily, but you have to take that into account. You have to have an active system that can actively solve problems for you to get to AGI.\n\n00:21\n\nSo agents are that path, and I think we're just getting going.\n\n00:39\n\nDemis Hassabis has had one of the most unusual careers in tech. He was a chess prodigy as a kid, then designed his first hit video game, Theme Park, at 17.\n\n00:48\n\nHe then went back to school, got a PhD in cognitive neuroscience, published foundational work on how memory and imagination work in the brain.\n\n00:56\n\nAnd then in 2010 co-founded DeepMind with one mission: solve intelligence. And I think they've done it.\n\n01:03\n\nSince then, his lab has gone on to do things most people thought were decades away. AlphaGo beat a world champion at Go.\n\n01:13\n\nAlphaFold cracked protein structure prediction, a 50-year grand challenge in biology, and they gave it away for free to every scientist on Earth.\n\n01:20\n\nThat work won him the Nobel Prize in Chemistry last year. Today Demis leads Google DeepMind, where he's building Gemini and pushing toward artificial general intelligence.\n\n01:27\n\nPlease welcome Demis.\n\n01:53\n\nWhen you look at the current paradigm—large scale pre-training, RLHF, chain of thought—how much of the final architecture for AGI do you think we already have and what's fundamentally missing?\n\n02:01\n\nI think the components that you just mentioned, I'm pretty sure will be part of the final architecture for AGI. I can't see a world in which we will realize in a couple of years this was a dead end.\n\n02:14\n\nBut there still might be one or two things missing on top of what we already know works. Continual learning, long-term reasoning, some aspects of memory—these are still unsolved.\n\n02:32\n\nIt might be that the existing techniques can just scale up to that with some innovation. I don't think it's more than one or two big ideas left that need to be cracked.\n\n02:51\n\nAt DeepMind, we work on both those things. Working with a bunch of agentic systems, the wildest thing to me is to what degree it's the same weights over and over.\n\n03:01\n\nThis idea of continual learning is interesting because right now we're sort of cobbling it together with duct tape. I studied how the hippocampus works and integrates new knowledge gracefully into the existing knowledge base.\n\n03:31\n\nOur very first Atari program, DQN, mastered Atari games by doing experience replay. We borrowed that from neuroscience and replayed successful trajectories many times.\n\n03:54\n\nEven though we're working on machines, not biological brains, and potentially you could have millions or tens of millions context window, there's still a cost to looking it up and finding the right thing relevant for the specific decision.\n\n04:13\n\nHumans have a few digits of working memory. We have million or 10 million context windows, but we're trying to store everything in that—things that are not important, things that are wrong—it's pretty brute force.\n\n04:51\n\nWe've worked on agents since the beginning. Atari work and AlphaGo were agent systems able to accomplish goals on their own, make active decisions, and make plans.\n\n05:28\n\nToday you need bigger models to be smarter, but we're also seeing distillation working where smaller models can be quite a bit faster. Our flash models are finding they're 95% as good as the frontier at one-tenth the price.\n\n06:01\n\nWe serve billions of users across Search, Maps, and YouTube. They have to be served fast and efficiently, which gives us an incentive to make flash and flashlight models extremely efficient.\n\n07:20\n\nSmall models allow for faster iteration and edge deployment for privacy and security reasons. Robots in your house will want efficient, powerful local models, perhaps orchestrated with bigger models in the cloud.\n\n08:00\n\nNot having continual learning is holding back agents from doing full tasks. They don't adapt well with the context. They need to be able to learn about the specific context you put them in.\n\n08:35\n\nIn reasoning, I think we're doing fairly simplistic things. There's scope for monitoring the chain of thought or interjecting midway. Sometimes systems get into loops of thinking.\n\n09:10\n\nYou get this \"jagged intelligence\" where it can solve gold medal IMO problems but make basic elementary math errors. There's something about introspection of its own thought process that's missing.\n\n10:01\n\nWe're only in the last couple of months starting to find the really valuable places for agents. It's moving from a toy demonstration to actually adding value to time and efficiency.\n\n10:28\n\nI haven't seen a kid making a hit game that sells 10 million copies yet using these tools. Something is still missing, maybe to do with the tools or the craft required.\n\n11:48\n\nWe're huge proponents of open source. AlphaFold was put out for free. We want to create world-leading models for their sizes, and Gemma has had 40 million downloads in two and a half weeks.\n\n12:41\n\nGemini was built multimodal from the start. We believe we'll gain from that in the long run for world model building, robotics, and digital assistants that need to understand the physical world.\n\n14:01\n\nIsomorphic Labs is trying to build out the drug discovery process beyond AlphaFold. We're about 10 years away from a full virtual cell simulation that is useful for experimental prediction.\n\n14:31\n\nData is an issue. If we could image a live cell at nanometer resolution without killing it, we could convert biology into a vision problem, which we know how to solve.\n\n15:00\n\nStep one was solve intelligence (AGI), step two was use it to solve everything else. I meant solve \"root node\" problems in science that unlock whole new branches of discovery.\n\n15:51\n\nFor a startup, I recommend intercepting where AI tech is going and combining it with another deep technology area like materials or medicine. This creates defensible value.\n\n16:48\n\nThe problems I look for involve massive combinatorial search spaces where brute force fails, a clear objective function to hill climb, and enough data or a simulator.\n\n17:32\n\nWe haven't seen genuine massive discovery from AI scientific reasoning yet. It's missing analogical reasoning and the ability to come up with interesting hypotheses, not just solve them.\n\n18:35\n\nIf you start a 10-year deep tech journey today, you must consider AGI appearing in the middle of it. Build something that will be useful when that world arrives.\n\n点击任意行跳转 · 悬停可向 AI 提问\n\n内容简介\nHow to Build the Future: Demis Hassabis\n\nGoogle DeepMind CEO Demis Hassabis recently joined Y Combinator to discuss the roadmap to Artificial General Intelligence (AGI), the evolution of AI agents, and how AI will fundamentally transform scientific discovery.\n\nThe Roadmap to AGI\n\nDemis Hassabis estimates that AGI could be achievable by roughly 2030. While current techniques like large-scale pre-training and RLHF (Reinforcement Learning from Human Feedback) are essential components, several 'big ideas' still need to be solved to reach true AGI:\n\nContinual Learning: Systems must learn to integrate new knowledge gracefully without forgetting previous training.\nLong-term Reasoning: Moving beyond simple chain-of-thought to more robust planning and introspection.\nMemory: Shifting from brute-force large context windows to more efficient, brain-inspired working memory.\nAgents and Model Efficiency\n\nHassabis emphasizes that the path to AGI is through agentic systems—AI that can make active decisions and plans to accomplish goals. Currently, these agents are held back by their inability to adapt to specific contexts.\n\nTo make these systems practical for billions of users, Google DeepMind focuses heavily on distillation. Smaller 'flash' models are now reaching 95% of the capability of frontier models at a fraction of the cost, making them ideal for edge deployment in devices like home robots where privacy and speed are paramount.\n\nSolving 'Root Node' Science\n\nThe core mission of DeepMind has always been: Solve intelligence, then use it to solve everything else. Hassabis views AI as a tool to unlock 'root node' problems in science.\n\nOne major focus is Isomorphic Labs, which aims to simulate a full 'virtual cell' within the next decade. By converting biological processes into a computational vision and reasoning problem, researchers could predict drug interactions and biological outcomes without exhaustive physical experimentation.\n\nAdvice for Founders\n\nFor entrepreneurs starting 'deep tech' journeys today, Hassabis offers a clear warning: Assume AGI will appear in the middle of your company's lifecycle.\n\nHe recommends building products that intercept the AI curve and applying AI to domains with massive combinatorial search spaces—like materials science or medicine—where brute force fails but AI reasoning can excel.\n\n00:00 / 00:00\n1x",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/video/b820e09#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/videos?sourceid=d8821f",
+      "text": "Y Combinator",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=JNyuX1zoOgU",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "title": "构建未来：Demis Hassabis 谈 AGI 路径、架构缺口与深科技创业 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/video/b820e09"
+}

@@ -1,0 +1,294 @@
+{
+  "content": "VIDEO\n80\nApril 2026 Recap\n\nAssemblyAI 的 4 月短视频回顾了 Universal 3 Pro streaming、Medical Mode、Voice Agent API、LLM Gateway 模型扩展、语言能力改进和 PII 脱敏更新，适合关注语音与 voice agent 产品的开发者快速了解。\n\nAssemblyAI\n关注\n·\n昨天\n·\n6 个章节\n·\n查看原文 →\nAssemblyAI 2026 年 4 月产品更新回顾\n章节导览\n6 个章节\nCH.1\nIntroduction\n00:00\nCH.2\nUniversal 3 Pro Streaming\n00:11\nCH.3\nMedical Mode Release\n00:53\nCH.4\nVoice Agent API\n01:54\nCH.5\nLLM Gateway Expansion\n02:37\nCH.6\nPII Reduction and Closing\n02:55\n📝 实时字幕\n跟随播放\n全部字幕\n00:00\n1\n\nhi everyone it's been a crazy couple of months here at Assembly and I figured I'd make a short update\n\n00:06\n1\n\nvideo for you to get you caught up to speed on everything that we've released in the last couple of\n\n00:11\n1\n\nmonths first up is Universal 3 Pro streaming universal 3 Pro streaming is our latest and greatest streaming model with\n\n00:20\n1\n\namazing accuracy especially on key entities like emails phone numbers and proper announce check this out my email address is\n\n00:31\n1\n\nmartin schwigger assemblyai.com my phone number is 9100-920\n\n00:40\n1\n\nmy credit card number is 4001501250135014\n\n00:47\n1\n\nand my CVV is 420\n\n00:53\n1\n\nand it gets even better if you're in the medical space because we just released medical mode for even better\n\n00:59\n1\n\nperformance on medical terminology without the need to find and configure your own key terms with one parameter you get\n\n01:46\n1\n\nthe best performance for medical scribes and notetakers this next launch was my favorite our voice agent API is finally\n\n01:54\n1\n\nhere it is the easiest way to build high quality voice agents with a simple websocket API where you send\n\n02:02\n1\n\nus audio and we send you audio back we handle everything it takes to build a great voice agent under\n\n02:08\n1\n\nthe hood like tool calling turn detection reconnection and so much more if you haven't already I really recommend that\n\n02:16\n1\n\nyou give our voice agent API a try it's really easy to get started and build something great with our\n\n02:23\n1\n\nAPI especially now that we've released our Docs MCP server and our Claude code skill the full instructions for installation\n\n02:30\n1\n\nin your development environment is in our docs so check it out to ensure that your agents are updated with\n\n02:37\n1\n\nthe latest information about Assembly AI next we released a bunch of new models on LLM Gateway including Opus 4.7\n\n02:46\n1\n\nKimmy 2.5 Quen 3 and GPT 5.5 we shipped a bunch of improvements to Universal 2 for Hebrew and Swedish\n\n02:55\n1\n\nand we have improvements coming for more languages very soon and we shipped new parameters for PII reduction that let\n\n03:02\n1\n\nyou retrieve both a redacted and unredacted text in one transcript request as always the best way to keep a\n\n03:10\n1\n\npulse on all of our launches is on our change log but that was all I had for this video\n\n03:15\n1\n\ni hope you found that helpful and I'll see you in the next one bye\n\n点击任意行跳转 · 悬停可向 AI 提问\n\n内容简介\nAssemblyAI April 2026 Product Recap\n\nAssemblyAI has announced a suite of significant updates and new model releases designed to enhance accuracy, vertical specialization, and developer ease-of-use.\n\nHigh-Accuracy Streaming and Medical Specialization\n\nThe headline release is Universal 3 Pro streaming, a new model specifically optimized for detecting complex entities like emails and phone numbers with high precision. For the healthcare sector, AssemblyAI introduced Medical Mode. This feature allows medical scribes and notetakers to capture specialized terminology accurately using just a single parameter, eliminating the manual configuration of key terms.\n\nBuilding Voice Agents\n\nThe new Voice Agent API simplifies the creation of real-time conversational AI. Operating via a websocket, the API manages the heavy lifting of voice interaction, including:\n\nTool calling\nTurn detection\nAutomatic reconnection\n\nDevelopers can also leverage the new Docs MCP server and Claude code skills to integrate these agents into their existing environments.\n\nLLM Gateway and Language Support\n\nThe LLM Gateway has expanded to include several cutting-edge models: Opus 4.7, Kimmy 2.5, Quen 3, and GPT 5.5. Additionally, language support for Hebrew and Swedish has been improved in the Universal 2 model, with more languages expected soon.\n\nEnhanced Data Privacy\n\nNew updates to PII (Personally Identifiable Information) reduction now allow developers to request both redacted and unredacted versions of a transcript in a single request, streamlining the workflow for applications that require sensitive data handling.\n\n00:00 / 00:00\n1x",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/video/7b97f9e#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/videos?sourceid=807c2150",
+      "text": "AssemblyAI",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=y5qYXJGmlZs",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "AssemblyAI 的 4 月短视频回顾了 Universal 3 Pro streaming、Medical Mode、Voice Agent API、LLM Gateway 模型扩展、语言能力改进和 PII 脱敏更新，适合关注语音与 voice agent 产品的开发者快速了解。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AssemblyAI, 语音 AI, Voice Agent API, 医疗转录, LLM Gateway",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "AssemblyAI 2026 年 4 月产品更新回顾 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "AssemblyAI 的 4 月短视频回顾了 Universal 3 Pro streaming、Medical Mode、Voice Agent API、LLM Gateway 模型扩展、语言能力改进和 PII 脱敏更新，适合关注语音与 voice agent 产品的开发者快速了解。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/video/7b97f9e",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/7b97f9e/opengraph-image?64edf17c38836472",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-30 17:36:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "AssemblyAI",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AssemblyAI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "语音 AI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Voice Agent API",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "医疗转录",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "LLM Gateway",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "AssemblyAI 2026 年 4 月产品更新回顾 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "AssemblyAI 的 4 月短视频回顾了 Universal 3 Pro streaming、Medical Mode、Voice Agent API、LLM Gateway 模型扩展、语言能力改进和 PII 脱敏更新，适合关注语音与 voice agent 产品的开发者快速了解。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/7b97f9e/twitter-image?8c88273a7af11d7e",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "AssemblyAI 2026 年 4 月产品更新回顾 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/video/7b97f9e"
+}

@@ -1,0 +1,344 @@
+{
+  "content": " Datawhale干货 \n\n作者：Boris Cherny，Claude Code创始人\n\n昨晚，Claude Code 创始人 Boris Cherny 在X上首次公开了他的个人Claude Code使用技巧。\n\n以下是 Boris 的原文，Datawhale团队翻译：\n\n我是 Boris，Claude Code 的创造者。不少人问起我是如何使用 Claude Code 的，那我就来展示一下我的设置吧。\n\n我的配置可能会让你大吃一惊，因为它极其朴素。Claude Code 能够完美地开箱即用，所以我个人并没有做太多的定制化修改。\n\n使用 Claude Code 并没有所谓的唯一正解：我们在构建它时就特意设计成这样，你可以按照自己喜欢的方式去使用、定制，甚至大肆改造它。事实上，Claude Code 团队里的每一位成员，用法也都截然不同。\n\n那么，开始吧。\n\nClaude Code 创始人的 13 个使用技巧\n\n1. 我会在终端里并行运行 5 个 Claude 实例。我把标签页按 1-5 编号，并利用系统通知功能来提醒我什么时候某个 Claude 需要人工输入。\n\n2. 我同时还会在网页端运行 5-10 个 Claude 会话，与本地的 Claude 并行协作。在终端写代码时，我经常用 & 将本地会话推送到网页端，或直接在 Chrome 里开启新会话，有时还会用 --teleport 命令在两者间反复横跳。每天早晨和工作中，我也会通过手机（Claude iOS 应用）开启几个会话，之后再回头查看进度。\n\n3. 我所有工作都用带有“思考过程（thinking）”的 Opus 4.5。 这是我用过最好的编程模型。虽然它比 Sonnet 更大、更慢，但因为它更听劝（需要引导的地方少）且更擅长使用工具，从结果来看，它几乎总是比用小模型效率更高。\n\n4. 我们团队共用一个 CLAUDE.md 文件。我们把它提交到 git 仓库中，全员每周都会多次更新。每当我们发现 Claude 做错了什么，就会记录进 CLAUDE.md，这样它下次就知道该怎么做了。其他团队也有各自维护的 CLAUDE.md，保持更新是每个团队的职责。\n\n5. 在代码审查期间，我经常在同事的 PR 上 @.claude， 要求将某些内容作为 PR 的一部分添加到 CLAUDE.md 中。我们使用了 Claude Code 的 Github Action（/install-github-action）来实现这一点。\n\n6. 大多数会话从“计划模式（Plan mode）”开始（双击 shift+tab）。如果目标是写一个 PR，我会先用计划模式，和 Claude 来回沟通直到我满意它的方案。接着，我切换到“自动接受修改模式”，Claude 通常就能一次性搞定。一份好的计划至关重要！\n\n7. 对于每天都要重复多次的“内循环”工作流，我都会使用斜杠命令（slash commands）。这省去了重复输入 Prompt 的麻烦，也让 Claude 自己能调用这些工作流。这些命令都提交在 git 里的 .claude/commands/ 目录下。\n\n例如：我和 Claude 每天会用几十次 /commit-push-pr 命令。它通过内联 bash 预先计算 git 状态等信息，让运行飞快，避免了与模型之间不必要的来回确认。\n\n8. 我经常使用几个“子智能体（subagents）”：code-simplifier 用于在完成后简化代码；verify-app 包含端到端测试 Claude Code 的详细指令。和斜杠命令类似，我认为子智能体是将大多数 PR 中最常见的流程自动化。\n\n9. 我们使用 PostToolUse 钩子来格式化 Claude 生成的代码。虽然 Claude 本身生成的代码格式就很不错，但这个钩子能搞定最后 10% 的细节，避免之后在 CI（持续集成）中报错。\n\n10. 我不使用 --dangerously-skip-permissions。相反，我用 /permissions 预先批准那些在我的环境中已知的安全 bash 命令。这些配置大多保存在 .claude/settings.json 中并全队共享。\n\n11. Claude Code 会帮我操作所有工具。它经常通过 MCP 服务器在 Slack 上搜索或发帖，使用 bq 命令行运行 BigQuery 查询来回答分析性问题，或是从 Sentry 抓取错误日志。Slack 的 MCP 配置定义在 .mcp.json 中并全队共享。\n\n12. 对于超长时间运行的任务，我有三种方案：\n\n(a) 提示 Claude 在完成后用后台智能体验证工作；\n\n(b) 使用智能体的 Stop 钩子更确定地执行验证；\n\n(c) 使用 ralph-wiggum 插件。 我还会配合使用 --permission-mode=dontAsk 或在沙箱里开启危险跳过模式，这样 Claude 就能在不被打断的情况下自主大展身手。\n\n13. 最后一个秘诀（可能也是让 Claude Code 产出高质量结果最重要的事）：给 Claude 一个验证工作的方法。只要有反馈闭环，最终结果的质量会提升 2-3 倍。\n\nClaude 会使用 Chrome 扩展程序测试我提交到网页端的每一个改动。它会打开浏览器，测试 UI，不断迭代直到代码运行正常且交互体验良好。\n\n不同领域的验证方式不同：可能只是运行一个 bash 命令、一套测试集，或是在模拟器里测试。务必投入精力把这个验证环节做扎实。\n\n希望这些对你们有帮助！",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/dd8025cf#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=4688eb",
+      "text": "Datawhale",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247717240&idx=1&sn=dfd0b8b79fb18e53d17d62ef149aa392",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6fedf503?entry=related_article",
+      "text": "2028 全球智能危机，谁来买单？",
+      "title": "本文是一篇以 2028 年视角撰写的宏观经济思想实验，探讨了 AI 成功取代白领劳动后，如何通过“幽灵 GDP”陷阱引发全球性消费萎缩与金融系统性危机。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/f0f5a2f7?entry=related_article",
+      "text": "万字综述 Harness 革命！",
+      "title": "本文基于 2026 年 AI 发展背景，系统阐述了 Agent Harness 作为驾驭智能体复杂性的战略基础设施，从软件工程演进史切入，分析了其核心组件、生态格局，并探讨了工程师在 Agent 时代的能力转型方向。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/0ffa0b1a?entry=related_article",
+      "text": "MiniMax M2.5 发布：1 美金/小时，真实世界工作王者",
+      "title": "MiniMax 发布 M2.5 模型，主打编程与办公场景的 SOTA 性能，并通过原生 Agent RL 框架实现极高性价比（1 美金/小时）。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/b47d18d3?entry=related_article",
+      "text": "用 OpenClaw 打造一支 24 小时无休的 AI 团队，实战来了！",
+      "title": "谷歌高级 AI 产品经理分享如何利用 OpenClaw 框架，通过人格化定义、文件系统协作及双层记忆机制，构建高效且低成本的 6 人 AI Agent 自动化团队。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/93462cd7?entry=related_article",
+      "text": "Harness 不是目的，知识才是护城河 —— 一个 AI 工程交付团队的知识沉淀实践",
+      "title": "本文基于 AI Team 工程交付实践，提出知识沉淀比工作流编排更重要的核心观点，并系统介绍了五层知识存储架构、三级成熟度体系及工作流如何服务于知识沉淀的完整方法论。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/077cbcec?entry=related_article",
+      "text": "OpenClaw + Claude Code 超强教程：一个人就能搭建完整的开发团队！",
+      "title": "本文详细介绍了一种基于 OpenClaw 编排层与多 AI 执行层的双层 Agent 架构，展示了独立开发者如何通过自动化工作流实现单日 94 次代码提交的极高生产力。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/352c89c1?entry=related_article",
+      "text": "如何写出好的 Skill ？拆解 skill-creator 背后的设计！",
+      "title": "本文通过拆解 Codex 的 skill-creator 设计，提出了一套以简洁为核心、三层架构为基础、自由度光谱为准则的 AI Skill 编写方法论。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/74aee00?entry=related_article",
+      "text": "Vol.89 AI 行业 2025 年度总结补充篇（V4 不等了版）---70 页 PPT solo",
+      "title": "全景式复盘 2025 年初中美 AI 行业动态，深度拆解资本支出、Agent 技术爆发及 AI 对软件行业的冲击。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/f6da23d9?entry=related_article",
+      "text": "你不知道的大模型训练：原理、路径与新实践",
+      "title": "本文系统梳理了 2026 年大模型训练的全链路架构，深入剖析了从预训练、数据工程、后训练到 Agent 训练与 Harness 优化的关键技术决策与工程实践。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/2902aba4?entry=related_article",
+      "text": "Agent/Skills/Teams 架构演进过程及技术选型之道",
+      "title": "本文系统梳理了 AI Agent 从单体到多智能体、再到 Skills 插件化及 Teams 并行协作的演进脉络，并结合 Google 与 Anthropic 的最新研究给出了科学的选型方法论。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Claude Code 创始人 Boris Cherny 公开分享了他使用 AI 编程助手 Claude Code 的 13 个高效实践技巧，涵盖多实例并行、模型选择、团队协作与自动化等。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AI开发, LLM, AI编程助手, 效率工具, 团队协作",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Claude Code 创始人首次公开：我的 13 个使用技巧！ | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Claude Code 创始人 Boris Cherny 公开分享了他使用 AI 编程助手 Claude Code 的 13 个高效实践技巧，涵盖多实例并行、模型选择、团队协作与自动化等。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/dd8025cf",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/dd8025cf/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-01-03 14:06:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Datawhale",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AI开发",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "LLM",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI编程助手",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "效率工具",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "团队协作",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Claude Code 创始人首次公开：我的 13 个使用技巧！ | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Claude Code 创始人 Boris Cherny 公开分享了他使用 AI 编程助手 Claude Code 的 13 个高效实践技巧，涵盖多实例并行、模型选择、团队协作与自动化等。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/dd8025cf/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Claude Code 创始人首次公开：我的 13 个使用技巧！ | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/dd8025cf"
+}

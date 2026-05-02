@@ -1,0 +1,559 @@
+{
+  "content": "1\n中门对狙！Claude Opus 4.6 和 GPT-5.3 Codex 同时发布，这下真的 AI 春晚了。\n数字生命卡兹克\nmp.weixin.qq.com\n02-05\n7373 字 · 约 30 分钟\n94\n\nAI 编程工具迎来史诗级对决：Anthropic 发布 Claude Opus 4.6，OpenAI 同日推出 GPT-5.3 Codex。文章详细对比了两个模型的跑分表现、核心功能升级和实际应用场景。Claude Opus 4.6 亮点包括：1M token 上下文窗口（提升 5 倍）、128K 输出上限、自适应思考和 Agent Teams 协作功能；GPT-5.3 Codex 则首次实现「AI 参与自身开发」，在 Terminal-Bench 2.0 上领先 11.9 个百分点，完成任务所需 token 减少一半且速度提升 25%。两者都在向 Agent 化方向演进，传统软件开发范式正在经历根本性变革。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#48dc0dcf",
+      "text": "1\n中门对狙！Claude Opus 4.6 和 GPT-5.3 Codex 同时发布，这下真的 AI 春晚了。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#c39db2ba",
+      "text": "2\n这大概是我读过关于 AI 大模型最全面、好读又易懂的文章了",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#1ab141d",
+      "text": "3\nCodex 应用介绍",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#8fb9eeb9",
+      "text": "4\n解构 Clawdbot：本地架构、记忆管理、Agent 编排与上下文组装原理",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#bc19b98b",
+      "text": "5\n从传统编程转向大模型编程",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#c075cf3d",
+      "text": "6\nAI 原生研发范式：从“代码中心”到“文档驱动”的演进",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#bdcdc17d",
+      "text": "7\nClaude Code 团队的 10 个内部技巧，但你不一定都要学",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#7c758f8",
+      "text": "8\n“人人皆可开发”：v0 如何将 Git 工作流引入氛围编程 | Guillermo Rauch (Vercel CEO)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#635ddf0",
+      "text": "9\n63.与 Rokid 祝铭明的访谈：AI 眼镜、入口与巨头环伺的生态之战",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#3c5f9bc",
+      "text": "10\nE224｜深度拆解 Clawdbot，为何它能成为 2026 年第一个现象级产品？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#b816f49d",
+      "text": "11\n5 万字完整版: 马斯克最新谈 AI 算力登月-文明韧性与硬件霸权 |图解全文+视频",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#64421ce5",
+      "text": "12\n栏目对话和访谈：Sebastian Raschka 和 Nathan Lambert 在 Lex Fridman 播客深度解读 AI 现状：中美竞争、模型对比、规模定律、AGI 时间线。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#5bb4021d",
+      "text": "13\n应用爆发之年：聊聊模型技术进化与商业化",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#6df1111",
+      "text": "14\n他看到的未来，和我们有什么不一样？| 对话 18 岁的涂津豪：DeepSeek 前实习生、阿里数竞 AI 组冠军",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue83#acd4481",
+      "text": "15\nVol.86 同一代技术，两个系统，181 页 PPT 全记录 AI 行业的 2025",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/48dc0dcf?entry=newsletter_page",
+      "text": "中门对狙！Claude Opus 4.6 和 GPT-5.3 Codex 同时发布，这下真的 AI 春晚了。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_86a0b5",
+      "text": "数字生命卡兹克",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679769&idx=1&sn=b534c351bbed1859f31d312c004c81d6",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c39db2ba?entry=newsletter_page",
+      "text": "这大概是我读过关于 AI 大模型最全面、好读又易懂的文章了",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_958ae8",
+      "text": "腾讯技术工程",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649798683&idx=1&sn=8319ed2ef27f74711c611c72f7a0e2ec",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/1ab141d?entry=newsletter_page",
+      "text": "Codex 应用介绍",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_d90853",
+      "text": "OpenAI",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=HFM3se4lNiw",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/8fb9eeb9?entry=newsletter_page",
+      "text": "解构 Clawdbot：本地架构、记忆管理、Agent 编排与上下文组装原理",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_efac5b",
+      "text": "腾讯云开发者",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247694343&idx=1&sn=8974e62e0c74a0011c6fdf6d037f957c",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/bc19b98b?entry=newsletter_page",
+      "text": "从传统编程转向大模型编程",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_26c5f1",
+      "text": "阿里云开发者",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558172&idx=1&sn=4352d94bba884ceac8f3f231a9074910",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c075cf3d?entry=newsletter_page",
+      "text": "AI 原生研发范式：从“代码中心”到“文档驱动”的演进",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_26c5f1",
+      "text": "阿里云开发者",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558173&idx=1&sn=a510f5608a758b601b342d7c8920af39",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/bdcdc17d?entry=newsletter_page",
+      "text": "Claude Code 团队的 10 个内部技巧，但你不一定都要学",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_653b2e",
+      "text": "宝玉的分享",
+      "title": ""
+    },
+    {
+      "href": "https://baoyu.io/blog/2026/02/01/claude-code-tips-from-creator",
+      "text": "baoyu.io",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/7c758f8?entry=newsletter_page",
+      "text": "“人人皆可开发”：v0 如何将 Git 工作流引入氛围编程 | Guillermo Rauch (Vercel CEO)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_bed90372",
+      "text": "How I AI",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=Yb9IyTOh0xg",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/635ddf0?entry=newsletter_page",
+      "text": "63.与 Rokid 祝铭明的访谈：AI 眼镜、入口与巨头环伺的生态之战",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_1fd3ac",
+      "text": "卫诗婕｜商业漫谈Jane's talk",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/6980029db4be4c149b8a115f",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/3c5f9bc?entry=newsletter_page",
+      "text": "E224｜深度拆解 Clawdbot，为何它能成为 2026 年第一个现象级产品？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_b43399",
+      "text": "硅谷101",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69828c85a712301410e31643",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/b816f49d?entry=newsletter_page",
+      "text": "5 万字完整版: 马斯克最新谈 AI 算力登月-文明韧性与硬件霸权 |图解全文+视频",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_49d553",
+      "text": "Web3天空之城",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIxODUzNTg2MA==&mid=2247489924&idx=1&sn=bbb4a8e7ec9c8c0cfd19357ea5ccab0b",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/64421ce5?entry=newsletter_page",
+      "text": "栏目对话和访谈：Sebastian Raschka 和 Nathan Lambert 在 Lex Fridman 播客深度解读 AI 现状：中美竞争、模型对比、规模定律、AGI 时间线。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_653b2e",
+      "text": "宝玉的分享",
+      "title": ""
+    },
+    {
+      "href": "https://baoyu.io/blog/state-of-ai-in-2026-lex-fridman-podcast",
+      "text": "baoyu.io",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/5bb4021d?entry=newsletter_page",
+      "text": "应用爆发之年：聊聊模型技术进化与商业化",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_b51a7e",
+      "text": "硅谷101",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzA4NjUwNTI0OA==&mid=2247496524&idx=1&sn=e6bcf55c72a1ca058acf3db2e50ac1c6",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/6df1111?entry=newsletter_page",
+      "text": "他看到的未来，和我们有什么不一样？| 对话 18 岁的涂津豪：DeepSeek 前实习生、阿里数竞 AI 组冠军",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_8a4d53",
+      "text": "十字路口Crossing",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/697c3998073030367a6ee5ef",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/acd4481?entry=newsletter_page",
+      "text": "Vol.86 同一代技术，两个系统，181 页 PPT 全记录 AI 行业的 2025",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_0df42c",
+      "text": "屠龙之术",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/697cbc24b4be4c149b4b6931",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 83 期 AI 精选文章推荐。\n\n本周科技圈迎来了 AI 编程工具的春晚时刻。Anthropic 发布 Claude Opus 4.6，OpenAI 同日推出 GPT-5.3 Codex，AI 编程已经从实验室走向生产力工具的正面交锋。Claude 带来了 1M ...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "bestblogs, AI 阅读，个性化阅读，高质量内容，每日早报，技术阅读，内容发现，AI 初评，专家精审，阅读工作流",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 83 期 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 83 期 AI 精选文章推荐。\n\n本周科技圈迎来了 AI 编程工具的春晚时刻。Anthropic 发布 Claude Opus 4.6，OpenAI 同日推出 GPT-5.3 Codex，AI 编程已经从实验室走向生产力工具的正面交锋。Claude 带来了 1M ...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/newsletter/issue83",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue83/opengraph-image?5b2ed8584a9655d4",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "02-06",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 83 期 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 83 期 AI 精选文章推荐。\n\n本周科技圈迎来了 AI 编程工具的春晚时刻。Anthropic 发布 Claude Opus 4.6，OpenAI 同日推出 GPT-5.3 Codex，AI 编程已经从实验室走向生产力工具的正面交锋。Claude 带来了 1M ...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue83/twitter-image?43c24b48d6d9249c",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "BestBlogs.dev 第 83 期 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/newsletter/issue83"
+}

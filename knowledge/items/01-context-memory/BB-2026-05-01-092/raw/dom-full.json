@@ -1,0 +1,444 @@
+{
+  "content": "We’re releasing GPT‑5.5, our smartest and most intuitive to use model yet, and the next step toward a new way of getting work done on a computer.\n\nGPT‑5.5 understands what you’re trying to do faster and can carry more of the work itself. It excels at writing and debugging code, researching online, analyzing data, creating documents and spreadsheets, operating software, and moving across tools until a task is finished. Instead of carefully managing every step, you can give GPT‑5.5 a messy, multi-part task and trust it to plan, use tools, check its work, navigate through ambiguity, and keep going.\n\nThe gains are especially strong in agentic coding, computer use, knowledge work, and early scientific research—areas where progress depends on reasoning across context and taking action over time. GPT‑5.5 delivers this step up in intelligence without compromising on speed: larger, more capable models are often slower to serve, but GPT‑5.5 matches GPT‑5.4 per-token latency in real-world serving, while performing at a much higher level of intelligence. It also uses significantly fewer tokens to complete the same Codex tasks, making it more efficient as well as more capable.\n\nWe are releasing GPT‑5.5 with our strongest set of safeguards to date, designed to reduce misuse while preserving access for beneficial work. We evaluated this model across our full suite of safety and preparedness frameworks, worked with internal and external redteamers, added targeted testing for advanced cybersecurity and biology capabilities, and collected feedback on real use cases from nearly 200 trusted early-access partners before release.\n\nToday, GPT‑5.5 is rolling out to Plus, Pro, Business, and Enterprise users in ChatGPT and Codex, and GPT‑5.5 Pro is rolling out to Pro, Business, and Enterprise users in ChatGPT. API deployments require different safeguards and we are working closely with partners and customers on the safety and security requirements for serving it at scale. We'll bring GPT‑5.5 and GPT‑5.5 Pro to the API very soon.\n\n\t\n\nGPT-5.5\n\n\t\n\nGPT-5.4 \n\n\t\n\nGPT-5.5 Pro\n\n\t\n\nGPT-5.4 Pro\n\n\t\n\nClaude Opus 4.7\n\n\t\n\nGemini 3.1 Pro\n\n\n\n\nTerminal-Bench 2.0\n\n\t\n\n82.7%\n\n\t\n\n75.1%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n69.4%\n\n\t\n\n68.5%\n\n\n\n\nExpert-SWE (Internal)\n\n\t\n\n73.1%\n\n\t\n\n68.5%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nGDPval (wins or ties)\n\n\t\n\n84.9%\n\n\t\n\n83.0%\n\n\t\n\n82.3%\n\n\t\n\n82.0%\n\n\t\n\n80.3%\n\n\t\n\n67.3%\n\n\n\n\nOSWorld-Verified\n\n\t\n\n78.7%\n\n\t\n\n75.0%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n78.0%\n\n\t\n\n-\n\n\n\n\nToolathlon\n\n\t\n\n55.6%\n\n\t\n\n54.6%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n48.8%\n\n\n\n\nBrowseComp\n\n\t\n\n84.4%\n\n\t\n\n82.7%\n\n\t\n\n90.1%\n\n\t\n\n89.3%\n\n\t\n\n79.3%\n\n\t\n\n85.9%\n\n\n\n\nFrontierMath Tier 1–3\n\n\t\n\n51.7%\n\n\t\n\n47.6%\n\n\t\n\n52.4%\n\n\t\n\n50.0%\n\n\t\n\n43.8%\n\n\t\n\n36.9%\n\n\n\n\nFrontierMath Tier 4\n\n\t\n\n35.4%\n\n\t\n\n27.1%\n\n\t\n\n39.6%\n\n\t\n\n38.0%\n\n\t\n\n22.9%\n\n\t\n\n16.7%\n\n\n\n\nCyberGym\n\n\t\n\n81.8%\n\n\t\n\n79.0%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n73.1%\n\n\t\n\n-\n\nModel capabilities\n\nOpenAI is building the global infrastructure for agentic AI, making it possible for people and businesses around the world to get work done with AI. Over the past year, we’ve seen AI dramatically accelerate software engineering. With GPT‑5.5 in Codex and ChatGPT, that same transformation is beginning to extend into scientific research and the broader work people do on computers.\n\nAcross these domains, GPT‑5.5 is not just more intelligent; it is more efficient in how it works through problems, often reaching higher-quality outputs with fewer tokens and fewer retries. On Artificial Analysis's Coding Index, GPT‑5.5 delivers state-of-the-art intelligence at half the cost of competitive frontier coding models.\n\nArtificial Analysis Intelligence Index\n0\n4M\n8M\n16M\n32M\n64M\n128M\nOutput tokens total (M, log scale)\n35\n40\n45\n50\n55\n60\nArtificial Analysis Intelligence Index\nGPT-5.5\nGPT-5.4\nClaude Opus 4.7\nClaude Opus 4.6\nGemini 3.1 Pro Preview\n\nThe Artificial Analysis Intelligence Index⁠\n(opens in a new window)\n is a weighted average of 10 evals ran by an external party: AA-LCR, AA-Omniscience, CritPt, GDPval-AA, GPQA Diamond, Humanity’s Last Exam, IFBench, SciCode, Terminal-Bench Hard, τ²-Bench Telecom.\n\nAgentic coding\n\nGPT‑5.5 is our strongest agentic coding model to date. On Terminal-Bench 2.0, which tests complex command-line workflows requiring planning, iteration, and tool coordination, it achieves a state-of-the-art accuracy of 82.7%. On SWE-Bench Pro, which evaluates real-world GitHub issue resolution, it reaches 58.6%, solving more tasks end-to-end in a single pass than previous models. On Expert-SWE, our internal frontier eval for long-horizon coding tasks with a median estimated human completion time of 20 hours, GPT‑5.5 also outperforms GPT‑5.4.\n\nAcross all three evals, GPT‑5.5 improves on GPT‑5.4’s scores while using fewer tokens.\n\nTerminal-Bench 2.0\n0\n2,000\n4,000\n6,000\n8,000\n10,000\n12,000\n14,000\n16,000\n18,000\nOutput tokens\n40%\n60%\n80%\nScore\nGPT-5.5\nGPT-5.4\nExpert-SWE (Internal)\n0\n10,000\n20,000\n30,000\n40,000\n50,000\n60,000\n70,000\nOutput tokens\n45%\n50%\n55%\n60%\n65%\n70%\n75%\nScore\nGPT-5.5\nGPT-5.4\n\nThe model’s coding strengths show up especially clearly in Codex where it can take on engineering work ranging from implementation and refactors to debugging, testing, and validation. Early testing suggests GPT‑5.5 is better at the behaviors real engineering work depends on, like holding context across large systems, reasoning through ambiguous failures, checking assumptions with tools, and carrying changes through the surrounding codebase.\n\n↗ 在新标签页打开嵌入内容\n\n00:0700:46\n\nThe rendered trajectory uses NASA/JPL Horizons vector data for Orion, the Moon, and the Sun, with display scaling applied for readability.\n\nPrompt: [attached image] Implement this as a new app using webgl and vite using real data from the artemis II mission. Make sure to test the app thoroughly until it is fully functional and looks like the app in the picture. Pay close attention to the rendering of the planets and fly paths. I want to be able to interact with the 3D rendering. Ensure it has realistic orbital mechanics.\n\nShow more\n\nBeyond benchmarks, early testers said GPT‑5.5 shows a stronger ability to understand the shape of a system: why something is failing, where the fix needs to land, and what else in the codebase would be affected.\n\n“The first coding model I’ve used that has serious conceptual clarity.”\n\nDan Shipper, Founder and CEO of Every, described GPT‑5.5 as “the first coding model I’ve used that has serious conceptual clarity.”\n\nAfter launching an app, he spent days debugging a post-launch issue before bringing in one of his best engineers to rewrite part of the system. To test GPT‑5.5, he effectively rewound the clock: could the model look at the broken state and produce the same kind of rewrite the engineer eventually decided on? GPT‑5.4 could not. GPT‑5.5 could.\n\n“It genuinely feels like I’m working with a higher intelligence, and there’s almost a sense of respect.”\n\nPietro Schirano, CEO of MagicPath, saw a similar step change when GPT‑5.5 merged a branch with hundreds of frontend and refactor changes into a main branch that had also changed substantially, resolving the work in one shot in about 20 minutes.\n\nSenior engineers who tested the model said GPT‑5.5 was noticeably stronger than GPT‑5.4 and Claude Opus 4.7 at reasoning and autonomy, catching issues in advance and predicting testing and review needs without explicit prompting. In one case, an engineer asked it to re-architect a comment system in a collaborative markdown editor and returned to a 12-diff stack that was nearly complete. Others said they needed surprisingly little implementation correction and felt more confident in GPT‑5.5’s plans compared with GPT‑5.4.\n\nOne engineer at NVIDIA who had early access to the model went as far as to say: \"Losing access to GPT‑5.5 feels like I've had a limb amputated.”\n\n“GPT-5.5 is noticeably smarter and more persistent than GPT-5.4, with stronger coding performance and more reliable tool use. It stays on task for significantly longer without stopping early, which matters most for the complex, long-running work our users delegate to Cursor.”\n— Michael Truell, Co-founder & CEO at Cursor\nKnowledge work\n\nThe same strengths that make GPT‑5.5 great at coding also make it powerful for everyday work on a computer. Because the model is better at understanding intent, it can move more naturally through the full loop of knowledge work: finding information, understanding what matters, using tools, checking the output, and turning raw material into something useful.\n\nIn Codex, GPT‑5.5 is better than GPT‑5.4 at generating documents, spreadsheets, and slide presentations. Alpha testers said it outperformed past models on work like operational research, spreadsheet modeling, and turning messy business inputs into plans. When combined with Codex’s computer use skills, GPT‑5.5 brings us closer to the feeling that the model can actually use the computer with you: seeing what’s on screen, clicking, typing, navigating interfaces, and moving across tools with precision.\n\nTeams at OpenAI are already using these strengths in real workflows. Today, more than 85% of the company uses Codex every week across functions including software engineering, finance, communications, marketing, data science, and product management. In Comms, the team used GPT‑5.5 in Codex to analyze six months of speaking request data, build a scoring and risk framework, and validate an automated Slack agent so low-risk requests could be handled automatically while higher-risk requests still route to human review. In Finance, the team used Codex to review 24,771 K-1 tax forms totaling 71,637 pages, using a workflow that excluded personal information and helped the team accelerate the task by two weeks compared to the prior year. On the Go-to-Market team, an employee automated generating weekly business reports, saving 5-10 hours a week.\n\n↗ 在新标签页打开嵌入内容\n\n00:0700:33\n\nIn ChatGPT, GPT‑5.5 Thinking unlocks faster help for harder problems, with smarter and more concise answers to help you move through complex work more efficiently. It excels at professional work like coding, research, information synthesis and analysis, and document-heavy tasks, especially when using plugins.\n\nIn GPT‑5.5 Pro, early testers are seeing a significant step up in both the difficulty and quality of work ChatGPT can take on, with latency improvements that make it much more practical for demanding tasks. Compared to GPT‑5.4 Pro, testers found GPT‑5.5 Pro’s responses significantly more comprehensive, well-structured, accurate, relevant, and useful, with especially strong performance in business, legal, education, and data science.\n\nGPT‑5.5 reaches state-of-the-art performance across multiple benchmarks that reflect this kind of work. On GDPval⁠⁠, which tests agents’ abilities to produce well-specified knowledge work across 44 occupations, GPT‑5.5 scores 84.9%. On OSWorld-Verified, which measures whether a model can operate real computer environments on its own, it reaches 78.7%. And on Tau2-bench Telecom, which tests complex customer-service workflows, it reaches 98.0% without prompt tuning. GPT‑5.5 also performs strongly across other knowledge work benchmarks: 60.0% on FinanceAgent, 88.5% on internal investment-banking modeling tasks, and 54.1% on OfficeQA Pro.\n\nGDPval\nGPT-5.5\nGPT-5.4\nGPT-5.4 Pro\nClaude Opus 4.7\nGemini 3.1 Pro\n0%\n20%\n40%\n60%\n80%\n100%\nRate vs industry professional\n84.9%\n83.0%\n82.0%\n80.3%\n67.3%\n68.2%\n70.8%\n69.2%\n62.6%\n46.8%\nIndustry expert baseline\nIndustry expert baseline\nWins\nTies\nOSWorld-Verified\n0\n2\n4\n6\n8\n10\n12\n14\n16\nNumber of tool yields\n35%\n45%\n55%\n65%\n75%\nScore\nGPT-5.5\nGPT-5.4\nTau2-bench Telecom\n0\n2,000\n4,000\n6,000\n8,000\n10,000\n12,000\n14,000\nOutput tokens\n50%\n60%\n70%\n80%\n90%\n100%\nAccuracy\nGPT-5.5\nGPT-5.4\n\nTau2-bench Telecom was run without prompt tuning (and GPT‑4.1 as user model). GPT‑5.5 understands the intent of the task better and is more token efficient than its predecessors.\n\n“GPT-5.5 delivers the sustained performance required for execution-heavy work. Built and served on NVIDIA GB200 NVL72 systems, the model enables our teams to ship end-to-end features from natural language prompts, cut debug time from days to hours, and turn weeks of experimentation into overnight progress in complex codebases. It’s more than faster coding—it’s a new way of working that helps people operate at a fundamentally different speed.”\n— Justin Boitano, VP of Enterprise AI at NVIDIA\nScientific research\n\nGPT‑5.5 also shows gains on scientific and technical research workflows, which require more than answering a hard question. Researchers need to explore an idea, gather evidence, test assumptions, interpret results, and decide what to try next. GPT‑5.5 is better at persisting across that loop than other models.\n\nNotably, GPT‑5.5 shows a clear improvement over GPT‑5.4 on GeneBench⁠\n(opens in a new window)\n, a new eval focusing on multi-stage scientific data analysis in genetics and quantitative biology. These problems require models to reason about potentially ambiguous or errorful data with minimal supervisory guidance, address realistic obstacles such as hidden confounders or QC failures, and correctly implement and interpret modern statistical methods. The model’s performance is striking in light of the fact that tasks here often correspond to multi-day projects for scientific experts.\n\nGeneBench\n0\n5000\n10000\n15000\n20000\n25000\n30000\n35000\n40000\nOutput tokens\n0%\n5%\n10%\n15%\n20%\n25%\nScore\nGPT-5.5\nGPT-5.4\n\nSimilarly, on BixBench⁠\n(opens in a new window)\n, a benchmark designed around real-world bioinformatics and data analysis, GPT‑5.5 achieved leading performance among models with published scores. The model’s scientific capabilities are now strong enough to meaningfully accelerate progress at the frontiers of biomedical research as a bona fide co-scientist.\n\nBixBench\nGPT-5.5\nGPT-5.4\n0%\n20%\n40%\n60%\n80%\n100%\nScore\n80.5%\n74.0%\n\nIn another example, an internal version of GPT‑5.5 with a custom harness helped discover a new proof⁠\n(opens in a new window)\n about Ramsey numbers, one of the central objects in combinatorics. Combinatorics studies how discrete objects fit together: graphs, networks, sets, and patterns. Ramsey numbers ask, roughly, how large a network has to be before some kind of order is guaranteed to appear. Results in this area are rare and often technically difficult. Here, GPT‑5.5 found a proof of a longstanding asymptotic fact about off-diagonal Ramsey numbers, later verified in Lean. The result is a concrete example of GPT‑5.5 contributing not just code or explanation, but a surprising and useful mathematical argument in a core research area.\n\nEarly testers used GPT‑5.5 Pro in ChatGPT less like a one-shot answer engine and more like a research partner: critiquing manuscripts over multiple passes, stress-testing technical arguments, proposing analyses, and working with code, notes, and PDF context. The common thread is that GPT‑5.5 is better at helping researchers move from question to experiment to output.\n\nDerya Unutmaz, an immunology professor and researcher at the Jackson Laboratory for Genomic Medicine, used GPT‑5.5 Pro to analyze a gene-expression dataset with 62 samples and nearly 28,000 genes, producing a detailed research report that not only summarized the findings but also surfaced key questions and insights—work he said would have taken his team months.\n\nBartosz Naskręcki, assistant professor of mathematics at Adam Mickiewicz University in Poznań, Poland, used GPT‑5.5 in Codex to build an algebraic-geometry app from a single prompt in 11 minutes, visualizing the intersection of quadratic surfaces and converting the resulting curve into a Weierstrass model.\n\nHe later extended the app with more stable singularity visualization and exact coefficients that can be reused in further work. For him, the bigger shift is that Codex can now help implement custom mathematical visualization and computer-algebra workflows that previously required dedicated tools. Together, these examples show GPT‑5.5 turning expert intent into working research tools and analyses.\n\nCredit: Bartosz Naskręcki⁠\n(opens in a new window)\n\nPrompt: # Algebraic geometry surface intersection\n\nMake an app which draws two quadratic surfaces and colors in red the intersection curve. Use computational Riemann-Roch theorem to convert this into Weierstrass curve.\n\n## Main window\n\nTwo tinted surfaces with a slightly transparent shading, high quality rendering intersect along a red colored algebraic curve\n\nRotation with mouses in both directions, full pinch mechanism for zoom, haptic press to show the little menu with sliders for changing the coefficients of each surface; detection via Z-buffor level\n\n## Side right window\n\nShort Weierstrass equation (over Q or quadratic field extension) computed on the go via effective Riemann-Roch theorem formulas\n\n## Ambient mode where all the controls are hidden and the user can admire the beauty of the shapes\n\n## Specs\n\nApp is running in the browser, light-weight implementation with full stack newest libraries, portable, deployable\n\n## Docs\n\nGit repo, journal, plan (Markdown files)\n\nShow more\n“It’s incredibly energizing to use OpenAI’s new GPT-5.5 model in our harness, have it reason over massive biochemical datasets to predict human drug outcomes, and then see it deliver significant accuracy gains on our hardest drug discovery evals. If OpenAI keeps cooking like this, the foundations of drug discovery will change by the end of the year.”\n— Brandon White, Co-Founder & CEO at Axiom Bio\nNext-generation inference efficiency\n\nServing GPT‑5.5 at GPT‑5.4 latency required rethinking inference as an integrated system, not a set of isolated optimizations. GPT‑5.5 was co-designed for, trained with, and served on NVIDIA GB200 and GB300 NVL72 systems. Codex and GPT‑5.5 were instrumental in how we achieved our performance targets. Codex helped the team move faster from idea to benchmarkable implementation, sketching approaches, wiring experiments, and helping identify which optimizations were worth deeper investment. GPT‑5.5 helped find and implement key improvements in the stack itself. Put simply, the model helped improve the infrastructure that serves it.\n\nOne such improvement was load balancing and partitioning heuristics. Before GPT‑5.5, we split requests on an accelerator into a fixed number of chunks to balance work across computing cores, ensuring big and small requests could run on the same GPU. However, a pre-determined number of static chunks is not optimal for all traffic shapes. To better utilize GPUs, Codex analyzed weeks’ worth of production traffic patterns and wrote custom heuristic algorithms to optimally partition and balance work. The effort had an outsized impact, increasing token generation speeds by over 20%.\n\nAdvancing cybersecurity for everyone’s safety\n\nPreparing the world for models that are very good at finding and patching security vulnerabilities is a team sport and will require the entire ecosystem to work hard to build resilience, with democratized model access and iterative deployment for the next era of cyber defense⁠.\n\nFrontier models are becoming increasingly more capable in cybersecurity. Those capabilities will become broadly distributed and we believe the best path forward is to make sure they can be put to use for accelerating cyber defense and strengthening the ecosystem.\n\nGPT‑5.5 is an incremental but important step towards AI that can solve some of the world’s toughest challenges like cybersecurity. With GPT‑5.2 in December, we proactively deployed the necessary cyber safeguards⁠ to limit potential cyber abuse with our models; now with GPT‑5.5, we’re deploying stricter classifiers for potential cyber risk which some users may find annoying initially, as we tune them over time.\n\nWe’ve identified cybersecurity as a category in our Preparedness Framework⁠\n(opens in a new window)\n for years as our models have incrementally improved, while we develop and calibrate mitigations iteratively, to be able to responsibly release models with meaningful cybersecurity capabilities.\n\nWe are deploying industry-leading safeguards for this level of cyber capability. We first introduced cyber-specific safeguards with GPT‑5.2⁠\n(opens in a new window)\n last year, which we have continued to test, refine, and build on in subsequent deployments. For GPT‑5.5, we designed tighter controls around higher-risk activity, sensitive cyber requests, and added protections for repeated misuse. Broad access is made possible through our investments in model safety, authenticated usage, and monitoring for impermissible use. We have been working with external experts for months to develop, test and iterate on the robustness of these safeguards. With GPT‑5.5, we are ensuring developers can secure their code with ease, while putting stronger controls around the cyber workflows most likely to cause harm by malicious actors.\nWe are expanding access to accelerate cyber defense at every level. We are making our cyber-permissive models available through Trusted Access for Cyber⁠, starting with Codex, which includes expanded access to the advanced cybersecurity capabilities of GPT‑5.5 with fewer restrictions for verified users meeting certain trust signals⁠\n(opens in a new window)\n at launch. Organizations who are responsible for defending critical infrastructure⁠ can apply to access cyber-permissive models like GPT‑5.4‑Cyber, while meeting strict security requirements to use these models for securing their internal systems. This gives a wide range of verified defenders more capable tools for legitimate security work with less unnecessary friction to ensure we democratize access to important defensive capabilities. Users can apply for trusted access at chatgpt.com/cyber⁠\n(opens in a new window)\n to reduce unnecessary refusals while using GPT‑5.5 for verified defensive work.\nWe are working with government partners to help protect critical infrastructure for the public. Together, we are exploring how advanced AI can support the defensive work of trusted officials responsible for systems people rely on, from the digital systems that secure important taxpayer data to the power grid and water supplies in local communities.\n\nWe are treating the biological/chemical and cybersecurity capabilities of GPT‑5.5 as High under our Preparedness Framework⁠\n(opens in a new window)\n. While GPT‑5.5 didn’t reach Critical cybersecurity capability level, our evaluations and testing showed that its cybersecurity capabilities are a step up compared to GPT‑5.4.\n\nIn addition, GPT‑5.5 went through our full safety and governance process prior to release, including preparedness evaluations, domain-specific testing, new targeted evaluations for advanced biology and cybersecurity capabilities, and robust testing with external experts. We share more details in the GPT‑5.5 system card⁠\n(opens in a new window)\n.\n\nThis work reflects our broader AI resilience approach, which we believe is needed as model capabilities advance. We want powerful AI to be available to the people using it to defend systems, institutions, and the public. The viable path is trusted access, robust safeguards that scale with capability, and the operational capacity to detect and respond to serious misuse.\n\nCyberGym\nGPT-5.5\nGPT-5.4\nClaude Opus 4.7\n0%\n20%\n40%\n60%\n80%\n100%\nScore\n81.8%\n79.0%\n73.1%\nCapture-the-Flags challenge tasks (Internal)\n0\n20000\n40000\n60000\n80000\n100000\n120000\n140000\nOutput tokens\n0%\n20%\n40%\n60%\n80%\nScore\nGPT-5.5\nGPT-5.4\nAvailability and pricing\n\nToday, GPT‑5.5 is rolling out to Plus, Pro, Business, and Enterprise users in ChatGPT and Codex, and GPT‑5.5 Pro is rolling out to Pro, Business, and Enterprise users in ChatGPT. We'll bring GPT‑5.5 and GPT‑5.5 Pro to the API very soon.\n\nIn ChatGPT, GPT‑5.5 Thinking is available to Plus, Pro, Business, and Enterprise users. GPT‑5.5 Pro, designed for even harder questions and higher-accuracy work, is available to Pro, Business, and Enterprise users.\n\nIn Codex, GPT‑5.5 is available for Plus, Pro, Business, Enterprise, Edu, and Go plans with a 400K context window. GPT‑5.5 is also available in Fast mode, generating tokens 1.5x faster for 2.5x the cost.\n\nFor API developers, gpt-5.5 will soon be available in the Responses and Chat Completions APIs at $5 per 1M input tokens and $30 per 1M output tokens, with a 1M context window. Batch and Flex pricing are available at half the standard API rate, while Priority processing is available at 2.5x the standard rate. We will also release gpt-5.5-pro in the API for even higher accuracy, priced at $30 per 1M input tokens and $180 per 1M output tokens. See the pricing page⁠ for full details.\n\nWhile GPT‑5.5 is priced higher than GPT‑5.4, it is both more intelligent and much more token efficient. In Codex, we have carefully tuned the experience so GPT‑5.5 delivers better results with fewer tokens than GPT‑5.4 for most users, while continuing to offer generous usage across subscription levels.\n\nEvaluations\nCoding\n\nEval\n\n\t\n\nGPT-5.5\n\n\t\n\nGPT‑5.4\n\n\t\n\nGPT-5.5 Pro\n\n\t\n\nGPT‑5.4 Pro\n\n\t\n\nClaude Opus 4.7\n\n\t\n\nGemini 3.1 Pro\n\n\n\n\nSWE-Bench Pro (Public) *\n\n\t\n\n58.6%\n\n\t\n\n57.7%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n64.3%\n\n\t\n\n54.2%\n\n\n\n\nTerminal-Bench 2.0\n\n\t\n\n82.7%\n\n\t\n\n75.1%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n69.4%\n\n\t\n\n68.5%\n\n\n\n\nExpert-SWE (Internal)\n\n\t\n\n73.1%\n\n\t\n\n68.5%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n*Labs have noted evidence of memorization⁠\n(opens in a new window)\n on this eval\n\nProfessional\n\nEval\n\n\t\n\nGPT-5.5\n\n\t\n\nGPT‑5.4\n\n\t\n\nGPT-5.5 Pro\n\n\t\n\nGPT‑5.4 Pro\n\n\t\n\nClaude Opus 4.7\n\n\t\n\nGemini 3.1 Pro\n\n\n\n\nGDPval (wins or ties)\n\n\t\n\n84.9%\n\n\t\n\n83.0%\n\n\t\n\n82.3%\n\n\t\n\n82.0%\n\n\t\n\n80.3%\n\n\t\n\n67.3%\n\n\n\n\nFinanceAgent v1.1\n\n\t\n\n60.0%\n\n\t\n\n56.0%\n\n\t\n\n-\n\n\t\n\n61.5%\n\n\t\n\n64.4%\n\n\t\n\n59.7%\n\n\n\n\nInvestment Banking Modeling Tasks (Internal)\n\n\t\n\n88.5%\n\n\t\n\n87.3%\n\n\t\n\n88.6%\n\n\t\n\n83.6%\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nOfficeQA Pro\n\n\t\n\n54.1%\n\n\t\n\n53.2%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n43.6%\n\n\t\n\n18.1%\n\nComputer use and vision\n\nEval\n\n\t\n\nGPT-5.5\n\n\t\n\nGPT‑5.4\n\n\t\n\nGPT-5.5 Pro\n\n\t\n\nGPT‑5.4 Pro\n\n\t\n\nClaude Opus 4.7\n\n\t\n\nGemini 3.1 Pro\n\n\n\n\nOSWorld-Verified\n\n\t\n\n78.7%\n\n\t\n\n75.0%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n78.0%\n\n\t\n\n-\n\n\n\n\nMMMU Pro (no tools)\n\n\t\n\n81.2%\n\n\t\n\n81.2%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n80.5%\n\n\n\n\nMMMU Pro (with tools)\n\n\t\n\n83.2%\n\n\t\n\n82.1%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\nTool use\n\nEval\n\n\t\n\nGPT-5.5\n\n\t\n\nGPT‑5.4\n\n\t\n\nGPT-5.5 Pro\n\n\t\n\nGPT‑5.4 Pro\n\n\t\n\nClaude Opus 4.7\n\n\t\n\nGemini 3.1 Pro\n\n\n\n\nBrowseComp\n\n\t\n\n84.4%\n\n\t\n\n82.7%\n\n\t\n\n90.1%\n\n\t\n\n89.3%\n\n\t\n\n79.3%\n\n\t\n\n85.9%\n\n\n\n\nMCP Atlas**\n\n\t\n\n75.3%\n\n\t\n\n70.6%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n79.1%\n\n\t\n\n78.2%\n\n\n\n\nToolathlon\n\n\t\n\n55.6%\n\n\t\n\n54.6%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n48.8%\n\n\n\n\nTau2-bench Telecom***\n(original prompts)\n\n\t\n\n98.0%\n\n\t\n\n92.8%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n** MCP Atlas: results from Scale AI after the latest 2026 April update. \n*** Tau2-bench telecom: results for 5.5 and 5.4 with original prompts i.e no prompt adjustment. This omits results from other labs that were evaluated with prompt adjustments.\n\nAcademic\n\nEval\n\n\t\n\nGPT-5.5\n\n\t\n\nGPT‑5.4\n\n\t\n\nGPT-5.5 Pro\n\n\t\n\nGPT‑5.4 Pro\n\n\t\n\nClaude Opus 4.7\n\n\t\n\nGemini 3.1 Pro\n\n\n\n\nGeneBench\n\n\t\n\n25.0%\n\n\t\n\n19.0%\n\n\t\n\n33.2%\n\n\t\n\n25.6%\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nFrontierMath Tier 1–3\n\n\t\n\n51.7%\n\n\t\n\n47.6%\n\n\t\n\n52.4%\n\n\t\n\n50.0%\n\n\t\n\n43.8%\n\n\t\n\n36.9%\n\n\n\n\nFrontierMath Tier 4\n\n\t\n\n35.4%\n\n\t\n\n27.1%\n\n\t\n\n39.6%\n\n\t\n\n38.0%\n\n\t\n\n22.9%\n\n\t\n\n16.7%\n\n\n\n\nBixBench\n\n\t\n\n80.5%\n\n\t\n\n74.0%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nGPQA Diamond\n\n\t\n\n93.6%\n\n\t\n\n92.8%\n\n\t\n\n-\n\n\t\n\n94.4%\n\n\t\n\n94.2%\n\n\t\n\n94.3%\n\n\n\n\nHumanity's Last Exam (no tools)\n\n\t\n\n41.4%\n\n\t\n\n39.8%\n\n\t\n\n43.1%\n\n\t\n\n42.7%\n\n\t\n\n46.9%\n\n\t\n\n44.4%\n\n\n\n\nHumanity's Last Exam (with tools)\n\n\t\n\n52.2%\n\n\t\n\n52.1%\n\n\t\n\n57.2%\n\n\t\n\n58.7%\n\n\t\n\n54.7%\n\n\t\n\n51.4%\n\nCybersecurity\n\nEval\n\n\t\n\nGPT-5.5\n\n\t\n\nGPT‑5.4\n\n\t\n\nGPT-5.5 Pro\n\n\t\n\nGPT‑5.4 Pro\n\n\t\n\nClaude Opus 4.7\n\n\t\n\nGemini 3.1 Pro\n\n\n\n\nCapture-the-Flags challenge tasks (Internal)****\n\n\t\n\n88.1%\n\n\t\n\n83.7%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nCyberGym\n\n\t\n\n81.8%\n\n\t\n\n79.0%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n73.1%\n\n\t\n\n-\n\n**** An expansion of the hardest CTFs used in system cards with additional hard challenges.\n\nLong context\n\nEval\n\n\t\n\nGPT-5.5\n\n\t\n\nGPT‑5.4\n\n\t\n\nGPT-5.5 Pro\n\n\t\n\nGPT‑5.4 Pro\n\n\t\n\nClaude Opus 4.7\n\n\t\n\nGemini 3.1 Pro\n\n\n\n\nGraphwalks BFS 256k f1\n\n\t\n\n73.7%\n\n\t\n\n62.5%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n76.9%\n\n\t\n\n-\n\n\n\n\nGraphwalks BFS 1mil f1\n\n\t\n\n45.4%\n\n\t\n\n9.4%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n41.2% (Opus 4.6)\n\n\t\n\n-\n\n\n\n\nGraphwalks parents 256k f1\n\n\t\n\n90.1%\n\n\t\n\n82.8%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n93.6%\n\n\t\n\n-\n\n\n\n\nGraphwalks parents 1mil f1\n\n\t\n\n58.5%\n\n\t\n\n44.4%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n72.0% (Opus 4.6)\n\n\t\n\n-\n\n\n\n\nOpenAI MRCR v2 8-needle 4K-8K\n\n\t\n\n98.1%\n\n\t\n\n97.3%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nOpenAI MRCR v2 8-needle 8K-16K\n\n\t\n\n93.0%\n\n\t\n\n91.4%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nOpenAI MRCR v2 8-needle 16K-32K\n\n\t\n\n96.5%\n\n\t\n\n97.2%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nOpenAI MRCR v2 8-needle 32K-64K\n\n\t\n\n90.0%\n\n\t\n\n90.5%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nOpenAI MRCR v2 8-needle 64K-128K\n\n\t\n\n83.1%\n\n\t\n\n86.0%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nOpenAI MRCR v2 8-needle 128K-256K\n\n\t\n\n87.5%\n\n\t\n\n79.3%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n59.2%\n\n\t\n\n-\n\n\n\n\nOpenAI MRCR v2 8-needle 256K-512K\n\n\t\n\n81.5%\n\n\t\n\n57.5%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n-\n\n\n\n\nOpenAI MRCR v2 8-needle 512K-1M\n\n\t\n\n74.0%\n\n\t\n\n36.6%\n\n\t\n\n-\n\n\t\n\n-\n\n\t\n\n32.2%\n\n\t\n\n-\n\nAbstract reasoning\n\nEval\n\n\t\n\nGPT-5.5\n\n\t\n\nGPT‑5.4\n\n\t\n\nGPT-5.5 Pro\n\n\t\n\nGPT‑5.4 Pro\n\n\t\n\nClaude Opus 4.7\n\n\t\n\nGemini 3.1 Pro\n\n\n\n\nARC-AGI-1 (Verified)\n\n\t\n\n95.0%\n\n\t\n\n93.7%\n\n\t\n\n-\n\n\t\n\n94.5%\n\n\t\n\n93.5%\n\n\t\n\n98.0%\n\n\n\n\nARC-AGI-2 (Verified)\n\n\t\n\n85.0%\n\n\t\n\n73.3%\n\n\t\n\n-\n\n\t\n\n83.3%\n\n\t\n\n75.8%\n\n\t\n\n77.1%\n\nEvals of GPT were run with reasoning effort set to xhigh and were conducted in a research environment, which may provide slightly different output from production ChatGPT in some cases.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/a6d9083a#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=8749b9",
+      "text": "OpenAI Blog",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://openai.com/index/introducing-gpt-5-5",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+      "text": "Artificial Analysis Intelligence Index⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1185606271?h=9d10b1c9c7&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1185616826?h=f4682569a2&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/gdpval/",
+      "text": "GDPval⁠⁠",
+      "title": ""
+    },
+    {
+      "href": "https://cdn.openai.com/pdf/6dc7175d-d9e7-4b8d-96b8-48fe5798cd5b/oai_genebench_benchmark.pdf",
+      "text": "GeneBench⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2503.00096",
+      "text": "BixBench⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://cdn.openai.com/pdf/6dc7175d-d9e7-4b8d-96b8-48fe5798cd5b/Ramsey.pdf",
+      "text": "new proof⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://bnaskrecki.faculty.wmi.amu.edu.pl/quadr/",
+      "text": "Credit: Bartosz Naskręcki⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/scaling-trusted-access-for-cyber-defense/",
+      "text": "next era of cyber defense⁠",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/strengthening-cyber-resilience/",
+      "text": "cyber safeguards⁠",
+      "title": ""
+    },
+    {
+      "href": "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf",
+      "text": "Preparedness Framework⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://deploymentsafety.openai.com/gpt-5-2/deception",
+      "text": "GPT‑5.2⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/scaling-trusted-access-for-cyber-defense/",
+      "text": "Trusted Access for Cyber⁠",
+      "title": ""
+    },
+    {
+      "href": "https://developers.openai.com/codex/concepts/cyber-safety",
+      "text": "trust signals⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/accelerating-cyber-defense-ecosystem/",
+      "text": "defending critical infrastructure⁠",
+      "title": ""
+    },
+    {
+      "href": "http://chatgpt.com/cyber?openaicom-did=8195cc1d-6bcf-452d-ba52-f0a299d20fa1&openaicom_referred=true",
+      "text": "chatgpt.com/cyber⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf",
+      "text": "Preparedness Framework⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://deploymentsafety.openai.com/gpt-5-5",
+      "text": "system card⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/api/pricing/",
+      "text": "pricing page⁠",
+      "title": ""
+    },
+    {
+      "href": "https://www.anthropic.com/news/claude-opus-4-7",
+      "text": "evidence of memorization⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2029622732594499630?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.4：支持原生计算机使用与 100 万 token 上下文",
+      "title": "山姆·奥特曼宣布发布 GPT-5.4，其特点是增强了知识工作能力、具备原生计算机使用功能，并拥有 100 万 token 的上下文窗口。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2041578392852517128?entry=related_article",
+      "text": "Anthropic 推出 Project Glasswing 与 Claude Mythos Preview",
+      "title": "Anthropic 发起 Project Glasswing 软件安全计划，由其最新的尖端模型 Claude Mythos Preview 提供支持，旨在精准识别关键软件漏洞。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/80a29c25?entry=related_article",
+      "text": "工作区智能体",
+      "title": "这篇来自 OpenAI 博客的文章介绍了 ChatGPT 中工作区智能体的概念，解释了其核心组件、设计结构、常见工作流模式，并提供了使用、构建、测试和扩展这些智能体以完成可重复、结构化业务任务的实用指南。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/d8c375d8?entry=related_article",
+      "text": "Codex 几乎无所不能",
+      "title": "OpenAI 宣布对 Codex 进行重大更新，将其能力从编码扩展到计算机操作、网页交互、图像生成，并通过记忆、自动化等新功能以及超过 90 个插件，在软件开发全生命周期实现更深度的集成。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/816f23c9?entry=related_article",
+      "text": "用于 Codex 编排的开源规范：Symphony",
+      "title": "OpenAI 推出了 Symphony，这是一套开源规范，能将 Linear 这类问题追踪器转变为编码智能体的常开型编排器。通过将智能体的工作与人类注意力解耦，成功将落地拉取请求的数量提升了 500%。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型",
+      "title": "OpenAI 宣布推出 GPT-5.5，这是一款专为理解复杂目标和自主完成任务而设计的新模型，现已在 ChatGPT 和 Codex 中上线。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e792cb18?entry=related_article",
+      "text": "ChatGPT 中引入工作区智能体",
+      "title": "OpenAI 引入了工作区智能体，这是 ChatGPT 内一类新型的、可共享的、长期运行的 AI 智能体，专为业务团队设计，旨在自动化复杂工作流、与组织工具集成，并在企业级控制下运行。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/3b1c0638?entry=related_article",
+      "text": "Claude Opus 4.7 正式发布",
+      "title": "Anthropic 发布了 Claude Opus 4.7，这是对 Opus 4.6 的一次重大升级，在高级软件工程、视觉能力、指令遵循和自主长程推理方面有显著改进，同时实施了新的网络安全防护措施，并维持了相同的定价。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019474152743223477?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.3-Codex",
+      "title": "OpenAI 宣布 GPT-5.3-Codex 正式上线，这是其代码生成模型系列的重大突破。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/52f8c2e7?entry=related_article",
+      "text": "通过 Responses API 中的 WebSockets 加速智能体工作流",
+      "title": "OpenAI 工程师详细介绍了他们如何重新设计 Responses API 以使用持久的 WebSocket 连接，通过消除冗余的网络开销并让 GPT‑5.3‑Codex‑Spark 等更快的模型充分发挥其推理速度潜力，将智能体工作流延迟降低了高达 40%。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "OpenAI 发布其迄今为止能力最强的模型 GPT-5.5，在智能体编程、知识工作和科学研究方面取得显著进步，同时保持了 GPT-5.4 的延迟并提升了 Token 效率。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "GPT-5.5, OpenAI, 大型语言模型, 智能体编程, AI 安全",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "GPT-5.5 发布 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "OpenAI 发布其迄今为止能力最强的模型 GPT-5.5，在智能体编程、知识工作和科学研究方面取得显著进步，同时保持了 GPT-5.4 的延迟并提升了 Token 效率。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/a6d9083a",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/a6d9083a/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-23 11:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "OpenAI",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "GPT-5.5",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "OpenAI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "大型语言模型",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "智能体编程",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 安全",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "GPT-5.5 发布 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "OpenAI 发布其迄今为止能力最强的模型 GPT-5.5，在智能体编程、知识工作和科学研究方面取得显著进步，同时保持了 GPT-5.4 的延迟并提升了 Token 效率。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/a6d9083a/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "GPT-5.5 发布 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/a6d9083a"
+}

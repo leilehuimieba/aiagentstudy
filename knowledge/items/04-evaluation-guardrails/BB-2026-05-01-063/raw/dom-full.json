@@ -1,0 +1,294 @@
+{
+  "content": "VIDEO\n84\nGitHub is having some major issues right now…\n\nFireship 梳理 GitHub 在 2026 年 4 月的可靠性危机，包括 outages、merge queue 事故、安全事件、Mitchell Hashimoto 离开，以及 agentic AI development workflows 对基础设施造成的压力。\n\nFireship\n关注\n·\n昨天\n·\n8 个章节\n·\n查看原文 →\nGitHub 2026 可靠性危机：故障、AI agents 与开发者信任\n章节导览\n8 个章节\nCH.1\nGitHub's Growing Reliability Crisis\n00:00\nCH.2\nThe Rise of the 'Facebook for Code'\n00:51\nCH.3\nThe 2026 Uptime Crisis\n01:54\nCH.4\nA Week of Disastrous Failures\n02:18\nCH.5\nMitchell Hashimoto's Breakup with GitHub\n03:05\nCH.6\nAI Agents and Infrastructure Strain\n03:51\nCH.7\nExploring GitHub Alternatives\n04:44\nCH.8\nHigh Impact Careers and Conclusion\n05:05\n📝 实时字幕\n跟随播放\n全部字幕\n00:00\n1\n\nit's 10 p.m Do you know where your children are i don't know where mine are because I'm too busy\n\n00:04\n1\n\nworking on pushing commit final final v2 actual fix to GitHub Unfortunately if you're one of the 100 million plus\n\n00:10\n1\n\ndevelopers who use GitHub you may have encountered a message like this recently or maybe all of your pull requests\n\n00:16\n1\n\njust disappeared completely or maybe the search returns nothing or your continuous integration actions just hang in the void GitHub\n\n00:23\n1\n\nis easily the most important website in software engineering But more and more developers are yelling at it and in\n\n00:28\n1\n\nsome cases literally crying like it's a broken vending machine that ate their last dollar Well finally yesterday things hit\n\n00:34\n1\n\nthe point of no return after legendary developer Mitchell Hashimoto did the unthinkable He packed up his open- source project\n\n00:41\n1\n\nGhosty and is leaving GitHub for good in search of greener pastures Um and this fall I'm going to take\n\n00:46\n1\n\nmy talents to South Beach In today's video we'll find out what the hell happened to GitHub and why It\n\n00:51\n1\n\nis April 30th 2026 and you're watching the code report In 2008 GitHub was built with Ruby on Rails as\n\n00:58\n1\n\nan online platform to manage your software source code with a relatively new technology called Git which is the version\n\n01:04\n1\n\ncontrol system built by Linus Torvalds in 2005 to manage the source code of Linux The pitch was simple It\n\n01:10\n1\n\ntake the command line nightmare your senior engineer keeps yelling about it Give it a web UI make it like\n\n01:15\n1\n\nFacebook for code and suddenly every developer on Earth has a public coding profile It worked so well that by\n\n01:21\n1\n\n2018 Microsoft bought it for $7.5 billion Today it hosts over $420 million failed side projects and effectively is the\n\n01:30\n1\n\npublic record of software If it isn't on GitHub it might as well not exist Developers use it to store\n\n01:35\n1\n\ncode track bugs through issues propose changes through pull requests run tests and deployment through GitHub actions while also functioning\n\n01:43\n1\n\nas a social network and resume for developers All duct taped to a Git server which is exactly why it\n\n01:49\n1\n\nbreaking is such a problem and the main reason developers are big mad at GitHub right now is uptime or\n\n01:54\n1\n\nlack thereof But let's check the actual receipts According to thirdparty monitoring GitHub uptime in 2025 dipped below 90% and\n\n02:02\n1\n\nApril 2026 is tracking around an abysmal 86% For context AWSS3 promises 11 9 and GitHub is currently operating at\n\n02:12\n1\n\njust 1 n However the official GitHub status page would beg to differ and reports uptime well above 99% for\n\n02:18\n1\n\nall services Regardless the previous week on GitHub was a disaster On April 23rd the Merge Q quietly unmerged 292\n\n02:23\n1\n\npull requests across 658 repos In other words the platform whose entire job is to not lose your code just\n\n02:34\n1\n\nlost your code Damn it's gone Then on April 27th GitHub's elastic search subsystem was hit by a botnet that\n\n02:41\n1\n\ntook down GitHub search for hours And then on April 28th GitHub was forced to publish two blog posts the\n\n02:46\n1\n\nsame morning One was the CTO apologizing for reliability while the other was about a critical remote code execution vulnerability\n\n02:54\n1\n\nwhere Git push could literally execute code on GitHub servers A few big projects like Zigg have already migrated away\n\n03:00\n1\n\nfrom GitHub but then shit really hit the fan when Mitchell Hashimoto dropped this blog post He's the creator of\n\n03:05\n1\n\ntools like Vagrant and Terraform which are part of his company Hashi Corp which was taken public and made him\n\n03:10\n1\n\nextremely rich Despite having enough money to own his own private jet he still bangs out code daily building a\n\n03:16\n1\n\nterminal emulator called Ghosty He joined GitHub in 2008 as user number 1,299 and is logged in almost every single\n\n03:23\n1\n\nday for 18 years But on April 28th he wrote a breakup letter while literally crying Speaking of GitHub he\n\n03:29\n1\n\nsaid quote \"I want to ship software and it doesn't want me to ship software.\" That line hits hard and\n\n03:35\n1\n\nhe says he kept a journal for a month and put an X next to every day a GitHub outage\n\n03:40\n1\n\nblocked his work and almost every day got an X at this point He's had enough and his 50,000 star\n\n03:45\n1\n\nGitHub project Ghosty is leaving the platform for good That's a massive vibe shift but who can we get blamed\n\n03:51\n1\n\nfor this well it's easy to point the finger at Microsoft because it's literally their sole responsibility to make this\n\n03:56\n1\n\nwebsite work But I actually know people who work at GitHub and believe they're trying The key to success is\n\n04:03\n1\n\ndevelopers developers developers developers developers developers developers developers developers When they acquired GitHub back in 2018 it actually got better\n\n04:13\n1\n\nin the years that followed with features like actions code spaces etc But now in the AI coding era the\n\n04:19\n1\n\ninitification is real A GitHub CTO admits in writing that since 2025 agentic development workflows have accelerated sharply which translated\n\n04:28\n1\n\ninto English means that AI agents are hammering GitHub like it's a free buffet A GitHub isn't just a host\n\n04:33\n1\n\nfor developers anymore It's a host for their replacement In the same way Bill Gates saved the world from CO\n\n04:38\n1\n\n19 I have faith Microsoft will turn the GitHub ship around But if they don't there are alternatives out there\n\n04:44\n1\n\nYou've got the reliable but boring GitLab you've got the German nonprofit Codeberg and you've got the minimal Source Hut\n\n04:50\n1\n\nwhich has zero AI features whatsoever and many other viable platforms ready to reap the benefits of GitHub's downfall That\n\n04:56\n1\n\nthat means the good news is that if you make the mistake of choosing to become a programmer as a\n\n05:00\n1\n\ncareer there will always be a home for your code But did you realize you have 80,000 hours in your\n\n05:05\n1\n\ncareer 40 hours per week 50 weeks per year for 40 years That's a lot of time to make a\n\n05:10\n1\n\npositive impact on the world And 80,000 hours the sponsor of today's video can help you do that If you're\n\n05:16\n1\n\nyoung you've probably heard advice like \"Follow your passion do what you love and take the initiative.\" But these cliches\n\n05:22\n1\n\nare not based on evidence or data Unlike the work of 80,000 hours which is a nonprofit that for the\n\n05:28\n1\n\nlast 10 years has been researching the question of how do you find a fulfilling career that does good too\n\n05:34\n1\n\ntheir website has tons of collected research on high impact careers along with job boards podcasts and a lot more\n\n05:41\n1\n\nIt's an incredible resource for anyone looking to start a high impact career or make a switch mid-career Join the\n\n05:46\n1\n\nnewsletter today to get a free copy of their in-depth career guide sent to your inbox It could be the\n\n05:51\n1\n\ncatalyst that changes your direction in life that this has been the code report Thanks for watching and I will\n\n05:56\n1\n\nsee you in the next one\n\n点击任意行跳转 · 悬停可向 AI 提问\n\n内容简介\nGitHub's 2026 Meltdown: Reliability Crisis and the AI Surge\n\nGitHub, the platform that has served as the bedrock of software engineering since its inception in 2008, is currently navigating its most turbulent period to date. As of April 2026, the developer community is reporting record levels of frustration due to a series of outages, data losses, and security vulnerabilities that have shaken the industry's trust in Microsoft's $7.5 billion acquisition.\n\nThe Reliability Gap\n\nWhile GitHub's official status page remains optimistic, reporting uptimes above 99%, third-party monitoring tools paint a far grimmer picture. In April 2026, the platform's actual uptime dipped to an estimated 86%. To put this in perspective, standard cloud services like AWS S3 aim for \"11 nines\" of durability, whereas GitHub is struggling to maintain even one.\n\nRecent failures include:\n\nData Loss: On April 23rd, the Merge Queue system accidentally unmerged 292 pull requests across over 600 repositories.\nInfrastructure Attacks: A botnet attack targeted GitHub's Elastic Search subsystem, disabling search functionality for hours.\nSecurity Risks: A critical remote code execution (RCE) vulnerability was discovered where a simple git push could potentially execute malicious code on GitHub's own servers.\nThe Hashimoto Departure\n\nPerhaps the most symbolic blow to the platform was the departure of Mitchell Hashimoto. As the creator of Vagrant and Terraform and a GitHub user since 2008, Hashimoto represents the core demographic of the platform. After documenting a month of daily outages that blocked his work on the Ghosty terminal emulator, Hashimoto officially moved his 50,000-star project off the platform, stating, \"I want to ship software and it [GitHub] doesn't want me to ship software.\"\n\nThe AI Factor: \"Initification\"\n\nThe root cause of these stability issues appears to be the transition into the AI coding era. GitHub's CTO has acknowledged that the rise of agentic development workflows—where AI agents autonomously interact with repositories—has placed unprecedented strain on their infrastructure. Essentially, AI agents are hammering the platform's servers at a frequency and scale that human developers never could, leading to what some are calling the \"initification\" of the service.\n\nLooking for Alternatives\n\nAs the \"vibe shift\" continues, many developers are looking toward alternative platforms:\n\nGitLab: The primary established competitor, known for being feature-rich if slightly more complex.\nCodeberg: A German non-profit alternative gaining traction among open-source purists.\nSource Hut: A minimal, AI-free platform focused on speed and simplicity.\n\nWhile Microsoft has a history of turning around struggling products, the current state of GitHub serves as a reminder that even the most essential tools in the software ecosystem are not invincible.\n\n00:00 / 00:00\n1x",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/video/297a3b9#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/videos?sourceid=c7007a",
+      "text": "Fireship",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=d53Zk28esmU",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Fireship 梳理 GitHub 在 2026 年 4 月的可靠性危机，包括 outages、merge queue 事故、安全事件、Mitchell Hashimoto 离开，以及 agentic AI development workflows 对基础设施造成的压力。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "GitHub, 开发者基础设施, 可靠性, AI coding agents, DevOps",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "GitHub 2026 可靠性危机：故障、AI agents 与开发者信任 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Fireship 梳理 GitHub 在 2026 年 4 月的可靠性危机，包括 outages、merge queue 事故、安全事件、Mitchell Hashimoto 离开，以及 agentic AI development workflows 对基础设施造成的压力。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/video/297a3b9",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/297a3b9/opengraph-image?64edf17c38836472",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-30 16:37:31",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Fireship",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "GitHub",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "开发者基础设施",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "可靠性",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI coding agents",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "DevOps",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "GitHub 2026 可靠性危机：故障、AI agents 与开发者信任 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Fireship 梳理 GitHub 在 2026 年 4 月的可靠性危机，包括 outages、merge queue 事故、安全事件、Mitchell Hashimoto 离开，以及 agentic AI development workflows 对基础设施造成的压力。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/297a3b9/twitter-image?8c88273a7af11d7e",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "GitHub 2026 可靠性危机：故障、AI agents 与开发者信任 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/video/297a3b9"
+}

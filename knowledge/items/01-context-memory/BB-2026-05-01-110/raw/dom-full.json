@@ -1,0 +1,354 @@
+{
+  "content": "我们推出了 GLM-5，这是一款旨在推动编程范式从“Vibe Coding”（氛围编程）转向“Agentic Engineering”（智能体工程）的下一代基础模型。GLM-5 在前代模型 GLM-4.5 的智能体、推理与编程（Agentic, Reasoning and Coding, ARC）能力基础上，采用稀疏注意力（DeepSeek Sparse Attention，DSA）以大幅降低推理成本，同时保持长上下文能力无损。为了让模型更好地与各类任务对齐，我们构建了一套新型异步强化学习（RL）基础设施，通过将生成过程与训练过程解耦，从而大幅提升了后训练的迭代效率。此外，我们还提出了全新的异步 Agent 强化学习算法，进一步提升强化学习的效果，使模型能够更有效地从复杂、长程交互中学习。基于上述创新，GLM-5 在主流的开放基准测试中实现了 SOTA 性能。最关键的是，GLM-5 在真实世界编程任务中展现出前所未有的能力，在处理端到端软件工程挑战方面超越了此前所有开源基线。代码、模型及更多信息请访问：https://z.ai/blog/glm-5\n\n1 引言\n\n追求 AGI 并非单纯扩张参数规模，而是要从底层重构智能效率与自主演进架构。在 GLM-4.5 中，我们成功验证了将智能体、推理与编程（ARC）能力融合至单一 MoE 架构的可行性，并在多项基准测试中取得不错的成绩。不过，随着 LLM 从静态知识库向主动问题求解器转变，计算成本与现实适应性成为核心瓶颈，这在复杂的软件工程场景中表现得尤为明显。\n\n为此，我们推出了下一代旗舰模型 GLM-5 以解决上述问题。GLM-5 在性能与计算效率上实现了跃升，不仅在 ArtificialAnalysis.ai、LMArena 文本与代码等主要榜单中均达到 SOTA 水平，更重塑了真实世界的编程标准。它突破了 SWE-bench 等传统静态测评的考察边界，在处理复杂的端到端软件开发任务时，展现出了前所未有的强大能力。\n\n主要结果。图 1 展示了 GLM-5、GLM-4.7、Claude Opus 4.5、Gemini 3 Pro 和 GPT-5.2（xhigh）在 8 个Agent、推理与编程基准测试上的结果。平均而言，GLM-5 相比上一版本 GLM-4.7 提升约 20%，与 Claude Opus 4.5 和 GPT-5.2（xhigh）相当，并优于 Gemini 3 Pro。\n\n图1：GLM-5、DeepSeek-V3.2、Claude Opus 4.5、Gemini 3 Pro 和 GPT-5.2（xhigh）在 Humanity's Last Exam、SWE-bench Verified、SWE-bench Multilingual、Terminal-Bench 2.0、BrowseComp、MCP-Atlas、τ²-Bench 和 Vending Bench 2 基准测试上的结果。\n\nGLM-5 在 Artificial Analysis Intelligence Index v4.0 中得到 50 分，成为新的开源 SOTA 模型（见图2），较 GLM-4.7 提升 8 分，这一提升源于 Agent 性能及知识/幻觉方面的全面改进。这是开放权重模型首次在 Artificial Analysis Intelligence Index v4.0 中达到 50 分。\n\n图2：Artificial Analysis Intelligence Index v4.0 涵盖 10 项评估：GDPval-AA、τ²-Bench Telecom、Terminal-Bench Hard、SciCode、AA-LCR、AA-Omniscience、IFBench、Humanity's Last Exam、GPQA Diamond 和 CritPt。\n\nLMArena 最初由加州大学伯克利分校发起，是一个通过数百万真实任务（包括写作、编程、推理、设计、搜索和创作）以人类评判方式透明评估和比较前沿 AI 能力的平台。大量的人类交互产生了真实世界效用信号，使其有别于其他静态基准测试。如图 3 显示，GLM-5 在文本竞技场和代码竞技场中均位列开放模型第一，整体水平与 Claude Opus 4.5 和 Gemini 3 Pro 相当。\n\n图3：在 LMArena 上，GLM-5 在文本竞技场（Text Arena）和代码竞技场（Code Arena）中均位居开源模型第一。\n\n智能体（Agent）在长周期任务中的连贯性正变得愈发关键。如今，编程智能体（Coding Agent）已能连续数小时自主编写代码，AI 模型的任务能力边界也在不断拓展。为了评估 GLM-5 处理长程任务的能力，我们引入了 Vending-Bench 2 和 CC-Bench-V2 两大基准测试。\n\nVending-Bench 2 旨在评估 AI 模型在长周期内的商业运营表现。该测试要求模型在设定的一年期限内模拟经营一家自动售货机，并以最终的账户余额作为评分标准。如图 4（左）所示，GLM-5 在所有开源模型中拔得头筹，最终账户余额达到 4432 美元，展现出卓越的长期规划与资源管理能力，其表现已逼近 Claude Opus 4.5。\n\n图 4（右）进一步展示了基于内部评估套件 CC-Bench-V2 的测试结果。数据显示，GLM-5 在前端、后端及长程任务上的表现均显著超越了前代 GLM-4.7，进一步缩小了与 Claude Opus 4.5 的差距。\n\n图4：在多个长程任务上的结果。左：Vending-Bench 2；右：CC-Bench-V2。\n\n图 5 详细展示了 GLM-5 的整体训练流程。在基础模型训练阶段，我们使用了规模达 27 万亿 token 的海量语料库，并在训练初期重点引入代码与推理数据。随后进入中期训练（Mid-training）阶段，我们将上下文窗口从 4K 逐步扩展至 200K，并专门针对长上下文 Agent 数据进行训练，以保障模型在复杂工作流中的执行稳定性。在后训练（Post-training）阶段，我们引入了一套序列化的强化学习（RL）流程：依次在推理、智能体、通用领域进行强化学习。值得注意的是，我们在全流程中应用了跨阶段在线蒸馏（Cross-stage online distillation）技术，有效克服了灾难性遗忘问题。\n\n图5：GLM-5 的整体训练流程。\n\n总体而言，GLM-5 能够实现性能的大幅跃升，主要得益于以下四大技术创新：\n\n第一，引入 DSA 稀疏注意力机制（DeepSeek Sparse Attention, DSA）。这一全新架构极大降低了训练与推理成本。此前的 GLM-4.5 依赖标准 MoE 架构提升效率，而 DSA 机制则使 GLM-5 能够根据 Token 的重要性动态分配注意力资源。在不折损长上下文理解和推理深度的前提下，算力开销得以大幅削减。得益于此，我们将模型参数规模成功扩展至 744B（7440 亿），同时将训练 Token 规模提升至 28.5T（28.5 万亿）。\n第二，构建全新的异步 RL 基础设施。基于 GLM-4.5 时期 slime 框架“训练与推理解耦”的设计，我们的新基建进一步实现了“生成与训练”的深度解耦，将 GPU 利用率推向极致。该系统支持模型开展大规模的智能体（Agent）轨迹探索，大幅减缓了以往拖慢迭代速度的同步瓶颈，让 RL 后训练流程的效率实现了质的飞跃。\n第三，提出全新的异步 Agent RL 算法。该算法旨在全面提升模型的自主决策质量。GLM-4.5 曾依靠迭代自蒸馏和结果监督来训练 Agent；而在 GLM-5 中，我们研发的异步算法使模型能够从多样化的长周期交互中持续学习。这一算法针对动态环境下的规划与自我纠错能力进行了深度优化，这也正是 GLM-5 能够在真实编程场景中表现卓越的底层逻辑。\n第四，全面拥抱国产算力生态。从模型发布伊始，GLM-5 就原生适配了中国 GPU 生态。我们已完成从底层内核到上层推理框架的深度优化，全面兼容七大主流国产芯片平台：华为昇腾、摩尔线程、海光、寒武纪、昆仑芯、天数智芯与燧原。\n\n凭借上述进步，GLM-5 不仅是一个更强大的模型，更是下一代 AI Agent 更高效、更实用的基础模型。我们向社区开源 GLM-5，以进一步推动高效的、面向 Agent 的通用人工智能的发展。\n\n2 预训练\n\n与 GLM-4.5 类似，GLM-5 的基础模型经历两个阶段：用于通用语言和编程能力的预训练，以及用于 Agent 和长上下文能力的中期训练。我们增加了 GLM-5 所有训练阶段的训练 token 预算，基础模型总训练量达 28.5 万亿 token。\n\n2.1 架构\n\n模型规模 scaling。GLM-5 将专家数量扩展至 256 个，并将层数减少至 80 层，以减少专家并行通信开销。这使得模型参数量达到 744B（激活参数 40B），是 GLM-4.5（总参数 355B，激活参数 32B）的两倍。\n\nMulti-latent 注意力（MLA）。通过采用压缩KV缓存的维度，MLA 在效果上与分组查询注意力（GQA）相当，但能提供更少的显存占用和更快的长上下文序列处理速度。\n\n然而，在使用 Muon 优化器的实验中，我们发现具有 576 维潜变量 KV 缓存的 MLA 无法匹配具有 8 个查询组的 GQA（GQA-8，2048 维 KV 缓存）的性能。为弥补性能差距，我们对 GLM-4.5 中 Muon 优化器的方案提出了改进。在原始方案中，我们对多头查询、键、值的上投影矩阵 WUQ、WUK、WUV 应用矩阵正交化。取而代之的是，我们将这些矩阵拆分为适用于不同注意力头的更小矩阵，并对这些独立矩阵应用矩阵正交化。该方法称为 Muon Split，使不同注意力头的投影权重能够以不同速率更新。如表 1 所示，该方法有效提升了 MLA 的性能，使其与 GQA-8 相当。实践中，我们还发现使用 Muon Split 后，GLM-5 注意力分数的规模在预训练期间无需任何裁剪策略即可保持稳定。\n\n表1：在 GQA-8 和 MLA 等各变体上的评估结果。\n\nMLA 的另一个缺点是其在解码期间的高计算成本。在解码时，MLA 执行 576 维点积运算，高于 GQA 的 128 维计算量。虽然 DeepSeek-V3 中注意力头数量是根据 H800 的 roofline 选择的，但这对其他硬件并不适合。鉴于 MLA 在训练和预填充期间的多头注意力（MHA）风格，我们将头维度从 192 增大到 256，并将注意力头数量减少 1/3。这在保持训练计算量和参数数量不变的同时降低了解码计算量。该变体在表 1 中为 MLA-256，在 Muon Split 下与 MLA 性能相当。\n\n参数共享的多 token 预测（MTP）。多 token 预测可以提升基础模型性能，并作为推测解码的草稿模型。然而，在训练期间，预测接下来的 n 个 token 需要 n 个 MTP 层。因此，MTP 参数和 KV 缓存的显存占用随推测步数线性增长。相比之下，DeepSeek-V3 使用单个 MTP 层训练，并在推理期间预测接下来 2 个 token。训练与推理的不一致性降低了第二个 token 的接受率。因此，我们提出在训练期间共享 3 个 MTP 层的参数。这在保持草稿模型内存成本与 DeepSeek-V3 一致的同时提升了接受率。表 2 显示，在相同推测步数（4 步）的私有提示集上，GLM-5 的接受长度比 DeepSeek-V3.2 更长。\n\n表2：DeepSeek-V3.2 与 GLM-5 接受长度的对比。\n\n2.1.1 基于 DSA 的继续预训练\n\n我们在训练中采用了 DSA。DSA 的核心理念是将传统的密集 O(L²) 注意力（在 200K 上下文中计算量极为昂贵）替换为动态的细粒度选择机制。与固定模式（如滑动窗口）不同，DSA“审视”内容以决定哪些 token 重要。从研究者角度来看，DSA 特别有趣之处在于它是通过从稠密基础模型进行继续预训练引入的，从而避免了“天文数字”级别的从头训练成本。过渡遵循“稠密预热”与“稀疏训练适配”的两阶段策略。DeepSeek-V3.2-Exp 保持了与其稠密前身相同的基准性能，证明长上下文中 90% 的注意力条目确实是冗余的。DSA 将长序列的注意力计算降低约 1.5-2 倍，这对于我们正在构建的推理密集型 Agent 非常重要，能够以一半 GPU 成本处理 200K 上下文。\n\nDSA 训练从中训练结束时的基础模型开始。预热阶段经历 1000 步，每步在 14 个序列（每个序列有 202752 个 token）上训练，最大学习率为 5e-3。稀疏适配阶段遵循中期训练的数据和超参数设置，经历 20B token。尽管训练预算远小于 DeepSeek-V3.2（943.7B token），我们发现这已足以使 DSA 模型的性能与原始 MLA 模型相当。如表 3 所示，DSA 模型的长上下文性能与 MLA 模型接近。为进一步验证 DSA 训练的有效性，我们分别用相同的 SFT 数据对 DSA 和 MLA 模型进行微调，发现两个模型在训练损失和评估基准上旗鼓相当。\n\n表3：MLA 与 DSA 基础模型在长上下文基准测试上的对比。\n\n图6：MLA 与 DSA 训练的 SFT 损失曲线对比。结果采用窗口大小为 50 的滑动平均进行平滑处理。\n\n2.1.2 高效注意力变体的消融研究\n\n除 DSA 之外，我们还基于 GLM-9B 探索了多种替代的高效注意力机制。基线在所有 40 层中采用分组查询注意力，并已在 128K token 上下文窗口下进行微调。我们评估了以下方法：\n\n滑动窗口注意力（SWA）交错：全注意力层与窗口注意力层在网络中均匀交替的固定模式。\n门控 DeltaNet（GDN）：一种线性注意力变体，将二次方 softmax 注意力计算替换为门控线性递归，将注意力的计算复杂度从序列长度的二次方降至线性。\n\n在此基础上，我们提出了两项改进：\n\n基于搜索的 SWA 模式：受 PostNAS 启发，我们引入了一种基于搜索的适配方法，识别用于 SWA 转换的最优层子集，同时在其余层保留全注意力。我们采用束搜索策略确定能最大化长上下文下游任务性能的配置。为降低计算成本，我们仅在 16K 上下文长度下进行搜索，并将结果模式推广至所有其他输入长度。最终推导出的模式为 SFSSFFSSSFFFFSSFSFFFFFFSFSFSSFSSFSFSSFSSS，其中 S 和 F 分别表示 SWA 和全注意力层。如表 4 所示，这种基于搜索的配置显著优于固定交错方法。值得注意的是，尽管仅在 16K 下优化，该模式仍表现出良好的长度泛化能力，在所有测试的上下文长度下均有效。\n\n表4：GLM-9B 基线模型及两种 SWA 变体在 RULER 基准测试上的结果（均未经过任何额外训练）。两种 SWA 方法均采用全注意力层与 SWA 层 1:1 的比例，滑动窗口大小为 4096 个 token。基于搜索的 SWA 模式在 16k 上下文长度时发现一次，并统一应用于所有输入长度。\n\nSimpleGDN：一种极简线性化策略，设计用于最大程度复用预训练权重，在持续训练适配上改进了 GDN。我们完全移除了 Conv1d 和显式门控模块，直接将预训练的查询、键、值投影权重映射到线性递归公式中。这种简化无需额外参数，同时保留了线性注意力的效率优势。\n\n表 5 的结果揭示了高效注意力方法之间清晰的权衡层次。原生交错滑动窗口注意力（SWA）在长上下文任务上导致灾难性退化（如 RULER@128K 下降 30.35），而基于搜索的层选择通过在最关键的层保留全注意力，显著缩小了这一差距。线性注意力变体（如 GDN）进一步提升了质量，但代价是增加了额外参数；SimpleGDN 通过最大程度复用预训练权重取得了最佳平衡。然而，所有这些方法在细粒度检索任务上都存在固有的精度差距——即使在一半层保留全注意力的情况下，RULER@128K 上最高损失 5.69 分，RepoQA@128K 上最高损失 7.33 分——这是继续训练适配中高效注意力机制引入的不可避免的信息损失所致。相比之下，DSA 在设计上是无损的：其轻量级索引器在不丢弃任何长程依赖的情况下实现 token 级稀疏性，能够应用于所有层而不降低质量。\n\n表5：长上下文基准测试结果。所有高效注意力变体均从 GLM-9B 全注意力基线模型进行继续训练。SWA pattern 表示基于搜索的层选择方式；SWA interleave 表示固定交替模式。∆@64K 和 ∆@128K 分别表示在 64K 和 128K 上下文长度下相对于全注意力基线的差值。\n\n表6：GLM-4.7-Flash 搭配 DSA 的 RULER 基准测试结果。仅预热变体（warmup-only）只训练索引器而保持基础模型冻结，完整 DSA 变体则对两者进行联合训练，共训练 150B token。\n\n2.2 预训练数据\n\n网页数据。在 GLM-4.5 数据流程的基础上，我们完善了海量网页数据集的筛选标准。我们引入了另一个基于语句嵌入的 DCLM 分类器，以识别和汇聚标准分类器之外的高质量数据。为应对长尾知识挑战，我们利用世界知识分类器，通过维基百科条目和 LLM 标注数据优化，从原本中低质量数据中筛选有价值信息。\n\n代码数据。我们通过更新主要代码托管平台的快照和更大规模的含代码网页集合来扩充代码预训练语料库，使模糊去重后的 token 增加 28%。为提升语料库完整性并减少噪声，我们修复了 Software Heritage 代码文件中的元数据对齐问题，并采用了更精准的语言分类流程。我们遵循 GLM-4.5 的质量感知采样策略处理源代码和代码相关网页文档。此外，我们还为更多低资源编程语言（如 Scala、Swift、Lua 等）训练了专用分类器，提升了这些语言的采样质量。\n\n数学与科学数据。我们从网页、书籍和论文中收集高质量数学与科学数据，以进一步增强推理能力。具体而言，我们完善了网页内容提取流程以及书籍和论文的 PDF 解析机制，以提升数据质量。我们采用大型语言模型对候选文档进行评分，仅保留最具教育价值的内容。对于长文档，我们开发了分块聚合评分算法以提升评分精度。过滤流程严格避免使用合成、AI 生成或模板类数据。\n\n2.3 中期训练\n\n在 GLM-4.5 引入的中期训练框架基础上，GLM-5 扩大了训练规模并延长了最大上下文长度，以进一步增强模型的推理、长上下文和 Agent 能力。\n\n扩展上下文与训练规模。我们分三个阶段逐步扩展上下文窗口：32K（1T token）、128K（500B token）和 200K（50B token）。与 GLM-4.5 最大 128K 相比，额外的 200K 阶段显著提升了模型处理超长文档和复杂多文件代码库的能力。长文档和合成 Agent 轨迹在后期阶段相应地被上采样。\n\n软件工程数据。我们保留了将仓库级代码文件、提交差异、GitHub issues、拉取请求和相关源文件拼接成统一训练序列的范式。在 GLM-5 中，我们放宽了仓库级过滤标准以扩大合格仓库池，获得约 1000 万个 issue-PR 对，同时加强了单个 issue 级别的质量过滤以降低噪声。我们还为每个 issue-PR 对检索了更多相关文件，产生了更丰富的开发上下文，并扩大了真实软件工程场景的覆盖范围。过滤后，issue-PR 部分的数据集包含约 160B token。\n\n长上下文数据。我们的长上下文训练集包含自然数据和合成数据。自然数据从书籍、学术论文和通用预训练语料库文档中精选，采用多阶段过滤（困惑度、去重、长度）并对知识密集型领域进行上采样。在合成数据构建中，受 NextLong 和 EntropyLong 启发，我们采用多种技术构建长程依赖关系。高度相似的文本通过交错打包聚合成序列，旨在缓解“中间丢失”现象并提升各类长上下文任务的性能。在 200K 阶段，我们额外加入了少量 MRCR 类数据，并设计了多种变体以扩展 OpenAI 原始范式，以增强扩展多轮对话中的召回能力。\n\n2.4 训练基础设施\n2.4.1 内存效率\n\n灵活的 MTP 布局。在交错流水并行下，MTP 模块（包含嵌入层、Transformer 块和输出层）显存占用显著高于其他模块，容易导致不同流水并行 rank 之间显存负载不均衡。我们对 MTP 模块进行拆分，将输出层与主输出层统一放置在最后阶段以实现参数共享，其余部分前移至前一阶段，从而改善各 rank 之间的显存均衡。\n\n流水线 ZeRO2 梯度分片。在流水线并行中，每个 rank 维护多个 stage，常规实现下每个 stage 均需维护完整梯度 buffer，显存开销较大。受 ZeRO2 思想启发，我们将梯度按数据并行维度分片，使每个 stage 仅持有其对应分片。同时结合双缓冲策略，在任意时刻仅保留两个完整梯度累加 buffer，实现梯度累加与通信同步并行执行，并将完整梯度的常驻显存规模控制在固定范围内。在不引入额外同步开销的情况下，显著降低了梯度相关显存开销。\n\nMuon 分布式优化器零冗余通信。原生 Muon 实现会在每个数据并行 rank 上执行完整参数 all-gather，带来额外通信和显存占用。我们将 all-gather 范围限制为本 rank 负责的参数分片，并与本地计算重叠执行，从而消除冗余通信并降低优化器阶段的显存开销。\n\n流水线激活卸载。在流水线预热阶段，中间激活在显存中的驻留时间较长。我们按层粒度将激活在前向完成后卸载至 DRAM，并在反向计算前按需加载。卸载与加载过程与计算重叠执行，同时避免与 P2P 通信和 MoE token dispatch/combine 竞争 PCIe 带宽。在几乎不增加额外开销的前提下，有效压缩了激活显存占用，使显存使用更加稳定可控。\n\n按序列分块的输出投影优化。在长序列训练场景下，输出投影与 cross entropy loss 计算会带来较大的显存压力。我们按序列维度分块执行输出层与 loss 计算，对每个块独立完成前向与反向传播后再继续处理下一块，从而控制输出阶段的显存峰值。该实现与常规实现相比性能保持接近。\n\n2.4.2 并行效率\n\n高效的延迟权重梯度计算。为减少流水线“气泡”，我们推迟关键路径上的部分权重梯度计算。通过精细的显存管理策略和计算通讯重叠，实现训练吞吐提升并且保证额外显存开销受控，不至于 OOM。\n\n高效长序列训练。动态长度的长序列训练加剧了数据并行和流水并行之间的负载不均衡。我们通过工作负载建模，在数据并行组之间进行长序列数据重排，一定程度缓解了负载不均衡问题。在此基础上，我们还在数据并行组间动态调整计算负载，进一步缓解了数据并行组间的慢等待问题。此外我们还通过动态创建虚拟 CP 组来缓解固定大小 CP 组带来的一些计算低效问题。最后，我们利用机内/机间的 all2all 通讯重叠来减小端到端的延迟。\n\n2.4.3 INT4 量化感知训练\n\n为在低精度下提供更好的准确性，我们在 SFT 阶段应用了 INT4 量化感知训练（QAT）。此外，为进一步降低训练时间开销，我们开发了一个适用于训练和离线权重量化的量化 kernel ，确保训练与推理可以做到比特级别对齐。\n\n3 后训练\n\nGLM-5 的后训练阶段旨在将基础模型转化为具备强大推理、编程和 Agent 能力的高效助手。如上图 5 所示，我们的流程遵循渐进式对齐策略：从引入复杂交错思考模式的多任务 SFT 开始，随后是专门针对推理和 Agent 任务的 RL 阶段，最后是面向人类风格对齐的通用 RL 阶段。通过跨阶段在线蒸馏作为最终精炼步骤，GLM-5 有效减轻了能力退化，同时充分利用了每个训练阶段的性能增益。\n\n3.1 监督微调（SFT）\n\n与 GLM-4.5 相比，GLM-5 在 SFT 阶段显著扩大了 Agent 和编程数据的规模。GLM-5 的 SFT 语料库涵盖三大类别：\n\n通用对话（问答、写作、角色扮演、翻译、多轮对话和长上下文交互）；\n推理（数学、编程和科学推理）；\n编程与 Agent （前端和后端工程代码、工具调用、Coding Agent 、搜索 Agent 和通用 Agent ）。\n\n此外，GLM-5 在 SFT 阶段将最大上下文长度扩展至 202752 个 token。配合更新后的聊天模板，模型支持三种不同的思考特征（图 7）：\n\n交错思考（Interleaved Thinking）：模型在每次响应和工具调用前进行思考，提升指令遵循和生成质量；\n保留思考（reserved Thinking）：在 Coding Agent 场景中，模型自动在多轮对话中保留所有思考块，复用已有推理而非重新推导，从而减少信息丢失和不一致性，适合长程复杂任务；\n轮级思考（Turn-level Thinking）：模型支持在会话中对每轮推理进行精细控制，面对轻量级请求时可禁用思考，从而降低延迟/成本，面对复杂任务时可启用思考，从而提升精度和稳定性。\n\n图7：“交错思考”与“保留思考”示意图。\n\n通过在动作间进行思考并在轮次间保持一致性，GLM-5 在复杂任务上实现了更稳定、可控的行为。\n\n在通用对话方面，相比 GLM-4.5，我们优化了响应风格，使 GLM-5 更加逻辑清晰、简洁精练；对于角色扮演任务，我们收集并构建了覆盖多种语言和多种角色设定的更广泛、更多样的数据集。特别是，我们定义了若干评估维度，包括指令遵循、语言表现力、创造力、逻辑连贯性和长对话一致性，并结合自动化与人工筛选对数据进行整理和精炼。\n\n在推理任务方面，我们进一步增强了模型推理深度。具体而言，对于逻辑推理，我们构建了可验证的问题，并通过拒绝采样合成高质量数据；对于数学和科学问题，我们采用基于难度的过滤流程，仅保留对 GLM-4.7 具有挑战性的问题。\n\n对于编程和 Agent 任务，与 GLM-4.5 相比，我们为 GLM-5 构建了大量执行环境，从而获取高质量轨迹，尤其注重真实世界场景和长程任务。我们进一步利用专家 RL 和拒绝采样来改进 SFT 数据。轨迹中的错误片段被保留，但在损失函数中被掩码处理，使模型能够学习纠错行为，而不会强化错误动作。\n\n3.2 Reasoning RL\n\nRL 算法。我们的 RL 算法以 GRPO 为基础，并引入 IcePop 技术来缓解训练-推理不匹配问题，即 RL 优化过程中推理分布与训练分布之间的差异。我们明确区分了用于梯度更新的训练模型和用于轨迹采样的 推理模型。与原始 IcePop 公式相比，我们去除了 KL 正则项，来加速 RL 的改进。训练完全以同策略进行，group 大小为 32，batch 大小为 32。\n\nDSA RL 要点。我们在 DSA 架构的模型上进行了大规模 RL 训练。与 MLA 相比，DSA 引入了一个额外的Indexer，用于检索前 k 个最相关的 KV 条目，并对检索到的子集进行稀疏注意力计算。检索到的前 k 个结果对 RL 稳定性至关重要。这类似于 MoE 模型使用路由回放来保留激活的前 k 个专家，以确保训练与推理的一致性。然而，在每个 token 位置存储索引器的前 k 个索引显然是不切实际的，因为索引器使用的 k = 2048 远大于 MoE 中通常使用的 k 值，存储所有这些索引将带来巨大的存储开销，以及训练引擎与推理引擎之间显著的通信开销。\n\n我们发现，采用确定性 top-k 算子能有效解决这一问题，与 SGLang 的 DSA Indexer 中使用的基于 CUDA 的非确定性 top-k 实现相比，直接使用原生的 torch.topk 速度稍慢，但具有确定性。它能产生更一致的输出，并带来显著的 RL 增益。相比之下，其他非确定性 top-k 算子（如 CUDA 或 TileLang 实现）在 RL 仅几步后就导致性能急剧下降，并伴随熵值骤降。因此，在我们所有的 RL 阶段中，我们在训练引擎的 DSA Indexer 中默认使用 torch.topk 作为 top-k 算子。此外，我们在 RL 过程中默认冻结索引器参数，从而加速训练并防止索引器出现不稳定的学习行为。\n\n多领域混合 RL。在推理 RL 阶段，我们在四个领域上进行混合 RL 训练：数学、科学、代码和工具集成推理（tool-integrated reasoning，TIR）。\n\n对于数学和科学，我们从开源数据集和与外部标注供应商共同构建的数据集中整理数据。我们进一步应用难度过滤，将训练重点集中在 GLM-4.7 极少答对或始终无法解决、但较强的模型（如 GPT-5.2 xhigh 和 Gemini 3 Pro Preview）可以解决的问题上。\n\n对于代码，我们同时涵盖竞技编程风格任务和科学编程任务。前者主要来源于 Codeforces 以及 TACO、SYNTHETIC-2-RL 等代表性数据集，后者则通过将问题分解为正确解答所需的最小代码实现，从内部题库中构建而成。\n\n对于 TIR，我们复用数学和科学强化学习数据中难度较高的子集，并与标注供应商联合构建明确设计为需借助外部工具作答的 STEM 问题。\n\n在 RL 训练期间，我们为各领域和特定来源分配专属裁判模型或评估系统，用来生成二元结果奖励。我们保持四个领域的整体混合大致保持平衡，并在混合 RL 设置下持续观察到每个领域的稳定且显著的增益。\n\n3.3 Agentic RL\n\n为提升 GLM-5 的 Agent 性能，我们开发了一套完全异步且解耦的 RL 框架，并在编程和搜索 Agent 任务上优化了 GLM-5。原生的同步 RL 在长程 Agent rollout 时会导致大量的 GPU 时间浪费。通过Multi-Task Rollout Orchestrator 将推理引擎和训练引擎解耦，我们在多个的 Agent 任务中实现了高吞吐量的联合训练。\n\n为在异步离策略条件下保持训练稳定性，我们引入了两项关键算法策略。首先，Token-in-Token-out（TITO）代替Text-in-Text-out，通过保留精确的token级别对应关系，消除了 re-tokenization 带来的不匹配问题。其次，我们采用直接双侧重要性采样方法，对 rollout 概率应用 token 级裁剪机制，在无需保留多个历史策略模型权重的情况下有效控制当前训练模型与采样策略偏差。我们还采用了 DP-aware 路由，以在大规模 MoE 模型的长上下文推理过程中最大化 KV 缓存复用，从而加速推理。为了扩展 Agent 环境，我们在三个领域中扩展了可验证的训练环境：超过一万个真实世界软件工程（SWE）任务、终端任务，以及高难度多跳搜索任务。更多 Agent RL 细节请参见第4节。\n\n3.4 General RL\n\n多维优化目标。我们将通用强化学习（General RL）的优化目标分解为三个维度：正确性、情商、特定任务能力。\n\n正确性维度是回复质量的基石。它针对广泛存在的各种错误类型，例如指令不遵循、逻辑矛盾、事实不准确、知识幻觉、语言不流畅等错误类型，这些错误会破坏回复的可用性。正确性维度的优化目标是降低错误率，使回复质量达到可用的基准线。我们将其视为其他优化的先决条件：如果回复包含错误（例如事实错误或误解了用户的意图），无论它表面上看起来多么完美，都可能对用户造成实质性的误导。\n\n情商维度在正确性之上进一步优化用户体验。它旨在生成具有同理心、富有洞察力且在风格上接近自然人类交流的回复，从而使与模型的交互更加自然且引人入胜。\n\n特定任务能力维度针对各种具体任务进行细粒度的优化。在正确性的基础上，它旨在将各任务类别中的回复从“仅仅是正确的”提升到“真正高质量的”。该维度涵盖了广泛的任务领域，包括写作、文本处理、主观与客观问答、角色扮演、翻译等各种领域。每个任务领域都需要不同的奖励信号，因此我们采用了混合奖励系统。\n\n混合奖励系统。为了给上述多维优化目标提供监督，我们构建了一个集成三种互补奖励信号的混合奖励系统：基于规则的奖励函数、判别式奖励模型（ORM）和生成式奖励模型（GRM）。规则奖励函数可以提供准确的、可解释的信号，但适用范围受限；ORM 提供低方差奖励信号和高训练效率，但可能陷入奖励欺骗（reward hacking），即策略模型（policy model）利用虚假的高分特征来骗取奖励，而非真正提升核心能力；GRM 利用语言模型生成评价与分数，对此类攻击更具鲁棒性，但方差较大。三者组合得到的奖励系统平衡了准确性、训练效率和鲁棒性，缓解了单一类型奖励信号的缺点。\n\n人机协作风格对齐。在通用强化学习阶段，我们没有仅仅依赖模型生成的回复，而是引入了由人类撰写的高质量回复，将其作为风格和质量的对齐锚点。这种做法的动机源于我们的一种观察：纯粹依赖模型回复进行的强化学习，往往会收敛于那些极具辨识度的“机器感”模式——这些模式通常显得冗长、公式化，或者缺乏人类写作中所带有的细腻感。通过强化学习让模型学习人类的回复范式，我们促使模型采用更加自然、更符合人类习惯的回复模式。\n\n3.5 跨阶段在线蒸馏\n\n在多阶段 RL 流程中，对不同目标的顺序优化可能导致先前获得能力的累积退化。为缓解这一问题，我们将跨阶段在线蒸馏作为最终阶段，采用在线蒸馏算法快速恢复早期 SFT 和 RL 阶段（推理 RL 和通用 RL）获得的能力。具体而言，来自前序训练阶段的最终检查点作为教师模型，训练 Prompts 从相应教师的 RL 训练集中采样并以适当比例混合。目前，我们利用推理引擎获取教师的 logits，批大小设置为 1024，组大小配置为 1 以提高数据吞吐量——在此阶段不再需要每个提示维持大量样本来估计 Advantage，Advantage 直接从与教师模型的差距中计算得出。\n\n3.6 RL 训练基础设施：slime 框架\n\n我们继续使用 slime 作为 GLM-5 统一的后训练训练框架，实现大规模端到端 RL。GLM-5 充分利用了 slime 的能力：(1) 通过灵活的 rollout 定制化接口和服务化（server-based）的推理方案扩大训练任务的覆盖面；(2) 通过混合精度训练 / rollout 以及多 token 预测（MTP）和预填充-解码（PD）分离大幅降低延迟，特别是在多轮 RL 工作负载下的端到端延迟；(3) 使用基于心跳的容灾和生命周期管理提升稳定性。\n\n3.6.1 横向扩展：通过高度可定制 rollout 实现灵活训练\n\nGLM-5 后训练的训练目标多样。为了复用同一套系统以支持这些需求，GLM-5 利用了 slime 高度可定制的 rollout 接口和服务化的推理方案。slime 的灵活接口让我们无需修改就能支持多轮交互、工具调用、复杂外部环境接入等训练需求。另外，slime 通过标准 HTTP API 暴露推理服务和路由，允许用户像使用常规推理引擎一样与 slime 交互，实现推理的服务化，将推理逻辑与训练逻辑解耦。\n\n3.6.2 纵向扩展：RL rollout 的长尾延迟优化\n\n值得注意的是，RL 推理的优化目标不是吞吐量，而是由每步中最慢的（长尾）样本主导的端到端延迟。在实践中，单个 rollout 轨迹可能会延后整体进程，从而直接拖慢训练时间。因此，GLM-5 在 slime 中进行了延迟导向的性能优化和调度：采用多节点推理部署（如跨 8 节点的 EP64 配合 DP64）以提供充足的 KV 缓存；使用 FP8 精度进行推理以降低每个 token 的解码延迟；利用 MTP 来在 RL 中典型的小批次解码场景下获得显著性能收益；通过 PD 分离确保在多轮交互的训练任务中解码速度的稳定，从而显著改善长程 Agent RL 训练中的长尾问题，提升训练效率。\n\n3.6.3 Rollout 稳定性：基于心跳的容灾\n\n在大规模场景下，瞬态故障（如单个服务器崩溃、网络问题或性能下降）不可避免。GLM-5 利用 slime 的容灾机制来确保在此类事件下训练的连续性：slime 会定期发出心跳以及时识别并终止不健康的推理服务，并从路由中注销对应接口，从而在请求重试时自动路由到健康的推理服务，防止个别故障影响端到端 RL 训练，提升训练稳定性。\n\n4 智能体工程 Agentic Engineering\n\n在这一节中，我们描述从氛围编程（vibe coding）到智能体工程（agentic engineering）的转变。在氛围编程中，人类提示 AI 模型编写代码；而在智能体工程中，AI Agent 自行编写代码——它们进行规划、实现和迭代。为支持这些长程任务，GLM-5 利用完全异步且解耦的 RL 框架，通过减少 Agent rollout 期间的空闲时间显著提升 GPU 利用率。为扩展 Agent 环境，我们开发了环境构建流程：对于编程 Agent，通过创建超过 上万个可验证训练场景来搭建真实世界软件工程问题和终端任务；对于搜索 Agent ，我们开发了自动化且可扩展的复杂多步推理数据合成流程。\n\n4.1 异步 Agent RL\n\n为对 Agent 任务进行 RL，我们设计了完全异步且解耦的 RL 基础训练框架，能够高效处理长程 Agent rollout，并支持跨多样化 Agent 框架的灵活多任务 RL 训练。我们采用分组策略优化算法进行 RL 训练，仅对模型生成的 token 进行优化，忽略环境反馈部分的损失计算。\n\n4.1.1 异步 Agent RL训练设计\n\n由于 rollout 过程的长尾特性，原生同步 RL 训练在 rollout 阶段会引入大量“气泡”，因为 Agent 任务的生成严重不均衡，导致大量 GPU 空闲时间。为提升训练吞吐量，我们对 Agent RL 采用完全异步训练范式以提升 GPU 利用率和训练效率。具体而言，我们将训练引擎和推理引擎解耦到不同 GPU 设备上。推理引擎持续生成轨迹，一旦生成轨迹数量达到预定阈值，该批次就被发送到训练引擎用于模型训练。为减少策略滞后并保持训练的近似同策略性，推理模型使用的模型权重会定期与训练侧同步。\n\n基于服务的多任务训练设计。为解决多任务 RL 中轨迹生成的异构性（不同任务通常依赖不同的工具集和任务特定的 rollout 脚手架），我们引入了基于服务器的 Multi-Task Rollout Orchestrator。该组件被设计通过具有多个注册任务服务的中央编排器，确保 slime RL 训练框架与多样化下游任务之间的无缝兼容性。每个任务以独立微服务形式实现其 rollout 和奖励逻辑，注册到中央编排器进行管理和调度。该编排器支持超过 上千并发 rollout，实现了任务采样比例的自动化动态调整和任务进度的细粒度监控。\n\n4.1.2 优化异步训练稳定性\n\nToken-in-Token-out 对比 Text-in-Text-out。在 RL rollout 设置中，Token-in-Token-out（TITO）意味着训练流程直接消费推理引擎生成的精确 tokenization 和解码 token 流来构建学习轨迹；相比之下，Text-in-Text-out将 rollout 引擎视为返回最终文本的黑箱，训练器通过 re-tokenizing 重建轨迹。这看似微小的选择实际上影响很大：re-tokenizing 可能在 token 边界、空白/归一化处理、截断或特殊 token 放置上引入细微不匹配，从而影响对单个 token 采样概率的估计。我们实现了一个 TITO 中间件，拦截 rollout 任务的所有生成请求并记录每个轨迹的 token ID 和元数据，将繁琐的 token ID 处理从下游 Agent rollout 逻辑中隔离出来。\n\n用于 token 裁剪的直接双侧重要性采样。与第3节的同步 RL 训练设置不同，在异步设置中，rollout 引擎可能在单个轨迹生成过程中经历多次更新，这使得追踪历史训练侧模型的精确行为概率在计算上不可行。为解决这一问题，我们首先采用简化的 token 级重要性采样机制，将 rollout 期间生成的对数概率作为直接行为代理，通过计算$ r_t(θ) = π_θ/π_{rollout}$并丢弃传统的 $π_{θ_{old}}$ 来消除单独旧策略推理的计算开销。其次，我们采用双侧校准 token 级掩码策略，将信任域限制在$ [1-ε_l, 1+ε_h]$，对落在此区间之外的 token 完全屏蔽梯度计算。实验中我们发现，复用推出对数概率接受受控程度的离策略偏差，以绕过历史策略追踪需求同时提升训练稳定性。\n\n丢弃离线程度高的样本和噪声样本。在异步 RL 中，过长的轨迹可能变得高度离策略，从而破坏训练稳定性。我们记录 rollout 引擎在生成时使用的策略权重版本，丢弃最旧 rollout 版本过时的样本。此外，Coding Agent 沙箱可能因模型无关的原因（如环境崩溃）而不稳定，引入噪声训练信号。我们记录每个样本的失败原因，排除因环境崩溃而失败的样本，并在有效样本超过组大小一半时通过重复有效样本来补齐不完整组，否则丢弃整个组。\n\n用于加速的 DP 感知路由。我们提出一种 DP 感知路由机制，在大规模 MoE 推理的数据并行下保留 KV 缓存局部性。在多轮 Agent 工作负载中，来自相同 rollout 的顺序请求共享相同前缀，我们通过一致性哈希将每个 rollout ID 映射到固定 DP rank，并结合哈希空间上的轻量级动态负载重新平衡来防止长期不均衡。这避免了冗余预填充计算，无需跨 DP rank 的 KV 同步，随着 rollout 长度增加，预填充成本仍与增量 token 成正比。\n\n4.2 Agent 环境扩展\n\n为支持跨多样化任务的 Agent RL，我们构建了可验证的可执行环境，为代码中心和内容生成工作流提供有根据的反馈。对于 Agent 编程任务，我们开发了两种构建可验证可执行环境的流程：基于真实世界软件工程问题的环境设置流程，以及用于终端 Agent 环境的合成流程。超越编程范畴，我们还引入了幻灯片生成环境，其中 Agent 在结构化 HTML 上操作，配有可执行渲染和基于布局的验证。\n\n4.2.1 软件工程（SWE）环境\n\n在构建可执行环境之前，我们收集了大量真实世界的 Issue-PR 对，并应用严格的基于规则和 LLM 的过滤，确保获取真实高质量的 issue 描述。我们将这些实例分类为不同任务类型（错误修复、功能实现、重构等）并包含必要的任务需求。我们采用基于 RepoLaunch 框架的环境设置流程，自动分析仓库的安装和依赖设置以构建可执行环境并生成测试命令，再利用 LLM 从测试输出生成语言感知的日志解析函数，实现失败转通过（F2P）和通过转通过（P2P）测试用例的提取。使用该流程，我们跨数千个仓库、涵盖 Python、Java、Go、C、C++、JavaScript、TypeScript、PHP 和 Ruby 9 种编程语言，构建了超过 10000 个可验证环境。\n\n4.2.2 终端环境\n\n从种子数据合成。为大规模构建可验证的终端 Agent 环境，我们设计了一个包含三个阶段的 Agent 数据合成流程：任务草稿生成、具体任务实现和迭代任务优化。从真实世界软件工程和基于终端的 computer-use 场景收集的种子任务出发，利用 LLM 头脑风暴并生成大量可验证的终端任务草稿。这些草稿由构建 Agent 在 Harbor 格式中实例化为具体任务，包括结构化任务描述、Docker 化执行环境和相应的测试脚本。随后，精炼 Agent 根据手动定义的评分标准检查并迭代优化生成的任务。整体流程产生数千个多样化且可验证的终端 Agent 环境，Docker 构建精度超过 90%。\n\n从网页语料库合成。我们开发了一个可扩展的自动化流程，基于网页语料库构建了 LLM 验证的、基于终端的编程任务，采用闭环设计，其中构建 Agent 同时充当其第一轮评估者。我们收集大规模代码相关网页并应用数据质量分类器进行过滤，然后对易于终端式任务表述的网页进行分层采样。接着，我们提示 Coding Agent 合成完整的终端任务，并执行 Harbor 验证脚本对其输出进行验证，失败时迭代诊断和修订任务直至通过所有自动化检查。只有成功通过此自验证循环的任务才被纳入最终数据集。\n\n4.2.3 搜索任务\n\n对于深度搜索信息检索任务，我们构建了一个数据合成流程，生成具有挑战性的多跳问答对。每个问题需要基于从多个网络来源汇聚的证据进行多步推理。从早期搜索 Agent 的轨迹出发，我们收集并去重所有访问的 URL，保留覆盖多样领域的超过 200 万个高信息量网页，通过 LLM 对实体进行识别、噪声过滤和结构化信息提取，持续更新 Web 知识图谱（WKG）。基于 WKG，我们以低至中频实体为种子节点，扩展其多跳邻域形成完整子图，然后将每个子图转化为隐式编码多实体关系链的问题。我们应用三阶段流程平衡难度与正确性：（1）删除不使用工具推理模型在 8 次独立尝试中至少解对一次的问题；（2）过滤可被早期 Agent 用基本搜索在几步内解决的问题；（3）设计 Verification Agent 进行双向验证，拒绝具有非唯一答案、不一致证据或错误标签的样本，最终获得高质量、高难度、可靠的多跳问答对。\n\n4.2.4 搜索 Agent 的上下文管理推理\n\n我们发现 BrowseComp 上的性能对裁判提示和裁判模型均敏感，开源模型作为裁判可能引入系统性偏差。为确保一致性和可重现性，我们判定答案正确性采用官方 OpenAI 评估提示和闭源模型 o3-mini 作为组件。先前工作引入了上下文管理，其中 Discard-all 策略通过删除整个工具调用历史来重置上下文。我们进一步观察到，在极长上下文（如超过 100K token）下，模型性能会显著下降。受此启发，我们采用简单的“Keep-recent-k”策略：当交互历史超过阈值 k 时，最近 k 轮之前的工具内容将被折叠以控制上下文长度，我们设定 k=5，从而将 GLM-5 从 55.3%（不含保留最近 k 轮）稳定提升至 62.0%（含保留最近 k 轮）。\n\n在此基础上，我们将 Keep-recent-k 与 Discard-all 结合，形成混合层次上下文管理策略：在使用 Keep-recent-k 进行推理时，如果总上下文长度超过阈值 T，则丢弃整个工具调用历史并以新上下文重新开始，同时继续应用 Keep-recent-k 策略，通过参数搜索选取 T=32K。如图 8 所示，在不同计算预算下，该策略有效释放上下文空间，使模型能够执行更多步骤并持续改进性能，最终得分达到 75.9，超越所有配备上下文管理的开源模型。\n\n图8：从 GLM-4.7（灰色）到 GLM-5（彩色）在不同上下文管理策略下 BrowseComp 的准确率。\n\n4.2.5 PPT生成\n\n我们采用自改进流程，通过 RL 和拒绝采样微调来系统性提升PPT生成性能。首先通过 SFT 初始化模型以提供基本的PPT生成能力，然后使用基于常见美学和结构属性的多级奖励公式进行 RL，该阶段带来显著的生成质量提升。我们进一步进行拒绝采样微调和掩码微调，将 RL 获得的知识注回训练语料库。\n\n图9：针对PPT生成的 RL 训练中的奖励欺骗（reward hacking）示例。我们的运行时渲染可获取更贴近展示时的属性值，从而使评估对此类欺骗行为具有鲁棒性。\n\n我们提出一种多层级奖励机制，将基于 HTML 的PPT生成过程中的奖励信号划分为三个层级：\n\n第1级（静态标记属性）：关注生成 HTML 中的声明式属性，包括定位、间距、颜色、字体排版、饱和度等样式属性，基于专业设计原则设计规则集，同时引入幻觉图像和重复图像检测机制。\n第2级（运行时渲染属性）：评估渲染期间 DOM 节点的运行时属性，如元素宽高、边界框和其他几何布局指标，约束这些属性以鼓励生成的PPT更贴近人类审美偏好的空间组织。\n第3级（视觉感知特征）：在运行时渲染约束之外，对渲染幻灯片进行感知层面评估，如检测异常空白模式作为辅助信号，以进一步改善整体构图平衡和视觉美学。\n\n训练策略。这些信号在RL过程中综合利用，以提高生成的HTML结构的有效性，增强布局组织，并提升整体视觉美学质量。除了奖励设计外，我们还通过动态采样重新调整训练分布。具体来说，一部分结构简单的样本会按概率被丢弃，从而使优化过程能够集中于更具挑战性的页面，并在复杂组合场景下提高鲁棒性。我们还采用了基于令牌级的策略梯度损失来稳定优化过程。此外，我们引入了一种平衡策略，将同一样本的不同结果分布到多个训练批次中，从而减少优化偏差并提高训练稳定性。\n\n拒绝采样。在拒绝采样阶段，强化学习中使用的奖励函数被转换为数据过滤流水线，用于构建高质量的训练子集。在页面级别，过滤标准包括代码的有效性和可编译性。在轨迹级别，我们进一步强化工具执行的正确性以及全局内容多样性约束，以确保结构一致性。我们采用了从多个独立生成的候选中保留质量最高的样本的方式，这一机制有效地重新加权分布，向更高质量的实例倾斜，从而提高了样本效率并增强了训练的稳定性。\n\n掩码修正。尽管拒绝采样去除了大部分低质量输出，但仍有一些轨迹仅在少数页面中存在缺陷。丢弃这些样本会降低有效数据利用率并增加生成成本。为了解决这个问题，我们引入了一种基于掩码的修正机制，能够自动识别有缺陷的页面并应用掩码，同时保留同一轨迹中的高质量内容。如此保留了有价值的监督信号，提高了有效数据效率，并减少了冗余的重新生成开销，从而提升了整体训练效率。\n\n效果提升。在内部评测集中，生成的页面中严格符合 16:9 宽高比的比例从 40% 提升至 92%，页面溢出情况显著减少。人工评估进一步显示，与 GLM-4.5 相比，GLM-5 在内容质量上的胜率为 60%，布局合理性为 57.5%，视觉美学为 65%，综合胜率达到 67.5%。\n\n5 适配中国芯片基础设施\n\n硬件生态的异构性往往会让高性能部署变得异常复杂，因此，将 GLM-5 适配至多样化的国产芯片基础设施是一项巨大挑战。尽管困难重重，我们通过与华为昇腾、摩尔线程、海光、寒武纪、昆仑芯、天数智芯以及燧原等国内主流芯片平台的深度合作，成功完成了 GLM-5 的全栈适配。\n\n本节将以华为昇腾 Atlas 系列为例，详细解析我们的适配方案，重点聚焦三大核心技术维度：极致量化、高性能算子融合以及先进的推理引擎调度。\n\nW4A8 混合精度量化：为了让单台 Atlas 800T A3 服务器能够容纳高达 750B 参数的 GLM-5，我们设计了精密的混合精度量化策略。具体而言，标准的 Attention 和 MLP 模块采用 W8A8（INT8）量化，而 MoE 专家模块则被进一步压缩至 W4A8（INT4）。这一设计在不显著牺牲精度的前提下，大幅削减了显存占用。同时，我们引入了 QuaRot 异常值抑制与 Flex_AWQ_SSZ 缩放校准等先进算法，为低精度部署的稳定性保驾护航。\n高性能定制融合算子：针对昇腾 NPU 在处理稀疏注意力时的计算瓶颈，我们开发了一套专属的融合算子。其中，Lightning Indexer 将分数计算、ReLU 激活与 TopK 聚合为单一算子，实现了计算与访存的流水线重叠；Sparse Flash Attention 针对 GLM-5 的稀疏模式进行了专项调优，实现了 KV Cache TopK 检索与稀疏注意力计算的并行执行；此外，MLAPO（多头潜变量注意力预处理优化） 创造性地将 13 个碎片化的预处理算子融合成一个“超级算子”，通过充分调用向量与矩阵单元的并行算力，极大提升了端到端效率。\n专项推理引擎优化：我们深度适配了 vLLM-Ascend 与 SGLang 两大主流推理引擎。在 vLLM 中，我们引入异步调度机制，将 Device-to-Host (D2H) 的采样数据回传与下一步解码的准备工作完美并行，有效消除了调度“气泡”；借助 RadixCache（前缀共享）和前缀缓存（将 KV 存储卸载至系统内存）技术，实现了 KV Cache 的高效复用，这成为突破长上下文性能的关键；我们还采用了注意力数据并行（DP）与 MoE 专家并行（EP）相融合的混合并行策略，并搭配 FlashComm 切分 AllReduce 通信；最后，通过支持单步生成多个 token 的 MTP 技术，进一步拉高了 NPU 的计算密度并缩短了总生成耗时。\n\n得益于上述软硬协同的极致优化，GLM-5 在单台国产算力节点上的性能表现，已足可媲美由两台国际主流 GPU 组成的计算集群；不仅如此，在长序列处理场景下，其部署成本更是大幅降低了 50%。\n\n6 评估\n\n如上所述，GLM-5 标志着从 Vibe Coding 到 Agentic Engineering 新时代的转变。我们首先在智能体、推理和编程（ARC）基准测试上评估 GLM-5 与前沿模型的表现。为全面评估 GLM-5 在真实世界的 Agentic Engineering 场景中的性能，我们提出新的内部评估基准 CC-Bench-V2，涵盖前端、后端和长程任务。最后，我们在五个常见的真实场景中评估了 GLM-5 的通用能力。\n\n6.1 ARC 基准测试评估\n\n我们在表 7 中报告了 ARC 基准测试的主要结果，将 GLM-5 与 GLM-4.7、DeepSeek-V3.2、Kimi-K2.5、Claude Opus 4.5、Gemini 3 Pro 和 GPT-5.2（xhigh）进行比较。总体而言，GLM-5 相对 GLM-4.7 实现了显著提升，在开源模型中达到业界最优性能，缩小了与 Claude Opus 4.5 等闭源模型的差距。\n\n表7：GLM-5 与开源/闭源模型的对比。标有 * 的结果来自完整版 HLE 测试集。标有 † 的结果在验证版本的 Terminal-Bench 2.0 上评估，修正了部分模糊指令。GDPval-AA Elo 分数记录于 2026 年 2 月 15 日。每项基准测试的最高分加粗显示，次高分加下划线标注。\n\n6.1.1 推理与通用基准测试评估\n\n在推理和通用基准测试方面，我们评估了 Humanity's Last Exam（HLE）、AIME 2026、HMMT 2025、IMO-AnswerBench、GPQA-Diamond 和 LongBench v2。GLM-5 在推理任务上的性能与强大的开源基线 Kimi-K2.5 相当。与闭源模型相比，GLM-5 在 HLE（含工具）上优于 Claude Opus 4.5 和 Gemini 3 Pro。GLM-5 在 HMMT Feb./Nov. 2025 基准测试上优于 Claude Opus 4.5 和 Gemini 3 Pro。GLM-5 还在长上下文任务上取得了显著进步，在长上下文推理基准测试 LongBench v2 上得分最高，仅次于 Gemini 3 Pro。\n\n6.1.2 编程基准测试评估\n\n在编程基准测试方面，我们在 SWE-bench Verified、SWE-bench Multilingual、Terminal-Bench 2.0 和 CyberGym 上进行评估。GLM-5 在开源 LLM 中达到编程基准测试的最优性能，与闭源 LLM 相比，在 SWE-bench Verified 上优于 Gemini 3 Pro，在 SWE-bench Multilingual 上击败 Gemini 3 Pro 和 GPT-5.2（xhigh）。在 Terminal-Bench 2.0 上，GLM-5 与 Claude Opus 4.5 相当，修正模糊指令后甚至超越，并且在 Claude Code 和 Terminus-2 这两种 Agent 框架下的表现一致。GLM-5 在网络安全编程基准测试 CyberGym 上相较 GLM-4.7 有显著提升，仅次于 Claude Opus 4.5。\n\n6.1.3 Agent 能力评估\n\n在 Agent 基准测试方面，我们在 BrowseComp、BrowseComp-ZH、τ²-Bench、MCP-Atlas、Tool-Decathlon、Vending-Bench 2 和 GDPval-AA 上进行评估。GLM-5 在所有前沿 LLM 中，在有无上下文管理的 BrowseComp 上均达到最优性能。在 BrowseComp-ZH 上也优于 Claude Opus 4.5 和 Gemini 3 Pro。在三项工具使用 Agent 任务（τ²-Bench、MCP-Atlas 和 Tool-Decathlon）上，GLM-5 与 Claude Opus 4.5 相当，展示了强大的工具使用能力。Vending-Bench 2 上的评估结果（$4432 余额）进一步展示了其长程任务能力。在 GDPval-AA 所代表的具备经济价值的场景中，GLM-5 优于 Claude Opus 4.5，仅次于 GPT-5.2（xhigh）。\n\n6.2 真实世界 Agentic Engineering 体验评估\n\n真实世界体验比排行榜更重要。我们将内部的 CC-Bench 升级为 CC-Bench-V2，用于评估模型在真实的 Agentic Engineering 环境中，能否在前端、后端和长程任务上正确完成端到端任务。CC-Bench-V2 完全去除了人工标注，借助 Claude Code 和其他 Agent 框架，结合单元测试与 Agent-as-a-Judge 技术，实现了全自动评估。\n\n前端：我们采用以下流程：先构建 Agent 生成的前端项目，并检查语法、依赖与兼容性错误，然后使用Agent-as-a-Judge，通过配备 Playwright 和 bash 工具的 GUI Agent 模拟用户交互，验证端到端正确性。\n\n后端：任务来自 C++、Rust、Go、Java、TypeScript 和 Python 的真实开源项目，涵盖功能实现、错误修复、回归修复和性能优化。所有改动都必须在真实工程约束下通过完整的单元测试。\n\n长程任务：我们先评估模型在大规模代码库中的信息检索能力，这是像人类开发人员一样定位正确文件并理解项目上下文的前提。然后，我们通过多步链式任务评估端到端正确性。这些任务通过挖掘具有丰富 commit 历史的已合并过的 Pull Request，并将这些 commit 聚类来构建连贯的任务链。Agent 按顺序执行这些任务链，以测试其维持上下文并处理各阶段间依赖关系的能力。评估过程结合单元测试和Agent-as-a-Judge来验证功能正确性和代码语义合理性。\n\n6.2.1 前端评估——Agent-as-a-Judge\n\n我们构建了一个面向前端开发场景的综合自动化评测基准。该基准覆盖开发者常见应用类型：落地页、管理仪表盘、数据可视化、图形与动画、在线生产力工具、交互式游戏、表单驱动工作流，涵盖 HTML、React、Vue、Svelte 和 Next.js 主流技术栈。\n\n每个测试样例由一个具体任务需求和一份检查清单组成，其中每个检查项都和需求点对应。评估流程有两个阶段：1) 静态验证：检查生成代码能否成功构建并运行。2) Agent-as-a-Judge：对可正确运行的代码，使用 GUI Agent 模拟人工测试，交互式验证每个检查项，并按需求满足情况打分。我们定义了以下指标：构建成功率 (Build Sucess Rate, BSR)，成功初始化并运行的项目占比；实例成功率 (Instance Success Rate，ISR) ，通过所有检查项的项目占比；检查项成功率 (Check-item Success Rate，CSR) ，所有检查项的细粒度完成率。\n\nAgent-as-a-Judge：前端天然具有可视化与交互性，很多缺陷往往只有在用户点击按钮或调整窗口大小等操作时才会暴露，静态分析与固定单元测试不足以覆盖。因此我们引入了 Agent-as-a-Judge（图 10）：每个生成好的项目先部署到 Docker 容器中并构建，以验证静态正确性；构建成功的实例随后移交给 Judge Agent（Claude Code + Claude Sonnet 4.5，配备 Playwright MCP 工具）执行闭环评测循环：对每个检查项，Agent 会阅读源码、进行实时 UI 交互（点击、按键、截图）、检查终端输出等，并给出通过或失败的判断结果。\n\n图10：Agent-as-a-Judge 评估流程。每个生成的前端项目首先经过构建以验证静态正确性，构建成功的实例随后由Judge Agent进行交互式测试，以判断每个检查项的功能正确性。\n\n为验证可靠性，我们从两个维度将Agent-as-a-Judge评分与独立人类专家判断进行对比：在逐点一致性（point-wise consistency）方面，抽样 130 个检查项，由人类专家独立评分，与 Judge Agent 结果有 94% 一致性，分歧集中在主观视觉质量标准而非功能正确性；在排名一致性（ranking consistency）方面，对 8 个前沿模型（如 Claude Sonnet 4.5、Claude Opus 4.5、Gemini 3 Pro、GLM-4.7、DeepSeek-V3.2 等）同时采用自动框架评估和人类专家评估，得到的模型排名的 Spearman 相关系数为 85.7%，表明强正相关。如表 8 所示，GLM-5 的平均 BSR 达到 98.0% ，在 CSR 上与 Claude Opus 4.5 相比具备竞争力，但在三种技术栈中均存在明显的 ISR 差距，说明 GLM-5 在端到端任务完成度上和 Claude Opus 4.5 相比还有提升空间。\n\n表8：CC-Bench-V2 在前端、后端及长程任务上的评估结果。BSR：构建成功率；ISR：实例成功率；CSR：检查项成功率。\n\n6.2.2 后端评估\n\n后端评估旨在衡量 Agent 在真实的工程约束下，能否对真实的服务器端代码库进行正确且能通过测试的修改。我们提出了 85 个任务，涵盖 Python、Go、C++、Rust、Java 和 TypeScript 六种语言，涉及搜索引擎、数据库引擎、Web 框架、AI 推理服务、知识管理系统以及独立算法和系统编程等领域。任务类型包括功能实现、缺陷修复、回归修复、性能优化等，反映日常后端开发多样性。\n\n为实现完全自动化的评估，每个任务都配备了人工编写的单元测试（每个任务 5 - 10 个），用于验证功能正确性和边界情况处理。任务格式参考 terminal-bench 风格：在基于项目真实环境初始化的 Docker 容器内运行，向 Agent 提供具体任务描述以解决任务。我们报告 Pass@1 指标，即只有当任务关联的所有单元测试全部通过时，才视为解决。这种严苛的“全有或全无”标准使得该基准测试极具挑战性：GLM-5 和 Claude Opus 4.5 的表现相当（见表 8），两者均显著领先于 GLM-4.7。\n\n6.2.3 长程任务评估\n\n长程评估聚焦于评估将生产级 Agentic Engineering 与单轮 vibe coding 区分开的能力：在超大代码库中探索，并执行多步开发（每一步都会改变后续步骤的上下文）。我们将此分解为两个互补任务。\n\n大规模代码库探索（Large Repo Exploration）：这是任何复杂编码任务的前提，是在大型陌生仓库中定位正确源文件。我们针对包含数万个文件的真实 GitHub 高星仓库构建了自动化基准。每个问题均以自然、面向业务的语义表述，严格不提文件名、类名、函数名。并且问题通常要求多跳逻辑推理，才能从用户的描述映射到实际的代码实现。例如，“关于生成视频中口型同步不准”这一问题，实际对应到视频生成后端中的参数调整模块。目标文件的选择旨在最大化探索难度：它们至少位于三级目录深处；命名晦涩，难以关键词检索；功能在仓库内具有唯一性（无重复实现）；且在主功能路径之外。\n\n我们报告三次运行的平均 Pass@1，如果 Agent 在探索过程中成功读取了目标文件，则视为问题解决。在此任务中，GLM-5 的表现优于 Claude Opus 4.5（见表 8），且两者均远超 GLM-4.7。结果表明，高效仓库探索对代码生成能力的依赖小于对策略性搜索能力的依赖，需要模型通过推理来收缩文件空间，GLM-5 在 Agent 工具使用轨迹上的训练使其在这方面具有明显优势。\n\n多步链式任务（Multi-step Chained Tasks）：SWE-bench 等主流编程基准将评估简化为“单次提交、隔离编辑”，因此无法评估 Agent 进行增量开发的能力，即每一步都会改变代码库状态并影响后续步骤。为此，我们通过挖掘高质量仓库中已合并的PR（Pull Request），并按以下流程构建了长程任务评估基准：\n\nPR 筛选：仅保留包含测试、包含 3 到 15 个提交且遵循线性（非合并）历史的已合并 PR。\n语义分组：使用LLM对相邻提交之间的语义相关性进行两两评分；动态规划求解最优切分，在保持提交顺序前提下最大化组内语义一致性。\n补丁分类：每个任务的累计 diff 划分为三类：golden patch（Agent 必须产出的核心代码）、test patch（用于验证的测试补丁）、auto-apply patch（自动应用的配置补丁）。\n问题陈述生成：LLM 基于补丁与提交信息为每个任务生成自然语言问题陈述。\n任务分类：自动分类为 feature / bug-fix / refactor / test / config，并从错误修复、关键路径准确性、测试通过率三个维度进行评估。\n环境验证：构建 Docker 环境，应用 golden patch，验证整个任务链零回归。\n\n给定一个包含 K 个任务的链，Agent 从基础提交开始顺序工作：完成任务 k 后，其更改会被提交，并应用任务 k+1 的 auto-apply patch，使代码库状态逐步累积演化。评估会轮流检查每个提交，并在运行完整测试前，累积应用从任务 1 到 k 的所有 test patches，同时测试当前任务的正确性并对先前任务进行回归测试。我们报告单个任务的 Pass@1。\n\n这种链式+状态递归的设计，直接评估了单次提交基准测试无法涵盖的长程上下文跟踪、规划和增量开发能力。如表 8 所示，GLM-5 较 GLM-4.7 有显著提升，但与 Claude Opus 4.5 相比仍有很大差距。原因在于链式任务中错误会累积放大：某一步的次优修改可能悄然破坏后续步骤测试。缩小这一差距，需要在长上下文一致性和长程自纠错方面继续突破，这也是当前我们的研究重点。\n\n6.2.4 动态演化的 SWE 任务评估\n\n我们在 SWE-rebench 上进行评估，因为 SWE-bench Verified 是一个静态、公开、人工验证的测试集，发布已超过 2 年。相比之下，SWE-rebench 基于自动化流程，持续挖掘新鲜的、真实的 GitHub issue 修复任务，实现去污染（decontaminated）、对时间鲁棒（time-robust）的评估，更好地衡量对新软件工程问题的泛化能力，而非对静态基准的记忆表现。表 9 展示了 GLM-5 在 SWE-rebench 上的官方性能，表明 GLM-5 能够有效泛化到新的 SWE 问题。\n\n表9：SWE-rebench 上的性能表现，2026 年 1 月。\n\n6.3 真实世界通用能力评估\n\n尽管标准化学术基准能提供有价值的信号，但它们并不能完整刻画模型在实践中的使用方式。为弥补这一差距，我们基于真实部署环境中的高频用户交互模式，评估 GLM-5 一系列在真实任务上的通用能力。\n\n这些能力包括：机器翻译、多语言对话、指令遵循、世界知识、工具调用。与传统“以基准为中心”的评估不同，我们的目标是衡量那些能够直接转化为用户可感知质量提升的改进。对每项能力，我们综合采用：内部人工评测、内部自动化评测、外部人工评测、外部自动化基准，从而同时保证诊断粒度与跨模型可比性。使用外部基准时，我们优先选择能够反映真实交互模式的数据集，而不是分布构造过窄的测试集。\n\n图 11 展示了 GLM-5 与 GLM-4.7 在上述五类真实世界能力上的对比结果。GLM-5 在所有评估维度上均取得了一致提升，包括机器翻译、多语言对话、指令遵循、世界知识与工具调用。各能力的详细评估方式与数据集说明如下：\n\n图 11：GLM-4.7 与 GLM-5 在五个真实通用能力领域的性能对比。\n\n6.3.1 机器翻译\n\nZMultiTransBench：这是一个内部数据集，包含 1220 个样本，源自自主搜集的高频翻译场景，涵盖七个语种对：中译西 (300)、中译俄 (250)、中译法 (220)、中译韩 (200)、中译日 (150)、中译阿 (50) 以及中译德 (50)。所有样本均由经过正规翻译学训练的研究生完成筛选、翻译，并进行独立核验。该数据集强调自然发生的使用场景，而非人工构造的测试用例。评估采用与固定基准回复进行成对比较的方式。评判由基于 GPT-4.1 的自动评估器给出，评估维度包括语义忠实度、流畅性和整体翻译质量。\n\nMENT-SNS：为进一步评估模型在语言学上更具挑战性的语境中的鲁棒性，我们采用了来自 MENT 的源句，包含 753 个英汉句对，涵盖四个领域：社交网络服务 (SNS)、跨文化、诗歌和文学。选择这些领域是为了在复杂语言现象下进行压力测试，包括俚语、谐音双关、惯用表达、历史典故和隐喻性语言。与 ZMultiTransBench 类似，所有样本均由受过专业训练的研究生完成筛选与核验。评估沿用与基线回复进行两两比较的方式，并由 GPT-4.1 担任自动评审模型。\n\n6.3.2 多语言对话\n\nLMArena：我们报告了来自 LMArena 的 Elo 评分，这些评分源自大规模社区提交的成对比较。该指标反映了开放式对话场景中的相对模型偏好，可作为对话能力的外部信号。\n\nZMultiDialBench：除公共榜单外，我们还在内部多语言对话基准 ZMultiDialBench 上开展人工评测。该数据集包含 141 条经筛选样例，覆盖多类对话场景。样本来源包括：由多国母语标注员提供的高质量对话数据，以及线上用户反馈的高难失败案例。评测集经过了类别分类和标准化，人工评测对匿名化的模型回复进行 1 至 10 分的打分。\n\n6.3.3 指令遵循\n\nIF-Badcase：IF-Badcase 是一个根据真实用户在生产环境中报告的指令遵循失败案例构建的内部基准。该数据集用于评估模型对“现实、多重约束指令”的严格遵循能力，重点关注流程准确性、逻辑一致性与严格格式要求。评估采用细粒度的检查项评估方式，检查模型结果是否符合显性约束，包括步骤顺序、基于规则的条件和结构规范。所有样本均经人工专家标注、复核并迭代筛选，最终形成 450 条精选测试样本。\n\nIF-Bench：IF-Bench 评估 LLM 遵循复杂、客观约束的能力，例如特定的格式规则、长度限制和内容限制。它提供了对精确指令遵循能力的定量衡量，侧重于可验证的合规性而非开放式生成质量。\n\nMultiChallenge：MultiChallenge 考察 LLM 在真实的、多轮对话场景中的能力，目标是评估在复杂交互中对指令的准确遵循、上下文分配（context allocation）和上下文推理（in-context reasoning）能力。\n\n6.3.4 世界知识\n\nSimpleQA：SimpleQA 通过具有唯一、无争议答案的高难问题衡量事实性。它通过将回复分类为正确、错误或未作答来评估模型的校准能力，优先关注准确性而非生成长度。\n\nChinese SimpleQA：该基准将 SimpleQA 方法适配到中文语境，覆盖 6 个主要领域与 99 个子主题。其使用高质量、静态、短答案问题，并支持可靠自动评分，用于评估 LLM 的知识准确性。\n\n6.3.5 工具调用\n\nToolCall-Badcase：ToolCall-Badcase 是一个源自生产环境中用户报告的工具调用场景失败案例的内部基准。每个实例都关联了一个可验证的标准答案工具调用，从而能够对工具选择和参数正确性进行客观评估。评估过程考核模型 (1) 是否调用了正确的工具，以及 (2) 是否提供了结构正确且语义准确的参数。所有样本都经过多轮审核、改写和验证，以消除歧义并确保可评估性。最终生成的数据集包含 200 个精选测试案例，反映了真实的工具调用能力。\n\n7 结论\n\n本文介绍了 GLM-5 这一下一代基座模型的研发工作。在应用层，GLM-5 成功实现了从 Vibe Coding 范式向真正的 Agentic Engineering 的演进，这表明在处理高度复杂的真实工作流时，开源模型如今已能提供与顶尖闭源系统相媲美的能力。总体而言，GLM-5 带来了 AI 落地效能的范式转变。通过开源 GLM-5，我们致力于助力开源社区突破传统静态评测的边界，探索高能效通用人工智能（AGI）的前沿。我们期望以此为契机，共同开启由 AI 智能体自主规划、执行并优化复杂任务的新时代。\n\n8 彩蛋——Pony Alpha\n\n对我们而言，代号为“Pony Alpha”的盲测实验是一个里程碑时刻。在 OpenRouter 平台上匿名发布 GLM-5 是一步险棋，但最终的反馈不仅印证了我们的技术判断，更带来了巨大的惊喜。通过隐去所有品牌信息，我们让模型完成了最严苛的“自我证明”，确保所有的评价都纯粹且客观。核心反馈如下：\n\n上线仅几天，Pony Alpha 就在 OpenRouter 社区引发了轰动。开发者们敏锐地察觉到了它在处理复杂代码、Agent 任务链路及角色扮演时的卓越能力。这种“神秘的强大”引发了广泛猜测：初步统计显示，25% 的用户推测它是 Anthropic 的 Claude Sonnet 5，20% 认为是 Grok 的新版本，10% 猜是 DeepSeek V4，而其余用户则成功猜中了 GLM-5。\n\n最终确认 Pony Alpha 真身即是 GLM-5，这对我们团队是一次巨大的鼓舞，也有力回击了长期以来外界对中国本土模型技术水准的质疑。\n\nPony Alpha（GLM-5）不仅赢在了基准测试的榜单上，更赢在了真实场景里。这标志着我们的研发重心已深度转向“工程级可靠性”。这次匿名测试打破了先入为主的地缘政治偏见，让社区的认可回归到了“好用与否”这一最纯粹的技术本质。庆祝之余，我们深知任重道远。开源追赶闭源的战役仍在继续，我们将坚定不移地探索技术前沿，构建更高效、更智能的底层系统。\n\n技术报告链接：\n\nhttps://arxiv.org/pdf/2602.15763",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/89e8effa#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=5eaf43",
+      "text": "智谱",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493485&idx=1&sn=bc8337e1e3095c4a29f20dd46161a14a",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://z.ai/blog/glm-5",
+      "text": "https://z.ai/blog/glm-5",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/pdf/2602.15763",
+      "text": "https://arxiv.org/pdf/2602.15763",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/5c79977a?entry=related_article",
+      "text": "What You Don't Know About Claude Code: Architecture, Governance, and Engineering Practices - Tw93",
+      "title": "This article provides an in-depth analysis of Claude Code's six-layer architecture and engineering practices, proposing a systematic Agent development methodology from context governance and skill design to a verification loop."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/ba677f52?entry=related_article",
+      "text": "GLM-5 Open Source: From Code to Engineering, the Best Open-Source Model for the Era of Agentic Engineering",
+      "title": "Zhipu AI officially released and open-sourced the GLM-5 model, highlighting the evolution from 'coding' to 'engineering' (Agentic Engineering), with performance matching Claude Opus 4.5 and deep adaptation for domestic computing power."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/88892d20?entry=related_article",
+      "text": "GLM-5-Turbo: An OpenClaw-Enhanced Foundation Model",
+      "title": "Zhipu AI released the GLM-5-Turbo model, deeply optimized for Agent scenarios, significantly enhancing its tool calling and long-chain execution capabilities, and simultaneously introduced OpenClaw service packages and a security management system."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/b3a8ac7d?entry=related_article",
+      "text": "Scaling Pain: Large-Scale Coding Agent Inference Practices",
+      "title": "Zhipu AI shares the process of identifying, locating, and fixing three types of abnormal outputs (garbled text, repetition, and rare characters) caused by high concurrency and long contexts in large-scale Coding Agent inference scenarios, and proposes a KV Cache layered storage optimization solution."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/66d6464a?entry=related_article",
+      "text": "Beyond Cognitive Reconstruction: Stepping into the Engineering Revolution of Agentic Engineering",
+      "title": "This article provides a deep dive into the practical journey of Tencent engineers transitioning from Vibe Coding to Agentic Engineering, proposing an AI-assisted engineering system centered on context management and tool-oriented design."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/36cd75e9?entry=related_article",
+      "text": "GLM-5V-Turbo Released: A Multimodal Coding Foundation Model",
+      "title": "Zhipu AI has released GLM-5V-Turbo, a multimodal coding foundation model that supports native visual understanding and code generation, is deeply optimized for Agent scenarios, and offers a 200k context window."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/podcast/af0d968?entry=related_article",
+      "text": "From Clawdbot to the 2026 AI Coding Explosion | A Conversation with PingCAP CTO Dongxu",
+      "title": "PingCAP CTO Dongxu analyzes the technical evolution of AI Coding crossing the singularity, Agent self-evolution, and the transformation of human value in the future."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/a799716e?entry=related_article",
+      "text": "GLM-5.1 Open Source: A Model Capable of 8 Hours of Independent Work",
+      "title": "Zhipu AI releases its flagship model GLM-5.1, featuring breakthrough Long-Horizon Task capabilities that allow it to work independently for 8 hours and deliver engineering-grade results."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/288cbab6?entry=related_article",
+      "text": "From 7.9% to 54% Adoption: The Three-Stage Evolution of Kuaishou's Intelligent Code Review",
+      "title": "This article details the three-generation architectural evolution of Kuaishou's intelligent code review system—from pure LLM heuristics to knowledge engine-driven, and finally to Agentic autonomous decision-making—increasing the CR adoption rate from 7.9% to 54%."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/dd96812d?entry=related_article",
+      "text": "Practices and Reflections on Vibe Coding in Code Generation and Collaboration",
+      "title": "An Alibaba technical expert shares the implementation of Vibe Coding within a large enterprise, exploring quality control, cost optimization, and domestic model adaptation in the evolution from Copilot to Agents."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Zhipu releases its next-generation foundation model GLM-5, driving the transition from 'Vibe Coding' to 'Agentic Engineering' through DSA sparse attention, a...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "GLM-5, Agentic Engineering, Sparse Attention (DSA), Asynchronous Reinforcement Learning, Software Engineering",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "GLM-5 Technical Report: Full Disclosure of Technical Deta...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Zhipu releases its next-generation foundation model GLM-5, driving the transition from 'Vibe Coding' to 'Agentic Engineering' through DSA sparse attention, a...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/89e8effa",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/89e8effa/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-22 09:40:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "智谱",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "GLM-5",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Agentic Engineering",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Sparse Attention (DSA)",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Asynchronous Reinforcement Learning",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Software Engineering",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "GLM-5 Technical Report: Full Disclosure of Technical Deta...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Zhipu releases its next-generation foundation model GLM-5, driving the transition from 'Vibe Coding' to 'Agentic Engineering' through DSA sparse attention, a...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/89e8effa/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "GLM-5 Technical Report: Full Disclosure of Technical Deta...",
+  "url": "https://www.bestblogs.dev/en/article/89e8effa"
+}

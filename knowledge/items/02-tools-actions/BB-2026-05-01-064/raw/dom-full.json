@@ -1,0 +1,294 @@
+{
+  "content": "VIDEO\n92\nBuilding Conversational Agents — Thor Schaeff and Philipp Schmid， Google DeepMind\n\nGoogle DeepMind 工程师演示 Gemini 的 Interactions API 和 Flash Live 模型，覆盖 server-side state、context caching、agent skills、tool calls、WebSocket 音视频流和生产级 conversational-agent 场景。\n\nAI Engineer\n关注\n·\n昨天\n·\n6 个章节\n·\n查看原文 →\n用 Gemini 构建 Conversational Agents：Interactions API 与 Live API\n章节导览\n6 个章节\nCH.1\nIntroduction and Workshop Setup\n00:14\nCH.2\nIntroduction to Interactions API\n14:06\nCH.3\nServer-side State and Caching Mechanics\n20:38\nCH.4\nHands-on: Building Coding Agents\n30:07\nCH.5\nGemini 3.1 Flash Live Overview\n48:38\nCH.6\nReal-world Applications and Best Practices\n01:01:55\n📝 实时字幕\n跟随播放\n全部字幕\n00:14\n1\n\nhello everyone hello perfect it's just that Philip and I were both Germans and we thought it was funny maybe we we can do it in German actually\n\n00:29\n1\n\nlooks like there's a there's a German crew there which is nice uh no no worries we'll we'll we'll do it in English\n\n02:25\n1\n\nhi I'm Thor or to for the German speakers amongst you um hi I'm Philip um only Philillip so for German and English speakers yeah it's nice\n\n02:32\n1\n\nwe so we work on the developer experience at Google DeepMind broadly covering kind of Gemini API and also uh working on Google AI studio as a tool for you know developers to try out the models quickly\n\n03:07\n1\n\nwho has used AI Studio before google AI Studio okay couple folks great um maybe we can quickly Sorry anti-gravity yeah that's good uh you actually don't need an API key for anti-gravity but um so if you don't have an API key yet uh if you have your machine on you I hope you do\n\n03:57\n1\n\nit's it's it's a hands-on workshop i do apologize they took away your tables um so it's a very laptop situation uh like literally uh laptop um I hope you didn't bring your Mac Mini or whatever\n\n05:29\n2\n\nit's my personal account and we cannot change language so uh you need only a Google account so no credit card no nothing all of the things we are going to do is part of the free tier\n\n08:41\n1\n\nmostly it's clock code that is like pushing their API keys to to to GitHub so I recommend you don't do that no just just kidding just remember it is a secret API key um so treat it like a secret\n\n09:06\n1\n\nI'd love for you you know to just briefly introduce yourself if you want to and just sort of you know let us know what you would like to get out of the workshop maybe there's a specific use case you're working on\n\n10:24\n3\n\nyeah Gemma 4 and Gemini i'm one of the few who are using it for coding and stuff as well by H& um I'm also running it on the classes actually oh nice and I want to see more of this you know\n\n12:43\n1\n\nvision claw if you haven't heard of that uh pretty pretty fun open source project um and I think you can run it uh sort of on the well now that Meta has opened up the SDK for the the Meta Rayban uh you can actually hook in something like Gemini Life API\n\n14:06\n2\n\nI have like 10 15 minutes slides um to give a bit of a background what we are going to use to build the first session which I'm going to do is more on like the building an agent without any live audio input that's where to take over later\n\n15:11\n2\n\nanyone of you used the interactions API one okay two okay at least some person so the interactions API is a new API we launched in December and beta which hopefully will succeed generate content soon\n\n16:40\n2\n\nwhen we launch the interactions API we also launch deep research so maybe you have used deep research in chat GPT or in the Gemini app where you basically start off a query and then you get back a plan\n\n18:50\n2\n\nwe also introduced state on the server which will which we will use for building our agents so we don't need to manage our loop and always send back the whole history very similar to uh responses API\n\n20:27\n2\n\ngenerate content is what we have today interactions API is what we will have tomorrow we will have um serverside state management but you don't need to use it\n\n22:06\n2\n\nthe model needs to encode all of your input tokens and you can cach those encodings for a follow-up request to save cost and cache requests I think are 90% cheaper for the input tokens\n\n23:52\n2\n\nbasic chat usage with serverside state becomes very easy because we have our interactions create call so we define our model we define our input what's the capital of France we get back the output\n\n25:47\n2\n\nthis becomes very helpful when you build agents where you have a loop and always need to append new user input and um as mentioned before that also works for agents and models\n\n28:17\n2\n\nwe check what the the output of the interaction is requires action basically means you as a client you need to do something so the output generated some function call or some object which you need to react to\n\n30:07\n2\n\nyou can search for Gemini API Docs coding agents you zoom in ah yes sorry of course um I can also Can you see it yeah I think you can also just Google I mean I can skills Gemini agent skills\n\n32:06\n2\n\nwe have the Gemini interactions API and here you can either pick the the first command or the second command depending on what you want and then like just copy it uh open your workspace\n\n35:18\n2\n\nthe importance when creating skills is it should be either something the model cannot do reliably or if you have some personal preferences on like how to do a certain workflow\n\n37:02\n2\n\nwe have two new like very basic very very basic file implementation so we have a read file tool with a file path which uses um Python syntax to open it to read it\n\n39:16\n2\n\ninside the agent runs it in a loops until there are no tool calls anymore and if there's a result we basically get back our response\n\n40:13\n2\n\nat this time we got our write file tool call and then also we got a hey I have created a thumbs up SVG file with a simple line art thumbs icon\n\n41:44\n2\n\nadd a similar run command tool that allows the model to execute bash commands creates an implementation blend\n\n43:25\n2\n\nany questions regarding the interactions API and the small little agent no okay then you get 8 minutes i do five minutes okay five minutes break\n\n48:38\n1\n\nthis is now uh Gemini 3.1 Flash life which came out two weeks ago I think um very exciting it's been a while i think the previous 2.5 native audio model was December\n\n50:38\n1\n\nyou are able to send real time text audio video feeds uh to the model so audio you're sending in kind of you know buffer chunks so of the the real-time audio you're streaming that in\n\n51:58\n1\n\nGemini 3.1 Flash Life it's the model that is now in Gemini Life in your phone so if you're using Gemini app uh on your phone um you're talking to that model\n\n53:53\n1\n\nno thinking is actually very minimal thinking um but it means you know the model will respond faster it's kind of lower latency\n\n56:11\n1\n\nthe server events uh actually let me maybe uh do that again so we say enable Google search grounding connect so what we can see is kind of our websocket uh setup\n\n59:01\n1\n\ni understand you're asking about the weather in London but unfortunately the Google grounding but for some reason it's Yeah so with the Google grounding it should work so I I wonder if I messed up something\n\n01:01:42\n3\n\nis there any real life use cases that this is being used for that's very creative from a like a business context very see what you've done today is a lot of fun\n\n01:01:55\n1\n\nShopify has it in production with Shopify sidekick um there is uh a bunch of so like uh actually one that I really enjoy if you Gemini life API blog uh we had kind of a a case study which is um this startup yeah so I mean stitch is using it\n\n01:04:11\n1\n\nin Argentina uh so they are building these um voice sort of companions for the elderly uh in combination with uh kind of an app uh for sort of the caretakers or you know the the the the children of the elderly\n\n01:09:45\n1\n\nif you don't need kind of the fully real time um then like using Gemini you know just flash to you know transcribe is actually pretty good\n\n01:16:32\n1\n\nI mean on for the demos the there's definitely a lack of best practices in terms of like system instructions and you know there's a lot that you can do sort of with uh the you know better system instructions\n\n点击任意行跳转 · 悬停可向 AI 提问\n\n内容简介\nBuilding Conversational Agents with Gemini: Interactions and Live API\n\nGoogle DeepMind engineers Thor Schaeff and Philipp Schmid recently hosted a hands-on workshop detailing the next generation of conversational AI tools. The session moved beyond basic chat interfaces to explore how server-side state management and real-time multimodal models are changing how developers build agents.\n\nThe Shift to the Interactions API\n\nA central focus of the workshop was the Interactions API, which is set to succeed the current generateContent method. The key innovation here is server-side state management. Previously, developers had to manually manage conversation history and send the entire transcript back to the model with every new turn. With the Interactions API, the state lives on the server.\n\nThis shift enables context caching, a massive win for developers. By caching input tokens for follow-up requests, the cost of input tokens can be reduced by up to 90%. This makes long-running agentic loops significantly more viable from a cost perspective.\n\nBuilding Agentic Skills\n\nPhilipp Schmid demonstrated how to equip Gemini models with \"skills\"—specific tools that allow the model to interact with the real world. During the hands-on portion, they implemented:\n\nRead/Write File Tools: Allowing the model to manipulate the local file system.\nRun Command Tools: Enabling the model to execute bash commands and create implementation plans.\n\nThe philosophy behind skills is simple: give the model a tool for anything it cannot do reliably on its own or for workflows that require specific personal preferences.\n\nReal-Time Intelligence: Gemini 3.1 Flash Live\n\nThor Schaeff introduced Gemini 3.1 Flash Live, the native audio/video model powering the Gemini Live experience on mobile devices. Unlike traditional pipelines that use separate transcription (STT) and synthesis (TTS) steps, Flash Live supports multimodal streaming.\n\nDevelopers can stream audio and video buffers directly to the model via WebSockets. This architecture supports features like:\n\nLow Latency: Minimal \"thinking\" time for faster responses.\nGoogle Search Grounding: Connecting the live session to real-time web data.\nMultimodal Input: The model can see and hear the user simultaneously.\nFrom Prototype to Production\n\nThe workshop highlighted that these tools aren't just experimental. Shopify Sidekick is already utilizing these technologies in production. Other use cases include voice companions for the elderly (such as the startup Hey Ado) and specialized coding assistants.\n\nAs the ecosystem matures, the presenters emphasized that the next frontier for developers is mastering system instructions to better define model behavior and ensure safety in these increasingly autonomous conversational systems.\n\n00:00 / 00:00\n1x",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/video/f787338#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/videos?sourceid=db1f86",
+      "text": "AI Engineer",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=cVzf49yg0D8",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Google DeepMind 工程师演示 Gemini 的 Interactions API 和 Flash Live 模型，覆盖 server-side state、context caching、agent skills、tool calls、WebSocket 音视频流和生产级 conversationa...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Gemini API, Conversational agents, Interactions API, Server-side state, Context caching",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "用 Gemini 构建 Conversational Agents：Interactions API 与 Live...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Google DeepMind 工程师演示 Gemini 的 Interactions API 和 Flash Live 模型，覆盖 server-side state、context caching、agent skills、tool calls、WebSocket 音视频流和生产级 conversationa...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/video/f787338",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/f787338/opengraph-image?64edf17c38836472",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-30 16:00:06",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "AI Engineer",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Gemini API",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Conversational agents",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Interactions API",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Server-side state",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Context caching",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "用 Gemini 构建 Conversational Agents：Interactions API 与 Live...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Google DeepMind 工程师演示 Gemini 的 Interactions API 和 Flash Live 模型，覆盖 server-side state、context caching、agent skills、tool calls、WebSocket 音视频流和生产级 conversationa...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/f787338/twitter-image?8c88273a7af11d7e",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "用 Gemini 构建 Conversational Agents：Interactions API 与 Live...",
+  "url": "https://www.bestblogs.dev/video/f787338"
+}

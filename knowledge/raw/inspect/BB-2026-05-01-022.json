@@ -1,0 +1,80 @@
+﻿{
+  "articleText": "领域概览\n\nHarness Engineering 这个词最近被大量中文文章、OpenAI 演讲、平台方产品更新和工程案例同时推到台前，但它容易被误解成“给 Agent 多写几条规则”或“换一个更强模型”。更准确的理解是：Harness 是围绕模型搭建的工程控制面。模型负责生成、规划和调用工具；Harness 负责提供任务状态、上下文、权限边界、执行环境、反馈信号、质量门禁和人工接管点。Martin Fowler 用 feedforward / feedback 来解释这个概念：先把目标、约束和背景喂给 Agent，再用测试、审查、日志和人类判断形成反馈闭环。Ryan Lopopolo 的表述更像角色分工：人类掌舵，Agent 执行。176\n\n这也是为什么本页把 Harness Engineering 定义为 DOMAIN，而不是一次短期事件。2026 年 3 月以来的高质量素材显示，模型发布只是背景：OpenAI Agents SDK 增加沙箱、memory 与 open-source harness 控制；Anthropic 讨论长周期应用开发 Harness 和 Managed Agents；Cloudflare 把 AI Gateway、Workers AI、MCP Portal、AGENTS.md、Engineering Codex 和 AI code review 接成内部工程栈；中文工程案例则从 SPEC、Rule、Skill、Handoff、验证脚本、真实后端风险等角度补上落地细节。7818135123\n\nCloudflare 的内部 AI 工程栈是一个很好的组织级 Harness 样本：路由、推理、MCP、仓库上下文、代码审查和团队知识库被放进同一套控制面，而不是散落在个人 prompt 里。\n\n1. 先划清边界：Harness、Prompt、Context、Agent 不是一回事\n\nPrompt Engineering 关心“怎么对模型说”；Context Engineering 关心“让模型看到什么”；Agent Architecture 关心“模型如何规划、调用工具、维持状态”；Harness Engineering 则更靠外一层，关心“这个非确定性的 Agent 系统如何被工程组织接住”。OpenClaw 的分析把 Prompt / Con",
+  "ids": [
+    "dx-sibebar-container",
+    "radix-_r_4_",
+    "radix-_r_0_",
+    "radix-_r_2_",
+    "main-content",
+    "ref-ref-1",
+    "ref-ref-2",
+    "ref-ref-3",
+    "ref-ref-4",
+    "ref-ref-5",
+    "ref-ref-6",
+    "ref-ref-7",
+    "ref-ref-8",
+    "ref-ref-9",
+    "ref-ref-10",
+    "ref-ref-11",
+    "ref-ref-12",
+    "ref-ref-13",
+    "ref-ref-14",
+    "ref-ref-15",
+    "ref-ref-16",
+    "ref-ref-17",
+    "ref-ref-18",
+    "ref-ref-19",
+    "ref-ref-20",
+    "ref-ref-21",
+    "ref-ref-22",
+    "_R_",
+    "el-popper-container-5197",
+    "immersive-translate-popup"
+  ],
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://openai.github.io/openai-agents-python/",
+      "text": "OpenAI Agents SDK",
+      "title": ""
+    },
+    {
+      "href": "https://modelcontextprotocol.io/",
+      "text": "Model Context Protocol",
+      "title": ""
+    },
+    {
+      "href": "https://claude.com/blog/claude-managed-agents",
+      "text": "Claude Managed Agents",
+      "title": ""
+    },
+    {
+      "href": "https://blog.langchain.com/deep-agents-deploy-an-open-alternative-to-claude-managed-agents/",
+      "text": "LangChain Deep Agents Deploy",
+      "title": ""
+    },
+    {
+      "href": "https://developers.cloudflare.com/ai-gateway/",
+      "text": "Cloudflare AI Gateway",
+      "title": ""
+    },
+    {
+      "href": "https://agents.md/",
+      "text": "AGENTS.md",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    }
+  ],
+  "textLen": 8855,
+  "title": "Harness Engineering 完全指南 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/explore/topics/harness-engineering-guide"
+}

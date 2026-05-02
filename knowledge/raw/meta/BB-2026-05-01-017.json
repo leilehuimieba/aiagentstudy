@@ -1,0 +1,147 @@
+﻿{
+  "metas": [
+    {
+      "content": "Garrett Galow 解释了 Cross-App Access 和 ID-JAG 如何让身份提供商在 AI 客户端与 MCP 服务器之间建立安全信任桥，减少重复授权。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "MCP, Cross-App Access, ID-JAG, AI Agent, OAuth",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "一次登录打通所有 MCP：WorkOS 的 Cross-App Access 方案 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Garrett Galow 解释了 Cross-App Access 和 ID-JAG 如何让身份提供商在 AI 客户端与 MCP 服务器之间建立安全信任桥，减少重复授权。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/video/adebf6b",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/adebf6b/opengraph-image?64edf17c38836472",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-28 14:00:06",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "AI Engineer",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "MCP",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Cross-App Access",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ID-JAG",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI Agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "OAuth",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "一次登录打通所有 MCP：WorkOS 的 Cross-App Access 方案 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Garrett Galow 解释了 Cross-App Access 和 ID-JAG 如何让身份提供商在 AI 客户端与 MCP 服务器之间建立安全信任桥，减少重复授权。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/adebf6b/twitter-image?8c88273a7af11d7e",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "text": "跳转到主要内容\nBestBlogs\n搜索\nCtrl+K\n切换语言\n切换主题\nCH\nVIDEO\n92\n⭐ 精选内容\nOne Login to Rule Them All: Cross-App Access for MCP — Garrett Galow， WorkOS\n\nGarrett Galow 解释了 Cross-App Access 和 ID-JAG 如何让身份提供商在 AI 客户端与 MCP 服务器之间建立安全信任桥，减少重复授权。\n\n⭐ 推荐理由WorkOS 的 Garrett Galow 精准定义 MCP 生态的核心痛点：每接入一个服务就多一个 OAuth 授权页，对用户造成“授权疲劳”，对企业则缺少集中式访问管理、撤销控制和生命周期管理。Cross-App Access 通过 ID-JAG（Identity JWT Authorization Grant）让身份提供商成为 AI 客户端与 MCP 服务器间的信任桥，一次 SSO 后自动完成后续授权流程。目前最清晰的 MCP 身份架构方案，附具体实现指引。\n\n展开\nAI Engineer\n关注\n·\n04-28\n·\n7 个章节\n·\n查看原文 →\n一次登录打通所有 MCP：WorkOS 的 Cross-App Access 方案\n章节导览\n7 个章节\nCH.1\nIntroduction and Personal Background\n00:14\nCH.2\nThe Problem: Consent Screen Fatigue\n01:23\nCH.3\nIT Management and Security Risks\n03:51\nCH.4\nCross-App Access (XAA) and Live Demo\n06:39\nCH.5\nHow It Works: The ID-JAG Protocol\n09:29\nCH.6\nImplementation and Setup for Admins/Devs\n13:10\nCH.7\nQ&A: Scopes, Entra Support, and DCR\n17:05\n📝 实时字幕\n跟随播放\n全部字幕\n00:14\n1\n\nall right good morning everybody thank you for coming to this talk hopefully your morning was eventful i caught a\n\n00:21\n1\n\nlittle bit of the keynote i wasn't able to catch all of it but it was pretty good um my\n\n00:25\n1\n\nname is Garrett Galo today I'm going to be talking about one login to rule them all uh or crossop\n\n00:30\n1\n\naccess for MCP in case you haven't heard about that uh quick intro about myself uh I run product at\n\n00:37\n1\n\nwork OS i've been building enterprise developer platforms for the past almost 15 years uh originally at Microsoft Azure then\n\n00:44\n1\n\nat Cloudflare for a long time and now at work OS if you haven't heard of work OS before we\n\n00:52\n1\n\nmake your app and also your agents enterprise ready uh we power off for the likes of Enthropic Cursor OpenAI\n\n00:59\n1\n\nso if you've ever logged into Cursor for example whether that was with username password or like an enterprise IDP\n\n01:05\n1\n\nyou've used work OS um today I'm going to be talking about uh MCP and signin through things like anthropic\n\n01:14\n1\n\nand cursor um but first uh if you've used MCP at all extensively you know that it means consent screens\n\n01:23\n1\n\non top of consent screens on top of consent screens who here uses MCP servers on the regular okay most\n\n01:29\n1\n\nof you um if you haven't kind of experienced this before uh here is uh cursor which I have set\n\n01:36\n1\n\nup uh and if you want to use MCP servers with cursor you know you add them in you have\n\n01:41\n1\n\nthe little config file and then in each one of these if you want to use it you have to\n\n01:45\n1\n\nconnect it'll pop",
+  "title": "一次登录打通所有 MCP：WorkOS 的 Cross-App Access 方案 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/video/adebf6b"
+}

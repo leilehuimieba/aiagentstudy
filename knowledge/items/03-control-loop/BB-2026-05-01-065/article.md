@@ -1,0 +1,198 @@
+# 「我不行」：在 AGI 时代重新理解工程师价值
+
+- BestBlogs URL: https://www.bestblogs.dev/video/24a0aee
+- Extraction: DOM text from BestBlogs page
+- Extracted chars: 12496
+- Original publisher URL: https://www.youtube.com/watch?v=V-ZvAw_VNk4
+
+---
+
+VIDEO
+87
+"I suck" -ThePrimeagen
+
+ThePrimeagen 认为 AI 不会抹掉工程价值；当代码生成变便宜时，经验、判断力和选择正确代码路径的价值反而会上升。
+
+The PrimeTime
+关注
+·
+昨天
+·
+9 个章节
+·
+查看原文 →
+「我不行」：在 AGI 时代重新理解工程师价值
+章节导览
+9 个章节
+CH.1
+Introduction and Omacon
+00:00
+CH.2
+The Existential Crisis of Modern Engineering
+01:51
+CH.3
+Reflections on Skill Accumulation
+03:35
+CH.4
+Introspection and Value
+07:05
+CH.5
+Rejecting Taste and Volume as Metrics
+10:02
+CH.6
+The First 2x4 Moment
+12:00
+CH.7
+The Second 2x4 Moment: The Forking Chromium Incident
+15:59
+CH.8
+The Rising Value of the 'Right' Line of Code
+18:49
+CH.9
+Experience over Instant Productivity
+22:32
+📝 实时字幕
+跟随播放
+全部字幕
+00:00
+1
+
+Before I show you my talk on what is my value that I gave at Omacon I wanted to give like a little bit of a precursor a little bit of kind of setting up here so you understand what's happening. Omacon just got done taking place in New York. The conference was awesome the talks were awesome they're all going to be on YouTube. It's about kind of the celebration of computers about our interest in it and how they're actually really fun. I'd really like to thank Dell for sponsoring Omacon and making it possible for me and the team to come out there and really make this event awesome. This computer is absolutely fantastic this is the best laptop I've ever used Linux on ever. There are a couple few audio problems so if the audios go in and out don't worry it gets fixed. Love to hear your thoughts your comments if you're feeling the same way am I just full of crap let me know in the comments.
+
+01:51
+1
+
+I get a lot of messages and the messages go something along the lines of "Hey you know I've been working for one year two years five years 10 years hey I'm in college right now what do I do?" Like what's the changing environment how things are moving like I am genuinely freaked out I don't know where things are going is everything I've done for the last 1 5 10 15 20 years is it worthless am I worth less now and this is a question I just see like constantly. I sympathize with that because how could you not right.
+
+02:39
+1
+
+I don't know if you've been on Twitter in the last couple days but there's a very aggressive strain of AGI going on right now we're achieving it daily at this point so I I'd highly recommend a good social distancing for 24 to 48 hours to help slow the spread.
+
+03:35
+1
+
+For me I actually feel it quite a bit in the sense that I feel this exact same sense of loss and I feel this confusion. For the last six months I've kind of been in a bit of a funk. I've done 6,000 days of programming the last 20 years. Of those 20 years 14 of them have been spent doing Vim motions of some form whether it's in IntelliJ or God bless my soul I did VS Code for six months. I eventually landed home in Neovim it was a great time.
+
+05:10
+1
+
+I look at that and I realized something kind of strange. See you guys were out smoking with cigarettes partying drinking grape juice and I was out sharpening my blade honing my skills speedrunning VimTutor becoming the best you can possibly be at that program. You guys were probably having premarital sex I was learning programming languages okay I knew Go JavaScript C Rust Zig even some Jai at one point.
+
+05:43
+1
+
+I was becoming the ultimate generalist I could build anything. I at one point I had to build a packet perturber sending something that looked like GStreamer so we could test the latency from JavaScript to when audio hits HDMI. I have just been doing this thing over and over again building developer tools taking some idea and how do you make it into something people can look at and feel and test and well have I invested poorly? It's a question I keep asking myself over and over again have I invested poorly in my future.
+
+07:05
+1
+
+I actually don't know what I just said there and the rest of the audio blips which are another six of them throughout the next 10 minutes I can generally guess what I'm about to say. Perhaps this is just like part of being on X you know it's not necessarily the most healthy platform to be able to have any sort of correct perspective. Speaking of perspective have you guys heard of introspection?
+
+08:44
+1
+
+So last six months I have been doing this I have been introspecting and I have I keep asking myself the same question which is do I have value what is my value is my work historyless is like my time now worth less because of what the changes and all this.
+
+10:02
+1
+
+For a long time I guess I started thinking about this notion is my value just having taste? This is that fancy word VCs keep using I don't really know what it means but apparently what that means is that your value as an engineer is how nice you can make a website look or maybe how nice your command line flags can be. Is that what we are as engineers now just taste just making sure things look nice make circle not square?
+
+10:45
+1
+
+I thought about is like okay is it lines of code because during my peak non-natural supported amount of lines of code could be like 15,000 in a week. But then Gary Tan does like 37,000 in a day. So my value it can't be in that either because that I mean I'm getting mogged left and right by a guy who dressed in a lobster outfit.
+
+12:00
+1
+
+This is kind of the difficult part of the talk. We're going to talk about a time when I was much much younger I was changing a job I just got done purchasing a house in Bozeman Montana. I bought mine on a handshake deal for 205. My wife actually worked at a company called Zoot where she learned how to use Vim before me.
+
+13:36
+1
+
+I got an offer to go work at a different company and this company ultimately I would say became the company that shaped who I am as an engineer. It was called WebFilings at the time now known as Workiva. But I didn't know that at the time. I was sitting there thinking like I'm really bad with debt I hate debt and so just like sitting there I was just freaking out I just bought my first house now I'm going to a job am I going to be good enough for this job.
+
+15:03
+1
+
+I was just so focused on it and for the first time in my lifetime life hit me in the face and by life I mean a 2x4 that happened to be sticking out of a truck. And due to the fact that I was so in my head and so upset I walked directly into it and I was laying on the ground and I was shocked. That moment I realized like I was so focused on a future that I was crafting out of a narrative that I don't even know that I didn't see the actual real and obvious danger directly in front of me.
+
+15:59
+1
+
+For the last six months I genuinely have been very very worried. I've asked the same question what is my value what am I doing here. For the last two years I've had a couple medical issues it's just like everything doesn't seem to be lining up like it normally has.
+
+17:01
+1
+
+My second 2x4 moment if you will was I saw this tweet and the tweet looks something like this "man I'm trying to solve this really trivial issue has anyone figured this out yet" and there's a screenshot. The screenshot was Claude or some one of the many robots having its internal monologue and inside the internal monologue it said "Hey forking Chromium is a really interesting question we should pursue." I thought how do you build a web project in which the result of whatever you made choices of as engineers led you to forking Chromium this is the worst decision I've ever seen.
+
+18:49
+1
+
+Then it just kind of dawned on me there that all the decisions I've made and learned and earned along the way those only get if AI is to be a true multiplier then every one of those little decisions actually do matter because if you don't you're forking Chromium again it is a terrible idea. You're not going to just magically end up with a Boyce-Codd normalized database unless you know what it is you're not going to know why you should use standard in and standard out versus a web server.
+
+20:13
+1
+
+These decisions they compound over and over again. Yeah maybe you use Neovim and open code I could see why generation of code is super fantastic because if it works you could just have magical themes come popping up and that's like super fantastic.
+
+21:46
+1
+
+What do you do if you have all these skills? Well even if you don't somehow we do get to this future where you're never typing another character it is actually so valuable to have experience. If the cost of a line of code has dramatically dropped then the cost of the right line of code has dramatically increased it has to. When you have every option it actually becomes dramatically harder to pick the right option.
+
+22:32
+1
+
+For those that don't have skill I'm throwing around a hot new term "toxic productivity." You don't have to be productive at all times like earning experience is more valuable than completing something instantaneously. I can tell you the biggest and most influential moments in my life have not been from making something that's clickable but from failing over and over again to understand why we do something a certain way.
+
+23:56
+1
+
+Please if you're new like there's still so much hope there's still so much cool things. I don't want people to get lost in this weird kind of world we have crafted where everything happens to be the end of the world. Good decision-making can't be gone. I don't see how you can get from A to B without someone with good decision-making and I don't mean taste I mean actual engineering decision-making.
+
+25:08
+1
+
+That's all I really wanted to say because that's how I got over my last six months of swirling around. I hope you realize the fun and the goodness and finally I'll end with a DHH quote: It's fun to be competent.
+
+点击任意行跳转 · 悬停可向 AI 提问
+
+内容简介
+"I suck" - Finding Value in the Age of AGI
+
+In a recent talk at Omacon, ThePrimeagen addressed a question haunting the developer community: In a world of rapidly advancing AGI, does the years of effort we put into learning languages, tools, and systems still have value? Or are we, as engineers, worth less than we used to be?
+
+The Crisis of Value
+
+Many developers—from students to 20-year veterans—are feeling a sense of loss and confusion. ThePrimeagen admits to feeling this himself, reflecting on his 6,000 days of programming and 14 years mastering Vim. He questioned if he had "invested poorly" in his future by becoming a generalist who hones his blade on technical minutiae when AI can now generate code in seconds.
+
+He explores common metrics of value that feel increasingly fragile:
+
+Taste: The ability to make things look nice or design clean interfaces.
+Volume: The sheer number of lines of code produced (which AI can already do better than almost any human).
+The "2x4 Moments"
+
+ThePrimeagen shares two pivotal realizations, which he calls "2x4 moments."
+
+The Narrative vs. Reality: He recounts a time he was so distracted by career anxiety that he literally walked into a 2x4 sticking out of a truck. This serves as a metaphor for how we can become so obsessed with a self-crafted narrative of a doomed future that we miss the obvious reality right in front of us.
+The Forking Chromium Incident: He saw an AI suggest forking Chromium—one of the most massive and complex undertakings in software—to solve a trivial web issue. This highlighted a critical flaw: AI lacks the engineering judgment to avoid disastrously complex solutions.
+The Value of the "Right" Decision
+
+The core takeaway of the talk is a shift in how we perceive the "cost" of software.
+
+"If the cost of a line of code has dramatically dropped, then the cost of the right line of code has dramatically increased."
+
+When code generation is free, the ability to choose the right path among infinite options becomes the most valuable skill. Deep experience allows an engineer to know why a Boyce-Codd normalized database is needed or why standard in/out is preferable to a web server. These compounding decisions are what prevent a project from spiraling into unnecessary complexity.
+
+Rejecting Toxic Productivity
+
+ThePrimeagen warns against "toxic productivity"—the drive to produce results instantaneously without understanding the process. He argues that failing repeatedly and learning why we do things a certain way is more valuable than any clickable result. Engineering decision-making isn't about "taste"; it's about the hard-earned competence that allows you to get from point A to point B efficiently.
+
+As the industry changes, the tools may evolve, but the need for human judgment remains. As the closing quote from DHH reminds us: "It’s fun to be competent."
+
+00:00 / 00:00
+1x

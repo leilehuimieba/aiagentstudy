@@ -1,0 +1,439 @@
+{
+  "content": "为什么值得关注\n\nChatGPT Images 2.0 值得单独成页，因为它把图像模型的竞争焦点从“画质和风格”推向“视觉任务执行”。OpenAI 官方文章明确说，新模型在详细指令遵循、物体位置控制、密集文本渲染、多语言理解、风格保真和最新世界知识上有阶跃式提升；当它和 thinking model 结合时，还可以联网搜索、从一个提示生成多张图像，并对复杂任务做自我验证。13\n\n这和 GPT-5.5 主题不同：GPT-5.5 关注通用智能、工具调用和 agentic work；这个事件更窄，聚焦图像生成如何被“推理化”、API 化，并嵌入 ChatGPT / Codex / 设计工具工作流。它也不只是 OpenAI 的单点发布：同一时间段里，Claude Design、Midjourney V8.1、Google/DeepMind 的图像与视频模型工程讨论都在说明，视觉 AI 正从创意玩具进入可交付工作系统。141819\n\n事件时间线\n2026-04-14\n\nMidjourney 发布 V8.1，强调更快的 2K HD、成本下降、图像提示和风格参考等能力，说明图像模型竞争已进入速度、成本和生产功能层面。\n\n2026-04-15\n\nOpenAI 发布较长版 Images 2.0 演示视频，介绍即时模式、思考模式、多语言文字渲染、4K 细节和复杂创作任务。\n\n2026-04-16\n\nOpenAI 发布 Codex 更新，说明 Codex 可以操作桌面应用、连接工具、生成图像、记住偏好并承担持续任务，图像生成被纳入更广的工作流。\n\n2026-04-21\n\nOpenAI 发布 ChatGPT Images 2.0 官方文章、推文和多支演示视频，重点介绍 thinking、指令遵循、多语言文字、API 可用性和端到端视觉任务处理。\n\n2026-04-21\n\n宝玉和 Greg Brockman 等外部/半官方视角开始补充实际应用场景，包括 UI、密集排版、中文渲染、教学、幻灯片、营销材料和代码文档图表。\n\n2026-04-22\n\n中文深度解读和使用经验开始出现，赛博禅心、腾讯科技和 How I AI 分别补充了 API、价格、限制、设计工作流和实际使用体验。\n\n2026-04-23\n\n阮一峰周刊把 GPT Images 2.0 放进“第二次 API 开放浪潮”的讨论中，说明视觉生成的价值会越来越依赖 API 和自动化工作流。\n\n核心变化与亮点\n1. 核心变化：从“生图模型”到“视觉工作系统”\n\nChatGPT Images 2.0 的关键不是单纯更清晰、更写实，而是它开始承担视觉任务中更靠前的认知步骤。OpenAI 官方文章把升级拆成几个层面：更细的指令遵循、更准确的物体放置和关系处理、跨宽高比的密集文本渲染、更好的多语言理解，以及面向照片、漫画和其他视觉风格的风格保真度。换句话说，它要解决的不是“生成一张好看的图”，而是“把 brief 变成可交付视觉资产”。1\n\nOpenAI 官方发布图：相比视频缩略图，它更适合作为 16:9 封面，表达这次发布的产品化定位。\n\n官方推文进一步把 Images 2.0 定义为“具备 thinking capabilities 的图像模型”。当 ChatGPT 中选择 thinking model 后，它可以联网搜索实时信息、从一个 prompt 创建多张不同图像、检查自己的输出，甚至生成可用二维码。这使图像生成从一次性 prompt-to-image 变成更完整的流程：理解意图、补充事实、规划构图、生成候选、检查结果。23\n\n2. Thinking 模式：价值在“替你想清楚”，不是神化模型\n\nOpenAI 的 thinking 演示视频展示了三类任务：为 OpenAI 周边商品生成包含价格研究的广告、收集事实并制作牛顿科学贡献信息图、分析 2006 / 2016 / 2026 不同时代社交媒体照片的审美趋势。这里的重点不是模型会“想”这件事本身，而是它能先做开放式研究、看多个来源、提取共同点，再把结果组织成多页且风格一致的视觉叙事。9\n\nOpenAI thinking 演示视频：对应联网研究、事实整合和多页视觉叙事能力。\n\n这也是赛博禅心文章提出的判断：思考模式的核心价值不是“画得更好”，而是把 idea 到成品之间的繁琐脑力劳动接下来。腾讯科技也把它概括为从“渲染工具”向“视觉工作系统”的转向：模型需要理解需求、搜索参考、适配格式并保持风格一致。1213\n\n3. 指令遵循、文字渲染和布局控制是这次最实用的升级\n\n图像模型过去最常见的问题不是不会生成漂亮画面，而是难以精确执行：文字错、空间关系错、手里拿的东西错、指定时间的钟表变成默认图案。OpenAI 的指令遵循演示专门展示这些问题：把单词放到指定的左右手上、生成非默认时间的时钟、按照提示把苹果、杯子、书、相机和篮球放到指定相对位置。8\n\nOpenAI 指令遵循演示：用于说明文本位置、时钟时间和空间关系控制。\n\n多语言文字也是重点。官方文章和中文解读都强调，Images 2.0 在中文、日文、韩文等非拉丁文字渲染上有明显提升。宝玉的推文把它概括为对复杂指令、UI 界面、密集排版和语义连贯中文渲染的改善；赛博禅心则直接指出“中文不再是图像模型的二等公民”。这对中文用户很关键，因为视觉资产中的中文标题、菜单、标签和说明文字过去经常需要手工返修。11112\n\n4. API、价格和可用性决定它能否进入生产\n\n这次发布不只是 ChatGPT 界面更新。OpenAI 官方说明，Images 2.0 已在 ChatGPT、Codex 和 API 中提供，底层模型通过 gpt-image-2 开放；thinking 功能优先面向 Plus、Pro 和 Business 用户。5\n\n赛博禅心补充了开发者更关心的部分：API 模型名、调用方式、价格变化和官方演示材料，并指出新模型相比上代价格显著上涨。腾讯科技也把成本和边界放进讨论：从“能用”到“能依赖”之间，还要看实际工作流里返工率、速度、价格和稳定性。这个判断很重要。Images 2.0 如果只是偶尔出惊艳样张，价值有限；如果它能通过 API 稳定生成多尺寸、多语言、可编辑的视觉资产，才真正进入产品和设计系统。1213\n\n5. 使用经验：设计工具里的价值开始显现，但速度和成本仍是约束\n\nHow I AI 的视频是目前素材里最有用的早期使用经验之一。Claire Vo 对 Claude Design 和 ChatGPT Images 2.0 做了实操评估：Claude Design 在结构化设计系统、营销落地页和演示幻灯片生成上有优势，但速度慢、token 限制明显；ChatGPT Images 2.0 则在多页品牌工具包、上传照片后的个人色彩分析、文本、色彩、图像分析和布局结合上表现出新的推理与排版能力。14\n\nHow I AI 使用体验视频：提供了 Claude Design 与 ChatGPT Images 2.0 在实际设计任务中的对比。\n\n这个素材可以防止主题页变成官方宣传。它说明 Images 2.0 的价值不是抽象的“更强”，而是在具体工作中减少从 brief 到设计稿之间的空白；同时也提醒读者，速度、成本和迭代反馈循环仍然决定它是否适合专业设计流程。\n\n6. 它和 Codex / API 自动化是同一条产品线\n\n4 月 16 日 OpenAI 发布 Codex 更新，称 Codex 可以操作桌面应用、连接更多工具、生成图像、记忆偏好并承担持续任务。这个素材不是 Images 2.0 主发布，但它解释了为什么图像模型要强调“可用视觉”和“端到端任务”：未来用户可能不是单独打开一个生图工具，而是在写代码文档、做演示、改网页、生成营销材料或自动化重复任务时，让代理顺手生成、检查、替换视觉资产。1617\n\nCodex 更新图：说明图像生成正被放进更宽的工具连接和自动化工作流。\n\n阮一峰周刊从另一个角度补充了这点：当 AI 自动化需要进入各类平台，API 开放会变得更重要。GPT Images 2.0 的 gpt-image-2 API 不只是给开发者一个新模型，而是让视觉生成进入自动化链路。15\n\n7. 背景和竞品：视觉模型竞争正在转向控制、成本和系统工程\n\nSander Dieleman 在 AI Engineer 的演讲从模型工程角度解释了生成式图像和视频模型的底层问题：数据整理、潜在表示、扩散模型、架构变化、分布式训练、采样和控制信号。这个背景能帮助读者理解，Images 2.0 的“多图一致性、风格控制、指令遵循”不是简单产品包装，而是视觉模型长期竞争的核心方向。18\n\nMidjourney V8.1 同期强调 2K HD、速度提升、成本下降、图像提示和风格参考，也说明图像模型竞争正在从样张质量扩展到生产效率和控制能力。OpenAI 的差异化路径是把图像模型放进 ChatGPT / Codex / API，并强化 thinking 与工作流；Midjourney 的路径更偏创作体验和图像美学。这个对比有助于避免把 Images 2.0 写成“唯一重大进展”。19\n\n8. 仍需谨慎：官方能力、早期使用和真实可靠性要分开\n\n目前 references 已经从纯官方素材扩展到中文解读、社区使用经验和背景材料，但强证据仍集中在官方发布和演示。功能性二维码、复杂多语言文本、角色一致性、多页品牌套件、联网搜索事实性、API 成本和安全边界，都需要更多独立实测。尤其是赛博禅心和腾讯科技都提到，模型仍在物理世界建模、极密细节、复杂标注图等方面有边界。1213\n\n因此，这个 Topic 的结论应保持分层：发布事实和可用性是官方事实；复杂能力和 benchmark 式表现是官方声明或官方演示；How I AI、宝玉、中文媒体分析可以作为早期使用和解读；是否能稳定进入专业工作流，还需要更多生产案例验证。\n\n各方观点\nofficial-launch\nOpenAI 将 Images 2.0 定位为能遵循详细指令、处理复杂布局、渲染密集文本并进入 ChatGPT、Codex 和 API 的图像模型。\n— OpenAI\nthinking-image-model\nOpenAI 明确把 Images 2.0 称为首个具备 thinking capabilities 的图像模型，并把搜索、自检、多图生成和二维码作为关键能力。\n— OpenAI\nproductivity-use-case\nGreg Brockman 把 Images 2.0 放进教育、幻灯片、营销材料和代码文档图表等职业生产力场景，而不是只讲创意样张。\n— Greg Brockman\nchinese-developer-view\n宝玉强调复杂指令、UI 和密集排版、中文渲染、thinking 模式、API 开放和 2K 分辨率，这补充了中文用户最关心的生产力视角。\n— 宝玉\nindependent-analysis\n赛博禅心把 thinking 模式解释为“替你想清楚”，同时补充 API、价格、限制、安全和早期客户反馈。\n— 赛博禅心\nsystems-framing\n腾讯科技把 Images 2.0 解读为从单张图质量竞争转向完整视觉工作流系统，并提醒成本和可靠性仍需验证。\n— 腾讯科技\nhands-on-review\nHow I AI 的实测认为 ChatGPT Images 2.0 在多页品牌工具包和图像分析布局任务上有明显进步，但速度、成本和反馈循环仍是实际限制。\n— How I AI\nautomation-context\n阮一峰把 GPT Images 2.0 放进第二次 API 开放浪潮，说明视觉生成要进入自动化工作流，API 是关键入口。\n— 阮一峰\nmodel-engineering-context\nSander Dieleman 的图像与视频模型工程演讲说明，数据整理、潜在表示、采样和控制信号是视觉模型持续进步的底层基础。\n— Sander Dieleman / AI Engineer\n编辑后记\n\n这页现在可以从“短发布事件页”升级为“发布事件 + 早期使用经验 + 工作流判断”的 Draft。最稳的结论是：ChatGPT Images 2.0 的核心价值不只是画质提升，而是把图像生成变成更接近视觉生产系统的能力，包括 brief 理解、搜索、自检、多图一致、文字排版、API 和 Codex 工作流。\n\n仍需保留边界：20 条 references 中直接相关素材已足够，但独立评测仍偏少；How I AI、赛博禅心、腾讯科技和宝玉提供了早期使用与解读，尚不能替代大规模生产验证。发布时应避免写成“已经证明可靠”，更适合写成“OpenAI 正在把图像模型推向可执行的视觉工作流，真实可靠性仍要看更多使用案例”。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/explore/topics/chatgpt-images-2-thinking-image-models#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "内容广场",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "每日早报",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "精选周刊",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "内容来源",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a71d588b",
+      "text": "Introducing ChatGPT Images 2.0\nOpenAI\n· 2026-04-21\n\n官方主发布文章，是能力、可用性、API、限制和产品定位的事实主轴。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/f12b487",
+      "text": "This is ChatGPT Images 2.0\nOpenAI\n· 2026-04-21\n\n官方短视频，适合理解 OpenAI 如何面向普通用户讲述“从欣赏到生产”的变化。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/ddf8c9f",
+      "text": "Thinking & Intelligence with ChatGPT Images 2.0\nOpenAI\n· 2026-04-21\n\n官方 thinking 演示，解释联网研究、事实整合、多页一致输出和视觉叙事。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/298e8cd",
+      "text": "Instruction Following with ChatGPT Images 2.0\nOpenAI\n· 2026-04-21\n\n官方指令遵循演示，覆盖文字位置、时钟时间和物体空间关系。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/fbbacd23",
+      "text": "从特点到 API，Image2 最完整解读\n· 2026-04-22\n\n赛博禅心的完整解读，补充 API、价格、限制、安全和早期客户反馈。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6c319d6d",
+      "text": "一文读懂 ChatGPT Images 2.0：图像 AI 的下一个阶段\n· 2026-04-22\n\n腾讯科技系统性解读，将 Images 2.0 放进视觉工作流系统的框架。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/7fb2708",
+      "text": "Claude Design is slow and I love it anyway (plus why I love ChatGPT Images 2.0)\nHow I AI\n· 2026-04-22\n\nHow I AI 使用经验，提供 Claude Design 与 ChatGPT Images 2.0 的实操对比。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2046676083714478150",
+      "text": "OpenAI 发布了 ChatGPT Images 2.0，图片生成能力全面升级，今天起对所有 Ch\n宝玉\n· 2026-04-21\n\n宝玉的中文开发者视角，强调复杂指令、中文渲染、API 和 2K 分辨率。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/d8c375d8",
+      "text": "Codex for (almost) everything\nOpenAI\n· 2026-04-16\n\nCodex 官方文章，说明图像生成正在进入桌面应用、工具连接和持续任务工作流。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/394c915",
+      "text": "Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)\nAI Engineer\n· 2026-04-21\n\n图像与视频模型工程背景，帮助理解控制信号、一致性和生成质量背后的技术问题。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a71d588b",
+      "text": "Introducing ChatGPT Images 2.0",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2046670977145372771",
+      "text": "Introducing ChatGPT Images 2.0 A state-of-the-art",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2046670989719924768",
+      "text": "A Visual Thought Partner ChatGPT Images 2.0 is ou",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2046670992123248802",
+      "text": "Real-World Intelligence ChatGPT Images 2.0 has an",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2046670994413322435",
+      "text": "ChatGPT Images 2.0 is available starting today to",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2046694017287811390",
+      "text": "really incredible what you're now able to create w",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/f12b487",
+      "text": "This is ChatGPT Images 2.0",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/298e8cd",
+      "text": "Instruction Following with ChatGPT Images 2.0",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/ddf8c9f",
+      "text": "Thinking & Intelligence with ChatGPT Images 2.0",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/d4d2d42",
+      "text": "Introducing ChatGPT Images 2.0",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2046676083714478150",
+      "text": "OpenAI 发布了 ChatGPT Images 2.0，图片生成能力全面升级，今天起对所有 Ch",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/fbbacd23",
+      "text": "从特点到 API，Image2 最完整解读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6c319d6d",
+      "text": "一文读懂 ChatGPT Images 2.0：图像 AI 的下一个阶段",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/7fb2708",
+      "text": "Claude Design is slow and I love it anyway (plus why I love ChatGPT Images 2.0)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1f0d1cae",
+      "text": "科技爱好者周刊（第 394 期）：第二次 API 开放浪潮",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/d8c375d8",
+      "text": "Codex for (almost) everything",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2044827705406062670",
+      "text": "Codex for (almost) everything. It can now use app",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/394c915",
+      "text": "Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2044166948674769196",
+      "text": "V8.1 is live! Our iconic aesthetics are back w nat",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/2c13d25",
+      "text": "Sam Altman + Greg Brockman - On The Great OpenAI Reset",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "OpenAI 推出 ChatGPT Images 2.0，把图像生成从单张出图推进到能理解 brief、联网检索、自检、多图规划、处理多语言文字和进入 API / Codex 工作流的视觉生产系统。独立实测开始出现，但核心证据仍以官方材料为主。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "multimodal-ai, computer-vision, entity-openai, model-releases, ai-product",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "ChatGPT Images 2.0 与“会思考”的图像模型 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "OpenAI 推出 ChatGPT Images 2.0，把图像生成从单张出图推进到能理解 brief、联网检索、自检、多图规划、处理多语言文字和进入 API / Codex 工作流的视觉生产系统。独立实测开始出现，但核心证据仍以官方材料为主。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/explore/topics/chatgpt-images-2-thinking-image-models",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/explore/topics/chatgpt-images-2-thinking-image-models/opengraph-image?93bc0944c4cadf0e",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-26T06:55:32Z",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "2026-04-26T06:55:32Z",
+      "name": null,
+      "property": "article:modified_time"
+    },
+    {
+      "content": "multimodal-ai",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "computer-vision",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "entity-openai",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "model-releases",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ai-product",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "ChatGPT Images 2.0 与“会思考”的图像模型 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "OpenAI 推出 ChatGPT Images 2.0，把图像生成从单张出图推进到能理解 brief、联网检索、自检、多图规划、处理多语言文字和进入 API / Codex 工作流的视觉生产系统。独立实测开始出现，但核心证据仍以官方材料为主。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://image.jido.dev/20260422224330_Blog_art_card.png",
+      "name": "twitter:image",
+      "property": null
+    }
+  ],
+  "title": "ChatGPT Images 2.0 与“会思考”的图像模型 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/explore/topics/chatgpt-images-2-thinking-image-models"
+}

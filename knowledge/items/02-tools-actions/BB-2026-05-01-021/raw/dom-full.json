@@ -1,0 +1,352 @@
+﻿{
+  "content": "对比维度\n形态与切入点\n模型基础\n上下文与会话管理\n多智能体与自动化\nMCP 与生态协同\n企业治理与安全\n学习曲线与开发者体验\n定价与可用性\n使用场景建议\n个人开发者：跨语言、跨形态、注重自动化\n→ Claude Code\n\nClaude Code 在终端 / IDE / 桌面 / Web / iOS 同源体验最完整，1M 上下文 + Routines + Skills 让长任务可以挂起来跑；Pro $17/月就含全功能，对个人最划算。Onboarding Claude Code 提供了 17 年开发经验沉淀的方法论，适合一个人也想跑出团队级流程的开发者。\n\n团队 / 中型公司：希望开发者立刻产出 PR、IDE 优先\n→ Cursor\n\nCursor 在 IDE 内闭环：Tab + Composer + Cloud Agents + Bugbot 让团队成员零迁移上手，Teams $40/座、SAML/SSO/审计齐全，是当前在 IDE 内最完整的协同工具。想看 Composer 2 实测 与云端 Agents 私有部署。\n\n已经吃 OpenAI 订阅或重视云端长任务\n→ Codex CLI\n\nCodex CLI 是开源 Apache-2.0 终端 agent，沙箱安全且能与 Cloud Codex 接力跑数小时；GPT-5.5 在 Terminal-Bench 2.0 / SWE-bench Pro 上表现最强，对工作流偏向 ChatGPT/Codex 生态的团队最自然。另见 Codex 几乎无所不能。\n\nVibe Coder / 想试试氛围编程\n→ Cursor\n\nCursor 学习曲线最低，IDE 内即时拿到效果；想要更深的 agent 控制再切到 Claude Code 的 CLI 与 Skills，避免一开始就被终端工作流劝退。完整的氛围编程方法论可以读 Anthropic 编程智能体负责人的大师课。\n\n常见误区\n把基准分当成「实际生产力」\n\nClaude Opus 4.7 在 SWE-bench Verified 上拿到 87.6%、GPT-5.5 在 Terminal-Bench 2.0 上 82.7%——听起来差距很大，但这只是「工具能不能解题」，不是「团队能不能交付」。\n\nPragmatic Engineer 的开发者调研和 Uber 的 2026 工程指标都说明：真正影响 PR 通过率与复盘时间的，是工具与团队工作流的契合度，比如：\n\n你的代码评审是 PR-first 还是 trunk-based？\n团队是否已经为 AI 代码建立单独的回归基线？\n长任务出问题时，能否快速回滚和复现？\n\n结论：选型时把基准分作为「能力下限」参考即可，把决策权交给真实工作流试跑。可参考 Pragmatic Engineer 的 SE 工具调研 与 Uber 2026 AI Dev Metrics。\n\nToken 预算管理是隐形成本\n\n1M 上下文 + 多智能体并行让三家工具都很容易「烧 token」。Pragmatic Engineer 把这种现象命名为 Tokenmaxxing——团队为了让 agent 一次跑完，倾向于把整个仓库塞进上下文，月底账单惊人。\n\n实际避坑动作：\n\n给 Cloud Agents / Routines 这类长任务设单独预算，避免和日常 IDE 用量混在一起。\n用 prompt caching + 增量上下文（CLAUDE.md / Cursor Hot Context / Codex 状态目录）把重复内容缓存下来，不要每次都重塞。\n在 CI 中对单次任务设 token 上限，出错时立即 fail-fast，不要等「再跑十轮就好了」。\n\n完整数据见 Pragmatic Engineer · Tokenmaxxing。\n\nHarness 工程能力比模型选型更决定上限\n\nCloudflare、Shopify 与多位 OpenAI / Anthropic 内部工程师反复强调：决定 AI 编程产出的不是哪家模型，而是上下文管理、prompt、CI / 审查环节的「驾驭工程」（Harness Engineering）。\n\nOpenAI 的 Ryan Lopopolo 在 AI Engineer 大会上演示了「人类掌舵、智能体执行」的 harness 设计；Martin Fowler 阵营也把这一概念写成方法论。三家工具的差异在好 harness 下会被显著抹平：Claude Code 的 Skills、Cursor 的 Composer 自动模式、Codex 的 sandbox + Cloud Agent，本质上都是为了把人类的判断与 LLM 的执行解耦。\n\n怎么做：\n\n写好 CLAUDE.md / cursorrules / AGENT.md 之类的项目契约。\n把Ahead of AI 拆解的 Coding Agent 组件（context、planning、tool use、verification）单独评估。\n把验证环节（test、lint、preview）放进 hooks，不依赖 LLM 自查。\n中文圈「御三家」叙事不等于工具排序\n\n张小珺 #136 把 Anthropic、OpenAI、Google 列为「硅谷御三家」，晚点 LatePost 26Q1 季报也把这条叙事推得很广——但这是模型 / 公司层面的故事，不能直接映射到工具梯队。\n\n落到具体编程工具，Cursor 因为允许 BYO 模型，反而能同时享受三家更新：\n\nAnthropic 出新 Opus → Cursor / Codex CLI 都能切换\nOpenAI 升级 GPT-5.5 → Cursor 可调用，Codex CLI 一手获得\nGoogle Gemini 3 Pro 进 Cursor 模型菜单 → Codex CLI 不支持\n\n结论：模型梯队是「能力红线」、工具梯队是「生产力适配」。想看完整中文叙事，参考 张小珺 · #136 全球大模型季报与 晚点 LatePost · AI 季报 26Q1。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/explore/topics/ai-coding-tools-2026-spring#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "我的早报",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "我的关注",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "为你推荐",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "内容广场",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "每日早报",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "精选周刊",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "主题解读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "内容来源",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "阅读历史",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "我的收藏",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "我的笔记",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "我的回顾",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "设置",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "帮助中心",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "内容广场",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "每日早报",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "精选周刊",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "内容来源",
+      "title": ""
+    },
+    {
+      "href": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+      "text": "Onboarding Claude Code",
+      "title": ""
+    },
+    {
+      "href": "https://cursor.com/blog/composer-2",
+      "text": "Composer 2 实测",
+      "title": ""
+    },
+    {
+      "href": "https://cursor.com/blog/self-hosted-cloud-agents",
+      "text": "云端 Agents 私有部署",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/codex-for-almost-everything",
+      "text": "Codex 几乎无所不能",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651028728&idx=2&sn=da63a2e1b8efd8ded5b369187dbf970b",
+      "text": "Anthropic 编程智能体负责人的大师课",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/shao__meng/status/2032263932212371922",
+      "text": "Pragmatic Engineer 的 SE 工具调研",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/GergelyOrosz/status/2031499318100676950",
+      "text": "Uber 2026 AI Dev Metrics",
+      "title": ""
+    },
+    {
+      "href": "https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/",
+      "text": "Pragmatic Engineer · Tokenmaxxing",
+      "title": ""
+    },
+    {
+      "href": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent",
+      "text": "Ahead of AI 拆解的 Coding Agent 组件",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69de68cfb977fb2c47f1ee14",
+      "text": "张小珺 · #136 全球大模型季报",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247534467&idx=2&sn=c361e6554f30a901851544fb22dad8f6",
+      "text": "晚点 LatePost · AI 季报 26Q1",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/2732488",
+      "text": "How AI is changing Software Engineering: A Conversation with Gergely Orosz， @pragmaticengineer\nAI Engineer\n· 2026-04-21",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/3b1c0638",
+      "text": "Introducing Claude Opus 4.7\nAnthropic News\n· 2026-04-15",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a6d9083a",
+      "text": "Introducing GPT-5.5\nOpenAI\n· 2026-04-23",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/63cbae4c",
+      "text": "Meet the new Cursor · Cursor\nMichael Truell & Sualeh Asif\n· 2026-04-02",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/d8c375d8",
+      "text": "Codex for (almost) everything\nOpenAI\n· 2026-04-16",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c1ecbe08",
+      "text": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude\nClaude Blog\n· 2026-04-27",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/67644639",
+      "text": "Introducing Composer 2 · Cursor\nCursor Team\n· 2026-03-19",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/9009cf6",
+      "text": "136. 全球大模型季报第 9 集：和广密聊，Coding 是 AGI 第二幕、硅谷御三家真相、模型正成为新一代 OS\n张小珺\n· 2026-04-14",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2032263932212371922",
+      "text": "AI Tooling for Software Engineers in 2026 @Pragma\nmeng shao\n· 2026-03-13",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/a392d2a",
+      "text": "Harness Engineering: How to Build Software When Humans Steer， Agents Execute — Ryan Lopopolo， OpenAI\nAI Engineer\n· 2026-04-17",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/3b1c0638",
+      "text": "Introducing Claude Opus 4.7",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c1ecbe08",
+      "text": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6c4e4c3c",
+      "text": "Using Claude Code: session management and 1M context | Claude",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/44277004",
+      "text": "Introducing routines in Claude Code | Claude",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/bf9ab35c",
+      "text": "Claude Code auto mode: a safer way to skip permissions",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/63cbae4c",
+      "text": "Meet the new Cursor · Cursor",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/67644639",
+      "text": "Introducing Composer 2 · Cursor",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/4b07215e",
+      "text": "Improving Composer through real-time RL · Cursor",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/4bab59bf",
+      "text": "Run cloud agents in your own infrastructure · Cursor",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2046719798596517952",
+      "text": "Excited to partner with the SpaceX team to scale u",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a6d9083a",
+      "text": "Introducing GPT-5.5",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/d8c375d8",
+      "text": "Codex for (almost) everything",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e792cb18",
+      "text": "Introducing workspace agents in ChatGPT",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2044827705406062670",
+      "text": "Codex for (almost) everything. It can now use app",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/77d5e14",
+      "text": "Build Hour: API & Codex",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/2732488",
+      "text": "How AI is changing Software Engineering: A Conversation with Gergely Orosz， @pragmaticengineer",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2032263932212371922",
+      "text": "AI Tooling for Software Engineers in 2026 @Pragma",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2031499318100676950",
+      "text": "OK， related to this: Fresh data from Uber， from F",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e4655d34",
+      "text": "The Pulse: ‘Tokenmaxxing’ as a weird new trend",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/9009cf6",
+      "text": "136. 全球大模型季报第 9 集：和广密聊，Coding 是 AGI 第二幕、硅谷御三家真相、模型正成为新一代 OS",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/9a0ae5a1",
+      "text": "AI 季报 26Q1：OpenClaw、OpenAI 与 Anthropic 的三重对阵、自进化丨晚点播客",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/4e385f0b",
+      "text": "Components of A Coding Agent",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1caa5015",
+      "text": "Harness engineering for coding agent users",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/a392d2a",
+      "text": "Harness Engineering: How to Build Software When Humans Steer， Agents Execute — Ryan Lopopolo， OpenAI",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/07248488",
+      "text": "如何正确 Vibe Coding？这是来自 Anthropic 编程智能体负责人的大师课",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "title": "AI 编程工具横评 2026 春：Claude Code、Cursor、Codex CLI 怎么选 | BestB...",
+  "url": "https://www.bestblogs.dev/explore/topics/ai-coding-tools-2026-spring"
+}

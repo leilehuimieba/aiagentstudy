@@ -1,0 +1,369 @@
+{
+  "content": "Opus 4.7 is our strongest generally available model to date for coding, enterprise workflows, and long-running agentic tasks. It handles ambiguity better than Opus 4.6, is much more capable at finding bugs and reviewing code, carries context across sessions more reliably, and can reason through ambiguous tasks with less direction.\n\nIn our launch announcement, we noted that two changes—an updated tokenizer and a proclivity to think more at higher effort levels, especially on later turns in longer sessions—impact token usage. As a result, when replacing Opus 4.6 with Opus 4.7, it can take some tuning to achieve the best performance. A few tweaks to prompts and harnesses can make a big difference. \n\nThis post walks through what’s changed and how to most effectively use Opus 4.7 in Claude Code.\n\nStructuring interactive coding sessions\n\nOpus 4.7’s token usage and behavior can differ depending on whether you’re deploying more autonomous, asynchronous coding agents with a single user turn or more interactive, synchronous coding agents with multiple user turns. In interactive settings, it reasons more after user turns: this improves its coherence, instruction following, and coding quality over long sessions, but it also tends to use more tokens.\n\nTo get the most out of Opus 4.7 in Claude Code, we’ve found it’s helpful to treat Claude more like a capable engineer you’re delegating to than a pair programmer you’re guiding line by line:\n\nSpecify the task up front, in the first turn. Well-specified task descriptions that incorporate intent, constraints, acceptance criteria, and relevant file locations give Opus 4.7 the context it needs to deliver stronger outputs. Ambiguous prompts conveyed progressively across many turns tend to reduce both token efficiency and, sometimes, overall quality.\nReduce the number of required user interactions. Every user turn adds reasoning overhead. Batch your questions and give the model the context it needs to keep moving.\nUse auto mode when appropriate. For tasks where you trust the model to execute safely without frequent check-ins, auto mode cuts cycle time. It’s an especially good fit for long-running tasks where you’ve provided full context up front. Auto mode is now available in research preview for Claude Code Max users—you can toggle it on using Shift+Tab.\nSet up notifications for completed tasks. Ask Claude to play a sound when it’s done with a task, and it can create its own hook-based notifications.\nRecommended effort settings for Opus 4.7\nBased on our internal evals, Opus 4.7 outperforms Opus 4.6 across the full effort range, with the largest gains at high and Extended Thinking settings.\n\nThe default effort level for Opus 4.7 in Claude Code is now xhigh. This is a new effort level between high and max that gives users more control over the tradeoff between reasoning and latency on hard problems. We recommend xhigh for most agentic coding work, especially for intelligence-sensitive tasks like designing APIs and schemas, migrating legacy code, and reviewing large codebases. \n\nHere’s some additional guidance for each effort level:\n\nmedium and low: Available for cost-sensitive, latency-sensitive, or tightly scoped work. The model will be less capable on harder tasks than it would be at higher effort levels, but it still outperforms Opus 4.6 running at the same effort level—sometimes with fewer tokens.\nhigh: Balances intelligence and cost. Choose high if you’re running concurrent sessions or want to spend less without a large quality drop. \nxhigh (default, recommended): The best setting for most coding and agentic uses. It has strong autonomy and intelligence without the runaway token usage that max can produce on long agentic runs.\nmax: Squeezes out additional performance on genuinely hard problems, but shows diminishing returns and is more prone to overthinking. Use it deliberately for tasks like testing the model’s maximum ceiling in evals and for extremely intelligence-sensitive and non-cost-sensitive uses. \n\nIf you’re upgrading to the new model, we recommend experimenting with effort rather than just porting over an old setting. You can toggle between effort levels during the same task to more effectively manage token usage and reasoning. \n\nWe’ve set the default effort level for Opus 4.7 to xhigh because we believe it’s the best setting for most coding tasks. If you’re an existing Claude Code user but you haven’t manually set your effort level, you’ll be upgraded to xhigh automatically. You can still adjust your effort manually.\n\nWorking with adaptive thinking\n\nExtended Thinking with a fixed thinking budget is not supported in Opus 4.7. Instead, Opus 4.7 offers adaptive thinking. This makes thinking optional at each step and allows the model to decide when to use more thinking based on context. It can respond to simple queries quickly, skip thinking when a step doesn’t benefit from it, and invest its thinking tokens where they’re most likely to be useful. Over an agentic run, this can add up to faster responses and a better user experience.\n\nAdaptive thinking has improved meaningfully in this release—in particular, Opus 4.7 is less prone to overthinking.\n\nIf you want more control over the thinking rate, prompt for it directly:\n\nIf you want more thinking, try something like, “Think carefully and step-by-step before responding; this problem is harder than it looks.”\nIf you want less thinking, try something like, “Prioritize responding quickly rather than thinking deeply. When in doubt, respond directly.” You’ll save tokens but may lose some accuracy on harder steps. \nBehavior changes worth knowing\n\nA handful of default behaviors have changed between Opus 4.6 and 4.7 and are worth knowing about if you’ve carefully tuned your prompts or harnesses for the older model.\n\nResponse length is calibrated to task complexity. Opus 4.7 isn’t as default-verbose as Opus 4.6. You can expect shorter answers on simple lookups and longer ones on open-ended analysis. If your use case relies on a specific length or style, state that explicitly in your prompt. We find that positive examples of the voice you want work better than negative “Don’t do this” instructions.\n\nThe model calls tools less often and reasons more. This produces better results in many cases. If you want more tool use (say, more aggressive search or file reading during agentic work), provide guidance that explicitly describes when and why the tool should be used.\n\nIt spawns fewer subagents by default. Opus 4.7 tends to be more judicious about when to delegate work to subagents. If your use case benefits from parallel subagents (for example, fanning out across files or independent items), we recommend spelling that out. For example:\n\nDo not spawn a subagent for work you can complete directly in a single response (e.g., refactoring a function you can already see). Spawn multiple subagents in the same turn when fanning out across items or reading multiple files.\n\nWhat to try next\n\nOpus 4.7 performs better on long-running tasks than prior models. This makes it a good fit for tasks where supervision used to be the bottleneck, like complex multi-file changes, ambiguous debugging, code review across a service, and multi-step agentic work.\n\nWe recommend keeping effort at xhigh and seeing how far your first turn takes you.\n\nLearn more in our Opus 4.7 prompting guide and our article on context and session management in Claude Code.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/59c28b8d#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=154bc38a",
+      "text": "C\nClaude Blog",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://claude.com/blog/best-practices-for-using-claude-opus-4-7-with-claude-code",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.anthropic.com/news/claude-opus-4-7",
+      "text": "Opus 4.7",
+      "title": ""
+    },
+    {
+      "href": "https://www.anthropic.com/news/claude-opus-4-7",
+      "text": "launch announcement",
+      "title": ""
+    },
+    {
+      "href": "https://claude.com/blog/auto-mode",
+      "text": "auto mode",
+      "title": ""
+    },
+    {
+      "href": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "text": "Opus 4.7 prompting guide",
+      "title": ""
+    },
+    {
+      "href": "https://claude.com/blog/using-claude-code-session-management-and-1m-context",
+      "text": "context and session management",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/bf9ab35c?entry=related_article",
+      "text": "Claude Code 自动模式：一种更安全的跳过权限确认方式",
+      "title": "Claude Code 推出的全新自动模式（Auto mode）利用基于模型的两阶段分类器和提示词注入探测器，自动拦截危险操作，在开发者生产力与安全性之间取得平衡。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6ebdeb6e?entry=related_article",
+      "text": "顾问策略：利用 Opus 为 Sonnet 提升智能水平 | Claude",
+      "title": "Anthropic 为 Claude API 推出了“顾问工具”，实现了一种高性价比策略：由较小的模型（Sonnet/Haiku）执行任务，仅在需要高层指导时咨询大型模型（Opus）。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/8f3d453?entry=related_article",
+      "text": "与 Boris Cherny 共同构建 Claude Code",
+      "title": "Claude Code 的创建者 Boris Cherny 探讨了他 100% 由 AI 驱动的工作流、Anthropic 独特的工程文化，以及为什么在 AI 时代软件工程师正从“抄写员”转变为“作者”。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/f884575?entry=related_article",
+      "text": "Boris Cherny：我们如何打造 Claude Code",
+      "title": "Claude Code 创始人 Boris Cherny 探讨了该工具在 Anthropic 的演进过程，强调了“为未来构建”的理念、多智能体编排，以及 AI 原生工程中 150% 的激进生产力提升。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c1ecbe08?entry=related_article",
+      "text": "像带新人一样引导 Claude Code：来自 17 年开发经验的启示 | Claude",
+      "title": "拥有 70 万行代码的 Skyline 代码库的首席开发者 Brendan MacLean，将他 17 年来引导人类开发者的方法论应用于 Claude Code，通过上下文、技能和 MCP 集成，让遗留代码库重新变得易于管理。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6c4e4c3c?entry=related_article",
+      "text": "使用 Claude Code：会话管理与 1M 上下文 | Claude",
+      "title": "本文来自 Claude 团队，详细指导如何在 Claude Code 中管理 100 万 token 的上下文窗口，解释了上下文衰减、压缩、回滚和子智能体等概念，并提供了何时使用每种功能以保持最佳性能的实用策略。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/3b1c0638?entry=related_article",
+      "text": "Claude Opus 4.7 正式发布",
+      "title": "Anthropic 发布了 Claude Opus 4.7，这是对 Opus 4.6 的一次重大升级，在高级软件工程、视觉能力、指令遵循和自主长程推理方面有显著改进，同时实施了新的网络安全防护措施，并维持了相同的定价。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/34499204?entry=related_article",
+      "text": "使用 MCP 构建能够接入生产系统的智能体 | Claude",
+      "title": "这篇来自 Claude 博客的文章详细阐述了为什么 MCP（模型上下文协议）是将生产环境 AI 智能体连接到外部云系统的首选架构，对比了直接 API 调用和 CLI 的差异，并提供了构建高效 MCP 服务器和上下文优化客户端的具体设计模式。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/72e3cf5?entry=related_article",
+      "text": "Claude Code 负责人：当编程问题被解决后会发生什么 | Boris Cherny",
+      "title": "Anthropic 的 Claude Code 负责人 Boris Cherny 讨论了向 100% AI 生成软件开发的转型，以及像 Co-work 这样的自主智能体的兴起。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c31f1686?entry=related_article",
+      "text": "多智能体协作模式：五种架构及其适用场景 | Claude",
+      "title": "Anthropic 总结了五种核心的多智能体协作模式——生成-验证、编排-子智能体、智能体团队、消息总线和共享状态，并提供了一套决策框架，帮助开发者根据任务复杂度和上下文需求选择合适的架构。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "这份来自 Anthropic 的官方指南详细介绍了如何在 Claude Code 中有效使用新的 Claude Opus 4.7 模型，涵盖了最佳会话结构、推荐的努力设置、自适应思考行为以及与 Opus 4.6 相比的关键行为变化。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Claude Opus 4.7, Claude Code, AI 编码助手, 提示词工程, 模型最佳实践",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "在 Claude Code 中使用 Claude Opus 4.7 的最佳实践 | Claude | BestBl...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "这份来自 Anthropic 的官方指南详细介绍了如何在 Claude Code 中有效使用新的 Claude Opus 4.7 模型，涵盖了最佳会话结构、推荐的努力设置、自适应思考行为以及与 Opus 4.6 相比的关键行为变化。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/59c28b8d",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/59c28b8d/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-15 16:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Claude Blog",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Claude Opus 4.7",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Claude Code",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 编码助手",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "提示词工程",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "模型最佳实践",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "在 Claude Code 中使用 Claude Opus 4.7 的最佳实践 | Claude | BestBl...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "这份来自 Anthropic 的官方指南详细介绍了如何在 Claude Code 中有效使用新的 Claude Opus 4.7 模型，涵盖了最佳会话结构、推荐的努力设置、自适应思考行为以及与 Opus 4.6 相比的关键行为变化。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/59c28b8d/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "在 Claude Code 中使用 Claude Opus 4.7 的最佳实践 | Claude | BestBl...",
+  "url": "https://www.bestblogs.dev/article/59c28b8d"
+}

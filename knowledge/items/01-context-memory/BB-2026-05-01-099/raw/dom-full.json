@@ -1,0 +1,394 @@
+{
+  "content": "Get started with Claude Managed Agents by following our docs.\n\nA running topic on the Engineering Blog is how to build effective agents and design harnesses for long-running work. A common thread across this work is that harnesses encode assumptions about what Claude can’t do on its own. However, those assumptions need to be frequently questioned because they can go stale as models improve.\n\nAs just one example, in prior work we found that Claude Sonnet 4.5 would wrap up tasks prematurely as it sensed its context limit approaching—a behavior sometimes called “context anxiety.” We addressed this by adding context resets to the harness. But when we used the same harness on Claude Opus 4.5, we found that the behavior was gone. The resets had become dead weight.\n\nWe expect harnesses to continue evolving. So we built Managed Agents: a hosted service in the Claude Platform that runs long-horizon agents on your behalf through a small set of interfaces meant to outlast any particular implementation—including the ones we run today.\n\nBuilding Managed Agents meant solving an old problem in computing: how to design a system for “programs as yet unthought of.” Decades ago, operating systems solved this problem by virtualizing hardware into abstractions—process, file—general enough for programs that didn't exist yet. The abstractions outlasted the hardware. The read() command is agnostic as to whether it’s accessing a disk pack from the 1970s or a modern SSD. The abstractions on top stayed stable while the implementations underneath changed freely.\n\nManaged Agents follow the same pattern. We virtualized the components of an agent: a session (the append-only log of everything that happened), a harness (the loop that calls Claude and routes Claude’s tool calls to the relevant infrastructure), and a sandbox (an execution environment where Claude can run code and edit files). This allows the implementation of each to be swapped without disturbing the others. We're opinionated about the shape of these interfaces, not about what runs behind them.\n\n\n\n\nDon’t adopt a pet\n\nWe started by placing all agent components into a single container, which meant the session, agent harness, and sandbox all shared an environment. There were benefits to this approach, including that file edits are direct syscalls, and there were no service boundaries to design.\n\nBut by coupling everything into one container, we ran into an old infrastructure problem: we’d adopted a pet. In the pets-vs-cattle analogy, a pet is a named, hand-tended individual you can’t afford to lose, while cattle are interchangeable. In our case, the server became that pet; if a container failed, the session was lost. If a container was unresponsive, we had to nurse it back to health.\n\nNursing containers meant debugging unresponsive stuck sessions. Our only window in was the WebSocket event stream, but that couldn’t tell us where failures arose, which meant that a bug in the harness, a packet drop in the event stream, or a container going offline all presented the same. To figure out what went wrong, an engineer had to open a shell inside the container, but because that container often also held user data, that approach essentially meant we lacked the ability to debug.\n\nA second issue was that the harness assumed that whatever Claude worked on lived in the container with it. When customers asked us to connect Claude to their virtual private cloud, they had to either peer their network with ours, or run our harness in their own environment. An assumption baked into the harness became a problem when we wanted to connect it to different infrastructure.\n\nThe solution we arrived at was to decouple what we thought of as the “brain” (Claude and its harness) from both the “hands” (sandboxes and tools that perform actions) and the “session” (the log of session events). Each became an interface that made few assumptions about the others, and each could fail or be replaced independently.\n\nThe harness leaves the container. Decoupling the brain from the hands meant the harness no longer lived inside the container. It called the container the way it called any other tool: execute(name, input) → string. The container became cattle. If the container died, the harness caught the failure as a tool-call error and passed it back to Claude. If Claude decided to retry, a new container could be reinitialized with a standard recipe: provision({resources}). We no longer had to nurse failed containers back to health.\n\nRecovering from harness failure. The harness also became cattle. Because the session log sits outside the harness, nothing in the harness needs to survive a crash. When one fails, a new one can be rebooted with wake(sessionId), use getSession(id) to get back the event log, and resume from the last event. During the agent loop, the harness writes to the session with emitEvent(id, event) in order to keep a durable record of events.\n\n\n\n\n\n\n\nThe security boundary. In the coupled design, any untrusted code that Claude generated was run in the same container as credentials—so a prompt injection only had to convince Claude to read its own environment. Once an attacker has those tokens, they can spawn fresh, unrestricted sessions and delegate work to them. Narrow scoping is an obvious mitigation, but this encodes an assumption about what Claude can't do with a limited token—and Claude is getting increasingly smart. The structural fix was to make sure the tokens are never reachable from the sandbox where Claude’s generated code runs.\n\nWe used two patterns to ensure this. Auth can be bundled with a resource or held in a vault outside the sandbox. For Git, we use each repository’s access token to clone the repo during sandbox initialization and wire it into the local git remote. Git push and pull work from inside the sandbox without the agent ever handling the token itself. For custom tools, we support MCP and store OAuth tokens in a secure vault. Claude calls MCP tools via a dedicated proxy; this proxy takes in a token associated with the session. The proxy can then fetch the corresponding credentials from the vault and make the call to the external service. The harness is never made aware of any credentials.\n\nThe session is not Claude’s context window\n\nLong-horizon tasks often exceed the length of Claude’s context window, and the standard ways to address this all involve irreversible decisions about what to keep. We’ve explored these techniques in prior work on context engineering. For example, compaction lets Claude save a summary of its context window and the memory tool lets Claude write context to files, enabling learning across sessions. This can be paired with context trimming, which selectively removes tokens such as old tool results or thinking blocks.\n\nBut irreversible decisions to selectively retain or discard context can lead to failures. It is difficult to know which tokens the future turns will need. If messages are transformed by a compaction step, the harness removes compacted messages from Claude’s context window, and these are recoverable only if they are stored. Prior work has explored ways to address this by storing context as an object that lives outside the context window. For example, context can be an object in a REPL that the LLM programmatically accesses by writing code to filter or slice it.\n\nIn Managed Agents, the session provides this same benefit, serving as a context object that lives outside Claude’s context window. But rather than be stored within the sandbox or REPL, context is durably stored in the session log. The interface, getEvents(), allows the brain to interrogate context by selecting positional slices of the event stream. The interface can be used flexibly, allowing the brain to pick up from wherever it last stopped reading, rewinding a few events before a specific moment to see the lead up, or rereading context before a specific action.\n\nAny fetched events can also be transformed in the harness before being passed to Claude’s context window. These transformations can be whatever the harness encodes, including context organization to achieve a high prompt cache hit rate and context engineering. We separated the concerns of recoverable context storage in the session and arbitrary context management in the harness because we can’t predict what specific context engineering will be required in future models. The interfaces push that context management into the harness, and only guarantee that the session is durable and available for interrogation.\n\n\nMany brains, many hands\n\nMany brains. Decoupling the brain from the hands solved one of our earliest customer complaints. When teams wanted Claude to work against resources in their own VPC, the only path was to peer their network with ours, because the container holding the harness assumed every resource sat next to it. Once the harness was no longer in the container, that assumption went away. The same change had a performance payoff. When we initially put the brain in a container, it meant that many brains required as many containers. For each brain, no inference could happen until that container was provisioned; every session paid the full container setup cost up front. Every session, even ones that would never touch the sandbox, had to clone the repo, boot the process, fetch pending events from our servers.\n\nThat dead time is expressed in time-to-first-token (TTFT), which measures how long a session waits between accepting work and producing its first response token. TTFT is the latency the user most acutely feels.\n\nDecoupling the brain from the hands means that containers are provisioned by the brain via a tool call (execute(name, input) → string) only if they are needed. So a session that didn't need a container right away didn't wait for one. Inference could start as soon as the orchestration layer pulled pending events from the session log. Using this architecture, our p50 TTFT dropped roughly 60% and p95 dropped over 90%. Scaling to many brains just meant starting many stateless harnesses, and connecting them to hands only if needed.\n\nMany hands. We also wanted the ability to connect each brain to many hands. In practice, this means Claude must reason about many execution environments and decide where to send work—a harder cognitive task than operating in a single shell. We started with the brain in a single container because earlier models weren't capable of this. As intelligence scaled, the single container became the limitation instead: when that container failed, we lost state for every hand that the brain was reaching into.\n\nDecoupling the brain from the hands makes each hand a tool, execute(name, input) → string: a name and input go in, and a string is returned. That interface supports any custom tool, any MCP server, and our own tools. The harness doesn’t know whether the sandbox is a container, a phone, or a Pokémon emulator. And because no hand is coupled to any brain, brains can pass hands to one another.\n\n\n\n\nConclusion\n\nThe challenge we faced is an old one: how to design a system for “programs as yet unthought of.” Operating systems have lasted decades by virtualizing the hardware into abstractions general enough for programs that didn't exist yet. With Managed Agents, we aimed to design a system that accommodates future harnesses, sandboxes, or other components around Claude.\n\nManaged Agents is a meta-harness in the same spirit, unopinionated about the specific harness that Claude will need in the future. Rather, it is a system with general interfaces that allow many different harnesses. For example, Claude Code is an excellent harness that we use widely across tasks. We’ve also shown that task-specific agent harnesses excel in narrow domains. Managed Agents can accommodate any of these, matching Claude’s intelligence over time.\n\nMeta-harness design means being opinionated about the interfaces around Claude: we expect that Claude will need the ability to manipulate state (the session) and perform computation (the sandbox). We also expect that Claude will require the ability to scale to many brains and many hands. We designed the interfaces so that these can be run reliably and securely over long time horizons. But we make no assumptions about the number or location of brains or hands that Claude will need.\n\nAcknowledgements\n\nWritten by Lance Martin, Gabe Cemaj and Michael Cohen. Special thanks to the Agents API team and Jake Eaton for their contributions.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/46822472#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=b5aa963e",
+      "text": "Anthropic Engineering",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.anthropic.com/engineering/managed-agents",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://platform.claude.com/docs/en/managed-agents/overview",
+      "text": "docs",
+      "title": ""
+    },
+    {
+      "href": "https://www.anthropic.com/engineering/building-effective-agents",
+      "text": "build effective agents",
+      "title": ""
+    },
+    {
+      "href": "https://www.staging.ant.dev/engineering/effective-harnesses-for-long-running-agents",
+      "text": "design harnesses",
+      "title": ""
+    },
+    {
+      "href": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+      "text": "long-running work",
+      "title": ""
+    },
+    {
+      "href": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html",
+      "text": "go stale",
+      "title": ""
+    },
+    {
+      "href": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+      "text": "we found",
+      "title": ""
+    },
+    {
+      "href": "http://www.catb.org/esr/writings/taoup/html/ch03s01.html",
+      "text": "programs as yet unthought of",
+      "title": ""
+    },
+    {
+      "href": "https://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/",
+      "text": "pet",
+      "title": ""
+    },
+    {
+      "href": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "text": "prior work",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/pdf/2512.24601",
+      "text": "has explored",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/bf9ab35c?entry=related_article",
+      "text": "Claude Code 自动模式：一种更安全的跳过权限确认方式",
+      "title": "Claude Code 推出的全新自动模式（Auto mode）利用基于模型的两阶段分类器和提示词注入探测器，自动拦截危险操作，在开发者生产力与安全性之间取得平衡。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/70b91279?entry=related_article",
+      "text": "量化智能体编码评估中的基础设施噪声",
+      "title": "Anthropic 的研究量化了基础设施配置（特别是 CPU 和 RAM 限制）如何使智能体编码基准测试分数产生高达 6 个百分点的波动，这可能会掩盖模型的真实能力。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2023817132581208353?entry=related_article",
+      "text": "Anthropic 发布 Claude Sonnet 4.6，支持 100 万 Token 上下文窗口",
+      "title": "Anthropic 宣布推出 Claude Sonnet 4.6，在编程、推理方面迎来重大升级，并支持 100 万 Token 的超长上下文窗口。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/a647d6a?entry=related_article",
+      "text": "State of the Claw — Peter Steinberger",
+      "title": "OpenClaw 创始人兼 OpenAI 工程师 Peter Steinberger 讨论了 OpenClaw 项目前所未有的增长和安全挑战，分享了他独特的 AI 辅助开发工作流，并探讨了 AI 时代不断演变的'工程师品味'概念。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文",
+      "title": "Anthropic 宣布推出 Claude Opus 4.6，具备更强的规划能力、优化的智能体表现，并开启了 1M token 上下文窗口的 Beta 测试。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/1369401?entry=related_article",
+      "text": "关于代码智能体、AutoResearch 与 AI 循环时代的安德烈·卡帕西",
+      "title": "安德烈·卡帕西探讨从手动编程到智能体编排的范式转变、AI 研究的自动化，以及对软件工程和教育的深远影响。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+      "text": "Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次",
+      "title": "软件界传奇人物 Martin Fowler 和 Kent Beck 探讨了 AI 如何重新定义软件工程，并强调 TDD 和模块化等核心实践对于人机协作依然至关重要。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型",
+      "title": "OpenAI 宣布推出 GPT-5.5，这是一款专为理解复杂目标和自主完成任务而设计的新模型，现已在 ChatGPT 和 Codex 中上线。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/504ce725?entry=related_article",
+      "text": "长周期应用开发中的 Harness 设计",
+      "title": "本文探讨了 Anthropic 用于长周期自主编程的多智能体 Harness 设计（规划者、生成者、评估者），详细介绍了如何克服上下文焦虑和自我评估偏差，从而构建复杂的全栈应用。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/4463b68b?entry=related_article",
+      "text": "关于近期 Claude Code 质量报告的更新",
+      "title": "Anthropic 详细说明了 Claude Code 中导致部分用户体验下降的三个独立 Bug，这些 Bug 已于 4 月 20 日全部修复，并概述了防止问题再次发生的流程改进。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Anthropic 详细介绍了托管智能体的架构演进，重点在于将“大脑”（LLM/控制框架）与“双手”（沙箱/工具）解耦，以提升可扩展性、可靠性和安全性。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AI 智能体, 系统架构, 托管智能体, Claude, 基础设施",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "扩展托管智能体：将“大脑”与“双手”解耦 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Anthropic 详细介绍了托管智能体的架构演进，重点在于将“大脑”（LLM/控制框架）与“双手”（沙箱/工具）解耦，以提升可扩展性、可靠性和安全性。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/46822472",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/46822472/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-08 17:32:28",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Anthropic Engineering",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "系统架构",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "托管智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Claude",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "基础设施",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "扩展托管智能体：将“大脑”与“双手”解耦 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Anthropic 详细介绍了托管智能体的架构演进，重点在于将“大脑”（LLM/控制框架）与“双手”（沙箱/工具）解耦，以提升可扩展性、可靠性和安全性。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/46822472/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "扩展托管智能体：将“大脑”与“双手”解耦 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/46822472"
+}

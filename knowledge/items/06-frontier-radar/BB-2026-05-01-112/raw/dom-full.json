@@ -1,0 +1,344 @@
+{
+  "content": "Seedance2.0的火，已经烧了好几天了。\n\n抖音b站到处都是二创视频，微博科技榜一下子上了四个热搜。\n\n就连我前天随手写了一篇关于Seedance 2.0的纯文字，都10万+了。\n\n我的偶像冯骥更是发微博说，AIGC的童年时代，结束了。\n\n（这里我必须得小小的秀一下，我跟偶像的微博互关嘿嘿嘿。。。）\n\n而回到这篇稿子，我说实话，我写的也是踉踉跄跄。\n\n刚写完一半，啪的一下，真人被ban掉了，所有的case都要重新换，重新跑的时候，啪的一下，又是因为太火，字节服务器直接爆炸，现在已经平均20分钟出一个视频了。\n\n而今天，豆包上的Seedance 2.0也开始内测。\n\n我都不敢想，正式放开的时候，以豆包的用户量级，字节的服务器会烧成啥样。\n\n太火了，真的太火了，有一种去年DeepSeek R1无限重试的感觉了。。\n\n去年DS，今年SD，真的，每年春节，都不让我们好好休息。\n\n但总算，在一片狼藉中，花了2天多的时间，把这篇稿子写完了。\n\n这次我就不评测模型能力了，因为没啥必要，这就是全世界的No.1，无可争议的No.1，很多老外现在都在X上疯狂求魔法，求Seedance 2.0的使用权限。\n\n现在我单纯去评测能力，什么一致性是不是更强了、输出是不是更高清了，就像三体人打来了，我们还在评测他们的智子是不是不锈钢的、有没有声控能力一样，非常荒谬。\n\n其实我也挺焦虑的，很多人可能不知道，我除了是AI媒体博主之外，我还有另一份工作，就是做AI影视工业化，做的不是那种AI短剧或者AI漫剧之类的，是电影和电视剧。\n\n昨天我发了一条感想，我说：\n\n“周六晚上，我把它发给了一些影视圈的朋友和剧组，我说这次可能是真的变天了。我也很焦虑，因为我们所谓的AI影视工业化，在顷刻间，灰飞烟灭。 ”\n\n然后有朋友评论说：\n\n\"工业化灰飞烟灭\"可能说早了。\n\n我是这么回复的：\n\n回头看这一年半的时间，认识了很多很好的伙伴，但是回头看，看我们这一路技术更迭，真的就是一声叹息。\n\n只有你亲身被干过被替代过，看着自己拼命搭建的一切化为泡影，那种感觉你才懂。\n\n就像一个国家正在进行一场浩大的战争，皇帝将他手下所有的士兵将卒都派遣到了这场战争之中，前线，无数精神饱满满腔热血的重装盔甲士兵，骑着战马，手持长矛，全副武装开始前进，所有人，都想努力的打赢这场战争。\n\n他们一路所向披靡，踏进了对方的城墙，却发现没有一兵一卒，城市中心，只有一个巨大的金属铁球，它叫，核弹。\n\n那一瞬间，核弹，被引爆了。\n\n那一瞬间，以整个城市为中点，这个由几百万人口后期所供给的精锐部队，在原来的大陆上所向披靡的部队，在万分之一秒之间，被瞬间气化，消失的无影无踪。\n\n你问我是什么感觉？我就是那个被气化的部队中的一员，我能有什么感觉呢，我知道，我消失的那一瞬间，我可能都不知道到底发生了什么。\n\n时代的列车滚滚向前，它不会等待任何人。\n\n面对此情此景我也只能说，既然前路不可逆，就走下去。\n\n所以，我的心情是复杂的，兴奋又焦虑，真的还挺矛盾的。\n\n这篇文章，我也不做评测了，我就想，抛砖引玉，给大家看一下，在现在，Seedance 2.0，还可以玩的有趣的玩法。\n\n希望大家搭上新时代的列车，好好享受沿途风景。\n\n坐稳扶好，我们现在，发车。\n\n一. 导演思维\n\n这次其实Seedance 2.0爆掉，有一个很大的原因，是因为它的导演思维。\n\n过去我们玩的AI视频，其实很多时候，卡点有两个，一个是故事，一个是分镜。\n\n这两个东西，让普通人做出来的AI视频，跟专业的人做出来的AI视频，差距非常的大。\n\n剧本是编剧意志的体现，而分镜，就是把剧本视觉化的最核心的要素。\n\n比如剧本里写了一句话：\"小明推开门，看到屋里一片狼藉，他愣住了。\"\n\n这句话，导演可以有无数种拍法。\n\n你可以先给一个小明推门的中景，然后切一个屋里的全景展示狼藉，再切回小明的特写表情。\n\n你也可以用一个长镜头，跟着小明的视角推进去，让观众跟小明一起发现屋里的情况。\n\n你还可以先给屋里的狼藉，再给门把手转动的特写，再给小明的脚步，最后才给小明的脸。\n\n过去，AI视频，几乎是没有办法帮你解决分镜难题的，我们几乎用的都是图生视频的工作流，也就是一张图，对应着一个4s的片段，然后把各种片段剪辑在一起，成为一个片子。\n\n这是2024年初做的一个AI片子当时的协同文档，真就是这样的。\n\n你会看到，AI最核心的能力，其实是把你的分镜图，给动态化，仅此而已。\n\n而后来，Sora2把分镜这个事给彻底下放，你只需要一张图，一段话，AI可以帮你把分镜补足，成为一个还不错的小故事，但是那个分镜，其实也是一通乱切，没有章法。\n\n但是Seedance 2.0，却几乎解决了分镜的问题，在镜头的美感上，领先了Sora一个世代，而且能直出声音和BGM，虽然我经常会手动用Prompt把BGM给关掉。\n\n比如这个case：\n\n主要就是写了些剧情和对话，分镜全部是它自己解决的。\n\n视频长这样。\n\n说实话，这个质量，在电视剧领域，已经可以以假乱真了，甚至比一些垃垃圾古装拍的还要好。\n\n人物极其自然，台词功底也够，每一次切镜，都有意义。\n\n而另一个故事，更是能让你完美的感受到，什么叫导演思维。\n\n我的Prompt只有一个简简单单的小故事：\n\n他苦练二十年，终于站上了世界武术大赛的决赛舞台。面对泰国拳王，全场屏息。裁判一声令下，他气沉丹田，使出毕生绝学—— 跪下来喊了一声\"爸\"。拳王愣住了。一拳，他赢了。\n\n而让我们看看，Seedance 2.0的最终视频，和它给出来的分镜。\n\n实在是太离谱了。\n\n这玩意，它真的懂戏。。。\n\n它知道什么时候该给特写来强调情绪，什么时候该拉观众席来交代环境，什么时候该用慢一点来制造张力，什么时候该快切来加速节奏。\n\n这些东西，以前是需要专业导演才能把控的。\n\n现在，AI能做了。\n\n而且它还能直出声音和BGM。\n\n连剪辑的活都干了，太离谱了。\n\n二. 分镜复刻\n\n在影视行业里，因为分镜特别重要，所以一直有一个学习方法，叫做拉片。\n\n也就是让大家学习镜头调度、学习排布、学习情绪用户的。\n\n所以，学习优秀大师、优秀作品的镜头调度，很重要。\n\n而在过去，我们想模仿一个这个类型的作品，很难。\n\n但是现在，因为Seedance 2.0支持了视频参考，所以这事，他就变得非常简单了起来。\n\n比如这个《天气之子》的这一段分镜，我很喜欢。\n\n而我们现在，只需要把这段视频扔进去，让他进行参考，给我生成一段新的故事，就非常的方便。\n\n而且不止是剧情和故事的分镜，甚至你在广告片里，也可以用上，比如我直接用一段车的分镜和运镜，再加上大疆的一张图，来给它复刻一个。\n\n现在，人人都能一张图，拍出百万大片了。。。\n\n这块单独说一下，如果你用的豆包内测版，现在还不支持上传视频参考，估计豆包用户量级实在太大了，还得在等等。\n\n三. 经典二创\n\n人类对于自己IP爱的最深的情感，那就是给他们做二创。\n\n在以往，我们想做二创，还挺难的，比如你想给《姬霓太美》做一个二创，那可能真的得手搓一个MV，或者从0开始，做一个视频。\n\n所以，过去的二创，往往集中于本子、图片上。\n\n但现在不一样了。\n\n我这两天刷抖音和B站，发现二创已经彻底疯了。\n\n抽象和高燃并存。\n\n比如我在X上看到的这个，燃爆了。\n\n而且全是我的菜。\n\n这些东西，放在一年前，你想都不敢想，那时候的AI虽然也挺牛逼的，但是还是做不出来这种级别的运镜。\n\n而且如果你对一个你喜欢的故事的结局不满意的话，你也可以，自己修改。\n\n比如《怪奇物语》第五季的最后，我真的很希望很希望小十一能回来。\n\n那，我们就可以自己，复刻一个。\n\n她真的，就回来了。\n\n真的，不仅可以搞温情，而且，抽象的东西满天飞。\n\n比如这个男人，他可以进入到鬼灭之刃的世界里，来一场酣畅淋漓的战斗\n\n感觉比鬼灭本刃会好看。。。\n\n一句话直出，真就创意无限。\n\n四. 编辑现实\n\n既然可以参考视频了，那自然，还有一个很特别的功能，就是编辑现实。\n\n对影视后期来说，究极有用。\n\n在过去，我们都听过一句话，甚至可以说是一句真理。\n\n视频是没办法P的。\n\n但是现在，谁说视频不能P？\n\n比如，我就随手拍了一个10秒钟的挥手的视频，再在seedance里，加一点Prompt：\n\n一个非常现实的宝可梦召唤的视频，就做好了。\n\n真的，各种物理规律啥的，还真的相当的酷。\n\n然后我还拍了我们凌晨1点的公司过道。\n\n直接用Prompt换下风格，瞬间变成里世界。\n\n这个视频后面有高能预警，点开的时候一定注意。\n\n这效果，稳定到爆炸，还做个鬼的后期特效。\n\n五. 素材生成vlog\n\n一个非常神奇的玩法，甚至对剪映，感觉都能有一点冲击。\n\n就是我们日常不是拍了很多的素材吗，那比如，我就想把这些素材，非常简单的生成一个vlog，按照过去，你可能就得套模板了。\n\n但是在AI的世界里，你真的，直接说就行。\n\n就比如我们前几天团队，我们的一个小朋友就拍了点照片，我们直接扔给Seedance 2.0。\n\n然后就能直出一个还挺好玩的vlog，所有的图片都会动起来，还会自动识别图片是什么，给加上小装饰，还挺有意思的。\n\n六. 带货广告\n\n这个玩法，可能是最能直接变现的。\n\n做过电商的朋友应该都知道，拍产品视频是一件很麻烦的事情。\n\n你需要找场地、找模特、找摄影师、找灯光师，折腾一天可能就拍几十秒的素材，还不一定能用。\n\n而且每个产品都要单独拍，成本非常高。\n\n但现在，Seedance 2.0给了一个新的可能。\n\n你可以用AI来生成产品展示视频。\n\n我试了一下，效果出乎意料的好。\n\n就比如这个产品，一个非常神奇的面霜。\n\n我们就可以，让一个AI模特来讲解。\n\n我真的觉得，比很多真人要自然、要好看、要舒服。\n\n还要个鬼的真人啊。\n\n甚至，你还可以让伏地魔，在美国超级碗，代言鼻炎特效药。\n\n最后一幕，我就问你神圣不神圣吧。\n\n七. 主体迁移\n\n这个功能，说实话，是让我觉得最效果最离谱的一个功能。\n\n但也确实是对于影视行业非常有用的一个功能。\n\n你可以把你自己的照片，迁移到另一个视频的某个主体身上，完成一模一样的动作和口型复刻。\n\n也就是我们传言中的，动作捕捉。\n\n只不过现在动捕不需要穿戴那么多复杂的设备了，直接一个视频，一个照片，迁移一切。\n\n比如最近因为Seedance 2.0而爆掉的一个运镜视频。\n\n真的就是完美复刻，给你还原的一模一样，甚至遮挡关系给你还原了。\n\n说真的，我从来没见过如此之离谱的，动作迁移。\n\n在整个迁移和复刻能力上，应该就是全球目前最好的了。\n\n写在最后\n\n写到这里，这篇文章差不多该收尾了。\n\n这些差不多就是Seedacne 2.0的部分玩法，抛砖引玉。\n\n在真人出镜需要验证的背景下，应该短期内都不会放开真人参考了，都会用类似于豆包分身视频的这种方式，可能是C端用户很长一段时间的主流玩法。\n\n等到大年三十当年，豆包在春晚上，给大家秀一下Seedance 2.0的效果，当所有人涌入豆包，开始试一试创作，试一试AI视频。\n\n整个社会对于AI视频的认知，又可能会被往前加速一大截。\n\n回头看几年，真的是太魔幻了。\n\n这个视频，应该能很好的诠释，AI进化的速度。\n\n我自己的心情也很复杂。\n\n作为一个AI媒体博主，我当然兴奋，这是一个划时代的产品，它给了我无数的选题，无数的内容可以写。\n\n但作为一个做AI影视工业化的人，我又很焦虑。\n\n我们这一年半在剧组里花了很多心血搭建的工作流、积累的经验，可能在这一次更新里，付诸东流。\n\n这种感觉很难形容。\n\n就像你辛辛苦苦爬了一座山，快要到山顶了，突然发现有人开了一条缆车直达山顶，而且票价还特别便宜。\n\n你会觉得自己之前的努力很傻吗？\n\n会的。\n\n但你能怎么办呢？\n\n只能调整心态，接受现实，然后想办法利用这条缆车去更高的地方。\n\n我前天的短文里说，时代的列车滚滚向前，它不会等待任何人。\n\n这句话听起来有点丧，但我觉得它也是一种激励。\n\n既然列车不等人，那就赶紧跑，赶紧跳上去。\n\n不管你之前是做什么的，不管你之前积累了什么，现在都要重新开始学习，重新适应新的工具和新的规则。\n\n这是这个时代给所有人的挑战，也是机会。\n\n我看到有人在评论区说，感觉自己要失业了。\n\n我想说，不要这么悲观。\n\n每一次技术革命，都会消灭一些工作，也会创造一些新的工作。\n\n汽车消灭了马车夫，但创造了司机、汽车修理工、加油站员工。\n\n电脑消灭了打字员，但创造了程序员、设计师、自媒体人。\n\nAI会消灭一些工作，但也一定会创造一些新的工作。\n\n关键是，你要成为那个能抓住新机会的人，而不是被淘汰的那个。\n\n保持好奇心，保持学习，保持对新事物的敏感。\n\nSeedance 2.0发布了，你就去玩它，去研究它，去思考它能用来做什么。\n\n不要等着别人教你，不要等着市场成熟，不要等着一切都清晰了再行动。\n\n等你想清楚的时候，已经不会再有机会了。\n\n希望这篇文章，这几个玩法，能给大家一些启发。\n\n也希望大家能在这个疯狂的时代里，找到自己的位置。\n\n最后，借用冯骥老师的那句话作为结尾吧：\n\nAIGC的童年时代，结束了。\n\n欢迎来到。\n\nAIGC的，青年时代。\n\n以上，既然看到这里了，如果觉得不错，随手点个赞、在看、转发三连吧，如果想第一时间收到推送，也可以给我个星标⭐～谢谢你看我的文章，我们，下次再见。\n\n>/ 作者：卡兹克、水杉、Chiyo\n\n>/ 投稿或爆料，请联系邮箱：wzglyay@virxact.com",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/4e8cd55c#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=86a0b5",
+      "text": "数字生命卡兹克",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679903&idx=1&sn=09fd4d34355192fc940fd57809be902a",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/48dc0dcf?entry=related_article",
+      "text": "Head-to-Head! Claude Opus 4.6 and GPT-5.3 Codex Released Simultaneously, It's Truly the AI Super Bowl.",
+      "title": "The article reviews the simultaneous release of Anthropic's Claude Opus 4.6 and OpenAI's GPT-5.3 Codex, comparing their performance benchmarks, core features, and application value in programming and productivity scenarios."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/podcast/f076168?entry=related_article",
+      "text": "No.188 🎵 ByteDance and the Short Video War: Creating an Era Without TV | China Internet Stories 15",
+      "title": "A deep dive into the decade-long history of ByteDance and the short video industry, analyzing algorithm-driven business logic, global expansion, and organizational evolution."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/4c569f3e?entry=related_article",
+      "text": "Seed 2.0 Officially Released",
+      "title": "ByteDance releases the Seed 2.0 series of models, aiming to solve complex long-chain tasks in the real world by strengthening multimodal understanding and Agent task execution capabilities."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/24ccb0ba?entry=related_article",
+      "text": "Claude Can Now Directly Control Your PC WeChat: This Is the True Next-Level Agent.",
+      "title": "This article introduces Anthropic's new 'Computer Use' and 'Dispatch' features for Claude, demonstrating real-world Agent scenarios such as remotely controlling PC WeChat via mobile to summarize messages and post to Moments."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/485c8409?entry=related_article",
+      "text": "Sharing 10 Hidden Claude Code Commands You Might Not Know.",
+      "title": "This article details 10 practical hidden commands and shortcuts for Anthropic's official command-line tool, Claude Code, aimed at boosting developer efficiency and interaction in AI-assisted programming."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/910acfde?entry=related_article",
+      "text": "OpenClaw: A Game Changer — Sharing 6 God-Tier Tips the Official Guides Won't Tell You",
+      "title": "This article provides an in-depth look at six practical tips for using OpenClaw (Clawdbot), a personal general-purpose AI Agent, on Mac, covering high-value scenarios like file management, knowledge base automation, and calendar synchronization."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/podcast/74aee00?entry=related_article",
+      "text": "Vol.89 AI Industry 2025 Annual Summary Supplement (V4 \"Can't Wait\" Edition) --- 70-page PPT Solo",
+      "title": "A panoramic review of the AI industry dynamics in China and the US in early 2025, deeply deconstructing capital expenditures, the explosion of Agent technology, and AI's impact on the software industry."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/podcast/eec4183?entry=related_article",
+      "text": "150: Year-End AI Review: From Models to Applications, Technology to Business Wars, Grasping the Thread of Meaning in the Torrent",
+      "title": "A comprehensive in-depth review of the 2025 global AI industry landscape, covering underlying model evolution, Agent implementation, Big Tech organizational battles, and embodied AI trends."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/ebdbcf7f?entry=related_article",
+      "text": "The Most Detailed Codex Beginner's Guide: A Step-by-Step Tutorial on Mastering Vibe Coding",
+      "title": "This is an in-depth beginner's guide to OpenAI's newly released Codex application and its GPT-5.3-codex model, detailing its installation, project management logic, automated tasks, and Vibe Coding practical workflows."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/5bb4021d?entry=related_article",
+      "text": "The Year of Application Explosion: Discussing Model Technology Evolution and Commercialization",
+      "title": "Through in-depth interviews with experts from Alibaba Cloud, Insta360, and YuYi Tech, this article deconstructs the commercial logic and technical evolution of large models in 2025-2026, focusing on plummeting inference costs, the explosion of video generation, and enterprise-level Agent applications."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "This article provides an in-depth review of ByteDance's Seedance 2.0 video generation model, exploring its breakthrough performance in directorial thinking, ...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Seedance 2.0, ByteDance, Video Generation, AIGC, Film Industrialization",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "China Now Has a World-Leading Model, and Its Name Is Seed...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "This article provides an in-depth review of ByteDance's Seedance 2.0 video generation model, exploring its breakthrough performance in directorial thinking, ...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/4e8cd55c",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/4e8cd55c/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-11 02:51:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "数字生命卡兹克",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Seedance 2.0",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ByteDance",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Video Generation",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AIGC",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Film Industrialization",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "China Now Has a World-Leading Model, and Its Name Is Seed...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "This article provides an in-depth review of ByteDance's Seedance 2.0 video generation model, exploring its breakthrough performance in directorial thinking, ...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/4e8cd55c/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "China Now Has a World-Leading Model, and Its Name Is Seed...",
+  "url": "https://www.bestblogs.dev/en/article/4e8cd55c"
+}

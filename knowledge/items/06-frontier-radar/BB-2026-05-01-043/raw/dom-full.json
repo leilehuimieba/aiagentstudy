@@ -1,0 +1,659 @@
+{
+  "content": "1\nGPT-5.4 发布：OpenAI 首个大一统模型，简直是龙虾原生\n量子位\nqbitai.com\n03-06\n4124 字 · 约 17 分钟\n94\n\nOpenAI 发布 GPT-5.4，首次将推理、编程、计算机原生操作、深度搜索和百万级 Token 上下文整合进单一模型，且没有牺牲任何单项性能。最值得关注的是原生计算机使用能力，模型可通过截图理解界面并直接操作鼠标键盘，在 OSWorld 桌面任务中成功率已超越人类平均水平。与此同时，工具搜索机制让 Agent 任务的 Token 消耗降低 47%，使高能力与低成本首次实现了同步。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#6f17468b",
+      "text": "1\nGPT-5.4 发布：OpenAI 首个大一统模型，简直是龙虾原生",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#825a3674",
+      "text": "2\nOpenAI 深夜上新默认款 GPT5.3 模型！主打去尴尬！实测：速度快到即时满足的爽感！搜索能力更强了！OpenAI 人员坦承自己模型切换策略",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#a8c5578b",
+      "text": "3\nQwen3.5 更小尺寸来啦！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#44e28dc2",
+      "text": "4\nFireRed-OCR 开源发布：端到端方案新 SOTA！小红书提出低成本文档识别训练范式",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#e94961a3",
+      "text": "5\n开源 LLM 背后的架构",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#8f3d453",
+      "text": "6\n与 Boris Cherny 共同构建 Claude Code",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#03980cf2",
+      "text": "7\n软件工程循环中的人类与智能体",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#0c84d443",
+      "text": "8\n设计优先的协作",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#7088e92f",
+      "text": "9\nAI Coding 思考：从工具提效到范式变革，我们还缺什么？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#83d23d4f",
+      "text": "10\n深入解析 OpenClaw 上下文窗口压缩方案 ：一切都是为了效果与省钱",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#fa13c8a0",
+      "text": "11\n别再谈“10 倍开发者”了：AI 智能体不是加速 SDLC，而是直接终结 SDLC",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#997b2ba8",
+      "text": "12\n1500 个 PR、0 人写代码：Codex 驱动的百万行级内部产品实践",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#d72dca9",
+      "text": "13\n别干活了！给 AI 布置办公室去吧！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#516ace7",
+      "text": "14\n设计流程已死。取而代之的是这些。 | Jenny Wen (Claude 设计负责人)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#209e104",
+      "text": "15\nZapier 产品副总裁谈如何编排 800 多个 AI 智能体来管理一切",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#8dce015c",
+      "text": "16\n深扒 Nano Banana 2 超多趣味玩法，速度快还要效果好！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#b741844",
+      "text": "17\nAI 转型四步法：个人、组织、产品和商业（下）",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#17ad4f7",
+      "text": "18\nE45 孟岩对话李继刚：人何以自处",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#31911b6",
+      "text": "19\n#445. 20VC：为何 Cursor 已死 | AI 海啸即将来袭，你需做好准备",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue85#6fedf503",
+      "text": "20\n2028 全球智能危机，谁来买单？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6f17468b?entry=newsletter_page",
+      "text": "GPT-5.4 发布：OpenAI 首个大一统模型，简直是龙虾原生",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_371003",
+      "text": "量子位",
+      "title": ""
+    },
+    {
+      "href": "https://www.qbitai.com/2026/03/384345.html",
+      "text": "qbitai.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/825a3674?entry=newsletter_page",
+      "text": "OpenAI 深夜上新默认款 GPT5.3 模型！主打去尴尬！实测：速度快到即时满足的爽感！搜索能力更强了！OpenAI 人员坦承自己模型切换策略",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_aef4e8",
+      "text": "51CTO技术栈",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655936771&idx=1&sn=e82b144c32165174666901de0676eb3e",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a8c5578b?entry=newsletter_page",
+      "text": "Qwen3.5 更小尺寸来啦！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_2ce88a",
+      "text": "通义大模型",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499936&idx=1&sn=6e7da548b8562ff4e22abcf723af4fe0",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/44e28dc2?entry=newsletter_page",
+      "text": "FireRed-OCR 开源发布：端到端方案新 SOTA！小红书提出低成本文档识别训练范式",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_fb78bd",
+      "text": "小红书技术REDtech",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247494972&idx=1&sn=1c6a1be0908cbe25194a5256b1eec48a",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e94961a3?entry=newsletter_page",
+      "text": "开源 LLM 背后的架构",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_996ae6",
+      "text": "ByteByteGo Newsletter",
+      "title": ""
+    },
+    {
+      "href": "https://blog.bytebytego.com/p/the-architecture-behind-open-source",
+      "text": "blog.bytebytego.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/8f3d453?entry=newsletter_page",
+      "text": "与 Boris Cherny 共同构建 Claude Code",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_45e77651",
+      "text": "The Pragmatic Engineer",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=julbw1JuAz0",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/03980cf2?entry=newsletter_page",
+      "text": "软件工程循环中的人类与智能体",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_913551",
+      "text": "Martin Fowler",
+      "title": ""
+    },
+    {
+      "href": "https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html",
+      "text": "martinfowler.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/0c84d443?entry=newsletter_page",
+      "text": "设计优先的协作",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_913551",
+      "text": "Martin Fowler",
+      "title": ""
+    },
+    {
+      "href": "https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html",
+      "text": "martinfowler.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/7088e92f?entry=newsletter_page",
+      "text": "AI Coding 思考：从工具提效到范式变革，我们还缺什么？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_efc2de",
+      "text": "大淘宝技术",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650542970&idx=1&sn=231a9b78e5c7e1054aa26e86556e8ed8",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/83d23d4f?entry=newsletter_page",
+      "text": "深入解析 OpenClaw 上下文窗口压缩方案 ：一切都是为了效果与省钱",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_efac5b",
+      "text": "腾讯云开发者",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247694674&idx=1&sn=acae1fec749562f39219e2b13af9f065",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/fa13c8a0?entry=newsletter_page",
+      "text": "别再谈“10 倍开发者”了：AI 智能体不是加速 SDLC，而是直接终结 SDLC",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8f2a9f",
+      "text": "InfoQ 中文",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276696&idx=2&sn=d8c3bd5cd6a2d3c96df4b87948831b24",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/997b2ba8?entry=newsletter_page",
+      "text": "1500 个 PR、0 人写代码：Codex 驱动的百万行级内部产品实践",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_458cfe",
+      "text": "AI前线",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247657188&idx=2&sn=a68f1062d1f1e0faa8b076849cfb42e9",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/d72dca9?entry=newsletter_page",
+      "text": "别干活了！给 AI 布置办公室去吧！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_29b54a",
+      "text": "AI炼金术",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69a6dc8ba374f44ffa797457",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/516ace7?entry=newsletter_page",
+      "text": "设计流程已死。取而代之的是这些。 | Jenny Wen (Claude 设计负责人)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8e0b51",
+      "text": "Lenny's Podcast",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=eh8bcBIAAFo",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/209e104?entry=newsletter_page",
+      "text": "Zapier 产品副总裁谈如何编排 800 多个 AI 智能体来管理一切",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_22ca64",
+      "text": "Product School",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=05wREBRW-40",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/8dce015c?entry=newsletter_page",
+      "text": "深扒 Nano Banana 2 超多趣味玩法，速度快还要效果好！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_581a19",
+      "text": "阿真Irene",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247496575&idx=1&sn=b73502454851b048d618096de62d5c03",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/b741844?entry=newsletter_page",
+      "text": "AI 转型四步法：个人、组织、产品和商业（下）",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_29b54a",
+      "text": "AI炼金术",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69a58d3186a265e92b788771",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/17ad4f7?entry=newsletter_page",
+      "text": "E45 孟岩对话李继刚：人何以自处",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_33e2dd",
+      "text": "无人知晓",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69a64629de29766da93331ec",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/31911b6?entry=newsletter_page",
+      "text": "#445. 20VC：为何 Cursor 已死 | AI 海啸即将来袭，你需做好准备",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_938310",
+      "text": "跨国串门儿计划",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69a5a5b5a22480add6b6be30",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6fedf503?entry=newsletter_page",
+      "text": "2028 全球智能危机，谁来买单？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_4688eb",
+      "text": "Datawhale",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247719943&idx=1&sn=ad3690fe18437d8254227099bea28bcd",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 85 期 AI 精选文章推荐。\n\n本周有一个关键词贯穿了多篇文章：驾驭。martinfowler.com 上发表的文章提出，开发者的核心工作正在从写代码转向构建 Agent 运行所依赖的驾驭工程，即规格、质量检查和工作流指引的集合。AI 炼金术播客的标题更直白：别...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "bestblogs, AI 阅读，个性化阅读，高质量内容，每日早报，技术阅读，内容发现，AI 初评，专家精审，阅读工作流",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 85 期：驾驭工程 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 85 期 AI 精选文章推荐。\n\n本周有一个关键词贯穿了多篇文章：驾驭。martinfowler.com 上发表的文章提出，开发者的核心工作正在从写代码转向构建 Agent 运行所依赖的驾驭工程，即规格、质量检查和工作流指引的集合。AI 炼金术播客的标题更直白：别...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/newsletter/issue85",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue85/opengraph-image?5b2ed8584a9655d4",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "03-06",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 85 期：驾驭工程 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 85 期 AI 精选文章推荐。\n\n本周有一个关键词贯穿了多篇文章：驾驭。martinfowler.com 上发表的文章提出，开发者的核心工作正在从写代码转向构建 Agent 运行所依赖的驾驭工程，即规格、质量检查和工作流指引的集合。AI 炼金术播客的标题更直白：别...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue85/twitter-image?43c24b48d6d9249c",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "BestBlogs.dev 第 85 期：驾驭工程 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/newsletter/issue85"
+}

@@ -1,0 +1,83 @@
+# Source Evidence
+
+- Title: 长时间运行的智能体
+- BestBlogs URL: https://www.bestblogs.dev/article/048d846e
+- Original publisher URL: https://addyo.substack.com/p/long-running-agents
+- Original link text: 查看原文 →
+
+## Captured Page Metadata
+
+- Browser title: 长时间运行的智能体 | BestBlogs.dev
+- Description: 本文为从业者提供了关于长时间运行 AI 智能体的全面分析，详细阐述了核心工程挑战（有限上下文、无持久状态、无法自我验证）以及 Anthropic、Cursor 和 Google 所采用的趋同架构模式（大脑/双手/会话分离、规划者/执行者/评判者角色）。
+- Date: 2026-04-30
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- 我的早报: https://www.bestblogs.dev/reading/brief
+- 我的关注: https://www.bestblogs.dev/reading/follow
+- 为你推荐: https://www.bestblogs.dev/reading/feed
+- 内容广场: https://www.bestblogs.dev/explore
+- 每日早报: https://www.bestblogs.dev/explore/brief
+- 精选周刊: https://www.bestblogs.dev/explore/newsletter
+- 主题解读: https://www.bestblogs.dev/explore/topics
+- 内容来源: https://www.bestblogs.dev/explore/sources
+- 阅读历史: https://www.bestblogs.dev/library/history
+- 我的收藏: https://www.bestblogs.dev/library/bookmarks
+- 我的笔记: https://www.bestblogs.dev/library/highlights
+- 我的回顾: https://www.bestblogs.dev/library/review
+- 设置: https://www.bestblogs.dev/settings
+- 帮助中心: https://www.bestblogs.dev/docs
+- Elevate: https://www.bestblogs.dev/articles?sourceid=88b8b1
+- 查看原文 →: https://addyo.substack.com/p/long-running-agents
+- doubling roughly every seven months: https://metr.org/time-horizons/
+- TH1.1 update: https://metr.org/blog/2026-1-29-time-horizon-1-1/
+- Memory Bank: https://docs.cloud.google.com/agent-builder/agent-engine/memory-bank/overview
+- Claude Sonnet announcements: https://www.anthropic.com/news/claude-sonnet-4-5
+- one run: https://venturebeat.com/ai/anthropics-new-claude-can-code-for-30-hours-think-of-it-as-your-ai-coworker
+- Project Vend: https://www.anthropic.com/research/project-vend-1
+- the second phase: https://www.anthropic.com/research/project-vend-2
+- context rot: https://addyosmani.com/blog/agent-harness-engineering/
+- scientific computing post: https://www.anthropic.com/research/long-running-Claude
+- Geoffrey Huntley: https://ghuntley.com/ralph/
+- Ryan Carson: https://github.com/snarktank/ralph
+- literally a bash script: https://ghuntley.com/ralph/
+- Compound Product: https://github.com/snarktank/compound-product
+- Self-improving agents: https://addyosmani.com/blog/self-improving-agents/
+- “Effective harnesses for long-running agents”: https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+- InfoQ’s writeup: https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/
+- “Scaling Managed Agents: Decoupling the brain from the hands”: https://www.anthropic.com/engineering/managed-agents
+- Claude Managed Agents: https://platform.claude.com/docs/en/managed-agents/overview
+- time-to-first-token dropped ~60% at p50 and over 90% at p95: https://www.anthropic.com/engineering/managed-agents
+- long-running Claude post: https://www.anthropic.com/research/long-running-Claude
+- Cursor’s “Scaling long-running autonomous coding”: https://cursor.com/blog/scaling-agents
+- Composer 2: https://cursor.com/blog/composer
+- Cursor 3: https://cursor.com/changelog/2-0
+- Cloud Next ‘26: https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform
+- Agent Memory Bank: https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank
+- ADK: https://google.github.io/adk-docs/
+- wrote up: https://x.com/GoogleCloudTech/status/2046989964077146490
+- full write-up with code samples: https://x.com/GoogleCloudTech/status/2046989964077146490
+- Claude Code: https://addyosmani.com/blog/agent-harness-engineering/
+- the Ralph loop: https://addyosmani.com/blog/self-improving-agents/
+- Google’s Agent Platform: https://cloud.google.com/products/gemini-enterprise-agent-platform
+- Claude Managed Agents: https://platform.claude.com/docs/en/managed-agents/overview
+- ADK: https://google.github.io/adk-docs/
+- Claude Agent SDK: https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk
+- Codex SDK: https://platform.openai.com/docs/codex
+- Beyond Vibe Coding: https://beyond.addy.ie/
+- The Effective Software Engineer: https://www.oreilly.com/library/view/the-effective-software/9798341638167/
+- Web Perf engineering in the age of AI: https://www.oreilly.com/library/view/web-performance-engineering/9798341660182/
+- 智能体技术栈的押注: https://www.bestblogs.dev/article/b79e265b?entry=related_article
+- Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文: https://www.bestblogs.dev/status/2019467372609040752?entry=related_article
+- 在 Google 14 年学到的另外 14 条经验: https://www.bestblogs.dev/article/fa58a61b?entry=related_article
+- Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次: https://www.bestblogs.dev/video/862b9f1?entry=related_article
+- IDE 的终结？: https://www.bestblogs.dev/article/7bbc3383?entry=related_article
+- Anthropic 推出 Project Glasswing 与 Claude Mythos Preview: https://www.bestblogs.dev/status/2041578392852517128?entry=related_article
+- Claude Opus 4.7 正式发布: https://www.bestblogs.dev/article/3b1c0638?entry=related_article
+- OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型: https://www.bestblogs.dev/status/2047376561205325845?entry=related_article
+- Claude Opus 4.6 正式发布：现已登陆各大主流平台: https://www.bestblogs.dev/status/2019468477460017393?entry=related_article
+- Anthropic 发布 Claude Sonnet 4.6，支持 100 万 Token 上下文窗口: https://www.bestblogs.dev/status/2023817132581208353?entry=related_article
+- 阅读: https://www.bestblogs.dev/reading/brief
+- 发现: https://www.bestblogs.dev/explore
+- 我的: https://www.bestblogs.dev/settings

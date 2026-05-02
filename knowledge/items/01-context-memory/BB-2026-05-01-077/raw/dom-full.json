@@ -1,0 +1,389 @@
+{
+  "content": "Today, we’re introducing workspace agents in ChatGPT. Teams can now create shared agents that handle complex tasks and long-running workflows, all while operating within the permissions and controls set by their organization.\n\nWorkspace agents are an evolution of GPTs. Powered by Codex, they can take on many of the tasks people already do at work—from preparing reports, to writing code, to responding to messages. They run in the cloud, so they can keep working even when you’re not. They’re also designed to be shared within an organization, so teams can build an agent once, use it together in ChatGPT or Slack, and improve it over time.\n\nAI has already helped people work faster on their own, but many of the most important workflows inside an organization depend on shared context, handoffs, and decisions across teams. Workspace agents are designed for that kind of work: they can gather context from the right systems, follow team processes, ask for approval when needed, and keep work moving across tools. For example, our sales team at OpenAI uses an agent to pull together details from call notes and account research, qualify new leads, and draft follow-up emails right in a rep’s inbox. It helps account teams spend less time stitching together details and more time with customers.\n\nTo get started, click Agents in the ChatGPT sidebar and describe a workflow your team does often. ChatGPT will guide you step by step to turn it into an agent. Workspace agents are available in research preview in ChatGPT Business, Enterprise, Edu, and Teachers plans.\n\nEditor’s note: GPTs will remain available while teams test workspace agents with their workflows. Soon, we’ll make it easy to convert GPTs into workspace agents.\n\nBuild a powerful workspace agent in minutes\n\nTurn sound on for guided walkthroughs of five agents your team can build today.\n\n↗ 在新标签页打开嵌入内容\n\n00:0001:32\n\nA software review agent that triages software requests, enforces policy, routes approvals, and opens IT tickets with clear next steps.\n\n↗ 在新标签页打开嵌入内容\n\n00:00\n\nA product feedback routing agent that captures feedback from Slack, support, and public channels, prioritizes what matters, and turns signals into weekly product action.\n\n↗ 在新标签页打开嵌入内容\n\n00:00\n\nA weekly metrics reporting agent that auto-pulls Friday data, generates charts, drafts the narrative, and delivers a business report.\n\n↗ 在新标签页打开嵌入内容\n\n00:00\n\nA lead outreach agent that qualifies inbound leads, drafts tailored follow-ups, and updates the CRM.\n\n↗ 在新标签页打开嵌入内容\n\n00:00\n\nA third-party risk management agent that screens vendors for sanctions, financial, and reputational risk, then delivers reports.\n\nDescribe the job you want done or just drop in a file. ChatGPT helps turn it into an agent: defining the steps, connecting the right tools, adding skills, and testing it until it works the way you expect.\n\nHere are a few agents teams at OpenAI have built—and that your team can build, too:\n\nSoftware Reviewer: Reviews employee software requests, checks them against approved tools and policies, recommends next steps, and files IT tickets when needed.\nProduct Feedback Router: Monitors Slack, support channels, and public forums, then turns feedback into prioritized tickets and weekly product summaries.\nWeekly Metrics Reporter: Pulls data every Friday, creates charts, writes the summary, and shares a report with the team.\nLead Outreach Agent: Researches inbound leads, scores them against your qualification rubric, drafts personalized follow-up emails, and updates your CRM.\nThird-Party Risk Manager: Researches vendors, assesses signals like sanctions exposure, financial health, and reputational risk, and produces a structured report.\n\nYou can also get started quickly with templates for finance, sales, marketing, and more. Each comes with built-in skills and suggested tools, so you can quickly set up an agent and customize from there.\n\nLearn how to build workspace agents in the OpenAI Academy⁠, and find more details in the Help Center⁠\n(opens in a new window)\n.\n\nPut agents to work across tools and teams\n\nWorkspace agents can gather context and take action across dozens of tools.\n\nAgents are powered by Codex in the cloud, giving them access to a workspace for files, code, tools, and memory. Agents do more than answer a prompt: they can write or run code, use connected apps, remember what they’ve learned, and continue work across multiple steps.\n\nWorkspace agents can keep working even when you’re away. You can set them to run on a schedule, or deploy them in Slack so they can pick up requests as they come in. For example, our product team built an agent that proactively answers employee questions in Slack channels. The agent responds with a clear answer, links relevant documentation, and can file a ticket when it finds a new issue. This agent helps teams get unblocked faster while making sure important follow-ups don’t slip through the cracks.\n\nToday, teams can interact with agents in ChatGPT and Slack, with more surfaces coming soon. Agents can join the conversations and workflows where work already happens, helping teams move work forward with less coordination.\n\nTurn best practices into shared agents\n\nManage sharing and discover workspace agents shared by your team from the Agents tab in the ChatGPT sidebar.\n\nKnowledge is often scattered across people and systems. Workspace agents give teams a way to turn that knowledge into a reusable workflow: one that follows the right process, uses the right tools, and can be shared across the organization.\n\nFor example, our accounting team built an agent that prepares key parts of month-end close, from journal entries to balance sheet reconciliations to variance analysis. It completes the work in minutes, generates workpapers with the underlying inputs and control totals needed for review, and follows internal policies. The agent is available in ChatGPT for anyone on the team to use, or added to Slack channels so the team can ask it questions and collaborate around its outputs.\n\nBecause agents have memory and can be guided and corrected in conversation, they get better as teams use them. Over time, agents become a practical way to keep team knowledge current: build once, improve through use, then share or duplicate for new workflows.\n\nStay in control, with the right safeguards\n\nView analytics for your live workspace agents from the menu in the editor.\n\nWhen you delegate work to an agent, you stay in control. You decide what tools and data it can use, what actions it can take, and when it needs approval. For sensitive steps, like editing a spreadsheet, sending an email, or adding a calendar event, you can require the agent to ask for permission before moving forward.\n\nAfter you share an agent, analytics help you see how it’s being used, including how many runs it has completed and how many people are using it.\n\nEnterprise governance and visibility\n\nWorkspace agents come with enterprise-grade monitoring and controls, so admins can protect sensitive data while giving teams a safe way to move faster with AI. ChatGPT Enterprise and Edu admins can control which connected tools and actions user groups can access. Admins can also manage who has access to use, build, and share agents. Built-in safeguards help agents stay aligned with your instructions when they encounter misleading external content, including prompt injection⁠ attacks.\n\nThe Compliance API⁠\n(opens in a new window)\n gives admins visibility into every agent’s configuration, updates, and runs, so they can monitor and control how agents are being built and used. Admins can also suspend agents if needed.\n\nSoon, admins will also be able to view every agent built across their organization in the admin console, including usage patterns and connected data sources.\n\nEarly feedback from customers\n\nEarly testers of workspace agents are already seeing more consistent results and time for higher-value work.\n\n“The hard part of building an agent is not the model. It's the integrations, memory, the user experience. Workspace agents collapsed that work, so one of our Sales Consultants built, evaluated, and iterated a Sales Opportunity agent end to end without an engineering team. It researches accounts, summarizes Gong calls, and posts deal briefs directly into the team’s Slack room. What used to take reps 5-6 hours a week now runs automatically in the background on every deal.”\n— Ankur Bhatt, AI Engineering, Rippling\nAvailability and pricing\n\nWorkspace agents are available in research preview for ChatGPT Business, Enterprise, Edu, and Teachers plans. For Enterprise and Edu plans, admins can enable agents using role-based controls.\n\nWorkspace agents will be free until May 6, 2026, with credit-based pricing starting on that date.\n\nWhat’s next\n\nWe’ll keep adding more great things in the weeks ahead to help teams get more work done with less manual effort. This includes new triggers that can start work automatically, better dashboards to understand and improve performance, more ways for agents to take action across your business tools, and support for workspace agents in the Codex app.\n\nTeams do their best work when knowledge is easier to find, processes are easier to follow, and people can get help in the flow of work. Workspace agents are an early step toward that future: AI that works alongside people in the tools and conversations where work already happens, helping teams spend less time coordinating work and more time creating, building, and making decisions that move the business forward.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/e792cb18#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=8749b9",
+      "text": "OpenAI Blog",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1185558713?h=4ed47a55b3&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1185558870?h=8b21195045&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1185558512?h=c1818bdf13&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1185559574?h=6e265b44b4&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://player.vimeo.com/video/1185558612?h=0ee0fc2f29&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&autopause=0",
+      "text": "↗ 在新标签页打开嵌入内容",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/academy/workspace-agents/",
+      "text": "OpenAI Academy⁠",
+      "title": ""
+    },
+    {
+      "href": "https://help.openai.com/en/articles/20001143",
+      "text": "Help Center⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/safety/prompt-injections/",
+      "text": "prompt injection⁠",
+      "title": ""
+    },
+    {
+      "href": "https://help.openai.com/en/articles/9261474-openai-compliance-platform-for-enterprise-customers",
+      "text": "Compliance API⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/80a29c25?entry=related_article",
+      "text": "工作区智能体",
+      "title": "这篇来自 OpenAI 博客的文章介绍了 ChatGPT 中工作区智能体的概念，解释了其核心组件、设计结构、常见工作流模式，并提供了使用、构建、测试和扩展这些智能体以完成可重复、结构化业务任务的实用指南。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a6d9083a?entry=related_article",
+      "text": "GPT-5.5 发布",
+      "title": "OpenAI 发布其迄今为止能力最强的模型 GPT-5.5，在智能体编程、知识工作和科学研究方面取得显著进步，同时保持了 GPT-5.4 的延迟并提升了 Token 效率。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/816f23c9?entry=related_article",
+      "text": "用于 Codex 编排的开源规范：Symphony",
+      "title": "OpenAI 推出了 Symphony，这是一套开源规范，能将 Linear 这类问题追踪器转变为编码智能体的常开型编排器。通过将智能体的工作与人类注意力解耦，成功将落地拉取请求的数量提升了 500%。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型",
+      "title": "OpenAI 宣布推出 GPT-5.5，这是一款专为理解复杂目标和自主完成任务而设计的新模型，现已在 ChatGPT 和 Codex 中上线。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文",
+      "title": "Anthropic 宣布推出 Claude Opus 4.6，具备更强的规划能力、优化的智能体表现，并开启了 1M token 上下文窗口的 Beta 测试。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/52f8c2e7?entry=related_article",
+      "text": "通过 Responses API 中的 WebSockets 加速智能体工作流",
+      "title": "OpenAI 工程师详细介绍了他们如何重新设计 Responses API 以使用持久的 WebSocket 连接，通过消除冗余的网络开销并让 GPT‑5.3‑Codex‑Spark 等更快的模型充分发挥其推理速度潜力，将智能体工作流延迟降低了高达 40%。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+      "text": "Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次",
+      "title": "软件界传奇人物 Martin Fowler 和 Kent Beck 探讨了 AI 如何重新定义软件工程，并强调 TDD 和模块化等核心实践对于人机协作依然至关重要。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2023817132581208353?entry=related_article",
+      "text": "Anthropic 发布 Claude Sonnet 4.6，支持 100 万 Token 上下文窗口",
+      "title": "Anthropic 宣布推出 Claude Sonnet 4.6，在编程、推理方面迎来重大升级，并支持 100 万 Token 的超长上下文窗口。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/d8c375d8?entry=related_article",
+      "text": "Codex 几乎无所不能",
+      "title": "OpenAI 宣布对 Codex 进行重大更新，将其能力从编码扩展到计算机操作、网页交互、图像生成，并通过记忆、自动化等新功能以及超过 90 个插件，在软件开发全生命周期实现更深度的集成。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019474152743223477?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.3-Codex",
+      "title": "OpenAI 宣布 GPT-5.3-Codex 正式上线，这是其代码生成模型系列的重大突破。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "OpenAI 引入了工作区智能体，这是 ChatGPT 内一类新型的、可共享的、长期运行的 AI 智能体，专为业务团队设计，旨在自动化复杂工作流、与组织工具集成，并在企业级控制下运行。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "工作区智能体, AI 智能体, ChatGPT Enterprise, 工作流自动化, Codex",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "ChatGPT 中引入工作区智能体 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "OpenAI 引入了工作区智能体，这是 ChatGPT 内一类新型的、可共享的、长期运行的 AI 智能体，专为业务团队设计，旨在自动化复杂工作流、与组织工具集成，并在企业级控制下运行。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/e792cb18",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/e792cb18/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-22 10:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "OpenAI",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "工作区智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ChatGPT Enterprise",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "工作流自动化",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Codex",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "ChatGPT 中引入工作区智能体 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "OpenAI 引入了工作区智能体，这是 ChatGPT 内一类新型的、可共享的、长期运行的 AI 智能体，专为业务团队设计，旨在自动化复杂工作流、与组织工具集成，并在企业级控制下运行。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/e792cb18/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "ChatGPT 中引入工作区智能体 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/e792cb18"
+}

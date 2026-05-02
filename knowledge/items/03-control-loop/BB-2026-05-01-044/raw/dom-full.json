@@ -1,0 +1,659 @@
+{
+  "content": "1\nClaude 最强 Sonnet 模型 4.6 来了，百万 token 上下文\n机器之心\nmp.weixin.qq.com\n02-18\n1537 字 · 约 7 分钟\n93\n\nAnthropic 在春节期间发布了 Claude Sonnet 4.6，对编码、计算机使用、长上下文推理和智能体规划进行了全面升级，并提供 100 万 token 上下文窗口。值得关注的是，它在实际测试中有 59% 的时间优于上一代旗舰模型 Opus 4.5，同时在价格上与 Sonnet 4.5 保持一致，使高水准的智能体能力真正触手可及。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#ba9a21ac",
+      "text": "1\nClaude 最强 Sonnet 模型 4.6 来了，百万 token 上下文",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#9e0fdd94",
+      "text": "2\n谷歌要重夺王座？Gemini 3.1 Pro 推理分数翻倍，幻觉率继续下降，价格不变",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#f9f5c72b",
+      "text": "3\n刚刚，Nano Banana 2 发布！便宜又大碗，体验后我发现这些细节",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#89e8effa",
+      "text": "4\nGLM-5 技术报告：技术细节全公开",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#0ffa0b1a",
+      "text": "5\nMiniMax M2.5 发布：1 美金/小时，真实世界工作王者",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#4e8cd55c",
+      "text": "6\n中国也有了世界第一的模型，他的名字，叫 Seedance 2.0。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#f884575",
+      "text": "7\nBoris Cherny：我们如何打造 Claude Code",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#352c89c1",
+      "text": "8\n如何写出好的 Skill ？拆解 skill-creator 背后的设计！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#6a95e4cc",
+      "text": "9\nOpenAI 一线开发现实观察：能同时盯住 10～20 个 Agent、跑小时级任务的人，正在把其他工程师远远甩开",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#fa264a88",
+      "text": "10\n从上下文到长期记忆：大模型记忆工程的架构设计与实践",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#dd96812d",
+      "text": "11\nVibe Coding 在代码生成与协作中的实践与思考",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#af0d968",
+      "text": "12\n从 Clawdbot 到 26 年 AI Coding 主题大爆发｜对谈 PingCAP CTO 东旭",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#68794c2b",
+      "text": "13\nOpenAI 应用 CTO 和 Codex 负责人：AI 正在重塑构建软件的方式",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#09c3ee7c",
+      "text": "14\nVibe Coding 时代：为什么说「产品感」比「写代码」更稀缺？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#eeaf91c3",
+      "text": "15\n2026 编程巨变：Anthropic 报告揭示 Agent 编程八大趋势",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#09d760b6",
+      "text": "16\n掌控 AI 帕累托前沿 —— Jeff Dean",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#72e3cf5",
+      "text": "17\nClaude Code 负责人：当编程问题被解决后会发生什么 | Boris Cherny",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#8d728e4",
+      "text": "18\n#434.AI 时代的生存法则：纳瓦尔谈氛围编程、个人杠杆与创造力的未来",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#ea193e97",
+      "text": "19\nUML 之父：Dario 大错特错，根本不懂软件工程！软件工程不会死亡！软件已经迎来第三次黄金时代！业界回应：有了 AI，SaaS 只会更加繁荣！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue84#eec4183",
+      "text": "20\n150: 年末 AI 回顾：从模型到应用、从技术到商战，拽住洪流中的意义之线",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/ba9a21ac?entry=newsletter_page",
+      "text": "Claude 最强 Sonnet 模型 4.6 来了，百万 token 上下文",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_e24314",
+      "text": "机器之心",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651017513&idx=2&sn=781e04048d4f59a46572accfa0603ee8",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/9e0fdd94?entry=newsletter_page",
+      "text": "谷歌要重夺王座？Gemini 3.1 Pro 推理分数翻倍，幻觉率继续下降，价格不变",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_b475c7",
+      "text": "腾讯科技",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691565054&idx=1&sn=9b94c9bd90484f1026f813f5bb7174f4",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/f9f5c72b?entry=newsletter_page",
+      "text": "刚刚，Nano Banana 2 发布！便宜又大碗，体验后我发现这些细节",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_4ecd55",
+      "text": "爱范儿",
+      "title": ""
+    },
+    {
+      "href": "https://www.ifanr.com/1655944?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "text": "ifanr.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/89e8effa?entry=newsletter_page",
+      "text": "GLM-5 技术报告：技术细节全公开",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_5eaf43",
+      "text": "智谱",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493485&idx=1&sn=bc8337e1e3095c4a29f20dd46161a14a",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/0ffa0b1a?entry=newsletter_page",
+      "text": "MiniMax M2.5 发布：1 美金/小时，真实世界工作王者",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_39cbd7",
+      "text": "MiniMax 稀宇科技",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247487796&idx=1&sn=414621ef4b131b49b0991cdc2857d198",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/4e8cd55c?entry=newsletter_page",
+      "text": "中国也有了世界第一的模型，他的名字，叫 Seedance 2.0。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_86a0b5",
+      "text": "数字生命卡兹克",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679903&idx=1&sn=09fd4d34355192fc940fd57809be902a",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/f884575?entry=newsletter_page",
+      "text": "Boris Cherny：我们如何打造 Claude Code",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_d8821f",
+      "text": "Y Combinator",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=PQU9o_5rHC4",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/352c89c1?entry=newsletter_page",
+      "text": "如何写出好的 Skill ？拆解 skill-creator 背后的设计！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_4688eb",
+      "text": "Datawhale",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247719753&idx=1&sn=d0bdf9aed64c8f9dc32e02a72302ced9",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6a95e4cc?entry=newsletter_page",
+      "text": "OpenAI 一线开发现实观察：能同时盯住 10～20 个 Agent、跑小时级任务的人，正在把其他工程师远远甩开",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8f2a9f",
+      "text": "InfoQ 中文",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651275835&idx=1&sn=056d0daf57d1623a1f6d346a1458f316",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/fa264a88?entry=newsletter_page",
+      "text": "从上下文到长期记忆：大模型记忆工程的架构设计与实践",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8f2a9f",
+      "text": "InfoQ 中文",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276307&idx=2&sn=bc69ed3bd600142d4e67f1a5df1103f4",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/dd96812d?entry=newsletter_page",
+      "text": "Vibe Coding 在代码生成与协作中的实践与思考",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8f2a9f",
+      "text": "InfoQ 中文",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651275013&idx=2&sn=d696ab8030134d5251ce180ff5dbcd31",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/af0d968?entry=newsletter_page",
+      "text": "从 Clawdbot 到 26 年 AI Coding 主题大爆发｜对谈 PingCAP CTO 东旭",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_84751f",
+      "text": "42章经",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/698563a188663289fe80769a",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/68794c2b?entry=newsletter_page",
+      "text": "OpenAI 应用 CTO 和 Codex 负责人：AI 正在重塑构建软件的方式",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_653b2e",
+      "text": "宝玉的分享",
+      "title": ""
+    },
+    {
+      "href": "https://baoyu.io/blog/2026-02-21/the-pragmatic-summit-inside-openai",
+      "text": "baoyu.io",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/09c3ee7c?entry=newsletter_page",
+      "text": "Vibe Coding 时代：为什么说「产品感」比「写代码」更稀缺？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_d51fd5",
+      "text": "少数派",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247607321&idx=1&sn=4a1acf59c8381eb1433d24184cacf58c",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/eeaf91c3?entry=newsletter_page",
+      "text": "2026 编程巨变：Anthropic 报告揭示 Agent 编程八大趋势",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_653b2e",
+      "text": "宝玉的分享",
+      "title": ""
+    },
+    {
+      "href": "https://baoyu.io/blog/2026/02/09/anthropic-agentic-coding-trends-2026",
+      "text": "baoyu.io",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/09d760b6?entry=newsletter_page",
+      "text": "掌控 AI 帕累托前沿 —— Jeff Dean",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_fc479e",
+      "text": "Latent Space",
+      "title": ""
+    },
+    {
+      "href": "https://www.latent.space/p/jeffdean",
+      "text": "latent.space",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/72e3cf5?entry=newsletter_page",
+      "text": "Claude Code 负责人：当编程问题被解决后会发生什么 | Boris Cherny",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8e0b51",
+      "text": "Lenny's Podcast",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=We7BZVKbCVw",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/8d728e4?entry=newsletter_page",
+      "text": "#434.AI 时代的生存法则：纳瓦尔谈氛围编程、个人杠杆与创造力的未来",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_938310",
+      "text": "跨国串门儿计划",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/699dec62de29766da968a099",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/ea193e97?entry=newsletter_page",
+      "text": "UML 之父：Dario 大错特错，根本不懂软件工程！软件工程不会死亡！软件已经迎来第三次黄金时代！业界回应：有了 AI，SaaS 只会更加繁荣！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_aef4e8",
+      "text": "51CTO技术栈",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655936386&idx=1&sn=928acef652aef65bb6dc631b9f620116",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/eec4183?entry=newsletter_page",
+      "text": "150: 年末 AI 回顾：从模型到应用、从技术到商战，拽住洪流中的意义之线",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_f7cf32",
+      "text": "晚点聊 LateTalk",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/698a6ac11ff460059c061b9b",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 84 期 AI 精选文章推荐。\n\n春节快乐！过去两周因为假期休刊，攒了不少好内容，这一期信息量比较大，希望大家慢慢消化。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "bestblogs, AI 阅读，个性化阅读，高质量内容，每日早报，技术阅读，内容发现，AI 初评，专家精审，阅读工作流",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 84 期：编排 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 84 期 AI 精选文章推荐。\n\n春节快乐！过去两周因为假期休刊，攒了不少好内容，这一期信息量比较大，希望大家慢慢消化。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/newsletter/issue84",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue84/opengraph-image?5b2ed8584a9655d4",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "02-27",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 84 期：编排 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 84 期 AI 精选文章推荐。\n\n春节快乐！过去两周因为假期休刊，攒了不少好内容，这一期信息量比较大，希望大家慢慢消化。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue84/twitter-image?43c24b48d6d9249c",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "BestBlogs.dev 第 84 期：编排 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/newsletter/issue84"
+}

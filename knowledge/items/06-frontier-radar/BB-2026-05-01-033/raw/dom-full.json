@@ -1,0 +1,489 @@
+{
+  "content": "对比维度\n维度\tDeepSeek-V4 Preview\n百万上下文 + 双思考的开源旗舰\n\t智谱 GLM-5.1\n754B MoE 的 8 小时长程任务模型\n\tMiniMax M2.7\n首个具备「自我进化」能力的中国旗舰\n\tKimi K2.6\n1T MoE，长程编码与 Agent 集群标杆\n\n开源策略与许可\t\n权重 MIT 开源，Pro/Flash 双版本同步上 Hugging Face\n\nref-3、ref-6 验证论文与多硬件生态；可商用、可二次蒸馏。\n\n\t\n权重 MIT 开源，Hugging Face + 华为云双线\n\nref-8 智谱官方解读；ref-13 上线华为云的国内合规通道。\n\n\t\nM2.7 退回 MiniMax 专有许可（M2/M2.5 曾是 MIT）\n\nref-16 公布开源细节；ref-17 提示许可证从 MIT 调整为专有许可。\n\n\t\n权重以修改版 MIT 形式公开，训练代码与数据未公开\n\nref-22 月之暗面官方解读；ref-26 第三方验证开源等级。\n\n\n上下文窗口与模型规模\t\n1.6T / 49B 激活（Pro），284B / 13B 激活（Flash）；1M 上下文，最大输出 384K\n\nref-2 公布双思考与上下文；ref-4 给出 484 天换代细节。\n\n\t\n754B / 40B 激活；200K 上下文，131K 最大输出\n\nref-10 给出 754B / 40B 与 SWE-Bench Pro SOTA；ref-9 中文版同步。\n\n\t\n约 196K（192K 量级）上下文；具体激活参数未公开\n\nref-15 给出能力定位；ref-17 第三方报道补充上下文与价格。\n\n\t\n1T / 32B 激活；256K 上下文\n\nref-22 与 ref-26 共同验证规模与上下文；MoonViT 视觉编码器是新增项。\n\n\n编程能力（SWE-Bench / Arena）\t\nDeepSeek 自报『接近前沿』；LMSYS Arena Pro/Flash 排名靠前\n\nref-5 第三方实测；ref-27 LMSYS Arena 横向证据。\n\n\t\nSWE-Bench Pro 58.4 全球第一，超过 GPT-5.4 与 Opus 4.6\n\nref-9、ref-10 双语版本；ref-12 Code Arena 开源榜独立排名。\n\n\t\nSWE-Pro 56.22%，Terminal Bench 2 57%，多语言 SWE 76.5\n\nref-17 给出基准全集；ref-21 解释 Harness × 模型协同。\n\n\t\nSWE-bench Verified 80.2%，SWE-Bench Pro 58.6\n\nref-26 第三方实测；ref-22 月之暗面自报与 ref-25 实战长文交叉验证。\n\n\n长程任务 / Agent 集群\t\n双思考模式：Thinking / Non-Thinking 切换；Think Max 建议上下文 ≥384K\n\nref-2 官方双模式说明；适用于长链推理但缺『多 Agent 集群』的官方支持。\n\n\t\n8 小时自主执行；可零介入交付完整 Linux 桌面系统\n\nref-8、ref-10 解释 8 小时长程；ref-9 给出端到端交付案例。\n\n\t\n首个具备『自我进化』能力的国产旗舰，可承担 30-50% 强化学习工作流\n\nref-15 官方定位；ref-17 给出量化数字；ref-21 给出 Harness 协同视角。\n\n\t\n4000+ 工具调用 / 12 小时连续运行 / 300 并行子智能体\n\nref-22、ref-25 共同披露；ref-24 给出 Hermes Agent 实战路径。\n\n\n多模态能力\t\n以文本 / 代码为主；本次预览版未把多模态作为重点\n\nref-1、ref-3 中均未把多模态作为关键卖点。\n\n\t\n聚焦智能体编码与桌面操作；多模态非本次发布重心\n\nref-9 与 ref-13 都把焦点放在 Coding 与长程任务，未列多模态突破。\n\n\t\n文本 / 代码 / Agent 主线；多模态仍走早期 Hailuo 视频路线\n\nref-15、ref-17 主线均为文本与 Agent；多模态未在 M2.7 公告中强调。\n\n\t\nMoonViT 视觉编码器加持，支持图像与视频输入\n\nref-22 月之暗面官方说明 MoonViT；ref-26 第三方验证视觉路径。\n\n\nAPI 价格与部署生态\t\nPro 输入 $1.74 / 输出 $3.48；Flash 输入 $0.14 / 输出 $0.28；华为昇腾 + 英伟达 Blackwell 双栈\n\n价格见 ref-2、ref-5；硬件生态见 ref-6；实战切换见 ref-7（账单降 90%）。\n\n\t\n权重 MIT 自托管；Z.AI 平台输出价较 Opus 4.6 便宜约 17×\n\nref-10、ref-13 给出价格区间与华为云部署；具体单价未单独披露，仅给出相对量级。\n\n\t\nAPI 输入 $0.30 / 输出 $1.20 per 1M tokens；Hugging Face + Modelscope 开源\n\n价格见 ref-17；许可调整说明见 ref-16；ref-19 给出 M2.5 时期『1 美金/小时』背景。\n\n\t\nAPI 输入 $0.95 / 输出 $4.00 per 1M tokens；Hugging Face 自托管 + 多家三方平台\n\n官方与第三方价格见 ref-22 与 ref-26；不同平台报价存在 ±20% 区间。\n\n使用场景建议\n国内自建推理 / 数据合规优先\n→ DeepSeek-V4 Preview\n\nDeepSeek-V4 是这四家里最完整的『MIT 开源 + 华为昇腾 + 英伟达 Blackwell 双栈』组合（ref-3、ref-6），1M 上下文与双思考模式覆盖了大部分企业内部场景。Flash 版本输出 $0.28 / 1M tokens，是当下国内合规自托管最现实的起点；ref-7 的真实切换案例已经把月账单打到了原来的 1/10。\n\n开源模型相对闭源模型的能力差距正在快速收敛（LangChain，2026-04，[ref-28]）\n\n8 小时长程任务 / 端到端交付\n→ 智谱 GLM-5.1\n\nGLM-5.1 把『8 小时自主执行 + SWE-Bench Pro 58.4 SOTA』做成了一句话定位（ref-8、ref-10）。ref-9 给出的『零介入交付完整 Linux 桌面』是其他三家目前都没做到的可验证场景。如果你要让模型独立跑完一个项目而不是补一段代码，GLM-5.1 是当下中国阵营里最稳的选择。\n\nSimon Willison 在 GLM-5.1 上跑的『骑自行车的鹈鹕』经典生成测试，是他横评所有前沿模型的固定动作（[ref-11]）\n\n真实工作流 + 自动化进化\n→ MiniMax M2.7\n\nMiniMax M2.7 是中国阵营首个明确做出『模型参与自身开发循环』承诺的旗舰（ref-15、ref-17）；定价 $0.30 / $1.20 + 主流编码与 Terminal-Bench 接近 GPT-5.3-Codex（ref-17）让它在『成本优先 + 真实生产工作流』场景下很有竞争力。ref-21 还把 Harness × 模型作为下一步重点，这是其他三家短期内不会跟进的角度。\n\nMiniMax M2.7 自我进化能力示意图（VentureBeat，2026-03，[ref-17]）\n\nAgent 集群 / 多 sub-agent 编排\n→ Kimi K2.6\n\nKimi K2.6 在 SWE-bench Verified 拿到 80.2、SWE-Bench Pro 58.6（ref-26），并且首次把『4000+ 工具调用 / 12 小时 / 300 并行子智能体』作为一线指标（ref-22、ref-25）。ref-24 给出了 Hermes Agent + K2.6 的工程化路径，是当前最适合做『单 prompt 启动一支 Agent 团队』的中国旗舰。\n\n常见误区\nM2.7 的开源 regression：MIT 退到专有许可\n\nMiniMax M2 / M2.5 曾以 MIT / Modified-MIT 形式开源，是这一波国产开源浪潮的代表作。但 M2.7 切回 MiniMax 自己的专有许可（ref-16、ref-17）。如果你的合规底线是『商用 + 二次蒸馏不受限』，M2.7 实际上不再满足。在工程选型上，M2.5 在不少团队仍被作为生产基线，M2.7 更像『官方推荐部署版本』而非『真正可二次发行的权重』。\n\nSWE-Bench Pro 接近不等于真实工作可靠\n\nGLM-5.1（58.4）/ MiniMax M2.7（56.22）/ Kimi K2.6（58.6）在 SWE-Bench Pro 上的分数十分接近，但 ref-25 与 ref-29 的实战复盘提醒：长程任务的真实瓶颈往往不是『一道编程题答对几次』，而是工具调用稳定性、上下文恢复、错误自愈与 Harness 适配。基准跑分应当只是入选条件，不是排序依据；真正决定可用性的是你的工作流模板能否在该模型上跑稳一周。\n\n同期多家中国旗舰与 Opus 4.6 的对比快照（AINews / Latent.Space，2026-04，[ref-6]）\n\n便宜不等于划算：自托管的硬件账\n\nDeepSeek-V4 1.6T、Kimi K2.6 1T、GLM-5.1 754B 的『开源 + 极低 API 价』很容易让人觉得迁移就能立刻省钱。但 ref-6、ref-29、ref-30 综合给出的更现实图景是：1）自托管 1T+ MoE 仍需 H100 / Blackwell 集群或华为昇腾大池；2）国内可用算力价格还在波动；3）从闭源迁过来时的 prompt 重写、回归测试、Token 计量差异，单项就能吃掉首年节省。把价格当『参考』，把 TCO 当『决策依据』。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/explore/topics/china-flagship-llm-2026-spring#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "内容广场",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "每日早报",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "精选周刊",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "内容来源",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a799716e",
+      "text": "GLM-5.1 开源：一个独立工作 8 小时的模型\n智谱\n· 2026-04-08\n\n智谱官方解读：GLM-5.1 与 8 小时长程",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e07e5714",
+      "text": "MiniMax M2.7 开源，携手全球伙伴加速 AI 生态繁荣\n· 2026-04-12\n\nMiniMax 官方：M2.7 开源与生态",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/ef138a82",
+      "text": "Kimi K2.6 发布并开源，全面精进代码和 Agent 集群能力\n月之暗面 Kimi\n· 2026-04-20\n\n月之暗面官方：Kimi K2.6 全部新特性",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/95d5e07c",
+      "text": "DeepSeek-V4 预览版：迈入百万上下文普惠时代\nDeepSeek\n· 2026-04-24\n\nDeepSeek 官方：V4 预览版与百万上下文",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/5752edec",
+      "text": "Claude Opus 4.6 一天之内被超越两次，这次来自国产模型\n李超凡\n· 2026-04-08\n\nGLM-5.1 国产开源 SWE-bench Pro 登顶（深度报道）",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/15618349",
+      "text": "Kimi K2.6 开源：一个人，和他的 300 Agents\n· 2026-04-20\n\n实战长文：一个人和他的 300 Agents（Kimi K2.6）",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/91fc124c",
+      "text": "MiniMax 的下一张牌：模型 × Harness\n· 2026-04-18\n\n深度分析：MiniMax 的下一张牌——模型 × Harness",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e5afa665",
+      "text": "Open Models have crossed a threshold\nLangChain Accounts\n· 2026-04-02\n\nLangChain：开源模型已跨越临界点（英文视角）",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/943fe7cc",
+      "text": "国产模型春节大考：来自 MiniMax、GLM、Seedance 开发者的一线复盘｜Best Ideas\n· 2026-02-24\n\n国产模型春节大考：开发者一线复盘",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047714237502677405",
+      "text": "Competition between Chinese labs is intensifying.\nArena.ai\n· 2026-04-24\n\n国产开源在 LMSYS Text Arena 强势崛起（社区横评）",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/95d5e07c",
+      "text": "DeepSeek-V4 预览版：迈入百万上下文普惠时代",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047516945466188072",
+      "text": "API is Available Today! 🔹 Keep base_url， just up",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047733044484706571",
+      "text": "DeepSeek-V4 paper is out on Hugging Face paper: h",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1d95c0b8",
+      "text": "DeepSeek V4 报告太详尽了！484 天换代之路全公开",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/21d27677",
+      "text": "DeepSeek V4—almost on the frontier， a fraction of the price",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/ef085e0b",
+      "text": "[AINews] DeepSeek V4 Pro (1.6T-A49B) and Flash (284B-A13B)， Base and Instruct — runnable on Huawei Ascend chips",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/17baee4d",
+      "text": "“我把所有模型都换成了 DeepSeek V4”：月账单降 90%，效果还更好",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a799716e",
+      "text": "GLM-5.1 开源：一个独立工作 8 小时的模型",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/5752edec",
+      "text": "Claude Opus 4.6 一天之内被超越两次，这次来自国产模型",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/9a54f65a",
+      "text": "Z.AI Introduces GLM-5.1: An Open-Weight 754B Agentic Model That Achieves SOTA on SWE-Bench Pro and Sustains 8-Hour Autonomous Execution",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/23cf0918",
+      "text": "GLM-5.1: Towards Long-Horizon Tasks",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2042643933768151485",
+      "text": "With GLM-5.1， https://t.co/nvW0zf0SAH maintains th",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/5d309440",
+      "text": "智谱 GLM-5.1“Day0”上线华为云，可通过多款产品体验",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e516810a",
+      "text": "GLM-4.7 上线并开源：更强的编码",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1d6d969d",
+      "text": "MiniMax M2.7: 开启模型的自我进化",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e07e5714",
+      "text": "MiniMax M2.7 开源，携手全球伙伴加速 AI 生态繁荣",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/76968697",
+      "text": "New MiniMax M2.7 proprietary AI model is 'self-evolving' and can perform 30-50% of reinforcement learning research workflow",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2034425038028603587",
+      "text": "MiniMax M2.7 正式发布（M2.5 上个月才发布，这也太快了吧！） MiniMax M2",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/0ffa0b1a",
+      "text": "MiniMax M2.5 发布：1 美金/小时，真实世界工作王者",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/71f9572b",
+      "text": "MiniMax 成为 Token 调用第一后，模型厂商必须面对的 AgentOS 现实",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/91fc124c",
+      "text": "MiniMax 的下一张牌：模型 × Harness",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/ef138a82",
+      "text": "Kimi K2.6 发布并开源，全面精进代码和 Agent 集群能力",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2046249571882500354",
+      "text": "Meet Kimi K2.6: Advancing Open-Source Coding 🔹Op",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/4a06f217",
+      "text": "（可能全网最全/长的）Hermes Agent+K2.6 保姆教程 + 实战案例",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/15618349",
+      "text": "Kimi K2.6 开源：一个人，和他的 300 Agents",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/912fa989",
+      "text": "[AINews] Moonshot Kimi K2.6: the world's leading Open Model refreshes to catch up to Opus 4.6 (ahead of DeepSeek v4?)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047714237502677405",
+      "text": "Competition between Chinese labs is intensifying.",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e5afa665",
+      "text": "Open Models have crossed a threshold",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/943fe7cc",
+      "text": "国产模型春节大考：来自 MiniMax、GLM、Seedance 开发者的一线复盘｜Best Ideas",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/77300b30",
+      "text": "AI 的经济账根本算不通",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "DeepSeek-V4、智谱 GLM-5.1、MiniMax M2.7、月之暗面 Kimi K2.6 在 2026 年春集中亮相，把『中国阵营 + 开源 + 极低价 + 长程 Agent』四个标签合并到了一起。本主题不重做发布解读，而是按开源策略、规模、编程、长程任务、多模态、价格生态六个维度横评，并按合规自托管...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "model-releases, llm, topic-llm, ai-agent, ai-coding",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "中国旗舰大模型横评 2026 春 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "DeepSeek-V4、智谱 GLM-5.1、MiniMax M2.7、月之暗面 Kimi K2.6 在 2026 年春集中亮相，把『中国阵营 + 开源 + 极低价 + 长程 Agent』四个标签合并到了一起。本主题不重做发布解读，而是按开源策略、规模、编程、长程任务、多模态、价格生态六个维度横评，并按合规自托管...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/explore/topics/china-flagship-llm-2026-spring",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/explore/topics/china-flagship-llm-2026-spring/opengraph-image?93bc0944c4cadf0e",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-29T06:00:15Z",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "2026-04-29T06:00:15Z",
+      "name": null,
+      "property": "article:modified_time"
+    },
+    {
+      "content": "model-releases",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "llm",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "topic-llm",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ai-agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ai-coding",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "中国旗舰大模型横评 2026 春 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "DeepSeek-V4、智谱 GLM-5.1、MiniMax M2.7、月之暗面 Kimi K2.6 在 2026 年春集中亮相，把『中国阵营 + 开源 + 极低价 + 长程 Agent』四个标签合并到了一起。本主题不重做发布解读，而是按开源策略、规模、编程、长程任务、多模态、价格生态六个维度横评，并按合规自托管...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://image.jido.dev/20260421002335_ba3bb8e1-94f7-4acd-a98b-e7d2ce0d577e_2886x1483.png",
+      "name": "twitter:image",
+      "property": null
+    }
+  ],
+  "title": "中国旗舰大模型横评 2026 春 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/explore/topics/china-flagship-llm-2026-spring"
+}

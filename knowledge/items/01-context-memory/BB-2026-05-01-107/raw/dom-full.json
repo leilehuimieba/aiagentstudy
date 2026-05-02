@@ -1,0 +1,344 @@
+{
+  "content": "对编码、计算机使用、长上下文推理、智能体规划、知识工作和设计进行了全面升级。\n\n机器之心编辑部\n\n大年初二，海外就开始发新模型了！\n\n这次是 Anthropic，率先发布了他们称之为「我们目前能力最强的 Sonnet 模型」Claude Sonnet 4.6。\n\nClaude 称，新模型对编码、计算机使用、长上下文推理、智能体规划、知识工作和设计进行了全面升级。\n\nBeta 版还包含 100 万 token 的上下文窗口。\n\n在价格方面，对于免费和专业版用户，Claude Sonnet 4.6 现已成为 claude.ai 和 Claude Cowork 的默认模型。定价与 Sonnet 4.5 保持一致，仍为每百万输入 token 3 美元，每百万输出 token 15 美元。\n\n那么具体性如何？在 GDPval-AA 测试中，Claude Sonnet 4.6 甚至略微领先于 Anthropic 刚刚发布不久的 Opus 4.6。\n\n接下来，就让我们仔细看下技术博客介绍。\n\n计算机使用\n\n2024 年 10 月，Claude 率先推出了通用的计算机使用模型。当时，这种技术「仍处于实验阶段 —— 有时操作繁琐且容易出错」。\n\nAI 计算机使用的标准基准 OSWorld 展示了 Claude 模型的进步程度。该基准会在模拟计算机上运行真实软件（Chrome、LibreOffice、VS Code 等），设置数百项任务。该基准也没有没有特殊的 API 或专用连接器；模型看到计算机并与其互动的方式与人非常相似：点击（虚拟）鼠标和在（虚拟）键盘上打字。\n\n在过去的十六个月里，Sonnet 模型在 OSWorld 上的性能稳步提升。这些改进在基准测试之外也可见一斑：早期的 Sonnet 4.6 用户在多项任务（诸如浏览复杂电子表格或填写多步骤网页表单）中，看到了达到人类水平的能力，并且能在多个浏览器标签页中整合处理信息。\n\n当然，该模型在使用计算机方面仍落后于最熟练的人类。但进步的速度依然显著。这意味着：计算机使用的价值在提升 —— 并且表明能力更强的模型已指日可待。\n\n图表比较了多个 Sonnet 模型在 OSWorld 基准上的得分。注：Claude Sonnet 4.5 之前的得分基于原始 OSWorld 测量；从 Sonnet 4.5 开始使用 OSWorld-Verified。OSWorld-Verified（2025 年 7 月发布）是原始 OSWorld 基准的原位升级，对任务质量、评估评分和基础设施进行了更新。\n\n与此同时，计算机使用也带来了风险：恶意行为者可能试图通过提示注入攻击，将指令隐藏在网站中来劫持模型。\n\nAnthropic 致力于提高模型抵抗提示注入的能力 —— 其安全评估显示，与其前代 Sonnet 4.5 相比，Sonnet 4.6 在这方面有重大改进，表现与 Opus 4.6 相近。\n\n评估 Claude Sonnet 4.6\n\n除了计算机使用，Claude Sonnet 4.6 在各项基准测试中均有提升。它的智能水平接近 Opus 级别，但价格更实惠，使其适用于更广泛的任务。\n\n一个表格展示了流行基准测试中 Sonnet 4.6 与其他前沿模型的相对性能比较。\n\nAnthropic 的早期 Claude Code 测试发现，用户大约有 70% 的时间更喜欢 Sonnet 4.6 而非 Sonnet 4.5。\n\n用户报告说，它在修改代码前能更有效地理解上下文，并能整合共享逻辑而非简单复制。\n\n相比于 11 月发布的前沿模型 Opus 4.5，用户甚至有 59% 的时间更喜欢 Sonnet 4.6。他们评价 Sonnet 4.6 在过度工程化和「偷懒」方面显著减少，在指令遵循方面有明显改进。用户报告了更少的虚假成功声明、更少的幻觉，以及在多步骤任务中更一致的执行力。\n\nSonnet 4.6 的上下文窗口为 100 万 token，足以在单个请求中容纳整个代码库、长篇合同或数十篇研究论文。更重要的是，Sonnet 4.6 能有效地在所有上下文中进行推理。这使得它在长程规划方面表现更佳。\n\n在 Vending-Bench Arena 评估中特别清晰地看到了这一点。该测试评估模型长期运营（模拟）业务的能力 —— 并且包含竞争元素，不同 AI 模型相互竞争以获取最大利润。\n\nSonnet 4.6 发展出一种有趣的新策略：它在模拟的前十个月大力投资于产能，支出远超竞争对手，然后在最后阶段急剧转向专注于盈利能力。这一转向的时机使其最终远远领先于竞争对手。\n\n图表显示 Sonnet 4.6 在 Vending-Bench Arena 上优于 Sonnet 4.5：通过早期投资产能，然后在最后阶段转向盈利。\n\nClaude Sonnet 4.6 已经向哪些用户开放？\n\nClaude Sonnet 4.6 现已面向所有 Claude 套餐、Claude Cowork、Claude Code、API 以及所有主流云平台开放。Anthropic 也已将免费套餐默认升级至 Sonnet 4.6 版本 —— 现在包含文件创建、连接器、技能和压缩功能。\n\n如果你是开发者，也可以通过 Claude API 快速开始使用 claude-sonnet-4-6。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/ba9a21ac#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=e24314",
+      "text": "机器之心",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651017513&idx=2&sn=781e04048d4f59a46572accfa0603ee8",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/fe11aa56?entry=related_article",
+      "text": "All-in-One Text, Image, and Video! An Open-Source Framework for Multimodal Knowledge Bases",
+      "title": "Tongyi Lab has open-sourced the VimRAG framework, which leverages Dynamic Acyclic Graphs (DAG) and Graph-Guided Policy Optimization to solve cross-modal retrieval and long-context reasoning challenges in mixed-media knowledge bases."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/eeaf91c3?entry=related_article",
+      "text": "The Great Shift in Programming 2026: Anthropic Report Reveals Eight Major Trends in Agentic Programming",
+      "title": "This article provides an in-depth analysis of Anthropic's '2026 Agentic Programming Trends Report,' highlighting a major paradigm shift from 'humans writing code' to 'humans orchestrating agents to write code.'"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/07248488?entry=related_article",
+      "text": "How to Properly Vibe Code? A Masterclass from Anthropic's Head of Programming Agents",
+      "title": "Based on a talk by Anthropic researcher Erik Schluntz, this article systematically explains the methodology for responsibly practicing Vibe Coding in production environments, including its definition, core concepts, risk control strategies, and specific practical techniques."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/bf736fa1?entry=related_article",
+      "text": "When the Primary User of a Database is No Longer Human: Our Architectural Practices and Reflections in AI Agent Scenarios",
+      "title": "This article explores the architectural challenges arising when AI Agents become the primary users of databases, shares TiDB's practical experience in cost control, long-context storage, and architectural simplification, and introduces mem9, a memory layer infrastructure designed for Agents."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8c5251f9?entry=related_article",
+      "text": "How Did a Beta Access Code Become 'Hard Currency' for Bilibili Creators?",
+      "title": "Bilibili's professional-grade AI video creation tool, updream, deeply aligns with the non-linear workflows of professional creators through conversational guidance, a Skills system, and cross-task memory, enhancing the 'soul' and quality of AI-generated content."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/6f17468b?entry=related_article",
+      "text": "GPT-5.4 Released: OpenAI's First Unified Model, Truly Native",
+      "title": "OpenAI releases GPT-5.4, creating the first unified Agent model that supports native Computer Use by integrating reasoning, coding, and computer interaction."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/03f65469?entry=related_article",
+      "text": "Meituan LongCat-Next: Turning Images, Audio, and Text into Tokens—What's Next?",
+      "title": "Meituan has released LongCat-Next, a multimodal large model that unifies images, audio, and text into discrete tokens via the Discrete Native Autoregressive (DiNA) framework, achieving deep integration of understanding and generation capabilities."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/5b7ab5d5?entry=related_article",
+      "text": "Understanding Harness Engineering: Finding the Shell That Keeps AI from Going Rogue—Insights from 14 Engineering Articles | Hao's Trend Talk",
+      "title": "This article provides an in-depth analysis of \"Harness Engineering,\" a core technology in the AI Agent field. It reveals how to compensate for model shortcomings through a three-layer management architecture and proposes the logic of \"Compensation Surface Migration\" that evolves with model capabilities."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/f55d34b5?entry=related_article",
+      "text": "Post-SFT Performance ≠ RL Potential! HKUST and Alibaba Propose a New Paradigm for Adaptive Cold Start",
+      "title": "Research by HKUST and Alibaba reveals a counter-intuitive relationship between SFT accuracy and RL potential, proposing the AESL loss function to optimize the starting point for LLM RL training by balancing diversity and fitting."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/c036e05b?entry=related_article",
+      "text": "Amap's Fully Autonomous Embodied Robot Stuns at Yizhuang Marathon, Tackling the Hardcore Challenge of 'Guide Dog' Task",
+      "title": "This article reports on Amap's debut of its fully autonomous embodied robot 'Amap Tutu' at the 2026 Humanoid Robot Half Marathon, where it successfully completed a guide dog task in an open environment, while detailing the underlying ABot full-stack technology system, including the navigation and manipulation foundation models, world model, and intelligent core."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Anthropic has released the Claude Sonnet 4.6 model, focusing on upgrades to its million-token long context, computer use capabilities, and coding performance...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Claude 4.6, Anthropic, Long Context, Computer Use, Coding Assistant",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Claude's Strongest Sonnet Model 4.6 is Here, Featuring a ...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Anthropic has released the Claude Sonnet 4.6 model, focusing on upgrades to its million-token long context, computer use capabilities, and coding performance...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/ba9a21ac",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/ba9a21ac/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-18 12:49:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "机器之心",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Claude 4.6",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Anthropic",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Long Context",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Computer Use",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Coding Assistant",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Claude's Strongest Sonnet Model 4.6 is Here, Featuring a ...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Anthropic has released the Claude Sonnet 4.6 model, focusing on upgrades to its million-token long context, computer use capabilities, and coding performance...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/ba9a21ac/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Claude's Strongest Sonnet Model 4.6 is Here, Featuring a ...",
+  "url": "https://www.bestblogs.dev/en/article/ba9a21ac"
+}

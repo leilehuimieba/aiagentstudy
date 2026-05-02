@@ -1,0 +1,364 @@
+{
+  "content": "Developers who want to better balance intelligence and cost have converged on what we call the advisor strategy: pair Opus as an advisor with Sonnet or Haiku as an executor. This brings near Opus-level intelligence to your agents while keeping costs near Sonnet levels.\n\nToday we're introducing the advisor tool on the Claude Platform to make the advisor strategy a one-line change in your API call.\n\nBuild cost-effective agents with the advisor strategy \n\nWith the advisor strategy, Sonnet or Haiku runs the task end-to-end as the executor, calling tools, reading results, and iterating toward a solution. When the executor hits a decision it can't reasonably solve, it consults Opus for guidance as the advisor. Opus accesses the shared context and returns a plan, a correction, or a stop signal, and the executor resumes. The advisor never calls tools or produces user-facing output, and only provides guidance to the executor.\n\nThis inverts a common sub-agent pattern, where a larger orchestrator model decomposes work and delegates to smaller worker models. In the advisor strategy, a smaller, more cost-effective model drives and escalates without decomposition, a worker pool, or orchestration logic. Frontier-level reasoning applies only when the executor needs it, and the rest of the run stays at executor-level cost.\n\nIn our evaluations, Sonnet with Opus as an advisor showed a 2.7 percentage point increase on SWE-bench Multilingual1 over Sonnet alone, while reducing cost per agentic task by 11.9%. \n\n‍\n\nThe advisor tool \n\nWe’re bringing the advisor strategy to our API with the advisor tool, a server-side tool which Sonnet and Haiku know to invoke when they need guidance or help with a specific task.\n\nIn our evaluations, Sonnet with an Opus advisor improved scores across BrowseComp2 and Terminal-Bench 2.03 benchmarks while costing less per task than Sonnet alone.\n\nThe advisor strategy also works with Haiku as the executor. On BrowseComp, Haiku with an Opus advisor scored 41.2%, more than double its solo score of 19.7%. Haiku with an Opus advisor trails Sonnet solo by 29% in score but costs 85% less per task. The advisor adds cost relative to Haiku alone, but the combined price is still a fraction of what Sonnet costs, making it a strong option for high-volume tasks that require a balance of intelligence and cost.\n\n\nDeclare advisor_20260301 in your Messages API request, and the model handoff happens inside a single /v1/messages request—no extra round-trips or context management. The executor model decides when to invoke it. When it does, we route the curated context to the advisor model, return the plan, and the executor continues all within the same request.\n\n\nresponse = client.messages.create(\n    model=\"claude-sonnet-4-6\",  # executor\n    tools=[\n        {\n            \"type\": \"advisor_20260301\",\n            \"name\": \"advisor\",\n            \"model\": \"claude-opus-4-6\",\n            \"max_uses\": 3,\n        },\n        # ... your other tools\n    ],\n    messages=[...]\n)\n\n# Advisor tokens reported separately\n# in the usage block.\n\nPricing. Advisor tokens are billed at the advisor model's rates; executor tokens are billed at the executor model's rates. Since the advisor only generates a short plan (typically 400-700 text tokens) while the executor handles the full output at its lower rate, the overall cost stays well below running the advisor model end-to-end.\n\nBuilt-in cost controls. Set max_uses to cap advisor calls per request. Advisor tokens are reported separately in the usage block so you can track spend per tier.\n\nWorks alongside your existing tools. The advisor tool is just another entry in your Messages API request. Your agent can search the web, execute code, and consult Opus in the same loop.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/6ebdeb6e#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=154bc38a",
+      "text": "Claude Blog",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://claude.com/blog/the-advisor-strategy",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.swebench.com/multilingual.html",
+      "text": "SWE-bench Multilingual",
+      "title": ""
+    },
+    {
+      "href": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool",
+      "text": "advisor tool",
+      "title": ""
+    },
+    {
+      "href": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool",
+      "text": "search the web",
+      "title": ""
+    },
+    {
+      "href": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool",
+      "text": "execute code",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/34499204?entry=related_article",
+      "text": "使用 MCP 构建能够接入生产系统的智能体 | Claude",
+      "title": "这篇来自 Claude 博客的文章详细阐述了为什么 MCP（模型上下文协议）是将生产环境 AI 智能体连接到外部云系统的首选架构，对比了直接 API 调用和 CLI 的差异，并提供了构建高效 MCP 服务器和上下文优化客户端的具体设计模式。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6c4e4c3c?entry=related_article",
+      "text": "使用 Claude Code：会话管理与 1M 上下文 | Claude",
+      "title": "本文来自 Claude 团队，详细指导如何在 Claude Code 中管理 100 万 token 的上下文窗口，解释了上下文衰减、压缩、回滚和子智能体等概念，并提供了何时使用每种功能以保持最佳性能的实用策略。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c1ecbe08?entry=related_article",
+      "text": "像带新人一样引导 Claude Code：来自 17 年开发经验的启示 | Claude",
+      "title": "拥有 70 万行代码的 Skyline 代码库的首席开发者 Brendan MacLean，将他 17 年来引导人类开发者的方法论应用于 Claude Code，通过上下文、技能和 MCP 集成，让遗留代码库重新变得易于管理。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型",
+      "title": "OpenAI 宣布推出 GPT-5.5，这是一款专为理解复杂目标和自主完成任务而设计的新模型，现已在 ChatGPT 和 Codex 中上线。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2041578392852517128?entry=related_article",
+      "text": "Anthropic 推出 Project Glasswing 与 Claude Mythos Preview",
+      "title": "Anthropic 发起 Project Glasswing 软件安全计划，由其最新的尖端模型 Claude Mythos Preview 提供支持，旨在精准识别关键软件漏洞。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+      "text": "Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次",
+      "title": "软件界传奇人物 Martin Fowler 和 Kent Beck 探讨了 AI 如何重新定义软件工程，并强调 TDD 和模块化等核心实践对于人机协作依然至关重要。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/59c28b8d?entry=related_article",
+      "text": "在 Claude Code 中使用 Claude Opus 4.7 的最佳实践 | Claude",
+      "title": "这份来自 Anthropic 的官方指南详细介绍了如何在 Claude Code 中有效使用新的 Claude Opus 4.7 模型，涵盖了最佳会话结构、推荐的努力设置、自适应思考行为以及与 Opus 4.6 相比的关键行为变化。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/3b1c0638?entry=related_article",
+      "text": "Claude Opus 4.7 正式发布",
+      "title": "Anthropic 发布了 Claude Opus 4.7，这是对 Opus 4.6 的一次重大升级，在高级软件工程、视觉能力、指令遵循和自主长程推理方面有显著改进，同时实施了新的网络安全防护措施，并维持了相同的定价。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c31f1686?entry=related_article",
+      "text": "多智能体协作模式：五种架构及其适用场景 | Claude",
+      "title": "Anthropic 总结了五种核心的多智能体协作模式——生成-验证、编排-子智能体、智能体团队、消息总线和共享状态，并提供了一套决策框架，帮助开发者根据任务复杂度和上下文需求选择合适的架构。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文",
+      "title": "Anthropic 宣布推出 Claude Opus 4.6，具备更强的规划能力、优化的智能体表现，并开启了 1M token 上下文窗口的 Beta 测试。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Anthropic 为 Claude API 推出了“顾问工具”，实现了一种高性价比策略：由较小的模型（Sonnet/Haiku）执行任务，仅在需要高层指导时咨询大型模型（Opus）。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Claude, Anthropic, AI 智能体, LLM 编排, API 开发",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "顾问策略：利用 Opus 为 Sonnet 提升智能水平 | Claude | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Anthropic 为 Claude API 推出了“顾问工具”，实现了一种高性价比策略：由较小的模型（Sonnet/Haiku）执行任务，仅在需要高层指导时咨询大型模型（Opus）。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/6ebdeb6e",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/6ebdeb6e/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-08 16:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Claude Blog",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Claude",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Anthropic",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "LLM 编排",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "API 开发",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "顾问策略：利用 Opus 为 Sonnet 提升智能水平 | Claude | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Anthropic 为 Claude API 推出了“顾问工具”，实现了一种高性价比策略：由较小的模型（Sonnet/Haiku）执行任务，仅在需要高层指导时咨询大型模型（Opus）。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/6ebdeb6e/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "顾问策略：利用 Opus 为 Sonnet 提升智能水平 | Claude | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/6ebdeb6e"
+}

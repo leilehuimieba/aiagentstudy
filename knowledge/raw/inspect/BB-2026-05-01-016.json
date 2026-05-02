@@ -1,0 +1,81 @@
+﻿{
+  "articleText": "It is often said in engineering that \"cache rules everything around me\", and the same rule holds for agents.\n\nLong running agentic products like Claude Code are made feasible by prompt caching which allows us to reuse computation from previous roundtrips and significantly decrease latency and cost.\n\nAt Claude Code, we build our entire harness around prompt caching. A high prompt cache hit rate decreases costs and helps us create more generous rate limits for our subscription plans, so we run alerts on our prompt cache hit rate and declare SEVs if they're too low.\n\nThese are the (often unintuitive) lessons we've learned from optimizing prompt caching at scale.\n\nLay out your prompt for caching\nClaude Code's system prompt is organized so the stable pieces stay cached and only the conversation itself grows turn by turn.\n\nPrompt caching works by prefix matching—the API caches everything from the start of the request up to each cache_control breakpoint. This means the order you put things in",
+  "ids": [
+    "dx-sibebar-container",
+    "radix-_r_4_",
+    "radix-_r_0_",
+    "radix-_r_2_",
+    "main-content",
+    "bbArticleTitle",
+    "radix-_r_s_",
+    "bbArticleContent",
+    "_R_",
+    "el-popper-container-9872",
+    "immersive-translate-popup"
+  ],
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=154bc38a",
+      "text": "Claude Blog",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://claude.com/blog/lessons-from-building-claude-code-prompt-caching-is-everything",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/RLanceMartin/status/2024573404888911886",
+      "text": "prompt caching",
+      "title": ""
+    },
+    {
+      "href": "https://code.claude.com/docs/en/common-workflows",
+      "text": "Plan Mode",
+      "title": ""
+    },
+    {
+      "href": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool",
+      "text": "tool search tool",
+      "title": ""
+    },
+    {
+      "href": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool",
+      "text": "tool search tool",
+      "title": ""
+    },
+    {
+      "href": "https://platform.claude.com/docs/en/build-with-claude/compaction",
+      "text": "Compaction",
+      "title": ""
+    },
+    {
+      "href": "https://platform.claude.com/docs/en/build-with-claude/compaction#prompt-caching",
+      "text": "compaction",
+      "title": ""
+    },
+    {
+      "href": "https://code.claude.com/docs/en/overview",
+      "text": "Get started",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/34499204?entry=related_article",
+      "text": "使用 MCP 构建能够接入生产系统的智能体 | Claude",
+      "title": "这篇来自 Claude 博客的文章详细阐述了为什么 MCP（模型上下文协议）是将生产环境 AI 智能体连接到外部云系统的首选架构，对比了直接 API 调用和 CLI 的差异，并提供了构建高效 MCP 服务器和上下文优化客户端的具体设计模式。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    }
+  ],
+  "textLen": 10553,
+  "title": "构建 Claude Code 的经验教训：提示缓存至关重要 | Claude | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/68065f88"
+}

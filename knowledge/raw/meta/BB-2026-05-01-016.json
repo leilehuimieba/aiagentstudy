@@ -1,0 +1,147 @@
+﻿{
+  "metas": [
+    {
+      "content": "本文详细阐述了在优化 Claude Code 提示缓存过程中得出的关键且常反直觉的经验教训，强调围绕前缀匹配缓存来设计智能体的整体架构对于性能和成本至关重要。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "提示缓存, Claude Code, AI 智能体, LLM 优化, 成本优化",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "构建 Claude Code 的经验教训：提示缓存至关重要 | Claude | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "本文详细阐述了在优化 Claude Code 提示缓存过程中得出的关键且常反直觉的经验教训，强调围绕前缀匹配缓存来设计智能体的整体架构对于性能和成本至关重要。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/68065f88",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/68065f88/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-29 16:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Claude Blog",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "提示缓存",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Claude Code",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "LLM 优化",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "成本优化",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "构建 Claude Code 的经验教训：提示缓存至关重要 | Claude | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "本文详细阐述了在优化 Claude Code 提示缓存过程中得出的关键且常反直觉的经验教训，强调围绕前缀匹配缓存来设计智能体的整体架构对于性能和成本至关重要。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/68065f88/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "text": "跳转到主要内容\nBestBlogs\n搜索\nCtrl+K\n切换语言\n切换主题\nCH\n92\n⭐ 精选内容\nLessons from building Claude Code: Prompt caching is everything | Claude\n\n本文详细阐述了在优化 Claude Code 提示缓存过程中得出的关键且常反直觉的经验教训，强调围绕前缀匹配缓存来设计智能体的整体架构对于性能和成本至关重要。\n\n⭐ 推荐理由\n\n这篇文章最重要的贡献，是把 prompt caching 从一个 API 优化技巧提升为 agent 架构的第一性约束。Claude Code 团队用非常具体的经验说明，为什么 system prompt、工具集、会话分叉和 plan mode 的设计都必须围绕缓存命中率来反推，这对所有做长上下文、多轮智能体产品的人都极具现实价值。\n\n展开\nClaude Blog\n关注\n·\n04-29\n·\n1426 字 (约 6 分钟)\n·\n查看原文 →\nAI 摘要与要点\n摘要\n\n这篇来自 Claude 博客的文章解释了提示缓存如何成为使 Claude Code 这类长时间运行的智能体产品变得可行的基础技术。其核心原理是提示缓存基于前缀匹配运作，这意味着对请求开头的任何更改都会使整个缓存失效。作者分享了在规模化构建 Claude Code 过程中学到的几个关键且反直觉的经验教训。这些教训包括：将提示词结构设计为静态内容在前、动态内容在后；使用消息（如系统提醒）而非修改系统提示词来避免缓存未命中；在会话中途绝不更换模型或工具，因为这会导致缓存失效；以及围绕缓存约束来设计诸如“计划模式”等功能，即在请求中保留所有工具，并使用工具来模拟状态转换。文章还详细介绍了一种用于压缩（总结对话历史）的“缓存安全分叉”技术，该技术通过复用完全相同的系统提示词和工具定义来维持缓存命中。核心要点是，提示缓存并非事后才考虑的因素，而是一个应塑造整个智能体架构的首要设计约束。\n\n主要内容\n\n1. 提示缓存是前缀匹配；对前缀的任何更改都会使整个缓存失效。\n\nAPI 会缓存从请求开始到每个 cache_control 断点之前的所有内容。因此，内容的顺序至关重要。静态内容（系统提示词、工具）必须放在前面，动态内容（对话消息）放在最后，以最大化跨会话的共享缓存命中率。\n\n2. 使用消息进行更新，而不是修改系统提示词，以保留缓存。\n\n使用时间戳或文件更改等动态信息更新系统提示词会导致缓存未命中。更好的方法是通过下一条用户消息或工具结果中的系统提醒标签来传递这些信息，这样可以保持缓存前缀不变。\n\n3. 切勿在会话中途添加或删除工具；应使用工具来模拟状态转换。\n\n更改工具集会使整个对话的缓存失效。不要为不同模式（例如计划模式）更换工具，而应在请求中保留所有工具，并使用诸如 EnterPlanMode 之类的工具来改变智能体的行为。这可以保留缓存前缀，并允许智能体自主进入不同模式。\n\n4. 对于压缩等辅助计算，应使用具有相同前缀的“缓存安全分叉”。\n\n当需要总结对话以释放上下文时，使用不同的系统提示词进行单独的 API 调用将产生完整的、未缓存的输入成本。解决方案是复用完全相同的系统提示词、工具和对话历史，仅将压缩提示词作为新消息附加，以维持缓存命中。\n\nIt is often said in engineering that \"cache rules everything around me\", and the same rule holds for agents.\n\nLong running agentic products like Claude Code are made feasible by prompt caching which allows us to reuse computation from previous roundtrips and significantly decrease latency and cost.\n\nAt Claude Code, we build our entire harness around prompt caching. A high prompt cache hit rate decreases costs and helps us create more generous rate limits for our subscription plans, so we run alerts on our prompt cache hit rate and declare SEVs if they're too low.\n\nThese are the (often unintuitive) lessons we've learned from optimizing prompt caching at scale.\n\nLay out your prompt for caching\nClaude Code's system prompt is organized so the stable pieces stay cached and only the conversation itself grows turn by turn.\n\nPrompt caching works by prefix matching—the API caches everything from the start of the request up to each cache_control breakpoint. This means the order you put things in matters enormously, you want as many of your requests to share a prefix as possible.\n\nThe best way to do this is s",
+  "title": "构建 Claude Code 的经验教训：提示缓存至关重要 | Claude | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/68065f88"
+}

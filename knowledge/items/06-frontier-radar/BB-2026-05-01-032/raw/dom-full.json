@@ -1,0 +1,509 @@
+{
+  "content": "基本信息\n职位：AI 研究员、AI 教育者、连续创业者\n所属机构：Eureka Labs 创始人；前特斯拉 AI 高级总监；OpenAI 创始团队成员；Stanford 博士\nX / Twitter\nGitHub\n个人网站\n更多\n标志性贡献\nOpenAI 创始团队与 LLM 早期布道\n\nKarpathy 于 2015 年加入 OpenAI 创始团队担任研究科学家，参与了 GPT 系列前期研究方向的奠基工作，2017 年离开后仍在 GPT-2 / GPT-3 时代以技术写作和演讲持续解释“什么是 LLM、它为什么重要”。2023 年他短暂回到 OpenAI 负责中训练（midtraining）与合成数据相关团队，最终于 2024 年再次离开转向独立教育创作。即便他在 2025 年底也罕见地写下“我作为一名程序员从未感到如此落后”，把当下的范式跃迁称为行业“9 级地震”。在中文 AI 圈，他被反复称为“OpenAI 出来的 AK”，影响力很大程度来自“把研究讲给所有人听”的能力。\n\n特斯拉 Autopilot 视觉栈与端到端神经网络化\n\n2017–2022 年，Karpathy 担任特斯拉 AI 高级总监，主导从手工规则视觉管线向端到端神经网络的迁移，期间还短暂参与 Optimus 机器人项目。这段经历让他对“现实世界的边角案例”有强烈的直觉，也是他后来反复强调“演示 vs. 可靠产品的鸿沟”、“自主性滑块”等概念的来源。他在 2025 年试乘 HW4 上的 FSD v13 后公开称其为“近乎完美”的驾驶体验，并据此反思未来 AI 架构。\n\nEureka Labs 与 AI 原生学校\n\n2024 年 7 月，Karpathy 创立 Eureka Labs，定位为“AI 原生学校”——用专家课程加 AI 教学助手的“老师 + AI 共生”模式，第一门课 LLM101n 直接带学生从零训练自己的 LLM。这一方向延续了他在 Stanford 设计 CS231n 的教育习惯，也回应了他在多个长访谈中提出的“专家把 AI 教好，再让 AI 教所有人”的设想。他自己也持续示范如何用 LLM 当“个人知识库”——把材料拆成可复习的笔记本，让模型陪练。\n\nKarpathy 做客 No Priors（Sarah Guo & Elad Gil 主持），讲“每天 16 小时管理智能体团队”和 AutoResearch 实验。来源：No Priors Podcast, 2026-03-20。\n\n📺 完整访谈与中文摘要 · BestBlogs 站内\n\nnanochat / nanoGPT / minGPT / micrograd 教育性开源\n\nKarpathy 的 GitHub 长期被视为 LLM 入门教科书：micrograd 用几百行实现自动求导，nanoGPT 是“最小可用”的 GPT 训练框架，minGPT 把 GPT 解释成可阅读代码，2025 年发布的 nanochat 则把训练 GPT-2 级模型的成本压到 100 美元以内、最终在 1 月 31 日的版本里降到约 73 美元、仅需单台 8xH100 节点 3 小时。同年底，他还放出 llm-council——一个让多个前沿模型彼此匿名互评的 Web 应用——继续把“看模型怎么思考”变成可上手的工具。这些项目的共同点是：极简、可复刻、不靠工业级框架。\n\nSoftware 3.0 框架与上下文工程方法论\n\n在 2025 年 6 月 YC AI Startup School 的演讲《Software Is Changing (Again)》中，Karpathy 提出软件正从“代码 1.0、神经网络权重 2.0”迈向“以英语提示驱动 LLM 的 3.0”，并归纳了 LLM 的“锯齿状智能”“顺行性遗忘”等心理学。同期他在 X 上力挺“上下文工程”这一术语，强调精心填充上下文窗口比措辞技巧更接近真实工业实践。2026 年初他进一步用“文件优于应用”框架解释：未来软件更像是一组 AI 原生的传感器与执行器，由 LLM 按需编排出定制临时应用——这是 Software 3.0 的具体落地形态。这一系列框架成为 2025-2026 年 AI 行业讨论被引用最多的概念。\n\nKarpathy 在 YC AI Startup School 2025 演讲《Software Is Changing (Again)》，提出 Software 3.0 与 LLM 心理学的现场。来源：Y Combinator, 2025-06-17。\n\n📖 演讲深读（Latent Space 整理）· BestBlogs 站内\n\n核心观点\n2026-04-09在 X 上回应一组关于人类与 AI 能力差距的讨论\n\nKarpathy 指出，AI 能力的“认知鸿沟”正在扩大——不是模型与人类之间的鸿沟，而是“懂得用 AI 的人”与“不懂得用 AI 的人”之间的鸿沟。他强调真正决定生产力差异的是工程直觉和上下文构建能力，而非工具本身。\n\n2026-03-09对 nanochat 进行自主研究（autoresearch）实验后在 X 上汇报\n\nKarpathy 让一个智能体自主对 nanochat 进行调优，识别出 20 项可叠加的改进（QKnorm 缩放、AdamW 参数、权重衰减等），把“训练到 GPT-2 水平”的耗时从 2.02 小时压到 1.80 小时。他认为，这种“把人类从研究循环里逐步搬出去”的工作流，将是前沿实验室的“最终 Boss 战”。\n\n2026-02-19用一小时“氛围编程”做出有氧运动看板后，在 X 上发表的反思\n\nKarpathy 认为，独立、预构建的 App Store 模式正在过时：未来更像是一组 AI 原生的传感器与执行器，由 LLM 按需编排出“一次性的、定制的临时应用”。行业要从面向人类的 Web 界面转向“智能体原生”接口（API/CLI），界面本身要为 agent 重新设计。\n\n2025-12-202025 年 LLM 年度盘点（X 长串），由宝玉翻译为中文\n\nKarpathy 用六个范式转变总结 2025：可验证奖励的 RL 替代纯模仿、AI 智能像“召唤幽灵”一样参差不齐、LLM 应用层（Cursor 等）成为新软件范式、AI 走向本地化（如 Claude Code）、Vibe Coding 让代码变得廉价、未来大模型迎来“图形界面时代”。他强调 LLM 的潜力被挖掘得不到 10%，2025 既是“天才也是智障”。\n\n2025-10-17Dwarkesh Patel 长访谈：AGI 仍需十年\n\nKarpathy 反对“AGI 即将到来”的口号，认为 LLM 仍存在持续学习不足、多模态弱、计算机交互薄等关键缺陷。他用“用吸管吸取监督”形容当前的强化学习——奖励稀疏且噪声大，与人类细致反思的学习方式相差甚远。他还警告合成数据中的“模型坍塌”问题，并把 AGI 对经济的影响描述为渐进式融入 2% GDP 增长的过程。\n\n这条观点的原始来源——Dwarkesh Patel 长访谈，Karpathy 系统阐述 AGI 时间表与对 RL 的批评。来源：Dwarkesh Patel, 2025-10-17。\n\n📺 完整访谈与中文摘要 · BestBlogs 站内\n\n2025-06-25在 X 上回应 Tobi Lütke 提出的“上下文工程”一词\n\nKarpathy 力挺“上下文工程”代替“提示工程”：精心填充上下文窗口（任务描述、few-shot、RAG、多模态、工具、历史状态）才是工业实践的核心。他把整个工作描述为一门同时讲究艺术与科学的工程，远不止改写一句 prompt，并提醒大家“ChatGPT wrapper”这一称呼极度低估了真实工程量。\n\n代表作品\nSoftware Is Changing (Again) — YC AI Startup School 2025\ntalk\n\n2025 年 6 月在 YC AI Startup School 的主题演讲，提出软件 3.0、LLM 心理学和“自主性滑块”等被广泛引用的概念。\n\nnanochat\nproject\n\n全栈、极简的 LLM 训练 + 推理仓库，演示如何在 100 美元成本内训练出 GPT-2 级模型。\n\nnanoGPT\nproject\n\n“最简、最快”的中等规模 GPT 训练/微调实现，是 LLM 入门最常被引用的代码教科书。\n\nminGPT\nproject\n\n用极少的代码把 GPT 训练管线讲清楚，强调“可读、可复刻”而非性能。\n\nmicrograd\nproject\n\n用几百行 Python 实现自动求导引擎和迷你神经网络库，是“神经网络从零到一”课程的核心教具。\n\nllm.c\nproject\n\n用纯 C/CUDA 训练 LLM 的实验性仓库，去掉 PyTorch 等抽象，露出底层数学和算子调度。\n\nNeural Networks: Zero to Hero\ntalk\n\n面向所有人的神经网络与 LLM 系列课程，配合 micrograd / makemore / nanoGPT 一步步从零搭建。\n\n重要时间线\n2011-09-01\n\n在 Stanford 攻读博士，研究方向为卷积/循环神经网络，参与设计 CS 231n（Stanford 第一门深度学习课）。\n\n2015-12-01\n\n加入 OpenAI 创始团队担任研究科学家。\n\n2017-06-01\n\n出任特斯拉 AI 总监，主导 Autopilot 视觉栈神经网络化，并短暂参与 Optimus。\n\n2023-02-01\n\n回到 OpenAI，负责中训练（midtraining）与合成数据相关团队建设。\n\n2024-02-01\n\n再次离开 OpenAI，转向独立 AI 教育内容创作。\n\n2024-07-16\n\n宣布创立 Eureka Labs，定位“AI 原生学校”，首门课为 LLM101n。\n\n2025-06-17\n\n在 YC AI Startup School 发表《Software Is Changing (Again)》演讲，提出软件 3.0。\n\n2025-10-13\n\n发布 nanochat：全栈、极简的 LLM 训练 + 推理流水线。\n\n2025-10-17\n\n做客 Dwarkesh Patel 长访谈，主张 AGI 仍需约十年。\n\n2025-12-20\n\n发布 2025 年 LLM 年度盘点，归纳六大范式转变。\n\n2026-01-31\n\n宣布 nanochat 进一步降本到约 73 美元、单节点 3 小时即可训练出 GPT-2 级模型。\n\n2026-03-20\n\n做客 No Priors 播客，详谈代码智能体、AutoResearch 与 AI 循环时代。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/explore/topics/andrej-karpathy-profile#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "内容广场",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "每日早报",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "精选周刊",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "内容来源",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/karpathy",
+      "text": "X / Twitter",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/karpathy",
+      "text": "GitHub",
+      "title": ""
+    },
+    {
+      "href": "https://karpathy.ai/",
+      "text": "个人网站",
+      "title": ""
+    },
+    {
+      "href": "https://karpathy.bearblog.dev/",
+      "text": "更多",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/1369401",
+      "text": "完整访谈与中文摘要 · BestBlogs 站内",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c3b1e5",
+      "text": "演讲深读（Latent Space 整理）· BestBlogs 站内",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/5c0b4f4",
+      "text": "完整访谈与中文摘要 · BestBlogs 站内",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=LCEmiRjPEtQ",
+      "text": "Software Is Changing (Again) — YC AI Startup School 2025",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/karpathy/nanochat",
+      "text": "nanochat",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/karpathy/nanoGPT",
+      "text": "nanoGPT",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/karpathy/minGPT",
+      "text": "minGPT",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/karpathy/micrograd",
+      "text": "micrograd",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/karpathy/llm.c",
+      "text": "llm.c",
+      "title": ""
+    },
+    {
+      "href": "https://karpathy.ai/zero-to-hero.html",
+      "text": "Neural Networks: Zero to Hero",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c3b1e5",
+      "text": "Andrej Karpathy on Software 3.0: Software in the Age of AI\nShawn swyx Wang\n· 2025-06-17\n\nLatent Space 整理的 Software 3.0 演讲深度解读，含 LLM 心理学、自主性滑块等关键概念。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/5c0b4f4",
+      "text": "Andrej Karpathy — AGI is still a decade away\nDwarkesh Patel\n· 2025-10-17\n\nDwarkesh Patel 长访谈：Karpathy 系统阐述 AGI 仍需十年的判断，以及 RL、合成数据的真实问题。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/1369401",
+      "text": "Andrej Karpathy on Code Agents， AutoResearch， and the Loopy Era of AI\nNo Priors: AI, Machine Learning, Tech, & Startups\n· 2026-03-20\n\nNo Priors 播客：他每天 16 小时管理智能体团队、AutoResearch 实验和软件工程范式变化。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/1937902205765607626",
+      "text": "Andrej Karpathy Champions \"Context Engineering\" as the Core of Industrial LLM Applications\nAndrej Karpathy\n· 2025-06-25\n\nKarpathy 力挺“上下文工程”的原始推文，是他工程方法论的代表性表述。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2024583544157458452",
+      "text": "Very interested in what the coming era of highly b\nAndrej Karpathy\n· 2026-02-19\n\n“应用商店时代终结”：他用一小时氛围编程后的反思，预言定制化 AI 生成软件取代独立 App。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2017703360393318587",
+      "text": "nanochat can now train GPT-2 grade LLM for <<$100\nAndrej Karpathy\n· 2026-01-31\n\nnanochat 把 GPT-2 级模型训练成本压到约 73 美元的官方公告。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2031135152349524125",
+      "text": "Three days ago I left autoresearch tuning nanochat\nAndrej Karpathy\n· 2026-03-09\n\nautoresearch 实验：智能体自动给 nanochat 找出 20 项可叠加优化，预示前沿实验室的“最终 Boss 战”。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/21d6d37f",
+      "text": "The 80% Problem in Agentic Coding\nAddy Osmani\n· 2026-01-28\n\nAddy Osmani 借 Karpathy 提出的“80% 问题”，讨论 AI 编程带来的“理解债”与评审瓶颈。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c5df0b",
+      "text": "Karpathy 力荐必读博客：代码功底，决定 AI「开挂」倍数！\n新智元\n· 2025-07-06\n\n新智元综述 Karpathy 推荐的“工程功底放大 AI 倍数”博客，是中文圈对其方法论的代表性复述。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/8058f841",
+      "text": "Andrej Karpathy：2025 年度盘点\n赛博禅心\n· 2025-12-20\n\n赛博禅心整理的 Karpathy 2025 年度盘点中文版：六大范式转变 + LLM 潜力仅挖掘不到 10%。",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c3b1e5",
+      "text": "Andrej Karpathy on Software 3.0: Software in the Age of AI",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/1937902205765607626",
+      "text": "Andrej Karpathy Champions \"Context Engineering\" as the Core of Industrial LLM Applications",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/5c0b4f4",
+      "text": "Andrej Karpathy — AGI is still a decade away",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2017703360393318587",
+      "text": "nanochat can now train GPT-2 grade LLM for <<$100",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/1369401",
+      "text": "Andrej Karpathy on Code Agents， AutoResearch， and the Loopy Era of AI",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2031135152349524125",
+      "text": "Three days ago I left autoresearch tuning nanochat",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2024583544157458452",
+      "text": "Very interested in what the coming era of highly b",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2021694437152157847",
+      "text": "New art project. Train and inference GPT in 243 l",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/21d6d37f",
+      "text": "The 80% Problem in Agentic Coding",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c5df0b",
+      "text": "Karpathy 力荐必读博客：代码功底，决定 AI「开挂」倍数！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/1977755427569111362",
+      "text": "Andrej Karpathy Releases nanochat: A Full-Stack, Minimal LLM Training/Inference Pipeline",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/1992381094667411768",
+      "text": "Andrej Karpathy Introduces 'LLM Council' for Multi-Model Evaluation and Ensembles",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/1988705360723763242",
+      "text": "Andrej Karpathy Hails Tesla FSD v13 on HW4 as 'Flawless Drive,' Reflects on AI Architecture",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2004607146781278521",
+      "text": "I've never felt this much behind as a programmer.",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2042334451611693415",
+      "text": "Judging by my tl there is a growing gap in underst",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2040572272944324650",
+      "text": "Farzapedia， personal wikipedia of Farza， good exam",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2039805659525644595",
+      "text": "LLM Knowledge Bases Something I'm finding very us",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2002288466772824569",
+      "text": "Andrej Karpathy 是 OpenAI 联合创始人、前特斯拉 AI 总监，也是全球最有影响",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/8e68f03d",
+      "text": "Karpathy 回应争议：RL 不是真的不行，Agent 还需要十年的预测其实很乐观",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/bab6979b",
+      "text": "4 万字全文: Andrej Karpathy 最新深度解析人工智能的真实边界与未来: 智能体十年征途 | 总结+视频",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Andrej Karpathy 是中文 AI 圈最被反复转述的研究者：OpenAI 创始团队成员、特斯拉 Autopilot 视觉栈负责人、Eureka Labs 创始人。这份画像汇总他在 2025-2026 年最有代表性的判断——软件 3.0、AGI 仍需十年、上下文工程、应用商店终结、自主研究循环——以及与之...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "ai-coding, ai-agent, harness-engineering, llm, domain-ai",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "一文读懂 Andrej Karpathy：从 OpenAI 到 Software 3.0 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Andrej Karpathy 是中文 AI 圈最被反复转述的研究者：OpenAI 创始团队成员、特斯拉 Autopilot 视觉栈负责人、Eureka Labs 创始人。这份画像汇总他在 2025-2026 年最有代表性的判断——软件 3.0、AGI 仍需十年、上下文工程、应用商店终结、自主研究循环——以及与之...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/explore/topics/andrej-karpathy-profile",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/explore/topics/andrej-karpathy-profile/opengraph-image?93bc0944c4cadf0e",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-29T05:18:03Z",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "2026-04-29T06:12:53Z",
+      "name": null,
+      "property": "article:modified_time"
+    },
+    {
+      "content": "ai-coding",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ai-agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "harness-engineering",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "llm",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "domain-ai",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "一文读懂 Andrej Karpathy：从 OpenAI 到 Software 3.0 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Andrej Karpathy 是中文 AI 圈最被反复转述的研究者：OpenAI 创始团队成员、特斯拉 Autopilot 视觉栈负责人、Eureka Labs 创始人。这份画像汇总他在 2025-2026 年最有代表性的判断——软件 3.0、AGI 仍需十年、上下文工程、应用商店终结、自主研究循环——以及与之...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://i.ytimg.com/vi/LCEmiRjPEtQ/maxresdefault.jpg",
+      "name": "twitter:image",
+      "property": null
+    }
+  ],
+  "title": "一文读懂 Andrej Karpathy：从 OpenAI 到 Software 3.0 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/explore/topics/andrej-karpathy-profile"
+}

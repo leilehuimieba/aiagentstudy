@@ -1,0 +1,659 @@
+{
+  "content": "1\nGemma 4：同等规模下最强大的开源模型\nGoogle DeepMind Blog\ndeepmind.google\n04-02\n1258 字 · 约 6 分钟\n93\n\nGoogle 发布了迄今最智能的开放模型 Gemma 4，主打高级推理与 Agent 工作流。该系列涵盖从 E2B 到 31B Dense 四种规格，其中 31B 版本在 Arena AI 榜单名列前茅，性能足以跨量级挑战巨型模型。Gemma 4 原生支持多模态输入、函数调用及最高 256K 上下文处理。最关键的突破在于 Google 将授权协议转为 Apache 2.0，大幅提升了开发者在本地部署、定制微调及商业化应用中的自由度与数字主权。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#3ff37d3c",
+      "text": "1\nGemma 4：同等规模下最强大的开源模型",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#a3553eb1",
+      "text": "2\nQwen3.6-Plus：编码智能体能力全面跃升！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#96033a81",
+      "text": "3\nWan2.7-Image：人更真，字更稳，色更准",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#36cd75e9",
+      "text": "4\nGLM-5V-Turbo 发布：多模态 Coding 基座模型",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#e5afa665",
+      "text": "5\n开源模型已跨越临界点",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#63cbae4c",
+      "text": "6\n遇见全新的 Cursor · Cursor",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#cc81d05",
+      "text": "7\nAI 现状综述：我们已跨越拐点，「暗工厂」时代即将来临",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#97b7a7a2",
+      "text": "8\nClaude Code 架构深度拆解：最强 AI Coding Agent 的工程实现全貌",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#66d6464a",
+      "text": "9\n认知重建之后，步入 Agentic Engineering 的工程革命",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#1b54037f",
+      "text": "10\n97.9%采纳率，胶水编程：业务需求出码最佳实践【天猫 AI Coding 实践系列】",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#1caa5015",
+      "text": "11\n面向编程智能体用户的“约束工程”",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#5b7ab5d5",
+      "text": "12\n一文读懂 Harness Engineering：从 14 篇工程文章中，寻找那个让 AI 不再离经叛道的壳｜Hao 好聊趋势",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#38b7136f",
+      "text": "13\n面向 AI 智能体的 Qdrant Skills",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#2aa7833e",
+      "text": "14\n宣布 ADK for Java 1.0.0 发布：构建 Java AI 智能体的未来",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#782f4d8",
+      "text": "15\n「我们不再亲手写代码了。那个时代已经结束。」| Owen Jennings & David Haber - a16z 播客",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#61ecfe69",
+      "text": "16\nKimi 杨植麟「2026 中关村论坛」演讲全文（附视频）",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#5f6e799",
+      "text": "17\n134. 和谢晨聊「数据的综述」：AI 和机器人数据的历史、版图、金字塔与 Recipe",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#5ed009b",
+      "text": "18\n从质疑者到忠实信徒：OpenClaw 如何改变了我的生活 | Claire Vo",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#a31eadc",
+      "text": "19\nVol.110｜养虾时代，OpenClaw 让打工人何去何从？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue89#b1f1ecb",
+      "text": "20\n“人类证明” (Proof of Human) 如何改变社交媒体 | Alex Blania 做客 The a16z Show",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/3ff37d3c?entry=newsletter_page",
+      "text": "Gemma 4：同等规模下最强大的开源模型",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_cca1dc",
+      "text": "Google DeepMind Blog",
+      "title": ""
+    },
+    {
+      "href": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+      "text": "deepmind.google",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a3553eb1?entry=newsletter_page",
+      "text": "Qwen3.6-Plus：编码智能体能力全面跃升！",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_2ce88a",
+      "text": "通义大模型",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500357&idx=1&sn=f6d41ed4be344ad97f5047d0c1f93975",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/96033a81?entry=newsletter_page",
+      "text": "Wan2.7-Image：人更真，字更稳，色更准",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_2ce88a",
+      "text": "通义大模型",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/36cd75e9?entry=newsletter_page",
+      "text": "GLM-5V-Turbo 发布：多模态 Coding 基座模型",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_5eaf43",
+      "text": "智谱",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493656&idx=1&sn=50d142575a83e943d71a5c6d720394b4",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e5afa665?entry=newsletter_page",
+      "text": "开源模型已跨越临界点",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_88bf28",
+      "text": "LangChain Blog",
+      "title": ""
+    },
+    {
+      "href": "https://blog.langchain.com/open-models-have-crossed-a-threshold/",
+      "text": "blog.langchain.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/63cbae4c?entry=newsletter_page",
+      "text": "遇见全新的 Cursor · Cursor",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_a88d43f5",
+      "text": "Cursor Blog",
+      "title": ""
+    },
+    {
+      "href": "https://cursor.com/blog/cursor-3",
+      "text": "cursor.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/cc81d05?entry=newsletter_page",
+      "text": "AI 现状综述：我们已跨越拐点，「暗工厂」时代即将来临",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8e0b51",
+      "text": "Lenny's Podcast",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=wc8FBhQtdsA",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/97b7a7a2?entry=newsletter_page",
+      "text": "Claude Code 架构深度拆解：最强 AI Coding Agent 的工程实现全貌",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_82d462",
+      "text": "掘金本周最热",
+      "title": ""
+    },
+    {
+      "href": "https://juejin.cn/post/7623242804392902665",
+      "text": "juejin.cn",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/66d6464a?entry=newsletter_page",
+      "text": "认知重建之后，步入 Agentic Engineering 的工程革命",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_958ae8",
+      "text": "腾讯技术工程",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801026&idx=1&sn=3e12f0888b3c232ed7218caf90df5f0a",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1b54037f?entry=newsletter_page",
+      "text": "97.9%采纳率，胶水编程：业务需求出码最佳实践【天猫 AI Coding 实践系列】",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_efc2de",
+      "text": "大淘宝技术",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543098&idx=1&sn=21c29349570283e6a2d2e676542b3203",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1caa5015?entry=newsletter_page",
+      "text": "面向编程智能体用户的“约束工程”",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_913551",
+      "text": "Martin Fowler",
+      "title": ""
+    },
+    {
+      "href": "https://martinfowler.com/articles/harness-engineering.html",
+      "text": "martinfowler.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/5b7ab5d5?entry=newsletter_page",
+      "text": "一文读懂 Harness Engineering：从 14 篇工程文章中，寻找那个让 AI 不再离经叛道的壳｜Hao 好聊趋势",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_b475c7",
+      "text": "腾讯科技",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566633&idx=1&sn=e8c2ba401e2a6f4fee1f8583159f5ecd",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/38b7136f?entry=newsletter_page",
+      "text": "面向 AI 智能体的 Qdrant Skills",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_a88b15",
+      "text": "Qdrant",
+      "title": ""
+    },
+    {
+      "href": "https://qdrant.tech/blog/qdrant-skills-release/",
+      "text": "qdrant.tech",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/2aa7833e?entry=newsletter_page",
+      "text": "宣布 ADK for Java 1.0.0 发布：构建 Java AI 智能体的未来",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_059894",
+      "text": "Google Developers Blog",
+      "title": ""
+    },
+    {
+      "href": "https://developers.googleblog.com/announcing-adk-for-java-100-building-the-future-of-ai-agents-in-java/",
+      "text": "developers.googleblog.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/782f4d8?entry=newsletter_page",
+      "text": "「我们不再亲手写代码了。那个时代已经结束。」| Owen Jennings & David Haber - a16z 播客",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_ccbcf7",
+      "text": "a16z",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=krdrkl38nRw",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/61ecfe69?entry=newsletter_page",
+      "text": "Kimi 杨植麟「2026 中关村论坛」演讲全文（附视频）",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_7cdc83",
+      "text": "月之暗面 Kimi",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/5f6e799?entry=newsletter_page",
+      "text": "134. 和谢晨聊「数据的综述」：AI 和机器人数据的历史、版图、金字塔与 Recipe",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_31d080",
+      "text": "张小珺Jùn｜商业访谈录",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69c953b4b977fb2c478df5c3",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/5ed009b?entry=newsletter_page",
+      "text": "从质疑者到忠实信徒：OpenClaw 如何改变了我的生活 | Claire Vo",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8e0b51",
+      "text": "Lenny's Podcast",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=DIa0MYJzM5I",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/a31eadc?entry=newsletter_page",
+      "text": "Vol.110｜养虾时代，OpenClaw 让打工人何去何从？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_caaee8",
+      "text": "开始连接LinkStart",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69ca3e32b977fb2c47a0457d",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/b1f1ecb?entry=newsletter_page",
+      "text": "“人类证明” (Proof of Human) 如何改变社交媒体 | Alex Blania 做客 The a16z Show",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_ccbcf7",
+      "text": "a16z",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=0_NGsljlo3o",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 89 期 AI 精选文章推荐。\n\n本周的关键词是**智能体工程化**。腾讯团队从一个 AGENTS.md 文件出发，逐步演进出包含 22 个智能体和 27 个技能的完整工程体系；Thoughtworks 的 Birgitta Böckeler 在 Martin F...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "bestblogs, AI 阅读，个性化阅读，高质量内容，每日早报，技术阅读，内容发现，AI 初评，专家精审，阅读工作流",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 89 期：智能体工程化 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 89 期 AI 精选文章推荐。\n\n本周的关键词是**智能体工程化**。腾讯团队从一个 AGENTS.md 文件出发，逐步演进出包含 22 个智能体和 27 个技能的完整工程体系；Thoughtworks 的 Birgitta Böckeler 在 Martin F...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/newsletter/issue89",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue89/opengraph-image?5b2ed8584a9655d4",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "04-03",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 89 期：智能体工程化 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 89 期 AI 精选文章推荐。\n\n本周的关键词是**智能体工程化**。腾讯团队从一个 AGENTS.md 文件出发，逐步演进出包含 22 个智能体和 27 个技能的完整工程体系；Thoughtworks 的 Birgitta Böckeler 在 Martin F...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue89/twitter-image?43c24b48d6d9249c",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "BestBlogs.dev 第 89 期：智能体工程化 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/newsletter/issue89"
+}

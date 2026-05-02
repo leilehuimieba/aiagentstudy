@@ -1,0 +1,121 @@
+﻿{
+  "articleText": "关注腾讯云开发者，一手技术干货提前解锁👇\n\n这一年“RAG 已死”的说法甚嚣尘上，比如《长上下文窗口、Agent 崛起，RAG 已死？》、《The RAG Obituary: Killed by Agents》。而像 Claude Code、Codex 这类新一代 Agent CLI 也纷纷放弃了 embedding，官方直接承认：不建索引、不用向量库，靠 LLM 驱动 Grep 就够用。RAG 真的不适合现在的 Agent 了吗？围绕这个问题，我们展开了深入调研，同时对Claude Code 等前沿解决方案的源码进行了拆解，最终形成本文力求回答 RAG 在 Agent 时代是否还有一席之地这一核心关切点。\n\n01\n\n从Claude Code 的 Grep 说起\n\nClaude Code 的创建者 Boris Cherny 在多个公开场合提到过这个让很多人意外的事实：Claude Code 不用 RAG，不用 embedding，不建索引。 核心搜索靠 LLM 驱动 Grep （Grep 是 Unix 下的文本搜索工具，给一个正则表达式，它就在文件里逐行找匹配）。\n\n在 X/Twitter 上，他说得很直接：\n\n“Early versions of Claude Code used RAG + a local vector db, but we found pretty quickly that agentic search generally works better. (早期版本的 Claude 代码使用了 RAG 加上本地向量数据库，但我们很快发现，智能体式的搜索通常效果更好)”\n\n在 Pragmatic Engineer 的采访中更进一步：\n\n“Plain glob and grep, driven by the model, beat everything. (由模型驱动的 glob 和 grep 击败了一切)”\n\nAnthropic 官方的 Context Engineering 博客也确认了这一架构：Claude Code 使用 Grep 和 Glob 将代码动态加载到 context 中。这个选择不是拍脑袋做的，Boris 在 Pragmatic Engineer 的采访 中提到，他在 Meta 时观察到 Instagram 工程师在 IDE 的 ",
+  "ids": [
+    "dx-sibebar-container",
+    "radix-_r_4_",
+    "radix-_r_0_",
+    "radix-_r_2_",
+    "main-content",
+    "bbArticleTitle",
+    "radix-_r_s_",
+    "bbArticleContent",
+    "_R_",
+    "el-popper-container-9262",
+    "immersive-translate-popup"
+  ],
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=efac5b",
+      "text": "腾讯云开发者",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695473&idx=1&sn=517ef2bad8a85f2f31c1ef309c1eae76",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/bcherny/status/2017824286489383315",
+      "text": "https://x.com/bcherny/status/2017824286489383315",
+      "title": ""
+    },
+    {
+      "href": "https://www.latent.space/p/claude-code",
+      "text": "https://www.latent.space/p/claude-code",
+      "title": ""
+    },
+    {
+      "href": "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny",
+      "text": "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/podcast/transcript-how-to-use-claude-code-like-the-people-who-built-it",
+      "text": "https://every.to/podcast/transcript-how-to-use-claude-code-like-the-people-who-built-it",
+      "title": ""
+    },
+    {
+      "href": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "text": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "title": ""
+    },
+    {
+      "href": "https://news.ycombinator.com/item?id=43164253",
+      "text": "https://news.ycombinator.com/item?id=43164253",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2601.23254",
+      "text": "https://arxiv.org/abs/2601.23254",
+      "title": ""
+    },
+    {
+      "href": "https://vadim.blog/claude-code-no-indexing",
+      "text": "https://vadim.blog/claude-code-no-indexing",
+      "title": ""
+    },
+    {
+      "href": "https://zhuanlan.zhihu.com/p/1993974927498433157",
+      "text": "https://zhuanlan.zhihu.com/p/1993974927498433157",
+      "title": ""
+    },
+    {
+      "href": "https://milvus.io/zh/blog/why-im-against-claude-codes-grep-only-retrieval-it-just-burns-too-many-tokens.md",
+      "text": "https://milvus.io/zh/blog/why-im-against-claude-codes-grep-only-retrieval-it-just-burns-too-many-tokens.md",
+      "title": ""
+    },
+    {
+      "href": "https://dev.to/sagarmk/how-i-built-a-claude-code-plugin-that-intercepts-grep-and-replaces-it-with-semantic-search-500h",
+      "text": "https://dev.to/sagarmk/how-i-built-a-claude-code-plugin-that-intercepts-grep-and-replaces-it-with-semantic-search-500h",
+      "title": ""
+    },
+    {
+      "href": "https://read.engineerscodex.com/p/how-cursor-indexes-codebases-fast",
+      "text": "https://read.engineerscodex.com/p/how-cursor-indexes-codebases-fast",
+      "title": ""
+    },
+    {
+      "href": "https://turbopuffer.com/customers/cursor",
+      "text": "https://turbopuffer.com/customers/cursor",
+      "title": ""
+    },
+    {
+      "href": "https://developers.openai.com/cookbook/examples/gpt-5/codex_prompting_guide",
+      "text": "https://developers.openai.com/cookbook/examples/gpt-5/codex_prompting_guide",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/unrolling-the-codex-agent-loop/",
+      "text": "https://openai.com/index/unrolling-the-codex-agent-loop/",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/openai/codex/issues/609",
+      "text": "https://github.com/openai/codex/issues/609",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    }
+  ],
+  "textLen": 22791,
+  "title": "RAG 已死？不，是 Grep 回归了！ | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/409d9979"
+}

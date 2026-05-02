@@ -1,0 +1,344 @@
+{
+  "content": "M2 系列模型正以行业最快速度迭代。今天，我们介绍 MiniMax M2.5：\n\nM2.5 在编程、工具调用和搜索、办公等生产力场景都达到或者刷新了行业的 SOTA，比如 SWE-Bench Verified (80.2%)，Multi-SWE-Bench (51.3%)，BrowseComp (76.3%)；\n\nM2.5 优化了模型对复杂任务的拆解能力和思考过程中 token 的消耗，使其能更快地完成复杂的 Agentic 任务。在 SWE-Bench Verified 的测试中，M2.5 比上一个版本 M2.1 完成任务的速度快了 37%；\n\nM2.5 让无限运行复杂 Agent 在经济上可行。在每秒输出 100 token 的情况下，M2.5 连续工作一小时只需花费 1 美金；而在每秒输出 50 个 token 的情况下，只需要 0.3 美金。\n\nMiniMax 内部已率先受益于 M2.5 的模型能力。在 MiniMax 内部真实业务场景中，整体任务的 30% 由 M2.5 自主完成，覆盖研发、产品、销售、HR、财务等职能，且渗透率仍在持续上升。其中，在编程场景表现尤为突出，M2.5 生成的代码已占新提交代码的 80%。\n\n我们期待 M2.5 能够加速全民 Agent 时代的到来。\n\n编程：\n\n像架构师一样思考和构建\n\n在编程的核心测试中，M2.5 相比于上一代模型有了显著提升，达到了跟 Claude Opus 系列类似的水平。在多语言相关的任务 Multi-SWE-Bench 上，M2.5 更是达到了第一。\n\nM2.5 具备了「像架构师一样思考和构建」的能力，比如模型演化出了原生 Spec 行为：在动手写代码前，以架构师视角主动拆解功能、结构和 UI 设计，实现完整的前期规划。\n\nM2.5 在超过 10 种语言（包括 GO、C、C++、TS、Rust、Kotlin、Python、Java、JS、PHP、Lua、Dart、Ruby）和数十万个真实环境中进行了训练。不仅限于 bug fixed 类场景，复杂系统的从 0-1 系统设计、环境构建，从 1-10 的系统开发，从 10-90 的功能迭代，从 90-100 的完备 code review 与系统测试，M2.5 都有可靠的表现，能够胜任各类复杂系统开发的全流程。覆盖 Web、Android、iOS、Windows、Mac 等多平台的全栈项目，包含 Server 端 API、功能逻辑、DataBase 等，而不仅仅是“前端网页 demo”。\n\n为了衡量相关能力，我们也将 VIBE 基准升级为了更复杂、更具挑战性的 Pro 版：显著提升了任务复杂度、领域覆盖度和评估准确度。综合来看，M2.5 与 Opus4.5 表现相当。\n\n我们关注了模型在不同脚手架上的泛化性。我们在不同的编程脚手架上测试了 SWE-Bench Verified 评测集上的表现。 在 Droid 上，M2.5 的通过率为 79.7，超过了 M2.1 的 71.3 分以及 Opus 4.6 的 78.9 分；在 OpenCode 上，M2.5 的通过率为 76.1， 超过了 M2.1 的 72.0 分和 Opus 4.6 的 75.9 分。\n\n搜索和工具调用：\n\n更高效地解决问题\n\n搜索和工具调用是模型能够自动处理复杂任务的前提，在 BrowseComp、Wide Search 等榜单的评测中，M2.5 在这些方面也达到了行业顶尖的水平。同时，模型的泛化能力也有提升。M2.5 在面对陌生的脚手架环境时，具有更加稳定的表现。\n\n在人类专家真实的搜索任务中，使用搜索引擎只是一小部分，更多的是在专业网页内进行深度探索。为此我们构建了 RISE（Realistic Interactive Search Evaluation），用于衡量模型在真实专业任务上的搜索能力。结果表明 M2.5 在真实世界的专家级搜索任务上表现卓越。\n\n相比于前代模型，M2.5 在处理复杂任务时也展现出了更高的决策成熟度：它学会了用更精准的搜索轮次和更优的 token 效率去解决问题。例如，在 BrowseComp、Wide Search 和 RISE 多项任务中，M2.5 以更低的轮次消耗取得了更优的效果，相较于 M2.1 节省了大约 20% 的轮次消耗。这表明模型不再只是“做对”题目，而是能以更精简的路径逼近结果。\n\n办公场景：\n\n直接交付专业产出\n\n我们考虑了在办公场景中，如何给出真正可交付的产物。为此，我们与金融、法律、社会科学等领域的资深从业者展开深度合作，由他们提出需求、反馈问题、参与标准定义，并直接构建数据，将行业的隐性知识带入到模型的训练流程之中。在此基础上，M2.5 在 Word、PPT、Excel 金融建模等办公高阶场景中取得了显著的能力提升。在评测层面，我们构建了内部的 Cowork Agent 评测框架（GDPval-MM），以两两对比的方式评估模型的交付质量和轨迹的专业性，同时监控全流程的 token 费用，估算模型在生产力场景中的实际效益。在与主流模型的对比中，它取得了 59.0% 的平均胜率。\n\n复杂任务快速推理\n\n我们总是希望 Agent 完成复杂任务的时间尽可能少。这取决于模型拆解复杂任务的能力、模型的 token 效率，以及模型的推理速度。我们的模型本来就提供 100 TPS 的推理速度，这几乎两倍于现在的主流模型。同时，我们在强化学习中注重优化了模型对复杂任务的拆解能力和思考过程的 token 消耗。这三个环节加在一起，使得 M2.5 在完成复杂任务的时间和成本上有显著的优势。\n\n例如，在运行 SWE-Bench Verified 评测集时，M2.5 平均在每个任务上消耗了 3.52M 的 token。相比之下，M2.1 会消耗 3.72M tokens。同时，由于在并行工具调用等能力上的提升，端到端运行从平均 31.3 分钟减少到了 22.8 分钟，速度提升了 37%。这一耗时情况与 Claude Opus 4.6 的 22.9 分钟基本持平。\n\n连续运行无成本负担\n\n我们设计 M2 系列的初衷是希望能没有成本约束的情况下运行复杂 Agents，随着我们能力的持续提升，我们认为 M2.5 已经接近实现了这个目标。M2.5 提供两个效果一样，但是速度和价格不一样的版本：速度 100 TPS 左右的快速版本，处理每百万的 token 输入只需要 0.3 美金，处理每百万的 token 输出只需要 2.4 美金。而 50 TPS 的版本的输出价格还更低一倍。按照输出价格参考，50 TPS 的版本价格是 Opus、Gemini 3 Pro 以及 GPT5 这些模型的 1/10-1/20。\n\n在以每秒输出 100 个 token 的情况下，连续工作一小时只需要 1 美金，而在每秒输出 50 个 token 的情况下，只需要 0.3 美金。也就是说，1 万美金可以让 4 个 Agent 连续工作一年。M2.5 提供了经济上几乎无限制地构建和运营 Agent 的可能性。对于 M2 系列的模型来说，唯一的问题变成了模型能力的进步速度。\n\n行业最快的进步速度\n\n在过去 108 天里面，我们陆续更新了 M2、M2.1 和 M2.5，模型的进步速度超过了我们原本的预期。比如在编程领域最具代表性的 SWE-Bench Verfied 上面，相比 Claude、GPT 和 Gemini 等模型系列的进步速度，M2 系列模型保持了行业最快的进步速度。\n\n原生 Agent RL 框架\n\n我们认为取得上述进展的核心原因是大规模的强化学习。它显著地提升了模型能力以及对脚手架、环境的泛化性。通过 Agent RL 框架、算法和 Reward 设计、工程优化的 co-design， 我们支持了对任意 Agent 脚手架与环境的高效优化，我们在包括大量公司内部真实任务的数十万个 Agent 脚手架与环境上大规模训练，验证了模型能力随算力和任务数的 scaling 取得近线性提升。\n\nForge - 原生 Agent RL 框架：\n\nForge 作为一个原生 Agent RL 框架，在设计上通过引入中间层完全解耦了底层训推引擎与 Agent，支持任意 Agent 的接入，使得我们可以优化模型在 Agent 脚手架和工具上的泛化。为了提升系统吞吐，我们优化了异步调度策略来平衡系统吞吐和样本的 off-policyness ，并设计了树状合并训练样本的训练策略，实现了约 40 倍的训练加速。\n\nAgent RL 算法与 Reward 设计：\n\n算法层面，我们沿用了我们年初提出的 CISPO 算法以保障 MoE 模型在大规模训练中的稳定性。针对 Agent 场景长上下文带来的信用分配（Credit Assignment）难题，我们引入了过程奖励机制（Process Reward）对完成质量进行全链路监控。此外，为深度对齐用户体验，我们直接估计任务在真实环境下的耗时并作为 Reward，在模型效果与响应速度之间实现了更好的平衡。\n\n关于 RL 的 scaling 和 Agent RL 框架 Forge 的更多信息，我们会在后续的技术博客中给出。\n\n最佳 Agentic 体验\n\nM2.5 已经在 MiniMax Agent 中全面上线，带来最佳 Agentic 体验。\n\n我们将处理信息的核心能力，提炼为标准的 Office Skills，深度集成于 Agent 中。全能（MAX）模式下，处理 Word 排版、PPT 编辑、Excel 测算等任务时，MiniMax Agent 将自动根据文件类型加载对应的 Office Skills，提升任务输出质量。此外，用户还可以将 Office Skills 与特定领域的行业经验相结合，创建面向特定任务场景的、可复用的专家（Expert）。\n\n以行业研究为例，将成熟的研究框架 SOP 与 Word Skills 融合后，Agent 能够严格按照既定框架，自动抓取数据、组织分析逻辑，并输出格式规范的研报文档，而非仅仅生成一段粗略的文字。在金融建模场景中，将机构专属的建模规范与 Excel Skills 结合，Agent 则可以遵循特定的风控逻辑与测算标准，自动生成并校验复杂的财务模型，而不只是输出一张简单的表格。\n\n截至目前，用户已经在 MiniMax Agent 上构建了 1 万多个专家，且仍在快速增长。MiniMax 也针对办公、金融、编程等高频场景，在 MiniMax Agent 上构建了多组深度优化、开箱即用的专家套组。\n\nM2.5 已在 MiniMax 全线产品全量上线：\n\nMiniMax Agent: agent.minimaxi.com\n\nM2.5 API 接入: platform.minimaxi.com/docs/guides/text-generation\n\nCoding Plan 订阅: platform.minimaxi.com/subscribe/coding-plan\n\nMiniMax M2.5 的模型权重将在 HuggingFace 开源，支持本地部署。\n\nIntelligence with Everyone.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/0ffa0b1a#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=39cbd7",
+      "text": "MiniMax 稀宇科技",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247487796&idx=1&sn=414621ef4b131b49b0991cdc2857d198",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/podcast/74aee00?entry=related_article",
+      "text": "Vol.89 AI Industry 2025 Annual Summary Supplement (V4 \"Can't Wait\" Edition) --- 70-page PPT Solo",
+      "title": "A panoramic review of the AI industry dynamics in China and the US in early 2025, deeply deconstructing capital expenditures, the explosion of Agent technology, and AI's impact on the software industry."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/810d6b64?entry=related_article",
+      "text": "MiniMax Agent Update: Redesigning How Agents Interact with Computers",
+      "title": "MiniMax has released two major updates for its Agent desktop client: the Pocket feature enables remote computer control via IM, and the Computer Use feature allows the Agent to operate GUI software through visual recognition, with detailed explanations of the underlying technical implementation and design philosophy."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/a799716e?entry=related_article",
+      "text": "GLM-5.1 Open Source: A Model Capable of 8 Hours of Independent Work",
+      "title": "Zhipu AI releases its flagship model GLM-5.1, featuring breakthrough Long-Horizon Task capabilities that allow it to work independently for 8 hours and deliver engineering-grade results."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/e07e5714?entry=related_article",
+      "text": "MiniMax M2.7 Goes Open Source, Collaborating with Global Partners to Accelerate AI Ecosystem Prosperity",
+      "title": "MiniMax has officially open-sourced its M2.7 model and announced that it has completed first-day adaptation with multiple domestic and international chip manufacturers and inference platforms, including Huawei Ascend, Moore Thread, and NVIDIA, aiming to accelerate the development of the global AI ecosystem."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/e359ba38?entry=related_article",
+      "text": "MiniMax Office Skills: Open-Sourcing a Production-Grade Office Document Engine",
+      "title": "MiniMax has open-sourced its production-grade Office Skills engine, which deeply optimizes the underlying processing pipelines for Word, Excel, PPT, and PDF to solve the 'undeliverable' pain points of AI-generated documents regarding formatting, formulas, and complex structures."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/2902aba4?entry=related_article",
+      "text": "The Evolution of Agent/Skills/Teams Architectures and Principles of Technology Selection",
+      "title": "This article systematically reviews the evolutionary trajectory of AI Agents from monolithic to multi-agent, then to Skills pluginization and Teams parallel collaboration, and, drawing on the latest research from Google and Anthropic, provides a scientific methodology for selection."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/95d5e07c?entry=related_article",
+      "text": "DeepSeek-V4 Preview: Ushering in the Era of Million-Token Context for Everyone",
+      "title": "DeepSeek releases the V4 preview, offering Pro and Flash versions with million-token context as standard, achieving open-source leadership in Agent, reasoning, and knowledge capabilities, and open-sourcing the model simultaneously."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/1d6d969d?entry=related_article",
+      "text": "MiniMax M2.7: Unlocking Model Self-Evolution",
+      "title": "MiniMax releases the M2.7 model, featuring 'model self-evolution' capabilities and achieving significant breakthroughs in software engineering, professional office productivity, and multi-agent collaboration."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/fc9e3786?entry=related_article",
+      "text": "A Practical Guide to 'Progressive Spec' for AI Coding in 2026",
+      "title": "This article proposes a 'Progressive Spec' framework for AI coding environments, leveraging structured documentation to drive AI collaboration and balance development standards with execution efficiency."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/c8a04217?entry=related_article",
+      "text": "MiniMax Releases MMX-CLI: A Full-Modal Command Line Tool Designed for Agents",
+      "title": "MiniMax has launched MMX-CLI, a command-line tool specifically designed for AI Agents, enabling native access to full-modal model capabilities through output isolation, semantic exit codes, and asynchronous control."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "MiniMax releases the M2.5 model, featuring SOTA performance for programming and office scenarios, achieving extreme cost-effectiveness ($1/hour) through a na...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "MiniMax, M2.5, LLM, Agent, Programming AI",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "MiniMax M2.5 Released: $1/Hour, the King of Real-World Wo...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "MiniMax releases the M2.5 model, featuring SOTA performance for programming and office scenarios, achieving extreme cost-effectiveness ($1/hour) through a na...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/0ffa0b1a",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/0ffa0b1a/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-12 23:05:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "MiniMax 稀宇科技",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "MiniMax",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "M2.5",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "LLM",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Programming AI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "MiniMax M2.5 Released: $1/Hour, the King of Real-World Wo...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "MiniMax releases the M2.5 model, featuring SOTA performance for programming and office scenarios, achieving extreme cost-effectiveness ($1/hour) through a na...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/0ffa0b1a/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "MiniMax M2.5 Released: $1/Hour, the King of Real-World Wo...",
+  "url": "https://www.bestblogs.dev/en/article/0ffa0b1a"
+}

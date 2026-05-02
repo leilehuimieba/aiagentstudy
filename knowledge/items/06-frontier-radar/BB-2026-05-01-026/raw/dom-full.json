@@ -1,0 +1,344 @@
+{
+  "content": "鱼羊 发自 凹非寺\n\n量子位 | 公众号 QbitAI\n\n今天，你被DeepSeek识图模式灰度到了吗？\n\n大家对DeepSeek的多模态属实期待了太久太久，如今惊喜紧随V4的发布而来，没等DeepSeek官方释出更多信息，民间已经从各个方向开始挖掘“识图”背后的种种蛛丝马迹。\n\n还真有不少发现。\n\n比如，DeepSeek识图模式背后，看上去是一个独立于V4 flash/pro的新模型。\n\n又比如，DeepSeek在V4技术报告里的“未来展望”，实际上可能都做的差不多了……\n\n今天眼睛一睁，俺也喜提灰度，这就来展示一下实测成果。\n\n在识图模式下，可以选择是否开启深度思考。\n\n非思考模式下，这个DeepSeek视觉模型的速度非常快，比闪电五连鞭还要快。\n\n点击发送键，几乎无需等待，答案就哗啦一下冒了出来。\n\n那么思考和非思考模式下，DeepSeek识图模式的推理能力会有什么样的差别？\n\n先上一道空间推理题：要想使右侧图形在不旋转的情况下拼合成左侧的正方体造型，还需在问号处添加的图形是哪个？\n\n非思考模式秒给答案，然后……秒错。\n\n开启深度思考后，DeepSeek成功闯关，给出了正确答案D。\n\n但可以看到，它思考这个问题整整用了4分多钟。\n\n这个思考过程的冗长程度，我们可以直观地感受一下——\n\n在思考的中段，其实DeepSeek已经找到了正确答案：\n\n但马上就是一个“等等”，然后……又绕了一大堆。\n\n这个问题有人也在DeepSeek研究员陈小康的推文下反馈了。\n\n再试试图片找不同：找出两张图片中所有的不同点。\n\n非思考模式下，DeepSeek很快找到了7处不同。\n\n可以很明显地看出，其中幻觉不少，比如第5点托盘里的钥匙不知道是怎么来的，第7点苹果和香蕉之间也没有白色的空盘子。\n\n思考模式这次则只用了16秒的时间，找出了12处不同。\n\n但……不知道是不是图片本身的原因，幻觉更多了。\n\n推理部分还有进步空间，那么在实用功能方面，DeepSeek的识图模式是否靠谱呢？\n\n试试OCR。\n\n把DeepSeek V4技术报告的摘要丢进DeepSeek识图模式，不开深度思考的情况下，它依然是闪电出结果，还贴心地给开源链接给超链了。\n\n纯文本看上去问题不大，再看看表格DeepSeek能不能hold住。\n\n没什么问题，格式上也能用markdown码得整整齐齐。\n\n而更受欢迎的一种新玩法是，把网页图片发给DeepSeek，它直接能给你复原出HTML来（非思考模式就能实现）。\n\n其中的按钮都是可用的，比如给出API文档的链接，它能自动配置好实现跳转。\n\nDeepSeek还能顺利通过“隐藏图片”测试。\n\n但在色盲测试中，偶见翻车。\n\n根据识图模式自己的回答，它的知识和DeepSeek V4 flash/pro一样，截止到2025年5月。\n\n而从它的世界知识中，有博主发现了端倪：视觉模型知道Ta，而V4 flash/pro则并不了解Ta。\n\n是不是说，识图模式中的视觉模型，是独立训练的？\n\n验证了一下，flash不联网的时候确实没有关于这位主包的知识。但识图模式则找到了2026年4月的信息。\n\n目前，DeepSeek的识图模式还在灰度测试当中，陈小康透露灰度范围正在逐步扩大。\n\n实测下来坦白说，DeepSeek Vision还有不少可以精进之处。\n\n但话说回来，谁又能想到DeepSeek的多模态，来的这么快呢？\n\n当DeepSeek在V4的技术报告中写下，“我们也正在努力将多模态能力整合到我们的模型中”，大家都以为这还只是个优先级没那么高的目标，不少朋友都在惋惜的同时，也认同“资源有限的情况下优先做好纯文本是对的”。\n\n而现在看来，DeepSeek做到的或许比外界想象的更多、更快。\n\n那么论文中提到的“在MoE和稀疏注意力架构之外，将积极探索模型稀疏性的其他新维度”，是不是也……\n\n参考链接：\n[1]\nhttps://x.com/teortaxesTex/status/2049422327914332307?s=20\n[2]\nhttps://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/483aa7df#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=371003",
+      "text": "量子位",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.qbitai.com/2026/04/411797.html",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/eec4183?entry=related_article",
+      "text": "150: 年末 AI 回顾：从模型到应用、从技术到商战，拽住洪流中的意义之线",
+      "title": "全方位深度复盘 2025 年 AI 全球产业图谱，涵盖底层模型技术演进、Agent 应用落地、大厂组织商战及具身智能趋势。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/3308e250?entry=related_article",
+      "text": "智谱 GLM-5 技术全公开！完全适配华为等国产芯片，美国网友酸了",
+      "title": "智谱 AI 发布 GLM-5 技术论文，通过引入动态稀疏注意力（DSA）和异步强化学习基础设施，实现了从 Vibe Coding 到智能体工程的跨越，并完成国产芯片全栈适配。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/081cb613?entry=related_article",
+      "text": "Token 经济学七问：一份关于 AI 新经济的入门地图",
+      "title": "本文系统阐述了 Token 作为 AI 时代核心计量单位的经济逻辑，涵盖产业背景、价值分层、成本演进及智能体驱动的未来趋势。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/2ce38f07?entry=related_article",
+      "text": "大模型架构的下半场",
+      "title": "本文提出大模型架构已进入以「扩展通信」为核心的下半场，批判了传统残差连接的「累加」范式，并介绍了通过 Flash Depth Attention 和 MoDA 实现层间「选择性检索」的创新方案。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/c40b08b?entry=related_article",
+      "text": "Cherry Studio 王新铭：2 个人，Github 42k 星，代码贡献第一名是 Claude",
+      "title": "对话 Cherry Studio 创始人王新铭，深度拆解 4.2 万星开源项目的成长路径与 AI Native 组织构建实战。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/6df1111?entry=related_article",
+      "text": "他看到的未来，和我们有什么不一样？| 对话 18 岁的涂津豪：DeepSeek 前实习生、阿里数竞 AI 组冠军",
+      "title": "对话 18 岁 AI 开发者涂津豪，深度解析 DeepSeek 团队文化、主动式 Agent 及 AI 记忆的未来趋势。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/4c569f3e?entry=related_article",
+      "text": "Seed2.0 正式发布",
+      "title": "字节跳动发布 Seed2.0 系列模型，通过强化多模态理解与 Agent 任务执行能力，旨在解决真实世界中的复杂长链路任务。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/50669f01?entry=related_article",
+      "text": "谷歌 TurboQuant 论文：KV cache 压缩 6 倍且精度零损失",
+      "title": "谷歌研究院发布 TurboQuant 算法，通过极坐标量化等技术实现 KV cache 至少 6 倍的无损压缩，显著降低大模型推理内存需求并提升速度。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/6f17468b?entry=related_article",
+      "text": "GPT-5.4 发布：OpenAI 首个大一统模型，简直是龙虾原生",
+      "title": "OpenAI 发布 GPT-5.4，通过整合推理、编程、计算机原生交互等能力，打造首个支持原生 Computer Use 的大一统 Agent 模型。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/1d95c0b8?entry=related_article",
+      "text": "DeepSeek V4 报告太详尽了！484 天换代之路全公开",
+      "title": "DeepSeek V4 系列模型正式发布，通过 mHC 架构、混合注意力机制和 Muon 优化器，实现了百万 token 上下文下 KV cache 仅为 V3.2 的 10%，并全面开源、支持国产芯片。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "本文实测了 DeepSeek 灰度测试中的识图模式，发现其背后可能是一个独立于 V4 的新视觉模型，在 OCR 和 HTML 复原等任务上表现出色，但空间推理和找不同等任务仍存在幻觉和思考过长的问题。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "DeepSeek, 识图模式, 多模态, 视觉模型, 灰度测试",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "DeepSeek 识图模式是个新模型？！一手实测在此（没错我被灰度到了） | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "本文实测了 DeepSeek 灰度测试中的识图模式，发现其背后可能是一个独立于 V4 的新视觉模型，在 OCR 和 HTML 复原等任务上表现出色，但空间推理和找不同等任务仍存在幻觉和思考过长的问题。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/483aa7df",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/483aa7df/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-30 06:52:23",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "鱼羊",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "DeepSeek",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "识图模式",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "多模态",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "视觉模型",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "灰度测试",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "DeepSeek 识图模式是个新模型？！一手实测在此（没错我被灰度到了） | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "本文实测了 DeepSeek 灰度测试中的识图模式，发现其背后可能是一个独立于 V4 的新视觉模型，在 OCR 和 HTML 复原等任务上表现出色，但空间推理和找不同等任务仍存在幻觉和思考过长的问题。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/483aa7df/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "DeepSeek 识图模式是个新模型？！一手实测在此（没错我被灰度到了） | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/483aa7df"
+}

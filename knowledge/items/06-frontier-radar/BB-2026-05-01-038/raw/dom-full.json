@@ -1,0 +1,294 @@
+{
+  "content": "VIDEO\n92\n⭐ 精选内容\nEverything I Learned Training Frontier Small Models — Maxime Labonne， Liquid AI\n\nMaxime Labonne 解释了为什么前沿小模型不能只靠大模型蒸馏，而需要专门的架构、极大的 token 预算、on-policy 对齐和工具调用能力。\n\n⭐ 推荐理由Liquid AI 的 Maxime Labonne 将小模型定义为独立工程问题而非大模型缩小版：内存限制、延迟敏感和任务专一性决定了不同的架构选择（gated short convolutions、压缩 embedding 层）。最反直觉的发现：用 28 万亿 token 训练 350M 参数模型，远超 Chinchilla scaling 假设。还覆盖 on-policy 对齐和工具调用能力两个生产可用门槛。适合关注端侧部署和小参数量 AI 的工程师。\n\n展开\nAI Engineer\n关注\n·\n04-29\n·\n9 个章节\n·\n查看原文 →\n训练前沿小模型的全部经验 | Maxime Labonne，Liquid AI\n章节导览\n9 个章节\nCH.1\nIntroduction to Liquid AI and Small Models\n00:14\nCH.2\nKey Characteristics of Small Models\n01:46\nCH.3\nEmbedding Layers and Parameter Efficiency\n02:53\nCH.4\nLFM2 Architecture and Edge Performance\n04:24\nCH.5\nScaling Laws and LFM 2.5 Training\n06:13\nCH.6\nPost-Training Strategies: SFT, DPO, and RL\n08:27\nCH.7\nSolving the Doom Looping Problem\n10:33\nCH.8\nAgentic Workflows and Conclusion\n14:48\nCH.9\nQ&A: Deployment and Distillation\n17:25\n📝 实时字幕\n跟随播放\n全部字幕\n00:14\n1\n\nhi everyone my name is Maxim Labon uh in this presentation I want to talk about the lessons I've learned pre-raining small models\n\n00:20\n1\n\num so for context I work at Liquid AI as head of pre-raining at Liquid we mostly focus on edge models for ondevice deployment\n\n00:27\n1\n\nand as you can see here we have models from 350 million parameters to 24 billion parameters so this is very very small\n\n00:35\n1\n\nand um yesterday we released our new VLM uh 450M and the week before we released the new version of the 350M model for text\n\n00:44\n1\n\num so this is what we do we work across text uh vision and audio and uh yeah the models are available on hugging face if you want to try them out\n\n00:52\n1\n\num in this presentation I want to talk about what separates small models and big models and there are three main characteristics I want to talk about\n\n01:46\n1\n\nso first of all uh the small models they are memory bound\n\n01:52\n1\n\num because the hardware is is what it is right on a phone in a car etc uh we can't really use super big models\n\n01:58\n1\n\nuh which is why we try to keep the the size quite small and because of that we have low knowledge capacity compared to bigger models\n\n02:04\n1\n\nuh then the models are task specific which is great because if you have uh small knowledge capacity you can at least focus on one thing very well\n\n02:10\n1\n\nand so that means that they are usually not general purpose chat boards like charg they are a lot more narrow in terms of focus\n\n02:16\n1\n\nand they can do something like summarization tool use very very well\n\n02:21\n1\n\nuh so that's the second aspect u and the final one is that it's very latency sensitive\n\n02:28\n1\n\nand that means that you need to have very very fast uh throughput\n\n02:35\n1\n\nSo all these characteristics are very important and we'll see in this presentation how they play with each other and how we can do better\n\n02:42\n1\n\num but the main lesson I want you to retain from this presentation is that small models are not just scaled on versions of bigger models\n\n02:47\n1\n\nthey also have their unique challenges and we will see about how we do it\n\n02:53\n1\n\num in this presentation the first thing I want to talk about is the model architecture because there's a lot of interesting things that we can do here for edge models\n\n02:59\n1\n\num I want to first talk about uh Gemma 3 270M and Quen 3.5 0.8B\n\n03:04\n1\n\nso these models are the smallest version of their respective family and you can see that both of them they adopt a hybrid architecture\n\n03:13\n1\n\nuh Gemma 3 has sliding window attention and GQA hybrid um Quen 3.5 has an architecture with gated um delta and gated attention\n\n03:21\n1\n\nthis is great because this is a lot faster but what I'm interested in here is actually the embedding layer\n\n03:27\n1\n\nbecause if you look at uh the size of the embedding layer compared to uh all the parameters of the model\n\n03:33\n1\n\nyou see that actually Gemma 3 270M is mostly an embedding layer uh it's 63% of the total parameters\n\n03:39\n1\n\nand even co 3.5 0.8b it's it's still like 29% of the parameters\n\n03:44\n1\n\num so that's not super efficient because uh the effective parameters the parameters that are really used for reasoning for knowledge capacity and all that stuff um are not the embedding parameters\n\n03:50\n1\n\num that it's the rest so the effective size is actually a lot smaller\n\n03:56\n1\n\nand it means that you could squeeze more reasoning and more performance from the same memory footprint\n\n04:03\n1\n\num and the reason why they do that is because they use distillation uh to train the models\n\n04:10\n1\n\num so they distill these models like those are the uh student models and they have teacher models with a huge vocabulary uh sizes\n\n04:17\n1\n\nand this is why um we have these super big um embedding layers\n\n04:24\n1\n\nall right uh let's talk about the LFM2 architecture now as you can see the LFM2 architecture is actually not that different uh in terms of um just layers\n\n04:32\n1\n\nwe also have like a hybrid architecture and this time we have short convolutions and uh GQA\n\n04:39\n1\n\num and I want to talk a bit about well first you can see that um the embedding layer is actually a lot smaller compared to the others\n\n04:46\n1\n\nit's like 90% of the parameters so we have more effective uh parameters which is great\n\n04:52\n1\n\nand I want to talk about how we created this architecture and we did ondevice profiling\n\n04:58\n1\n\nso instead of doing more like theoretical work uh we decided to say like okay let's tried to really implement it on the target hardware\n\n05:04\n1\n\nso we had two target hardware here and uh we wanted to see how it performs in real life to be able to optimize um the architecture find the right operators here\n\n05:11\n1\n\nand the thing that we found is this gated short convolution block that you can see here and why this is nice it's because it's very very fast\n\n05:18\n1\n\nuh the shortcom are a lot faster than all the alternatives you can see here compared to setting window attention from gemma 3 the galet from co 3.5\n\n05:24\n1\n\ngated linear attention and group query attention you can see that uh the cost ratio is really in favor of shortcom\n\n05:30\n1\n\nwhich is great because we said that um this is very latency sensitive so this is exactly what we want\n\n05:36\n1\n\nso this is quite theoretical but if we look in practice um and we profile uh the inference of these models\n\n05:41\n1\n\nyou can see here on two CPU um the AMD Ryzen Max Plus 395 and the uh Samsung Galaxy S25 Ultra\n\n05:47\n1\n\num all these models don't have necessarily the same size but it gives you a rough picture\n\n05:53\n1\n\nand you can see that the short conf LFM to architecture to be a lot faster and also use uh less memory\n\n05:59\n1\n\num so that's great and you can see also GPU it's not really just for CPU but also on GPU\n\n06:06\n1\n\nyou can see that it has a lot of uh throughput even at very high uh concurrency levels\n\n06:13\n1\n\nall right let's talk a bit about training now so the LFM 2.5 training recipe is quite similar to what you can find find elsewhere in terms of stages\n\n06:21\n1\n\nhave pre-me training on 28 trillion tokens we have uh supervised fine-tuning preference alignment and reinforcement learning\n\n06:28\n1\n\nand here you can see I'm talking about 28 million tokens and I said that we released a model of um 350m parameters last week\n\n06:34\n1\n\num so yeah we pre-train a 350 million parameter model on 28 trillion tokens\n\n06:41\n1\n\nif you're familiar with the chinchilla scaling laws that might sound a bit weird because we're supposed to be compute optimal at like I don't know like maybe one billion\n\n06:48\n1\n\nnot not even one uh trillion parameter i mean um but it's actually not the case\n\n06:54\n1\n\nand we see that the performance still um grows when you scale the number of pre-training tokens\n\n07:01\n1\n\nand there was a super interesting paper by Robert uh published last week about the test time scaling laws\n\n07:07\n1\n\nand you can see here how LFM 2.5M compares to their new scaling laws\n\n07:16\n1\n\nyou can see chinchilla scaling laws here and the new one that they proposed uh here\n\n07:23\n1\n\nand actually we did not pre-train the models on noff tokens we should pre-train even more uh to be optimal according to their laws\n\n07:29\n1\n\nbut this is cool because more pre-training works and it works even at the smallest scale\n\n07:36\n1\n\nwhich is great because these models are a lot cheaper to train than u much bigger models\n\n07:41\n1\n\nand here you can see a comparison it's not just for pre-training it's like post training uh models\n\n07:49\n1\n\nand um you can see that the LFM 2.5 model is uh significantly better than the previous version LFM2 350M on a lot of different benchmarks\n\n07:58\n1\n\nso you have uh knowledge with GPQ Diamond you have instruction following with IFB bench you have case report bench which is data extraction\n\n08:03\n1\n\nand also a lot of tool use with PFCL and and T2 bench um with this model it's only 350 million parameters\n\n08:10\n1\n\nso what we wanted to do is we wanted the model to be very very good at data extraction and at tool use\n\n08:16\n1\n\nand the rest if it's not the best model at in code it doesn't matter like people don't use it that way anyway\n\n08:22\n1\n\nsame for math i think it's really nice to try to target some capabilities and not try to be like average on everything\n\n08:27\n1\n\nall right let's talk exactly about that post training um small and big models what the difference\n\n08:34\n1\n\nuh we have pretty much the same stage so this is not really in terms of stages that we see a difference it's more about how you do it\n\n08:40\n1\n\nso for supervised fine tuning is better if you're actually quite narrow and you focus on some task\n\n08:45\n1\n\num it's true for general purpose person training but it's also true if you do fine-tuning\n\n08:52\n1\n\nso you can take one of these models on hugging face and just fine-tune it for your use case\n\n08:56\n1\n\nand for example you have a use case where you have a particular function that you want to call this is great this is a excellent use case\n\n09:01\n1\n\nlike the more narrow you can um you can find it or design it uh the better it is\n\n09:06\n1\n\nthen we have preference alignment so during pre-raining we have our um own on policy length normalized direct preference optimization algorithm that we quite like\n\n09:12\n1\n\nand preference alignment is very nice because it brings you general improvements it's not just about benchmarks it's really like overall\n\n09:21\n1\n\nafter preference alignment the model is better it sounds better and this is really nice to be able to just improve it overall\n\n09:28\n1\n\nand finally we have reinforcement learning and reinforcement learning is extremely efficient even at very small scale\n\n09:36\n1\n\nit's a really really important technique that we use everywhere and the main thing is that it's very narrow in terms of focus\n\n09:45\n1\n\nso you want to have like as many environments as many task as possible and make sure that um you generalize well thanks to this\n\n09:52\n1\n\num then for small models in particular they're quite sensitive to cold start SFT data\n\n10:05\n1\n\nso if you have a particular task in reinforcement learning it's always good to have similar samples and a similar task in your supervised fine-tuning mixture\n\n10:12\n1\n\nand this is good feedback that you can see during reinforcement learning something doesn't train very well it's probably because you are missing some call SFT data\n\n10:19\n1\n\nmaybe the task is too complex for different reasons but um you can try to start again uh from the supervised fine tuning uh stage\n\n10:26\n1\n\nadd your data and then see if it improves anything\n\n10:33\n1\n\nall right but there's a new problem uh with small language models that you might have encountered even with bigger ones and this is doom looping\n\n10:41\n1\n\nso the problem with doom looping is as you can see here it's going to start repeating a sequence of words over and over and over and over again\n\n10:47\n1\n\nand it just like never stops um so this is a problem all the time but it's particularly a problem if you have small models\n\n10:53\n1\n\nif you have reasoning models and if you have complex task if the task is basically too complex for the model\n\n10:59\n1\n\nhopefully this recipe is not too complex for this model but this can happen anywhere and you have the three of them at the same time\n\n11:05\n1\n\nso if you have a tiny reasoning models on like super difficult math task this is the perfect recipe to have a lot of doom loops\n\n11:11\n1\n\num so this is a unique challenge that you find with small models\n\n11:17\n1\n\nuh to give you a concrete example and here I can talk about like how we solve it\n\n11:23\n1\n\nthe first thing is that we solve it during the preference alignment stage and in particular for the data generation part that we do\n\n11:31\n1\n\nso here you can see the pipeline that we use uh to do the data generation the on policy data generation for preference alignment\n\n11:36\n1\n\nso we start with prompts like 1 million samples to give you a rough idea and then we use the policy model the model that we want to train with temperature sampling\n\n11:42\n1\n\nand we just generate five rollouts because we use temperature sampling these rollouts tend to be a lot more diverse and we expect that not all of them will have doom loops\n\n11:49\n1\n\nat least one should not doom loop right and on the other hand we generate just one extra uh roll out with a policy model with temperature zero\n\n11:56\n1\n\nand this one we think that it's going to doom loop and then we give everything to a LLM jury to score all the um rollouts\n\n12:04\n1\n\nwe pick the best one the one with the highest score as the chosen answer the one with the worst score as the rejected answer\n\n12:10\n1\n\nand the idea is that if we have some doom loop here the response for the doom loop will be rejected\n\n12:16\n1\n\nso we will train the model during preference alignment to not do loop and this is quite effective\n\n12:21\n1\n\nso this is solution number one and then we have solution number two\n\n12:28\n1\n\nand this one is about using reinforcement learning with verifiable rewards and we add a bit of engram repetition penalty\n\n12:35\n1\n\nuh but you can see that with reinforcement learning with um verifiable rewards it's a very nice way to actually um solve this issue\n\n12:43\n1\n\nbecause if you have a question like a math question like this one you are going to try to extract the final answer\n\n12:51\n1\n\nif you do not have a final answer uh you won't get a positive reward\n\n12:58\n1\n\nso this is already being taken care of during um reinforcement learning with verifiable rewards\n\n13:05\n1\n\nbut on top of that you can add a bit of repetition penalty to make sure that um you are going to generate more like less doom loops in general\n\n13:12\n1\n\nand same thing we also use temperature sampling here so the rollouts are also quite diverse and it just is less likely that you are going to get like a lot of doom loops\n\n13:18\n1\n\nuh all the time so this is the the second uh solution\n\n13:21\n1\n\nand that allowed us to uh really reduce the doom loop ratio\n\n13:29\n1\n\nso this is a real example with uh LFM 2.5 1.2b thinking which is a small model it's a reasoning model\n\n13:35\n1\n\nand on top of that we threw really hard task at it\n\n13:41\n1\n\nso you can see that after mid training the doom loop ratio that we calculated across like a lot of benchmarks was about 15% um or even 16%\n\n13:47\n1\n\nand then after SFT it it barely moves like SFT is not the right stage to fix this\n\n13:56\n1\n\num we didn't have doom loop examples during the SFT stage but it's not enough uh to get rid of this issue\n\n14:03\n1\n\num after DPO so that was a first solution um it really reduces quite a lot\n\n14:09\n1\n\nand you can see that after reinforcement learning the problem is almost non-existent\n\n14:16\n1\n\nif today you try to do the same thing with um quen 3.5 0.8b in reasoning mode you will see a lot a lot a lot of doom loops\n\n14:23\n1\n\nwhich is something that people complain about online and that also shows that the quen 3.5 like this tiny model is just a scaledown version of bigger models\n\n14:31\n1\n\nand this is not the approach that we're taking here at liquid we want to say okay like the edge models they are their own thing\n\n14:41\n1\n\nand um this is also a way to just optimize the entire architecture the entire cross training stack to make sure that uh we treat them as um best as possible\n\n14:48\n1\n\nand finally I want to talk about uh next stage next steps for uh all these uh small models with agency reinforcement learning\n\n14:54\n1\n\nthe final characteristic I didn't mention here is about being memory bound if you're memory bound it means that you have low knowledge capacity\n\n15:01\n1\n\nif you have no low knowledge capacity it means that you're going to hallucinate a lot\n\n15:07\n1\n\nbut a nice way to solve this issue is just providing like web search tools to the model\n\n15:13\n1\n\nif you have a tiny model but it's able to Google everything that you um throw at it in terms of like knowledge questions\n\n15:18\n1\n\nyou're going to have like much much better performance uh than if you just rely on the uh base models\n\n15:25\n1\n\nand same thing with a lot of problems that you can uh throw at the model i think that from experience these tiny models are actually very good at agentic task\n\n15:31\n1\n\nand this is how we should use them um it doesn't matter if um they don't have the knowledge capacity of big models\n\n15:38\n1\n\nwhat they truly need is really good reasoning capabilities to make sure that they are able to use these tools in a reliable manner\n\n15:46\n1\n\nand another point that I haven't mentioned here is that small models are also not very good at long context capabilities\n\n15:53\n1\n\nbut it's okay because if you have like a recursive um language model environment then you can use Python and and like basically take a shortcut uh to to solve this issue\n\n16:00\n1\n\nso most of the issues that you find with small language models can actually be fixed in different ways it just requires more creativity\n\n16:14\n1\n\nit just requires thinking about this problem not like you would think about it uh from a bigger model perspective uh but everything about this is fixable\n\n16:20\n1\n\nall right so in conclusion some takeaways um I hope I convinced you that edge models have unique challenges\n\n16:26\n1\n\nand they are actually interesting from scientific point of view and also production point of view\n\n16:32\n1\n\num if you combine them with agentic tools they tend to perform really really well and this is something that is currently underexplored\n\n16:40\n1\n\nwe talk about agentic workloads with really big models but it's not necessarily um the best use case it's not necessarily the best fit all the time\n\n16:48\n1\n\nand uh yeah finally we're working on LFM3 and we have like a ton of crazy experiments and uh ideas to try so um come work with us if you're interested uh in this space thank you everyone\n\n17:25\n2\n\nyes um can you share a bit about how you use these models in your workflow and how how you make the decision about when to use a big model\n\n17:30\n1\n\nyeah this is a good question so the question is like how we use this model in the workflows and uh how we decide between small models and big models\n\n17:35\n1\n\nso the the main idea here is that you will try to use the small models when you don't have a internet connection for example\n\n17:42\n1\n\nso incar deployment is a good example of that because you can't have like a reliable internet connection so it makes sense\n\n17:48\n1\n\nuh latency is also a big one if you have a workload that is very latency sensitive uh small models running locally are always going to be better\n\n17:54\n1\n\nand another one is is privacy if you use a regulated environment um if you work in finance or healthcare this is also a good one\n\n18:01\n2\n\nin your specific workflow is the question i make the models so I like I make the models for other people but uh like in my workflows like not necessarily\n\n18:15\n3\n\nhave you tried for D looping have you tried like you talked about how 3.5 is a scale down version of big one y have you seen uh the work that you do with RL and all these reduction of the looping on a bigger model being able to be distilled into a smaller model without having to redo the steps\n\n18:22\n1\n\nit's a good question i think we need to do some experiments to see like if just distilling from a bigger model translates well in terms of doom looping\n\n18:33\n1\n\ni would say no i I don't think so because I think it would be too close to SFT it depends like how you do this distillation\n\n18:40\n1\n\nif you stop K and you have like enough K maybe this is uh good enough\n\n18:44\n1\n\num but I I think that it would not completely be solved and you would still need like several patches to make sure that it doesn't happen again right\n\n18:51\n1\n\nyeah all right i think I should quit but um I'll be around if you you have other questions thank you very much\n\n点击任意行跳转 · 悬停可向 AI 提问\n\n内容简介\nEverything I Learned Training Frontier Small Models\n\nMaxime Labonne, Head of Pre-training at Liquid AI, recently shared the technical journey of building frontier small models designed for edge deployment. His talk breaks down the common misconceptions about small language models (SLMs) and provides a blueprint for making them competitive with much larger counterparts.\n\nThe Three Pillars of Edge Models\n\nSmall models are defined by three core constraints that dictate their design:\n\nMemory Bound: Hardware on phones or in cars limits model size, resulting in lower inherent knowledge capacity.\nTask Specific: Instead of being general-purpose chatbots, SLMs excel when focused on narrow tasks like tool use or summarization.\nLatency Sensitive: High throughput is critical for a good user experience on-device.\nRethinking Architecture\n\nLabonne critiqued the common practice of distilling small models from large teachers, which often results in bloated embedding layers. For example, in Gemma 3 270M, the embedding layer accounts for 63% of the total parameters. Liquid AI's LFM2 architecture optimizes for \"effective parameters\" by using a smaller embedding layer (roughly 10%) and replacing heavy attention mechanisms with gated short convolutions, which offer much higher speed on mobile CPUs and GPUs.\n\nChallenging the Scaling Laws\n\nIn a move that defies standard Chinchilla scaling laws, Liquid AI pre-trained a 350M parameter model on 28 trillion tokens. Labonne noted that performance continues to grow far beyond the theoretical compute-optimal point, making these models significantly more capable per parameter than previously thought possible.\n\nDefeating the 'Doom Loop'\n\nOne unique failure mode for small reasoning models is doom looping, where a model repeats the same phrase indefinitely. Liquid AI addresses this through:\n\nPreference Alignment: Using a pipeline that explicitly generates and then rejects repetitive answers during the DPO stage.\nRL with Verifiable Rewards: Training the model with reinforcement learning that only provides rewards for reaching a final, extractable answer, often paired with n-gram repetition penalties.\nThe Future is Agentic\n\nLabonne argues that the low knowledge capacity of small models is not a dealbreaker. By giving these models access to agentic tools—such as web search and Python environments—they can \"outsource\" knowledge and focus their limited parameters on reasoning. This approach allows a tiny model to perform at a frontier level for specific production workloads.\n\n00:00 / 00:00\n1x",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/video/afa3a1f#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/videos?sourceid=db1f86",
+      "text": "AI Engineer",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=fLUtUkqYHnQ",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Maxime Labonne 解释了为什么前沿小模型不能只靠大模型蒸馏，而需要专门的架构、极大的 token 预算、on-policy 对齐和工具调用能力。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "小模型, Liquid AI, 模型训练, Post-training, 强化学习",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "训练前沿小模型的全部经验 | Maxime Labonne，Liquid AI | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Maxime Labonne 解释了为什么前沿小模型不能只靠大模型蒸馏，而需要专门的架构、极大的 token 预算、on-policy 对齐和工具调用能力。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/video/afa3a1f",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/afa3a1f/opengraph-image?64edf17c38836472",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-29 12:00:06",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "AI Engineer",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "小模型",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Liquid AI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "模型训练",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Post-training",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "强化学习",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "训练前沿小模型的全部经验 | Maxime Labonne，Liquid AI | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Maxime Labonne 解释了为什么前沿小模型不能只靠大模型蒸馏，而需要专门的架构、极大的 token 预算、on-policy 对齐和工具调用能力。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/afa3a1f/twitter-image?8c88273a7af11d7e",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "训练前沿小模型的全部经验 | Maxime Labonne，Liquid AI | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/video/afa3a1f"
+}

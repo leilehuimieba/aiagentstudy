@@ -1,0 +1,95 @@
+# Source Evidence
+
+- Title: 2026-05-01 Hacker News Top Stories #
+- BestBlogs URL: https://www.bestblogs.dev/article/4fad6520
+- Original publisher URL: https://supertechfans.com/cn/post/2026-05-01-HackerNews/
+- Original link text: 查看原文 →
+
+## Captured Page Metadata
+
+- Browser title: 2026-05-01 Hacker News Top Stories # | BestBlogs.dev
+- Description: 本文精选了 Hacker News 上 2026 年 5 月 1 日的十大技术热点，涵盖 Linux 内核高危提权漏洞、Claude Code 计费与拒服漏洞、OpenAI 模型行为异常分析、Zig 反 AI 贡献政策、Mozilla 反对 Chrome Prompt API 等话题。
+- Date: 2026-05-01
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- 我的早报: https://www.bestblogs.dev/reading/brief
+- 我的关注: https://www.bestblogs.dev/reading/follow
+- 为你推荐: https://www.bestblogs.dev/reading/feed
+- 内容广场: https://www.bestblogs.dev/explore
+- 每日早报: https://www.bestblogs.dev/explore/brief
+- 精选周刊: https://www.bestblogs.dev/explore/newsletter
+- 主题解读: https://www.bestblogs.dev/explore/topics
+- 内容来源: https://www.bestblogs.dev/explore/sources
+- 阅读历史: https://www.bestblogs.dev/library/history
+- 我的收藏: https://www.bestblogs.dev/library/bookmarks
+- 我的笔记: https://www.bestblogs.dev/library/highlights
+- 我的回顾: https://www.bestblogs.dev/library/review
+- 设置: https://www.bestblogs.dev/settings
+- 帮助中心: https://www.bestblogs.dev/docs
+- SuperTechFans: https://www.bestblogs.dev/articles?sourceid=01455c
+- 查看原文 →: https://supertechfans.com/cn/post/2026-05-01-HackerNews/
+- #: https://www.bestblogs.dev/article/4fad6520#1-copy-fail-copy-fail
+- https://copy.fail/: https://copy.fail/
+- #: https://www.bestblogs.dev/article/4fad6520#hn-%e7%83%ad%e5%ba%a6-1352-points--%e8%af%84%e8%ae%ba-478-comments--%e4%bd%9c%e8%80%85unsnap_biceps--1-day-ago
+- https://news.ycombinator.com/item?id=47952181: https://news.ycombinator.com/item?id=47952181
+- #: https://www.bestblogs.dev/article/4fad6520#2-%e6%8f%90%e4%ba%a4%e4%bf%a1%e6%81%af%e4%b8%ad%e5%8c%85%e5%90%abhermesmd%e5%af%bc%e8%87%b4%e8%af%b7%e6%b1%82%e8%ae%a1%e5%85%a5%e9%a2%9d%e5%a4%96%e4%bd%bf%e7%94%a8%e8%b4%b9%e7%94%a8-hermesmd-in-commit-messages-causes-requests-to-route-to-extra-usage-billing
+- https://github.com/anthropics/claude-code/issues/53262: https://github.com/anthropics/claude-code/issues/53262
+- #: https://www.bestblogs.dev/article/4fad6520#hn-%e7%83%ad%e5%ba%a6-1225-points--%e8%af%84%e8%ae%ba-513-comments--%e4%bd%9c%e8%80%85homebrewer--1-day-ago
+- https://news.ycombinator.com/item?id=47952722: https://news.ycombinator.com/item?id=47952722
+- #: https://www.bestblogs.dev/article/4fad6520#3-%e5%9c%b0%e7%b2%be%e7%9a%84%e6%9d%a5%e6%ba%90-where-the-goblins-came-from
+- https://openai.com/index/where-the-goblins-came-from/: https://openai.com/index/where-the-goblins-came-from/
+- #: https://www.bestblogs.dev/article/4fad6520#hn-%e7%83%ad%e5%ba%a6-1012-points--%e8%af%84%e8%ae%ba-619-comments--%e4%bd%9c%e8%80%85ilreb--21-hours-ago
+- https://news.ycombinator.com/item?id=47957688: https://news.ycombinator.com/item?id=47957688
+- #: https://www.bestblogs.dev/article/4fad6520#4-%e5%a6%82%e6%9e%9c%e4%bd%a0%e7%9a%84%e4%bb%a3%e7%a0%81%e6%8f%90%e4%ba%a4%e4%b8%ad%e6%8f%90%e5%88%b0%e4%ba%86-openclaw-claude-code-%e5%b0%86%e6%8b%92%e7%bb%9d%e4%bd%a0%e7%9a%84%e8%af%b7%e6%b1%82%e6%88%96%e8%80%85%e9%a2%9d%e5%a4%96%e6%94%b6%e8%b4%b9claude-code-refuses-requests-or-charges-extra-if-your-commits-mention-openclaw
+- https://twitter.com/theo/status/2049645973350363168: https://twitter.com/theo/status/2049645973350363168
+- #: https://www.bestblogs.dev/article/4fad6520#hn-%e7%83%ad%e5%ba%a6-900-points--%e8%af%84%e8%ae%ba-510-comments--%e4%bd%9c%e8%80%85elmean--9-hours-ago
+- https://news.ycombinator.com/item?id=47963204: https://news.ycombinator.com/item?id=47963204
+- #: https://www.bestblogs.dev/article/4fad6520#5-%e6%af%94%e5%88%a9%e6%97%b6%e5%81%9c%e6%ad%a2%e9%80%80%e5%bd%b9%e6%a0%b8%e7%94%b5%e7%ab%99-belgium-stops-decommissioning-nuclear-power-plants
+- https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/: https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/
+- #: https://www.bestblogs.dev/article/4fad6520#hn-%e7%83%ad%e5%ba%a6-720-points--%e8%af%84%e8%ae%ba-678-comments--%e4%bd%9c%e8%80%85mpweiher--12-hours-ago
+- https://news.ycombinator.com/item?id=47961319: https://news.ycombinator.com/item?id=47961319
+- #: https://www.bestblogs.dev/article/4fad6520#6-zig-%e9%a1%b9%e7%9b%ae%e5%af%b9%e5%8f%8d-ai-%e8%b4%a1%e7%8c%ae%e6%94%bf%e7%ad%96%e7%9a%84%e7%90%86%e7%94%b1-the-zig-projects-rationale-for-their-anti-ai-contribution-policy
+- https://simonwillison.net/2026/Apr/30/zig-anti-ai/: https://simonwillison.net/2026/Apr/30/zig-anti-ai/
+- #: https://www.bestblogs.dev/article/4fad6520#hn-%e7%83%ad%e5%ba%a6-633-points--%e8%af%84%e8%ae%ba-422-comments--%e4%bd%9c%e8%80%85lumpa--22-hours-ago
+- https://news.ycombinator.com/item?id=47957294: https://news.ycombinator.com/item?id=47957294
+- #: https://www.bestblogs.dev/article/4fad6520#7-mozilla-%e5%8f%8d%e5%af%b9-chrome-%e7%9a%84-prompt-api-mozillas-opposition-to-chromes-prompt-api
+- https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313: https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313
+- #: https://www.bestblogs.dev/article/4fad6520#hn-%e7%83%ad%e5%ba%a6-574-points--%e8%af%84%e8%ae%ba-213-comments--%e4%bd%9c%e8%80%85jaffathecake--16-hours-ago
+- https://news.ycombinator.com/item?id=47959463: https://news.ycombinator.com/item?id=47959463
+- #: https://www.bestblogs.dev/article/4fad6520#8-meta-%e5%9b%a0%e7%9b%ae%e7%9d%b9%e6%99%ba%e8%83%bd%e7%9c%bc%e9%95%9c%e7%94%a8%e6%88%b7%e5%8f%91%e7%94%9f%e6%80%a7%e8%a1%8c%e4%b8%ba%e7%9a%84%e5%91%98%e5%b7%a5%e8%a2%ab%e8%a7%a3%e9%9b%87%e5%90%8e%e7%bb%88%e6%ad%a2%e5%90%88%e4%bd%9c-meta-in-row-after-workers-who-saw-smart-glasses-users-having-sex-lose-jobs
+- https://www.bbc.com/news/articles/c5y7yvgy0w6o: https://www.bbc.com/news/articles/c5y7yvgy0w6o
+- #: https://www.bestblogs.dev/article/4fad6520#hn-%e7%83%ad%e5%ba%a6-479-points--%e8%af%84%e8%ae%ba-380-comments--%e4%bd%9c%e8%80%85gorbachev--11-hours-ago
+- https://news.ycombinator.com/item?id=47961838: https://news.ycombinator.com/item?id=47961838
+- #: https://www.bestblogs.dev/article/4fad6520#9-%e9%a9%ac%e5%85%8b%e5%85%8b%e8%8e%b1%e5%9b%a0%e5%90%91%e7%94%b5%e5%ad%90%e5%89%8d%e6%b2%bf%e5%9f%ba%e9%87%91%e4%bc%9a%e6%8f%ad%e9%9c%b2-641a-%e6%88%bf%e9%97%b4%e5%86%85%e5%b9%95%e4%b9%a6%e6%91%98-how-mark-klein-told-the-eff-about-room-641a-book-excerpt
+- https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/: https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/
+- #: https://www.bestblogs.dev/article/4fad6520#hn-%e7%83%ad%e5%ba%a6-392-points--%e8%af%84%e8%ae%ba-116-comments--%e4%bd%9c%e8%80%85the-mitr--7-hours-ago
+- https://news.ycombinator.com/item?id=47965060: https://news.ycombinator.com/item?id=47965060
+- #: https://www.bestblogs.dev/article/4fad6520#10-%e8%a5%bf%e7%8f%ad%e7%89%99%e5%9b%bd%e4%bc%9a%e5%b0%86%e5%af%b9%e8%a5%bf%e7%94%b2%e8%81%94%e7%9b%9f%e5%a4%a7%e8%a7%84%e6%a8%a1-ip-%e5%b0%81%e9%94%81%e8%a1%8c%e4%b8%ba%e9%87%87%e5%8f%96%e8%a1%8c%e5%8a%a8-spains-parliament-will-act-against-massive-ip-blockages-by-laliga
+- https://www.democrata.es/en/politics/congress-and-senate/congress-will-act-against-massive-ip-blockages-by-laliga/: https://www.democrata.es/en/politics/congress-and-senate/congress-will-act-against-massive-ip-blockages-by-laliga/
+- #: https://www.bestblogs.dev/article/4fad6520#hn-%e7%83%ad%e5%ba%a6-387-points--%e8%af%84%e8%ae%ba-166-comments--%e4%bd%9c%e8%80%85akyuu--8-hours-ago
+- https://news.ycombinator.com/item?id=47964034: https://news.ycombinator.com/item?id=47964034
+- #: https://www.bestblogs.dev/article/4fad6520#where-the-goblins-came-from
+- https://news.ycombinator.com/item?id=47958220: https://news.ycombinator.com/item?id=47958220
+- #: https://www.bestblogs.dev/article/4fad6520#where-the-goblins-came-from-1
+- https://news.ycombinator.com/item?id=47960583: https://news.ycombinator.com/item?id=47960583
+- #: https://www.bestblogs.dev/article/4fad6520#claude-code-refuses-requests-or-charges-extra-if-y
+- https://news.ycombinator.com/item?id=47964400: https://news.ycombinator.com/item?id=47964400
+- #: https://www.bestblogs.dev/article/4fad6520#copy-fail
+- https://news.ycombinator.com/item?id=47956312: https://news.ycombinator.com/item?id=47956312
+- #: https://www.bestblogs.dev/article/4fad6520#meta-in-row-after-workers-who-saw-smart-glasses-us
+- https://news.ycombinator.com/item?id=47961839: https://news.ycombinator.com/item?id=47961839
+- #: https://www.bestblogs.dev/article/4fad6520#the-zig-projects-rationale-for-their-anti-ai-cont
+- https://news.ycombinator.com/item?id=47959434: https://news.ycombinator.com/item?id=47959434
+- https://kristoff.it/blog/contributor-poker-and-ai/: https://kristoff.it/blog/contributor-poker-and-ai/
+- #: https://www.bestblogs.dev/article/4fad6520#meta-in-row-after-workers-who-saw-smart-glasses-us-1
+- https://news.ycombinator.com/item?id=47962400: https://news.ycombinator.com/item?id=47962400
+- #: https://www.bestblogs.dev/article/4fad6520#where-the-goblins-came-from-2
+- https://news.ycombinator.com/item?id=47957862: https://news.ycombinator.com/item?id=47957862
+- https://x.com/arb8020/status/2048958391637401718: https://x.com/arb8020/status/2048958391637401718
+- https://github.com/openai/codex/blob/main/codex-rs/models-manager/models.json#L55: https://github.com/openai/codex/blob/main/codex-rs/models-manager/models.json#L55
+- #: https://www.bestblogs.dev/article/4fad6520#mozillas-opposition-to-chromes-prompt-api
+- https://news.ycombinator.com/item?id=47960385: https://news.ycombinator.com/item?id=47960385
+- https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313: https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313
+- https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313: https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313

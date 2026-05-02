@@ -1,0 +1,294 @@
+{
+  "content": "VIDEO\n93\n⭐ 精选内容\nDHH’s new way of writing code\n\nRuby on Rails 创始人 DHH 探讨了他向 AI 优先开发工作流的转变，强调了 Claude 3.5 等高质量模型如何让资深工程师在保持高审美标准的同时实现 10 倍生产力。\n\n⭐ 推荐理由DHH 分享了全面拥抱智能体的工作流转变，强调当前大语言模型已能满足资深开发者对代码美学的高要求。文章指出，随着人工智能打破产能瓶颈，纯代码实现者的价值正在稀释，具备系统架构视野、优秀产品品味及跨部门沟通能力的复合型工程师将成为行业新宠。\n\n展开\nThe Pragmatic Engineer\n关注\n·\n04-08\n·\n查看原文 →\nDHH 的全新编程方式\n内容概要\n\nDavid Heinemeier Hansson（DHH）是 Ruby on Rails 的创始人兼 37signals 的首席技术官，他与 Gergely Orosz 深入探讨了他从一个 AI 怀疑论者转变为「AI 优先」开发者的巨大转变。他们讨论了像 Claude Opus 3.5 这样的前沿模型如何在代码质量和推理能力上达到了一个拐点，使得高级工程师的生产力提升了十倍，同时依然保持了对软件工艺和美学的高标准。DHH 还分享了 37signals 中设计师的独特角色、程序员薪资可能已经见顶的观点，以及为什么他在与计算机打交道三十年后依然乐在其中。\n\n目录\n\n引言\n\nOmarchy 和 Ruby on Rails\n\n37signals 概览\n\n推出 HEY\n\n构建 HEY\n\n37signals 的设计师\n\n设计的工艺\n\n为什么 DHH 现在拥抱 AI 工作流\n\nAI 的拐点\n\nDHH 的 Agent 优先工作流\n\nAI 对初级开发者的影响\n\n使用 AI 的开发者体验\n\nAI 对开发者意味着什么？\n\n37signals 的团队与招聘\n\nAI 时代的工作与生活平衡\n\n为什么 DHH 坚持构建产品\n\n结语\n\n正文\n\n引言\n\nDHH：我觉得你非常重视软件工程这门手艺。我认为美即是真理。当一个东西很美时，它很可能是正确的。这在数学、物理以及许多其他领域都是适用的。\n\n我有时会想，AI 的影响是否在于让我们能够完成以前根本不会去做的项目。我们在内部着手解决的那些以前想都不敢想的项目，现在简直数不胜数。\n\nJeremy 是我们团队中将 Agent 应用得最好的人之一，他说「我们要优化 P1（最快的 1% 的请求），让它们变得更快。」\n\n现在有一种紧张感，我发现大多数全情投入 AI 的人比以往任何时候都要努力。我自己也是如此。当你只需花一个小时监督这些 Agent 就能产生如此高效和巨大的影响时，这真的非常令人着迷。\n\nGergely Orosz：在 Lex Fridman 的播客上，你当时对 AI 依然保持着非常怀疑的态度，这可以理解。\n\nDHH：这是一个很微妙的观点，或许听起来有些自私，但我其实不认为我的观点变了。改变的是事实。\n\nGergely Orosz：作为 Ruby on Rails 的创始人，他是如何借助 AI Agent 改变软件构建方式的？David Heinemeier Hansson，通常被称为 DHH，不仅创造了 Ruby on Rails 和 Omarchy，还是 37signals 的联合创始人。六个月前，他在 Lex Fridman 的播客上还曾严厉批评过 AI 编程工具的能力。\n\n然而，在寒假短短几周的时间里，他发生了一百八十度的大转弯，在所有事情上都开始采用「AI 优先」的策略。在今天的对话中，我们将探讨 David 和他在 37signals 的团队如今是如何构建软件的，以及 AI 工具如何赋予他们前所未有的野心。\n\n为什么 Ruby on Rails 和 Linux 未来可能会比现在更受欢迎，因为它们非常适合与 AI Agent 协同工作。为什么品味和优美的软件变得越来越重要，以及为什么杰出的设计师和那些注重工艺的工程师可能会更抢手。\n\n如果你对科技行业中最资深的建设者之一是如何看待 AI 工具的实际效用，以及这些工具将如何影响注重工艺的软件工程师感兴趣，那么这一期播客就是为你准备的。本期播客由 Statig 赞助播出，请查看节目说明了解更多关于他们以及我们本季其他赞助商 Sonar 和 WorkOS 的信息。\n\nOmarchy 和 Ruby on Rails\n\nGergely Orosz：David，很高兴你能来。顺便提一下，你现在在哥本哈根。那是我目前最喜欢的城市。你最近在忙些什么？\n\nDHH：我总是在构建产品。过去三十年里，我一直在互联网上开发各种东西。我大概是在 1994 年第一次接触互联网，从那以后就再也没有停下来过。\n\n在过去的六个月里，我做了一些不同的项目。其中之一是一个名为 Omarchy 的新 Linux 发行版。我大约两年前转向了 Linux，最初用了一段时间的 Ubuntu，后来我发现自己想从头打造一个专属系统。\n\n我基于 Arch 和 Hyprland 开始构建 Omarchy。它最初是我在勒芒 24 小时耐力赛期间的一个夏日项目。那周有很多空闲时间，我就开始写代码，之后项目发展得非常快。\n\n即使在 Linux 发行版这样拥挤的市场里——大约有七千个不同的发行版，依然有新事物的生存空间，这让我深受启发。这是一个很好的提醒：哪怕世界上所有的点子都被人想过了也没关系，因为你独有的呈现方式依然是崭新的。我将自己的想法融入到了 Omarchy 中，为自己打造了完美的计算机系统。\n\n每当我构建出一种完全契合我个人需求的东西时，总会有成千上万像我一样，或者品味相近的人，从中获得同样的快乐。无论是 Ruby on Rails、Kamal，还是脱离云服务的举措，背后的逻辑都是一样的。\n\nGergely Orosz：是的，开发 Rails 时你完全是在解决自己的痛点。你构建了自己的组件然后将其开源，一切是这样开始的吗？\n\nDHH：基本上是这样。我在 2000 年代初开始使用 Ruby，并在 2003 年我们开始开发 Basecamp 时真正对它进行了考验。当时并没有人规定我必须用什么技术来构建它。在构建我们自己的 Basecamp 时，我可以自由选择，于是我选了 Ruby。\n\n当时，Ruby 在 Web 应用方面几乎没有任何工具。所以我不得不自己动手构建一切，这最终演变成了 Ruby on Rails。我认为从某种程度上来说，Ruby on Rails 正在迎来一次复兴，因为它现在是构建 Web 应用时最为节省 Token 的方式之一，非常适合我们现在正在使用的 Agent 工作流。\n\nAgent 生成的代码能否让人类阅读和验证非常重要。看着这些最初为了满足自己需求而诞生的项目，能够引起庞大社区的共鸣，是一件非常有趣的事情。以 Omarchy 为例，它发布才刚过六个月，我们就已经有了四百名为该发行版贡献过代码的开发者。\n\n能帮助新一代的 Linux 用户入门是一件非常有意思的事。我正在努力降低学习曲线，让默认安装界面看起来非常惊艳。无论是 Ruby on Rails 还是 Omarchy，它们都不仅仅是业余项目。在 37signals，我们基于 Ruby on Rails 建立了一个运行了二十多年的业务。现在，大多数开发人员的机器上运行的都是 Linux，因为我们有了自己的发行版。\n\n当 Omarchy 变得更加成熟时，我直接表示：「让所有技术人员都全面转向它。」任何从事 Web 开发、使用 Ruby 或是做 DevOps 的人，都应该使用 Linux。这更接近我们的部署环境，对于开发者来说，更贴近生产环境并熟悉相关工具是一个实实在在的优势。既然我是公司的 CTO，我有权设定技术方向，而这就是我们将要前进的方向。\n\n37signals 概览\n\nGergely Orosz：你能简单回顾一下你的经历，以及目前公司的整体业务情况吗？你一直在持续建设产品，我记得最新的是 Fizzy。\n\nDHH：是的。37signals 成立于 1999 年，最初是一家网页设计公司。我在 2001 年加入，并与 Jason 合作了几年。直到 2003 年，我们开始研发 Basecamp。\n\nBasecamp 在 2004 年发布，有趣的是，它的发布时间刚好是在 Facebook 上线的前一天或后一天。在大概一年的时间里，我们意识到这个产品起飞了，于是我们全职投入，从一家咨询公司转型为一家软件公司。\n\n这已经是二十多年前的事了。在此期间我们发布了大量的产品。Basecamp 是我们的第一款产品，至今依然是最大、最重要的产品。这其实有点滑稽，因为你有时会产生一种错觉，认为随着经验的增加你会变得更聪明。但对于很多人来说，他们的第一个点子就是最好的点子。客观来看，Basecamp 是我们做过的所有业务中最好的一个。\n\n推出 HEY\n\nDHH：我们在 2020 年推出了电子邮件服务 HEY。回想起来，这是一个疯狂的举动。这是一个被 Google 的 Gmail 完全主导的领域。Gmail 是一款优秀的产品，十七年来几乎没有什么大变化，但非常稳固。\n\n很多人对它很满意。他们的脑海中似乎存在一种矛盾：一方面他们讨厌电子邮件，另一方面却又不把这种厌恶感与他们正在使用 Gmail 这一事实联系起来。\n\n在美国，Gmail 似乎占据了大概 85% 的邮件流量。我用了 Gmail 大概十七年。在这段时间里，我积累了很多关于它工作方式的意见。我们把所有这些意见都融入到了一款新软件中，花了将近两年的时间进行开发，并最终在 2020 年夏天将其发布。\n\n产品上线后，我们就迎来了与 Apple（苹果）的一场生死之战。除非我们缴纳 30% 的「苹果税」，否则他们就不批准我们在 App Store 上架，这对于一款电子邮件产品来说无异于死刑。经过长达两周的史诗般拉锯战，最终我们获准上架，苹果随后修改了规则以使其合理化。\n\n这是一次小小的胜利。而 HEY 最终获得了巨大的成功，这在一定程度上要归功于苹果在两周内给了我们铺天盖地的曝光。我们在最初几周就获得了数万名注册用户。\n\n我真的很喜欢 HEY，我每天都在用它。与 Gmail 相比，我的收件箱变得更加神圣。在 Gmail 里，世界上任何一个陌生人都可以让你的手机震动，这在我看来非常荒谬。HEY 有拦截器（Screener），在你明确表示「我想收到这个人的邮件」之前，没有人能进入你的收件箱。\n\nGergely Orosz：这就是我联系你的方式。我发了一封邮件，你的拦截器似乎发挥了作用，因为它给了我点赞。\n\nDHH：是的，因为拦截器背后就是我本人。事实证明，每天花一点时间浏览拦截器并点赞或点踩，一点也不繁重。在 HEY 中，我只要点一次踩，就再也不会收到那个人的邮件了。你会惊讶于自己清理这些「杂草」的速度有多快。当电子邮件不再是一项苦差事时，你就会想要去细嗅蔷薇。这就是我们开发 HEY 的根本使命：让电子邮件重新惹人喜爱。\n\n拥有一个宏大的「为什么（Why）」非常重要。当你使用计算机进行开发时，如果有一个非常强烈的目标，你扛起重担的过程就会变得容易许多。\n\n构建 HEY\n\nGergely Orosz：你能跟我们讲讲你们是如何构建它的吗？你提到花了两年时间，但起初是不是只有一两个人参与？对开发者来说，看到优秀的团队花了两年，可能会有些疑虑。\n\nDHH：这是 Hacker News 上常见的吐槽，就像当年有人说「我一个周末就能做出 Dropbox」一样。我理解这种想法，这是开发者的傲慢。在这个时代，你可以在几个小时内做出一个原型，启动一个 Agent 就能搞定。\n\n但是，弄清楚你真正想要构建什么，需要花费长得多的时间。HEY 最初在技术方面只有我一个人。这也是我们启动大多数核心产品的方式：团队规模极小，直到我们摸清了产品的形态。\n\n如果你在方向不明朗的时候投入大量人力，速度反而会变慢。有了近期 AI 的进步，现在弄清楚「我想要什么」变得更快了。但对于 HEY，最初就是我、Jason，以及一两名设计师。\n\n如果你要挑战 Gmail，你不能只做一个「蓝色的 Gmail」。它必须新颖且足够优秀。弄清楚核心所在并找到解决方案需要时间。我们不断迭代，直到某个瞬间灵光一现：「这个方向对了，有戏。」然后我们才会进入加速阶段，引入更多的人手。\n\n37signals 的设计师\n\nGergely Orosz：有一点非常有趣，这与大多数获得风投的初创公司或大公司截然不同。在那里，项目通常由产品经理主导出需求文档，然后开发者才介入。而在你们这里，项目由一两名设计师和一名开发者启动。你们对设计师的定位似乎有别于行业常态。\n\nDHH：确实如此。在 37signals，设计师不仅是为了让需求文档看起来漂亮。他们的任务是去发现需求应该是什么。他们扮演着产品经理的角色。提炼出我们应该构建什么以及如何运作。此外，他们还负责将其实际构建出来，负责编写 CSS 和 HTML。现在有了 Agent 的辅助，他们可以完成包括最终形态和视觉设计在内的整个前端流程。\n\n我发现，当这三种角色集于一身时，这个人会非常了解自己所使用的「材料」，知道它们的延展性，并能直接在互联网的基础材料上原生地工作。你越了解你使用的材料，就越可能顺应它的纹理，做出感觉自然、优秀的产品。\n\n顺便提一下苹果，我认为这也是为什么一些资深果粉对苹果的新方向感到失望的原因。Mac 原生应用有一种真实的延展感。而今天，很多都让人感觉是合成的，失去了真实感。\n\n对于 Web 也是一样。Agent 加速将赋予设计师更多这方面的能力，所以整个行业正在向我们的基本立场靠拢。这在编程端也是一样的，随着 Agent 加速的普及，大家都意识到单个开发者凭借好工具确实能构建出极具价值的产品。\n\n设计的工艺\n\nGergely Orosz：在你招聘时，我感觉你不仅看重软件工程这门手艺，同样也珍视用户体验设计。你是否把美学和工艺看作是同等重要的？\n\nDHH：非常看重。我认为美即是真理。当你创造出具有正确美学品质的东西时，你的直觉会引导你走向那种美，因为它碰巧也是正确的。\n\n我也相信这是让人们快乐的原因。被美丽、运转良好的物品包围是幸福的关键。世界充满了让人挫败的系统。如果我们能被更美丽的物品和系统包围，无论是外观还是内在结构，我们真的能提升人类的幸福感。乔布斯之所以关心电脑内部的电路板，是因为他直觉地知道，那些在意电路板布局的人，也会在用户界面上精益求精。\n\n对我来说，Ruby 是一门开创性的语言，因为它能写出最美丽的代码。Ruby 是我想居住的房子，因为它兼具美学品质，同时在意识形态上又不那么死板。我们必须创造美好的事物，必须打造流畅、美妙的交互。\n\n为什么 DHH 现在拥抱 AI 工作流\n\nGergely Orosz：AI 是如何改变你的工作方式和手艺的？从你上次在 Lex Fridman 的播客上严厉批评 AI 到现在，你的观点发生了怎样的变化？\n\nDHH：这是一个很微妙的观点，我其实不认为我的观点变了，改变的是环境和事实。\n\nChatGPT 发布时显然是计算机科学史上的一个里程碑。但在早期的使用体验中，它主要表现为自动补全代码（比如 Copilot 和 Cursor）。它在编辑器里不断猜测我的下一个字符，我有时觉得这非常恼人。当你试图整理思路时，它总是不让你把话写完。即使它偶尔能加速开发，但错误率太高。\n\n我当时对基于自动补全的交互方式感到失望。我试图把它当作一个不亲自写代码的导师或结对编程伙伴，遇到问题时去问它。\n\nGergely Orosz：我和一位游戏开发者聊过，他当时就把 IDE 里的自动补全全关了，遇到问题时再去问 ChatGPT。这样他就能保持在心流状态中，掌控着全局。\n\nDHH：完全正确。我确实担心过我们会变成只会按键的鸟。\n\nAI 的拐点\n\nDHH：后来发生了两件事。首先，使用 Agent 辅助编程的新方式开始流行起来。AI 获得了使用工具的能力：它可以使用终端、搜索互联网，不再仅仅局限于你给定的上下文。\n\n其次，Opus 4.5 模型的发布。这是第一个在输出质量上持续让我感到震惊的模型。它能够基于模糊的输入提供高质量的分析。更重要的是，它生成的代码我几乎不需要做太多修改就愿意合并。如果我需要修改，我告诉它后，它能记住并且不会再犯同样的错误。这两者的结合是关键的突破口。\n\nGergely Orosz：而且你对代码质量的标准非常高。\n\nDHH：标准极高。代码的美感非常重要。如果我要合并 Agent 生成的 Ruby 代码，我希望它看起来和我写的一样好。早期的模型根本做不到这一点。\n\n真正让我转变的，是从「和它对话很有趣」到「我希望它来写我的代码」。现在我开启任何新项目，都会采用「Agent 优先」的策略。这是在去年 11 月底 Opus 4.5 发布后发生的巨大转变。\n\nGergely Orosz：这发生在大公司的寒假期间，很多资深工程师在假期用自己的业余项目测试了这些新模型，结果大受震撼。\n\nDHH：这其中有一种难以置信的感觉。如果你没有亲自试过，没有经历过那个时刻，别人很难说服你。你必须亲自坐在终端前试一试。\n\nShopify 的 Tobi Lütke 是最早看到这一趋势的人之一。他比我早得多就预见到了这些变化。过去我一直觉得，等模型足够好可能还需要两年甚至五年，但它突然就发生了。\n\nDHH 的 Agent 优先工作流\n\nGergely Orosz：那你现在的日常工作是怎样的？\n\nDHH：我所有工作都是 Agent 优先。我主要使用 Open Code 作为我的 Agent 工具。当遇到非常困难的问题时，我会首选 Opus。但我也会同时使用两个不同的模型在终端并排运行。\n\n我通常会让其中一个 Agent 启动任务，告诉它们我想要什么。如果代码变更看起来正确，我就提交；如果不正确，我会让它们修改或者我自己动手。\n\n这种比例的变化令人震惊。去年 11 月初，我还是「代码优先」。但现在，我直接从 Agent 开始，让它给我草稿，我来审查和修改。\n\n最近我们正在为 Basecamp 开发 CLI（命令行界面）。我甚至尝试过不给 Agent 提供任何工具，让它直接去注册我们的产品（如 Fizzy 和 HEY）。结果它不仅成功注册，甚至还能进入 Basecamp 项目中向团队做自我介绍。这让我大为震撼。\n\n这似乎就是最终形态：Agent 不需要我们做任何适配，它们能直接像人类一样使用系统。但既然我们不能干等着 AGI 出现，我们就为今天而构建。当一切都有了 CLI，Agent 就可以串联起各项服务，全自动地完成工作流。\n\nAI 对初级开发者的影响\n\nGergely Orosz：这种发展趋势确实让人不禁去猜测未来。\n\nDHH：有趣的是，初级和高级开发者之间出现了明显的分化。在 37signals，我们看到从 Agent 加速中获益最大的恰恰是最资深的人。\n\n因为他们有能力验证 Agent 生产的代码是否可以部署给数百万用户。有消息称某些大公司的宕机是因为初级程序员在没有审查的情况下部署了 Agent 生成的代码。这反映了一个现实：对于关键任务，我们还不能完全信任 Agent，而初级程序员缺乏分辨其代码质量的能力。\n\n因此，高级程序员现在的价值被放大了 5 倍到 10 倍，因为他们可以并行管理多个 Agent，并准确指出修改方向。这也许只是个过渡阶段。就像自动驾驶一样，总有一天模型会变得足够可靠。但就目前而言，最大的红利落在了高级开发者头上。\n\nGergely Orosz：但在大公司里，有很多复杂的内部系统和微服务，掌握这些需要时间。\n\nDHH：没错，这需要时间。当软件开发迎来这种指数级跃升时，情况会变得非常不可思议。但我不想为了预测 12 个月后的未来而陷入疯狂，我更关注我们现在能用它做什么。\n\n使用 AI 的开发者体验\n\nGergely Orosz：这对软件工程师来说可能有些令人不安。但在 37signals，你看到工程师们的工作满意度发生了什么变化吗？\n\nDHH：最大的启示是，我非常享受指挥这些 Agent 带来的乐趣。操作这些 Agent 感觉就像穿上了一套超级机甲。我仿佛拥有了十二条手臂，可以同时盯着七个屏幕操作。我依然是那个注重代码美学的高级程序员，只是效率被极大地放大了。\n\n比如审查 GitHub 上的 PR。面对积压的 250 个 PR，我尝试让 Claude 帮我审查，结果在 90 分钟内我就处理了 100 个 PR。虽然只有少数是直接合并的，但它帮我找出了问题，甚至能用我期望的编码风格直接重写糟糕的代码。\n\nAI 对开发者意味着什么？\n\nGergely Orosz：考虑到这种效率的提升，你们会扩大团队规模吗？\n\nDHH：我认为同样的团队现在可以做多得多的事情。我们可以去处理像 P1 性能优化这种以前根本不会考虑的边缘项目，去探索那些一闪而过的念头。过去需要几周才能交付的功能，现在速度会大大加快。我们的软件开发方法论可能都需要重写。\n\n尽管如此，如果软件开发者认为行业不会发生剧变，那就是在自欺欺人。以前程序员是产能的瓶颈，所以薪水水涨船高。现在这个瓶颈正在松动。\n\n我认为我们可能已经见过了「程序员的巅峰」。我们可能不再需要那么多受过专业训练的程序员来完成同样数量的工作。尤其是在那些将软件开发视为成本中心的公司里，他们现在有了大幅削减成本的工具。\n\nGergely Orosz：现在的产品工程师越来越被要求具备沟通和同理心等产品技能。\n\nDHH：正是如此。现在最稀缺的能力变成了「决定应该构建什么」和「与客户沟通」。单纯的代码实现能力迟早会被 AI 解决。如果你只想做一个纯粹的实现者，你必须达到极高的技术水平，你得比 Agent 写得好得多才行。\n\n37signals 的团队与招聘\n\nGergely Orosz：既然如此，要怎样才能被 37signals 录用呢？你们的招聘流程非常严格。\n\nDHH：没人能完美破解招聘的难题。我们看过成千上万份简历，但最终能留下来并长期契合的人非常少。很多最好的员工其实是来自于内部推荐或者以前合作过的人。\n\n这对于普通求职者的建议是：尽你所能变得优秀，积累经验，并在工作中展现你的价值。有人认为在一家烂公司就不需要努力，这是在坑自己。因为即使在烂公司，别人也在看着你。没有任何捷径。你必须变强，而变强需要练习。不要因为公司不好就收敛自己的锋芒。\n\nAI 时代的工作与生活平衡\n\nDHH：现在全情投入 AI 的人工作得比以往任何时候都努力。因为只要花一个小时监督 Agent 就能产生巨大的成果，这太容易让人上瘾了。但我必须提醒自己，这并不是限时促销，AI 下个月依然在。所以我们不能透支自己。\n\nGergely Orosz：你是如何保持平衡的？\n\nDHH：保证每晚 8 小时的睡眠是对自己认知能力最好的投资。为了多出几个小时工作而牺牲睡眠是极其不划算的。此外，绝对不能牺牲健康。不要为了多做点 Agent 工作而省下每周锻炼的时间。这是一场马拉松，接下来的十年会越来越疯狂，不要在起跑线就把自己耗尽了。\n\n为什么 DHH 坚持构建产品\n\nGergely Orosz：最后，你本可以早就退休去享受生活了，是什么让你每天依然充满动力去构建产品？\n\nDHH：是因为我对计算机深沉的热爱。这是我度过时光最棒、最有趣的方式。无论是写代码，还是指挥这些 Agent，我都乐在其中。财富并不是一个终点。认为有钱了就可以终日无所事事地享受闲暇，这是一种误解。心理学研究早就证明，没有目标和使命的闲暇只会带来空虚和痛苦。\n\n去创造、去感受自己是一个有用的人，这本身就是目的。我会继续与计算机为伴，探索它们的潜能。我现在的好奇心比五年前还要旺盛，每天醒来都迫不及待地想看看又有什么新进展。\n\n结语\n\nGergely Orosz：这是一次精彩的对话。DHH 依然保持着对代码美学的高标准，AI 并没有降低这种标准，反而让判断力和品味变得更加重要。同时，37signals 将设计师视作具有技术能力的「产品决策者」也很有启发性。\n\n关于我们可能已经过了「程序员巅峰期」的观点非常引人深思。虽然未来会有更多软件被构建，但程序员需要具备更强的业务感知、系统架构能力和产品品味，而不能仅仅满足于写代码。感谢大家的收听。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/video/cd01d57#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/videos?sourceid=45e77651",
+      "text": "The Pragmatic Engineer",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=JiWgKRgdgpI",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Ruby on Rails 创始人 DHH 探讨了他向 AI 优先开发工作流的转变，强调了 Claude 3.5 等高质量模型如何让资深工程师在保持高审美标准的同时实现 10 倍生产力。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "DHH, AI 辅助开发, 软件工艺, Ruby on Rails, AI 智能体",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "DHH 的全新编程方式 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Ruby on Rails 创始人 DHH 探讨了他向 AI 优先开发工作流的转变，强调了 Claude 3.5 等高质量模型如何让资深工程师在保持高审美标准的同时实现 10 倍生产力。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/video/cd01d57",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/cd01d57/opengraph-image?64edf17c38836472",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-08 17:14:35",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "The Pragmatic Engineer",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "DHH",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 辅助开发",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "软件工艺",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Ruby on Rails",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "DHH 的全新编程方式 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Ruby on Rails 创始人 DHH 探讨了他向 AI 优先开发工作流的转变，强调了 Claude 3.5 等高质量模型如何让资深工程师在保持高审美标准的同时实现 10 倍生产力。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/cd01d57/twitter-image?8c88273a7af11d7e",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "DHH 的全新编程方式 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/video/cd01d57"
+}

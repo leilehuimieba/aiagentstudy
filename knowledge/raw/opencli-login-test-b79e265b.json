@@ -1,0 +1,139 @@
+{
+  "tab": "F2F55C8D68932CD960D65FD9BE3DC427",
+  "data": {
+    "chars": 8286,
+    "links": [
+      {
+        "href": "https://www.bestblogs.dev/article/b79e265b#main-content",
+        "text": "跳转到主要内容"
+      },
+      {
+        "href": "https://www.bestblogs.dev/",
+        "text": "BestBlogs"
+      },
+      {
+        "href": "https://www.bestblogs.dev/reading/brief",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/reading/follow",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/reading/feed",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/explore",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/explore/brief",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/explore/newsletter",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/explore/topics",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/explore/sources",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/library/history",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/library/bookmarks",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/library/highlights",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/library/review",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/settings",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/docs",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/articles?sourceid=88b8b1",
+        "text": "Elevate"
+      },
+      {
+        "href": "https://addyo.substack.com/p/the-agent-stack-bet",
+        "text": "查看原文 →"
+      },
+      {
+        "href": "https://image.jido.dev/20260418172342_618c5adc-46c0-4142-9254-4ed4c5ab0eca_2556x1632.jpeg",
+        "text": ""
+      },
+      {
+        "href": "https://www.bestblogs.dev/status/2023817132581208353?entry=related_article",
+        "text": "Anthropic 发布 Claude Sonnet 4.6，支持 100 万 Token 上下文窗口"
+      },
+      {
+        "href": "https://www.bestblogs.dev/video/a647d6a?entry=related_article",
+        "text": "State of the Claw — Peter Steinberger"
+      },
+      {
+        "href": "https://www.bestblogs.dev/article/504ce725?entry=related_article",
+        "text": "长周期应用开发中的 Harness 设计"
+      },
+      {
+        "href": "https://www.bestblogs.dev/video/1369401?entry=related_article",
+        "text": "关于代码智能体、AutoResearch 与 AI 循环时代的安德烈·卡帕西"
+      },
+      {
+        "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+        "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型"
+      },
+      {
+        "href": "https://www.bestblogs.dev/article/048d846e?entry=related_article",
+        "text": "长时间运行的智能体"
+      },
+      {
+        "href": "https://www.bestblogs.dev/article/7bbc3383?entry=related_article",
+        "text": "IDE 的终结？"
+      },
+      {
+        "href": "https://www.bestblogs.dev/article/fa58a61b?entry=related_article",
+        "text": "在 Google 14 年学到的另外 14 条经验"
+      },
+      {
+        "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+        "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文"
+      },
+      {
+        "href": "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+        "text": "Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次"
+      },
+      {
+        "href": "https://www.bestblogs.dev/reading/brief",
+        "text": "阅读"
+      },
+      {
+        "href": "https://www.bestblogs.dev/explore",
+        "text": "发现"
+      },
+      {
+        "href": "https://www.bestblogs.dev/settings",
+        "text": "我的"
+      }
+    ],
+    "text": "Peek under the hood of most “production agents” shipping today and you won’t find intelligence. You’ll find custom plumbing, fragile session logic, shared service accounts, and a security model held together by hope. This can be so much better.\n\nIf you’ve spent the last 18 months putting agents into production, you already know the models and tools have gotten dramatically better. You also know the problems that are still burning your on-call rotation are not problems you can prompt your way out of. We are running into a stack ceiling, and it is quietly creating a governance and reliability gap that the next generation of agentic systems cannot grow through.\n\nRight now the industry is living with what I’d call excessive agency: autonomous systems given broad permissions to get things done, then left to discover - at runtime, in production - that a schema drifted, an API changed, or a downstream service started returning PII it wasn’t supposed to. Agents mark tasks “complete” while leaving a trail of corrupted state behind them. The humans find out on Monday.\n\nThis is not a failure of the people building agents. It is a failure of the stack they’re building on.\n\nHere are the four architectural bets I think every serious team has to make in the next twelve months.\n\n1) Agents need identities, not shared credentials\n\nEvery engineer who has shipped agents to production knows this specific flavor of dread: you have agents doing useful work, and effectively zero visibility into which tools they touched, which data they moved, or which credentials they used to do it. I call this governance debt - the silent accumulation of security and audit risk that eventually forces a full rewrite, usually right after the first incident that reaches the CISO.\n\nThe root cause is that most agents today are ghosts. They don’t have identities. They borrow a service account, inherit a human’s OAuth token, and “promise” - in application code, in a prompt - to stay inside the lines. In a real enterprise environment, a promise in a prompt is not a policy.\n\nMy bet is that agent identity has to move from the application layer down into the platform layer.\n\nThe difference is between bolted-on vs. embedded security. Bolted-on looks like middleware in front of every tool call, politely asking the agent to behave: easy to bypass, expensive in latency, and invisible to your existing IAM. Embedded looks like a badge reader welded into a steel frame. The agent has a distinct, unforgeable identi",
+    "title": "智能体技术栈的押注 | BestBlogs.dev",
+    "url": "https://www.bestblogs.dev/article/b79e265b"
+  }
+}

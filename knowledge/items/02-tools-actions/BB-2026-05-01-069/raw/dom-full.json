@@ -1,0 +1,384 @@
+{
+  "content": "The center of developer work is moving. Not disappearing - moving. Away from continuous, line-by-line editing inside a single window, and toward supervising agents that can plan, rewrite files, run tests, and propose changes for review. IDEs as we know them may stop being the primary tool for software work, or heavily evolve.\n\nAcross the tools many developers including myself are already using daily - Conductor, Claude Code Web, GitHub Copilot Agent, Jules, Vibe KanBan, even cmux - the same shift keeps showing up: the control plane is becoming the primary surface, and the editor is becoming one of several instruments underneath it.\n\n \n\nCursor just shipped Glass - a new interface explicitly built to make “working with agents clear, intuitive, and in your control” where agent management is the primary experience and the traditional editor is something you reach for when you need to go deeper. The reaction from developers was immediate:\n\nNow Cursor feels more like an Agent Orchestrator than an IDE. Managing agents in parallel is easier\n\n \n\nBut Glass is one data point in a much larger pattern. Terminal UIs like cmux highlight how the surfaces we’re used to are evolving to better manage agent workflows.\n\n \nFrom editing files to steering workstreams\n\nHistorically, IDEs optimized for a tight inner loop: open files → edit → build → debug → repeat. The “death” argument is that this loop is no longer the dominant unit of productivity once agents can execute most of it autonomously.\n\nThe new loop looks like this: specify intent → delegate → observe → review diffs → merge. What makes it different from “autocomplete with a chat window” is tool-using autonomy combined with interfaces designed to make that autonomy governable.\n\nYou can see this playing out across tools already in heavy use. Claude Code Web (or Desktop) and Codex let developers hand off well-defined tasks to agents running in isolated cloud environments, with progress visible in a browser - no terminal, no local setup required.\n\nGitHub Copilot’s Agents plan and implements multi-file changes independently, creates branches, runs tests, and surfaces a PR for review; the developer’s primary job becomes reviewing the outcome and iterating, not directing each step.\n\n \n\nConductor takes a different approach: a desktop app for running multiple Claude Code agents simultaneously in isolated workspaces, with live progress monitoring across all of them. And Google’s Jules handles asynchronous background tasks - you assign work, it runs, you review the result when it’s done.\n\nWhat these tools share is a mental model: the agent is the unit of work, not the file. The interface worth optimizing is the one that helps you direct, monitor, and review agents - not the one that helps you type faster.\n\nThe orchestration layer taking shape\n\nThe displacement story becomes persuasive only when you look at the specific interface patterns converging across tools.\n\n \n\nWork isolation as a primitive. Parallel agents need to not step on each other. Virtually every serious tool in this space has landed on git worktrees (or similar) as the answer. Conductor maps each agent session to its own isolated workspace. Vibe Kanban (shown above) does the same for its kanban-driven agent workflow. The pattern is near ubiquitous because the problem is real: without isolation, parallel agents produce chaos.\n\nPlanning and task state as the primary UI. Tools like Vibe Kanban have replaced “tabs and files” with “tasks and states” as the top-level mental model. You create task cards (a landing page, a backend service, an email integration), assign each to an agent and a model, and manage the whole effort like a lightweight project board - except the “team” is running autonomously. This is a project management surface that happens to have agents doing the implementation.\n\nBackground agents and async-first design. Some of the most interesting tools in this space don’t even try to keep you in the loop during execution. Cursor, Copilot and Antigravity support background agents that run without requiring your presence - you define intent, step away, and review when they’re done. Jules works similarly: assign a task, come back to a diff. The implicit promise is that your attention is too valuable to spend watching a progress bar. That’s a significant departure from the IDE’s real-time, synchronous feedback loop.\n\nAttention management for parallel agents. When many agents run concurrently, the real bottleneck becomes knowing which one needs you right now. This is why tools like Conductor surface live progress across sessions and cmux introduced notification rings and unread badges for terminal panes. “Agent needs attention” is becoming a first-class event in the developer environment - something to route and triage, not just notice.\n\nAgents embedded into the software lifecycle. GitHub’s Copilot coding agent is asynchronous, secured by a control layer, and powered by GitHub Actions - attached to how code actually ships (issues → PRs → CI → merge), not just how it gets written.\n\nNone of these tools claim IDEs are obsolete - many still interoperate with them. But the repeated patterns (parallel workspaces, diff-first review, task state, background execution, lifecycle integration) are precisely what “death of the IDE” proponents mean when they talk about a center-of-gravity shift.\n\nWhy developers still reach for an IDE\n\nThe best critique of “the IDE is dead” is that the IDE still compresses several genuinely hard problems into a high-fidelity feedback loop: precise navigation, local reasoning, interactive debugging, and the ability to understand a system by directly manipulating it.\n\nEven the most ambitious orchestration tools keep a manual-edit escape hatch. For example, reviewing diffs in-thread, commenting on changes, and then opening the result in your editor for manual adjustments. That’s an acknowledgment that human intervention is part of the intended workflow.\n\nAgent tooling itself highlights where the limits still are. Multi-file refactorings in large repositories remain among the toughest challenges for software engineering agents. These are exactly the situations where interactive code navigation and human judgment still matter most - where you need to hold a mental model of the system that the agent can’t fully reconstruct from context alone.\n\nThe failure mode that keeps developers anchored to IDE-level inspection is agents being almost right. When something is 90% correct and subtly broken, the cost of finding the issue often exceeds what it would have taken to write it yourself. For high-stakes changes, the IDE remains the best instrument for that kind of deep, precise inspection.\n\nThe new costs: review fatigue and governance overhead\n\nIf development becomes “run many agents in parallel” the workflow inherits problems that look less like text editing and more like distributed systems management - observability, permissions, isolation, and governance.\n\nAgent workflows invert the labor. Instead of writing, you’re reviewing. That sounds like an improvement until you’re staring at twelve diffs from twelve parallel agents at the end of the day. Review fatigue is real, and it’s one of the reasons the most thoughtful tools in this space focus on attention routing, structured plans, and review-first gates rather than pushing for full autonomy by default.\n\nThe security surface also expands as agents gain access to more tools, repos, and external systems. As agents can browse the web, query databases, write to filesystems, and trigger deploys, what they’re allowed to do becomes as important as what they’re capable of doing.\n\nOn observability and control, IDE-integrated agent modes are already pushing toward explicit tool logs and approval gates. The governance question isn’t optional once agents act asynchronously and touch CI pipelines.\n\nWhat survives: the IDE, the control plane, or both\n\nA clear reading of the landscape is that “death of the IDE” is directionally right about the center of gravity, but wrong as a literal forecast.\n\nThe strongest version of the claim is this: the IDE stops being the primary workspace and becomes one of several subordinate instruments - used for targeted inspection, debugging, and final edits - while planning, orchestration, review, and agent management move into dashboards, issue trackers, observability terminals, and cloud control planes.\n\nThe “bigger IDE” framing is equally well-supported. The new “IDE” is a system that provides multi-agent orchestration, isolated workspaces, permissions and audit logs, diff-first review, reliable tool connectivity, and attention routing. The file editor is still there. It’s just no longer the front door.\n\nThe IDE isn’t dying. It’s being de-centered. The work is moving outward - into orchestration surfaces where humans define intent, delegate to parallel agent runtimes, and spend more time supervising, reviewing, and governing than typing.\n\nThe IDE remains critical for correctness, comprehension, and the hard problems agents still struggle with. But its no longer the only place where programming happens - and for a growing number, it’s no longer the first place they go.\n\n ",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/7bbc3383#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=88b8b1",
+      "text": "Elevate",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://addyo.substack.com/p/death-of-the-ide",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://conductor.build/",
+      "text": "Conductor",
+      "title": ""
+    },
+    {
+      "href": "https://code.claude.com/docs/en/claude-code-on-the-web",
+      "text": "Claude Code Web",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/copilot/agents",
+      "text": "GitHub Copilot Agent",
+      "title": ""
+    },
+    {
+      "href": "http://jules.google/",
+      "text": "Jules",
+      "title": ""
+    },
+    {
+      "href": "https://www.vibekanban.com/",
+      "text": "Vibe KanBan",
+      "title": ""
+    },
+    {
+      "href": "https://cursor.com/glass",
+      "text": "Glass",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/F2aldi/status/2034801927041818823",
+      "text": "reaction",
+      "title": ""
+    },
+    {
+      "href": "https://cmux.com/",
+      "text": "cmux",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/048d846e?entry=related_article",
+      "text": "长时间运行的智能体",
+      "title": "本文为从业者提供了关于长时间运行 AI 智能体的全面分析，详细阐述了核心工程挑战（有限上下文、无持久状态、无法自我验证）以及 Anthropic、Cursor 和 Google 所采用的趋同架构模式（大脑/双手/会话分离、规划者/执行者/评判者角色）。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/a647d6a?entry=related_article",
+      "text": "State of the Claw — Peter Steinberger",
+      "title": "OpenClaw 创始人兼 OpenAI 工程师 Peter Steinberger 讨论了 OpenClaw 项目前所未有的增长和安全挑战，分享了他独特的 AI 辅助开发工作流，并探讨了 AI 时代不断演变的'工程师品味'概念。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2023817132581208353?entry=related_article",
+      "text": "Anthropic 发布 Claude Sonnet 4.6，支持 100 万 Token 上下文窗口",
+      "title": "Anthropic 宣布推出 Claude Sonnet 4.6，在编程、推理方面迎来重大升级，并支持 100 万 Token 的超长上下文窗口。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型",
+      "title": "OpenAI 宣布推出 GPT-5.5，这是一款专为理解复杂目标和自主完成任务而设计的新模型，现已在 ChatGPT 和 Codex 中上线。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/fa58a61b?entry=related_article",
+      "text": "在 Google 14 年学到的另外 14 条经验",
+      "title": "Addy Osmani 分享了他在 Google 任职期间总结的 14 条高级工程领导力经验，重点关注团队系统、决策速度以及 AI 时代人类判断价值的转变。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文",
+      "title": "Anthropic 宣布推出 Claude Opus 4.6，具备更强的规划能力、优化的智能体表现，并开启了 1M token 上下文窗口的 Beta 测试。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/1369401?entry=related_article",
+      "text": "关于代码智能体、AutoResearch 与 AI 循环时代的安德烈·卡帕西",
+      "title": "安德烈·卡帕西探讨从手动编程到智能体编排的范式转变、AI 研究的自动化，以及对软件工程和教育的深远影响。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/b79e265b?entry=related_article",
+      "text": "智能体技术栈的押注",
+      "title": "本文认为，当前生产级 AI 智能体的发展受到有缺陷的底层技术栈的阻碍，并概述了团队为构建可靠、企业级的智能体系统必须做出的四项关键架构押注——智能体身份、通用上下文、持久化执行和平台采用。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+      "text": "Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次",
+      "title": "软件界传奇人物 Martin Fowler 和 Kent Beck 探讨了 AI 如何重新定义软件工程，并强调 TDD 和模块化等核心实践对于人机协作依然至关重要。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/504ce725?entry=related_article",
+      "text": "长周期应用开发中的 Harness 设计",
+      "title": "本文探讨了 Anthropic 用于长周期自主编程的多智能体 Harness 设计（规划者、生成者、评估者），详细介绍了如何克服上下文焦虑和自我评估偏差，从而构建复杂的全栈应用。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "本文探讨了软件开发从 IDE 中逐行手动编辑向“控制平面”模型的转变，后者专注于编排和监督自主 AI 智能体。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AI 智能体, IDE, 软件工程, 开发者体验, 编排",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "IDE 的终结？ | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "本文探讨了软件开发从 IDE 中逐行手动编辑向“控制平面”模型的转变，后者专注于编排和监督自主 AI 智能体。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/7bbc3383",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/7bbc3383/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-03-20 14:31:23",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Addy Osmani",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "IDE",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "软件工程",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "开发者体验",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "编排",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "IDE 的终结？ | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "本文探讨了软件开发从 IDE 中逐行手动编辑向“控制平面”模型的转变，后者专注于编排和监督自主 AI 智能体。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/7bbc3383/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "IDE 的终结？ | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/7bbc3383"
+}

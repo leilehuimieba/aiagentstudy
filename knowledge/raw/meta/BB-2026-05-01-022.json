@@ -1,0 +1,142 @@
+﻿{
+  "metas": [
+    {
+      "content": "Harness Engineering 不是一组 prompt 技巧，而是把 AI Agent 放进有目标、有上下文、有权限、有验证、有回滚的工程系统里。它回答的是：当模型已经能写代码、调工具、跑长任务时，团队怎样让这些能力进入真实生产。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "harness-engineering, ai-coding, ai-agent, context-engineering, agent-orchestration, mcp-protocol, domain-engineering",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "Harness Engineering 完全指南 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Harness Engineering 不是一组 prompt 技巧，而是把 AI Agent 放进有目标、有上下文、有权限、有验证、有回滚的工程系统里。它回答的是：当模型已经能写代码、调工具、跑长任务时，团队怎样让这些能力进入真实生产。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/explore/topics/harness-engineering-guide",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/explore/topics/harness-engineering-guide/opengraph-image?93bc0944c4cadf0e",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-27T07:12:28Z",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "2026-04-29T04:56:18Z",
+      "name": null,
+      "property": "article:modified_time"
+    },
+    {
+      "content": "harness-engineering",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ai-coding",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "ai-agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "context-engineering",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "agent-orchestration",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "mcp-protocol",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "domain-engineering",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Harness Engineering 完全指南 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Harness Engineering 不是一组 prompt 技巧，而是把 AI Agent 放进有目标、有上下文、有权限、有验证、有回滚的工程系统里。它回答的是：当模型已经能写代码、调工具、跑长任务时，团队怎样让这些能力进入真实生产。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://image.jido.dev/20260420223622_BLOG-3270_OG.png",
+      "name": "twitter:image",
+      "property": null
+    }
+  ],
+  "text": "跳转到主要内容\nBestBlogs\n搜索\nCtrl+K\n切换语言\n切换主题\nCH\n领域\n2026-04-27\nHarness Engineering 完全指南\n\nHarness Engineering 不是一组 prompt 技巧，而是把 AI Agent 放进有目标、有上下文、有权限、有验证、有回滚的工程系统里。它回答的是：当模型已经能写代码、调工具、跑长任务时，团队怎样让这些能力进入真实生产。\n\n分享：\nTwitter\n微信\n复制链接\n领域概览\n\nHarness Engineering 这个词最近被大量中文文章、OpenAI 演讲、平台方产品更新和工程案例同时推到台前，但它容易被误解成“给 Agent 多写几条规则”或“换一个更强模型”。更准确的理解是：Harness 是围绕模型搭建的工程控制面。模型负责生成、规划和调用工具；Harness 负责提供任务状态、上下文、权限边界、执行环境、反馈信号、质量门禁和人工接管点。Martin Fowler 用 feedforward / feedback 来解释这个概念：先把目标、约束和背景喂给 Agent，再用测试、审查、日志和人类判断形成反馈闭环。Ryan Lopopolo 的表述更像角色分工：人类掌舵，Agent 执行。176\n\n这也是为什么本页把 Harness Engineering 定义为 DOMAIN，而不是一次短期事件。2026 年 3 月以来的高质量素材显示，模型发布只是背景：OpenAI Agents SDK 增加沙箱、memory 与 open-source harness 控制；Anthropic 讨论长周期应用开发 Harness 和 Managed Agents；Cloudflare 把 AI Gateway、Workers AI、MCP Portal、AGENTS.md、Engineering Codex 和 AI code review 接成内部工程栈；中文工程案例则从 SPEC、Rule、Skill、Handoff、验证脚本、真实后端风险等角度补上落地细节。7818135123\n\nCloudflare 的内部 AI 工程栈是一个很好的组织级 Harness 样本：路由、推理、MCP、仓库上下文、代码审查和团队知识库被放进同一套控制面，而不是散落在个人 prompt 里。\n\n1. 先划清边界：Harness、Prompt、Context、Agent 不是一回事\n\nPrompt Engineering 关心“怎么对模型说”；Context Engineering 关心“让模型看到什么”；Agent Architecture 关心“模型如何规划、调用工具、维持状态”；Harness Engineering 则更靠外一层，关心“这个非确定性的 Agent 系统如何被工程组织接住”。OpenClaw 的分析把 Prompt / Context / Harness 分成三个维度，Datawhale 的综述把 Agent 表达为 Model + Harness，Sebastian Raschka 则把 Coding Agent 拆成模型、工具、记忆、仓库上下文和执行循环。它们的共同点是：模型不是系统本身，模型只是系统里最会推理的部件。10916\n\n如果只优化 prompt，Agent 仍然可能读不到正确代码、误用工具、越权访问、循环执行、忘记上一步结论，或者在没有测试证据时自信地宣布完成。Harness 的边界在于它把这些“模型外部的问题”做成系统能力：任务拆解、上下文装载、工具白名单、沙箱执行、checkpoint、日志、成本控制、评审门禁和回滚策略。换句话说，Prompt 是一句话，Context 是输入，Agent 是执行者，Harness 是让执行者在真实工程环境中可靠工作的轨道。\n\n2. 生产级 Harness 的六层结构\n\n第一层是任务与状态层。每个任务需要目标、非目标、验收标准、当前状态、已知风险和退出条件。腾讯云关于 Agentic Engineering 的文章把 Spec-First、Knowledge as Code、小任务推进和多层验证作为核心实践；腾讯技术工程和阿里云开发者的案例都强调，如果没有清晰任务入口，Agent 在真实后端系统里会把“看起来能跑”误判为“可以交付”。134\n\n第二层是上下文与知识层。AGENTS.md、架构约定、服务目录、运行手册、团队规范、历史事故和领域术语都应该版本化，而不是只存在于某个工程师脑子里。好的 Harness 会把这些材料按任务最小化注入，而不是把所有文档一次性塞进上下文窗口。Context as Code 的目标不是让上下文更多，而是让上下文更准、更短、更可维护。1516\n\n第三层是工具与权限层。Agent 能调用工具不代表它可以碰生产系统。OpenAI Agents SDK 的沙箱、memory 控制和可检查 harness，Anthropic Managed Agents 的运行时分层，Cloudflare MCP Portal 与 AI Gateway 的内部实践，都说明工具接入必须先经过授权、隔离、审计和成本控制。MCP、CLI、浏览器、数据库、内部 API 和文件系统都是“手”，但 Harness 要决定哪些手可以在什么场景下使用。78135\n\nOpenAI Agents SDK 的更新把沙箱、memory 与 open-source harness 控制作为官方能力呈现，说明 Harness 已经从社区方法论进入平台运行时层。\n\n第四层是执行与编排层。单个 Agent 可以完成局部任务，但生产级软件通常需要多阶段、多角色、长周期执行：需求理解、方案设计、代码修改、测试修复、文档更新、代码审查、部署验证。Anthropic 的长周期应用开发 Harness、LangChain Deep Agents Deploy、Anthropic Managed Agents 都在",
+  "title": "Harness Engineering 完全指南 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/explore/topics/harness-engineering-guide"
+}

@@ -1,0 +1,61 @@
+﻿{
+  "articleText": "30th April 2026 - Link Blog\n\nCodex CLI 0.128.0 adds /goal. The latest version of OpenAI's Codex CLI coding agent adds their own version of the Ralph loop: you can now set a /goal and Codex will keep on looping until it evaluates that the goal has been completed... or the configured token budget has been exhausted.\n\nIt looks like the feature is mainly implemented though the goals/continuation.md and goals/budget_limit.md prompts, which are automatically injected at the end of a turn.",
+  "ids": [
+    "dx-sibebar-container",
+    "radix-_r_4_",
+    "radix-_r_0_",
+    "radix-_r_2_",
+    "main-content",
+    "bbArticleTitle",
+    "radix-_r_6_",
+    "bbArticleContent",
+    "_R_",
+    "el-popper-container-1980",
+    "immersive-translate-popup"
+  ],
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=7808b7",
+      "text": "Simon Willison's Weblog",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://simonwillison.net/2026/Apr/30/codex-goals/#atom-everything",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/openai/codex/releases/tag/rust-v0.128.0",
+      "text": "Codex CLI 0.128.0 adds /goal",
+      "title": ""
+    },
+    {
+      "href": "https://ghuntley.com/ralph/",
+      "text": "Ralph loop",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/openai/codex/blob/6014b6679ffbd92eeddffa3ad7b4402be6a7fefe/codex-rs/core/templates/goals/continuation.md",
+      "text": "goals/continuation.md",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/openai/codex/blob/6014b6679ffbd92eeddffa3ad7b4402be6a7fefe/codex-rs/core/templates/goals/budget_limit.md",
+      "text": "goals/budget_limit.md",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    }
+  ],
+  "textLen": 1834,
+  "title": "Codex CLI 0.128.0 新增 /goal 命令 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/5de75aba"
+}

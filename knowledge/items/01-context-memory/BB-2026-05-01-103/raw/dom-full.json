@@ -1,0 +1,409 @@
+{
+  "content": "In this article, I want to cover the overall design of coding agents and agent harnesses: what they are, how they work, and how the different pieces fit together in practice. Readers of my Build a Large Language Model (From Scratch) and Build a Large Reasoning Model (From Scratch) books often ask about agents, so I thought it would be useful to write a reference I can point to.\n\nMore generally, agents have become an important topic because much of the recent progress in practical LLM systems is not just about better models, but about how we use them. In many real-world applications, the surrounding system, such as tool use, context management, and memory, plays as much of a role as the model itself. This also helps explain why systems like Claude Code or Codex can feel significantly more capable than the same models used in a plain chat interface.\n\nIn this article, I lay out six of the main building blocks of a coding agent.\n\nClaude Code, Codex CLI, and Other Coding Agents\n\nYou are probably familiar with Claude Code or the Codex CLI, but just to set the stage, they are essentially agentic coding tools that wrap an LLM in an application layer, a so-called agentic harness, to be more convenient and better-performing for coding tasks.\n\n \nFigure 1: Claude Code CLI, Codex CLI, and my Mini Coding Agent.\n\nCoding agents are engineered for software work where the notable parts are not only the model choice but the surrounding system, including repo context, tool design, prompt-cache stability, memory, and long-session continuity.\n\nThat distinction matters because when we talk about the coding capabilities of LLMs, people often collapse the model, the reasoning behavior, and the agent product into one thing. But before getting into the coding agent specifics, let me briefly provide a bit more context on the difference between the broader concepts, the LLMs, reasoning models, and agents.\n\nOn The Relationship Between LLMs, Reasoning Models, and Agents\n\nAn LLM is the core next-token model. A reasoning model is still an LLM, but usually one that was trained and/or prompted to spend more inference-time compute on intermediate reasoning, verification, or search over candidate answers.\n\nAn agent is a layer on top, which can be understood as a control loop around the model. Typically, given a goal, the agent layer (or harness) decides what to inspect next, which tools to call, how to update its state, and when to stop, etc.\n\nRoughly, we can think about the relationship as this: the LLM is the engine, a reasoning model is a beefed-up engine (more powerful, but more expensive to use), and an agent harness helps us the model. The analogy is not perfect, because we can also use conventional and reasoning LLMs as standalone models (in a chat UI or Python session), but I hope it conveys the main point.\n\nFigure 2: The relationship between conventional LLM, reasoning LLM (or reasoning model), and an LLM wrapped in an agent harness.\n\nIn other words, the agent is the system that repeatedly calls the model inside an environment.\n\nSo, in short, we can summarize it like this:\n\nLLM: the raw model\n\nReasoning model: an LLM optimized to output intermediate reasoning traces and to verify itself more\n\nAgent: a loop that uses a model plus tools, memory, and environment feedback\n\nAgent harness: the software scaffold around an agent that manages context, tool use, prompts, state, and control flow\n\nCoding harness: a special case of an agent harness; i.e., a task-specific harness for software engineering that manages code context, tools, execution, and iterative feedback\n\nAs listed above, in the context of agents and coding tools, we also have the two popular terms agent harness and (agentic) coding harness. A coding harness is the software scaffold around a model that helps it write and edit code effectively. And an agent harness is a bit broader and not specific to coding (e.g., think of OpenClaw). Codex and Claude Code can be considered coding harnesses.\n\nAnyways, A better LLM provides a better foundation for a reasoning model (which involves additional training), and a harness gets more out of this reasoning model.\n\nSure, LLMs and reasoning models are also capable of solving coding tasks by themselves (without a harness), but coding work is only partly about next-token generation. A lot of it is about repo navigation, search, function lookup, diff application, test execution, error inspection, and keeping all the relevant information in context. (Coders may know that this is hard mental work, which is why we don’t like to be disrupted during coding sessions :)).\n\n \nFigure 3. A coding harness combines three layers: the model family, an agent loop, and runtime supports. The model provides the “engine”, the agent loop drives iterative problem solving, and the runtime supports provide the plumbing. Within the loop, “observe” collects information from the environment, “inspect” analyzes that information, “choose” selects the next step, and “act” executes it.\n\nThe takeaway here is that a good coding harness can make a reasoning and a non-reasoning model feel much stronger than it does in a plain chat box, because it helps with context management and more.\n\nThe Coding Harness\n\nAs mentioned in the previous section, when we say harness, we typically mean the software layer around the model that assembles prompts, exposes tools, tracks file state, applies edits, runs commands, manages permissions, caches stable prefixes, stores memory, and many more.\n\nToday, when using LLMs, this layer shapes most of the user experience compared to prompting the model directly or using web chat UI (which is closer to “chat with uploaded files”).\n\nSince, in my view, the vanilla versions of LLMs nowadays have very similar capabilities (e.g., the vanilla versions of GPT-5.4, Opus 4.6, and GLM-5 or so), the harness can often be the distinguishing factor that makes one LLM work better than another.\n\nThis is speculative, but I suspect that if we dropped one of the latest, most capable open-weight LLMs, such as GLM-5, into a similar harness, it could likely perform on par with GPT-5.4 in Codex or Claude Opus 4.6 in Claude Code. That said, some harness-specific post-training is usually beneficial. For example, OpenAI historically maintained separate GPT-5.3 and GPT-5.3-Codex variants.\n\nIn the next section, I want to go more into the specifics and discuss the core components of a coding harness using my Mini Coding Agent: https://github.com/rasbt/mini-coding-agent.\n\n \nFigure 4: Main harness features of a coding agent / coding harness that will be discussed in the following sections.\n\nBy the way, in this article, I use the terms “coding agent” and “coding harness” somewhat interchangeably for simplicity. (Strictly speaking, the agent is the model-driven decision-making loop, while the harness is the surrounding software scaffold that provides context, tools, and execution support.)\n\n \nFigure 5: Minimal but fully working, from-scratch Mini Coding Agent (implemented in pure Python)\n\nAnyways, below are six main components of coding agents. You can check out the source code of my minimal but fully working, from-scratch Mini Coding Agent (implemented in pure Python), for more concrete code examples. The code annotates the six components discussed below via code comments:\n\n##############################\n#### Six Agent Components ####\n##############################\n# 1) Live Repo Context -> WorkspaceContext\n# 2) Prompt Shape And Cache Reuse -> build_prefix, memory_text, prompt\n# 3) Structured Tools, Validation, And Permissions -> build_tools, run_tool, validate_tool, approve, parse, path, tool_*\n# 4) Context Reduction And Output Management -> clip, history_text\n# 5) Transcripts, Memory, And Resumption -> SessionStore, record, note_tool, ask, reset\n# 6) Delegation And Bounded Subagents -> tool_delegate\n复制\n1. Live Repo Context\n\nThis is maybe the most obvious component, but it is also one of the most important ones.\n\nWhen a user says “fix the tests” or “implement xyz,” the model should know whether it is inside a Git repo, what branch it is on, which project documents might contain instructions, and so on.\n\nThat’s because those details often change or affect what the correct action is. For example, “Fix the tests” is not a self-contained instruction. If the agent sees AGENTS.md or a project README, it may learn which test command to run, etc. If it knows the repo root and layout, it can look in the right places instead of guessing.\n\nAlso, the git branch, status, and commits can help provide more context about what changes are currently in progress and where to focus.\n\n \nFigure 6: The agent harness first builds a small workspace summary that gets combined with the user request for additional project context.\n\nThe takeaway is that the coding agent collects info (”stable facts” as a workspace summary) upfront before doing any work, so that it’s is not starting from zero, without context, on every prompt.\n\n2. Prompt Shape And Cache Reuse\n\nOnce the agent has a repo view, the next question is how to feed that information to the model. The previous figure showed a simplified view of this (“Combined prompt: prefix + request”), but in practice, it would be relatively wasteful to combine and re-process the workspace summary on every user query.\n\nI.e., coding sessions are repetitive, and the agent rules usually stay the same. The tool descriptions usually stay the same, too. And even the workspace summary usually stays (mostly) the same. The main changes are usually the latest user request, the recent transcript, and maybe the short-term memory.\n\n“Smart” runtimes don’t rebuild everything as one giant undifferentiated prompt on every turn, as illustrated in the figure below.\n\n \nFigure 7: The agent harness builds a stable prompt prefix, adds the changing session state, and then feeds that combined prompt to the model.\n\nThe main difference from section 1 is that section 1 was about gathering repo facts. Here, we are now interested in packaging and caching those facts efficiently for repeated model calls.\n\nThe “stable” “Stable prompt prefix” means that the information contained there doesn’t change too much. It usually contains the general instructions, tool descriptions, and the workspace summary. We don’t want to waste compute on rebuilding it from scratch in each interaction if nothing important has changed.\n\nThe other components are updated more frequently (usually each turn). This includes short-term memory, the recent transcript, and the newest user request.\n\nIn short, the caching aspect for the “Stable prompt prefix” is simply that a smart runtime tries to reuse that part.\n\n3. Tool Access and Use\n\nTool access and tool use are where it starts to feel less like chat and more like an agent.\n\nA plain model can suggest commands in prose, but an LLM in a coding harness should do something narrower and more useful and be actually able to execute the command and retrieve the results (versus us calling the command manually and pasting the results back into the chat).\n\nBut instead of letting the model improvise arbitrary syntax, the harness usually provides a pre-defined list of allowed and named tools with clear inputs and clear boundaries. (But of course, something like Python subprocess.call can be part of this so that the agent could also execute an arbitrary wide list of shell commands.)\n\nThe tool-use flow is illustrated in the figure below.\n\n \nFigure 8: The model emits a structured action, the harness validates it, optionally asks for approval, executes it, and feeds the bounded result back into the loop.\n\nTo illustrate this, below is an example of how this usually looks to the user using my Mini Coding Agent. (This is not as pretty as Claude Code or Codex because it is very minimal and uses plain Python without any external dependencies.)\n\n \nFigure 9: Illustration of a tool call approval request in the Mini Coding Agent.\n\nHere, the model has to choose an action that the harness recognizes, like list files, read a file, search, run a shell command, write a file, etc. It also has to provide arguments in a shape that the harness can check.\n\nSo when the model asks to do something, the runtime can stop and run programmatic checks like\n\n“Is this a known tool?”,\n\n“Are the arguments valid?”,\n\n“Does this need user approval?”\n\n“Is the requested path even inside the workspace?”\n\nOnly after those checks pass does anything actually run.\n\nWhile running coding agents, of course, carries some risk, the harness checks also improve reliability because the model doesn’t execute totally arbitrary commands.\n\nAlso, besides rejecting malformed actions and approval gating, file access can be kept inside the repo by checking file paths.\n\nIn a sense, the harness is giving the model less freedom, but it also improves the usability at the same time.\n\n4. Minimizing Context Bloat\n\nContext bloat is not a unique problem of coding agents but an issue for LLMs in general. Sure, LLMs are supporting longer and longer contexts these days (and I recently wrote about the attention variants that make it computationally more feasible), but long contexts are still expensive and can also introduce additional noise (if there is a lot of irrelevant info).\n\nA Visual Guide to Attention Variants in Modern LLMs\nSebastian Raschka, PhD\n·\nMar 22\nRead full story\n\nCoding agents are even more susceptible to context bloat than regular LLMs during multi-turn chats, because of repeated file reads, lengthy tool outputs, logs, etc.\n\nIf the runtime keeps all of that at full fidelity, it will run out of available context tokens pretty quickly. So, a good coding harness is usually pretty sophisticated about handling context bloat beyond just cutting our summarizing information like regular chat UIs.\n\nConceptually, the context compaction in coding agents might work as summarized in the figure below. Specifically, we are zooming a bit further into the clip (step 6) part of Figure 8 in the previous section.\n\n \nFigure 10: Large outputs are clipped, older reads are deduplicated, and the transcript is compressed before it goes back into the prompt.\n\nA minimal harness uses at least two compaction strategies to manage that problem.\n\nThe first is clipping, which shortens long document snippets, large tool outputs, memory notes, and transcript entries. In other words, it prevents any one piece of text from taking over the prompt budget just because it happened to be verbose.\n\nThe second strategy is transcript reduction or summarization, which turns the full session history (more on that in the next section) into a smaller promptable summary.\n\nA key trick here is to keep recent events richer because they are more likely to matter for the current step. And we compress older events more aggressively because they are likely less relevant.\n\nAdditionally, we also deduplicate older file reads so the model does not keep seeing the same file content over and over again just because it was read multiple times earlier in the session.\n\nOverall, I think this is one of the underrated, boring parts of good coding-agent design. A lot of apparent “model quality” is really context quality.\n\n5. Structured Session Memory\n\nIn practice, all these 6 core concepts covered here are highly intertwined, and the different sections and figures cover them with different focuses or zoom levels. In the previous section, we covered prompt-time use of history and how we build a compact transcript. The question there is: how much of the past should go back into the model on the next turn? So the emphasis is compression, clipping, deduplication, and recency.\n\nNow, this section, structured session memory, is about the storage-time structure of history. The question here is: what does the agent keep over time as a permanent record? So the emphasis is that the runtime keeps a fuller transcript as a durable state, alongside a lighter memory layer that is smaller and gets modified and compacted rather than just appended to.\n\nTo summarize, a coding agent separates state into (at least) two layers:\n\nworking memory: the small, distilled state the agent keeps explicitly\n\na full transcript: this covers all the user requests, tool outputs, and LLM responses\n\n \nFigure 11: New events get appended to a full transcript and summarized in a working memory. The session files on disk are usually stored as JSON files.\n\nThe figure above illustrates the two main session files, the full transcript and the working memory, that usually get stored as JSON files on disk. As mentioned before, the full transcript stores the whole history, and it’s resumable if we close the agent. The working memory is more of a distilled version with the currently most important info, which is somewhat related to the compact transcript.\n\nBut the compact transcript and working memory have slightly different jobs. The compact transcript is for prompt reconstruction. Its job is to give the model a compressed view of recent history so it can continue the conversation without seeing the full transcript every turn. The working memory is more meant for task continuity. Its job is to keep a small, explicitly maintained summary of what matters across turns, things like the current task, important files, and recent notes.\n\nFollowing step 4 in the figure above, the latest user request, together with the LLM response and tool output, would then be recorded as a “new event” in both the full transcript and working memory, in the next round, which is not shown to reduce clutter in the figure above.\n\n6. Delegation With (Bounded) Subagents\n\nOnce an agent has tools and state, one of the next useful capabilities is delegation.\n\nThe reason is that it allows us to parallelize certain work into subtasks via subagents and speed up the main task. For example, the main agent may be in the middle of one task and still need a side answer, for example, which file defines a symbol, what a config says, or why a test is failing. It is useful to split that off into a bounded subtask instead of forcing one loop to carry every thread of work at once.\n\n(In my mini coding agent, the implementation is simpler, and the child still runs synchronously, but the underlying idea is the same.)\n\nA subagent is only useful if it inherits enough context to do real work. But if we don’t restrict it, we now have multiple agents duplicating work, touching the same files, or spawning more subagents, and so on.\n\nSo the tricky design problem is not just how to spawn a subagent but also how to bind one :).\n\n \nFigure 12: The subagent inherits enough context to be useful, but it runs inside tighter boundaries than the main agent.\n\nThe trick here is that the subagent inherits enough context to be useful, but also has it constrained (for example, read-only and restricted in recursion depth)\n\nClaude Code has supported subagents for a long time, and Codex added them more recently. Codex does not generally force subagents into read-only mode. Instead, they usually inherit much of the main agent’s sandbox and approval setup. So, the boundary is more about task scoping, context, and depth.\n\nComponents Summary\n\nThe section above tried to cover the main components of coding agents. As mentioned before, they are more or less deeply intertwined in their implementation. However, I hope that covering them one by one helps with the overall mental model of how coding harnesses work, and why they can make the LLM more useful compared to simple multi-turn chats.\n\n \nFigure 13: Six main features of a coding harness discussed in previous sections.\n\nIf you are interested in seeing these implemented in clean, minimalist Python code, you may like my Mini Coding Agent.\n\nHow Does This Compare To OpenClaw?\n\nOpenClaw may be an interesting comparison, but it is not quite the same kind of system.\n\nOpenClaw is more like a local, general agent platform that can also code, rather than being a specialized (terminal) coding assistant.\n\nThere are still several overlaps with a coding harness:\n\nit uses prompt and instruction files in the workspace, such as AGENTS.md, SOUL.md, and TOOLS.md\n\nit keeps JSONL session files and includes transcript compaction and session management\n\nit can spawn helper sessions and subagents\n\netc.\n\nHowever, as mentioned above, the emphasis is different. Coding agents are optimized for a person working in a repository and asking a coding assistant to inspect files, edit code, and run local tools efficiently. OpenClaw is more optimized for running many long-lived local agents across chats, channels, and workspaces, with coding as one important workload among several others.\n\nI am excited to share that I finished writing Build A Reasoning Model (From Scratch) and all chapters are in early access yet. The publisher is currently working on the layouts, and it should be available this summer.\n\nThis is probably my most ambitious book so far. I spent about 1.5 years writing it, and a large number of experiments went into it. It is also probably the book I worked hardest on in terms of time, effort, and polish, and I hope you’ll enjoy it.\n\n \n\nThe main topics are\n\nevaluating reasoning models\n\ninference-time scaling\n\nself-refinement\n\nreinforcement learning\n\ndistillation\n\nThere is a lot of discussion around “reasoning” in LLMs, and I think the best way to understand what it really means in the context of LLMs is to implement one from scratch!\n\nAmazon (pre-order)\n\nManning (complete book in early access, pre-final layout, 528 pages)",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/4e385f0b#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=0810d9f6",
+      "text": "Ahead of AI",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/rasbt/mini-coding-agent",
+      "text": "Mini Coding Agent",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/rasbt/mini-coding-agent",
+      "text": "https://github.com/rasbt/mini-coding-agent",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/rasbt/mini-coding-agent/blob/main/mini_coding_agent.py",
+      "text": "Mini Coding Agent",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/rasbt/mini-coding-agent/blob/main/mini_coding_agent.py",
+      "text": "Mini Coding Agent",
+      "title": ""
+    },
+    {
+      "href": "https://magazine.sebastianraschka.com/p/visual-attention-variants",
+      "text": "attention variants",
+      "title": ""
+    },
+    {
+      "href": "https://magazine.sebastianraschka.com/p/visual-attention-variants",
+      "text": "A Visual Guide to Attention Variants in Modern LLMs",
+      "title": ""
+    },
+    {
+      "href": "https://substack.com/profile/27393275-sebastian-raschka-phd",
+      "text": "Sebastian Raschka, PhD",
+      "title": ""
+    },
+    {
+      "href": "https://magazine.sebastianraschka.com/p/visual-attention-variants",
+      "text": "Read full story",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/rasbt/mini-coding-agent",
+      "text": "Mini Coding Agent",
+      "title": ""
+    },
+    {
+      "href": "https://amzn.to/4aAKiFY",
+      "text": "Amazon",
+      "title": ""
+    },
+    {
+      "href": "https://mng.bz/Nwr7",
+      "text": "Manning",
+      "title": ""
+    },
+    {
+      "href": "https://mng.bz/Nwr7",
+      "text": "early access",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/504ce725?entry=related_article",
+      "text": "长周期应用开发中的 Harness 设计",
+      "title": "本文探讨了 Anthropic 用于长周期自主编程的多智能体 Harness 设计（规划者、生成者、评估者），详细介绍了如何克服上下文焦虑和自我评估偏差，从而构建复杂的全栈应用。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/72e3cf5?entry=related_article",
+      "text": "Claude Code 负责人：当编程问题被解决后会发生什么 | Boris Cherny",
+      "title": "Anthropic 的 Claude Code 负责人 Boris Cherny 讨论了向 100% AI 生成软件开发的转型，以及像 Co-work 这样的自主智能体的兴起。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/f884575?entry=related_article",
+      "text": "Boris Cherny：我们如何打造 Claude Code",
+      "title": "Claude Code 创始人 Boris Cherny 探讨了该工具在 Anthropic 的演进过程，强调了“为未来构建”的理念、多智能体编排，以及 AI 原生工程中 150% 的激进生产力提升。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/8f3d453?entry=related_article",
+      "text": "与 Boris Cherny 共同构建 Claude Code",
+      "title": "Claude Code 的创建者 Boris Cherny 探讨了他 100% 由 AI 驱动的工作流、Anthropic 独特的工程文化，以及为什么在 AI 时代软件工程师正从“抄写员”转变为“作者”。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019566641491963946?entry=related_article",
+      "text": "OpenAI 内部路线图：迈向智能体化软件开发",
+      "title": "Greg Brockman 概述了 OpenAI 的战略转型及实践框架，旨在将工程团队转向“智能体优先”的开发工作流。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+      "text": "Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次",
+      "title": "软件界传奇人物 Martin Fowler 和 Kent Beck 探讨了 AI 如何重新定义软件工程，并强调 TDD 和模块化等核心实践对于人机协作依然至关重要。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文",
+      "title": "Anthropic 宣布推出 Claude Opus 4.6，具备更强的规划能力、优化的智能体表现，并开启了 1M token 上下文窗口的 Beta 测试。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a87566fa?entry=related_article",
+      "text": "理解 LLM 架构的工作流程",
+      "title": "本文概述了一种理解 LLM 架构的手动工作流程：从官方论文入手，然后检查 Hugging Face transformers 库中的配置文件与参考实现，以提取准确的架构细节。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/16388334?entry=related_article",
+      "text": "现代 LLM 中注意力机制变体的可视化指南",
+      "title": "一份全面的技术指南，探讨了现代 LLM 中关键注意力机制的演变与权衡，包括 MHA、GQA、MLA 和 SWA。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/1369401?entry=related_article",
+      "text": "关于代码智能体、AutoResearch 与 AI 循环时代的安德烈·卡帕西",
+      "title": "安德烈·卡帕西探讨从手动编程到智能体编排的范式转变、AI 研究的自动化，以及对软件工程和教育的深远影响。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "对编程智能体六大核心架构组件以及使 LLM 能够高效执行复杂工程任务的软件框架（harness）的技术深度解析。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "编程智能体, 智能体框架, LLM 架构, 上下文管理, 软件工程",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "编程智能体的组成部分 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "对编程智能体六大核心架构组件以及使 LLM 能够高效执行复杂工程任务的软件框架（harness）的技术深度解析。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/4e385f0b",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/4e385f0b/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-04 11:45:37",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Sebastian Raschka",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "PhD",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "编程智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "智能体框架",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "LLM 架构",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "上下文管理",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "软件工程",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "编程智能体的组成部分 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "对编程智能体六大核心架构组件以及使 LLM 能够高效执行复杂工程任务的软件框架（harness）的技术深度解析。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/4e385f0b/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "编程智能体的组成部分 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/4e385f0b"
+}

@@ -1,0 +1,374 @@
+{
+  "content": "\n\n\nWhen you ask Codex to fix a bug, it scans through your codebase for relevant files, reads them to build context, makes edits, and runs tests to verify the fix worked. Under the hood, that means dozens of back-and-forth Responses API requests: determine the model’s next action, run a tool on your computer, send the tool output back to the API, and repeat.\n\nAll of these requests can add up to minutes that users spend waiting for Codex to complete complex tasks. From a latency perspective, the Codex agent loop spends most of its time in three main stages: working in the API services (to validate and process requests), model inference, and client-side time (running tools and building model context). Inference is the stage where the model runs on GPUs to generate new tokens. In the past, running LLM inference on GPUs was the slowest part of the agentic loop, so API service overhead was easy to hide. As inference gets faster, the cumulative API overhead from an agentic rollout is much more notable.\n\nIn this post, we'll explain how we made agent loops using the API 40% faster end-to-end, letting users experience the jump in inference speed from 65 to nearly 1,000 tokens per second. We approached this through caching, eliminating unnecessary network hops, improving our safety stack to quickly flag issues, and—most importantly—building a way to create a persistent connection to the Responses API, instead of having to make a series of synchronous API calls.\n\nWhen the API became the bottleneck\n\nIn the Responses API, previous flagship models like GPT‑5 and GPT‑5.2 ran at roughly 65 tokens per second (TPS). For the launch of GPT‑5.3‑Codex‑Spark, a fast coding model, our goal was an order of magnitude faster: over 1,000 TPS, enabled by specialized Cerebras hardware optimized for LLM inference. To make sure users could experience the true speed of this new model, we had to reduce API overhead. \n\nAround November of 2025, we launched a performance sprint on the Responses API, landing many optimizations to the critical-path latency for a single request: \n\nCaching rendered tokens and model configuration in memory to skip expensive tokenization and network calls for multi-turn responses\nReducing network hop latency by eliminating calls to intermediate services (for example, image processing resolution) and directly calling the inference service itself\nImproving our safety stack so we could run certain classifiers to flag conversations faster\n\nWith these improvements, we saw close to a 45% improvement in time to first token (TTFT)—which reflects how responsive the API feels—but these improvements were still not fast enough for GPT‑5.3‑Codex‑Spark. Even with these improvements, Responses API overhead was too large relative to the speed of the model—that is, users had to wait for the CPUs running our API before they could use the GPUs serving the model.\n\nThe deeper issue was structural: we treated each Codex request as independent, processing conversation state and other reusable context in every follow-up request. Even when most of the conversation hadn't changed, we still paid for work tied to the full history. As conversations got longer, that repeated processing became more expensive.\n\nBuilding a persistent connection\n\nTo tighten up the design, we rethought the transport protocol: could we keep a persistent connection and cache state, rather than establishing a new connection over HTTP and sending the full conversation history for each follow-up request? The idea was to only send any new information requiring validation and processing and cache reusable state in memory for the lifetime of the connection. This would reduce overhead from redundant work.\n\nWe considered a few different approaches, including WebSockets and gRPC bidirectional streaming. We landed on WebSockets because as a simple message transport protocol, users wouldn't have to change their Responses API input and output shapes. It was developer-friendly and fit our existing architecture with little disruption.\n\nThe first WebSocket prototype changed what we thought was possible for Responses API latency. An engineer on the Codex team with deep expertise across the API stack pulled together a prototype by running a Codex agent overnight.\n\nIn that prototype, agentic rollouts were modeled as a single long-running Response. Using asyncio features, the Responses API would asynchronously block in the sampling loop after a tool call was sampled, and the Responses API would send a response.done event back to the client. After executing the tool call, clients would send back a response.append event with the tool result, which unblocked the sampling loop and let the model continue.\n\nAn analogy here is treating the local tool call as a hosted tool call. When the model calls web search, the inference loop blocks, calls a web search service, and puts the service response in the model context. In our design, we did the same thing; but instead of calling a remote service, we sent the model's tool call to the client back over the WebSocket. When the client responded, we put the client's tool call response into the context and continued to sample.\n\nThis design was extremely effective because it eliminated repeated API work across an agent rollout. We could do preinference work once, pause for tool execution, and do postinference work once at the end.\n\nUnfortunately, this came at the cost of a less familiar and more complicated API shape. We wanted developers to be able to drop in WebSocket support without having to rewrite their API integration around a new interaction mode.\n\nKeeping the API familiar while making the stack incremental\n\nFor the version we launched, we switched back to a familiar shape: keep using response.create with the same body, and use previous_response_id to continue the conversation context from the previous response’s state.\n\nOn a WebSocket connection, the server keeps a connection-scoped, in-memory cache of previous response state. When a follow-up response.create includes previous_response_id, we fetch that state from the cache instead of rebuilding the full conversation from scratch.\n\nThat cached state includes:\n\nThe previous response object\nPrior input and output items\nTool definitions and namespaces\nReusable sampling artifacts, like previously rendered tokens\n\nBy reusing the in-memory previous response state, we were able to land several major optimizations:\n\nMaking some of our safety classifiers and request validators process only new input, not the full history every time\nKeeping an in-memory cache of rendered tokens that we append to so we can skip unnecessary tokenization\nReusing our successful model resolution/routing logic across requests \nOverlapping non-blocking postinference work like billing with subsequent requests\n\nThe goal was to get as close as possible to the minimal-overhead prototype but with an API shape developers already understood and built around.\n\nSetting a new bar for speed\n\nAfter a two-month sprint building WebSocket mode, we launched an alpha with key coding agent startups so they could integrate it into their infrastructure and safely ramp up traffic. Alpha users loved it, reporting up to 40% improvements⁠\n(opens in a new window)\n in their agentic workflows. Given the positive alpha feedback, we were ready to launch.\n\nThe launch results were immediate. Codex quickly ramped up the majority of their Responses API traffic onto WebSocket mode, seeing significant latency improvements. For GPT‑5.3‑Codex‑Spark, we hit our 1,000 TPS target and saw bursts up to 4,000 TPS, showing that the Responses API could keep up with much faster inference in real production traffic. The impact showed up quickly in the developer community too:\n\nCodex quickly ramped the majority of their traffic onto WebSockets. Codex users running the latest models such as GPT‑5.3‑Codex⁠\n(opens in a new window)\n, GPT‑5.4⁠\n(opens in a new window)\n, and beyond all benefit from WebSocket mode’s speed up.\nVercel integrated WebSocket mode into the AI SDK and saw latency decrease by up to 40%⁠\n(opens in a new window)\n.\nCline’s multi-file workflows are 39% faster⁠\n(opens in a new window)\n.\nOpenAI models in Cursor became up to 30% faster⁠\n(opens in a new window)\n.\n\nWebSocket mode is the one of the most significant new capabilities in the Responses API since its launch in March 2025. We went from idea to running in production in just a few weeks through close collaboration between OpenAI's API and Codex teams. It not only dramatically improves agent rollout latency but also supports a growing need for builders: as model inference gets faster, the services and systems that surround inference also need to speed up to transfer these gains to users. ",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/52f8c2e7#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=8749b9",
+      "text": "OpenAI Blog",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/aisdk/status/2026031263925039591",
+      "text": "up to 40% improvements⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+      "text": "GPT‑5.3‑Codex⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://developers.openai.com/api/docs/models/gpt-5.4",
+      "text": "GPT‑5.4⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/aisdk/status/2026031263925039591",
+      "text": "up to 40%⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/cline/status/2026031848791630033",
+      "text": "39% faster⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/leerob/status/2026030244407468259",
+      "text": "30% faster⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a6d9083a?entry=related_article",
+      "text": "GPT-5.5 发布",
+      "title": "OpenAI 发布其迄今为止能力最强的模型 GPT-5.5，在智能体编程、知识工作和科学研究方面取得显著进步，同时保持了 GPT-5.4 的延迟并提升了 Token 效率。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型",
+      "title": "OpenAI 宣布推出 GPT-5.5，这是一款专为理解复杂目标和自主完成任务而设计的新模型，现已在 ChatGPT 和 Codex 中上线。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/f12b487?entry=related_article",
+      "text": "这就是 ChatGPT 图像 2.0",
+      "title": "OpenAI 正式发布了 Images 2.0，这是一个高度智能的图像生成模型，具备‘思考’、网络搜索、生成复杂图表、支持多语言提示以及为专业制作创建连贯多图像集的能力。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/e792cb18?entry=related_article",
+      "text": "ChatGPT 中引入工作区智能体",
+      "title": "OpenAI 引入了工作区智能体，这是 ChatGPT 内一类新型的、可共享的、长期运行的 AI 智能体，专为业务团队设计，旨在自动化复杂工作流、与组织工具集成，并在企业级控制下运行。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/d8c375d8?entry=related_article",
+      "text": "Codex 几乎无所不能",
+      "title": "OpenAI 宣布对 Codex 进行重大更新，将其能力从编码扩展到计算机操作、网页交互、图像生成，并通过记忆、自动化等新功能以及超过 90 个插件，在软件开发全生命周期实现更深度的集成。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/77d5e14?entry=related_article",
+      "text": "Build Hour：API 与 Codex",
+      "title": "本期 OpenAI Build Hour 介绍了“Harness Engineering”，这是一种优化代码库的方法论，旨在让自主 AI 智能体能够处理完整的软件开发任务。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/80a29c25?entry=related_article",
+      "text": "工作区智能体",
+      "title": "这篇来自 OpenAI 博客的文章介绍了 ChatGPT 中工作区智能体的概念，解释了其核心组件、设计结构、常见工作流模式，并提供了使用、构建、测试和扩展这些智能体以完成可重复、结构化业务任务的实用指南。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/816f23c9?entry=related_article",
+      "text": "用于 Codex 编排的开源规范：Symphony",
+      "title": "OpenAI 推出了 Symphony，这是一套开源规范，能将 Linear 这类问题追踪器转变为编码智能体的常开型编排器。通过将智能体的工作与人类注意力解耦，成功将落地拉取请求的数量提升了 500%。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019474152743223477?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.3-Codex",
+      "title": "OpenAI 宣布 GPT-5.3-Codex 正式上线，这是其代码生成模型系列的重大突破。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2029622732594499630?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.4：支持原生计算机使用与 100 万 token 上下文",
+      "title": "山姆·奥特曼宣布发布 GPT-5.4，其特点是增强了知识工作能力、具备原生计算机使用功能，并拥有 100 万 token 的上下文窗口。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "OpenAI 工程师详细介绍了他们如何重新设计 Responses API 以使用持久的 WebSocket 连接，通过消除冗余的网络开销并让 GPT‑5.3‑Codex‑Spark 等更快的模型充分发挥其推理速度潜力，将智能体工作流延迟降低了高达 40%。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "OpenAI, Responses API, WebSockets, 智能体工作流, API 性能",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "通过 Responses API 中的 WebSockets 加速智能体工作流 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "OpenAI 工程师详细介绍了他们如何重新设计 Responses API 以使用持久的 WebSocket 连接，通过消除冗余的网络开销并让 GPT‑5.3‑Codex‑Spark 等更快的模型充分发挥其推理速度潜力，将智能体工作流延迟降低了高达 40%。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/52f8c2e7",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/52f8c2e7/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-22 10:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "OpenAI",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "OpenAI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Responses API",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "WebSockets",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "智能体工作流",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "API 性能",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "通过 Responses API 中的 WebSockets 加速智能体工作流 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "OpenAI 工程师详细介绍了他们如何重新设计 Responses API 以使用持久的 WebSocket 连接，通过消除冗余的网络开销并让 GPT‑5.3‑Codex‑Spark 等更快的模型充分发挥其推理速度潜力，将智能体工作流延迟降低了高达 40%。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/52f8c2e7/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "通过 Responses API 中的 WebSockets 加速智能体工作流 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/52f8c2e7"
+}

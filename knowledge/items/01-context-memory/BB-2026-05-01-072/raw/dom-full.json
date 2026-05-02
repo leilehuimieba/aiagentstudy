@@ -1,0 +1,299 @@
+{
+  "content": "PODCAST\n93\n#450.程序员的“印刷机”时刻：对话 Claude Code 创造者 Boris Cherny 的 AI 编程进化论\n\n对话 Claude Code 创造者 Boris Cherny，探讨 AI 智能体如何彻底改变软件工程范式及工程师的未来角色。\n\n跨国串门儿计划\n关注\n·\n03-05\n·\n01:15:51\n·\n20 个章节\n·\n查看原文 →\n00:00\n01:15:51\n1x\n章节导览\n20 个章节 · 01:15:51\nCH.1\nAI 编程时代的工程转型：从手写代码到云代码的飞跃\n00:00▶\nCH.2\n创业历程：从医疗软件到产品市场匹配的探索与转型\n03:34\nCH.3\n七年 Meta 职场蜕变：从 Facebook Groups 到卓越工程领导力的飞跃\n06:56\nCH.4\n卓越工程实践与代码质量对效率影响的深度探索\n11:33\nCH.5\nAI 技术革新与个人职业选择的交汇点\n13:28\nCH.6\n云代码：从聊天机器人到智能体 AI 的进化历程\n14:54\nCH.7\nAnthropic 实验室：以安全为核心的研究与产品开发\n18:13\nCH.8\nAI 编程助手如何重塑开发流程：从信任到高效实践的转变\n20:58\nCH.9\n灵活运用 Cloud Code 提升开发效率：多环境并行与移动编程实践\n22:33\nCH.10\n并行代理与 AI 助手如何重塑编程工作流\n25:46\nCH.11\n代码审查流程演变与自动化实践：从人工到云代码的转型\n29:08\nCH.12\n云代码架构与安全机制探讨：从核心循环到工具实验\n34:50\nCH.13\n跨领域应用与 Anthropic 独特工作文化探析\n39:17\nCH.14\n原型设计与迭代：取代传统文档的现代开发趋势\n43:51\nCH.15\n非工程师友好型 AI 协作系统：从概念到现实的十天速成记\n48:26\nCH.16\n深入探讨应用复杂度：从 UI 到安全与多平台支持\n51:38\nCH.17\n云代码与云覆盖：企业级可观测性、监控与隐私保护的实践探索\n56:15\nCH.18\n探索 Agent Teams 与不相关上下文窗口：提升复杂任务处理能力\n57:55\nCH.19\n面对 AI 快速进步，程序员如何转型与适应\n01:01:20\nCH.20\nAI 浪潮下的技能转型与未来工作方式探讨\n01:10:48\n📝 实时字幕\n跟随播放\n全部字幕\nCH.1\nAI 编程时代的工程转型：从手写代码到云代码的飞跃\n00:00 — 03:34\n00:00\n1\n\n当你加入全球顶尖的 AI 实验室，你的第一个 PR 拉取请求却被拒绝了，会发生什么原因？不是代码写得烂，而是因为你是手写的这正是 boris journey 加入 anthropic 时的真实经历。Bora 是 claud code 的创建者和工程负责人。在加入 anthropic 之前，他在 meta 工作了七年，负责 instagram、facebook、WhatsApp 和 messenger 的代码质量，是公司里最高产的代码作者和审查者之一。在今天的节目中，我们会聊到 cloud code 是如何从一个业余项目变成增长最快的开发者工具之一的，以及 anthropic 内部关于是否发布它的辩论。我们还会聊到 borris 现在每天提交 20 至 30 个 PR 且完全不手写代码的工作流，以及当一切都由 AI 编写时，代码审查是如何运作的。为什么 boris 认为我们正处于一个像印刷机发明一样具有变革性的时代，以及现在哪些工程技能更重要，哪些不再重要。如果你想了解那些最接近 AI 编程智能体的人，现在是如何构建软件的，以及这对我们其他工程师意味着什么，这期节目就是为你准备的。\n\n01:00\n2\n\n最初是你是怎么。\n\n01:01\n1\n\n进入科技软件工程和编程这一行的这得从很久以前说起了。\n\n01:08\n2\n\n我觉得是两条平行的路径交织在了一起。大概 13 岁的时候，我开始在易贝上卖我的旧宝可梦卡。然后我发现在 ebay 上其实是可以写 HTL 的。我观察别人的宝可梦卡列表，发现有些人的字体颜色很大，还有各种样式。接着我发现了 blink 标签，闪烁标签。我就想如果我加上这个标签，我的卡就能卖 99 美分，而不是 49 美分。我就是这样开始了解 HTML 的，后来我买了一本 HTML 的书深入学习了一下。\n\n01:38\n2\n\n第二件事儿是大概在初中我们有那种旧的 TI83 图形计算器，我们用它上数学课。我意识到如果我直接把数学考试的答案编进计算机程序里，我就能拿到更好的分数。于是我写了这些小程序来存答案。后来考试变难了，我就不得不编写求解器，而不仅仅是存答案，因为我提前，但不知道题目里的系数是什么。到了第二年，数学变得更深奥了。为了让程序运行的快一点，我不得不从 basic 语言降维到汇编语言。\n\n02:08\n1\n\n也就是说你在高中就降维到用汇编语言了。\n\n02:12\n2\n\n我觉得是初中或高中大概八九年级的时候，后来我发现班上所有人都意识到我有这个作弊神器，他们都很嫉妒，于是我买了一根串口线，这样我也能把程序分给他们，结果下一次考试，全班都拿了 A 老师就纳闷了，这到底是怎么回事儿？最终他发现了，他说行吧，这次放过你，以后别干了。但对我来说，编程是非常务实的。在学校我学的是经济学，后来为了创业退学了。我从来没想过把编程当成职业，它对我来说一直是实用的工具。编程是构建事物，制造有用东西的一种手段。\n\n02:47\n2\n\n关于创业，第一个项目是我和朋友想买大麻，于是我们做了一个大麻评论的创业项目。我们做了一个网站，联系了不同的药店，试图拿到一些样本来帮他们写评论结果这个网站还挺火的。后来我对检测更感兴趣了，因为当时没人检测这些东西，所以我进入了化学检测和分析领域。在那之后我又做了几个其他的创业项目。后来我很早就加入了 YC combinator，成了帕罗奥图一家 YC 创业公司的第一个员工。在那儿之后，我就开启了那种一个接一个做创业公司的模式。毕竟你知道的，创业从来不是一条直线，你总是在不断的转型、转型再转型。你必须弄清楚市场想要什么，用户想要什么，而那往往不是你最初以为的东西，最初的想法永远只是一个假设，然后你几乎总是要转型一两次甚至三次。\n\n点击任意行跳转 · 悬停可向 AI 提问\n\n内容简介\n\n📝 本期播客简介\n\n本期我们克隆了：顶尖工程播客《The Pragmatic Engineer Podcast》Building Claude Code with Boris Cherny\n\n当你加入全球最顶尖的 AI 实验室，第一个手写的 PR 竟然因为“不是 AI 写的”被拒绝，这是一种什么体验？本期嘉宾 Boris Cherny 是 Anthropic 的工程负责人，也是近期风靡开发者圈的 Claude Code 的核心推手。在加入 Anthropic 之前，他在 Meta 掌管着 Instagram、WhatsApp 等数万名工程师的代码质量。\n\n在这期节目中，Boris 揭秘了 Claude Code 是如何从一个简单的 Bash 脚本演变成具备高度自主性的 AI 智能体。他分享了自己令人惊叹的“非人”工作流：每天开启 5 个并行终端，提交 20 到 30 个 PR，且 100% 的代码由 AI 生成，自己则转型为“代码指挥官”。我们还深入探讨了 Anthropic 内部独特的工程文化——为什么他们没有 PRD？为什么所有人的头衔都是“技术员工”？为什么现在是“通才”和“ADHD 式思维”的黄金时代？这不仅是一场关于工具的讨论，更是一场关于在 AI 彻底改变生产力边际成本的今天，工程师该如何重新定义自身价值的深度思考。\n\n👨‍⚕️ 本期嘉宾\n\nBoris Cherny，Anthropic 工程负责人，Claude Code 创造者。曾任 Meta 工程总监，负责全公司的代码质量与开发者基础设施。他是《TypeScript 编程》一书的作者，也是硅谷著名的技术通才，致力于探索 AI 如何重塑软件工程的未来。\n\n⏱️ 时间戳\n\n00:00 开场 & 嘉宾背景介绍\n\n从抄写员到印刷机\n\n02:05 职业生涯起点：从 eBay 卖卡到用计算器编写“考试求解器”\n\n05:31 创业教训：骑着摩托车去医院观察医生，发现 PMF 的真相\n\n07:52 Meta 七年：从 Facebook Groups 到重构 Instagram 的技术栈\n\n11:02 卓越工程：如何用数据证明“代码质量”能带来两位数的效率提升\n\nClaude Code 的诞生与进化\n\n12:52 震撼时刻：加入 Anthropic 的第一个 PR 被拒绝，理由是“没用 AI”\n\n14:22 灵感迸发：从调用 API 的聊天机器人到具备 Bash 权限的智能体\n\n16:21 苦涩的教训：为什么不该把模型关在盒子里，而是要给它工具\n\n18:56 内部辩论：是把这种“作弊神器”留着自用，还是公开发布？\n\nAI 时代的极致工作流\n\n21:09 效率巅峰：每天 30 个 PR，100% AI 生成，IDE 已经从电脑中消失\n\n22:34 技巧揭秘：5 个并行终端、Git Worktree 与手机端编程的崛起\n\n25:37 角色转变：从“手艺人”到“代码审查员”，如何管理并行代理\n\n28:26 自动化审查：如何让 Claude 捕捉 80% 的 Bug 并自发编写 Lint 规则\n\n技术架构与安全哲学\n\n33:08 瑞士奶酪模型：分层防御提示词注入与安全风险\n\n35:25 舍弃 RAG：为什么“代理式搜索”在代码场景下击败了向量数据库\n\n38:33 权限系统：如何平衡 AI 的自主性与人类的最终控制权\n\nAnthropic 的工程文化\n\n39:39 职级消失：为什么所有人都叫“技术员工（MTS）”？\n\n41:24 跨界融合：当财务人员和数据科学家也开始用 Claude Code 写代码\n\n42:58 抛弃 PRD：用 20 个可运行的原型代替枯燥的文档说明\n\n46:33 疯狂的周末：Daisy 如何用 Agent Swarm 在两天内构建了插件系统\n\n未来的工程师画像\n\n59:59 印刷机隐喻：抄写员消失了，但“作者”的市场扩大了一万倍\n\n01:03:43 身份危机：当模型写得比你好，如何处理对“编程艺术”的哀悼\n\n01:08:23 技能重塑：为什么现在是“通才之年”和“ADHD 优势之年”？\n\n01:10:29 书单推荐：从《三体》到《Scala 函数式编程》\n\n🌟 精彩内容\n\n💡 拒绝手写代码的时代\n\nBoris 分享了他在 Anthropic 的入职经历：导师拒绝了他的手写 PR，要求他必须使用内部 AI 工具生成。这标志着工程范式的根本转变——从“亲自编写”转向“意图表达”。\n\n“Opus 引入的 Bug 比我亲手写的少 10 倍，我为什么还要自己写？”\n\n🛠️ 并行代理与“指挥官”模式\n\nBoris 揭秘了他的工作流：不再盯着一个 IDE 窗口，而是开启多个并行代理处理不同的任务。他甚至在手机上完成了 1/3 的代码工作。这种模式下，工程师的能力不再取决于打字速度，而取决于上下文切换和任务编排的能力。\n\n“工作变成了在不同的 Claude 实例之间跳转，这更像是管理，而不是传统的深挖代码。”\n\n🚀 代理式搜索 vs. RAG\n\n在构建 Claude Code 时，Boris 发现传统的 RAG（检索增强生成）在处理快速迭代的代码时存在“漂移”和同步问题。他们最终选择了更简单的“代理式搜索”——让模型直接使用 grep 和 glob。\n\n“事实证明，给模型强大的工具，比给它一个复杂的索引数据库更有效。”\n\n💻 “不写文档，只做原型”\n\n在 Anthropic，PRD（产品需求文档）几乎不存在。团队推崇“Show, don't write”。为了设计一个待办事项功能，工程师会在一天内做出 20 个可运行的原型进行体感测试。\n\n“构建成本已经低到可以忽略，所以我们在开火前不再需要漫长的瞄准，而是不断尝试。”\n\n❤️ 程序员的未来：从抄写员到作者\n\nBoris 提出了一个深刻的行业洞察：程序员正处于 15 世纪印刷机发明前的抄写员时刻。虽然识字和书写的门槛降低了，但这并不意味着人的消失，而是意味着文学（软件）市场的无限扩张。\n\n“抛弃对语言和框架的偏见，未来属于那些能跨越工程、产品和业务的通才。”\n\n🌐 播客信息补充\n\n翻译克隆自：The Pragmatic Engineer Podcast\n\n本播客采用原有人声声线进行播客音频制作，也可能会有一些地方听起来怪怪的\n\n使用 AI 进行翻译，因此可能会有一些地方不通顺；\n\n如果有后续想要听中文版的其他外文播客，也欢迎联系微信：iEvenight\n\n```\n\nAI 编程时代的工程转型：从手写代码到云代码的飞跃\nCH.1 · 00:00 — 03:34\n00:00 / 01:15:51\n1x",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/podcast/b802bf6#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceid=938310",
+      "text": "跨国串门儿计划",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69a95f49d7ec33e774549f3a",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny",
+      "text": "Building Claude Code with Boris Cherny",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "对话 Claude Code 创造者 Boris Cherny，探讨 AI 智能体如何彻底改变软件工程范式及工程师的未来角色。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AI 智能体, 软件工程自动化, 代理式搜索, AI 编程助手, Claude Code",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "#450.程序员的“印刷机”时刻：对话 Claude Code 创造者 Boris Cherny 的 AI 编程进...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "对话 Claude Code 创造者 Boris Cherny，探讨 AI 智能体如何彻底改变软件工程范式及工程师的未来角色。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/podcast/b802bf6",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/podcast/b802bf6/opengraph-image?1d026723476286db",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-03-05 11:00:48",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "跨国串门儿计划",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "软件工程自动化",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "代理式搜索",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 编程助手",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Claude Code",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "#450.程序员的“印刷机”时刻：对话 Claude Code 创造者 Boris Cherny 的 AI 编程进...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "对话 Claude Code 创造者 Boris Cherny，探讨 AI 智能体如何彻底改变软件工程范式及工程师的未来角色。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/podcast/b802bf6/twitter-image?50b31ff74c5c8e3d",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "#450.程序员的“印刷机”时刻：对话 Claude Code 创造者 Boris Cherny 的 AI 编程进...",
+  "url": "https://www.bestblogs.dev/podcast/b802bf6"
+}

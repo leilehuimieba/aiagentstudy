@@ -1,0 +1,344 @@
+{
+  "content": "用 AI 生图，总绕不开一道两难题：要快，还是要好？\n\n但速度与质量之间，未必是鱼和熊掌不可兼得。就在刚刚，Google 正式发布了他们的新一代图像生成模型：Nano Banana 2（Gemini 3.1 Flash Image）。\n\n没有太多颠覆世界的口号，它只是把更好的画质和更懂人话的理解力，一起塞进了全新的底层架构里。就这一件事，却让 AI 生图少了几分「看运气」的感觉，多了几分真正能用的踏实。\n\n▲官方博客地址：https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/\n\n接入了整个互联网，这次的 AI 真的懂你在说什么\n\n要说清楚这次的变化，得先回想一下三年前 AI 生图有多难用。\n\n你让它画「红烧肉」，它可能老老实实给你画一块正在燃烧的肉；你让它在海报上写句中文，它往往会给你凑出一堆毫无意义的鬼画符。缺乏对真实世界的常识，是第一代 AI 最容易让人崩溃的地方。\n\n现在的 Nano Banana 2，改变了不少。它和前代 Nano Banana Pro 一样，接入了 Gemini 积累的庞大真实世界知识库，还能结合网页搜索的实时信息，用起来更像是一个见过世面、懂点常识的人。\n\n最先感受到的变化，是它开始更好地理解空间和比例了。\n\n▲提示词：画面中，【东方明珠广播电视塔】被一只超级巨大、超级可爱的【猫】占据。周围的建筑物看起来就像玩具模型一样小，而【猫】则非常巨大。游戏背景设定在一个逼真的城市环境中。整体氛围安静、温暖、舒缓、可爱。\n\n在上面这个案例中，AI 精准地还原了上海的地标，并极其自然地处理了巨猫与微缩城市之间的光影和透视关系。\n\n最直观的改变，是它终于认字、也会写字了。比如让它画一幅《枫桥夜泊》的水墨画。画面上方不仅端端正正地用书法写出了「月落乌啼霜满天」等全句，甚至连排版和水墨的意境都拿捏得比较准。\n\n▲当然，也不是没有瑕疵，仔细看上方悄悄多出了一个「满」字。\n\n除了诗意，它还能处理相当复杂的 UI 场景——在下面这张图里，复杂的半透明数据面板、悬浮的购物清单、精准的中文显示，被 AI 有条不紊地安排得井井有条，信息之间的层级关系也真正理清楚了。\n\n▲提示词：第一人称视角，置身于灯光明亮的超市货架通道中。人类双手将一瓶芬达汽水举到镜头前方。鲜艳的橙色饮料装在其标志性的品牌瓶身里，周围环绕着多层全息增强现实界面，用中文展示营养相关数据，包括热量数值、含糖量、咖啡因水平、新鲜度指示、保质/到期日期，以及基于芬达推荐的清爽饮品配方和鸡尾酒调制方案。玻璃质感的 UI 面板，柔和的环境光晕，逼真的光照与阴影，自然的景深效果，沉浸式第一人称交互界面，2K\n\n排版极其讲究的双页黑白日式漫画，也是手拿把掐。\n\n▲提示词：设计一份逼真的双页漫画杂志样张。每一页都应包含多个漫画风格分镜，以富有动感的版式排列，呈现出专业印刷的日本漫画质感。整体风格为黑白稿，使用粗犷有力的墨线、网点效果（screen tones）以及富有表现力的人物绘制。画面中加入对白气泡、中文拟声词，并通过分镜之间的过渡来传达动作、情绪与节奏。左右两页需要连贯衔接，像同一场景或同一话章节的一部分。采用传统漫画镜头语言：特写、远景、斜向分镜以及戏剧化的视角与构图。整体观感要真实可信，仿佛来自一本真正的漫画杂志的跨页内容。\n\n或者这张带步骤说明的「功夫茶」中文信息图，从排版到意境，都给出了一套可以直接用的视觉方案。\n\n▲生成提示词：一张关于中国传统功夫茶道设计精美的垂直信息图。中国传统水墨画背景。顶部有巨大的、优雅的中文书法标题，明确写着「功夫茶」。向下有三个图文并茂的步骤：步骤 1 展示用沸水温杯，配有中文「温杯」；步骤 2 展示将茶叶放入盖碗，配有中文「投茶」；步骤 3 展示倒出茶汤，配有中文「出汤」。优雅、极简、温暖的大地色调，平衡的布局。\n\n一位很早就接触到 Nano Banana 2 的内测用户，给出了一个相当中肯的评价：「它并不完美，但它是第一个能够以一定一致性，去处理真正复杂图像和图表的模型。」\n\n为了测试这个新模型的理解极限，他随手甩出了一道极其刁钻的测试题：「给我画一张设定在古威尼斯的《寻找沃尔多（Where’s Waldo）》，但里面要找的不能是人，得是一只穿着蓝色条纹飞行服的水獭。」\n\nNano Banana 2 最终也真的理清了逻辑，不仅没画串，还稳稳地交出了答卷。\n\n快和好，终于不用二选一了？\n\n除了懂常识，强大的「主体一致性」是这次 Nano Banana 2 更新的另一大杀手锏。\n\n在一次生成过程中，它最多能保持 5 个角色的脸不崩，或者 14 个物品的样子不变。这意味着，你可以放心大胆地拿它来画连载漫画或者做影视分镜了。\n\n不仅如此，它的画质也达到了可以直接干活的标准。\n\n从 512px 的配图到 4K 级别的超高清海报，它都能拿捏。输入一段关于「重庆老火锅」的提示词，它能生成一张赛博朋克风的雨夜街景，湿漉漉的柏油路上，红蓝霓虹灯的倒影和「24 小时营业」的招牌都细致入微。\n\n▲提示词：一张繁忙亚洲城市雨夜的电影感街头照片。一个巨大的、发光的红色霓虹灯牌挂在一座老建筑上，上面清晰地写着「重庆老火锅」。在它下面，一个较小的蓝色霓虹灯牌写着「24 小时营业 – 欢迎光临」。湿漉漉的柏油路反射着霓虹灯光。\n\n色彩张力极强的波普艺术风格，它也驾驭得住。\n\n或者是这种带着几分荒诞、又透着高级感的时尚大片：\n\n▲提示词：This high-resolution bird’s-eye view photograph was taken with a LOMO Ic-a. The ground is covered with countless black-and-white billboard advertisements of beautiful fashion models, and standing on top of the advertisements is an incredibly beautiful chinese film actress wearing a long black coat.\n\n在这个俯视视角的案例中，AI 极好地模拟了老式 LOMO 相机的特殊质感。女演员孑然独立于铺满黑白海报的地面上，画面的电影张力和故事感呼之欲出。\n\n不过也不是没有明显短板，让它将二次元人物、铅笔素描和黏土人强行塞进同一个真实咖啡馆的场景中，素描人物的融入就显得十分生硬，边缘过渡也不够自然。\n\n显然，在跨维度融合上，它远不及前代模型效果来得自然，还有进步的空间。\n\n▲提示词：A photo of an everyday scene at a busy cafe serving breakfast. In the foreground is an anime man with blue hair, one of the people is a pencil sketch, another is a claymation person\n\n其实整体体验下来，尽管官方博客将 Nano Banana 2（Gemini 3.1 Flash Image）吹的天花乱坠，但实际体感中，生成的质量效果和速度并未得到肉眼可见的提升，甚至在部分场景中还不及前代模型。\n\n真正让 Nano Banana 2 站稳脚跟的，其实是它极其接地气的性价比。\n\n今天起，在 Gemini 应用和 Google 搜索框里，你都能顺手用上它。没有订阅方案的普通用户，24 小时内也能白嫖 100 张；而 Pro 订阅用户的额度则高达 1000 张。\n\n对于开发者而言，API 的价格更是直接腰斩，仅为上一代 Pro 模型的一半。折算下来，生成一张 4K 高清图的成本被硬生生打到了 0.15 美元左右。\n\n▲ 附上地址：https://ai.google.dev/gemini-api/docs/pricing#gemini-3.1-flash-image-preview\n\n当然，当 AI 能够以极低的成本、极快的速度批量生产高清图片时，大家心里其实越没底。现在网上的假图满天飞，「眼见为实」这句话早就靠不住了。如果任何人都能在一秒钟内生成一张几可乱真的照片，我们该如何分辨图片？\n\nGoogle 自己也十分清楚这一点，所以他们也一并升级了防伪技术。Nano Banana 2 继续加深了对 SynthID 数字水印和 C2PA 内容凭证的支持，能够更清楚地看到一张图到底是不是 AI 画的，以及它是怎么被修改的。\n\n据统计，自去年 11 月以来，Gemini 里的这个验证功能已经被调用了超过 2000 万次。\n\nAI 绘图这两年的发展，确实快得让人眼花缭乱。我们经历过 Nano Banana Pro 的一眼惊艳，也经历过繁琐的调教与漫长的等待。Nano Banana 2 的出现，则尝试进一步把好和快揉在了一起，并大大降低了使用的门槛。\n\n你脑子里的一个灵感，不用再经过反复的修改和焦躁的等待。敲下回车的瞬间，它就在那里了。自然、简单，且立等可取，这件事听起来平常，但能做到，其实已经很难得了。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/f9f5c72b#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=4ecd55",
+      "text": "爱范儿",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://www.ifanr.com/1655944?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/podcast/17ad4f7?entry=related_article",
+      "text": "E45 Meng Yan in Conversation with Li Jigang: How Humans Find Their Place",
+      "title": "This episode explores the inevitable transition from mental labor to 'heart power' in the AI era, and the deep philosophy of responding to technological change by reconstructing investment, education, and mental models."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/bc19b98b?entry=related_article",
+      "text": "Shifting from Traditional Programming to LLM-Based Programming",
+      "title": "This article explores the core logic of transitioning from a \"code producer\" to a \"spec definer,\" proposing a methodology and practical workflow for LLM-based programming driven by Spec-Driven Development (SDD)."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/dcd9cca4?entry=related_article",
+      "text": "The Final Interview with the Creator of OpenClaw Before Joining OpenAI: It's Hard to Compete with Someone Doing It Purely for Fun",
+      "title": "This article provides an in-depth review of the interview with OpenClaw founder Peter Steinberger before he joined OpenAI, exploring how AI agents are reshaping programming paradigms, app ecosystems, and developer mindsets."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8a16b2e5?entry=related_article",
+      "text": "Just Now, Sam Altman Dropped GPT-5.4! Netizens: A Single 'Hi' Burned $80",
+      "title": "OpenAI released GPT-5.4, marking a milestone evolution from conversational assistants to versatile task-execution agents by natively integrating computer use, deep reasoning, and million-token context capabilities."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/352c89c1?entry=related_article",
+      "text": "How to Write Great Skills? Deconstructing the Design Behind skill-creator!",
+      "title": "By deconstructing the design of Codex's skill-creator, this article proposes an AI Skill writing methodology centered on conciseness, based on a three-layer architecture, and guided by a 'spectrum of freedom' principle."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/3f0cd641?entry=related_article",
+      "text": "ChatGPT and Claude Just Dropped Major Updates: Workers Who Can't Manage AI Agents Face Obsolescence",
+      "title": "OpenAI and Anthropic simultaneously updated GPT-5.3-Codex and Claude Opus 4.6, marking AI's evolution from auxiliary tools to autonomous agent teams, shifting core workplace skills from prompt engineering to agent management."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/970e70b1?entry=related_article",
+      "text": "After Experiencing Zhipu's Newly Released GLM-5, I Finally Understand Why It Had Silicon Valley Scratching Its Head",
+      "title": "Zhipu AI has officially released and open-sourced the GLM-5 model, which previously sparked heated discussions in Silicon Valley; the model achieves open-source SOTA levels in coding and agent capabilities while realizing extensive adaptation for the domestic chip ecosystem."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/5c79977a?entry=related_article",
+      "text": "What You Don't Know About Claude Code: Architecture, Governance, and Engineering Practices - Tw93",
+      "title": "This article provides an in-depth analysis of Claude Code's six-layer architecture and engineering practices, proposing a systematic Agent development methodology from context governance and skill design to a verification loop."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/468c6c57?entry=related_article",
+      "text": "Elon Musk weighs in! Kimi's paper challenges the 'ancestral foundation' of large models",
+      "title": "Moonshot AI (Kimi) has released the 'Attention Residuals' technical report. By introducing attention mechanisms into deep residual connections, it challenges and reconstructs the underlying architecture that large models have relied on for a decade, significantly improving training efficiency."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8fb9eeb9?entry=related_article",
+      "text": "Deconstructing Clawdbot: Local Architecture, Memory Management, Agent Orchestration, and Context Assembly Principles",
+      "title": "This article provides a deep dive into the core architecture, layered memory management mechanism, and ReAct-based dynamic orchestration principles of Clawdbot, a local-first AI Agent runtime."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Google has released its next-generation image generation model, Nano Banana 2 (Gemini 3.1 Flash Image), focusing on high cost-performance, strong comprehensi...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Google, Gemini, AI Image Generation, Image Generation, Prompt Engineering",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Just Released: Nano Banana 2! Affordable and Powerful—Her...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Google has released its next-generation image generation model, Nano Banana 2 (Gemini 3.1 Flash Image), focusing on high cost-performance, strong comprehensi...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/f9f5c72b",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/f9f5c72b/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-27 10:40:21",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "莫崇宇",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Google",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Gemini",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI Image Generation",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Image Generation",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Prompt Engineering",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Just Released: Nano Banana 2! Affordable and Powerful—Her...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Google has released its next-generation image generation model, Nano Banana 2 (Gemini 3.1 Flash Image), focusing on high cost-performance, strong comprehensi...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/f9f5c72b/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Just Released: Nano Banana 2! Affordable and Powerful—Her...",
+  "url": "https://www.bestblogs.dev/en/article/f9f5c72b"
+}

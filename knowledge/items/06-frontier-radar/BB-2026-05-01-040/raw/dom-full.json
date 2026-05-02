@@ -1,0 +1,659 @@
+{
+  "content": "1\nClaude Opus 4.7 正式发布\nAnthropic News\nanthropic.com\n04-15\n3030 字 · 约 13 分钟\n95\n\nAnthropic 正式发布 Claude Opus 4.7，重点提升了复杂软件工程与长程任务的自主性。相比 4.6 版本，其视觉分辨率提升了 3 倍，能够精准解析高密度架构图与代码截图。新版本引入了 xhigh 努力程度选项，允许开发者在推理深度与延迟之间进行更细粒度的权衡。虽然由于 Tokenizer 更新和思考深度增加，Token 消耗可能上升 1.0 至 1.35 倍，但其在逻辑纠错、指令遵循及抗循环干扰方面的显著进步，使其成为构建生产级 Agent 的理想选择。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#3b1c0638",
+      "text": "1\nClaude Opus 4.7 正式发布",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#900e1709",
+      "text": "2\nGemini 3.1 Flash TTS：下一代富有表现力的 AI 语音",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#4eb6dbde",
+      "text": "3\nGemini Robotics ER 1.6：增强的具身推理",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#75fbc2d8",
+      "text": "4\n为生命科学研究推出 GPT-Rosalind",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#810d6b64",
+      "text": "5\nMiniMax Agent 更新：这次我们重新设计了 Agent 操作电脑的方式",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#960fb5f2",
+      "text": "6\nProject Think：在 Cloudflare 上构建下一代 AI 智能体",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#79ff2031",
+      "text": "7\nAI Gateway 的下一阶段演进：专为智能体设计的推理层",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#d8c375d8",
+      "text": "8\nCodex 几乎无所不能",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#663e10aa",
+      "text": "9\nNotion 的 Token Town：5 次重构，100+ 工具，MCP 对比 CLI 与软件工厂的未来 —— Notion 的 Simon Last 和 Sarah Sachs",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#2adc9c3e",
+      "text": "10\n一文搞懂 Hermes：新顶流 Agent 如何从经验中自我进化",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#71f5de13",
+      "text": "11\nHermes 凭什么两个月接棒 OpenClaw？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#2e49e0d0",
+      "text": "12\n浅谈 Agent Memory",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#30ef25a5",
+      "text": "13\nBestBlogs 2.0 内测开启：我想重新做一款更适合自己的阅读产品",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#53dcb78",
+      "text": "14\n黄仁勋——TPU 竞争、为何应向中国销售芯片，以及英伟达的供应链护城河",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#f448dbe6",
+      "text": "15\n对安全、权力与 AI 的反思",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#e677471",
+      "text": "16\n语音 AI 的世界，与 ElevenLabs 的 Mati Staniszewski 对话",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#ee15307",
+      "text": "17\nAI 时代的残酷真相 | Keith Rabois (Khosla Ventures)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#9009cf6",
+      "text": "18\n136. 全球大模型季报第 9 集：和广密聊，Coding 是 AGI 第二幕、硅谷御三家真相、模型正成为新一代 OS",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#731e652",
+      "text": "19\n135. 和自然选择创始人 Tristan 聊，Elys、赛博分身、灵魂、Context 的获取与流动和 AI 社交网络",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/newsletter/issue91#d7c0fabb",
+      "text": "20\n中国青年网民对 AI 社交的看法与使用行为｜T-ask 调研",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/3b1c0638?entry=newsletter_page",
+      "text": "Claude Opus 4.7 正式发布",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8b9413",
+      "text": "Anthropic News",
+      "title": ""
+    },
+    {
+      "href": "https://www.anthropic.com/news/claude-opus-4-7",
+      "text": "anthropic.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/900e1709?entry=newsletter_page",
+      "text": "Gemini 3.1 Flash TTS：下一代富有表现力的 AI 语音",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_cca1dc",
+      "text": "Google DeepMind Blog",
+      "title": ""
+    },
+    {
+      "href": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
+      "text": "deepmind.google",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/4eb6dbde?entry=newsletter_page",
+      "text": "Gemini Robotics ER 1.6：增强的具身推理",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_cca1dc",
+      "text": "Google DeepMind Blog",
+      "title": ""
+    },
+    {
+      "href": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "text": "deepmind.google",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/75fbc2d8?entry=newsletter_page",
+      "text": "为生命科学研究推出 GPT-Rosalind",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8749b9",
+      "text": "OpenAI Blog",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/introducing-gpt-rosalind",
+      "text": "openai.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/810d6b64?entry=newsletter_page",
+      "text": "MiniMax Agent 更新：这次我们重新设计了 Agent 操作电脑的方式",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_39cbd7",
+      "text": "MiniMax 稀宇科技",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488360&idx=1&sn=9358b0c0a0750975e8f4c001b8f1e724",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/960fb5f2?entry=newsletter_page",
+      "text": "Project Think：在 Cloudflare 上构建下一代 AI 智能体",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_903ae3",
+      "text": "The Cloudflare Blog",
+      "title": ""
+    },
+    {
+      "href": "https://blog.cloudflare.com/project-think/",
+      "text": "blog.cloudflare.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/79ff2031?entry=newsletter_page",
+      "text": "AI Gateway 的下一阶段演进：专为智能体设计的推理层",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_903ae3",
+      "text": "The Cloudflare Blog",
+      "title": ""
+    },
+    {
+      "href": "https://blog.cloudflare.com/ai-platform/",
+      "text": "blog.cloudflare.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/d8c375d8?entry=newsletter_page",
+      "text": "Codex 几乎无所不能",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8749b9",
+      "text": "OpenAI Blog",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/codex-for-almost-everything",
+      "text": "openai.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/663e10aa?entry=newsletter_page",
+      "text": "Notion 的 Token Town：5 次重构，100+ 工具，MCP 对比 CLI 与软件工厂的未来 —— Notion 的 Simon Last 和 Sarah Sachs",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_fc479e",
+      "text": "Latent Space",
+      "title": ""
+    },
+    {
+      "href": "https://www.latent.space/p/notion",
+      "text": "latent.space",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/2adc9c3e?entry=newsletter_page",
+      "text": "一文搞懂 Hermes：新顶流 Agent 如何从经验中自我进化",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_efac5b",
+      "text": "腾讯云开发者",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695259&idx=1&sn=30ef327bcbbb3e349abd812da627c5f2",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/71f5de13?entry=newsletter_page",
+      "text": "Hermes 凭什么两个月接棒 OpenClaw？",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_b475c7",
+      "text": "腾讯科技",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691567081&idx=1&sn=818da2e31c305032dbabf37b44c79bec",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/2e49e0d0?entry=newsletter_page",
+      "text": "浅谈 Agent Memory",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_557f42",
+      "text": "浮之静",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491772&idx=1&sn=bbbbfbe12bff30ae169d21b8d04eef65",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/30ef25a5?entry=newsletter_page",
+      "text": "BestBlogs 2.0 内测开启：我想重新做一款更适合自己的阅读产品",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_7e580d",
+      "text": "Gino Notes",
+      "title": ""
+    },
+    {
+      "href": "https://ginonotes.com/posts/bestblogs-v2-beta",
+      "text": "ginonotes.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/53dcb78?entry=newsletter_page",
+      "text": "黄仁勋——TPU 竞争、为何应向中国销售芯片，以及英伟达的供应链护城河",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_038368",
+      "text": "Dwarkesh Patel",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=Hrbq66XqtCo",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/f448dbe6?entry=newsletter_page",
+      "text": "对安全、权力与 AI 的反思",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_68d8ca07",
+      "text": "Sam Altman",
+      "title": ""
+    },
+    {
+      "href": "https://blog.samaltman.com/2279512",
+      "text": "blog.samaltman.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/e677471?entry=newsletter_page",
+      "text": "语音 AI 的世界，与 ElevenLabs 的 Mati Staniszewski 对话",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_f49545",
+      "text": "Stripe",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=zA1zdqIYER4",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/ee15307?entry=newsletter_page",
+      "text": "AI 时代的残酷真相 | Keith Rabois (Khosla Ventures)",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_8e0b51",
+      "text": "Lenny's Podcast",
+      "title": ""
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=xCd9ykretlg",
+      "text": "youtube.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/9009cf6?entry=newsletter_page",
+      "text": "136. 全球大模型季报第 9 集：和广密聊，Coding 是 AGI 第二幕、硅谷御三家真相、模型正成为新一代 OS",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_31d080",
+      "text": "张小珺Jùn｜商业访谈录",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69de68cfb977fb2c47f1ee14",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcast/731e652?entry=newsletter_page",
+      "text": "135. 和自然选择创始人 Tristan 聊，Elys、赛博分身、灵魂、Context 的获取与流动和 AI 社交网络",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceId=SOURCE_31d080",
+      "text": "张小珺Jùn｜商业访谈录",
+      "title": ""
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69d8bbdfe2c8be3155dcc2fe",
+      "text": "xiaoyuzhoufm.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/d7c0fabb?entry=newsletter_page",
+      "text": "中国青年网民对 AI 社交的看法与使用行为｜T-ask 调研",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceId=SOURCE_f056ce",
+      "text": "腾讯研究院",
+      "title": ""
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650996494&idx=1&sn=34a4532b212c9b885b88a27fb349dd5c",
+      "text": "mp.weixin.qq.com",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 91 期 AI 精选文章推荐。\n\nCloudflare 本周做了一整场 Agent Week，把智能体基建一次堆齐：Sandbox 正式 GA 让 Agent 拥有自己的计算机；Durable Object Facets 给每个 AI 生成应用一份私有 SQLit...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "bestblogs, AI 阅读，个性化阅读，高质量内容，每日早报，技术阅读，内容发现，AI 初评，专家精审，阅读工作流",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 91 期：基建周 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 91 期 AI 精选文章推荐。\n\nCloudflare 本周做了一整场 Agent Week，把智能体基建一次堆齐：Sandbox 正式 GA 让 Agent 拥有自己的计算机；Durable Object Facets 给每个 AI 生成应用一份私有 SQLit...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/newsletter/issue91",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue91/opengraph-image?5b2ed8584a9655d4",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "04-17",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev 第 91 期：基建周 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "大家好！欢迎阅读 BestBlogs.dev 第 91 期 AI 精选文章推荐。\n\nCloudflare 本周做了一整场 Agent Week，把智能体基建一次堆齐：Sandbox 正式 GA 让 Agent 拥有自己的计算机；Durable Object Facets 给每个 AI 生成应用一份私有 SQLit...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/newsletter/issue91/twitter-image?43c24b48d6d9249c",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "BestBlogs.dev 第 91 期：基建周 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/newsletter/issue91"
+}
