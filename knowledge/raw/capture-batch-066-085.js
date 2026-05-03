@@ -36,6 +36,12 @@ function writeUtf8(file, text) {
   fs.writeFileSync(file, text, 'utf8');
 }
 
+function normalizeBestBlogsUrl(url) {
+  return String(url || '')
+    .replace('https://www.bestblogs.dev/en/', 'https://www.bestblogs.dev/')
+    .replace(/[?#].*/, '');
+}
+
 function walk(dir) {
   const out = [];
   if (!fs.existsSync(dir)) return out;
@@ -52,8 +58,8 @@ function existingBestBlogsUrls() {
   const urls = new Set();
   for (const file of walk(path.join(ROOT, 'knowledge', 'items')).filter((p) => path.basename(p) === 'source.md')) {
     const text = readUtf8(file);
-    const main = text.match(/^- BestBlogs URL:\s*(https:\/\/www\.bestblogs\.dev\/(?:article|video|podcast|status|explore\/topics)\/[^\s]+)\s*$/m);
-    if (main) urls.add(main[1].replace(/\?.*/, ''));
+    const main = text.match(/^- BestBlogs URL:\s*(https:\/\/www\.bestblogs\.dev\/(?:en\/)?(?:article|video|podcast|status|explore\/topics)\/[^\s]+)\s*$/m);
+    if (main) urls.add(normalizeBestBlogsUrl(main[1]));
   }
   return urls;
 }
@@ -259,11 +265,19 @@ function capture(entry, id) {
 function chooseCandidates() {
   const candidates = JSON.parse(readUtf8(path.join(ROOT, 'knowledge', 'raw', 'related-candidates-after-065.json')));
   const existing = existingBestBlogsUrls();
+  const seen = new Set();
   return candidates
-    .filter((c) => c.url && !existing.has(c.url.replace(/\?.*/, '')))
-    .filter((c) => !SKIP_URLS.has(c.url.replace(/\?.*/, '')))
+    .map((c) => ({ ...c, normalizedUrl: normalizeBestBlogsUrl(c.url) }))
+    .filter((c) => c.normalizedUrl)
+    .filter((c) => !existing.has(c.normalizedUrl))
+    .filter((c) => !SKIP_URLS.has(c.normalizedUrl))
     .filter((c) => !/\/(?:article|video|podcast)\/RAW_/i.test(c.url))
-    .filter((c) => !/\/status\//i.test(c.url));
+    .filter((c) => !/\/status\//i.test(c.url))
+    .filter((c) => {
+      if (seen.has(c.normalizedUrl)) return false;
+      seen.add(c.normalizedUrl);
+      return true;
+    });
 }
 
 function main() {

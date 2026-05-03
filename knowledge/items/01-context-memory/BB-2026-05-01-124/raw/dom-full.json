@@ -1,0 +1,294 @@
+{
+  "content": "VIDEO\n92\n⭐ 精选内容\nIntroducing the Codex app\n\nOpenAI 的 Codex 应用是一个集中的指挥中心，允许开发者将复杂软件任务（如功能构建、迁移和设计稿转代码）委派给 AI 智能体。\n\n⭐ 推荐理由OpenAI 官方演示 Codex App，核心亮点：语音指令构建 iOS 功能（一句话生成完整新页面）、并行管理多个耗时任务（依赖更新、协议迁移）、实时 Diff 审查与合并。最强功能是 Skills 系统，Figma 技能通过 MCP 协议读取设计结构（而非截图）生成真实代码。Automations 定期处理 Sentry/Linear 任务，Worktrees 隔离环境避免冲突，云端委托处理长任务。\n\n展开\nOpenAI\n关注\n·\n02-02\n·\n查看原文 →\nCodex 应用介绍\n内容概要\n\nOpenAI 正式推出了 Codex App，这是一个旨在通过将复杂开发任务委托给 AI Agent 来简化软件构建流程的中央指挥中心。该应用允许开发者在统一的界面中管理多个项目，通过语音指令直接构建 iOS 功能，并处理诸如代码库迁移、依赖项更新等耗时任务。通过集成 Figma 等工具的「技能」以及模型上下文协议（MCP），Codex 能够深入理解设计结构并生成高度还原的代码。此外，它还支持自动化工作流、云端任务委托和隔离的开发环境，让开发者能够从繁琐的编码中解脱出来，专注于创意的实现。\n\n目录\n\nCodex App 简介\n\n通过语音指令构建 iOS 功能\n\n管理耗时任务与代码迁移\n\n代码审查与合并更改\n\n从移动端到 Web 端的用户界面开发\n\n利用技能（Skills）与 Figma 集成\n\n自动化与高级工作流功能\n\n结语\n\nCodex App 简介\n\n今天，我们非常高兴地向大家介绍 Codex App。现在，你可以在一个地方管理所有项目，并将实际工作委托给 Codex 处理。\n\n你不再需要来回切换终端（Terminal）窗口，而是拥有一个统一的指挥中心来运行和监督 Agent。让我来看看它是如何工作的。\n\n在左侧，你可以看到我的项目。对于每个项目，我都能查看 Codex 已完成的任务，其中一些任务甚至正在实时运行。\n\n通过语音指令构建 iOS 功能\n\n右侧是主对话界面。让我们从我一直在开发的一款 iOS App 开始，它可以实时追踪国际空间站（ISS）。\n\n假设我想为它添加新功能。我可以打字，或者直接口述我的想法： 「添加一个新页面，展示 NASA 的每日天文一图。」\n\n就这样，Codex 现在会为我处理所有事务，并找出构建该功能所需的 API。\n\n管理耗时任务与代码迁移\n\n在该任务运行的同时，让我们看看另一个我一直想迁移的项目。在这里，Codex 正在更新所有依赖项。\n\n在这个任务中，它甚至正在将我们的语音对语音集成从 Websockets 迁移到 WebRTC。\n\n在处理大型代码库时，其中一些任务可能需要几分钟甚至几小时。这是软件构建方式的一次重大转变。现在你可以监督你的 Agent，并在它们完成后进行检查。\n\n代码审查与合并更改\n\n回到第一个任务。你可以看到 Codex 是如何处理问题的、执行的步骤以及实时进度。现在它已经完成了。\n\n如果我点击右侧，可以看到差异对比（Diff）。我可以准确地审查 Swift 代码中的更改。\n\n我可以留下行内注释以提供反馈，要求再次迭代，或者在确认无误后直接合并。\n\n如果需要深入研究，我随时可以在 Xcode 中打开这些更改。但在这种情况下，我直接在这里构建并运行 App 即可。\n\n使用 Codex App 让开发变得更有趣。我不需要花大量时间编写代码，而是可以将精力放在思考如何按我的设想去塑造 App。\n\n让我们打开 iOS 模拟器（Simulator），看，就是这样。我只给出了一个句子，Codex 就为我构建了这整个新功能。这难道不令人惊叹吗？\n\n从移动端到 Web 端的用户界面开发\n\n切换到我一直在做的另一个项目：一个基于 Web 的健身追踪器。\n\n对于这类视觉任务，我希望更贴近正在构建的体验。通过点击右上角，我可以像这样将对话框弹出，带着 Codex 一起操作。\n\n我可以口述： 「为进度条添加动画以模拟进度。」 几秒钟后，我就能看到这些更改实时生效。这真的感觉像是在和队友协作。大功告成。\n\n利用技能（Skills）与 Figma 集成\n\nCodex App 的另一个强大之处在于「技能」（Skills）。技能让 Codex 能够连接到你喜爱的所有工具。\n\n实际上，这个 App 是利用 Figma 技能实现的，它在幕后自动使用了模型上下文协议（MCP）来为我完成设置。\n\n让我快速展示一下设计稿。这是首页，如果我点击其中一个组件，你可以看到间距、文本样式等是如何定义的。\n\nCodex 并不是根据截图工作的，它实际上是在读取设计文件的结构（包括这些变量），以使用我们的设计系统（Design System）生成真实的代码。\n\n这就是为什么它与设计的契合度如此之高。当然，你也可以为自己或团队创建自定义技能，使其真正契合你的工作流。\n\n自动化与高级工作流功能\n\n真正强大的是，你甚至可以将这些技能转化为自动化任务。\n\n想象一下，你有一些需要定期运行的任务，比如对来自 Sentry 的告警进行分类，或者处理来自 Linear 的 Bug 和工单。现在你可以让这些任务在后台处理，而你则专注于构建。\n\nCodex App 还有许多其他功能，包括使用名为工作树（Worktrees）的隔离环境。这样，你可以给每个 Agent 提供一份代码副本，从而不必担心冲突或破坏你的本地设置。\n\n你也可以将任何任务（尤其是耗时较长的任务）委托给云端的 Codex，界面完全一致。\n\n结语\n\n刚才只是一个快速演示。Codex App 是一种全新的软件构建方式。\n\n对我而言，这意味着编写代码的时间大大减少，而创造、完善创意并将其变为现实的时间则大大增加。我们迫不及待想看到你们用它构建出什么作品。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/video/1ab141d#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/videos?sourceid=d90853",
+      "text": "OpenAI",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=HFM3se4lNiw",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "OpenAI 的 Codex 应用是一个集中的指挥中心，允许开发者将复杂软件任务（如功能构建、迁移和设计稿转代码）委派给 AI 智能体。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AI 智能体, Codex 应用, 软件工程, MCP, Figma 集成",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Codex 应用介绍 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "OpenAI 的 Codex 应用是一个集中的指挥中心，允许开发者将复杂软件任务（如功能构建、迁移和设计稿转代码）委派给 AI 智能体。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/video/1ab141d",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/1ab141d/opengraph-image?64edf17c38836472",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-02 22:16:58",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "OpenAI",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Codex 应用",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "软件工程",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "MCP",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Figma 集成",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Codex 应用介绍 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "OpenAI 的 Codex 应用是一个集中的指挥中心，允许开发者将复杂软件任务（如功能构建、迁移和设计稿转代码）委派给 AI 智能体。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/1ab141d/twitter-image?8c88273a7af11d7e",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Codex 应用介绍 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/video/1ab141d"
+}

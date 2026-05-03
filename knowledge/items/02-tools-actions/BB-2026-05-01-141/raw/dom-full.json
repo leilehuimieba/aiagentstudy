@@ -1,0 +1,419 @@
+{
+  "content": "7th February 2026\n\nLast week I hinted at a demo I had seen from a team implementing what Dan Shapiro called the Dark Factory level of AI adoption, where no human even looks at the code the coding agents are producing. That team was part of StrongDM, and they’ve just shared the first public description of how they are working in Software Factories and the Agentic Moment:\n\nWe built a Software Factory: non-interactive development where specs + scenarios drive agents that write code, run harnesses, and converge without human review. [...]\n\nIn kōan or mantra form:\n\nWhy am I doing this? (implied: the model should be doing this instead)\n\nIn rule form:\n\nCode must not be written by humans\nCode must not be reviewed by humans\n\nFinally, in practical form:\n\nIf you haven’t spent at least $1,000 on tokens today per human engineer, your software factory has room for improvement\n\nI think the most interesting of these, without a doubt, is \"Code must not be reviewed by humans\". How could that possibly be a sensible strategy when we all know how prone LLMs are to making inhuman mistakes?\n\nI’ve seen many developers recently acknowledge the November 2025 inflection point, where Claude Opus 4.5 and GPT 5.2 appeared to turn the corner on how reliably a coding agent could follow instructions and take on complex coding tasks. StrongDM’s AI team was founded in July 2025 based on an earlier inflection point relating to Claude Sonnet 3.5:\n\nThe catalyst was a transition observed in late 2024: with the second revision of Claude 3.5 (October 2024), long-horizon agentic coding workflows began to compound correctness rather than error.\n\nBy December of 2024, the model’s long-horizon coding performance was unmistakable via Cursor’s YOLO mode.\n\nTheir new team started with the rule “no hand-coded software”—radical for July 2025, but something I’m seeing significant numbers of experienced developers start to adopt as of January 2026.\n\nThey quickly ran into the obvious problem: if you’re not writing anything by hand, how do you ensure that the code actually works? Having the agents write tests only helps if they don’t cheat and assert true.\n\nThis feels like the most consequential question in software development right now: how can you prove that software you are producing works if both the implementation and the tests are being written for you by coding agents?\n\nStrongDM’s answer was inspired by Scenario testing (Cem Kaner, 2003). As StrongDM describe it:\n\nWe repurposed the word scenario to represent an end-to-end “user story”, often stored outside the codebase (similar to a “holdout” set in model training), which could be intuitively understood and flexibly validated by an LLM.\n\nBecause much of the software we grow itself has an agentic component, we transitioned from boolean definitions of success (“the test suite is green”) to a probabilistic and empirical one. We use the term satisfaction to quantify this validation: of all the observed trajectories through all the scenarios, what fraction of them likely satisfy the user?\n\nThat idea of treating scenarios as holdout sets—used to evaluate the software but not stored where the coding agents can see them—is fascinating. It imitates aggressive testing by an external QA team—an expensive but highly effective way of ensuring quality in traditional software.\n\nWhich leads us to StrongDM’s concept of a Digital Twin Universe—the part of the demo I saw that made the strongest impression on me.\n\nThe software they were building helped manage user permissions across a suite of connected services. This in itself was notable—security software is the last thing you would expect to be built using unreviewed LLM code!\n\n[The Digital Twin Universe is] behavioral clones of the third-party services our software depends on. We built twins of Okta, Jira, Slack, Google Docs, Google Drive, and Google Sheets, replicating their APIs, edge cases, and observable behaviors.\n\nWith the DTU, we can validate at volumes and rates far exceeding production limits. We can test failure modes that would be dangerous or impossible against live services. We can run thousands of scenarios per hour without hitting rate limits, triggering abuse detection, or accumulating API costs.\n\nHow do you clone the important parts of Okta, Jira, Slack and more? With coding agents!\n\nAs I understood it the trick was effectively to dump the full public API documentation of one of those services into their agent harness and have it build an imitation of that API, as a self-contained Go binary. They could then have it build a simplified UI over the top to help complete the simulation.\n\nWith their own, independent clones of those services—free from rate-limits or usage quotas—their army of simulated testers could go wild. Their scenario tests became scripts for agents to constantly execute against the new systems as they were being built.\n\nThis screenshot of their Slack twin also helps illustrate how the testing process works, showing a stream of simulated Okta users who are about to need access to different simulated systems.\n\nThis ability to quickly spin up a useful clone of a subset of Slack helps demonstrate how disruptive this new generation of coding agent tools can be:\n\nCreating a high fidelity clone of a significant SaaS application was always possible, but never economically feasible. Generations of engineers may have wanted a full in-memory replica of their CRM to test against, but self-censored the proposal to build it.\n\nThe techniques page is worth a look too. In addition to the Digital Twin Universe they introduce terms like Gene Transfusion for having agents extract patterns from existing systems and reuse them elsewhere, Semports for directly porting code from one language to another and Pyramid Summaries for providing multiple levels of summary such that an agent can enumerate the short ones quickly and zoom in on more detailed information as it is needed.\n\nStrongDM AI also released some software—in an appropriately unconventional manner.\n\ngithub.com/strongdm/attractor is Attractor, the non-interactive coding agent at the heart of their software factory. Except the repo itself contains no code at all—just three markdown files describing the spec for the software in meticulous detail, and a note in the README that you should feed those specs into your coding agent of choice!\n\ngithub.com/strongdm/cxdb is a more traditional release, with 16,000 lines of Rust, 9,500 of Go and 6,700 of TypeScript. This is their “AI Context Store”—a system for storing conversation histories and tool outputs in an immutable DAG.\n\nIt’s similar to my LLM tool’s SQLite logging mechanism but a whole lot more sophisticated. I may have to gene transfuse some ideas out of this one!\n\nA glimpse of the future?\n\nI visited the StrongDM AI team back in October as part of a small group of invited guests.\n\nThe three person team of Justin McCarthy, Jay Taylor and Navan Chauhan had formed just three months earlier, and they already had working demos of their coding agent harness, their Digital Twin Universe clones of half a dozen services and a swarm of simulated test agents running through scenarios. And this was prior to the Opus 4.5/GPT 5.2 releases that made agentic coding significantly more reliable a month after those demos.\n\nIt felt like a glimpse of one potential future of software development, where software engineers move from building the code to building and then semi-monitoring the systems that build the code. The Dark Factory.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/b63c67d6#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=7808b7",
+      "text": "Simon Willison's Weblog",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://simonwillison.net/2026/Feb/7/software-factory/#atom-everything",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://simonwillison.net/2026/Jan/28/the-five-levels/",
+      "text": "I hinted at",
+      "title": ""
+    },
+    {
+      "href": "https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/",
+      "text": "the Dark Factory",
+      "title": ""
+    },
+    {
+      "href": "https://factory.strongdm.ai/",
+      "text": "Software Factories and the Agentic Moment",
+      "title": ""
+    },
+    {
+      "href": "https://simonwillison.net/2025/Mar/2/kellan-elliott-mccrea/",
+      "text": "inhuman mistakes",
+      "title": ""
+    },
+    {
+      "href": "https://simonwillison.net/2026/Jan/4/inflection/",
+      "text": "November 2025 inflection point",
+      "title": ""
+    },
+    {
+      "href": "https://forum.cursor.com/t/yolo-mode-is-amazing/36262",
+      "text": "YOLO mode",
+      "title": ""
+    },
+    {
+      "href": "https://simonwillison.net/2025/Dec/18/code-proven-to-work/",
+      "text": "prove that software you are producing works",
+      "title": ""
+    },
+    {
+      "href": "https://en.wikipedia.org/wiki/Scenario_testing",
+      "text": "Scenario testing",
+      "title": ""
+    },
+    {
+      "href": "https://factory.strongdm.ai/techniques",
+      "text": "techniques page",
+      "title": ""
+    },
+    {
+      "href": "https://factory.strongdm.ai/techniques/gene-transfusion",
+      "text": "Gene Transfusion",
+      "title": ""
+    },
+    {
+      "href": "https://factory.strongdm.ai/techniques/semport",
+      "text": "Semports",
+      "title": ""
+    },
+    {
+      "href": "https://factory.strongdm.ai/techniques/pyramid-summaries",
+      "text": "Pyramid Summaries",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/strongdm/attractor",
+      "text": "github.com/strongdm/attractor",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/strongdm/cxdb",
+      "text": "github.com/strongdm/cxdb",
+      "title": ""
+    },
+    {
+      "href": "https://llm.datasette.io/en/stable/logging.html#sql-schema",
+      "text": "SQLite logging mechanism",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文",
+      "title": "Anthropic 宣布推出 Claude Opus 4.6，具备更强的规划能力、优化的智能体表现，并开启了 1M token 上下文窗口的 Beta 测试。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/4467bb65?entry=related_article",
+      "text": "Meta 的新模型 Muse Spark 与 meta.ai 聊天中的有趣工具",
+      "title": "Simon Willison 深入探讨了 Meta 的新模型 Muse Spark，揭示了其包含代码执行、视觉定位和子智能体生成在内的复杂工具集。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2023817132581208353?entry=related_article",
+      "text": "Anthropic 发布 Claude Sonnet 4.6，支持 100 万 Token 上下文窗口",
+      "title": "Anthropic 宣布推出 Claude Sonnet 4.6，在编程、推理方面迎来重大升级，并支持 100 万 Token 的超长上下文窗口。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/eedde830?entry=related_article",
+      "text": "GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元",
+      "title": "OpenAI 发布了 GPT-5.4 mini 和 nano 模型，性能和价格都有显著提升，其中 nano 便宜到可以仅用 52 美元就描述 76，000 张照片。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/722cb045?entry=related_article",
+      "text": "介绍 Showboat 和 Rodney：让智能体能够演示其构建的成果",
+      "title": "Simon Willison 介绍了 Showboat 和 Rodney，这是两款旨在帮助 AI 编程智能体对其构建的软件提供可验证演示和基于浏览器的测试的 CLI 工具。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/9218c133?entry=related_article",
+      "text": "Lenny’s Podcast 中关于智能体工程的对话精华",
+      "title": "Simon Willison 探讨了向智能体工程（agentic engineering）的转变，即 AI 处理大部分编码工作，将人类的瓶颈转移到测试、原型设计和高层判断上。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+      "text": "Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次",
+      "title": "软件界传奇人物 Martin Fowler 和 Kent Beck 探讨了 AI 如何重新定义软件工程，并强调 TDD 和模块化等核心实践对于人机协作依然至关重要。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/504ce725?entry=related_article",
+      "text": "长周期应用开发中的 Harness 设计",
+      "title": "本文探讨了 Anthropic 用于长周期自主编程的多智能体 Harness 设计（规划者、生成者、评估者），详细介绍了如何克服上下文焦虑和自我评估偏差，从而构建复杂的全栈应用。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c27268ec?entry=related_article",
+      "text": "我在 Pragmatic Summit 炉边谈话中探讨智能体工程",
+      "title": "本文提炼了 Simon Willison 的智能体工程实践指南：通过范围建立信任、智能体优先测试、严格沙盒化，以及持续探索模型边界。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型",
+      "title": "OpenAI 宣布推出 GPT-5.5，这是一款专为理解复杂目标和自主完成任务而设计的新模型，现已在 ChatGPT 和 Codex 中上线。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "StrongDM 的 AI 团队开创了一种“软件工厂”模式，通过“数字孪生”模拟和基于场景的留出集，让 AI 智能体自主编写并验证代码，从而消除了人工代码审查。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AI 智能体, 软件工厂, 智能体工作流, 数字孪生, 自动化测试",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "StrongDM 的 AI 团队如何在不看代码的情况下构建严肃软件 | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "StrongDM 的 AI 团队开创了一种“软件工厂”模式，通过“数字孪生”模拟和基于场景的留出集，让 AI 智能体自主编写并验证代码，从而消除了人工代码审查。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/b63c67d6",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/b63c67d6/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-07 15:40:48",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Simon Willison",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "软件工厂",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "智能体工作流",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "数字孪生",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "自动化测试",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "StrongDM 的 AI 团队如何在不看代码的情况下构建严肃软件 | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "StrongDM 的 AI 团队开创了一种“软件工厂”模式，通过“数字孪生”模拟和基于场景的留出集，让 AI 智能体自主编写并验证代码，从而消除了人工代码审查。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/b63c67d6/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "StrongDM 的 AI 团队如何在不看代码的情况下构建严肃软件 | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/article/b63c67d6"
+}

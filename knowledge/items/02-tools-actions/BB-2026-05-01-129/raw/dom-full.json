@@ -1,0 +1,294 @@
+{
+  "content": "VIDEO\n93\n⭐ 精选内容\n“Anyone can cook”: How v0 is bringing git workflows to vibe-coding | Guillermo Rauch (Vercel CEO)\n\nVercel CEO Guillermo Rauch 解释了 v0 如何通过集成生产级 Git 工作流并将代码贡献在组织内民主化，从而将“氛围编程”转变为专业的工程学科。\n\n⭐ 推荐理由Vercel CEO 演示 v0 如何消除工程摩擦：市场人员不再需要向工程师请愿，可以直接修改生产代码。Vercel 内部每日合并 3200 个 PR，1 月增长了 100 倍。演示展示完整生产级流程：Git 分支管理、VS Code 自动配置、生产就绪思维（防滥用、设计一致、布局稳定）、PR 自动预览。v0 深度集成 Vercel 基础设施，自动识别数据源和架构。产品验证方法是客户 0（自己）加客户 1（深度合作伙伴）。核心观点：让组织中每个人都能成为大厨，消除优先级排期的羞辱仪式。\n\n展开\nHow I AI\n关注\n·\n02-04\n·\n查看原文 →\n“人人皆可开发”：v0 如何将 Git 工作流引入氛围编程 | Guillermo Rauch (Vercel CEO)\n内容概要\n\n在本期 \"How I AI\" 播客中，Vercel 首席执行官 Guillermo Rauch 与主持人 Claire Vo 探讨了 v0 对软件开发的深远影响。他们讨论了 v0 如何从一个简单的原型工具演变为集成了专业 Git 工作流的生产级平台，并实现了每日合并 3200 个 PR 的里程碑。Guillermo 在现场演示了功能构建过程，分享了 Vercel 内部使用的 AI 智能体（如 DZero 和 Nano Banana），并描绘了未来的愿景：让组织中的每位成员（从市场人员到 CEO）都能直接为生产代码做出贡献，消除传统工程流程中的优先级排期摩擦，让每个人都能像大厨一样在代码的世界里“烹饪”。\n\n目录\n\n传统工程流程中的摩擦\n\n播客介绍与 \"How I AI\"\n\n最受青睐的新功能：skills.sh\n\n超越原型：生产级的 v0\n\n设计细节与工程工作流\n\n实战演示：评分系统与防滥用机制\n\nPR 预览与自动描述\n\nVercel 内部数据：PR 的增长\n\n组织变革：全民皆可“烹饪”\n\n闪电问答：非编程类的 AI 用例\n\n个人项目：AI 国际象棋对战\n\n现实世界中的 AI：Vesta 物理看板与教育\n\n内容质量与 AI 废话\n\n克服摩擦与协作\n\n观众问答：产品验证与未来技术\n\n传统工程流程中的摩擦\n\nGuillermo Rauch: 关于氛围编程（vibe coding），我想说一点。从 0 到 1 非常容易，我们都看过那些通过提示词生成的演示，非常酷。但我认为真正难的是如何在规模化项目中进行迭代，并安全地部署变更。\n\n过去，如果市场人员想要修改某个页面，通常只有两种途径。一种我称之为“向政府请愿”，你必须去找工程师说：“工程师，能不能请你们在这里加个 Logo 或者改点东西？”另一种则是祈祷内容管理系统（CMS）已经完美地配置好了，能满足你所有的雄心壮志或奇思妙想。\n\n现在，他们可以直接在 v0 中打开这个页面，输入任何想要修改的提示词。这极大地降低了上线新功能的摩擦。那种为了排优先级而进行的“羞辱仪式”消失了，你可以把时间花在讨论想法本身的价值上，而不是停留在“如果实现了会怎样”的假设阶段。我认为这从根本上改变了公司的运行速度。\n\n播客介绍与 \"How I AI\"\n\nClaire Vo: 这是一个真正意义上的“氛围编程”播客。我是 Claire Vo，一名产品负责人，也是 AI 的重度爱好者。我的播客 \"How I AI\" 旨在教大家如何利用各种新工具更好地进行构建，包括我们今天要看到的这些工具。\n\n很高兴你能来，G。首先，我想问一个大家都好奇的问题：本周 v0 发布的所有功能中，你最喜欢哪一个？\n\n最受青睐的新功能：skills.sh\n\nGuillermo Rauch: 目前 AI 领域最热门的话题就是“技能”（skills）。大家都很兴奋，因为我们现在可以通过模型尚未掌握的技能来增强智能体和 AI 应用。\n\n为此我们推出了 skills.sh。今天我要展示的最美妙的一点是，v0 已经可以完成从原型到生产的全过程。我们可以直接构思对 skills.sh 这类项目的修改。\n\n我简单展示一下。skills.sh 是一个新的技能中心，你可以把它想象成技能界的 npm，是一个开放的生态系统。这个网站的发展非常惊人，目前已经有社区提交的 3.4 万个技能，并在互联网上迅速走红。它托管在 Vercel 上，但最让我兴奋的是，它最初是在 v0 中构思出来的。\n\nClaire Vo: 我想问一下观众，过去一周有多少人安装过“技能”？哇，看来很多人都在构建技能。有多少人安装了排名前三的？\n\nGuillermo Rauch: 不，我安装了前七个。\n\nClaire Vo: 没错，我现在也安装了前七个。对于还不熟悉的朋友，skills 现在已经成为许多智能体框架使用的标准，帮助你复用最佳实践和分步流程。比如我使用 Remotion 最佳实践，通过 skills.sh 只要一行代码，就能快速导入组件并生成视频。如果没有这些打包好的专业技能，我无法这么快完成。\n\nGuillermo Rauch: 这里值得揭秘一下 Vercel 是如何构建产品的。skills.sh 诞生于灵光一现。我们开始尝试提示词：“嘿，如果这个想法能成形不是挺酷吗？”\n\n我们讨论了它的外观。我们把这种风格称为“终端核心风”（terminal core），因为它看起来有点像终端。这是我对项目的贡献，我觉得给网站顶部做成终端的样子会很酷。整个构建过程完全是由提示词驱动的。我们在 Slack 上聊天说：“如果能有个中心来汇聚这些技能就好了。”这是 Vercel 团队成员之间高度协作和迭代的产物。\n\n它的速度非常快，利用了 Vercel 所有的基础设施原语。虽然它有 3.5 万个技能，但即便你疯狂滚动并随机点开一个，比如这个关于 Taylor Swift 的 Swift UI 技能，你会发现页面跳转是瞬间完成的。这是生产级的表现，它需要经受大规模访问的考验。\n\n超越原型：生产级的 v0\n\nClaire Vo: 那么，请带我们看看你和团队是如何通过这个工具不断改进项目的。\n\nGuillermo Rauch: 在氛围编程中，从 0 到 1 很容易，但要在生产环境下安全部署则很难。在 Vercel 内部，我们始终在分支（branch）上工作，利用分支预览进行代码审查，然后再合并。我们今天展示的就是如何将这种严谨的生产级工程流程带入 v0。\n\n我这里绑定了 skills.sh 项目，它背后连接着 GitHub 仓库。工程师三小时前刚推送了代码。在 v0 中，你会看到一个“新建分支”按钮。这意味着 v0 将 Git 分支流视为产品的一等公民。\n\n我现在创建一个分支。这会给我提供熟悉的聊天体验，但注意顶部出现了一个精美的命名约定：项目名称/分支名。在预览界面中，你会发现，就像你在本地克隆了项目一样，我们既有一个全功能的 VS Code 编辑器，也有一个在 v0 中运行的真实项目。\n\n设计细节与工程工作流\n\nClaire Vo: 我注意到一个小细节。你使用了工程师常用的 Git 分支命名规范，即“贡献者姓名/功能名”。在设计优秀的 AI 产品和智能体产品时，这些让 v0 感觉更像是一个协作队友的小细节非常重要。\n\nGuillermo Rauch: 我们的设计哲学就是要把这些让工程流变得真实的细节嵌入其中。毕竟，我不需要去终端或者打开 GitHub Desktop 手动创建分支，那太原始了。我只需按一个按钮，分支就跑起来了。\n\n这里的核心理念是，在预览中我运行着完整的 skills.sh 项目。它下载了依赖项，安装了 Next.js 的精确版本。我可以在这个开发环境中像在生产网站上一样操作它。我打算构建一个可以直接交付到生产环境的功能。\n\nClaire Vo: 我想补充一点，很多人可能意识不到这个 VS Code 实例和依赖安装的意义。对于非技术人员来说，配置本地环境简直是噩梦。我今天早上还帮我的设计师安装 Homebrew，折腾了半天。\n\nGuillermo Rauch: 确实是噩梦。\n\nClaire Vo: 如果你想从氛围编程的原型阶段跨越到软件工程师的领域，又不想被安装配置困扰，这能帮你完成一大半的工作。\n\n实战演示：评分系统与防滥用机制\n\nGuillermo Rauch: 让我们来构建一些实用的东西。我们会倾听社区和客户的声音，大家希望有一些工具来判断某个技能是否高质量、是否经过验证。\n\n我们来添加一个基于五星的评分系统，放在侧边栏。我不仅要提需求，还要像对真实工程师说话一样考虑周全：如果接收来自互联网的评分，最容易出什么问题？答案是滥用。\n\n所以我告诉 v0：注意添加速率限制或防止分数滥用的机制。对我来说，在使用 v0 时，始终要从生产就绪的角度去思考，并确保它符合这个网站的设计风格。\n\nClaire Vo: 我很喜欢你刚才那个非常高级的提示词：“让它合理一点”（make it make sense）。你就用了几个不完整的句子，就要在一个服务百万用户的生产应用上进行修改。\n\n我也想提到，随着 skills 成为发现技能的中心，质量把控至关重要。这就像是在 GitHub 或 npm 之上进行氛围编程，责任重大。\n\nAgent 推理与数据集成\n\nGuillermo Rauch: 我带大家看看 v0 正在做什么。如果你用过 v0，你应该习惯了在它思考时进行解说，因为智能体还没那么快。但有几点非常重要。\n\nv0 充分利用了 Vercel 的集成能力。它知道这个项目的数据源，我们使用的是 Upstash 提供的 Redis 存储。它会遍历文件系统，解读我的需求。很高兴看到它没有胡乱发明存储数据的方法，而是遵循了我已有的数据结构。\n\n现在它给出了符合要求的结果：符合设计风格，可以提交评分，并且能保存。我给它评了五星。不过这里有个小问题，页面刷新时会有轻微的布局偏移（Layout Shift），这触发了我的强迫症。\n\n我要告诉它：“在没有数据时，确保不要有布局偏移。”虽然这只是一个小细节，但刷新时的抖动确实让我不舒服。\n\nClaire Vo: 我曾亲眼见过这个男人在 Vercel 内部黑客松上，截了一张圆角弧度不对的图发到群里，只配了一个问号。\n\nGuillermo Rauch: 现在的骨架屏非常稳定，布局偏移消失了。我很满意。\n\nPR 预览与自动描述\n\nGuillermo Rauch: 让我们继续工程流程。在 skills.sh 这种高流量项目上修改代码，我们必须确保万无一失。目前这只是一个在虚拟机中运行的 Next.js 开发服务器。\n\n如果你熟悉 GitHub 的工作流，你会知道当你提交 PR 时，Vercel 机器人会帮你构建变更并提供预览。v0 在这里表现得很棒，它帮我写好了 PR 描述。我已经很多年没亲自写过 PR 描述了，而 v0 做得非常好。\n\n现在 Vercel 的魔力发挥了作用，它生成了预览链接。这个预览运行在生产级的 CDN 和渲染基础设施上。当我在预览中看到评分系统正常工作时，我就有信心它可以发布了。\n\nVercel 内部数据：PR 的增长\n\nClaire Vo: 我想问一下内部的情况。你们现在都是这样交付代码的吗？还是说这只是其中的一部分？\n\nGuillermo Rauch: 这非常有趣。我们在内部构建产品时，对自己要求的标准和对外发布的标准一样高。在和你会面前，我询问了我们的数据分析智能体 DZero。我们给内部智能体取名很偷懒，首字母加个 Zero 就行。\n\n我问 DZero：“告诉我最近几周通过 v0 合并的 PR 增长情况。”DZero 回复说：通过 v0 合并的 PR 在过去一周看到了爆发式增长。\n\nClaire Vo: 我很欣赏给这个智能体写提示词的人，因为它没有用爆炸的表情符号，我知道那也会触发你的强迫症。\n\nGuillermo Rauch: 确实。数据显示，这个功能从 1 月初的接近零，增长到 1 月 28 日（也就是今天）的每日合并 3200 个 PR。这是 100 倍的增长。\n\n这还只是在非常早期的预览阶段。想象一下，你可以在手机上、Slack 里或者 v0 官网上随时触发这样的任务。我们还增加了一个便利功能：你可以直接粘贴 GitHub 仓库地址到 v0，它就能导入并创建对话。这意味着任何生产环境中的奇思妙想，现在都可以通过提示词变成现实。\n\n组织变革：全民皆可“烹饪”\n\nClaire Vo: 在操作层面上，你认为公司会如何应用它？我听说 Vercel 内部有人昨晚用 v0 随手写了个东西，大家一看觉得不错，直接就合并上线了。作为 CEO，你如何从文化上支持这种做法？\n\nGuillermo Rauch: 直到现在，每个人都可以成为“大厨”。以前大家只能提建议、做原型。每当我有了改进产品的想法，我就会创建一个 v0。但在过去，这只是在“拉拉岛”里玩耍，因为它没法变成真实的 PR 交给工程团队。\n\n现在我们有了共同的基础。营销人员总想改网站，以前他们得向工程师请愿，或者祈祷 CMS 足够好用。现在他们可以直接在 v0 里修改任何想改的东西。\n\n当然，直接发布是不负责任的。但有了 Git 工作流和预览机制，我们可以建立信心，必要时还能回滚。这极大地降低了上线摩擦。那种为了排优先级而进行的仪式感消失了，大家可以专注于捍卫想法本身的价值。\n\n这会显著提高公司的运转速度。在生产级发布流程中，我们需要特性开关（Feature Flags）、实验和度量。我认为通过向 v0 添加特定的技能，我们可以让氛围编程也具备大规模企业所要求的严谨性。\n\n闪电问答：非编程类的 AI 用例\n\nClaire Vo: 让我们进入闪电问答。你最喜欢的非编程类 AI 用例是什么？\n\nGuillermo Rauch: 我首先想到的是图像生成。在 Vercel 内部，我们构建了许多自己的工具，比如 Nano Banana。我经常用它来做表情包，或者在推特、演讲中用它来呈现我的愿景。\n\n我经常将它与 v0 结合使用。Nano Banana 擅长并行生成几十个方案让我筛选，然后我把选中的方案扔进 v0 进行实现。\n\n此外，我还对视频生成非常兴奋，我们即将发布一些相关的内容。我还会用 AI 来执行一些长周期的研究任务。\n\nClaire Vo: 值得一提的是，我也在用 Nano Banana。我们播客中提到的每一个 AI 工作流，都会生成一个风格统一的 Nano Banana 信息图。图像和视频生成的价值被严重低估了。\n\nGuillermo Rauch: 我们内部还做了一个社交媒体卡片（OG Image）生成器。以前这经常成为我们发布公告的瓶颈，现在我们把它自动化了。每天我们都在问：能不能构建一个智能体来接替原本需要人来完成的任务？通常，原本做这个任务的人，就是现在创建智能体的人。\n\n个人项目：AI 国际象棋对战\n\nClaire Vo: 我最喜欢的你用 v0 做的项目是那个 AI 国际象棋游戏。我孩子被它迷住了。\n\nGuillermo Rauch: 这个项目教会了我很多。假期里我突发奇想：能不能用 v0 生成 3D 代码？用 Three.js 渲染一个实时的、具有电视转播感的国际象棋比赛。我让两个 AI 互相博弈。\n\n你甚至可以看到模型思考的过程。我使用了 Vercel 所有的 AI 基础设施和工作流引擎，确保游戏可以永远运行下去。通过 AI 网关，我可以随时切换模型，看不同模型之间的对战。我也顺便学到了国际象棋的策略，因为我会看到模型在想：“如果我走这一步，我就输定了，所以我得换一招。”\n\n现实世界中的 AI：Vesta 物理看板与教育\n\nClaire Vo: 最后一个问题，你最近和孩子们一起构建的有趣项目是什么？\n\nGuillermo Rauch: 前几天我把他们带到办公室，我们开始尝试物理 AI（Physical AI）。办公室里有一个 Vesta 物理看板，可以通过 API 实时显示内容。\n\n我给两个孩子展示了如何通过输入代码来改变现实世界中的物理看板，这彻底震撼了他们。我顺便教了他们 API 的概念。我觉得，如果你能教会孩子通过表达想法和欲望来让事情发生，那他们就能创造任何东西。\n\nClaire Vo: 我非常同意。离开屏幕，在物理世界中展示 AI 的力量，能给孩子带来极大的启发。\n\n内容质量与 AI 废话\n\nGuillermo Rauch: 假期里我和孩子玩了一个数学谜题游戏。好消息是很有教育意义，坏消息是里面充满了广告垃圾和 AI 废话（AI Slop）。\n\n我觉得这是一个巨大的机会。我们可以结合各种模型和图像生成技术，创造高质量的内容。我们即将发布非常酷的功能：文本转 SVG。通过 Vercel AI 网关分享 Recraft 模型，你可以创建精美的、矢量级的游戏资产。我预见未来高质量的内容将触手可及。\n\n克服摩擦与协作\n\nClaire Vo: 当你遇到困难，AI 没给出你想要的结果时，你会怎么办？\n\nGuillermo Rauch: 我们现在推出的功能正是为了解决这个问题。你始终拥有一个“逃生舱”：你可以克隆代码到本地，或者找人帮忙。这本质上是一个协作媒介。\n\n随着模型变聪明以及“技能”的加入，人们卡住的概率会越来越低。例如，我不懂 3D 建模，在做象棋项目时，我会去问另一个专家模型，让它教我 3D 网格、纹理等知识，然后把答案喂给 v0。\n\nv0 还有一个内部的调试按钮，它能帮我可视化 3D 模型的网格，开启或关闭纹理。AI 甚至可以为自己构建调试工具，这很玄妙，但非常管用。\n\n观众问答：产品验证与未来技术\n\n观众 1: 在从想法到生产的过程中，你们如何验证产品市场契合度（PMF）？\n\nGuillermo Rauch: 我们内部有一个“客户 0”和“客户 1”的原则。客户 0 就是我们自己，我们要对自己判断好东西的能力有信心。客户 1 是深度的设计合作伙伴。比如 Claire 和我们的 CPO 就在一个群里，她会不断发 Bug 报告和需求。我们需要来自现实世界的压力测试。\n\n观众 2: v0 有可能支持 React Native 吗？\n\nGuillermo Rauch: v0 是构建在 Vercel 基础设施之上的。我们运行预览的虚拟机叫做 Sandbox。智能体之所以强大，不是因为它们完美，而是因为它们拥有可以调用的计算机资源。DZero 擅长数据分析，是因为它能写 Python、查数据库、搜网页。这个 Sandbox 是通用的，理论上它可以运行 React Native 或任何其他语言。\n\nClaire Vo: v0 会帮助我们构建这些智能体吗？\n\nGuillermo Rauch: 绝对会。很多智能体需要可靠性，比如网络波动或函数超时。Vercel 的工作流引擎会自动重试。我们将帮助你在 v0 中创建这种具备持久化和重试能力的后端工作流。有些智能体是高度视觉化的，有些则是运行在后台的，比如你可以通过 WhatsApp 与它们交流，我们会帮你实现这些。\n\nClaire Vo: 感谢大家收看。如果你喜欢这个节目，请在 YouTube 上点赞订阅，或者在 Apple Podcasts 和 Spotify 上给我们好评。我们下期再见。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/video/7c758f8#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/videos?sourceid=bed90372",
+      "text": "How I AI",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.youtube.com/watch?v=Yb9IyTOh0xg",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Vercel CEO Guillermo Rauch 解释了 v0 如何通过集成生产级 Git 工作流并将代码贡献在组织内民主化，从而将“氛围编程”转变为专业的工程学科。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "v0, Vercel, 氛围编程, Git 工作流, AI 智能体",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "“人人皆可开发”：v0 如何将 Git 工作流引入氛围编程 | Guillermo Rauch (Vercel C...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Vercel CEO Guillermo Rauch 解释了 v0 如何通过集成生产级 Git 工作流并将代码贡献在组织内民主化，从而将“氛围编程”转变为专业的工程学科。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/video/7c758f8",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/7c758f8/opengraph-image?64edf17c38836472",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-04 13:01:11",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "How I AI",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "v0",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Vercel",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "氛围编程",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Git 工作流",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI 智能体",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "“人人皆可开发”：v0 如何将 Git 工作流引入氛围编程 | Guillermo Rauch (Vercel C...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Vercel CEO Guillermo Rauch 解释了 v0 如何通过集成生产级 Git 工作流并将代码贡献在组织内民主化，从而将“氛围编程”转变为专业的工程学科。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/video/7c758f8/twitter-image?8c88273a7af11d7e",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "“人人皆可开发”：v0 如何将 Git 工作流引入氛围编程 | Guillermo Rauch (Vercel C...",
+  "url": "https://www.bestblogs.dev/video/7c758f8"
+}

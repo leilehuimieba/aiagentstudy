@@ -127,3 +127,23 @@ Compact index of collected items.
 | BB-2026-05-01-121 | 2026-02-10 | The Great Shift in Programming 2026: Anthropic Report Rev... | BestBlogs / 宝玉的分享 | `02-tools-actions` | Tools/Actions, Control Loop, Deliverable | Full text + source captured |
 | BB-2026-05-01-122 | 2026-02-05 | Head-to-Head! Claude Opus 4.6 and GPT-5.3 Codex Released ... | BestBlogs / 数字生命卡兹克 | `01-context-memory` | Context/State, Memory, Tools/Actions | Full text + source captured |
 | BB-2026-05-01-123 | 2026-02-02 | This is Probably the Most Comprehensive, Readable, and Ea... | BestBlogs / 腾讯技术工程 | `03-control-loop` | Goal, Control Loop, Tools/Actions, Evaluation | Full text + source captured |
+| BB-2026-05-01-124 | 2026-02-02 | Codex 应用介绍 | BestBlogs / OpenAI | `01-context-memory` | Context/State, Memory, Tools/Actions | Full text + source captured |
+| BB-2026-05-01-125 | 2026-02-03 | 解构 Clawdbot：本地架构、记忆管理、Agent 编排与上下文组装原理 | BestBlogs / 腾讯云开发者 | `01-context-memory` | Context/State, Memory, Tools/Actions | Full text + source captured |
+| BB-2026-05-01-126 | 2026-02-03 | 从传统编程转向大模型编程 | BestBlogs / 阿里云开发者 | `04-evaluation-guardrails` | Evaluation, Guardrails, Tools/Actions | Full text + source captured |
+| BB-2026-05-01-127 | 2026-02-04 | AI 原生研发范式：从“代码中心”到“文档驱动”的演进 | BestBlogs / 阿里云开发者 | `01-context-memory` | Context/State, Memory, Tools/Actions | Full text + source captured |
+| BB-2026-05-01-128 | 2026-02-03 | Claude Code 团队的 10 个内部技巧，但你不一定都要学 | BestBlogs / 宝玉的分享 | `02-tools-actions` | Tools/Actions, Control Loop, Deliverable | Full text + source captured |
+| BB-2026-05-01-129 | 2026-02-04 | “人人皆可开发”：v0 如何将 Git 工作流引入氛围编程 / Guillermo Rauch (Vercel C... | BestBlogs / How I AI | `02-tools-actions` | Tools/Actions, Control Loop, Deliverable | Full text + source captured |
+| BB-2026-05-01-130 | 2026-02-02 | 63.与 Rokid 祝铭明的访谈：AI 眼镜、入口与巨头环伺的生态之战 | BestBlogs / 卫诗婕｜商业漫谈Jane's talk | `03-control-loop` | Goal, Control Loop, Tools/Actions, Evaluation | Full text + source captured |
+| BB-2026-05-01-131 | 2026-02-04 | E224｜深度拆解 Clawdbot，为何它能成为 2026 年第一个现象级产品？ | BestBlogs / 硅谷101 | `01-context-memory` | Context/State, Memory, Tools/Actions | Full text + source captured |
+| BB-2026-05-01-132 | 2026-02-06 | 5 万字完整版: 马斯克最新谈 AI 算力登月-文明韧性与硬件霸权 /图解全文+视频 | BestBlogs / Web3天空之城 | `03-control-loop` | Goal, Control Loop, Tools/Actions, Evaluation | Full text + source captured |
+| BB-2026-05-01-133 | 2026-02-01 | 栏目对话和访谈：Sebastian Raschka 和 Nathan Lambert 在 Lex Fridman ... | BestBlogs / 宝玉的分享 | `01-context-memory` | Context/State, Memory, Tools/Actions | Full text + source captured |
+| BB-2026-05-01-134 | 2026-02-03 | 应用爆发之年：聊聊模型技术进化与商业化 | BestBlogs / 硅谷101 | `02-tools-actions` | Tools/Actions, Control Loop, Deliverable | Full text + source captured |
+| BB-2026-05-01-135 | 2026-02-01 | 他看到的未来，和我们有什么不一样？/ 对话 18 岁的涂津豪：DeepSeek 前实习生、阿里数竞 AI 组冠军 ... | BestBlogs / 十字路口Crossing | `01-context-memory` | Context/State, Memory, Tools/Actions | Full text + source captured |
+| BB-2026-05-01-136 | 2026-01-30 | Vol.86 同一代技术，两个系统，181 页 PPT 全记录 AI 行业的 2025 | BestBlogs / 屠龙之术 | `03-control-loop` | Goal, Control Loop, Tools/Actions, Evaluation | Full text + source captured |
+| BB-2026-05-01-137 | 2026-02-10 | 介绍 Showboat 和 Rodney：让智能体能够演示其构建的成果 | BestBlogs / Simon Willison's Weblog | `02-tools-actions` | Tools/Actions, Control Loop, Deliverable | Full text + source captured |
+| BB-2026-05-01-138 | 2026-04-02 | Lenny’s Podcast 中关于智能体工程的对话精华 | BestBlogs / Simon Willison's Weblog | `02-tools-actions` | Tools/Actions, Control Loop, Deliverable | Full text + source captured |
+| BB-2026-05-01-139 | 2026-03-17 | GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元 / BestBlog... | BestBlogs / Simon Willison's Weblog | `02-tools-actions` | Tools/Actions, Control Loop, Deliverable | Full text + source captured |
+| BB-2026-05-01-140 | 2026-04-21 | 这就是 ChatGPT 图像 2.0 | BestBlogs / OpenAI | `02-tools-actions` | Tools/Actions, Control Loop, Deliverable | Full text + source captured |
+| BB-2026-05-01-141 | 2026-02-07 | StrongDM 的 AI 团队如何在不看代码的情况下构建严肃软件 | BestBlogs / Simon Willison's Weblog | `02-tools-actions` | Tools/Actions, Control Loop, Deliverable | Full text + source captured |
+| BB-2026-05-01-142 | 2026-03-14 | 我在 Pragmatic Summit 炉边谈话中探讨智能体工程 | BestBlogs / Simon Willison's Weblog | `01-context-memory` | Context/State, Memory, Tools/Actions | Full text + source captured |
+| BB-2026-05-01-143 | 2026-03-24 | Claude Code 自动模式：一种更安全的跳过权限确认方式 | BestBlogs / A Anthropic Engineering | `01-context-memory` | Context/State, Memory, Tools/Actions | Full text + source captured |

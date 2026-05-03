@@ -1,0 +1,44 @@
+# GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元 | BestBlog...
+
+- BestBlogs URL: https://www.bestblogs.dev/article/eedde830
+- Extraction: DOM text from BestBlogs page via OpenCLI browser bridge
+- Extracted chars: 2100
+- Original publisher URL: https://simonwillison.net/2026/Mar/17/mini-and-nano/#atom-everything
+
+---
+
+17th March 2026
+
+OpenAI today: Introducing GPT‑5.4 mini and nano. These models join GPT-5.4 which was released two weeks ago.
+
+OpenAI’s self-reported benchmarks show the new 5.4-nano out-performing their previous GPT-5 mini model when run at maximum reasoning effort. The new mini is also 2x faster than the previous mini.
+
+Here’s how the pricing looks—all prices are per million tokens. gpt-5.4-nano is notably even cheaper than Google’s Gemini 3.1 Flash-Lite:
+
+Model	Input	Cached input	Output
+gpt-5.4	$2.50	$0.25	$15.00
+gpt-5.4-mini	$0.75	$0.075	$4.50
+gpt-5.4-nano	$0.20	$0.02	$1.25
+
+Other models for comparison
+
+Claude Opus 4.6	$5.00	-	$25.00
+Claude Sonnet 4.6	$3.00	-	$15.00
+Gemini 3.1 Pro	$2.00	-	$12.00
+Claude Haiku 4.5	$1.00	-	$5.00
+Gemini 3.1 Flash-Lite	$0.25	-	$1.50
+
+I used GPT-5.4 nano to generate a description of this photo I took at the John M. Mossman Lock Collection:
+
+llm -m gpt-5.4-nano -a IMG_2324.jpeg 'describe image'
+
+
+Here’s the output:
+
+The image shows the interior of a museum gallery with a long display wall. White-painted brick walls are covered with many framed portraits arranged in neat rows. Below the portraits, there are multiple glass display cases with dark wooden frames and glass tops/fronts, containing various old historical objects and equipment. The room has a polished wooden floor, hanging ceiling light fixtures/cords, and a few visible pipes near the top of the wall. In the foreground, glass cases run along the length of the room, reflecting items from other sections of the gallery.
+
+That took 2,751 input tokens and 112 output tokens, at a cost of 0.069 cents (less than a tenth of a cent). That means describing every single photo in my 76,000 photo collection would cost around $52.44.
+
+I released llm 0.29 with support for the new models.
+
+Then I had OpenAI Codex loop through all five reasoning effort levels and all three models and produce this combined SVG grid of pelicans riding bicycles (generation transcripts here). I do like the gpt-5.4 xhigh one the best, it has a good bicycle (with nice spokes) and the pelican has a fish in its beak!

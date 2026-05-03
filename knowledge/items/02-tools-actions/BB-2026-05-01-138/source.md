@@ -1,0 +1,105 @@
+# Source Evidence
+
+- Title: Lenny’s Podcast 中关于智能体工程的对话精华
+- BestBlogs URL: https://www.bestblogs.dev/article/9218c133
+- Original publisher URL: https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything
+- Original link text: 查看原文 →
+
+## Captured Page Metadata
+
+- Browser title: Lenny’s Podcast 中关于智能体工程的对话精华 | BestBlogs.dev
+- Description: Simon Willison 探讨了向智能体工程（agentic engineering）的转变，即 AI 处理大部分编码工作，将人类的瓶颈转移到测试、原型设计和高层判断上。
+- Date: 2026-04-02
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- 我的早报: https://www.bestblogs.dev/reading/brief
+- 我的关注: https://www.bestblogs.dev/reading/follow
+- 为你推荐: https://www.bestblogs.dev/reading/feed
+- 内容广场: https://www.bestblogs.dev/explore
+- 每日早报: https://www.bestblogs.dev/explore/brief
+- 精选周刊: https://www.bestblogs.dev/explore/newsletter
+- 主题解读: https://www.bestblogs.dev/explore/topics
+- 内容来源: https://www.bestblogs.dev/explore/sources
+- 阅读历史: https://www.bestblogs.dev/library/history
+- 我的收藏: https://www.bestblogs.dev/library/bookmarks
+- 我的笔记: https://www.bestblogs.dev/library/highlights
+- 我的回顾: https://www.bestblogs.dev/library/review
+- 设置: https://www.bestblogs.dev/settings
+- 帮助中心: https://www.bestblogs.dev/docs
+- Simon Willison's Weblog: https://www.bestblogs.dev/articles?sourceid=7808b7
+- 查看原文 →: https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything
+- An AI state of the union: We’ve passed the inflection point, dark factories are coming, and automation timelines: https://www.lennysnewsletter.com/p/an-ai-state-of-the-union
+- YouTube: https://youtu.be/wc8FBhQtdsA
+- Spotify: https://open.spotify.com/episode/0DVjwLT6wgtscdB78Qf1BQ
+- Apple Podcasts: https://podcasts.apple.com/us/podcast/an-ai-state-of-the-union-weve-passed-the/id1627920305?i=1000758850377
+- ↗ 在新标签页打开嵌入内容: https://www.youtube-nocookie.com/embed/wc8FBhQtdsA
+- The November inflection point: https://simonwillison.net/2026/Apr/2/lennys-podcast/#the-november-inflection-point
+- Software engineers as bellwethers for other information workers: https://simonwillison.net/2026/Apr/2/lennys-podcast/#software-engineers-as-bellwethers-for-other-information-workers
+- Writing code on my phone: https://simonwillison.net/2026/Apr/2/lennys-podcast/#writing-code-on-my-phone
+- Responsible vibe coding: https://simonwillison.net/2026/Apr/2/lennys-podcast/#responsible-vibe-coding
+- Dark Factories and StrongDM: https://simonwillison.net/2026/Apr/2/lennys-podcast/#dark-factories-and-strongdm
+- The bottleneck has moved to testing: https://simonwillison.net/2026/Apr/2/lennys-podcast/#the-bottleneck-has-moved-to-testing
+- This stuff is exhausting: https://simonwillison.net/2026/Apr/2/lennys-podcast/#this-stuff-is-exhausting
+- Interruptions cost a lot less now: https://simonwillison.net/2026/Apr/2/lennys-podcast/#interruptions-cost-a-lot-less-now
+- My ability to estimate software is broken: https://simonwillison.net/2026/Apr/2/lennys-podcast/#my-ability-to-estimate-software-is-broken
+- It’s tough for people in the middle: https://simonwillison.net/2026/Apr/2/lennys-podcast/#it-s-tough-for-people-in-the-middle
+- It’s harder to evaluate software: https://simonwillison.net/2026/Apr/2/lennys-podcast/#it-s-harder-to-evaluate-software
+- The misconception that AI tools are easy: https://simonwillison.net/2026/Apr/2/lennys-podcast/#the-misconception-that-ai-tools-are-easy
+- Coding agents are useful for security research now: https://simonwillison.net/2026/Apr/2/lennys-podcast/#coding-agents-are-useful-for-security-research-now
+- OpenClaw: https://simonwillison.net/2026/Apr/2/lennys-podcast/#openclaw
+- Journalists are good at dealing with unreliable sources: https://simonwillison.net/2026/Apr/2/lennys-podcast/#journalists-are-good-at-dealing-with-unreliable-sources
+- The pelican benchmark: https://simonwillison.net/2026/Apr/2/lennys-podcast/#the-pelican-benchmark
+- And finally, some good news about parrots: https://simonwillison.net/2026/Apr/2/lennys-podcast/#and-finally-some-good-news-about-parrots
+- YouTube chapters: https://simonwillison.net/2026/Apr/2/lennys-podcast/#youtube-chapters
+- 4:19: https://youtu.be/wc8FBhQtdsA?t=269
+- inflection point: https://simonwillison.net/tags/november-2025-inflection/
+- build me a Mac application that does this thing: https://simonwillison.net/2026/Feb/25/present/
+- 5:49: https://youtu.be/wc8FBhQtdsA?t=349
+- AI hallucination cases database: https://www.damiencharlotin.com/hallucinations/
+- the start: https://www.youtube.com/watch?v=wc8FBhQtdsA&t=0s
+- 8:19: https://youtu.be/wc8FBhQtdsA?t=499
+- can execute code now: https://simonwillison.net/2025/Sep/9/claude-code-interpreter/
+- Claude Code for web: https://code.claude.com/docs/en/claude-code-on-the-web
+- 9:55: https://youtu.be/wc8FBhQtdsA?t=595
+- When is it OK to vibe code?: https://simonwillison.net/2025/Mar/19/vibe-coding/#when-is-it-ok-to-vibe-code-
+- 12:49: https://youtu.be/wc8FBhQtdsA?t=769
+- StrongDM’s dark factory explorations: https://simonwillison.net/2026/Feb/7/software-factory/
+- 21:27: https://youtu.be/wc8FBhQtdsA?t=1287
+- 22:40: https://youtu.be/wc8FBhQtdsA?t=1360
+- 46:35: https://youtu.be/wc8FBhQtdsA?t=2795
+- 26:25: https://youtu.be/wc8FBhQtdsA?t=1585
+- 45:16: https://youtu.be/wc8FBhQtdsA?t=2716
+- 28:19: https://youtu.be/wc8FBhQtdsA?t=1699
+- 36:56: https://youtu.be/wc8FBhQtdsA?t=2216
+- 29:29: https://youtu.be/wc8FBhQtdsA?t=1769
+- did an offsite about a month ago: https://www.thoughtworks.com/insights/articles/reflections-future-software-engineering-retreat
+- Cloudflare hiring 1,000 interns: https://blog.cloudflare.com/cloudflare-1111-intern-program/
+- 31:21: https://youtu.be/wc8FBhQtdsA?t=1881
+- 33:05: https://youtu.be/wc8FBhQtdsA?t=1985
+- 37:47: https://youtu.be/wc8FBhQtdsA?t=2267
+- 41:31: https://youtu.be/wc8FBhQtdsA?t=2491
+- 19:04: https://youtu.be/wc8FBhQtdsA?t=1144
+- Vulnerability Research Is Cooked: https://sockpuppet.org/blog/2026/03/30/vulnerability-research-is-cooked/
+- 20:05: https://youtu.be/wc8FBhQtdsA?t=1205
+- Anthropic’s collaboration with Firefox: https://blog.mozilla.org/en/firefox/hardening-firefox-anthropic-red-team/
+- 1:29:23: https://youtu.be/wc8FBhQtdsA?t=5363
+- Datasette: https://datasette.io/
+- 1:34:58: https://youtu.be/wc8FBhQtdsA?t=5698
+- pelicans riding bicycles: https://simonwillison.net/tags/pelican-riding-a-bicycle/
+- 56:10: https://youtu.be/wc8FBhQtdsA?t=3370
+- all I want from life is a really good picture of a pelican riding a bicycle: https://simonwillison.net/2025/Nov/13/training-for-pelicans-riding-bicycles/
+- 59:56: https://youtu.be/wc8FBhQtdsA?t=3596
+- 1:38:10: https://youtu.be/wc8FBhQtdsA?t=5890
+- watch the live stream of Rakiura on her nest with two chicks: https://www.youtube.com/live/LDSWtyU6-Lg
+- 00:00: https://www.youtube.com/watch?v=wc8FBhQtdsA
+- 02:40: https://www.youtube.com/watch?v=wc8FBhQtdsA&t=160s
+- 08:01: https://www.youtube.com/watch?v=wc8FBhQtdsA&t=481s
+- 10:42: https://www.youtube.com/watch?v=wc8FBhQtdsA&t=642s
+- 13:57: https://www.youtube.com/watch?v=wc8FBhQtdsA&t=837s
+- 20:41: https://www.youtube.com/watch?v=wc8FBhQtdsA&t=1241s
+- 23:36: https://www.youtube.com/watch?v=wc8FBhQtdsA&t=1416s
+- 25:32: https://www.youtube.com/watch?v=wc8FBhQtdsA&t=1532s
+- 29:12: https://www.youtube.com/watch?v=wc8FBhQtdsA&t=1752s
+- 30:48: https://www.youtube.com/watch?v=wc8FBhQtdsA&t=1848s

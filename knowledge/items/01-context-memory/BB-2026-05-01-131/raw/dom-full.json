@@ -1,0 +1,299 @@
+{
+  "content": "PODCAST\n92\n⭐ 精选内容\nE224｜深度拆解 Clawdbot，为何它能成为 2026 年第一个现象级产品？\n\n深入拆解 2026 年现象级 AI Agent 产品 Clawdbot 的技术架构、硬件形态及其对未来组织架构的重塑。\n\n⭐ 推荐理由硅谷 101 拆解现象级 AI Agent Clawdbot，GitHub 14 万星标带火 Mac mini。核心突破：长期记忆与主动性创造活人感，Markdown 文件存储记忆更持久，混合检索实现秒级定位，心跳机制让 Agent 自主触发任务。真实场景：自我实现语音功能、预判推送建议、自主削减服务器成本、十秒摸清规则完成发布、绕过 API 限制。硬件方案：物理隔离应对隐私风险，Mac mini 性价比最优，专用硬件强化 I/O 和大内存。商业展望：大模型公司避免沦为算力管道，互联网转向按爬取付费，一人公司可行性提升，Idea 重要性超越执行力。\n\n展开\n硅谷101\n关注\n·\n02-04\n·\n01:19:40\n·\n20 个章节\n·\n查看原文 →\n00:00\n01:19:40\n1x\n章节导览\n20 个章节 · 01:19:40\nCH.1\n2026 年现象级 AI 产品 Club Board：从爆红到法律争议与技术挑战\n00:00▶\nCH.2\nClubable 成全球现象：核心灵魂在于‘活人感’与 IM 沟通\n04:53\nCH.3\n技术与用户视角下的 AI 产品火爆原因探析\n08:42\nCH.4\n大模型助手的惊艳用例：从语音提醒到自主博客发布\n11:51\nCH.5\n探讨 AI 编程与知识工作者工具的优劣及实现方法\n18:17\nCH.6\n深度解析记忆技术在智能助手中的应用与创新\n19:55\nCH.7\n深度解析 AI 记忆系统：从工作记忆到长期记忆的巧妙设计\n22:39\nCH.8\n探讨记忆系统设计与用户感知的价值\n26:47\nCH.9\nAI 主动性设计与精准任务执行机制探讨\n29:01\nCH.10\nAI 助手权限与隐私安全：隔离部署与会员制解决方案探讨\n31:33\nCH.11\nAI 数字分身构建与成本效益分析：打造个人知识资产自动化\n35:51\nCH.12\nAI 在企业级 IM 中的应用与权限管理挑战\n40:09\nCH.13\n共识下的隐私与效果平衡：社区项目在数据安全中的应用探索\n44:02\nCH.14\n技术下放与创新应用：探讨 mac mini 在 AI 项目中的独特价值\n48:04\nCH.15\n未来 AI Agent 硬件设计与边缘计算角色探讨\n53:22\nCH.16\n专机专用与云端服务：未来趋势及大模型厂商影响探讨\n57:30\nCH.17\n开源模型与 API 使用：挑战与未来趋势探讨\n01:02:41\nCH.18\nAI Agent 兴起：互联网广告模式面临挑战与新机遇\n01:07:57\nCH.19\nAI 军团与零员工公司：未来商业组织架构的变革探讨\n01:10:58\nCH.20\nAI Agent 协作与企业组织架构创新\n01:13:47\n📝 实时字幕\n跟随播放\n全部字幕\nCH.1\n2026 年现象级 AI 产品 Club Board：从爆红到法律争议与技术挑战\n00:00 — 04:53\n00:00\n1\n\n反转反转再反转。一个周末的时间，2026 年第一个现象级产品 clb bot 的发展实在是太快了，在过去的一周时间里，已经在各种社交媒体里被 club board 刷屏，在 github 里的增长趋势也几乎就是直线上涨，没几天就突破了 10 万颗星标指数 2 月 2 号已经达到了 14.6 万克，这直接刷新了给 ub 历史上 AI 项目的最快增长记录，引爆了整个 AI 的生态。大家好，欢迎收听硅谷 101，我是特约研究员刘一鸣，我们这期节目录制在 1 月 30 号，但就在后面这个周末，这个项目经历了一个极其戏剧性的变化。当然在正式开始之前，我得先帮大家捋一捋这几天快把人绕晕的几个名词。\n\n00:46\n1\n\n第一个是 club 到 open cloud，那个最初让大家刷屏的基于 cloud 模型所构建的项目，原本叫 cloud boat。但由于它实在是太火了，直接惊动了背后的模型大厂 s android 随后就发起了起诉，认为 cloud t 这个名字的发音和 cloud 太像了，他涉嫌了品牌的侵权。为了规避法律风险，class board 就先是更名为 mode boat，然后又再次更名为 open cloud。\n\n01:11\n1\n\n之后整个周末里大家看到大量刷屏新闻里提到的 motor ook，其实就是基于 cloud boat 所搭建的一个专门为 AI 设计的社交网络。可以说这是让这些智能体们生活在里面的宿舍楼，或者说是朋友圈。现在有无数个 AI agent 在上面发帖交流，甚至建立起了宗教，而人类在这个里面只能充当一个观察者。紧接着有媒体扒出这 150 万个 AI 中大多数是人类假扮的，而同步它也被曝光，安全漏洞太大了，会泄露很多人类的敏感信息。比如说你的用户名、密码、邮件等等。而我们今天发布这个博客的时候，由于 notebook 的服务器账单已经成为了天文数字，网站暂时无法访问。而这一切都是在我们节目录制之后的五天发生的事儿，也是因为 AI 的发展实在是太快了。\n\n02:01\n1\n\n曾经市面上其实也有一些类似于 clubhouse 的产品，但为什么最终是 club board 火了？今天我们邀请了三位嘉宾，他们分别代表了三个方向，一个是用户侧，一个是软件算法侧，还有一个是硬件侧。我们希望更加全方位的来拆解一下 club boot 的产品的底层逻辑。第一位嘉宾是知县，他是一位非常资深的产品经理，还横跨了 crypto to 行业。他最近用了 club OT，然后听说超级上头，我们可以多聊聊你的实际用例都实现了什么功能。支线在我们今天的博客里。\n\n02:34\n2\n\n它主要代表用户侧。大家好，我是支线，确实非常的上头。我个人也是计算机背景，就是做了这么多年产品，对 car boat 强大的非常的感同身受。\n\n02:44\n1\n\n第二位嘉宾是真壕，他是艾尔麦的技术生态负责人，也是清华姚班的同学。后来在卡耐基梅隆研究 NLP 的方向，再往后创业，然后加入了 every night。他现在做的就是大模型跟 agent 之间的中间层，比如说模型的长期记忆和个性化。现在 club board 其实就是在获取你的用户权限之后，把你大量的个人资料输入整合进去再做压缩。这其实也是 ARM d 一直在做的方向。所以正好代表软件算法车，我们可以聊聊 cobo t 背后很多神奇的功能，到底在技术上是如何实现的，以及它还有哪些待解决的问题。\n\n03:22\n3\n\nHello 大家好，我是正好因为 ever mine 我们一直都是研究 AI 的记忆还是 infrastructure。然后我们怎么样去解决让 AI 不会再失忆，然后的遗忘的问题。我们非常高兴的看到像 club board 和其他一些产品，他越来越关注 AIG 的这个话题。所以我觉得这还是一个非常有前景的方向，也非常期待在这个方向上有能够更好的产品和更好的技术，为大家带来。\n\n03:48\n1\n\n不一样的体验。第三位是天崎，他是帕米尔的创始人，他俩其实特别有前瞻性的，在一年半之前就做了一个给 agent 用的计算机，很小，可以直接放在手掌上。在这在机子上你可以直接跑 color code，然后当然也可以跑 color boat。它的价格大概是 mac me 的好几分之一。所以我这次邀请天奇，其实就是因为这次 mac mini 也被带火了。但其实我们是不是一定要用 mac mini 呢？这个其实还是个问号，以及发布所带起来的这个趋势，它对 2026 年的这个硬件会产生什么影响？比如说我们到底是不是需要给 agent 配置一个独立的计算机？因为有些人会说在家里放一个独立的计算机，然后来让 agent 住在里面。这些问题我们跟天琪聊聊，然后天麒在创业之前，他是在高通做机器学习，然后他的联创在微软做 surface 非常技术范的一个团队，他代表了硬件测。\n\n04:39\n4\n\n大家好，我是天琪。我们在 A 站电脑这个方向其实做了蛮久了，之前一直挺不被理解的，但是今天终于可以借 class board 直播爆火，希望能给大家提供一些我们不一样的视角。\n\n点击任意行跳转 · 悬停可向 AI 提问\n\n内容简介\n\nAI正在冲出浏览器，走向了接管电脑权限、主动为人打工的新阶段，为了它，你得买台Mac mini？\nGitHub星标数几天内突破14万，社交媒体上全网刷屏，甚至直接带火了Mac mini的销量，Clawdbot成了2026“AI Agent爆发元年”第一个现象级产品。它不再是冷冰冰的聊天框，而是一个住在你电脑里、甚至能在AI“朋友圈”里社交的“数字生命”。\nClawdbot的“活人感“来自哪里？那些让人“上头”的Agent功能，在真实工作流中到底能实现什么？把电脑权限交给AI，到底是在请“管家”还是请“黑客”？未来的Agent硬件形态会是什么样？我们真的需要给Agent配一台独立计算机吗？\n本期播客，我们邀请了三位嘉宾，分别代表了用户侧、软件算法侧和硬件侧三个方向，希望全方位拆解Clawdbot的底层逻辑，以及它对2026年AI行业产生的深远影响。\n\n【主播】\n刘一鸣，硅谷101特约研究员\n\n【嘉宾】\n知县，北京大学计算机系本硕，AI爱好者和社区项目OwliaBot builder，X handle@zhixianio\n华祯豪Troy，EverMind VP，负责技术生态，本科毕业于清华姚班，卡耐基梅隆硕士（研究NLP和对话系统方向），曾在硅谷任职大型互联网公司算法团队，后创业，加入EverMind\n叶天奇，PamirAI CEO\n\n【你将听到】\n对Clawdbot的深度拆解（软件侧）\n05:04 长期记忆与主动性，赋予了Clawdbot“活人感”\n12:24 创始人在旅行中的Aha Moment，Clawdbot自我实现了语音功能\n13:28 预判意识：Agent能根据对话碎碎念，自动推送生活与工作建议\n14:06 降本增效：Agent通过监控，自主削减服务器预算\n14:24 自动化闭环：AI十秒内自主摸清仓库规则并完成配图发布\n16:28 模拟操作：Agent通过浏览器点击，绕过API限制完成文件跨路径保存\n21:40 结构化存储：MD文本记忆系统比Context压缩更确保持久稳定\n26:04 混合检索：70%语义匹配加30%关键词搜索，实现秒级记忆定位\n29:48 心跳机制：让Agent在静默状态下，也能定期自我触发任务\n\nAgent专用硬件与部署方案（硬件侧）\n31:40 物理隔离部署是应对Agent高系统权限隐私风险的必选项\n50:42 性价比首选：Mac mini成为本地运行Agent的理想基座\n52:11 专用硬件逻辑：Agent电脑取消屏幕依赖，转而强化I/O与状态灯\n53:50 Agent电脑的核心参数：在于大内存与高频存储空间\n56:22 物理隔离：独立硬件能有效保护敏感信息\n\n组织重塑与商业展望\n43:22 鲁棒性挑战：生产级Agent需要透明的审核机制与系统级回滚能力\n1:00:55 厂商博弈：大模型公司布局第一方Agent应用，旨在避免沦为底层纯算力管道\n1:07:58 商业重构：互联网的商业模式有可能会往“按爬取付费”转型\n1:10:33 .md域名与文件，正成为自然语言编译时代的新形态\n1:12:56 一人公司可行性：具备know-how的“将军”，能统领Agent军团实现生产力爆发\n1:17:26 开发范式转移：在AI极速迭代的时代，Idea的重要性已超越纯粹的执行力\n\n【监制】\n泓君\n【后期】\nAMEI\n【运营】\n朱婕\n【BGM】\nGetting to It - Max Anson\nPoisson d'Avril - Ludvig Moulin\nRumors About Us - T. Morri\nPrimary Code - Max Anson\nStar Voyage - Out To The World\n\n【在这里找到我们】\n公众号：硅谷101\n收听渠道：Apple Podcast｜Spotify｜小宇宙｜喜马拉雅｜蜻蜓FM｜荔枝FM｜网易云音乐｜QQ音乐\n其他平台：YouTube｜Bilibili 搜索「硅谷101播客」\n联系我们：podcast@sv101.net\n\nSpecial Guests: 华祯豪Troy, 叶天奇, and 知县.\n\n2026 年现象级 AI 产品 Club Board：从爆红到法律争议与技术挑战\nCH.1 · 00:00 — 04:53\n00:00 / 01:19:40\n1x",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/podcast/3c5f9bc#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/podcasts?sourceid=b43399",
+      "text": "硅谷101",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://www.xiaoyuzhoufm.com/episode/69828c85a712301410e31643",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "mailto:podcast@sv101.net",
+      "text": "podcast@sv101.net",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "深入拆解 2026 年现象级 AI Agent 产品 Clawdbot 的技术架构、硬件形态及其对未来组织架构的重塑。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "AI Agent, 长期记忆, 主动性AI, Markdown存储, 隐私保护",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "E224｜深度拆解 Clawdbot，为何它能成为 2026 年第一个现象级产品？ | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "深入拆解 2026 年现象级 AI Agent 产品 Clawdbot 的技术架构、硬件形态及其对未来组织架构的重塑。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/podcast/3c5f9bc",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/podcast/3c5f9bc/opengraph-image?1d026723476286db",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-02-04 00:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "硅谷101",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "AI Agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "长期记忆",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "主动性AI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Markdown存储",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "隐私保护",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "E224｜深度拆解 Clawdbot，为何它能成为 2026 年第一个现象级产品？ | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "深入拆解 2026 年现象级 AI Agent 产品 Clawdbot 的技术架构、硬件形态及其对未来组织架构的重塑。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/podcast/3c5f9bc/twitter-image?50b31ff74c5c8e3d",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "E224｜深度拆解 Clawdbot，为何它能成为 2026 年第一个现象级产品？ | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/podcast/3c5f9bc"
+}

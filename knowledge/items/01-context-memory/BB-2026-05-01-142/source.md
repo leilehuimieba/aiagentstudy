@@ -1,0 +1,105 @@
+# Source Evidence
+
+- Title: 我在 Pragmatic Summit 炉边谈话中探讨智能体工程
+- BestBlogs URL: https://www.bestblogs.dev/article/c27268ec
+- Original publisher URL: https://simonwillison.net/2026/Mar/14/pragmatic-summit/#atom-everything
+- Original link text: 查看原文 →
+
+## Captured Page Metadata
+
+- Browser title: 我在 Pragmatic Summit 炉边谈话中探讨智能体工程 | BestBlogs.dev
+- Description: 本文提炼了 Simon Willison 的智能体工程实践指南：通过范围建立信任、智能体优先测试、严格沙盒化，以及持续探索模型边界。
+- Date: 2026-03-14
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- 我的早报: https://www.bestblogs.dev/reading/brief
+- 我的关注: https://www.bestblogs.dev/reading/follow
+- 为你推荐: https://www.bestblogs.dev/reading/feed
+- 内容广场: https://www.bestblogs.dev/explore
+- 每日早报: https://www.bestblogs.dev/explore/brief
+- 精选周刊: https://www.bestblogs.dev/explore/newsletter
+- 主题解读: https://www.bestblogs.dev/explore/topics
+- 内容来源: https://www.bestblogs.dev/explore/sources
+- 阅读历史: https://www.bestblogs.dev/library/history
+- 我的收藏: https://www.bestblogs.dev/library/bookmarks
+- 我的笔记: https://www.bestblogs.dev/library/highlights
+- 我的回顾: https://www.bestblogs.dev/library/review
+- 设置: https://www.bestblogs.dev/settings
+- 帮助中心: https://www.bestblogs.dev/docs
+- Simon Willison's Weblog: https://www.bestblogs.dev/articles?sourceid=7808b7
+- 查看原文 →: https://simonwillison.net/2026/Mar/14/pragmatic-summit/#atom-everything
+- Pragmatic Summit: https://www.pragmaticsummit.com/
+- Agentic Engineering: https://simonwillison.net/guides/agentic-engineering-patterns/
+- available on YouTube: https://www.youtube.com/watch?v=owmJyKVu5f8
+- ↗ 在新标签页打开嵌入内容: https://www.youtube-nocookie.com/embed/owmJyKVu5f8
+- 02:45: https://www.youtube.com/watch?v=owmJyKVu5f8&t=165s
+- 03:42: https://www.youtube.com/watch?v=owmJyKVu5f8&t=222s
+- How StrongDM’s AI team build serious software without even looking at the code: https://simonwillison.net/2026/Feb/7/software-factory/
+- 04:22: https://www.youtube.com/watch?v=owmJyKVu5f8&t=262s
+- 06:13: https://www.youtube.com/watch?v=owmJyKVu5f8&t=373s
+- Red/green TDD: https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/
+- 05:40: https://www.youtube.com/watch?v=owmJyKVu5f8&t=340s
+- 06:41: https://www.youtube.com/watch?v=owmJyKVu5f8&t=401s
+- 07:06: https://www.youtube.com/watch?v=owmJyKVu5f8&t=426s
+- 07:42: https://www.youtube.com/watch?v=owmJyKVu5f8&t=462s
+- Introducing Showboat and Rodney, so agents can demo what they’ve built: https://simonwillison.net/2026/Feb/10/showboat-and-rodney/
+- 08:54: https://www.youtube.com/watch?v=owmJyKVu5f8&t=534s
+- the PR: https://github.com/simonw/datasette/pull/2626
+- 10:04: https://www.youtube.com/watch?v=owmJyKVu5f8&t=604s
+- my collection of vibe coded HTML tools: https://tools.simonwillison.net/
+- notes on how I build them: https://simonwillison.net/2025/Dec/10/html-tools/
+- 10:27: https://www.youtube.com/watch?v=owmJyKVu5f8&t=627s
+- AI should help us produce better code: https://simonwillison.net/guides/agentic-engineering-patterns/better-code/
+- 11:32: https://www.youtube.com/watch?v=owmJyKVu5f8&t=692s
+- 11:55: https://www.youtube.com/watch?v=owmJyKVu5f8&t=715s
+- cookiecutter: https://cookiecutter.readthedocs.io/
+- python-lib: https://github.com/simonw/python-lib
+- click-app: https://github.com/simonw/click-app
+- datasette-plugin: https://github.com/simonw/datasette-plugin
+- 13:02: https://www.youtube.com/watch?v=owmJyKVu5f8&t=782s
+- that introduced the term prompt injection: https://simonwillison.net/2022/Sep/12/prompt-injection/
+- 14:08: https://www.youtube.com/watch?v=owmJyKVu5f8&t=848s
+- 14:35: https://www.youtube.com/watch?v=owmJyKVu5f8&t=875s
+- more detail on the challenges of coining terms: https://simonwillison.net/2025/Aug/9/bay-area-ai/#the-lethal-trifecta.012.jpeg
+- 15:10: https://www.youtube.com/watch?v=owmJyKVu5f8&t=910s
+- post describing the Lethal Trifecta: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+- 16:19: https://www.youtube.com/watch?v=owmJyKVu5f8&t=979s
+- Claude Code for web: https://code.claude.com/docs/en/claude-code-on-the-web
+- 16:37: https://www.youtube.com/watch?v=owmJyKVu5f8&t=997s
+- 17:26: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1046s
+- 18:24: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1104s
+- 19:43: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1183s
+- 20:04: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1204s
+- November 2025 inflection point: https://simonwillison.net/tags/november-2025-inflection/
+- 20:55: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1255s
+- 21:38: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1298s
+- 21:51: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1311s
+- 22:08: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1328s
+- the prompt I use: https://simonwillison.net/guides/agentic-engineering-patterns/prompts/#proofreader
+- 23:29: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1409s
+- 24:01: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1441s
+- 24:16: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1456s
+- 25:03: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1503s
+- more about that recipe app: https://simonwillison.net/2025/Dec/23/cooking-with-claude/
+- 22 years ago: https://simonwillison.net/2005/Jul/17/django/
+- 26:02: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1562s
+- 26:48: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1608s
+- more of my thoughts: https://simonwillison.net/2026/Jan/11/answers/#does-this-format-of-development-hurt-the-open-source-ecosystem
+- 27:37: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1657s
+- 27:53: https://www.youtube.com/watch?v=owmJyKVu5f8&t=1673s
+- Inflicting unreviewed code on collaborators: https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/#inflicting-unreviewed-code-on-collaborators
+- 介绍 Showboat 和 Rodney：让智能体能够演示其构建的成果: https://www.bestblogs.dev/article/722cb045?entry=related_article
+- 长时间运行的智能体: https://www.bestblogs.dev/article/048d846e?entry=related_article
+- Meta 的新模型 Muse Spark 与 meta.ai 聊天中的有趣工具: https://www.bestblogs.dev/article/4467bb65?entry=related_article
+- Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次: https://www.bestblogs.dev/video/862b9f1?entry=related_article
+- AI 智能体沙盒化，速度提升 100 倍: https://www.bestblogs.dev/article/0efed9f1?entry=related_article
+- StrongDM 的 AI 团队如何在不看代码的情况下构建严肃软件: https://www.bestblogs.dev/article/b63c67d6?entry=related_article
+- GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元: https://www.bestblogs.dev/article/eedde830?entry=related_article
+- AI 现状综述：我们已跨越拐点，「暗工厂」时代即将来临: https://www.bestblogs.dev/video/cc81d05?entry=related_article
+- OpenClaw：火遍全网的 AI 智能体 - Peter Steinberger | Lex Fridman 播客 #491: https://www.bestblogs.dev/video/cab95dc?entry=related_article
+- Lenny’s Podcast 中关于智能体工程的对话精华: https://www.bestblogs.dev/article/9218c133?entry=related_article
+- 阅读: https://www.bestblogs.dev/reading/brief
+- 发现: https://www.bestblogs.dev/explore
+- 我的: https://www.bestblogs.dev/settings

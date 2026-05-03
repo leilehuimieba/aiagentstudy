@@ -1,0 +1,81 @@
+# Source Evidence
+
+- Title: 介绍 Showboat 和 Rodney：让智能体能够演示其构建的成果
+- BestBlogs URL: https://www.bestblogs.dev/article/722cb045
+- Original publisher URL: https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#atom-everything
+- Original link text: 查看原文 →
+
+## Captured Page Metadata
+
+- Browser title: 介绍 Showboat 和 Rodney：让智能体能够演示其构建的成果 | BestBlogs.dev
+- Description: Simon Willison 介绍了 Showboat 和 Rodney，这是两款旨在帮助 AI 编程智能体对其构建的软件提供可验证演示和基于浏览器的测试的 CLI 工具。
+- Date: 2026-02-10
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- 我的早报: https://www.bestblogs.dev/reading/brief
+- 我的关注: https://www.bestblogs.dev/reading/follow
+- 为你推荐: https://www.bestblogs.dev/reading/feed
+- 内容广场: https://www.bestblogs.dev/explore
+- 每日早报: https://www.bestblogs.dev/explore/brief
+- 精选周刊: https://www.bestblogs.dev/explore/newsletter
+- 主题解读: https://www.bestblogs.dev/explore/topics
+- 内容来源: https://www.bestblogs.dev/explore/sources
+- 阅读历史: https://www.bestblogs.dev/library/history
+- 我的收藏: https://www.bestblogs.dev/library/bookmarks
+- 我的笔记: https://www.bestblogs.dev/library/highlights
+- 我的回顾: https://www.bestblogs.dev/library/review
+- 设置: https://www.bestblogs.dev/settings
+- 帮助中心: https://www.bestblogs.dev/docs
+- Simon Willison's Weblog: https://www.bestblogs.dev/articles?sourceid=7808b7
+- 查看原文 →: https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#atom-everything
+- Showboat: https://github.com/simonw/showboat
+- Rodney: https://github.com/simonw/rodney
+- Proving code actually works: https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#proving-code-actually-works
+- Showboat: Agents build documents to demo their work: https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#showboat-agents-build-documents-to-demo-their-work
+- Rodney: CLI browser automation designed to work with Showboat: https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#rodney-cli-browser-automation-designed-to-work-with-showboat
+- Test-driven development helps, but we still need manual testing: https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#test-driven-development-helps-but-we-still-need-manual-testing
+- I built both of these tools on my phone: https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#i-built-both-of-these-tools-on-my-phone
+- deliver code that works: https://simonwillison.net/2025/Dec/18/code-proven-to-work/
+- the StrongDM software factory model: https://simonwillison.net/2026/Feb/7/software-factory/
+- Showboat: https://github.com/simonw/showboat
+- wrapped in Python: https://simonwillison.net/2026/Feb/4/distributing-go-binaries/
+- demo.md file in a Gist: https://gist.github.com/simonw/fb0b24696ed8dd91314fe41f4c453563#file-demo-md
+- go-to-wheel: https://github.com/simonw/go-to-wheel
+- that help text in full: https://github.com/simonw/showboat/blob/main/help.txt
+- a bit like a Skill: https://simonwillison.net/2025/Oct/16/claude-skills/
+- shot-scraper: A Comprehensive Demo: https://github.com/simonw/showboat-demos/blob/main/shot-scraper/README.md
+- shot-scraper: https://shot-scraper.datasette.io/
+- sqlite-history-json CLI demo: https://github.com/simonw/sqlite-history-json/blob/main/demos/cli.md
+- sqlite-history-json: https://github.com/simonw/sqlite-history-json
+- row-state-sql CLI Demo: https://github.com/simonw/sqlite-history-json/blob/main/demos/row-state-sql.md
+- Change grouping with Notes: https://github.com/simonw/sqlite-history-json/blob/main/demos/change-grouping.md
+- krunsh: Pipe Shell Commands to an Ephemeral libkrun MicroVM: https://github.com/simonw/research/blob/main/libkrun-go-cli-tool/demo.md
+- an issue about that: https://github.com/simonw/showboat/issues/12
+- shot-scraper tool: https://shot-scraper.datasette.io/
+- Playwright: https://www.playwright.dev/
+- Rod: https://github.com/go-rod/rod
+- as an asynchronous report prototype: https://github.com/simonw/research/blob/main/go-rod-cli/README.md
+- Only Fools and Horses: https://en.wikipedia.org/wiki/Only_Fools_and_Horses
+- from the releases page: https://github.com/simonw/rodney/releases/
+- that help output: https://github.com/simonw/rodney/blob/main/help.txt
+- Rodney’s original feature set: https://github.com/simonw/showboat-demos/blob/main/rodney/README.md
+- Rodney’s new accessibility testing features: https://github.com/simonw/rodney/blob/main/notes/accessibility-features/README.md
+- Using those features to run a basic accessibility audit of a page: https://github.com/simonw/showboat-demos/blob/main/datasette-database-page-accessibility-audit/README.md
+- https://latest.datasette.io/fixtures: https://latest.datasette.io/fixtures
+- transcript here: https://gisthost.github.io/?dce6b2680db4b05c04469ed8f251eb34/index.html
+- tests included: https://simonwillison.net/2022/Oct/29/the-perfect-commit/#tests
+- OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型: https://www.bestblogs.dev/status/2047376561205325845?entry=related_article
+- Meta 的新模型 Muse Spark 与 meta.ai 聊天中的有趣工具: https://www.bestblogs.dev/article/4467bb65?entry=related_article
+- Anthropic 发布 Claude Sonnet 4.6，支持 100 万 Token 上下文窗口: https://www.bestblogs.dev/status/2023817132581208353?entry=related_article
+- Martin Fowler 与 Kent Beck：软件重塑的框架，一次又一次: https://www.bestblogs.dev/video/862b9f1?entry=related_article
+- Claude Opus 4.7 正式发布: https://www.bestblogs.dev/article/3b1c0638?entry=related_article
+- Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文: https://www.bestblogs.dev/status/2019467372609040752?entry=related_article
+- Lenny’s Podcast 中关于智能体工程的对话精华: https://www.bestblogs.dev/article/9218c133?entry=related_article
+- 我在 Pragmatic Summit 炉边谈话中探讨智能体工程: https://www.bestblogs.dev/article/c27268ec?entry=related_article
+- StrongDM 的 AI 团队如何在不看代码的情况下构建严肃软件: https://www.bestblogs.dev/article/b63c67d6?entry=related_article
+- GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元: https://www.bestblogs.dev/article/eedde830?entry=related_article
+- 阅读: https://www.bestblogs.dev/reading/brief
+- 发现: https://www.bestblogs.dev/explore
+- 我的: https://www.bestblogs.dev/settings

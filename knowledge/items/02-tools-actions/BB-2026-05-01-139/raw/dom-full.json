@@ -1,0 +1,374 @@
+{
+  "content": "17th March 2026\n\nOpenAI today: Introducing GPT‑5.4 mini and nano. These models join GPT-5.4 which was released two weeks ago.\n\nOpenAI’s self-reported benchmarks show the new 5.4-nano out-performing their previous GPT-5 mini model when run at maximum reasoning effort. The new mini is also 2x faster than the previous mini.\n\nHere’s how the pricing looks—all prices are per million tokens. gpt-5.4-nano is notably even cheaper than Google’s Gemini 3.1 Flash-Lite:\n\nModel\tInput\tCached input\tOutput\ngpt-5.4\t$2.50\t$0.25\t$15.00\ngpt-5.4-mini\t$0.75\t$0.075\t$4.50\ngpt-5.4-nano\t$0.20\t$0.02\t$1.25\n\nOther models for comparison\n\nClaude Opus 4.6\t$5.00\t-\t$25.00\nClaude Sonnet 4.6\t$3.00\t-\t$15.00\nGemini 3.1 Pro\t$2.00\t-\t$12.00\nClaude Haiku 4.5\t$1.00\t-\t$5.00\nGemini 3.1 Flash-Lite\t$0.25\t-\t$1.50\n\nI used GPT-5.4 nano to generate a description of this photo I took at the John M. Mossman Lock Collection:\n\nllm -m gpt-5.4-nano -a IMG_2324.jpeg 'describe image'\n\n\nHere’s the output:\n\nThe image shows the interior of a museum gallery with a long display wall. White-painted brick walls are covered with many framed portraits arranged in neat rows. Below the portraits, there are multiple glass display cases with dark wooden frames and glass tops/fronts, containing various old historical objects and equipment. The room has a polished wooden floor, hanging ceiling light fixtures/cords, and a few visible pipes near the top of the wall. In the foreground, glass cases run along the length of the room, reflecting items from other sections of the gallery.\n\nThat took 2,751 input tokens and 112 output tokens, at a cost of 0.069 cents (less than a tenth of a cent). That means describing every single photo in my 76,000 photo collection would cost around $52.44.\n\nI released llm 0.29 with support for the new models.\n\nThen I had OpenAI Codex loop through all five reasoning effort levels and all three models and produce this combined SVG grid of pelicans riding bicycles (generation transcripts here). I do like the gpt-5.4 xhigh one the best, it has a good bicycle (with nice spokes) and the pelican has a fish in its beak!",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/article/eedde830#main-content",
+      "text": "跳转到主要内容",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "",
+      "title": "我的早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/follow",
+      "text": "",
+      "title": "我的关注"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/feed",
+      "text": "",
+      "title": "为你推荐"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "",
+      "title": "内容广场"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/brief",
+      "text": "",
+      "title": "每日早报"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/newsletter",
+      "text": "",
+      "title": "精选周刊"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/topics",
+      "text": "",
+      "title": "主题解读"
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore/sources",
+      "text": "",
+      "title": "内容来源"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/history",
+      "text": "",
+      "title": "阅读历史"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/bookmarks",
+      "text": "",
+      "title": "我的收藏"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/highlights",
+      "text": "",
+      "title": "我的笔记"
+    },
+    {
+      "href": "https://www.bestblogs.dev/library/review",
+      "text": "",
+      "title": "我的回顾"
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "",
+      "title": "设置"
+    },
+    {
+      "href": "https://www.bestblogs.dev/docs",
+      "text": "",
+      "title": "帮助中心"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=7808b7",
+      "text": "Simon Willison's Weblog",
+      "title": "查看该来源的更多文章"
+    },
+    {
+      "href": "https://simonwillison.net/2026/Mar/17/mini-and-nano/#atom-everything",
+      "text": "查看原文 →",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "text": "Introducing GPT‑5.4 mini and nano",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/index/introducing-gpt-5-4/",
+      "text": "two weeks ago",
+      "title": ""
+    },
+    {
+      "href": "https://www.niche-museums.com/118",
+      "text": "John M. Mossman Lock Collection",
+      "title": ""
+    },
+    {
+      "href": "https://www.llm-prices.com/#it=2751&ot=112&sel=gpt-5.4-nano",
+      "text": "0.069 cents",
+      "title": ""
+    },
+    {
+      "href": "https://llm.datasette.io/en/stable/changelog.html#v0-29",
+      "text": "llm 0.29",
+      "title": ""
+    },
+    {
+      "href": "https://gist.github.com/simonw/f16292d9a5b90b28054cff3ba497a3ca",
+      "text": "generation transcripts here",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/b63c67d6?entry=related_article",
+      "text": "StrongDM 的 AI 团队如何在不看代码的情况下构建严肃软件",
+      "title": "StrongDM 的 AI 团队开创了一种“软件工厂”模式，通过“数字孪生”模拟和基于场景的留出集，让 AI 智能体自主编写并验证代码，从而消除了人工代码审查。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/a6d9083a?entry=related_article",
+      "text": "GPT-5.5 发布",
+      "title": "OpenAI 发布其迄今为止能力最强的模型 GPT-5.5，在智能体编程、知识工作和科学研究方面取得显著进步，同时保持了 GPT-5.4 的延迟并提升了 Token 效率。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2029622732594499630?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.4：支持原生计算机使用与 100 万 token 上下文",
+      "title": "山姆·奥特曼宣布发布 GPT-5.4，其特点是增强了知识工作能力、具备原生计算机使用功能，并拥有 100 万 token 的上下文窗口。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "text": "Anthropic 发布 Claude Opus 4.6：支持 1M Token 上下文",
+      "title": "Anthropic 宣布推出 Claude Opus 4.6，具备更强的规划能力、优化的智能体表现，并开启了 1M token 上下文窗口的 Beta 测试。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/4467bb65?entry=related_article",
+      "text": "Meta 的新模型 Muse Spark 与 meta.ai 聊天中的有趣工具",
+      "title": "Simon Willison 深入探讨了 Meta 的新模型 Muse Spark，揭示了其包含代码执行、视觉定位和子智能体生成在内的复杂工具集。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "text": "OpenAI 发布 GPT-5.5：为智能体打造的新一代智能模型",
+      "title": "OpenAI 宣布推出 GPT-5.5，这是一款专为理解复杂目标和自主完成任务而设计的新模型，现已在 ChatGPT 和 Codex 中上线。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/3b1c0638?entry=related_article",
+      "text": "Claude Opus 4.7 正式发布",
+      "title": "Anthropic 发布了 Claude Opus 4.7，这是对 Opus 4.6 的一次重大升级，在高级软件工程、视觉能力、指令遵循和自主长程推理方面有显著改进，同时实施了新的网络安全防护措施，并维持了相同的定价。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/722cb045?entry=related_article",
+      "text": "介绍 Showboat 和 Rodney：让智能体能够演示其构建的成果",
+      "title": "Simon Willison 介绍了 Showboat 和 Rodney，这是两款旨在帮助 AI 编程智能体对其构建的软件提供可验证演示和基于浏览器的测试的 CLI 工具。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/9218c133?entry=related_article",
+      "text": "Lenny’s Podcast 中关于智能体工程的对话精华",
+      "title": "Simon Willison 探讨了向智能体工程（agentic engineering）的转变，即 AI 处理大部分编码工作，将人类的瓶颈转移到测试、原型设计和高层判断上。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/article/c27268ec?entry=related_article",
+      "text": "我在 Pragmatic Summit 炉边谈话中探讨智能体工程",
+      "title": "本文提炼了 Simon Willison 的智能体工程实践指南：通过范围建立信任、智能体优先测试、严格沙盒化，以及持续探索模型边界。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/reading/brief",
+      "text": "阅读",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/explore",
+      "text": "发现",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/settings",
+      "text": "我的",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "OpenAI 发布了 GPT-5.4 mini 和 nano 模型，性能和价格都有显著提升，其中 nano 便宜到可以仅用 52 美元就描述 76，000 张照片。",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "OpenAI, GPT-5.4, 大语言模型, 定价, 图像描述",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs - 发现真正适合你的高质量内容",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元 | BestBlog...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "OpenAI 发布了 GPT-5.4 mini 和 nano 模型，性能和价格都有显著提升，其中 nano 便宜到可以仅用 52 美元就描述 76，000 张照片。",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/article/eedde830",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "zh_CN",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/eedde830/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-03-17 19:39:17",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Simon Willison",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "OpenAI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "GPT-5.4",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "大语言模型",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "定价",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "图像描述",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元 | BestBlog...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "OpenAI 发布了 GPT-5.4 mini 和 nano 模型，性能和价格都有显著提升，其中 nano 便宜到可以仅用 52 美元就描述 76，000 张照片。",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/zh/article/eedde830/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元 | BestBlog...",
+  "url": "https://www.bestblogs.dev/article/eedde830"
+}
