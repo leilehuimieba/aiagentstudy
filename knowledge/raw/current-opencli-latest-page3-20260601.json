@@ -1,0 +1,1678 @@
+[
+  {
+    "id": "RAW_e2c66f80",
+    "notExist": null,
+    "originalTitle": "关于 AI 就业，1 亿条招聘数据背后的 5 个发现",
+    "title": "5 Findings on AI Employment from 100 Million Job Listings",
+    "oneSentenceSummary": "Analysis of 100 million job listings reveals that while AI-related positions account for less than 2% of all jobs, the focus is shifting from building AI tools to using them. These roles command a salary premium of over 40% and show greater resilience, with the Chinese and US job markets diverging along different paths.",
+    "summary": "Tencent Research Institute, in collaboration with the Institute of Population and Labor Economics at the Chinese Academy of Social Sciences, published the 'Big Data Research Report on New AI Career Trends.' Based on approximately 100 million public job listings from six major domestic recruitment platforms between Q1 2024 and Q2 2025, the report reveals five core findings. First, the penetration rate of AI-related jobs is about 1.6%-1.92%, on par with developed countries like the US, but the implicit penetration is deeper. The release of models like DeepSeek has acted as a catalyst for pulsed growth in job demand. Second, the growth in AI jobs is shifting from building tools to using them. The proportion of application-oriented roles has surged from less than 20% to 35% within a year. Among non-technical roles, AI penetration is growing fastest in consulting/analyst and design/creative categories. Third, unlike the US market where entry-level positions are shrinking, entry-level roles in China remain resilient due to differences in cost structures and industrial stages, though this may only be a temporary window. Fourth, AI jobs heavily favor highly educated and experienced professionals, with 71% requiring a bachelor's degree or higher and an average experience requirement 1.6-2.2 years above the market average. However, the signaling value of degrees is depreciating, with AI skills becoming an alternative credential. Fifth, the average salary premium for AI jobs remains above 40% and is more resilient, with high-salary ranges declining only half as much as the overall market during downturns. The report concludes that AI's impact on employment is not simply about job creation or destruction, but a rewriting of the logic of occupational stratification, requiring individuals, businesses, and education systems to adapt anew.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "AI Employment",
+      "Job Listings",
+      "Salary Premium",
+      "Occupational Stratification",
+      "China vs. US"
+    ],
+    "mainPoints": [
+      {
+        "point": "AI job penetration is less than 2%, but implicit penetration is deeper and accelerating in pulses.",
+        "explanation": "Public job listings only count roles explicitly requiring AI skills, while many companies widely use AI tools in practice. The release of models like DeepSeek has acted as a catalyst for job demand, pushing the penetration rate back to 1.8% in Q1 2025."
+      },
+      {
+        "point": "Growth in AI jobs is shifting from building tools to using them, with application-oriented roles doubling in a year.",
+        "explanation": "Application-oriented roles have surged from less than 20% to 35% of AI jobs. Among non-technical roles, AI penetration is growing fastest in consulting/analyst and design/creative categories, as companies urgently need talent to embed AI into business processes."
+      },
+      {
+        "point": "China's entry-level jobs have not seen the US-style shrinkage, but this resilience may only be a temporary window.",
+        "explanation": "In the US, AI has led to a sustained shrinkage of entry-level jobs, while in China, these roles remain resilient due to lower labor costs and a different industrial stage. However, leaps in model capabilities and falling costs could rewrite this premise."
+      },
+      {
+        "point": "AI jobs command a salary premium of over 40% and are more resilient, but high pay does not guarantee safety.",
+        "explanation": "The average monthly salary for AI jobs is 7,000-9,500 RMB higher than non-AI roles. During market downturns, high-salary ranges decline only half as much as the overall market. However, a distinction must be made between augmentation and automation roles, where high pay in the latter may be a buffer before obsolescence."
+      },
+      {
+        "point": "AI is rewriting the logic of occupational stratification, with degree signals depreciating and AI skills becoming an alternative credential.",
+        "explanation": "AI jobs have extremely high educational requirements, but the share requiring a bachelor's degree has fallen from its peak. AI skills are replacing the signaling function of degrees, demonstrating learning ability and problem-solving skills, opening new paths for those without higher education."
+      }
+    ],
+    "keyQuotes": [
+      "Although AI jobs are few, they are rewriting the rules on skill thresholds, hierarchical structures, and income ladders.",
+      "The US is using AI to replace entry-level employees; China is using AI to give entry-level employees a buff. But how long the buff lasts depends on the speed of model evolution and the curve of cost reduction.",
+      "High pay plus high replacement risk is the most dangerous combination: high pay makes you feel safe, while automation means you could be removed at any time.",
+      "What may be eliminated is not people, but abilities that cannot be amplified by AI and are easily replicated by it.",
+      "Mastering AI or staying away from AI could both be viable paths."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650997182&idx=1&sn=cde5ae4edd36088813739731117e1cd1",
+    "readUrl": "https://www.bestblogs.dev/article/e2c66f80",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045438_46b6e851",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_f056ce",
+    "sourceName": "腾讯研究院",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045438_46b6e851",
+    "mainDomain": "Business_Tech",
+    "mainDomainDesc": "Business & Tech",
+    "aiSubCategory": "BT_INSIGHT",
+    "aiSubCategoryDesc": "Business Insights",
+    "category": "Business_Tech",
+    "categoryDesc": "Business & Tech",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 49,
+    "wordCount": 4741,
+    "readTime": 19,
+    "mediaDuration": null,
+    "authors": [
+      "腾讯研究院"
+    ],
+    "publishTimeStamp": 1779699600000,
+    "publishDateStr": "05-25",
+    "publishDateTimeStr": "2026-05-25 17:00:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_1a4247e6",
+    "notExist": null,
+    "originalTitle": "将 DSA 注意力引入多模态，快手 Keye2.0 开启强化推理新范式",
+    "title": "Introducing DSA Attention to Multimodal Models: Kuaishou Keye 2.0 Opens a New Paradigm for Enhanced Reasoning",
+    "oneSentenceSummary": "Kuaishou has released the Keye-VL-2.0-30B-A3B multimodal large language model, which for the first time introduces the DSA sparse attention mechanism to the multimodal domain. It achieves lossless inference with a 256K ultra-long context and unlocks Agent collaboration capabilities, reaching SOTA performance among models of its size on tasks such as long video temporal understanding, code generation, and tool invocation.",
+    "summary": "This article is an official technical blog post from the Kuaishou AI team, detailing the core technological breakthroughs of their latest multimodal large language model, Keye-VL-2.0-30B-A3B. It first identifies the pain points of long video understanding: the computational bottleneck and information dilution caused by ultra-long visual contexts. Keye-VL-2.0 addresses this by being the first to apply the DeepSeek Sparse Attention (DSA) architecture in a multimodal setting, combining sparse attention with feature aggregation. This enables deep perception of a 256K ultra-long context, achieving results on video understanding benchmarks like TimeLens and LongVideoBench that surpass closed-source models like Gemini and comparable open-source models. Secondly, the model natively incorporates an Agent collaboration mechanism, demonstrating system-level execution potential in scenarios like Code Agent and Tool Agent. It overcomes catastrophic forgetting in multi-task learning through the innovative MOPD multi-expert policy distillation technique, leading to a comprehensive surge in general capabilities. Finally, the article introduces the Context-RL reward mechanism and a rigorous data engine used in the post-training phase to ensure inference reliability, and discusses the model's potential applications in real-world business scenarios such as Kuaishou's recommendation system and video material production.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Keye-VL-2.0",
+      "Kuaishou",
+      "Multimodal Large Language Model",
+      "DSA",
+      "Sparse Attention"
+    ],
+    "mainPoints": [
+      {
+        "point": "First to introduce the DSA sparse attention mechanism to the multimodal domain, breaking the bottleneck of long video understanding.",
+        "explanation": "Keye-VL-2.0 applies DeepSeek Sparse Attention, combining sparse attention with feature aggregation. When processing hour-long videos, it effectively purifies information, enabling lossless inference over a 256K ultra-long context. It surpasses closed-source models like Gemini on benchmarks such as TimeLens."
+      },
+      {
+        "point": "Built-in Agent collaboration mechanism, enabling a full perception-planning-execution pipeline.",
+        "explanation": "The model natively unlocks Agent capabilities, demonstrating multi-step task decomposition and automated scheduling potential in scenarios like Code Agent (SWE-bench 62.00) and Tool Agent (TAU2-Bench 82.58), moving towards solving real-world complex tasks."
+      },
+      {
+        "point": "Innovative MOPD multi-expert policy distillation technique overcomes catastrophic forgetting.",
+        "explanation": "Through the cross-modal MOPD technique, it integrates expert models from various vertical domains. It also introduces a novel bucketed advantage scaling method that strengthens core reasoning signals while ensuring multi-task fusion does not compromise the general base model's capabilities, achieving a comprehensive explosion of capabilities across all dimensions."
+      },
+      {
+        "point": "Introduces the Context-RL reward mechanism to build inference reliability.",
+        "explanation": "The post-training phase employs a Context-RL mechanism, using mixed-modal reference information to construct dense, fine-grained reward signals. This enables factuality supervision at a hyper-geometric distribution level, effectively suppressing hallucinations and ensuring the stability of long-range reasoning."
+      }
+    ],
+    "keyQuotes": [
+      "Kuaishou Keye-VL-2.0-30B-A3B is the first to introduce the DSA (DeepSeek Sparse Attention) mechanism into multimodal understanding scenarios, successfully unlocking deep perception of a 256K ultra-long context and achieving nearly lossless inference capabilities in long video temporal perception.",
+      "True long video understanding is a comprehensive insight into complex plot twists, spatial jumps, and emotional undercurrents.",
+      "Benchmark scores are not the endgame; real-world deployment is.",
+      "The model not only sees the images but also comprehends the causality behind them."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500530&idx=1&sn=246a6c7439b7dfd5d31dccd574cd22ff",
+    "readUrl": "https://www.bestblogs.dev/article/1a4247e6",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045456_510118ec",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_d7d427",
+    "sourceName": "快手技术",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045456_510118ec",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "MODELS",
+    "aiSubCategoryDesc": "AI Models",
+    "category": "Programming_Technology",
+    "categoryDesc": "Programming",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 46,
+    "wordCount": 7366,
+    "readTime": 30,
+    "mediaDuration": null,
+    "authors": [
+      "快手技术"
+    ],
+    "publishTimeStamp": 1779791820000,
+    "publishDateStr": "05-26",
+    "publishDateTimeStr": "2026-05-26 18:37:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_2f7a0ee5",
+    "notExist": null,
+    "originalTitle": "Claude Opus 4.8: “a modest but tangible improvement”",
+    "title": "Claude Opus 4.8: “a modest but tangible improvement”",
+    "oneSentenceSummary": "Anthropic released Claude Opus 4.8 as a modest incremental improvement over its predecessor, with notable gains in honesty and reduced hallucination, plus new features like mid-conversation system messages and a lower prompt cache minimum.",
+    "summary": "Simon Willison reviews Anthropic's Claude Opus 4.8 release, highlighting the lab's refreshingly honest framing of the model as a modest but tangible improvement. The key advancement is in honesty: Opus 4.8 is four times less likely to let flaws in its code pass unremarked, and achieves the lowest incorrect rate across benchmarks by abstaining on uncertain questions rather than guessing. Pricing remains unchanged at $5/$25 per million tokens, but fast mode pricing is significantly reduced. New developer features include mid-conversation system messages for dynamic instruction updates without breaking prompt cache, and a lower minimum cacheable prompt length of 1,024 tokens (down from 4,096). The context window stays at 1,000,000 tokens with 128,000 max output. Willison also demonstrates the model's capabilities by generating pelican-on-bicycle illustrations across five thinking levels, noting the max level produced the best result at a cost of 43 cents.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Claude Opus 4.8",
+      "Anthropic",
+      "LLM",
+      "AI Honesty",
+      "Model Release"
+    ],
+    "mainPoints": [
+      {
+        "point": "Claude Opus 4.8 is a minor incremental improvement, honestly described by Anthropic.",
+        "explanation": "The release announcement explicitly frames it as a modest improvement, a refreshing contrast to typical AI hype. The model maintains the same pricing and context window as its predecessor."
+      },
+      {
+        "point": "The model's primary improvement is in honesty and reduced hallucination.",
+        "explanation": "Opus 4.8 is four times less likely to overlook flaws in its own code, and achieves the lowest incorrect rate across benchmarks by abstaining on uncertain questions rather than fabricating answers."
+      },
+      {
+        "point": "New developer features include mid-conversation system messages and lower prompt cache minimum.",
+        "explanation": "Developers can now append system messages mid-conversation without restating the full prompt, preserving cache hits. The minimum cacheable prompt length dropped from 4,096 to 1,024 tokens, reducing costs for agentic loops."
+      }
+    ],
+    "keyQuotes": [
+      "Users will find Opus 4.8 to be a modest but tangible improvement on its predecessor.",
+      "Opus 4.8 is around four times less likely than its predecessor to allow flaws in code it has written to pass unremarked.",
+      "Claude Opus 4.8 had the lowest incorrect-rate of the six models on every benchmark—the most direct measure of factual hallucination.",
+      "This lets you append updated instructions later in a long-running conversation without restating the full system prompt, which preserves prompt cache hits on the earlier turns and reduces input cost on agentic loops."
+    ],
+    "url": "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything",
+    "readUrl": "https://www.bestblogs.dev/article/2f7a0ee5",
+    "enclosureUrl": null,
+    "domain": "simonwillison.net",
+    "cover": "https://static.simonwillison.net/static/2026/opus-3-8-card.jpg",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_7808b7",
+    "sourceName": "Simon Willison's Weblog",
+    "priority": "HIGH",
+    "sourceImage": "https://image.jido.dev/20251127045509_876e4367",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "MODELS",
+    "aiSubCategoryDesc": "AI Models",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 45,
+    "wordCount": 601,
+    "readTime": 3,
+    "mediaDuration": null,
+    "authors": [
+      "Simon Willison"
+    ],
+    "publishTimeStamp": 1780012790000,
+    "publishDateStr": "05-29",
+    "publishDateTimeStr": "2026-05-29 07:59:50",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_8bcc405f",
+    "notExist": null,
+    "originalTitle": "How CodeRabbit Used Claude to Build an Agent Orchestration System | Claude",
+    "title": "How CodeRabbit Used Claude to Build an Agent Orchestration System | Claude",
+    "oneSentenceSummary": "CodeRabbit used Claude to build an agent orchestration system that runs a structured planning phase before any code is generated, closing the gap between developer intent and AI output.",
+    "summary": "This article from the Claude Blog details how CodeRabbit, an AI code review platform, built an agent orchestration system using the Claude model family to address a critical failure mode in AI-assisted coding: code that compiles and passes tests but doesn't solve the intended problem. The root cause is identified as an 'internal knowledge gap' where developers assume AI systems share their implicit context. CodeRabbit's solution inserts a planning layer before code generation, coordinating multiple Claude models (Opus for strategy, Sonnet for planning, Haiku for narrow tasks) to produce a collaborative PRD. This plan is validated by stakeholders before implementation, serving as a quality gate. The team also built an evaluation harness to measure plan quality, iterating on the right level of abstraction. The article concludes with best practices for teams adopting AI coding workflows, emphasizing explicit specification and assumption surfacing.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Agent Orchestration",
+      "AI Coding",
+      "CodeRabbit",
+      "Claude",
+      "Planning System"
+    ],
+    "mainPoints": [
+      {
+        "point": "AI coding tools often produce code that compiles but fails to solve the intended problem due to implicit assumptions.",
+        "explanation": "Developers internalize context and fail to specify it, causing AI agents to fill gaps with plausible but incorrect guesses, leading to costly rework."
+      },
+      {
+        "point": "CodeRabbit built a planning orchestration layer that runs before code generation to surface and resolve assumptions.",
+        "explanation": "This system uses multiple Claude models to analyze requirements and produce a collaborative PRD, which is reviewed and validated by the team before any code is written."
+      },
+      {
+        "point": "The system routes tasks across the Claude model family to optimize for cost and latency.",
+        "explanation": "Opus handles strategic orchestration, Sonnet sequences planning steps, and Haiku handles narrow, well-defined tasks, with decisions driven by an evaluation harness."
+      },
+      {
+        "point": "An evaluation harness was built to measure plan quality and find the right level of abstraction.",
+        "explanation": "The team used LLM judges and downstream code quality metrics to iterate on plan detail, avoiding plans that were too granular or too high-level."
+      }
+    ],
+    "keyQuotes": [
+      "As we gain experience as developers, we internalize knowledge... We're not even aware that we're assuming those things.",
+      "This planning system is not meant to replace Claude Code's Plan Mode. It's a higher level orchestration that happens before Claude Code, to point it in a really narrow and right direction.",
+      "If Haiku does as well as Sonnet on a given task, we use Haiku. If the evaluation harness tells us the plan quality improves when we give Opus more room, we give it more room. We don't guess.",
+      "The plan itself becomes a quality gate. If we can make sure the quality of that plan is really good upfront, the downstream effect is very pronounced."
+    ],
+    "url": "https://claude.com/blog/how-coderabbit-used-claude-to-build-an-agent-orchestration-system",
+    "readUrl": "https://www.bestblogs.dev/article/8bcc405f",
+    "enclosureUrl": null,
+    "domain": "claude.com",
+    "cover": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_154bc38a",
+    "sourceName": "Claude Blog",
+    "priority": "HIGH",
+    "sourceImage": "https://image.jido.dev/20260527052105_689f4a9aff1f63fde75cf733_favicon.png",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "AI_CODING",
+    "aiSubCategoryDesc": "AI Coding",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 45,
+    "wordCount": 1147,
+    "readTime": 5,
+    "mediaDuration": null,
+    "authors": [
+      "Claude Blog"
+    ],
+    "publishTimeStamp": 1779811200000,
+    "publishDateStr": "05-27",
+    "publishDateTimeStr": "2026-05-27 00:00:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_0eb3687c",
+    "notExist": null,
+    "originalTitle": "FDE：AI 时代的职业转型号角已吹响？",
+    "title": "FDE: The Career Transformation Call of the AI Era Has Sounded?",
+    "oneSentenceSummary": "This article delves into the essence of FDE (Forward Deployed Engineer), an emerging role in the AI era, distinguishing it from traditional consulting and software outsourcing, and exploring its historical roots, current status domestically and internationally, and suitable candidates.",
+    "summary": "Prompted by four friends seeking advice on transitioning to an FDE role, the article systematically analyzes this rapidly rising position in the AI era. The author first points out that FDE is neither traditional consulting nor software outsourcing; its core value lies in 'probing model boundaries' rather than 'designing processes,' and in 'co-exploration' rather than 'requirement fulfillment.' The article traces two historical roots of FDE: Palantir's client-embedded model and the product deployment needs of model companies post-2023. It then analyzes the local predecessors of FDE in China (cloud vendor solution architects, new roles in AI startups) and three key differences in the local environment. Finally, the author provides profiles of those suitable and unsuitable for FDE, along with a self-assessment checklist, concluding that FDE is the first named new role form in the AI era, with more 'forward-deployed' versions likely to emerge in the future.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "FDE",
+      "Forward Deployed Engineer",
+      "Career Transformation",
+      "AI Era",
+      "Role Form"
+    ],
+    "mainPoints": [
+      {
+        "point": "The essence of FDE is 'probing model boundaries,' not the 'process design' of traditional consulting or the 'requirement fulfillment' of software outsourcing.",
+        "explanation": "Consulting sells reusable methodologies, while outsourcing sells deterministic delivery. FDE, in the context of rapidly evolving model capabilities, goes deep into client sites to implement models into specific products through end-to-end exploration. Its core value lies in real-time, precise perception of model boundaries."
+      },
+      {
+        "point": "The feedback loop of FDE is key to distinguishing it from outsourcing, as it delivers real-world product signals back to the model company.",
+        "explanation": "Feedback from outsourcing projects ends with the project itself. However, every failure case and tool-calling bug encountered by an FDE at a client site flows back into the model company's product roadmap, becoming input for the next version of the model or SDK. This makes FDE the 'frontline sensor' for the model company."
+      },
+      {
+        "point": "FDE suits those who enjoy ambiguity, are not averse to sales communication, have solid engineering skills, and thrive on being refined by feedback.",
+        "explanation": "The daily work of an FDE involves co-exploring the unknown with clients, requiring half the time to be spent on communication and coordination. It doesn't demand a 10x engineer, but requires the ability to run end-to-end and treat client negative feedback as fuel for improvement."
+      }
+    ],
+    "keyQuotes": [
+      "FDE doesn't fit in the consulting box, nor in the outsourcing box. It's closest to the super individual — the difference is only that FDE is an organized super individual within the 'model company × client' gap.",
+      "Consulting sells process boundaries, FDE sells model boundaries.",
+      "FDE's moat is real-time feel for model capability boundaries — the more real client scenarios you've run this month, the better you know what Claude 4.7 can do and what must wait for Claude 5.",
+      "Outsourcing is labor arbitrage, FDE is a frontline sensor.",
+      "FDE is not the endpoint. The author's judgment is that FDE is just the first named form in the new division of labor."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108703&idx=1&sn=90a963b9373f91b0f551769dd3383819",
+    "readUrl": "https://www.bestblogs.dev/article/0eb3687c",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_f63517",
+    "sourceName": "十字路口Crossing",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+    "mainDomain": "Productivity_Growth",
+    "mainDomainDesc": "Productivity & Growth",
+    "aiSubCategory": "PG_CAREER",
+    "aiSubCategoryDesc": "Career Development",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 45,
+    "wordCount": 10058,
+    "readTime": 41,
+    "mediaDuration": null,
+    "authors": [
+      "十字路口Crossing"
+    ],
+    "publishTimeStamp": 1779759480000,
+    "publishDateStr": "05-26",
+    "publishDateTimeStr": "2026-05-26 09:38:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_d6e02518",
+    "notExist": null,
+    "originalTitle": "对话李开复：别叫我们 “六小虎”，叫 “金钱豹”",
+    "title": "A Conversation with Lee Kai-Fu: Don't Call Us 'Six Little Tigers,' Call Us 'Leopards'",
+    "oneSentenceSummary": "In an in-depth interview, 01.AI founder Lee Kai-Fu reveals that after abandoning pre-training large models, the company pivoted to To B enterprise AI transformation services, achieving 250 million RMB in revenue in 2025 and over 1.5 billion RMB in orders for 2026. The company is preparing for an IPO and hopes to be called 'Leopards' rather than 'Six Little Tigers.'",
+    "summary": "This article is an in-depth interview with Lee Kai-Fu, CEO of 01.AI, by LatePost. It details the company's transformation journey after abandoning pre-training large models in early 2025 and merging some teams into Alibaba. Lee Kai-Fu candidly shares the initial morale crisis, employee departures, and how he rebuilt team confidence through town hall meetings and securing the first major deal. The core transformation strategy is the 'Number One Project,' where Lee Kai-Fu personally acts as the 'Chief AI Strategy Officer' to open doors for enterprise leaders, providing a full suite of enterprise AI transformation tools based on Multi-Agent and ontology. The article discloses 01.AI's financials: audited revenue of 250 million RMB in 2025, orders exceeding 1.5 billion RMB in 2026, preparations for an IPO, and plans to become China's first profitable AI 2.0 company next year. Lee Kai-Fu also shares his views on the competitive landscape of large models, predicting consolidation among foundation model companies and emphasizing that the real opportunity lies in helping enterprises use AI to change their financial metrics.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "01.AI",
+      "Lee Kai-Fu",
+      "AI Transformation",
+      "To B",
+      "Large Model Commercialization"
+    ],
+    "mainPoints": [
+      {
+        "point": "01.AI abandoned pre-training large models and pivoted to To B enterprise AI transformation services.",
+        "explanation": "In early 2025, 01.AI transferred most of its pre-training and AI infrastructure teams to Alibaba, ceasing its pursuit of AGI. It repositioned itself as a To B company helping enterprises with AI transformation, with the core strategy being the 'Number One Project.'"
+      },
+      {
+        "point": "The early transformation phase faced a severe morale crisis and employee attrition.",
+        "explanation": "After the team restructuring, one-third of the office desks were empty, and the turnover rate was high. Lee Kai-Fu rebuilt team confidence through candid communication in town hall meetings and by securing the first major deal, ultimately weathering the most difficult period."
+      },
+      {
+        "point": "01.AI has achieved rapid growth and is preparing for an IPO.",
+        "explanation": "In 2025, audited revenue was 250 million RMB, with orders exceeding 1.5 billion RMB in 2026, nearly half of which is ARR. The company is dismantling its VIE structure, plans to achieve single-quarter profitability next year, and hopes to be called 'Leopards' rather than 'Six Little Tigers.'"
+      },
+      {
+        "point": "The core product is an enterprise AI transformation platform based on Multi-Agent and ontology.",
+        "explanation": "Products include a full suite of enterprise AI transformation tools and a dedicated management tool for top executives. The core is to help enterprises abstract their own systems so that AI can truly understand and assist in decision-making, ultimately changing financial metrics."
+      },
+      {
+        "point": "Lee Kai-Fu believes large models have zero stickiness, and the key to enterprise AI transformation lies in organization and culture.",
+        "explanation": "He has not paid attention to model leaderboards for over a year and uses SOTA platforms to select models internally. He believes AI transformation can only be driven top-down, with bottlenecks lying in organization, culture, and strategic decisions, rather than pure technical capability."
+      }
+    ],
+    "keyQuotes": [
+      "I hope in the future, people won't call us the 'Six Little Tigers,' but rather 'Leopards.'",
+      "If the market doesn't accept it, no matter how amazing the technology, it's worthless.",
+      "Only by getting big clients to sign contracts with real money can you go further.",
+      "If an Agent can't change one or more numbers in your quarterly report, it's just a vanity project.",
+      "01.AI is my greatest love and belief in the 45 years since my PhD—giving up was never an option."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247536273&idx=1&sn=3079083d5edbe1c757f2fdd354e1d34d",
+    "readUrl": "https://www.bestblogs.dev/article/d6e02518",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045514_06f3979d",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_981c60",
+    "sourceName": "晚点LatePost",
+    "priority": "LOW",
+    "sourceImage": "https://image.jido.dev/20251127045514_06f3979d",
+    "mainDomain": "Business_Tech",
+    "mainDomainDesc": "Business & Tech",
+    "aiSubCategory": "BT_INSIGHT",
+    "aiSubCategoryDesc": "Business Insights",
+    "category": "Business_Tech",
+    "categoryDesc": "Business & Tech",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 43,
+    "wordCount": 8956,
+    "readTime": 36,
+    "mediaDuration": null,
+    "authors": [
+      " 晚点LatePost"
+    ],
+    "publishTimeStamp": 1779798720000,
+    "publishDateStr": "05-26",
+    "publishDateTimeStr": "2026-05-26 20:32:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_c0e11f5d",
+    "notExist": null,
+    "originalTitle": "[AINews] New AI Infra decacorns: Fireworks， Baseten (with OpenRouter on the way)",
+    "title": "[AINews] New AI Infra decacorns: Fireworks， Baseten (with OpenRouter on the way)",
+    "oneSentenceSummary": "This AI news roundup covers the rise of AI infrastructure decacorns Fireworks and Baseten, alongside key developments in agent harness engineering, long-horizon reasoning, model architecture updates, and production tooling.",
+    "summary": "This edition of AINews from Latent Space highlights the rapid growth of AI inference infrastructure, with Fireworks ($15B) and Baseten ($11B) approaching decacorn status, and OpenRouter raising a $113M Series B. The core theme is that the winning stack for AI agents is now 'model + harness + eval loop', not just a stronger base model. Key technical developments include: DeepSWE as a more realistic coding benchmark, the 'Language Models Need Sleep' paper for context compression, new optimizer work (AMUSE, Muon variants), MiniMax's M3 sparse attention architecture, and Huawei's 'τ scaling' engineering roadmap. The newsletter also covers production tooling updates like vLLM's Rust frontend, W&B's MCP server, and Cloudflare's startups program. On the open model front, Qwen 3.7 Max is positioned as a frontier model, while local inference benchmarks show Qwen3.6 35B A3B achieving 110 tok/s on a 12GB GPU.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "AI Infrastructure",
+      "Agent Harness",
+      "Inference",
+      "Model Architecture",
+      "Coding Benchmarks"
+    ],
+    "mainPoints": [
+      {
+        "point": "AI inference infrastructure is rapidly scaling, with Fireworks and Baseten approaching decacorn status.",
+        "explanation": "Fireworks is reportedly in talks for a $15B valuation (3.75x in 7 months) and Baseten is raising at $11B (2.2x in 3 months), signaling a massive market shift toward inference as a durable platform layer."
+      },
+      {
+        "point": "The winning stack for coding agents is now 'model + harness + eval loop', not just a stronger base model.",
+        "explanation": "Multiple sources converged on the thesis that context governance, trustworthy memory, and dynamic skill routing are becoming the main differentiators, with DeepSeek, Google, and LangChain all formalizing harness engineering."
+      },
+      {
+        "point": "Long-horizon memory and context compression are resurfacing as core bottlenecks for agents.",
+        "explanation": "The 'Language Models Need Sleep' paper proposes a sleep-like consolidation phase that converts recent context into persistent fast weights, offering an alternative to ever-growing KV caches for agents with long trajectories."
+      },
+      {
+        "point": "Production serving stacks are seeing meaningful performance improvements, like vLLM's Rust frontend.",
+        "explanation": "vLLM merged a Rust frontend as a drop-in alternative to the Python API server, achieving ~837 req/s vs ~162 req/s on a preprocess-heavy workload, a 5x improvement."
+      },
+      {
+        "point": "Open-weight models like Qwen3.6 35B A3B are enabling practical local agent workflows.",
+        "explanation": "Users report running local agents with Qwen3.6 35B A3B at over 100 tok/s on consumer GPUs, enabling workflows like VPS DevOps, document conversion, and automated ticket management."
+      }
+    ],
+    "keyQuotes": [
+      "The winning stack is now model + harness + eval loop, not just a stronger base model.",
+      "DeepSWE is the first code bench that actually aligns with how it feels to use these models coding.",
+      "Language Models Need Sleep: a sleep-like consolidation phase where recent context is converted into persistent fast weights before clearing the KV cache.",
+      "vLLM merged a Rust frontend... showing ~837 req/s vs ~162 req/s on a preprocess-heavy workload in a single process.",
+      "OpenRouter announced a $113M Series B and said weekly volume had grown from 5T to 25T tokens over six months."
+    ],
+    "url": "https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks",
+    "readUrl": "https://www.bestblogs.dev/article/c0e11f5d",
+    "enclosureUrl": null,
+    "domain": "latent.space",
+    "cover": "https://image.jido.dev/20260527034305_HJQGFgQbgAArjoi.png",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_fc479e",
+    "sourceName": "Latent.Space",
+    "priority": "HIGH",
+    "sourceImage": "https://image.jido.dev/20260527050728_73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "NEWS",
+    "aiSubCategoryDesc": "AI News",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 42,
+    "wordCount": 2472,
+    "readTime": 10,
+    "mediaDuration": null,
+    "authors": [
+      "Latent.Space"
+    ],
+    "publishTimeStamp": 1779852833000,
+    "publishDateStr": "05-27",
+    "publishDateTimeStr": "2026-05-27 11:33:53",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_55b4de67",
+    "notExist": null,
+    "originalTitle": "快手 Keye2.0 开源：将 DSA 注意力引入多模态，开启强化推理新范式",
+    "title": "Kuaishou Open-Sources Keye 2.0: Introducing DSA Attention to Multimodal AI, Pioneering a New Paradigm for Enhanced Reasoning",
+    "oneSentenceSummary": "Kuaishou open-sources the Keye-VL-2.0-30B-A3B multimodal large model, pioneering the integration of DeepSeek's DSA sparse attention into multimodal scenarios. With 30B total parameters and 3B activated parameters, it achieves SOTA in video understanding, surpassing multiple 200B+ open-source models on various benchmarks.",
+    "summary": "This article introduces the newly open-sourced multimodal large model, Keye-VL-2.0-30B-A3B, from Kuaishou. The core innovation of this model lies in being the first to introduce DeepSeek's DSA (DeepSeek Sparse Attention) mechanism into multimodal scenarios, achieving a 256K ultra-long context capability and reducing long-sequence Prefill costs by 50%. The model adopts an MoE architecture with 30B total parameters and only 3B activated parameters during inference. It achieves 30B-level SOTA on multiple video understanding benchmarks, including VideoMME V2, LongVideoBench, and MLVU, and surpasses several 200B+ open-source models. The article details the model's capabilities in long video understanding (e.g., process decomposition, documentary narrative deconstruction), highlight moment extraction, and Agent task scheduling. It also introduces the MOPD technique for overcoming catastrophic forgetting and the Context-RL mechanism for improving reasoning reliability. Finally, it provides examples of model deployment and invocation based on SGLang.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Kuaishou",
+      "Keye-VL-2.0",
+      "Multimodal Large Model",
+      "DSA",
+      "Sparse Attention"
+    ],
+    "mainPoints": [
+      {
+        "point": "Keye-VL-2.0 is the first to introduce DSA sparse attention into multimodal scenarios, enabling efficient long video understanding.",
+        "explanation": "By combining sparse attention with feature aggregation via DSA, the model effectively purifies information when processing hour-long videos, reducing long-sequence Prefill costs by 50%, thus providing a low-cost solution for ultra-long video applications."
+      },
+      {
+        "point": "With an MoE architecture of 30B total and 3B activated parameters, it achieves SOTA on multiple video understanding benchmarks.",
+        "explanation": "On benchmarks like VideoMME V2, LongVideoBench, and MLVU, Keye-VL-2.0 not only leads among models of its size but also surpasses larger models like Qwen3-VL-235B-A22B, validating the efficiency of its architecture."
+      },
+      {
+        "point": "The model features a built-in Agent collaboration mechanism, excelling in code and tool invocation tasks.",
+        "explanation": "The Keye series is the first to natively embed Agent capabilities in a multimodal base model, achieving leading results on benchmarks like LivecodeBench, SWE-bench, and TAU2-Bench, and can autonomously plan and execute complex multi-step API calls."
+      },
+      {
+        "point": "Introduces MOPD and Context-RL techniques to overcome catastrophic forgetting and enhance reasoning reliability.",
+        "explanation": "MOPD addresses the forgetting problem in multi-task learning through multi-expert strategy distillation and merging; Context-RL uses mixed-modal reference information to construct dense reward signals, suppressing hallucinations and ensuring the model strictly anchors its reasoning to the input information."
+      }
+    ],
+    "keyQuotes": [
+      "Keye-VL-2.0-30B-A3B is the first to apply DSA in multimodal scenarios, combining sparse attention with feature aggregation to effectively purify information when processing hour-long video sequences, accurately capturing key frames and clarifying dynamic patterns.",
+      "With the introduction of DSA, long-sequence Prefill costs are reduced by 50%.",
+      "VideoMME V2: The industry generally faces the problem that 'the more input frames, the more diluted the attention and the lower the accuracy.' Keye-VL-2.0-30B-A3B reverses this trend.",
+      "The Keye series is the first to natively embed an Agent collaboration mechanism in a multimodal base model, building stable and reliable automated scheduling capabilities for complex multi-step tasks."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247508784&idx=1&sn=0bb3fffc5fec8b4d2b9499ddce4d1761",
+    "readUrl": "https://www.bestblogs.dev/article/55b4de67",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045451_592a693d",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_fdd993",
+    "sourceName": "魔搭ModelScope社区",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045451_592a693d",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "MODELS",
+    "aiSubCategoryDesc": "AI Models",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 39,
+    "wordCount": 3697,
+    "readTime": 15,
+    "mediaDuration": null,
+    "authors": [
+      "魔搭ModelScope社区"
+    ],
+    "publishTimeStamp": 1780126140000,
+    "publishDateStr": "05-30",
+    "publishDateTimeStr": "2026-05-30 15:29:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_8d316e77",
+    "notExist": null,
+    "originalTitle": "AI 商业化的十字路口：为什么广告与订阅都难以单独走通？",
+    "title": "The Crossroads of AI Commercialization: Why Advertising and Subscriptions Alone Are Both Unsustainable",
+    "oneSentenceSummary": "This article delves into the structural ceilings faced by AI's two mainstream monetization models—advertising and subscriptions—and argues that the true long-term opportunity lies in shifting from a 'traffic logic' to a 'task logic,' and from an 'attention economy' to an 'execution economy.'",
+    "summary": "Using the commercialization paths of OpenAI and Anthropic as comparative examples, the article systematically analyzes the fundamental contradictions AI faces in monetization. It points out that the advertising model is constrained by the low proportion of commercializable queries in AI conversations (only 1/5 to 1/4 of traditional search), the limited number of ads that can be embedded in a single response (only 1/3 to 1/2 of traditional search), and an invisible ceiling of user trust. The subscription model, on the other hand, grapples with a cost structure dilemma: the marginal cost of AI inference is non-zero and non-negligible, leading to structural losses under a 'low-price subscription + heavy user' model in the Agent era. The article argues that the future of AI commercialization is not a binary choice between 'subscription or advertising,' but rather a shift from 'selling access' to 'selling outcomes.' This involves building business models around deep services such as enterprise workflows, platform-level services, and transaction commissions. It concludes that as Agents begin to complete tasks for users, the value of AI will shift from 'what was answered' to 'what was accomplished.'",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "AI Commercialization",
+      "Advertising Model",
+      "Subscription Model",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "mainPoints": [
+      {
+        "point": "The AI advertising model faces three structural ceilings: a low proportion of commercializable queries, limited ad load capacity, and user trust risks.",
+        "explanation": "Compared to traditional search, the proportion of queries with clear commercial intent in AI conversations is extremely low. Furthermore, it is difficult to embed multiple ads in a single AI response, and users demand higher trust from the AI's 'assistant' role, where excessive ad integration undermines neutrality."
+      },
+      {
+        "point": "The core contradiction of the AI subscription model lies in non-zero marginal costs, leading to structural losses under a 'low-price subscription + heavy user' model in the Agent era.",
+        "explanation": "Unlike traditional software and SaaS, large model inference incurs ongoing token costs, with complex tasks potentially consuming several dollars in compute. This makes it difficult for platforms to balance pricing, usage limits, and user experience."
+      },
+      {
+        "point": "The future of AI commercialization lies in shifting from 'traffic logic' to 'task logic,' and from an 'attention economy' to an 'execution economy.'",
+        "explanation": "Users are willing to pay for 'task outcomes,' and merchants are willing to pay for more deterministic leads and transactions. Therefore, the long-term opportunity lies in deep services like enterprise workflows, platform-level services, and transaction commissions, rather than pure advertising or subscriptions."
+      }
+    ],
+    "keyQuotes": [
+      "The crossroads of AI commercialization is essentially not a binary choice between 'subscription or advertising,' but a process where the AI industry shifts from traffic logic to task logic, and from an attention economy to an execution economy.",
+      "When Agents start doing things for users, the value of AI will also shift from 'what was answered' to 'what was accomplished.'",
+      "The stronger the AI, the longer the context, the more complex the tool calls, the longer the task chain, and the higher the inference consumption it often entails.",
+      "Users may not be willing to pay for a single Q&A, but they are willing to pay for a successful travel plan, a cheaper insurance plan, or a more effective resume optimization."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650997221&idx=1&sn=4b04c42e441aac1a5593c348d2036beb",
+    "readUrl": "https://www.bestblogs.dev/article/8d316e77",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045438_46b6e851",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_f056ce",
+    "sourceName": "腾讯研究院",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045438_46b6e851",
+    "mainDomain": "Business_Tech",
+    "mainDomainDesc": "Business & Tech",
+    "aiSubCategory": "BT_INSIGHT",
+    "aiSubCategoryDesc": "Business Insights",
+    "category": "Business_Tech",
+    "categoryDesc": "Business & Tech",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 38,
+    "wordCount": 3627,
+    "readTime": 15,
+    "mediaDuration": null,
+    "authors": [
+      "腾讯研究院"
+    ],
+    "publishTimeStamp": 1779876900000,
+    "publishDateStr": "05-27",
+    "publishDateTimeStr": "2026-05-27 18:15:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_b3a55351",
+    "notExist": null,
+    "originalTitle": "Qwen-Image-Bench：56 个创作级考点，定义生图评测新标准！",
+    "title": "Qwen-Image-Bench: 56 Creative Benchmarks Defining a New Standard for Image Generation Evaluation",
+    "oneSentenceSummary": "Tongyi Lab introduces Qwen-Image-Bench, a set of 56 fine-grained creative benchmarks for text-to-image evaluation designed by a team of professional artists, along with the open-source automated evaluation model Q-Judger, aiming to bridge the evaluation gap between basic generation and professional creation.",
+    "summary": "This article introduces Qwen-Image-Bench, the latest text-to-image evaluation benchmark released by Tongyi Lab. Developed with the participation of a team of professional visual and aesthetic design artists, this benchmark aims to address the issue that existing T2I evaluations only focus on basic semantic alignment and image quality, while ignoring the aesthetic intuition, world knowledge, and logical reasoning abilities required in real creative scenarios. Qwen-Image-Bench deconstructs creative ability into 5 core capability pillars and 17 typical creative scenarios, further refined into 56 quantifiable evaluation dimensions covering high-frequency real-world scenarios such as visual storytelling, brand design, game art, and comic creation. The benchmark includes 1000 bilingual (Chinese and English) hierarchical prompts, each precisely covering 4+ third-level dimension test points. Additionally, the article introduces the open-source automated evaluation model Q-Judger, whose evaluation results show significant correlation (Spearman 0.92) with professional assessments from senior human artists. Through multiple practical case comparisons, the article demonstrates the capability differences of various models in dimensions such as fashion styling, artistic style, product design, and game UI, pointing out that current T2I models have obvious gaps in subfields like text accuracy, information visualization, and cross-language generation, with world knowledge and logical reasoning abilities being the watershed that determines whether a model can enter the first tier.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Qwen-Image-Bench",
+      "Text-to-Image Evaluation",
+      "T2I",
+      "Multimodal Model",
+      "Q-Judger"
+    ],
+    "mainPoints": [
+      {
+        "point": "Existing T2I evaluation standards cannot measure the true creative ability of models.",
+        "explanation": "Current evaluations mostly focus on basic semantic adherence and image quality, ignoring the aesthetic intuition, world knowledge, and logical reasoning abilities required in professional creation scenarios, leading to poor performance of high-scoring models in actual advanced creation."
+      },
+      {
+        "point": "Qwen-Image-Bench deconstructs creative ability into 56 fine-grained test points.",
+        "explanation": "Designed by a team of professional artists, covering 17 creative scenarios including visual storytelling, brand design, and game art, achieving multi-dimensional and quantifiable evaluation through 1000 hierarchical prompts, aiming to identify the strengths and weaknesses of different models."
+      },
+      {
+        "point": "The accompanying open-source automated evaluation model Q-Judger achieves efficient evaluation.",
+        "explanation": "Q-Judger supports fine-grained scoring from 56 dimensions including image quality, aesthetics, and image-text consistency, with evaluation results highly correlated with human experts (Spearman 0.92), providing quantifiable closed-loop feedback for model optimization."
+      }
+    ],
+    "keyQuotes": [
+      "When AI evolves from 'being able to generate images' to replacing professional photography and even deeply participating in artistic creation, how should we evaluate a model's 'true creative ability'?",
+      "Because 'high scores' do not equal 'good usability'.",
+      "'Drawing correctly' and 'drawing beautifully' are just the starting points; 'understanding creation' is the ultimate goal.",
+      "Top-tier models need to understand human creative needs and mobilize their own knowledge and logical reasoning abilities. Behind this lies the deep synergy of language understanding, knowledge integration, and the model's aesthetic sense and creative execution."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501322&idx=1&sn=b7133e4650fd3ecbdd80a69ec3780a98",
+    "readUrl": "https://www.bestblogs.dev/article/b3a55351",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20260527050603_c063770.jpeg",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_2ce88a",
+    "sourceName": "通义实验室",
+    "priority": "HIGH",
+    "sourceImage": "https://image.jido.dev/20260527050603_c063770.jpeg",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "MODELS",
+    "aiSubCategoryDesc": "AI Models",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 37,
+    "wordCount": 2550,
+    "readTime": 11,
+    "mediaDuration": null,
+    "authors": [
+      "通义实验室"
+    ],
+    "publishTimeStamp": 1779961680000,
+    "publishDateStr": "05-28",
+    "publishDateTimeStr": "2026-05-28 17:48:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_bb0e84a5",
+    "notExist": null,
+    "originalTitle": "爆了的 AI 编码工具，联合创始人亲口说工程师还有救",
+    "title": "The AI Coding Tool That Blew Up: Its Co-Founder Says Engineers Still Have Hope",
+    "oneSentenceSummary": "OpenCode co-founder Dax Raad, with rare honesty, deconstructs three core illusions that AI coding tools create in real engineering teams, and shares profound insights on product taste, engineering culture, and being anti-hype.",
+    "summary": "This article is compiled from an in-depth interview with Dax Raad, co-founder of OpenCode, on The Pragmatic Engineer Podcast. With a candid attitude, Dax systematically reflects on three major problems AI coding tools cause in engineering teams: First, a surge in code output does not mean the product is getting better; feature bloat instead leads to system chaos. Second, AI quietly silences engineers' \"guilt,\" making it too easy to write hacky code and thereby stealing their judgment. Third, most engineers are not using AI to increase output, but to go home earlier with the time saved, which contradicts the \"productivity multiplier\" narrative vendors sell to CFOs. The article also delves into OpenCode's entrepreneurial journey, product strategy (prioritizing experience and adoption first, then optimizing the underlying layer), business model (inference services and console), and Dax's unique insights on engineering culture, product taste, technical debt cleanup, and career development for engineers. He emphasizes that as AI makes code generation increasingly cheap, what is truly scarce is judgment, restraint, and sensitivity to systemic consequences.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "AI Coding",
+      "OpenCode",
+      "Engineering Culture",
+      "Product Taste",
+      "Technical Debt"
+    ],
+    "mainPoints": [
+      {
+        "point": "AI coding tools create the illusion that 'doing it faster equals doing it better.'",
+        "explanation": "Feature bloat makes the product like a Frankenstein monster—every piece is stitched on, but the whole is out of control. Product managers and engineers need to be more restrained than ever, because being able to ship ten times the features doesn't mean there are ten times the good ideas worth shipping."
+      },
+      {
+        "point": "AI is quietly silencing engineers' 'guilt' and stealing their judgment.",
+        "explanation": "Previously, engineers would feel a 'sting' when applying a patch. This feedback loop helped calibrate judgment. Now, agents do the dirty work, the landmines are still there, but the engineer no longer feels them. This distorts system design decisions, patching over what should be refactored."
+      },
+      {
+        "point": "Most engineers are not using AI to increase output, but to save time.",
+        "explanation": "In an organization without high-powered incentives, the most natural outcome is not to do ten times more work, but to do roughly the same amount and keep the saved time for oneself. This is perfectly rational on an individual level, but it's a completely different story from the 'productivity multiplier' narrative vendors sell to CFOs."
+      },
+      {
+        "point": "The essence of product work is not stacking features, but thinking about how new features interact with old ones.",
+        "explanation": "The essence of good product work is not stacking features, but thinking about how a new feature interacts with existing ones. A truly good product absorbs a large number of problems and finds a solution that addresses fifty of them at once. In the AI era, products 'rot' faster, and quality may become an even stronger differentiator, but quality must be embodied at every level of the company."
+      },
+      {
+        "point": "An engineer's greatest advantage is the ability to enter any industry and become an expert in it.",
+        "explanation": "Software engineering skills are transferable, but if you also become an expert in a specific industry, the combination is incredibly powerful. Engineers don't need to decide at 22 which industry to spend their life in. Every year they spend in an industry, their understanding of it may surpass 99% of people."
+      }
+    ],
+    "keyQuotes": [
+      "When you used to write a patch yourself, you'd feel something was off, a vague unease. The second or third time you wrote it, that feeling would compound. You knew you were planting landmines for the future. Now, because 'something else' is handling it for you, it dulls that uncomfortable feeling.",
+      "You could easily spend a year figuring out 'what the right direction actually is.' Once the direction is right, building might indeed be faster. But if you ask me for my gut feeling, I'd say: before, I spent about 95% of my energy thinking about what to do and 5% on doing it; now, I spend about 96% thinking and 4% doing.",
+      "There's probably only one truly good idea in your product. Your most important job is to let the user experience that idea as quickly as possible.",
+      "Many good ideas are simple, so everyone repeats them. But simple doesn't mean easy to practice. If you say you believe in taste and quality, are you really willing to do the 'irrational' things for it?",
+      "When AI makes generating code increasingly cheap, what is truly scarce? — Not typing code faster, but judging what is worth doing and what is not."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247629172&idx=2&sn=af5ff9ae769976abf17ab7a25bbe0442",
+    "readUrl": "https://www.bestblogs.dev/article/bb0e84a5",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045448_c6196ec1",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_3ded7b",
+    "sourceName": "硅星人Pro",
+    "priority": "LOW",
+    "sourceImage": "https://image.jido.dev/20251127045448_c6196ec1",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "AI_CODING",
+    "aiSubCategoryDesc": "AI Coding",
+    "category": "Business_Tech",
+    "categoryDesc": "Business & Tech",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 34,
+    "wordCount": 15771,
+    "readTime": 64,
+    "mediaDuration": null,
+    "authors": [
+      "硅星人Pro"
+    ],
+    "publishTimeStamp": 1780019760000,
+    "publishDateStr": "05-29",
+    "publishDateTimeStr": "2026-05-29 09:56:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_ccf09feb",
+    "notExist": null,
+    "originalTitle": "AI 破晓：生成式 AI 时代文化产业的重塑、跃迁与守望｜4 万字报告",
+    "title": "AI Dawn: Reshaping, Leaping, and Guarding the Cultural Industry in the Generative AI Era | 40,000-Word Report",
+    "oneSentenceSummary": "Tencent Research Institute, in collaboration with Communication University of China, releases a 40,000-word report systematically analyzing the full-chain impact of generative AI on the cultural industry, proposing ten dawn questions, survey data insights, and three types of integrated development paths.",
+    "summary": "This report is a systematic research outcome of a joint research group from Tencent Research Institute and Communication University of China, released in May 2026. The first part proposes 'Ten Dawn Questions,' conducting dialectical analysis around ten core issues: cost reduction and efficiency improvement, premium content creation, rise of super creators, workforce structure, skill upgrading, IP monetization, business models, cultural heritage, public aesthetics, and human-machine symbiosis. The second part, based on 444 creator-side and 1,439 consumer-side questionnaires, reveals key data such as an AI tool penetration rate of 89%, nearly 60% of creators seeing no change in average revenue per piece, and prominent consumer concerns about AI content homogenization. The third part proposes differentiated integration paths for three types of entities—traditional formats, digital content formats, and AI-native formats—as well as a new market landscape of five-party symbiosis. The report emphasizes that the industry is undergoing five structural shifts, from linear assembly lines to networked co-creation, and from capacity competition to originality competition, ultimately returning to the value of 'human as the subject.'",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Generative AI",
+      "Cultural Industry",
+      "Tencent Research Institute",
+      "Industry Report",
+      "AI Content"
+    ],
+    "mainPoints": [
+      {
+        "point": "Generative AI penetration rate in the cultural industry reaches 89%, but hidden costs rise behind cost reduction and efficiency improvement.",
+        "explanation": "AI tools have become rigid production tools for creators, with 42.6% being high-frequency users. However, hidden costs such as technology investment, operational compliance, and competition are increasing, leading to a restructuring of the overall industry cost structure rather than a simple reduction."
+      },
+      {
+        "point": "AI has not yet brought widespread revenue growth for creators, with nearly 60% seeing no change in average revenue per piece.",
+        "explanation": "Increased output has not led to higher unit prices. Creators most desire traffic support (62.6%) and creation subsidy sharing (58.1%), with the real motivation for sustained output being improved content return rates."
+      },
+      {
+        "point": "Consumer concerns about AI content homogenization are prominent, making content homogenization the top shared concern on both supply and demand sides.",
+        "explanation": "88.8% of creators and 55.6% of consumers list content homogenization as their primary concern. Consumers explicitly reject the 'AI feel'—monotonous, cold and mechanical, and logically disjointed."
+      },
+      {
+        "point": "The cultural industry is undergoing five structural shifts, moving from capacity competition to originality competition.",
+        "explanation": "Production logic shifts from linear assembly lines to networked co-creation, scarce resources shift from capacity to originality and insight, consumption patterns shift from standard finished products to interactive customizable services, operations shift from linear IP development to three-dimensional concurrent storytelling, and industry rules shift from closed value chains to open protocol fields."
+      }
+    ],
+    "keyQuotes": [
+      "What defines an era and a civilization is never technology, but humanity itself.",
+      "What AI aims to achieve is not to replace humans, but to amplify them.",
+      "The competitiveness of an industry lies not in greater capacity, but in better experiences; not in faster generation, but in deeper empathy.",
+      "The future competition is not between humans and AI, but between 'those who can use AI' and 'those who cannot.'",
+      "Technology must be endowed with civilization, making it a vessel of 'tech for good, intelligence for truth, and culture for beauty,' carrying us through the turbulent currents of the era to a new humanistic oasis."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650997232&idx=1&sn=61988cfc49acb760a8a57b7023d775c3",
+    "readUrl": "https://www.bestblogs.dev/article/ccf09feb",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045438_46b6e851",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_f056ce",
+    "sourceName": "腾讯研究院",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045438_46b6e851",
+    "mainDomain": "Business_Tech",
+    "mainDomainDesc": "Business & Tech",
+    "aiSubCategory": "BT_INSIGHT",
+    "aiSubCategoryDesc": "Business Insights",
+    "category": "Business_Tech",
+    "categoryDesc": "Business & Tech",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 31,
+    "wordCount": 6772,
+    "readTime": 28,
+    "mediaDuration": null,
+    "authors": [
+      "腾讯研究院"
+    ],
+    "publishTimeStamp": 1779963660000,
+    "publishDateStr": "05-28",
+    "publishDateTimeStr": "2026-05-28 18:21:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_aeb68360",
+    "notExist": null,
+    "originalTitle": "DynoSim: Simulating the Pareto Frontier",
+    "title": "DynoSim: Simulating the Pareto Frontier",
+    "oneSentenceSummary": "DynoSim is a discrete-event simulation of the NVIDIA Dynamo serving stack that enables fast, faithful exploration of the deployment configuration Pareto frontier before committing GPU time.",
+    "summary": "DynoSim is a workload-driven discrete-event simulator for the NVIDIA Dynamo LLM serving stack. It models the full inference pipeline—scheduler, router, planner, KV cache manager—on a single virtual timeline, using measured engine forward-pass timing from AIConfigurator. This allows developers to sweep thousands of deployment configurations (tensor-parallel shape, worker counts, routing policy, autoscaling settings, etc.) in seconds rather than hours of real GPU time. The simulator achieves ~1,500x speedup over real time on a MacBook Air. The article demonstrates DynoSim's utility through concrete experiments: KV-aware routing improves prefix cache reuse from 0.38 to 0.44-0.45; enabling the G2 host-memory tier reduces TTFT by 19.3% at peak; and autoscaling experiments reveal optimal scaling intervals (5-10 seconds) and cold-start thresholds (~180 seconds) for a Qwen3-32B workload. The vision is to make simulation the inner loop for deployment tuning, with real clusters serving as the outer validation loop, and eventually to close the loop with continuous production re-optimization.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "DynoSim",
+      "NVIDIA Dynamo",
+      "LLM Serving",
+      "Discrete-Event Simulation",
+      "Pareto Frontier"
+    ],
+    "mainPoints": [
+      {
+        "point": "DynoSim enables fast, faithful simulation of the entire LLM serving stack at the forward-pass level.",
+        "explanation": "By composing scheduler, router, planner, and KV cache manager on a single discrete-event timeline, DynoSim models complex cross-layer interactions that analytical estimates miss, achieving ~1,500x speedup over real time."
+      },
+      {
+        "point": "Scheduler-aware replay significantly improves TTFT prediction accuracy over pure engine timing estimates.",
+        "explanation": "AIConfigurator provides accurate per-pass timing, but TTFT is sensitive to how requests wait, batch, and chunk under high concurrency. Adding scheduler simulation closes the gap between estimates and hardware measurements."
+      },
+      {
+        "point": "KV-aware routing and host-memory tiering yield measurable improvements in cache reuse and latency.",
+        "explanation": "KV-aware routing increases prefix cache reuse from 0.38 to 0.44-0.45, reducing TTFT. Enabling the G2 host-memory tier improves mean TTFT by 19.3% at peak concurrency by reducing prefill recompute."
+      },
+      {
+        "point": "DynoSim enables systematic exploration of autoscaling policies, revealing optimal parameters and failure thresholds.",
+        "explanation": "Experiments show that scaling intervals of 5-10 seconds balance responsiveness and churn, and that cold-start delays beyond ~180 seconds cause catastrophic SLA violations for a Qwen3-32B workload."
+      },
+      {
+        "point": "The vision is to make simulation the inner loop for continuous production optimization.",
+        "explanation": "DynoSim can periodically sweep configurations against recent production traffic, recommending or applying reconfigurations as workload distributions drift over hours and days."
+      }
+    ],
+    "keyQuotes": [
+      "DynoSim is a workload-driven discrete-event simulation of the NVIDIA Dynamo serving stack.",
+      "On an Apple M4 MacBook Air, the single-threaded Rust offline replay simulated the full 23,608-request Mooncake trace... in 2.41 seconds of wall time. The simulated serving window was 60.1 minutes, about 1,500x faster than real time.",
+      "The goal is not to replace real-cluster validation. The goal is to make that validation more focused.",
+      "A smart sweeping algorithm built on top of DynoSim would run periodically against recently-recorded production traffic, search the configuration space under the current workload distribution, and recommend (or directly apply) a reconfiguration when a materially better deployment is found.",
+      "A local improvement can shift the bottleneck somewhere else."
+    ],
+    "url": "https://developer.nvidia.com/blog/dynosim-simulating-the-pareto-frontier/",
+    "readUrl": "https://www.bestblogs.dev/article/aeb68360",
+    "enclosureUrl": null,
+    "domain": "developer.nvidia.com",
+    "cover": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/inference-press-dynamo-gtc26-4960950-1920x1080-1-660x370.png",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_dacaf9e9",
+    "sourceName": "NVIDIA Technical Blog",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20260527052034_799230b",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "DEV",
+    "aiSubCategoryDesc": "AI Development",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 30,
+    "wordCount": 2126,
+    "readTime": 9,
+    "mediaDuration": null,
+    "authors": [
+      "Yongming Ding"
+    ],
+    "publishTimeStamp": 1780093898000,
+    "publishDateStr": "05-30",
+    "publishDateTimeStr": "2026-05-30 06:31:38",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_155cf24c",
+    "notExist": null,
+    "originalTitle": "How CockroachDB Built Vector Indexing at Scale",
+    "title": "How CockroachDB Built Vector Indexing at Scale",
+    "oneSentenceSummary": "This article explains how CockroachDB built C-SPANN, a vector index that treats the index as ordinary table data to satisfy distributed SQL constraints like no central coordinator, persistent storage, and real-time updates.",
+    "summary": "The article details the engineering behind CockroachDB's C-SPANN vector index, designed to meet the strict architectural requirements of a distributed SQL database. It begins by explaining the need for approximate nearest neighbor search and the limitations of traditional indexes for vector data. The core of the article describes the six key constraints CockroachDB imposed (no central coordinator, no large in-memory structures, minimal network hops, sharding compatibility, no hot spots, incremental updates) and how C-SPANN satisfies them by storing index partitions as ordinary key-value rows within CockroachDB's existing storage engine. This approach allows the index to inherit the database's built-in capabilities for splitting, rebalancing, caching, and replication. The article also covers index maintenance (splitting/merging partitions), vector quantization using RaBitQ for 94% size reduction, and multi-tenant partitioning via prefix columns. It concludes by discussing the trade-offs, noting that while C-SPANN excels at integrating vectors with transactional data and multi-region deployments, specialized vector databases may be better for pure vector workloads requiring minimal latency.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "CockroachDB",
+      "Vector Index",
+      "C-SPANN",
+      "Distributed Systems",
+      "Approximate Nearest Neighbor"
+    ],
+    "mainPoints": [
+      {
+        "point": "CockroachDB's C-SPANN vector index treats the index as ordinary table data, not a separate system.",
+        "explanation": "By storing index partitions as key-value rows within CockroachDB's existing storage engine, the index automatically inherits the database's built-in capabilities for splitting, rebalancing, caching, and replication, eliminating the need for new infrastructure."
+      },
+      {
+        "point": "C-SPANN was designed to satisfy six strict architectural constraints for a distributed SQL database.",
+        "explanation": "These constraints include no central coordinator, no large in-memory structures, minimal network hops, sharding compatibility, no hot spots, and support for incremental updates, which ruled out popular algorithms like HNSW and IVF."
+      },
+      {
+        "point": "The index uses a hierarchical K-means tree for search and RaBitQ quantization for storage efficiency.",
+        "explanation": "The tree structure allows for parallel search across partitions, while RaBitQ reduces vector size by 94% (to ~200 bytes per vector), with a reranking step using full-precision vectors to maintain accuracy."
+      },
+      {
+        "point": "Multi-tenancy is handled through prefix columns, creating separate K-means trees per user or region.",
+        "explanation": "This design ensures that query performance scales with the number of vectors per user, not the total index size, and enables locality-aware data storage for compliance with data domiciling requirements."
+      }
+    ],
+    "keyQuotes": [
+      "The CockroachDB team treated the vector index as ordinary table data and inherited their existing distributed machinery for free, so splits, caching, sharding, replication, and multi-region behavior all worked from day one because they already worked for everything else in the database.",
+      "C-SPANN refused several compromises that most vector databases quietly accept.",
+      "Freshness in CockroachDB is real-time and transactional rather than batched or eventually consistent, which means a vector inserted in a transaction becomes searchable as soon as that transaction commits.",
+      "The algorithm is the part that gets the headlines, but the integration is what makes the system possible."
+    ],
+    "url": "https://blog.bytebytego.com/p/how-cockroachdb-built-vector-indexing",
+    "readUrl": "https://www.bestblogs.dev/article/155cf24c",
+    "enclosureUrl": null,
+    "domain": "blog.bytebytego.com",
+    "cover": "https://image.jido.dev/20260525162304_58352b2e-8406-420a-a97d-c11734237c85_2322x1608.png",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_996ae6",
+    "sourceName": "ByteByteGo Newsletter",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20260527123114_8a5609ae-1239-4400-9491-6010a15c4d60_504x504.png",
+    "mainDomain": "Programming_Technology",
+    "mainDomainDesc": "Programming",
+    "aiSubCategory": "SE_BACKEND",
+    "aiSubCategoryDesc": "Backend & Architecture",
+    "category": "Programming_Technology",
+    "categoryDesc": "Programming",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 29,
+    "wordCount": 2446,
+    "readTime": 10,
+    "mediaDuration": null,
+    "authors": [
+      "ByteByteGo"
+    ],
+    "publishTimeStamp": 1779723038000,
+    "publishDateStr": "05-25",
+    "publishDateTimeStr": "2026-05-25 23:30:38",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_d2adddee",
+    "notExist": null,
+    "originalTitle": "登顶 HuggingFace 日榜！英伟达清华团队γ-World：把世界模型从单机打到联机",
+    "title": "Topping HuggingFace Daily Chart! NVIDIA & Tsinghua Team's Gamma-World: Taking World Models from Single-Player to Multi-Player",
+    "oneSentenceSummary": "NVIDIA and Tsinghua University released Gamma-World, a multi-agent world model that achieves zero-shot scalability to multiple players by redesigning positional encoding and attention mechanisms, solving the core bottlenecks of symmetry breaking and quadratic computational explosion in existing solutions.",
+    "summary": "This article reports on Gamma-World, a multi-agent world model jointly developed by NVIDIA, Tsinghua University, the University of Toronto, and the Vector Institute. It points out that existing world models (e.g., Sora, Cosmos, Genie) are based on a single-agent premise and cannot handle causal coupling issues in real-world scenarios such as multiplayer games, factory production lines, and embodied agent training. While previous solutions like Solaris achieved two-player interaction, they suffered from two structural problems: first, using fixed-slot identity vectors broke symmetry between players, preventing scalability; second, full-attention mechanisms led to quadratic computational growth with the number of players. Gamma-World is redesigned from the ground up: it uses regular simplex vertex encoding to solve the symmetry problem, ensuring consistent geometric relationships between any players and enabling zero-shot expansion to four players without retraining; it introduces hub tokens as a shared communication hub, reducing computational complexity from quadratic to linear, with latency dropping from 17.6ms to 4.5ms in an 8-player scenario. Experiments demonstrate real-time synchronized two-player Minecraft, zero-shot four-player generalization, and real-world dual robotic arm collaboration. The article argues that multi-agent world models could become generators of training data for Physical AI, breaking the bottleneck of scarce real-world physical interaction data and driving the replication of scaling laws in the Physical AI domain.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "World Model",
+      "Multi-Agent",
+      "Gamma-World",
+      "NVIDIA",
+      "Physical AI"
+    ],
+    "mainPoints": [
+      {
+        "point": "Existing world models are based on a single-agent premise and cannot handle causal coupling in multi-agent scenarios.",
+        "explanation": "In scenarios like multiplayer games, factory production lines, and embodied agent training, one agent's actions change the shared environment state, requiring all other agents to perceive and act accordingly. Existing single-agent frameworks lack a built-in interface for multiple participants."
+      },
+      {
+        "point": "Gamma-World solves the player symmetry problem using regular simplex vertex encoding, enabling zero-shot scalability.",
+        "explanation": "Each player is mapped to a vertex of a regular simplex in a rotation angle space, where distances between any two points are equal. The model is not tied to a fixed number of players; trained with two players, it can zero-shot expand to four players during inference without retraining."
+      },
+      {
+        "point": "Gamma-World introduces hub tokens to reduce computational complexity from quadratic to linear.",
+        "explanation": "Players no longer connect directly to each other but communicate through a shared hub token. In an 8-player scenario, computational cost is only one-eighth of the full-attention approach, with latency dropping from 17.6ms to 4.5ms, supporting real-time interaction."
+      },
+      {
+        "point": "Multi-agent world models could become generators of Physical AI training data, breaking the data bottleneck.",
+        "explanation": "High-quality multi-agent interaction data is extremely scarce. World models can generate trajectory data 24/7 in virtual environments, and the generation process can be actively designed, forming a self-accelerating flywheel: better world models → higher quality training data → better policies → more diverse interaction trajectories."
+      }
+    ],
+    "keyQuotes": [
+      "This isn't something you can fix by adding more data to a single-agent framework; the design itself never had an interface for multiple participants.",
+      "The model learns 'how these two specific roles interact,' not 'how multiple equal players share a world.'",
+      "This model has never seen training data with four players. During inference, we just pick two more vertices from the simplex vertex pool, and four synchronized views are generated directly, with the shared world state fully preserved.",
+      "Collecting data from the real world is passive; generating data with a world model is active. This activeness itself is a qualitative leap.",
+      "From single-player to multi-player, the next battle of world models has just begun."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651035907&idx=1&sn=cd65e6a8e2619188409acb7a14b19812",
+    "readUrl": "https://www.bestblogs.dev/article/d2adddee",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045346_3bc9a61a",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_e24314",
+    "sourceName": "机器之心",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045346_3bc9a61a",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "MODELS",
+    "aiSubCategoryDesc": "AI Models",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 27,
+    "wordCount": 3195,
+    "readTime": 13,
+    "mediaDuration": null,
+    "authors": [
+      "机器之心"
+    ],
+    "publishTimeStamp": 1780108200000,
+    "publishDateStr": "05-30",
+    "publishDateTimeStr": "2026-05-30 10:30:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_66368033",
+    "notExist": null,
+    "originalTitle": "DuckDB Quack: Client/Server Protocol over HTTP for Multi-User Analytics",
+    "title": "DuckDB Quack: Client/Server Protocol over HTTP for Multi-User Analytics",
+    "oneSentenceSummary": "DuckDB announces Quack, a new client/server protocol over HTTP that enables multi-user, remote analytics while maintaining its lightweight, embedded database workflow.",
+    "summary": "DuckDB has announced Quack, a new remote protocol over HTTP that allows multiple DuckDB instances to connect to and work with the same database over a network, introducing client-server capabilities to a previously local and embedded database. Quack is designed to be simpler and faster than existing approaches like Arrow Flight SQL, claiming to move large datasets about 3.5× faster. It supports concurrent users, remote analytics, and production-style data services without switching to a heavier database system. The protocol uses DuckDB's native data format and can send a query and return results in a single network round trip for small queries. The Hacker News and Reddit communities responded positively, viewing it as a key step toward shared, multi-user analytics. DuckDB plans to integrate Quack with DuckLake and ship a production-ready release with DuckDB 2.0 later in 2026. The recently released DuckDB v1.5.3 supports Quack as an autoloadable core extension.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "DuckDB",
+      "Quack",
+      "Client/Server Protocol",
+      "Analytics Database",
+      "HTTP"
+    ],
+    "mainPoints": [
+      {
+        "point": "DuckDB introduces Quack, a client/server protocol over HTTP for multi-user analytics.",
+        "explanation": "Quack allows multiple DuckDB instances to connect to the same database remotely, enabling shared datasets, concurrent users, and production-style data services while keeping DuckDB's lightweight workflow."
+      },
+      {
+        "point": "Quack is designed to be simpler and faster than existing protocols like Arrow Flight SQL.",
+        "explanation": "DuckDB claims Quack moves large datasets about 3.5× faster than Arrow Flight and significantly faster than PostgreSQL, and can return results in a single network round trip for small queries."
+      },
+      {
+        "point": "The protocol is a key step toward distributed DuckDB, with plans for DuckLake integration and production release in DuckDB 2.0.",
+        "explanation": "DuckDB plans to integrate Quack with DuckLake, improve performance, and ship a production-ready release with DuckDB 2.0 later in 2026, along with support for remote databases and replication."
+      }
+    ],
+    "keyQuotes": [
+      "With Quack, DuckDB can now be useful in a wide range of new use cases, where centralizing state is more important than hyper-local querying.",
+      "We feel that in order to be able to keep innovating in data systems, we cannot allow ourselves to be restricted by formats that are controlled externally.",
+      "Being able to spin up DuckDB on a server and have people talk to it remotely like a 'normal' DB will be such a big unlock.",
+      "When you combine that with object storage, DuckLake, Parquet, and vector databases, you get a very pragmatic architecture for modern AI and data engineering."
+    ],
+    "url": "https://www.infoq.com/news/2026/05/duckdb-quack-protocol/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "readUrl": "https://www.bestblogs.dev/article/66368033",
+    "enclosureUrl": null,
+    "domain": "infoq.com",
+    "cover": "https://res.infoq.com/news/2026/05/duckdb-quack-protocol/en/headerimage/generatedHeaderImage-1779460941997.jpg",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_f152e8",
+    "sourceName": "InfoQ",
+    "priority": "HIGH",
+    "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+    "mainDomain": "Programming_Technology",
+    "mainDomainDesc": "Programming",
+    "aiSubCategory": "SE_TOOLS",
+    "aiSubCategoryDesc": "Open Source & Tools",
+    "category": "Programming_Technology",
+    "categoryDesc": "Programming",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 26,
+    "wordCount": 679,
+    "readTime": 3,
+    "mediaDuration": null,
+    "authors": [
+      "Renato Losio"
+    ],
+    "publishTimeStamp": 1780226220000,
+    "publishDateStr": "Yesterday",
+    "publishDateTimeStr": "2026-05-31 19:17:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_6bd39d69",
+    "notExist": null,
+    "originalTitle": "拉勾破产：一段互联网创业简史",
+    "title": "Lagou Bankruptcy: A Brief History of Internet Entrepreneurship",
+    "oneSentenceSummary": "Using Lagou's bankruptcy as a clue, this article deeply reviews its complete journey from incubation at 3W Coffee, rising during the mass entrepreneurship era, being acquired by a giant, failing to transform into education, and finally being forgotten by the AI era, marking the end of the era of universal wealth creation through the internet.",
+    "summary": "Taking Lagou's voluntary bankruptcy application in 2026 as the starting point, this article systematically reviews the complete lifecycle of this vertical recruitment platform from birth to demise. The author closely ties Lagou's fate to the rise and fall of China's mobile internet entrepreneurship: launched in 2013, it took off relying on the network of acquaintances at 3W Coffee and the internet entrepreneurship boom; it became an industry star in 2015 thanks to the mass entrepreneurship policy; it sold 60% of its equity to 51job in 2017, losing its independence; after 2018, it attempted an education transformation as a second growth curve, but encountered internet layoffs and the collapse of the education and training industry; ultimately, it was forgotten in the AI recruitment era. Through Lagou's case, the article profoundly analyzes the vulnerability of vertical platforms within industry cycles—when the internet industry shifted from expansion to contraction, the myth of \"programmers getting salary increases by switching jobs\" that Lagou relied on also collapsed. The article also compares BOSS Zhipin, which rose during the same period, pointing out that Lagou's failure was not only a result of business competition but also the end of the era narrative represented by the \"internet career advancement channel.\"",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Lagou",
+      "Internet Entrepreneurship",
+      "Recruitment Industry",
+      "Business Review",
+      "Industry Cycle"
+    ],
+    "mainPoints": [
+      {
+        "point": "Lagou's rise and fall are highly synchronized with the mobile internet entrepreneurship cycle.",
+        "explanation": "Launched in 2013, Lagou caught the wave of the internet entrepreneurship boom; the 2015 mass entrepreneurship policy pushed it to its peak; after 2021, internet layoffs and the collapse of the education and training sector led to the shrinkage of its core market. It almost perfectly replicated every step of China's mobile internet journey from excitement to fatigue."
+      },
+      {
+        "point": "The vulnerability of vertical platforms lies in their deep dependence on the host industry.",
+        "explanation": "Lagou's success relied on the frantic expansion of internet companies and the myth of programmers switching jobs for higher pay. When the industry cycle reversed and employers stopped hiring, Lagou's business model lost its foundation, and its brand recognition became a liability."
+      },
+      {
+        "point": "Lagou's education transformation reflects a collective industry illusion.",
+        "explanation": "Lagou misinterpreted the naturally occurring career advancement during the internet's high-salary expansion period as a service capability the platform could sustainably create. When the industry contracted, training courses shifted from investment goods to consumer goods, causing the second growth curve to collapse."
+      },
+      {
+        "point": "Lagou's demise marks the end of the era of universal wealth creation through the internet.",
+        "explanation": "Lagou once sold the belief that \"the internet industry needs more people,\" while the AI era's talent demand is more concentrated and picky. Moreover, its co-founder Ma Delong's new project, Lobstaff, has shifted to \"recruiting digital employees,\" suggesting that companies may no longer need as many people."
+      }
+    ],
+    "keyQuotes": [
+      "Lagou wasn't killed by a specific enemy. It simply outlived the world it depended on.",
+      "Lagou once sold the belief that 'the internet industry needs more people.' Lobstaff sells the future where 'companies may not need that many people.'",
+      "Lagou wasn't built from scratch. It was a commercial plugin incubated from the circle of acquaintances at 3W Coffee.",
+      "A recruitment platform doesn't record a person's value. It records the price the market is willing to pay for that person at a given moment.",
+      "What disappeared was the illusion Lagou once sold: as long as you stand with the internet, the era will give you a raise."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ==&mid=2656174331&idx=3&sn=9aad68a14c45f8dd6f0207d787005649",
+    "readUrl": "https://www.bestblogs.dev/article/6bd39d69",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20260527051839_6a09990.jpeg",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_0404fe",
+    "sourceName": "虎嗅APP",
+    "priority": "LOW",
+    "sourceImage": "https://image.jido.dev/20260527051839_6a09990.jpeg",
+    "mainDomain": "Business_Tech",
+    "mainDomainDesc": "Business & Tech",
+    "aiSubCategory": "BT_INSIGHT",
+    "aiSubCategoryDesc": "Business Insights",
+    "category": "News_Media",
+    "categoryDesc": "News & Media",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 24,
+    "wordCount": 10701,
+    "readTime": 43,
+    "mediaDuration": null,
+    "authors": [
+      "虎嗅APP"
+    ],
+    "publishTimeStamp": 1779701460000,
+    "publishDateStr": "05-25",
+    "publishDateTimeStr": "2026-05-25 17:31:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_632b1a8e",
+    "notExist": null,
+    "originalTitle": "开源个 Skill｜彻底解决小红、小绿书配图难题",
+    "title": "Open-Source Skill | Completely Solve the Image Matching Problem for Xiaohongshu and Similar Platforms",
+    "oneSentenceSummary": "This article details the author's open-source guizang-social-card-skill, an AI image matching tool specifically designed for graphic platforms like Xiaohongshu. It thoroughly solves content creators' image matching challenges through built-in category adaptation, intelligent text overlay, real image library integration, and a magazine-grade visual system.",
+    "summary": "The article, originally created by the author's 'Guizang's AI Toolbox', shares the design philosophy and core features of the open-source project guizang-social-card-skill. Positioned as a small product rather than a simple prompt, this Skill aims to address the pain points of content creators on graphic platforms like Xiaohongshu. Its core highlights include: built-in adaptation rules for 11 graphic categories (e.g., travel, workplace, film reviews) that automatically match visual styles based on content; solving the challenge of text overlay in AI-generated images through subject recognition, color brightness calculation, and adaptive layout for a premium feel; default integration with free, commercially usable image libraries like Pexels and Unsplash to avoid watermarks and homogeneity issues from AI-generated images; and features like screenshot beautification, two visual systems (magazine style/grid style), and 28 layout templates to ensure output stability. The author emphasizes that the Skill's moat lies in its product-oriented thinking, including clear boundary definitions, version management, and delivery documentation, aiming to upgrade the Skill from a one-time prompt to a reusable product.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "AI Image Matching",
+      "Xiaohongshu",
+      "Graphic Cards",
+      "Open-Source Project",
+      "AI Tools"
+    ],
+    "mainPoints": [
+      {
+        "point": "The Skill has built-in adaptation rules for 11 graphic categories, automatically matching visual styles based on content.",
+        "explanation": "For different categories like travel, workplace, film reviews, and product reviews, the Skill automatically selects magazine or grid style, color palettes, and layouts, even generating map components for travel content, avoiding templated output."
+      },
+      {
+        "point": "It overcomes the three major challenges of AI text overlay, achieving a premium look.",
+        "explanation": "By identifying the image subject, calculating the color value and brightness of the overlay area, and dynamically adjusting font size and line breaks, the Skill automatically avoids faces or product centers, ensuring text clarity without disrupting the composition and eliminating the AI feel."
+      },
+      {
+        "point": "It prioritizes real image libraries and uses AI image generation sparingly, solving watermark and homogeneity issues.",
+        "explanation": "The Skill defaults to integrating free, commercially usable image libraries like Pexels and Unsplash, automatically searching and cropping based on semantics; it only resorts to AI image generation when no suitable material is available, and enforces style constraints to avoid platform restrictions or a cheap appearance."
+      },
+      {
+        "point": "A Skill should be treated as a product, not just a prompt.",
+        "explanation": "The author believes that a good Skill requires a clear PRODUCT.md (defining the problem and boundaries), version numbers with a CHANGELOG (recording iterations), and a HANDOVER.md (explaining deliverables and capability boundaries) to upgrade from a one-time prompt to a reusable, maintainable product."
+      }
+    ],
+    "keyQuotes": [
+      "What they make are web pages, not magazines.",
+      "Capability boundaries define a product more than capabilities themselves; a Skill that can do everything often ends up doing nothing well.",
+      "Limitations are not obstacles; they are bottom lines.",
+      "Most Skills are satisfied with 'I can make one', but few pursue 'doing this thing to the extreme'.",
+      "A Skill is a product. To judge whether a Skill is good, see if it has been cherished by its author."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk3NTUxMA==&mid=2247496930&idx=1&sn=e47cba823b7038047f933e1e3e487e7c",
+    "readUrl": "https://www.bestblogs.dev/article/632b1a8e",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045421_eb9966c8",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_de48a8",
+    "sourceName": "歸藏的AI工具箱",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045421_eb9966c8",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "AI_CODING",
+    "aiSubCategoryDesc": "AI Coding",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 22,
+    "wordCount": 3562,
+    "readTime": 15,
+    "mediaDuration": null,
+    "authors": [
+      "歸藏的AI工具箱"
+    ],
+    "publishTimeStamp": 1779928200000,
+    "publishDateStr": "05-28",
+    "publishDateTimeStr": "2026-05-28 08:30:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_ffe547b8",
+    "notExist": null,
+    "originalTitle": "The Domain Shift: Moving Data Governance from Product Triage to Infrastructure Investment",
+    "title": "The Domain Shift: Moving Data Governance from Product Triage to Infrastructure Investment",
+    "oneSentenceSummary": "This article argues that effective data governance at scale requires shifting the analytical focus from individual products to the broader business domain, treating governance as an infrastructure investment rather than a reactive triage process.",
+    "summary": "The article addresses a critical bottleneck in modern data governance: how to measure and scale governance effectiveness as an organization's data product portfolio grows. The author argues that the default operating model of continuous triage—reviewing individual products against compliance checklists—fails at scale, leading to burnout and hidden systemic failures. The core insight is to shift the unit of analysis from the product to the domain (e.g., Finance, HR). By aggregating product-level compliance data across domains, organizations can surface patterns, such as a specific governance pillar (e.g., RBAC, data lineage) failing uniformly across multiple domains, which indicates an infrastructure-level problem rather than isolated product issues. The article introduces a Domain Maturity Heatmap as a diagnostic tool to visualize these patterns, enabling leadership to prioritize systemic fixes (e.g., fixing a metadata harvesting tool) over individual product tickets. This approach redefines governance from a quality control gate to an infrastructure investment, allowing entire domains to scale and comply organically. The author also cautions that the heatmap identifies where a system is failing, but not why, requiring specialist investigation for root cause analysis.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Data Governance",
+      "Data Architecture",
+      "Domain-Driven Design",
+      "Infrastructure Investment",
+      "Scalability"
+    ],
+    "mainPoints": [
+      {
+        "point": "The default product-level triage model for data governance fails at scale.",
+        "explanation": "Managing governance by reviewing individual product tickets against a checklist is manageable for small portfolios but becomes unsustainable and reactive at enterprise scale, leading to burnout and hidden systemic issues."
+      },
+      {
+        "point": "Shifting the unit of analysis from the product to the domain reveals systemic infrastructure failures.",
+        "explanation": "Aggregating compliance data across a business domain (e.g., Finance, HR) shows that recurring issues like missing RBAC or lineage are often not isolated product failures but symptoms of a single, organization-wide infrastructure gap."
+      },
+      {
+        "point": "A Domain Maturity Heatmap is a practical tool for visualizing and prioritizing systemic governance gaps.",
+        "explanation": "This grid maps business domains against governance pillars, using binary control validation to show where failures cluster. This helps leadership prioritize fixing a failing pillar across multiple domains over resolving individual product tickets."
+      },
+      {
+        "point": "Treating governance as an infrastructure investment, not a quality control gate, enables organic scaling.",
+        "explanation": "By fixing systemic architectural gaps first (e.g., a broken metadata harvesting tool), compliance improves across all dependent domains as a natural consequence, shifting the operating model from reactive triage to proactive enablement."
+      }
+    ],
+    "keyQuotes": [
+      "The insight that resolved the tension was not about individual products at all. It was about the domain.",
+      "Product-by-product resolution addresses localised symptoms rather than root architectural causes.",
+      "The domain lens collapses those four separate conversations into one. Fix the standard once, at the right level, and the correction propagates across every function it touches.",
+      "Prioritising a systemic pillar failure over a product-level backlog ensures that the governance function acts as an infrastructure investment rather than a quality control gate.",
+      "Product-level governance is necessary. It is not sufficient."
+    ],
+    "url": "https://towardsdatascience.com/the-domain-shift-moving-data-governance-from-product-triage-to-infrastructure-investment/",
+    "readUrl": "https://www.bestblogs.dev/article/ffe547b8",
+    "enclosureUrl": null,
+    "domain": "towardsdatascience.com",
+    "cover": "https://towardsdatascience.com/wp-content/uploads/2026/05/ChatGPT-Image-May-22-2026-01_27_30-PM.jpg",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_0c32dbfa",
+    "sourceName": "Towards Data Science",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+    "mainDomain": "Programming_Technology",
+    "mainDomainDesc": "Programming",
+    "aiSubCategory": "SE_PRACTICE",
+    "aiSubCategoryDesc": "Engineering Practice",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 22,
+    "wordCount": 1448,
+    "readTime": 6,
+    "mediaDuration": null,
+    "authors": [
+      "Alle Sravani"
+    ],
+    "publishTimeStamp": 1779796800000,
+    "publishDateStr": "05-26",
+    "publishDateTimeStr": "2026-05-26 20:00:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_4e86ff6b",
+    "notExist": null,
+    "originalTitle": "[翻译] AI Agent 的 Zero Trust 框架｜Anthropic 安全白皮书",
+    "title": "[Translation] Zero Trust Framework for AI Agents | Anthropic Security White Paper",
+    "oneSentenceSummary": "Anthropic's white paper systematically elaborates on how to apply Zero Trust security architecture principles to AI Agent deployment, proposing a three-tier capability framework and an eight-step implementation workflow to address the AI-accelerated threat landscape.",
+    "summary": "This article is a translation and summary of Anthropic's official white paper, focusing on how to implement Zero Trust security principles in scenarios where AI Agents autonomously execute operations, call tools, and collaborate across systems. It first analyzes the fundamental differences in security models between Agent systems and traditional software, including new features such as unattended execution, tool access, decision-making capabilities, context persistence, and multi-agent collaboration, introducing two key concepts: \"blast radius\" and \"least agent privilege.\" The article then systematically outlines the primary threats facing current Agents, including prompt injection, tool abuse, identity and permission abuse, supply chain risks, and context poisoning. The core section revolves around six major security capability domains (Agent identity and authentication, access control, observability and auditing, behavior monitoring and response, input validation and output control, integrity and recovery), providing a three-tier implementation roadmap (Foundation / Enterprise / Advanced) for each domain. Finally, the article presents an eight-step Agent deployment workflow and emphasizes that defense operations must operate at the speed of autonomous threats, introducing concepts like Agentic SOAR.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "AI Agent",
+      "Zero Trust",
+      "Security Architecture",
+      "Anthropic",
+      "Prompt Injection"
+    ],
+    "mainPoints": [
+      {
+        "point": "The security model for AI Agents must shift from \"perimeter defense\" to a \"Zero Trust\" architecture.",
+        "explanation": "AI accelerates both offense and defense, compressing vulnerability exploitation windows from months to hours. The autonomy and tool access capabilities of Agents render traditional perimeter-based defenses ineffective, necessitating a zero-trust approach where every request is verified under the assumption of compromise."
+      },
+      {
+        "point": "The \"least agent privilege\" principle is central to Agent security, limiting what Agents can do, how often, and where.",
+        "explanation": "Least privilege restricts the access scope of users and systems, while least agent privilege further limits the specific capabilities of each Agent's tools. For example, a database tool is granted only read-only query permissions, and an email tool lacks send permissions."
+      },
+      {
+        "point": "Prompt injection is the most pressing threat to Agent systems, requiring defenses such as input isolation and constitutional classifiers.",
+        "explanation": "Both direct and indirect injections can manipulate Agent behavior. Microsoft's Spotlight technology can reduce the success rate of indirect injection attacks from over 50% to below 2%, while Anthropic's constitutional classifiers can block 95% of jailbreak attempts."
+      },
+      {
+        "point": "Agent deployment should follow an eight-step workflow, systematically advancing security from requirement identification to metric measurement.",
+        "explanation": "The workflow includes: identifying requirements, managing supply chain risks, defining Agent boundaries, defending against prompt injection, protecting tool access, securing Agent credentials, protecting Agent memory, and measuring what truly matters. Each stage has specific control measures."
+      },
+      {
+        "point": "Defense operations must accelerate to match the speed of autonomous threats, automating transactional tasks and focusing humans on decision-making.",
+        "explanation": "Automate evidence collection, enrichment, correlation, and documentation, but containment decisions, disclosure decisions, and customer communication decisions should be made by humans. Agentic SOAR is the next-generation security orchestration platform with adaptive response capabilities."
+      }
+    ],
+    "keyQuotes": [
+      "The organizations best suited to handle this change are not necessarily those most advanced in AI. Rather, they are those with solid fundamentals, where AI-assisted scanning finds few bugs from the start, and those that design their Agent deployment architecture from day one under the assumption of compromise.",
+      "When evaluating any control measure, ask one question: Does this make an attack impossible, or just more difficult?",
+      "Static API keys and shared service account passwords are the first things AI-assisted attackers find; even at the Foundation level, they are not legitimate entry points.",
+      "The answer is not to remove humans from the loop, but to move them from transactional tasks to decision-making.",
+      "Compliance deadlines are real, the threat landscape is changing, and retrofitting controls after the fact is more expensive than building them in from the start."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517425&idx=1&sn=c5eab9b48287990941f197fd6369f4d8",
+    "readUrl": "https://www.bestblogs.dev/article/4e86ff6b",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045426_259b6659",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_e02139",
+    "sourceName": "赛博禅心",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045426_259b6659",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "DEV",
+    "aiSubCategoryDesc": "AI Development",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 19,
+    "wordCount": 7732,
+    "readTime": 31,
+    "mediaDuration": null,
+    "authors": [
+      "赛博禅心"
+    ],
+    "publishTimeStamp": 1779937980000,
+    "publishDateStr": "05-28",
+    "publishDateTimeStr": "2026-05-28 11:13:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  }
+]

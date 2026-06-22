@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-06-09T18:18:07",
+  "mode": "rss-capture",
+  "source_ids": [
+    "google-deepmind",
+    "nvidia-technical-blog-ai",
+    "huggingface-blog",
+    "the-gradient"
+  ],
+  "discoveries": [
+    {
+      "source_id": "nvidia-technical-blog-ai",
+      "url": "https://developer.nvidia.com/blog/category/artificial-intelligence/feed/",
+      "entries": []
+    },
+    {
+      "source_id": "the-gradient",
+      "url": "https://thegradient.pub/rss/",
+      "entries": [
+        {
+          "title": "After Orthogonality: Virtue-Ethical Agency and AI Alignment",
+          "summary": "Preface This essay argues that rational people don’t have goals, and that rational AIs shouldn’t have goals. Human actions are rational not because we direct them at some final ‘goals,’ but because we align actions to practices [1] : networks of actions, action-dispositions, action-evaluation criteria,",
+          "published": "Wed, 18 Feb 2026 23:25:52 GMT",
+          "updated": "",
+          "id": "69879dd077c3d76051ac158f",
+          "authors": [
+            "Peli Grietzer"
+          ],
+          "links": [
+            {
+              "href": "https://thegradient.pub/virtue-ethics-ai-alignment/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "AGI Is Not Multimodal",
+          "summary": "\"In projecting language back as the model for thought, we lose sight of the tacit embodied understanding that undergirds our intelligence.\" –Terry Winograd The recent successes of generative AI models have convinced some that AGI is imminent. While these models appear to capture the essence of human",
+          "published": "Wed, 04 Jun 2025 14:00:29 GMT",
+          "updated": "",
+          "id": "683fb98b77c3d76051ac142c",
+          "authors": [
+            "Benjamin A. Spiegel"
+          ],
+          "links": [
+            {
+              "href": "https://thegradient.pub/agi-is-not-multimodal/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Shape, Symmetries, and Structure: The Changing Role of Mathematics in Machine Learning Research",
+          "summary": "What is the Role of Mathematics in Modern Machine Learning? The past decade has witnessed a shift in how progress is made in machine learning. Research involving carefully designed and mathematically principled architectures result in only marginal improvements while compute-intensive and engineering-first efforts that scale to ever larger training sets",
+          "published": "Sat, 16 Nov 2024 16:46:15 GMT",
+          "updated": "",
+          "id": "673686c693571d5c8c155078",
+          "authors": [
+            "Henry Kvinge"
+          ],
+          "links": [
+            {
+              "href": "https://thegradient.pub/shape-symmetry-structure/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "What's Missing From LLM Chatbots: A Sense of Purpose",
+          "summary": "LLM-based chatbots’ capabilities have been advancing every month. These improvements are mostly measured by benchmarks like MMLU, HumanEval, and MATH (e.g. sonnet 3.5, gpt-4o). However, as these measures get more and more saturated, is user experience increasing in proportion to these scores? If we envision a future",
+          "published": "Mon, 09 Sep 2024 17:28:48 GMT",
+          "updated": "",
+          "id": "66c6733993571d5c8c154fb1",
+          "authors": [
+            "Kenneth Li"
+          ],
+          "links": [
+            {
+              "href": "https://thegradient.pub/dialog/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "We Need Positive Visions for AI Grounded in Wellbeing",
+          "summary": "Introduction Imagine yourself a decade ago, jumping directly into the present shock of conversing naturally with an encyclopedic AI that crafts images, writes code, and debates philosophy. Won’t this technology almost certainly transform society — and hasn’t AI’s impact on us so far been",
+          "published": "Sat, 03 Aug 2024 17:00:43 GMT",
+          "updated": "",
+          "id": "66a4243393571d5c8c154f4e",
+          "authors": [
+            "Joel Lehman"
+          ],
+          "links": [
+            {
+              "href": "https://thegradient.pub/we-need-positive-visions-for-ai-grounded-in-wellbeing/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Financial Market Applications of LLMs",
+          "summary": "The AI revolution drove frenzied investment in both private and public companies and captured the public’s imagination in 2023. Transformational consumer products like ChatGPT are powered by Large Language Models (LLMs) that excel at modeling sequences of tokens that represent words or parts of words [2]. Amazingly, structural",
+          "published": "Sat, 20 Apr 2024 17:57:39 GMT",
+          "updated": "",
+          "id": "661762b993571d5c8c154ea7",
+          "authors": [
+            "Richard Dewey"
+          ],
+          "links": [
+            {
+              "href": "https://thegradient.pub/financial-market-applications-of-llms/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

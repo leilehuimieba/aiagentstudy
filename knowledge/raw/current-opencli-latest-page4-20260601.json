@@ -1,0 +1,1684 @@
+[
+  {
+    "id": "RAW_9dabcba8",
+    "notExist": null,
+    "originalTitle": "Introducing Music v2， our groundbreaking new music model",
+    "title": "Introducing Music v2， our groundbreaking new music model",
+    "oneSentenceSummary": "ElevenLabs announces Music v2, a new AI music generation model with improved vocals, instrumentation, compositional control, multilingual support, and reduced pricing.",
+    "summary": "ElevenLabs has launched Music v2, a significant upgrade to its AI music generation model. The new model delivers enhanced quality in vocals, instrumentation, and arrangement across all genres. Key new capabilities include improved inpainting for regenerating specific sections of a track, the ability to compose full songs section-by-section (intro, verse, chorus) while maintaining structural coherence, and better multilingual support for lyrics and vocals. Music v2 powers three distinct platforms: ElevenMusic for creators, ElevenAPI for developers, and ElevenCreative for brands. Alongside the release, ElevenLabs has reduced pricing by up to 50% for API users and 40% for Creative customers. The model is trained on licensed data and cleared for commercial use, with no sync fees or clearance delays.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "ElevenLabs",
+      "Music v2",
+      "AI Music Generation",
+      "Generative AI",
+      "AI Product"
+    ],
+    "mainPoints": [
+      {
+        "point": "Music v2 significantly improves the quality of AI-generated music, including vocals, instrumentation, and arrangement.",
+        "explanation": "The model can handle complex musical structures, transitioning between genres like opera and heavy metal, and sustaining fast rap with dense lyrics, all while maintaining musical coherence."
+      },
+      {
+        "point": "New features provide granular control over music creation, including improved inpainting and section-by-section composition.",
+        "explanation": "Users can now regenerate specific parts of a track (e.g., the bridge) without affecting others, and build full songs with intro, verse, and chorus sections that maintain structural continuity."
+      },
+      {
+        "point": "Music v2 is offered through three specialized platforms to serve different user groups: musicians, developers, and brands.",
+        "explanation": "ElevenMusic is a creative studio for musicians, ElevenAPI allows developers to embed music generation into their products, and ElevenCreative provides licensed music at scale for brands and content teams."
+      }
+    ],
+    "keyQuotes": [
+      "A single song can move from opera to heavy metal and back, sustain fast rap and dense lyrical delivery, and embed non-musical sound effects directly within the track, all without breaking musical coherence.",
+      "With improved inpainting, you can select any section of a track and regenerate just that part, tweaking the bridge without touching the chorus, leaving everything else exactly as it is.",
+      "The model is trained only on licensed data and cleared for commercial use, so every track you generate is yours to use --- no sync fees, no clearance delays, no restrictions on how you deploy it."
+    ],
+    "url": "https://elevenlabs.io/blog/introducing-music-v2",
+    "readUrl": "https://www.bestblogs.dev/article/9dabcba8",
+    "enclosureUrl": null,
+    "domain": "elevenlabs.io",
+    "cover": "https://eleven-public-cdn.elevenlabs.io/payloadcms/cexn5uqrbd-InApp%2016_9.webp",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_31dbd8",
+    "sourceName": "ElevenLabs Blog",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127065135_840a2ae0",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "PRODUCT",
+    "aiSubCategoryDesc": "AI 产品",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 19,
+    "wordCount": 505,
+    "readTime": 3,
+    "mediaDuration": null,
+    "authors": [
+      "Imogen Mulliner"
+    ],
+    "publishTimeStamp": 1779813218000,
+    "publishDateStr": "05-27",
+    "publishDateTimeStr": "2026-05-27 00:33:38",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_5877d882",
+    "notExist": null,
+    "originalTitle": "Arm Open-Sources Metis， an AI Security Framework Outperforming Traditional SAST Tools",
+    "title": "Arm Open-Sources Metis， an AI Security Framework Outperforming Traditional SAST Tools",
+    "oneSentenceSummary": "Arm has open-sourced Metis, an agentic AI security framework that uses semantic reasoning and RAG to autonomously uncover complex software vulnerabilities, achieving up to 10x higher true positive rates and 50% fewer false positives compared to traditional SAST tools.",
+    "summary": "Arm has open-sourced Metis, an agentic AI security framework designed to autonomously uncover complex software vulnerabilities that traditional static application security testing (SAST) tools often miss. Unlike pattern-based tools, Metis employs semantic reasoning and retrieval-augmented generation (RAG) to analyze cross-component dependencies, providing clear, natural language explanations for its findings. In internal benchmarks using GPT-5.5-Cyber, Metis achieved 98% accuracy in identifying vulnerabilities, compared to just 6% for traditional SAST. It supports any OpenAI-compatible LLM and a wide range of programming languages, including C, C++, Python, Go, TypeScript, and Rust. Metis is available under an Apache 2.0 license on GitHub and is currently monitoring over 130 software projects within Arm. The framework can operate alongside external SAST tools to validate findings and reduce false positives, helping engineering teams focus on critical issues.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Metis",
+      "AI Security",
+      "Agentic AI",
+      "SAST",
+      "RAG"
+    ],
+    "mainPoints": [
+      {
+        "point": "Metis uses agentic AI and semantic reasoning to detect complex vulnerabilities across codebases.",
+        "explanation": "Unlike traditional SAST tools that rely on fixed rules and pattern matching, Metis analyzes cross-component dependencies and applies semantic understanding to identify sophisticated security issues that span multiple functions or libraries."
+      },
+      {
+        "point": "Metis achieves significantly higher accuracy and lower false positive rates than traditional SAST tools.",
+        "explanation": "In Arm's internal benchmarks, Metis achieved 98% accuracy in identifying vulnerabilities compared to 6% for traditional SAST, with up to 10x higher true positive rates and approximately 50% fewer false positives."
+      },
+      {
+        "point": "Metis provides clear, actionable explanations for its findings to accelerate remediation.",
+        "explanation": "Beyond simply flagging vulnerabilities, Metis generates natural language summaries that give developers the context they need to understand and address issues quickly, reducing wasted effort during validation and review."
+      },
+      {
+        "point": "Metis is open source, supports multiple LLMs and languages, and can integrate with existing SAST tools.",
+        "explanation": "Released under Apache 2.0, Metis works with any OpenAI-compatible LLM, supports C, C++, Python, Go, TypeScript, Rust, and more, and can validate findings from external SAST tools to reduce false positives."
+      }
+    ],
+    "keyQuotes": [
+      "By combining advanced analysis techniques with AI-enabled workflows, Metis identifies more sophisticated security vulnerabilities that are difficult to detect using existing approaches, as well as identifying them earlier in the process.",
+      "False positives consume valuable engineering time and can reduce trust in automated tooling. By reducing false positives, Metis helps engineering teams focus on the issues that matter most, accelerating remediation and reducing wasted effort during validation and review.",
+      "In Arm's internal benchmarks using GPT-5.5-Cyber as the base model, Metis achieved 98% accuracy in identifying vulnerabilities, compares to just 6% for traditional SAST, according to the company."
+    ],
+    "url": "https://www.infoq.com/news/2026/05/arm-metis-agentic-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "readUrl": "https://www.bestblogs.dev/article/5877d882",
+    "enclosureUrl": null,
+    "domain": "infoq.com",
+    "cover": "https://res.infoq.com/news/2026/05/arm-metis-agentic-security/en/headerimage/arm-metis-1780165811953.jpeg",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_f152e8",
+    "sourceName": "InfoQ",
+    "priority": "HIGH",
+    "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "DEV",
+    "aiSubCategoryDesc": "AI Development",
+    "category": "Programming_Technology",
+    "categoryDesc": "Programming",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 17,
+    "wordCount": 479,
+    "readTime": 2,
+    "mediaDuration": null,
+    "authors": [
+      "Sergio De Simone"
+    ],
+    "publishTimeStamp": 1780167600000,
+    "publishDateStr": "Yesterday",
+    "publishDateTimeStr": "2026-05-31 03:00:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_63c1abe7",
+    "notExist": null,
+    "originalTitle": "Z Tech｜对话 Andrew Dai：14 年 DeepMind 生涯，见证 PaLM 到 Gemini，下一站押注视觉推理",
+    "title": "Z Tech | A Conversation with Andrew Dai: 14 Years at DeepMind, Witnessing the Evolution from PaLM to Gemini, and Betting on Visual Reasoning as the Next Step",
+    "oneSentenceSummary": "Former Google DeepMind Research Scientist and Director Andrew Dai reflects on his 14-year career, from the early days of Google Brain to the evolution of Gemini, and explains why he is betting on visual reasoning as the key to the next generation of AI breakthroughs.",
+    "summary": "This article is an in-depth interview by Z Potentials with Andrew Dai, former Research Scientist and Director at Google DeepMind. Andrew spent over 14 years at Google, deeply involved in the evolution of large models from PaLM to Gemini, and co-authored foundational papers on language model pre-training, supervised fine-tuning, and MoE architecture. In the interview, he recalls the innovative culture of the early 40-person Google Brain team and the pivotal transition of PaLM 2 from a research project to a deployed product. He shares the logic behind leaving Google to found Elorian AI: open-source models lower the barrier to entry, text capabilities have matured, and visual reasoning represents a vast, under-explored market. Andrew introduces the concept of the 'jagged frontier,' arguing that AI capabilities do not grow linearly; instead, they far surpass humans in some areas while remaining fragile in basic abilities like counting and spatial understanding. He criticizes current large models for essentially reasoning within 'text space' and lacking true 'world understanding,' predicting a future of 'specialized Frontier Models' where visual reasoning and multimodal understanding are core to the next generation of AI.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Andrew Dai",
+      "Visual Reasoning",
+      "Multimodal",
+      "Google DeepMind",
+      "Gemini"
+    ],
+    "mainPoints": [
+      {
+        "point": "Andrew Dai believes current large models lack true 'world understanding' and their reasoning is still built upon text space.",
+        "explanation": "He points out that models can generate realistic images and text but fail to grasp basic physical relationships, such as counting or spatial awareness. True reasoning should be based on vision and multimodality, not just text, as humans and animals possess these abilities before acquiring language."
+      },
+      {
+        "point": "He proposes the 'jagged frontier' concept, arguing that AI capability development is highly uneven, posing significant safety risks.",
+        "explanation": "AI has far surpassed humans in some areas (e.g., Go, coding) but remains fragile in basic capabilities like counting. This unevenness could lead to disasters in critical tasks (e.g., safe driving) due to a model's failure in a key ability, and this risk is easily overlooked."
+      },
+      {
+        "point": "Andrew believes the future will be an era of 'specialized Frontier Models,' where multimodality and coding abilities are fundamentally in conflict.",
+        "explanation": "He observes that incorporating large amounts of multimodal data can degrade a model's coding ability, and vice versa. Therefore, it is difficult to excel at both simultaneously within a single model. His new company, Elorian AI, will focus on building models specifically optimized for multimodal reasoning."
+      },
+      {
+        "point": "His timing for starting a company stems from the lowered barrier due to open-source models and the 'golden opportunity window' created by the maturity of text capabilities.",
+        "explanation": "Andrew believes that open-source models are rapidly approaching the capabilities of closed-source ones, allowing new companies to avoid building infrastructure from scratch. Meanwhile, text capabilities are very mature, while the field of visual reasoning still has a vast gap, making this the optimal time to start a company."
+      }
+    ],
+    "keyQuotes": [
+      "Current multimodal models are the same. They can generate images and videos that look very realistic. Ordinary users can hardly tell what's real anymore. But true professionals, like directors, photographers, and artists, can spot problems immediately. For example: 'Why does this person have six fingers?' So our current stage is really just 'looking like understanding.'",
+      "Perhaps the most dangerous thing in the future is not that AI can't think, but that humans mistakenly believe it already can.",
+      "I believe: the future will be an era of 'specialized Frontier Models.' What we are doing now is building a model specifically optimized for multimodal reasoning.",
+      "The current state of world models is roughly equivalent to the stage of language models twenty years ago. Back then, we knew we wanted to build some kind of system with advanced capabilities. But no one knew what it would eventually become.",
+      "Most current discussions about AGI are based on the assumption of a 'smooth frontier'... But reality might not be like that. What I've seen in the development over the past decade is a highly jagged frontier."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247515883&idx=1&sn=331d2d9e9e5682622e95cf4839872bfd",
+    "readUrl": "https://www.bestblogs.dev/article/63c1abe7",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045446_f5b58ebf",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_a8c202",
+    "sourceName": "Z Potentials",
+    "priority": "LOW",
+    "sourceImage": "https://image.jido.dev/20251127045446_f5b58ebf",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "NEWS",
+    "aiSubCategoryDesc": "AI News",
+    "category": "Business_Tech",
+    "categoryDesc": "Business & Tech",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 15,
+    "wordCount": 13595,
+    "readTime": 55,
+    "mediaDuration": null,
+    "authors": [
+      "Z Potentials"
+    ],
+    "publishTimeStamp": 1779858240000,
+    "publishDateStr": "05-27",
+    "publishDateTimeStr": "2026-05-27 13:04:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_616933e5",
+    "notExist": null,
+    "originalTitle": "MiMo-V2.5 系列推理全链路优化：将 Hybrid SWA 效率推向极致",
+    "title": "MiMo-V2.5 Series Inference Full-Link Optimization: Pushing Hybrid SWA Efficiency to the Extreme",
+    "oneSentenceSummary": "This article details the engineering optimization practices in the full inference pipeline of Xiaomi's MiMo-V2.5 series models, systematically translating the theoretical efficiency advantages of the Hybrid SWA architecture into production reality.",
+    "summary": "The article focuses on the MiMo-V2.5 series models (integrating Hybrid SWA, MoE, and multimodal Encoder), documenting the full-link engineering practices from KVCache management, hierarchical caching systems, SWA prefix caching trees, scheduling strategies, Prefill/Decode execution pipelines, to multimodal optimization. Core highlights include: splitting KVCache into Full Attention and SWA dual pools to achieve strict O(W) storage constraints, improving capacity efficiency by approximately 7x; designing a SWA-aware prefix caching tree to resolve the false hit issue of traditional RadixAttention in SWA mode; developing the self-owned GCache high-performance distributed cache, leveraging co-located GPU machines to achieve zero additional storage cost; implementing LLM-Router for KVCache affinity scheduling, boosting L2 cache hit rate by 25%; optimizing Prefill performance through EP reduction, length bucketing, and NUMA conflict fixes; enhancing Decode throughput via full SWA support and PD separation pre-allocation; and multimodal optimizations including EPD separation, GPU preprocessing, and parallel video decoding. Ultimately, the server-side KV Cache hit rate averages 93%, exceeding 95% in personal user scenarios.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Hybrid SWA",
+      "KVCache",
+      "Inference Optimization",
+      "MoE",
+      "Multimodal"
+    ],
+    "mainPoints": [
+      {
+        "point": "The Hybrid SWA architecture reduces KVCache storage to approximately 1/7 of Full Attention by mixing window attention.",
+        "explanation": "Of the model's 70 layers, only 10 are Full Attention, while the remaining 60 are SWA with a sliding window size of 128, significantly reducing computation and storage costs in long-context scenarios."
+      },
+      {
+        "point": "The dual-pool KVCache design is key to unlocking the structural advantages of Hybrid SWA.",
+        "explanation": "KVCache is split into two independent pools for Full Attention and SWA, managed physically separately while exposing a single sequence view logically, achieving strict O(W) storage constraints and approximately 7x capacity efficiency improvement."
+      },
+      {
+        "point": "The SWA-aware prefix caching tree resolves the false hit issue of traditional RadixAttention in SWA mode.",
+        "explanation": "A window-safe length matching rule is introduced to ensure the validity of KV in hit segments; eviction paths are tied to request lifecycles; nodes simultaneously carry both Full Attention and SWA indices for efficient reuse."
+      },
+      {
+        "point": "The self-developed GCache distributed cache achieves zero additional storage cost by co-locating with GPU machines.",
+        "explanation": "GCache takes over part of the GPU machines' memory and NVMe SSDs, supporting memory/disk/remote multi-level caching with RDMA communication and full-link zero-copy capability, ensuring availability with a single replica."
+      },
+      {
+        "point": "Multimodal inference achieves a 2x Encoder throughput improvement through EPD separation, GPU preprocessing, and parallel video decoding.",
+        "explanation": "Supports asynchronous replication of multimodal Embedding data with parallel inference, Encoder data parallelism, and cross-request group batching. Image preprocessing is moved to the GPU, and video decoding is parallelized via multi-threading, reducing 1-hour video processing latency from 156s to 23s."
+      }
+    ],
+    "keyQuotes": [
+      "The core idea of Hybrid SWA is to hierarchically mix local window attention with global attention: the vast majority of layers compute attention only within a local window, while only a few key layers retain a global perspective.",
+      "Theoretical architectural advantages do not naturally translate into efficiency gains in real online systems.",
+      "SWA compressing KV volume to 1/7 is a capacity-level gain, while the hit rate is a reuse-level gain. The product of the two determines the actual computational cost curve of the prefill phase.",
+      "The eviction of KVCache fundamentally stems from storage capacity constraints. When capacity approaches saturation, the system must prioritize retaining the KV Cache generated by new requests.",
+      "The inference efficiency of the MiMo-V2.5 series models is not the result of a single breakthrough in one area, but rather the outcome of multi-dimensional collaborative optimization."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTkxMTM2NA==&mid=2247484755&idx=1&sn=419c97caff4d5281e68ede4d77c97ecc",
+    "readUrl": "https://www.bestblogs.dev/article/616933e5",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20260527052101_468affc.jpeg",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_443bcb38",
+    "sourceName": "Xiaomi MiMo",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20260527052101_468affc.jpeg",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "DEV",
+    "aiSubCategoryDesc": "AI Development",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 14,
+    "wordCount": 8765,
+    "readTime": 36,
+    "mediaDuration": null,
+    "authors": [
+      "Xiaomi MiMo"
+    ],
+    "publishTimeStamp": 1780137540000,
+    "publishDateStr": "05-30",
+    "publishDateTimeStr": "2026-05-30 18:39:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_8720f502",
+    "notExist": null,
+    "originalTitle": "全是 Web 没 CLI 怎么行：一次把 StarAgent WebTerminal 改造成",
+    "title": "All Web, No CLI? How We Transformed StarAgent WebTerminal",
+    "oneSentenceSummary": "This article details how to transform Alibaba Cloud's StarAgent WebTerminal into an Agent-friendly CLI tool, enabling remote shell execution, file transfer, and interactive debugging via the 'wt' command-line tool, allowing AI Agents to perform remote troubleshooting like an engineer.",
+    "summary": "This article documents the author's complete practice of transforming Alibaba Cloud's StarAgent/Drogo WebTerminal into a CLI tool named 'wt'. The core idea is: WebTerminal continues to handle official authorization and connection links; the 'wt' CLI turns remote shell, file transfer, and interactive programs into callable capabilities; Skills turn troubleshooting experience into executable methods. The article details key technical implementations like wsh/wcp black-screen operations, session multiplexing design, command execution and output capture, file API calls, and the interactive debugging HTTP control plane. Through two acceptance cases—GPU hang analysis and Emacs + eshell + gdb coredump debugging—it demonstrates how an Agent can dynamically execute commands, observe results, and make decisions like an engineer. The article also discusses design trade-offs (why not connect directly via SSH, why not use built-in commands, why use HTTP interaction) and summarizes reusable engineering patterns: abstract the execution plane before solidifying scenarios, decouple authorization from execution, make outputs saveable, parseable, and reviewable, define Skill boundaries and methods, design interactive programs as state machines, and protocolize file transfer.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "WebTerminal",
+      "CLI",
+      "Agent",
+      "Remote Troubleshooting",
+      "AI Programming"
+    ],
+    "mainPoints": [
+      {
+        "point": "Abstract WebTerminal into an Agent-friendly CLI execution plane, rather than operating on the DOM.",
+        "explanation": "By using the 'wt' command-line tool, the Agent can control the remote end like a regular shell, executing commands, transferring files, and performing interactive debugging, avoiding the instability and inefficiency of operating a browser DOM."
+      },
+      {
+        "point": "Decouple authorization from execution: the browser handles authorization, the CLI handles execution.",
+        "explanation": "WebTerminal continues to handle official connection links like SSO, roles, auditing, and heartbeats. The CLI only reuses established sessions, does not save SSO tokens, and does not bypass the login process, balancing security and efficiency."
+      },
+      {
+        "point": "Interactive debugging uses an HTTP control plane, supporting dynamic Agent decision-making.",
+        "explanation": "'wt interact' starts a local HTTP server. The Agent sends only one command at a time and decides the next action based on the previous output, enabling true interactive debugging rather than injecting all commands at once."
+      },
+      {
+        "point": "Skills are operation guides, not rigid code; scenario logic is left to the Agent.",
+        "explanation": "Skills describe operation methods, risk boundaries, and recommended command templates, without binding to specific IPs or cases. The Agent dynamically plans the execution path based on the live situation, the CLI remains stable, and scenario knowledge can be iterated quickly."
+      },
+      {
+        "point": "Outputs must be saveable, parseable, and reviewable, supporting multi-format capture.",
+        "explanation": "Command output is simultaneously saved in three formats: raw ANSI, plain text, and xterm snapshot. This ensures both the Agent and the human have reliable on-site information, avoiding the ambiguous state of 'I think I saw it just now'."
+      }
+    ],
+    "keyQuotes": [
+      "A Skill is essentially an instruction manual—the 'turn this first, then connect that, don't stick your hand in the fan' guide taped to the toolbox lid. The one that actually gets the job done must be the CLI: clear parameters, stable behavior, parseable output, reproducible errors, and evidence that can be saved to disk.",
+      "The CLI provides stable hands and feet, the Skill provides the operational framework, and the Agent is responsible for on-the-spot judgment. Don't use an Agent like a fancy crontab; it will feel underutilized, and we'll be the ones losing out.",
+      "Abstract the execution plane first, then solidify the scenarios. What an Agent often lacks is not a specific button, but a stable command/observation loop. Don't start by asking 'Can we make a GPU hang button?'—a button can't save a complex live situation.",
+      "From GPU hang to coredump debugging, the real value isn't a specific set of commands, but the Agent's ability to act like an engineer: observe, judge, execute, and observe again.",
+      "Protocolize whenever possible. Less mysticism, more checksums."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560436&idx=1&sn=c020c04dfd864fcb0791d47822e9df0c",
+    "readUrl": "https://www.bestblogs.dev/article/8720f502",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_26c5f1",
+    "sourceName": "阿里云开发者",
+    "priority": "HIGH",
+    "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "AI_CODING",
+    "aiSubCategoryDesc": "AI Coding",
+    "category": "Programming_Technology",
+    "categoryDesc": "Programming",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 13,
+    "wordCount": 8487,
+    "readTime": 34,
+    "mediaDuration": null,
+    "authors": [
+      "阿里云开发者"
+    ],
+    "publishTimeStamp": 1780273800000,
+    "publishDateStr": "Today",
+    "publishDateTimeStr": "2026-06-01 08:30:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_5a4b3b94",
+    "notExist": null,
+    "originalTitle": "Coding agents in the social sciences",
+    "title": "Coding agents in the social sciences",
+    "oneSentenceSummary": "A survey of 1,260 social scientists reveals that while 81% have used AI chatbots, only 20% have adopted coding agents, with adoption sharply skewed by gender, career stage, and university prestige, and early users show more working papers but not more journal submissions.",
+    "summary": "This research article from Anthropic presents findings from a survey of 1,260 quantitative social scientists fielded in early 2026, examining the adoption and impact of AI coding agents like Claude Code. The study finds that while 81% of respondents have used AI chatbots for research, only 20% regularly use coding agents. Adoption is highly uneven: economists (39%) and political scientists (25%) lead, while public health (6%) and education (4%) lag. Researchers with typically male names use coding agents at twice the rate of those with female names, and top university researchers are 40% more likely to adopt them. Coding agent users report starting more projects and posting more working papers and grant proposals, but not more journal submissions, suggesting productivity gains may be concentrated in early research stages. The authors caution these are descriptive, not causal, findings. Researchers are optimistic about AI boosting paper-writing productivity but less confident about positive effects on the broader field of social science.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Coding Agents",
+      "Social Science",
+      "AI Adoption",
+      "Research Productivity",
+      "Claude Code"
+    ],
+    "mainPoints": [
+      {
+        "point": "Coding agent adoption among social scientists is low and highly uneven.",
+        "explanation": "Only 20% of surveyed researchers use coding agents regularly, with adoption rates varying dramatically by discipline (39% in economics vs. 4% in education), career stage, gender, and university prestige."
+      },
+      {
+        "point": "Early adopters show increased output in early research stages but not in journal submissions.",
+        "explanation": "Coding agent users post more working papers and grant proposals, but there is no evidence they submit more papers to journals, possibly due to the recent nature of adoption or tools being more useful for initial exploration than final polishing."
+      },
+      {
+        "point": "Researchers are more optimistic about AI's impact on individual productivity than on the field as a whole.",
+        "explanation": "While 88% of respondents rate AI's potential to boost paper-writing productivity above 5 out of 10, 70% are more optimistic about personal productivity gains than about broader positive effects on social science, citing concerns about congestion and selective reporting."
+      },
+      {
+        "point": "The most common use of AI in social science research is for coding and editing, not writing.",
+        "explanation": "97% of coding agent users and 77% of other AI users employ AI to generate analysis code, followed by editing prose. Only a third have used AI to draft prose, countering the narrative that AI is primarily used for automated paper writing."
+      }
+    ],
+    "keyQuotes": [
+      "The vast majority of respondents (81%) have tried using AI chatbots in research, particularly for writing code and editing prose. But only 20% have adopted coding agents---tools like Claude Code that autonomously write and execute analysis code---into their work.",
+      "There are sharp disparities in use of coding agents. Twice as many researchers with typically male names use coding agents as those with female names. Researchers at top universities are 40% more likely than others to use coding agents.",
+      "Coding agent users are starting more projects, posting more working papers, submitting more grants, and possibly sending out more conference submissions.",
+      "We find no evidence that coding agent users are submitting more new papers to journals or resubmitting papers more quickly.",
+      "Researchers are more optimistic about AI helping write publishable papers than about the effects of AI on the social sciences as a whole."
+    ],
+    "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
+    "readUrl": "https://www.bestblogs.dev/article/5a4b3b94",
+    "enclosureUrl": null,
+    "domain": "anthropic.com",
+    "cover": "https://www.anthropic.com/api/opengraph-illustration?name=Object%20CodeChatCode&backgroundColor=olive",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SRC_fb4834ec",
+    "sourceName": "Anthropic Research",
+    "priority": "MEDIUM",
+    "sourceImage": null,
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "NEWS",
+    "aiSubCategoryDesc": "AI News",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 13,
+    "wordCount": 2716,
+    "readTime": 11,
+    "mediaDuration": null,
+    "authors": [
+      "Anthropic Research"
+    ],
+    "publishTimeStamp": 1779904270000,
+    "publishDateStr": "05-28",
+    "publishDateTimeStr": "2026-05-28 01:51:10",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_897d1f95",
+    "notExist": null,
+    "originalTitle": "HorizonVault 技术深潜：如何在 HDD 上做出 100GB/s+ 级大吞吐分布式存储｜得物技术",
+    "title": "HorizonVault Deep Dive: Achieving 100GB/s+ Distributed Storage Throughput on HDDs | Dewu Tech",
+    "oneSentenceSummary": "The Dewu Tech team details the architecture of their self-developed high-throughput distributed storage engine HorizonVault, explaining how it leverages sequential appending, disk isolation, state-aware scheduling, and replica synchronization to achieve 100GB/s+ cluster write throughput on commodity HDDs, addressing performance, cost, and stability issues in Kafka remote storage scenarios.",
+    "summary": "This article provides an in-depth analysis of HorizonVault, a distributed storage engine developed by the Dewu Tech team. Designed for high-capacity, low-cost scenarios such as Kafka remote storage and cold/warm data tiering, its core goal is to deliver high throughput, low jitter, and recoverable storage capabilities on commodity HDDs. Following a performance-centric approach, the article breaks down HorizonVault's overall architecture, including: disk-based storage structures (DiskStore, Replica, Log/Index), a write path based on sequential appending and a read path based on indexing, disk governance and thread isolation mechanisms, network backpressure control, state-aware scheduling between Broker and Meta, Leader/Follower HA replication strategies, and seamless integration via the Kafka Tiered Storage plugin. The article emphasizes that by elevating disks to first-class system resources and building a closed-loop scheduling system operating around a resource pool, HorizonVault successfully transforms the capacity advantage of commodity HDDs into cluster-level throughput while localizing issues like slow disks or replicas, achieving a unified balance of performance, cost, and stability.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Distributed Storage",
+      "Kafka",
+      "HDD",
+      "High Throughput",
+      "System Design"
+    ],
+    "mainPoints": [
+      {
+        "point": "HorizonVault achieves 100GB/s+ cluster throughput on HDDs through sequential appending, multi-disk parallelism, and state-aware scheduling.",
+        "explanation": "The core formula is single-disk sequential throughput multiplied by available disks, parallel nodes, and effective utilization. The system overcomes HDD performance bottlenecks by compressing random I/O onto small indices and leveraging distributed parallel writes to dilute the capacity limit of individual disks."
+      },
+      {
+        "point": "Disks are elevated to first-class system resources with status, watermarks, threads, and isolation capabilities, enabling fine-grained resource governance.",
+        "explanation": "Each disk is abstracted as a DiskStore with its own executor, cache, and rate limiter. The system automatically isolates slow disks through disk-level inflight tracking and load response time analysis, preventing single points of failure from escalating into global issues."
+      },
+      {
+        "point": "The write path is decoupled from HA replication, balancing throughput and acknowledgment semantics through ACK levels and event-driven PutReqHolder.",
+        "explanation": "Normal writes are acknowledged after local sequential appending on the leader, while strongly confirmed requests use a PutReqHolder to wait for flush or follower sync events. This avoids direct blocking of write threads, ensuring high throughput on the HDD backend."
+      },
+      {
+        "point": "Broker and Meta collaborate on state-aware resource scheduling, ensuring even traffic distribution and avoiding pressure points.",
+        "explanation": "Meta is responsible for evenly distributing resources during creation and migration phases, while Broker selects healthy partitions and leaders for each request, excluding recently used hot targets. Together, they determine the system's throughput ceiling."
+      }
+    ],
+    "keyQuotes": [
+      "HorizonVault transforms 'writing a file' into 'a distributed scheduling decision based on cluster resource status, disk watermarks, thread isolation, network backpressure, and replica sync progress.'",
+      "For an HDD resource pool, this restraint is itself a part of performance.",
+      "HorizonVault does not treat HDDs as ordinary mount directories. It elevates disks to first-class system resources: with status, watermarks, threads, caches, isolation, and they are also included in Meta's global resource scheduling.",
+      "High throughput relies on healthy requests progressing within a controlled queue, not on unconditionally accepting more requests.",
+      "This closed loop ultimately serves a single goal: solving performance, cost, and stability together."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247544708&idx=1&sn=cc8d064185a5bdc27fd7748f0958182d",
+    "readUrl": "https://www.bestblogs.dev/article/897d1f95",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045403_cb8f24c8",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_af8ac9",
+    "sourceName": "得物技术",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045403_cb8f24c8",
+    "mainDomain": "Programming_Technology",
+    "mainDomainDesc": "Programming",
+    "aiSubCategory": "SE_PRACTICE",
+    "aiSubCategoryDesc": "Engineering Practice",
+    "category": "Programming_Technology",
+    "categoryDesc": "Programming",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 13,
+    "wordCount": 7420,
+    "readTime": 30,
+    "mediaDuration": null,
+    "authors": [
+      "得物技术"
+    ],
+    "publishTimeStamp": 1779877800000,
+    "publishDateStr": "05-27",
+    "publishDateTimeStr": "2026-05-27 18:30:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_bb9fd95c",
+    "notExist": null,
+    "originalTitle": "DongSQL V1.2.0 发布：持续深耕零售数据库内核，性能与稳定性双重跃升",
+    "title": "DongSQL V1.2.0 Released: Deepening the Retail Database Kernel with Dual Leaps in Performance and Stability",
+    "oneSentenceSummary": "JD.com's self-developed database kernel, DongSQL V1.2.0, is officially released, achieving significant performance breakthroughs in core dimensions such as hot row update, master-slave replication, execution plan caching, massive table startup, and SIMD acceleration, providing a more solid technical foundation for retail scenarios.",
+    "summary": "This article, published by JD.com's retail database team, details the core technical upgrades of the self-developed database kernel, DongSQL V1.2.0. The new version achieves major breakthroughs in several key areas: significantly improving high-concurrency write and master-slave replication performance through group commit unicast notification and semi-synchronous replication optimization; introducing execution plan caching to avoid regenerating execution plans, notably enhancing OLTP query performance; expanding the support scope for single-point query optimization, adding support for unique indexes and VARCHAR/CHAR types; innovatively utilizing file extended attributes (xattr) for ultra-fast startup of massive tables, reducing startup time for millions of tables from minutes to seconds; using AVX2 instruction set to accelerate SQL digest computation; most notably, the hot row update optimization, through a batch merge mechanism for SQL layer cache updates, achieves up to a 9x TPS improvement and a 95% latency reduction in high-concurrency scenarios; additionally, it adds support for stress testing with live traffic, porting of the Statement Outline feature (version 5.7), and multiple monitoring and performance optimizations. The article provides detailed performance test data and best practice recommendations, showcasing JD.com's deep expertise in database kernel technology.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "DongSQL",
+      "Database Kernel",
+      "MySQL",
+      "Performance Optimization",
+      "Hot Row Update"
+    ],
+    "mainPoints": [
+      {
+        "point": "DongSQL V1.2.0 significantly improves high-concurrency write and master-slave replication performance through group commit unicast notification and semi-synchronous replication optimization.",
+        "explanation": "Replaces traditional broadcast wake-up with sequential unicast wake-up to avoid thundering herd problems and lock contention; optimizes binlog position update timing and relay log flushing during ACK, achieving up to a 25% performance improvement for semi-synchronous replication in version 8.0."
+      },
+      {
+        "point": "Introduces execution plan caching (Plan Cache) to avoid regenerating execution plans, notably enhancing OLTP query performance.",
+        "explanation": "Caches execution plans for SELECT statements, particularly beneficial for high-concurrency short query scenarios that frequently execute the same SQL patterns, effectively reducing CPU consumption."
+      },
+      {
+        "point": "The hot row update optimization, through a batch merge mechanism for SQL layer cache updates, achieves up to a 9x TPS improvement in high-concurrency scenarios.",
+        "explanation": "Abandons the traditional serial lock-waiting approach, adopting a Leader-Follower model where Follower threads read data directly from the SQL layer cache, reducing B+ tree traversal and deadlock detection overhead, amortizing network latency, and achieving a peak of 34,127 TPS with 128 threads."
+      },
+      {
+        "point": "Utilizes file extended attributes (xattr) for ultra-fast startup of massive tables, significantly shortening failure recovery time.",
+        "explanation": "Stores the space id information of tablespace files in file extended attributes, eliminating the need to parse the first page of each file during startup, reducing the startup time for 1 million tables from minutes to seconds."
+      },
+      {
+        "point": "Adds support for stress testing with live traffic, ensuring business SQL execution priority during stress tests via a low-priority queue.",
+        "explanation": "Leverages MSG_PEEK pre-read technology and an automatic switching mechanism to route stress test SQL with the DONGSQL_LOW_PRIO Hint to a low-priority queue, achieving up to a 911x improvement in user traffic TPS under 512-concurrency stress tests."
+      }
+    ],
+    "keyQuotes": [
+      "DongSQL V1.2.0 achieves major breakthroughs in multiple dimensions, including hot row update optimization, master-slave replication performance, execution plan caching, stress testing with live traffic support, massive table startup speed, and SIMD acceleration.",
+      "Abandoning the traditional 'serial lock-waiting' approach, it introduces a batch merge mechanism for SQL layer cache updates, fundamentally breaking the physical bottlenecks of UPDATE serial execution and network latency.",
+      "After enabling hotspot, the average latency under high concurrency drops from 72.69ms to 3.78ms, a 95% reduction.",
+      "In the 512-concurrency stress test scenario, user traffic TPS improves by up to 911x, average latency decreases by 90%, and tp99 latency decreases by 66-71%.",
+      "JD.com's retail database team consistently adheres to the core philosophy of 'business value driving technological innovation,' continuously deepening its expertise in database kernel technology."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502298&idx=1&sn=a0266d36073457f2716c803cddbf4a09",
+    "readUrl": "https://www.bestblogs.dev/article/bb9fd95c",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20260527123645_6312820.jpeg",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_146282",
+    "sourceName": "京东技术",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20260527123645_6312820.jpeg",
+    "mainDomain": "Programming_Technology",
+    "mainDomainDesc": "Programming",
+    "aiSubCategory": "SE_BACKEND",
+    "aiSubCategoryDesc": "Backend & Architecture",
+    "category": "Programming_Technology",
+    "categoryDesc": "Programming",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 11,
+    "wordCount": 6794,
+    "readTime": 28,
+    "mediaDuration": null,
+    "authors": [
+      "京东技术"
+    ],
+    "publishTimeStamp": 1779881220000,
+    "publishDateStr": "05-27",
+    "publishDateTimeStr": "2026-05-27 19:27:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_d26fbb0c",
+    "notExist": null,
+    "originalTitle": "Gamification 2.0. Beyond Points and Badges: Designing for Players， Not Metrics. Chapter 3: The Framework",
+    "title": "Gamification 2.0. Beyond Points and Badges: Designing for Players， Not Metrics. Chapter 3: The Framework",
+    "oneSentenceSummary": "This article introduces a genre-based framework for gamification 2.0, arguing that effective design must align with the psychological hooks of specific game genres rather than relying on generic points and badges.",
+    "summary": "This article, the third in a series on Gamification 2.0, presents a core framework: effective gamification must be based on a chosen game genre, not a random collection of mechanics. It argues that different genres attract players through fundamentally different psychological hooks. The article then analyzes seven major game genres: Narrative-driven/RPGs (story, identity, investment), Action/Twitch-based (feel, flow, mastery), Strategy/4X (depth, exploration, optimization, social obligation), Puzzle (insight, elegance, self-pacing), Simulation/Management (ownership, growth, experimentation), Sandbox/Open-ended (freedom, creativity, emergent goals), and Social/Multiplayer (social proof, status, teamwork). For each genre, it details the target audience, core psychological hooks, and actionable lessons for product designers. The author emphasizes that designers must intentionally choose a genre that aligns with their app's natural purpose and user base, and then design mechanics that tap into that genre's core motivational structure, moving beyond superficial rewards to create genuinely engaging experiences.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Gamification",
+      "Game Design",
+      "UX Design",
+      "User Engagement",
+      "Product Design"
+    ],
+    "mainPoints": [
+      {
+        "point": "Effective gamification requires choosing a specific game genre, not mixing random mechanics.",
+        "explanation": "Different game genres (RPG, Action, Strategy, Puzzle, etc.) attract players through distinct psychological hooks. Designers must identify which genre aligns with their app's purpose and user base, then design mechanics that tap into that genre's core motivational structure."
+      },
+      {
+        "point": "RPG mechanics can create deep engagement through narrative arcs and identity investment.",
+        "explanation": "By framing user journeys as stories with milestones that represent real capability development, apps can build emotional investment and a sense of becoming someone new, rather than just tracking arbitrary progress."
+      },
+      {
+        "point": "Action games teach the importance of immediate, satisfying feedback on core interactions.",
+        "explanation": "The core action of using an app should feel good in itself, with responsive controls, satisfying animations, and audio feedback. This 'juice' makes the task rewarding regardless of delayed rewards like points or badges."
+      },
+      {
+        "point": "Strategy games show the power of long-term planning, meaningful trade-offs, and social commitment.",
+        "explanation": "Allowing users to make plans with visible long-term payoffs, creating systems with genuine trade-offs, and leveraging cooperative accountability (e.g., alliance mechanics) can drive deeper, more sustained engagement than daily streaks."
+      },
+      {
+        "point": "Puzzle games demonstrate the value of 'aha!' moments and a perfect difficulty curve.",
+        "explanation": "Designing for insight and discovery, rather than just instruction, creates powerful learning and satisfaction. A carefully calibrated difficulty curve that adapts to user performance keeps users in a flow state, avoiding boredom or frustration."
+      }
+    ],
+    "keyQuotes": [
+      "Genre matters: the missing framework... there is no single 'game psychology.'",
+      "Stop treating your user journey as a feature checklist. Give users a story arc, not just a progress bar.",
+      "Make the core interaction feel good. This is where most productivity apps fail catastrophically. They treat every action as a chore to get through to earn a reward.",
+      "Reward thoughtful choices, not just activity. Stop measuring engagement by DAU alone.",
+      "Give users something to build, not just consume."
+    ],
+    "url": "https://uxmag.com/articles/gamification-2-0-beyond-points-and-badges-designing-for-players-not-metrics-chapter-3-the-framework",
+    "readUrl": "https://www.bestblogs.dev/article/d26fbb0c",
+    "enclosureUrl": null,
+    "domain": "uxmag.com",
+    "cover": "https://uxmag.com/wp-content/uploads/2026/05/Gamification-2.0.-Beyond-Points-and-Badges_-Designing-for-Players-Not-Metrics.-Chapter-3_-The-Framework-UX-Mag-site-Medium.png",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_de66d0",
+    "sourceName": "UX Magazine",
+    "priority": "LOW",
+    "sourceImage": "https://image.jido.dev/20251127045344_cropped-android-chrome-512x512-1-1-32x32.png",
+    "mainDomain": "Product_Development",
+    "mainDomainDesc": "Product & Design",
+    "aiSubCategory": "PD_DESIGN",
+    "aiSubCategoryDesc": "UX/UI Design",
+    "category": "Product_Development",
+    "categoryDesc": "Product & Design",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 11,
+    "wordCount": 4668,
+    "readTime": 19,
+    "mediaDuration": null,
+    "authors": [
+      "Nataliia Vlasenko"
+    ],
+    "publishTimeStamp": 1779771784000,
+    "publishDateStr": "05-26",
+    "publishDateTimeStr": "2026-05-26 13:03:04",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_2c1ca519",
+    "notExist": null,
+    "originalTitle": "NVIDIA Dynamo Snapshot: Fast Startup for Inference Workloads on Kubernetes",
+    "title": "NVIDIA Dynamo Snapshot: Fast Startup for Inference Workloads on Kubernetes",
+    "oneSentenceSummary": "NVIDIA introduces Dynamo Snapshot, a checkpoint/restore system using CRIU and cuda-checkpoint with novel optimizations to reduce inference workload cold-start times on Kubernetes from minutes to under 5 seconds.",
+    "summary": "This technical blog post from NVIDIA details the design and implementation of Dynamo Snapshot, a system for dramatically accelerating the startup of AI inference workloads on Kubernetes. The core problem is the cold-start delay, which can take several minutes as GPUs initialize engines, load weights, and warm up kernels. The solution leverages CRIU (Checkpoint/Restore in Userspace) and cuda-checkpoint to serialize and restore the full state of an inference worker. The post describes a Kubernetes-native architecture using a privileged DaemonSet (snapshot-agent) to manage checkpoints and restores without modifying runc. Key optimizations include: (1) unmapping and releasing the KV cache before checkpointing to drastically reduce artifact size, (2) modifying CRIU to use parallel memfd restore and Linux native AIO for memory restoration, achieving up to 7.9x speedup over upstream CRIU, and (3) introducing a GPU Memory Service (GMS) to decouple model weights from the process checkpoint, enabling concurrent restoration of process state and weights. The results show end-to-end restore times approaching speed-of-light, with a proof-of-concept achieving sub-5-second startup for a 120B parameter model, a 21x improvement over cold start.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "NVIDIA Dynamo",
+      "Inference",
+      "Kubernetes",
+      "CRIU",
+      "Checkpoint/Restore"
+    ],
+    "mainPoints": [
+      {
+        "point": "Cold-start latency for inference workloads on Kubernetes is a critical problem, taking minutes and risking SLA violations.",
+        "explanation": "The delay is broken down into container/image pull, engine initialization (weight loading, kernel warmup), and distributed runtime startup, all of which leave GPUs idle."
+      },
+      {
+        "point": "Dynamo Snapshot uses CRIU and cuda-checkpoint to checkpoint and restore the full state of an inference worker, including both host and GPU state.",
+        "explanation": "A privileged DaemonSet (snapshot-agent) manages the lifecycle, checkpointing after engine initialization but before distributed runtime startup, and restoring on the same or a different node."
+      },
+      {
+        "point": "Optimizations to CRIU, including parallel memfd restore and Linux native AIO, achieve up to 7.9x speedup in memory restoration.",
+        "explanation": "Parallel memfd restore uses a thread pool to restore shared memory buffers concurrently, while AIO replaces the serial preadv loop with up to 128 concurrent reads, saturating storage bandwidth."
+      },
+      {
+        "point": "The GPU Memory Service (GMS) decouples model weights from the process checkpoint, enabling concurrent restoration and sub-5-second startup.",
+        "explanation": "By offloading weights into a separate artifact, GMS allows process state and weight restoration to run in parallel over different channels, drastically reducing total restore time."
+      }
+    ],
+    "keyQuotes": [
+      "The cold-start problem: In production inference deployments, demand fluctuates over time, requiring inference replicas to scale elastically. However, cold-starting inference workloads on Kubernetes can take several minutes.",
+      "CRIU is fundamentally a freeze-and-thaw mechanism. When a process is restored, execution resumes at the exact instruction where it was checkpointed, completely unaware that checkpointing or restoration occurred.",
+      "Unmap and release of the KV cache reduces the total artifact size of Qwen3-0.6B on a B200 from ~190 GiB to ~6 GiB.",
+      "We replaced the preadv loop with Linux native AIO. CRIU builds a list of read jobs ahead of time... allowing the storage device to run them concurrently across its internal channels.",
+      "The final result is a start-time reduction of 21x for gpt-oss-120b."
+    ],
+    "url": "https://developer.nvidia.com/blog/nvidia-dynamo-snapshot-fast-startup-for-inference-workloads-on-kubernetes/",
+    "readUrl": "https://www.bestblogs.dev/article/2c1ca519",
+    "enclosureUrl": null,
+    "domain": "developer.nvidia.com",
+    "cover": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NVIDIA-Dynamo-Snapshot-660x370.jpg",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_dacaf9e9",
+    "sourceName": "NVIDIA Technical Blog",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20260527052034_799230b",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "DEV",
+    "aiSubCategoryDesc": "AI Development",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 10,
+    "wordCount": 2669,
+    "readTime": 11,
+    "mediaDuration": null,
+    "authors": [
+      "Schwinn Saereesitthipitak"
+    ],
+    "publishTimeStamp": 1779923420000,
+    "publishDateStr": "05-28",
+    "publishDateTimeStr": "2026-05-28 07:10:20",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_999ebcec",
+    "notExist": null,
+    "originalTitle": "Stragglers， Not Failures: How Adaptive Hedged Requests Reduce p99 Latency by 74 Percent",
+    "title": "Stragglers， Not Failures: How Adaptive Hedged Requests Reduce p99 Latency by 74 Percent",
+    "oneSentenceSummary": "Adaptive hedged requests using DDSketch for real-time latency distribution learning and a token bucket for load protection reduce p99 latency by 74% in fan-out architectures, outperforming static thresholds without manual configuration.",
+    "summary": "This article addresses the problem of tail latency in distributed systems, specifically the p99 degradation caused by stragglers (slow but not failed requests) in fan-out architectures. It argues that retries, the standard response to latency, are counterproductive for stragglers as they add load to already-struggling back-ends. The proposed solution is an adaptive hedging mechanism that uses DDSketch to learn the real-time latency distribution per host, fires a backup request when a primary request exceeds the current p90 latency, and uses a token bucket budget to prevent load amplification during genuine outages. The article provides a detailed explanation of the algorithm, including the use of a tumbling window for adapting to changing conditions, and presents benchmark results showing a 74% reduction in p99 latency (from 65ms to 17.3ms) with only 8.9% overhead, matching the best hand-tuned static threshold without any manual configuration. It also discusses the application of this technique to LLM inference, where measuring Time to First Token (TTFT) is critical, and provides a reference implementation as a Go library.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Tail Latency",
+      "Hedged Requests",
+      "DDSketch",
+      "Distributed Systems",
+      "Performance Engineering"
+    ],
+    "mainPoints": [
+      {
+        "point": "Stragglers, not failures, are the primary cause of high p99 latency in fan-out architectures, and retries exacerbate the problem.",
+        "explanation": "A straggler is a request that completes slowly, unlike a failure which doesn't complete. Retrying a straggler adds load to an already pressured back-end, making the tail latency worse. Hedging, which races a backup request against a slow primary, is the correct intervention."
+      },
+      {
+        "point": "Static hedge thresholds fail in production because latency distributions are dynamic, shifting with load, deployments, and time of day.",
+        "explanation": "A threshold that works in a benchmark or at 3 AM becomes either too aggressive or too conservative during peak traffic, requiring continuous manual tuning that rarely happens. An adaptive mechanism that learns the distribution from live traffic is necessary."
+      },
+      {
+        "point": "DDSketch provides a practical, O(1) solution for real-time quantile estimation with relative-error guarantees, enabling adaptive hedging.",
+        "explanation": "DDSketch is a streaming quantile sketch that provides a p90 estimate with ±1% accuracy, constant memory usage, and ~35ns overhead per request. A tumbling window of two sketches ensures the estimate adapts to changing conditions by aging out stale data."
+      },
+      {
+        "point": "A token bucket budget is essential to prevent load amplification during genuine outages, ensuring graceful degradation.",
+        "explanation": "Without a budget, hedging every slow request during an outage would double back-end load. A token bucket, refilled at a percentage of estimated RPS, limits the hedge rate. During an outage, the budget exhausts quickly, automatically stopping hedging."
+      },
+      {
+        "point": "For LLM inference, adaptive hedging must measure Time to First Token (TTFT), not Time to First Byte (TTFB), to be effective.",
+        "explanation": "Streaming LLM endpoints send HTTP headers almost immediately, so a hedge calibrated on header arrival time fires on every request. Measuring latency at the first body byte (TTFT) correctly identifies stragglers caused by prefill computation or cache misses."
+      }
+    ],
+    "keyQuotes": [
+      "Stragglers, requests that complete slowly rather than fail, are the primary driver of p99 latency in fan-out architectures and retries make them worse by adding load to already-struggling back-ends.",
+      "Static hedge thresholds appear effective in benchmarks but break in production as latency distributions shift with load, deployments, and time of day, requiring continuous manual tuning that rarely happens in practice.",
+      "The right tool for stragglers is a hedged request: Send a backup while the primary is still in flight and use whichever responds first. The loser is cancelled.",
+      "Tail latency in distributed systems is a statistics problem, not a code problem.",
+      "The key distinction is that retries are reactive (they wait for failure, then resend), while hedges are proactive (they detect slowness and race a backup)."
+    ],
+    "url": "https://www.infoq.com/articles/adaptive-hedged-requests-p99-latency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "readUrl": "https://www.bestblogs.dev/article/999ebcec",
+    "enclosureUrl": null,
+    "domain": "infoq.com",
+    "cover": "https://res.infoq.com/articles/adaptive-hedged-requests-p99-latency/en/headerimage/adaptive-hedged-requests-p99-latency-header-1779785816730.jpg",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_f152e8",
+    "sourceName": "InfoQ",
+    "priority": "HIGH",
+    "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+    "mainDomain": "Programming_Technology",
+    "mainDomainDesc": "Programming",
+    "aiSubCategory": "SE_PRACTICE",
+    "aiSubCategoryDesc": "Engineering Practice",
+    "category": "Programming_Technology",
+    "categoryDesc": "Programming",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 6,
+    "wordCount": 3365,
+    "readTime": 14,
+    "mediaDuration": null,
+    "authors": [
+      "Prathamesh Bhope"
+    ],
+    "publishTimeStamp": 1779958800000,
+    "publishDateStr": "05-28",
+    "publishDateTimeStr": "2026-05-28 17:00:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_604f370b",
+    "notExist": null,
+    "originalTitle": "Reachy Mini goes fully local",
+    "title": "Reachy Mini goes fully local",
+    "oneSentenceSummary": "This blog post provides a comprehensive, step-by-step guide to running a fully local, private voice conversation pipeline on the Reachy Mini robot using Hugging Face's speech-to-speech library and open-source models.",
+    "summary": "The article details how to set up a fully local speech-to-speech pipeline for the Reachy Mini robot, eliminating the need for cloud servers and API keys. It introduces Hugging Face's `speech-to-speech` library, a cascaded pipeline (VAD → STT → LLM → TTS) that exposes a Realtime API-compatible WebSocket. The guide covers running the LLM locally with `llama.cpp` and Gemma 4, installing and configuring the speech-to-speech library, and connecting the robot. It then delves into customization, explaining the rationale for a local setup (privacy, cost, control) and offering opinionated defaults for VAD (Silero), STT (Parakeet-TDT), and TTS (Qwen3-TTS). The article extensively covers LLM options, including running models in-process with MLX or Transformers, or decoupling the brain via a Responses API with various backends like vLLM, Hugging Face Inference Endpoints, or OpenAI. It concludes with instructions for running the engine on a laptop while the app runs on the robot.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "speech-to-speech",
+      "Reachy Mini",
+      "local AI",
+      "Hugging Face",
+      "open-source"
+    ],
+    "mainPoints": [
+      {
+        "point": "A fully local voice pipeline for Reachy Mini is achievable using open-source models and Hugging Face's speech-to-speech library.",
+        "explanation": "The guide demonstrates a complete, private, and cost-free setup by running all components (VAD, STT, LLM, TTS) locally, removing reliance on cloud services."
+      },
+      {
+        "point": "The cascaded pipeline architecture offers flexibility and performance, allowing users to swap individual components.",
+        "explanation": "The VAD → STT → LLM → TTS cascade is presented as the most flexible open-source option, enabling users to optimize for latency, quality, or language by replacing any stage with a preferred model."
+      },
+      {
+        "point": "Decoupling the LLM via a Responses API is the recommended approach to address the primary latency bottleneck.",
+        "explanation": "Running the LLM in a separate process using the Responses API protocol allows for independent scaling and optimization, with support for various backends from local llama.cpp/vLLM to cloud-based providers like OpenAI."
+      },
+      {
+        "point": "The guide provides concrete, opinionated defaults for each pipeline stage to simplify setup.",
+        "explanation": "It recommends specific models like Silero VAD, Parakeet-TDT STT, Qwen3-TTS, and Gemma 4 LLM, while emphasizing that these are starting points that can be swapped based on user needs."
+      }
+    ],
+    "keyQuotes": [
+      "Audio never leaves your network, the entire pipeline runs on hardware you control.",
+      "Cascades are the most flexible option in the open-source landscape today, and with the right pieces they're also the fastest.",
+      "The main bottleneck in the system is LLM inference latency. To address that, we support external inference engines exposed through the Responses API protocol.",
+      "Every stage of the pipeline is a trade-off: there are faster TTS models with lower quality, slower STT models with higher quality."
+    ],
+    "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+    "readUrl": "https://www.bestblogs.dev/article/604f370b",
+    "enclosureUrl": null,
+    "domain": "huggingface.co",
+    "cover": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
+    "language": "en_US",
+    "languageDesc": "English",
+    "sourceId": "SOURCE_19153d",
+    "sourceName": "Hugging Face Blog",
+    "priority": "HIGH",
+    "sourceImage": "https://image.jido.dev/20251127045334_422a09d9",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "DEV",
+    "aiSubCategoryDesc": "AI Development",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 90,
+    "readCount": 2,
+    "wordCount": 1688,
+    "readTime": 7,
+    "mediaDuration": null,
+    "authors": [
+      "Amir Mahla",
+      "Andres Marafioti"
+    ],
+    "publishTimeStamp": 1779840000000,
+    "publishDateStr": "05-27",
+    "publishDateTimeStr": "2026-05-27 08:00:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_5e68673c",
+    "notExist": null,
+    "originalTitle": "DeepSeek 要用蜜雪冰城的打法，做中国版 Claude Code",
+    "title": "DeepSeek Takes a Mixue-Style Approach to Build China's Version of Claude Code",
+    "oneSentenceSummary": "DeepSeek has permanently reduced the price of its V4-Pro model API to attract developers with a low-cost strategy, and plans to build an AI coding Agent tool similar to Claude Code, aiming to reshape the AI programming market.",
+    "summary": "This article analyzes DeepSeek's recent permanent price reduction for its V4-Pro model API, comparing it to the cost-effective strategy of Mixue Bingcheng. It outlines the timeline from the preview release to the final permanent price cut, noting that the core goal is to lower the barrier for developers, especially for high token consumption scenarios like code generation, long context, and Agent tasks. The article further explores the profound impact of this price reduction on AI coding tool subscription models, API relay stations, and developer entry points. The author argues that DeepSeek's true goal is not merely to compete with domestic model vendors, but to pave the way for launching a 'Chinese version' of a coding Agent akin to Claude Code by building a low-cost, high-efficiency model ecosystem. Citing DeepSeek's recent hiring trends (such as building a Code Harness) and the addition of key figures like Cui Tianyi, the article demonstrates its determination to enter the Agent field. Ultimately, it concludes that the low-price strategy will attract developers, while the Agent tool will lock in their workflows, creating a positive cycle that allows DeepSeek to dominate the AI programming market.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "DeepSeek",
+      "API Price Reduction",
+      "AI Programming",
+      "Claude Code",
+      "Agent"
+    ],
+    "mainPoints": [
+      {
+        "point": "DeepSeek has permanently reduced the price of its V4-Pro model API, significantly lowering the cost for developers.",
+        "explanation": "By converting temporary discounts into permanent prices, DeepSeek has reduced the cost of input and output tokens to a quarter of the original price, especially for cache hits. This makes high-consumption scenarios like long context and Agent tasks much more attractive to individual developers and small teams."
+      },
+      {
+        "point": "The price reduction strategy aims to drive a shift in the AI programming tool market, paving the way for an Agent product similar to Claude Code.",
+        "explanation": "Low-cost APIs will attract a large number of developers, but DeepSeek's ultimate goal is to build an engineering system (Code Harness) capable of executing tasks continuously, combining model capabilities with real development environments to control the developer entry point."
+      },
+      {
+        "point": "DeepSeek's long-term strategy is to reduce costs through technical optimization and build a broader AI hardware ecosystem.",
+        "explanation": "Its model architecture and inference engineering optimizations (e.g., MoE, KV Cache compression) not only reduce inference costs but also decrease reliance on high-end hardware. This aims to integrate domestic storage, GPUs, and other hardware into the large model ecosystem, fostering a more decentralized and affordable AI ecosystem."
+      }
+    ],
+    "keyQuotes": [
+      "DeepSeek is to large language models what Mixue Bingcheng is to milk tea. You don't have to worry about cost-effectiveness because its capabilities are flawless, and it never puts a strain on your wallet.",
+      "Liang Wenfeng mentioned that DeepSeek simply operates at its own pace, sets prices after calculating costs, and adheres to the principle of neither subsidizing nor profiteering.",
+      "Model + Harness = Agent. In an Agent product, the model is responsible for understanding and generation, while the Harness brings the model's capabilities into a real engineering environment, essentially acting as the 'execution system' around the model.",
+      "The price cut is just the initial push down the mountain; from there, it will roll on its own, gaining momentum, and nothing can stop it."
+    ],
+    "url": "https://www.ifanr.com/1666548?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "readUrl": "https://www.bestblogs.dev/article/5e68673c",
+    "enclosureUrl": null,
+    "domain": "ifanr.com",
+    "cover": "https://s3.ifanr.com/wp-content/uploads/2026/05/226-2.png",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_4ecd55",
+    "sourceName": "爱范儿",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "AI_CODING",
+    "aiSubCategoryDesc": "AI Coding",
+    "category": "News_Media",
+    "categoryDesc": "News & Media",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 89,
+    "readCount": 236,
+    "wordCount": 3318,
+    "readTime": 14,
+    "mediaDuration": null,
+    "authors": [
+      "莫崇宇"
+    ],
+    "publishTimeStamp": 1779730435000,
+    "publishDateStr": "05-26",
+    "publishDateTimeStr": "2026-05-26 01:33:55",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_64ba3bc1",
+    "notExist": null,
+    "originalTitle": "从 0 到 1 带你速通 Codex，我整理的终极保姆教程来了。",
+    "title": "From 0 to 1: A Quick Guide to Codex – The Ultimate Beginner's Tutorial I've Compiled",
+    "oneSentenceSummary": "This article is a comprehensive, beginner-friendly tutorial on OpenAI Codex, guiding you step-by-step from installation and interface setup to developing web pages and apps, making it the ultimate guide for zero-experience users.",
+    "summary": "With a 'hands-on' philosophy, this article systematically introduces the entire workflow of using OpenAI Codex. The author first guides users through installation and login, highlighting Codex's ability to import configurations from Claude Code and Cowork with a single click—a 'poaching' feature. Then, the article breaks down the Codex interface, distinguishing between 'Chat' and 'Project' modes, and offers best practices: 'Group tasks of the same direction into one project, and start a new chat for each specific task.' In the settings section, the author recommends using Andrej Karpathy's AGENTS.md template as a global constraint and suggests enabling the memory feature. The core of the article uses two practical examples—developing a Codex feature introduction webpage and a medication reminder app—to demonstrate the complete process from requirement proposal, planning mode, automatic coding, to deployment. The webpage development showcases Codex's built-in browser preview and annotation editing features; the app development introduces the Computer Use plugin, demonstrating Codex's ability to automatically download Xcode, compile, and install the app on a phone. The article concludes by noting significant functional differences between Mac and Windows users.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Codex",
+      "AI Programming",
+      "Agent",
+      "Tutorial",
+      "Vibe Coding"
+    ],
+    "mainPoints": [
+      {
+        "point": "Codex is a powerful AI programming agent that supports developing web pages and apps from scratch.",
+        "explanation": "Through two complete examples (a webpage and an app), the article demonstrates Codex's end-to-end capabilities from requirement analysis and code generation to deployment, validating its practicality as a productivity tool."
+      },
+      {
+        "point": "Proper project management and settings are key to using Codex effectively.",
+        "explanation": "The author emphasizes using 'Project' mode to isolate tasks, enabling planning mode for requirement confirmation, setting AGENTS.md global rules, and enabling memory features—these best practices significantly improve development efficiency and code quality."
+      },
+      {
+        "point": "The Computer Use plugin is Codex's core differentiating capability, automating complex environment operations.",
+        "explanation": "With Computer Use, Codex can visually control the computer, automatically completing steps like downloading Xcode and compiling apps, greatly lowering the barrier for non-technical users, though it is currently only available on Mac."
+      }
+    ],
+    "keyQuotes": [
+      "Codex not only resets your quota daily and invites you to use it, but it also helps you move house, importing all your previous configurations with one click.",
+      "I really think the initial categorization is important; otherwise, you'll be really frustrated later on...",
+      "After all, I'm not a developer, and the pop-ups are gibberish to me. If you ask me, what do I know? So it's better to just let it handle everything on its own.",
+      "Annotation is one of the features I use the most—it's really handy.",
+      "Mac users are currently the high-end VIPs of Codex, while Windows users are just... standing-room tickets."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682718&idx=1&sn=9e83ec07ed3e4ddf976e4d8673f80282",
+    "readUrl": "https://www.bestblogs.dev/article/64ba3bc1",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045441_36cb882d",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_86a0b5",
+    "sourceName": "数字生命卡兹克",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045441_36cb882d",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "AI_CODING",
+    "aiSubCategoryDesc": "AI Coding",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 89,
+    "readCount": 149,
+    "wordCount": 5529,
+    "readTime": 23,
+    "mediaDuration": null,
+    "authors": [
+      "数字生命卡兹克"
+    ],
+    "publishTimeStamp": 1779847080000,
+    "publishDateStr": "05-27",
+    "publishDateTimeStr": "2026-05-27 09:58:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_1ac2cf11",
+    "notExist": null,
+    "originalTitle": "将 600 亿参数大模型装进手机的瓶颈，终于被中国 AI 公司突破了",
+    "title": "Chinese AI Company Breaks the Bottleneck of Fitting a 60-Billion-Parameter Model into a Phone",
+    "oneSentenceSummary": "ModelBest, in collaboration with Tsinghua University and OpenBMB, releases the BitCPM-CANN ternary model series, achieving end-to-end training on Huawei Ascend for the first time. Using 1.58-bit quantization, it saves approximately 6x memory while retaining 97% of model capability, paving a new path for on-device large model deployment.",
+    "summary": "This article reports on the BitCPM-CANN ternary model series released by ModelBest at the Huawei Kunpeng Ascend Developer Conference (KADC 2026). Based on 1.58-bit ternary quantization technology, the series compresses model weights from traditional high-precision floating-point numbers to just three optional values (-1, 0, 1), thereby reducing memory usage by approximately 6x. The article notes that BitCPM-CANN is the first large model to complete end-to-end ternary training on Huawei Ascend chips, covering four parameter sizes from 0.5B to 8B. Across 11 evaluation tasks, capability retention rates reach 95.7% to 97.2%. This means an 8B model that originally required 16GB of memory now needs less than 3GB, potentially enabling a 60-billion-parameter model to run on a phone with 8GB of RAM. The article also analyzes the technology's industrial value: amid rising memory prices, a 6x memory dividend is a critical need; Qualcomm's latest flagship chip already supports native 2-bit inference, creating a mutually reinforcing trend between chips and models. ModelBest's differentiated advantage lies in its complete technical ecosystem, from the underlying training framework BM-Train to the on-device model MiniCPM and ternary quantization, all built on domestic computing power, forming a closed-loop domestic solution.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Ternary Quantization",
+      "1.58-bit",
+      "BitCPM-CANN",
+      "ModelBest",
+      "Huawei Ascend"
+    ],
+    "mainPoints": [
+      {
+        "point": "BitCPM-CANN completes end-to-end training of ternary large models on Huawei Ascend for the first time.",
+        "explanation": "Previously, all publicly available ternary model training relied on NVIDIA GPUs. BitCPM-CANN proves that domestic computing power can also achieve extremely low-bit training, with training efficiency reaching 95% of the conventional baseline."
+      },
+      {
+        "point": "Ternary quantization stores weights at 1.58-bit, saving approximately 6x memory with over 97% capability retention.",
+        "explanation": "By compressing weights to three values (-1, 0, 1), the memory requirement for an 8B model drops from 16GB to less than 3GB, with capability retention rates reaching up to 97.2% across 11 evaluations, demonstrating significant redundancy in traditional 16-bit precision."
+      },
+      {
+        "point": "This technology provides a key breakthrough for on-device large model deployment, potentially enabling ultra-large models to run on terminals like phones.",
+        "explanation": "Combined with MoE architecture and activation range constraints, a 60B-scale model could potentially fit into an 8GB memory phone. Qualcomm's latest chip already supports native 2-bit inference, with hardware and models advancing in tandem."
+      },
+      {
+        "point": "ModelBest has built a complete domestic on-device technology ecosystem spanning frameworks, models, and chip adaptation.",
+        "explanation": "Based on the self-developed BM-Train training framework and MiniCPM model family, BitCPM-CANN establishes the training methodology as a low-bit training infrastructure for Ascend, allowing subsequent teams to reuse the same foundation."
+      }
+    ],
+    "keyQuotes": [
+      "Three values, if allocated properly, are sufficient to carry the vast majority of model capability.",
+      "Ternary quantization is not a compromise of 'trading precision for memory.' When 97% of capability is retained, it indicates that a significant amount of precision in traditional 16-bit models may be redundant.",
+      "Instead of waiting for hardware to become powerful enough to accommodate models, we should make models smart enough to adapt to hardware.",
+      "This is a complete domestic closed loop: the framework is domestic, the chip is domestic, the model is domestic, and the methodology is self-developed."
+    ],
+    "url": "https://www.ifanr.com/1666847?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "readUrl": "https://www.bestblogs.dev/article/1ac2cf11",
+    "enclosureUrl": null,
+    "domain": "ifanr.com",
+    "cover": "https://s3.ifanr.com/wp-content/uploads/2026/05/Frame-1-.png",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_4ecd55",
+    "sourceName": "爱范儿",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "MODELS",
+    "aiSubCategoryDesc": "AI Models",
+    "category": "News_Media",
+    "categoryDesc": "News & Media",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 89,
+    "readCount": 130,
+    "wordCount": 3093,
+    "readTime": 13,
+    "mediaDuration": null,
+    "authors": [
+      "Selina"
+    ],
+    "publishTimeStamp": 1779710691000,
+    "publishDateStr": "05-25",
+    "publishDateTimeStr": "2026-05-25 20:04:51",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_6f48419c",
+    "notExist": null,
+    "originalTitle": "2026-05-28 Hacker News Top Stories #",
+    "title": "2026-05-28 Hacker News Top Stories #",
+    "oneSentenceSummary": "This article curates the top ten trending topics on Hacker News for May 28, 2026, covering the erosion of interpersonal communication by AI, DuckDuckGo's traffic surge due to Google's AI mode, terrible job interview experiences, Last.fm's independent operation, Anthropic and OpenAI finding product-market fit, the Wikimedia Foundation layoffs controversy, tech CEOs' AI delusion, chemical storage tank safety, private equity's infiltration of public services, and Canada's shift in military procurement.",
+    "summary": "The article summarizes the ten most discussed topics on the Hacker News community on May 28, 2026. The content spans multiple areas: a personal blog deeply reflects on the misuse of AI in interpersonal communication, pointing out that forwarding AI-generated replies to colleagues undermines trust; PC Gamer reports that after Google aggressively pushed its AI mode, the privacy-focused search engine DuckDuckGo saw a 28% increase in traffic; an engineer shares their intrusive culture-fit interview experience at a mental health startup; Last.fm announces its independence as a company, pledging data security and continuous improvement; Simon Willison analyzes that Anthropic and OpenAI have found product-market fit through enterprise pricing and coding agents; a Medium article exposes the Wikimedia Foundation's layoffs of union organizers and community tech teams; a TechCrunch article criticizes tech CEOs for overestimating AI capabilities, falling into AI delusion; Derek Lowe, in a Science blog, explains in detail the chemical principles and safety risks of methyl methacrylate storage tanks; a long-form article reveals how private equity monopolizes public service industries like fire trucks through leveraged buyouts; and The Guardian reports on Canada purchasing early warning aircraft from Sweden to reduce reliance on the US. These topics reflect the tech community's diverse concerns about AI's social impact, corporate governance, public safety, and geopolitics.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Hacker News",
+      "Tech Trends",
+      "AI Impact",
+      "Search Engines",
+      "Job Interviews"
+    ],
+    "mainPoints": [
+      {
+        "point": "The misuse of AI in interpersonal communication is eroding trust and culture.",
+        "explanation": "Multiple discussions point out that forwarding AI-generated replies directly to colleagues or subordinates not only fails to solve problems but also undermines the communication culture of building trust, sharing ideas, and showing respect between people, being seen as impolite and lacking human touch."
+      },
+      {
+        "point": "User backlash against aggressive AI promotion drives traffic growth for privacy-focused search engines.",
+        "explanation": "After Google aggressively pushed its AI mode, DuckDuckGo's search traffic increased by 28%, indicating that users are dissatisfied with forced AI integration and data privacy concerns, turning to alternatives."
+      },
+      {
+        "point": "Anthropic and OpenAI have found product-market fit through enterprise pricing and coding agents.",
+        "explanation": "Simon Willison analyzes that both companies have attracted enterprise customers willing to pay high fees by adjusting enterprise pricing strategies and launching tools like coding agents, entering a profitable phase, though the industry remains skeptical about their true efficiency and cost structure."
+      },
+      {
+        "point": "Tech company CEOs generally overestimate AI capabilities, falling into AI delusion.",
+        "explanation": "A TechCrunch article points out that CEOs, being far removed from execution details, tend to overestimate AI's automation capabilities, framing layoffs as AI-driven efficiency gains, but actual productivity improvements are limited, potentially leading to organizational chaos."
+      },
+      {
+        "point": "Private equity infiltrates key public services through leveraged buyouts, harming social interests.",
+        "explanation": "Using the fire truck manufacturing industry as an example, the article reveals how private equity monopolizes markets, cuts capacity, and raises prices to extract high profits, leading to declining service quality and safety risks, harming employees and communities."
+      }
+    ],
+    "keyQuotes": [
+      "But even when I communicate with people, they forward my questions to AI and then send me the AI's replies. This is a fatal problem.",
+      "What I hate about this whole thing is that there are many reasons why someone would go to a colleague to ask a question. Not every situation requires fancy Markdown with emojis.",
+      "They probably need to recoup $5 to $10 trillion in investments over the next five years, or the hardware construction costs will start to be written down.",
+      "Tech company CEOs are clearly suffering from AI delusion.",
+      "Private equity has bought out America's key public services."
+    ],
+    "url": "https://supertechfans.com/cn/post/2026-05-28-HackerNews/",
+    "readUrl": "https://www.bestblogs.dev/article/6f48419c",
+    "enclosureUrl": null,
+    "domain": "supertechfans.com",
+    "cover": "https://image.jido.dev/20251127045439_logo.jpg",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_01455c",
+    "sourceName": "SuperTechFans",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045439_logo.jpg",
+    "mainDomain": "News_Media",
+    "mainDomainDesc": "News & Media",
+    "aiSubCategory": null,
+    "aiSubCategoryDesc": null,
+    "category": "Business_Tech",
+    "categoryDesc": "Business & Tech",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 89,
+    "readCount": 94,
+    "wordCount": 17552,
+    "readTime": 71,
+    "mediaDuration": null,
+    "authors": [
+      "HackerNews"
+    ],
+    "publishTimeStamp": 1779956846000,
+    "publishDateStr": "05-28",
+    "publishDateTimeStr": "2026-05-28 16:27:26",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_083617dd",
+    "notExist": null,
+    "originalTitle": "华为提出「韬定律」，寻找国产芯片自己的进化方向",
+    "title": "Huawei Proposes 'Tau Scaling Law' to Chart a New Course for Domestic Chip Evolution",
+    "oneSentenceSummary": "At ISCAS 2026, Huawei proposed the 'Tau Scaling Law,' replacing transistor density with the time constant τ as a new guiding principle for semiconductor evolution, leveraging 3D stacking technologies like LogicFolding to continuously improve chip performance.",
+    "summary": "This article reports on a speech by Huawei Semiconductor Business President He Tingbo at IEEE ISCAS 2026, where she formally introduced the 'Tau Scaling Law.' Centered on the circuit time constant τ, this law advocates replacing traditional 'geometric scaling' with 'time scaling.' By utilizing 3D stacking technologies such as LogicFolding and backside power delivery, it aims to continuously reduce signal propagation delay, thereby opening a new path for semiconductor performance improvement as transistor miniaturization approaches physical limits. The article details the physical meaning of τ, explains why wire delay has become the primary bottleneck in current chip design, and describes how 3D stacking and backside power delivery optimize τ. Huawei revealed that over the past six years, it has designed and mass-produced 381 chips based on the Tau Scaling Law. The first Kirin chip using LogicFolding technology will be released this fall, and is expected to reach an equivalent 1.4nm process level by 2031. The article also notes that this technology will first benefit Huawei's AI computing product line.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Tau Scaling Law",
+      "Huawei",
+      "Chip Design",
+      "LogicFolding",
+      "Semiconductor"
+    ],
+    "mainPoints": [
+      {
+        "point": "Huawei proposes the 'Tau Scaling Law,' using the time constant τ as a new guiding principle for semiconductor evolution.",
+        "explanation": "This law advocates replacing 'geometric scaling' with 'time scaling,' continuously improving chip performance by reducing signal propagation delay, rather than solely pursuing transistor density."
+      },
+      {
+        "point": "Wire delay has become the primary bottleneck for chip performance improvement.",
+        "explanation": "At the 3nm and 2nm nodes, transistor delay itself is minimal, but extremely thin wires cause increased resistance and a larger τ, making it increasingly difficult to raise chip frequencies."
+      },
+      {
+        "point": "LogicFolding and backside power delivery are key technological paths for reducing the τ value.",
+        "explanation": "Shortening wire lengths through 3D stacking and freeing up wafer surface area with backside power delivery can effectively reduce wire resistance and parasitic capacitance, optimizing τ delay."
+      },
+      {
+        "point": "The first Kirin chip using LogicFolding will be released this fall.",
+        "explanation": "Huawei has designed and mass-produced 381 chips based on the Tau Scaling Law. The first product for the mass market is expected to be the Mate 90 series, reaching an equivalent 1.4nm process level by 2031."
+      }
+    ],
+    "keyQuotes": [
+      "We should adopt 'time scaling' instead of 'geometric scaling' as the new guiding principle for the evolution of semiconductors and electronic systems.",
+      "Transistor density itself is no longer the main factor limiting frequency. In the future, how to reduce the τ value through other comprehensive means will be the new pursuit for improving chip frequency and efficiency.",
+      "The future definitely belongs to open collaboration. On the path of semiconductor evolution, no single company can find all the answers alone."
+    ],
+    "url": "https://www.ifanr.com/1666860?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "readUrl": "https://www.bestblogs.dev/article/083617dd",
+    "enclosureUrl": null,
+    "domain": "ifanr.com",
+    "cover": "https://s3.ifanr.com/wp-content/uploads/2026/05/banner-r.jpg",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_4ecd55",
+    "sourceName": "爱范儿",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "NEWS",
+    "aiSubCategoryDesc": "AI News",
+    "category": "News_Media",
+    "categoryDesc": "News & Media",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 89,
+    "readCount": 84,
+    "wordCount": 2120,
+    "readTime": 9,
+    "mediaDuration": null,
+    "authors": [
+      "马扶摇"
+    ],
+    "publishTimeStamp": 1779786410000,
+    "publishDateStr": "05-26",
+    "publishDateTimeStr": "2026-05-26 17:06:50",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_f4dddcc1",
+    "notExist": null,
+    "originalTitle": "带摄像头的 AI 耳机能替代 iPhone 吗？我戴了 72 小时之后有了答案",
+    "title": "Can an AI Headset with a Camera Replace the iPhone? I Found the Answer After Wearing It for 72 Hours",
+    "oneSentenceSummary": "Aifaner's in-depth review of Guangfan's AI full-sense wearable device points out that its headset with a camera represents a direction for AI hardware, but it cannot yet replace a smartphone due to latency, ecosystem limitations, and interaction fragmentation.",
+    "summary": "This article is an in-depth review by Aifaner of the AI full-sense wearable device launched by Guangfan Technology. The device consists of three components: a headset (with a camera), a charging case (with eSIM and GPS), and a smartwatch, designed to form an independent AI hardware hub separate from the smartphone. After 72 hours of experience, the reviewer categorized the core functions into three types: an intelligent schedule manager (automatically filtering messages, adding events, and reminding about commutes), visual perception (identifying products and querying information), and condition-triggered reminders (based on location and physiological data). The review notes that the product is forward-looking in concept, attempting to explore the next-generation personal terminal form. However, it has significant shortcomings in actual use: visual recognition latency is as high as 20 seconds, third-party service authorization is cumbersome, the charging case must be carried as the hub, and there is an inherent conflict between AI voice announcements and the immersive nature of headphones. The article argues that while some of these limitations can be resolved with technological advancements, the core challenge lies in the interaction fragmentation caused by using headphones as an AI assistant. The final conclusion is that the device cannot yet replace a smartphone, but it points a direction for future AI hardware.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "AI Hardware",
+      "Wearable Devices",
+      "Headset",
+      "Product Review",
+      "Guangfan Technology"
+    ],
+    "mainPoints": [
+      {
+        "point": "Guangfan's AI headset aims to build an independent AI hardware hub separate from the smartphone, rather than being a phone accessory.",
+        "explanation": "Unlike Apple's approach of treating AirPods as an extension of the iPhone's senses, Guangfan's three-piece set of headset, case, and watch forms its own system, connecting independently via eSIM with the goal of operating without a phone, reflecting an exploration of the next-generation personal terminal form."
+      },
+      {
+        "point": "Visual recognition is the biggest selling point, but the experience is limited by latency and ecosystem barriers.",
+        "explanation": "The camera is used for identifying products and querying information, but it takes nearly 20 seconds to get feedback after activation, resulting in a fragmented experience. Additionally, calling third-party services like ride-hailing and shopping requires cumbersome authorization, highlighting the issue of ecosystem isolation."
+      },
+      {
+        "point": "Condition-triggered functions based on location and physiological data are the highlight of the experience, being practical and stable.",
+        "explanation": "The AI reminder function can prompt users with a shopping list when entering a supermarket, and the watch can alert users via the headset when it detects abnormal heart rate. These features are triggered accurately and offer restrained notifications, making them the most practical part of the review."
+      },
+      {
+        "point": "There is an inherent conflict between AI voice announcements and the immersive nature of headphones, posing a core experience challenge.",
+        "explanation": "As an active AI assistant, the headset must constantly interrupt users with voice to provide information, which conflicts with the 'first principle' of headphones creating a private listening environment. This is a challenge that any headset-form AI hardware must address."
+      }
+    ],
+    "keyQuotes": [
+      "The true purpose of adding a camera to the headset is to test the ultimate form of the next-generation personal terminal—functionally 'replacing' the smartphone, and even completely 'dissolving' its presence in future life scenarios.",
+      "A device originally designed for immersion has become a source of distraction. This sense of fragmentation in experience is an inherent flaw caused by using the auditory channel to carry high-density information.",
+      "The evolution of hardware is always a dance in chains.",
+      "This 2000-yuan wearable AI device is certainly not enough to retire the smartphone yet, but it has indeed pushed the door open a crack toward the future."
+    ],
+    "url": "https://www.ifanr.com/1666435?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "readUrl": "https://www.bestblogs.dev/article/f4dddcc1",
+    "enclosureUrl": null,
+    "domain": "ifanr.com",
+    "cover": "https://s3.ifanr.com/wp-content/uploads/2026/05/Her.jpg",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_4ecd55",
+    "sourceName": "爱范儿",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+    "mainDomain": "Product_Development",
+    "mainDomainDesc": "Product & Design",
+    "aiSubCategory": "PD_PM",
+    "aiSubCategoryDesc": "Product Management",
+    "category": "News_Media",
+    "categoryDesc": "News & Media",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 89,
+    "readCount": 68,
+    "wordCount": 3993,
+    "readTime": 16,
+    "mediaDuration": null,
+    "authors": [
+      "周奕旨"
+    ],
+    "publishTimeStamp": 1779839207000,
+    "publishDateStr": "05-27",
+    "publishDateTimeStr": "2026-05-27 07:46:47",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_ce54366b",
+    "notExist": null,
+    "originalTitle": "实测 Claude Opus 4.8，这可能是第一个不会偷懒的模型。",
+    "title": "Hands-on with Claude Opus 4.8: The First Model That Doesn't Cut Corners",
+    "oneSentenceSummary": "This article provides a hands-on review of Claude Opus 4.8, highlighting significant improvements in development and programming, with greater precision, honesty, and no laziness, though its creative abilities still lag behind Opus 4.6, and its reduced proactiveness may be less friendly to non-expert users.",
+    "summary": "The author conducted an immediate hands-on and in-depth experience with Claude Opus 4.8 upon its release. The article first introduces the context of the model's launch, viewing it as a rapid firefighting release by Anthropic under pressure from the poor reception of GPT-5.5 and Opus 4.7. The core experience is broken down into several aspects: first, thinking intensity controls are now available to all users, improving controllability; second, the model has become more precise and better at following instructions, but less proactive, no longer guessing users' unstated needs—a boon for professional developers but potentially frustrating for the Vibe Coding community that relies on AI proactiveness; third, the model is more honest, no longer blindly confident in its assertions, with code flaws being four times less likely to slip through compared to the previous generation, and the system card showing a 0% laziness defect rate; fourth, while creative abilities have improved, they still fall short of Opus 4.6, with issues like heavy AI flavor, overuse of metaphors, and parallelism. Additionally, the article mentions the significant price drop for Fast Mode and the new dynamic workflow feature in Claude Code. Finally, the author expresses disappointment over the removal of Opus 4.6 and anticipation for the upcoming, more advanced model, Mythos.",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "Claude Opus 4.8",
+      "Model Review",
+      "AI Programming",
+      "Anthropic",
+      "Large Language Model"
+    ],
+    "mainPoints": [
+      {
+        "point": "Claude Opus 4.8 shows significant progress in development and programming, being more precise, honest, and not lazy.",
+        "explanation": "The model shows significant improvements in following instructions, reducing hallucinations, and minimizing code flaws. The system card reports a 0% laziness defect rate, making it reliable for code review and optimization tasks—a major win for professional developers."
+      },
+      {
+        "point": "The model is less proactive and no longer guesses users' unstated needs.",
+        "explanation": "Opus 4.8 strictly follows instructions and does not proactively supplement additional operations users might need, unlike previous models. This means higher controllability for professional developers but may frustrate non-expert users who rely on AI proactiveness, requiring them to express their needs more precisely."
+      },
+      {
+        "point": "Creative abilities have improved, but the overall AI flavor remains heavy, falling short of Opus 4.6.",
+        "explanation": "In content creation tasks, Opus 4.8 has improved over 4.7 but still suffers from issues like overuse of metaphors, lengthy meaningless parallelism, and stereotypes. The overall AI flavor remains heavy, failing to match the creative quality of Opus 4.6."
+      }
+    ],
+    "keyQuotes": [
+      "The probability of code flaws slipping through in Opus 4.8 is about four times lower than the previous generation.",
+      "When it comes to laziness, Opus 4.8 seems to be the only model that achieves a 0% defect rate.",
+      "If you throw a vague sentence at it, it can guess the complete need in your mind, ask if that's what you want, and help you get it done directly. That feeling of being understood is actually quite addictive.",
+      "In the future, when collaborating with Opus 4.8, users may need to have higher requirements for their ability to express needs."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682817&idx=1&sn=d1f463490433d00ab331659a19b7cc1f",
+    "readUrl": "https://www.bestblogs.dev/article/ce54366b",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045441_36cb882d",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_86a0b5",
+    "sourceName": "数字生命卡兹克",
+    "priority": "MEDIUM",
+    "sourceImage": "https://image.jido.dev/20251127045441_36cb882d",
+    "mainDomain": "Artificial_Intelligence",
+    "mainDomainDesc": "Artificial Intelligence",
+    "aiSubCategory": "MODELS",
+    "aiSubCategoryDesc": "AI Models",
+    "category": "Artificial_Intelligence",
+    "categoryDesc": "Artificial Intelligence",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 89,
+    "readCount": 67,
+    "wordCount": 4218,
+    "readTime": 17,
+    "mediaDuration": null,
+    "authors": [
+      "数字生命卡兹克"
+    ],
+    "publishTimeStamp": 1780005960000,
+    "publishDateStr": "05-29",
+    "publishDateTimeStr": "2026-05-29 06:06:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  },
+  {
+    "id": "RAW_9ddb98e2",
+    "notExist": null,
+    "originalTitle": "创始人真实复盘：AI 应用创业 300 天，我做过的 10 个关键选择",
+    "title": "Founder's Honest Retrospective: 10 Key Decisions in 300 Days of AI Application Entrepreneurship",
+    "oneSentenceSummary": "This article is a genuine entrepreneurial retrospective by Cheng Mengqi, founder of SophiaPro, detailing 10 key decisions and pitfalls encountered during 300 days of AI application entrepreneurship, from vertical Agent to C-end product.",
+    "summary": "This article is a candid sharing by Cheng Mengqi, founder of SophiaPro, at the Jinqiu Small Table event, providing a complete retrospective of her nearly 300-day journey in AI application entrepreneurship. Using 10 key decisions as a narrative thread, the article recounts the team's trajectory from initially choosing the vertical Agent direction, selecting a marketing scenario, making technical decisions between Agent and Workflow, to ultimately pivoting from ToB to C-end products. The founder openly analyzes the logic behind each decision and subsequent reflections, including choosing Agent over Workflow due to 'technical vanity,' deviating from market needs because of a desire to 'show off,' and the immense engineering challenges faced when building client-side products. The article also shares practical experiences such as transitioning from the browser plugin Clico to the desktop product Invoko, conducting user research via Reddit, and finding the correct ToB business model. Finally, the founder offers personal judgments on trends like OPC, the future of software, and company organization, emphasizing that 'everything that goes into production is 100 times harder than talking about concepts.'",
+    "featuredReason": null,
+    "translateContent": null,
+    "tags": [
+      "AI Entrepreneurship",
+      "Startup Retrospective",
+      "AI Application",
+      "ToB to ToC",
+      "Product Decision"
+    ],
+    "mainPoints": [
+      {
+        "point": "The vertical Agent direction has a structural dilemma: customers don't use the product, forcing startups to become agencies.",
+        "explanation": "The founder's retrospective reveals that most vertical Agent companies face the dilemma of customers not actually using the product and ultimately relying on services for revenue, suggesting it's better to build a general Agent to accumulate user queries."
+      },
+      {
+        "point": "Technical decisions should be based on customer needs, not 'technical vanity.' ToB products should choose Workflow over Agent.",
+        "explanation": "While Agent is advanced, it is unstable; ToB customers require consistent results. Workflow is more suitable for enterprise scenarios in terms of cost, speed, and delivery stability."
+      },
+      {
+        "point": "What C-end users want is not differentiated moats, but the simple experience of being 'easy to use, fast, and right at hand.'",
+        "explanation": "From the success of the browser plugin Clico, the founder learned that shortening the distance between user intent and solution is more important than pursuing technical moats."
+      },
+      {
+        "point": "Although building client-side products is difficult, the moat composed of 15,000 details has alleviated the team's anxiety.",
+        "explanation": "The Invoko client went through 49 versions, adapting to different Mac chip models. This engineering accumulation with 'no shortcuts' has become a core competitive advantage."
+      },
+      {
+        "point": "The correct path for a ToB product is to 'use it well yourself first, then let it spill over to others,' rather than rushing a version in a big leap.",
+        "explanation": "The skills honed by the team during their own use turned out to be better than their previous formal ToB products, because their own needs are the most complete, direct, and used daily."
+      }
+    ],
+    "keyQuotes": [
+      "Most pure application startups shouldn't hire algorithm engineers. You won't need them. Let them go train models. What are you keeping them for? Just to show off your lineup to investors.",
+      "I wasn't making decisions based on market demand; I was making decisions based on 'I need to show off.' Right after getting funding is the peak of a founder's foolishness.",
+      "What C-end users want is simple: easy to use, fast, and right at hand.",
+      "Everything that goes into production is 100 times harder than talking about concepts.",
+      "Software is more like a lawn; the cost of trimming it is higher than the cost of buying the turf in the first place."
+    ],
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650680482&idx=2&sn=52284fb1c1fa431f9e9be493a5479187",
+    "readUrl": "https://www.bestblogs.dev/article/9ddb98e2",
+    "enclosureUrl": null,
+    "domain": "mp.weixin.qq.com",
+    "cover": "https://image.jido.dev/20251127045448_ba57627d",
+    "language": "zh_CN",
+    "languageDesc": "Chinese",
+    "sourceId": "SOURCE_b4a806",
+    "sourceName": "白鲸出海",
+    "priority": "LOW",
+    "sourceImage": "https://image.jido.dev/20251127045448_ba57627d",
+    "mainDomain": "Business_Tech",
+    "mainDomainDesc": "Business & Tech",
+    "aiSubCategory": "BT_STARTUP",
+    "aiSubCategoryDesc": "Startups & Ventures",
+    "category": "Business_Tech",
+    "categoryDesc": "Business & Tech",
+    "resourceType": "ARTICLE",
+    "resourceTypeDesc": "Article",
+    "score": 89,
+    "readCount": 60,
+    "wordCount": 6953,
+    "readTime": 28,
+    "mediaDuration": null,
+    "authors": [
+      "白鲸出海"
+    ],
+    "publishTimeStamp": 1779802200000,
+    "publishDateStr": "05-26",
+    "publishDateTimeStr": "2026-05-26 21:30:00",
+    "qualified": false,
+    "stickTop": null,
+    "processFlowStatus": "COMPLETED",
+    "processFlowStatusDesc": "Completed",
+    "customPropertyValues": {},
+    "sourceVisibility": "SYSTEM",
+    "recommendReason": null,
+    "recallSource": null,
+    "candidateSource": null,
+    "selectionReason": null,
+    "fallbackApplied": null,
+    "personalized": null
+  }
+]

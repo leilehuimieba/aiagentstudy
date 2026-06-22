@@ -1,0 +1,1098 @@
+{
+  "generated_at": "2026-06-09T18:19:15",
+  "mode": "browser-snapshot",
+  "results": [
+    {
+      "source_id": "anthropic-news",
+      "result": {
+        "status": "browser_readable",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"89C32C891ED0F79C83BDE9B8060CFB96\",\n  \"url\": \"https://www.anthropic.com/news\"\n}\n",
+          "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+        },
+        "page_info": {
+          "page": "89C32C891ED0F79C83BDE9B8060CFB96",
+          "url": "https://www.anthropic.com/news"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [\n    {\n      \"href\": \"https://www.anthropic.com/news#main-content\",\n      \"text\": \"Skip to main content\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news#footer\",\n      \"text\": \"Skip to footer\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/\",\n      \"text\": \"Home\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/research\",\n      \"text\": \"Research\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/economic-futures\",\n      \"text\": \"Economic Futures\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news\",\n      \"text\": \"News\"\n    },\n    {\n      \"href\": \"https://claude.ai/\",\n      \"text\": \"Try Claude\"\n    },\n    {\n      \"href\": \"mailto:press@anthropic.com\",\n      \"text\": \"press@anthropic.com\"\n    },\n    {\n      \"href\": \"https://support.claude.com/en/articles/9015913-how-to-get-support\",\n      \"text\": \"How to get support\"\n    },\n    {\n      \"href\": \"https://anthropic.com/press-kit\",\n      \"text\": \"Download press kit\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/claude-opus-4-8\",\n      \"text\": \"Introducing Claude Opus 4.8 Product May 28, 2026 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professiona\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/expanding-project-glasswing\",\n      \"text\": \"Announcements Jun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries.\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/chris-olah-pope-leo-encyclical\",\n      \"text\": \"Announcements May 25, 2026 Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \\\"Magnifica humanitas\\\" The full text of Chris Olah's remarks on\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/widening-conversation-ai\",\n      \"text\": \"Announcements May 19, 2026 Widening the conversation on frontier AI Over the past several months, we’ve been organizing dialogues with groups whose work and tra\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/election-safeguards-update\",\n      \"text\": \"Announcements Apr 24, 2026 An update on our election safeguards We explain what we’re doing to ensure Claude plays a positive role in the US midterms and other \"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/services-track-partner-hub\",\n      \"text\": \"Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack\",\n      \"text\": \"Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/expanding-project-glasswing\",\n      \"text\": \"Jun 2, 2026 Announcements Expanding Project Glasswing\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/confidential-draft-s1-sec\",\n      \"text\": \"Jun 1, 2026 Announcements Anthropic confidentially submits draft S-1 to the SEC\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/series-h\",\n      \"text\": \"May 28, 2026 Announcements Anthropic raises $65B in Series H funding at $965B post-money valuation\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/claude-opus-4-8\",\n      \"text\": \"May 28, 2026 Product Introducing Claude Opus 4.8\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/milan-office-opening\",\n      \"text\": \"May 27, 2026 Announcements Anthropic opens Milan office to support Italian enterprise, research, and developers\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea\",\n      \"text\": \"May 26, 2026 Announcements Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/chris-olah-pope-leo-encyclical\",\n      \"text\": \"May 25, 2026 Announcements Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \\\"Magnifica humanitas\\\"\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/research/glasswing-initial-update\",\n      \"text\": \"May 22, 2026 Announcements Project Glasswing: An initial update\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news#\",\n      \"text\": \"See more\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/\",\n      \"text\": \"Return to homepage\"\n    },\n    {\n      \"href\": \"https://claude.com/product/overview\",\n      \"text\": \"Claude\"\n    },\n    {\n      \"href\": \"https://claude.com/product/claude-code\",\n      \"text\": \"Claude Code\"\n    },\n    {\n      \"href\": \"https://claude.com/product/claude-code/enterprise\",\n      \"text\": \"Claude Code Enterprise\"\n    },\n    {\n      \"href\": \"https://claude.com/product/cowork\",\n      \"text\": \"Claude Cowork\"\n    },\n    {\n      \"href\": \"https://claude.com/product/claude-security\",\n      \"text\": \"Claude Security\"\n    },\n    {\n      \"href\": \"https://claude.com/chrome\",\n      \"text\": \"Claude for Chrome\"\n    },\n    {\n      \"href\": \"https://claude.com/claude-for-slack\",\n      \"text\": \"Claude for Slack\"\n    },\n    {\n      \"href\": \"https://claude.com/claude-for-microsoft-365\",\n      \"text\": \"Claude for Microsoft 365\"\n    },\n    {\n      \"href\": \"https://www.claude.com/skills\",\n      \"text\": \"Skills\"\n    },\n    {\n      \"href\": \"https://claude.ai/download\",\n      \"text\": \"Download app\"\n    },\n    {\n      \"href\": \"https://claude.com/pricing\",\n      \"text\": \"Pricing\"\n    },\n    {\n      \"href\": \"https://claude.ai/\",\n      \"text\": \"Log in to Claude\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/glasswing\",\n      \"text\": \"Mythos Preview\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/claude/opus\",\n      \"text\": \"Opus\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/claude/sonnet\",\n      \"text\": \"Sonnet\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/claude/haiku\",\n      \"text\": \"Haiku\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/agents\",\n      \"text\": \"AI agents\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/code-modernization\",\n      \"text\": \"Code modernization\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/coding\",\n      \"text\": \"Coding\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/customer-support\",\n      \"text\": \"Customer support\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/education\",\n      \"text\": \"Education\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/enterprise\",\n      \"text\": \"Enterprise\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/financial-services\",\n      \"text\": \"Financial services\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/government\",\n      \"text\": \"Government\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/healthcare\",\n      \"text\": \"Healthcare\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/legal\",\n      \"text\": \"Legal\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/life-sciences\",\n      \"text\": \"Life sciences\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/nonprofits\",\n      \"text\": \"Nonprofits\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/security\",\n      \"text\": \"Security\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/small-business\",\n      \"text\": \"Small business\"\n    },\n    {\n      \"href\": \"https://claude.com/programs/startups\",\n      \"text\": \"Startups\"\n    },\n    {\n      \"href\": \"https://claude.com/platform/api\",\n      \"text\": \"Overview\"\n    },\n    {\n      \"href\": \"https://platform.claude.com/docs\",\n      \"text\": \"Developer docs\"\n    },\n    {\n      \"href\": \"https://claude.com/pricing#api\",\n      \"text\": \"Pricing\"\n    },\n    {\n      \"href\": \"https://claude.com/platform/marketplace\",\n      \"text\": \"Marketplace\"\n    },\n    {\n      \"href\": \"https://claude.com/regional-compliance\",\n      \"text\": \"Regional compliance\"\n    },\n    {\n      \"href\": \"https://claude.com/partners/claude-on-aws\",\n      \"text\": \"Claude on AWS\"\n    },\n    {\n      \"href\": \"https://claude.com/partners/google-cloud-vertex-ai\",\n      \"text\": \"Google Cloud’s Vertex AI\"\n    },\n    {\n      \"href\": \"https://claude.com/partners/microsoft-foundry\",\n      \"text\": \"Microsoft Foundry\"\n    },\n    {\n      \"href\": \"https://platform.claude.com/\",\n      \"text\": \"Console login\"\n    },\n    {\n      \"href\": \"https://claude.com/blog\",\n      \"text\": \"Blog\"\n    },\n    {\n      \"href\": \"https://claude.com/partners\",\n      \"text\": \"Claude partner network\"\n    },\n    {\n      \"href\": \"https://claude.com/community\",\n      \"text\": \"Community\"\n    },\n    {\n      \"href\": \"https://claude.com/connectors\",\n      \"text\": \"Connectors\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/learn\",\n      \"text\": \"Courses\"\n    },\n    {\n      \"href\": \"https://claude.com/customers\",\n      \"text\": \"Customer stories\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/engineering\",\n      \"text\": \"Engineering at Anthropic\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/events\",\n      \"text\": \"Events\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/product/claude-code\",\n      \"text\": \"Inside Claude Code\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/product/claude-cowork\",\n      \"text\": \"Inside Claude Cowork\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/product/enterprise\",\n      \"text\": \"Inside Claude Enterprise\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/product/security\",\n      \"text\": \"Inside Claude Security\"\n    },\n    {\n      \"href\": \"https://claude.com/plugins\",\n      \"text\": \"Plugins\"\n    }\n  ],\n  \"readyState\": \"complete\",\n  \"text\": \"Skip to main content Skip to footer Research Economic Futures Commitments Learn News Try Claude Newsroom Press inquires press@anthropic.com Non-media inquiries How to get support Media assets Download press kit Introducing Claude Opus 4.8 Product May 28, 2026 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work. Announcements Jun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries. Announcements May 25, 2026 Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \\\"Magnifica humanitas\\\" The full text of Chris Olah's remarks on the Pope's encyclical on AI. Announcements May 19, 2026 Widening the conversation on frontier AI Over the past several months, we’ve been organizing dialogues with groups whose work and traditions bear on the questions raised by AI. Announcements Apr 24, 2026 An update on our election safeguards We explain what we’re doing to ensure Claude plays a positive role in the US midterms and other major elections around the world this year. News Search DATE CATEGORY TITLE Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats Jun 2, 2026 Announcements Expanding Project Glasswing Jun 1, 2026 Announcements Anthropic confidentially submits draft S-1 to the SEC May 28, 2026 Announcements Anthropic raises $65B in Series H funding at $965B post-money valuation May 28, 2026 Product Introducing Claude Opus 4.8 May 27, 2026 Announcements Anthropic opens Milan office to support Italian enterprise, research, and developers May 26, 2026 Announcements Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening May 25, 2026 Announcements Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \\\"Magnifica humanitas\\\" May 22, 2026 Announcements Project Glasswing: An initial update See more Products Claude Claude Code Claude Code Enterprise Claude Cowork Claude Security Claude for Chrome Claude for Slack Claude for Microsoft 365 Skills Download app Pricing Log in to Claude Models Mythos Preview Opus Sonnet Haiku Solutions AI agents Code modernization Coding Customer support Education Enterprise Financial services Government Healthcare Legal Life sciences Nonprofits Security Small business Startups Claude Platform Overview Developer docs Pricing Marketplace Regional compliance Claude on AWS Google Cloud’s Vertex AI Microsoft Foundry Console login Resources Blog Claude partner network Community Connectors Courses Customer stories Engineering at Anthropic Events Inside Claude Code Inside Claude Cowork Inside Claude Enterprise Inside Claude Security Plugins Powered by Claude Service partners Tutorials Use cases Help and security Availability Status Support center Company Anthropic Careers Economic Futures Research News Claude’s Constitution Responsible Scaling Policy Security and compliance Transparency Terms and policies Privacy choices Privacy policy Consumer health data privacy policy Responsible disclosure policy Terms of service: Commercial Terms of service: Consumer Usage policy © 2026 Anthropic PBC\",\n  \"textLength\": 3352,\n  \"title\": \"Newsroom \\\\ Anthropic\",\n  \"url\": \"https://www.anthropic.com/news\"\n}\n",
+          "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+        },
+        "page_state": {
+          "links": [
+            {
+              "href": "https://www.anthropic.com/news#main-content",
+              "text": "Skip to main content"
+            },
+            {
+              "href": "https://www.anthropic.com/news#footer",
+              "text": "Skip to footer"
+            },
+            {
+              "href": "https://www.anthropic.com/",
+              "text": "Home"
+            },
+            {
+              "href": "https://www.anthropic.com/research",
+              "text": "Research"
+            },
+            {
+              "href": "https://www.anthropic.com/economic-futures",
+              "text": "Economic Futures"
+            },
+            {
+              "href": "https://www.anthropic.com/news",
+              "text": "News"
+            },
+            {
+              "href": "https://claude.ai/",
+              "text": "Try Claude"
+            },
+            {
+              "href": "mailto:press@anthropic.com",
+              "text": "press@anthropic.com"
+            },
+            {
+              "href": "https://support.claude.com/en/articles/9015913-how-to-get-support",
+              "text": "How to get support"
+            },
+            {
+              "href": "https://anthropic.com/press-kit",
+              "text": "Download press kit"
+            },
+            {
+              "href": "https://www.anthropic.com/news/claude-opus-4-8",
+              "text": "Introducing Claude Opus 4.8 Product May 28, 2026 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professiona"
+            },
+            {
+              "href": "https://www.anthropic.com/news/expanding-project-glasswing",
+              "text": "Announcements Jun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries."
+            },
+            {
+              "href": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+              "text": "Announcements May 25, 2026 Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" The full text of Chris Olah's remarks on"
+            },
+            {
+              "href": "https://www.anthropic.com/news/widening-conversation-ai",
+              "text": "Announcements May 19, 2026 Widening the conversation on frontier AI Over the past several months, we’ve been organizing dialogues with groups whose work and tra"
+            },
+            {
+              "href": "https://www.anthropic.com/news/election-safeguards-update",
+              "text": "Announcements Apr 24, 2026 An update on our election safeguards We explain what we’re doing to ensure Claude plays a positive role in the US midterms and other "
+            },
+            {
+              "href": "https://www.anthropic.com/news/services-track-partner-hub",
+              "text": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network"
+            },
+            {
+              "href": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+              "text": "Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats"
+            },
+            {
+              "href": "https://www.anthropic.com/news/expanding-project-glasswing",
+              "text": "Jun 2, 2026 Announcements Expanding Project Glasswing"
+            },
+            {
+              "href": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+              "text": "Jun 1, 2026 Announcements Anthropic confidentially submits draft S-1 to the SEC"
+            },
+            {
+              "href": "https://www.anthropic.com/news/series-h",
+              "text": "May 28, 2026 Announcements Anthropic raises $65B in Series H funding at $965B post-money valuation"
+            },
+            {
+              "href": "https://www.anthropic.com/news/claude-opus-4-8",
+              "text": "May 28, 2026 Product Introducing Claude Opus 4.8"
+            },
+            {
+              "href": "https://www.anthropic.com/news/milan-office-opening",
+              "text": "May 27, 2026 Announcements Anthropic opens Milan office to support Italian enterprise, research, and developers"
+            },
+            {
+              "href": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
+              "text": "May 26, 2026 Announcements Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening"
+            },
+            {
+              "href": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+              "text": "May 25, 2026 Announcements Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\""
+            },
+            {
+              "href": "https://www.anthropic.com/research/glasswing-initial-update",
+              "text": "May 22, 2026 Announcements Project Glasswing: An initial update"
+            },
+            {
+              "href": "https://www.anthropic.com/news#",
+              "text": "See more"
+            },
+            {
+              "href": "https://www.anthropic.com/",
+              "text": "Return to homepage"
+            },
+            {
+              "href": "https://claude.com/product/overview",
+              "text": "Claude"
+            },
+            {
+              "href": "https://claude.com/product/claude-code",
+              "text": "Claude Code"
+            },
+            {
+              "href": "https://claude.com/product/claude-code/enterprise",
+              "text": "Claude Code Enterprise"
+            },
+            {
+              "href": "https://claude.com/product/cowork",
+              "text": "Claude Cowork"
+            },
+            {
+              "href": "https://claude.com/product/claude-security",
+              "text": "Claude Security"
+            },
+            {
+              "href": "https://claude.com/chrome",
+              "text": "Claude for Chrome"
+            },
+            {
+              "href": "https://claude.com/claude-for-slack",
+              "text": "Claude for Slack"
+            },
+            {
+              "href": "https://claude.com/claude-for-microsoft-365",
+              "text": "Claude for Microsoft 365"
+            },
+            {
+              "href": "https://www.claude.com/skills",
+              "text": "Skills"
+            },
+            {
+              "href": "https://claude.ai/download",
+              "text": "Download app"
+            },
+            {
+              "href": "https://claude.com/pricing",
+              "text": "Pricing"
+            },
+            {
+              "href": "https://claude.ai/",
+              "text": "Log in to Claude"
+            },
+            {
+              "href": "https://www.anthropic.com/glasswing",
+              "text": "Mythos Preview"
+            },
+            {
+              "href": "https://www.anthropic.com/claude/opus",
+              "text": "Opus"
+            },
+            {
+              "href": "https://www.anthropic.com/claude/sonnet",
+              "text": "Sonnet"
+            },
+            {
+              "href": "https://www.anthropic.com/claude/haiku",
+              "text": "Haiku"
+            },
+            {
+              "href": "https://claude.com/solutions/agents",
+              "text": "AI agents"
+            },
+            {
+              "href": "https://claude.com/solutions/code-modernization",
+              "text": "Code modernization"
+            },
+            {
+              "href": "https://claude.com/solutions/coding",
+              "text": "Coding"
+            },
+            {
+              "href": "https://claude.com/solutions/customer-support",
+              "text": "Customer support"
+            },
+            {
+              "href": "https://claude.com/solutions/education",
+              "text": "Education"
+            },
+            {
+              "href": "https://claude.com/solutions/enterprise",
+              "text": "Enterprise"
+            },
+            {
+              "href": "https://claude.com/solutions/financial-services",
+              "text": "Financial services"
+            },
+            {
+              "href": "https://claude.com/solutions/government",
+              "text": "Government"
+            },
+            {
+              "href": "https://claude.com/solutions/healthcare",
+              "text": "Healthcare"
+            },
+            {
+              "href": "https://claude.com/solutions/legal",
+              "text": "Legal"
+            },
+            {
+              "href": "https://claude.com/solutions/life-sciences",
+              "text": "Life sciences"
+            },
+            {
+              "href": "https://claude.com/solutions/nonprofits",
+              "text": "Nonprofits"
+            },
+            {
+              "href": "https://claude.com/solutions/security",
+              "text": "Security"
+            },
+            {
+              "href": "https://claude.com/solutions/small-business",
+              "text": "Small business"
+            },
+            {
+              "href": "https://claude.com/programs/startups",
+              "text": "Startups"
+            },
+            {
+              "href": "https://claude.com/platform/api",
+              "text": "Overview"
+            },
+            {
+              "href": "https://platform.claude.com/docs",
+              "text": "Developer docs"
+            },
+            {
+              "href": "https://claude.com/pricing#api",
+              "text": "Pricing"
+            },
+            {
+              "href": "https://claude.com/platform/marketplace",
+              "text": "Marketplace"
+            },
+            {
+              "href": "https://claude.com/regional-compliance",
+              "text": "Regional compliance"
+            },
+            {
+              "href": "https://claude.com/partners/claude-on-aws",
+              "text": "Claude on AWS"
+            },
+            {
+              "href": "https://claude.com/partners/google-cloud-vertex-ai",
+              "text": "Google Cloud’s Vertex AI"
+            },
+            {
+              "href": "https://claude.com/partners/microsoft-foundry",
+              "text": "Microsoft Foundry"
+            },
+            {
+              "href": "https://platform.claude.com/",
+              "text": "Console login"
+            },
+            {
+              "href": "https://claude.com/blog",
+              "text": "Blog"
+            },
+            {
+              "href": "https://claude.com/partners",
+              "text": "Claude partner network"
+            },
+            {
+              "href": "https://claude.com/community",
+              "text": "Community"
+            },
+            {
+              "href": "https://claude.com/connectors",
+              "text": "Connectors"
+            },
+            {
+              "href": "https://www.anthropic.com/learn",
+              "text": "Courses"
+            },
+            {
+              "href": "https://claude.com/customers",
+              "text": "Customer stories"
+            },
+            {
+              "href": "https://www.anthropic.com/engineering",
+              "text": "Engineering at Anthropic"
+            },
+            {
+              "href": "https://www.anthropic.com/events",
+              "text": "Events"
+            },
+            {
+              "href": "https://www.anthropic.com/product/claude-code",
+              "text": "Inside Claude Code"
+            },
+            {
+              "href": "https://www.anthropic.com/product/claude-cowork",
+              "text": "Inside Claude Cowork"
+            },
+            {
+              "href": "https://www.anthropic.com/product/enterprise",
+              "text": "Inside Claude Enterprise"
+            },
+            {
+              "href": "https://www.anthropic.com/product/security",
+              "text": "Inside Claude Security"
+            },
+            {
+              "href": "https://claude.com/plugins",
+              "text": "Plugins"
+            }
+          ],
+          "readyState": "complete",
+          "text": "Skip to main content Skip to footer Research Economic Futures Commitments Learn News Try Claude Newsroom Press inquires press@anthropic.com Non-media inquiries How to get support Media assets Download press kit Introducing Claude Opus 4.8 Product May 28, 2026 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work. Announcements Jun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries. Announcements May 25, 2026 Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" The full text of Chris Olah's remarks on the Pope's encyclical on AI. Announcements May 19, 2026 Widening the conversation on frontier AI Over the past several months, we’ve been organizing dialogues with groups whose work and traditions bear on the questions raised by AI. Announcements Apr 24, 2026 An update on our election safeguards We explain what we’re doing to ensure Claude plays a positive role in the US midterms and other major elections around the world this year. News Search DATE CATEGORY TITLE Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats Jun 2, 2026 Announcements Expanding Project Glasswing Jun 1, 2026 Announcements Anthropic confidentially submits draft S-1 to the SEC May 28, 2026 Announcements Anthropic raises $65B in Series H funding at $965B post-money valuation May 28, 2026 Product Introducing Claude Opus 4.8 May 27, 2026 Announcements Anthropic opens Milan office to support Italian enterprise, research, and developers May 26, 2026 Announcements Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening May 25, 2026 Announcements Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" May 22, 2026 Announcements Project Glasswing: An initial update See more Products Claude Claude Code Claude Code Enterprise Claude Cowork Claude Security Claude for Chrome Claude for Slack Claude for Microsoft 365 Skills Download app Pricing Log in to Claude Models Mythos Preview Opus Sonnet Haiku Solutions AI agents Code modernization Coding Customer support Education Enterprise Financial services Government Healthcare Legal Life sciences Nonprofits Security Small business Startups Claude Platform Overview Developer docs Pricing Marketplace Regional compliance Claude on AWS Google Cloud’s Vertex AI Microsoft Foundry Console login Resources Blog Claude partner network Community Connectors Courses Customer stories Engineering at Anthropic Events Inside Claude Code Inside Claude Cowork Inside Claude Enterprise Inside Claude Security Plugins Powered by Claude Service partners Tutorials Use cases Help and security Availability Status Support center Company Anthropic Careers Economic Futures Research News Claude’s Constitution Responsible Scaling Policy Security and compliance Transparency Terms and policies Privacy choices Privacy policy Consumer health data privacy policy Responsible disclosure policy Terms of service: Commercial Terms of service: Consumer Usage policy © 2026 Anthropic PBC",
+          "textLength": 3352,
+          "title": "Newsroom \\ Anthropic",
+          "url": "https://www.anthropic.com/news"
+        }
+      }
+    },
+    {
+      "source_id": "meta-ai",
+      "result": {
+        "status": "browser_readable",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"C563415686643592F18E043AF4D1836F\",\n  \"url\": \"https://ai.meta.com/blog/\"\n}\n",
+          "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+        },
+        "page_info": {
+          "page": "C563415686643592F18E043AF4D1836F",
+          "url": "https://ai.meta.com/blog/"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Go up one level\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Products\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"AI Research\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Resources\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"About\"\n    },\n    {\n      \"href\": \"https://www.llama.com/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=09252025_moment\",\n      \"text\": \"Get Llama\"\n    },\n    {\n      \"href\": \"https://applink.meta.ai/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=04082026_moment\",\n      \"text\": \"Try Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Toggle site search\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Close submenu\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Main menu\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Go up one level\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/meta-ai/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/vibes/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/ai-studio/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/research/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/research/#projects\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/research/#research-areas\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/results/?content_types[0]=person\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/learn/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://aidemos.meta.com/\",\n      \"text\": \"Demos opens in new tab\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/about/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/opensourceai/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://www.metacareers.com/\",\n      \"text\": \"Careers opens in new tab\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://www.llama.com/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=09252025_moment\",\n      \"text\": \"Get Llama opens in new tab\"\n    },\n    {\n      \"href\": \"https://applink.meta.ai/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=04082026_moment\",\n      \"text\": \"Try Meta AI opens in new tab\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/introducing-muse-spark-msl/\",\n      \"text\": \"FEATURED\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/introducing-muse-spark-msl/\",\n      \"text\": \"Introducing Muse Spark: Scaling Towards Personal Superintelligence\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/\",\n      \"text\": \"FEATURED\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/\",\n      \"text\": \"Scaling How We Build and Test Our Most Advanced AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/alta-daily-fashion-app-segment-anything/\",\n      \"text\": \"Read How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/alta-daily-fashion-app-segment-anything/\",\n      \"text\": \"How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/segment-anything-model-3/\",\n      \"text\": \"FEATURED\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/segment-anything-model-3/\",\n      \"text\": \"SAM 3.1: Faster and More Accessible Real-Time Video Detection and Tracking With Multiplexing and Global Reasoning\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/\",\n      \"text\": \"FEATURED\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/\",\n      \"text\": \"Four MTIA Chips in Two Years: Scaling AI Experiences for Billions\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/subscribe/\",\n      \"text\": \"Sign up\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/about\",\n      \"text\": \"Our approach\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/about\",\n      \"text\": \"About AI at Meta\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/results/?content_types%5B0%5D=person&sort_by=random\",\n      \"text\": \"People\"\n    },\n    {\n      \"href\": \"https://www.metacareers.com/jobs/?is_leadership=0&sub_teams[0]=Artificial%20Intelligence&is_in_page=0\",\n      \"text\": \"Careers\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/research\",\n      \"text\": \"Research\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/infrastructure\",\n      \"text\": \"Infrastructure\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/resources\",\n      \"text\": \"Resources\"\n    },\n    {\n      \"href\": \"https://aidemos.meta.com/\",\n      \"text\": \"Demos\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/meta-ai/\",\n      \"text\": \"Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/meta-ai/\",\n      \"text\": \"Explore Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/get-meta-ai/\",\n      \"text\": \"Get Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/ai-studio/\",\n      \"text\": \"AI Studio\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog\",\n      \"text\": \"Latest news\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog\",\n      \"text\": \"Blog\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/subscribe\",\n      \"text\": \"Newsletter\"\n    },\n    {\n      \"href\": \"https://www.llama.com/\",\n      \"text\": \"Llama\"\n    },\n    {\n      \"href\": \"https://www.facebook.com/aiatmeta/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://twitter.com/aiatmeta/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://www.linkedin.com/showcase/aiatmeta\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://www.youtube.com/@aiatmeta\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/about\",\n      \"text\": \"Our approach\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/about\",\n      \"text\": \"About AI at Meta\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/results/?content_types%5B0%5D=person&sort_by=random\",\n      \"text\": \"People\"\n    },\n    {\n      \"href\": \"https://www.metacareers.com/jobs/?is_leadership=0&sub_teams[0]=Artificial%20Intelligence&is_in_page=0\",\n      \"text\": \"Careers\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/research\",\n      \"text\": \"Research\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/infrastructure\",\n      \"text\": \"Infrastructure\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/resources\",\n      \"text\": \"Resources\"\n    },\n    {\n      \"href\": \"https://aidemos.meta.com/\",\n      \"text\": \"Demos\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/meta-ai/\",\n      \"text\": \"Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/meta-ai/\",\n      \"text\": \"Explore Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/get-meta-ai/\",\n      \"text\": \"Get Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/ai-studio/\",\n      \"text\": \"AI Studio\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog\",\n      \"text\": \"Latest news\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog\",\n      \"text\": \"Blog\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/subscribe\",\n      \"text\": \"Newsletter\"\n    },\n    {\n      \"href\": \"https://www.llama.com/\",\n      \"text\": \"Llama\"\n    },\n    {\n      \"href\": \"https://www.facebook.com/aiatmeta/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://twitter.com/aiatmeta/\",\n      \"text\": \"\"\n    }\n  ],\n  \"readyState\": \"interactive\",\n  \"text\": \"Products AI Research Resources About Get Llama Try Meta AI The latest AI news from Meta FEATURED Introducing Muse Spark: Scaling Towards Personal Superintelligence April 8, 2026 Latest News FEATURED Research Scaling How We Build and Test Our Most Advanced AI Apr 8, 2026 Computer Vision How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet Apr 6, 2026 FEATURED Computer Vision SAM 3.1: Faster and More Accessible Real-Time Video Detection and Tracking With Multiplexing and Global Reasoning Mar 27, 2026 FEATURED Four MTIA Chips in Two Years: Scaling AI Experiences for Billions Mar 11, 2026 Get the latest from AI at Meta in your inbox Sign up Our approach About AI at Meta People Careers Research Infrastructure Resources Demos Meta AI Explore Meta AI Get Meta AI AI Studio Latest news Blog Newsletter Foundational models Llama Privacy Policy Terms Cookies Meta © 2026\",\n  \"textLength\": 893,\n  \"title\": \"AI at Meta Blog\",\n  \"url\": \"https://ai.meta.com/blog/\"\n}\n",
+          "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+        },
+        "page_state": {
+          "links": [
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": "Go up one level"
+            },
+            {
+              "href": "https://ai.meta.com/",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": "Products"
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": "AI Research"
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": "Resources"
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": "About"
+            },
+            {
+              "href": "https://www.llama.com/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=09252025_moment",
+              "text": "Get Llama"
+            },
+            {
+              "href": "https://applink.meta.ai/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=04082026_moment",
+              "text": "Try Meta AI"
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": "Toggle site search"
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": "Close submenu"
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": "Main menu"
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": "Go up one level"
+            },
+            {
+              "href": "https://ai.meta.com/meta-ai/",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/vibes/",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/ai-studio/",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/research/",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/research/#projects",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/research/#research-areas",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/results/?content_types[0]=person",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/blog/",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/learn/",
+              "text": ""
+            },
+            {
+              "href": "https://aidemos.meta.com/",
+              "text": "Demos opens in new tab"
+            },
+            {
+              "href": "https://ai.meta.com/about/",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/opensourceai/",
+              "text": ""
+            },
+            {
+              "href": "https://www.metacareers.com/",
+              "text": "Careers opens in new tab"
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/blog/#",
+              "text": ""
+            },
+            {
+              "href": "https://www.llama.com/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=09252025_moment",
+              "text": "Get Llama opens in new tab"
+            },
+            {
+              "href": "https://applink.meta.ai/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=04082026_moment",
+              "text": "Try Meta AI opens in new tab"
+            },
+            {
+              "href": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+              "text": "FEATURED"
+            },
+            {
+              "href": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+              "text": "Introducing Muse Spark: Scaling Towards Personal Superintelligence"
+            },
+            {
+              "href": "https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/",
+              "text": "FEATURED"
+            },
+            {
+              "href": "https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/",
+              "text": "Scaling How We Build and Test Our Most Advanced AI"
+            },
+            {
+              "href": "https://ai.meta.com/blog/alta-daily-fashion-app-segment-anything/",
+              "text": "Read How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet"
+            },
+            {
+              "href": "https://ai.meta.com/blog/alta-daily-fashion-app-segment-anything/",
+              "text": "How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet"
+            },
+            {
+              "href": "https://ai.meta.com/blog/segment-anything-model-3/",
+              "text": "FEATURED"
+            },
+            {
+              "href": "https://ai.meta.com/blog/segment-anything-model-3/",
+              "text": "SAM 3.1: Faster and More Accessible Real-Time Video Detection and Tracking With Multiplexing and Global Reasoning"
+            },
+            {
+              "href": "https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/",
+              "text": "FEATURED"
+            },
+            {
+              "href": "https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/",
+              "text": "Four MTIA Chips in Two Years: Scaling AI Experiences for Billions"
+            },
+            {
+              "href": "https://ai.meta.com/subscribe/",
+              "text": "Sign up"
+            },
+            {
+              "href": "https://ai.meta.com/about",
+              "text": "Our approach"
+            },
+            {
+              "href": "https://ai.meta.com/about",
+              "text": "About AI at Meta"
+            },
+            {
+              "href": "https://ai.meta.com/results/?content_types%5B0%5D=person&sort_by=random",
+              "text": "People"
+            },
+            {
+              "href": "https://www.metacareers.com/jobs/?is_leadership=0&sub_teams[0]=Artificial%20Intelligence&is_in_page=0",
+              "text": "Careers"
+            },
+            {
+              "href": "https://ai.meta.com/research",
+              "text": "Research"
+            },
+            {
+              "href": "https://ai.meta.com/infrastructure",
+              "text": "Infrastructure"
+            },
+            {
+              "href": "https://ai.meta.com/resources",
+              "text": "Resources"
+            },
+            {
+              "href": "https://aidemos.meta.com/",
+              "text": "Demos"
+            },
+            {
+              "href": "https://ai.meta.com/meta-ai/",
+              "text": "Meta AI"
+            },
+            {
+              "href": "https://ai.meta.com/meta-ai/",
+              "text": "Explore Meta AI"
+            },
+            {
+              "href": "https://ai.meta.com/get-meta-ai/",
+              "text": "Get Meta AI"
+            },
+            {
+              "href": "https://ai.meta.com/ai-studio/",
+              "text": "AI Studio"
+            },
+            {
+              "href": "https://ai.meta.com/blog",
+              "text": "Latest news"
+            },
+            {
+              "href": "https://ai.meta.com/blog",
+              "text": "Blog"
+            },
+            {
+              "href": "https://ai.meta.com/subscribe",
+              "text": "Newsletter"
+            },
+            {
+              "href": "https://www.llama.com/",
+              "text": "Llama"
+            },
+            {
+              "href": "https://www.facebook.com/aiatmeta/",
+              "text": ""
+            },
+            {
+              "href": "https://twitter.com/aiatmeta/",
+              "text": ""
+            },
+            {
+              "href": "https://www.linkedin.com/showcase/aiatmeta",
+              "text": ""
+            },
+            {
+              "href": "https://www.youtube.com/@aiatmeta",
+              "text": ""
+            },
+            {
+              "href": "https://ai.meta.com/about",
+              "text": "Our approach"
+            },
+            {
+              "href": "https://ai.meta.com/about",
+              "text": "About AI at Meta"
+            },
+            {
+              "href": "https://ai.meta.com/results/?content_types%5B0%5D=person&sort_by=random",
+              "text": "People"
+            },
+            {
+              "href": "https://www.metacareers.com/jobs/?is_leadership=0&sub_teams[0]=Artificial%20Intelligence&is_in_page=0",
+              "text": "Careers"
+            },
+            {
+              "href": "https://ai.meta.com/research",
+              "text": "Research"
+            },
+            {
+              "href": "https://ai.meta.com/infrastructure",
+              "text": "Infrastructure"
+            },
+            {
+              "href": "https://ai.meta.com/resources",
+              "text": "Resources"
+            },
+            {
+              "href": "https://aidemos.meta.com/",
+              "text": "Demos"
+            },
+            {
+              "href": "https://ai.meta.com/meta-ai/",
+              "text": "Meta AI"
+            },
+            {
+              "href": "https://ai.meta.com/meta-ai/",
+              "text": "Explore Meta AI"
+            },
+            {
+              "href": "https://ai.meta.com/get-meta-ai/",
+              "text": "Get Meta AI"
+            },
+            {
+              "href": "https://ai.meta.com/ai-studio/",
+              "text": "AI Studio"
+            },
+            {
+              "href": "https://ai.meta.com/blog",
+              "text": "Latest news"
+            },
+            {
+              "href": "https://ai.meta.com/blog",
+              "text": "Blog"
+            },
+            {
+              "href": "https://ai.meta.com/subscribe",
+              "text": "Newsletter"
+            },
+            {
+              "href": "https://www.llama.com/",
+              "text": "Llama"
+            },
+            {
+              "href": "https://www.facebook.com/aiatmeta/",
+              "text": ""
+            },
+            {
+              "href": "https://twitter.com/aiatmeta/",
+              "text": ""
+            }
+          ],
+          "readyState": "interactive",
+          "text": "Products AI Research Resources About Get Llama Try Meta AI The latest AI news from Meta FEATURED Introducing Muse Spark: Scaling Towards Personal Superintelligence April 8, 2026 Latest News FEATURED Research Scaling How We Build and Test Our Most Advanced AI Apr 8, 2026 Computer Vision How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet Apr 6, 2026 FEATURED Computer Vision SAM 3.1: Faster and More Accessible Real-Time Video Detection and Tracking With Multiplexing and Global Reasoning Mar 27, 2026 FEATURED Four MTIA Chips in Two Years: Scaling AI Experiences for Billions Mar 11, 2026 Get the latest from AI at Meta in your inbox Sign up Our approach About AI at Meta People Careers Research Infrastructure Resources Demos Meta AI Explore Meta AI Get Meta AI AI Studio Latest news Blog Newsletter Foundational models Llama Privacy Policy Terms Cookies Meta © 2026",
+          "textLength": 893,
+          "title": "AI at Meta Blog",
+          "url": "https://ai.meta.com/blog/"
+        }
+      }
+    },
+    {
+      "source_id": "papers-with-code",
+      "result": {
+        "status": "browser_readable",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"9189239FAFDCA48E3AF1A57BA14714A1\",\n  \"url\": \"https://paperswithcode.com/\"\n}\n",
+          "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+        },
+        "page_info": {
+          "page": "9189239FAFDCA48E3AF1A57BA14714A1",
+          "url": "https://paperswithcode.com/"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [\n    {\n      \"href\": \"https://huggingface.co/\",\n      \"text\": \"Hugging Face\"\n    },\n    {\n      \"href\": \"https://huggingface.co/models\",\n      \"text\": \"Models\"\n    },\n    {\n      \"href\": \"https://huggingface.co/datasets\",\n      \"text\": \"Datasets\"\n    },\n    {\n      \"href\": \"https://huggingface.co/spaces\",\n      \"text\": \"Spaces\"\n    },\n    {\n      \"href\": \"https://huggingface.co/storage\",\n      \"text\": \"Buckets new\"\n    },\n    {\n      \"href\": \"https://huggingface.co/docs\",\n      \"text\": \"Docs\"\n    },\n    {\n      \"href\": \"https://huggingface.co/enterprise\",\n      \"text\": \"Enterprise\"\n    },\n    {\n      \"href\": \"https://huggingface.co/pricing\",\n      \"text\": \"Pricing\"\n    },\n    {\n      \"href\": \"https://huggingface.co/tasks\",\n      \"text\": \"Tasks\"\n    },\n    {\n      \"href\": \"https://huggingface.co/chat\",\n      \"text\": \"HuggingChat\"\n    },\n    {\n      \"href\": \"https://huggingface.co/collections\",\n      \"text\": \"Collections\"\n    },\n    {\n      \"href\": \"https://huggingface.co/languages\",\n      \"text\": \"Languages\"\n    },\n    {\n      \"href\": \"https://huggingface.co/organizations\",\n      \"text\": \"Organizations\"\n    },\n    {\n      \"href\": \"https://huggingface.co/blog/zh\",\n      \"text\": \"Blog\"\n    },\n    {\n      \"href\": \"https://huggingface.co/posts\",\n      \"text\": \"Posts\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers\",\n      \"text\": \"Daily Papers\"\n    },\n    {\n      \"href\": \"https://huggingface.co/learn\",\n      \"text\": \"Learn\"\n    },\n    {\n      \"href\": \"https://huggingface.co/join/discord\",\n      \"text\": \"Discord\"\n    },\n    {\n      \"href\": \"https://discuss.huggingface.co/\",\n      \"text\": \"Forum\"\n    },\n    {\n      \"href\": \"https://github.com/huggingface\",\n      \"text\": \"GitHub\"\n    },\n    {\n      \"href\": \"https://huggingface.co/enterprise\",\n      \"text\": \"Team & Enterprise\"\n    },\n    {\n      \"href\": \"https://huggingface.co/pro\",\n      \"text\": \"Hugging Face PRO\"\n    },\n    {\n      \"href\": \"https://huggingface.co/support\",\n      \"text\": \"Enterprise Support\"\n    },\n    {\n      \"href\": \"https://huggingface.co/inference/models\",\n      \"text\": \"Inference Providers\"\n    },\n    {\n      \"href\": \"https://huggingface.co/inference-endpoints\",\n      \"text\": \"Inference Endpoints\"\n    },\n    {\n      \"href\": \"https://huggingface.co/storage\",\n      \"text\": \"Storage Buckets\"\n    },\n    {\n      \"href\": \"https://huggingface.co/login\",\n      \"text\": \"Log In\"\n    },\n    {\n      \"href\": \"https://huggingface.co/join\",\n      \"text\": \"Sign Up\"\n    },\n    {\n      \"href\": \"https://huggingface.co/login?next=%2Fpapers\",\n      \"text\": \"Subscribe\"\n    },\n    {\n      \"href\": \"https://huggingface.co/akhaliq\",\n      \"text\": \"AK\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers\",\n      \"text\": \"Trending Papers\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2412.20138\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2412.20138\",\n      \"text\": \"TradingAgents: Multi-Agents LLM Financial Trading Framework\"\n    },\n    {\n      \"href\": \"https://huggingface.co/login?next=%2Fpapers%2F2412.20138\",\n      \"text\": \"Upvote 90\"\n    },\n    {\n      \"href\": \"https://github.com/tauricresearch/tradingagents\",\n      \"text\": \"GitHub 84.5k\"\n    },\n    {\n      \"href\": \"https://arxiv.org/abs/2412.20138\",\n      \"text\": \"arXiv Page\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2412.20138\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2412.20138\",\n      \"text\": \"TradingAgents: Multi-Agents LLM Financial Trading Framework\"\n    },\n    {\n      \"href\": \"https://huggingface.co/login?next=%2Fpapers%2F2412.20138\",\n      \"text\": \"Upvote 90\"\n    },\n    {\n      \"href\": \"https://github.com/tauricresearch/tradingagents\",\n      \"text\": \"GitHub 84.5k\"\n    },\n    {\n      \"href\": \"https://arxiv.org/abs/2412.20138\",\n      \"text\": \"arXiv Page\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2606.03264\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2606.03264\",\n      \"text\": \"PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training\"\n    },\n    {\n      \"href\": \"https://huggingface.co/PaddlePaddle\",\n      \"text\": \"PaddlePaddle\"\n    },\n    {\n      \"href\": \"https://huggingface.co/login?next=%2Fpapers%2F2606.03264\",\n      \"text\": \"Upvote 15\"\n    },\n    {\n      \"href\": \"https://github.com/PaddlePaddle/PaddleOCR\",\n      \"text\": \"GitHub 81.5k\"\n    },\n    {\n      \"href\": \"https://arxiv.org/abs/2606.03264\",\n      \"text\": \"arXiv Page\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2606.03264\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2606.03264\",\n      \"text\": \"PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training\"\n    },\n    {\n      \"href\": \"https://huggingface.co/PaddlePaddle\",\n      \"text\": \"PaddlePaddle\"\n    },\n    {\n      \"href\": \"https://huggingface.co/login?next=%2Fpapers%2F2606.03264\",\n      \"text\": \"Upvote 15\"\n    },\n    {\n      \"href\": \"https://github.com/PaddlePaddle/PaddleOCR\",\n      \"text\": \"GitHub 81.5k\"\n    },\n    {\n      \"href\": \"https://arxiv.org/abs/2606.03264\",\n      \"text\": \"arXiv Page\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2508.19205\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2508.19205\",\n      \"text\": \"VibeVoice Technical Report\"\n    },\n    {\n      \"href\": \"https://huggingface.co/MicrosoftResearch\",\n      \"text\": \"Microsoft Research\"\n    },\n    {\n      \"href\": \"https://huggingface.co/login?next=%2Fpapers%2F2508.19205\",\n      \"text\": \"Upvote 172\"\n    },\n    {\n      \"href\": \"https://github.com/microsoft/VibeVoice\",\n      \"text\": \"GitHub 49.1k\"\n    },\n    {\n      \"href\": \"https://arxiv.org/abs/2508.19205\",\n      \"text\": \"arXiv Page\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2508.19205\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2508.19205\",\n      \"text\": \"VibeVoice Technical Report\"\n    },\n    {\n      \"href\": \"https://huggingface.co/MicrosoftResearch\",\n      \"text\": \"Microsoft Research\"\n    },\n    {\n      \"href\": \"https://huggingface.co/login?next=%2Fpapers%2F2508.19205\",\n      \"text\": \"Upvote 172\"\n    },\n    {\n      \"href\": \"https://github.com/microsoft/VibeVoice\",\n      \"text\": \"GitHub 49.1k\"\n    },\n    {\n      \"href\": \"https://arxiv.org/abs/2508.19205\",\n      \"text\": \"arXiv Page\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2605.23904\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2605.23904\",\n      \"text\": \"SkillOpt: Executive Strategy for Self-Evolving Agent Skills\"\n    },\n    {\n      \"href\": \"https://huggingface.co/MicrosoftResearch\",\n      \"text\": \"Microsoft Research\"\n    },\n    {\n      \"href\": \"https://huggingface.co/login?next=%2Fpapers%2F2605.23904\",\n      \"text\": \"Upvote 222\"\n    },\n    {\n      \"href\": \"https://github.com/microsoft/SkillOpt\",\n      \"text\": \"GitHub 5.46k\"\n    },\n    {\n      \"href\": \"https://arxiv.org/abs/2605.23904\",\n      \"text\": \"arXiv Page\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2605.23904\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2605.23904\",\n      \"text\": \"SkillOpt: Executive Strategy for Self-Evolving Agent Skills\"\n    },\n    {\n      \"href\": \"https://huggingface.co/MicrosoftResearch\",\n      \"text\": \"Microsoft Research\"\n    },\n    {\n      \"href\": \"https://huggingface.co/login?next=%2Fpapers%2F2605.23904\",\n      \"text\": \"Upvote 222\"\n    },\n    {\n      \"href\": \"https://github.com/microsoft/SkillOpt\",\n      \"text\": \"GitHub 5.46k\"\n    },\n    {\n      \"href\": \"https://arxiv.org/abs/2605.23904\",\n      \"text\": \"arXiv Page\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2606.02800\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://huggingface.co/papers/2606.02800\",\n      \"text\": \"Cosmos 3: Omnimodal World Models for Physical AI\"\n    },\n    {\n      \"href\": \"https://huggingface.co/nvidia\",\n      \"text\": \"NVIDIA\"\n    }\n  ],\n  \"readyState\": \"interactive\",\n  \"text\": \"Hugging Face Models Datasets Spaces Docs Pricing Website Tasks HuggingChat Collections Languages Organizations Community Blog Posts Daily Papers Learn Discord Forum GitHub Solutions Team & Enterprise Hugging Face PRO Enterprise Support Inference Providers Inference Endpoints Storage Buckets Log In Sign Up NEW Get trending papers in your email inbox once a day! Subscribe Trending Papers byAK and the research community Daily Weekly Monthly Trending Papers TradingAgents: Multi-Agents LLM Financial Trading Framework A multi-agent framework using large language models for stock trading simulates real-world trading firms, improving performance metrics like cumulative returns and Sharpe ratio. 4 authors · Published on Dec 28, 2024 Upvote 90 GitHub 84.5k arXiv Page Submitted by ChengCui PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training PaddleOCR-VL-1.6 enhances document parsing performance through targeted data optimization and progressive post-training techniques, achieving state-of-the-art results on OmniDocBench v1.6. PaddlePaddle · Published on Jun 2, 2026 Upvote 15 GitHub 81.5k arXiv Page Submitted by unilm VibeVoice Technical Report VibeVoice synthesizes long-form multi-speaker speech using next-token diffusion and a highly efficient continuous speech tokenizer, achieving superior performance and fidelity. Microsoft Research · Published on Aug 27, 2025 Upvote 172 GitHub 49.1k arXiv Page Submitted by taesiri SkillOpt: Executive Strategy for Self-Evolving Agent Skills SkillOpt introduces a systematic text-space optimizer for agent skills that trains skills as external agent state with stable updates and zero deployment inference overhead, achieving superior performance across multiple benchmarks and execution environments. Microsoft Research · Published on May 22, 2026 Upvote 222 GitHub 5.46k arXiv Page Submitted by taesiri Cosmos 3: Omnimodal World Models for Physical AI Cosmos 3 is an omnimodal world model that processes and generates multiple data types through a unified mixture-of-transformers architecture, achieving state-of-the-art performance in various understanding and generation tasks. NVIDIA · Published on Jun 1, 2026 Upvote 104 GitHub 9.73k arXiv Page Submitted by taesiri dots.tts Technical Report A 2B-parameter continuous autoregressive text-to-speech model trained on a multilingual corpus achieves state-of-the-art performance on multiple benchmarks while enabling efficient low-latency speech generation through specialized distillation techniques. 9 authors · Published on Jun 5, 2026 Upvote 12 GitHub 343 arXiv Page Kronos: A Foundation Model for the Language of Financial Markets Kronos, a specialized pre-training framework for financial K-line data, outperforms existing models in forecasting and synthetic data generation through a unique tokenizer and autoregressive pre-training on a large dataset. 7 authors · Published on Aug 2, 2025 Upvote 40 GitHub 29k arXiv Page Submitted by taesiri MinerU2.5: A Decoupled Vision-Language Model for Efficient High-Resolution Document Parsing MinerU2.5, a 1.2B-parameter document parsing vision-language model, achieves state-of-the-art recognition accuracy with computational efficiency through a coarse-to-fine parsing strategy. 61 authors · Published on Sep 26, 2025 Upvote 165 GitHub 66.9k arXiv Page System theme TOS Privacy About Careers Models Datasets Spaces Pricing Docs\",\n  \"textLength\": 3457,\n  \"title\": \"Trending Papers - Hugging Face\",\n  \"url\": \"https://huggingface.co/papers/trending\"\n}\n",
+          "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+        },
+        "page_state": {
+          "links": [
+            {
+              "href": "https://huggingface.co/",
+              "text": "Hugging Face"
+            },
+            {
+              "href": "https://huggingface.co/models",
+              "text": "Models"
+            },
+            {
+              "href": "https://huggingface.co/datasets",
+              "text": "Datasets"
+            },
+            {
+              "href": "https://huggingface.co/spaces",
+              "text": "Spaces"
+            },
+            {
+              "href": "https://huggingface.co/storage",
+              "text": "Buckets new"
+            },
+            {
+              "href": "https://huggingface.co/docs",
+              "text": "Docs"
+            },
+            {
+              "href": "https://huggingface.co/enterprise",
+              "text": "Enterprise"
+            },
+            {
+              "href": "https://huggingface.co/pricing",
+              "text": "Pricing"
+            },
+            {
+              "href": "https://huggingface.co/tasks",
+              "text": "Tasks"
+            },
+            {
+              "href": "https://huggingface.co/chat",
+              "text": "HuggingChat"
+            },
+            {
+              "href": "https://huggingface.co/collections",
+              "text": "Collections"
+            },
+            {
+              "href": "https://huggingface.co/languages",
+              "text": "Languages"
+            },
+            {
+              "href": "https://huggingface.co/organizations",
+              "text": "Organizations"
+            },
+            {
+              "href": "https://huggingface.co/blog/zh",
+              "text": "Blog"
+            },
+            {
+              "href": "https://huggingface.co/posts",
+              "text": "Posts"
+            },
+            {
+              "href": "https://huggingface.co/papers",
+              "text": "Daily Papers"
+            },
+            {
+              "href": "https://huggingface.co/learn",
+              "text": "Learn"
+            },
+            {
+              "href": "https://huggingface.co/join/discord",
+              "text": "Discord"
+            },
+            {
+              "href": "https://discuss.huggingface.co/",
+              "text": "Forum"
+            },
+            {
+              "href": "https://github.com/huggingface",
+              "text": "GitHub"
+            },
+            {
+              "href": "https://huggingface.co/enterprise",
+              "text": "Team & Enterprise"
+            },
+            {
+              "href": "https://huggingface.co/pro",
+              "text": "Hugging Face PRO"
+            },
+            {
+              "href": "https://huggingface.co/support",
+              "text": "Enterprise Support"
+            },
+            {
+              "href": "https://huggingface.co/inference/models",
+              "text": "Inference Providers"
+            },
+            {
+              "href": "https://huggingface.co/inference-endpoints",
+              "text": "Inference Endpoints"
+            },
+            {
+              "href": "https://huggingface.co/storage",
+              "text": "Storage Buckets"
+            },
+            {
+              "href": "https://huggingface.co/login",
+              "text": "Log In"
+            },
+            {
+              "href": "https://huggingface.co/join",
+              "text": "Sign Up"
+            },
+            {
+              "href": "https://huggingface.co/login?next=%2Fpapers",
+              "text": "Subscribe"
+            },
+            {
+              "href": "https://huggingface.co/akhaliq",
+              "text": "AK"
+            },
+            {
+              "href": "https://huggingface.co/papers",
+              "text": "Trending Papers"
+            },
+            {
+              "href": "https://huggingface.co/papers/2412.20138",
+              "text": ""
+            },
+            {
+              "href": "https://huggingface.co/papers/2412.20138",
+              "text": "TradingAgents: Multi-Agents LLM Financial Trading Framework"
+            },
+            {
+              "href": "https://huggingface.co/login?next=%2Fpapers%2F2412.20138",
+              "text": "Upvote 90"
+            },
+            {
+              "href": "https://github.com/tauricresearch/tradingagents",
+              "text": "GitHub 84.5k"
+            },
+            {
+              "href": "https://arxiv.org/abs/2412.20138",
+              "text": "arXiv Page"
+            },
+            {
+              "href": "https://huggingface.co/papers/2412.20138",
+              "text": ""
+            },
+            {
+              "href": "https://huggingface.co/papers/2412.20138",
+              "text": "TradingAgents: Multi-Agents LLM Financial Trading Framework"
+            },
+            {
+              "href": "https://huggingface.co/login?next=%2Fpapers%2F2412.20138",
+              "text": "Upvote 90"
+            },
+            {
+              "href": "https://github.com/tauricresearch/tradingagents",
+              "text": "GitHub 84.5k"
+            },
+            {
+              "href": "https://arxiv.org/abs/2412.20138",
+              "text": "arXiv Page"
+            },
+            {
+              "href": "https://huggingface.co/papers/2606.03264",
+              "text": ""
+            },
+            {
+              "href": "https://huggingface.co/papers/2606.03264",
+              "text": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training"
+            },
+            {
+              "href": "https://huggingface.co/PaddlePaddle",
+              "text": "PaddlePaddle"
+            },
+            {
+              "href": "https://huggingface.co/login?next=%2Fpapers%2F2606.03264",
+              "text": "Upvote 15"
+            },
+            {
+              "href": "https://github.com/PaddlePaddle/PaddleOCR",
+              "text": "GitHub 81.5k"
+            },
+            {
+              "href": "https://arxiv.org/abs/2606.03264",
+              "text": "arXiv Page"
+            },
+            {
+              "href": "https://huggingface.co/papers/2606.03264",
+              "text": ""
+            },
+            {
+              "href": "https://huggingface.co/papers/2606.03264",
+              "text": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training"
+            },
+            {
+              "href": "https://huggingface.co/PaddlePaddle",
+              "text": "PaddlePaddle"
+            },
+            {
+              "href": "https://huggingface.co/login?next=%2Fpapers%2F2606.03264",
+              "text": "Upvote 15"
+            },
+            {
+              "href": "https://github.com/PaddlePaddle/PaddleOCR",
+              "text": "GitHub 81.5k"
+            },
+            {
+              "href": "https://arxiv.org/abs/2606.03264",
+              "text": "arXiv Page"
+            },
+            {
+              "href": "https://huggingface.co/papers/2508.19205",
+              "text": ""
+            },
+            {
+              "href": "https://huggingface.co/papers/2508.19205",
+              "text": "VibeVoice Technical Report"
+            },
+            {
+              "href": "https://huggingface.co/MicrosoftResearch",
+              "text": "Microsoft Research"
+            },
+            {
+              "href": "https://huggingface.co/login?next=%2Fpapers%2F2508.19205",
+              "text": "Upvote 172"
+            },
+            {
+              "href": "https://github.com/microsoft/VibeVoice",
+              "text": "GitHub 49.1k"
+            },
+            {
+              "href": "https://arxiv.org/abs/2508.19205",
+              "text": "arXiv Page"
+            },
+            {
+              "href": "https://huggingface.co/papers/2508.19205",
+              "text": ""
+            },
+            {
+              "href": "https://huggingface.co/papers/2508.19205",
+              "text": "VibeVoice Technical Report"
+            },
+            {
+              "href": "https://huggingface.co/MicrosoftResearch",
+              "text": "Microsoft Research"
+            },
+            {
+              "href": "https://huggingface.co/login?next=%2Fpapers%2F2508.19205",
+              "text": "Upvote 172"
+            },
+            {
+              "href": "https://github.com/microsoft/VibeVoice",
+              "text": "GitHub 49.1k"
+            },
+            {
+              "href": "https://arxiv.org/abs/2508.19205",
+              "text": "arXiv Page"
+            },
+            {
+              "href": "https://huggingface.co/papers/2605.23904",
+              "text": ""
+            },
+            {
+              "href": "https://huggingface.co/papers/2605.23904",
+              "text": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills"
+            },
+            {
+              "href": "https://huggingface.co/MicrosoftResearch",
+              "text": "Microsoft Research"
+            },
+            {
+              "href": "https://huggingface.co/login?next=%2Fpapers%2F2605.23904",
+              "text": "Upvote 222"
+            },
+            {
+              "href": "https://github.com/microsoft/SkillOpt",
+              "text": "GitHub 5.46k"
+            },
+            {
+              "href": "https://arxiv.org/abs/2605.23904",
+              "text": "arXiv Page"
+            },
+            {
+              "href": "https://huggingface.co/papers/2605.23904",
+              "text": ""
+            },
+            {
+              "href": "https://huggingface.co/papers/2605.23904",
+              "text": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills"
+            },
+            {
+              "href": "https://huggingface.co/MicrosoftResearch",
+              "text": "Microsoft Research"
+            },
+            {
+              "href": "https://huggingface.co/login?next=%2Fpapers%2F2605.23904",
+              "text": "Upvote 222"
+            },
+            {
+              "href": "https://github.com/microsoft/SkillOpt",
+              "text": "GitHub 5.46k"
+            },
+            {
+              "href": "https://arxiv.org/abs/2605.23904",
+              "text": "arXiv Page"
+            },
+            {
+              "href": "https://huggingface.co/papers/2606.02800",
+              "text": ""
+            },
+            {
+              "href": "https://huggingface.co/papers/2606.02800",
+              "text": "Cosmos 3: Omnimodal World Models for Physical AI"
+            },
+            {
+              "href": "https://huggingface.co/nvidia",
+              "text": "NVIDIA"
+            }
+          ],
+          "readyState": "interactive",
+          "text": "Hugging Face Models Datasets Spaces Docs Pricing Website Tasks HuggingChat Collections Languages Organizations Community Blog Posts Daily Papers Learn Discord Forum GitHub Solutions Team & Enterprise Hugging Face PRO Enterprise Support Inference Providers Inference Endpoints Storage Buckets Log In Sign Up NEW Get trending papers in your email inbox once a day! Subscribe Trending Papers byAK and the research community Daily Weekly Monthly Trending Papers TradingAgents: Multi-Agents LLM Financial Trading Framework A multi-agent framework using large language models for stock trading simulates real-world trading firms, improving performance metrics like cumulative returns and Sharpe ratio. 4 authors · Published on Dec 28, 2024 Upvote 90 GitHub 84.5k arXiv Page Submitted by ChengCui PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training PaddleOCR-VL-1.6 enhances document parsing performance through targeted data optimization and progressive post-training techniques, achieving state-of-the-art results on OmniDocBench v1.6. PaddlePaddle · Published on Jun 2, 2026 Upvote 15 GitHub 81.5k arXiv Page Submitted by unilm VibeVoice Technical Report VibeVoice synthesizes long-form multi-speaker speech using next-token diffusion and a highly efficient continuous speech tokenizer, achieving superior performance and fidelity. Microsoft Research · Published on Aug 27, 2025 Upvote 172 GitHub 49.1k arXiv Page Submitted by taesiri SkillOpt: Executive Strategy for Self-Evolving Agent Skills SkillOpt introduces a systematic text-space optimizer for agent skills that trains skills as external agent state with stable updates and zero deployment inference overhead, achieving superior performance across multiple benchmarks and execution environments. Microsoft Research · Published on May 22, 2026 Upvote 222 GitHub 5.46k arXiv Page Submitted by taesiri Cosmos 3: Omnimodal World Models for Physical AI Cosmos 3 is an omnimodal world model that processes and generates multiple data types through a unified mixture-of-transformers architecture, achieving state-of-the-art performance in various understanding and generation tasks. NVIDIA · Published on Jun 1, 2026 Upvote 104 GitHub 9.73k arXiv Page Submitted by taesiri dots.tts Technical Report A 2B-parameter continuous autoregressive text-to-speech model trained on a multilingual corpus achieves state-of-the-art performance on multiple benchmarks while enabling efficient low-latency speech generation through specialized distillation techniques. 9 authors · Published on Jun 5, 2026 Upvote 12 GitHub 343 arXiv Page Kronos: A Foundation Model for the Language of Financial Markets Kronos, a specialized pre-training framework for financial K-line data, outperforms existing models in forecasting and synthetic data generation through a unique tokenizer and autoregressive pre-training on a large dataset. 7 authors · Published on Aug 2, 2025 Upvote 40 GitHub 29k arXiv Page Submitted by taesiri MinerU2.5: A Decoupled Vision-Language Model for Efficient High-Resolution Document Parsing MinerU2.5, a 1.2B-parameter document parsing vision-language model, achieves state-of-the-art recognition accuracy with computational efficiency through a coarse-to-fine parsing strategy. 61 authors · Published on Sep 26, 2025 Upvote 165 GitHub 66.9k arXiv Page System theme TOS Privacy About Careers Models Datasets Spaces Pricing Docs",
+          "textLength": 3457,
+          "title": "Trending Papers - Hugging Face",
+          "url": "https://huggingface.co/papers/trending"
+        }
+      }
+    },
+    {
+      "source_id": "product-hunt-ai",
+      "result": {
+        "status": "browser_readable",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"9458098D0D6A9CB00F4BAB1988A134CE\",\n  \"url\": \"https://www.producthunt.com/categories/artificial-intelligence\"\n}\n",
+          "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+        },
+        "page_info": {
+          "page": "9458098D0D6A9CB00F4BAB1988A134CE",
+          "url": "https://www.producthunt.com/categories/artificial-intelligence"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [\n    {\n      \"href\": \"https://www.producthunt.com/categories/artificial-intelligence#\",\n      \"text\": \"refresh this page\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/cdn-cgi/challenge-platform/help\",\n      \"text\": \"troubleshooting documentation\"\n    },\n    {\n      \"href\": \"https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m\",\n      \"text\": \"Cloudflare\"\n    },\n    {\n      \"href\": \"https://www.cloudflare.com/privacypolicy/\",\n      \"text\": \"Privacy\"\n    }\n  ],\n  \"readyState\": \"complete\",\n  \"text\": \"www.producthunt.com Performing security verification This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot. Why is this verification taking longer? This verification can take longer due to an older computer or a slow internet connection. What to do next: Wait briefly. Refreshing the page will restart the security verification and may take longer. If the verification still does not complete, refresh this page. If you are still stuck on this page after a page refresh, refer to Cloudflare’s troubleshooting documentation for more help. Ray ID: a08f6632c9a2073c Performance and Security by Cloudflare Privacy\",\n  \"textLength\": 695,\n  \"title\": \"Just a moment...\",\n  \"url\": \"https://www.producthunt.com/categories/artificial-intelligence\"\n}\n",
+          "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+        },
+        "page_state": {
+          "links": [
+            {
+              "href": "https://www.producthunt.com/categories/artificial-intelligence#",
+              "text": "refresh this page"
+            },
+            {
+              "href": "https://www.producthunt.com/cdn-cgi/challenge-platform/help",
+              "text": "troubleshooting documentation"
+            },
+            {
+              "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
+              "text": "Cloudflare"
+            },
+            {
+              "href": "https://www.cloudflare.com/privacypolicy/",
+              "text": "Privacy"
+            }
+          ],
+          "readyState": "complete",
+          "text": "www.producthunt.com Performing security verification This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot. Why is this verification taking longer? This verification can take longer due to an older computer or a slow internet connection. What to do next: Wait briefly. Refreshing the page will restart the security verification and may take longer. If the verification still does not complete, refresh this page. If you are still stuck on this page after a page refresh, refer to Cloudflare’s troubleshooting documentation for more help. Ray ID: a08f6632c9a2073c Performance and Security by Cloudflare Privacy",
+          "textLength": 695,
+          "title": "Just a moment...",
+          "url": "https://www.producthunt.com/categories/artificial-intelligence"
+        }
+      }
+    }
+  ]
+}

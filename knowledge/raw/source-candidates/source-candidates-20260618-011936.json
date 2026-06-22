@@ -1,0 +1,1231 @@
+{
+  "generated_at": "2026-06-18T01:19:36",
+  "mode": "candidate-discovery",
+  "discoveries": [
+    {
+      "source_id": "arxiv",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22multi-agent%22+OR+all%3A%22agent+safety%22+OR+all%3A%22coding+agent%22+OR+all%3A%22RAG%22&start=0&max_results=10&sortBy=submittedDate&sortOrder=descending",
+      "query": "all:\"multi-agent\" OR all:\"agent safety\" OR all:\"coding agent\" OR all:\"RAG\"",
+      "entries": [
+        {
+          "title": "All Smoke, No Alarm: Oracle Signals in Agent-Authored Test Code",
+          "summary": "Software practitioners increasingly use AI coding agents that generate test code alongside production code in open source pull requests (PRs). Recent studies report more than 932,000 agent-authored PRs across more than 116,000 repositories, yet whether their test files contain meaningful verification logic remains underexplored. Test files lacking explicit assertions execute code without verifying behavior, so quality gates based on test-file presence overestimate verification strength. The goal of this paper is to help practitioners assess the verification strength of agent-authored patches by characterizing oracle signals and their link to merge outcomes and review effort. We conduct an empirical study of 86,156 test-file patches from 33,596 agent-authored PRs across 2,807 GitHub repositories produced by five coding agents: OpenAI Codex, GitHub Copilot, Devin, Cursor, and Claude Code. A qualitative analysis of 384 stratified patches informs a syntactic taxonomy of eight oracle signal categories. Applied at scale, 80.2% of test patches contain weak or no explicit oracle signals. While raw merge rates are lower for strong-oracle PRs, a regression analysis adjusting for agent, PR size, repository popularity, task type, and language shows strong oracles significantly improve merge likelihood (OR = 1.28, p < 0.001). Our findings suggest that test file counts substantially overestimate verification strength and that practitioners can adopt oracle-aware quality checks to more accurately evaluate agent-authored contributions.",
+          "published": "2026-06-16T17:06:51Z",
+          "updated": "2026-06-16T17:06:51Z",
+          "id": "http://arxiv.org/abs/2606.18168v1",
+          "authors": [
+            "Dipayan Banik",
+            "Kowshik Chowdhury",
+            "Shazibul Islam Shamim"
+          ],
+          "links": [
+            {
+              "href": "https://arxiv.org/abs/2606.18168v1",
+              "rel": "alternate",
+              "type": "text/html"
+            },
+            {
+              "href": "https://arxiv.org/pdf/2606.18168v1",
+              "rel": "related",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "title": "HistoRAG: Embedding Historical Methodology in Retrieval-Augmented Generation Through Critical Technical Practice",
+          "summary": "Retrieval-Augmented Generation (RAG) is the prevailing architecture for grounding language model outputs in external evidence, yet its dominant evaluation paradigms and default configurations remain oriented toward factual question-answering. For interpretive disciplines such as historical studies, RAG embeds assumptions that conflict with scholarly practice. We introduce HistoRAG, a framework that translates historiographical principles into concrete architectural interventions. Separated retrieval and generation decouples source discovery from interpretation, temporal windowing enforces balanced source representation across the research period as a methodological requirement of historical inquiry, and LLM-as-judge evaluation makes relevance judgments transparent and contestable. We evaluate these interventions using SPIEGELragged, applied to 102,189 articles from Der Spiegel (1950-1979). Each intervention addresses a measurable deficiency in standard RAG: era-specific vocabulary retrieves zero chunks from the 1950s when using 1970s terminology, evidence of the temporal skew that motivates windowing; vector similarity and LLM-assessed relevance correlate only weakly (Spearman rho = 0.275), motivating post-retrieval evaluation; and keyword-based and semantic retrieval surface largely disjoint source pools, motivating an architecture in which both operate as complementary retrieval layers under a shared LLM evaluation filter. We also introduce the concept of Zwischentexte (intermediate texts that function as interpretive proposals rather than findings) as a framework for responsible integration of LLM-generated text into scholarly practice. The architecture offers a model for how domain-specific epistemological commitments can be translated into RAG design decisions, and may transfer to other interpretive disciplines working with large corpora.",
+          "published": "2026-06-16T16:03:37Z",
+          "updated": "2026-06-16T16:03:37Z",
+          "id": "http://arxiv.org/abs/2606.18103v1",
+          "authors": [
+            "Noah J. Kim-Baumann",
+            "Torsten Hiltmann"
+          ],
+          "links": [
+            {
+              "href": "https://arxiv.org/abs/2606.18103v1",
+              "rel": "alternate",
+              "type": "text/html"
+            },
+            {
+              "href": "https://arxiv.org/pdf/2606.18103v1",
+              "rel": "related",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "title": "A Unified Framework for Context-Aware and Relation-Aware Graph Retrieval-Augmented Generation",
+          "summary": "Retrieval-Augmented Generation (RAG) has emerged as a paradigm for enhancing large language models (LLMs) with external knowledge, yet existing graph-based methods face a fundamental limitation: entity-centric and chunk-centric approaches operate on representations anchored to original text without true knowledge fusion. While entity-centric methods connect logically related content and chunk-centric methods preserve context, both retrieve information separately through similarity search, missing emergent understanding from their synthesis. In this paper, we propose HyGRAG, a hierarchical graph RAG framework that transcends source documents by addressing three core challenges: constructing summaries that genuinely integrate contextual and relational information, leveraging these synthesized representations to access emergent knowledge during retrieval, and efficiently updating hierarchical structures for dynamic corpora. Specifically, we design hierarchical index structures over hybrid graphs with both chunk and entity nodes, then iteratively cluster them and generate LLM-based summaries. Then, we design context and relation-aware retrieval that searches across all abstraction levels while expanding through community membership. Moreover, we enable dynamic knowledge update through attachment-based algorithms with only local re-summarization. Experimental results show that HyGRAG improves the average accuracy of multi-hop reasoning tasks by 9.7%, while maintaining reasonable efficiency.",
+          "published": "2026-06-16T15:44:10Z",
+          "updated": "2026-06-16T15:44:10Z",
+          "id": "http://arxiv.org/abs/2606.18075v1",
+          "authors": [
+            "Haoyang Zhong",
+            "Yifei Sun",
+            "Antong Zhang",
+            "Chunping Wang",
+            "Lei Chen",
+            "Yang Yang"
+          ],
+          "links": [
+            {
+              "href": "https://arxiv.org/abs/2606.18075v1",
+              "rel": "alternate",
+              "type": "text/html"
+            },
+            {
+              "href": "https://arxiv.org/pdf/2606.18075v1",
+              "rel": "related",
+              "type": "application/pdf"
+            },
+            {
+              "href": "https://doi.org/10.1145/3774904.3792720",
+              "rel": "related",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "title": "Agentic AI-based Framework for Mitigating Premature Diagnostic Handoff and Silent Hallucination in Healthcare Applications",
+          "summary": "Recent advances in Large Language Models (LLMs) and multi-agent systems have driven the rise of Agentic AI, showing promise for medical reasoning. However, open-ended conversational agents remain prone to two critical failure modes: premature diagnostic handoff and silent clinical hallucinations that may go undetected before reaching the patient. In this work, we propose a multi-agent framework that addresses both issues by replacing ``LLM-as-a-judge'' routing with deterministic orchestration constraints. The framework incorporates two safety mechanisms. First, a neuro-symbolic state-tracking gate enforces completeness of the OLDCARTS clinical protocol (Onset, Location, Duration, Character, Aggravating/Alleviating factors, Radiation, Timing, and Severity) by blocking diagnostic transitions until all required dimensions are collected. Second, an epistemic uncertainty quantification (UQ) gate computes semantic entropy (H) across K=5 independent diagnostic samples to identify and intercept divergent outputs before delivery.\n  We evaluate the system using simulated patient agents powered by the llama-3.1-70b-instruct model on 150 test cases. The full architecture achieves 49.3% diagnostic precision, representing an absolute improvement of 11.3 percentage points over an unconstrained baseline. Additionally, we observe a statistically significant negative correlation (r = -0.181, p < 0.05) between OLDCARTS completeness (σ) and semantic entropy (H), suggesting that structured information gathering is associated with reduced diagnostic uncertainty.",
+          "published": "2026-06-16T15:39:19Z",
+          "updated": "2026-06-16T15:39:19Z",
+          "id": "http://arxiv.org/abs/2606.18068v1",
+          "authors": [
+            "Divyansh Srivastava",
+            "Shreya Ghosh",
+            "Anshul Verma",
+            "Rajkumar Buyya"
+          ],
+          "links": [
+            {
+              "href": "https://arxiv.org/abs/2606.18068v1",
+              "rel": "alternate",
+              "type": "text/html"
+            },
+            {
+              "href": "https://arxiv.org/pdf/2606.18068v1",
+              "rel": "related",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "title": "Intelligence Entropy Principle and the ADE Stability Engineering Framework",
+          "summary": "As LLM-driven multi-agent systems (MAS) transition from lab to production, system behavior exhibits nonlinear degradation. We introduce the Intelligence Entropy Principle: probability-driven systems spontaneously drift toward disorder, formalized as S(t) = S0 * exp(alpha*t/Cm), where Cm is a model capability coefficient we propose. Lyapunov analysis yields the stabilization condition lambda > alpha/Cm. We construct the ADE (Agent Delivery Engineering) four-layer framework (L1 Physical Laws through L4 User Adaptation) with 23 core components. Validation spans 100K-scale experiments and 33.6 days of production monitoring. We propose a Five-Layer Disorder Taxonomy unifying failures under structural collapse, and present Elastic Organization as an original MAS morphology. Results: channel fracture reduced from 69-98% to near 0%; system death probability below 0.02%.",
+          "published": "2026-06-16T15:38:29Z",
+          "updated": "2026-06-16T15:38:29Z",
+          "id": "http://arxiv.org/abs/2606.18065v1",
+          "authors": [
+            "Dexing Liu"
+          ],
+          "links": [
+            {
+              "href": "https://arxiv.org/abs/2606.18065v1",
+              "rel": "alternate",
+              "type": "text/html"
+            },
+            {
+              "href": "https://arxiv.org/pdf/2606.18065v1",
+              "rel": "related",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "title": "LegalHalluLens: Typed Hallucination Auditing and Calibrated Multi-Agent Debate for Trustworthy Legal AI",
+          "summary": "AI systems deployed in legal workflows hallucinate at rates that aggregate metrics report at ~52%, but this average conceals where errors concentrate and in which direction they run, leaving compliance officers without an actionable signal for trustworthy deployment. We present LegalHalluLens, an auditing framework with three components: typed hallucination profiles across four legally-motivated claim categories (numeric, temporal, obligation/entitlement, factual) over CUAD (Hendrycks et al., 2021); a Risk Direction Index (RDI) that reduces omission-versus-invention bias to a single deployment-comparable scalar; and a typed debate pipeline calibrated to both magnitudes and directions. Across 510 contracts and 249,252 clause-level instances we measure a within-model gap of approximately 38-40 pp between obligation/numeric and temporal claims that aggregate reporting hides, and show that two systems with matched 52% rates can carry opposite RDIs. The debate pipeline reduces fabricated detections by 45% with per-category gains tracking the diagnosis, matching commercial APIs with a substantially smaller backbone (4B active parameters). Typed profiles and RDI surface failure modes that aggregate metrics hide; we further show these diagnostics serve as calibration inputs for multi-agent debate pipelines, where Skeptic challenges and asymmetric gates targeted at measured failure modes outperform generically-tuned debate. The framework supports direction-aware procurement, accountability, and agent design for legal AI deployed in the wild.",
+          "published": "2026-06-16T15:02:37Z",
+          "updated": "2026-06-16T15:02:37Z",
+          "id": "http://arxiv.org/abs/2606.18021v1",
+          "authors": [
+            "Lalit Yadav",
+            "Akshaj Gurugubelli"
+          ],
+          "links": [
+            {
+              "href": "https://arxiv.org/abs/2606.18021v1",
+              "rel": "alternate",
+              "type": "text/html"
+            },
+            {
+              "href": "https://arxiv.org/pdf/2606.18021v1",
+              "rel": "related",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "title": "A Neuro-Symbolic Approach to Strategy Synthesis for Strategic Logics",
+          "summary": "Reasoning about what agents can achieve through strategic interaction is a core challenge in Multi-Agent Systems (MAS). Logics for strategic ability, such as ATL, provide rigorous methods, but their adoption is often hindered by the computational cost of strategy synthesis. We introduce a neuro-symbolic framework that integrates large language models (LLMs) into the model-checking pipeline for MAS. The LLM acts as a strategy-generation oracle, proposing candidate strategies that are then formally validated by a standard MAS model checker. This generate-and-certify architecture uses LLM guidance to navigate large combinatorial strategy spaces while preserving formal soundness: generated strategies are accepted only when certified by the verifier. We instantiate the framework for bounded strategic reasoning in NatATL and introduce the first NatATL strategy-synthesis dataset, consisting of 4211 instances. Experiments with an open-weight Qwen3-32B model show that our certified pipeline achieves 92\\% accuracy on strategy-synthesis outcomes.",
+          "published": "2026-06-16T14:13:48Z",
+          "updated": "2026-06-16T14:13:48Z",
+          "id": "http://arxiv.org/abs/2606.17962v1",
+          "authors": [
+            "Marco Aruta",
+            "Vadim Malvone",
+            "Aniello Murano",
+            "Domenico Parente",
+            "Luca Rizzuti"
+          ],
+          "links": [
+            {
+              "href": "https://arxiv.org/abs/2606.17962v1",
+              "rel": "alternate",
+              "type": "text/html"
+            },
+            {
+              "href": "https://arxiv.org/pdf/2606.17962v1",
+              "rel": "related",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "title": "Trustworthy Self-Composable Big-Data-as-a-Service: An LLM-Orchestrated Multi-Agent Framework for Automated Data Engineering, AutoML, MLOps Deployment, and Drift-Aware Lifecycle Optimization",
+          "summary": "Big-Data-as-a-Service (BDaaS) platforms require re liable automation across data ingestion, cleaning, feature engi neering, model development, deployment, and post-deployment monitoring. However, existing LLM-based data science agents and AutoML systems mainly focus on isolated workflow stages, leaving limited support for lifecycle-level orchestration, artifact governance, human oversight, and drift-aware adaptation. This paper proposes a trustworthy self-composable BDaaS frame work based on LLM-orchestrated multi-agent collaboration. The proposed architecture decomposes the BDaaS lifecycle into specialized agents for data ingestion, data cleaning, feature engineering, AutoML training, model evaluation, MLOps de ployment, monitoring, and drift detection. A central LLM or chestration layer coordinates agent execution, validates interme diate outputs, manages workflow context, and enables dynamic workflow composition. The framework also incorporates shared artifact governance, reproducibility support, human-in-the-loop checkpoints, and drift-aware feedback loops. A prototype-based evaluation is conducted using controlled tabular benchmark datasets with missing values, categorical variables, outliers, class imbalance, and simulated covariate drift. Compared with manual ML, AutoML-only, and single-agent LLM baselines, the pro posed multi-agent BDaaS pipeline achieves competitive predictive performance while improving lifecycle-level reliability, including workflow completion, artifact traceability, deployment readiness, reproducibility, and drift recovery. The results suggest that LLM-orchestrated multi-agent systems can extend conventional AutoML toward trustworthy, adaptive, and production-oriented BDaaS lifecycle automation.",
+          "published": "2026-06-16T13:34:27Z",
+          "updated": "2026-06-16T13:34:27Z",
+          "id": "http://arxiv.org/abs/2606.17915v1",
+          "authors": [
+            "Aueaphum Aueawatthanaphisut",
+            "Badri Raj Lamichhane"
+          ],
+          "links": [
+            {
+              "href": "https://arxiv.org/abs/2606.17915v1",
+              "rel": "alternate",
+              "type": "text/html"
+            },
+            {
+              "href": "https://arxiv.org/pdf/2606.17915v1",
+              "rel": "related",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "title": "GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?",
+          "summary": "Game generation is an emerging application of coding agents, requiring models to transform natural-language specifications into playable interactive systems. Unlike traditional coding tasks, game generation takes place within a game engine, where scripts, scenes, assets, rendering, and runtime interactions must jointly produce coherent gameplay. We formalize end-to-end game generation as the problem of producing a complete game artifact that realizes a specification through observable player-game interaction in a target environment. We argue that evaluating this setting requires three desiderata: Engine Grounding, Artifact Completeness, and Interactive Verification. We propose an interaction-grounded evaluation framework that assesses executable gameplay through replayed demonstrations and rubric-guided multimodal judging. We instantiate this framework as GameCraft-Bench, a benchmark comprising 140 Godot tasks across 15 game families. Evaluations of frontier coding agents show that end-to-end game generation remains highly challenging: the strongest agent achieves only 41.46%, and most agents score below 40%. Further analysis reveals that while agents often implement recognizable mechanics, they struggle to deliver complete games with sufficient content, functional visual feedback, and coherent presentation. See https://tongxuluo.github.io/gamecraft-bench-website for demos, code, and data.",
+          "published": "2026-06-16T12:34:39Z",
+          "updated": "2026-06-16T12:34:39Z",
+          "id": "http://arxiv.org/abs/2606.17861v1",
+          "authors": [
+            "Tongxu Luo",
+            "Rongsheng Wang",
+            "Jiaxi Bi",
+            "Chenming Xu",
+            "Zhengyang Tang",
+            "Jianlong Chen",
+            "Juhao Liang",
+            "Ke Ji",
+            "Shuqi Guo",
+            "Yuhao Du",
+            "Fan Bu",
+            "Wenyu Du",
+            "Xiaotong Zhang",
+            "Kyle Li",
+            "Shaobo Wang",
+            "Linfeng Zhang",
+            "Yuxuan Liu",
+            "Xin Lai",
+            "Chenxin Li",
+            "Yiduo Guo",
+            "Zhexin Zhang",
+            "Xinyuan Wang",
+            "Tianyi Bai",
+            "Ziniu Li",
+            "Benyou Wang"
+          ],
+          "links": [
+            {
+              "href": "https://arxiv.org/abs/2606.17861v1",
+              "rel": "alternate",
+              "type": "text/html"
+            },
+            {
+              "href": "https://arxiv.org/pdf/2606.17861v1",
+              "rel": "related",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "title": "Environment-Grounded Automated Prompt Optimization for LLM Game Agents",
+          "summary": "LLM agents in interactive environments are highly sensitive to their prompts, yet prompt engineering remains a manual, task-specific process. We introduce an automated prompt optimization framework for LLM agents that decomposes the observation-to-action pipeline into a goal-conditioned descriptor agent and an action selection agent, and iteratively refines each module's prompt through an LLM-driven evolutionary loop guided by environment returns. We propose a behavior analyzer to attribute episode outcomes to specific prompt components, and a mutator to propose targeted revisions to the prompt, before validating them through environment rollouts. We evaluate on all five BabyAI tasks in the BALROG benchmark, comparing our pipeline against BALROG's RobustCoTAgent under both plain and guided prompt initializations. Optimization improves performance consistently across tasks and conditions, without requiring updates to the model weights. On PutNext, a multi-step coordination task where the RobustCoTAgent achieves 0% success, our framework reaches up to 72.5% success rate using the same underlying LLM with optimized prompts. These results suggest that a multi-agent framework, combined with automatic prompt optimization, enhances LLMs without the need for fine-tuning or extensive human supervision.",
+          "published": "2026-06-16T12:06:27Z",
+          "updated": "2026-06-16T12:06:27Z",
+          "id": "http://arxiv.org/abs/2606.17838v1",
+          "authors": [
+            "Rean Clive Fernandes",
+            "Lukas Fehring",
+            "Theresa Eimer",
+            "Marius Lindauer",
+            "Matthias Feurer"
+          ],
+          "links": [
+            {
+              "href": "https://arxiv.org/abs/2606.17838v1",
+              "rel": "alternate",
+              "type": "text/html"
+            },
+            {
+              "href": "https://arxiv.org/pdf/2606.17838v1",
+              "rel": "related",
+              "type": "application/pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "huggingface-blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "query": "",
+      "entries": [
+        {
+          "title": "MolmoMotion: Language-guided 3D motion forecasting",
+          "summary": "",
+          "published": "Wed, 17 Jun 2026 15:26:44 GMT",
+          "updated": "",
+          "id": "https://huggingface.co/blog/allenai/molmomotion",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://huggingface.co/blog/allenai/molmomotion",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+          "summary": "",
+          "published": "Wed, 17 Jun 2026 10:18:05 GMT",
+          "updated": "",
+          "id": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "GLM-5.2: Built for Long-Horizon Tasks",
+          "summary": "",
+          "published": "Wed, 17 Jun 2026 09:01:25 GMT",
+          "updated": "",
+          "id": "https://huggingface.co/blog/zai-org/glm-52-blog",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://huggingface.co/blog/zai-org/glm-52-blog",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Agentic Resource Discovery: Let agents search",
+          "summary": "",
+          "published": "Wed, 17 Jun 2026 00:00:00 GMT",
+          "updated": "",
+          "id": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
+          "summary": "",
+          "published": "Thu, 11 Jun 2026 00:00:00 GMT",
+          "updated": "",
+          "id": "https://huggingface.co/blog/torch-mlp-fusion",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://huggingface.co/blog/torch-mlp-fusion",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
+          "summary": "",
+          "published": "Tue, 09 Jun 2026 10:46:19 GMT",
+          "updated": "",
+          "id": "https://huggingface.co/blog/mishig/spaces-agents-md",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://huggingface.co/blog/mishig/spaces-agents-md",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Migrating Your GitHub CI to Hugging Face Jobs",
+          "summary": "",
+          "published": "Tue, 09 Jun 2026 00:00:00 GMT",
+          "updated": "",
+          "id": "https://huggingface.co/blog/github-ci-hf-jobs",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://huggingface.co/blog/github-ci-hf-jobs",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "The Open Source Community is backing OpenEnv for Agentic RL",
+          "summary": "",
+          "published": "Mon, 08 Jun 2026 00:00:00 GMT",
+          "updated": "",
+          "id": "https://huggingface.co/blog/openenv-agentic-rl",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://huggingface.co/blog/openenv-agentic-rl",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+          "summary": "",
+          "published": "Thu, 04 Jun 2026 18:57:45 GMT",
+          "updated": "",
+          "id": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+          "summary": "",
+          "published": "Thu, 04 Jun 2026 00:00:00 GMT",
+          "updated": "",
+          "id": "https://huggingface.co/blog/hf-cli-for-agents",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://huggingface.co/blog/hf-cli-for-agents",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "google-deepmind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "query": "",
+      "entries": [
+        {
+          "title": "Unlocking UK house-building with AI-accelerated planning",
+          "summary": "UK government partners with Google DeepMind to build a new AI-powered prototype aimed at faster housing decisions.",
+          "published": "Tue, 16 Jun 2026 21:29:50 +0000",
+          "updated": "",
+          "id": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "DiffusionGemma: 4x faster text generation",
+          "summary": "",
+          "published": "Wed, 10 Jun 2026 16:24:11 +0000",
+          "updated": "",
+          "id": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Investing in multi-agent AI safety research",
+          "summary": "Google DeepMind and partners announce a $10M funding call for multi-agent safety research.",
+          "published": "Wed, 10 Jun 2026 10:21:19 +0000",
+          "updated": "",
+          "id": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
+          "summary": "Gemini 3.5 Live Translate brings near real-time, natural speech translation to Google AI Studio, Google Translate and Google Meet.",
+          "published": "Tue, 09 Jun 2026 15:16:25 +0000",
+          "updated": "",
+          "id": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
+          "summary": "",
+          "published": "Tue, 09 Jun 2026 14:10:19 +0000",
+          "updated": "",
+          "id": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model/",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Powering the future of robotics in Europe",
+          "summary": "",
+          "published": "Tue, 09 Jun 2026 14:02:33 +0000",
+          "updated": "",
+          "id": "https://deepmind.google/blog/powering-the-future-of-robotics-in-europe/",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://deepmind.google/blog/powering-the-future-of-robotics-in-europe/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Measuring the impact of learning with AI in Sierra Leone and beyond",
+          "summary": "Results from a randomized controlled trial show the potential of Geminiâs Guided Learning feature to boost engagement and accelerate learning.",
+          "published": "Mon, 08 Jun 2026 13:04:59 +0000",
+          "updated": "",
+          "id": "https://deepmind.google/blog/measuring-the-impact-of-learning-with-ai-in-sierra-leone-and-beyond/",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://deepmind.google/blog/measuring-the-impact-of-learning-with-ai-in-sierra-leone-and-beyond/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Weâre launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
+          "summary": "",
+          "published": "Thu, 21 May 2026 19:46:42 +0000",
+          "updated": "",
+          "id": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Fast-tracking genetic leads to reverse cellular aging",
+          "summary": "Biologists use Co-Scientist to find novel factors that successfully rejuvenate human cells.",
+          "published": "Mon, 18 May 2026 18:21:39 +0000",
+          "updated": "",
+          "id": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Simulate real-world places with Project Genie and Street View",
+          "summary": "Weâre expanding access to Google AI Ultra subscribers globally and introducing a new capability powered by Street View.",
+          "published": "Sun, 17 May 2026 19:53:18 +0000",
+          "updated": "",
+          "id": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "nvidia-technical-blog-ai",
+      "url": "https://developer.nvidia.com/blog/category/artificial-intelligence/feed/",
+      "query": "",
+      "entries": []
+    },
+    {
+      "source_id": "langchain-blog",
+      "url": "https://blog.langchain.com/rss.xml",
+      "query": "",
+      "entries": [
+        {
+          "title": "How Factory used LangSmith to automate their feedback loop and improve iteration speed by 2x",
+          "summary": "How Factory AI uses LangSmith to debug issues and close the product feedback loop, resulting in a 2x improvement in iteration speed.",
+          "published": "Tue, 16 Jun 2026 18:11:42 GMT",
+          "updated": "",
+          "id": "https://www.langchain.com/blog/customers-factory",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.langchain.com/blog/customers-factory",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Introducing Open SWE: An Open-Source Asynchronous Coding Agent",
+          "summary": "Open SWE is an open-source, cloud-hosted coding agent that autonomously handles GitHub tasks—planning, coding, testing, and opening PRs.",
+          "published": "Tue, 16 Jun 2026 18:08:47 GMT",
+          "updated": "",
+          "id": "https://www.langchain.com/blog/introducing-open-swe-an-open-source-asynchronous-coding-agent",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.langchain.com/blog/introducing-open-swe-an-open-source-asynchronous-coding-agent",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Monte Carlo: Building Data + AI Observability Agents with LangGraph and LangSmith",
+          "summary": "See how Monte Carlo built its AI Troubleshooting Agent on LangGraph and debugged with LangSmith to help data teams resolve issues faster",
+          "published": "Tue, 16 Jun 2026 18:08:16 GMT",
+          "updated": "",
+          "id": "https://www.langchain.com/blog/customers-monte-carlo",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.langchain.com/blog/customers-monte-carlo",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Sharing LangSmith Benchmarks",
+          "summary": "Share and compare LLM evaluation results with public LangSmith benchmarks. Test RAG systems, agents, and architectures on community datasets.",
+          "published": "Tue, 16 Jun 2026 18:07:36 GMT",
+          "updated": "",
+          "id": "https://www.langchain.com/blog/public-langsmith-benchmarks",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.langchain.com/blog/public-langsmith-benchmarks",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "LangSmith: Redesigned product homepage and Resource Tags for better organization",
+          "summary": "LangSmith's homepage is now organized into Observability, Evaluation, and Prompt Engineering. Learn why we organized the homepage like this. Plus, see our latest Resource Tags updates.",
+          "published": "Tue, 16 Jun 2026 18:07:09 GMT",
+          "updated": "",
+          "id": "https://www.langchain.com/blog/langsmith-homepage-redesign-and-resource-tags",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.langchain.com/blog/langsmith-homepage-redesign-and-resource-tags",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Agent Engineering: A New Discipline",
+          "summary": "Learn how agent engineering combines product thinking, engineering, and data science to build reliable LLM systems. Ship faster with iterative testing.",
+          "published": "Tue, 16 Jun 2026 18:06:33 GMT",
+          "updated": "",
+          "id": "https://www.langchain.com/blog/agent-engineering-a-new-discipline",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.langchain.com/blog/agent-engineering-a-new-discipline",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Testing Fine Tuned Open Source Models in LangSmith",
+          "summary": "Evaluate and compare fine-tuned open source LLMs using LangSmith. Test multiple models, automate evaluations, and choose the best performing AI.",
+          "published": "Tue, 16 Jun 2026 18:06:04 GMT",
+          "updated": "",
+          "id": "https://www.langchain.com/blog/testing-fine-tuned-open-source-models-in-langsmith",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.langchain.com/blog/testing-fine-tuned-open-source-models-in-langsmith",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Human judgment in the agent improvement loop",
+          "summary": "AI agents work best when they reflect the knowledge and judgment your team has built over time. Some of that is institutional knowledge that’s already documented and easy for an agent to use as-is. But most great organizations also rely on tacit knowledge that lives inside their employees’ minds.",
+          "published": "Tue, 16 Jun 2026 18:04:57 GMT",
+          "updated": "",
+          "id": "https://www.langchain.com/blog/human-judgment-in-the-agent-improvement-loop",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.langchain.com/blog/human-judgment-in-the-agent-improvement-loop",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Context Management for Deep Agents",
+          "summary": "Learn how Deep Agents SDK manages context for long-running AI tasks through offloading, summarization, and filesystem abstraction to prevent context rot.",
+          "published": "Tue, 16 Jun 2026 18:04:22 GMT",
+          "updated": "",
+          "id": "https://www.langchain.com/blog/context-management-for-deepagents",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.langchain.com/blog/context-management-for-deepagents",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Designing Efficient Verifiers for Legal Agents",
+          "summary": "A Harvey and LangChain Labs study on making LLM verifiers cheaper and more reliable for legal-agent evaluation and post-training.",
+          "published": "Tue, 16 Jun 2026 18:03:56 GMT",
+          "updated": "",
+          "id": "https://www.langchain.com/blog/designing-efficient-verifiers-for-legal-agents",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.langchain.com/blog/designing-efficient-verifiers-for-legal-agents",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "latent-space",
+      "url": "https://www.latent.space/feed",
+      "query": "",
+      "entries": [
+        {
+          "title": "[AINews] GLM-5.2: the top Frontend Coding model in the world, IndexShare for Speculative Decoding",
+          "summary": "We have a new top open model in the world!",
+          "published": "Wed, 17 Jun 2026 05:37:40 GMT",
+          "updated": "",
+          "id": "https://www.latent.space/p/ainews-glm-52-the-top-frontend-coding",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.latent.space/p/ainews-glm-52-the-top-frontend-coding",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "[AINews] Satya on Loopcraft: Building Frontier Ecosystems",
+          "summary": "a quiet day lets us report on Satya's hit essay",
+          "published": "Tue, 16 Jun 2026 02:29:29 GMT",
+          "updated": "",
+          "id": "https://www.latent.space/p/ainews-satya-on-loopcraft-building",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.latent.space/p/ainews-satya-on-loopcraft-building",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "[AINews] Fable and Mythos officially too dangerous to release",
+          "summary": "We are in the strangest timeline.",
+          "published": "Sat, 13 Jun 2026 04:30:52 GMT",
+          "updated": "",
+          "id": "https://www.latent.space/p/ainews-fable-and-mythos-officially",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.latent.space/p/ainews-fable-and-mythos-officially",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "[AINews] Loopcraft: The Art of Stacking Loops",
+          "summary": "a quiet day lets us highlight a great concept from Peter Steinberger, Boris Cherny, and Andrej Karpathy",
+          "published": "Fri, 12 Jun 2026 05:34:09 GMT",
+          "updated": "",
+          "id": "https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "[AINews] Open Models, Model Labs vs Agent Labs, and What's Untrainable — Sarah Guo",
+          "summary": "a quiet day lets us reflect on a great essay",
+          "published": "Thu, 11 Jun 2026 03:14:26 GMT",
+          "updated": "",
+          "id": "https://www.latent.space/p/ainews-open-models-model-labs-vs",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.latent.space/p/ainews-open-models-model-labs-vs",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "[AINews] Anthropic Claude Fable 5 — Mythos but Safe, with Controversial Terms",
+          "summary": "The much anticipated launch of the Mythos-class model was marred by some controversial usage policies",
+          "published": "Wed, 10 Jun 2026 03:50:21 GMT",
+          "updated": "",
+          "id": "https://www.latent.space/p/ainews-anthropic-claude-fable-5-mythos",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.latent.space/p/ainews-anthropic-claude-fable-5-mythos",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "[AINews] FrontierCode: Benchmarking for Code Quality over Slop",
+          "summary": "We made a thing!",
+          "published": "Tue, 09 Jun 2026 06:12:33 GMT",
+          "updated": "",
+          "id": "https://www.latent.space/p/ainews-frontiercode-benchmarking",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.latent.space/p/ainews-frontiercode-benchmarking",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "[AINews] not much happened today",
+          "summary": "a quiet day of RSI.",
+          "published": "Sat, 06 Jun 2026 04:34:47 GMT",
+          "updated": "",
+          "id": "https://www.latent.space/p/ainews-not-much-happened-today-6b8",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.latent.space/p/ainews-not-much-happened-today-6b8",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "How to Stop Shipping Low-Quality RL Environments (with Examples)",
+          "summary": "Your broken harness is actively making the model worse. Here's what I keep seeing after years of eyeballing trajectories, and what you need to fix.",
+          "published": "Fri, 05 Jun 2026 18:49:40 GMT",
+          "updated": "",
+          "id": "https://www.latent.space/p/bad-envs",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.latent.space/p/bad-envs",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "[AINews] not much happened today",
+          "summary": "a quiet day",
+          "published": "Fri, 05 Jun 2026 06:44:49 GMT",
+          "updated": "",
+          "id": "https://www.latent.space/p/ainews-not-much-happened-today-7a8",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://www.latent.space/p/ainews-not-much-happened-today-7a8",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "ahead-of-ai",
+      "url": "https://magazine.sebastianraschka.com/feed",
+      "query": "",
+      "entries": [
+        {
+          "title": "LLM Research Papers: The 2026 List (January to May)",
+          "summary": "A curated roundup of notable LLM research papers that came out this year",
+          "published": "Sat, 06 Jun 2026 11:16:22 GMT",
+          "updated": "",
+          "id": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
+          "summary": "From Gemma 4 to DeepSeek V4, How New Open-Weight LLMs Are Reducing Long-Context Costs",
+          "published": "Sat, 16 May 2026 11:33:51 GMT",
+          "updated": "",
+          "id": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "My Workflow for Understanding LLM Architectures",
+          "summary": "A learning-oriented workflow for understanding new open-weight model releases",
+          "published": "Sat, 18 Apr 2026 11:24:36 GMT",
+          "updated": "",
+          "id": "https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Components of A Coding Agent",
+          "summary": "How coding agents use tools, memory, and repo context to make LLMs work better in practice",
+          "published": "Sat, 04 Apr 2026 11:45:37 GMT",
+          "updated": "",
+          "id": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "A Visual Guide to Attention Variants in Modern LLMs",
+          "summary": "From MHA and GQA to MLA, sparse attention, and hybrid architectures",
+          "published": "Sun, 22 Mar 2026 11:55:40 GMT",
+          "updated": "",
+          "id": "https://magazine.sebastianraschka.com/p/visual-attention-variants",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://magazine.sebastianraschka.com/p/visual-attention-variants",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "A Dream of Spring for Open-Weight LLMs: 10 Architectures from Jan-Feb 2026",
+          "summary": "A Round Up And Comparison of 10 Open-Weight LLM Releases in Spring 2026",
+          "published": "Wed, 25 Feb 2026 13:26:56 GMT",
+          "updated": "",
+          "id": "https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Categories of Inference-Time Scaling for Improved LLM Reasoning",
+          "summary": "And an Overview of Recent Inference-Scaling Papers",
+          "published": "Sat, 24 Jan 2026 11:23:18 GMT",
+          "updated": "",
+          "id": "https://magazine.sebastianraschka.com/p/categories-of-inference-time-scaling",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://magazine.sebastianraschka.com/p/categories-of-inference-time-scaling",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "The State Of LLMs 2025: Progress, Problems, and Predictions",
+          "summary": "A 2025 review of large language models, from DeepSeek R1 and RLVR to inference-time scaling, benchmarks, architectures, and predictions for 2026.",
+          "published": "Tue, 30 Dec 2025 12:22:26 GMT",
+          "updated": "",
+          "id": "https://magazine.sebastianraschka.com/p/state-of-llms-2025",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://magazine.sebastianraschka.com/p/state-of-llms-2025",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "LLM Research Papers: The 2025 List (July to December)",
+          "summary": "In June, I shared a bonus article with my curated and bookmarked research paper lists to the paid subscribers who make this Substack possible.",
+          "published": "Tue, 30 Dec 2025 12:15:39 GMT",
+          "updated": "",
+          "id": "https://magazine.sebastianraschka.com/p/llm-research-papers-2025-part2",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://magazine.sebastianraschka.com/p/llm-research-papers-2025-part2",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "From DeepSeek V3 to V3.2: Architecture, Sparse Attention, and RL Updates",
+          "summary": "Understanding How DeepSeek's Flagship Open-Weight Models Evolved",
+          "published": "Wed, 03 Dec 2025 12:03:33 GMT",
+          "updated": "",
+          "id": "https://magazine.sebastianraschka.com/p/technical-deepseek",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://magazine.sebastianraschka.com/p/technical-deepseek",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "the-gradient",
+      "url": "https://thegradient.pub/rss/",
+      "query": "",
+      "entries": [
+        {
+          "title": "After Orthogonality: Virtue-Ethical Agency and AI Alignment",
+          "summary": "<!--kg-card-begin: markdown--><h2 id=\"preface\">Preface</h2>\n<p>This essay argues that rational people don&#x2019;t have goals, and that rational AIs shouldn&#x2019;t have goals. Human actions are rational not because we direct them at some final &#x2018;goals,&#x2019; but because we align actions to <em>practices</em><sup class=\"footnote-ref\"><a href=\"#fn1\" id=\"fnref1\">[1]</a></sup>: networks of actions, action-dispositions, action-evaluation criteria,</p>",
+          "published": "Wed, 18 Feb 2026 23:25:52 GMT",
+          "updated": "",
+          "id": "69879dd077c3d76051ac158f",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://thegradient.pub/virtue-ethics-ai-alignment/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "AGI Is Not Multimodal",
+          "summary": "<blockquote>&quot;In projecting language back as the model for thought, we lose sight of the tacit embodied understanding that undergirds our intelligence.&quot; &#x2013;Terry Winograd</blockquote><p>The recent successes of generative AI models have convinced some that AGI is imminent. While these models appear to capture the essence of human</p>",
+          "published": "Wed, 04 Jun 2025 14:00:29 GMT",
+          "updated": "",
+          "id": "683fb98b77c3d76051ac142c",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://thegradient.pub/agi-is-not-multimodal/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Shape, Symmetries, and Structure: The Changing Role of Mathematics in Machine Learning Research",
+          "summary": "<h3 id=\"what-is-the-role-of-mathematics-in-modern-machine-learning\">What is the Role of Mathematics in Modern Machine Learning?</h3><p>The past decade has witnessed a shift in how progress is made in machine learning. Research involving carefully designed and mathematically principled architectures result in only marginal improvements while compute-intensive and engineering-first efforts that scale to ever larger training sets</p>",
+          "published": "Sat, 16 Nov 2024 16:46:15 GMT",
+          "updated": "",
+          "id": "673686c693571d5c8c155078",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://thegradient.pub/shape-symmetry-structure/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "What's Missing From LLM Chatbots: A Sense of Purpose",
+          "summary": "<p>LLM-based chatbots&#x2019; capabilities have been advancing every month. These improvements are mostly measured by benchmarks like MMLU, HumanEval, and MATH (e.g. sonnet 3.5, gpt-4o). However, as these measures get more and more saturated, is user experience increasing in proportion to these scores? If we envision a future</p>",
+          "published": "Mon, 09 Sep 2024 17:28:48 GMT",
+          "updated": "",
+          "id": "66c6733993571d5c8c154fb1",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://thegradient.pub/dialog/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "We Need Positive Visions for AI Grounded in Wellbeing",
+          "summary": "<h2 id=\"introduction\">Introduction</h2><p>Imagine yourself a decade ago, jumping directly into the present shock of conversing naturally with an encyclopedic AI that crafts images, writes code, and debates philosophy. Won&#x2019;t this technology almost certainly transform society &#x2014; and hasn&#x2019;t AI&#x2019;s impact on us so far been</p>",
+          "published": "Sat, 03 Aug 2024 17:00:43 GMT",
+          "updated": "",
+          "id": "66a4243393571d5c8c154f4e",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://thegradient.pub/we-need-positive-visions-for-ai-grounded-in-wellbeing/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Financial Market Applications of LLMs",
+          "summary": "<p>The AI revolution drove frenzied investment in both private and public companies and captured the public&#x2019;s imagination in 2023. Transformational consumer products like ChatGPT are powered by Large Language Models (LLMs) that excel at modeling sequences of tokens that represent words or parts of words [2]. Amazingly, structural</p>",
+          "published": "Sat, 20 Apr 2024 17:57:39 GMT",
+          "updated": "",
+          "id": "661762b993571d5c8c154ea7",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://thegradient.pub/financial-market-applications-of-llms/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "A Brief Overview of Gender Bias in AI",
+          "summary": "A brief overview and discussion on gender bias in AI",
+          "published": "Mon, 08 Apr 2024 15:54:53 GMT",
+          "updated": "",
+          "id": "660d016f93571d5c8c154d89",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://thegradient.pub/gender-bias-in-ai/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Mamba Explained",
+          "summary": "Is Attention all you need? Mamba, a novel AI model based on State Space Models (SSMs), emerges as a formidable alternative to the widely used Transformer models, addressing their inefficiency in processing long sequences.",
+          "published": "Thu, 28 Mar 2024 01:24:43 GMT",
+          "updated": "",
+          "id": "65fb8d5993571d5c8c154bea",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://thegradient.pub/mamba-explained/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Car-GPT: Could LLMs finally make self-driving cars happen?",
+          "summary": "Exploring the utility of large language models in autonomous driving: Can they be trusted for self-driving cars, and what are the key challenges?",
+          "published": "Fri, 08 Mar 2024 16:55:18 GMT",
+          "updated": "",
+          "id": "65db7b4193571d5c8c154a73",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://thegradient.pub/car-gpt/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        },
+        {
+          "title": "Do text embeddings perfectly encode text?",
+          "summary": "'Vec2text' can serve as a solution for accurately reverting embeddings back into text, thus highlighting the urgent need for revisiting security protocols around embedded data.",
+          "published": "Tue, 05 Mar 2024 20:15:58 GMT",
+          "updated": "",
+          "id": "65e3d66193571d5c8c154aec",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://thegradient.pub/text-embedding-inversion/",
+              "rel": "alternate",
+              "type": "text/html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

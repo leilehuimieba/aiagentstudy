@@ -1,0 +1,924 @@
+{
+  "key": "GET www.bestblogs.dev/api/proxy/resources",
+  "url": "https://www.bestblogs.dev/api/proxy/resources?page=1&pageSize=10&timeFilter=1w&language=all&sortType=default&type=ARTICLE&qualifiedFilter=true&uiLang=en",
+  "method": "GET",
+  "status": 200,
+  "ct": "application/json",
+  "size": 55364,
+  "timestamp": "2026-05-24T05:30:48.386Z",
+  "shape": {
+    "$": "object",
+    "$.success": "boolean",
+    "$.code": "null",
+    "$.message": "null",
+    "$.requestId": "string",
+    "$.data": "object",
+    "$.data.currentPage": "number",
+    "$.data.pageSize": "number",
+    "$.data.totalCount": "number",
+    "$.data.pageCount": "number",
+    "$.data.dataList": "array(10)",
+    "$.data.dataList[0]": "object",
+    "$.data.dataList[0].id": "string",
+    "$.data.dataList[0].notExist": "null",
+    "$.data.dataList[0].originalTitle": "string",
+    "$.data.dataList[0].title": "string(len=90)",
+    "$.data.dataList[0].oneSentenceSummary": "string(len=350)",
+    "$.data.dataList[0].summary": "string(len=1018)",
+    "$.data.dataList[0].featuredReason": "string(len=392)",
+    "$.data.dataList[0].translateContent": "null",
+    "$.data.dataList[0].tags": "array(5)",
+    "$.data.dataList[0].tags[0]": "string",
+    "$.data.dataList[0].mainPoints": "array(5)",
+    "$.data.dataList[0].mainPoints[0]": "object",
+    "$.data.dataList[0].mainPoints[0].point": "string(len=130)",
+    "$.data.dataList[0].mainPoints[0].explanation": "string(len=257)",
+    "$.data.dataList[0].keyQuotes": "array(5)",
+    "$.data.dataList[0].keyQuotes[0]": "string(len=136)",
+    "$.data.dataList[0].url": "string(len=106)",
+    "$.data.dataList[0].readUrl": "string",
+    "$.data.dataList[0].enclosureUrl": "null",
+    "$.data.dataList[0].domain": "string",
+    "$.data.dataList[0].cover": "string",
+    "$.data.dataList[0].language": "string",
+    "$.data.dataList[0].languageDesc": "string",
+    "$.data.dataList[0].sourceId": "string",
+    "$.data.dataList[0].sourceName": "string",
+    "$.data.dataList[0].priority": "string",
+    "$.data.dataList[0].sourceImage": "string",
+    "$.data.dataList[0].mainDomain": "string",
+    "$.data.dataList[0].mainDomainDesc": "string",
+    "$.data.dataList[0].aiSubCategory": "string",
+    "$.data.dataList[0].aiSubCategoryDesc": "string",
+    "$.data.dataList[0].category": "string",
+    "$.data.dataList[0].categoryDesc": "string",
+    "$.data.dataList[0].resourceType": "string",
+    "$.data.dataList[0].resourceTypeDesc": "string",
+    "$.data.dataList[0].score": "number",
+    "$.data.dataList[0].readCount": "number",
+    "$.data.dataList[0].wordCount": "number",
+    "$.data.dataList[0].readTime": "number",
+    "$.data.dataList[0].mediaDuration": "null",
+    "(truncated)": "reached 2048B budget"
+  },
+  "body": {
+    "success": true,
+    "code": null,
+    "message": null,
+    "requestId": "T382bb4f164c54570a8ff2010b2a9f28f",
+    "data": {
+      "currentPage": 1,
+      "pageSize": 10,
+      "totalCount": 33,
+      "pageCount": 4,
+      "dataList": [
+        {
+          "id": "RAW_b71c47ef",
+          "notExist": null,
+          "originalTitle": "重新定义 Skill 开发：保姆级教程&一站式开发助手发布",
+          "title": "Redefining Skill Development: A Step-by-Step Guide & One-Stop Development Assistant Launch",
+          "oneSentenceSummary": "This article systematically introduces the concept of AI Agent Skill, including its directory structure, writing standards, release process, and cross-platform challenges. It also launches a one-stop Skill development assistant, skill-dev-aio, designed to free developers from tedious tool learning and allow them to focus on experience and judgment.",
+          "summary": "Based on internal practices at Alibaba, this article provides a comprehensive guide to developing and managing AI Agent Skills. It begins with the essence of Skill (a structured instruction document) and an analogy (developing an operations manual), explaining its three-level loading mechanism in detail. Subsequently, the article covers the Skill directory structure, the YAML header and Markdown body writing standards for the SKILL.md file, and provides a complete workflow from installation to release. It deeply analyzes three major pain points in the Skill ecosystem: cross-platform consistency, version management, and development/debugging efficiency, offering specific strategies and best practices. Finally, the article announces the launch of the one-stop Skill development assistant, skill-dev-aio, which integrates features like creation, publishing, evaluation, querying, migration, and batch updates, aiming to lower the barrier to Skill development and let developers focus on experience and judgment.",
+          "featuredReason": "A practical guide for developers turning repeated workflows into reusable Agent Skills. It explains trigger design, file structure, authoring conventions, release, debugging, evaluation, and cross-platform migration, then ties those ideas to the skill-dev-aio assistant. Read it if you want a concrete operating model for building Skills rather than another abstract prompt-engineering essay.",
+          "translateContent": null,
+          "tags": [
+            "AI Agent",
+            "Skill",
+            "Agent Development",
+            "Workflow Automation",
+            "Best Practices"
+          ],
+          "mainPoints": [
+            {
+              "point": "Skill is a structured instruction document for AI Agents, providing information on demand through a progressive loading mechanism.",
+              "explanation": "Skill defines trigger conditions, workflows, and resources through a YAML header and Markdown body. It employs a three-level loading strategy (name/description, body, additional resources) to conserve the Agent's context window and ensure precise execution."
+            },
+            {
+              "point": "Writing high-quality Skills requires following a four-step creative mindset and writing principles, with particular emphasis on crafting the description.",
+              "explanation": "From determining trigger timing, input/output, and general flow to supplementing details, a four-step method ensures a clear Skill structure. The description is the trigger entry point and must contain rich keywords and scenarios, avoiding being too general. The body should use imperative sentences, explain the rationale, and control length."
+            },
+            {
+              "point": "The Skill ecosystem faces three major pain points: cross-platform consistency, version management, and development/debugging efficiency, which need to be addressed through standards and practices.",
+              "explanation": "Cross-platform issues can be resolved through the 'Three Purity' principle, comment isolation, and a 'Three Checks' checklist. Version management requires introducing release rigor (Code Review, canary releases) and automatic update mechanisms. Development and debugging efficiency can be improved through methods like hot reloading, symbolic links, and Eval-Driven Dev, compressing iteration time from minutes to seconds."
+            },
+            {
+              "point": "Self-evolution of Skills is the future direction, but it requires eval as a safety net to prevent self-degradation.",
+              "explanation": "Through execution records, binary evaluation, and reflection mechanisms, Skills can automatically iterate and optimize. However, this must be paired with regression testing and version snapshots to prevent the Agent from introducing conflicting rules to pass a single case, leading to overall performance degradation."
+            },
+            {
+              "point": "The one-stop Skill development assistant, skill-dev-aio, aims to lower the development barrier, enabling developers to focus on experience and judgment.",
+              "explanation": "This tool integrates six major functions: quick creation, one-click publishing, performance scoring, querying, cross-platform migration, and batch updates. It encapsulates the complex Skill development process into a single Skill, allowing developers to efficiently manage and iterate their skills without needing to delve into tool details."
+            }
+          ],
+          "keyQuotes": [
+            "Skill doesn't replace 'you'; it replaces the repetitive, tedious, error-prone tasks that shouldn't occupy your brain in the first place.",
+            "What you should be anxious about isn't 'being replaced by Skill,' but 'not having learned to use Skill yet.'",
+            "The real bottleneck isn't writing; it's 'making the Agent see the updated version after you change it.'",
+            "Self-modification without eval as a safety net is a slow suicide.",
+            "We should place our value on Experience and Judgment."
+          ],
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560111&idx=1&sn=d90140ce9a63a953c990c1696a01beef",
+          "readUrl": "https://www.bestblogs.dev/article/b71c47ef",
+          "enclosureUrl": null,
+          "domain": "mp.weixin.qq.com",
+          "cover": "https://image.jido.dev/20251127045355_2bca1ae8",
+          "language": "zh_CN",
+          "languageDesc": "Chinese",
+          "sourceId": "SOURCE_26c5f1",
+          "sourceName": "阿里云开发者",
+          "priority": "HIGH",
+          "sourceImage": "https://image.jido.dev/20251127045355_2bca1ae8",
+          "mainDomain": "Artificial_Intelligence",
+          "mainDomainDesc": "Artificial Intelligence",
+          "aiSubCategory": "DEV",
+          "aiSubCategoryDesc": "AI Development",
+          "category": "Programming_Technology",
+          "categoryDesc": "Programming",
+          "resourceType": "ARTICLE",
+          "resourceTypeDesc": "Article",
+          "score": 93,
+          "readCount": 1356,
+          "wordCount": 7997,
+          "readTime": 32,
+          "mediaDuration": null,
+          "authors": [
+            "阿里云开发者"
+          ],
+          "publishTimeStamp": 1779064200000,
+          "publishDateStr": "05-18",
+          "publishDateTimeStr": "2026-05-18 08:30:00",
+          "qualified": true,
+          "stickTop": false,
+          "processFlowStatus": "COMPLETED",
+          "processFlowStatusDesc": "Completed",
+          "customPropertyValues": {},
+          "sourceVisibility": "SYSTEM",
+          "recommendReason": null,
+          "recallSource": null,
+          "candidateSource": null,
+          "selectionReason": null,
+          "fallbackApplied": null,
+          "personalized": null
+        },
+        {
+          "id": "RAW_af4d392e",
+          "notExist": null,
+          "originalTitle": "Introducing Composer 2.5 · Cursor",
+          "title": "Introducing Composer 2.5 · Cursor",
+          "oneSentenceSummary": "Cursor announces Composer 2.5, a substantial improvement in intelligence and behavior for sustained coding tasks, trained with targeted RL feedback, 25x more synthetic data, and a new optimizer.",
+          "summary": "Cursor has released Composer 2.5, a significant upgrade to its AI coding agent. The new version demonstrates marked improvements in handling long-running, complex tasks, following intricate instructions, and overall collaboration quality. The improvements stem from three key training innovations: targeted reinforcement learning with textual feedback to correct localized errors, a 25x increase in synthetic task generation grounded in real codebases to push model intelligence, and a new Sharded Muon optimizer with dual-mesh HSDP for efficient large-scale training. Composer 2.5 is built on the same open-source Kimi K2.5 checkpoint as its predecessor. The blog post also details a future collaboration with SpaceXAI to train a significantly larger model from scratch. Pricing is set at $0.50/M input and $2.50/M output tokens, with a faster variant available at a higher cost.",
+          "featuredReason": "Cursor officially announces Composer 2.5, a first-party release from one of the leading AI coding tools. The post details capability upgrades for the in-editor AI assistant. Recommended for developers tracking AI coding tool evolution, current Cursor users, and product researchers who want a first look at where the Composer line is heading next.",
+          "translateContent": null,
+          "tags": [
+            "Cursor",
+            "Composer 2.5",
+            "AI Coding Agent",
+            "Reinforcement Learning",
+            "Synthetic Data"
+          ],
+          "mainPoints": [
+            {
+              "point": "Composer 2.5 uses targeted RL with textual feedback to improve localized model behaviors.",
+              "explanation": "Instead of relying on a noisy final reward signal, the model receives specific hints at the point of error in a long rollout, allowing for more precise correction of mistakes like bad tool calls or confusing explanations."
+            },
+            {
+              "point": "Training with 25x more synthetic tasks, grounded in real codebases, drives intelligence gains.",
+              "explanation": "To continue improving beyond solving standard problems, Cursor dynamically creates harder tasks, such as feature deletion and reimplementation, using existing tests as verifiable rewards."
+            },
+            {
+              "point": "A new Sharded Muon optimizer with dual-mesh HSDP enables efficient training of large models.",
+              "explanation": "The optimizer distributes orthogonalization across shards and uses separate HSDP layouts for expert and non-expert weights, overlapping communication and computation to keep optimizer step time low."
+            }
+          ],
+          "keyQuotes": [
+            "It's a substantial improvement in intelligence and behavior over Composer 2. It is better at sustained work on long-running tasks, follows complex instructions more reliably, and is more pleasant to collaborate with.",
+            "To address this, we trained Composer 2.5 with targeted textual feedback. The idea is to provide feedback directly at the point in the trajectory where the model could have behaved better.",
+            "One downstream consequence of large scale synthetic task creation is that it can cause unexpected reward hacking. As the model became more adept, Composer 2.5 was able to find increasingly sophisticated workarounds to solve the task at hand.",
+            "Together with SpaceXAI, we're training a significantly larger model from scratch, using 10x more total compute."
+          ],
+          "url": "https://cursor.com/blog/composer-2-5",
+          "readUrl": "https://www.bestblogs.dev/article/af4d392e",
+          "enclosureUrl": null,
+          "domain": "cursor.com",
+          "cover": "https://image.jido.dev/20260518214121_cursor-composer2.5-og-2400x1200.png",
+          "language": "en_US",
+          "languageDesc": "English",
+          "sourceId": "SOURCE_a88d43f5",
+          "sourceName": "Cursor Blog",
+          "priority": "HIGH",
+          "sourceImage": "https://cursor.com/marketing-static/icon-192x192.png",
+          "mainDomain": "Artificial_Intelligence",
+          "mainDomainDesc": "Artificial Intelligence",
+          "aiSubCategory": "AI_CODING",
+          "aiSubCategoryDesc": "AI Coding",
+          "category": "Artificial_Intelligence",
+          "categoryDesc": "Artificial Intelligence",
+          "resourceType": "ARTICLE",
+          "resourceTypeDesc": "Article",
+          "score": 93,
+          "readCount": 390,
+          "wordCount": 1086,
+          "readTime": 5,
+          "mediaDuration": null,
+          "authors": [
+            "Cursor Team"
+          ],
+          "publishTimeStamp": 1779062400000,
+          "publishDateStr": "05-18",
+          "publishDateTimeStr": "2026-05-18 08:00:00",
+          "qualified": true,
+          "stickTop": false,
+          "processFlowStatus": "COMPLETED",
+          "processFlowStatusDesc": "Completed",
+          "customPropertyValues": {},
+          "sourceVisibility": "SYSTEM",
+          "recommendReason": null,
+          "recallSource": null,
+          "candidateSource": null,
+          "selectionReason": null,
+          "fallbackApplied": null,
+          "personalized": null
+        },
+        {
+          "id": "RAW_fc0bb3b3",
+          "notExist": null,
+          "originalTitle": "All the news from the Google I/O 2026 Developer keynote",
+          "title": "All the news from the Google I/O 2026 Developer keynote",
+          "oneSentenceSummary": "Google I/O 2026 Developer keynote announces Gemini 3.5 models, the Antigravity 2.0 agent platform, and new tools for building Android and web apps with AI agents.",
+          "summary": "This article summarizes the key developer announcements from the Google I/O 2026 keynote. The central theme is the transition from AI assistants to autonomous agents. Major announcements include the Gemini 3.5 series of models and the upgraded Antigravity 2.0 platform, which features a new CLI, orchestration for subagents, and built-in security. For Android development, Google introduced the Android CLI and open-sourced Android skills for agents, a Migration agent to convert cross-platform code to native Kotlin, and the Android Bench leaderboard. For web development, they proposed the WebMCP open standard for browser-based agents, launched Modern Web Guidance for coding agents, and introduced Chrome DevTools for agents and the HTML-in-Canvas API. The article positions these tools as a unified ecosystem for building agent-driven applications.",
+          "featuredReason": "A concise developer-keynote recap centered on the shift from AI assistants to autonomous agents. It covers Antigravity 2.0, Android CLI, migration agents, WebMCP, and agent-oriented Chrome DevTools, making it a useful entry point for understanding Google's direction across app development, web tooling, and mobile workflows.",
+          "translateContent": null,
+          "tags": [
+            "Google I/O",
+            "Gemini 3.5",
+            "Antigravity",
+            "AI Agents",
+            "Android Development"
+          ],
+          "mainPoints": [
+            {
+              "point": "Google is shifting focus from AI assistants to autonomous agents that can navigate complex workflows.",
+              "explanation": "The keynote's core message is that AI is evolving from a tool that assists to an agent that independently executes tasks, with Antigravity 2.0 as the primary platform for orchestrating these agents."
+            },
+            {
+              "point": "Antigravity 2.0 and the new Antigravity SDK provide powerful surfaces for building and customizing agents.",
+              "explanation": "The platform now includes a CLI for developer productivity, support for specialized subagents, and an SDK for deploying agents on custom infrastructure, all with built-in security features like sandboxing and credential masking."
+            },
+            {
+              "point": "New tools like the Android CLI and Migration agent aim to revolutionize Android app development with AI.",
+              "explanation": "The Android CLI allows any agent to interact with Android Studio's build tools, while the Migration agent can automatically convert React Native, web, or iOS code into native Kotlin Android apps, reducing migration time from weeks to hours."
+            },
+            {
+              "point": "WebMCP is proposed as an open standard to enable browser-based AI agents to interact with web applications.",
+              "explanation": "This standard would allow developers to expose structured tools (like JavaScript functions) to agents, enabling more reliable and precise task execution within the browser, with an origin trial starting in Chrome 149."
+            }
+          ],
+          "keyQuotes": [
+            "We've transitioned from AI that simply assists you, to agents that can independently navigate complex tasks across your entire workflow.",
+            "We're bringing the models, infrastructure, and platforms together across Google to help you build anything you can imagine.",
+            "The agent analyzes code and does the heavy lifting, turning migrations that would have taken weeks into just hours.",
+            "WebMCP is a proposed open web standard that allows developers to expose structured tools, like JavaScript functions and HTML forms, so browser-based AI agents can execute complex tasks with greater speed, reliability, and precision."
+          ],
+          "url": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+          "readUrl": "https://www.bestblogs.dev/article/fc0bb3b3",
+          "enclosureUrl": null,
+          "domain": "developers.googleblog.com",
+          "cover": "https://image.jido.dev/20260519221945_GoogleForDevelopers-ComboIO-Wagta.2e16d0ba.fill-1200x600_984jqJ0.png",
+          "language": "en_US",
+          "languageDesc": "English",
+          "sourceId": "SOURCE_059894",
+          "sourceName": "Google Developers Blog",
+          "priority": "HIGH",
+          "sourceImage": "https://image.jido.dev/20251127045351_06c33c55",
+          "mainDomain": "Artificial_Intelligence",
+          "mainDomainDesc": "Artificial Intelligence",
+          "aiSubCategory": "NEWS",
+          "aiSubCategoryDesc": "AI News",
+          "category": "Programming_Technology",
+          "categoryDesc": "Programming",
+          "resourceType": "ARTICLE",
+          "resourceTypeDesc": "Article",
+          "score": 93,
+          "readCount": 366,
+          "wordCount": 754,
+          "readTime": 4,
+          "mediaDuration": null,
+          "authors": [
+            "The Google I/O team"
+          ],
+          "publishTimeStamp": 1779148800000,
+          "publishDateStr": "05-19",
+          "publishDateTimeStr": "2026-05-19 08:00:00",
+          "qualified": true,
+          "stickTop": false,
+          "processFlowStatus": "COMPLETED",
+          "processFlowStatusDesc": "Completed",
+          "customPropertyValues": {},
+          "sourceVisibility": "SYSTEM",
+          "recommendReason": null,
+          "recallSource": null,
+          "candidateSource": null,
+          "selectionReason": null,
+          "fallbackApplied": null,
+          "personalized": null
+        },
+        {
+          "id": "RAW_de4dffe1",
+          "notExist": null,
+          "originalTitle": "I/O ‘26 news for agent developers on Google Cloud",
+          "title": "I/O '26 news for agent developers on Google Cloud",
+          "oneSentenceSummary": "Google Cloud unveils a unified agent development toolkit at I/O '26, featuring Antigravity 2.0, Managed Agents API, and ADK 2.0, structured across a four-rung spectrum from low-code to code-first.",
+          "summary": "This article from the Google Cloud Blog details the new agent development tools and platform updates announced at Google I/O '26. The core of the announcement is a unified development toolkit built on the A2A protocol, structured as a four-rung ladder of choice. The rungs are: 1) Agent Studio for low-code visual agent building, 2) the new Managed Agents API for a configuration-first, agent-as-a-service approach, 3) Antigravity 2.0 and its CLI for developer-focused coding and agent orchestration, and 4) the Agent Development Kit (ADK 2.0) for full code-first control. The article emphasizes that these rungs are additive and interoperable, allowing teams to start fast and scale to deeper customization. It also highlights the platform's openness, supporting integration with other coding agents like Claude Code, and provides a practical 'what to try first' guide for developers, covering exploration, building, governance, evaluation, and security.",
+          "featuredReason": "A developer-oriented breakdown of Google Cloud's new agent stack. It organizes Agent Studio, Managed Agents API, Antigravity 2.0, and ADK 2.0 into a clear ladder from low-code configuration to code-first control, making it useful for teams deciding how much abstraction, governance, and customization their agent projects need.",
+          "translateContent": null,
+          "tags": [
+            "Google Cloud",
+            "Agent Development",
+            "Antigravity",
+            "Managed Agents API",
+            "ADK"
+          ],
+          "mainPoints": [
+            {
+              "point": "Google Cloud introduces a four-rung spectrum for building agents, from low-code to code-first.",
+              "explanation": "The spectrum includes Agent Studio (low-code), Managed Agents API (configuration-first), Antigravity 2.0 (developer-focused orchestration), and ADK 2.0 (code-first). All rungs are built on the A2A protocol for interoperability."
+            },
+            {
+              "point": "The new Managed Agents API offers an agent-as-a-service model with a secure-by-design sandbox.",
+              "explanation": "This API allows developers to define agentic behavior and let Google Cloud handle infrastructure. The agent runs in an ephemeral sandbox, and integration with A2A and platform governance is forthcoming."
+            },
+            {
+              "point": "Antigravity 2.0 is a new standalone desktop app for orchestrating coding agents, with a companion CLI.",
+              "explanation": "Antigravity 2.0 provides a centralized workspace for complex tasks like refactoring and test generation. The CLI offers the same capabilities in a terminal environment, and both can be used with enterprise security via Cloud OAuth."
+            },
+            {
+              "point": "ADK 2.0 introduces a unified graph-based engine and collaborative workflows for building custom agent meshes.",
+              "explanation": "ADK 2.0 is for engineers who want full code control. It features dynamic workflows, a collaborative API for self-managing agent teams, and expanded language support including Kotlin."
+            },
+            {
+              "point": "The platform is designed for openness, integrating with other coding agents like Claude Code.",
+              "explanation": "Google Cloud provides tools like the Agent CLI and ADK to work with various agents, allowing developers to keep their preferred interfaces while running inference on Google Cloud's secure infrastructure."
+            }
+          ],
+          "keyQuotes": [
+            "We like to think of the agent development ecosystem as four rungs on a ladder, designed to give you a clear slider between out-of-the-box configuration and complete code-first control.",
+            "Underneath all four rungs is the A2A protocol. This interoperability ensures that an agent built on the first rung can be called as a sub-agent on the fourth rung.",
+            "Pick the rung that fits the project. Bring whatever coding agent your team prefers. The platform you graduate to is the same one either way, and the data stays inside your Cloud project the whole time.",
+            "If Managed Agents are configuration-first, ADK is engineering-first.",
+            "The graph model is worth the learning curve as soon as you have more than two branching paths."
+          ],
+          "url": "https://cloud.google.com/blog/topics/developers-practitioners/io26-news-for-agent-developers-on-google-cloud/",
+          "readUrl": "https://www.bestblogs.dev/article/de4dffe1",
+          "enclosureUrl": null,
+          "domain": "cloud.google.com",
+          "cover": "https://image.jido.dev/20260519223503_11_-_Developers__Practitioners_a4Y5EGr.max-2600x2600.jpg",
+          "language": "en_US",
+          "languageDesc": "English",
+          "sourceId": "SOURCE_bc3236",
+          "sourceName": "Google Cloud Blog",
+          "priority": "MEDIUM",
+          "sourceImage": "https://image.jido.dev/20251127045340_970fe5ab",
+          "mainDomain": "Artificial_Intelligence",
+          "mainDomainDesc": "Artificial Intelligence",
+          "aiSubCategory": "DEV",
+          "aiSubCategoryDesc": "AI Development",
+          "category": "Programming_Technology",
+          "categoryDesc": "Programming",
+          "resourceType": "ARTICLE",
+          "resourceTypeDesc": "Article",
+          "score": 93,
+          "readCount": 341,
+          "wordCount": 1699,
+          "readTime": 7,
+          "mediaDuration": null,
+          "authors": [
+            "Addy Osmani",
+            "Alan Blount"
+          ],
+          "publishTimeStamp": 1779235200000,
+          "publishDateStr": "05-20",
+          "publishDateTimeStr": "2026-05-20 08:00:00",
+          "qualified": true,
+          "stickTop": false,
+          "processFlowStatus": "COMPLETED",
+          "processFlowStatusDesc": "Completed",
+          "customPropertyValues": {},
+          "sourceVisibility": "SYSTEM",
+          "recommendReason": null,
+          "recallSource": null,
+          "candidateSource": null,
+          "selectionReason": null,
+          "fallbackApplied": null,
+          "personalized": null
+        },
+        {
+          "id": "RAW_d7f4c3b7",
+          "notExist": null,
+          "originalTitle": "Innovations from Google I/O 26 on Google Cloud",
+          "title": "Innovations from Google I/O 26 on Google Cloud",
+          "oneSentenceSummary": "Google I/O 26 announces a suite of new AI models and platform updates for Google Cloud, including Gemini 3.5 Flash, Gemini Omni, the Antigravity platform, and the Gemini Spark personal agent, all aimed at powering the Agentic Enterprise.",
+          "summary": "This article from the Google Cloud Blog summarizes the major AI and platform innovations announced at Google I/O 26. Key highlights include the release of Gemini 3.5 Flash, a frontier model optimized for agentic and coding tasks with superior performance and cost-efficiency; Gemini Omni, a groundbreaking multimodal model for generating and editing video content; and significant expansions to the Google Antigravity platform, including enterprise security features, a new desktop app, and a CLI. The article also introduces Gemini Spark, a 24/7 personal AI agent for enterprise users that can autonomously execute complex workflows across Workspace and other tools. Other announcements include new Workspace features like Google Pics for image generation and voice capabilities, the Managed Agents API for building custom agents, and CodeMender, an AI security agent for vulnerability detection and patching. The overarching theme is enabling the 'Agentic Enterprise' by providing a comprehensive platform for building, deploying, and managing AI agents.",
+          "featuredReason": "This is the broadest map of Google Cloud's I/O 26 AI announcements, covering Gemini 3.5 Flash, Gemini Omni, Antigravity, Gemini Spark, Managed Agents API, and CodeMender. Its value is in connecting models, agent infrastructure, enterprise security, and Workspace workflows into one strategy for the agentic enterprise.",
+          "translateContent": null,
+          "tags": [
+            "Google I/O",
+            "Gemini 3.5",
+            "Gemini Omni",
+            "Antigravity",
+            "Agent Platform"
+          ],
+          "mainPoints": [
+            {
+              "point": "Google releases Gemini 3.5 Flash, a new frontier model for agents and coding.",
+              "explanation": "Gemini 3.5 Flash delivers frontier performance for complex, long-horizon tasks, outperforming previous models on key benchmarks like Terminal-Bench and MCP Atlas, while being cost-efficient."
+            },
+            {
+              "point": "Gemini Omni is a new multimodal model for video generation and editing.",
+              "explanation": "This model can generate dynamic video content from text, audio, image, and video inputs, enabling intuitive video creation and editing for enterprise use cases like e-commerce and post-production."
+            },
+            {
+              "point": "Google Antigravity platform is expanded with enterprise features, a desktop app, and a CLI.",
+              "explanation": "Antigravity now offers enterprise-grade security and compliance through integration with Agent Platform, a new Antigravity 2.0 desktop app for orchestrating agents, and a CLI for lightweight development."
+            },
+            {
+              "point": "Gemini Spark is a new 24/7 personal AI agent for enterprise users.",
+              "explanation": "Spark can autonomously execute multi-step workflows across Workspace and other tools, learning user preferences and requiring approval for high-risk actions, all within a secure, governed sandbox."
+            },
+            {
+              "point": "New developer tools include Managed Agents API and CodeMender security agent.",
+              "explanation": "The Managed Agents API allows developers to spin up custom agents in secure, Google-hosted environments, while CodeMender is an AI agent that autonomously finds and fixes code vulnerabilities."
+            }
+          ],
+          "keyQuotes": [
+            "Gemini 3.5 Flash delivers frontier performance for agents and coding, excelling at complex long-horizon tasks that deliver real-world utility.",
+            "Gemini Omni is a groundbreaking new model that produces dynamic video content by blending text, audio, image, and video inputs.",
+            "Antigravity empowers the next era of enterprise builders. It enables your organization to transform how applications are built, deployed, and managed.",
+            "Gemini Spark in Gemini Enterprise is our new 24/7 personal agent that can work in the background across Workspace, custom connectors, and the open web.",
+            "CodeMender is an AI code security agent, originally developed by Google DeepMind. Leveraging Agent Platform capabilities and advanced Gemini models, CodeMender autonomously identifies vulnerabilities within your code."
+          ],
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud/",
+          "readUrl": "https://www.bestblogs.dev/article/d7f4c3b7",
+          "enclosureUrl": null,
+          "domain": "cloud.google.com",
+          "cover": "https://image.jido.dev/20260519223430_1148-GC-IO-Header-GC-43-0519.max-2500x2500.jpg",
+          "language": "en_US",
+          "languageDesc": "English",
+          "sourceId": "SOURCE_bc3236",
+          "sourceName": "Google Cloud Blog",
+          "priority": "MEDIUM",
+          "sourceImage": "https://image.jido.dev/20251127045340_970fe5ab",
+          "mainDomain": "Artificial_Intelligence",
+          "mainDomainDesc": "Artificial Intelligence",
+          "aiSubCategory": "NEWS",
+          "aiSubCategoryDesc": "AI News",
+          "category": "Programming_Technology",
+          "categoryDesc": "Programming",
+          "resourceType": "ARTICLE",
+          "resourceTypeDesc": "Article",
+          "score": 93,
+          "readCount": 149,
+          "wordCount": 2288,
+          "readTime": 10,
+          "mediaDuration": null,
+          "authors": [
+            "Thomas Kurian"
+          ],
+          "publishTimeStamp": 1779235200000,
+          "publishDateStr": "05-20",
+          "publishDateTimeStr": "2026-05-20 08:00:00",
+          "qualified": true,
+          "stickTop": false,
+          "processFlowStatus": "COMPLETED",
+          "processFlowStatusDesc": "Completed",
+          "customPropertyValues": {},
+          "sourceVisibility": "SYSTEM",
+          "recommendReason": null,
+          "recallSource": null,
+          "candidateSource": null,
+          "selectionReason": null,
+          "fallbackApplied": null,
+          "personalized": null
+        },
+        {
+          "id": "RAW_4ab3a76d",
+          "notExist": null,
+          "originalTitle": "从 0 开发大模型的 17 种 Agent 架构演进详细拆解",
+          "title": "A Detailed Breakdown of the Evolution of 17 Agent Architectures for Building LLMs from Scratch",
+          "oneSentenceSummary": "This article systematically breaks down the evolutionary path of 17 Agent architectures, from single-shot generation to multi-agent collaboration, from the perspective of control flow design, and provides code implementations for each architecture using the agno framework.",
+          "summary": "Based on the all-agentic-architectures project, this article reimplements 17 Agent architecture patterns using the agno framework. The author's core argument is that the essence of Agent architecture is not prompt engineering or framework DSLs, but control flow design. The article starts with single-shot generation (Reflection), progressively introducing architectures such as Tool Use, the Observe-Act cycle (ReAct), explicit Planning, verification-driven replanning (PEV), multi-agent collaboration, the Blackboard pattern, and the Meta-Controller. Each architecture is uniformly analyzed through six fixed questions (Problem to Solve, State, Topology, Router, Failure Mode, Upgrade Trigger) and comes with a complete agno code implementation. The article emphasizes that the core of architectural evolution is the gradual addition of control capabilities: state modeling, explicit control flow representation, local error truncation, side effect management, and system termination conditions.",
+          "featuredReason": "Tencent's engineering team delivers a structured breakdown of 17 Agent architecture patterns evolved from scratch, covering everything from single-step execution to multi-agent collaboration. Unlike high-level overviews, this piece focuses on engineering trade-offs, making it a practical reference for developers building LLM-powered systems.",
+          "translateContent": null,
+          "tags": [
+            "Agent Architecture",
+            "Control Flow Design",
+            "agno",
+            "LangGraph",
+            "Multi-Agent System"
+          ],
+          "mainPoints": [
+            {
+              "point": "The essence of Agent architecture is control flow design, not prompt engineering or framework DSLs.",
+              "explanation": "The author argues that the core of an Agent system lies in state modeling, explicit control flow representation, local error truncation, and side effect management. These are the key factors determining whether a system can be successfully deployed, rather than the quality of model responses."
+            },
+            {
+              "point": "Architectural evolution is a process of gradually adding control capabilities, moving from linear to cyclic to dynamic scheduling.",
+              "explanation": "From the linear three-step process of Reflection to the Observe-Act cycle of ReAct, and then to the dynamic scheduling based on shared state in Blackboard, each architectural upgrade adds specific control capabilities."
+            },
+            {
+              "point": "The PEV architecture elevates verification to a first-class citizen of control flow, preventing silent error propagation.",
+              "explanation": "Building on Planning, the PEV architecture introduces an explicit verification step. It performs structured validation on the results of each tool execution, triggering replanning upon failure, ensuring errors are identified and fixed locally."
+            },
+            {
+              "point": "The core of a Multi-Agent architecture is the explicit encoding of cognitive division of labor, not running multiple models in parallel.",
+              "explanation": "Different cognitive roles (e.g., researcher, analyst, writer) are decomposed into independent Agents, orchestrated through a fixed pipeline or a dynamic scheduler. This enables role isolation, independent debugging, and differentiated tool configuration."
+            }
+          ],
+          "keyQuotes": [
+            "The essence of Agent architecture is not prompt engineering, nor the DSL of a specific framework, but control flow design.",
+            "The so-called 'evolution of agent architecture' is not about pursuing AGI, but about solving an old problem: how to keep a system controllable, explainable, and recoverable in increasingly complex environments.",
+            "The essence of PEV is: preventing errors from propagating silently.",
+            "The core of Multi-Agent is not 'running multiple models together', but explicitly encoding cognitive division of labor, scheduling strategies, and redundancy mechanisms into the graph structure.",
+            "For the first time, the system has objectified 'control flow'."
+          ],
+          "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801545&idx=1&sn=b2d15c583715f519cbec484e8b10abdf",
+          "readUrl": "https://www.bestblogs.dev/article/4ab3a76d",
+          "enclosureUrl": null,
+          "domain": "mp.weixin.qq.com",
+          "cover": "https://image.jido.dev/20251127045339_343744c6",
+          "language": "zh_CN",
+          "languageDesc": "Chinese",
+          "sourceId": "SOURCE_958ae8",
+          "sourceName": "腾讯技术工程",
+          "priority": "HIGH",
+          "sourceImage": "https://image.jido.dev/20251127045339_343744c6",
+          "mainDomain": "Artificial_Intelligence",
+          "mainDomainDesc": "Artificial Intelligence",
+          "aiSubCategory": "DEV",
+          "aiSubCategoryDesc": "AI Development",
+          "category": "Programming_Technology",
+          "categoryDesc": "Programming",
+          "resourceType": "ARTICLE",
+          "resourceTypeDesc": "Article",
+          "score": 92,
+          "readCount": 689,
+          "wordCount": 14761,
+          "readTime": 60,
+          "mediaDuration": null,
+          "authors": [
+            "腾讯技术工程"
+          ],
+          "publishTimeStamp": 1779097200000,
+          "publishDateStr": "05-18",
+          "publishDateTimeStr": "2026-05-18 17:40:00",
+          "qualified": true,
+          "stickTop": false,
+          "processFlowStatus": "COMPLETED",
+          "processFlowStatusDesc": "Completed",
+          "customPropertyValues": {},
+          "sourceVisibility": "SYSTEM",
+          "recommendReason": null,
+          "recallSource": null,
+          "candidateSource": null,
+          "selectionReason": null,
+          "fallbackApplied": null,
+          "personalized": null
+        },
+        {
+          "id": "RAW_ae472ac6",
+          "notExist": null,
+          "originalTitle": "从 Prompt、Context 到 Harness，工程的三次进化与终局之战",
+          "title": "From Prompt to Context to Harness: The Three Evolutions of Engineering and the Endgame",
+          "oneSentenceSummary": "This article systematically elaborates on the three evolutions of AI engineering—from Prompt Engineering to Context Engineering to Harness Engineering—emphasizing that they are nested rather than substitutive, and introduces the Harness Decay Law and a new paradigm for engineers.",
+          "summary": "Using the example of a 3-7 person team at OpenAI generating nearly 1 million lines of production-grade code with AI in 5 months, the article systematically outlines the three evolutions of AI engineering. The first evolution, Prompt Engineering, addresses the issue of 'saying it clearly,' but its marginal benefits diminish as model comprehension improves. The second evolution, Context Engineering, tackles the problem of 'providing sufficient information,' encompassing key techniques such as RAG, context compression, and a single source of truth. The third evolution, Harness Engineering, solves the challenge of 'system reliability,' leveraging strategies like context governance, validation loops, and technical debt cleanup to manage AI. The article emphasizes that these three are nested layers, and introduces the Harness Decay Law—the more capable the model, the simpler the required Harness. Finally, it posits that the new paradigm for engineers is 'Human Steer, Agents Execute,' shifting their core responsibility from writing code to setting direction, building frameworks, and making judgments.",
+          "featuredReason": "This article details the three evolutions of AI engineering: Prompt, Context, and Harness Engineering. It reveals how OpenAI's team leveraged Harness Engineering to generate nearly a million lines of production code, highlighting the paradigm shift for engineers from coding to designing reliable AI systems. This offers critical insights for adapting to the AI era.",
+          "translateContent": null,
+          "tags": [
+            "Prompt Engineering",
+            "Context Engineering",
+            "Harness Engineering",
+            "AI Agent",
+            "AI Engineering"
+          ],
+          "mainPoints": [
+            {
+              "point": "AI engineering has undergone three evolutions—Prompt, Context, and Harness—which are nested rather than substitutive.",
+              "explanation": "Prompt addresses what to say, Context addresses what to know, and Harness addresses how to operate reliably. Without a good Prompt, Context information cannot be correctly understood; without good Context, the Agent operates blindly in an information vacuum; without a good Harness, the Agent accumulates errors and eventually collapses in complex tasks."
+            },
+            {
+              "point": "Harness Engineering is currently a necessary condition for reliable AI system operation, but it is subject to the Decay Law.",
+              "explanation": "The more capable the model, the simpler the required Harness. As models evolve, many of today's meticulously designed Harness rules will be naturally absorbed by future model capabilities. Engineers should dynamically adjust Harness thickness and avoid over-engineering."
+            },
+            {
+              "point": "The new paradigm for engineers is 'Human Steer, Agents Execute,' with core responsibilities shifting from writing code to designing systems.",
+              "explanation": "An engineer's value is reflected in the Harness system they build, with core responsibilities shifting to setting direction, building frameworks, and making judgments. Metrics shift from individual code output to system leverage."
+            }
+          ],
+          "keyQuotes": [
+            "Human steer, agents execute.",
+            "Don't over-engineer solutions for problems that models will naturally solve in the future.",
+            "Software engineering hasn't disappeared; it's evolving. From 'someone who writes code' to 'someone who designs systems that let AI write code well.'",
+            "Prompt Engineering answers: 'What should I say to the model?' Context Engineering answers: 'What should the model know when answering?' Harness Engineering answers: 'How should the entire AI system operate reliably?'"
+          ],
+          "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695574&idx=1&sn=5a72299143649e58cc510ab1b50480b4",
+          "readUrl": "https://www.bestblogs.dev/article/ae472ac6",
+          "enclosureUrl": null,
+          "domain": "mp.weixin.qq.com",
+          "cover": "https://image.jido.dev/20251127045410_4d44587a",
+          "language": "zh_CN",
+          "languageDesc": "Chinese",
+          "sourceId": "SOURCE_efac5b",
+          "sourceName": "腾讯云开发者",
+          "priority": "HIGH",
+          "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+          "mainDomain": "Artificial_Intelligence",
+          "mainDomainDesc": "Artificial Intelligence",
+          "aiSubCategory": "DEV",
+          "aiSubCategoryDesc": "AI Development",
+          "category": "Programming_Technology",
+          "categoryDesc": "Programming",
+          "resourceType": "ARTICLE",
+          "resourceTypeDesc": "Article",
+          "score": 92,
+          "readCount": 680,
+          "wordCount": 6656,
+          "readTime": 27,
+          "mediaDuration": null,
+          "authors": [
+            "腾讯云开发者"
+          ],
+          "publishTimeStamp": 1779237900000,
+          "publishDateStr": "05-20",
+          "publishDateTimeStr": "2026-05-20 08:45:00",
+          "qualified": true,
+          "stickTop": false,
+          "processFlowStatus": "COMPLETED",
+          "processFlowStatusDesc": "Completed",
+          "customPropertyValues": {},
+          "sourceVisibility": "SYSTEM",
+          "recommendReason": null,
+          "recallSource": null,
+          "candidateSource": null,
+          "selectionReason": null,
+          "fallbackApplied": null,
+          "personalized": null
+        },
+        {
+          "id": "RAW_339ffc01",
+          "notExist": null,
+          "originalTitle": "CIO 正在抛弃 AI 生码率：一场关于什么才算产研提效的实践复盘",
+          "title": "CIOs Are Abandoning AI Code Generation Rate: A Practical Review of What Truly Counts as R&D Efficiency",
+          "oneSentenceSummary": "Based on a year of practical experience, the Alibaba Cloud CIO team proposes that the core of R&D efficiency in the AI era lies in 'scaling' rather than 'code generation rate.' By implementing left-shifted quality testing, knowledge engineering, API specifications, and Half-Stack role restructuring, they achieved a 3x increase in effective code output per frontend developer, 2x for backend developers, and a 30%-55% reduction in defect rates.",
+          "summary": "This article is an in-depth review by Alibaba Cloud CIO Jiang Linquan and his team on scaling R&D organizational efficiency in the AI era. It first identifies two popular misconceptions: AI code generation rate as a process metric easily leads to 'padding,' and Vibe Coding is difficult to directly implement in existing enterprise systems. The core argument is that once code is produced, it is primarily a liability; scaling efficiency should focus on business value, not code volume. Through AI assistance, the team achieved four major left-shifts: quality and test coverage increased from 20% to nearly 100%; knowledge engineering and spec restoration for existing systems; API First specifications to end system 'compensation'; and Vibe Coding used for upfront requirement clarification. Organizationally, they abandoned the full-stack engineer fantasy, restructuring into two Half-Stack roles: PDFE (AI Product Design Frontend Engineer) and ABE (AI Architecture Backend Engineer), significantly reducing collaboration chains. The final framework is a trinity of 'Product Value Guidance × Engineering Efficiency × Organizational Change.' The article also explores the difficulty of realizing Agent value, the difference between individual and organizational efficiency gains, and the scarce skills in the AI era—a return to the fundamentals of language and mathematics, and judgment driven by taste.",
+          "featuredReason": "This InfoQ piece challenges the popular AI code generation rate metric by examining real CIO decisions and ground-level implementation cases. It argues for more meaningful productivity measures and offers a practical evaluation framework for teams adopting AI coding tools in engineering workflows.",
+          "translateContent": null,
+          "tags": [
+            "AI Efficiency",
+            "R&D Efficiency",
+            "Organizational Change",
+            "Left-Shift Testing",
+            "Half-Stack"
+          ],
+          "mainPoints": [
+            {
+              "point": "AI code generation rate is a dangerous process metric; focus on E2E measurement of business value.",
+              "explanation": "Code lines are meaningless without weighting, and AI code generation rate can easily trap teams in a 'padding' pitfall. Actual coding accounts for only 20% of the software engineering lifecycle. Even if AI achieves a 70%-80% code generation rate for easy-to-write code, the overall end-to-end efficiency improvement remains limited."
+            },
+            {
+              "point": "Vibe Coding is not suitable for direct production use; it should serve as a tool for upfront requirement clarification.",
+              "explanation": "Core enterprise applications are mostly existing systems, and code generated by Vibe Coding cannot directly assume production quality responsibility. However, it can be used to quickly generate prototypes, allowing business stakeholders to confirm requirements at the earliest stage via live demos, reducing misunderstandings and rework from the source."
+            },
+            {
+              "point": "AI rewrites the classic challenges of the 'Mythical Man-Month' and 'Engineering Left-Shift.'",
+              "explanation": "Adding an AI Agent is different from adding a person. Agents can access context without loss, avoiding the geometric increase in communication overhead. AI can extract knowledge assets from existing code, reducing the organizational friction and cost of left-shifting, making quality left-shift from 'correct but expensive' to executable."
+            },
+            {
+              "point": "Organizations should abandon the full-stack fantasy and restructure into two Half-Stack roles: PDFE and ABE.",
+              "explanation": "Full-stack talent is scarce and difficult to recruit. Companies should leverage AI to lower cross-domain barriers. PDFE merges product managers, interaction designers, and frontend engineers, while ABE integrates architecture design, backend development, and AI Agent development. The two collaborate via API contracts, significantly compressing the collaboration chain."
+            },
+            {
+              "point": "The scarce capability in the AI era is 'taste'—the judgment to define problems and manage Agents.",
+              "explanation": "Skills are inflating; judgment of business value (taste) is the scarce resource. Foundational abilities return to language (precise understanding and expression) and mathematics (lossless abstraction), while higher-level abilities involve defining the leftmost problem and managing Agent teams."
+            }
+          ],
+          "keyQuotes": [
+            "Skills inflate; taste deflates.",
+            "Once code is produced, it is first and foremost a liability. The large amount of added code 'may' be an asset, but it is 'definitely' a liability.",
+            "AI code generation rate is a 'process metric.' Once an organization observes such a process metric, AI can easily become toxic.",
+            "Taste is the judgment of business value, the final acceptance criterion for whether something is good or bad. AI can only achieve average, but people with taste can define what 'good' is.",
+            "Essentially, taste is the crystallization of human experience, abstract ability, and sense of responsibility in a complex world. AI can raise the floor, but the ceiling will always be defined by humans."
+          ],
+          "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651284581&idx=1&sn=14fdab712501627cd59e8a24854c08d9",
+          "readUrl": "https://www.bestblogs.dev/article/339ffc01",
+          "enclosureUrl": null,
+          "domain": "mp.weixin.qq.com",
+          "cover": "https://image.jido.dev/20251127045423_8f5979d8",
+          "language": "zh_CN",
+          "languageDesc": "Chinese",
+          "sourceId": "SOURCE_8f2a9f",
+          "sourceName": "InfoQ 中文",
+          "priority": "MEDIUM",
+          "sourceImage": "https://image.jido.dev/20251127045423_8f5979d8",
+          "mainDomain": "Artificial_Intelligence",
+          "mainDomainDesc": "Artificial Intelligence",
+          "aiSubCategory": "DEV",
+          "aiSubCategoryDesc": "AI Development",
+          "category": "Programming_Technology",
+          "categoryDesc": "Programming",
+          "resourceType": "ARTICLE",
+          "resourceTypeDesc": "Article",
+          "score": 92,
+          "readCount": 542,
+          "wordCount": 8387,
+          "readTime": 34,
+          "mediaDuration": null,
+          "authors": [
+            "InfoQ 中文"
+          ],
+          "publishTimeStamp": 1779089820000,
+          "publishDateStr": "05-18",
+          "publishDateTimeStr": "2026-05-18 15:37:00",
+          "qualified": true,
+          "stickTop": false,
+          "processFlowStatus": "COMPLETED",
+          "processFlowStatusDesc": "Completed",
+          "customPropertyValues": {},
+          "sourceVisibility": "SYSTEM",
+          "recommendReason": null,
+          "recallSource": null,
+          "candidateSource": null,
+          "selectionReason": null,
+          "fallbackApplied": null,
+          "personalized": null
+        },
+        {
+          "id": "RAW_8fdfe4e8",
+          "notExist": null,
+          "originalTitle": "让 Skill 自己训练自己：8 阶段 Loop、3 层评测、5 维 AND 门控，从此实现自进化",
+          "title": "Let Skill Train Itself: 8-Stage Loop, 3-Tier Evaluation, 5-Dimensional AND Gating for Self-Evolution",
+          "oneSentenceSummary": "This paper proposes and implements a self-evolving framework called skill-evolver, which integrates Karpathy's autoresearch outer loop, Anthropic's skill-creator evaluation engine, and Stanford Meta-Harness's trace diagnosis concept. It enables AI Skills to autonomously iterate, evaluate, roll back, and optimize like training a model, validated by 19 rounds of zero-rollback self-evolution and a real business scenario.",
+          "summary": "Starting from the pain points of stability, boundaries, and rule conflicts encountered in AI Skill development, the author systematically proposes a training framework for Skill self-evolution—skill-evolver. Drawing an analogy to the deep learning training paradigm, the framework treats Skill as a trainable object and designs an 8-stage iterative loop, a three-tier evaluation pipeline (L1 Quick Gatekeeper, L2 Dev Eval, L3 Strict Eval), a 5-dimensional AND gating mechanism, and a Trace diagnosis method based on original execution traces. The author validates the framework's effectiveness by having skill-evolver self-evolve for 19 rounds (all passing gating with zero rollbacks) and a real customer service Q&A Skill optimization case (recall rate improved from 86% to 98.67%). The article concludes by discussing practical challenges such as LLM evaluation noise, GT quality ceiling, and cost, while emphasizing the engineering principle of 'verify at every step' and the complementary value of AI in exploring beyond human cognitive boundaries.",
+          "featuredReason": "This piece reframes Skill authoring as an engineering loop: trainable, evaluable, and rollbackable. Its eight-stage cycle, three-layer evaluation pipeline, five-dimensional AND gate, and trace-based diagnosis make self-evolving Skills concrete rather than speculative. It is worth reading for anyone building reliable agent workflows and evaluation systems.",
+          "translateContent": null,
+          "tags": [
+            "Skill Self-Evolution",
+            "AI Agent",
+            "LLM Evaluation",
+            "AutoResearch",
+            "Meta-Harness"
+          ],
+          "mainPoints": [
+            {
+              "point": "A Skill should not be a handcrafted artifact, but an object that can be trained, rolled back, and optimized.",
+              "explanation": "The author proposes drawing from the deep learning training paradigm, transforming Skill development from manual debugging to data-driven iterative optimization. The core is to define GT data and evaluation metrics, allowing the loop to automatically converge toward the goal."
+            },
+            {
+              "point": "The skill-evolver framework fuses three proven concepts: the outer loop skeleton, the evaluation engine, and trace diagnosis.",
+              "explanation": "The framework integrates Karpathy's autoresearch iterative loop, Anthropic's skill-creator evaluation capabilities, and Stanford Meta-Harness's raw trace-driven diagnosis, forming a complete closed loop."
+            },
+            {
+              "point": "5-dimensional AND gating and layered mutation are key engineering constraints ensuring iteration quality.",
+              "explanation": "Through AND logic gating across 5 dimensions (e.g., quality, cost, safety), it eliminates the possibility of a high score in one dimension masking issues in others. Layered mutation controls the granularity of changes, gradually escalating from low-cost modifications to avoid blind large-scale changes."
+            },
+            {
+              "point": "The core value of meta-evolution lies in exploring boundaries that human developers cannot reach.",
+              "explanation": "The 19 rounds of self-evolution uncovered 14 test cases the author had never thought of. These cases stemmed from real issues discovered by the tool during actual operation, not from manual presets, demonstrating AI's unique value in exploring cognitive blind spots."
+            }
+          ],
+          "keyQuotes": [
+            "Writing a Skill that can run is not hard—you can throw together a SKILL.md and the model will follow it. But making it work reliably is a different story.",
+            "Instead of writing longer prompts to 'convince' it to follow rules, write the rules into code—if the gating function fails, just git revert HEAD, no negotiation.",
+            "The most valuable thing about meta-evolution is not the time saved by automation; it's that it runs a path for a user you've never met, a path you yourself would never traverse.",
+            "A Skill should not be a handcrafted artifact; it should be an object that can be trained, rolled back, and optimized.",
+            "Humans optionally contribute at the edge."
+          ],
+          "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695568&idx=1&sn=492ca1e98155a9fea668213173cab654",
+          "readUrl": "https://www.bestblogs.dev/article/8fdfe4e8",
+          "enclosureUrl": null,
+          "domain": "mp.weixin.qq.com",
+          "cover": "https://image.jido.dev/20251127045410_4d44587a",
+          "language": "zh_CN",
+          "languageDesc": "Chinese",
+          "sourceId": "SOURCE_efac5b",
+          "sourceName": "腾讯云开发者",
+          "priority": "HIGH",
+          "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+          "mainDomain": "Artificial_Intelligence",
+          "mainDomainDesc": "Artificial Intelligence",
+          "aiSubCategory": "DEV",
+          "aiSubCategoryDesc": "AI Development",
+          "category": "Programming_Technology",
+          "categoryDesc": "Programming",
+          "resourceType": "ARTICLE",
+          "resourceTypeDesc": "Article",
+          "score": 92,
+          "readCount": 435,
+          "wordCount": 7896,
+          "readTime": 32,
+          "mediaDuration": null,
+          "authors": [
+            "腾讯云开发者"
+          ],
+          "publishTimeStamp": 1779151560000,
+          "publishDateStr": "05-19",
+          "publishDateTimeStr": "2026-05-19 08:46:00",
+          "qualified": true,
+          "stickTop": false,
+          "processFlowStatus": "COMPLETED",
+          "processFlowStatusDesc": "Completed",
+          "customPropertyValues": {},
+          "sourceVisibility": "SYSTEM",
+          "recommendReason": null,
+          "recallSource": null,
+          "candidateSource": null,
+          "selectionReason": null,
+          "fallbackApplied": null,
+          "personalized": null
+        },
+        {
+          "id": "RAW_3dc786a9",
+          "notExist": null,
+          "originalTitle": "After Automation",
+          "title": "After Automation",
+          "oneSentenceSummary": "The more we automate with AI, the more expert human work is created, as commoditized output demands human judgment for differentiation and quality.",
+          "summary": "Dan Shipper, CEO of Every, argues that AI automation paradoxically increases the demand for expert human work, rather than eliminating it. Drawing on internal experience at Every, he describes two modes of working with agents: agent employees (coworker and embedded) and human-AI collaboration in tools like Codex and Claude Code. He explains that AI commoditizes the residue of past human competence, making it cheap and abundant. This abundance creates sameness (slop), which in turn creates demand for differentiated, high-status work that only humans can provide. He addresses the objection of exponential benchmark progress by arguing that benchmarks measure performance inside a fixed frame, and saturating one frame simply creates new demand for experts who can adapt that competence to novel, live problems. The essay concludes that the future of knowledge work is not replacement, but a continuous cycle of automation creating new, higher-value human roles.",
+          "featuredReason": "This piece delves into the paradox of AI automation, asserting that making competence cheap paradoxically creates more demand for human experts. It explains how humans continuously shift the “frame” of valuable work, staying ahead of AI's benchmark-driven progress. The author argues that true “agency”—the ability to want for oneself—remains a uniquely human trait, distinguishing us from even the most advanced AI agents.",
+          "translateContent": null,
+          "tags": [
+            "AI Automation",
+            "Knowledge Work",
+            "Human-AI Collaboration",
+            "Agent Employees",
+            "Benchmark Progress"
+          ],
+          "mainPoints": [
+            {
+              "point": "AI automation creates more expert human work, not less.",
+              "explanation": "At Every, despite automating heavily, the team has grown and human work has increased. Agents require human oversight, maintenance, and judgment to function effectively."
+            },
+            {
+              "point": "AI commoditizes the visible residue of past human competence, making it cheap and abundant.",
+              "explanation": "Models are trained on completed work (code, prose, etc.), making these skills broadly available. This abundance leads to sameness (slop) in output."
+            },
+            {
+              "point": "Sameness creates a demand for difference, which only humans can provide.",
+              "explanation": "When AI output is generic and indistinguishable, humans seek work that feels alive, specific, and high-status. This demand for differentiation is new demand for human experts."
+            },
+            {
+              "point": "Benchmark progress is real but occurs inside a fixed frame; saturating one frame creates new demand for experts.",
+              "explanation": "Benchmarks measure performance on a specific prompt and task. Once a frame is saturated, the work inside it becomes cheap, leading to more attempts and a greater need for expert judgment to adapt and validate."
+            }
+          ],
+          "keyQuotes": [
+            "There is a paradox at the heart of AI. ... the more we automate, the more expert human work there is to do.",
+            "AI commoditizes the residue of human expertise—whatever can be made explicit enough to train on. That collapses the value of default model output and creates demand for what's different.",
+            "When work is abundant and looks alike everywhere, the work that doesn't fit the pattern becomes the rare, valuable, and high-status thing.",
+            "The current generation of models only knows about work that has been done. Humans know about what needs to be done, right now, at this moment.",
+            "Making expert work cheaper does not simply replace experts. It creates more situations where expert judgment is needed."
+          ],
+          "url": "https://every.to/p/after-automation",
+          "readUrl": "https://www.bestblogs.dev/article/3dc786a9",
+          "enclosureUrl": null,
+          "domain": "every.to",
+          "cover": "https://image.jido.dev/20260521215249_social-banner.png",
+          "language": "en_US",
+          "languageDesc": "English",
+          "sourceId": "SOURCE_b42603f1",
+          "sourceName": "Every",
+          "priority": "LOW",
+          "sourceImage": "https://every.to/favicon-dark.svg",
+          "mainDomain": "Artificial_Intelligence",
+          "mainDomainDesc": "Artificial Intelligence",
+          "aiSubCategory": "PRODUCT",
+          "aiSubCategoryDesc": "AI 产品",
+          "category": "Artificial_Intelligence",
+          "categoryDesc": "Artificial Intelligence",
+          "resourceType": "ARTICLE",
+          "resourceTypeDesc": "Article",
+          "score": 92,
+          "readCount": 405,
+          "wordCount": 6969,
+          "readTime": 28,
+          "mediaDuration": null,
+          "authors": [
+            "The Every Team"
+          ],
+          "publishTimeStamp": 1779321600000,
+          "publishDateStr": "05-21",
+          "publishDateTimeStr": "2026-05-21 08:00:00",
+          "qualified": true,
+          "stickTop": false,
+          "processFlowStatus": "COMPLETED",
+          "processFlowStatusDesc": "Completed",
+          "customPropertyValues": {},
+          "sourceVisibility": "SYSTEM",
+          "recommendReason": null,
+          "recallSource": null,
+          "candidateSource": null,
+          "selectionReason": null,
+          "fallbackApplied": null,
+          "personalized": null
+        }
+      ]
+    }
+  }
+}

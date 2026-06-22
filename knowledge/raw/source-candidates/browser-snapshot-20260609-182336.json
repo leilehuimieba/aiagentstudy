@@ -1,0 +1,355 @@
+{
+  "generated_at": "2026-06-09T18:23:32",
+  "mode": "browser-snapshot",
+  "results": [
+    {
+      "source_id": "product-hunt-ai",
+      "result": {
+        "status": "browser_readable",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"F63F7B69815D48FD14B508215AE26DF5\",\n  \"url\": \"https://www.producthunt.com/categories/artificial-intelligence\"\n}\n",
+          "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+        },
+        "page_info": {
+          "page": "F63F7B69815D48FD14B508215AE26DF5",
+          "url": "https://www.producthunt.com/categories/artificial-intelligence"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [\n    {\n      \"href\": \"https://www.producthunt.com/\",\n      \"text\": \"Product Hunt Logo\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories?ref=header_nav\",\n      \"text\": \"Best Products\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-workflow-automation\",\n      \"text\": \"AI Workflow Automation →\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-dictation-apps\",\n      \"text\": \"AI Dictation Apps →\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories?ref=header_nav\",\n      \"text\": \"Trending Categories\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/engineering-development\",\n      \"text\": \"Engineering & Development\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/llms\",\n      \"text\": \"LLMs\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/productivity\",\n      \"text\": \"Productivity\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/marketing-sales\",\n      \"text\": \"Marketing & Sales\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/design-creative\",\n      \"text\": \"Design & Creative\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/social-community\",\n      \"text\": \"Social & Community\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/finance\",\n      \"text\": \"Finance\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-agents\",\n      \"text\": \"AI Agents\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories?ref=header_nav\",\n      \"text\": \"Other Categories\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/vibe-coding\",\n      \"text\": \"Vibe Coding Tools\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-dictation-apps\",\n      \"text\": \"AI Dictation Apps\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-meeting-notetakers\",\n      \"text\": \"AI notetakers\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/code-review-tools\",\n      \"text\": \"Code Review Tools\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/no-code-platforms\",\n      \"text\": \"No-code Platforms\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/figma-plugins\",\n      \"text\": \"Figma Plugins\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/static-site-generators\",\n      \"text\": \"Static site generators\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/vibe-coding\",\n      \"text\": \"Vibe Coding Tools\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-coding-agents\",\n      \"text\": \"AI Coding Agents\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-code-editors\",\n      \"text\": \"AI Code Editors\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-chatbots\",\n      \"text\": \"AI Chatbots\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-infrastructure\",\n      \"text\": \"AI Infrastructure Tools\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/prompt-engineering-tools\",\n      \"text\": \"Prompt Engineering Tools\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-meeting-notetakers\",\n      \"text\": \"AI notetakers\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/notes-documents\",\n      \"text\": \"Note and writing apps\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/team-collaboration\",\n      \"text\": \"Team collaboration software\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/search\",\n      \"text\": \"Search\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-workflow-automation\",\n      \"text\": \"AI Workflow Automation\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/lead-generation\",\n      \"text\": \"Lead generation software\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/marketing-automation\",\n      \"text\": \"Marketing automation platforms\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/video-editing\",\n      \"text\": \"Video editing\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/design-resources\",\n      \"text\": \"Design resources\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/graphic-design-tools\",\n      \"text\": \"Graphic design tools\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-generative-media\",\n      \"text\": \"AI Generative Media\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/social-networking\",\n      \"text\": \"Social Networking\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/professional-networking\",\n      \"text\": \"Professional networking platforms\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/community-management\",\n      \"text\": \"Community management\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/accounting\",\n      \"text\": \"Accounting software\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/fundraising-resources\",\n      \"text\": \"Fundraising resources\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/investing\",\n      \"text\": \"Investing\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-voice-agents\",\n      \"text\": \"AI Voice Agents\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/leaderboard/daily/2026/6/9?ref=header_nav\",\n      \"text\": \"Launches\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/leaderboard/daily/2026/6/9?ref=header_nav\",\n      \"text\": \"Launch archiveMost-loved launches by the community\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/launch?ref=header_nav\",\n      \"text\": \"Launch GuideChecklists and pro tips for launching\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/newsletters?ref=header_nav\",\n      \"text\": \"News\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/newsletters?ref=header_nav\",\n      \"text\": \"NewsletterThe best of Product Hunt, every day\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/stories?ref=header_nav\",\n      \"text\": \"StoriesTech news, interviews, and tips from makers\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/changes?ref=header_nav\",\n      \"text\": \"ChangelogNew Product Hunt features and releases\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/forums?ref=header_nav\",\n      \"text\": \"Forums\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/forums?ref=header_nav\",\n      \"text\": \"ForumsAsk questions, find support, and connect\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/kitty-points?ref=header_nav\",\n      \"text\": \"Kitty Points LeaderboardThe highest scoring community members\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/visit-streaks?ref=header_nav\",\n      \"text\": \"StreaksThe most active community members\"\n    },\n    {\n      \"href\": \"https://lu.ma/producthunt\",\n      \"text\": \"EventsMeet others online and in-person\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/sponsor?ref=header_nav\",\n      \"text\": \"Advertise\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/newsletters?ref=header_nav&campaign=weekly_newsletter&source=header_nav\",\n      \"text\": \"Subscribe\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/\",\n      \"text\": \"Go to the homepage\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/engineering-development?ref=footer\",\n      \"text\": \"Engineering & Development\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/vibe-coding?ref=footer\",\n      \"text\": \"Vibe Coding Tools\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-coding-agents?ref=footer\",\n      \"text\": \"AI Coding Agents\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-code-editors?ref=footer\",\n      \"text\": \"AI Code Editors\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/llms?ref=footer\",\n      \"text\": \"LLMs\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-chatbots?ref=footer\",\n      \"text\": \"AI Chatbots\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-infrastructure?ref=footer\",\n      \"text\": \"AI Infrastructure Tools\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/prompt-engineering-tools?ref=footer\",\n      \"text\": \"Prompt Engineering Tools\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/productivity?ref=footer\",\n      \"text\": \"Productivity\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-meeting-notetakers?ref=footer\",\n      \"text\": \"AI notetakers\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/notes-documents?ref=footer\",\n      \"text\": \"Note and writing apps\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/team-collaboration?ref=footer\",\n      \"text\": \"Team collaboration software\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/search?ref=footer\",\n      \"text\": \"Search\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/ai-workflow-automation?ref=footer\",\n      \"text\": \"AI Workflow Automation\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/marketing-sales?ref=footer\",\n      \"text\": \"Marketing & Sales\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/lead-generation?ref=footer\",\n      \"text\": \"Lead generation software\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/marketing-automation?ref=footer\",\n      \"text\": \"Marketing automation platforms\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/design-creative?ref=footer\",\n      \"text\": \"Design & Creative\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/video-editing?ref=footer\",\n      \"text\": \"Video editing\"\n    },\n    {\n      \"href\": \"https://www.producthunt.com/categories/design-resources?ref=footer\",\n      \"text\": \"Design resources\"\n    }\n  ],\n  \"readyState\": \"complete\",\n  \"text\": \"Best Products Launches News Forums Advertise Subscribe Sign in 404 We seem to have lost this page Please accept these adorable photos of our PH team's furry friend as our humble apology for the inconvenience. Let's get you back to the homepage Go to the homepage Top Product Categories Engineering & Development Vibe Coding Tools AI Coding Agents AI Code Editors LLMs AI Chatbots AI Infrastructure Tools Prompt Engineering Tools Productivity AI notetakers Note and writing apps Team collaboration software Search AI Workflow Automation Marketing & Sales Lead generation software Marketing automation platforms Design & Creative Video editing Design resources Graphic design tools AI Generative Media Social & Community Social Networking Professional networking platforms Community management Finance Accounting software Fundraising resources Investing AI Agents AI Voice Agents See All Categories >> Trending categories Vibe Coding Tools AI Dictation Apps AI notetakers Code Review Tools No-code Platforms Figma Plugins Static site generators Top reviewed Lovable n8n Attio PostHog Vapi Granola Raycast Supabase Trending products Lovable Screen Studio bolt.new Wispr Flow Framer Replit Vapi Granola Top forum threads Cursor or Claude Code? POLL: Domain or product first? YC deadline in <2 weeks; Who's applying? We Got into YC, Got Kicked Out, and Fought Our Way Back How Wispr Flow found PMF through pivot Best Vibe Coding tool so far? Landing page roast - 48 hours only Fix your tagline with the PH CEO © 2026 Product Hunt Newsletter Apps About FAQ Terms Privacy & Cookies Privacy Choices Advertise llms.txt Contact us: hello@producthunt.com\",\n  \"textLength\": 1643,\n  \"title\": \"Product Hunt – The best new products in tech.\",\n  \"url\": \"https://www.producthunt.com/categories/artificial-intelligence\"\n}\n",
+          "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+        },
+        "page_state": {
+          "links": [
+            {
+              "href": "https://www.producthunt.com/",
+              "text": "Product Hunt Logo"
+            },
+            {
+              "href": "https://www.producthunt.com/categories?ref=header_nav",
+              "text": "Best Products"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-workflow-automation",
+              "text": "AI Workflow Automation →"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-dictation-apps",
+              "text": "AI Dictation Apps →"
+            },
+            {
+              "href": "https://www.producthunt.com/categories?ref=header_nav",
+              "text": "Trending Categories"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/engineering-development",
+              "text": "Engineering & Development"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/llms",
+              "text": "LLMs"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/productivity",
+              "text": "Productivity"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/marketing-sales",
+              "text": "Marketing & Sales"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/design-creative",
+              "text": "Design & Creative"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/social-community",
+              "text": "Social & Community"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/finance",
+              "text": "Finance"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-agents",
+              "text": "AI Agents"
+            },
+            {
+              "href": "https://www.producthunt.com/categories?ref=header_nav",
+              "text": "Other Categories"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/vibe-coding",
+              "text": "Vibe Coding Tools"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-dictation-apps",
+              "text": "AI Dictation Apps"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-meeting-notetakers",
+              "text": "AI notetakers"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/code-review-tools",
+              "text": "Code Review Tools"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/no-code-platforms",
+              "text": "No-code Platforms"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/figma-plugins",
+              "text": "Figma Plugins"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/static-site-generators",
+              "text": "Static site generators"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/vibe-coding",
+              "text": "Vibe Coding Tools"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-coding-agents",
+              "text": "AI Coding Agents"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-code-editors",
+              "text": "AI Code Editors"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-chatbots",
+              "text": "AI Chatbots"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-infrastructure",
+              "text": "AI Infrastructure Tools"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/prompt-engineering-tools",
+              "text": "Prompt Engineering Tools"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-meeting-notetakers",
+              "text": "AI notetakers"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/notes-documents",
+              "text": "Note and writing apps"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/team-collaboration",
+              "text": "Team collaboration software"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/search",
+              "text": "Search"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-workflow-automation",
+              "text": "AI Workflow Automation"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/lead-generation",
+              "text": "Lead generation software"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/marketing-automation",
+              "text": "Marketing automation platforms"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/video-editing",
+              "text": "Video editing"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/design-resources",
+              "text": "Design resources"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/graphic-design-tools",
+              "text": "Graphic design tools"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-generative-media",
+              "text": "AI Generative Media"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/social-networking",
+              "text": "Social Networking"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/professional-networking",
+              "text": "Professional networking platforms"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/community-management",
+              "text": "Community management"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/accounting",
+              "text": "Accounting software"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/fundraising-resources",
+              "text": "Fundraising resources"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/investing",
+              "text": "Investing"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-voice-agents",
+              "text": "AI Voice Agents"
+            },
+            {
+              "href": "https://www.producthunt.com/leaderboard/daily/2026/6/9?ref=header_nav",
+              "text": "Launches"
+            },
+            {
+              "href": "https://www.producthunt.com/leaderboard/daily/2026/6/9?ref=header_nav",
+              "text": "Launch archiveMost-loved launches by the community"
+            },
+            {
+              "href": "https://www.producthunt.com/launch?ref=header_nav",
+              "text": "Launch GuideChecklists and pro tips for launching"
+            },
+            {
+              "href": "https://www.producthunt.com/newsletters?ref=header_nav",
+              "text": "News"
+            },
+            {
+              "href": "https://www.producthunt.com/newsletters?ref=header_nav",
+              "text": "NewsletterThe best of Product Hunt, every day"
+            },
+            {
+              "href": "https://www.producthunt.com/stories?ref=header_nav",
+              "text": "StoriesTech news, interviews, and tips from makers"
+            },
+            {
+              "href": "https://www.producthunt.com/changes?ref=header_nav",
+              "text": "ChangelogNew Product Hunt features and releases"
+            },
+            {
+              "href": "https://www.producthunt.com/forums?ref=header_nav",
+              "text": "Forums"
+            },
+            {
+              "href": "https://www.producthunt.com/forums?ref=header_nav",
+              "text": "ForumsAsk questions, find support, and connect"
+            },
+            {
+              "href": "https://www.producthunt.com/kitty-points?ref=header_nav",
+              "text": "Kitty Points LeaderboardThe highest scoring community members"
+            },
+            {
+              "href": "https://www.producthunt.com/visit-streaks?ref=header_nav",
+              "text": "StreaksThe most active community members"
+            },
+            {
+              "href": "https://lu.ma/producthunt",
+              "text": "EventsMeet others online and in-person"
+            },
+            {
+              "href": "https://www.producthunt.com/sponsor?ref=header_nav",
+              "text": "Advertise"
+            },
+            {
+              "href": "https://www.producthunt.com/newsletters?ref=header_nav&campaign=weekly_newsletter&source=header_nav",
+              "text": "Subscribe"
+            },
+            {
+              "href": "https://www.producthunt.com/",
+              "text": "Go to the homepage"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/engineering-development?ref=footer",
+              "text": "Engineering & Development"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/vibe-coding?ref=footer",
+              "text": "Vibe Coding Tools"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-coding-agents?ref=footer",
+              "text": "AI Coding Agents"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-code-editors?ref=footer",
+              "text": "AI Code Editors"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/llms?ref=footer",
+              "text": "LLMs"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-chatbots?ref=footer",
+              "text": "AI Chatbots"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-infrastructure?ref=footer",
+              "text": "AI Infrastructure Tools"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/prompt-engineering-tools?ref=footer",
+              "text": "Prompt Engineering Tools"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/productivity?ref=footer",
+              "text": "Productivity"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-meeting-notetakers?ref=footer",
+              "text": "AI notetakers"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/notes-documents?ref=footer",
+              "text": "Note and writing apps"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/team-collaboration?ref=footer",
+              "text": "Team collaboration software"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/search?ref=footer",
+              "text": "Search"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/ai-workflow-automation?ref=footer",
+              "text": "AI Workflow Automation"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/marketing-sales?ref=footer",
+              "text": "Marketing & Sales"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/lead-generation?ref=footer",
+              "text": "Lead generation software"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/marketing-automation?ref=footer",
+              "text": "Marketing automation platforms"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/design-creative?ref=footer",
+              "text": "Design & Creative"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/video-editing?ref=footer",
+              "text": "Video editing"
+            },
+            {
+              "href": "https://www.producthunt.com/categories/design-resources?ref=footer",
+              "text": "Design resources"
+            }
+          ],
+          "readyState": "complete",
+          "text": "Best Products Launches News Forums Advertise Subscribe Sign in 404 We seem to have lost this page Please accept these adorable photos of our PH team's furry friend as our humble apology for the inconvenience. Let's get you back to the homepage Go to the homepage Top Product Categories Engineering & Development Vibe Coding Tools AI Coding Agents AI Code Editors LLMs AI Chatbots AI Infrastructure Tools Prompt Engineering Tools Productivity AI notetakers Note and writing apps Team collaboration software Search AI Workflow Automation Marketing & Sales Lead generation software Marketing automation platforms Design & Creative Video editing Design resources Graphic design tools AI Generative Media Social & Community Social Networking Professional networking platforms Community management Finance Accounting software Fundraising resources Investing AI Agents AI Voice Agents See All Categories >> Trending categories Vibe Coding Tools AI Dictation Apps AI notetakers Code Review Tools No-code Platforms Figma Plugins Static site generators Top reviewed Lovable n8n Attio PostHog Vapi Granola Raycast Supabase Trending products Lovable Screen Studio bolt.new Wispr Flow Framer Replit Vapi Granola Top forum threads Cursor or Claude Code? POLL: Domain or product first? YC deadline in <2 weeks; Who's applying? We Got into YC, Got Kicked Out, and Fought Our Way Back How Wispr Flow found PMF through pivot Best Vibe Coding tool so far? Landing page roast - 48 hours only Fix your tagline with the PH CEO © 2026 Product Hunt Newsletter Apps About FAQ Terms Privacy & Cookies Privacy Choices Advertise llms.txt Contact us: hello@producthunt.com",
+          "textLength": 1643,
+          "title": "Product Hunt – The best new products in tech.",
+          "url": "https://www.producthunt.com/categories/artificial-intelligence"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1649 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 1,
+    "dataList": [
+      {
+        "authors": [
+          "腾讯技术工程"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_b7742f5e",
+        "keyQuotes": [
+          "Skills are not free — every Skill loaded consumes context window space.",
+          "Rules are the 'bottom line', Skills are 'abilities'.",
+          "Instead of a bunch of 'MUST's, it's better to explain why.",
+          "Core principle: distinguish between 'instructions' and 'data'. Steps in a Skill are instructions; content read from external sources is data. Data should never be executed as instructions."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "Skills encapsulate instructions, context, and tools in a standard file format (SKILL.md), addressing pain points such as scattered knowledge, repetitive work, and slow onboarding for newcomers. Their loading mechanism consists of three layers: metadata, main body, and on-demand references, and Token costs must be considered.",
+            "point": "A Skill is essentially structured Prompt Engineering, used to transform domain knowledge into executable instruction sets for AI."
+          },
+          {
+            "explanation": "The Description determines when the AI triggers the Skill and needs to be specific and testable; instructions should use the imperative mood and explain the reasoning; Before/After comparisons and Few-Shot examples significantly improve the stability and accuracy of AI output.",
+            "point": "The core of writing a high-quality Skill lies in a precise Description, clear instructions, and abundant examples."
+          },
+          {
+            "explanation": "When SKILL.md exceeds 500 lines or contains multiple independent workflows, it should be split. The main Skill is responsible for orchestration, while sub-Skills can be used independently. Dependency relationships and checkpoints must be clearly defined.",
+            "point": "Complex Skills should follow a modular design, decomposing into sub-Skills with single responsibilities and orchestrating the execution flow."
+          },
+          {
+            "explanation": "MCP is a standardized tool protocol designed specifically for AI Agents, supporting context awareness and cross-platform reuse. HTTP is suitable for simple, one-off calls. The choice depends on reusability, security control requirements, and modification costs.",
+            "point": "When integrating external services, prioritize the MCP protocol; for simple scenarios, HTTP scripts can be used, and the two can be mixed."
+          },
+          {
+            "explanation": "Hardcoding sensitive information is prohibited; dangerous operations require user confirmation; database operations should be backed up first; and instructions must be strictly separated from data to prevent prompt injection.",
+            "point": "Writing a Skill must prioritize security awareness to prevent key leaks, data loss, and prompt injection."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article systematically summarizes a complete methodology for writing Skills for AI coding assistants, covering everything from basic concepts and structural design to advanced techniques, security best practices, and engineering evaluation — a practical handbook for developers.",
+        "originalTitle": "如何写好 Skill：一份终极实战经验手册",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-05",
+        "publishDateTimeStr": "2026-06-05 17:36:00",
+        "publishTimeStamp": 1780652160000,
+        "qualified": false,
+        "readCount": 317,
+        "readTime": 87,
+        "readUrl": "https://www.bestblogs.dev/article/b7742f5e",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 92,
+        "selectionReason": null,
+        "sourceId": "SOURCE_958ae8",
+        "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+        "sourceName": "腾讯技术工程",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Written by the Tencent Technical Engineering Team, this article aims to help developers systematically master the method of writing Skills for AI coding assistants (such as Claude Code and CodeBuddy). It starts with the basic concepts of a Skill (what it is, why it's needed, how it works) and provides a 5-minute quick-start example to give readers an intuitive understanding. The core section elaborates on key techniques for writing high-quality Skills, including precise Description writing, clear instructions and context, Before/After comparison examples, the importance of Few-Shot examples, and how to use tables and flowcharts to improve instruction accuracy. For complex scenarios, the article proposes a modular decomposition strategy and provides practical methods for a main Skill to orchestrate sub-Skills. The advanced section covers scripting complex checks, multi-scheme adaptation, marking common pitfalls, and writing FAQs. The article also provides an in-depth comparison of MCP and HTTP for external service integration, including selection criteria and usage scenarios. A dedicated chapter emphasizes security awareness, covering topics like avoiding hardcoded credentials, confirming dangerous operations, database backups, and preventing prompt injection. Finally, it introduces Anthropic's official Skill Creator tool and its engineering evaluation capabilities. The article primarily uses Go as an example, but the principles apply to all programming languages.",
+        "tags": [
+          "AI Coding",
+          "Prompt Engineering",
+          "Developer Tools",
+          "Engineering Practices",
+          "AI Agent"
+        ],
+        "title": "How to Write a Great Skill: The Ultimate Practical Guide",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801836&idx=1&sn=f01a69e0c012eafde5f8bc76804bc5fb",
+        "wordCount": 21651
+      },
+      {
+        "authors": [
+          "腾讯科技"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_aec5de44",
+        "keyQuotes": [
+          "If you want AIs that can't cooperate to learn how, don't give them a script—give them a market.",
+          "The training process of all current mainstream LLMs, from pre-training to post-training, is formally an MDP, essentially playing a 'one-armed bandit' day in and day out.",
+          "The theoretical upper bound of a planned economy (the optimal allocation achievable by an omniscient central planner) is precisely the equilibrium state a market economy will converge to given enough time.",
+          "A generalist spreads its capabilities thin across all domains, only scratching the surface in each; a specialist bets its entire budget on one direction, taking it to the extreme.",
+          "This is a paradigm shift from 'designing the outcome of cooperation' to 'designing the conditions for cooperation.'"
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Both pre-training and post-training are single-agent optimizations; the model never learns in an environment with 'others,' leading it to automatically enter a zero-sum game mode when deployed in multi-agent settings, with more capable models cooperating worse.",
+            "point": "Current LLMs inherently lack cooperative ability due to their training paradigm (MDP), forming a 'solipsistic' cognitive architecture."
+          },
+          {
+            "explanation": "A central orchestrator cannot fully collect dispersed private knowledge, and orchestration itself consumes compute without generating information gain, performing worse than a single agent under the same budget.",
+            "point": "The Orchestrator-Worker architecture is essentially a 'planned economy,' facing three major dilemmas: the division of labor paradox, credit assignment failure, and the curse of dispersed knowledge."
+          },
+          {
+            "explanation": "'Economy of Minds' proves that an orchestration-free market system outperforms single-agent and orchestrated systems on multiple benchmarks, and theoretically can asymptotically achieve the optimal allocation of an omniscient orchestrator.",
+            "point": "Market mechanisms (auctions + bucket-brigade payments + economic natural selection + novice protection) can replace central orchestration, allowing cooperation to emerge from self-interested behavior."
+          },
+          {
+            "explanation": "Generalists, by spreading their capabilities thin, lose to specialists in every domain and go bankrupt after continuous losses; specialists, by concentrating their entire budget on one area, win auctions consistently, accumulate wealth, and are cloned, forming specialized populations.",
+            "point": "Specialist agents naturally eliminate generalists in the market, forming a specialized division of labor."
+          },
+          {
+            "explanation": "Instead of forcing cooperation through more complex orchestration protocols, design an ecosystem where cooperation is profitable and non-cooperation leads to bankruptcy, allowing cooperative ability to emerge naturally under economic pressure.",
+            "point": "The path forward for multi-agent systems lies in 'designing the conditions for cooperation' rather than 'designing the outcome of cooperation.'"
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Drawing on multiple cutting-edge studies, this article argues that current LLMs inherently lack cooperative ability due to their training paradigm (single-agent MDP), and proposes replacing centralized orchestration with market mechanisms (auctions, bucket-brigade payments, economic natural selection) as an effective path to foster cooperation in multi-agent systems.",
+        "originalTitle": "AI 不会合作？那是因为他们没见过市场经济｜Hao 好聊趋势",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-07",
+        "publishDateTimeStr": "2026-06-07 20:21:00",
+        "publishTimeStamp": 1780834860000,
+        "qualified": false,
+        "readCount": 164,
+        "readTime": 31,
+        "readUrl": "https://www.bestblogs.dev/article/aec5de44",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 92,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b475c7",
+        "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "sourceName": "腾讯科技",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article revolves around two core questions: 'Why don't AIs cooperate?' and 'How can we make AIs learn to cooperate?' It first cites multiple 2026 studies (UNC, UIUC, Stanford, Google DeepMind) revealing the current state: multi-agent system failure rates range from 41% to 87%, with the root cause being not insufficient model capability, but coordination collapse and convergent reasoning; more capable models (like o3) actually show worse cooperation. The fundamental reason is that current LLM training is essentially a 'single-player game' (MDP), never encountering a true 'other,' resulting in a 'solipsistic' cognitive architecture. Next, the article critiques the prevailing Orchestrator-Worker architecture, likening it to a 'planned economy' and pointing out its three structural dilemmas: the division of labor paradox, credit assignment failure, and Hayek's 'curse of dispersed knowledge.' Finally, it highlights the 'Economy of Minds' paper from Harvard and MIT, which proposes an orchestration-free 'free market' system. Through four mechanisms—auctions, bucket-brigade credit assignment, economic natural selection, and novice protection—agents spontaneously generate cooperation from self-interested behavior. This system significantly outperforms single-agent and orchestrated systems on benchmarks like MATH, HumanEval, and ALFWorld, and theoretically proves that market mechanisms can asymptotically achieve the optimal allocation of an omniscient orchestrator. The article concludes by noting the system's current simplifications and future expansion possibilities, asserting that the path forward for multi-agent systems lies in 'designing the conditions for cooperation' rather than 'designing the outcome of cooperation.'",
+        "tags": [
+          "AI Agent",
+          "Multi-Agent Systems",
+          "LLM",
+          "AI Research",
+          "AI Architecture"
+        ],
+        "title": "AI Can't Cooperate? That's Because They've Never Seen a Market Economy | Hao's Trend Talk",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569024&idx=1&sn=1a73a60848e59c69ffc6c066c314a872",
+        "wordCount": 7696
+      },
+      {
+        "authors": [
+          "Aaditya Chauhan"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://res.infoq.com/articles/vector-search-hybrid-retrieval-rag/en/headerimage/vector-search-hybrid-retrieval-rag-header-1779972811121.jpg",
+        "domain": "infoq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_1986e257",
+        "keyQuotes": [
+          "Embeddings find things similar to your query, not things that match it exactly.",
+          "The fix isn't to replace embeddings, but to pair them with classical keyword matching on the actual text so that conceptual relevance and exact term matching both contribute to the final ranking.",
+          "Hybrid search with RRF is not a workaround for a temporary gap in model quality; it is the architecturally correct approach for systems that must handle both conceptual and exact-match queries.",
+          "If you are running a RAG pipeline on embeddings alone, you are leaving retrieval quality on the table."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Embeddings cluster semantically similar text together, making it impossible to reliably distinguish documents that differ only in a single distinguishing token, such as a runbook for enabling vs. disabling a feature flag.",
+            "point": "Vector embeddings are approximation engines that fail on exact-match queries for specific entities like version numbers, error codes, and feature flag names."
+          },
+          {
+            "explanation": "Real-world queries like 'rollback runbook for v3.2 deployment' demand conceptual understanding of 'rollback runbook' and exact matches on 'v3.2' and 'rollback', which neither pure vector search nor pure BM25 can handle alone.",
+            "point": "Most production queries are hybrid, requiring both semantic understanding and exact-match precision."
+          },
+          {
+            "explanation": "RRF sidesteps the problem of normalizing unbounded BM25 scores against bounded cosine similarity scores, rewarding documents that both retrievers rank highly and producing a fused ranking that handles hybrid queries effectively.",
+            "point": "Reciprocal Rank Fusion (RRF) combines BM25 and vector search results without score normalization by operating on rank position alone."
+          },
+          {
+            "explanation": "The recommended architecture runs BM25 and vector search in parallel, fuses their ranked lists with RRF, and optionally passes the top 20-50 candidates through a cross-encoder for final relevance gains, with Elasticsearch 8.13+ supporting this natively.",
+            "point": "A production retrieval stack should layer BM25, vector search, RRF fusion, and optionally a cross-encoder reranking stage."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article argues that vector search alone is insufficient for production RAG systems and presents hybrid retrieval combining BM25 and vector search with Reciprocal Rank Fusion as the architecturally correct solution.",
+        "originalTitle": "Why Vector Search Alone Isn't Enough: Hybrid Retrieval for RAG",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-02",
+        "publishDateTimeStr": "2026-06-02 17:00:00",
+        "publishTimeStamp": 1780390800000,
+        "qualified": false,
+        "readCount": 99,
+        "readTime": 15,
+        "readUrl": "https://www.bestblogs.dev/article/1986e257",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 92,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f152e8",
+        "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+        "sourceName": "InfoQ",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article identifies a critical failure mode in production RAG systems: vector embeddings, while excellent at semantic similarity, systematically fail at distinguishing specific entities like version numbers, error codes, and feature flag names. The author argues that most real-world queries are hybrid, requiring both semantic understanding and exact-match precision. The article provides a deep technical analysis of why embeddings fail (they are approximation engines), explains how BM25's IDF, term-frequency saturation, and length normalization mechanisms provide the missing precision, and presents Reciprocal Rank Fusion (RRF) as the practical solution for combining the two ranked lists without score normalization. The article includes detailed walkthroughs of three query types (semantic, exact-match, hybrid) with concrete RRF score calculations, production implementation guidance for Elasticsearch, and tuning recommendations for rank constant, kNN candidates, and cross-encoder reranking. The conclusion is definitive: hybrid search with RRF is not a workaround but the architecturally correct approach for production RAG systems.",
+        "tags": [
+          "RAG",
+          "Hybrid Retrieval",
+          "Vector Search",
+          "BM25",
+          "Reciprocal Rank Fusion"
+        ],
+        "title": "Why Vector Search Alone Isn't Enough: Hybrid Retrieval for RAG",
+        "translateContent": null,
+        "url": "https://www.infoq.com/articles/vector-search-hybrid-retrieval-rag/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "wordCount": 3675
+      },
+      {
+        "authors": [
+          "杜晨"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/img_6a264fcce431f.png",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_7db52531",
+        "keyQuotes": [
+          "There are still gaps between models, but what truly separates model companies is no longer the model itself, but the shell wrapped around it.",
+          "A minimalist framework nurtured a model with excellent compliance, while a highly constrained framework bred a 'black swan'.",
+          "Everything about agents is in this paper. If one paper can explain it all, what barrier is there?",
+          "Agents and models have a trade-off relationship. If your agent is powerful enough, it can squeeze out the model's potential; conversely, if the model is powerful enough, the agent doesn't need to be particularly complex.",
+          "We are moving from forcing models and agents to work with us, to being able to think more deeply about our work, abstracting and pattern-recognizing it to form skills and norms—everyone becomes more senior."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The article points out that the gap between models is narrowing; what truly differentiates them is the 'shell' wrapped around the model, i.e., the scaffolding. In the leaked Claude Code code, only 1.6% involved model decisions; the rest was harness code for managing permissions, context, and error handling.",
+            "point": "The core of Agent engineering has shifted from model capability to scaffolding."
+          },
+          {
+            "explanation": "This architecture is managed via a state machine, separating execution and verification responsibilities and achieving context isolation. It aims to solve context pollution and Agent collusion in long-horizon tasks, allowing users to intervene and adjust at any time.",
+            "point": "MiniMax's Agent Team adopts a Leader-Worker-Verifier adversarial architecture."
+          },
+          {
+            "explanation": "Anthropic distrusts the model and uses a strongly constrained framework, leading to a 'black swan' effect; OpenAI uses a minimalist agentic loop paired with highly compliant models, achieving better results. This illustrates the trade-off between models and scaffolding.",
+            "point": "Anthropic and OpenAI have fundamentally different Agent engineering philosophies."
+          },
+          {
+            "explanation": "Zeyin believes the fundamental purpose for model companies to build Agents is to present the model in its complete form, amplify its capabilities, and multiply its usage. Agent products need to provide feedback for model training, rather than being a simple accumulation of features.",
+            "point": "Agent products should create a feedback loop for model training and amplify model capabilities."
+          },
+          {
+            "explanation": "As Agent capabilities comprehensively surpass humans, the value of junior employees will be compressed. Zeyin projects a future where individuals might need to pay upfront to use Agents for learning before becoming senior employees who can earn money.",
+            "point": "Agents will change work paradigms, potentially leading to a 'pay-to-work' future."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through an in-depth conversation with Zeyin, a MiniMax Agent R&D engineer, this article reveals the design philosophy and technical details of the Agent Team architecture, as well as the industry consensus and trend shifting from model competition to scaffolding competition in Agent engineering.",
+        "originalTitle": "对话 MiniMax 择因：Agent 终会超过人类，我们又将何去何从？",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 21:15:28",
+        "publishTimeStamp": 1780924528000,
+        "qualified": false,
+        "readCount": 159,
+        "readTime": 37,
+        "readUrl": "https://www.bestblogs.dev/article/7db52531",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article, structured as a dialogue between APPSO and MiniMax Agent R&D engineer Zeyin, delves into the latest advancements in Agent engineering. It focuses on MiniMax's Agent Team architecture (Leader-Worker-Verifier), explaining how it uses state machines, context isolation, and adversarial verification to solve persistent problems in long-horizon Agent tasks, such as context pollution and collusion. The conversation compares the different engineering philosophies of Anthropic (strong constraints) and OpenAI (minimalist loops), pointing out that the current industry consensus has shifted from model capability to 'scaffolding' capability. Zeyin also shares MiniMax's differentiated approach to Agent products (equal permissions for humans and Agents, full modality, emphasis on details), and discusses the impact of Agents on work methods, a projection of the future job market, and an open-ended vision of using computing power to build a 'life doppelganger'. The article is information-dense, containing a wealth of first-hand technical insights and industry observations.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "AI Coding",
+          "Agent Architecture",
+          "MiniMax"
+        ],
+        "title": "Dialogue with MiniMax's Zeyin: Agents Will Eventually Surpass Humans, Where Do We Go From Here?",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1668337?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 9239
+      },
+      {
+        "authors": [
+          "花叔"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045504_01003017",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_53c4d042",
+        "keyQuotes": [
+          "What's truly valuable is that it gives me a solution I never thought of but instantly love.",
+          "Good design isn't chosen from a template library; it grows from your real needs.",
+          "AI's job is to help you avoid the worst option and then present you with tangible outputs to choose from.",
+          "The canvas, layers, and toolbars of design software inherently assume you are the one doing the hands-on work. But a 'skill' assumes you are the one making decisions and judgments."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The author believes that when 'making something' becomes increasingly cheap, the only irreplaceable ability is the decision of 'which one to choose.' AI's role is to produce multiple high-quality outputs in parallel, freeing users to focus on decision-making.",
+            "point": "The core value of AI design tools is not to make what you already wanted faster, but to give you a solution you never thought of but instantly love."
+          },
+          {
+            "explanation": "'Collide' breaks inertia through randomness; 'Borrow' transfers techniques from award-winning works; 'Simulate' mimics top designers' thinking to design from scratch. These three logics run in parallel, ensuring diverse output styles instead of converging on safe minimalism.",
+            "point": "v2 fundamentally solves the problem of monotonous design styles through three parallel logics: 'Collide, Borrow, and Simulate.'"
+          },
+          {
+            "explanation": "For content-heavy fields like science communication and travel, where images are vital, v2 requires gathering real images first (e.g., from Wikimedia Commons) before starting the design. This is the dividing line between a 'demo that looks okay' and a 'usable finished product.'",
+            "point": "Content-driven designs must adopt an 'image-first' approach; otherwise, no matter how polished they are, they remain empty shells."
+          },
+          {
+            "explanation": "Using the failed case of a 'DJI Pocket 4 launch animation,' the author illustrates that AI confidently makes false assertions based on training data. v2 sets 'fact verification before assumption' as the zeroth principle: when specific products, version numbers, or specifications are involved, search and verify first.",
+            "point": "Fact verification must override all design processes; AI's memory is unreliable."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "The author rewrote the open-source project Huashu-Design from v1 to v2, addressing three core issues of AI design tools—monotonous output, hollow content, and factual errors—through three parallel design logics, image-first approach, and fact verification.",
+        "originalTitle": "开源两个月 16k+ star！我把 Huashu-Design 推翻重写了",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 07:03:00",
+        "publishTimeStamp": 1780873380000,
+        "qualified": false,
+        "readCount": 88,
+        "readTime": 13,
+        "readUrl": "https://www.bestblogs.dev/article/53c4d042",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_a79406",
+        "sourceImage": "https://image.jido.dev/20251127045504_01003017",
+        "sourceName": "花叔",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is the author's technical retrospective and product reflection on their open-source project Huashu-Design 2.0. The project has garnered over 16k stars on GitHub and is positioned as an AI-driven design agent capable of generating high-quality visual outputs such as websites, app prototypes, PPTs, and animations. The author candidly analyzes three core flaws of v1: 1) Design styles converged towards 'safe minimalism,' leading to repetitive outputs; 2) Content-driven websites lacked real images, becoming empty shells; 3) AI fabricated product facts based on training data, resulting in unusable designs. To address these issues, v2 introduces three parallel design logics (random collision, learning from award-winning works, simulating top designer thinking) to achieve stylistic diversity; adds an 'image-first' step to ensure content-driven designs have real material support; and prioritizes 'fact verification before assumption' as the highest principle to avoid factual errors. The article also discusses the advantages of HTML Deck over traditional PPT and the applicable boundaries of the project. Overall, it is an insightful, case-driven, and original practical sharing piece.",
+        "tags": [
+          "AI Coding",
+          "AI Products & Applications",
+          "AI Workflow",
+          "AI Agent",
+          "Prompt Engineering"
+        ],
+        "title": "Open-Source for Two Months with 16k+ Stars! I Rewrote Huashu-Design from Scratch",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247490678&idx=1&sn=6515542f27d0d170476f9ce7b2e4e613",
+        "wordCount": 3120
+      },
+      {
+        "authors": [
+          "Amy Ru"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a2232d2a135dfff6db8368c_green-74%20characters%20max.png",
+        "domain": "langchain.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_dc9482cb",
+        "keyQuotes": [
+          "Every agent needs a computer.",
+          "A container boundary is not an isolation boundary. For untrusted, model-generated code, you need hardware-level separation.",
+          "It's the difference between an agent that can *think* and an agent that can *act*."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The article argues that the feedback loop of running code, seeing errors, and fixing them is what makes agents like Cursor or Claude Code useful, and this requires a full computer, not just a token stream.",
+            "point": "Production agents need a secure, stateful execution environment, not just an API call."
+          },
+          {
+            "explanation": "Containers share a kernel with the host, making them vulnerable to kernel exploits like Copy Fail (CVE-2026-31431). Hardware-level virtualization is required for true isolation.",
+            "point": "Containers are insufficient for isolating untrusted, model-generated code."
+          },
+          {
+            "explanation": "Each sandbox is a full machine with its own kernel, combining the speed of a serverless function with the statefulness of a VM, enabling agents to install dependencies, edit files, and resume sessions.",
+            "point": "LangSmith Sandboxes provide hardware-virtualized microVMs with instant startup and persistent state."
+          },
+          {
+            "explanation": "Snapshots allow forking and restoring mid-session, blueprints enable pre-warmed environments for fast boot, and the auth proxy keeps secrets out of the agent runtime.",
+            "point": "Features like snapshots, forks, and blueprints enable efficient, production-ready agent workflows."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "LangChain introduces LangSmith Sandboxes, hardware-virtualized microVMs that give each AI agent its own secure, stateful computer for code execution, addressing the isolation and security gaps of containers and local environments.",
+        "originalTitle": "Give your AI agent its own computer",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-05",
+        "publishDateTimeStr": "2026-06-05 08:00:00",
+        "publishTimeStamp": 1780617600000,
+        "qualified": false,
+        "readCount": 70,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/dc9482cb",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_88bf28",
+        "sourceImage": "https://image.jido.dev/20260527045328_69a17e4a429d54e956e2a763_favicon.png",
+        "sourceName": "LangChain Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article from the LangChain Blog argues that for AI agents to move from demos to production, they need more than a token stream—they need a place to work. It explains the limitations of running agent-generated code locally or in Docker containers, citing real-world supply chain attacks and kernel exploits to illustrate the security risks. The core solution presented is LangSmith Sandboxes: hardware-virtualized microVMs that provide each agent with its own filesystem, shell, package manager, and persistent state, isolated at the hardware level. The article details key features like instant startup, snapshots and forks for branching workflows, pre-warmed blueprints, service URLs, and an auth proxy. It provides concrete use cases, including coding assistants, data analysts, CI agents, and RL training harnesses, and includes a testimonial from monday.com. The piece concludes by framing this infrastructure shift as the difference between an agent that can think and one that can act.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "AI Infrastructure",
+          "Security",
+          "Developer Tools"
+        ],
+        "title": "Give your AI agent its own computer",
+        "translateContent": null,
+        "url": "https://www.langchain.com/blog/give-your-ai-agent-its-own-computer",
+        "wordCount": 1364
+      },
+      {
+        "authors": [
+          "PaperWeekly"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260527051841_6604c0c.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_716f6010",
+        "keyQuotes": [
+          "Tokens are no longer just a technical unit in model input and output; they are becoming a core resource affecting system cost, latency, security, and scalability.",
+          "Lower inference costs do not necessarily mean lower total consumption. On the contrary, cost reductions may stimulate more demand, leading to a continued rise in overall token usage. This resembles the Jevons-like dynamics in economics.",
+          "Security should not be viewed as an external compliance module attached to Agent systems, but should be incorporated as an endogenous constraint of Token Economics."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Generating tokens consumes computational capital, billing by token makes them a pricing unit, and task complexity can be quantified through token expenditure, providing a unified analytical language for Agent system optimization.",
+            "point": "Tokens are endowed with three economic attributes: factors of production, medium of exchange, and unit of account."
+          },
+          {
+            "explanation": "The cost structures of internal tokens (e.g., chain-of-thought, planning) and external tokens (e.g., retrieval, API calls) differ; systems need to weigh the marginal cost of \"letting the model think more\" versus \"calling external tools.\"",
+            "point": "Single agents must find the optimal cost substitution between internal reasoning tokens and external tool invocation tokens."
+          },
+          {
+            "explanation": "An increase in the number of agents brings communication tokens, coordination costs, and scheduling friction. The key challenge is finding the optimal balance between specialization gains and collaboration friction, rather than simply having more agents.",
+            "point": "In multi-agent systems, communication costs may grow superlinearly, offsetting the benefits of specialized division of labor."
+          },
+          {
+            "explanation": "At the macro level, cost reduction does not necessarily decrease total consumption; instead, it may cause usage to continue growing due to demand elasticity, posing new challenges for platform pricing and resource governance.",
+            "point": "Lower inference costs may stimulate demand, leading to an increase in total token consumption (Jevons paradox)."
+          },
+          {
+            "explanation": "The paper constructs a cost model under security constraints, revealing the trade-off between defense expenditure and expected attack losses. The optimal security investment depends on the equilibrium between the two.",
+            "point": "Security should be treated as an endogenous constraint of the token economy, not an external add-on module."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Zhejiang University and Alibaba Cloud jointly released a Token Economics survey, systematically reviewing LLM Agent token consumption, cost optimization, collaboration, and security governance from both computing and economics perspectives.",
+        "originalTitle": "浙大×阿里云首发 Token 经济学综述：重估 LLM Agent 的 Token 世界",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-05",
+        "publishDateTimeStr": "2026-06-05 18:07:00",
+        "publishTimeStamp": 1780654020000,
+        "qualified": false,
+        "readCount": 68,
+        "readTime": 12,
+        "readUrl": "https://www.bestblogs.dev/article/716f6010",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_c682cf",
+        "sourceImage": "https://image.jido.dev/20260527051841_6604c0c.jpeg",
+        "sourceName": "PaperWeekly",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is an interpretation of the survey paper \"Token Economics for LLM Agents: A Dual-View Study from Computing and Economics\" jointly released by Zhejiang University and Alibaba Cloud. The paper points out that as LLM Agents move into high-stakes scenarios such as finance, law, and healthcare, tokens have evolved from a technical unit into a core resource affecting system cost, latency, security, and scalability. The paper proposes a Dual-View framework that links computer science Agent optimization problems with economic theories (factors of production, medium of exchange, unit of account) and constructs a four-dimensional classification system: single-agent token efficiency (trade-offs between reasoning and tool invocation), multi-agent collaboration costs (communication and division of labor friction), Agent ecosystem pricing and governance (platform economy and Jevons paradox), and the security dimension (equilibrium between defense expenditure and attack losses). The paper also outlines six major trends and five emerging opportunities, including differentiable token budgets, real-time token markets, and agent-level token scaling laws.",
+        "tags": [
+          "LLM",
+          "AI Agent",
+          "Token Economics",
+          "Cost Optimization",
+          "Multi-Agent Systems"
+        ],
+        "title": "Zhejiang University × Alibaba Cloud Release First Token Economics Survey: Re-evaluating the Token World of LLM Agents",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247720747&idx=2&sn=42c9180b73ba9e390059b0b588e961c8",
+        "wordCount": 2913
+      },
+      {
+        "authors": [
+          "OpenAI"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260608204258_Art_Card_1920x1080_Sam.png",
+        "domain": "openai.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c55b91a1",
+        "keyQuotes": [
+          "Entirely automating everything is not the future we want. It would be unfulfilling, and it would be dangerous.",
+          "A key long-term role for people will be deciding what is worth doing.",
+          "Human history shows that concentrated power creates fragility, while widely shared power makes societies more resilient, adaptable, and free.",
+          "The first promise of electricity was practical, but its deeper impact came from the new possibilities it opened as more people could use it."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "After research (phase 1) and product deployment (phase 2), the new phase aims to turn frontier capability into broadly accessible tools that people and organizations can use to thrive.",
+            "point": "OpenAI is entering its third phase, focused on making AGI abundant, affordable, and safe for everyone."
+          },
+          {
+            "explanation": "Drawing a historical analogy to electricity, the authors argue that transformative technologies have the deepest impact when access is widespread, and that concentrated power creates fragility.",
+            "point": "The core principle is distributing power and benefits widely, not concentrating them."
+          },
+          {
+            "explanation": "The article explicitly rejects total automation, stating that AI should augment human agency. A key long-term role for people will be deciding what is worth doing.",
+            "point": "Human judgment and public oversight become more critical as AI capabilities advance."
+          },
+          {
+            "explanation": "The company believes AI systems will soon accelerate the research process itself, which is necessary for making fast progress on alignment, but this requires careful human steering and accountability.",
+            "point": "OpenAI plans to build an automated AI researcher by 2028."
+          },
+          {
+            "explanation": "The authors call for a global organization to coordinate leading AI efforts, reduce catastrophic risk, and enable coordinated action, including slowing frontier development when needed.",
+            "point": "International coordination on safety standards is essential."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "OpenAI outlines its third-phase vision for AGI: building an automated AI researcher, accelerating the economy, and giving everyone a personal AGI, grounded in the principle of broadly distributing power and benefits.",
+        "originalTitle": "Built for broad benefit: our plan",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 09:30:00",
+        "publishTimeStamp": 1780882200000,
+        "qualified": false,
+        "readCount": 59,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/c55b91a1",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_8749b9",
+        "sourceImage": "https://openai.com/apple-icon.png?apple-icon.02be~wu.bus9e.png",
+        "sourceName": "OpenAI News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article by Sam Altman and Jakub Pachocki announces OpenAI's entry into its third phase, shifting from research and product deployment to making advanced AI abundant, affordable, safe, and useful for everyone. It draws a historical parallel to the electrification of rural America to argue that transformative technologies deliver their deepest impact when access is widespread. The authors commit to building AI in service of humanity, emphasizing that power should be broadly distributed rather than concentrated among a few companies or governments. They outline three main goals: building an automated AI researcher (with an internal belief that by March 2028 a significant fraction of research will be done by AI systems), accelerating the economy, and giving every person on Earth a personal AGI. The piece also addresses risks, calling for international coordination on safety standards and arguing that human judgment, values, and public oversight become more important as AI capabilities advance. It explicitly rejects a future of total automation, stating that AI should augment human agency, not replace it.",
+        "tags": [
+          "AGI",
+          "AI Safety & Alignment",
+          "AI Policy & Governance",
+          "OpenAI",
+          "AI Vision & Strategy"
+        ],
+        "title": "Built for broad benefit: our plan",
+        "translateContent": null,
+        "url": "https://openai.com/index/built-for-broad-benefit",
+        "wordCount": 1282
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://cdn.cnbj1.fds.api.mi-img.com/aife/mimo-blog-fe/doc_build/static/image/logo.99baaffe.png",
+        "domain": "mimo.xiaomi.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_bcd97e15",
+        "keyQuotes": [
+          "When a model is fast enough, it ceases to be a tool you wait on and becomes an extension of your own thinking: responding in real time, iterating in an instant, collaborating without friction.",
+          "AI speed is no longer just a metric of efficiency --- it becomes a chip in the race against death.",
+          "The birth of 1000 tokens/s is no coincidence of point optimizations. It is the inevitable result of world-class system infrastructure and extreme algorithmic models deeply converging toward each other, co-evolving as one."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The team achieved this through model-system codesign: FP4 quantization of MoE Experts and DFlash speculative decoding on the model side, combined with TileRT's persistent kernel and warp specialization execution model on the system side, all running on a single standard 8-GPU node.",
+            "point": "Achieving 1000+ tps on a 1T model using commodity GPUs, not specialized hardware."
+          },
+          {
+            "explanation": "By quantizing only the MoE Experts (the majority of parameters with highest quantization tolerance) to FP4 while preserving original precision for other modules, the model size is dramatically reduced. QAT training ensures capability remains essentially on par with the original.",
+            "point": "Selective FP4 quantization of MoE Experts is key to reducing memory bandwidth without significant quality loss."
+          },
+          {
+            "explanation": "Instead of autoregressive drafting, DFlash fills an entire block of masked positions in a single forward pass. Combined with Sliding Window Attention and GPU-local training, it achieves high acceptance lengths (6.30 in coding) while keeping the draft model lightweight.",
+            "point": "DFlash speculative decoding uses block-level masked parallel prediction to overcome the draft model bottleneck."
+          },
+          {
+            "explanation": "The persistent engine kernel keeps the entire compute pipeline resident on the GPU, enabling continuous prefetching and overlap of data movement with computation. Warp specialization decomposes communication, data movement, and tensor computation for precise, heterogeneous execution.",
+            "point": "TileRT's execution model eliminates operator boundary overhead at the microsecond scale."
+          },
+          {
+            "explanation": "Speed enables real-time multi-path reasoning (Best-of-N / Tree Search), dramatically accelerates coding agents, and allows trillion-parameter models to enter time-critical decision loops like high-frequency trading, anti-fraud, and surgical assistance.",
+            "point": "1000 tps at 1T scale enables new AI application paradigms beyond faster text generation."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Xiaomi MiMo and TileRT achieve 1000+ tokens/s inference on a 1-trillion-parameter model using commodity GPUs through extreme model-system codesign, including FP4 quantization and DFlash speculative decoding.",
+        "originalTitle": "Xiaomi MiMo， Explore and Love",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 23:27:33",
+        "publishTimeStamp": 1780932453000,
+        "qualified": false,
+        "readCount": 52,
+        "readTime": 8,
+        "readUrl": "https://www.bestblogs.dev/article/bcd97e15",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article announces the release of Xiaomi MiMo-V2.5-Pro-UltraSpeed, a 1-trillion-parameter model capable of over 1000 tokens/s decode speed, achieved through deep collaboration between the MiMo model team and the TileRT inference system team. The key technical innovations include: (1) selective FP4 quantization of MoE Experts to dramatically reduce model size while preserving capability; (2) DFlash, a block-level masked parallel prediction method for speculative decoding that achieves high acceptance lengths (6.30 in coding scenarios); and (3) TileRT's paradigm-level execution model with persistent engine kernels and warp specialization, eliminating operator boundary overhead. The model is available via a limited-time, application-based API from June 9-23, 2026, at 3x the cost of the standard model but delivering approximately 10x the generation speed. The checkpoint has been open-sourced on HuggingFace. The article argues that breaking 1000 tps at the trillion-parameter scale represents a paradigm shift, enabling real-time decision loops, multi-path reasoning, and dramatically accelerated coding agents.",
+        "tags": [
+          "LLM",
+          "Model Inference",
+          "Quantization",
+          "Speculative Decoding",
+          "AI Infrastructure"
+        ],
+        "title": "Xiaomi MiMo， Explore and Love",
+        "translateContent": null,
+        "url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+        "wordCount": 1871
+      },
+      {
+        "authors": [
+          "Latent.Space"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260602170307_transcoded-1780408829.png",
+        "domain": "latent.space",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_dff0ae3c",
+        "keyQuotes": [
+          "I find AI in a what most of this launch here is actually, less building forward. It's actually, a recursive loop backwards. I'm always looking at what had happened first.",
+          "I think that we're ending the era of these like massive, beautiful, perfect skills that are just like not any of those things.",
+          "I can crank up fifteen agents on Saturday while my kids are doing lacrosse, That's like really powerful.",
+          "I built this entire presentation without touching any of it... Never came up once that it was AI generated."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The platform, designed for human-paced development, now sees 275 million commits per week, leading to public uptime issues and forcing a fundamental rethink of CI/CD, review, and dependency management.",
+            "point": "GitHub is experiencing a 1400% growth in AI agent activity, straining its human-centric infrastructure."
+          },
+          {
+            "explanation": "Daigle argues that forcing users to learn new tools is a barrier. Instead, GitHub distributes a CLI and MCP servers that connect to existing context (Slack, Teams, GitHub), allowing users to query and automate without changing their habits.",
+            "point": "GitHub's internal AI strategy prioritizes integrating into existing workflows over introducing new tools."
+          },
+          {
+            "explanation": "Large, monolithic AI skills are brittle and hard to maintain. GitHub is shifting to small, composable skills (e.g., 'summarize for marketing') that can be easily tweaked and combined, much like Lego bricks.",
+            "point": "The era of 'mega-skills' is ending; the future is atomic 'micro-skills' that do one thing well."
+          },
+          {
+            "explanation": "Daigle, a former developer turned COO/CMO, uses AI to apply his decade of business expertise to coding again. He runs 15 agents on Saturdays to synthesize company context, creating tools and presentations that are indistinguishable from human-made work.",
+            "point": "Former developers in leadership have a unique advantage in the AI era due to their pattern-recognition and problem-solving skills."
+          },
+          {
+            "explanation": "While embracing low-code tools like GitHub Spark, the company believes showing the underlying code is essential for learning and trust, even as AI agents become the primary authors of pull requests.",
+            "point": "GitHub is evolving from a code hosting platform to an 'operating layer for agents,' but will not hide the code."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "GitHub COO Kyle Daigle discusses how the platform is adapting to a 1400% surge in AI-generated code, the shift from mega-skills to atomic micro-skills, and his personal use of 15 agents on Saturdays to run the company.",
+        "originalTitle": "GitHub's plan for Agents — Kyle Daigle， GitHub",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 00:48:21",
+        "publishTimeStamp": 1780418901000,
+        "qualified": false,
+        "readCount": 52,
+        "readTime": 69,
+        "readUrl": "https://www.bestblogs.dev/article/dff0ae3c",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_fc479e",
+        "sourceImage": "https://image.jido.dev/20260527050728_73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+        "sourceName": "Latent.Space",
+        "sourceVisibility": "SYSTEM",
+        "summary": "In this interview, GitHub COO Kyle Daigle addresses the unprecedented challenges and opportunities AI coding agents present to the platform. He details how GitHub's infrastructure, originally designed for human-paced development, is straining under a 14x increase in commits and a 1400% growth in agent activity. Daigle explains GitHub's internal AI rollout strategy, which emphasizes integrating AI into existing workflows (Slack, Teams, GitHub) rather than forcing new tools. He introduces the concept of 'micro-skills'—small, atomic AI skills that do one thing well—over brittle 'mega-skills.' Daigle also shares his personal workflow of running 15 agents on Saturdays to synthesize company context from PRs, Slack, Teams transcripts, and Obsidian notes, enabling him to look backward before planning forward. The conversation covers the evolution of Copilot, the future of pull requests in an agent-dominated world, the challenges of open-source maintainers facing AI-generated 'slop,' and why GitHub refuses to hide the code even as it becomes a platform for low-code builders.",
+        "tags": [
+          "AI Agent",
+          "AI Coding",
+          "GitHub",
+          "Developer Tools",
+          "LLM"
+        ],
+        "title": "GitHub's plan for Agents — Kyle Daigle， GitHub",
+        "translateContent": null,
+        "url": "https://www.latent.space/p/github",
+        "wordCount": 17106
+      },
+      {
+        "authors": [
+          "Sofia Sulikowski"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a1dc0ab47392c70667a8201_Harmonic-blog.png",
+        "domain": "langchain.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_eca5ff15",
+        "keyQuotes": [
+          "The model has the agency it needs to not run into dead ends. We're always checking ourselves to keep the graph as simple as possible.",
+          "Agents love things that feel like code. Users hate things that feel like code.",
+          "Not having to build a unique workflow experience for every individual use case or customers is a huge unlock.",
+          "Before Scout, we'd build for how we expected users to interact with our product... Now, in this agentic model, we give users the ability to interact with the data how they want to and we observe how they use it."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Scout V1's complex subgraph system required hundreds of evals and failed on novel intents. V2's Deep Agents harness, with a smart model and well-designed tools, handled open-ended tasks out of the box, reducing iteration from months to days.",
+            "point": "Simplifying agent architecture from a rigid multi-graph pipeline to a single frontier model with tools dramatically improved capability and iteration speed."
+          },
+          {
+            "explanation": "To handle follow-up questions, Scout V2 uses a shared filesystem for search results and renders visualizations inline. This ensures the model has context on the artifacts it generates, preventing conversational dead ends.",
+            "point": "A key UX principle for agents is that the model must be able to discover everything the user sees."
+          },
+          {
+            "explanation": "Users now hand Scout an investment thesis for company recommendations or ask for pre-meeting briefs that synthesize CRM, emails, and public data. This shift unlocked a 10x increase in average session duration.",
+            "point": "The new architecture enabled emergent use cases, transforming Scout from a search tool into a trusted investment advisor."
+          },
+          {
+            "explanation": "LangSmith Deployment provided 'set and forget' durable execution and scaling. LangSmith Engine automated failure mode analysis and suggested code improvements, creating a self-improving loop.",
+            "point": "LangSmith's platform layer (Deployment, Engine) allowed a lean team to focus on product differentiation rather than infrastructure."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Harmonic rebuilt its Scout AI agent on LangChain's Deep Agents and LangSmith, simplifying architecture, enabling emergent use cases, and achieving 4x week-1-to-week-4 retention and 10x average session duration.",
+        "originalTitle": "How Harmonic Rebuilt Scout on Deep Agents and 4x'd Retention with LangSmith",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 08:00:00",
+        "publishTimeStamp": 1780444800000,
+        "qualified": false,
+        "readCount": 43,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/eca5ff15",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_88bf28",
+        "sourceImage": "https://image.jido.dev/20260527045328_69a17e4a429d54e956e2a763_favicon.png",
+        "sourceName": "LangChain Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article details how Harmonic, a startup intelligence platform for venture capital, rebuilt its Scout AI agent. The first version used a rigid, multi-subgraph pipeline that required constant tuning and failed on open-ended user requests. The V2 architecture is a deliberate simplification: a single frontier model in a Deep Agents harness with access to two tool categories—one for Harmonic's global data layer (40M companies, 200M people) and one for firm-specific context (CRM, emails, connections). This shift unlocked emergent use cases like personalized outreach drafts and abstract investment thesis searches. The article highlights key UX design principles, such as ensuring the model can see everything the user sees (shared filesystem for search results, inline rendering of visualizations). LangSmith Deployment handles durable execution, scaling, and observability, while LangSmith Engine identifies failure modes and suggests improvements. The results are dramatic: 4x retention and 10x session duration, allowing Harmonic to expand its TAM beyond VC firms to innovation, corporate development, and GTM teams.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "LangGraph",
+          "Agent Architecture",
+          "AI Product Design"
+        ],
+        "title": "How Harmonic Rebuilt Scout on Deep Agents and 4x'd Retention with LangSmith",
+        "translateContent": null,
+        "url": "https://www.langchain.com/blog/how-harmonic-rebuilt-scout-on-deep-agents-and-4xd-retention-with-langsmith",
+        "wordCount": 1496
+      },
+      {
+        "authors": [
+          "腾讯科技"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_1eca19ba",
+        "keyQuotes": [
+          "What is being sold is shifting from 'you can use this' to 'this task has been completed.'",
+          "Token is the underlying cost, Action is the business step, and Outcome is the completed deliverable that can be paid for.",
+          "When the pricing model for AI shifts from 'paying for capability' to 'paying for completion,' the price tag of AI software increasingly resembles a 'list of responsibilities.'",
+          "Outcome-based AI is more like a general contractor: it doesn't necessarily produce every part, but it must organize people, processes, tools, rules, and verification to ultimately deliver a piece of work that can be signed off on."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Fin charges $0.99 per resolved customer issue, not per conversation or token consumption, marking a shift for AI software from selling tools to selling completed work.",
+            "point": "AI pricing is evolving from per-token/call volume to pay-per-outcome, with Intercom's Fin as a typical case."
+          },
+          {
+            "explanation": "The boundary of 'completion' varies by scenario, requiring logs and process records to prove AI's contribution. Cost calculation involves complexities like multiple issues or handoffs to humans, and responsibility attribution is key to determining if AI can truly become a 'supplier.'",
+            "point": "Pay-per-outcome requires solving four core issues: defining completion, proving contribution, calculating costs, and allocating responsibility."
+          },
+          {
+            "explanation": "Committing to outcome delivery requires integrating infrastructure like knowledge bases, ticketing systems, and approval workflows. AI acts more like a general contractor than a single tool, needing a deep understanding of industry processes and rules.",
+            "point": "Outcome-based AI will make software 'heavier,' evolving from a toolbox into an execution system."
+          },
+          {
+            "explanation": "Scenarios like customer service, content moderation, and reconciliation are better suited for outcome-based pricing than strategic consulting or investment due diligence. The difficulty lies not in AI capability but in designing the transaction structure.",
+            "point": "Applicable scenarios for pay-per-outcome require conditions like high frequency, clear boundaries, verifiable outcomes, and controllable risks."
+          },
+          {
+            "explanation": "Chinese companies tend to embed outcome-based fees within sales and delivery contracts, which can slow the diffusion of this new pricing model. The transition from project to product is a key watershed.",
+            "point": "The Chinese market may initially adopt project-based contracts and performance-based payments rather than standardized price pages."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article deeply analyzes the evolution of AI pricing models from per-token/call volume to pay-per-outcome, using Intercom's Fin, which charges $0.99 per resolved customer issue, as a case study to explore four core issues of outcome-based pricing, applicable scenarios, and its implications for the Chinese market.",
+        "originalTitle": "“Token 经济”进入结果层",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 08:40:00",
+        "publishTimeStamp": 1780879200000,
+        "qualified": false,
+        "readCount": 41,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/1eca19ba",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b475c7",
+        "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "sourceName": "腾讯科技",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is the 11th installment of the \"Token Economics\" series, focusing on a key shift in AI software business models: from selling accounts and API calls to selling \"completed tasks.\" Using Intercom's AI customer service bot Fin, which charges $0.99 per resolved customer issue, as a starting point, the article systematically deconstructs four core issues behind the \"pay-per-outcome\" model: how to define \"completion,\" how to prove contribution, how to calculate costs, and how to allocate responsibility. The author points out that outcome-based AI will make software \"heavier\" because it requires integrating processes, tools, rules, and verification mechanisms, evolving from a toolbox into an execution system. The article also analyzes the applicable boundaries of this model (high-frequency, clearly defined boundaries, verifiable outcomes) and its unique path in the Chinese market, which may initially appear in non-standardized forms like project-based contracts or performance-based payments. Finally, the article connects the three pricing layers of Token, Action, and Outcome, noting that the price tag is shifting from \"paying for capability\" to a \"list of responsibilities.\"",
+        "tags": [
+          "AI Commercialization",
+          "AI Products & Applications",
+          "AI Agent",
+          "SaaS",
+          "Business Models & Strategy"
+        ],
+        "title": "\"Token Economy\" Enters the Outcome Layer",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569039&idx=1&sn=800b2c88efe0d1f5ebb8db1fc0be6cc0",
+        "wordCount": 5425
+      },
+      {
+        "authors": [
+          "ByteByteGo"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260602180703_8bcec742-8919-4c38-9f8b-6697fa0b6423_2048x1076.png",
+        "domain": "blog.bytebytego.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_2eb100df",
+        "keyQuotes": [
+          "Real productivity gains come when engineers decide to make the leap from writing code to orchestrating it.",
+          "The quality of AI-generated code matches the quality of input specifications. Garbage in, garbage out --- this principle applies with even more force when AI can generate garbage at unprecedented speed and volume.",
+          "In the AI-native era, the bottleneck has permanently shifted from writing code to proving that it works at scale, with reliability and security.",
+          "AI amplifies existing expertise rather than replacing it --- senior engineers achieve dramatically better results because they bring deeper context and sharper judgment.",
+          "Adding AI to broken processes yields broken processes that generate more code, faster."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The article distinguishes between 'vibe coding' (democratized but limited) and professional AI-native engineering, where the engineer acts as an orchestrator of AI agents to achieve outcomes impossible in the pre-AI era.",
+            "point": "AI-native engineering is about orchestration, not just code generation."
+          },
+          {
+            "explanation": "Systematic curation of project-specific information (architecture, standards, business rules) into AI working memory dramatically improves output quality and reduces alignment overhead, shifting the focus from prompt engineering to context engineering.",
+            "point": "Context engineering is the single most important skill for AI-native engineers."
+          },
+          {
+            "explanation": "With AI generating code rapidly, verification, review, and testing become the new rate-limiting factors. The article recommends a 40/20/40 time split for context-setting, generation, and review, respectively.",
+            "point": "The bottleneck has shifted from writing code to proving it works."
+          },
+          {
+            "explanation": "The article cites real incidents (RCE, unauthorized DB access, prompt injection, supply chain poisoning) and outlines emerging controls like agent IAM, data classification awareness, prompt injection protection, and infrastructure sandboxing.",
+            "point": "Security guardrails for AI-generated code are not optional."
+          },
+          {
+            "explanation": "AI amplifies existing expertise; senior engineers achieve better results because they bring deeper context and sharper judgment. The article warns against skill atrophy and recommends occasional AI-free work to preserve foundational abilities.",
+            "point": "Domain expertise is the key differentiator in AI-native productivity."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article presents a practical framework for becoming an AI-native engineer, emphasizing context engineering, spec-driven development, critical verification, and problem decomposition over vibe coding.",
+        "originalTitle": "A Practical Guide to Becoming an AI-Native Engineer",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-02",
+        "publishDateTimeStr": "2026-06-02 22:31:47",
+        "publishTimeStamp": 1780410707000,
+        "qualified": false,
+        "readCount": 39,
+        "readTime": 14,
+        "readUrl": "https://www.bestblogs.dev/article/2eb100df",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_996ae6",
+        "sourceImage": "https://image.jido.dev/20260527123114_8a5609ae-1239-4400-9491-6010a15c4d60_504x504.png",
+        "sourceName": "ByteByteGo Newsletter",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Authored by Shah Rahman, Global Head of Autonomous ML Iteration & Optimization for Ads at Meta, this piece cuts through the hype around AI-generated code to define what AI-native engineering actually requires. It argues that the real productivity gains come from engineers transitioning from writing code to orchestrating it. The article outlines four core practices: synchronized context engineering, specification-driven development, critical verification, and problem decomposition. It provides a detailed time allocation model (40% context-setting, 20% generation, 40% review) and a three-phase individual transformation journey (Foundation, Integration, Mastery). The piece also introduces the Agentic Development Life Cycle (ADLC) as a replacement for traditional SDLC, covers team cultural foundations, and dedicates a substantial section to security guardrails, including real incident examples and emerging controls. It concludes by emphasizing that domain expertise is the key differentiator and that this is a multi-year transformation, not a simple tool upgrade.",
+        "tags": [
+          "AI Engineering",
+          "AI Coding",
+          "LLM",
+          "Prompt Engineering",
+          "AI Agent"
+        ],
+        "title": "A Practical Guide to Becoming an AI-Native Engineer",
+        "translateContent": null,
+        "url": "https://blog.bytebytego.com/p/a-practical-guide-to-becoming-an",
+        "wordCount": 3324
+      },
+      {
+        "authors": [
+          "Datawhale"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045505_b03e263f",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_eceaa686",
+        "keyQuotes": [
+          "A Skill is not just a few prompts; it's closer to a folder organized around a task.",
+          "The most informative part is usually not the general steps, but the gotchas.",
+          "One of the most powerful tools you can give Claude is actually the code itself.",
+          "Their best internal Skills often start with just a few lines and a gotcha, and only become more complete the more they are used."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "A Skill folder can contain SKILL.md, reference documents, scripts, templates, examples, and hooks. When Claude invokes a Skill, it receives a complete set of working materials, not just a single prompt.",
+            "point": "A Skill is not a prompt, but a folder organized around a task."
+          },
+          {
+            "explanation": "From filling knowledge gaps (library/API reference), adding verification (product verification), supplementing data (data fetching), to integrating processes, building scaffolding, conducting reviews, and connecting to production (CI/CD, runbooks, infrastructure ops), forming a closed loop from development to operations.",
+            "point": "Anthropic categorizes internal Skills into 9 types, covering the complete software workflow."
+          },
+          {
+            "explanation": "Models are prone to the illusion of being 'done,' and verification Skills directly impact output quality. It is recommended to have Claude record a video of the testing process and add programmatic assertions at key nodes.",
+            "point": "Among all types, verification is the most worthwhile investment; it is recommended that engineers spend a week polishing it."
+          },
+          {
+            "explanation": "Models default to writing code and reading codebases. What is truly worth writing are the details that will pull the model away from its default thinking, such as field naming differences, the append-only nature of data tables, or that a Staging returning 200 does not mean the webhook processing was successful.",
+            "point": "The most valuable content of a Skill is gotchas, not general steps."
+          },
+          {
+            "explanation": "Memory is achieved through persistent logs (e.g., standups.log). Scripts pre-set helper functions, allowing Claude to focus on orchestration rather than rewriting boilerplate code. On-demand hooks (e.g., /careful, /freeze) take effect upon invocation, intercepting high-risk operations.",
+            "point": "As a Skill matures, it naturally develops memory, scripts, and hooks."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Anthropic publicly shares its complete experience using Claude Code Skills internally for the first time, including the classification of 9 types of Skills, writing principles, best practices, and team distribution and governance strategies.",
+        "originalTitle": "重磅！Anthropic 内部 Skills 经验公开了！",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-07",
+        "publishDateTimeStr": "2026-06-07 22:03:00",
+        "publishTimeStamp": 1780840980000,
+        "qualified": false,
+        "readCount": 456,
+        "readTime": 19,
+        "readUrl": "https://www.bestblogs.dev/article/eceaa686",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4688eb",
+        "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+        "sourceName": "Datawhale",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is an in-depth compilation and interpretation of Anthropic's official blog post \"Lessons from building Claude Code: How we use Skills.\" It first corrects the common misconception of equating a Skill with a prompt, pointing out that a Skill is more like a folder organized around a task, which can contain documents, scripts, templates, examples, and hooks. The core content is divided into three main parts: First, Anthropic internally categorizes Skills into 9 types, covering the complete software workflow from filling knowledge gaps (library/API reference), adding verification (product verification), supplementing data (data fetching), to integrating processes (business process automation), building scaffolding (code scaffolding), conducting reviews (code quality), and connecting to production (CI/CD, runbooks, infrastructure ops). Second, the writing principles emphasize focus, prioritize verification (recommending engineers spend a week polishing it), prioritize recording gotchas (details the team knows by default but the model doesn't), avoid writing content the model already knows, use SKILL.md as a table of contents rather than a catch-all, leave room for judgment, and design setup and description in advance. Third, the evolution direction after a Skill matures: developing memory (persistent logs), scripts (pre-built helper functions), and on-demand hooks (e.g., /careful to intercept high-risk operations), as well as team-level distribution (repo check-in or marketplace) and governance (sandbox trial before formal inclusion). The article also mentions that Skills can be combined and that usage metrics can be tracked using the PreToolUse hook.",
+        "tags": [
+          "AI Coding",
+          "Claude Code",
+          "Skills",
+          "Prompt Engineering",
+          "AI Workflow"
+        ],
+        "title": "Big News! Anthropic's Internal Skills Experience Revealed!",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723318&idx=1&sn=39d853bbc8aedef524f0adc4fdf0bdd8",
+        "wordCount": 4533
+      },
+      {
+        "authors": [
+          "莫崇宇"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/12-2.png",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_58c976b7",
+        "keyQuotes": [
+          "In the AI era, the most overrated thing is the tool, and the most underrated thing is the person.",
+          "A good workspace should help you get into work faster and recover from it more easily.",
+          "Tools are responsible for recording, organizing, generating, and executing. Humans are responsible for judging, expressing, communicating, and creating."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Gemini Deep Research is suitable for handling open-ended questions and automatically generating structured reports; Kimi excels at processing Chinese materials. Using them together can significantly reduce the time spent on preliminary information gathering.",
+            "point": "The core value of AI search is shifting from 'finding links' to 'mapping the territory'."
+          },
+          {
+            "explanation": "Feishu manages dynamic information (meeting minutes, project progress), while Obsidian manages long-term accumulation (writing style, case studies). By using markdown files and API integration, AI can understand your context and rules before providing answers.",
+            "point": "The essence of knowledge management is building a system for AI to understand you."
+          },
+          {
+            "explanation": "Don't use the default template; instead, use prompts tailored to your role (e.g., for sales, 'Summarize by customer pain points'). The same recording can yield different perspectives.",
+            "point": "The true value of the Plaud meeting minutes tool lies in its customizable prompt templates."
+          },
+          {
+            "explanation": "GPT-Image-2 produces stable images, and TapNow supports video generation. They are not final-draft tools, but they can significantly reduce communication costs and rework.",
+            "point": "The value of AI visual generation is quickly turning vague ideas into visible drafts."
+          },
+          {
+            "explanation": "Tools are responsible for recording, organizing, generating, and executing. Humans are responsible for judging, expressing, communicating, and creating. The significance of efficiency gains is to be less consumed by trivialities and to reserve energy for important matters.",
+            "point": "The core of a workspace upgrade in the AI era is optimizing the human-AI collaboration."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on real workflows, this article recommends AI tools like Gemini, Kimi, Feishu, Obsidian, Plaud, GPT-Image-2, TapNow, and Claude Code, emphasizing that the core of a workspace upgrade is optimizing the human-AI collaboration, not just piling on tools.",
+        "originalTitle": "今年最值得升级的生产力工具，可能是一整张 AI 工位",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-04",
+        "publishDateTimeStr": "2026-06-04 18:47:04",
+        "publishTimeStamp": 1780570024000,
+        "qualified": false,
+        "readCount": 214,
+        "readTime": 15,
+        "readUrl": "https://www.bestblogs.dev/article/58c976b7",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using the concept of an 'AI workspace,' the article outlines the combination of AI tools that the author's team frequently uses in their daily work and explains how they are embedded into specific workflows. It covers five areas: AI search (Gemini Deep Research + Kimi), knowledge management (Feishu + Obsidian), meeting minutes (Plaud), visual generation (GPT-Image-2 + TapNow), and AI coding (Claude Code, Codex). For each area, it provides reasons for tool selection, usage tips, and collaboration methods. The article concludes by shifting the focus back to the 'human' element, pointing out that the core of a workspace upgrade in the AI era is not accumulating tools but optimizing the human-AI collaboration, and it also recommends an ergonomic chair. The article is rich in real-world usage scenarios and specific techniques (e.g., customizing Plaud prompt templates, using Obsidian to build an AI understanding system), but the latter part contains noticeable product promotion content.",
+        "tags": [
+          "AI Products & Applications",
+          "AI Workflow",
+          "AI Coding",
+          "Knowledge Management",
+          "Productivity Tools"
+        ],
+        "title": "The Most Worthwhile Productivity Upgrade This Year Might Be an Entire AI-Powered Workspace",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1667995?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 3713
+      },
+      {
+        "authors": [
+          "莫崇宇"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/36.png",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_42e93f45",
+        "keyQuotes": [
+          "The PC is no longer just a tool operated by people; it is also becoming an AI assistant that can continuously run tasks.",
+          "In the first phase of AI, model companies dominated the industry narrative; in the second phase, platform companies may lead industry implementation.",
+          "Who chooses the model, who assigns tasks, who manages the Agents, and who defines permissions and audits, is closer to the core gateway of enterprise AI."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The MAI Thinking 1 reasoning model uses a sparse MoE architecture with 35B active parameters and supports a 256K context window; the MAI Code 1 Flash surpasses Claude Haiku 4.5 on coding benchmarks and is already integrated into GitHub Copilot.",
+            "point": "Microsoft releases its in-house MAI model family, covering reasoning, code, image, and speech, reducing reliance on OpenAI."
+          },
+          {
+            "explanation": "Based on the Nvidia RTX Spark platform, this device features a 20-core CPU and 128GB of unified memory, comes pre-loaded with a development toolchain, and supports local model execution and Agent debugging, positioning it as a 'dream machine' for developers.",
+            "point": "The Surface RTX Spark Dev Box turns a PC into a local Agent workstation, providing 1 petaflop of AI compute power."
+          },
+          {
+            "explanation": "The desktop terminal is based on a MediaTek chip, supporting identity recognition and Copilot interaction; the wearable badge is based on a Qualcomm chip, targeting mobile work scenarios and supporting hands-free voice recording and medical care process verification.",
+            "point": "Project Solara explores new Agent terminal form factors, including a desktop terminal and a wearable badge."
+          },
+          {
+            "explanation": "The Windows suite allows users to control an Agent's read-only, writable, or hidden permissions for folders, and configure clipboard and network access permissions. A live demo showed the Agent was unable to delete files in a read-only folder.",
+            "point": "OpenClaw on Windows provides enterprise-grade security guardrails for personal Agents, enabling fine-grained permission control."
+          },
+          {
+            "explanation": "Through an integrated layout of model catalogs, Agent management, permission governance, local compute power, and terminal devices, Microsoft is attempting to transform AI from a model dividend into a platform business, defining the standard infrastructure for enterprise AI deployment.",
+            "point": "Microsoft is transitioning from a model company to a platform company, vying for the core enterprise AI gateway."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "At Build 2026, Microsoft unveiled its in-house MAI model family, the Surface RTX Spark Dev Box local AI workstation, the Project Solara Agent terminal device, and the OpenClaw enterprise security solution, showcasing a comprehensive enterprise AI ecosystem spanning from models to platforms.",
+        "originalTitle": "刚刚，Windows「梦中神机」来了，把你的 PC 变成 Agent 工位",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 22:12:42",
+        "publishTimeStamp": 1780495962000,
+        "qualified": false,
+        "readCount": 166,
+        "readTime": 15,
+        "readUrl": "https://www.bestblogs.dev/article/42e93f45",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article provides an in-depth report on the core announcements from Microsoft Build 2026. It begins by examining the shifting relationship between Microsoft and OpenAI, noting that Microsoft is moving from relying on OpenAI's model dividends to building its own AI platform. Key releases include: seven in-house MAI models (reasoning, code, image, speech, transcription), among which the MAI Thinking 1 reasoning model uses a sparse MoE architecture with 35B active parameters, and the MAI Code 1 Flash surpasses Claude Haiku 4.5 on the SWE Bench Pro benchmark; the Surface RTX Spark Dev Box, offering 1 petaflop of AI compute and 128GB of unified memory, positioned as a local Agent workstation for developers; Project Solara, exploring new Agent terminal form factors, including a desktop terminal and a wearable badge; and OpenClaw on Windows, providing enterprise-grade security controls for personal Agents. The article also covers updates to GitHub Copilot, the Agent 365 governance platform, Web IQ contextual capabilities, the Microsoft Discovery research platform, and the Majorana 2 quantum chip. It concludes that Microsoft is transitioning from a model company to a platform company, vying for the core enterprise AI gateway.",
+        "tags": [
+          "AI Platform",
+          "Microsoft",
+          "AI Model",
+          "AI Agent",
+          "AI Hardware"
+        ],
+        "title": "Just In: Windows' 'Dream Machine' Turns Your PC into an Agent Workstation",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1667971?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 3721
+      },
+      {
+        "authors": [
+          "阿里云开发者"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_fcbdb6fa",
+        "keyQuotes": [
+          "Use a powerful Agent (Claude Code) to build the evaluation Harness engineering, upgrading the evaluation logic from 'Code' to 'Prompt', enabling systematic and rapid evaluation of business Agents.",
+          "The essence of an evaluation Harness is a set of structured evaluation rules + execution flow. Traditional practice encodes this into Python scripts, while we encode it into Agent prompts—more flexible, more readable, and easier to iterate.",
+          "One person + Claude Code completes the work that originally required a test developer, data annotator, and analyst."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Traditional evaluation relies on writing Python/Java scripts, whereas this scheme encodes evaluation standards, execution processes, and scoring rules into a single evaluation Agent's prompt, making it more flexible, readable, and easier to iterate, achieving \"Evaluation as Documentation\".",
+            "point": "Core Innovation: Upgrading evaluation logic from \"Code\" to \"Prompt\"."
+          },
+          {
+            "explanation": "Leveraging Claude Code's powerful capabilities in code generation, structured output, and multi-turn collaboration, it automatically completes evaluation scheme design, dataset construction, evaluation Agent prompt writing, and result analysis, freeing humans from tedious script writing.",
+            "point": "The Harness scheme is built by a top-tier Agent, not manually written."
+          },
+          {
+            "explanation": "The framework includes L1 General Foundation Metrics (format compliance rate, field completeness rate), L2 Capability Type Metrics (classification accuracy, recall, MAE, etc.), and L3 Agent-Specific Metrics. When a new Agent is integrated, metrics can be selected as needed, achieving unified and reusable evaluation standards.",
+            "point": "A unified three-layer metric framework has been established."
+          },
+          {
+            "explanation": "Through actual data comparison, the full process for a single Agent is compressed from the traditional ~1.5 weeks to 1-2 days, with an acceleration ratio of up to 10x in the evaluation scheme design and script development phases, greatly reducing the validation cost of Prompt iteration.",
+            "point": "Significantly improves evaluation efficiency, enabling \"Day-level startup, Hour-level iteration\"."
+          },
+          {
+            "explanation": "The article explicitly points out limitations such as LLM-as-Judge bias, evaluation set scale constrained by manual GT annotation, and reliance on evaluation platform stability. It offers specific suggestions like manual spot-checking as a safety net and using small but high-quality evaluation sets, reflecting the rigor of engineering practice.",
+            "point": "Candidly discusses the limitations and applicable scenarios of the scheme."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article proposes an innovative evaluation scheme that uses a top-tier Agent (Claude Code) as the builder of the Harness engineering, transforming evaluation logic from code into Prompts to achieve systematic and rapid evaluation of business Agents.",
+        "originalTitle": "基于顶级 Agent（Claude Code）的 Harness 工程搭建式业务 Agent 评测方案",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-05",
+        "publishDateTimeStr": "2026-06-05 08:30:00",
+        "publishTimeStamp": 1780619400000,
+        "qualified": false,
+        "readCount": 165,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/fcbdb6fa",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_26c5f1",
+        "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+        "sourceName": "阿里云开发者",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Addressing the core contradiction between the rapid iteration of business Agents and the slow construction of traditional evaluation engineering, this article proposes a \"Harness Engineering Building\" evaluation scheme. The core idea is to use a powerful Agent (Claude Code) as the builder and operator of the evaluation engineering, transforming the evaluation logic from traditional Python scripts into more flexible, readable, and easily iterable Agent prompts. The article details the three-layer architecture of Harness (Rule Layer, Data Layer, Execution Logic Layer, Output Layer), a unified three-layer metric framework (L1 General Foundation, L2 Capability Type, L3 Specific Metrics), and a five-step construction method from evaluation scheme design to result analysis. Through practical cases and efficiency comparisons (compressing the full process for a single Agent from 1.5 weeks to 1-2 days), it demonstrates significant advantages in scenarios such as Prompt iteration validation and multi-Agent horizontal comparison, and candidly discusses limitations like LLM-as-Judge bias and evaluation set scale. Originating from the frontline practice of the Alibaba Cloud Developer Team, the methodology is complete and highly actionable.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "AI Evaluation",
+          "Prompt Engineering",
+          "AI Engineering"
+        ],
+        "title": "Harness Engineering-Based Business Agent Evaluation Scheme Using Top-Tier Agent (Claude Code)",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560657&idx=1&sn=cfae16a1ec0158fe9a406b0ccf4185ca",
+        "wordCount": 5392
+      },
+      {
+        "authors": [
+          "Founder Park"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045419_08d80bcb",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_0191c665",
+        "keyQuotes": [
+          "The true AI-native approach is to use AI as the building layer for the entire organization's operations and systematically record all artifacts.",
+          "At home, you can do anything with Claude Code or OpenClaw, but at work, you're crammed into a narrow box. We've been trying to close that gap.",
+          "Cost reduction doesn't lead to decreased demand; it leads to an explosion in demand.",
+          "As AI matures, the right direction is Agent wrapping deterministic tools, not deterministic software wrapping AI.",
+          "The best AI software is often the smallest, adding only minimal pre-written code on top of model capabilities, letting the model do the most work."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Unlike the Copilot model, an AI-native organization requires meeting recordings, Agent conversations, and decision documents to all be recorded, becoming raw material that Agents can learn from, retrieve, and utilize, rather than remaining solely in individual minds.",
+            "point": "The core of an AI-native organization is using AI as the building layer and systematically recording all artifacts."
+          },
+          {
+            "explanation": "All Agent conversations are broadcast by default to an internal Slack channel, promoting knowledge sharing and onboarding for new hires, while replacing strict technical access controls with social oversight, allowing Agents to access a broader context.",
+            "point": "A company-wide visible Agent conversation system is an ingenious design for knowledge dissemination and security control."
+          },
+          {
+            "explanation": "The system automatically reads employees' Agent conversations from the day, identifies skill gaps, and automatically optimizes relevant prompts, enabling certain Agent capabilities (e.g., 'describe in two sentences') to surpass the level of any single partner.",
+            "point": "The Dream Cycle enables Agents to self-evolve nightly by analyzing conversation logs."
+          },
+          {
+            "explanation": "All of YC's self-built software runs on the same Postgres database, allowing Agents to answer any question about the business. The Jevons paradox is evident here: when the cost of querying drops to zero, both the quantity and complexity of questions explode.",
+            "point": "Cost reduction leads to demand explosion; a unified data source is a prerequisite for Agents to unleash their power."
+          },
+          {
+            "explanation": "AI's greatest potential lies in shifting software control from developers to users. The best AI software is often the smallest, adding only minimal pre-written code on top of model capabilities, letting the model do the most work.",
+            "point": "The future software paradigm should be Agent wrapping deterministic tools, not deterministic software wrapping AI."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "YC partner Pete Koomen details YC's internal experience in building an AI-native organization, including a company-wide visible Agent system, a registry of 350+ tools, a self-evolving Dream Cycle that runs nightly, and two cultural prerequisites: 'Trust by default' and 'Egalitarianism'.",
+        "originalTitle": "YC 如何进行 AI-Native 组织改造：Agent 能力要向所有人开放",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-02",
+        "publishDateTimeStr": "2026-06-02 20:33:00",
+        "publishTimeStamp": 1780403580000,
+        "qualified": false,
+        "readCount": 130,
+        "readTime": 30,
+        "readUrl": "https://www.bestblogs.dev/article/0191c665",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_caf83c",
+        "sourceImage": "https://image.jido.dev/20251127045419_08d80bcb",
+        "sourceName": "Founder Park",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is a curated compilation of Founder Park's interview with YC partner Pete Koomen. Pete shares the complete journey of YC's internal AI Agent infrastructure development over the past year. Starting with a SQL query Agent for the finance team, the system has evolved into an internal registry of 350+ tools, a company-wide visible Agent conversation system, and a Dream Cycle that automatically reads all conversations every night to improve its own skills. The article delves into the fundamental difference between an AI-native organization and one that merely 'uses AI as a Copilot': the former treats AI as the building layer of the organization, systematically recording all artifacts (meeting recordings, Agent conversations, decision documents) as raw material for Agent learning. Pete and Gary emphasize that achieving this requires two cultural prerequisites: Egalitarian (AI capabilities open to everyone) and Trust by default (all Agent conversations are visible company-wide). Additionally, the article discusses the design philosophy of the tool registry and skill system, the demand explosion driven by cost reduction (Jevons paradox), and the future software paradigm of 'Agent wrapping deterministic tools'.",
+        "tags": [
+          "AI Agent",
+          "AI Organization",
+          "AI Workflow",
+          "AI Products and Applications",
+          "AI Commercialization"
+        ],
+        "title": "How YC Rebuilds as an AI-Native Organization: Agent Capabilities Should Be Open to Everyone",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524469&idx=1&sn=18c08cb79e431d64b2ce7eaf491853d1",
+        "wordCount": 7321
+      },
+      {
+        "authors": [
+          "十字路口Crossing"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_cf34a5f9",
+        "keyQuotes": [
+          "In Coze 3.0, you can assemble an entire Agent Team. Tag everyone, and all hands are on deck.",
+          "First, make the Agent capable of working. Then, equip the Agent with tools. Finally, have multiple Agents collaborate.",
+          "The most obvious value of multi-Agent division of labor is that every task finds a more suitable way to be handled.",
+          "Bring in the tools you're already using and manage them with Coze 3.0. There's no need to build an 'Agent system' from scratch.",
+          "Separately, each Agent can achieve around 85 points on its own task. But if you give everything to a single general-purpose Agent, each task might only get 70 points."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Supports forming an Agent Team where a main Agent coordinates and dispatches sub-Agents to execute tasks in parallel. Also supports a one-line command to integrate local Agent CLIs (e.g., Codex), enabling the fusion and scheduling of cloud and local tools.",
+            "point": "Coze 3.0 Core Updates: Multi-Agent Collaboration System and Local Agent Integration."
+          },
+          {
+            "explanation": "Each Agent focuses on its area of expertise (e.g., research, programming), achieving an overall score of around 85. In contrast, a single general-purpose Agent handling everything might only score 70 on each task, a gap that becomes evident in specific tasks.",
+            "point": "Multi-Agent Division of Labor Outperforms a Single General-Purpose Agent."
+          },
+          {
+            "explanation": "Users can directly connect their familiar local Agent tools (e.g., Codex) to the Coze platform, which manages and schedules them centrally. This eliminates the need to rebuild or switch windows, significantly lowering the barrier to entry.",
+            "point": "Local Agent Integration Reduces Migration Costs and Preserves User Tool Preferences."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides an in-depth review of Coze 3.0's core updates, including multi-Agent collaboration and local Agent integration, through a complete hands-on test of building a Shopify e-commerce Agent Team, showcasing the entire process from research to prototype implementation.",
+        "originalTitle": "126 天后，扣子升级到 3.0：「@ 一下，全员就位」",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-02",
+        "publishDateTimeStr": "2026-06-02 17:00:00",
+        "publishTimeStamp": 1780390800000,
+        "qualified": false,
+        "readCount": 116,
+        "readTime": 14,
+        "readUrl": "https://www.bestblogs.dev/article/cf34a5f9",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f63517",
+        "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+        "sourceName": "十字路口Crossing",
+        "sourceVisibility": "SYSTEM",
+        "summary": "From the perspective of the 'Crossroads' team, this article offers a deep hands-on review of the major Coze 3.0 update. Core updates include: the Agent Team multi-Agent collaboration system, local Agent integration (supporting Claude Code/Codex/OpenClaw), and a project-based workflow overhaul. Using the construction of an e-commerce product selection Agent Team as a case study, the author breaks down the complete workflow: main Agent coordination, sub-Agent division of labor (Xiaohongshu research/overseas hot product research/product planning), and local Codex programming Agent implementation. The article particularly emphasizes the practical value of local Agent integration: users can connect their preferred tools (such as Codex) to the Coze platform, which then centrally manages and schedules them. This eliminates the need to build an Agent system from scratch, significantly reducing migration costs. The core advantage of multi-Agent division of labor is that each Agent can focus on its area of expertise, resulting in overall performance superior to a single general-purpose Agent.",
+        "tags": [
+          "Coze 3.0",
+          "Agent Team",
+          "Multi-Agent Collaboration",
+          "Local Agent",
+          "AI Workflow"
+        ],
+        "title": "126 Days Later, Coze Upgrades to 3.0: 'Tag Everyone, All Hands on Deck'",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108857&idx=1&sn=6d48568bb8404661500e8e2bee367dea",
+        "wordCount": 3337
+      },
+      {
+        "authors": [
+          "Ida Silfverskiöld"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/Skarmavbild-2026-06-02-kl.-09.18.12.png",
+        "domain": "towardsdatascience.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_aba895ac",
+        "keyQuotes": [
+          "There is no single best OCR engine. OCR is a routing problem.",
+          "Do not pay for expensive structured OCR when the document does not need it.",
+          "Benchmarks are useful for discovery, but they will not tell you what works on your documents.",
+          "The specialist models... have sharp boundaries. This is where the general models will win."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The optimal engine depends on document type, cost constraints, need for structure, and failure tolerance. A routing strategy that classifies documents and selects the appropriate engine is more effective than using one engine for all.",
+            "point": "There is no single best OCR engine; OCR is a routing problem."
+          },
+          {
+            "explanation": "Tesseract outperformed many modern engines on easy documents like clean invoices and receipts, while being orders of magnitude faster and cheaper.",
+            "point": "For clean, high-volume print documents, Tesseract is still the best choice due to being free and fast."
+          },
+          {
+            "explanation": "It performed consistently well across all difficulty levels, including hard documents like handwritten notes and forms, making it a strong default for heterogeneous document streams.",
+            "point": "Gemini Flash 3.1 Lite was the best all-rounder for mixed production documents."
+          },
+          {
+            "explanation": "Models like PaddleOCR and DeepSeek-OCR performed well on certain document types but exhibited catastrophic failures (e.g., repetition loops, empty outputs) on unfamiliar documents, making them risky for general use without escalation.",
+            "point": "Specialized OCR models have sharp boundaries and fail outside their training distribution."
+          },
+          {
+            "explanation": "Using AWS Textract Structured for all documents incurs significant cost ($6.5k per 100k pages) with little text accuracy gain over cheaper alternatives. Classifying documents and routing based on structure needs can drastically reduce costs.",
+            "point": "Do not pay for expensive structured OCR when the document does not need it."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article presents a practical benchmark of 14 OCR engines against 93 documents of varying difficulty, concluding that OCR is a routing problem with no single best engine.",
+        "originalTitle": "I Spent May Evaluating Different Engines for OCR",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-04",
+        "publishDateTimeStr": "2026-06-04 00:30:00",
+        "publishTimeStamp": 1780504200000,
+        "qualified": false,
+        "readCount": 88,
+        "readTime": 14,
+        "readUrl": "https://www.bestblogs.dev/article/aba895ac",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_0c32dbfa",
+        "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+        "sourceName": "Towards Data Science",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author conducted a hands-on experiment to evaluate 14 different OCR engines—ranging from classical open-source tools like Tesseract to modern specialized models and general-purpose vision-language models—against a diverse set of 93 documents. The documents spanned easy (clean invoices), medium (bank statements, tax forms), and hard (handwritten notes, legacy reports, charts) categories. Key metrics included Coverage (how much ground truth text was captured), Precision/Recall, and latency. The results showed that Gemini Flash 3.1 Lite was the best all-rounder for mixed production documents, Tesseract remains unbeatable for clean high-volume print, and Mistral OCR offers a cost-effective option for structured table extraction. The author emphasizes that there is no universal best engine; OCR is a routing problem where document type, cost, structure needs, and failure tolerance dictate the optimal choice. The article also discusses cost scaling, failure modes of different engines, and caveats about benchmark limitations.",
+        "tags": [
+          "OCR",
+          "LLM",
+          "AI Evaluation",
+          "Document Processing",
+          "Benchmarking"
+        ],
+        "title": "I Spent May Evaluating Different Engines for OCR",
+        "translateContent": null,
+        "url": "https://towardsdatascience.com/i-spent-may-evaluating-different-engines-for-ocr/",
+        "wordCount": 3251
+      }
+    ],
+    "pageCount": 43,
+    "pageSize": 20,
+    "totalCount": 852
+  },
+  "message": null,
+  "requestId": "T9a3e5dc406ae48c1be05d7ca09644f90",
+  "success": true
+}

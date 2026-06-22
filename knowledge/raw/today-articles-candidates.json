@@ -1,0 +1,49 @@
+{
+  "body": "Skip to main content\nBestBlogs\nSearch\nCtrl+K\nChange language\nSwitch Theme\nCH\nExplore\n/\nQuality content from our curated public collection\nAll\nArticles\nPodcasts\nVideos\nTweets\nWeekly Picks\nToday\nTop Rated\nDefault\nLatest\nAdvanced Filters\nClear Filters\n2026-05-05 Hacker News Top Stories #\nArticles\n·\nSuperTechFans\n·\nToday\n84\n\nThe article summarizes the ten most discussed topics in the Hacker News community recently. Content includes: a social experiment of talking to strangers at the gym; the DeepClaude tool significantly reducing Claude Code costs by replacing the backend model; GameStop's aggressive $55 billion bid to acquire eBay; a cooperative crowdfunding initiative to acquire Spirit Airlines after its shutdown; the EU's 2027 mandate for removable batteries in smartphones; a satirical art piece in London suspected to be a new Banksy statue; bandwidth improvements and compliance discussions around the new BYOMesh LoRa mesh radio; a deep reflection on the pitfalls of AI agent programming; and the GitHub service outage and its correlation with the surge in AI programming tool usage. These topics reflect the community's diverse concerns regarding the double-edged sword of AI tools, the sustainability of business models, the impact of regulations on hardware design, and the value of human connection.\n\nBusiness & Tech\nHacker News\nTech Trends\nAI Programming\nChinese\nFigma Builds In-House Redis Proxy to Hit Six Nines Uptime\nArticles\n·\nInfoQ\n·\nToday\n90\n\nFigma has published a detailed engineering post on building FigCache, an in-house Redis proxy service that replaced a fragmented caching stack. The system, in production since mid-2025, has achieved six nines of uptime. The project was motivated by connection volume limits, thundering herd issues, and a sprawl of client libraries with inconsistent observability. Figma chose to build a custom proxy rather than adopt existing open-source solutions due to the need for semantic awareness of Redis commands and support for a fragmented client base. FigCache is a stateless Go service built on a custom RPC framework (ResPC) over the Redis Serialization Protocol (RESP). Its architecture separates a frontend layer for connection management from a backend layer for command execution. A notable design choice is using a Starlark program evaluated at runtime to generate the backend configuration, allowing routing logic changes without redeployment. The proxy also handles multi-shard pipelines internally, eliminating CROSSSLOT errors. Migration was designed to be reversible at every stage, with feature flags and incremental traffic shifts. The system has eliminated thundering herd failures, made shard failovers and hardware rotations zero-downtime operations, and unified observability across the caching stack.\n\nProgramming\nRedis\nFigma\nSystem Design\nEnglish\nCloudflare Introduces Flagship: an Edge-Native Feature Flag Service Built on OpenFeature\nArticles\n·\nInfoQ\n·\nToday\n87\n\nCloudflare has announced the closed beta of Flagship, a new feature flag service deeply integrated into its global edge platform. Built on the CNCF open standard OpenFeature, Flagship allows developers to control feature rollouts and run experiments without redeploying code. Its key differentiator is native evaluation within Cloudflare Workers via a binding, eliminating network round-trips to external services like LaunchDarkly and achieving sub-millisecond latency. Flagship supports boolean, string, number, and JSON flag values, along with priority-based targeting rules and percentage-based rollouts. The service is particularly relevant for AI-driven and agent-based workloads requiring rapid iteration and low latency. Industry commentators view this as a sign that feature flags are becoming commoditized infrastructure, with major platforms offering native solutions. A browser client provider for prefetching and caching flags is also available. Flagship is currently in closed beta.\n\nProgramming\nCloudflare\nFeature Flags\nOpenFeature\nEnglish\nTraining Model to Predict Its Own Generalization: A Preliminary Study — LessWrong\nArticles\n·\nLessWrong\n·\nToday\n86\n\nThis research explores whether LLMs can be trained to predict how they will generalize after supervised fine-tuning (SFT), particularly in out-of-distribution scenarios where in-context learning (ICL) fails to approximate SFT. The authors propose Meta-SFT, a meta-learning approach where the model is trained on pairs of domains to predict SFT outcomes from ICL examples. Experiments on emergent misalignment (evil advice domains) with Qwen-3-4B show Meta-SFT significantly outperforms untrained ICL baselines, achieving RMSE close to ground truth. On trivia beliefs/preferences domains with Qwen3-14B, Meta-SFT also demonstrates meaningful generalization prediction. However, the authors failed to replicate truly surprising (human-unpredictable) generalization behaviors on models up to 14B parameters, leaving this as an open question. The paper also discusses extensions for unstructured prediction and efficient domain pair sampling via Gibbs methods.\n\nArtificial Intelligence\nMeta-SFT\nLLM Generalization\nEmergent Misalignment\nEnglish\nBig Tech Begins AI-First Bloodletting: Lay Off 30,000 First, Then Hire 8,000 Newcomers — Traditional Product Managers Are Being Replaced by Builders!\nArticles\n·\nAI前线\n·\nToday\n86\n\nBased on a podcast interview with senior product executive Nikhyl Singhal, this article systematically elaborates on the disruptive changes facing the product manager (PM) profession in the AI era. Key points include: PMs must transform from process- and management-dependent 'information brokers' to 'Builders' who personally use AI tools to build products; over the next 12 to 24 months, tech companies will undergo an AI-first bloodletting cycle of 'lay off 30,000, then hire 8,000'; the core value of PMs will center on 'judgment,' while mechanical tasks will be replaced by AI and Agents. The article also explores the psychological hurdles of transformation, the industry state of both joy and burnout, and the trend of the PM role spreading across various industries. Compiled from InfoQ and based on a podcast, this is a paraphrased and translated piece with clear viewpoints, offering high reference value for tech professionals.\n\nArtificial Intelligence\nProduct Manager\nAI Transformation\nBuilder\nChinese\nChina Specifically Calls Out Japan\nArticles\n·\n财联社\n·\nToday\n78\n\nThis article reports on China's statement at the 11th Review Conference of the UN Treaty on the Non-Proliferation of Nuclear Weapons. Chinese disarmament ambassador Shen Jian pointed out that certain countries have adopted double standards on nuclear non-proliferation, undermining the authority of the treaty. China specifically called out Japan, criticizing its recent negative words and actions on nuclear armament, including pushing to amend the 'Three Non-Nuclear Principles' in its pacifist constitution, expanding long-range strike capabilities, and seeking to have allies deploy nuclear weapons in Japan. China also called on nuclear-weapon states to withdraw nuclear weapons deployed abroad and expressed serious concern over the AUKUS nuclear submarine cooperation. The core of the article is China's statement of its position on nuclear non-proliferation.\n\nFinance & Economy\nNuclear Non-Proliferation\nChina\nJapan\nChinese\nAre you looking up? — LessWrong\nArticles\n·\nLessWrong\n·\nToday\n85\n\nThe author begins with a personal reflection on the difficulty of perceiving the true scale of a skyscraper from the ground, using it as a metaphor for our inability to intuitively grasp large numbers and the magnitude of suffering in the world. The essay connects this cognitive limitation to the psychological phenomenon of vertigo and the concept of a non-linear mental number line. It then explores how this limitation affects ethical reasoning, citing Peter Singer's work on effective altruism and the 'identified victim' effect, where we empathize more with a single individual than ",
+  "cards": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/12c375c5",
+      "text": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/80114ef2",
+      "text": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/e36d0437",
+      "text": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/0c4d2aad",
+      "text": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/1222112b",
+      "text": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/bef50672",
+      "text": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/50fe1a75",
+      "text": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/fcdfd57f",
+      "text": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/07753cb6",
+      "text": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/e5496d69",
+      "text": ""
+    }
+  ],
+  "count": 10,
+  "sort": "Today",
+  "title": "Explore - BestBlogs | Discover High-Quality Content That Truly Fits You",
+  "url": "https://www.bestblogs.dev/en/explore?type=article"
+}

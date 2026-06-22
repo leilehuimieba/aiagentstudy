@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "accepted_short_articles": {
+    "BB-2026-05-01-005": {
+      "reason": "metadata_summary",
+      "note": "BestBlogs metadata-only item; short article body is expected."
+    },
+    "BB-2026-05-01-149": {
+      "reason": "short_page",
+      "note": "BestBlogs page itself was short during capture."
+    },
+    "BB-2026-05-01-304": {
+      "reason": "abstract_only",
+      "note": "arXiv benchmark paper captured as abstract plus local takeaway."
+    },
+    "BB-2026-05-01-306": {
+      "reason": "abstract_key_excerpts",
+      "note": "arXiv benchmark paper captured as abstract/key excerpts plus source evidence."
+    },
+    "BB-2026-05-01-307": {
+      "reason": "abstract_key_excerpts",
+      "note": "OpenReview benchmark paper captured as abstract/key excerpts plus source evidence."
+    },
+    "BB-2026-05-01-308": {
+      "reason": "abstract_only",
+      "note": "arXiv paper captured as abstract plus local takeaway."
+    },
+    "BB-2026-05-01-309": {
+      "reason": "abstract_key_excerpts",
+      "note": "OpenReview paper captured as abstract/key excerpts plus source evidence."
+    },
+    "BB-2026-05-01-310": {
+      "reason": "abstract_only",
+      "note": "arXiv paper captured as abstract plus local takeaway."
+    },
+    "BB-2026-05-01-311": {
+      "reason": "abstract_only",
+      "note": "arXiv paper captured as abstract plus local takeaway."
+    },
+    "BB-2026-05-01-314": {
+      "reason": "readme_excerpts",
+      "note": "GitHub repo captured as README excerpts plus source evidence."
+    },
+    "BB-2026-05-01-316": {
+      "reason": "methodology_summary",
+      "note": "OWASP methodology page captured as focused summary plus source evidence."
+    },
+    "BB-2026-05-01-317": {
+      "reason": "methodology_summary",
+      "note": "OWASP benchmark page captured as focused summary plus source evidence."
+    },
+    "BB-2026-05-01-318": {
+      "reason": "spec_summary",
+      "note": "OASIS SARIF spec captured as focused summary plus source evidence."
+    },
+    "BB-2026-05-01-319": {
+      "reason": "abstract_only",
+      "note": "arXiv paper captured as abstract plus local takeaway."
+    },
+    "BB-2026-05-01-320": {
+      "reason": "abstract_only",
+      "note": "arXiv paper captured as abstract plus local takeaway."
+    },
+    "BB-2026-05-01-321": {
+      "reason": "abstract_only",
+      "note": "arXiv paper captured as abstract plus local takeaway."
+    },
+    "BB-2026-05-01-322": {
+      "reason": "abstract_only",
+      "note": "arXiv paper captured as abstract plus local takeaway."
+    },
+    "BB-2026-05-01-323": {
+      "reason": "abstract_search_summary",
+      "note": "arXiv paper captured as abstract/search summary plus source evidence."
+    },
+    "BB-2026-05-01-324": {
+      "reason": "search_summary",
+      "note": "arXiv paper captured as search summary plus source evidence."
+    }
+  }
+}

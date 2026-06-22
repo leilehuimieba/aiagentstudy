@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-06-18T01:16:02",
+  "mode": "rss-capture",
+  "source_ids": [
+    "simon-willison"
+  ],
+  "discoveries": [
+    {
+      "source_id": "simon-willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "entries": [
+        {
+          "title": "— a still that plays",
+          "summary": "Tool: — a still that plays A progressive enchantment Web Component that turns this markup: Into a still frame with a click to play button which loads the GIF on demand. For when you don't want big GIFs to be loaded unless people want to play them. Here's an example that demonstrates the new row editing tools in Datasette - in fact I built this Web Component for that post. Tags: gif , javascript , progressive-enhancement , web-components",
+          "published": "2026-06-17T03:56:10+00:00",
+          "updated": "2026-06-17T03:56:10+00:00",
+          "id": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
+              "rel": "alternate",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "title": "NetNewsWire Status",
+          "summary": "NetNewsWire Status I find this inspiring. Brent Simmons retired a year ago, and his retirement project is making one piece of software really, really good - free from any commercial pressure. The software is NetNewsWire - \"it's like podcasts, but for reading \" - first released in 2002 and made open source in 2018. I've been using it on Mac and iPhone for several years now and I'm finding it indispensable. Via Lobste.rs Tags: brent-simmons , netnewswire , open-source",
+          "published": "2026-06-17T03:36:09+00:00",
+          "updated": "2026-06-17T03:36:09+00:00",
+          "id": "https://simonwillison.net/2026/Jun/17/netnewswire-status/#atom-everything",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://simonwillison.net/2026/Jun/17/netnewswire-status/#atom-everything",
+              "rel": "alternate",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "title": "datasette 1.0a34",
+          "summary": "Release: datasette 1.0a34 Quoting the release notes: The big feature in this alpha is tools to insert, edit and delete rows within the Datasette interface. These features are available on table pages, and edit and delete are also available as action items on the row page. The inspiration for this feature - which is long overdue - was Datasette Agent . I added SQL write support to that the other day which highlighted how absurd it was that you could insert and edit ties via the chat interface but not in the regular Datasette UI! Tags: projects , datasette , annotated-release-notes",
+          "published": "2026-06-16T21:31:24+00:00",
+          "updated": "2026-06-16T21:31:24+00:00",
+          "id": "https://simonwillison.net/2026/Jun/16/datasette/#atom-everything",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://simonwillison.net/2026/Jun/16/datasette/#atom-everything",
+              "rel": "alternate",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "title": "datasette-tailscale 0.1a0",
+          "summary": "Release: datasette-tailscale 0.1a0 A very experimental alpha plugin which lets you do this: datasette tailscale mydata.db \\ --ts-authkey tskey-auth-xxxx --ts-hostname datasette-preview This starts a localhost Datasette server with a Tailscale sidecar that connects it to your Tailnet, such that http://datasette-preview/ serves Datasette. It's using the Python bindings for the experimental tailscale-rs library. I filed an issue asking if there's a cleaner way of setting up the proxy mechanism. Tags: datasette , tailscale",
+          "published": "2026-06-16T16:18:20+00:00",
+          "updated": "2026-06-16T16:18:20+00:00",
+          "id": "https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything",
+              "rel": "alternate",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "title": "Quoting Georgi Gerganov",
+          "summary": "I can 100% attest to the fact that Qwen3.6-27B is a very capable local model for coding tasks. Over the last month and a half I've been using it almost daily, either on my M2 Ultra or on my RTX 5090 box. I use it for small mundane tasks at ggml-org - nothing really impressive, but definitely a helpful tool for a maintainer. I think I would be using it much more, if I didn't have to spend a lot of my time on reviewing PRs. Currently, I have a very lightweight harness - the pi agent with everything stripped ( pi -nc --offline ) and a short system prompt to align it a bit with my style. — Georgi Gerganov , Hacker News comment on Running local models is good now by Boykis Tags: georgi-gerganov , llms , ai , generative-ai , pi , ai-assisted-programming , local-llms , qwen , coding-agents",
+          "published": "2026-06-16T16:04:59+00:00",
+          "updated": "2026-06-16T16:04:59+00:00",
+          "id": "https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything",
+          "authors": [],
+          "links": [
+            {
+              "href": "https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything",
+              "rel": "alternate",
+              "type": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

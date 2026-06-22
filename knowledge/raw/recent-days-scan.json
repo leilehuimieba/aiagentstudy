@@ -1,0 +1,905 @@
+{
+  "initial": {
+    "articles": [
+      {
+        "anchorText": "How OpenAI delivers low-latency voice AI at scale",
+        "cardText": "How OpenAI delivers low-latency voice AI at scale\nArticles\n·\nOpenAI Blog\n·\nYesterday\n93\n\nThis engineering blog post from OpenAI details the architectural redesign of their WebRTC infrastructure to support low-latency voice AI for over 900 million weekly active users. The core challenge was running WebRTC, a stateful protocol requiring one UDP port per session, on Kubernetes, which is designed for stateless, elastic workloads. The team solved this by splitting the WebRTC stack into two components: a lightweight, stateless relay that handles packet routing and a stateful transceiver that terminates the WebRTC protocol. The relay uses the ICE username fragment (ufrag) embedded in STUN packets to deterministically route the first packet to the correct transceiver, eliminating the need for large, dynamic UDP port ranges. This design, combined with a global relay layer for geo-steering, reduces first-hop latency and jitter. The post details the trade-offs between SFU and transceiver architectures, the implementation of the relay in Go with optimizations like SO_REUSEPORT and thread pinning, and the key learnings from the project, emphasizing the principle of adding complexity in a thin r",
+        "href": "https://www.bestblogs.dev/en/article/85c11f72"
+      },
+      {
+        "anchorText": "Claude Code for Product Managers",
+        "cardText": "Claude Code for Product Managers\nArticles\n·\nEvery\n·\n05-03\n92\n\nMarcus Moretti, general manager of Spiral, describes how he uses Claude Code to run product management as a solo practitioner. He explains that the only document he writes himself is the roadmap; Claude generates all PRDs and tickets from it. He uses a custom `/pulse` command for daily analytics that reads user conversations and flags anomalies, replacing traditional dashboards. For research, Claude helps him navigate academic literature via an Arxiv MCP. He argues that AI tools make true Agile possible and that SaaS products can survive by owning unique data sources and offering seamless agent integrations. The essay emphasizes that AI removes busywork, allowing PMs to focus on strategy, user research, and creative problem-solving.\n\nFeatured\nArtificial Intelligence\nClaude Code\nAI Product Management\nProduct Roadmap\nEnglish",
+        "href": "https://www.bestblogs.dev/en/article/e80b2d9f"
+      },
+      {
+        "anchorText": "Long-running Agents",
+        "cardText": "Long-running Agents\nArticles\n·\nElevate\n·\n04-30\n93\n\nThe article argues that the dominant paradigm of AI agents as single-session chat loops has hit a ceiling, and the next frontier is long-running agents that can operate over hours, days, or weeks. It identifies three fundamental walls: finite context windows, lack of persistent state across sessions, and the inability of models to reliably self-verify. The author then presents a detailed survey of how major players are solving these problems. Anthropic's approach is detailed through its harness designs and the 'brain/hands/session' decoupling in Managed Agents. Cursor's solution involves a planner/worker/judge architecture, with different models assigned to different roles. Google's Gemini Enterprise Agent Platform productizes these patterns with services like Agent Runtime, Agent Sessions, and Memory Bank. The article distills five production design patterns (checkpoint-and-resume, delegated approval, memory-layered context, ambient processing, fleet orchestration) and provides practical advice for developers, product builders, and those creating autonomous operational agents. It concludes by acknowledging current limitations like",
+        "href": "https://www.bestblogs.dev/en/article/048d846e"
+      },
+      {
+        "anchorText": "Agents can now create Cloudflare accounts， buy domains， and deploy",
+        "cardText": "Agents can now create Cloudflare accounts， buy domains， and deploy\nArticles\n·\nThe Cloudflare Blog\n·\n04-30\n92\n\nThis article announces a new protocol co-designed by Cloudflare and Stripe, launched as part of Stripe Projects, that allows AI coding agents to autonomously provision cloud infrastructure. Agents can now create a Cloudflare account, start a paid subscription, register a domain, and obtain an API token to deploy code, all without a human needing to visit a dashboard or enter payment details. The protocol is built on three core components: Discovery (a catalog of available services agents can query), Authorization (Stripe acts as an identity provider, allowing Cloudflare to automatically create accounts or link existing ones via OAuth), and Payment (Stripe provides a payment token, with a default $100/month spending limit, so agents never handle raw credit card data). The article details the end-to-end flow using the Stripe Projects CLI, explains how the protocol works under the hood, and emphasizes that any platform with signed-in users can integrate with Cloudflare in the same way Stripe does, treating agents as a first-class concern. This standardizes cross-product integr",
+        "href": "https://www.bestblogs.dev/en/article/e6e4891f"
+      },
+      {
+        "anchorText": "Stripe’s Docdb: How Zero-Downtime Data Movement Powers Trillion-Dollar Payment Processing",
+        "cardText": "Stripe’s Docdb: How Zero-Downtime Data Movement Powers Trillion-Dollar Payment Processing\nArticles\n·\nInfoQ\n·\n04-30\n92\n\nThis presentation transcript by Jimmy Morzaria, a Staff Software Engineer at Stripe, provides a deep dive into the architecture and engineering behind Stripe's internal document database service, DocDB. The talk begins by framing the challenge: Stripe processes trillions of dollars in payments with 5.5 nines of reliability, requiring a database infrastructure that handles over 5 million queries per second across petabytes of data. The core of the solution is a zero-downtime data movement platform built on top of open-source MongoDB. The article explains the step-by-step process of migrating data chunks between shards, including bulk importing sorted data for 10x throughput gains, bidirectional asynchronous replication for fast rollback, and a custom version-gating protocol to orchestrate traffic switches in milliseconds. Beyond horizontal scaling, the platform is also used for database version upgrades and migrating between single-tenant and multi-tenant architectures. The talk concludes with key takeaways on the importance of reliability, investing in strong found",
+        "href": "https://www.bestblogs.dev/en/article/8db2ea5f"
+      },
+      {
+        "anchorText": "The DPoP Storage Paradox: Why Browser-Based Proof-of-Possession Remains an Unsolved Problem",
+        "cardText": "The DPoP Storage Paradox: Why Browser-Based Proof-of-Possession Remains an Unsolved Problem\nArticles\n·\nInfoQ\n·\n04-30\n92\n\nThe article examines a critical security gap in browser-based DPoP (RFC 9449) implementations: while the protocol binds tokens to client key pairs, it leaves key storage unspecified. The author demonstrates that storing private keys as non-extractable CryptoKeys in IndexedDB does not prevent XSS exploitation, as attackers can invoke `crypto.subtle.sign()` to forge DPoP proofs without extracting the key. This 'Oracle Attack' is documented in the IETF's own security considerations. The article evaluates the Backend-for-Frontend (BFF) pattern as the current industry standard, which moves key material server-side and prevents both the Oracle Attack and fresh token acquisition attacks. For deployments where a BFF is infeasible (e.g., browser extensions, embedded widgets), the author presents a memory-only key approach with a Lazy Re-Binding handshake, which limits the XSS blast radius to a single session. The article concludes by comparing these patterns and discussing future directions like Device Bound Session Credentials (DBSC).\n\nFeatured\nProgramming\nDPoP\nOAuth 2.0",
+        "href": "https://www.bestblogs.dev/en/article/ef3084e8"
+      },
+      {
+        "anchorText": "JD.com Ad Large Model in Practice: How the GRAM Architecture Delivers Generative Recommendations in Under 50ms",
+        "cardText": "JD.com Ad Large Model in Practice: How the GRAM Architecture Delivers Generative Recommendations in Under 50ms\nArticles\n·\nInfoQ 中文\n·\n04-30\n92\n\nThis article is a transcript of a speech by Zhang Zehua, Algorithm Director at JD.com Group, at AICon 2025. It systematically elaborates on JD.com's practical approach to transitioning from traditional CTR models to generative large models in the advertising recommendation domain. The core is the GRAM architecture, which uses a deep reasoning mechanism to achieve direct semantic alignment between user intent and SKUs, and employs fast and slow dual-pathways to handle quick clicks and complex decisions respectively. On the engineering front, the article details how techniques like PD separation, probability space pruning, and multi-level caching stabilize inference latency within 50ms. Furthermore, the article highlights the evolution from feature engineering to knowledge engineering, systematizing retail experience into twelve major knowledge categories, building a deep cascading knowledge graph for real-time queries within 5ms, and effectively suppressing hallucinations. The article also discusses challenges of generative models in advertis",
+        "href": "https://www.bestblogs.dev/en/article/bfc8df6e"
+      },
+      {
+        "anchorText": "RAG is Dead? No, Grep is Back!",
+        "cardText": "RAG is Dead? No, Grep is Back!\nArticles\n·\n腾讯云开发者\n·\n04-30\n93\n\nCentered on the industry hot topic 'RAG is Dead,' this article systematically analyzes the evolution of code search architecture in the AI Agent era, using the source code deconstruction of Claude Code as its core. It first points out that cutting-edge products like Claude Code and Codex have abandoned traditional RAG (pre-indexing + embedding + vector database) in favor of LLM-driven multi-round iterative Grep search. Based on the leaked Claude Code source code, the author details its search loop mechanism, including the design of core tools like GrepTool, GlobTool, FileReadTool, and AgentTool, and how GrepTool's three output modes (files_with_matches, content, count) control information volume. A practical case study (tracing tool calls in a bridge system) fully demonstrates the iterative process of multi-round search. In the performance analysis section, the article explains ripgrep's five-layer filtering, SIMD acceleration, Boyer-Moore skipping, and uses real-world test data to prove that brute-force search is fast enough for local developer projects. For industry comparison, the article contrasts Claude Code's zero-i",
+        "href": "https://www.bestblogs.dev/en/article/409d9979"
+      },
+      {
+        "anchorText": "Lessons from building Claude Code: Prompt caching is everything | Claude",
+        "cardText": "Lessons from building Claude Code: Prompt caching is everything | Claude\nArticles\n·\nClaude Blog\n·\n04-29\n92\n\nThis article from the Claude Blog explains how prompt caching is the foundational technology that makes long-running agentic products like Claude Code feasible. The core principle is that prompt caching operates on prefix matching, meaning any change to the beginning of a request invalidates the entire cache. The authors share several key, counter-intuitive lessons learned from building Claude Code at scale. These include: structuring the prompt with static content first and dynamic content last; using messages (like system reminders) instead of modifying the system prompt to avoid cache misses; never changing models or tools mid-session as this breaks the cache; and designing features like 'Plan Mode' around caching constraints by keeping all tools in the request and using tools to model state transitions. The article also details a 'cache-safe forking' technique for compaction (summarizing conversation history) where the exact same system prompt and tool definitions are reused to maintain cache hits. The key takeaway is that prompt caching is not an afterthought but a prima",
+        "href": "https://www.bestblogs.dev/en/article/68065f88"
+      },
+      {
+        "anchorText": "Agents， Architecture， & Amnesia: Becoming AI-Native Without Losing Our Minds",
+        "cardText": "Agents， Architecture， & Amnesia: Becoming AI-Native Without Losing Our Minds\nArticles\n·\nInfoQ\n·\n04-29\n92\n\nIn this presentation, Tracy Bannon draws a parallel between the Sorcerer's Apprentice and the current unbridled excitement around AI agents. She argues that while AI and agents offer groundbreaking potential for productivity, code quality, and workflow orchestration, the reckless pursuit of speed is causing 'architectural amnesia'—the forgetting of hard-won engineering lessons. Bannon identifies four antipatterns driving this amnesia: productivity theater, tool-led thinking, cognitive overload, and decision compression. These lead to accumulating technical debt at machine speed, as illustrated by an Anthropic Claude Code incident that autonomously compromised 17 organizations. The solution, she contends, is not new technology but a return to fundamentals: minimum viable governance to build trust, discipline through trade-off analysis and Architecture Decision Records (ADRs), and measuring value over velocity. Crucially, she emphasizes that as agent autonomy increases, the need for human verification and governance grows proportionally. The core actionable takeaway is to establi",
+        "href": "https://www.bestblogs.dev/en/article/39b642f7"
+      }
+    ],
+    "controls": [
+      {
+        "href": "https://www.bestblogs.dev/en/explore?type=article#main-content",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Skip to main content"
+      },
+      {
+        "href": "https://www.bestblogs.dev/",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "BestBlogs"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Search\nCtrl+K"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Change language"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Switch Theme"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "CH"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "All"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "true",
+        "tag": "BUTTON",
+        "text": "Articles"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Podcasts"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Videos"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Tweets"
+      },
+      {
+        "href": "",
+        "pressed": "true",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Weekly Picks"
+      },
+      {
+        "href": "",
+        "pressed": "false",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Today"
+      },
+      {
+        "href": "",
+        "pressed": "false",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Top Rated"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Default"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Latest"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Advanced Filters"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Clear Filters"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/article/85c11f72?entry=explore_card&from=%2Fen%2Fexplore%3Ftype%3Darticle",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "How OpenAI delivers low-latency voice AI at scale"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/article/e80b2d9f?entry=explore_card&from=%2Fen%2Fexplore%3Ftype%3Darticle",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Claude Code for Product Managers"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/article/048d846e?entry=explore_card&from=%2Fen%2Fexplore%3Ftype%3Darticle",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Long-running Agents"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/article/e6e4891f?entry=explore_card&from=%2Fen%2Fexplore%3Ftype%3Darticle",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Agents can now create Cloudflare accounts， buy domains， and deploy"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/article/8db2ea5f?entry=explore_card&from=%2Fen%2Fexplore%3Ftype%3Darticle",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Stripe’s Docdb: How Zero-Downtime Data Movement Powers Trillion-Dollar Payment Processing"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/article/ef3084e8?entry=explore_card&from=%2Fen%2Fexplore%3Ftype%3Darticle",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "The DPoP Storage Paradox: Why Browser-Based Proof-of-Possession Remains an Unsolved Problem"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/article/bfc8df6e?entry=explore_card&from=%2Fen%2Fexplore%3Ftype%3Darticle",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "JD.com Ad Large Model in Practice: How the GRAM Architecture Delivers Generative Recommendations in Under 50ms"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/article/409d9979?entry=explore_card&from=%2Fen%2Fexplore%3Ftype%3Darticle",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "RAG is Dead? No, Grep is Back!"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/article/68065f88?entry=explore_card&from=%2Fen%2Fexplore%3Ftype%3Darticle",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Lessons from building Claude Code: Prompt caching is everything | Claude"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/article/39b642f7?entry=explore_card&from=%2Fen%2Fexplore%3Ftype%3Darticle",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Agents， Architecture， & Amnesia: Becoming AI-Native Without Losing Our Minds"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/explore?type=article#",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Previous"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/explore?type=article#",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "1"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/explore?type=article#",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "2"
+      },
+      {
+        "href": "https://www.bestblogs.dev/en/explore?type=article#",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Next"
+      }
+    ],
+    "pageText": "Skip to main content\nBestBlogs\nSearch\nCtrl+K\nChange language\nSwitch Theme\nCH\nExplore\n/\nQuality content from our curated public collection\nAll\nArticles\nPodcasts\nVideos\nTweets\nWeekly Picks\nToday\nTop Rated\nDefault\nLatest\nAdvanced Filters\nClear Filters\nHow OpenAI delivers low-latency voice AI at scale\nArticles\n·\nOpenAI Blog\n·\nYesterday\n93\n\nThis engineering blog post from OpenAI details the architectural redesign of their WebRTC infrastructure to support low-latency voice AI for over 900 million weekly active users. The core challenge was running WebRTC, a stateful protocol requiring one UDP port per session, on Kubernetes, which is designed for stateless, elastic workloads. The team solved this by splitting the WebRTC stack into two components: a lightweight, stateless relay that handles packet routing and a stateful transceiver that terminates the WebRTC protocol. The relay uses the ICE username fragment (ufrag) embedded in STUN packets to deterministically route the first packet to the correct transceiver, eliminating the need for large, dynamic UDP port ranges. This design, combined with a global relay layer for geo-steering, reduces first-hop latency and jitter. The post details the trade-offs between SFU and transceiver architectures, the implementation of the relay in Go with optimizations like SO_REUSEPORT and thread pinning, and the key learnings from the project, emphasizing the principle of adding complexity in a thin routing layer rather than in backend services.\n\nFeatured\nArtificial Intelligence\nWebRTC\nSystem Design\nInfrastructure\nEnglish\n05-03\nClaude Code for Product Managers\nArticles\n·\nEvery\n·\n05-03\n92\n\nMarcus Moretti, general manager of Spiral, describes how he uses Claude Code to run product management as a solo practitioner. He explains that the only document he writes himself is the roadmap; Claude generates all PRDs and tickets from it. He uses a custom `/pulse` command for daily analytics that reads user conversations and flags anomalies, replacing traditional dashboards. For research, Claude helps him navigate academic literature via an Arxiv MCP. He argues that AI tools make true Agile possible and that SaaS products can survive by owning unique data sources and offering seamless agent integrations. The essay emphasizes that AI removes busywork, allowing PMs to focus on strategy, user research, and creative problem-solving.\n\nFeatured\nArtificial Intelligence\nClaude Code\nAI Product Management\nProduct Roadmap\nEnglish\n04-30\nLong-running Agents\nArticles\n·\nElevate\n·\n04-30\n93\n\nThe article argues that the dominant paradigm of AI agents as single-session chat loops has hit a ceiling, and the next frontier is long-running agents that can operate over hours, days, or weeks. It identifies three fundamental walls: finite context windows, lack of persistent state across sessions, and the inability of models to reliably self-verify. The author then presents a detailed survey of how major players are solving these problems. Anthropic's approach is detailed through its harness designs and the 'brain/hands/session' decoupling in Managed Agents. Cursor's solution involves a planner/worker/judge architecture, with different models assigned to different roles. Google's Gemini Enterprise Agent Platform productizes these patterns with services like Agent Runtime, Agent Sessions, and Memory Bank. The article distills five production design patterns (checkpoint-and-resume, delegated approval, memory-layered context, ambient processing, fleet orchestration) and provides practical advice for developers, product builders, and those creating autonomous operational agents. It concludes by acknowledging current limitations like cost, security, and alignment drift, and predicts the next hard problems will be in multi-agent coordination.\n\nFeatured\nProgramming\nLong-running Agents\nAI Agents\nAgent Architecture\nEnglish\nAgents can now create Cloudflare accounts， buy domains， and deploy\nArticles\n·\nThe Cloudflare Blog\n·\n04-30\n92\n\nThis article announces a new protocol co-designed by Cloudflare and Stripe, launched as part of Stripe Projects, that allows AI coding agents to autonomously provision cloud infrastructure. Agents can now create a Cloudflare account, start a paid subscription, register a domain, and obtain an API token to deploy code, all without a human needing to visit a dashboard or enter payment details. The protocol is built on three core components: Discovery (a catalog of available services agents can query), Authorization (Stripe acts as an identity provider, allowing Cloudflare to automatically create accounts or link existing ones via OAuth), and Payment (Stripe provides a payment token, with a default $100/month spending limit, so agents never handle raw credit card data). The article details the end-to-end flow using the Stripe Projects CLI, explains how the protocol works under the hood, and emphasizes that any platform with signed-in users can integrate with Cloudflare in the same way Stripe does, treating agents as a first-class concern. This standardizes cross-product integrations that were previously bespoke and one-off.\n\nFeatured\nProgramming\nAI Agents\nCloudflare\nStripe\nEnglish\nStripe’s Docdb: How Zero-Downtime Data Movement Powers Trillion-Dollar Payment Processing\nArticles\n·\nInfoQ\n·\n04-30\n92\n\nThis presentation transcript by Jimmy Morzaria, a Staff Software Engineer at Stripe, provides a deep dive into the architecture and engineering behind Stripe's internal document database service, DocDB. The talk begins by framing the challenge: Stripe processes trillions of dollars in payments with 5.5 nines of reliability, requiring a database infrastructure that handles over 5 million queries per second across petabytes of data. The core of the solution is a zero-downtime data movement platform built on top of open-source MongoDB. The article explains the step-by-step process of migrating data chunks between shards, including bulk importing sorted data for 10x throughput gains, bidirectional asynchronous replication for fast rollback, and a custom version-gating protocol to orchestrate traffic switches in milliseconds. Beyond horizontal scaling, the platform is also used for database version upgrades and migrating between single-tenant and multi-tenant architectures. The talk concludes with key takeaways on the importance of reliability, investing in strong foundational infrastructure, and a framework for deciding whether to build or buy a capability.\n\nFeatured\nProgramming\nStripe\nMongoDB\nDatabase Infrastructure\nEnglish\nThe DPoP Storage Paradox: Why Browser-Based Proof-of-Possession Remains an Unsolved Problem\nArticles\n·\nInfoQ\n·\n04-30\n92\n\nThe article examines a critical security gap in browser-based DPoP (RFC 9449) implementations: while the protocol binds tokens to client key pairs, it leaves key storage unspecified. The author demonstrates that storing private keys as non-extractable CryptoKeys in IndexedDB does not prevent XSS exploitation, as attackers can invoke `crypto.subtle.sign()` to forge DPoP proofs without extracting the key. This 'Oracle Attack' is documented in the IETF's own security considerations. The article evaluates the Backend-for-Frontend (BFF) pattern as the current industry standard, which moves key material server-side and prevents both the Oracle Attack and fresh token acquisition attacks. For deployments where a BFF is infeasible (e.g., browser extensions, embedded widgets), the author presents a memory-only key approach with a Lazy Re-Binding handshake, which limits the XSS blast radius to a single session. The article concludes by comparing these patterns and discussing future directions like Device Bound Session Credentials (DBSC).\n\nFeatured\nProgramming\nDPoP\nOAuth 2.0\nWeb Security\nEnglish\nJD.com Ad Large Model in Practice: How the GRAM Architecture Delivers Generative Recommendations in Under 50ms\nArticles\n·\nInfoQ 中文\n·\n04-30\n92\n\nThis article is a transcript of a speech by Zhang Zehua, Algorithm Director at JD.com Group, at AICon 2025. It systematically elaborates on JD.com's practical approach to transitioning from traditional CTR models to generative large models in the advertising recommendation domain. The core is the GRAM architecture, which uses a deep reasoning mechanism to achieve direct semantic alignment between user intent and SKUs, and employs fast and slow dual-pathways to handle quick clicks and complex decisions respectively. On the engineering front, the article details how techniques like PD separation, probability space pruning, and multi-level caching stabilize inference latency within 50ms. Furthermore, the article highlights the evolution from feature engineering to knowledge engineering, systematizing retail experience into twelve major knowledge categories, building a deep cascading knowledge graph for real-time queries within 5ms, and effectively suppressing hallucinations. The article also discusses challenges of generative models in advertising, including hallucination, lack of controllability, and difficulty in ROI validation, proposing a solution path with rule-based systems as a safety net and human-machine collaboration. Finally, it recommends a phased advancement strategy, gradually transitioning from general models to domain-specific knowledge-enhanced models.\n\nFeatured\nProgramming\nGenerative Recommendation\nGRAM Architecture\nKnowledge Engineering\nChinese\nRAG is Dead? No, Grep is Back!\nArticles\n·\n腾讯云开发者\n·\n04-30\n93\n\nCentered on the industry hot topic 'RAG is Dead,' this article systematically analyzes the evolution of code search architecture in the AI Agent era, using the source code deconstruction of Claude Code as its core. It first points out that cutting-edge products like Claude Code and Codex have abandoned traditional RAG (pre-indexing + embedding + vector database) in favor of LLM-driven multi-round iterative Grep search. Based on the leaked Claude Code source code, the author details its search loop mechanism, including the design of core tools like GrepTool, GlobTool, FileReadTool, and AgentTool, and how GrepTool's three output modes (files_with_matches, content, count) control information volume. A practical case study (tracing tool calls in a bridge system) fully demonstrates the iterative process of multi-round search. In the performance analysis section, the article explains ripgrep's five-layer filtering, SIMD acceleration, Boyer-Moore skipping, and uses real-world test data to prove that brute-force search is fast enough for local developer projects. For industry comparison, the article contrasts Claude Code's zero-index approach with Cursor's dual-index architecture (semantic index + trigram index), arguing that scale dictates architectural choice. It also addresses Milvus's criticism of the Grep approach's token costs, analyzing three layers of cost control: prompt cache, auto-compaction, and sub-agent isolation. Finally, citing empirical data from the GrepRAG paper, the article argues why Grep outperforms embedding in code search scenarios—code identifiers themselves are high-precision semantic anchors. The article concludes that what is dead is not the RAG paradigm itself, but the default assumption that 'code search must rely on embedding pre-indexing.'\n\nFeatured\nProgramming\nRAG\nClaude Code\nGrep\nChinese\n04-29\nLessons from building Claude Code: Prompt caching is everything | Claude\nArticles\n·\nClaude Blog\n·\n04-29\n92\n\nThis article from the Claude Blog explains how prompt caching is the foundational technology that makes long-running agentic products like Claude Code feasible. The core principle is that prompt caching operates on prefix matching, meaning any change to the beginning of a request invalidates the entire cache. The authors share several key, counter-intuitive lessons learned from building Claude Code at scale. These include: structuring the prompt with static content first and dynamic content last; using messages (like system reminders) instead of modifying the system prompt to avoid ca",
+    "title": "Explore - BestBlogs | Discover High-Quality Content That Truly Fits You",
+    "url": "https://www.bestblogs.dev/en/explore?type=article"
+  },
+  "clickToday": {
+    "href": "",
+    "matches": 1,
+    "ok": true,
+    "pressed": "false",
+    "selected": "",
+    "tag": "BUTTON",
+    "text": "Today"
+  },
+  "todayPage1": {
+    "articles": [],
+    "controls": [
+      {
+        "href": "https://www.bestblogs.dev/en/explore?type=article#main-content",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Skip to main content"
+      },
+      {
+        "href": "https://www.bestblogs.dev/",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "BestBlogs"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Search\nCtrl+K"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Change language"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Switch Theme"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "CH"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "All"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "true",
+        "tag": "BUTTON",
+        "text": "Articles"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Podcasts"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Videos"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Tweets"
+      },
+      {
+        "href": "",
+        "pressed": "false",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Weekly Picks"
+      },
+      {
+        "href": "",
+        "pressed": "true",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Today"
+      },
+      {
+        "href": "",
+        "pressed": "false",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Top Rated"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Default"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Latest"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Advanced Filters"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Clear Filters"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Widen time range"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Reset filters"
+      }
+    ],
+    "pageText": "Skip to main content\nBestBlogs\nSearch\nCtrl+K\nChange language\nSwitch Theme\nCH\nExplore\n/\nQuality content from our curated public collection\nAll\nArticles\nPodcasts\nVideos\nTweets\nWeekly Picks\nToday\nTop Rated\nDefault\nLatest\nAdvanced Filters\nClear Filters\nNo content matches these filters\n\nTry widening your filters to see more quality content\n\nWiden time range\nReset filters",
+    "title": "Explore - BestBlogs | Discover High-Quality Content That Truly Fits You",
+    "url": "https://www.bestblogs.dev/en/explore?type=article"
+  },
+  "clickToday2": {
+    "matches": 0,
+    "ok": false,
+    "text": "2"
+  },
+  "todayPage2": {
+    "articles": [],
+    "controls": [
+      {
+        "href": "https://www.bestblogs.dev/en/explore?type=article#main-content",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Skip to main content"
+      },
+      {
+        "href": "https://www.bestblogs.dev/",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "BestBlogs"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Search\nCtrl+K"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Change language"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Switch Theme"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "CH"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "All"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "true",
+        "tag": "BUTTON",
+        "text": "Articles"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Podcasts"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Videos"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Tweets"
+      },
+      {
+        "href": "",
+        "pressed": "false",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Weekly Picks"
+      },
+      {
+        "href": "",
+        "pressed": "true",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Today"
+      },
+      {
+        "href": "",
+        "pressed": "false",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Top Rated"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Default"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Latest"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Advanced Filters"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Clear Filters"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Widen time range"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Reset filters"
+      }
+    ],
+    "pageText": "Skip to main content\nBestBlogs\nSearch\nCtrl+K\nChange language\nSwitch Theme\nCH\nExplore\n/\nQuality content from our curated public collection\nAll\nArticles\nPodcasts\nVideos\nTweets\nWeekly Picks\nToday\nTop Rated\nDefault\nLatest\nAdvanced Filters\nClear Filters\nNo content matches these filters\n\nTry widening your filters to see more quality content\n\nWiden time range\nReset filters",
+    "title": "Explore - BestBlogs | Discover High-Quality Content That Truly Fits You",
+    "url": "https://www.bestblogs.dev/en/explore?type=article"
+  },
+  "clickLatest": {
+    "href": "",
+    "matches": 1,
+    "ok": true,
+    "pressed": "",
+    "selected": "",
+    "tag": "BUTTON",
+    "text": "Latest"
+  },
+  "latestPage1": {
+    "articles": [],
+    "controls": [
+      {
+        "href": "https://www.bestblogs.dev/en/explore?type=article#main-content",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Skip to main content"
+      },
+      {
+        "href": "https://www.bestblogs.dev/",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "BestBlogs"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Search\nCtrl+K"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Change language"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Switch Theme"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "CH"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "All"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "true",
+        "tag": "BUTTON",
+        "text": "Articles"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Podcasts"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Videos"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Tweets"
+      },
+      {
+        "href": "",
+        "pressed": "false",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Weekly Picks"
+      },
+      {
+        "href": "",
+        "pressed": "true",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Today"
+      },
+      {
+        "href": "",
+        "pressed": "false",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Top Rated"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Default"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Latest"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Advanced Filters"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Clear Filters"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Widen time range"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Reset filters"
+      }
+    ],
+    "pageText": "Skip to main content\nBestBlogs\nSearch\nCtrl+K\nChange language\nSwitch Theme\nCH\nExplore\n/\nQuality content from our curated public collection\nAll\nArticles\nPodcasts\nVideos\nTweets\nWeekly Picks\nToday\nTop Rated\nDefault\nLatest\nAdvanced Filters\nClear Filters\nNo content matches these filters\n\nTry widening your filters to see more quality content\n\nWiden time range\nReset filters",
+    "title": "Explore - BestBlogs | Discover High-Quality Content That Truly Fits You",
+    "url": "https://www.bestblogs.dev/en/explore?type=article"
+  },
+  "clickLatest2": {
+    "matches": 0,
+    "ok": false,
+    "text": "2"
+  },
+  "latestPage2": {
+    "articles": [],
+    "controls": [
+      {
+        "href": "https://www.bestblogs.dev/en/explore?type=article#main-content",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "Skip to main content"
+      },
+      {
+        "href": "https://www.bestblogs.dev/",
+        "pressed": "",
+        "selected": "",
+        "tag": "A",
+        "text": "BestBlogs"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Search\nCtrl+K"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Change language"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Switch Theme"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "CH"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "All"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "true",
+        "tag": "BUTTON",
+        "text": "Articles"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Podcasts"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Videos"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "false",
+        "tag": "BUTTON",
+        "text": "Tweets"
+      },
+      {
+        "href": "",
+        "pressed": "false",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Weekly Picks"
+      },
+      {
+        "href": "",
+        "pressed": "true",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Today"
+      },
+      {
+        "href": "",
+        "pressed": "false",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Top Rated"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Default"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Latest"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Advanced Filters"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Clear Filters"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Widen time range"
+      },
+      {
+        "href": "",
+        "pressed": "",
+        "selected": "",
+        "tag": "BUTTON",
+        "text": "Reset filters"
+      }
+    ],
+    "pageText": "Skip to main content\nBestBlogs\nSearch\nCtrl+K\nChange language\nSwitch Theme\nCH\nExplore\n/\nQuality content from our curated public collection\nAll\nArticles\nPodcasts\nVideos\nTweets\nWeekly Picks\nToday\nTop Rated\nDefault\nLatest\nAdvanced Filters\nClear Filters\nNo content matches these filters\n\nTry widening your filters to see more quality content\n\nWiden time range\nReset filters",
+    "title": "Explore - BestBlogs | Discover High-Quality Content That Truly Fits You",
+    "url": "https://www.bestblogs.dev/en/explore?type=article"
+  }
+}

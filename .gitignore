@@ -63,3 +63,6 @@ product/data/
 # Stray tool caches accidentally written into the repo (jadx/skylot)
 /null/
 /PowerShell 7.6.2/
+
+# Large third-party reference clones kept locally only (multi-GB, incl. binaries)
+/knowledge/raw/external/

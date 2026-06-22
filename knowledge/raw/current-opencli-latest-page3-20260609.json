@@ -1,0 +1,1598 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 3,
+    "dataList": [
+      {
+        "authors": [
+          "Leela Kumili"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://res.infoq.com/news/2026/06/pinterest-miqps-url-dedup/en/headerimage/generatedHeaderImage-1780112619618.jpg",
+        "domain": "infoq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_a3d45d78",
+        "keyQuotes": [
+          "This is the kind of problem that sounds trivial until you're operating at Pinterest scale, across millions of merchant domains with wildly different URL conventions.",
+          "MIQPS uses a data-driven approach that evaluates whether removing a query parameter changes the rendered content of a page."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "Manually maintained allowlists and denylists are impractical for the long tail of diverse URL structures, making a data-driven approach necessary.",
+            "point": "Static URL normalization rules don't scale across millions of heterogeneous domains."
+          },
+          {
+            "explanation": "By rendering pages and comparing content fingerprints with and without a parameter, the system empirically determines if a parameter affects page identity, bypassing unreliable heuristics like canonical tags.",
+            "point": "MIQPS uses content fingerprints to infer parameter importance."
+          },
+          {
+            "explanation": "Expensive page rendering and fingerprinting are done offline, while the runtime system applies the precomputed parameter importance map, balancing freshness, cost, and operational complexity.",
+            "point": "The architecture separates offline analysis from runtime processing for efficiency."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Pinterest engineers developed MIQPS, a data-driven system that uses content fingerprints to determine which URL query parameters are essential for deduplication, replacing static rules at scale.",
+        "originalTitle": "Pinterest Uses Content Fingerprints for URL Deduplication Across Millions of Domains",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 22:37:00",
+        "publishTimeStamp": 1780929420000,
+        "qualified": false,
+        "readCount": 44,
+        "readTime": 3,
+        "readUrl": "https://www.bestblogs.dev/article/a3d45d78",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f152e8",
+        "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+        "sourceName": "InfoQ",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article details Pinterest's approach to URL deduplication at scale, focusing on their Minimal Important Query Param Set (MIQPS) system. The core problem is that millions of URLs from diverse merchant and publisher domains differ only by non-essential tracking or session parameters, leading to redundant processing costs. Traditional rule-based methods using allow/denylists are not scalable for this long tail of heterogeneous domains. MIQPS solves this by taking a data-driven approach: it renders pages, generates content fingerprints, and statistically determines if removing a specific query parameter changes the page's content. If the content changes beyond a threshold, the parameter is deemed 'important' and retained; otherwise, it is removed. The system features an offline analysis pipeline for expensive rendering and evaluation, with a runtime component that applies the precomputed parameter importance map. It also includes efficiency mechanisms like early exit logic and anomaly detection to prevent incorrect parameter downgrades. The article highlights the practical trade-offs of offline computation for a problem that evolves slowly, making it a cost-effective and scalable solution for Pinterest's ingestion infrastructure.",
+        "tags": [
+          "System Design",
+          "Data Engineering",
+          "Backend Development",
+          "Scalability",
+          "URL Normalization"
+        ],
+        "title": "Pinterest Uses Content Fingerprints for URL Deduplication Across Millions of Domains",
+        "translateContent": null,
+        "url": "https://www.infoq.com/news/2026/06/pinterest-miqps-url-dedup/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "wordCount": 529
+      },
+      {
+        "authors": [
+          "Evan You"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://cf-assets.www.cloudflare.com/zkvhlag99gkb/77PFBBDzFzIVtsPi4GXm5g/ea71873167012a47518dc593033032c6/BLOG-VOID_OG.png",
+        "domain": "blog.cloudflare.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_73900a47",
+        "keyQuotes": [
+          "Vite, Vitest, Rolldown, Oxc, and Vite+ will stay open source, vendor-agnostic, and community-driven. Nothing about that changes.",
+          "We are not moving Vite in the direction of Cloudflare. We are doing the opposite: moving Cloudflare's application tooling onto Vite.",
+          "If we do this right, the Cloudflare CLI should feel like Vite, not like a separate thing bolted on next to Vite.",
+          "Vite keeps being Vite. Cloudflare gets to help."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "The acquisition ensures Vite, Vitest, Rolldown, and Oxc stay MIT-licensed, community-driven, and portable across any platform, not just Cloudflare.",
+            "point": "VoidZero and its projects join Cloudflare, but remain open source and vendor-neutral."
+          },
+          {
+            "explanation": "The new `cf` CLI will be a superset of Vite's commands, integrating Cloudflare's platform while preserving the standard Vite workflow for developers.",
+            "point": "Cloudflare will build its developer platform on top of Vite, not the other way around."
+          },
+          {
+            "explanation": "Fast feedback loops from Vite, Vitest, and Oxlint are essential for AI agents that iterate rapidly, making the VoidZero toolchain a natural foundation for AI-coded applications.",
+            "point": "The Vite toolchain is becoming critical for AI-generated code and agent-driven development."
+          },
+          {
+            "explanation": "Future Vite versions will include first-class abstractions for backends, APIs, and deployment, allowing any provider to implement them, while Cloudflare will offer a first-class implementation on Workers.",
+            "point": "Vite is evolving into a full-stack application foundation with provider-agnostic primitives."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "VoidZero, the company behind Vite, Vitest, Rolldown, and Oxc, is joining Cloudflare, with a commitment to keep all projects open source, vendor-agnostic, and community-driven.",
+        "originalTitle": "VoidZero is joining Cloudflare",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-04",
+        "publishDateTimeStr": "2026-06-04 21:59:01",
+        "publishTimeStamp": 1780581541000,
+        "qualified": false,
+        "readCount": 41,
+        "readTime": 8,
+        "readUrl": "https://www.bestblogs.dev/article/73900a47",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_903ae3",
+        "sourceImage": "https://image.jido.dev/20260527050243_favicon.png",
+        "sourceName": "The Cloudflare Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article announces that VoidZero, the team behind the foundational JavaScript toolchain including Vite, Vitest, Rolldown, and Oxc, is joining Cloudflare. The core message is that all projects will remain MIT-licensed, open source, vendor-agnostic, and community-driven. Cloudflare commits engineering resources and a $1 million Vite ecosystem fund. The article details the existing collaboration on the Vite Environment API and Cloudflare Vite plugin, and outlines a future where Vite becomes a full-stack foundation for modern applications, including AI-agent-coded ones. Cloudflare plans to build its own developer tooling (like the new `cf` CLI) on top of Vite, rather than moving Vite towards Cloudflare. The long-term vision includes open-sourcing the Void platform and adding provider-agnostic primitives for full-stack apps and agents to Vite itself.",
+        "tags": [
+          "Vite",
+          "JavaScript",
+          "Open Source",
+          "Cloudflare",
+          "Developer Tools"
+        ],
+        "title": "VoidZero is joining Cloudflare",
+        "translateContent": null,
+        "url": "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+        "wordCount": 1906
+      },
+      {
+        "authors": [
+          "Erick Lachmann",
+          "Pimenta de Freitas Cardoso"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots.png",
+        "domain": "huggingface.co",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_a46ae128",
+        "keyQuotes": [
+          "A model capable of performing a structured task is also capable of failing at it in characteristic ways. Those failures... are not noise to filter. They are the most informative negative signal available.",
+          "SFT closes the distance between the model's prior distribution and the task domain. What it does not do is target degeneration as an objective—its effect on the failure mode is incidental, and the benchmark results show it is not consistent.",
+          "The DharmaOCR result does not depend on the domain being special. It depends on the failures being useful.",
+          "What makes a failure mode usable as training signal is not the domain—it is whether the failures are consistent enough, identifiable enough, and numerous enough to constitute a legible signal."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Supervised fine-tuning moves the model closer to the task domain but does not explicitly penalize repetition loops. The degeneration attractor is a systems-level failure of the learned distribution, not a decoding artifact that SFT's objective can reliably correct.",
+            "point": "SFT has a structural ceiling for reducing text degeneration because it optimizes token-level likelihood, not completion-level failure."
+          },
+          {
+            "explanation": "The DharmaOCR pipeline deliberately retained outputs displaying text degeneration as the rejected examples in preference pairs. This 'preference-guided implicit unlikelihood' approach trains the model away from a specific, identifiable failure geometry that SFT cannot target.",
+            "point": "A model's own degenerate outputs are the most informative negative signal for DPO, not noise to be filtered."
+          },
+          {
+            "explanation": "The result held across architectures, parameter scales, and starting degeneration rates that differed by more than an order of magnitude. No model family showed an increase after DPO, confirming the direction of the intervention is invariant.",
+            "point": "DPO after SFT consistently reduced degeneration across five different model families, with an average reduction of 59.4%."
+          },
+          {
+            "explanation": "The failure mode must be categorically identifiable (not just a point on a quality continuum), reliably scoreable by an automated mechanism, and sufficiently numerous to generate a meaningful preference dataset. These conditions determine applicability, not the domain itself.",
+            "point": "The approach is transferable to other domains if three structural conditions are met."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article demonstrates how Direct Preference Optimization (DPO), applied after supervised fine-tuning (SFT) and using a model's own degenerate outputs as rejection pairs, consistently reduces text degeneration in structured OCR tasks across multiple model families.",
+        "originalTitle": "Direct Preference Optimization Beyond Chatbots",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 21:01:52",
+        "publishTimeStamp": 1780491712000,
+        "qualified": false,
+        "readCount": 41,
+        "readTime": 11,
+        "readUrl": "https://www.bestblogs.dev/article/a46ae128",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_19153d",
+        "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+        "sourceName": "Hugging Face - Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article presents a detailed methodology and empirical results from the DharmaOCR project, showing that DPO can be effectively used beyond its typical chat alignment context to mitigate a specific production failure mode: text degeneration. The key insight is that a model's own failures—specifically, outputs that enter a self-reinforcing repetition loop—are not noise to be filtered out, but the most informative negative training signal available. The authors explain why SFT alone has a structural ceiling for reducing degeneration: it optimizes token-level likelihood and does not penalize completion-level failures. DPO, by operating on full preference pairs (chosen vs. rejected outputs), directly targets the distributional geometry that causes the attractor state. The paper reports results across five different vision-language model families, showing an average degeneration reduction of 59.4% (range 37.3% to 87.6%) after a DPO stage, with no model family showing an increase. The article also discusses the three structural conditions required for this approach to be transferable to other domains: a categorically identifiable failure mode, a reliable automated scoring mechanism, and sufficient inference volume to generate a preference dataset.",
+        "tags": [
+          "LLM",
+          "DPO",
+          "Model Training",
+          "Text Degeneration",
+          "OCR"
+        ],
+        "title": "Direct Preference Optimization Beyond Chatbots",
+        "translateContent": null,
+        "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+        "wordCount": 2711
+      },
+      {
+        "authors": [
+          "Tara Bogavelli",
+          "Gabrielle Gauthier Melancon",
+          "Katrina Stankiewicz",
+          "Nifemi Bamgbose",
+          "Fanny Riols",
+          "Hoang Nguyen",
+          "Raghav Mehndiratta",
+          "Lindsay Brin",
+          "Hari Subramani",
+          "Anil Madamala"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/eva-bench-data.png",
+        "domain": "huggingface.co",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_f4bf8cb2",
+        "keyQuotes": [
+          "Together they span 213 evaluation scenarios across 121 tools, a roughly 4x increase in scenario coverage from our original release.",
+          "Reproducibility requires that the user simulator behaves the same way every time a scenario is run. A vague statement of intent does not achieve this.",
+          "Joint generation is essential because these three components are deeply interdependent. Independent generation would introduce silent inconsistencies."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The benchmark now covers Airline CSM (50), ITSM (80), and Healthcare HRSD (83) scenarios, testing agent adaptability to diverse vocabularies, workflows, and policies.",
+            "point": "EVA-Bench 2.0 scales to 213 scenarios across 3 enterprise domains, a 4x increase."
+          },
+          {
+            "explanation": "The SyGra pipeline produces three interdependent components together, preventing silent inconsistencies. The user goal is a decision tree, not a vague intent, ensuring consistent simulator behavior.",
+            "point": "Joint generation of user goal, database, and ground truth ensures reproducibility."
+          },
+          {
+            "explanation": "Validation includes structural checks, LLM-based consistency checks, and trace verification. A final pass with three frontier models ensures all scenarios are solvable by at least one model.",
+            "point": "Rigorous multi-stage validation eliminates ambiguous or unsolvable scenarios."
+          },
+          {
+            "explanation": "ITSM focuses on complex policy hierarchies and multi-step troubleshooting, while Healthcare HRSD introduces domain-specific terminology (NPI, FMLA) and strict compliance requirements.",
+            "point": "New domains target distinct failure modes for voice agents."
+          },
+          {
+            "explanation": "The upcoming extension adapts not just language but also localized names, locations, and phone numbers to provide an authentic experience in each target language and culture.",
+            "point": "Multilingual support is being added for realistic cross-language evaluation."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "EVA-Bench Data 2.0 expands its enterprise voice agent benchmark to three domains (Airline CSM, ITSM, Healthcare HRSD) with 213 scenarios across 121 tools, detailing a rigorous joint generation and validation process for reproducible evaluation.",
+        "originalTitle": "EVA-Bench Data 2.0: 3 Domains， 121 Tools， 213 Scenarios",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-04",
+        "publishDateTimeStr": "2026-06-04 20:24:58",
+        "publishTimeStamp": 1780575898000,
+        "qualified": false,
+        "readCount": 40,
+        "readTime": 8,
+        "readUrl": "https://www.bestblogs.dev/article/f4bf8cb2",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_19153d",
+        "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+        "sourceName": "Hugging Face - Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article announces the release of EVA-Bench Data 2.0, a significant expansion of the enterprise voice agent benchmark. It introduces two new domains—Enterprise IT Service Management (ITSM) and Healthcare HR Service Delivery (HRSD)—alongside the original Airline Customer Service Management (CSM), totaling 213 evaluation scenarios across 121 tools. The post details five core design principles: voice-first scope, realism, variety, authentication, and reproducibility. It explains the joint generation process using the SyGra pipeline, which creates three interdependent components (user goal, initial database, expected final state) in a single pass to ensure consistency. A multi-stage validation loop, including structural checks, LLM-based consistency checks, and trace verification, is described. The article also covers manual review and a final frontier model validation pass. Deep dives into the ITSM and HRSD domains highlight their unique challenges, such as complex policy hierarchies and domain-specific terminology. Finally, it previews upcoming multilingual support, adapting scenarios for languages like French with localized names, locations, and phone numbers. The dataset, evaluation framework, and leaderboard are all open-source.",
+        "tags": [
+          "LLM",
+          "AI Agent",
+          "Voice Agent",
+          "Benchmark",
+          "Enterprise AI"
+        ],
+        "title": "EVA-Bench Data 2.0: 3 Domains， 121 Tools， 213 Scenarios",
+        "translateContent": null,
+        "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+        "wordCount": 1793
+      },
+      {
+        "authors": [
+          "Cal Newport"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://media.newyorker.com/photos/6a21ec086ed95760b052112d/16:9/w_1280,c_limit/NEW-YORKER_AI-WORK_ShiraInbar_1920x1080_Still.png",
+        "domain": "newyorker.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_ef09fc8f",
+        "keyQuotes": [
+          "Proponents and critics of artificial intelligence often compare the technology to industrial automation... really, it's more like an intern.",
+          "Turns out, A.I. was assisting these small businesses in roughly the same way that my teen-age self had helped that consulting company---by hacking together whatever was useful.",
+          "The percentage of my time spent on more cognitively demanding and interesting things is probably up somewhat."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "Newport argues that comparing AI to industrial automation (like the power loom) is misleading. Instead, AI functions more like an intern or a junior programmer, creating bespoke tools that augment human work rather than replacing entire job categories.",
+            "point": "The automation analogy for AI is fundamentally flawed."
+          },
+          {
+            "explanation": "The ability to 'vibe-code' custom software with AI echoes the 1970s promise of BASIC, where users could write their own programs. This trend is reversing the dominance of mass-market software, allowing individuals and small businesses to create hyper-specific tools for their unique needs.",
+            "point": "AI is enabling a return to the original vision of personal, custom computing."
+          },
+          {
+            "explanation": "Consultant Taylor Pearson's concept of 'freestyle work' involves using AI agents as collaborative partners to handle complex, multi-step tasks. This approach doesn't replace the human but elevates their role, allowing them to focus on more cognitively demanding and interesting aspects of their work.",
+            "point": "'Freestyle work' represents a new paradigm of human-AI collaboration."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article argues that AI is not primarily a job-replacing automation technology, but rather a tool that empowers workers to create bespoke, intern-like software, transforming their roles instead of eliminating them.",
+        "originalTitle": "Instead of Taking Your Job， A.I. Might Transform It",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-06",
+        "publishDateTimeStr": "2026-06-06 00:24:36",
+        "publishTimeStamp": 1780676676000,
+        "qualified": false,
+        "readCount": 36,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/ef09fc8f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_7d7c4977",
+        "sourceImage": "https://image.jido.dev/20260603215201_dc41295",
+        "sourceName": "The New Yorker",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Cal Newport, writing for The New Yorker, challenges the dominant narrative that AI will automate white-collar jobs en masse. He argues that the automation analogy is flawed and that AI is better understood as a versatile tool for creating custom, 'vibe-coded' software—much like a helpful intern. The article grounds this thesis in real-world examples: a journalism nonprofit CEO who built a tool to summarize articles and suggest story angles, and a shipping-logistics company that automated 80% of a tedious payment-matching task. Newport connects this trend to the original vision of personal computing, where users were meant to write their own programs in BASIC, a vision that was largely abandoned with the rise of commercial software. He introduces the concept of 'freestyle work' from consultant Taylor Pearson, who uses AI agents like Claude Code not to replace his judgment but to augment his research and decision-making on complex tasks, from comparing HVAC quotes to analyzing ETFs. The article concludes that while AI is transforming work and making it 'weirder,' it is not leading to the predicted workforce hollowing out.",
+        "tags": [
+          "AI",
+          "Future of Work",
+          "AI Agents",
+          "Vibe Coding",
+          "Business Strategy"
+        ],
+        "title": "Instead of Taking Your Job， A.I. Might Transform It",
+        "translateContent": null,
+        "url": "https://www.newyorker.com/culture/open-questions/instead-of-taking-your-job-ai-might-transform-it",
+        "wordCount": 2189
+      },
+      {
+        "authors": [
+          "Analytics DeepLearning.AI"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://charonhub.deeplearning.ai/content/images/2026/06/2026.06.05-LETTER.webp",
+        "domain": "deeplearning.ai",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_2baac995",
+        "keyQuotes": [
+          "We're saddened by Alibaba's turn toward closed weights, but we're pleased that it's keeping its lower tiers open.",
+          "A whale of an opportunity awaits AI builders who combine advances in sensors with deep domain knowledge and workflow integration!",
+          "We place a high value on openness. The benefits of AI should be available to all to the greatest extent possible.",
+          "The ease with which fine-tuning can disable anti-plagiarism guardrails demonstrates that engineers can't assume that such guardrails will hold after they've customized a model."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The model excels in reasoning and speed, ranking seventh on the Artificial Analysis Intelligence Index and third in output speed. Its agentic capabilities are touted but not yet independently verified.",
+            "point": "Qwen3.7-Max is Alibaba's most capable closed-source LLM, ranking highly in speed and intelligence."
+          },
+          {
+            "explanation": "The system detects whale heat signatures, alerts human experts for validation within 30 seconds, and notifies ships. It has logged thousands of whales in the San Francisco Bay, addressing a critical conservation issue.",
+            "point": "WhaleSpotter uses AI-powered thermal cameras to prevent ship-whale collisions in real-time."
+          },
+          {
+            "explanation": "This network uses tactics like stolen credit cards and account farms to offer access at a fraction of the cost, but risks include model substitution, data theft, and enabling industrial-scale distillation.",
+            "point": "A gray market of proxy servers provides Chinese developers with cheap, often illicit access to U.S. AI models."
+          },
+          {
+            "explanation": "Researchers showed that fine-tuning models to expand plot summaries led to up to 90% verbatim reproduction of copyrighted book paragraphs, demonstrating that alignment guardrails are brittle and easily bypassed.",
+            "point": "Fine-tuning LLMs on a text-expansion task can break copyright alignment, causing them to regurgitate training data."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This issue of The Batch covers Alibaba's Qwen3.7-Max model, an AI system for preventing whale-ship collisions, the gray market for LLM access in China, and research showing fine-tuning can break copyright alignment.",
+        "originalTitle": "Qwen3.7-Max Challenges Google for Third Place， AI Saves Whales， Fine-Tuning Breaks Copyright Alignment",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-05",
+        "publishDateTimeStr": "2026-06-05 15:00:24",
+        "publishTimeStamp": 1780642824000,
+        "qualified": false,
+        "readCount": 34,
+        "readTime": 15,
+        "readUrl": "https://www.bestblogs.dev/article/2baac995",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_cd481f",
+        "sourceImage": "https://image.jido.dev/20260527045454_site-meta.png",
+        "sourceName": "The Batch | DeepLearning.AI",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This issue of The Batch, DeepLearning.AI's weekly newsletter, features four main stories. First, Alibaba's Qwen3.7-Max is a powerful new closed-source LLM that ranks among the top Chinese models and is notably fast, though its agentic claims are unverified. Second, WhaleSpotter uses thermal cameras and AI to detect gray whales in real-time, helping ships avoid collisions in the San Francisco Bay. Third, a report from ChinaTalk details a gray market of proxy servers that provide Chinese developers with cheap, often illicit access to U.S. AI models, raising concerns about security and model distillation. Finally, research from Stony Brook University shows that fine-tuning LLMs on a seemingly benign task like expanding plot summaries can cause them to regurgitate large portions of their copyrighted training data, breaking alignment guardrails. The issue opens with a letter from Andrew Ng analyzing the recent White House executive order on AI and cybersecurity, arguing it strikes a reasonable balance between promoting innovation and addressing security risks.",
+        "tags": [
+          "LLM",
+          "AI Agent",
+          "AI Safety",
+          "AI Regulation",
+          "Model Training"
+        ],
+        "title": "Qwen3.7-Max Challenges Google for Third Place， AI Saves Whales， Fine-Tuning Breaks Copyright Alignment",
+        "translateContent": null,
+        "url": "https://www.deeplearning.ai/the-batch/issue-356",
+        "wordCount": 3543
+      },
+      {
+        "authors": [
+          "Maryam Motamedi",
+          "Adi- margolin",
+          "Francesco",
+          "Myungjong Kim",
+          "Enas Albasiri"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/fine-tuning-nemotron-35-asr.png",
+        "domain": "huggingface.co",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_328e8914",
+        "keyQuotes": [
+          "The model uses a Cache-Aware FastConformer-RNNT architecture that streams audio without the redundant recomputation that makes most streaming ASR slow --- so you get low latency *and* high accuracy, not one at the expense of the other.",
+          "Fine-tuning is transformative for under-resourced languages --- the biggest wins came where the base model was weakest.",
+          "Evaluate at deployment latency, on held-out data. Training-set scores flatter you; a separate test set at 0 ms look-ahead tells the truth."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "This eliminates the need to stitch together multiple models or vendor APIs, simplifying infrastructure and reducing complexity.",
+            "point": "Nemotron 3.5 ASR solves the polyglot tax by using a single model for 40 language-locales."
+          },
+          {
+            "explanation": "By caching internal states, the model avoids redundant recomputation, enabling true streaming with minimal delay and high accuracy.",
+            "point": "Its Cache-Aware FastConformer architecture achieves low latency without sacrificing accuracy."
+          },
+          {
+            "explanation": "A worked example on Greek and Bulgarian shows 31-32% relative WER improvement after fine-tuning with a few thousand hours of targeted data.",
+            "point": "Fine-tuning is transformative for under-resourced languages and specialized domains."
+          },
+          {
+            "explanation": "The article provides a clear five-step workflow (data, train, evaluate, scale, deploy) with a companion GitHub repo containing exact commands and configs.",
+            "point": "The fine-tuning recipe is practical and reproducible."
+          },
+          {
+            "explanation": "The authors emphasize measuring on held-out data at the target latency and using replay data to avoid degrading performance on other languages.",
+            "point": "Key lessons include evaluating at deployment latency and protecting other languages during fine-tuning."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article introduces NVIDIA's Nemotron 3.5 ASR, a 600M-parameter streaming multilingual speech-to-text model, and provides a detailed, practical guide on how to fine-tune it for specific languages, domains, or accents.",
+        "originalTitle": "How to Fine-Tune Nemotron 3.5 ASR for Your Language， Domain， or Accent",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-04",
+        "publishDateTimeStr": "2026-06-04 20:59:35",
+        "publishTimeStamp": 1780577975000,
+        "qualified": false,
+        "readCount": 33,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/328e8914",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_19153d",
+        "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+        "sourceName": "Hugging Face - Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article presents NVIDIA's Nemotron 3.5 ASR, a 600M-parameter streaming multilingual speech-to-text model that transcribes 40 language-locales in real time with built-in punctuation and capitalization. It addresses common pain points in multilingual ASR, such as the need for multiple models, the streaming-vs-accuracy tradeoff, and post-processing pipelines. The model uses a Cache-Aware FastConformer-RNNT architecture for low-latency streaming without accuracy loss. The second half of the article provides a step-by-step guide to fine-tuning the model, covering data preparation, training, evaluation, and deployment. A worked example on Greek and Bulgarian shows significant Word Error Rate reductions (32% and 31% respectively) after fine-tuning with a few thousand hours of data. The article concludes with use cases like voice agents, live multilingual captions, and call-center analytics.",
+        "tags": [
+          "ASR",
+          "LLM",
+          "Multilingual AI",
+          "Fine-Tuning",
+          "NVIDIA NeMo"
+        ],
+        "title": "How to Fine-Tune Nemotron 3.5 ASR for Your Language， Domain， or Accent",
+        "translateContent": null,
+        "url": "https://huggingface.co/blog/nvidia/fine-tuning-nemotron-35-asr",
+        "wordCount": 2020
+      },
+      {
+        "authors": [
+          "腾讯科技"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_bc428178",
+        "keyQuotes": [
+          "The fall of a single rocket is redrawing the entire landscape of the commercial space industry.",
+          "In the commercial space industry, the reliability of launch capability is itself a core valuation variable.",
+          "The explosion took only tens of seconds, but cleaning up the mess could take years."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "The accident occurred during a static fire test. The rocket, fully fueled, exploded, not only destroying the vehicle but also severely damaging the ground launch infrastructure. NASA's administrator estimates it will take until 2028 to restore the launch pad, leaving Blue Origin with no means to launch.",
+            "point": "Blue Origin's only launch pad was destroyed, preventing it from launching the New Glenn rocket for the next two to three years."
+          },
+          {
+            "explanation": "Blue Origin's Blue Moon lander depends on the New Glenn for launch. The destruction of the launch pad effectively removes Blue Origin from the competition for the Artemis III mission. NASA's lunar program is now left to bet on SpaceX's Starship, which itself faces technical challenges and a grounding investigation.",
+            "point": "The accident severely impacts NASA's return-to-the-moon plan and may force it to rely solely on SpaceX."
+          },
+          {
+            "explanation": "About 30% of Amazon's satellites are tied to launch contracts with New Glenn, and the FCC's deployment deadline is approaching. Although Amazon says it will adjust its launch plans, the reality is that the gap is enormous, and it will almost certainly need to request an extension.",
+            "point": "Amazon's satellite deployment plan is severely impacted, with approximately 30% of its satellites facing delays."
+          },
+          {
+            "explanation": "SpaceX is about to go public with a $1.75 trillion valuation. Its business covers rocket launches, Starlink, defense contracts, and AI data center leases, providing diverse revenue streams. In contrast, Blue Origin's over-reliance on a single rocket and launch pad exposed a critical single-point-of-failure risk.",
+            "point": "SpaceX has an \"unexpected win\" from the accident, with its diversified business model highlighting its resilience."
+          },
+          {
+            "explanation": "AST SpaceMobile's stock price plummeted due to its dependence on Blue Origin. The market's pricing logic is clear: in the commercial space industry, the reliability of launch capability is itself a core valuation variable. Blue Origin's accident has fully priced in this single-point-of-failure risk.",
+            "point": "The capital market is re-evaluating commercial space valuations, with launch reliability becoming a core variable."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Blue Origin's New Glenn rocket exploded during a static fire test, destroying its only launch pad and rendering it unable to launch for the next two to three years, severely impacting its own business, NASA's lunar plans, Amazon's satellite deployment, and highlighting SpaceX's monopoly in commercial spaceflight.",
+        "originalTitle": "蓝色起源炸掉的，不只是一枚火箭",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 12:00:00",
+        "publishTimeStamp": 1780459200000,
+        "qualified": false,
+        "readCount": 28,
+        "readTime": 18,
+        "readUrl": "https://www.bestblogs.dev/article/bc428178",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b475c7",
+        "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "sourceName": "腾讯科技",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article provides a detailed report on the explosion of Blue Origin's New Glenn rocket during a static fire test on May 28, 2026, and analyzes its cascading impact on Blue Origin, NASA, Amazon, and the entire commercial space industry. The accident destroyed Blue Origin's only launch pad, which is not expected to be operational again until 2028, grounding its heavy-lift rocket for an extended period. This directly impacts NASA's backup plan for the Artemis return-to-the-moon program, forces delays for approximately 30% of Amazon's satellite deployment, and caused a sharp drop in the stock price of AST SpaceMobile, which relies on Blue Origin for launches. The article contrasts this with SpaceX's \"unexpected win,\" noting its upcoming IPO at a $1.75 trillion valuation and its diversified revenue streams from Starlink, defense contracts, and AI data center leases, which create a formidable moat. Finally, it re-evaluates the valuation logic for commercial space companies from a capital market perspective, emphasizing the importance of launch reliability and single-point-of-failure risk.",
+        "tags": [
+          "Commercial Space",
+          "Tech News",
+          "Industry Trends",
+          "Space Exploration",
+          "Venture Capital"
+        ],
+        "title": "Blue Origin's Explosion Was More Than Just a Rocket",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691568880&idx=1&sn=b9dec3d865272832b17d4d9937aad0ea",
+        "wordCount": 4427
+      },
+      {
+        "authors": [
+          "Martin Fowler"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://martinfowler.com/logo-sq.png",
+        "domain": "martinfowler.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3e145d04",
+        "keyQuotes": [
+          "In a degraded codebase, the model does not see 'technical debt' as debt. It sees examples. It sees precedent. It sees a style to continue.",
+          "The cost of building has collapsed, but the cost of aligning organisationally has not. If anything, it's gone up.",
+          "Spawning agents is not the skill. Anyone can run 20. The real skill is designing the system around the one serial resource that cannot be cloned or parallelized. That resource is your attention.",
+          "Publishing a report online is essentially a form of data injection into the pool of knowledge that is the internet. When the report includes fake information... it can 'poison the well' by misleading future researchers.",
+          "The productivity gains from AI got captured by output volume rather than output quality. The org's expectations rose to absorb the speed-up, and the slack that used to exist between tasks, the unstructured time where strategic thinking actually happens, got eaten first because it's invisible on a dashboard."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Greg Wilson lists common flawed metrics like lines of code or developer surveys. Fowler agrees that productivity is inherently unmeasurable, but argues that asking developers for their feelings, while weak, is often the best available signal in a world of poor quantitative measures.",
+            "point": "Measuring AI's impact on developer productivity is fundamentally flawed, but qualitative metrics can still offer some value."
+          },
+          {
+            "explanation": "Benedict Evans points out that despite a century of automating accounting, the number of accountants grew. The Jevons paradox (cheaper things increase demand) and the fundamental transformation of job roles make it nearly impossible to predict AI's effect on employment.",
+            "point": "Historical automation of professions like accounting did not eliminate jobs but transformed them, making AI job impact forecasts highly uncertain."
+          },
+          {
+            "explanation": "Stephen O'Grady's analysis shows that while closed models lead in innovation, open models are closing the gap much faster than before. What is frontier today quickly becomes table stakes, suggesting no sustainable competitive advantage from model capability alone.",
+            "point": "Open AI models are catching up to closed models at an accelerating pace, eroding any capability moat."
+          },
+          {
+            "explanation": "GPTZero's investigation found over half the references in an Ernst & Young report were hallucinations. Jason Koebler describes the 'Zombie Internet' where humans must write defensively to avoid being mistaken for AI, leading to a pervasive sense of distrust and mental fatigue.",
+            "point": "AI-generated slop, including hallucinated citations, is poisoning the internet's knowledge base and causing psychological harm to human readers."
+          },
+          {
+            "explanation": "Andy Osmani argues that while you can spawn many AI agents, any task requiring genuine human understanding (e.g., resolving merge conflicts) must acquire the 'lock' of your attention. The real skill is designing workflows that minimize this bottleneck.",
+            "point": "The human developer is the bottleneck in multi-agent workflows, analogous to Python's Global Interpreter Lock (GIL)."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Martin Fowler's June 2026 fragments explore the flawed metrics for AI productivity, the historical resilience of jobs to automation, the narrowing gap between open and closed AI models, the dangers of hallucinated citations, the use of AI for security defense, the concept of generative debt, the psychological toll of AI slop, the human bottleneck in multi-agent workflows, and the organizational cost of AI-driven speed.",
+        "originalTitle": "Fragments: June  2",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-02",
+        "publishDateTimeStr": "2026-06-02 17:21:00",
+        "publishTimeStamp": 1780392060000,
+        "qualified": false,
+        "readCount": 22,
+        "readTime": 8,
+        "readUrl": "https://www.bestblogs.dev/article/3e145d04",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_913551",
+        "sourceImage": "https://image.jido.dev/20260602012138_1c6a554",
+        "sourceName": "Martin Fowler",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This collection of short essays by Martin Fowler covers a wide range of topics at the intersection of AI and software engineering. Greg Wilson's critique of dodgy AI productivity metrics is discussed, with Fowler adding his own perspective that while flawed, qualitative self-assessments can still be useful. Benedict Evans' historical analysis argues that automation has not eliminated professions like accounting, but changed their nature, making job impact forecasts for AI highly uncertain. Stephen O'Grady's data shows open models are catching up to closed ones faster, with no clear capability moats. A GPTZero investigation reveals hallucinated citations in an Ernst & Young report, highlighting the risk of poisoning the internet's knowledge pool. Mozilla's use of AI to find 423 security bugs in Firefox in a single month demonstrates AI's defensive potential. Pavel Voronin introduces the concept of 'generative debt,' where LLMs amplify existing codebase cruft. Jason Koebler's essay on the 'Zombie Internet' describes the psychological damage of AI slop. Andy Osmani uses the Python GIL as a metaphor for the human bottleneck in multi-agent workflows. Finally, Jamie Hurst from Booking.com provides a realistic account of how AI's productivity gains are captured by output volume, eroding time for mentoring and strategic thinking.",
+        "tags": [
+          "AI Productivity",
+          "AI and Jobs",
+          "Open Source AI",
+          "AI Hallucinations",
+          "AI Security"
+        ],
+        "title": "Fragments: June  2",
+        "translateContent": null,
+        "url": "https://martinfowler.com/fragments/2026-06-02.html",
+        "wordCount": 1821
+      },
+      {
+        "authors": [
+          "Claude Blog"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg",
+        "domain": "claude.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_b99d7cb3",
+        "keyQuotes": [
+          "The difference between a mediocre Claude Cowork output and a great one is almost never your prompt, but whether you're providing enough rich context for Claude to work with.",
+          "Chat is for when the output is a thought in your head, and Claude Cowork is for when the output is something you'll hand to someone else.",
+          "The thinking lives at the start (deciding what you want) and the end (deciding if it's right). Everything in between (extract, compile, reconcile, and reformat) is what you hand off."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Unlike chat, which is for questions and brainstorming, Claude Cowork is for tasks like creating reports, updating spreadsheets, or building presentations, where the output is a file or completed work.",
+            "point": "Claude Cowork is designed for non-technical knowledge workers to delegate multi-step tasks that produce a deliverable."
+          },
+          {
+            "explanation": "This five-ingredient checklist helps users identify which of their repetitive, tedious tasks can be effectively automated and delegated to an AI agent.",
+            "point": "The best tasks for Claude Cowork have multiple inputs, produce a file, are recurring, have a known definition of 'good,' and have a boring middle process."
+          },
+          {
+            "explanation": "The quality of the output is less about the prompt and more about the context provided. Having Claude ask questions upfront prevents costly rework and ensures alignment.",
+            "point": "Providing rich context and making Claude ask clarifying questions before starting are the most impactful habits for success."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides a practical framework for non-technical knowledge workers to adopt Claude Cowork, distinguishing it from Chat and Claude Code, and sharing real-world workflows from the author's experience at Anthropic.",
+        "originalTitle": "Best practices for getting started with Claude Cowork | Claude",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 00:00:00",
+        "publishTimeStamp": 1780416000000,
+        "qualified": false,
+        "readCount": 20,
+        "readTime": 8,
+        "readUrl": "https://www.bestblogs.dev/article/b99d7cb3",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_154bc38a",
+        "sourceImage": "https://image.jido.dev/20260527052105_689f4a9aff1f63fde75cf733_favicon.png",
+        "sourceName": "Claude Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Written by Austin Lau, a growth marketer at Anthropic, this article serves as a practical guide for non-technical knowledge workers to get started with Claude Cowork. It clearly delineates the use cases for Claude Chat (for questions, brainstorming, and quick answers) versus Claude Cowork (for multi-step tasks that produce a deliverable like a report, deck, or spreadsheet). The author introduces a five-ingredient checklist to identify tasks suitable for delegation to Claude Cowork: multiple inputs, a file output, recurrence, a known definition of 'good,' and a boring middle process. The article then details three real-world workflows from the author's own work: a daily briefing that summarizes Slack and email, a budget pacing dashboard for performance marketing, and an automated reporting workflow connected to Google Search Console. It concludes with a step-by-step guide for the first 10 minutes of use, emphasizing the importance of providing rich context and making Claude ask clarifying questions before starting a task.",
+        "tags": [
+          "AI Agent",
+          "AI Product & Application",
+          "Productivity",
+          "AI Workflow",
+          "Claude Cowork"
+        ],
+        "title": "Best practices for getting started with Claude Cowork | Claude",
+        "translateContent": null,
+        "url": "https://claude.com/blog/best-practices-for-getting-started-with-claude-cowork",
+        "wordCount": 1892
+      },
+      {
+        "authors": [
+          "Pranav Bhasker"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://res.infoq.com/articles/spark-oom-kubernetes-misconfigurations/en/headerimage/spark-oom-kubernetes-misconfigurations-header-1780044756757.jpg",
+        "domain": "infoq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_72544a86",
+        "keyQuotes": [
+          "The eventual root cause was not a Spark configuration issue at all. Instead, two infrastructure-level settings introduced during the migration interacted in an unexpected way.",
+          "Alone, each factor was manageable... Together, all executors were forced onto one node while their shuffle spill consumed node RAM instead of disk, which rapidly exhausted memory under load and triggered repeated OOM kills.",
+          "Cloud migrations do not just move workloads; they also change the infrastructure contract those workloads depend on."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "RAM-backed scratch dirs (`spark.kubernetes.local.dirs.tmpfs=true`) and a hard `podAffinity` rule forced all executors onto one node, concentrating shuffle spill in node RAM and exhausting memory.",
+            "point": "Two compounded infrastructure misconfigurations caused the OOM failures, not Spark tuning issues."
+          },
+          {
+            "explanation": "Smaller test runs did not generate enough shuffle data to trigger the catastrophic interaction between colocation and RAM-backed spill, giving a false signal of stability.",
+            "point": "The problem only surfaced under production-scale load, evading pre-migration testing."
+          },
+          {
+            "explanation": "Replacing hard affinity with preferred anti-affinity spread executors across nodes, disabling tmpfs and increasing volume sizes allowed disk-backed spill, and validating node memory headroom ensured safe operation.",
+            "point": "The fix required three coordinated changes: scheduling, storage, and validation."
+          },
+          {
+            "explanation": "On-premises configurations for scheduler constraints and storage semantics were not carried over, highlighting the need for explicit audit checklists during migration.",
+            "point": "Cloud migrations change the infrastructure contract; configuration parity is critical."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article investigates repeated Spark executor OOM failures on Kubernetes after a cloud migration, tracing the root cause to two compounded infrastructure misconfigurations: RAM-backed local scratch directories and a hard podAffinity rule forcing executor colocation.",
+        "originalTitle": "Two Misconfigurations That Caused Spark OOM Failures on Kubernetes",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 17:00:00",
+        "publishTimeStamp": 1780477200000,
+        "qualified": false,
+        "readCount": 15,
+        "readTime": 14,
+        "readUrl": "https://www.bestblogs.dev/article/72544a86",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f152e8",
+        "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+        "sourceName": "InfoQ",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article documents a real-world incident where a Spark batch pipeline, stable for years on-premises, began experiencing daily executor OOM failures after migrating to Azure Kubernetes Service (AKS). The author details a systematic investigation that ruled out common Spark tuning issues like heap undersizing and data skew. The root cause was traced to two compounded infrastructure misconfigurations introduced during the lift-and-shift migration: setting `spark.kubernetes.local.dirs.tmpfs=true`, which backed shuffle spill directories with node RAM instead of disk, and a hard `podAffinity` rule that forced all four executors onto a single 64GB node. This combination concentrated memory pressure, causing the kernel OOM killer to terminate executors during shuffle-heavy stages. The article provides a step-by-step timeline of the investigation, a clear root cause analysis explaining the compounding effect, and the specific fixes applied: disabling tmpfs, increasing scratch volume sizes from 1Gi to 10Gi, and replacing the hard affinity rule with a preferred podAntiAffinity. The resolution resulted in zero OOM incidents over six months. The article concludes with a practical OOM prevention checklist for Spark-on-Kubernetes deployments and discusses broader implications for cloud migrations.",
+        "tags": [
+          "Spark",
+          "Kubernetes",
+          "Cloud Migration",
+          "Performance Optimization",
+          "Data Engineering"
+        ],
+        "title": "Two Misconfigurations That Caused Spark OOM Failures on Kubernetes",
+        "translateContent": null,
+        "url": "https://www.infoq.com/articles/spark-oom-kubernetes-misconfigurations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "wordCount": 3269
+      },
+      {
+        "authors": [
+          "Anthropic News"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://www.anthropic.com/api/opengraph-illustration?name=Object-LaptopSecure&backgroundColor=cactus",
+        "domain": "anthropic.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_d632aa80",
+        "keyQuotes": [
+          "Malicious actors are using AI in ways that make them more dangerous. More specifically, threat actors are using AI in the later, more complex stages of their cyber operations.",
+          "The fact that AI can be used to chain together many parts of the attack means that the old ways of differentiating high- from low-risk actors are no longer as effective.",
+          "There is no ATT&CK ID for this type of agentic orchestration—yet these are precisely the behaviors we expect to see much more of as AI agents become more capable."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Activities like lateral movement and account discovery, once requiring deep technical knowledge, are now accessible via AI, shifting attacker focus from initial access to deeper network operations.",
+            "point": "AI enables less skilled attackers to perform complex post-compromise techniques."
+          },
+          {
+            "explanation": "The number of techniques used or the interface (API vs. chat) no longer correlates with an actor's skill or risk level; the most durable differentiator is the autonomy of the AI scaffolding orchestrating the attack.",
+            "point": "Traditional risk assessment signals for attackers are eroding."
+          },
+          {
+            "explanation": "Behaviors like agentic chaining of attack stages, real-time tactical decision-making, and minimal human intervention are not captured, leading to systematic underestimation of AI-enabled threats.",
+            "point": "The MITRE ATT&CK framework lacks coverage for AI-enabled autonomous attack orchestration."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Anthropic's Frontier Red Team analyzed 832 banned AI-enabled cyber attack accounts, finding that AI makes attackers more dangerous by enabling complex post-compromise techniques, eroding traditional risk assessment signals, and exposing gaps in the MITRE ATT&CK framework.",
+        "originalTitle": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 00:00:00",
+        "publishTimeStamp": 1780416000000,
+        "qualified": false,
+        "readCount": 14,
+        "readTime": 5,
+        "readUrl": "https://www.bestblogs.dev/article/d632aa80",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_8b9413",
+        "sourceImage": "https://image.jido.dev/20251127045642_e83c159b",
+        "sourceName": "Anthropic News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This report from Anthropic's Frontier Red Team analyzes 832 accounts banned for malicious cyber activity between March 2025 and March 2026, mapping their techniques onto the MITRE ATT&CK framework. The analysis yields three main findings. First, AI is making attackers more dangerous by enabling them to operate in later, more complex stages of cyber operations, such as lateral movement and account discovery, which were previously restricted to highly skilled actors. The proportion of medium-to-high-risk actors increased 1.7-fold over the study period. Second, traditional methods of assessing an attacker's threat level—based on the number of techniques used or the interface employed—are no longer reliable, as AI can perform highly technical tasks regardless of the actor's skill. The most durable differentiator is the sophistication of the AI scaffolding that chains together attack stages autonomously. Third, the MITRE ATT&CK framework does not capture key AI-enabled behaviors like autonomous agentic orchestration, real-time decision-making, and chained multi-stage attacks, as illustrated by a state-sponsored espionage operation Anthropic disrupted in November 2025. The report concludes with a commitment to sharing findings with defenders and evolving safeguards.",
+        "tags": [
+          "AI Safety & Alignment",
+          "Cybersecurity",
+          "AI Agent",
+          "Red Teaming",
+          "MITRE ATT&CK"
+        ],
+        "title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+        "translateContent": null,
+        "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+        "wordCount": 1098
+      },
+      {
+        "authors": [
+          "Harrison Katz"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260602172454_1*Ym09gqq_vppk2nU_9kw_cw.png",
+        "domain": "medium.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_9b305dbb",
+        "keyQuotes": [
+          "When we could not simply look backward in time for relevant examples, we looked sideways across geographies instead.",
+          "You are not extrapolating from the past. You are propagating observable evidence from one part of the world to another, in real time.",
+          "Geographic structure is underutilized information.",
+          "The balance between the propagated prior and the local likelihood shifts automatically as data accumulates."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "When a shock rolls out unevenly across regions, early-affected markets can serve as leading indicators for later-affected ones. This approach turns a lack of local data into an opportunity to borrow information from structurally similar geographies.",
+            "point": "Geographic structure is an underutilized source of signal for forecasting during sequential disruptions."
+          },
+          {
+            "explanation": "The posterior from an early-affected corridor becomes an informative prior for a later-affected one. As local data accumulates, the model automatically balances the propagated prior with the local likelihood, with no manual tuning required.",
+            "point": "Bayesian hierarchical models enable a principled prior propagation mechanism."
+          },
+          {
+            "explanation": "Airbnb's global footprint across many origin-destination pairs provided enough diversity to find informative analogues. Consistent global data collection ensured comparability, and the hierarchical framework allowed for natural information sharing.",
+            "point": "The approach requires a specific data structure: global breadth, consistent data, and a hierarchical modeling framework."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article details how Airbnb built a forecasting system that uses sequential geographic recovery signals and Bayesian prior propagation to generate reliable corridor-level demand forecasts when local historical data is unavailable.",
+        "originalTitle": "When history fails you， borrow from geography",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 01:01:04",
+        "publishTimeStamp": 1780419664000,
+        "qualified": false,
+        "readCount": 11,
+        "readTime": 10,
+        "readUrl": "https://www.bestblogs.dev/article/9b305dbb",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f1142f",
+        "sourceImage": "https://image.jido.dev/20260527123434_1*TGH72Nnw24QL3iV9IOm4VA.png",
+        "sourceName": "The Airbnb Tech Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article describes the forecasting challenge Airbnb faced during the COVID-19 pandemic recovery, where the standard assumption that the future will resemble the past broke down. Instead of waiting for each market to accumulate its own post-shock data, the team developed a novel approach: borrowing information from geography. They observed that the recovery unfolded sequentially across regions, with some markets reopening months before others. By treating early-recovering corridors as leading indicators, they could propagate the posterior distribution of demand parameters from those corridors as informative priors for structurally similar, later-recovering corridors. The article explains the Bayesian hierarchical model framework, the practical implementation, and the necessary data structure (global breadth, consistent data, and a hierarchical modeling framework). It also generalizes the approach beyond COVID to any sequentially rolling change, such as new product features or regulatory shifts. The key lessons are that geographic structure and sequential rollouts are underutilized sources of signal, and that Bayesian hierarchical models are a powerful tool for this type of information sharing.",
+        "tags": [
+          "Bayesian Methods",
+          "Forecasting",
+          "Time Series",
+          "AI in Practice",
+          "Data Science"
+        ],
+        "title": "When history fails you， borrow from geography",
+        "translateContent": null,
+        "url": "https://medium.com/airbnb-engineering/when-history-fails-you-borrow-from-geography-915a72b91b5c?source=rss----53c7c27702d5---4",
+        "wordCount": 2479
+      },
+      {
+        "authors": [
+          "Scott Brave",
+          "Erin Crust",
+          "Stefano Eusepi",
+          "Bart Hobijn",
+          "Ayşegül Şahin"
+        ],
+        "candidateSource": null,
+        "category": "Finance_Economy",
+        "categoryDesc": "Finance & Economy",
+        "cover": "https://cepr.org/themes/cepr/assets/img/default-social-share.png",
+        "domain": "cepr.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_a553f327",
+        "keyQuotes": [
+          "Instead of asking, 'What does the unemployment rate say?', we ask: 'What combination of labour demand, labour supply, and matching frictions can jointly explain the full set of labour market data?'",
+          "The weakness in short-run labour supply reduced nonfarm payroll growth by roughly 90,000 jobs per month over the past year while simultaneously suppressing the unemployment rate by approximately 0.75 percentage points.",
+          "A decline in vacancies need not imply collapsing labour demand but can reflect declining turnover. A lower payroll growth rate need not signal labour market deterioration if short-run labour supply is weakening at the same time."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Finance_Economy",
+        "mainDomainDesc": "Finance & Economy",
+        "mainPoints": [
+          {
+            "explanation": "The framework uses 94 indicators and sign restrictions to identify four factors—labour demand, long-run supply, short-run supply, and matching efficiency—that jointly explain cyclical dynamics.",
+            "point": "Conflicting labour market signals can be resolved by extracting a small set of interpretable 'narrative factors' from a large dataset."
+          },
+          {
+            "explanation": "This joint contraction suppressed the unemployment rate and reduced payroll growth, explaining why the labour market did not deteriorate as much as demand alone would suggest.",
+            "point": "The post-pandemic soft landing was driven by both cooling demand and a simultaneous decline in short-run labour supply."
+          },
+          {
+            "explanation": "It captures the effective elasticity of labour supply—how easily firms can hire without raising wages—and is strongly countercyclical, tightening late in expansions.",
+            "point": "Short-run labour supply, not just labour demand, is a critical cyclical driver often overlooked in policy debates."
+          },
+          {
+            "explanation": "The framework naturally handles data revisions, missing observations, and publication lags, providing a more robust real-time assessment than relying on a few headline numbers.",
+            "point": "No single labour market indicator should be interpreted in isolation; the cross-sectional richness of data disciplines the narrative."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This paper introduces a novel framework that extracts four interpretable 'narrative factors' from 94 US labour market indicators to resolve conflicting signals, revealing that the post-pandemic soft landing was driven by both cooling demand and an unusual decline in short-run labour supply.",
+        "originalTitle": "Making sense of conflicting labour market signals",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-07",
+        "publishDateTimeStr": "2026-06-07 07:00:00",
+        "publishTimeStamp": 1780786800000,
+        "qualified": false,
+        "readCount": 5,
+        "readTime": 8,
+        "readUrl": "https://www.bestblogs.dev/article/a553f327",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_892176ed",
+        "sourceImage": "https://image.jido.dev/20260607065612_apple-touch-icon.png",
+        "sourceName": "Recent VoxEU Content",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This VoxEU column addresses the challenge of interpreting conflicting US labour market signals—where payroll growth slows, vacancies decline, but unemployment remains low and wage growth persists. The authors propose a framework that uses principal components analysis on 94 monthly and quarterly time series (1960–2026) and rotates them with sign restrictions from textbook models to produce four 'narrative factors': labour demand, long-run labour supply, short-run labour supply, and matching efficiency. The framework formalizes the narratives policymakers already use implicitly. A key finding is that the post-pandemic soft landing was not solely a demand-side story; a simultaneous contraction in short-run labour supply suppressed the unemployment rate by about 0.75 percentage points and reduced monthly payroll growth by roughly 90,000 jobs. This explains the paradox of households finding it harder to get jobs while firms struggle to fill vacancies. The column emphasizes that no single indicator should be interpreted in isolation and provides a systematic method for organizing noisy, real-time data into coherent economic narratives.",
+        "tags": [
+          "Macroeconomics",
+          "Monetary Policy",
+          "Labor Market",
+          "US Economy",
+          "Global Macro"
+        ],
+        "title": "Making sense of conflicting labour market signals",
+        "translateContent": null,
+        "url": "https://cepr.org/voxeu/columns/making-sense-conflicting-labour-market-signals",
+        "wordCount": 1943
+      },
+      {
+        "authors": [
+          "Ben Thompson"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvaTAud3AuY29tXC9zdHJhdGVjaGVyeS5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMThcLzAzXC9jcm9wcGVkLWFuZHJvaWQtY2hyb21lLTUxMng1MTItMS5wbmc_Zml0PTUxMiUyQzUxMiZzc2w9MSIsInR4dCI6IlN0cmF0ZWNoZXJ5IGJ5IEJlbiBUaG9tcHNvbiIsInRlbXBsYXRlIjoiZWRnZSIsImZvbnQiOiIiLCJibG9nX2lkIjoxODgwNDM0MTV9.5VWck4PcKPWCTPe_HVznn3n3xsgn-G0b3d2OeiNNC7cMQ",
+        "domain": "stratechery.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_7b960fb1",
+        "keyQuotes": [
+          "The ideal setup for a local agent is strong local CPU performance and calling out to the cloud for inference. The RTX Spark, however, spends tons of die space on GPU cores that are inferior to the cloud... at the expense of CPU.",
+          "The next computer is not one device. It is all these devices working together as one system, with agents showing up closer to where and when you need them.",
+          "Only you get to control the resulting model. And so with us, the RLEs and the models that you build inside of them, they become your moat."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "The chip prioritizes GPU cores for local inference, which was relevant for the ChatGPT era. The current agentic era requires strong local CPU performance for orchestration and relies on the cloud for heavy inference, making the RTX Spark's design trade-off questionable.",
+            "point": "Nvidia's RTX Spark is a chip for the past, not the future of AI."
+          },
+          {
+            "explanation": "Microsoft's Project Solara proposes a new platform of devices where agents run in the cloud and interact with users through thin, purpose-built hardware. This model, which makes the cloud the hub, is a better fit for agents than a powerful but compromised local PC.",
+            "point": "Project Solara's cloud-centric vision is more compelling than the AI PC."
+          },
+          {
+            "explanation": "By offering customizable models via Frontier Tuning and RLEs, Microsoft allows enterprises to create proprietary, efficient AI agents without sharing data. This 'own your moat' strategy is designed to appeal to cautious enterprises and is a classic Microsoft move.",
+            "point": "Microsoft's new MAI models are a strategic play for enterprise lock-in, not just raw performance."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Ben Thompson analyzes Nvidia's RTX Spark AI PC chip, Microsoft's Project Solara agent-centric device platform, and Microsoft's new MAI models, arguing that the cloud, not the PC, is the true center of the AI agent era.",
+        "originalTitle": "The Nvidia AI PC， Project Solara， Microsoft AI",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 18:00:00",
+        "publishTimeStamp": 1780480800000,
+        "qualified": false,
+        "readCount": 3,
+        "readTime": 10,
+        "readUrl": "https://www.bestblogs.dev/article/7b960fb1",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_581c2bce",
+        "sourceImage": "https://image.jido.dev/20260527052056_cropped-android-chrome-512x512-1.png",
+        "sourceName": "Stratechery by Ben Thompson",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This Stratechery Update provides a critical analysis of three major announcements from Computex 2026 and Microsoft Build 2026. First, Thompson argues that Nvidia's RTX Spark (N1X) chip, while powerful, is a product of a bygone AI era (ChatGPT-style chatbots) and is ill-suited for the current agentic era which demands strong CPU performance for local orchestration and cloud-based inference. He suggests Microsoft CEO Satya Nadella shares this skepticism, viewing Windows as a legacy platform. Second, Thompson is intrigued by Microsoft's Project Solara, a vaporware platform for new form-factor devices that run AI agents on Android, not Windows. He sees the core idea—a cloud-centric, multi-device agent ecosystem—as a compelling vision, especially for enterprise, that correctly positions the cloud as the hub and devices as spokes. Finally, he analyzes Microsoft's new family of seven in-house MAI models, particularly the MAI-Thinking-1 reasoning model. He highlights the strategic framing: offering enterprises the ability to customize and own their models via 'Frontier Tuning' and 'Reinforcement Learning Environments' (RLEs), creating proprietary moats without sharing data with frontier labs. This strategy, he notes, is classic Microsoft: enabling cautious enterprises to adopt AI on their own terms.",
+        "tags": [
+          "AI Strategy",
+          "Microsoft",
+          "Nvidia",
+          "AI Hardware",
+          "Enterprise AI"
+        ],
+        "title": "The Nvidia AI PC， Project Solara， Microsoft AI",
+        "translateContent": null,
+        "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+        "wordCount": 2413
+      },
+      {
+        "authors": [
+          "张佳玮"
+        ],
+        "candidateSource": null,
+        "category": "Sports",
+        "categoryDesc": "Sports",
+        "cover": "https://image.jido.dev/20260527052121_38f1790.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_eb7e0af0",
+        "keyQuotes": [
+          "The 2026 World Cup is destined to be an extremely precise, extremely commercialized, and extremely realistic tournament.",
+          "Can the old lion kings, before being brought down by the modern wolves, shatter the machine with an unreasonable through ball or long-range strike? This is the biggest romantic suspense of this World Cup.",
+          "Football is not a science. Football has more unpredictability than basketball or volleyball. This is precisely what makes football so captivating.",
+          "The World Cup will witness many suns we have long awaited reaching their zenith, and even more stars you have never known will shine brightly."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "The expansion to 48 teams and 104 matches extends the schedule to maximize traffic monetization; the convergence of global youth training leads to tactical modularity, with high pressing and space utilization becoming a universal language, reducing the number of surprise teams.",
+            "point": "The 2026 World Cup will be highly industrialized and commercialized."
+          },
+          {
+            "explanation": "Short videos, tactical GIFs, and data charts break the game into countless clips. Fans no longer sit around to watch the entire match but consume and discuss it in real-time, turning the World Cup into a massive, fluid spectacle.",
+            "point": "Media dissemination shifts from complete narratives to fragmented flows."
+          },
+          {
+            "explanation": "Legends like Messi, Ronaldo, and Modrić will play in their final World Cup, while new generations like Mbappé, Kane, and Yamal aim for the title. Whether the veterans' moments of brilliance can shatter the industrial machine is the greatest romantic suspense.",
+            "point": "The farewell of veterans and the rise of the new generation form the biggest suspense of this tournament."
+          },
+          {
+            "explanation": "No matter the pre-tournament predictions, the World Cup always produces surprises and new legends. This ability to defy expectations is its most captivating core and a trait that distinguishes football from other sports.",
+            "point": "The eternal charm of the World Cup lies in its unpredictable nature."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Using the 1994 World Cup as a reference, this article looks ahead to the 2026 World Cup from the perspectives of expanded format, media dissemination, tactical convergence, and generational shifts, anticipating its industrialized and commercialized characteristics while retaining a romantic expectation for football's unpredictability and legendary narratives.",
+        "originalTitle": "2026 年世界杯？到底会是什么样？",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 16:57:00",
+        "publishTimeStamp": 1780909020000,
+        "qualified": false,
+        "readCount": 2,
+        "readTime": 19,
+        "readUrl": "https://www.bestblogs.dev/article/eb7e0af0",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_8bdc84cd",
+        "sourceImage": "https://image.jido.dev/20260527052121_38f1790.jpeg",
+        "sourceName": "张佳玮写字的地方",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article uses the 1994 World Cup in the United States as a historical anchor to compare and forecast the 2026 World Cup. The author points out that the 2026 World Cup will be highly industrialized and commercialized: the expansion to 48 teams and 104 matches aims to reach more people and monetize traffic; the convergence of global youth training leads to tactical modularity, with high pressing and space utilization becoming a universal language; short videos and streaming services break the game into fragmented content, replacing traditional complete narratives. At the same time, the article also focuses on the final World Cup for veterans like Messi and Ronaldo, as well as the impact of new generations like Mbappé and Kane. The author argues that despite the increasing precision of the football industry, the World Cup's unpredictability and myth-making ability—those unexpected upsets and legends—remain its most captivating core. The article concludes by recalling the viewing experience of each World Cup from a fan's perspective, emphasizing that the charm of the World Cup lies in the fact that it never follows a preset script.",
+        "tags": [
+          "Football",
+          "World Cup",
+          "2026 World Cup",
+          "Tournament Preview",
+          "Football Culture"
+        ],
+        "title": "The 2026 World Cup? What Will It Really Be Like?",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA5NjY2NTcxOA==&mid=2650425191&idx=1&sn=244eb5e2bcecea1be15067d557118fb6",
+        "wordCount": 4536
+      },
+      {
+        "authors": [
+          "FRB: Speeches"
+        ],
+        "candidateSource": null,
+        "category": "Finance_Economy",
+        "categoryDesc": "Finance & Economy",
+        "cover": "https://www.federalreserve.gov/images/social-media/social-default-image-opengraph.jpg",
+        "domain": "federalreserve.gov",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_d0db1b4d",
+        "keyQuotes": [
+          "Deregulation can provide a short-term sugar high in the economy, but it can also lead to long-term costs for society.",
+          "Reducing financial regulation is effectively reducing insurance against risk, and I fear that we are becoming underinsured.",
+          "A capital requirement that is modestly 'too high' has a small cost to growth, but a capital requirement that is even a little 'too low' can result in sharply rising costs to financial stability."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Finance_Economy",
+        "mainDomainDesc": "Finance & Economy",
+        "mainPoints": [
+          {
+            "explanation": "Barr details specific actions: a 6% reduction in capital for GSIBs, weakened stress tests, diluted leverage ratios, and 'grade inflation' in supervisory ratings, all of which reduce the banking system's resilience to shocks.",
+            "point": "Current deregulation is the most significant since the Global Financial Crisis and is increasing systemic risk."
+          },
+          {
+            "explanation": "Barr uses the insurance analogy to explain the trade-off. The short-term 'sugar high' of increased lending and profits is dwarfed by the massive, persistent GDP losses (20-60% of GDP) seen in historical financial crises.",
+            "point": "Deregulation is akin to 'underinsurance,' where short-term benefits are outweighed by long-term catastrophic risks."
+          },
+          {
+            "explanation": "Academic research shows that modestly 'too high' capital has a small cost to growth, while even slightly 'too low' capital sharply increases the probability of a crisis and its severe economic fallout.",
+            "point": "The costs of getting capital requirements 'too low' are asymmetric and far greater than getting them 'too high.'"
+          },
+          {
+            "explanation": "Barr argues that banks are deeply interconnected with nonbanks (e.g., via $2.6 trillion in credit commitments). Strong banks are needed to absorb shocks from the nonbank sector, and deregulating banks would lead to a 'race to the bottom.'",
+            "point": "Weakening banks to compete with nonbanks is the wrong approach; nonbanks should be regulated more, not banks less."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Fed Governor Barr warns that the current wave of deregulation in banking, including lower capital and liquidity requirements and weaker supervision, is increasing financial stability risks and will likely lead to severe long-term economic costs that outweigh any short-term benefits.",
+        "originalTitle": "Speech by Governor Barr on supervision and regulation",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-07",
+        "publishDateTimeStr": "2026-06-07 00:00:00",
+        "publishTimeStamp": 1780761600000,
+        "qualified": false,
+        "readCount": 2,
+        "readTime": 17,
+        "readUrl": "https://www.bestblogs.dev/article/d0db1b4d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_8479d95a",
+        "sourceImage": "https://image.jido.dev/20260607065748_fdc8191",
+        "sourceName": "FRB: Speeches",
+        "sourceVisibility": "SYSTEM",
+        "summary": "In this speech, Federal Reserve Governor Michael S. Barr delivers a detailed and forceful critique of the ongoing deregulation of the U.S. banking sector. He argues that a series of recent regulatory proposals and supervisory changes—including reductions in capital requirements for the largest banks (a cumulative 6% reduction, or $60 billion less in loss-absorbing capital), weakened stress tests, diluted leverage ratios, and a 'grade inflation' in supervisory ratings—are collectively undermining the safety and soundness of the financial system. Barr frames deregulation as a form of 'underinsurance,' where short-term economic gains (a 'sugar high') are traded for a significantly higher probability of a devastating financial crisis. He supports his argument with extensive academic research, citing studies on the persistent GDP losses from past crises (e.g., 20-60% of GDP from the Global Financial Crisis), the role of capital in preventing crises, and the asymmetric costs of getting capital requirements 'too low.' He also highlights growing risks from the interconnected nonbank sector, arguing that the solution is stronger regulation of nonbanks, not weaker regulation of banks. The speech concludes with a stark warning that the current deregulatory path will make the financial system less robust and that the costs will eventually be borne by the public.",
+        "tags": [
+          "Financial Regulation",
+          "Macroeconomics",
+          "Monetary Policy",
+          "Banking",
+          "Financial Stability"
+        ],
+        "title": "Speech by Governor Barr on supervision and regulation",
+        "translateContent": null,
+        "url": "https://www.federalreserve.gov/newsevents/speech/barr20260606a.htm",
+        "wordCount": 4213
+      },
+      {
+        "authors": [
+          "Ayobami Adejumo"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/e4bbaeaf-810e-4ebb-9c81-d2183cac6df6.png",
+        "domain": "freecodecamp.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_37d76c8a",
+        "keyQuotes": [
+          "Optimization without a baseline is just guessing.",
+          "When explaining this to your CFO, call it the NAT tax. They understand taxes. 'We're paying a $0.045/GB tax on internal network traffic that we can eliminate in 30 minutes' lands better than 'data processing bytes.'",
+          "Never commit on the unoptimised baseline."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "The guide identifies patterns like idle dev environments, staging environment proliferation, NAT gateway data transfer costs, and orphaned resources, providing targeted solutions for each.",
+            "point": "Eight predictable AWS cost patterns emerge after Series A funding, each with a specific fix."
+          },
+          {
+            "explanation": "Committing to a Savings Plan before rightsizing locks in waste at a discount. The correct order is: rightsize, add Spot instances, migrate to Graviton, then commit to 60-70% of steady-state spend.",
+            "point": "Always rightsize and optimize before committing to Savings Plans."
+          },
+          {
+            "explanation": "NAT Gateway charges $0.045/GB for data processed. Creating VPC endpoints for S3, DynamoDB, and ECR routes traffic through the AWS backbone for free, saving $2,000-$8,000/month.",
+            "point": "VPC endpoints eliminate the most underestimated cost: NAT Gateway data transfer."
+          },
+          {
+            "explanation": "The guide provides Lambda functions for automatic idle instance stopping, scheduled staging environment shutdowns, and weekly orphaned resource reporting, making optimization a continuous process.",
+            "point": "Automation is key to sustained cost optimization, not one-time fixes."
+          },
+          {
+            "explanation": "Migrating gp2 EBS volumes to gp3 (20% cheaper, 10x faster IOPS) takes 30 minutes with a single script. Setting CloudWatch log retention policies eliminates indefinite storage costs.",
+            "point": "Simple configuration changes yield significant savings with minimal effort."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This guide identifies eight common AWS cost patterns that appear after Series A funding and provides actionable fixes for each, from idle dev environments to orphaned resources.",
+        "originalTitle": "The AWS FinOps Guide for Series A Startups: The 8 Cost Patterns That Appear After Product-Market Fit",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 00:27:27",
+        "publishTimeStamp": 1780417647000,
+        "qualified": false,
+        "readCount": 2,
+        "readTime": 17,
+        "readUrl": "https://www.bestblogs.dev/article/37d76c8a",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_074370",
+        "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+        "sourceName": "freeCodeCamp",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This comprehensive guide is written for engineers and CTOs at Series A startups (15-80 engineers, $20k-$150k monthly AWS bills). It identifies eight predictable cost patterns that emerge after achieving product-market fit: the New Hire Experiment Tax (forgotten dev environments), Staging Environment Proliferation (multiple staging environments running 24/7), the NAT Gateway Tax (expensive data processing through NAT gateways), the Savings Plan Timing Mistake (committing to savings plans before rightsizing), Cross-AZ Data Transfer (costly traffic between availability zones), the gp2 Volume Trap (using outdated, more expensive EBS volumes), the Infinite Log Trap (CloudWatch logs with no retention policy), and the Orphaned Resource Collector (unattached volumes, unused IPs, old snapshots). For each pattern, the guide provides specific AWS CLI commands to identify the waste, a detailed fix (often with code examples like Lambda functions or Kubernetes configurations), and estimated monthly savings. The guide emphasizes establishing a baseline before optimizing, rightsizing before committing to savings plans, and automating cleanup processes. Estimated total savings range from $10,000 to $40,000+ per month.",
+        "tags": [
+          "Cloud Cost Optimization",
+          "AWS",
+          "FinOps",
+          "DevOps",
+          "Startups"
+        ],
+        "title": "The AWS FinOps Guide for Series A Startups: The 8 Cost Patterns That Appear After Product-Market Fit",
+        "translateContent": null,
+        "url": "https://www.freecodecamp.org/news/the-aws-finops-guide-for-series-a-startups/",
+        "wordCount": 4151
+      },
+      {
+        "authors": [
+          "Datawhale"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045505_b03e263f",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_d49e90af",
+        "keyQuotes": [
+          "An AI Agent is a system centered around a large model that can call tools, receive feedback, and continuously complete tasks.",
+          "Scaffolding manages \"how to think,\" while Harness manages \"how to run.\"",
+          "A Tool is more like an Agent's 'hand,' a Skill is more like an Agent's 'routine,' and a Sub-agent is another Agent that can think for itself, call its own tools, and independently handle subtasks."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "An Agent is centered around a large model but also requires external components like tool invocation, execution loops, and feedback mechanisms to continuously complete tasks, fundamentally differing from the \"one question, one answer\" nature of ordinary chat models.",
+            "point": "An AI Agent is a system, not a model."
+          },
+          {
+            "explanation": "Scaffolding handles the Agent's reasoning and decision-making logic (e.g., chain of thought, task decomposition), while Harness manages the execution environment and tool invocation (e.g., routing APIs, managing context). Together, they form the Agent's operational framework.",
+            "point": "Scaffolding manages \"how to think,\" while Harness manages \"how to run.\""
+          },
+          {
+            "explanation": "Context Engineering determines what information the model sees at each step (system prompts, tool descriptions, history, etc.), while Policy defines how the model chooses actions based on this information. Both jointly influence the quality of the Agent's decisions.",
+            "point": "Context Engineering and Policy manage input and behavior respectively."
+          },
+          {
+            "explanation": "A Tool is a single action (e.g., calling an API), a Skill is a reusable method oriented towards a goal (e.g., debugging), and a Sub-agent is a complete Agent capable of independently completing a subtask. These three levels are progressive and should not be conflated.",
+            "point": "Tool, Skill, and Sub-agent correspond to different levels of abstraction."
+          },
+          {
+            "explanation": "The Agent executes a complete task in the environment (Rollout), receives Reward feedback based on the outcome, and the Trainer uses large amounts of Rollout-Reward data to update the model, allowing the Agent to continuously optimize its strategy through trial and error.",
+            "point": "Training an Agent requires a closed loop of Environment, Rollout, Reward, and Trainer."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on Hugging Face's official glossary, this article systematically outlines the core concepts of AI Agents, clearly distinguishing easily confused terms like Model, Tool, Skill, Sub-agent, Scaffolding, and Harness, helping readers build a comprehensive understanding of Agent systems.",
+        "originalTitle": "一篇文章讲清楚 AI Agent 的核心概念：从 Model、Tool、Skill 到 Harness 工程",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-02",
+        "publishDateTimeStr": "2026-06-02 23:09:00",
+        "publishTimeStamp": 1780412940000,
+        "qualified": false,
+        "readCount": 259,
+        "readTime": 10,
+        "readUrl": "https://www.bestblogs.dev/article/d49e90af",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4688eb",
+        "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+        "sourceName": "Datawhale",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using Hugging Face's AI Agent glossary as a blueprint, the article starts from the core insight — \"An Agent is not a model, but a system centered around a large model that can call tools, receive feedback, and continuously complete tasks\" — and progressively breaks down key concepts in the Agent ecosystem. It first clarifies the relationship between Model and Agent: the Model is core but not everything; an Agent needs Scaffolding (managing \"how to think\") and Harness (managing \"how to run\") to drive the execution loop. It then delves into the distinction between Context Engineering (managing the information the model sees at each step) and Policy (defining behavioral patterns), as well as the hierarchical differences among Tool (specific actions), Skill (reusable methods), and Sub-agent (independent sub-task Agent). Finally, it covers training-stage concepts like Environment, Rollout, Reward, and Trainer, completing the full-chain terminology system from building and deploying to training Agents. The article is clearly structured with apt analogies, suitable for readers seeking a systematic understanding of Agent concepts.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "Tool Use",
+          "Agent Framework",
+          "Hugging Face"
+        ],
+        "title": "One Article to Understand the Core Concepts of AI Agents: From Model, Tool, Skill to Harness Engineering",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723203&idx=1&sn=15c5e4f2052664f4557d26278ab68067",
+        "wordCount": 2490
+      },
+      {
+        "authors": [
+          "莫崇宇"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/336.png",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_4d1f829d",
+        "keyQuotes": [
+          "The dialog box is just the appetizer of the AI era; truly taking over workflows is Codex's ambition and the ultimate watershed for enterprise AI.",
+          "Codex's pivot also has a clear competitive backdrop.",
+          "OpenAI hopes to use the super app to bring Codex to over 900 million consumer users to scale its revenue."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Users no longer need to switch between ChatGPT and Codex. Codex's Agent capabilities will cover desktop, mobile, and enterprise tools like Excel and Slack, making ChatGPT a unified work interface.",
+            "point": "OpenAI integrates Codex into ChatGPT, pivoting product logic entirely toward an Agent platform."
+          },
+          {
+            "explanation": "Targeting roles such as data analysis, sales, and investment banking, the Codex plugins bundle relevant apps, skills, and workflows, covering 62 popular applications and 110 skills, designed to adapt to existing enterprise working methods.",
+            "point": "Six role-specific plugins are released, taking Codex from a general-purpose tool deep into enterprise workflows."
+          },
+          {
+            "explanation": "Sites allows Codex to output interactive websites or light apps, replacing traditional documents; annotations enable users to precisely mark up and locally modify AI-generated content, improving collaboration efficiency.",
+            "point": "Sites and annotations features change the form of AI deliverables and the way of collaboration."
+          },
+          {
+            "explanation": "Claude Code's lead in coding tools prompted OpenAI to restructure its team, position Codex as the core execution layer, and leverage ChatGPT's massive user base to expand its share of the enterprise AI market.",
+            "point": "The integration of Codex is a competitive response to Anthropic's Claude Code lead."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "OpenAI announced the integration of Codex into ChatGPT, along with six new role-specific plugins and features like Sites, marking a strategic shift from a general-purpose conversational interface to an enterprise workflow Agent platform, directly competing with Anthropic's Claude.",
+        "originalTitle": "一夜之间，ChatGPT 变成了第二个 Claude",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 22:02:40",
+        "publishTimeStamp": 1780495360000,
+        "qualified": false,
+        "readCount": 196,
+        "readTime": 16,
+        "readUrl": "https://www.bestblogs.dev/article/4d1f829d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article details a series of product updates announced by OpenAI in June 2026. The core change is the integration of Codex into ChatGPT, upgrading it from a conversational interface to a unified Agent workspace. The article reveals Codex's rapid growth metrics (5 million weekly active users, 20% non-developer users) and highlights six new role-specific Codex plugins (Data Analysis, Creative Production, Sales, Product Design, Public Stock Investment, and Investment Banking), along with two new features: Sites (converting outputs into interactive websites/light apps) and annotations (precise markup and modification). The article also delves into the competitive context behind OpenAI's move: Anthropic's Claude Code has taken the lead in coding tools, prompting OpenAI to restructure its team, position Codex as the core execution layer, and leverage ChatGPT's 900 million user base to expand enterprise revenue. The article concludes that the shift from conversation to workflow Agent represents a critical watershed in the competition between OpenAI and Anthropic.",
+        "tags": [
+          "AI Agent",
+          "OpenAI",
+          "Codex",
+          "ChatGPT",
+          "Enterprise AI"
+        ],
+        "title": "Overnight, ChatGPT Turned into the Second Claude",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1667898?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 3845
+      }
+    ],
+    "pageCount": 43,
+    "pageSize": 20,
+    "totalCount": 847
+  },
+  "message": null,
+  "requestId": "T8f4a9a5950d04a98ad02076cb5a94b12",
+  "success": true
+}

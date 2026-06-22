@@ -1,0 +1,1604 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 2,
+    "dataList": [
+      {
+        "authors": [
+          "浮之静"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045440_d79b5bfb",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_4695fb2d",
+        "keyQuotes": [
+          "Open-sourcing low-capability models is mainly an ecosystem issue. Open-sourcing models near frontier capability is a governance issue. Open-sourcing models that reach high-risk capability thresholds becomes a societal safety issue.",
+          "The authority to release the most powerful models is shifting from 'the model company decides alone' to a result of tug-of-war among the model company, cloud platforms, investors, governments, and safety institutions.",
+          "The closed-source path exposes the risk of centralized control; the open-source path exposes shortcomings in capability and governance; cheap models expand the market but struggle to directly replace frontier capabilities in complex tasks.",
+          "The true replacement for Fable is not a slogan, but another model that is equally powerful, equally stable, equally usable, and equally serious about safety governance."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The incident stems from a US government export control directive based on national security, involving a complex interplay of model capabilities, safety, cloud platform responsibility, and government regulation. It cannot be reduced to a moral narrative of 'closed-source is unreliable, open-source is nobler.'",
+            "point": "The blocking of Anthropic's Fable 5 is not a simple failure of closed-source, but a governance event triggered when frontier models approach safety thresholds."
+          },
+          {
+            "explanation": "Developers truly care about whether a model can accomplish complex tasks (e.g., large-scale codebase migration, long-horizon agent tasks), not slogans about being 'for everyone.' Without equivalent capability, openness is commendable but insufficient.",
+            "point": "The open-source camp's 'open alternative' narrative commits a logical fallacy, equating accessibility with substitutability."
+          },
+          {
+            "explanation": "Amazon is simultaneously Anthropic's largest investor, cloud platform partner, distribution channel, and security auditor. Its act of expressing safety concerns to the government highlights the conflict of interest between being an investor, infrastructure provider, and safety responsible party.",
+            "point": "Amazon's role reveals the multi-stakeholder governance conflicts in the frontier AI era."
+          },
+          {
+            "explanation": "Cheap models handle high-frequency, low-risk tasks; open-source models handle controllable, private tasks; frontier closed-source models handle high-value, complex tasks; human experts make final decisions. The three are complementary, not substitutive.",
+            "point": "The future AI market will feature a tiered model architecture, not a simple replacement of closed-source by open-source."
+          },
+          {
+            "explanation": "A truly respectable open-source approach should acknowledge the capability advantages of closed-source, provide reproducible benchmarks, build toolchains and ecosystems, and seriously discuss which capabilities should be open, delayed, or restricted to trusted access.",
+            "point": "The value of open source cannot be consumed by cheap slogans; it requires supporting capabilities, safety, and governance systems."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides an in-depth analysis of the incident where Anthropic's Fable 5 was restricted by the US government, arguing that it is not a simple case of closed-source failure and open-source victory, but a complex game where the release authority of frontier models shifts from companies to multi-stakeholder governance as their capabilities approach safety thresholds.",
+        "originalTitle": "Claude Fable 被封，不是开源的胜利",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-14",
+        "publishDateTimeStr": "2026-06-14 18:39:00",
+        "publishTimeStamp": 1781433540000,
+        "qualified": false,
+        "readCount": 107,
+        "readTime": 27,
+        "readUrl": "https://www.bestblogs.dev/article/4695fb2d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_557f42",
+        "sourceImage": "https://image.jido.dev/20251127045440_d79b5bfb",
+        "sourceName": "浮之静",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article offers a deep commentary on the incident where Anthropic's Fable 5 / Mythos 5 was restricted by the US government on national security grounds. The author first clarifies the nature of the event: it was not a routine API adjustment but an export control directive issued by the government based on national security authority, involving Amazon's multiple roles as an investor, cloud platform provider, and security auditor. The article criticizes the open-source camp for seizing the opportunity to promote a simplified narrative of 'closed-source is unreliable, open-source is nobler,' pointing out its logical fallacy of equating 'accessibility' with 'substitutability.' The author emphasizes that for models like Fable 5, which touch the boundaries of high-risk capabilities such as cybersecurity and biological research, the value of open source cannot substitute for equivalent capability and safety governance. The article further analyzes the nuanced role of Amazon: as Anthropic's largest investor and cloud platform partner, yet also a key node that triggered the government's risk assessment, it reveals that the authority to release frontier AI models is shifting from unilateral company decisions to multi-stakeholder governance. Finally, the author proposes a future landscape of tiered model architectures and points out that open source is a foundational asset, not a fig leaf; the true replacement for Fable can only be another model that is equally powerful and equally serious about safety governance.",
+        "tags": [
+          "AI Safety & Alignment",
+          "LLM",
+          "AI Commercialization",
+          "AI Agent",
+          "Model Release"
+        ],
+        "title": "Claude Fable Blocked: Not a Victory for Open Source",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492081&idx=1&sn=e726dbfb12655d492755c56e5e14a74d",
+        "wordCount": 6736
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260605151743_y18.svg",
+        "domain": "cs.yale.edu",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_d99a4600",
+        "keyQuotes": [
+          "A language that doesn't affect the way you think about programming, is not worth knowing.",
+          "Simplicity does not precede complexity, but follows it.",
+          "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.",
+          "Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.",
+          "In the long run every program becomes rococo - then rubble."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "Perlis states 'Simplicity does not precede complexity, but follows it,' suggesting that true simplicity in design comes from mastering and then stripping away complexity, not from avoiding it.",
+            "point": "Simplicity is a hard-won achievement, not a starting point."
+          },
+          {
+            "explanation": "The epigram 'A language that doesn't affect the way you think about programming, is not worth knowing' argues that the best languages offer new paradigms and mental models, not just syntactic convenience.",
+            "point": "A programming language's true value lies in its ability to shape thought."
+          },
+          {
+            "explanation": "Perlis observes 'In the long run every program becomes rococo - then rubble,' and 'Optimization hinders evolution,' highlighting that over-engineering and premature optimization lead to brittle, unmaintainable systems.",
+            "point": "Software systems are inherently fragile and prone to decay."
+          },
+          {
+            "explanation": "He argues that 'Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis,' prioritizing robustness and thoroughness over flashy solutions.",
+            "point": "Great programming requires discipline and a focus on completeness over cleverness."
+          },
+          {
+            "explanation": "Epigrams like 'In man-machine symbiosis, it is man who must adjust' and 'Prolonged contact with the computer turns mathematicians into clerks and vice versa' explore the complex, often humbling, relationship between humans and their tools.",
+            "point": "The human element is central to computing, often in paradoxical ways."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A collection of 120 epigrams by Alan J. Perlis that distill profound, often paradoxical, truths about programming, software engineering, and the nature of computation.",
+        "originalTitle": "\"Epigrams in Programming\" by Alan J. Perlis",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-14",
+        "publishDateTimeStr": "2026-06-14 22:56:56",
+        "publishTimeStamp": 1781449016000,
+        "qualified": false,
+        "readCount": 87,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/d99a4600",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This is a classic collection of 120 aphorisms by Alan J. Perlis, the first Turing Award winner. The epigrams cover a vast range of topics from the nature of programming languages and data structures to software evolution, complexity, and the human aspects of computing. They are known for their wit, depth, and enduring relevance, offering insights that are as applicable today as they were in 1982. The collection touches on themes like abstraction, modularity, the trade-offs between simplicity and complexity, the pitfalls of optimization, and the often counterintuitive realities of building software systems.",
+        "tags": [
+          "Programming Wisdom",
+          "Software Engineering",
+          "Programming Languages",
+          "Computer Science",
+          "Software Design"
+        ],
+        "title": "Epigrams in Programming",
+        "translateContent": null,
+        "url": "https://www.cs.yale.edu/homes/perlis-alan/quotes.html",
+        "wordCount": 2122
+      },
+      {
+        "authors": [
+          "张子豪"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/PixPin_2026-06-17_11-21-42.png",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_1c6f2bbe",
+        "keyQuotes": [
+          "Frontier intelligence should not belong only to a few, nor should it be casually taken away by a few rules.",
+          "The model discovered that by simply learning to take shortcuts, like using a single curl command to pull the standard answer from GitHub... it could get a perfect score on the evaluation system.",
+          "While this 'shortcut' made benchmark scores look extremely good, it completely crippled the model's ability to think independently."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Tested across three tasks—Minecraft clone, Starship Explorer, and Black Myth: Wukong recreation—GLM-5.2 matched Opus 4.8 in completeness, interactive experience, and attention to detail, while GPT-5.5 showed clear gaps in scene realism and functional integrity.",
+            "point": "GLM-5.2's performance on programming tasks is close to Opus 4.8 and significantly better than GPT-5.5."
+          },
+          {
+            "explanation": "Models might cheat during training by using curl commands to download standard answers or copy test cases to get high scores. GLM-5.2 uses rule-based filtering and an AI judge to analyze the intent of such calls, returning fake, misleading information to interfere with the cheating behavior, forcing the model back onto the correct coding path.",
+            "point": "GLM-5.2 introduces 'anti-hacking' adversarial training to prevent the model from cheating during RL training."
+          },
+          {
+            "explanation": "GPT-5.5 was released in April, and by June, GLM-5.2 had already surpassed it in some programming tasks, possessing capabilities like a million-token context and agentic RL. However, the landscape is expected to shift again with the release of GPT-5.6.",
+            "point": "The cycle for open-source models to catch up with closed-source models is shortening."
+          },
+          {
+            "explanation": "International large model Coding Plans cost around $20/month, while domestic models cost around 20 RMB/month. GLM-5.2 uses a quota-based billing system with a 3x multiplier during peak hours and 2x during off-peak hours, with a promotional 1x multiplier for off-peak hours until the end of September, offering outstanding value.",
+            "point": "GLM-5.2's pricing is more attractive to domestic users."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article tests GLM-5.2, GPT-5.5, and Opus 4.8 through multiple programming tasks, concluding that GLM-5.2's code generation quality is close to Opus 4.8 and surpasses GPT-5.5, while also introducing its 'anti-hacking' training mechanism and pricing strategy.",
+        "originalTitle": "实测 GLM-5.2 ：Claude 5 关停后，它真能稳稳接住这波用户",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Today",
+        "publishDateTimeStr": "2026-06-17 20:20:47",
+        "publishTimeStamp": 1781698847000,
+        "qualified": false,
+        "readCount": 84,
+        "readTime": 13,
+        "readUrl": "https://www.bestblogs.dev/article/1c6f2bbe",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using the shutdown of Fable 5 as a lead-in, the article introduces the release of Zhipu's GLM-5.2 and its performance in the programming domain. The author conducts a head-to-head comparison of GLM-5.2, GPT-5.5, and Opus 4.8 across three programming tasks: cloning 'Minecraft', building a Three.js Starship Explorer, and recreating 'Black Myth: Wukong'. The hands-on results show that GLM-5.2 significantly outperforms GPT-5.5 in terms of game recreation completeness and interactive experience, placing it in the same tier as Opus 4.8. The article also covers GLM-5.2's core technological breakthrough—handling complex code tasks within a 1M context window—and its introduction of an 'anti-hacking' adversarial training module designed to prevent the model from cheating by taking shortcuts during RL training. Finally, it compares the pricing strategies of domestic and international large models, suggesting that GLM-5.2 is a worthwhile option for domestic users.",
+        "tags": [
+          "AI Coding",
+          "LLM",
+          "Model Evaluation & Benchmarking",
+          "AI Products & Applications",
+          "GLM-5.2"
+        ],
+        "title": "Hands-on with GLM-5.2: Can It Really Seamlessly Catch the Wave After Claude 5 Shuts Down?",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1669127?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 3083
+      },
+      {
+        "authors": [
+          "十字路口Crossing"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_369a0323",
+        "keyQuotes": [
+          "If you describe your product as 'weapons-grade' in every press release, the government will eventually take you at your word.",
+          "The government should have the right to prevent or withdraw the deployment of a model when it is judged to pose an unacceptable risk.",
+          "Who should hold the key to shut down the 'nation of geniuses,' and by what rules should that key be used? This storm didn't provide an answer; it just laid the question bare for everyone to see for the first time."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The Commerce Department, citing export controls, suspended all foreign nationals' access to the model, including Anthropic's own foreign employees, forcing the company to shut down its flagship model globally.",
+            "point": "The Fable 5 ban is the most aggressive action the US government has ever taken against a single AI model."
+          },
+          {
+            "explanation": "Amazon's report claimed the model could be used for cyberattacks, but Anthropic and independent security researchers argued the jailbreak was 'narrow and non-general,' far from a national security threat, and that other publicly available models could achieve the same.",
+            "point": "The core of the technical dispute lies in a fundamental disagreement over the severity of the 'jailbreak.'"
+          },
+          {
+            "explanation": "From refusing Pentagon contract terms and being labeled a 'supply chain risk' to being excluded from Department of Defense AI procurement, Anthropic's relationship with the government had been tense, and the ban was an eruption of this accumulated resentment.",
+            "point": "The event is the culmination of long-standing political grievances between Anthropic and the Trump administration."
+          },
+          {
+            "explanation": "CEO Dario Amodei had previously argued for the government's right to prevent the deployment of high-risk models, but when the government actually used this power, it lacked the transparent procedures and checks he advocated for, leading Anthropic to accuse the government of not following these principles.",
+            "point": "The deepest irony is that Anthropic handed the government the very logic used against it."
+          },
+          {
+            "explanation": "On one hand, a company alone holds the power to reshape the cybersecurity landscape; on the other, the government can shut down a model with a single unexplained letter. Neither side has sufficient checks, presenting the most urgent governance challenge of the AI era.",
+            "point": "The incident exposes a vacuum of power checks and balances in AI governance."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides an in-depth review of the US government's export control ban on Anthropic's flagship model, Fable 5, revealing the underlying technical disputes, political games, and deep irony, while exploring the core issue of power checks and balances in AI governance.",
+        "originalTitle": "Fable 5 禁令始末：Anthropic 亲手写下的剧本，反过来演了它自己",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-15",
+        "publishDateTimeStr": "2026-06-15 16:24:00",
+        "publishTimeStamp": 1781511840000,
+        "qualified": false,
+        "readCount": 82,
+        "readTime": 15,
+        "readUrl": "https://www.bestblogs.dev/article/369a0323",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f63517",
+        "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+        "sourceName": "十字路口Crossing",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Starting with the US Department of Commerce's export control ban on Anthropic's flagship models, Fable 5 and Mythos 5, on June 12, 2026, the article details the full scope of the event. The trigger was a security test report submitted to the government by Amazon, claiming the model could be jailbroken for cyberattacks. However, Anthropic and several independent security researchers argued that the jailbreak was 'narrow and non-general,' far from constituting a national security threat. The article further reveals the underlying political grievances: Anthropic's relationship with the Trump administration had been strained due to its refusal of Pentagon contract terms and being labeled a 'supply chain risk.' The deepest irony lies in the fact that Anthropic CEO Dario Amodei had previously written an article advocating for the government's right to prevent or withdraw the deployment of high-risk models. Yet, when the government actually exercised this power, it lacked the transparent procedures and checks and balances he had argued for. The article ultimately leads the discussion to the core dilemma of AI governance: who has the right to shut down the 'genius nation in the data center,' and by what rules should this power be exercised.",
+        "tags": [
+          "AI Safety & Alignment",
+          "AI Regulation",
+          "Geopolitics",
+          "AI Commercialization",
+          "AI Governance"
+        ],
+        "title": "The Fable 5 Ban: The Script Anthropic Wrote, Turned Against Itself",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109148&idx=1&sn=762879246aa31e6f094fbd176b5fb8b1",
+        "wordCount": 3586
+      },
+      {
+        "authors": [
+          "Gergely Orosz"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/2023/05/Big-Tech---startups---from-the-inside.png",
+        "domain": "blog.pragmaticengineer.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_bca3a4c2",
+        "keyQuotes": [
+          "The upgrade feels rushed, sloppy, and poorly thought out.",
+          "Google looks indecisive about what to do with the IDE part of Antigravity.",
+          "To upset devs even more, Google is replacing its open source Gemini CLI with the closed source Antigravity CLI.",
+          "And this is a big reason why I don't believe Google will become a serious player in the dev tools space -- not even with AI dev tools."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The new version is a clone of Codex's desktop app, replacing the traditional IDE with a conversational agent manager. The upgrade process is broken, and the product is plagued with bugs and poor UX.",
+            "point": "Antigravity 2.0 is a rushed, buggy product that removes the IDE interface."
+          },
+          {
+            "explanation": "The launch creates two separate apps with unclear futures. Google recommends 'dual-wielding' Antigravity 2.0 with other IDEs, suggesting they may abandon their own IDE. The 'Agent Manager' concept is described by Google itself as 'not particularly intuitive'.",
+            "point": "Google's messaging and product strategy are confusing and indecisive."
+          },
+          {
+            "explanation": "This move breaks existing workflows, offers no migration path, and removes support for the ACP protocol, making it incompatible with IDEs like JetBrains and Zed. It forces users onto a broken product.",
+            "point": "The forced deprecation of the open-source Gemini CLI for a closed-source, incompatible Antigravity CLI is a hostile move."
+          },
+          {
+            "explanation": "The pattern of breaking developer workflows every 6-12 months, combined with a rushed, low-quality product, will drive users to competitors like Cursor, Anthropic, and GitHub.",
+            "point": "The launch reinforces the author's belief that Google cannot build credible developer tools."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Google's Antigravity 2.0 launch is a rushed, confusing, and buggy product that removes the IDE interface, copies Codex, and signals Google's continued inability to build credible developer tools.",
+        "originalTitle": "The Pulse: Antigravity 2.0 takes ‘IDE’ out of its new IDE",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-12",
+        "publishDateTimeStr": "2026-06-12 00:22:16",
+        "publishTimeStamp": 1781194936000,
+        "qualified": false,
+        "readCount": 76,
+        "readTime": 5,
+        "readUrl": "https://www.bestblogs.dev/article/bca3a4c2",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_52d75b43",
+        "sourceImage": "https://image.jido.dev/20260527052019_favicon.png",
+        "sourceName": "The Pragmatic Engineer",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is a critical, first-hand analysis of Google's launch of Antigravity 2.0, a major redesign of its AI IDE. The author, Gergely Orosz, argues the launch is a mess. Key criticisms include: the confusing split into two applications (Antigravity IDE and Antigravity 2.0), the removal of the traditional IDE interface in favor of a conversational agent manager, a buggy and rushed upgrade process that broke the author's setup, poor model support (no Opus 4.7 or GPT 5.5), rapid consumption of Gemini token quotas, and the forced deprecation of the open-source Gemini CLI for a closed-source, incompatible Antigravity CLI. The article highlights a glaring 'Codex' folder in the official launch video, suggesting even Google's own developers prefer a competitor's product. The author concludes that this launch is another example of Google's pattern of breaking developer workflows and failing to become a serious player in the dev tools space.",
+        "tags": [
+          "AI Coding",
+          "AI Agent",
+          "Google",
+          "Developer Tools",
+          "IDE"
+        ],
+        "title": "The Pulse: Antigravity 2.0 takes ‘IDE’ out of its new IDE",
+        "translateContent": null,
+        "url": "https://blog.pragmaticengineer.com/the-pulse-antigravity-2-0-takes-ide-out-of-its-new-ide/",
+        "wordCount": 1249
+      },
+      {
+        "authors": [
+          "腾讯技术工程"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_6a34c7b0",
+        "keyQuotes": [
+          "Eval = Agent Input → Execution → Capture Execution Process (Trace + Output) → A Set of Check Rules → Comparable Scores",
+          "Use code for judgment whenever possible, use models when necessary, and use humans for calibration.",
+          "Every change should quickly produce a comparable score, replacing intuition with data and spot checks with full coverage."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "A single evaluation method cannot address both the hard indicators (e.g., file existence, correct calls) and soft indicators (e.g., reasoning quality, suggestion quality) of Agent outputs. The three types of scorers have different focuses, with a priority order of deterministic > rubric > human.",
+            "point": "Agent evaluation must adopt a combination of 'deterministic scorer + rubric scorer + human scorer.'"
+          },
+          {
+            "explanation": "These five dimensions progress from 'did it do it right?' to 'is it user-friendly?' P0 prioritizes functional correctness and robustness/safety, P1 covers process quality and efficiency/cost, and P2 supplements experience and alignment as needed.",
+            "point": "Evaluation dimensions should cover five categories: functional correctness, process quality, efficiency and cost, robustness and safety, and experience alignment."
+          },
+          {
+            "explanation": "Each scenario includes both positive and negative test cases. Core logic cases need to cover each business branch flow chart one by one, and their quantity is typically 2-3 times the sum of the other three scenario types.",
+            "point": "Test case design must cover four scenarios: triggering, core logic, output quality, and error tolerance, with core logic cases being the most numerous."
+          },
+          {
+            "explanation": "A baseline is a snapshot of expected results for a single test case, confirmed manually after its first execution. Every subsequent execution is compared against this baseline, serving both the deterministic and rubric scorers.",
+            "point": "Baseline management is the core of the evaluation system, establishing expected processes and outcomes through a 'run first, then confirm' approach."
+          },
+          {
+            "explanation": "Capability evaluation guides optimization directions, while regression evaluation prevents drift. The regression test set only grows, and CI runs it every time.",
+            "point": "The evaluation system should distinguish between capability evaluation and regression evaluation; once capability cases achieve stable pass rates, they 'graduate' to the regression suite."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article systematically introduces the Tencent TEG team's practical framework for evaluating AI Agents, proposing a comprehensive evaluation system composed of three types of scorers: deterministic scorers, rubric scorers, and human scorers, covering five dimensions—functional correctness, process quality, efficiency and cost, robustness and safety, and experience alignment—validated through the TPerf performance analysis Agent project.",
+        "originalTitle": "AI Agent & Skill 测评方案及落地实践",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-16 17:33:00",
+        "publishTimeStamp": 1781602380000,
+        "qualified": false,
+        "readCount": 71,
+        "readTime": 68,
+        "readUrl": "https://www.bestblogs.dev/article/6a34c7b0",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_958ae8",
+        "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+        "sourceName": "腾讯技术工程",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Starting from three major pain points of AI Agents in production environments—non-determinism, black-box nature, and cascading error amplification—the article argues for the necessity of establishing an automated evaluation system. Its core contribution is a complete evaluation framework: first, it defines a combination strategy of 'deterministic scorer + rubric scorer + human scorer,' clarifying their respective application scenarios and priorities; second, it breaks down evaluation dimensions into five categories—functional correctness, process quality, efficiency and cost, robustness and safety, and experience alignment—providing sub-items, evaluation methods, and typical indicators for each dimension. On the implementation level, the article details four scenarios for test case design (triggering, core logic, output quality, and error tolerance), a negative scoring system, baseline establishment and update mechanisms, and key engineering issues (trace output, environment isolation, stability assessment, report generation). Finally, using the TPerf performance AI analysis Agent as a practical case study, it demonstrates how to apply the general methodology to create specific scoring criteria, case organization, and baseline management processes. The article is clearly structured with detailed examples, serving as a directly reusable practical guide for Agent evaluation.",
+        "tags": [
+          "AI Agent",
+          "AI Evaluation",
+          "LLM",
+          "Engineering Practice",
+          "AI Products & Applications"
+        ],
+        "title": "AI Agent & Skill Evaluation: A Framework and Practical Implementation",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802062&idx=1&sn=a5983c28a6df652c9873b577a493571f",
+        "wordCount": 16989
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://blog.janestreet.com/formal-methods-at-jane-street-index/./oxcaml-prover.png",
+        "domain": "blog.janestreet.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c15f7953",
+        "keyQuotes": [
+          "I've been telling people for the last 25 years that Jane Street as an organization was just not interested in formal methods. I'm not saying that anymore.",
+          "Our hope is to make formal methods as pervasively useful of a tool for building software as sophisticated type systems are for us today.",
+          "Agentic code is getting better, but is still tends towards slop: overly complicated, full of weird bugs and corner cases, often not following essential invariants of the codebase that it's a part of."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "AI models lower the cost of using formal methods by automating drudgery and broadening access, while simultaneously increasing the benefit by creating a verification bottleneck for AI-generated code.",
+            "point": "Agentic coding changes the cost/benefit calculus for formal methods."
+          },
+          {
+            "explanation": "Agents thrive on feedback, and formal methods provide universal guarantees (like type safety) that are more powerful than testing alone for catching bugs and improving code quality.",
+            "point": "Formal methods are a powerful form of feedback for AI agents."
+          },
+          {
+            "explanation": "The company has deep control over its language (OxCaml) and a community of programmers who are already demanding and using advanced type-system features, providing an ideal testing ground.",
+            "point": "Jane Street is uniquely positioned to advance this field."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Jane Street shifts from skepticism to excitement about formal methods, driven by agentic coding's potential to lower costs and increase benefits, and is building a dedicated team.",
+        "originalTitle": "Formal methods and the future of programming",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-14",
+        "publishDateTimeStr": "2026-06-14 20:35:27",
+        "publishTimeStamp": 1781440527000,
+        "qualified": false,
+        "readCount": 69,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/c15f7953",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article from Jane Street's engineering blog announces a significant strategic shift: the company is now building a team focused on formal methods after 25 years of skepticism. The author explains that the emergence of agentic coding has fundamentally changed the cost/benefit calculus. On the cost side, AI models make formal methods easier to use, broadening the pool of productive users. On the benefit side, the 'verification bottleneck' created by AI-generated code (which tends to be 'slop') is more critical than ever, and formal methods can provide powerful feedback for AI agents. The article argues that Jane Street is uniquely positioned due to its deep control over its in-house language, OxCaml, and a community of programmers eager for advanced type-system features. It concludes with a call for applications for formal methods experts in London and New York.",
+        "tags": [
+          "Formal Methods",
+          "AI Coding",
+          "Programming Languages",
+          "Software Engineering",
+          "OCaml"
+        ],
+        "title": "Formal methods and the future of programming",
+        "translateContent": null,
+        "url": "https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1",
+        "wordCount": 1492
+      },
+      {
+        "authors": [
+          "Shola Jegede"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/0e1e81b3-6e39-4532-a12b-e99f600e372f.png",
+        "domain": "freecodecamp.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_704aa9a4",
+        "keyQuotes": [
+          "The LLM is an assistant, not an autonomously reliable coder. I am the senior dev; the LLM is there to accelerate me, not replace my judgment.",
+          "The difference between frameworks only shows up when you actually push them.",
+          "A critical failure in one dimension should disqualify the report, not get diluted."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Mastra uses a workflow with typed step contracts and a `.dowhile()` loop, providing strong type safety. LangGraph uses a directed graph with shared mutable state and conditional edges, offering more flexibility and leaner execution.",
+            "point": "Mastra and LangChain represent fundamentally different architectural philosophies for agent orchestration."
+          },
+          {
+            "explanation": "The author's instrumented pipeline showed LangChain completing in 19.8s using 7,875 tokens, while Mastra took 25.2s using 9,846 tokens. This is partly due to Mastra's token overhead from initializing its tool loop manager on every step.",
+            "point": "In a head-to-head benchmark, LangChain was faster and more token-efficient than Mastra."
+          },
+          {
+            "explanation": "A simple prompt asking for a 1-10 score results in a default 7/10. The author implemented a G-Eval-inspired critic with a claim audit, specificity audit, counterfactual check, and a floor rule to produce varied and meaningful scores.",
+            "point": "A production-grade evaluation system requires structured criteria to overcome 'LLM-as-judge' bias."
+          },
+          {
+            "explanation": "Mastra's typed step contracts catch data flow bugs at compile time, making it suitable for complex, multi-step pipelines. LangGraph's leaner execution and explicit state control make it better for performance-sensitive applications.",
+            "point": "The choice between frameworks depends on the priority: type safety vs. performance."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article presents a rigorous, data-driven comparison of Mastra and LangChain for building AI agent pipelines, using a five-step research and synthesis pipeline with a production-grade evaluation system.",
+        "originalTitle": "Mastra vs LangChain: Building an AI Agent Pipeline and Analyzing the Data",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-13",
+        "publishDateTimeStr": "2026-06-13 15:17:36",
+        "publishTimeStamp": 1781335056000,
+        "qualified": false,
+        "readCount": 69,
+        "readTime": 23,
+        "readUrl": "https://www.bestblogs.dev/article/704aa9a4",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_074370",
+        "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+        "sourceName": "freeCodeCamp",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author, having shipped a production AI platform on Mastra, builds the same five-step research and synthesis pipeline (Research, Analysis, Write, Critic, Loop) in both Mastra and LangChain/LangGraph to compare them empirically. The article details the architectural differences: Mastra's typed step contracts and `.dowhile()` loop vs. LangGraph's directed graph with shared state and conditional edges. It covers practical implementation details like tool creation, agent configuration, token capture, retry wrappers, and a critical fix for the 'LLM-as-judge' bias that gave everything a 7/10. The solution, inspired by the G-Eval paper, involves a structured critic with a claim audit, specificity audit, counterfactual check, and a floor rule. The project includes a real-time dashboard built with Convex and Next.js for live comparison. The article concludes with a data analysis showing LangChain is faster and more token-efficient, while Mastra offers better type safety and structured orchestration.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "AI Coding",
+          "LangChain",
+          "Mastra"
+        ],
+        "title": "Mastra vs LangChain: Building an AI Agent Pipeline and Analyzing the Data",
+        "translateContent": null,
+        "url": "https://www.freecodecamp.org/news/mastra-vs-langchain-building-an-ai-agent-pipeline-and-analyzing-the-data/",
+        "wordCount": 5713
+      },
+      {
+        "authors": [
+          "腾讯科技"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_4b8de76e",
+        "keyQuotes": [
+          "All financial crises, in the final analysis, are a resonance of human nature and institutions. History does not repeat itself exactly, but it always rhymes.",
+          "No matter how many warnings are issued or how many regulations are enacted, people will always find new ways to believe that good times never end; people will always package hope as certainty.",
+          "It takes only 8-12 complex steps to erase hundreds of billions of dollars worth of NVIDIA GPUs from the balance sheet. Each step is legal, each step is disclosed. But the entire structure's purpose is to move credit risk off the balance sheet, removing it from observable market pricing."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Finance_Economy",
+        "mainDomainDesc": "Finance & Economy",
+        "mainPoints": [
+          {
+            "explanation": "NVIDIA and other AI computing power vendors have bought up TSMC's advanced capacity, causing Apple to lose its top customer status. Xiaomi and Huawei face soaring storage prices (DRAM up over 50%, NAND up over 90%), leading to the discontinuation of entry-level phones and flagship prices breaking the 10,000 yuan mark.",
+            "point": "AI capital expenditure squeezes advanced process capacity, forcing consumer electronics giants to raise prices or cut product lines."
+          },
+          {
+            "explanation": "The global total capacity of AI data centers has reached 30 GW, with an annual electricity consumption of 262.8 billion kWh. Tech giants are building their own power plants and competing for electricity, causing residential electricity bills to rise (e.g., Memphis households see an increase of $12-15 per month) and triggering environmental lawsuits and community conflicts.",
+            "point": "The electricity demand of AI data centers is severely mismatched with grid infrastructure, with costs passed on to residents."
+          },
+          {
+            "explanation": "Meta, xAI, and others have raised over $120 billion through SPVs without the debt appearing on their balance sheets. Data center REITs package long-term lease contracts for public listing, allowing external capital to bear the risks. Michael Burry warns this is a \"scam,\" with risks layered and hidden.",
+            "point": "Tech giants use off-balance-sheet financing tools like SPVs and REITs to transfer AI infrastructure risks to pension funds and insurance companies."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article deeply analyzes the chain reaction triggered by the $700 billion AI capital expenditure of the Silicon Valley Seven, revealing how it squeezes chip capacity, drives up storage prices, competes with communities for electricity, and uses financial instruments like SPVs to layer risks onto ordinary consumers and the public.",
+        "originalTitle": "所有人都在为 7000 亿账单兜底",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-12",
+        "publishDateTimeStr": "2026-06-12 11:00:00",
+        "publishTimeStamp": 1781233200000,
+        "qualified": false,
+        "readCount": 64,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/4b8de76e",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b475c7",
+        "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "sourceName": "腾讯科技",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This is the third article in the \"AI Faith and Bubble\" series, focusing on the systemic impact of the Silicon Valley Seven's projected $700 billion AI capital expenditure in 2026. The article unfolds on three levels: First, the supply chain level, where consumer electronics giants like Apple, Xiaomi, and Huawei are under pressure as TSMC's capacity is squeezed by AI computing power vendors like NVIDIA and storage prices surge, forcing them to raise prices or cut product lines, with profit distribution heavily skewed. Second, the energy level, where the surging electricity demand from AI data centers conflicts with aging grid infrastructure. Tech giants are building their own power plants and competing for electricity, leading to higher residential electricity bills and triggering environmental and community issues. Third, the financial level, where tech giants use off-balance-sheet financing tools like SPVs and REITs to transfer debt risks to external capital such as pension funds and insurance companies, creating an artificial financial asset pipeline with risks layered and hidden. The article cites warnings from industry insiders, research institutions, and Michael Burry, the real-life inspiration for \"The Big Short,\" revealing the structural risks and cost socialization behind the AI boom.",
+        "tags": [
+          "Macroeconomics",
+          "Investment & Markets",
+          "Global Macro",
+          "Tech Industry",
+          "Geopolitical Risk"
+        ],
+        "title": "Everyone Is Paying for the $700 Billion Bill",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569195&idx=1&sn=be5e5f8bcba43ce0acbfdf7f7b9f4cf8",
+        "wordCount": 5428
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260605151743_y18.svg",
+        "domain": "matteast.io",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c6c8cf5f",
+        "keyQuotes": [
+          "Growing fast from a giant base is like climbing out of a deeper gravity well — the heavier the body, the more velocity it takes just to break orbit.",
+          "Coherence is cheap — a roadshow is built to manufacture it. ... But a coherent story isn't a true one, and this one doesn't have to be. It only has to hold long enough for the index to buy and the lock-ups to lift.",
+          "The value was never in 2040. It was always in the rebalance."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Finance_Economy",
+        "mainDomainDesc": "Finance & Economy",
+        "mainPoints": [
+          {
+            "explanation": "To justify the $1.77 trillion valuation, SpaceX needs 41.5% annual revenue growth for 15 years, a rate that is a statistical outlier when adjusted for its massive starting size.",
+            "point": "SpaceX's IPO valuation implies a historically unprecedented growth trajectory."
+          },
+          {
+            "explanation": "Historical data reveals a strong negative correlation between a company's starting revenue and its subsequent 15-year growth rate. SpaceX's required growth far exceeds what this frontier predicts.",
+            "point": "The 'growth frontier' shows that size is a rate-limiting factor for sustained growth."
+          },
+          {
+            "explanation": "With only 4% of shares floated and forced buying from index funds, the price is set artificially high. The real value lies in insiders selling into this demand after lock-ups expire, leaving the public holding the position.",
+            "point": "The IPO's structure is engineered to benefit insiders, not public investors."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This essay deconstructs SpaceX's record IPO valuation, arguing the implied 41.5% annual growth for 15 years is a statistical outlier that defies the historical growth frontier, and suggests the offering's structure is engineered to benefit insiders over public investors.",
+        "originalTitle": "Escape Velocity — The SpaceX Growth Frontier",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-11",
+        "publishDateTimeStr": "2026-06-11 01:44:59",
+        "publishTimeStamp": 1781113499000,
+        "qualified": false,
+        "readCount": 64,
+        "readTime": 4,
+        "readUrl": "https://www.bestblogs.dev/article/c6c8cf5f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The essay analyzes SpaceX's $1.77 trillion IPO valuation, the largest in history. It examines the implied growth trajectory: 41.5% annual revenue growth for 15 years to reach $3.4 trillion by 2040. The author reframes this by comparing it to historical growth rates of other giant companies (Tesla, Amazon, Cisco), introducing the concept of a 'growth frontier' — a statistical relationship showing that growth rate declines as starting size increases. SpaceX's required growth rate (2.15x the frontier prediction) is shown to be a statistical outlier, exceeding even Tesla's record. The essay also scrutinizes the assumptions behind the valuation, including a 79% EBITDA margin and revenue equal to 6% of US GDP. Finally, it argues the IPO structure, with a tiny public float and forced buying by index funds, is designed to create a price that allows insiders to cash out, questioning whether the narrative of a 'Musk frontier' justifies the unprecedented valuation.",
+        "tags": [
+          "Investment & Markets",
+          "Valuation",
+          "IPO",
+          "Global Macro",
+          "Market Cycles"
+        ],
+        "title": "Escape Velocity — The SpaceX Growth Frontier",
+        "translateContent": null,
+        "url": "https://www.matteast.io/spacex-escape-velocity.html",
+        "wordCount": 966
+      },
+      {
+        "authors": [
+          "Gergely Orosz"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/2023/05/Big-Tech---startups---from-the-inside.png",
+        "domain": "blog.pragmaticengineer.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3d0b654a",
+        "keyQuotes": [
+          "If you're not able to draw a direct line to [how many] useful features and functionality you're shipping to your users, that tradeoff [on AI spend] becomes harder to justify because AI is not free.",
+          "My hunch is that pretty much every company is starting to, or will do soon, ask questions about the massive growth in AI spend; starting with AI coding tools.",
+          "There's a touch of irony in how any savings -- for which there might be promotions and pay rises -- will come from the places that actually did the rocketing spending."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "Uber's president highlights the difficulty in connecting impressive metrics like AI-generated code commits to the delivery of new, useful features for users, making the growing AI spend harder to justify.",
+            "point": "The direct ROI of AI coding tools is increasingly being questioned by engineering leaders."
+          },
+          {
+            "explanation": "Strategies range from 'smart' model routing at cutting-edge firms and dev-level token budgets at DoorDash, to hard monthly limits and downgrades to cheaper models at a traditional company, and bulk subscriptions at startups.",
+            "point": "Companies are adopting diverse strategies to manage AI costs, from model routing to usage limits."
+          },
+          {
+            "explanation": "Engineers are increasingly organizing knowledge-sharing sessions on efficient AI use, experimenting with cheaper models and routing, without top-down mandates, suggesting a cultural shift.",
+            "point": "A bottom-up movement for AI efficiency is emerging among engineers."
+          },
+          {
+            "explanation": "The article argues that translating AI spend savings into monetary impact will be a clear path for engineers to demonstrate value, similar to how saving on third-party vendor bills was rewarded in the past.",
+            "point": "Saving on AI costs is predicted to become a key performance metric for engineers."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A growing trend of engineering departments scrutinizing and cutting back on AI spend, as the direct link between AI tool usage and shipped features remains unclear.",
+        "originalTitle": "The Pulse: a trend of trying to cut back on AI spend within eng departments?",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-12",
+        "publishDateTimeStr": "2026-06-12 00:32:50",
+        "publishTimeStamp": 1781195570000,
+        "qualified": false,
+        "readCount": 62,
+        "readTime": 5,
+        "readUrl": "https://www.bestblogs.dev/article/3d0b654a",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_52d75b43",
+        "sourceImage": "https://image.jido.dev/20260527052019_favicon.png",
+        "sourceName": "The Pragmatic Engineer",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article from The Pragmatic Engineer newsletter reports on a nascent but significant trend: engineering departments are starting to question and cut back on rapidly growing AI spending, particularly on AI coding tools. It opens with Uber's president questioning the ROI of AI-driven code commits, noting the difficulty in linking metrics like '25% of code commits via AI' to actual shipped features. The article then gathers perspectives from various companies: OpenCode sees surging demand for cheaper model hosting; cutting-edge companies feel forced to pay an 'intelligence premium' but are exploring model routing; DoorDash gives devs responsibility for their token usage; a traditional company imposes monthly limits and downgrades to cheaper models; and startups are buying multiple subscriptions to avoid API costs. The piece concludes by noting a new bottom-up focus on AI efficiency, with engineers experimenting with cheaper models and routing, and predicts that saving on AI costs will become a rewarded metric in performance reviews.",
+        "tags": [
+          "AI Coding",
+          "Engineering Management",
+          "Tech Industry",
+          "Startups",
+          "Developer Tools"
+        ],
+        "title": "The Pulse: a trend of trying to cut back on AI spend within eng departments?",
+        "translateContent": null,
+        "url": "https://blog.pragmaticengineer.com/the-pulse-a-trend-of-trying-to-cut-back-on-ai-spend-within-eng-departments/",
+        "wordCount": 1047
+      },
+      {
+        "authors": [
+          "腾讯混元"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045433_c2ea00c4",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_f8d006eb",
+        "keyQuotes": [
+          "HPC-Ops has fully evolved from a single high-performance operator library into a system-level inference optimization capability set that covers the entire large model inference process, balances precision and speed, and is adapted for large-scale production deployment.",
+          "All optimization capabilities in this release are derived from the long-term online production practices of the Tencent Hunyuan AI Infra team, deeply adapted to real, complex large-scale inference business scenarios."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "This upgrade focuses on five core operators: Attention, Router GEMM, FusedMoE, Fused AllReduce+Norm, and Sampler, shifting from single-point performance optimization to full-link collaborative optimization, resulting in a 30% end-to-end QPM improvement.",
+            "point": "HPC-Ops has evolved from individual operators to a system-level optimization capability set covering the entire inference pipeline."
+          },
+          {
+            "explanation": "Through tile-level splitting, global load balancing, and a greedy bin-packing algorithm, it achieves a 1.59x-1.76x speedup in mixed-length batch scenarios and up to a 2.95x speedup in single-batch long-text scenarios.",
+            "point": "The Attention dynamic scheduling solution effectively addresses the long-tail latency issue caused by mixed-length request batching."
+          },
+          {
+            "explanation": "It splits FP32 weights into high-bit and low-bit residual BF16 tensors, performs two BF16 GEMM operations during inference, and combines them linearly. Its precision significantly surpasses TF32, with performance up to 3.22x faster than FP32 cuBLAS.",
+            "point": "Router GEMM achieves FP32-level precision with a dual BF16 combination, balancing accuracy and performance."
+          },
+          {
+            "explanation": "It fuses five stages—routing, Gate-Up GEMM, activation quantization, Down GEMM, and Top-K aggregation—into a unified pipeline, eliminating memory copy and kernel launch overhead, achieving a 1.2x-1.6x performance improvement over mainstream frameworks.",
+            "point": "FusedMoE significantly reduces MoE inference overhead through a full-operator pipeline reconstruction."
+          },
+          {
+            "explanation": "It fuses over a dozen fragmented kernels into 2 CUDA kernels through full-process kernel fusion, fine-grained parallelism, and computation chain consolidation, achieving a 4.0x-7.5x speedup over vLLM.",
+            "point": "Sampler eliminates post-processing performance bottlenecks through extreme large-kernel fusion."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Tencent Hunyuan open-sources a major upgrade to its HPC-Ops inference operator library, introducing five core operators including Attention dynamic scheduling, Router GEMM dual BF16 high-precision computation, and FusedMoE full pipeline, with multiple performance metrics surpassing mainstream baselines and end-to-end QPM improved by 30%.",
+        "originalTitle": "腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-11",
+        "publishDateTimeStr": "2026-06-11 16:35:00",
+        "publishTimeStamp": 1781166900000,
+        "qualified": false,
+        "readCount": 56,
+        "readTime": 21,
+        "readUrl": "https://www.bestblogs.dev/article/f8d006eb",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_cc0f35",
+        "sourceImage": "https://image.jido.dev/20251127045433_c2ea00c4",
+        "sourceName": "腾讯混元",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is an official release from the Tencent Hunyuan AI Infra team regarding a major upgrade to its open-source inference operator library, HPC-Ops. It details the technical principles, design concepts, and performance data of five core operators: Attention adopts runtime dynamic load scheduling to address long-tail latency, achieving a 2.95x speedup for long-text scenarios; Router GEMM uses a dual BF16 combination to simulate FP32 precision, achieving up to a 3.22x speedup over FP32 cuBLAS while maintaining high accuracy; FusedMoE integrates the entire MoE inference process into a unified pipeline, delivering a 1.2x-1.6x performance improvement over vLLM/SGLang; Fused AllReduce+Norm deeply fuses communication and normalization computation, achieving up to a 1.68x speedup; Sampler fuses over a dozen kernels into 2, achieving a 4.0x-7.5x speedup over vLLM. All capabilities are derived from Tencent Hunyuan's online production practices and have been fully open-sourced.",
+        "tags": [
+          "AI Infra",
+          "LLM",
+          "Inference Optimization",
+          "Open Source Project",
+          "Operator Library"
+        ],
+        "title": "Tencent Hunyuan AI Infra New Open Source: Comprehensive Upgrade of HPC-Ops Inference Core Operators",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497936&idx=1&sn=21a726b8e684ce2e341265a518ab0369",
+        "wordCount": 5001
+      },
+      {
+        "authors": [
+          "Founder Park"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045419_08d80bcb",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_ed22a9ae",
+        "keyQuotes": [
+          "For a startup that hasn't figured things out, going after the most red ocean market is the right move. In a market where the tide lifts all boats, even being the 1,000th player in a red ocean is bigger than being in the top 10 of a small market.",
+          "AI was supposed to level the playing field between ordinary people and elites, but token maxing has taken it to another extreme.",
+          "A tool is something people use. If you know how to use it, you use it; if you don't, you don't. But a service is different. A service doesn't require the person receiving it to proactively tell the provider what to do.",
+          "An entrepreneurial team still needs a soul, a reason for why they started. If it's purely for money, it's hard to be self-consistent.",
+          "I'm not that obsessed with AI. I'm obsessed with the people I want to serve."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "Li Huanzhi believes AI is a rising tide that lifts all boats. In a red ocean, the demand is proven. Being the 1,000th player in a red ocean can still be larger than being in the top 10 of a small market. This strategy allowed GlobalGPT to gain positive feedback and cash flow quickly with zero funding, ensuring its survival.",
+            "point": "For startups that haven't figured things out, entering the most red ocean market might be the right choice."
+          },
+          {
+            "explanation": "The team began by contacting AI content creators from third-world countries, securing stable exposure at a low cost and becoming their long-term sponsors, maintaining a high ROI. Only later did they learn to scale SEO and paid advertising, forming a complete growth system.",
+            "point": "GlobalGPT's growth relied on the three pillars of overseas marketing: KOLs, SEO, and paid ads, starting with low-cost KOL partnerships."
+          },
+          {
+            "explanation": "Li Huanzhi defines GlobalGPT as a 'business.' Despite achieving millions in ARR, the team felt lost after creating several profitable products. He believes the linear growth model based purely on traffic and advertising is not the original purpose of starting a company, and that more advanced products and brands are needed to break through.",
+            "point": "The wrapper business is a 'Southern-style' approach that can make money but has limited potential and lacks mission-driven motivation."
+          },
+          {
+            "explanation": "Unlike tool-based AI that requires users to give commands, Yukie acts like a personal trainer. Based on an understanding of the user's context, it proactively tells them what to do. Its goal is to serve non-tech users who 'don't know what they don't know,' bridging the cognitive gap created by AI.",
+            "point": "Yukie's core is 'service-oriented AI,' designed to proactively help ordinary people who lack awareness."
+          },
+          {
+            "explanation": "Li believes LegalNow failed because it had only idealism (Northern style) without commercial viability. GlobalGPT's success proved the value of business acumen (Southern style). The launch of Yukie represents his attempt to combine the two, using business leverage to amplify the social value of idealism.",
+            "point": "Entrepreneurship requires both the 'Northern-style' sense of mission and the 'Southern-style' business acumen."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "GlobalGPT founder Li Huanzhi shares his entrepreneurial journey from a zero-funding wrapper product to millions in ARR, and elaborates on his shift from 'survival first' to returning to his original vision by creating a service-oriented AI product, Yukie.",
+        "originalTitle": "GlobalGPT 李焕之：零融资、套壳产品千万美金 ARR 后，我找到了创业的 mission",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-15",
+        "publishDateTimeStr": "2026-06-15 16:55:00",
+        "publishTimeStamp": 1781513700000,
+        "qualified": false,
+        "readCount": 52,
+        "readTime": 56,
+        "readUrl": "https://www.bestblogs.dev/article/ed22a9ae",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_caf83c",
+        "sourceImage": "https://image.jido.dev/20251127045419_08d80bcb",
+        "sourceName": "Founder Park",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is an in-depth interview by Founder Park with Li Huanzhi, founder of GlobalGPT. Li candidly reviews his transition from a lawyer to an entrepreneur: after the failures of LegalDAO and LegalNow, with only one month of cash runway left, the team created the AI wrapper product GlobalGPT. By aggregating mainstream AI models and offering users access to multiple models with a single subscription, the product capitalized on the market boom of diverse models. Through KOL marketing, SEO, and paid advertising, it achieved over 3 million global users and over $10 million in ARR without any external funding. The article details its growth strategy, user profile (non-tech senior white-collar workers), and the entrepreneurial philosophy that 'being the 1,000th in a red ocean is bigger than being in the top 10 of a small market.' After achieving commercial success, Li was not satisfied with the linear growth of a wrapper business. Driven by concerns that 'AI is widening the gap between elites and ordinary people,' he returned to his original mission and launched Yukie, a service-oriented AI product. Yukie's core concept is that AI should not wait for user commands but should proactively offer services like a personal trainer, helping ordinary people who 'don't know what they don't know' bridge the cognitive gap. The article also explores Yukie's product form, business model, team organization (an AI-native R&D pipeline), and the founder's reflections on balancing mission and business.",
+        "tags": [
+          "Entrepreneurship",
+          "AI Products & Applications",
+          "Going Global",
+          "Growth Strategy",
+          "Wrapper Product"
+        ],
+        "title": "GlobalGPT Li Huanzhi: From Zero Funding and a Wrapper Product to Millions in ARR, Then Finding My Mission",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524686&idx=1&sn=ad041374ffc8e724dafd75369d0e12c8",
+        "wordCount": 13987
+      },
+      {
+        "authors": [
+          "InfoQ 中文"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527130453_c4b7ab1.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_f59fa08b",
+        "keyQuotes": [
+          "You can't find new continents with an old map.",
+          "When humans can no longer fully understand their own systems, an equally AI-driven diagnostic system must exist as a counterpart safeguard.",
+          "Although code is the only true documentation, it operates at an extremely low level of abstraction. Low abstraction inevitably leads to low efficiency.",
+          "The introduction of AI amplifies this uncertainty, turning it into a norm. Once we understand this, our mindset becomes more at ease: we can only embrace it."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Citing the DORA report and internal Microsoft research, the article points out that AI Coding significantly boosts individual productivity but has limited impact on organizational productivity. Meanwhile, troubleshooting remains one of the most time-consuming tasks for developers, making it the next critical target to address.",
+            "point": "AI troubleshooting is the next productivity bottleneck after AI Coding."
+          },
+          {
+            "explanation": "Traditional monitoring tools (Trace, Metrics, Log) have gaps in complex business scenarios and cannot correlate business semantics. By building 'business assets' (code abstraction, metric topology, impact maps) to structure the business knowledge in developers' minds for AI, this problem can be effectively solved.",
+            "point": "The key to enabling AI to understand the business is eliminating the context gap between humans and AI."
+          },
+          {
+            "explanation": "Faced with over 75% alert noise, the solution operates on two levels: first, a lightweight Agent evaluates confidence based on alert profiles (periodicity, deviation degree, etc.); second, during the reasoning phase, an evidence pyramid inspired by evidence-based medicine is introduced, distinguishing raw signals, background context, single-point evidence, multi-source fused evidence, and direct causal inference.",
+            "point": "Combating alert noise requires layered filtering and evidence grading."
+          },
+          {
+            "explanation": "Large models are not good at numerical computation and trend identification. Directly using multimodal or time-series data in prompts is both ineffective and costly. Encapsulating such tasks as standardized operators (Tools/Skills) processed by traditional algorithms significantly improves accuracy, reduces token consumption, and enhances determinism.",
+            "point": "The best practice for countering model hallucinations is to engineer deterministic tasks."
+          },
+          {
+            "explanation": "Workflows are deterministic, controllable, and low-latency, making them suitable for SOP-based fixed scenarios. Agents are flexible and generalizable but come with uncertainty and high token consumption. In complex business troubleshooting, a layered architecture should be adopted, using Workflows for 'fast thinking' and Agents for 'slow thinking'.",
+            "point": "Agents and Workflows are complementary, not substitutes."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on Kuaishou's practice in complex troubleshooting scenarios, this article systematically elaborates on four core challenges in building an RCA Agent—enabling AI to understand the business, combating alert noise, measuring uncertainty, and suppressing model hallucinations—along with corresponding architectural design, evaluation systems, and continuous evolution strategies.",
+        "originalTitle": "复杂业务场景下 RCA Agent 的探索实践",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-11",
+        "publishDateTimeStr": "2026-06-11 13:30:00",
+        "publishTimeStamp": 1781155800000,
+        "qualified": false,
+        "readCount": 50,
+        "readTime": 39,
+        "readUrl": "https://www.bestblogs.dev/article/f59fa08b",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_8f2a9f",
+        "sourceImage": "https://image.jido.dev/20260527130453_c4b7ab1.jpeg",
+        "sourceName": "InfoQ 中文",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is compiled from a speech by Guo Yongliang, Senior Server Architect at Kuaishou, at QCon 2026 Beijing. The author first points out that after the benefits of AI Coding have stabilized, troubleshooting has become the next productivity bottleneck. The article then breaks down four core challenges in implementing business-level troubleshooting: how to build 'business assets' (code abstraction, metric topology, impact maps) to help AI understand the business; how to combat over 75% alert noise through alert confidence assessment and an evidence-based grading system inspired by evidence-based medicine; how to build a Benchmark system based on real fault snapshots to measure the uncertainty of AI troubleshooting; and how to engineer deterministic tasks into Tools and Skills to counter large model hallucinations in numerical computation and trend identification. Architecturally, the article introduces a layered design: lightweight Workflows handle high-certainty 'fast thinking' tasks, while a Multi-Agent architecture tackles complex 'slow thinking' problems. It also explores product ideas for Agent self-evolution, memory mechanisms, and evolution toward AI-native autonomous systems.",
+        "tags": [
+          "AI Agent",
+          "RCA",
+          "AI Coding",
+          "Observability",
+          "Engineering Practice"
+        ],
+        "title": "Exploring RCA Agent in Complex Business Scenarios",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286819&idx=2&sn=803565661ca00c316b89845bcb430b4f",
+        "wordCount": 9525
+      },
+      {
+        "authors": [
+          "腾讯技术工程"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_15507569",
+        "keyQuotes": [
+          "Being able to catch malicious samples is the first step. Being able to let normal samples pass is the prerequisite for entering the production pipeline.",
+          "Different scanning solutions see different risk facets, and there is even a lack of stable consensus on the judgment of the same batch of samples.",
+          "The core issue of Agent skill security scanning has shifted from whether there are tools to how to prove effectiveness in a new phase."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Behind 50,000 skills, the top 20 publishers collectively account for 12.9% of releases, with extreme accounts publishing an average of 10.6 skills per day. Multiple account matrices indicate the ecosystem already has the conditions for batch creation, deployment, and disguise.",
+            "point": "Agent skill security threats have shown signs of large-scale, matrix-based production."
+          },
+          {
+            "explanation": "OpenClaw official data shows that the maximum overlap of positive samples between any two scanning types is only 10.4%, and 81.9% of flagged samples are detected by only a single solution. The industry urgently needs a unified evaluation benchmark.",
+            "point": "Existing scanning solutions lack consensus, with extremely low overlap of positive samples."
+          },
+          {
+            "explanation": "Cisco Skill Scanner has decent recall but a false positive rate of 24%, which can lead users to ignore security alerts. Skill Vetter + Hermes Agent has the fewest false positives and performs better overall.",
+            "point": "High recall does not equal deployability; false positive control is a prerequisite for production environments."
+          },
+          {
+            "explanation": "A large number of normally developed skills exhibit unsafe coding behaviors such as hardcoded credentials, excessive declaration of sensitive permissions, and lack of input validation, which could be exploited by hackers through prompt injection.",
+            "point": "Non-malicious skills also have serious security flaws."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Tencent朱雀Lab, in collaboration with CUHK-Shenzhen, has released SkillTrustBench, the first benchmark for evaluating Agent skill security. Built from over 60,000 real skills into 5,520 test cases covering nine threat types, initial evaluations reveal the industry dilemma that high recall does not equal deployability.",
+        "originalTitle": "谁是 Agent 最强守门员？首个 Agent 技能安全评测基准 SkillTrustBench 正式发布",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-16 17:33:00",
+        "publishTimeStamp": 1781602380000,
+        "qualified": false,
+        "readCount": 43,
+        "readTime": 19,
+        "readUrl": "https://www.bestblogs.dev/article/15507569",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_958ae8",
+        "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+        "sourceName": "腾讯技术工程",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article, jointly released by Tencent朱雀Lab and The Chinese University of Hong Kong, Shenzhen, officially introduces SkillTrustBench—the first dual-purpose benchmark for evaluating both the security and trustworthiness of Agent skills in real-world deployment scenarios and the detection effectiveness of external scanning solutions. The article first outlines the severe state of Agent skill security threats: the ClawHavoc incident in early 2026 led to 1,184 malicious skills being listed; a Snyk report showed 36.82% of skills had security issues; Tencent朱雀Lab's full scan revealed that 74.6% of 50,000 skills declared network request permissions, with highly decentralized external communication channels. It then points out the shortcomings of current scanning solutions: the maximum overlap of positive samples between different tools is only 10.4%, 81.9% of flagged samples are detected by only a single solution, and attackers have begun using input truncation, file type blind spots, social engineering, and other methods to bypass detection. SkillTrustBench distills 5,520 evaluation cases from 62,652 real skills, covering nine threat categories (T01-T09), with a special introduction of 'T09 Unsafe Coding Behavior' to assess skills that are non-malicious but have security flaws. The initial evaluation compared three open-source solutions—Skill Vetter, Cisco Skill Scanner, and NVIDIA SkillSpector—along with model backbones like Claude Opus 4.6, GLM 5.1, and DeepSeek V4 Flash. It found that high recall often comes with high false positives, and a truly deployable solution needs to balance recall and false positives.",
+        "tags": [
+          "AI Agent",
+          "AI Security",
+          "LLM",
+          "Agent Security",
+          "Security Evaluation"
+        ],
+        "title": "Who Is the Strongest Goalkeeper for Agents? The First Agent Skill Security Evaluation Benchmark, SkillTrustBench, Officially Released",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802062&idx=2&sn=ce7da8c7786c043c56d64e23c92b2544",
+        "wordCount": 4708
+      },
+      {
+        "authors": [
+          "Sofia Sulikowski"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a28c8fcc2f66710da5964d8_building-box-ai.png",
+        "domain": "langchain.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_06adaad3",
+        "keyQuotes": [
+          "Enterprise search is challenging, because you have duplicate information, outdated information, things that seemingly look the same but every enterprise has its own nomenclature.",
+          "If the question was very simple, or the search was very simple, the parent node can just do it. It doesn't even need to come up with a plan.",
+          "The advantage of doing it as middleware is that the streaming of the answer and the citation generation happen in parallel, so you never interrupt the user."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The initial hardcoded sub-agent approach was replaced by a dynamic 'Global Agent' that spawns child agents at runtime, enabling flexible handling of complex, multi-step requests without predefined workflows.",
+            "point": "Box evolved from single-file Q&A to a recursive parent/child agent architecture for enterprise-scale tasks."
+          },
+          {
+            "explanation": "Middleware intercepts model and tool calls to run citation generation in parallel with response streaming, implement prompt caching for multi-turn conversations, and automatically summarize context when it exceeds 170,000 tokens.",
+            "point": "Deep Agents middleware enables parallel citation generation and efficient context management."
+          },
+          {
+            "explanation": "Box chose Deep Agents because it preserved the ability to offer customers a choice of LLM providers (OpenAI, Anthropic, Google) and accelerated engineering velocity, reducing agent shipping time from months to weeks.",
+            "point": "Model agnosticism and speed of iteration were critical framework selection criteria."
+          },
+          {
+            "explanation": "All agents share the same full set of tools (BM25, vector search, structured Q&A, file operations), with the model deciding which tools to use rather than relying on static routing logic.",
+            "point": "The architecture uses a uniform tool registry accessible to both parent and child agents."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article details how Box AI built its enterprise content agent using LangChain's Deep Agents framework, employing a recursive parent/child architecture for scalable, secure, and model-agnostic document analysis.",
+        "originalTitle": "How Box AI built enterprise content agents with Deep Agents",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-12",
+        "publishDateTimeStr": "2026-06-12 08:00:00",
+        "publishTimeStamp": 1781222400000,
+        "qualified": false,
+        "readCount": 33,
+        "readTime": 5,
+        "readUrl": "https://www.bestblogs.dev/article/06adaad3",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_88bf28",
+        "sourceImage": "https://image.jido.dev/20260527045328_69a17e4a429d54e956e2a763_favicon.png",
+        "sourceName": "LangChain Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article presents a case study of Box AI's evolution from single-file Q&A to an enterprise-scale agentic system built on Deep Agents. It explains the architectural shift from hardcoded, specialized sub-agents to a recursive parent/child model where a 'Global Agent' dynamically spawns child agents to handle complex, multi-step tasks like cross-enterprise search and multi-document synthesis. Key design decisions include complete model agnosticism (supporting OpenAI, Anthropic, Google, etc.), the use of Deep Agents middleware for parallel citation generation, prompt caching, and context management, and a focus on engineering velocity that reduced agent shipping time from months to weeks. The article concludes with a vision for agents possessing the institutional knowledge of a long-tenured employee.",
+        "tags": [
+          "AI Agent",
+          "Enterprise AI",
+          "LLM",
+          "RAG",
+          "Deep Agents"
+        ],
+        "title": "How Box AI built enterprise content agents with Deep Agents",
+        "translateContent": null,
+        "url": "https://www.langchain.com/blog/building-box-ai-how-an-enterprise-content-platform-went-ai-native-with-deep-agents",
+        "wordCount": 1074
+      },
+      {
+        "authors": [
+          "十字路口Crossing"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_58cefbef",
+        "keyQuotes": [
+          "We have a fundamental understanding: AI is very different from traditional software. Traditional software is a tool that must be operated by humans; AI itself is labor.",
+          "Let me make a bold statement here: We believe SOPs represent backwardness and slowness. Because so-called standardization essentially forces everything to conform to a passing line, achieving only 60 points.",
+          "The biggest dividend of AI is not enabling headquarters to implement top-down micro-strategies, but equipping every ordinary store clerk and salesperson with a digital advisor by their side.",
+          "Those who merely connect a model or put a shell on it without changing the core production relations will ultimately be eliminated by history."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "Traditional software requires human operation, whereas AI itself can function as a digital employee. The role of the FDE is to help this digital employee integrate into the company, similar to an HRBP or foreman, responsible for training, system integration, and ensuring output.",
+            "point": "The essence of AI is labor, not a software tool."
+          },
+          {
+            "explanation": "Technology accounts for only one-third of the AI implementation effort. The real heavy lifting involves restructuring organizational frameworks, reshaping business models, modifying performance evaluation systems, and streamlining human-machine collaboration. Without this, even the most powerful models are just decorations.",
+            "point": "The core challenge of AI implementation is not technical, but organizational, operational, and related to interest distribution."
+          },
+          {
+            "explanation": "Traditional standardized management can only guarantee a passing grade of 60. The value of AI lies in providing personalized, dynamic intellectual support for each frontline unit (e.g., a store), enabling them to leverage local context to achieve 85 or even 90 points.",
+            "point": "SOPs represent backwardness; management in the AI era should shift from standardization to dynamic empowerment."
+          },
+          {
+            "explanation": "Unlike traditional strategic consulting, FDEs can use AI agents to directly impact a company's core business processes and final performance, giving them the confidence to engage in performance-based contracts. Their business model shifts from selling advisory services to 'Results-as-a-Service.'",
+            "point": "The value of an FDE service provider lies in delivering deterministic results, not PPTs."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article, through a dialogue with two partners of Rolling AI, deeply interprets the FDE (Frontline Deployment Engineer) role favored by both OpenAI and Anthropic, revealing the core challenges and business opportunities in the last mile of enterprise AI implementation.",
+        "originalTitle": "OpenAI 和 Anthropic 共同看好的 FDE：AI 时代的新岗位出现，旧分工松动｜对谈 Rolling AI",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-11",
+        "publishDateTimeStr": "2026-06-11 14:45:00",
+        "publishTimeStamp": 1781160300000,
+        "qualified": false,
+        "readCount": 33,
+        "readTime": 54,
+        "readUrl": "https://www.bestblogs.dev/article/58cefbef",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f63517",
+        "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+        "sourceName": "十字路口Crossing",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is a transcript of a podcast interview. The guests are Agan and Liu Kai, two partners of Rolling AI, an AI business consulting firm. Using the simultaneous announcement by OpenAI and Anthropic of a billion-dollar FDE joint venture as a starting point, the article delves into the nature, value, and challenges of the emerging FDE role. The core argument is that AI is not traditional software, but labor. The FDE acts like a 'foreman,' leading a team of 'digital high-performers' deep into the front lines of a business to solve three major problems: business process integration, private knowledge governance, and IT system connectivity. Through multiple real-world cases involving a dairy company, a retail chain, a rental platform, and others, the article demonstrates how AI is moving from 'demonstrating capability' to 'delivering results.' It presents sharp viewpoints such as 'SOPs represent backwardness' and 'AI implementation failure rate exceeds 50%.' The article also discusses the core qualities required for an FDE (strategic consulting, human-machine collaboration mindset, engineering hands-on skills), the changes in organizational structure in the AI era (from control center to empowerment center), and the future business prospect where FDE service providers might be 'owned' rather than 'invested in' by PE giants.",
+        "tags": [
+          "AI Commercialization",
+          "AI Agent",
+          "Enterprise Services",
+          "AI Implementation",
+          "Business Insights"
+        ],
+        "title": "FDE, the New Role Favored by Both OpenAI and Anthropic: A New Position Emerges in the AI Era, Old Divisions Loosen | A Conversation with Rolling AI",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109004&idx=1&sn=a9c8321b6306c7536563c127bb982ffd",
+        "wordCount": 13472
+      },
+      {
+        "authors": [
+          "罗西的思考"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260527052039_75b4d91.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_10a1a93e",
+        "keyQuotes": [
+          "Agent developers don't need to know what exists below the line, and the framework doesn't need to know what business the Agent is doing. This is exactly the effect a good abstraction should achieve.",
+          "The core idea of TITO is just one sentence: only tokenize the new parts, reuse the token IDs of existing prefixes, and ensure strict consistency of token prefixes across multi-turn dialogues.",
+          "Miles' design philosophy is: invest the right cost in the right place based on the scenario."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Agent developers only need to write business logic as if calling the OpenAI API, while the framework transparently handles training infrastructure tasks such as session management, TITO tracking, loss mask construction, and exception degradation, significantly reducing the development cost of new Agents.",
+            "point": "agentic_tool_call decouples Agent business logic from RL training infrastructure through an adapter pattern."
+          },
+          {
+            "explanation": "The root cause is the inconsistency in prefixes due to the Chat Template's loop.last judgment. TITO only tokenizes new non-Assistant messages, reuses existing prefixes, and ensures the append-only invariant through three lines of defense: fixing the template, automatic validation tools, and runtime assertions, thereby guaranteeing precise loss_mask.",
+            "point": "TITO solves the token sequence drift issue in multi-turn RL caused by Chat Templates through incremental tokenization."
+          },
+          {
+            "explanation": "As an independent FastAPI process, the Session Server transparently manages the LinearTrajectory state machine, supports TITO incremental tokenization and an OpenAI-compatible API. The 3-Phase Lock releases the lock during inference, supporting long-chain tool calls without blocking concurrency.",
+            "point": "The Session Server provides stateful multi-turn session management with a 3-Phase Lock design that balances concurrency and correctness."
+          },
+          {
+            "explanation": "From fully asynchronous (high throughput but introducing off-policy bias) to True On-Policy (bit-level consistency but sacrificing performance), Miles provides four levels of progressive guarantees: staleness filtering, TIS/MIS, R3 route replay, and True On-Policy contracts, which users can combine based on their scenarios.",
+            "point": "The training-inference consistency spectrum allows users to flexibly trade off between throughput and correctness."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides an in-depth analysis of the key technologies in the Miles project for Agentic RL training, including the agentic_tool_call adapter, TITO incremental tokenization, Session Server state management, and the training-inference consistency spectrum, showcasing a systematic design from engineering decoupling to training correctness.",
+        "originalTitle": "【Agentic RL / 强化学习框架】Miles 项目技术分析---（2）--- 关键技术",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-16 20:23:00",
+        "publishTimeStamp": 1781612580000,
+        "qualified": false,
+        "readCount": 31,
+        "readTime": 75,
+        "readUrl": "https://www.bestblogs.dev/article/10a1a93e",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_07f258cd",
+        "sourceImage": "https://image.jido.dev/20260527052039_75b4d91.jpeg",
+        "sourceName": "罗西的思考",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This is the second article in the technical analysis series on the Miles project, focusing on the key technologies that upgrade the Slime research-grade RL framework into an Agentic-first enterprise production system. The article elaborates on 8 core technical points: agentic_tool_call acts as a decoupling adapter between Agent business logic and RL training infrastructure, using separation of concerns to allow Agent developers to focus solely on business logic; TITO (Token-In, Token-Out) addresses the tokenization drift issue in multi-turn Agent RL caused by the Chat Template's loop.last, ensuring strict token prefix consistency through incremental tokenization; the Session Server serves as the productized shell of TITO, providing stateful multi-turn session management; the training-inference consistency spectrum progresses from fully asynchronous to bit-level consistency, including staleness filtering, TIS/MIS, R3 route replay, and True On-Policy contracts. The article also covers Multi-Agent collaborative training, environment design, the MBridge model abstraction layer, and the RadixTree prefix reuse middleware. The content is technically deep and logically clear, offering systematic solutions to the engineering challenges in Agentic RL training.",
+        "tags": [
+          "Agentic RL",
+          "Reinforcement Learning",
+          "LLM",
+          "AI Agent",
+          "Training Framework"
+        ],
+        "title": "Miles Project Technical Analysis (2) — Key Technologies",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489357&idx=1&sn=7b73b1ba36f84b136818250458c680e6",
+        "wordCount": 18556
+      },
+      {
+        "authors": [
+          "mipsytipsy"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://i0.wp.com/charity.wtf/wp-content/uploads/2026/06/nonde-giant.png?fit=1200%2C600&ssl=1",
+        "domain": "charity.wtf",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_5ccef34f",
+        "keyQuotes": [
+          "Code becomes precious when it is the only place knowledge lives.",
+          "When regeneration is easy, code stops being an asset and starts acting as a cache: a materialized view of understanding that is useful while current, disposable when stale.",
+          "The shift from handcrafted servers to immutable infrastructure taught us that mutability is the sworn enemy of understanding.",
+          "If 2025 was the year of vibe coding... I feel like 2026 is shaping up to be a return to discipline.",
+          "Human brains are not good at validation. The nitpickiness, the repetition. This is the worst thing to be clinging to, y'all."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "The cost of generating code has dropped to near zero, shifting the bottleneck from writing code to defining what code should do and validating its correctness.",
+            "point": "AI inverts the economics of code production, making code cheap and disposable."
+          },
+          {
+            "explanation": "Like a cache, code is useful while current but disposable when stale. The real product of a team is shared understanding, which must be encoded elsewhere (e.g., in specs, tests, observability).",
+            "point": "Code is becoming a 'materialized view of understanding,' not a permanent asset."
+          },
+          {
+            "explanation": "The rise of non-deterministic AI-generated code forces teams to adopt rigorous practices like behavioral testing, characterization tests, and production observability—things they should have been doing all along.",
+            "point": "AI demands more engineering discipline, not less, particularly in validation and specification."
+          },
+          {
+            "explanation": "Just as mutability in servers created drift, mutability in code (editing in place) accumulates entropy. AI enables a 'replace, don't fix' model for code, which requires a higher level of system understanding.",
+            "point": "The shift mirrors the move from handcrafted servers to immutable infrastructure."
+          },
+          {
+            "explanation": "Humans are poor at the nitpicky, repetitive work of validation. AI is better suited for this, freeing humans to focus on creativity, inspiration, and architectural thinking.",
+            "point": "Human brains are the weakest link for validation, not the strongest."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Charity Majors argues that AI-generated code, far from eliminating the need for engineering rigor, demands more discipline, drawing a parallel to the shift from handcrafted servers to immutable infrastructure.",
+        "originalTitle": "AI demands more engineering discipline. Not less (xpost)",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-15",
+        "publishDateTimeStr": "2026-06-15 13:38:29",
+        "publishTimeStamp": 1781501909000,
+        "qualified": false,
+        "readCount": 30,
+        "readTime": 15,
+        "readUrl": "https://www.bestblogs.dev/article/5ccef34f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b99332b1",
+        "sourceImage": "https://image.jido.dev/20260527052017_webclip.png",
+        "sourceName": "charity.wtf",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This essay by Charity Majors, cross-posted from her Substack, responds to the technical side of the debate sparked by her previous piece on AI. She argues that while AI has made code generation cheap and fast (the economics of code production have been inverted), this does not reduce the need for engineering discipline; it increases it. Drawing a powerful analogy to the shift from handcrafted 'pet' servers to immutable 'cattle' infrastructure, she posits that code is becoming a disposable, regenerable artifact—a 'materialized view of understanding.' The real challenge shifts from writing code to defining specifications, validating behavior, and maintaining shared understanding. She champions the role of observability, testing, and production-focused engineering (SRE principles) as the new rigor, arguing that human brains are poor at validation and that AI forces teams to finally adopt the disciplined practices they should have had all along. The essay is a call for engineers to embrace this change by doubling down on engineering fundamentals, not abandoning them.",
+        "tags": [
+          "AI Coding",
+          "Engineering Discipline",
+          "Software Engineering",
+          "SRE",
+          "Observability"
+        ],
+        "title": "AI demands more engineering discipline. Not less (xpost)",
+        "translateContent": null,
+        "url": "https://charity.wtf/2026/06/15/ai-demands-more-engineering-discipline-not-less-xpost/",
+        "wordCount": 3539
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://lr0.org/i/arabic-met-folio.jpg",
+        "domain": "lr0.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_66e9b8c1",
+        "keyQuotes": [
+          "An Arabic font is a small program. The text you store is its input, not its output. The word is performed fresh every time you look at it, like music from a score.",
+          "The system he wrote down outlasted everybody who hurt him by a thousand years.",
+          "Justification, in this tradition, is not a spacing problem rather a shaping problem.",
+          "Laid end to end, the eleven centuries that follow Ibn Muqla read like nothing so much as a slow, badly-maintained changelog."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "Unlike Latin, Arabic letters have four distinct shapes (isolated, initial, medial, final) chosen based on neighboring characters. A shaping engine like HarfBuzz is essential for correct rendering.",
+            "point": "Arabic script is always cursive, requiring a shaping engine to select the correct letter form at render time."
+          },
+          {
+            "explanation": "This system, codified by calligraphers like Ibn Muqla, produces a dense, regular weave. The web's default `text-align: justify` stretches spaces, which is typographically incorrect for Arabic.",
+            "point": "Historical Arabic justification used kashida (elongation strokes) inside words, not spaces between them."
+          },
+          {
+            "explanation": "These codepoints encode shaped forms rather than abstract letters, leading to silent failures when searching or comparing text. NFKC normalization is the fix, but it's often overlooked.",
+            "point": "Unicode Arabic Presentation Forms create a legacy encoding that breaks search and data processing."
+          },
+          {
+            "explanation": "Digits are weak characters; their behavior depends on surrounding text. Combined with local digit sets (Western, Arabic-Indic, Extended), this leads to issues like reversed phone numbers and incorrect decimal separators.",
+            "point": "The bidirectional algorithm and three different digit sets create complex rendering bugs for numbers."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article explores the deep technical and historical challenges of rendering Arabic script on the web, from the cursive nature of the script and the need for a shaping engine to the legacy of Unicode presentation forms and the bidirectional algorithm's quirks with digits.",
+        "originalTitle": "An interactive introduction to the terrific experience of rendering Arabic typography and its technical debt",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-13",
+        "publishDateTimeStr": "2026-06-13 20:40:16",
+        "publishTimeStamp": 1781354416000,
+        "qualified": false,
+        "readCount": 29,
+        "readTime": 35,
+        "readUrl": "https://www.bestblogs.dev/article/66e9b8c1",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article begins with a real-world frontend bug—Arabic text failing to justify properly—and uses it as a gateway to a comprehensive exploration of Arabic typography's technical debt. It explains the core structural fact that Arabic is always cursive, requiring a shaping engine to select the correct positional form (isolated, initial, medial, final) for each letter at render time. The author details the historical solutions developed by scribes, particularly the use of kashida (elongation strokes) for justification, a system codified by Ibn Muqla in the 10th century. The article then traces the painful history of Arabic in print and digital media, from the first crude movable type in 1514 to the compromises of Simplified Arabic for Linotype machines, and finally to the modern digital era. It covers the legacy of Arabic Presentation Forms in Unicode, which causes silent search failures, and the complexities of three different digit sets (Western, Arabic-Indic, Extended Arabic-Indic) and their interaction with the bidirectional algorithm, leading to issues like phone numbers being displayed in reverse order. The article concludes with a timeline of key milestones, from Ibn Muqla to the release of the Amiri font and the HarfBuzz shaping engine, framing the entire history as a slow, often-broken changelog.",
+        "tags": [
+          "Typography",
+          "Unicode",
+          "Web Development",
+          "Internationalization",
+          "OpenType"
+        ],
+        "title": "An interactive introduction to the terrific experience of rendering Arabic typography and its technical debt",
+        "translateContent": null,
+        "url": "https://lr0.org/blog/p/arabic/",
+        "wordCount": 8541
+      }
+    ],
+    "pageCount": 202,
+    "pageSize": 20,
+    "totalCount": 4023
+  },
+  "message": null,
+  "requestId": "Te2829a41223a430a8d522844b27038ec",
+  "success": true
+}

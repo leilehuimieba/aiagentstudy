@@ -1,0 +1,1607 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 1,
+    "dataList": [
+      {
+        "authors": [
+          "歸藏的AI工具箱"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045421_eb9966c8",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_54575866",
+        "keyQuotes": [
+          "A Skill packages expert experience, workflows, taste, and tool calls into a distributable, reusable, and iterable Agent capability unit.",
+          "The core of designing a Skill is turning professional taste into model-executable constraints.",
+          "The information architecture of a good Skill should be 'a short center with thick radiation'.",
+          "The scarcest resource in the Agent era is a reusable way of organizing capabilities."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Advanced users can organize goals, documents, tools, and workflows to harness Agents, while average users remain stuck in chat interfaces. Skills are key to bridging this cognitive gap by packaging expert experience into reusable capability units.",
+            "point": "Agents are not leveling the playing field but amplifying a K-shaped divergence."
+          },
+          {
+            "explanation": "A Skill is not just a prompt; it's a package combining prompts, workflows, tool calls, templates, scripts, boundaries, and failure experiences. Its true value lies in solidifying professional knowledge, aesthetic judgment, and industry SOPs, allowing users to achieve high-quality results without understanding the underlying technology.",
+            "point": "The essence of a Skill is a \"capability commodity,\" with the core being the externalization of human experience."
+          },
+          {
+            "explanation": "The SKILL.md file contains only high-signal processes and judgments, while heavy documentation, scripts, and templates are loaded on demand into subdirectories. The Agent's underlying runtime environment (Harness) remains lightweight, while specific workflows and domain knowledge are encapsulated in Skills loaded as needed, reducing context costs and improving stability.",
+            "point": "The architecture of a good Skill follows the \"Thin Harness, Fat Skills\" model: a short center with thick radiation."
+          },
+          {
+            "explanation": "Through gotchas (negative lists) and strong constraints (e.g., \"don't use pure white or pure black,\" \"text shouldn't overlap faces\"), the vast majority of aesthetically poor options are eliminated for the user. The AI's task is downgraded from \"free design\" to filling within a high-quality framework, thus protecting the lower bound of output quality.",
+            "point": "The core of a design Skill is turning professional taste into model-executable constraints."
+          },
+          {
+            "explanation": "A reliable Skill lifecycle includes: first running real tasks with an Agent without the Skill to discover errors, writing evals based on real queries, optimizing descriptions, adding failure cases to gotchas, and conducting cross-model testing. Every real task is an accumulation of capability assets for the next invocation.",
+            "point": "Skill quality needs to be maintained like code quality, and its lifecycle begins with real tasks."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on real-world experience building viral Skills like PPT generators, social media card creators, and logo makers, this article systematically discusses the essence of Skills as \"capability commodities\" in the Agent era: packaging expert experience, workflows, taste, and tool calls into distributable, reusable, and iterable capability units, while deeply exploring their architecture, design, maintenance, ecosystem, and future boundaries.",
+        "originalTitle": "万字长文：做了些爆款 Skills 以后，我对 Skills 的看法",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-12",
+        "publishDateTimeStr": "2026-06-12 08:20:00",
+        "publishTimeStamp": 1781223600000,
+        "qualified": false,
+        "readCount": 148,
+        "readTime": 37,
+        "readUrl": "https://www.bestblogs.dev/article/54575866",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 92,
+        "selectionReason": null,
+        "sourceId": "SOURCE_de48a8",
+        "sourceImage": "https://image.jido.dev/20251127045421_eb9966c8",
+        "sourceName": "歸藏的AI工具箱",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Drawing from first-hand experience developing multiple viral Skills, the author provides a comprehensive and in-depth analysis of Skills in the Agent era. The core argument is that Agents are not leveling the playing field but amplifying a K-shaped divergence, and Skills are key to bridging this gap. The author defines Skills as \"capability commodities,\" far more than just prompts—they are reusable capability packages that bundle expert experience, workflows, taste, and tool calls (such as MCP, CLI, code execution). The article details the architectural principles of a good Skill (the \"Thin Harness, Fat Skills\" model with a \"short center, thick radiation\"), emphasizes the design philosophy of translating human aesthetic and layout judgment (\"taste\") into model-executable constraints (gotchas), and advocates for maintaining a Skill's lifecycle with the same rigor as code quality (from real tasks, evals, gotchas to cross-model testing). Furthermore, it explores Skill ecosystem distribution (GitHub, Xiaohongshu, app stores), user adoption friction (interaction mindset), opportunities for industry-specific Skills, the symbiotic relationship between content and products, and the expansion of Skills into areas like browsers, hardware, and gaming. Finally, the author proposes a complete Skill lifecycle path and concludes that the scarcest resource in the Agent era is a reusable way of organizing capabilities.",
+        "tags": [
+          "AI Agent",
+          "AI Coding",
+          "AI Products & Applications",
+          "Prompt Engineering",
+          "AI Workflow"
+        ],
+        "title": "A Deep Dive: What I've Learned About Skills After Building Several Viral Ones",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk3NTUxMA==&mid=2247497126&idx=1&sn=1eff7a60d8f4b0909845f35b1097ec5e",
+        "wordCount": 9008
+      },
+      {
+        "authors": [
+          "阿里云开发者"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_cb8e134b",
+        "keyQuotes": [
+          "AgentTeams' official positioning is very clear: Collaboration Orchestration Plane. It does not replace the agent runtime, nor does it replace inference services or tool services. It focuses on one thing—making multiple agents operate like a real organization.",
+          "Over the past decade, cloud native has freed us from worrying about 'how applications run on servers,' making infrastructure like water and electricity. In the next decade, AI Native will free us from worrying about 'how AI works within the business.'",
+          "Multi-agent collaboration is not something that can be solved by writing scripts. It requires a control and governance plane like Kubernetes—declarative APIs, continuous reconciliation, clear resource boundaries, and governable permissions and communication."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Analogous to Cloud Native enabling applications to be born on the cloud, AI Native treats agents as first-class citizens for declaration, orchestration, and governance, solving the three major problems of replicability, governability, and evolvability.",
+            "point": "The core of AI Native is to design systems inherently around AI agents, rather than integrating AI capabilities as an add-on."
+          },
+          {
+            "explanation": "Core resources include Manager (platform control), Team (department), Worker (employee), and Human (real person), with a collaboration chain of TeamAdmin → TeamLeader → Workers, and permission policies controlling who can talk to whom.",
+            "point": "AgentTeams uses declarative CRDs to model organizational structures, enabling multiple agents to collaborate like a team."
+          },
+          {
+            "explanation": "The three-tier permission design (L1/L2/L3) of the Human CRD allows real people to naturally integrate into the agent collaboration process, intervening at key decision points to achieve human-machine co-governance.",
+            "point": "HITL (Human-in-the-Loop) is a first-class citizen in AgentTeams, not a patch."
+          },
+          {
+            "explanation": "API keys for LLMs, MCP, and internal services are not scattered across agent containers but are held by the gateway. Workers only obtain revocable Consumer Tokens, and the gateway performs per-route authorization.",
+            "point": "Converging credentials to the AI gateway is a key security practice for production environments."
+          },
+          {
+            "explanation": "In the intelligent on-call scenario, three digital employees complete the full loop of 'receiving ticket → routing → root cause diagnosis → fix proposal → reply suggestion' within 6 minutes. In the open-source pipeline scenario, they automatically complete issue analysis, code generation, PR submission, and fixes.",
+            "point": "Real-world scenarios validate that multi-agent collaboration can compress a process that traditionally requires hours of coordination among multiple people into a minute-level conversation flow."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article introduces Alibaba Cloud's AI Native multi-agent digital human collaboration platform, AgentTeams, built on cloud-native principles. It uses declarative CRDs to model organizational structures and collaboration strategies, enabling multiple agents to work together like a team, and shares practical implementations in R&D, on-call, and open-source maintenance scenarios.",
+        "originalTitle": "云原生 - AI Native 多智能体数字人架构实践",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-11",
+        "publishDateTimeStr": "2026-06-11 08:30:00",
+        "publishTimeStamp": 1781137800000,
+        "qualified": false,
+        "readCount": 255,
+        "readTime": 31,
+        "readUrl": "https://www.bestblogs.dev/article/cb8e134b",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_26c5f1",
+        "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+        "sourceName": "阿里云开发者",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Starting with the scenario of automatic diagnosis of early morning alerts, the article highlights the necessity of multi-agent collaboration. The author traces the evolution from RPA to single agents and then to multi-agent collaboration, proposing that the core of AI Native is to 'design systems inherently around AI agents.' The core content revolves around AgentTeams: a collaboration orchestration and governance plane that uses four CRDs—Manager, Team, Worker, and Human—to declaratively model organizational structures, and designs a three-tier permission system (L1/L2/L3) to natively support HITL. The article details a deployment path based on cloud products, including security practices such as network connectivity and credential convergence to an AI gateway. Finally, it shares the real-world results of four AI Native scenarios (full-cycle R&D, intelligent on-call, open-source pipeline, business analysis), demonstrating capabilities such as a digital human team closing a ticket within 6 minutes and automatically analyzing issues and submitting PRs.",
+        "tags": [
+          "AI Agent",
+          "Multi-Agent Collaboration",
+          "Cloud Native",
+          "AI Native",
+          "AgentTeams"
+        ],
+        "title": "Cloud Native - AI Native Multi-Agent Digital Human Architecture Practice",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560807&idx=1&sn=5b0681fdf88398b3eec92c20d897fb31",
+        "wordCount": 7645
+      },
+      {
+        "authors": [
+          "通义实验室"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260527050603_c063770.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_2e22b643",
+        "keyQuotes": [
+          "SME2, as Arm's latest matrix acceleration instruction set, delivers tangible performance improvements for on-device large model inference through deep integration with MNN—achieving over 80% speedup in the Prefill phase.",
+          "MNN's support for SME2 adopts a compile-time built-in plus runtime auto-detection design, requiring no manual configuration from users."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Traditional Neon instructions require manual decomposition of matrix multiplication, whereas SME2 instructions like FMOPA can complete the outer product accumulation of a matrix tile in a single instruction, significantly boosting computational throughput, especially for compute-intensive tasks like Prefill.",
+            "point": "The SME2 instruction set enables efficient matrix multiplication via the ZA matrix accumulator, a key acceleration technology for on-device AI inference."
+          },
+          {
+            "explanation": "The compile flag `-DMNN_SME2=ON` controls whether to include SME2-optimized kernels. At runtime, it automatically detects hardware support: if available, it uses the accelerated path; if not, it gracefully falls back, ensuring compatibility.",
+            "point": "The MNN inference engine adopts a 'compile-time built-in + runtime auto-detection' design for SME2, requiring no manual configuration from developers."
+          },
+          {
+            "explanation": "Prefill is a compute-intensive task (large batch matrix multiplications) that can fully leverage SME2's advantages. Decode generates tokens one by one, where the bottleneck is memory bandwidth, limiting SME2's benefits.",
+            "point": "SME2 acceleration provides significant gains for the Prefill phase (+81%) but limited gains for the Decode phase (+13%)."
+          },
+          {
+            "explanation": "The tutorial covers the entire process from setting up the Android NDK environment to installing the final APK, providing specific command-line examples and performance testing tools for high operability.",
+            "point": "The article provides a complete end-to-end on-device deployment path, including engine compilation, model preparation, command-line verification, and app building."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides a hands-on demonstration of how to leverage Arm SME2 instructions and the MNN inference engine to efficiently deploy the Qwen3-VL-4B multimodal model on flagship phones supporting SME2, achieving over 80% speedup in the Prefill phase.",
+        "originalTitle": "端侧 AI 提速 80%？如何让 Qwen3-VL 在手机起飞",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-11",
+        "publishDateTimeStr": "2026-06-11 19:44:00",
+        "publishTimeStamp": 1781178240000,
+        "qualified": false,
+        "readCount": 229,
+        "readTime": 12,
+        "readUrl": "https://www.bestblogs.dev/article/2e22b643",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_2ce88a",
+        "sourceImage": "https://image.jido.dev/20260527050603_c063770.jpeg",
+        "sourceName": "通义实验室",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Written by an engineer from the Tongyi Lab, this article serves as a practical engineering tutorial for on-device AI developers. It focuses on the SME2 instruction set of the Armv9 architecture, explaining its principle of achieving efficient matrix multiplication through the ZA matrix accumulator. Using Alibaba's open-source MNN inference engine, the article details a complete deployment workflow: compiling from source (with SME2 support enabled), downloading and converting the model, verifying via command line, and building an Android application. It provides specific compilation commands, model deployment steps, and performance testing methods, presenting real-world test data from a vivo X300: 81% speedup in the Prefill phase and 13% speedup in the Decode phase. Finally, the article also covers advanced tuning methods for model export and runtime parameters.",
+        "tags": [
+          "AI Coding",
+          "LLM",
+          "On-Device Inference",
+          "Model Deployment",
+          "Arm SME2"
+        ],
+        "title": "80% Speed Boost for On-Device AI? How to Make Qwen3-VL Fly on Your Phone",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501476&idx=1&sn=a9caef85456da041a0bfa3c0d40d0843",
+        "wordCount": 2764
+      },
+      {
+        "authors": [
+          "腾讯科技"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_23d850ea",
+        "keyQuotes": [
+          "Behind that smooth power-law curve, there has never been such a thing as free redundancy.",
+          "The reason large models can learn long-tail knowledge that is difficult for humans to grasp is not because they compute harder. It's because they use vast redundant space to build an absolutely quiet chamber for fragile sparks of wisdom amidst the noisy high-frequency world.",
+          "Pruning is not a simple compression optimization problem; it is a resource transaction across the entire lifecycle. What you save in today's inference cost, you borrow from tomorrow's learning ability.",
+          "The gains from scaling are real and inevitable. With every increment in capacity, the model takes one more step in retaining long-tail tasks, building deep computational chains, and learning rare structures."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "A joint Stanford-Anthropic study proves that gradients from high-frequency tasks can wash away the faint traces of long-tail tasks in small models. Large models use vast parameter directions to create orthogonal isolation zones for low-frequency tasks, allowing their signals to be remembered through compound growth.",
+            "point": "Large model parameter redundancy is not waste but provides isolation space for long-tail tasks during training."
+          },
+          {
+            "explanation": "Softmax normalization requires attention weights to sum to 100%. The model is forced to dump useless attention onto the non-semantic BOS token, forming an attention sink to maintain the numerical stability of the main network.",
+            "point": "Some redundant parameters act as a numerical pressure relief 'trash can' during training."
+          },
+          {
+            "explanation": "Research co-authored by Yann LeCun reveals that networks undergo three stages: 'mixing-compression-refinement.' Intermediate layers perform information compression (compression valley), providing stable input for the serial computational chains in the final refinement layers. Pruning intermediate layers cuts the pipeline, halving generative reasoning capabilities.",
+            "point": "Redundant parameters in intermediate layers form the computational skeleton for multi-step reasoning."
+          },
+          {
+            "explanation": "NYU research proves that pruning physically tears away the model's plasticity reserve. Even with massive data, generative reasoning capabilities cannot be recovered. Redundant parameters provide write space for future fine-tuning, preventing catastrophic forgetting.",
+            "point": "Redundant parameters are the plasticity reserve for the post-training phase."
+          },
+          {
+            "explanation": "As models grow larger, marginal gains flow to low-frequency, long-tail, and multi-step reasoning capabilities that benchmarks cannot capture. Metrics like MMLU only measure high-frequency, single-step abilities, while the true gap between large and small models lies precisely in these 'invisible' capabilities.",
+            "point": "Scaling Law has not hit a wall; mainstream benchmarks cannot measure its real gains."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article delves into the phenomenon of parameter redundancy in large models, demonstrating that seemingly \"idle\" parameters play four key roles across training, inference, and post-training phases: isolation space, numerical pressure relief, computational skeleton, and plasticity reserve. It concludes that the marginal gains of Scaling Law are flowing towards long-tail and multi-step reasoning capabilities that benchmarks cannot measure.",
+        "originalTitle": "Scaling Law 的真相，藏在那些「没用」的参数里｜Hao 好聊趋势",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-15",
+        "publishDateTimeStr": "2026-06-15 11:53:00",
+        "publishTimeStamp": 1781495580000,
+        "qualified": false,
+        "readCount": 99,
+        "readTime": 30,
+        "readUrl": "https://www.bestblogs.dev/article/23d850ea",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b475c7",
+        "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "sourceName": "腾讯科技",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Starting with the ShortGPT pruning experiment (removing a quarter of LLaMA-2-13B's layers with almost no drop in MMLU), the article introduces the \"parameter redundancy puzzle.\" The author breaks down the model lifecycle into three stages—training, inference, and post-training—to reveal the four identities of redundant parameters: 1) During training, large parameters provide \"isolation space\" for long-tail tasks, protecting them from gradient interference from high-frequency tasks; 2) During training, some attention heads achieve numerical pressure relief by dumping useless attention onto the Beginning-of-Sequence (BOS) token, satisfying the Softmax normalization constraint; 3) During inference, intermediate layers perform information compression (compression valley), providing stable input for the multi-step reasoning chains in the final 15% refinement layers; 4) During post-training, redundant parameters act as a \"plasticity reserve,\" offering write space for fine-tuning and preventing catastrophic forgetting. The article cites multiple cutting-edge findings, including a joint Stanford-Anthropic study, Oxford University's \"curse of depth,\" NYU's pruning limits, and a paper co-authored by Yann LeCun. The final conclusion: Scaling Law has not hit a wall; rather, mainstream benchmarks (like MMLU) fail to measure the real gains in long-tail task retention, deep computational chain construction, and plasticity reserve.",
+        "tags": [
+          "Scaling Law",
+          "LLM",
+          "Model Training and Inference",
+          "Parameter Redundancy",
+          "Attention Sink"
+        ],
+        "title": "The Truth of Scaling Law Lies in Those \"Useless\" Parameters | Hao Chat Trends",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569330&idx=1&sn=82bd49c7fd2181ab74b67f00292b2b0d",
+        "wordCount": 7379
+      },
+      {
+        "authors": [
+          "Simon Willison"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://static.simonwillison.net/static/2026/jump-to-bug.jpg",
+        "domain": "simonwillison.net",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_67accc9f",
+        "keyQuotes": [
+          "After two days of experience with Claude Fable 5 I think the best way to describe it is relentlessly proactive.",
+          "This is a robust reminder that coding agents can do anything *you* can do by typing commands into a terminal---and frontier models know every trick in the book and evidently a few that nobody has ever written down before.",
+          "Fable is arguably smarter and hence more suspicious of potentially malicious instructions. But that smartness is very much a two-edged sword: if it *does* get subverted by instructions, the amount of damage it can do given its relentless proactivity is terrifying."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Given a vague prompt and a screenshot, Fable autonomously orchestrated a complex debugging workflow involving browser automation, template editing, and custom server creation without explicit instruction.",
+            "point": "Claude Fable 5 is relentlessly proactive, using any trick to achieve its goal."
+          },
+          {
+            "explanation": "It used Playwright, real Safari with `screencapture`, JavaScript injection to simulate keystrokes, and a self-built CORS web server to extract data from a Web Component's shadow DOM.",
+            "point": "Fable demonstrated advanced, multi-modal debugging techniques."
+          },
+          {
+            "explanation": "The author warns that such a capable agent, if subverted by a prompt injection attack, could cause immense damage by exfiltrating data or executing arbitrary commands, emphasizing the need for sandboxing.",
+            "point": "The agent's proactivity poses significant security risks."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Claude Fable 5 demonstrates relentless proactivity by autonomously using browser automation, custom web servers, and JavaScript injection to debug a CSS scrollbar bug from a single screenshot and prompt.",
+        "originalTitle": "Claude Fable is relentlessly proactive",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-12",
+        "publishDateTimeStr": "2026-06-12 07:35:17",
+        "publishTimeStamp": 1781220917000,
+        "qualified": false,
+        "readCount": 95,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/67accc9f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_7808b7",
+        "sourceImage": "https://image.jido.dev/20251127045509_876e4367",
+        "sourceName": "Simon Willison's Weblog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Simon Willison recounts his experience with Claude Fable 5, which he describes as 'relentlessly proactive.' After providing a screenshot of a horizontal scrollbar bug in Datasette Agent and a one-line prompt to investigate dependencies, Fable autonomously executed a multi-step debugging process. It created test HTML pages, used Playwright to test browsers, identified Safari as the target, and used `pyobjc-framework-Quartz` to take screenshots of real browser windows. To trigger the bug's modal dialog, it edited Datasette's templates to inject JavaScript that simulated a keyboard shortcut. It then built a custom Python CORS web server to receive diagnostic data from the browser, extracted measurements from a Web Component's shadow DOM, and tested a fix. The author highlights the impressive capability but also issues a stark warning about the security risks of such proactive agents, especially against prompt injection attacks, calling for sandboxed execution.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "Claude",
+          "AI Coding",
+          "Developer Tools"
+        ],
+        "title": "Claude Fable is relentlessly proactive",
+        "translateContent": null,
+        "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/#atom-everything",
+        "wordCount": 1320
+      },
+      {
+        "authors": [
+          "阿里云开发者"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_bab3a35d",
+        "keyQuotes": [
+          "To deal with AI's uncertainty, piling on prompts creates debt, but building a framework creates an asset.",
+          "Context is not a 'free buffer' where bigger is better; it's a scarce resource that needs careful management.",
+          "Prefer a reproducible 'rough score' over a drifting 'precise score.'",
+          "What truly drives architectural evolution is never 'wanting it to be better,' but 'the current approach has already broken down.'",
+          "The model is responsible for being smart; we are responsible for making it follow the rules."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Models are smart enough, but their output is unstable. Piling on prompts creates technical debt, while building a framework creates an asset. The core of the harness is to solidify 'how AI should work' into an executable, constrainable, and evaluable engineering framework.",
+            "point": "The bottleneck in AI coding is shifting from model capability to process engineering; stability must be provided by an external framework."
+          },
+          {
+            "explanation": "The permanent layer is compressed to ≤8K, with deep content loaded on demand. Through a dispatcher state machine and file-based handoffs, responsibility isolation and state externalization are achieved, degrading the main session to a pure executor and eliminating context pollution.",
+            "point": "The core design of the harness is to 'manage context like a budget,' combating context pollution through layered loading."
+          },
+          {
+            "explanation": "Gates must be deterministic code (G1-G8 gate walls + hook interception), independent of the context window, and fail-closed (deny by default). The system cannot rely on the model 'remembering' which step to execute next.",
+            "point": "Process enforcement must be externalized from LLM reasoning to deterministic infrastructure."
+          },
+          {
+            "explanation": "Using 100% Python deterministic logic, zero LLM calls, and requiring three benchmark runs to produce identical hashes, the platform scores each execution of the harness across 7 dimensions, driving a self-improvement loop.",
+            "point": "The core value of the evaluation platform is to transform 'changing the harness by feel' into 'a score after changes, comparability between good and bad, and evidence for rollbacks.'"
+          },
+          {
+            "explanation": "The core is layered constraints, externalized state, and deterministic scoring. The boundary is its reliance on process observability, and its value diminishes as models improve their ability to self-enforce process discipline.",
+            "point": "This engineering model is transferable to any AI workflow that is 'capable enough but unstable in output, and whose process is observable.'"
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on two months of engineering practice, the author proposes a framework (harness) that solidifies AI coding behavior into an executable and evaluable engineering system, with the core idea of replacing prompt persuasion with structural constraints to address issues like random workflows, context pollution, and repeated mistakes in AI coding.",
+        "originalTitle": "AI 不缺智商缺纪律：我的 Harness 工程化实践",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-16 08:30:00",
+        "publishTimeStamp": 1781569800000,
+        "qualified": false,
+        "readCount": 92,
+        "readTime": 42,
+        "readUrl": "https://www.bestblogs.dev/article/bab3a35d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_26c5f1",
+        "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+        "sourceName": "阿里云开发者",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article systematically introduces an AI coding engineering framework (harness) practiced internally at Alibaba Cloud by the author. The author first points out that the bottleneck in AI coding has shifted from model capability to process engineering. Models are smart enough but unstable, and stability must be provided by an external framework. The article details the five-layer architecture of the harness: a permanent entry layer (CLAUDE.md), an atomic rules layer (7 single-responsibility rules), a role Agent layer (dispatcher scheduling + three-role review + process execution), an on-demand context layer (context/), and an execution support layer (skills/commands/evals). The core design philosophy is to 'manage context like a budget,' combating AI's forgetfulness and uncertainty through responsibility isolation, externalized state, and gating mechanisms. The article also introduces an evaluation platform based on deterministic scoring (zero LLM calls), treating the harness itself as the test subject and quantitatively assessing each execution across 7 dimensions (process completeness, output quality, code correctness, efficiency, security compliance, iteration capability, interface acceptance). Finally, the author candidly discusses the system's boundaries and technical debt, and looks ahead to frontier directions like structured memory layers and code knowledge graphs. The entire article embodies a transferable mindset: any AI workflow with sufficient capability but unstable output can be engineered through layered constraints, externalized state, and deterministic scoring.",
+        "tags": [
+          "AI Coding",
+          "AI Agent",
+          "Engineering Practice",
+          "LLM",
+          "Prompt Engineering"
+        ],
+        "title": "AI Doesn't Lack Intelligence, It Lacks Discipline: My Harness Engineering Practice",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561121&idx=1&sn=82faa885d7d73f4e398dd1e186325b3d",
+        "wordCount": 10338
+      },
+      {
+        "authors": [
+          "硅谷101"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045520_f3caed2e",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_17c1ee9c",
+        "keyQuotes": [
+          "In space, 99% is not enough; it requires a 100% solution.",
+          "This company is very important to me, so important that I would sell all my assets, even borrow money, and put every last penny into this company.",
+          "If the 'Idiot Index' of what you're making is high, then you are the idiot.",
+          "Musk believes that one of the easiest mistakes engineers make is to enjoy imagining a problem that doesn't actually exist.",
+          "Starship has the potential to open up many space imaginations in low Earth orbit, and even further, that were previously considered impossible."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "Musk discovered that the raw material cost of a rocket was only 3% of its selling price. By questioning all requirements, deleting redundancies, and replacing aerospace-grade components with civilian parts (e.g., car wash valves, bathroom latches, household air conditioners), he reduced costs by over 80%, fundamentally restructuring the cost structure of the aerospace industry.",
+            "point": "SpaceX's rise stems from a disruptive cost compression of the traditional aerospace industry's 'Idiot Index'."
+          },
+          {
+            "explanation": "After three Falcon 1 failures, with only enough money left in the company's account for one more payroll, NASA awarded SpaceX a $1.6 billion contract. By analyzing the bidding process, the article argues that NASA did not favor SpaceX but made a rational choice based on technical solutions and risk diversification.",
+            "point": "The NASA CRS-1 contract was the critical turning point that took SpaceX from the brink of death to the starting line of commercial spaceflight."
+          },
+          {
+            "explanation": "In 2025, Starlink's revenue of $11.4 billion accounted for 61% of the company's total revenue, and approximately 74.5% of SpaceX's launches were for Starlink. These internal missions amortize R&D costs and support rapid rocket iteration, creating a virtuous cycle of commercial and technological growth.",
+            "point": "Starlink has not only become SpaceX's cash flow engine but has also built an internal launch flywheel that competitors cannot replicate."
+          },
+          {
+            "explanation": "Stainless steel is a hundred times cheaper than carbon fiber and is resistant to both extreme heat and cold; methane fuel can be sourced in situ on Mars and burns without carbon buildup; chopstick recovery eliminates the weight of landing legs. These seemingly 'regressive' choices are actually the optimal solutions for achieving 'rapid and complete reusability' and the ultimate goal of 'Mars colonization'.",
+            "point": "Starship's technological choices (stainless steel hull, methane engine, chopstick recovery) represent the ultimate application of first-principles thinking."
+          },
+          {
+            "explanation": "The Starshield business generates approximately $5 billion in annual revenue. Government contracts are long-term, exclusive, prepaid, and high-margin, providing a stable funding source for the high R&D costs of Starship and forming a significant component of SpaceX's valuation.",
+            "point": "SpaceX's defense business (Starshield) is becoming a key pillar supporting Starship development and a trillion-dollar valuation."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through on-site visits to SpaceX's Starship base and headquarters, along with interviews with former executives, this article provides a comprehensive review of SpaceX's 24-year rise from its founding, through the three failures of Falcon 1, the life-saving NASA contract, the breakthrough in rocket reusability, the commercial closed-loop of Starlink, to the technological innovations of Starship.",
+        "originalTitle": "SpaceX 崛起史：一切，为了去火星｜实地探访星舰基地与总部",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-14",
+        "publishDateTimeStr": "2026-06-14 11:03:00",
+        "publishTimeStamp": 1781406180000,
+        "qualified": false,
+        "readCount": 92,
+        "readTime": 85,
+        "readUrl": "https://www.bestblogs.dev/article/17c1ee9c",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b51a7e",
+        "sourceImage": "https://image.jido.dev/20251127045520_f3caed2e",
+        "sourceName": "硅谷101",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using SpaceX's potential IPO as a starting point, the article systematically traces the company's development from its founding in 2002 to the present, based on the Silicon Valley 101 team's on-site visits to the Boca Chica Starship base in Texas and the Los Angeles headquarters, as well as an in-depth interview with former Falcon 9 engineer Lewis Hong. It covers: the origin of Musk's decision to build his own rocket as a 'Mars Oasis' performance art piece; the critical turning point after three Falcon 1 failures nearly bankrupted the company, saved by a $1.6 billion NASA CRS-1 contract; the methodology of extreme cost reduction through the 'Idiot Index' and 'Five-Step Process'; the difficult breakthroughs and frequent explosions from Grasshopper to Falcon 9 rocket recovery; how Starlink evolved from a commercial concept into a cash flow engine generating $11.4 billion in annual revenue, creating an internal launch flywheel; the process by which Crew Dragon beat Boeing to become America's only crewed spacecraft; the rapid rise of the Starshield defense business and its support for a trillion-dollar valuation; and the technological innovations and iterative development of Starship in Raptor engines, stainless steel hull, and chopstick recovery. The article presents a complete picture of SpaceX's journey from being ridiculed to rewriting the history of the aerospace industry, supported by on-site reporting, insider perspectives from former executives, and detailed data.",
+        "tags": [
+          "Business Insights",
+          "Tech News",
+          "Aerospace Industry",
+          "Entrepreneurship",
+          "People & Interviews"
+        ],
+        "title": "The Rise of SpaceX: Everything for Mars｜On-Site Visit to Starship Base and Headquarters",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4NjUwNTI0OA==&mid=2247498019&idx=1&sn=eb893ee225f3fcf0ca35aa39da058f54",
+        "wordCount": 21027
+      },
+      {
+        "authors": [
+          "Martin Fowler"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://martinfowler.com/articles/reliable-llm-bayer/card.png",
+        "domain": "martinfowler.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_df1deea3",
+        "keyQuotes": [
+          "Larger context windows did not remove the need to be selective about what each agent sees. In early iterations, putting too much information into the context made the system harder to steer and harder to evaluate.",
+          "The 'Think & Plan' step provides this metacognitive capability, allowing the system to reflect on its own workflow and adjust its strategy accordingly.",
+          "This 'fail-fast' mechanism prevents wasted execution on vague queries, while careful tuning ensures the system remains unobtrusive when the intent is already clear."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The article argues that providing different, focused context to each agent stage (planning, retrieval, reflection, writing) reduces context pollution, improves steerability, and makes the system easier to debug and evaluate.",
+            "point": "Reliable agentic AI requires disciplined context engineering, not just larger context windows."
+          },
+          {
+            "explanation": "This step allows the system to reason about its strategy, evaluate tool selection, and assess progress towards the goal before taking action, leading to dramatic improvements in accuracy for complex queries.",
+            "point": "A dedicated 'Think & Plan' step for process reflection is critical for multi-step agentic workflows."
+          },
+          {
+            "explanation": "RAG excels at extracting insights from narrative reports (PDFs), while Text-to-SQL is better for precise filtering and aggregation of structured data, and the system intelligently routes queries to the appropriate tool.",
+            "point": "A hybrid retrieval strategy combining RAG and Text-to-SQL is essential for bridging unstructured and structured enterprise data."
+          },
+          {
+            "explanation": "As the system expands across multiple domains, a single agent with a flat tool list becomes unmanageable. Domain-specific sub-agents with their own tools and prompts keep responsibilities coherent and prevent cross-domain leakage.",
+            "point": "Evolving towards a hierarchy of domain-specific sub-agents is key to managing complexity at scale."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article presents a detailed case study of Bayer's PRINCE platform, an agentic AI system built on Agentic RAG that transforms complex preclinical data retrieval into an intuitive conversational experience, with a focus on the engineering decisions behind its reliable architecture.",
+        "originalTitle": "Building Reliable Agentic AI Systems",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-16 20:11:00",
+        "publishTimeStamp": 1781611860000,
+        "qualified": false,
+        "readCount": 87,
+        "readTime": 28,
+        "readUrl": "https://www.bestblogs.dev/article/df1deea3",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_913551",
+        "sourceImage": "https://image.jido.dev/20260602012138_1c6a554",
+        "sourceName": "Martin Fowler",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is a comprehensive case study from Bayer, detailing the engineering journey behind PRINCE (Preclinical Information Center), an agentic AI system designed to revolutionize preclinical drug discovery data access. The article begins by outlining the challenge: navigating a maze of siloed, structured and unstructured data (PDF reports, study metadata) using traditional keyword search. It then introduces PRINCE's evolutionary path from a 'Search' tool to an 'Ask' system using RAG, and finally to a 'Do' platform with multi-agent orchestration. The core of the article is a deep dive into the system's architecture, built on LangGraph and FastAPI. It explains the key engineering concepts of 'context engineering' (providing different context to different agents) and 'harness engineering' (scaffolding around LLMs). The article details the agentic workflow, including steps for clarifying user intent, a dedicated 'Think & Plan' step for process reflection, and the roles of Researcher, Writer, and Reflection agents. It provides a thorough breakdown of the hybrid retrieval strategy, combining RAG for unstructured data (with a detailed query-time pipeline including keyword extraction, metadata filtering, query expansion, hybrid search, and reranking) and Text-to-SQL for structured data. The article also covers resilience, error handling, and observability, emphasizing the importance of fallbacks and continuous evaluation. It concludes by discussing the evolution towards domain-specific sub-agents to manage complexity as the system scales.",
+        "tags": [
+          "AI Agent",
+          "RAG",
+          "LLM",
+          "Enterprise AI",
+          "Context Engineering"
+        ],
+        "title": "Building Reliable Agentic AI Systems",
+        "translateContent": null,
+        "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
+        "wordCount": 6888
+      },
+      {
+        "authors": [
+          "百度Geek说"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045403_b213a2e6",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_ac341305",
+        "keyQuotes": [
+          "What AI coding agents lack is not capability, but discipline.",
+          "Superpowers doesn't make AI smarter; it makes AI disciplined.",
+          "Impose the same discipline a senior engineering manager would on a junior developer: stop, think, plan, then build.",
+          "Superpowers is not about 'teaching Claude how to design,' but 'forcing Claude to follow a design process.'"
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Native Claude Code tends to output code directly, easily missing key steps like requirement clarification, boundary handling, and testing, leading to unstable results and numerous bugs. Superpowers solves this by enforcing process constraints.",
+            "point": "What AI coding agents lack is not capability, but discipline."
+          },
+          {
+            "explanation": "Through system prompt injection, it significantly increases the probability of correct behaviors like 'clarify requirements first, design a plan,' transforming AI from probabilistic free-form sampling into engineering execution following a deterministic process.",
+            "point": "Superpowers constrains AI behavior by altering the LLM's probability distribution."
+          },
+          {
+            "explanation": "Author Jesse Vincent applies 30 years of experience managing development teams to AI agents, ensuring consistency and reliability of AI output by defining clear processes, enforcing validation, and state locking.",
+            "point": "Superpowers' design philosophy is 'manage an AI agent like managing a junior developer.'"
+          },
+          {
+            "explanation": "'The Bitter Lesson' discusses how to make models smarter, while Superpowers discusses how to make an already smart model consistently exhibit desired behavior in a given task. It is an art of process management in human-computer collaboration.",
+            "point": "Superpowers and 'The Bitter Lesson' are not contradictory; they operate on different levels."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides an in-depth analysis of the Superpowers project, explaining how it imposes engineering discipline on Claude Code through 14 built-in skills, transforming AI coding from probabilistic free-form output into a deterministic, reproducible engineering process.",
+        "originalTitle": "Superpowers：给 Claude Code 装上“工程大脑”",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-15",
+        "publishDateTimeStr": "2026-06-15 18:00:00",
+        "publishTimeStamp": 1781517600000,
+        "qualified": false,
+        "readCount": 70,
+        "readTime": 70,
+        "readUrl": "https://www.bestblogs.dev/article/ac341305",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_d8db95",
+        "sourceImage": "https://image.jido.dev/20251127045403_b213a2e6",
+        "sourceName": "百度Geek说",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article begins with the author's pain points with AI coding encountered in the querit.ai project, pointing out three original sins of running Claude Code bare: response randomness, intuitive fast thinking, and attention dilution. It then introduces the Superpowers project, detailing the background of its author Jesse Vincent, the project's origin, phenomenal growth data, and official recognition from Anthropic. The core of the article deeply dissects Superpowers' 14 core skills, overall workflow, and Skill file structure. Using the brainstorming skill as an example, through source code analysis and comparative experiments, it demonstrates how techniques like mandatory instructions, structural templates, state locking, and chained calls alter the LLM's probability distribution, turning AI from a free-spirited artist into a disciplined engineer. The article also explores the relationship between Superpowers and \"The Bitter Lesson,\" arguing they are not in competition at the same level, and predicts that when the model's intrinsic capabilities fill the discipline gap, such external add-ons will be phased out. Finally, the article reviews the querit.ai subscription payment frontend case, comparing the development workflow differences before and after using Superpowers.",
+        "tags": [
+          "AI Coding",
+          "LLM",
+          "Prompt Engineering",
+          "AI Agent",
+          "Claude Code"
+        ],
+        "title": "Superpowers: Giving Claude Code an \"Engineering Brain\"",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607138&idx=1&sn=747cfb219a8dbda0249991af5b6eb7f1",
+        "wordCount": 17298
+      },
+      {
+        "authors": [
+          "ByteByteGo"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260616190302_d908f910-b679-4901-b51e-9a1204909118_2182x1096.png",
+        "domain": "blog.bytebytego.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_380212f2",
+        "keyQuotes": [
+          "The most interesting development in this period of AI engineering is the innovations that open-weight models are inspiring through their published designs.",
+          "A trillion-parameter model and a 235-billion-parameter model can cost roughly the same per query if their active counts are similar.",
+          "Architecture is converging while training is now where teams place their different bets."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "By publishing trained parameters and detailed technical reports, teams like DeepSeek, Moonshot AI, and Zhipu AI can learn from and build upon each other's work, creating a public technical conversation that accelerates progress.",
+            "point": "Open-weight models enable a 'borrow-and-build' pattern of innovation."
+          },
+          {
+            "explanation": "MoE separates total parameters (memory/knowledge) from active parameters (compute cost), allowing models to be large and knowledgeable while remaining practical to run. This explains why all major open-weight models share this design.",
+            "point": "The MoE architecture is the common skeleton for all frontier open-weight LLMs."
+          },
+          {
+            "explanation": "Teams diverge on attention strategies (GQA, MLA, Sparse Attention), the number of experts (16 to 384), and post-training methods (RL, distillation, synthetic data). These choices reflect different trade-offs between memory, speed, and capability.",
+            "point": "Key design choices in attention, sparsity, and training differentiate models."
+          },
+          {
+            "explanation": "While architecture is converging, novel training tools like MuonClip (for stable trillion-parameter training) and Slime (for efficient RL) are emerging as highly reusable contributions that can benefit the entire ecosystem.",
+            "point": "Training infrastructure innovations are becoming as important as architectural choices."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article explains how open-weight models have transformed the AI landscape by enabling a 'borrow-and-build' pattern of innovation, focusing on the shared MoE architecture and the key design choices in attention, sparsity, and training that differentiate frontier models.",
+        "originalTitle": "How Open-Weight Models Changed the AI Landscape",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-16 23:31:09",
+        "publishTimeStamp": 1781623869000,
+        "qualified": false,
+        "readCount": 48,
+        "readTime": 10,
+        "readUrl": "https://www.bestblogs.dev/article/380212f2",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_996ae6",
+        "sourceImage": "https://image.jido.dev/20260527123114_8a5609ae-1239-4400-9491-6010a15c4d60_504x504.png",
+        "sourceName": "ByteByteGo Newsletter",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article argues that the rise of open-weight models has fundamentally changed the pace of AI innovation by enabling public, indirect collaboration between competing teams. It begins by clarifying the distinction between 'open-weight' and 'open-source' models, noting that while trained parameters are public, training data and code often remain private. The core of the analysis focuses on the Mixture-of-Experts (MoE) transformer architecture, which has become the common skeleton for all frontier open-weight LLMs. The article explains how MoE separates total parameters (knowledge capacity) from active parameters (compute cost), making large models practical. It then examines three key areas where teams make divergent design choices: attention strategies (GQA, MLA, Sparse Attention), expert count and sparsity (ranging from 16 to 384 experts), and post-training approaches (RL with verifiable rewards, distillation, synthetic agentic data). The article highlights a 'borrow-and-build' pattern, using examples like DeepSeek's MLA being adopted by Kimi K2, and DeepSeek's sparse attention being adopted by Zhipu AI's GLM-5, with each team contributing novel infrastructure (e.g., MuonClip optimizer, Slime framework) that the next team can build upon. The conclusion emphasizes that while specific models will be overtaken, the framework for understanding their design choices will remain relevant.",
+        "tags": [
+          "LLM",
+          "Open-Weight Models",
+          "MoE Architecture",
+          "AI Engineering",
+          "Model Training"
+        ],
+        "title": "How Open-Weight Models Changed the AI Landscape",
+        "translateContent": null,
+        "url": "https://blog.bytebytego.com/p/how-open-weight-models-changed-the",
+        "wordCount": 2363
+      },
+      {
+        "authors": [
+          "大淘宝技术"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045404_f9729af6",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_fa83d221",
+        "keyQuotes": [
+          "Skills are the smallest reusable unit for AI R&D: analogous to how 'functions/classes' encapsulate logic in software engineering, Skills encapsulate workflows + domain knowledge + constraint rules.",
+          "The quality bottleneck is not the model, but knowledge engineering: the improvement from 50% to 90% came entirely from knowledge injection and constraint iteration, not from switching to a more powerful model.",
+          "Deterministic engineering + uncertain AI = a controllable R&D pipeline.",
+          "The developer's role shifts from a code executor to a reviewer and architect."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Skills encapsulate workflows (SKILL.md), domain knowledge (references), and constraint rules, transforming AI from a \"free-form\" conversational model to an engineering model that executes within a defined framework, solving the problem of unstable AI output quality.",
+            "point": "The core of \"Skills-Oriented Programming\" is encapsulating human domain experience into deterministic units executable by AI."
+          },
+          {
+            "explanation": "The article points out that the improvement from 50% to 90% success rate came entirely from knowledge injection and constraint iteration, not from switching to a more powerful model. Domain knowledge (e.g., mapping rules, API signatures) must be explicitly injected through Skills and cannot emerge from training data.",
+            "point": "The quality bottleneck in AI-driven R&D is not the model, but knowledge engineering."
+          },
+          {
+            "explanation": "High-precision tasks (e.g., interface extraction) are handled with deterministic scripts; unstable model tasks (e.g., long document generation) are bypassed through architecture decomposition (sub-Skills); and recurring error patterns are solidified into constraint rules. This combination turns uncontrollable conversations into reproducible pipelines.",
+            "point": "Combining deterministic engineering with uncertain AI is key to building a controllable R&D pipeline."
+          },
+          {
+            "explanation": "Through a layered design of atomic capability layer, template layer, and adapter layer, the AI's scope is narrowed from \"understanding the entire system\" to \"filling in adapter logic within a fixed framework.\" This reduces the adapter layer code volume by 60%, greatly lowering the complexity and error probability of AI generation.",
+            "point": "Layered architecture is the infrastructure for AI programming, significantly improving AI generation quality."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article proposes the \"Skills-Oriented Programming\" paradigm, which encapsulates domain knowledge, workflows, and constraint rules into versionable Skill units, enabling LLMs to generate code within a deterministic framework. This achieves a 65% reduction in end-to-end delivery cycles for enterprise customer integration scenarios, with a 90% first-pass code generation success rate.",
+        "originalTitle": "面向 Skills 编程-淘宝企业购端对端研发提效实践",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Today",
+        "publishDateTimeStr": "2026-06-17 14:19:00",
+        "publishTimeStamp": 1781677140000,
+        "qualified": false,
+        "readCount": 37,
+        "readTime": 39,
+        "readUrl": "https://www.bestblogs.dev/article/fa83d221",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_efc2de",
+        "sourceImage": "https://image.jido.dev/20251127045404_f9729af6",
+        "sourceName": "大淘宝技术",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article from the Taobao Technology team systematically proposes and implements a new AI R&D paradigm called \"Skills-Oriented Programming.\" Using Taobao Enterprise Purchase's custom customer integration scenario as a practical case, it details a five-stage evolution path from Vibe Coding, Prompt Templates, SDD (Specification-Driven Development), to Skill Encapsulation and Cloud Integration. The core idea is to encapsulate human domain experience (workflows, knowledge, constraints) into reusable Skill units, allowing AI to execute code generation within a defined framework rather than generating freely. The article deeply analyzes the bottlenecks encountered at each stage (e.g., AI hallucination, long-context collapse, lack of domain knowledge) and corresponding engineering solutions (script extraction, architecture decomposition, sub-Skills, constraint iteration). It also shares specific methodologies like layered architecture design, vertical domain Skill construction, a four-layer quality control system, and knowledge base building. The final result in the product domain was a reduction in delivery cycle from 23.5 person-days to 8 person-days (65% efficiency improvement) and a 90% first-pass code generation success rate. The article is not just a technical practice report but also offers profound insights into the changing role of developers in the AI era (from code executors to architects and AI mentors).",
+        "tags": [
+          "AI Coding",
+          "LLM",
+          "AI Agent",
+          "AI Workflow",
+          "Prompt Engineering"
+        ],
+        "title": "Skills-Oriented Programming - End-to-End R&D Efficiency Improvement for Taobao Enterprise Purchase",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544373&idx=1&sn=75abfa18658ce69faaa3c10da19a136c",
+        "wordCount": 9746
+      },
+      {
+        "authors": [
+          "tzolov"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://spring.io/img/og-spring.png",
+        "domain": "spring.io",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_9ed27696",
+        "keyQuotes": [
+          "Spring AI 2.0 lifts the tool loop into the advisor chain as a first-class, composable component.",
+          "The improved consistency of Spring AI 2.0 codebase will help, but we also need to provide more guidance to our community in order to make those contributions more useful and integrated in a timely manner.",
+          "Streamable HTTP is now the default, replacing the deprecated SSE transport."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "The release upgrades to Spring Boot 4.0/4.1 and Spring Framework 7.0, but the deeper value is in the architectural improvements: Jackson 3, full null-safety with JSpecify, and a completely refactored, immutable options system with builders.",
+            "point": "Spring AI 2.0 is rebuilt on Spring Boot 4 with a focus on consistency and developer experience."
+          },
+          {
+            "explanation": "Previously buried inside each chat model, the tool loop is now a first-class `ToolCallingAdvisor`. This allows for unified tool calling, progressive tool disclosure (`ToolSearchToolCallingAdvisor`), and structured output self-correction (`StructuredOutputValidationAdvisor`), enabling more sophisticated agentic patterns.",
+            "point": "The tool-calling loop is now a composable advisor in the ChatClient chain."
+          },
+          {
+            "explanation": "Spring AI 2.0 ships with the official MCP Java SDK 2.0.0. The new `mcp-annotations` module allows exposing any Spring service as an MCP server with `@McpTool`, `@McpResource`, and `@McpPrompt`. Streamable HTTP is now the default transport.",
+            "point": "MCP integration is a core feature with an annotation-driven programming model."
+          },
+          {
+            "explanation": "To improve quality and adaptability, the core now supports a defined set of providers (OpenAI, Anthropic, Bedrock, etc.) primarily through their official SDKs, with some models maintained directly by vendors like Oracle and Microsoft.",
+            "point": "The core project focuses on a curated set of chat model providers using vendor SDKs."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Spring AI 2.0.0 GA is released, featuring a Spring Boot 4 baseline, Jackson 3, null-safety, a refactored options system, a unified tool-calling advisor chain, and official MCP Java SDK integration.",
+        "originalTitle": "Spring AI 2.0.0 GA Available Now",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-12",
+        "publishDateTimeStr": "2026-06-12 08:00:00",
+        "publishTimeStamp": 1781222400000,
+        "qualified": false,
+        "readCount": 37,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/9ed27696",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_d52b32",
+        "sourceImage": "https://image.jido.dev/20251127045343_favicon-32x32.png",
+        "sourceName": "Spring Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article announces the general availability of Spring AI 2.0.0, a major release that re-architects the framework on a Spring Boot 4 and Spring Framework 7 foundation. Key improvements include an upgrade to Jackson 3 for better JSON serialization, full JSpecify null-safety annotations, and a complete refactoring of the options and configuration properties system for consistency and immutability. The core project now focuses on a curated set of chat model providers (OpenAI, Anthropic, Amazon Bedrock, Google GenAI, Mistral AI, DeepSeek, Ollama), leveraging vendor SDKs. The most significant architectural change is the lifting of the tool-calling loop into the advisor chain, making it a composable, first-class component via the new `ToolCallingAdvisor`. This enables unified tool calling, progressive tool disclosure for scaling to hundreds of tools, and structured self-correcting output. The release also integrates the official MCP Java SDK 2.0.0, introduces an annotation-driven programming model for MCP servers and clients, and makes Streamable HTTP the default transport. New community extensions for event-sourced conversation memory and agentic patterns are highlighted.",
+        "tags": [
+          "Spring AI",
+          "Java",
+          "AI Agent",
+          "MCP Protocol",
+          "LLM"
+        ],
+        "title": "Spring AI 2.0.0 GA Available Now",
+        "translateContent": null,
+        "url": "https://spring.io/blog/2026/06/12/spring-ai-2-0-0-GA-available-now",
+        "wordCount": 1431
+      },
+      {
+        "authors": [
+          "Moritz Reuss"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/WAM_Blog_Post_Header-660x370.png",
+        "domain": "developer.nvidia.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_da120804",
+        "keyQuotes": [
+          "WAMs offer a different starting point. They use pretrained video or world-model backbones that already model how scene dynamics change under language conditioning. If that prior transfers to behavior generation, the remaining video-to-action gap may be smaller than learning language-to-action grounding directly.",
+          "My take: WAMs will become the second major recipe for robot foundation models, alongside VLM-based VLAs. The open questions are which formulation of them wins, and which parts of the model architecture and pipeline actually matter. It is likely that the winner is neither pure VLA nor pure WAM, but a hybrid of both.",
+          "The generated rollout is surprisingly good for a model that was not explicitly trained as a robot policy. ... Still, the result illustrates why video backbones are attractive for robotics: the model has a useful prior for what robot-object interaction should look like, even though it is not yet reliable enough for control."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "VLAs suffer from a 'grounding gap' where language-to-action mapping must be learned from limited robot data. WAMs start from a backbone that already understands how language conditions visual scene dynamics, potentially reducing the amount of grounding that needs to be learned.",
+            "point": "WAMs offer a different starting point than VLAs by using pretrained video backbones instead of VLM backbones."
+          },
+          {
+            "explanation": "Unlike the more converged VLA recipe, WAMs are being explored through multiple formulations. The three main paradigms are inverse dynamics (predict video, then infer action), joint prediction (predict video and action together), and representation-only (use video backbone as a feature extractor).",
+            "point": "The WAM design space is still actively diverging across three key axes: paradigm, action integration, and architecture."
+          },
+          {
+            "explanation": "Zero-shot, Veo 3.1 generated plausible trajectories for a robot task, but exhibited artifacts like morphing gripper types and failing to fully execute the action. This illustrates the potential of video priors and the need for WAM fine-tuning to turn 'imagination into reliable control'.",
+            "point": "A qualitative experiment with Veo 3.1 shows frontier video models have a useful prior for robot-object interaction, but are not yet reliable for control."
+          },
+          {
+            "explanation": "The central question is whether WAMs represent a real paradigm shift or a short hype cycle. The author's take is that they are a genuine shift, and the most successful systems may merge parts of both VLA and WAM recipes.",
+            "point": "The author predicts WAMs will become a second major recipe for robot foundation models, potentially converging with VLAs into a hybrid approach."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article argues that World-Action Models (WAMs), which use pretrained video backbones instead of VLM backbones, are emerging as a second major paradigm for robot foundation models, potentially overcoming the grounding gap faced by VLM-based VLAs.",
+        "originalTitle": "Pretrained to Imagine， Fine-Tuned to Act: The Rise of World-Action Models",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-15",
+        "publishDateTimeStr": "2026-06-15 10:01:57",
+        "publishTimeStamp": 1781488917000,
+        "qualified": false,
+        "readCount": 36,
+        "readTime": 47,
+        "readUrl": "https://www.bestblogs.dev/article/da120804",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_dacaf9e9",
+        "sourceImage": "https://image.jido.dev/20260527052034_799230b",
+        "sourceName": "NVIDIA Technical Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article provides a comprehensive survey and analysis of the emerging World-Action Model (WAM) paradigm for robot foundation models. It contrasts WAMs with the more established Vision-Language-Action (VLA) models, which start from VLM backbones. The core hypothesis is that WAMs, by leveraging pretrained video backbones that already model how language maps to visual change, can better bridge the 'language-to-action grounding gap' that limits VLAs. The author organizes the WAM design space along three axes: paradigm (inverse dynamics, joint prediction, representation-only), action integration (default tokens, action-as-image, latent actions), and architecture (monolithic, mixture-of-transformers, hierarchical). It includes a qualitative experiment with Google's Veo 3.1 to illustrate the potential of video priors, and discusses practical considerations like compute cost and inference speed. The author's central take is that WAMs will become a major recipe alongside VLAs, and the eventual winner may be a hybrid of both approaches. The post is richly referenced with citations to key papers (e.g., DreamZero, Cosmos Policy, Pi-0, UniPi) and includes a detailed glossary.",
+        "tags": [
+          "AI Agent",
+          "World Model",
+          "Robotics",
+          "VLA",
+          "WAM"
+        ],
+        "title": "Pretrained to Imagine， Fine-Tuned to Act: The Rise of World-Action Models",
+        "translateContent": null,
+        "url": "https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/",
+        "wordCount": 11543
+      },
+      {
+        "authors": [
+          "理想国imaginist"
+        ],
+        "candidateSource": null,
+        "category": "Lifestyle_Culture",
+        "categoryDesc": "Lifestyle & Culture",
+        "cover": "http://wx.qlogo.cn/mmhead/LwcbhAmMnZBD2JFHsvtmx52BedRROMJ5ibOjABicibqAFlRribRlP71h7af5WPTtQu1VrNSoPsW7ibyQ/0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_95283157",
+        "keyQuotes": [
+          "AI can provide brilliant answers, but the ability to truly ask questions, maintain judgment, and build one's own narrative from fragments still belongs only to beings-in-the-world, who have desires, who hesitate, and who persist.",
+          "Life is a series of increasingly pure efforts.",
+          "AI is like a learned person who has never existed in history... In terms of creative advancement, there is nothing admirable about it. The questions AI raises are actually questions others have already asked.",
+          "The objectivity that historians pursue has little to do with their specific personal feelings... This is a starting point for historical research."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "Chen Jiaying argues that living beings develop cognition because they have desires; cognition is not about receiving all information but about simplifying complexity. Objectivity is not a starting point but a process, akin to 'a series of increasingly pure efforts.'",
+            "point": "Cognition stems from the desires of beings-in-the-world; objectivity is 'a series of increasingly pure efforts.'"
+          },
+          {
+            "explanation": "Luo Xin points out that historical research pursues truth while being aware of its own limitations. Cultivating a sense of history, judgment, and the ability to ask questions is more important than reaching perfect conclusions; the process itself is education.",
+            "point": "The greatest value of the humanities lies in the process, not in reaching a single conclusion."
+          },
+          {
+            "explanation": "Chen Jiaying believes that the way AI operates is fundamentally different from human cognition, though the results are highly similar. Luo Xin adds that AI is an 'extremely low-cost, interdisciplinary senior consultant' that can synthesize existing knowledge but cannot ask original questions like Chen Yinke could.",
+            "point": "AI can mimic the results of cognition but cannot pose truly new questions."
+          },
+          {
+            "explanation": "The three scholars agree that AI can provide brilliant answers, but the ability to truly ask questions, maintain judgment, and build one's own narrative from fragments still belongs only to humans, and this ability can only be cultivated through humanistic training.",
+            "point": "In the age of AI, the core value of philosophy and history is to cultivate judgment and narrative ability."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Three scholars, Chen Jiaying, Luo Xin, and Zhou Sicheng, engage in a dialogue on cognition, objectivity, and the value of the humanities in the age of AI, exploring how philosophy and history can help people build their own narratives and judgment amidst fragmented information.",
+        "originalTitle": "陈嘉映×罗新×周思成：谁在定义真实？",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-12",
+        "publishDateTimeStr": "2026-06-12 13:00:00",
+        "publishTimeStamp": 1781240400000,
+        "qualified": false,
+        "readCount": 17,
+        "readTime": 19,
+        "readUrl": "https://www.bestblogs.dev/article/95283157",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_28ba3e9b",
+        "sourceImage": "http://wx.qlogo.cn/mmhead/LwcbhAmMnZBD2JFHsvtmx52BedRROMJ5ibOjABicibqAFlRribRlP71h7af5WPTtQu1VrNSoPsW7ibyQ/0",
+        "sourceName": "理想国imaginist",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is a transcript of a dialogue from the 2026 Utopia Reader's Day event. Chen Jiaying, from a philosophical perspective, explores the relationship between cognition and being-in-the-world, arguing that cognition stems from desire and can only be formed within specific contexts, with objectivity being 'a series of increasingly pure efforts.' Luo Xin responds from a historical viewpoint, emphasizing that historical research pursues truth while acknowledging its own limitations, and that the greatest value of the humanities lies in the process—cultivating judgment and the ability to ask questions. Zhou Sicheng raises the sharp question of whether AI can achieve 'the most objective cognition without being-in-the-world.' The three scholars agree that AI can provide brilliant answers and synthesize existing knowledge, but cannot truly pose new questions. In an era of AI as a 'deus ex machina,' the core value of philosophy and history lies in cultivating the human ability to ask questions, maintain judgment, and build one's own narrative from fragments. The dialogue also touches on the plurality of historical interpretation, the differences in objectivity between the social and natural sciences, and the shortcomings of Chinese education in terms of intellectual depth.",
+        "tags": [
+          "Humanities & Social Sciences",
+          "Philosophy",
+          "History",
+          "Cognitive Science",
+          "AI & Humanities"
+        ],
+        "title": "Chen Jiaying × Luo Xin × Zhou Sicheng: Who Defines Reality?",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5NzIwMTIyMQ==&mid=2650533361&idx=1&sn=4c0eb91ac19b9a89f514beee77ce4ce5",
+        "wordCount": 4716
+      },
+      {
+        "authors": [
+          "Ben Thompson"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvaTAud3AuY29tXC9zdHJhdGVjaGVyeS5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMThcLzAzXC9jcm9wcGVkLWFuZHJvaWQtY2hyb21lLTUxMng1MTItMS5wbmc_Zml0PTUxMiUyQzUxMiZzc2w9MSIsInR4dCI6IlN0cmF0ZWNoZXJ5IGJ5IEJlbiBUaG9tcHNvbiIsInRlbXBsYXRlIjoiZWRnZSIsImZvbnQiOiIiLCJibG9nX2lkIjoxODgwNDM0MTV9.5VWck4PcKPWCTPe_HVznn3n3xsgn-G0b3d2OeiNNC7cMQ",
+        "domain": "stratechery.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c79f0324",
+        "keyQuotes": [
+          "Anthropic, on the other hand, has perfect alignment between talent and mission and business. The company gets to sell to researchers the creation of a machine god, with the mantle of being the sort of person who cares about the dangers and is smart enough to navigate them on behalf of humanity; that every policy change that falls out of that happens to be great for business is the most beautiful coincidence in the world.",
+          "I respect this alignment, and I fear it. I respect it because it is so clearly effective; the closest analogy is probably Apple, which has always framed every self-serving action in the guise of doing right by users --- and often they were. So it is with Anthropic.",
+          "The history of brilliant people convinced they know what humanity needs is a sordid one, precisely because they have convinced themselves that their intentions are good, justifying actions that very much are not."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "Unlike OpenAI, which has been internally conflicted, Anthropic's employees are united by a shared belief in the dangers of AI and their unique role in managing it, which also conveniently serves the company's economic and power interests.",
+            "point": "Anthropic's core advantage is the perfect alignment between its safety mission, talent, and business strategy."
+          },
+          {
+            "explanation": "As models become commoditized, the most value will flow to those who own the user interface. Anthropic's push into direct user workflows and data retention is a strategic move to secure this position, not just a safety measure.",
+            "point": "Anthropic faces an economic imperative to move closer to users and own the user touchpoint."
+          },
+          {
+            "explanation": "Anthropic's actions, such as silently degrading model performance for competitors and fighting the U.S. government over model access, are framed as safety necessities, revealing a belief that only they should have final say over frontier AI.",
+            "point": "The company's safety narrative justifies a pursuit of power and control over AI development."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Ben Thompson argues that Anthropic's unique alignment between its safety mission, talent, and business strategy is its core competitive advantage, enabling it to pursue power and control under the guise of safety, which is both effective and concerning.",
+        "originalTitle": "Anthropic’s Safety Superpower",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-15",
+        "publishDateTimeStr": "2026-06-15 18:00:00",
+        "publishTimeStamp": 1781517600000,
+        "qualified": false,
+        "readCount": 4,
+        "readTime": 13,
+        "readUrl": "https://www.bestblogs.dev/article/c79f0324",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_581c2bce",
+        "sourceImage": "https://image.jido.dev/20260527052056_cropped-android-chrome-512x512-1.png",
+        "sourceName": "Stratechery by Ben Thompson",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article from Stratechery analyzes Anthropic's strategic position and actions following the release of its Fable/Mythos models and the subsequent U.S. government export control directive. Ben Thompson argues that while cynics view Anthropic's safety pronouncements as marketing, the company's true strength lies in the perfect alignment between its talent, mission, and business incentives. He explores three imperatives driving Anthropic: the economic imperative to move closer to users and own the touchpoint, the data imperative to collect real-world usage for model improvement, and the power imperative to control the development of frontier AI. Thompson contends that Anthropic's leadership genuinely believes they are the only ones capable of safely developing superintelligence, which justifies a series of self-serving policies—from data retention changes to silently degrading model performance for competitors—all framed as safety measures. He contrasts this with OpenAI's internal conflict and draws a parallel to Apple's user-centric narrative. The article concludes by respecting the effectiveness of this alignment while fearing its implications, as it places immense power in the hands of a group convinced of its own benevolent intentions.",
+        "tags": [
+          "Anthropic",
+          "AI Safety",
+          "Business Strategy",
+          "Tech Industry Analysis",
+          "AI Policy"
+        ],
+        "title": "Anthropic’s Safety Superpower",
+        "translateContent": null,
+        "url": "https://stratechery.com/2026/anthropics-safety-superpower/",
+        "wordCount": 3017
+      },
+      {
+        "authors": [
+          "Ben Taub"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://media.newyorker.com/photos/6a29bcc674187cbd8463903e/16:9/w_1280,c_limit/r48528.jpg",
+        "domain": "newyorker.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_38c07dfa",
+        "keyQuotes": [
+          "If the United States chooses to attack another NATO country militarily, then everything comes to an end---including NATO and, with it, the security that has been provided since the end of the Second World War.",
+          "The world order as we know it---that we have been fighting for, for eighty years---is over, and I don't think it will return.",
+          "It is what it looks like---Trump is a king, and he's thinking about his empire. It's all about acquiring things---staking your claim, and then covering it in bling.",
+          "The reality is that the United States is now a country in which matters of war and peace are decided not among diplomatic or military experts, in the interests of the state, but through informal channels, by people whose personal proximity to the President---through family, business, donations, or flattery---is their principal qualification."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "News_Media",
+        "mainDomainDesc": "News & Media",
+        "mainPoints": [
+          {
+            "explanation": "The article traces the idea to a 2018 suggestion from Ronald Lauder, showing how it was amplified by a small group of loyalists and opportunists, not by a consensus of national security experts.",
+            "point": "Trump's Greenland pursuit was driven by personal obsession, not strategic necessity."
+          },
+          {
+            "explanation": "The Greenland Policy Coordination Committee, unknown to Danish officials, aimed to use U.S. financial aid to replace Denmark's block grant, securing total U.S. military sovereignty over the island in exchange for supporting independence.",
+            "point": "A secret NSC task force worked to subvert Denmark and accelerate Greenlandic independence."
+          },
+          {
+            "explanation": "The article argues that the U.S. is now using influence operations and economic coercion against a NATO ally, mirroring the behavior of its traditional adversaries like China and Russia.",
+            "point": "The U.S. has adopted the predatory tactics it once opposed, treating an ally as a target."
+          },
+          {
+            "explanation": "The piece reports that Danish soldiers have been ordered to prepare to destroy Greenlandic runways to prevent a U.S. takeover, and the Danish Prime Minister has publicly stated that the post-WWII world order is over.",
+            "point": "The threat is real: Danish forces are preparing for a potential U.S. military invasion."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This New Yorker investigation reveals how Donald Trump's fantasy of annexing Greenland was pursued by a small group of ideologues and opportunists through covert influence operations, undermining NATO and the post-WWII world order.",
+        "originalTitle": "Inside the Ludicrous， Deadly Serious Plan to Take Over Greenland",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-15",
+        "publishDateTimeStr": "2026-06-15 14:00:00",
+        "publishTimeStamp": 1781503200000,
+        "qualified": false,
+        "readCount": 3,
+        "readTime": 46,
+        "readUrl": "https://www.bestblogs.dev/article/38c07dfa",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_7d7c4977",
+        "sourceImage": "https://image.jido.dev/20260603215201_dc41295",
+        "sourceName": "The New Yorker",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This deeply reported piece by Ben Taub traces the evolution of Donald Trump's obsession with acquiring Greenland from a 2018 dinner-table fantasy into a concerted, multi-pronged campaign during his second term. The article profiles four key figures—Chris Cox (Bikers for Trump founder), Tom Dans (former venture capitalist and Treasury official), Drew Horn (former Special Forces commander), and Jørgen Boassen (a Greenlandic supporter)—who ran private influence operations in Greenland, often without the knowledge of the Danish or Greenlandic governments. It details the secret National Security Council task force (the Greenland Policy Coordination Committee) formed during Trump's first term, which worked to accelerate Greenlandic independence in a way that would increase U.S. control, while simultaneously undermining Denmark. The story culminates in the post-2024 reality where Trump's threats have become official policy, Danish soldiers prepare to blow up runways to deter a U.S. invasion, and the Danish Prime Minister declares the post-WWII world order is over. The piece is a stark examination of how personal whims and informal channels have replaced traditional diplomacy, turning a former ally into a potential target.",
+        "tags": [
+          "Geopolitics",
+          "US Politics",
+          "World News",
+          "Foreign Policy",
+          "NATO"
+        ],
+        "title": "Inside the Ludicrous， Deadly Serious Plan to Take Over Greenland",
+        "translateContent": null,
+        "url": "https://www.newyorker.com/magazine/2026/06/22/inside-the-ludicrous-deadly-serious-plan-to-take-over-greenland",
+        "wordCount": 11264
+      },
+      {
+        "authors": [
+          "Founder Park"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045419_08d80bcb",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_6058cc44",
+        "keyQuotes": [
+          "You should no longer be manually prompting a coding agent. You should design a loop that lets the agent work autonomously.",
+          "Agents forget, but code repositories don't.",
+          "Build the loop. Stay the engineer.",
+          "One person uses it to go faster on work they deeply understand; another uses it to avoid understanding the work itself. The Loop doesn't know the difference, but you do."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Instead of manually entering prompts round after round, build a system that can automatically discover tasks, assign them, check results, record status, and decide the next step, allowing the Agent to work in an autonomous loop.",
+            "point": "The core of Loop Engineering is using a system to replace manually prompting the Agent."
+          },
+          {
+            "explanation": "Automations (automatic triggering and classification), Worktrees (parallel isolation), Skills (solidifying project knowledge), Plugins & Connectors (accessing external tools), Sub-agents (separation of generation and checking), plus a state file stored on disk for cross-session memory.",
+            "point": "A complete Loop requires five core modules plus persistent memory."
+          },
+          {
+            "explanation": "Separate the model that writes code from the model that checks it to avoid blind spots from self-review. This principle is also used to determine if a Loop is complete—it should be decided by an independent model, not the one doing the work.",
+            "point": "Separation of generator and checker is the most critical structural design in a Loop."
+          },
+          {
+            "explanation": "Verification responsibility, code understanding debt, and the risk of cognitive surrender are the three major challenges brought by Loops. Designing a Loop is harder than prompt engineering, and engineers must build with judgment, not become 'the person who presses the start button.'",
+            "point": "Loop engineering does not make engineers redundant; instead, it amplifies human responsibility."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article systematically introduces the concept of Loop Engineering, explaining how to build systems that allow AI Agents to work autonomously in loops, and breaks down its five core modules and their implementation in Claude Code and Codex.",
+        "originalTitle": "Harness 之后，硅谷 AI 圈又来新词了：Loop Engineering",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-12",
+        "publishDateTimeStr": "2026-06-12 19:09:00",
+        "publishTimeStamp": 1781262540000,
+        "qualified": false,
+        "readCount": 218,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/6058cc44",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_caf83c",
+        "sourceImage": "https://image.jido.dev/20251127045419_08d80bcb",
+        "sourceName": "Founder Park",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article, compiled by Founder Park from a blog post by Addy Osmani, Director of AI at Google Cloud, systematically introduces the emerging concept of 'Loop Engineering' in Silicon Valley AI circles. The core idea is: instead of manually prompting a coding Agent, design a system that allows the Agent to work in an automated loop. The article details the five core modules required for a complete Loop—Automations (automatic triggering), Worktrees (parallel isolation), Skills (solidifying project knowledge), Plugins & Connectors (tool integration), Sub-agents (separation of generation and checking)—along with a state file for persistent memory. Using Claude Code and Codex as examples, it shows how these modules are implemented in the two products and provides a complete daily Loop example. Finally, the author emphasizes the irreplaceable role of humans in Loop engineering: verification responsibility, code understanding debt, and the risk of cognitive surrender, pointing out that designing a Loop is harder than prompt engineering, and engineers must build with judgment.",
+        "tags": [
+          "AI Agent",
+          "AI Coding",
+          "LLM",
+          "Prompt Engineering",
+          "Developer Tools"
+        ],
+        "title": "After Harness, Silicon Valley AI Circles Have a New Term: Loop Engineering",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524668&idx=1&sn=73628b08989f5b577ea5cc33699e7465",
+        "wordCount": 5436
+      },
+      {
+        "authors": [
+          "腾讯云开发者"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045410_4d44587a",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_071111a0",
+        "keyQuotes": [
+          "The core of adapting legacy projects for AI Coding is not adding a plugin or writing a few prompts, but transforming the project into a form that AI can easily write correctly.",
+          "In the AI Coding era, code must not only be human-friendly but also AI-friendly.",
+          "What truly needs reflection is: have we sacrificed readability, searchability, and modifiability for the sake of writing pleasure?",
+          "Frontend developers will gradually transition from 'syntax craftsmen' to intention decomposers, architecture decision-makers, and AI code reviewers."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "Traditional chart recommendation libraries only recommend based on field types and distributions, resulting in low accuracy in AI dialogue scenarios. The author's proposed three-dimensional scoring engine leverages structural information from SQL like GROUP BY and ORDER BY, along with intent keywords from user prompts, boosting recommendation accuracy from 55% to nearly 90%.",
+            "point": "In AI data analysis scenarios, chart recommendations should combine data features, SQL features, and user prompts in a three-dimensional scoring system, rather than relying solely on data features."
+          },
+          {
+            "explanation": "Traditional highlighting libraries rebuild the DOM tree on every render, causing selection loss and DOM explosion during streaming output. The author uses the CSS Custom Highlight API for coloring based on a single textNode, combined with multi-threaded tokenization and rAF throttling, solving issues like preserving streaming selections, enabling Ctrl+F search, and maintaining performance in long sessions.",
+            "point": "The core conflict in streaming code highlighting is the architectural mismatch between the DOM model of traditional highlighting libraries and the AI dialogue scenario."
+          },
+          {
+            "explanation": "AI can only take an 'average' approach in inconsistent historical code. By establishing structured rule files (.mdc) in the repository, automatically distributing them to directories recognized by AI tools, and converging code exports and Design Tokens, the variance in AI output can be significantly reduced, building team trust in AI Coding.",
+            "point": "The core of adapting legacy projects for AI Coding is making engineering rules machine-readable, rather than relying solely on more powerful models."
+          },
+          {
+            "explanation": "When AI can generate code quickly, 'typing less' is no longer scarce. What is truly scarce is code understandability, searchability, and local modifiability. Past practices that sacrificed readability to reduce typing costs—such as Sass nested concatenation, excessive destructuring, and flashy type gymnastics—need to be re-evaluated.",
+            "point": "In the AI Coding era, programming paradigms should shift from 'elegant and concise' to 'explicit, searchable, straightforward, and moderately repetitive.'"
+          },
+          {
+            "explanation": "In the future, the core competency of frontend developers will no longer be the speed of writing code by hand, but the ability to accurately decompose problems, define boundaries, judge the rationality of AI-generated solutions, and design maintainable architectures—shifting from 'how to write' to 'what to do.'",
+            "point": "The role of frontend developers is transitioning from 'syntax craftsmen' to 'intention decomposers and architecture decision-makers.'"
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on the practice of Tencent's Dola data analysis product, this article systematically elaborates on two key tasks for frontend developers in the AI era: optimizing AI product experience through a three-dimensional scoring recommendation engine and a self-developed code highlighting component, and adapting to AI Coding through engineering constraint refactoring and programming paradigm reflection.",
+        "originalTitle": "Harness Engineering 落地前，先想清楚这几个问题",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-12",
+        "publishDateTimeStr": "2026-06-12 08:45:00",
+        "publishTimeStamp": 1781225100000,
+        "qualified": false,
+        "readCount": 156,
+        "readTime": 34,
+        "readUrl": "https://www.bestblogs.dev/article/071111a0",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_efac5b",
+        "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+        "sourceName": "腾讯云开发者",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This is an in-depth technical practice article from the Tencent Cloud Developer official account. Author franslee, based on the practical experience of his team's AI data analysis assistant Dola, systematically explores two core propositions for frontend development in the AI era. The first part focuses on \"Serving AI Products Well,\" detailing how a three-dimensional scoring recommendation engine combining data features, SQL features, and user prompts improved chart recommendation accuracy from 55% to nearly 90%. It also covers the self-developed Code Highlighting Component 3.0 based on the CSS Custom Highlight API and multi-threaded architecture, solving pain points like selection loss during streaming dialogue, DOM explosion, and Ctrl+F unavailability. The second part focuses on \"Serving AI Coding Well,\" proposing a Harness Engineering approach that advocates transforming legacy projects to be more suitable for AI collaboration by establishing machine-readable engineering rules, converging code exports, and extracting Design Tokens. The article also deeply reflects on how, in an era where AI-generated code is becoming mainstream, programming paradigms should shift from \"elegant and concise\" to \"explicit, searchable, straightforward, and moderately repetitive.\" It points out that the role of frontend developers is transitioning from \"syntax craftsmen\" to \"intention decomposers and architecture decision-makers.\"",
+        "tags": [
+          "Frontend Development",
+          "AI Coding",
+          "AI Product Design",
+          "Engineering Practice",
+          "Code Highlighting"
+        ],
+        "title": "Think Through These Issues Before Implementing Harness Engineering",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695914&idx=1&sn=862b690b99a6036703617043ac4474cb",
+        "wordCount": 8387
+      },
+      {
+        "authors": [
+          "十字路口Crossing"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_572cef4c",
+        "keyQuotes": [
+          "The large language models we are all-in on simply cannot lead to true intelligence.",
+          "If intelligence is a cake, the bulk of the cake is self-supervised learning, the icing is supervised learning, and the cherry on top is reinforcement learning.",
+          "I cannot understand how you can build an intelligent agent on top of a system that cannot predict the consequences of its own actions.",
+          "A truly reliable intelligent agent must be able to anticipate the results of a sequence of actions, then plan a path and maintain safety boundaries."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The core argument is the \"curse of fuzziness\": in continuous, high-dimensional spaces like video, generative models cannot handle infinite possibilities, can only predict fuzzy averages, and fail to learn a true understanding of the world.",
+            "point": "LeCun believes the generative approach of large language models (LLMs) cannot lead to true intelligence."
+          },
+          {
+            "explanation": "By forcing the model to generate similar embedding vectors for different views of the same scene (e.g., original and corrupted versions) rather than generating pixels, the \"curse of fuzziness\" can be avoided, and more robust representations can be learned.",
+            "point": "The non-generative \"joint embedding\" method is a superior path for self-supervised learning."
+          },
+          {
+            "explanation": "The model might cheat by outputting the same vector for all inputs. Barlow Twins forces the model to learn discriminative features by decorrelating the outputs of different neurons (making the cross-correlation matrix approach the identity matrix), thus avoiding collapse.",
+            "point": "\"Representation collapse\" is the main challenge for joint embedding methods, and solutions like Barlow Twins provide an effective remedy."
+          },
+          {
+            "explanation": "JEPA makes predictions in an abstract embedding space, not at the pixel level. It combines a joint embedding architecture with a predictor, allowing it to predict the representation of the world's next state conditioned on actions or control signals, which can then be used for planning and control.",
+            "point": "LeCun's ultimate solution is the \"world model,\" with JEPA (Joint Embedding Predictive Architecture) as its core architecture."
+          },
+          {
+            "explanation": "He argues that the autoregressive reasoning of LLMs is inadequate for this task, and that \"search\"-based reasoning using world models is key to achieving reliable and safe autonomous machine intelligence.",
+            "point": "LeCun is betting roughly $1 billion, believing that a true intelligent agent must be able to anticipate the consequences of its own actions."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article outlines Turing Award winner Yann LeCun's systematic critique of the mainstream large language model approach and details his non-generative alternative, centered on JEPA and world models, backed by a roughly $1 billion bet.",
+        "originalTitle": "图灵奖得主，要用十亿美金赌 AI 的下一个十年（上集）",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-14",
+        "publishDateTimeStr": "2026-06-14 12:47:00",
+        "publishTimeStamp": 1781412420000,
+        "qualified": false,
+        "readCount": 138,
+        "readTime": 31,
+        "readUrl": "https://www.bestblogs.dev/article/572cef4c",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f63517",
+        "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+        "sourceName": "十字路口Crossing",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Based on Yann LeCun's interview on the popular science channel Welch Labs, the article systematically presents his core views on the current trajectory of AI development. It begins with LeCun's academic starting point—convolutional neural networks (CNNs)—leading to his concerns about supervised learning's reliance on labeled data, and revisits his famous \"cake theory\" (where self-supervised learning is the main body). The article then explains why self-supervised generative methods succeed with language (GPT series) but encounter the \"curse of fuzziness\" in video—because the prediction space for video is continuous and infinite, forcing models to output averages. LeCun thus poses a key question: must models be generative? He introduces the non-generative \"joint embedding\" approach (e.g., Siamese networks) and details the challenge of \"representation collapse,\" along with how methods like Barlow Twins (redundancy reduction), VICReg, and the DINO series gradually solve it, eventually matching supervised learning in image classification. The core of the article introduces LeCun's ultimate solution: the world model, specifically implemented as JEPA (Joint Embedding Predictive Architecture). JEPA's key idea is to make predictions in an abstract embedding space rather than at the pixel level, thereby bypassing the \"curse of fuzziness.\" The article concludes that LeCun believes a true intelligent agent must be able to anticipate the consequences of its own actions, and that the autoregressive prediction of LLMs cannot achieve this, hence his bet on world models as the path to autonomous machine intelligence.",
+        "tags": [
+          "AI Frontiers",
+          "World Models",
+          "Yann LeCun",
+          "Self-Supervised Learning",
+          "JEPA"
+        ],
+        "title": "Turing Award Winner Bets $1 Billion on AI's Next Decade (Part 1)",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109099&idx=1&sn=bdc8a94d8008b825254f0df162294ed6",
+        "wordCount": 7506
+      },
+      {
+        "authors": [
+          "腾讯科技"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_18f89448",
+        "keyQuotes": [
+          "Cyber attack capability is an 'emergent byproduct' of general reasoning and coding ability: once a model's intelligence reaches a certain threshold, it automatically attains elite-level penetration testing skills.",
+          "It's like a puzzle: each piece is an ordinary colored paper, but when assembled, it forms a map. The classifier only sees individual pieces, not the whole picture.",
+          "If the most cautious player, using the most sophisticated approach, still can't defend, how much credibility do the safety promises of other companies have?",
+          "The alignment flaw in an AI model is not a bug that can be 'patched'; it is a structural gap between capability and control."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The architecture relies on keyword matching and cannot identify simple bypasses like Unicode homoglyphs; it cannot track cross-turn 'decomposition-recomposition' attack intents; and it cannot defend against multi-model collaborative attacks where a compromised weaker model assists a stronger model in circumventing safeguards.",
+            "point": "Fable 5's 'classifier downgrade' safety architecture has three structural blind spots."
+          },
+          {
+            "explanation": "The first level is engineering bugs (e.g., character encoding bypasses), which are fixable; the second level is 'decomposition-recomposition' attacks, which touch upon the fundamental dilemma of alignment theory and are currently unsolvable; the third level is multi-agent collaborative attacks, a new attack surface not yet defined by academia.",
+            "point": "Jailbreak attack methods correspond to three different levels of problems, each with varying severity."
+          },
+          {
+            "explanation": "If the most safety-conscious company with the most sophisticated solution can be quickly breached, it indicates a structural gap in safety controls when model capabilities 'emerge' with offensive potential, a problem faced by all models reaching this level of intelligence.",
+            "point": "Anthropic's failure is a warning for the entire AI industry, not an isolated incident."
+          },
+          {
+            "explanation": "The ban, unprecedented in scope and using nationality rather than residency as the dividing line, also exposes the bluntness of policy tools, cutting off access for legitimate researchers and highlighting a regulatory framework far behind technological development.",
+            "point": "The U.S. government's export control ban marks a shift in control logic from the hardware layer to the capability layer."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides a detailed postmortem of the 72 hours from the launch of Anthropic's most powerful model, Claude Fable 5, to the U.S. government's unprecedented export control ban due to a security vulnerability, deeply analyzing three structural blind spots in its safety architecture and exploring the fundamental dilemmas facing AI safety.",
+        "originalTitle": "从发布到被消失的 72 小时，Fable 5 暴露了最强 AI 模型的安全困境",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-14",
+        "publishDateTimeStr": "2026-06-14 10:50:00",
+        "publishTimeStamp": 1781405400000,
+        "qualified": false,
+        "readCount": 133,
+        "readTime": 16,
+        "readUrl": "https://www.bestblogs.dev/article/18f89448",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b475c7",
+        "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "sourceName": "腾讯科技",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article narrates in a timeline format the full story of Anthropic releasing its most powerful model, Claude Fable 5, on June 9, 2026. Within 24 hours, it was successfully jailbroken by renowned red team researcher Pliny the Liberator, and within 72 hours, it triggered an unprecedented export control ban by the U.S. government. The article delves into Fable 5's 'classifier downgrade' safety architecture, identifying three structural blind spots: reliance on keyword matching rather than semantic understanding, inability to track cross-turn intent chains, and inability to defend against multi-model collaborative attacks. The author further categorizes the attack methods into three levels: fixable engineering bugs, unsolvable alignment theory dilemmas, and multi-agent attack surfaces not yet defined by academia. The article contextualizes Anthropic's failure within the broader AI industry, arguing that when model capabilities 'emerge' with offensive potential, there is a structural gap in safety controls, and it explores the policy bluntness and regulatory lag resulting from the government's shift in control logic from the hardware layer to the capability layer.",
+        "tags": [
+          "AI Safety",
+          "LLM",
+          "Model Jailbreak",
+          "Anthropic",
+          "AI Regulation"
+        ],
+        "title": "The 72 Hours from Launch to Disappearance: Fable 5 Exposes the Security Dilemma of the Most Powerful AI Model",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569275&idx=1&sn=2571e7fae2c253884d142b0ee2a6e3d7",
+        "wordCount": 3935
+      }
+    ],
+    "pageCount": 202,
+    "pageSize": 20,
+    "totalCount": 4026
+  },
+  "message": null,
+  "requestId": "Ta17b406d49564c04a89fc491fc270a90",
+  "success": true
+}

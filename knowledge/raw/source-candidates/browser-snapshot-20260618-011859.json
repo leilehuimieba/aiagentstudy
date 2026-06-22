@@ -1,0 +1,528 @@
+{
+  "generated_at": "2026-06-18T01:17:54",
+  "mode": "browser-snapshot",
+  "results": [
+    {
+      "source_id": "openai-news",
+      "result": {
+        "status": "low_text",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"D97A70E3A86E4BD9A0EF713A74CE9D2F\",\n  \"url\": \"https://openai.com/news/\"\n}\n",
+          "stderr": ""
+        },
+        "page_info": {
+          "page": "D97A70E3A86E4BD9A0EF713A74CE9D2F",
+          "url": "https://openai.com/news/"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [],\n  \"readyState\": \"complete\",\n  \"text\": \"\",\n  \"textLength\": 0,\n  \"title\": \"请稍候…\",\n  \"url\": \"https://openai.com/news/\"\n}\n",
+          "stderr": ""
+        },
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "text": "",
+          "textLength": 0,
+          "title": "请稍候…",
+          "url": "https://openai.com/news/"
+        }
+      }
+    },
+    {
+      "source_id": "anthropic-news",
+      "result": {
+        "status": "browser_readable",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"F72FC26416B7B6A905942CED3409DE71\",\n  \"url\": \"https://www.anthropic.com/news\"\n}\n",
+          "stderr": ""
+        },
+        "page_info": {
+          "page": "F72FC26416B7B6A905942CED3409DE71",
+          "url": "https://www.anthropic.com/news"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [\n    {\n      \"href\": \"https://www.anthropic.com/news#main-content\",\n      \"text\": \"Skip to main content\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news#footer\",\n      \"text\": \"Skip to footer\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/\",\n      \"text\": \"Home\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/research\",\n      \"text\": \"Research\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/policy\",\n      \"text\": \"Policy\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news\",\n      \"text\": \"News\"\n    },\n    {\n      \"href\": \"https://claude.ai/\",\n      \"text\": \"Try Claude\"\n    },\n    {\n      \"href\": \"mailto:press@anthropic.com\",\n      \"text\": \"press@anthropic.com\"\n    },\n    {\n      \"href\": \"https://support.claude.com/en/articles/9015913-how-to-get-support\",\n      \"text\": \"How to get support\"\n    },\n    {\n      \"href\": \"https://anthropic.com/press-kit\",\n      \"text\": \"Download press kit\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/fable-mythos-access\",\n      \"text\": \"Statement on the US government directive to suspend access to Fable 5 and Mythos 5 AnnouncementsJun 12, 2026 The US government has issued an export control dire\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/claude-corps\",\n      \"text\": \"AnnouncementsJun 11, 2026 Introducing Claude Corps We’re launching Claude Corps, a national fellowship program for people early in their careers who are passion\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/policy-on-the-ai-exponential\",\n      \"text\": \"PolicyJun 10, 2026 Policy on the AI Exponential AI is advancing at exponential speed, and the policymaking process was built for a slower world. We’re sharing p\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/expanding-project-glasswing\",\n      \"text\": \"AnnouncementsJun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries.\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/claude-opus-4-8\",\n      \"text\": \"ProductMay 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/chris-olah-pope-leo-encyclical\",\n      \"text\": \"AnnouncementsMay 25, 2026 Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \\\"Magnifica humanitas\\\" The full text of Chris Olah's remarks on \"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem\",\n      \"text\": \"Jun 17, 2026Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/fable-mythos-access\",\n      \"text\": \"Jun 12, 2026Announcements Statement on the US government directive to suspend access to Fable 5 and Mythos 5\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/anthropic-public-record\",\n      \"text\": \"Jun 12, 2026Announcements Results from the first Anthropic Public Record\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/tcs-anthropic-partnership\",\n      \"text\": \"Jun 12, 2026Announcements TCS and Anthropic partner to bring Claude to regulated industries\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/dxc-anthropic-alliance\",\n      \"text\": \"Jun 11, 2026Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/claude-corps\",\n      \"text\": \"Jun 11, 2026Announcements Introducing Claude Corps\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/claude-fable-5-mythos-5\",\n      \"text\": \"Jun 9, 2026Announcements Claude Fable 5 and Claude Mythos 5\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/services-track-partner-hub\",\n      \"text\": \"Jun 3, 2026Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack\",\n      \"text\": \"Jun 3, 2026Policy What we learned mapping a year’s worth of AI-enabled cyber threats\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news/expanding-project-glasswing\",\n      \"text\": \"Jun 2, 2026Announcements Expanding Project Glasswing\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/news#\",\n      \"text\": \"See more\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/\",\n      \"text\": \"Return to homepage\"\n    },\n    {\n      \"href\": \"https://claude.com/product/overview\",\n      \"text\": \"Claude\"\n    },\n    {\n      \"href\": \"https://claude.com/product/claude-code\",\n      \"text\": \"Claude Code\"\n    },\n    {\n      \"href\": \"https://claude.com/product/claude-code/enterprise\",\n      \"text\": \"Claude Code Enterprise\"\n    },\n    {\n      \"href\": \"https://claude.com/product/cowork\",\n      \"text\": \"Claude Cowork\"\n    },\n    {\n      \"href\": \"https://claude.com/product/claude-security\",\n      \"text\": \"Claude Security\"\n    },\n    {\n      \"href\": \"https://claude.com/chrome\",\n      \"text\": \"Claude for Chrome\"\n    },\n    {\n      \"href\": \"https://claude.com/claude-for-slack\",\n      \"text\": \"Claude for Slack\"\n    },\n    {\n      \"href\": \"https://claude.com/claude-for-microsoft-365\",\n      \"text\": \"Claude for Microsoft 365\"\n    },\n    {\n      \"href\": \"https://www.claude.com/skills\",\n      \"text\": \"Skills\"\n    },\n    {\n      \"href\": \"https://claude.ai/download\",\n      \"text\": \"Download app\"\n    },\n    {\n      \"href\": \"https://claude.com/pricing\",\n      \"text\": \"Pricing\"\n    },\n    {\n      \"href\": \"https://claude.ai/\",\n      \"text\": \"Log in to Claude\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/claude/mythos\",\n      \"text\": \"Mythos\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/claude/fable\",\n      \"text\": \"Fable\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/claude/opus\",\n      \"text\": \"Opus\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/claude/sonnet\",\n      \"text\": \"Sonnet\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/claude/haiku\",\n      \"text\": \"Haiku\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/agents\",\n      \"text\": \"AI agents\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/code-modernization\",\n      \"text\": \"Code modernization\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/coding\",\n      \"text\": \"Coding\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/customer-support\",\n      \"text\": \"Customer support\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/education\",\n      \"text\": \"Education\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/enterprise\",\n      \"text\": \"Enterprise\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/financial-services\",\n      \"text\": \"Financial services\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/government\",\n      \"text\": \"Government\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/healthcare\",\n      \"text\": \"Healthcare\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/legal\",\n      \"text\": \"Legal\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/life-sciences\",\n      \"text\": \"Life sciences\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/nonprofits\",\n      \"text\": \"Nonprofits\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/security\",\n      \"text\": \"Security\"\n    },\n    {\n      \"href\": \"https://claude.com/solutions/small-business\",\n      \"text\": \"Small business\"\n    },\n    {\n      \"href\": \"https://claude.com/programs/startups\",\n      \"text\": \"Startups\"\n    },\n    {\n      \"href\": \"https://claude.com/platform/api\",\n      \"text\": \"Overview\"\n    },\n    {\n      \"href\": \"https://platform.claude.com/docs\",\n      \"text\": \"Developer docs\"\n    },\n    {\n      \"href\": \"https://claude.com/pricing#api\",\n      \"text\": \"Pricing\"\n    },\n    {\n      \"href\": \"https://claude.com/platform/marketplace\",\n      \"text\": \"Marketplace\"\n    },\n    {\n      \"href\": \"https://claude.com/regional-compliance\",\n      \"text\": \"Regional compliance\"\n    },\n    {\n      \"href\": \"https://claude.com/partners/claude-on-aws\",\n      \"text\": \"Claude on AWS\"\n    },\n    {\n      \"href\": \"https://claude.com/partners/google-cloud-vertex-ai\",\n      \"text\": \"Google Cloud’s Vertex AI\"\n    },\n    {\n      \"href\": \"https://claude.com/partners/microsoft-foundry\",\n      \"text\": \"Microsoft Foundry\"\n    },\n    {\n      \"href\": \"https://platform.claude.com/\",\n      \"text\": \"Console login\"\n    },\n    {\n      \"href\": \"https://claude.com/blog\",\n      \"text\": \"Blog\"\n    },\n    {\n      \"href\": \"https://claude.com/partners\",\n      \"text\": \"Claude partner network\"\n    },\n    {\n      \"href\": \"https://claude.com/community\",\n      \"text\": \"Community\"\n    },\n    {\n      \"href\": \"https://claude.com/connectors\",\n      \"text\": \"Connectors\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/learn\",\n      \"text\": \"Courses\"\n    },\n    {\n      \"href\": \"https://claude.com/customers\",\n      \"text\": \"Customer stories\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/engineering\",\n      \"text\": \"Engineering at Anthropic\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/events\",\n      \"text\": \"Events\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/product/claude-code\",\n      \"text\": \"Inside Claude Code\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/product/claude-cowork\",\n      \"text\": \"Inside Claude Cowork\"\n    },\n    {\n      \"href\": \"https://www.anthropic.com/product/enterprise\",\n      \"text\": \"Inside Claude Enterprise\"\n    }\n  ],\n  \"readyState\": \"loading\",\n  \"text\": \"Skip to main contentSkip to footer Research Policy Commitments Learn News Try Claude Newsroom Press inquirespress@anthropic.com Non-media inquiriesHow to get support Media assetsDownload press kit Statement on the US government directive to suspend access to Fable 5 and Mythos 5 AnnouncementsJun 12, 2026 The US government has issued an export control directive to suspend all access to Fable 5 and Mythos 5. AnnouncementsJun 11, 2026 Introducing Claude Corps We’re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America. PolicyJun 10, 2026 Policy on the AI Exponential AI is advancing at exponential speed, and the policymaking process was built for a slower world. We’re sharing policy proposals to prepare our institutions for AI progress. AnnouncementsJun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries. ProductMay 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work. AnnouncementsMay 25, 2026 Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \\\"Magnifica humanitas\\\" The full text of Chris Olah's remarks on the Pope's encyclical on AI. News Search DateCategoryTitle Jun 17, 2026Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem Jun 12, 2026Announcements Statement on the US government directive to suspend access to Fable 5 and Mythos 5 Jun 12, 2026Announcements Results from the first Anthropic Public Record Jun 12, 2026Announcements TCS and Anthropic partner to bring Claude to regulated industries Jun 11, 2026Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on Jun 11, 2026Announcements Introducing Claude Corps Jun 9, 2026Announcements Claude Fable 5 and Claude Mythos 5 Jun 3, 2026Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network Jun 3, 2026Policy What we learned mapping a year’s worth of AI-enabled cyber threats Jun 2, 2026Announcements Expanding Project Glasswing See more Products Claude Claude Code Claude Code Enterprise Claude Cowork Claude Security Claude for Chrome Claude for Slack Claude for Microsoft 365 Skills Download app Pricing Log in to Claude Models Mythos Fable Opus Sonnet Haiku Solutions AI agents Code modernization Coding Customer support Education Enterprise Financial services Government Healthcare Legal Life sciences Nonprofits Security Small business Startups Claude Platform Overview Developer docs Pricing Marketplace Regional compliance Claude on AWS Google Cloud’s Vertex AI Microsoft Foundry Console login Resources Blog Claude partner network Community Connectors Courses Customer stories Engineering at Anthropic Events Inside Claude Code Inside Claude Cowork Inside Claude Enterprise Inside Claude Security Plugins Powered by Claude Service partners Tutorials Use cases Help and security Availability Status Support center Company Anthropic Careers Policy Economic Futures Research News Claude’s Constitution Claude Corps Policy on the AI Exponential Responsible Scaling Policy Security and compliance Transparency Terms and policies Privacy policy Consumer health data privacy policy Responsible disclosure policy Terms of service: Commercial Terms of service: Consumer Usage policy © 2026 Anthropic PBC\",\n  \"textLength\": 3595,\n  \"title\": \"Newsroom \\\\ Anthropic\",\n  \"url\": \"https://www.anthropic.com/news\"\n}\n",
+          "stderr": ""
+        },
+        "page_state": {
+          "links": [
+            {
+              "href": "https://www.anthropic.com/news#main-content",
+              "text": "Skip to main content"
+            },
+            {
+              "href": "https://www.anthropic.com/news#footer",
+              "text": "Skip to footer"
+            },
+            {
+              "href": "https://www.anthropic.com/",
+              "text": "Home"
+            },
+            {
+              "href": "https://www.anthropic.com/research",
+              "text": "Research"
+            },
+            {
+              "href": "https://www.anthropic.com/policy",
+              "text": "Policy"
+            },
+            {
+              "href": "https://www.anthropic.com/news",
+              "text": "News"
+            },
+            {
+              "href": "https://claude.ai/",
+              "text": "Try Claude"
+            },
+            {
+              "href": "mailto:press@anthropic.com",
+              "text": "press@anthropic.com"
+            },
+            {
+              "href": "https://support.claude.com/en/articles/9015913-how-to-get-support",
+              "text": "How to get support"
+            },
+            {
+              "href": "https://anthropic.com/press-kit",
+              "text": "Download press kit"
+            },
+            {
+              "href": "https://www.anthropic.com/news/fable-mythos-access",
+              "text": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5 AnnouncementsJun 12, 2026 The US government has issued an export control dire"
+            },
+            {
+              "href": "https://www.anthropic.com/news/claude-corps",
+              "text": "AnnouncementsJun 11, 2026 Introducing Claude Corps We’re launching Claude Corps, a national fellowship program for people early in their careers who are passion"
+            },
+            {
+              "href": "https://www.anthropic.com/policy-on-the-ai-exponential",
+              "text": "PolicyJun 10, 2026 Policy on the AI Exponential AI is advancing at exponential speed, and the policymaking process was built for a slower world. We’re sharing p"
+            },
+            {
+              "href": "https://www.anthropic.com/news/expanding-project-glasswing",
+              "text": "AnnouncementsJun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries."
+            },
+            {
+              "href": "https://www.anthropic.com/news/claude-opus-4-8",
+              "text": "ProductMay 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional"
+            },
+            {
+              "href": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+              "text": "AnnouncementsMay 25, 2026 Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" The full text of Chris Olah's remarks on "
+            },
+            {
+              "href": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+              "text": "Jun 17, 2026Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem"
+            },
+            {
+              "href": "https://www.anthropic.com/news/fable-mythos-access",
+              "text": "Jun 12, 2026Announcements Statement on the US government directive to suspend access to Fable 5 and Mythos 5"
+            },
+            {
+              "href": "https://www.anthropic.com/news/anthropic-public-record",
+              "text": "Jun 12, 2026Announcements Results from the first Anthropic Public Record"
+            },
+            {
+              "href": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+              "text": "Jun 12, 2026Announcements TCS and Anthropic partner to bring Claude to regulated industries"
+            },
+            {
+              "href": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+              "text": "Jun 11, 2026Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on"
+            },
+            {
+              "href": "https://www.anthropic.com/news/claude-corps",
+              "text": "Jun 11, 2026Announcements Introducing Claude Corps"
+            },
+            {
+              "href": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+              "text": "Jun 9, 2026Announcements Claude Fable 5 and Claude Mythos 5"
+            },
+            {
+              "href": "https://www.anthropic.com/news/services-track-partner-hub",
+              "text": "Jun 3, 2026Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network"
+            },
+            {
+              "href": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+              "text": "Jun 3, 2026Policy What we learned mapping a year’s worth of AI-enabled cyber threats"
+            },
+            {
+              "href": "https://www.anthropic.com/news/expanding-project-glasswing",
+              "text": "Jun 2, 2026Announcements Expanding Project Glasswing"
+            },
+            {
+              "href": "https://www.anthropic.com/news#",
+              "text": "See more"
+            },
+            {
+              "href": "https://www.anthropic.com/",
+              "text": "Return to homepage"
+            },
+            {
+              "href": "https://claude.com/product/overview",
+              "text": "Claude"
+            },
+            {
+              "href": "https://claude.com/product/claude-code",
+              "text": "Claude Code"
+            },
+            {
+              "href": "https://claude.com/product/claude-code/enterprise",
+              "text": "Claude Code Enterprise"
+            },
+            {
+              "href": "https://claude.com/product/cowork",
+              "text": "Claude Cowork"
+            },
+            {
+              "href": "https://claude.com/product/claude-security",
+              "text": "Claude Security"
+            },
+            {
+              "href": "https://claude.com/chrome",
+              "text": "Claude for Chrome"
+            },
+            {
+              "href": "https://claude.com/claude-for-slack",
+              "text": "Claude for Slack"
+            },
+            {
+              "href": "https://claude.com/claude-for-microsoft-365",
+              "text": "Claude for Microsoft 365"
+            },
+            {
+              "href": "https://www.claude.com/skills",
+              "text": "Skills"
+            },
+            {
+              "href": "https://claude.ai/download",
+              "text": "Download app"
+            },
+            {
+              "href": "https://claude.com/pricing",
+              "text": "Pricing"
+            },
+            {
+              "href": "https://claude.ai/",
+              "text": "Log in to Claude"
+            },
+            {
+              "href": "https://www.anthropic.com/claude/mythos",
+              "text": "Mythos"
+            },
+            {
+              "href": "https://www.anthropic.com/claude/fable",
+              "text": "Fable"
+            },
+            {
+              "href": "https://www.anthropic.com/claude/opus",
+              "text": "Opus"
+            },
+            {
+              "href": "https://www.anthropic.com/claude/sonnet",
+              "text": "Sonnet"
+            },
+            {
+              "href": "https://www.anthropic.com/claude/haiku",
+              "text": "Haiku"
+            },
+            {
+              "href": "https://claude.com/solutions/agents",
+              "text": "AI agents"
+            },
+            {
+              "href": "https://claude.com/solutions/code-modernization",
+              "text": "Code modernization"
+            },
+            {
+              "href": "https://claude.com/solutions/coding",
+              "text": "Coding"
+            },
+            {
+              "href": "https://claude.com/solutions/customer-support",
+              "text": "Customer support"
+            },
+            {
+              "href": "https://claude.com/solutions/education",
+              "text": "Education"
+            },
+            {
+              "href": "https://claude.com/solutions/enterprise",
+              "text": "Enterprise"
+            },
+            {
+              "href": "https://claude.com/solutions/financial-services",
+              "text": "Financial services"
+            },
+            {
+              "href": "https://claude.com/solutions/government",
+              "text": "Government"
+            },
+            {
+              "href": "https://claude.com/solutions/healthcare",
+              "text": "Healthcare"
+            },
+            {
+              "href": "https://claude.com/solutions/legal",
+              "text": "Legal"
+            },
+            {
+              "href": "https://claude.com/solutions/life-sciences",
+              "text": "Life sciences"
+            },
+            {
+              "href": "https://claude.com/solutions/nonprofits",
+              "text": "Nonprofits"
+            },
+            {
+              "href": "https://claude.com/solutions/security",
+              "text": "Security"
+            },
+            {
+              "href": "https://claude.com/solutions/small-business",
+              "text": "Small business"
+            },
+            {
+              "href": "https://claude.com/programs/startups",
+              "text": "Startups"
+            },
+            {
+              "href": "https://claude.com/platform/api",
+              "text": "Overview"
+            },
+            {
+              "href": "https://platform.claude.com/docs",
+              "text": "Developer docs"
+            },
+            {
+              "href": "https://claude.com/pricing#api",
+              "text": "Pricing"
+            },
+            {
+              "href": "https://claude.com/platform/marketplace",
+              "text": "Marketplace"
+            },
+            {
+              "href": "https://claude.com/regional-compliance",
+              "text": "Regional compliance"
+            },
+            {
+              "href": "https://claude.com/partners/claude-on-aws",
+              "text": "Claude on AWS"
+            },
+            {
+              "href": "https://claude.com/partners/google-cloud-vertex-ai",
+              "text": "Google Cloud’s Vertex AI"
+            },
+            {
+              "href": "https://claude.com/partners/microsoft-foundry",
+              "text": "Microsoft Foundry"
+            },
+            {
+              "href": "https://platform.claude.com/",
+              "text": "Console login"
+            },
+            {
+              "href": "https://claude.com/blog",
+              "text": "Blog"
+            },
+            {
+              "href": "https://claude.com/partners",
+              "text": "Claude partner network"
+            },
+            {
+              "href": "https://claude.com/community",
+              "text": "Community"
+            },
+            {
+              "href": "https://claude.com/connectors",
+              "text": "Connectors"
+            },
+            {
+              "href": "https://www.anthropic.com/learn",
+              "text": "Courses"
+            },
+            {
+              "href": "https://claude.com/customers",
+              "text": "Customer stories"
+            },
+            {
+              "href": "https://www.anthropic.com/engineering",
+              "text": "Engineering at Anthropic"
+            },
+            {
+              "href": "https://www.anthropic.com/events",
+              "text": "Events"
+            },
+            {
+              "href": "https://www.anthropic.com/product/claude-code",
+              "text": "Inside Claude Code"
+            },
+            {
+              "href": "https://www.anthropic.com/product/claude-cowork",
+              "text": "Inside Claude Cowork"
+            },
+            {
+              "href": "https://www.anthropic.com/product/enterprise",
+              "text": "Inside Claude Enterprise"
+            }
+          ],
+          "readyState": "loading",
+          "text": "Skip to main contentSkip to footer Research Policy Commitments Learn News Try Claude Newsroom Press inquirespress@anthropic.com Non-media inquiriesHow to get support Media assetsDownload press kit Statement on the US government directive to suspend access to Fable 5 and Mythos 5 AnnouncementsJun 12, 2026 The US government has issued an export control directive to suspend all access to Fable 5 and Mythos 5. AnnouncementsJun 11, 2026 Introducing Claude Corps We’re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America. PolicyJun 10, 2026 Policy on the AI Exponential AI is advancing at exponential speed, and the policymaking process was built for a slower world. We’re sharing policy proposals to prepare our institutions for AI progress. AnnouncementsJun 2, 2026 Expanding Project Glasswing We’re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries. ProductMay 28, 2026 Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work. AnnouncementsMay 25, 2026 Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" The full text of Chris Olah's remarks on the Pope's encyclical on AI. News Search DateCategoryTitle Jun 17, 2026Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem Jun 12, 2026Announcements Statement on the US government directive to suspend access to Fable 5 and Mythos 5 Jun 12, 2026Announcements Results from the first Anthropic Public Record Jun 12, 2026Announcements TCS and Anthropic partner to bring Claude to regulated industries Jun 11, 2026Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on Jun 11, 2026Announcements Introducing Claude Corps Jun 9, 2026Announcements Claude Fable 5 and Claude Mythos 5 Jun 3, 2026Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network Jun 3, 2026Policy What we learned mapping a year’s worth of AI-enabled cyber threats Jun 2, 2026Announcements Expanding Project Glasswing See more Products Claude Claude Code Claude Code Enterprise Claude Cowork Claude Security Claude for Chrome Claude for Slack Claude for Microsoft 365 Skills Download app Pricing Log in to Claude Models Mythos Fable Opus Sonnet Haiku Solutions AI agents Code modernization Coding Customer support Education Enterprise Financial services Government Healthcare Legal Life sciences Nonprofits Security Small business Startups Claude Platform Overview Developer docs Pricing Marketplace Regional compliance Claude on AWS Google Cloud’s Vertex AI Microsoft Foundry Console login Resources Blog Claude partner network Community Connectors Courses Customer stories Engineering at Anthropic Events Inside Claude Code Inside Claude Cowork Inside Claude Enterprise Inside Claude Security Plugins Powered by Claude Service partners Tutorials Use cases Help and security Availability Status Support center Company Anthropic Careers Policy Economic Futures Research News Claude’s Constitution Claude Corps Policy on the AI Exponential Responsible Scaling Policy Security and compliance Transparency Terms and policies Privacy policy Consumer health data privacy policy Responsible disclosure policy Terms of service: Commercial Terms of service: Consumer Usage policy © 2026 Anthropic PBC",
+          "textLength": 3595,
+          "title": "Newsroom \\ Anthropic",
+          "url": "https://www.anthropic.com/news"
+        }
+      }
+    },
+    {
+      "source_id": "meta-ai",
+      "result": {
+        "status": "low_text",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"E540EFBC61C4757B6AD689F960C01CE5\",\n  \"url\": \"https://ai.meta.com/blog/\"\n}\n",
+          "stderr": ""
+        },
+        "page_info": {
+          "page": "E540EFBC61C4757B6AD689F960C01CE5",
+          "url": "https://ai.meta.com/blog/"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [],\n  \"readyState\": \"complete\",\n  \"text\": \"\",\n  \"textLength\": 0,\n  \"title\": \"\",\n  \"url\": \"about:blank\"\n}\n",
+          "stderr": ""
+        },
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "text": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      }
+    },
+    {
+      "source_id": "huggingface-papers",
+      "result": {
+        "status": "low_text",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"2B2CE7C535DCBEA1F99981BC451312F1\",\n  \"url\": \"https://huggingface.co/papers/trending\"\n}\n",
+          "stderr": ""
+        },
+        "page_info": {
+          "page": "2B2CE7C535DCBEA1F99981BC451312F1",
+          "url": "https://huggingface.co/papers/trending"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [],\n  \"readyState\": \"complete\",\n  \"text\": \"\",\n  \"textLength\": 0,\n  \"title\": \"\",\n  \"url\": \"about:blank\"\n}\n",
+          "stderr": ""
+        },
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "text": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      }
+    },
+    {
+      "source_id": "github-trending",
+      "result": {
+        "status": "low_text",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"B26A9AA69103BFA19107A426ADD37CF1\",\n  \"url\": \"https://github.com/trending\"\n}\n",
+          "stderr": ""
+        },
+        "page_info": {
+          "page": "B26A9AA69103BFA19107A426ADD37CF1",
+          "url": "https://github.com/trending"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [\n    {\n      \"href\": \"https://github.com/trending#start-of-content\",\n      \"text\": \"Skip to content\"\n    }\n  ],\n  \"readyState\": \"loading\",\n  \"text\": \"Skip to content\",\n  \"textLength\": 15,\n  \"title\": \"Trending repositories on GitHub today\",\n  \"url\": \"https://github.com/trending\"\n}\n",
+          "stderr": ""
+        },
+        "page_state": {
+          "links": [
+            {
+              "href": "https://github.com/trending#start-of-content",
+              "text": "Skip to content"
+            }
+          ],
+          "readyState": "loading",
+          "text": "Skip to content",
+          "textLength": 15,
+          "title": "Trending repositories on GitHub today",
+          "url": "https://github.com/trending"
+        }
+      }
+    },
+    {
+      "source_id": "product-hunt-ai",
+      "result": {
+        "status": "low_text",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"87064B99C0ABBC045EEDE95E9453C358\",\n  \"url\": \"https://www.producthunt.com/categories/ai-agents\"\n}\n",
+          "stderr": ""
+        },
+        "page_info": {
+          "page": "87064B99C0ABBC045EEDE95E9453C358",
+          "url": "https://www.producthunt.com/categories/ai-agents"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [],\n  \"readyState\": \"complete\",\n  \"text\": \"\",\n  \"textLength\": 0,\n  \"title\": \"\",\n  \"url\": \"about:blank\"\n}\n",
+          "stderr": ""
+        },
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "text": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      }
+    },
+    {
+      "source_id": "jiqizhixin",
+      "result": {
+        "status": "low_text",
+        "open": {
+          "returncode": 0,
+          "stdout": "{\n  \"page\": \"D3FCF85F843FEF7C1B6B98896819864D\",\n  \"url\": \"https://www.jiqizhixin.com/\"\n}\n",
+          "stderr": ""
+        },
+        "page_info": {
+          "page": "D3FCF85F843FEF7C1B6B98896819864D",
+          "url": "https://www.jiqizhixin.com/"
+        },
+        "eval": {
+          "returncode": 0,
+          "stdout": "{\n  \"links\": [],\n  \"readyState\": \"complete\",\n  \"text\": \"\",\n  \"textLength\": 0,\n  \"title\": \"\",\n  \"url\": \"about:blank\"\n}\n",
+          "stderr": ""
+        },
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "text": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      }
+    }
+  ]
+}

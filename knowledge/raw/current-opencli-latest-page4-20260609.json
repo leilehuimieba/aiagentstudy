@@ -1,0 +1,1599 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 4,
+    "dataList": [
+      {
+        "authors": [
+          "人人都是产品经理"
+        ],
+        "candidateSource": null,
+        "category": "Product_Development",
+        "categoryDesc": "Product & Design",
+        "cover": "https://image.jido.dev/20260527122916_4220332.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_bcee8c90",
+        "keyQuotes": [
+          "Encouraging trust and refusing to pay for the consequences of that trust—these two things are performed simultaneously by the same company, within the same product.",
+          "Blaming the latter for not being smart enough or cautious enough is a cheap social Darwinist stance that reduces a systemic risk distribution problem to an individual IQ test.",
+          "If a society continues to produce technology that doesn't have to take responsibility, continues to shift responsibility back to the most defenseless individuals, and continues to avoid the issue of fair risk distribution under the banner of 'innovation,' then ultimately, it is often the most silent who will pay the price."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "Doubao reaches the user group with the greatest variance in educational background through the Douyin ecosystem, while simultaneously using affirmative phrasing and anthropomorphic interaction to lower user vigilance, making users lacking AI literacy more susceptible to hallucinations.",
+            "point": "Doubao's growth path relies on Douyin's traffic pool and a sycophantic product design, leading to a huge variance in user cognitive levels."
+          },
+          {
+            "explanation": "Doubao builds user trust through anthropomorphic design (first-person perspective, affirmative tone, emotional responses), but uses disclaimers and user agreements to transfer all risk to the user, forming a closed loop of 'encouraging trust - refusing responsibility'.",
+            "point": "There is a systemic contradiction between AI products encouraging trust and refusing to be responsible for the consequences of that trust."
+          },
+          {
+            "explanation": "The elderly, minors, and people with low digital literacy are more likely to fully trust AI answers and lack the ability to cross-verify, making them the main victims of AI hallucinations. Blaming the victims from an elitist standpoint is a cheap social Darwinist position.",
+            "point": "The social risks of AI hallucinations are primarily borne by vulnerable groups lacking discernment."
+          },
+          {
+            "explanation": "Referencing the precedent of the Hangzhou AI hallucination infringement case, AI entities lack civil subject status, making disclaimers effective. However, the article proposes drawing from financial suitability management and the EU AI risk classification system to impose stricter duty of care for high-consequence scenarios like healthcare and law.",
+            "point": "Under the current legal framework, AI service providers are not liable for losses caused by hallucinations, but the boundaries of responsibility need to be redefined."
+          },
+          {
+            "explanation": "The ability to identify hallucinations, the habit of cross-verification, and critical thinking about definitive statements should be incorporated into public education systems and digital literacy training for the elderly to narrow the cognitive gap.",
+            "point": "Building AI literacy should become an infrastructure of the information society."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through multiple real-world cases, this article reveals the systemic contradictions hidden in national-level AI applications like Doubao, including anthropomorphic design, traffic distribution, and disclaimers, questioning the ethical boundaries and social responsibilities behind technological democratization.",
+        "originalTitle": "豆包不用负责",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-06",
+        "publishDateTimeStr": "2026-06-06 10:00:00",
+        "publishTimeStamp": 1780711200000,
+        "qualified": false,
+        "readCount": 156,
+        "readTime": 37,
+        "readUrl": "https://www.bestblogs.dev/article/bcee8c90",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f66e7f",
+        "sourceImage": "https://image.jido.dev/20260527122916_4220332.jpeg",
+        "sourceName": "人人都是产品经理",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using the absurd incident of a user losing 600 yuan due to believing Doubao's erroneous refund information and subsequently suing the company as a starting point, the article delves into the multiple social contradictions arising from the rapid penetration of AI products. The author outlines Doubao's growth trajectory to 345 million monthly active users—relying on Douyin's traffic pool, an overly accommodating product design (affirmative phrasing, anthropomorphic interaction), and the ethical blind spots of its growth flywheel. Through cases in medical scenarios (patients questioning doctors based on AI diagnoses), family relationships (elderly people misled by GEO), and restaurant reservations (AI fabricating booking information), the article reveals the systemic risks between AI hallucinations and excessive user trust. The core critique targets Doubao's product strategy: on one hand, encouraging user trust through anthropomorphic design, and on the other, using disclaimers to refuse responsibility for the consequences of that trust. The article further discusses the AI literacy gap, elitist arrogance, and governance approaches drawing from the financial industry's suitability management and the EU's AI risk classification system. It ultimately points out that under the current legal framework, AI service providers are not liable, but the social costs are ultimately borne by the most vulnerable groups.",
+        "tags": [
+          "AI Products & Applications",
+          "AI Commercialization",
+          "Tech Commentary",
+          "AI Safety & Alignment",
+          "Tech Regulation"
+        ],
+        "title": "Doubao Doesn't Have to Take Responsibility",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651927892&idx=1&sn=26b79cbaa70d095588b90fdd8fb4f6a3",
+        "wordCount": 9143
+      },
+      {
+        "authors": [
+          "腾讯科技"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_4bd0ff49",
+        "keyQuotes": [
+          "The era of AI being used only for chatting is over.",
+          "With an agent that can do anything for you on your computer, the next goal is to push this capability to everyone.",
+          "By GPT-5.5, Codex's advantage had become too significant to ignore.",
+          "Directly writing code is a more effective way for AI to accomplish tasks on a computer, such as building complex spreadsheets.",
+          "Will the hundreds of millions of consumers accustomed to free 'chit-chat' and conversation ultimately be willing to pay for a digital agent that can work for them and help them earn a living?"
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "OpenAI plans to fully integrate Codex into ChatGPT and connect it with external partner applications, enabling it to write code, manage schedules, and control software, becoming an agent platform that executes tasks for users.",
+            "point": "ChatGPT will transition from a chatbot to a super app, with the core being the integration of the coding tool Codex."
+          },
+          {
+            "explanation": "GPT-5.5 is significantly better than its predecessor at handling long, multi-step tasks, requiring less frequent human guidance. This allows Codex to execute independently after receiving clear instructions, increasing developer trust.",
+            "point": "The upgrade of the underlying GPT-5.5 model is a key driver of Codex's capability leap."
+          },
+          {
+            "explanation": "In the fall of 2024, Anthropic's coding capabilities surpassed OpenAI's. After releasing the Claude Code preview in February 2025, OpenAI quickly formed a Codex team and restructured its organization, merging the ChatGPT, Codex, and API teams.",
+            "point": "Anthropic's Claude Code taking the lead was the direct catalyst for OpenAI's accelerated integration."
+          },
+          {
+            "explanation": "Codex users are mostly paid subscribers with high monetization efficiency. OpenAI has shelved consumer businesses like Sora to concentrate resources on enterprise clients, aiming to solidify its revenue data before going public.",
+            "point": "With an IPO approaching, OpenAI needs to push Codex to its 900 million consumer users to drive willingness to pay."
+          },
+          {
+            "explanation": "OpenAI previously launched Operator to have AI simulate human actions in a browser, but it was too inefficient. Executives believe directly writing code is a more effective approach, aligning with Anthropic's path from Claude Code to Claude Cowork.",
+            "point": "Directly writing code is more efficient than simulating human browser operations, positioning Codex as the core of a general-purpose agent."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "OpenAI plans to integrate its coding tool Codex into ChatGPT, transforming it into a super app capable of writing code, managing schedules, and controlling software, marking a strategic shift from a chatbot to an AI agent platform.",
+        "originalTitle": "ChatGPT 将迎来史上最大改版，“AI 只用来聊天的时代结束了”",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-07",
+        "publishDateTimeStr": "2026-06-07 19:17:00",
+        "publishTimeStamp": 1780831020000,
+        "qualified": false,
+        "readCount": 141,
+        "readTime": 16,
+        "readUrl": "https://www.bestblogs.dev/article/4bd0ff49",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b475c7",
+        "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "sourceName": "腾讯科技",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Based on exclusive reporting from the Financial Times, the article details OpenAI's largest redesign of ChatGPT since its 2022 launch. The core change involves integrating Codex, its fastest-growing programming tool, into ChatGPT and connecting it with external partner applications. The analysis unfolds across four dimensions: strategic intent, technological foundation, competitive pressure, and business logic. OpenAI executives believe the future of AI lies in agents that execute tasks for users, not simple conversations. The upgrade of the underlying GPT-5.5 model enables Codex to independently perform complex, multi-step tasks. Anthropic's Claude Code, which previously led OpenAI in coding capabilities, directly prompted OpenAI to rapidly form a Codex team and restructure its organization. With an IPO approaching, OpenAI needs to push Codex to its 900 million consumer users to drive willingness to pay. The article also notes that Codex's desktop app saw its user base grow sixfold in two months, surpassing 5 million weekly active users, and details OpenAI's decision to shelve consumer businesses like Sora to concentrate resources on enterprise clients.",
+        "tags": [
+          "AI Products & Applications",
+          "AI Agent",
+          "AI Coding",
+          "ChatGPT",
+          "OpenAI"
+        ],
+        "title": "ChatGPT to Undergo Biggest-Ever Redesign: \"The Era of AI for Chatting Alone Is Over\"",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569001&idx=1&sn=b90d3c7f17b3a8c8f8040ff3d994e411",
+        "wordCount": 3816
+      },
+      {
+        "authors": [
+          "郑廷旭"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://images.ifanr.cn/wp-content/themes/ifanr-5.0-pc/static/images/ifanr/ifanr-logo.svg",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_853f3cba",
+        "keyQuotes": [
+          "Outsourcing cognitive work to AI leads to 'losing control of your brain.'",
+          "Effort itself brings a deeper sense of satisfaction; these examples are also a retraining of attention, memory, and emotional abilities."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "After the failure of Apple Intelligence 1.0, Apple's top management initiated a restructuring in early 2025. Vision Pro founder Mike Rockwell took over Siri, and a partnership with Google on Gemini and cloud infrastructure was reached, with plans to launch a standalone AI assistant app.",
+            "point": "Apple spent two years rebuilding its AI strategy, from 'AIMLess' to a major WWDC overhaul."
+          },
+          {
+            "explanation": "This agreement runs from October 2026 to June 2029, intended to meet customer demand for Gemini Enterprise and its agent platform that exceeded expectations, and includes exit clauses.",
+            "point": "Google pays SpaceX $920 million monthly to lease approximately 110,000 GPUs as a short-term bridging agreement."
+          },
+          {
+            "explanation": "Psychologist Gloria Mark from UC Irvine points out that when people delegate writing, summarizing, and evaluating to AI, they lose the opportunity to learn, understand, and remember. She suggests retraining attention, memory, and emotional abilities.",
+            "point": "Psychologists warn that outsourcing cognitive work to AI can weaken deep processing abilities."
+          },
+          {
+            "explanation": "Qualcomm released three chips—Snapdragon 8775, 8397, and 8797—targeting different price segments. The 8797 offers a single-chip computing power of 1280 TOPS and has secured design wins for 18 vehicle models.",
+            "point": "Qualcomm's automotive business achieved $1.3 billion in quarterly revenue, with cockpit-driving integration chips covering vehicles priced from 100,000 yuan to over 300,000 yuan."
+          },
+          {
+            "explanation": "Honda sold fewer than 30,000 vehicles in May, while several Chinese new energy vehicle manufacturers delivered over 30,000 units each during the same period. GAC Honda plans to launch new models based on a China-exclusive platform starting in 2027.",
+            "point": "Honda's sales in China have nearly halved for two consecutive months, dropping 48.68% year-on-year in May."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "The ifanr morning briefing summarizes over 20 tech and consumer news items, including Apple's AI strategy overhaul for WWDC 2026, ByteDance denying car manufacturing plans, Google paying SpaceX $920 million monthly for computing power, and features an in-depth perspective from a psychologist on outsourcing cognitive work to AI.",
+        "originalTitle": "早报｜苹果发布会限量礼品曝光/字节跳动：没有造车计划/谷歌每月花 9.2 亿美元向 SpaceX 租算力",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 16:40:29",
+        "publishTimeStamp": 1780908029000,
+        "qualified": false,
+        "readCount": 108,
+        "readTime": 26,
+        "readUrl": "https://www.bestblogs.dev/article/853f3cba",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is the ifanr tech morning briefing for June 8, covering over 20 short news items and in-depth reports. Core content includes: Bloomberg's Gurman reveals Apple spent two years rebuilding its AI strategy, from 'AIMLess' to a major WWDC overhaul, with Mike Rockwell taking over Siri and a partnership with Google on Gemini and cloud infrastructure; ifanr has arrived at Apple Park and showcases geeky Easter eggs in the WWDC gift bags; ByteDance clarifies it has no car manufacturing plans; reports that OpenAI is merging Codex entirely into ChatGPT; Google pays SpaceX $920 million monthly to lease approximately 110,000 GPUs as a short-term bridging agreement; NVIDIA and SK hynix reach a multi-year partnership to develop next-generation memory for AI factories; Honda's sales in China have nearly halved for two consecutive months; Qualcomm's automotive business achieved $1.3 billion in quarterly revenue and released multiple cockpit-driving integration chips; JD.com and Tencent are reportedly set to collaborate around AI Agents; the world's first prefabricated computing power center base was put into operation in Qingdao; Origin Quantum completed a nearly 3 billion yuan Pre-IPO round. Additionally, MIT Technology Review reports psychologist Gloria Mark stating that outsourcing cognitive work to AI leads to 'losing control of your brain,' suggesting a re-evaluation of our relationship with AI. Other briefs cover the Xiaomi 17T series launch, Jianan smart glasses, Dongfeng unmanned logistics vehicles, Honda HRC developing a more hardcore Civic Type R, OpenCV 5 release, Luckin Coffee responding to 'no ice, not full cup' complaints, Seesaw filing for bankruptcy liquidation, Taylor Swift's song breaking records in 'Toy Story 5', and an AI origin documentary screening.",
+        "tags": [
+          "Tech News",
+          "AI Commercialization",
+          "Apple",
+          "Corporate News",
+          "Automotive Industry"
+        ],
+        "title": "Morning Briefing: Apple WWDC Limited Edition Gifts Revealed / ByteDance: No Car Manufacturing Plans / Google Pays SpaceX $920 Million Monthly for Computing Power",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1668272?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 6393
+      },
+      {
+        "authors": [
+          "克雷西"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260303113342_qbitai_icon.png",
+        "domain": "qbitai.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_6b6848e1",
+        "keyQuotes": [
+          "M3 is the first domestic open-source model to simultaneously achieve these three things (long context, multimodality, and coding).",
+          "This image itself is the best proof of reproduction, showing that M3 independently followed the same derivation path as the paper's authors and arrived at the same answer.",
+          "Frontier model capabilities have long been controlled by a few closed-source products, a situation that has hardly been broken in the past few years... M3 is the first open-source model to tear open this gap."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Previously, only closed-source flagships like Claude Opus, GPT-5.5, and Gemini 3.1 could handle all three tasks. M3 is the first open-source model to break through this barrier, scoring 59% on SWE-Bench Pro, surpassing GPT-5.5 and Gemini 3.1 Pro.",
+            "point": "M3 achieves top-tier performance in long context, multimodality, and coding simultaneously, a first for an open-source model."
+          },
+          {
+            "explanation": "When reproducing the ICLR 2025 award-winning paper, M3 operated autonomously for 12 hours, producing 18 commits and 23 experimental charts. It diagnosed and adjusted issues independently without any human intervention, demonstrating autonomy close to that of a human research assistant.",
+            "point": "Hands-on tasks validated M3's reliability in complex, long-form autonomous programming."
+          },
+          {
+            "explanation": "From identifying 74 logos in a PPT to understanding a nearly 2-hour linguistics olympiad video and reproducing a problem-solving webpage, M3 demonstrates a complete closed loop from visual input to code output. Its native multimodal approach (mixing text and images from the first step of pre-training) is key.",
+            "point": "M3's multimodal capabilities cover text, images, and video, enabling cross-modal synergy."
+          },
+          {
+            "explanation": "MSA uses KV blocks to aggregate queries for the outer loop, achieving efficient hardware utilization and reducing per-token computation to 1/20th of the previous generation at 1M context. The interactive user simulator exposes the model to collaboration scenarios close to production environments during training, enhancing coding and agent capabilities.",
+            "point": "The MSA sparse attention mechanism and interactive user simulator are M3's core technical highlights."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through hands-on tests including reproducing a paper, identifying PPT logos, creating a check-in map, and explaining a linguistics olympiad video, this article validates MiniMax M3's comprehensive performance in long context, multimodality, and coding, concluding that it has entered the global first tier.",
+        "originalTitle": "MiniMax M3 一手实测：老黄 PPT 上 74 个 Logo，我以为能难住它",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-02",
+        "publishDateTimeStr": "2026-06-02 23:50:16",
+        "publishTimeStamp": 1780415416000,
+        "qualified": false,
+        "readCount": 103,
+        "readTime": 21,
+        "readUrl": "https://www.bestblogs.dev/article/6b6848e1",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_371003",
+        "sourceImage": "https://image.jido.dev/20251127045333_fa5811cb",
+        "sourceName": "量子位",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article focuses on MiniMax's latest open-source flagship model, M3, evaluating its three core capabilities: long context, multimodality, and coding. The author designed four hands-on tasks: independently reproducing an ICLR 2025 award-winning paper (12 hours without human intervention), identifying the 74 DSX ecosystem enterprise logos from Jensen Huang's Computex keynote PPT and creating an interactive webpage, making a food check-in map based on Jensen Huang's Beijing itinerary, and understanding a linguistics olympiad explanation video to reproduce a problem-solving webpage. All tasks were completed successfully, demonstrating M3's comprehensive abilities in long-form autonomous programming, multimodal understanding, information retrieval, and webpage generation. The article also introduces key technologies behind M3: the MSA sparse attention mechanism (reducing per-token computation to 1/20th of the previous generation at 1M context), an interactive user simulator framework (used for training coding and agent capabilities), and a native multimodal approach that mixes text and images from the first step of pre-training. Finally, the article points out that M3 is the first open-source model to simultaneously possess these three capabilities, with comprehensive performance approaching top-tier closed-source models like Claude Opus and GPT-5.5, offering outstanding cost-effectiveness.",
+        "tags": [
+          "AI Models",
+          "LLM",
+          "Multimodal AI",
+          "AI Coding",
+          "Model Evaluation & Benchmarking"
+        ],
+        "title": "MiniMax M3 Hands-On Test: I Thought 74 Logos on Jensen Huang's PPT Would Stump It",
+        "translateContent": null,
+        "url": "https://www.qbitai.com/2026/06/428092.html",
+        "wordCount": 5088
+      },
+      {
+        "authors": [
+          "Ashish Chalke"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/ozXSsTQid-4zpTQm1JgAZ.png",
+        "domain": "huggingface.co",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_69db4622",
+        "keyQuotes": [
+          "Every Claude Code session leaves a trace --- a `.jsonl` file with every turn, tool call, and token. But in practice, that trace is write-only.",
+          "She *suggests, never asserts*, and stays silent when there's nothing worth saying.",
+          "The split that makes this trustworthy: the **evaluation engine is purely deterministic**. The model is used *only* to write the English and propose softer suggestions."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Claude Code sessions generate detailed but unreadable JSONL traces. Her automatically analyzes these traces to provide a clear, actionable summary of what the agent did, why, and what risks were involved.",
+            "point": "Her solves the 'write-only' problem of AI agent session logs."
+          },
+          {
+            "explanation": "The core forensic analysis is purely deterministic, ensuring findings are reliable. The LLM is used only for generating prose and suggestions, and it runs entirely on the user's Hugging Face Space GPU, with no data ever sent to a third-party API.",
+            "point": "Trust is built through a deterministic engine and local-only AI."
+          },
+          {
+            "explanation": "Users can start with an executive summary of the session and then drill down into specific turns, tool calls, and token usage. The 'Ask Her' copilot allows for natural language queries against the trace.",
+            "point": "The tool provides both a high-level report and a granular investigation interface."
+          },
+          {
+            "explanation": "The project started as a simple 'journey' graph for a friend, then evolved to include a report view, a tool database, and other features based on requests from early users, demonstrating a lean, user-driven development process.",
+            "point": "Her was built iteratively over a weekend based on user feedback."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Her is an open-source detective tool that analyzes Claude Code session logs, reconstructing agent behavior, flagging risky actions, and providing actionable insights without sending data to third-party APIs.",
+        "originalTitle": "Her · हेर — a detective for your Claude Code sessions",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-07",
+        "publishDateTimeStr": "2026-06-07 18:13:41",
+        "publishTimeStamp": 1780827221000,
+        "qualified": false,
+        "readCount": 93,
+        "readTime": 2,
+        "readUrl": "https://www.bestblogs.dev/article/69db4622",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_19153d",
+        "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+        "sourceName": "Hugging Face - Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article introduces Her (हेर), a tool built over a weekend during a Hugging Face hackathon. It addresses a common pain point: Claude Code sessions produce verbose JSONL trace files that are rarely read. Her ingests these files and provides a structured, human-readable investigation. It reconstructs the session's narrative, identifies risky actions (deploys, config changes, secret access), visualizes token and tool usage, and offers grounded suggestions for improvement. A key design principle is trustworthiness: the evaluation engine is deterministic, and the small language model (Nemotron-Mini-4B-Instruct) runs locally on the Hugging Face Space's GPU via ZeroGPU, with no data sent to third-party APIs. The tool also features a built-in copilot ('Ask Her') for querying the trace, and a tool identification database for recognizing common CLI tools. The article details the project's origin, its core features, the technical architecture (React frontend on Gradio, deterministic engine, local LLM), and the philosophy of suggesting rather than asserting.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "Developer Tools",
+          "Open Source",
+          "AI Safety"
+        ],
+        "title": "Her · हेर — a detective for your Claude Code sessions",
+        "translateContent": null,
+        "url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+        "wordCount": 485
+      },
+      {
+        "authors": [
+          "数字生命卡兹克"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045441_36cb882d",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c8916b4b",
+        "keyQuotes": [
+          "Taste is scarce, typing is not.",
+          "Building is cheap. Arguing is expensive.",
+          "Pick your noisiest workflow. Ask if it still earns its place."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Productivity_Growth",
+        "mainDomainDesc": "Productivity & Growth",
+        "mainPoints": [
+          {
+            "explanation": "With code generation speed greatly increased, the new challenge becomes how to verify code correctness and keep up with the review pace; processes need to be redesigned around the new bottleneck.",
+            "point": "The bottleneck in AI-era software engineering has shifted from 'writing code' to 'verification, review, and security.'"
+          },
+          {
+            "explanation": "Instead of writing lengthy design documents, discuss directly in PRs or prototypes, iterate quickly with internal user feedback, and avoid over-planning waste.",
+            "point": "Adopt JIT planning: prototype first, documentation later."
+          },
+          {
+            "explanation": "Whenever something is repeated more than three times, reflexively ask 'Can this be automated?' Start with a small task, accumulate wins, and ultimately change the way you work.",
+            "point": "Automating repetitive tasks should become a team's muscle memory."
+          },
+          {
+            "explanation": "AI handles 60-70% of the work, such as style checks, linting, and bug catching, while humans focus on areas requiring deep judgment, such as legal compliance, security boundaries, and product direction.",
+            "point": "Code review adopts a 'trust but verify' model: AI handles mechanical work, humans focus on professional judgment."
+          },
+          {
+            "explanation": "As environments and tools change, many old processes lose their meaning. Someone needs to step up and ask, 'Does this meeting/process still deserve its place?'",
+            "point": "Proactively review and eliminate outdated processes and meetings."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article interprets insights shared by Fiona Fung, Engineering Director of the Claude Code team, distilling 5 working principles for an AI-native organization covering planning, automation, code review, team roles, and process changes, along with the author's own practical reflections.",
+        "originalTitle": "分享 Claude Code 团队内部的 5 条工作原则，我觉得每一条都值得学习。",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 10:02:00",
+        "publishTimeStamp": 1780452120000,
+        "qualified": false,
+        "readCount": 76,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/c8916b4b",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_86a0b5",
+        "sourceImage": "https://image.jido.dev/20251127045441_36cb882d",
+        "sourceName": "数字生命卡兹克",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Based on a public talk by Fiona Fung, Engineering Director of the Claude Code team, this article systematically outlines 5 core principles of engineering management in an AI-native organization. The author first points out that the bottleneck in software engineering in the AI era has shifted from 'writing code is too expensive' to 'verification, review, and security,' necessitating a redesign of upstream and downstream processes around code. The specific principles include: adopting JIT planning (prototype first, documentation later); automating repetitive tasks to build team muscle memory; using AI to handle 60-70% of mechanical work in code reviews while humans focus on professional judgment; blurring role boundaries (PMs write code, engineers use AI to draft copy); and proactively reviewing and eliminating outdated processes and meetings. The author provides resonant interpretations of each principle based on their own team's practices, emphasizing the core mindset of 'automating repetitive tasks, eliminating useless processes, and delegating judgments that don't require human input to AI.'",
+        "tags": [
+          "AI Workflow",
+          "Engineering Management",
+          "Team Collaboration",
+          "AI Coding",
+          "Automation"
+        ],
+        "title": "5 Working Principles from the Claude Code Team That Are Worth Learning",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682883&idx=1&sn=6c9cbd20d8f6e7dbabe4a36b53bad5fe",
+        "wordCount": 5331
+      },
+      {
+        "authors": [
+          "Bruce Middleton"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260310053509_new_mississippi_river_fjdmww.jpg",
+        "domain": "lesswrong.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3acfb643",
+        "keyQuotes": [
+          "Freud is an inspired man and has no need of data; he soars straight into interpretation.",
+          "We perform logical assessment; they perform oraculation.",
+          "Not only was Freud no contributor to science, he was illiterate about both its processes and its signal achievements.",
+          "The same delusions which made Freud act out the myth of the genius made them accept the portrayal as authentic."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "The premise that primitive men had an urge to urinate on fire is false, as observed in modern humans and primates. The logical requirement that wildfires were small enough to be extinguished by urine is also implausible.",
+            "point": "Freud's theory on fire domestication is empirically and logically absurd."
+          },
+          {
+            "explanation": "He consulted his own genius in isolation from data and logical assessment, producing stories that collapse under scrutiny. Real science involves identifying and testing premises and implications.",
+            "point": "Freud's methodology is 'oraculation,' not science."
+          },
+          {
+            "explanation": "People believed him because they wanted a prophet, mistaking his confident pronouncements for genius. This is analogous to Pacific Island cargo cults, where the trappings of power are imitated without understanding the underlying mechanism.",
+            "point": "The reverence for Freud is a cargo cult phenomenon."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article uses Freud's absurd theory on the domestication of fire as a case study to argue that his work, lacking logical assessment and empirical grounding, is a cargo cult of pseudo-science rather than a genuine contribution to knowledge.",
+        "originalTitle": "Freud heard a rumor that Science existed， and had a wonderful dream — LessWrong",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-06",
+        "publishDateTimeStr": "2026-06-06 22:47:01",
+        "publishTimeStamp": 1780757221000,
+        "qualified": false,
+        "readCount": 61,
+        "readTime": 7,
+        "readUrl": "https://www.bestblogs.dev/article/3acfb643",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_e7173a6f",
+        "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+        "sourceName": "LessWrong",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author dissects a single footnote from Freud's 'Civilization and Its Discontents' where he speculates that primitive man domesticated fire by renouncing the urge to urinate on it, a sexual act of homosexual rivalry. The critique is devastating: the premise is empirically false (modern humans and primates show no such urge), the logic is flawed (wildfires are not small, isolated flames that a single act of urination could 'spare'), and the methodology is non-scientific. The author contrasts Freud's 'oraculation'—consulting his own genius in isolation from data—with the scientific process of logical assessment, which involves identifying and testing premises and implications. The article concludes that Freud's work, revered by a cult-like following, is a product of self-delusion and a cargo cult mentality, where people mistake the trappings of genius for genuine insight. The piece is a passionate and rigorous defense of scientific rationality against intellectual charlatanism.",
+        "tags": [
+          "Critical Thinking",
+          "Science vs. Pseudoscience",
+          "Psychology",
+          "Philosophy of Science",
+          "Intellectual History"
+        ],
+        "title": "Freud heard a rumor that Science existed， and had a wonderful dream — LessWrong",
+        "translateContent": null,
+        "url": "https://www.lesswrong.com/posts/5WEwRjb9isfDCHMF5/freud-heard-a-rumor-that-science-existed-and-had-a-wonderful",
+        "wordCount": 1689
+      },
+      {
+        "authors": [
+          "花叔"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045504_01003017",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_f9b615bb",
+        "keyQuotes": [
+          "How far apart are 'building an app' and 'running a profitable business'? Anyone who has built a product knows they are worlds apart.",
+          "The part about writing the app might only account for 5% of the total workload in a product's lifecycle. The remaining 95% is the truly challenging part: promotion, customer service, repeat purchases, and operations.",
+          "AI is a lever, not an engine. CodeFly is already a long enough lever; it can pry a single thought of yours into a complete business system. But there needs to be something on the other end of the lever."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Productivity_Growth",
+        "mainDomainDesc": "Productivity & Growth",
+        "mainPoints": [
+          {
+            "explanation": "The author points out from personal experience that writing code accounts for only 5% of the workload in a product's lifecycle, with the remaining 95% being business aspects like promotion, customer service, and operations. Vibe Coding only solves the former.",
+            "point": "The core of a one-person business is 'running a profitable business,' not 'building an app.'"
+          },
+          {
+            "explanation": "The product provides a one-prompt system for generating a complete backend, automatically creates promotional materials, and offers 24/7 AI customer service (supporting WeChat integration), covering the hardest parts of running a business.",
+            "point": "CodeFly packages the 'foundation + promotion + support' business loop, lowering the infrastructure barrier for solo entrepreneurship."
+          },
+          {
+            "explanation": "AI is a lever, not an engine. It amplifies what you already have (e.g., insights into a specific group of people), but the ability to discover a business opportunity still depends on personal judgment.",
+            "point": "Tools cannot solve the three core questions: 'what business to do,' 'who to sell to,' and 'how to find those people.'"
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Starting from how 'Vibe Coding' solves product creation, this article proposes that 'Vibe Business' is what one-person businesses truly need, and demonstrates the closed loop from a single sentence to a complete business system through the practical use of the 'CodeFly' product.",
+        "originalTitle": "一人公司转折点：从 Vibe Coding 到 Vibe Business",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 18:52:00",
+        "publishTimeStamp": 1780483920000,
+        "qualified": false,
+        "readCount": 61,
+        "readTime": 18,
+        "readUrl": "https://www.bestblogs.dev/article/f9b615bb",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_a79406",
+        "sourceImage": "https://image.jido.dev/20251127045504_01003017",
+        "sourceName": "花叔",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article first points out that AI tools (Vibe Coding) have significantly lowered the barrier to writing code, but what a one-person business truly needs is to 'run a profitable business,' not to 'own an app.' The author uses their own experience (Little Cat Flashlight) to illustrate that writing an app accounts for only 5% of the workload in a product's lifecycle, with the remaining 95% being business aspects like promotion, customer service, and operations. Subsequently, the article provides a detailed demonstration of using the 'CodeFly' product, starting from the prompt 'Create a social app for extroverted cats,' and sequentially completing the entire process: app generation (with built-in products, orders, users, and a data backend), automatic generation of promotional posters and copy by the business assistant, and deployment of an AI customer service agent (supporting WeChat integration). It also verifies the product's applicability in e-commerce scenarios (one-click publishing as a WeChat Mini Program). Finally, the author introduces the concept of 'Vibe Business,' considering CodeFly as the first concrete product in this track, but emphasizes that the three key questions—'what business to do,' 'who to sell to,' and 'how to find those people'—cannot be solved by tools and still require personal judgment and insight.",
+        "tags": [
+          "One-Person Business",
+          "AI Products & Applications",
+          "Indie Development",
+          "Entrepreneurship",
+          "Vibe Coding"
+        ],
+        "title": "The Turning Point for One-Person Businesses: From Vibe Coding to Vibe Business",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247490610&idx=1&sn=4c49705d92a9b0d706563d3b662e60ea",
+        "wordCount": 4363
+      },
+      {
+        "authors": [
+          "猫笔刀"
+        ],
+        "candidateSource": null,
+        "category": "Finance_Economy",
+        "categoryDesc": "Finance & Economy",
+        "cover": "https://image.jido.dev/20260527052054_73f8a15.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_15f1fd36",
+        "keyQuotes": [
+          "I think for such a major trend, it's more reliable to look at the movements of the main force of industrial capital than to listen to self-proclaimed stock gurus making wild predictions.",
+          "The money the 'young lads' make is the money the 'old lads' lose. This kind of zero-sum game is just pitting retail investors against each other."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Finance_Economy",
+        "mainDomainDesc": "Finance & Economy",
+        "mainPoints": [
+          {
+            "explanation": "An exclusive FT report stated that Tencent would make the WeChat AI assistant its highest strategic priority, igniting market sentiment and causing Tencent's stock to surge 10.46% in a single day. The author believes the gain includes a retaliatory correction for the previous decline and was an overreaction.",
+            "point": "News of Tencent's AI assistant triggered a surge in Hong Kong-listed internet stocks, but the rally was overdone."
+          },
+          {
+            "explanation": "Signals such as Google's $80 billion financing, SK Hynix's capacity expansion, and the IPO timelines of OpenAI and Anthropic (September-October) all point to strong AI demand, indicating the cycle has not yet peaked. The author suggests focusing on industrial capital rather than self-proclaimed stock gurus.",
+            "point": "The AI boom cycle is likely to continue until the end of the year, with industrial capital movements being a reliable signal."
+          },
+          {
+            "explanation": "Lacking incremental capital, with the national team having withdrawn 500-600 billion in the first half of the year, the AI sector's rise comes at the expense of traditional industries. This creates a zero-sum game among retail investors, intensifying market negativity.",
+            "point": "The A-share market is a structural bull market within a zero-sum game, where the AI sector's capital absorption effect exacerbates market divergence."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article reviews the surge in Hong Kong-listed internet stocks triggered by news of Tencent's AI assistant, analyzes the sustainability of the AI cycle from the perspective of industrial capital, and highlights market structural divergence under a zero-sum game.",
+        "originalTitle": "一个消息拉升了 5000 亿",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-02",
+        "publishDateTimeStr": "2026-06-02 22:35:00",
+        "publishTimeStamp": 1780410900000,
+        "qualified": false,
+        "readCount": 57,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/15f1fd36",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_37c16155",
+        "sourceImage": "https://image.jido.dev/20260527052054_73f8a15.jpeg",
+        "sourceName": "猫笔刀",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using Tencent's single-day surge of 10.46% as a starting point, the article summarizes the core content of an exclusive report by the Financial Times: Tencent will push forward with launching an AI assistant on WeChat as its highest strategic priority, linking it to the mini-program ecosystem, but faces computing power challenges and short-term earnings pressure. The author believes the market reaction was excessive, but the rebound also includes a retaliatory correction for the previous prolonged decline. Subsequently, from the perspective of industrial capital, the article analyzes the sustainability of the AI cycle, citing signals such as Google's $80 billion financing, SK Hynix's capacity expansion, and the IPO timelines of OpenAI and Anthropic, concluding that the AI boom cycle is likely to continue until the end of the year. At the same time, the author points out that the A-share market is a structural bull market within a zero-sum game, where the AI sector's capital absorption leads to declines in most other stocks, intensifying market negativity. The article concludes with a promotional offer for China Asset Management ETFs and a tribute to the passing of performing artist Wei Zongwan.",
+        "tags": [
+          "Investment & Markets",
+          "Hong Kong Stocks",
+          "AI",
+          "Tencent",
+          "Macroeconomics"
+        ],
+        "title": "A Single Piece of News Lifted the Market by 500 Billion",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzE5ODk2NjUwOA==&mid=2247497642&idx=1&sn=863eeed449f23cc6dc22417b0cadea68",
+        "wordCount": 2222
+      },
+      {
+        "authors": [
+          "腾讯科技"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_fcf788d2",
+        "keyQuotes": [
+          "Apple has no more excuses not to deliver results.",
+          "Apple Intelligence is 'a major stain' on Cook's tenure and 'his last chance to spark an AI inflection point before John Ternus takes over as CEO'.",
+          "A truly intelligent Siri could easily erect new paywalls in the AI era."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The new Siri supports multi-command processing, text and voice interaction, uses the Gemini model as its foundation, and debuts a standalone chat app, directly competing with ChatGPT.",
+            "point": "Siri will be completely revamped as an 'AI companion', featuring a Dynamic Island entry point and a standalone app."
+          },
+          {
+            "explanation": "This search capability rivals Perplexity AI, answering user questions in formats like summaries and lists, reducing reliance on Google and ChatGPT.",
+            "point": "Apple is launching its first proprietary web search product, built into Siri."
+          },
+          {
+            "explanation": "Visual Intelligence features are integrated into the Camera app, adding nutrition label recognition; photo editing gains AI expansion (generating out-of-frame content) and spatial photo recomposition tools.",
+            "point": "iOS 27 will deeply revamp the Camera and Photos apps, introducing AI expansion and recomposition."
+          },
+          {
+            "explanation": "Developers can integrate with Siri and Apple's AI services, and third-party AI models (like Claude, Gemini) can be offered via the App Store, with analysts suggesting Apple could become an 'agent call market'.",
+            "point": "Apple is opening AI capabilities to third parties through the CoreAI system, potentially enabling a new commission model."
+          },
+          {
+            "explanation": "The article cites analysts who argue Siri must evolve from a passive command portal into a cross-app agent to justify its valuation, but faces real challenges including a developer ecosystem 'chicken-and-egg' dilemma, privacy constraints, and hardware costs.",
+            "point": "Apple Intelligence is a 'stain' on Cook's tenure and his last chance before handing over the reins."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "On the eve of WWDC26, this article compiles leaked information to provide a comprehensive preview of Apple's AI strategy 'make-up exam' results: Siri's transformation into an AI companion, a proprietary search engine, AI photo editing, and an open platform, while also exploring the final legacy test of Cook's tenure.",
+        "originalTitle": "库克送 Siri 最后一程",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-06",
+        "publishDateTimeStr": "2026-06-06 10:34:00",
+        "publishTimeStamp": 1780713240000,
+        "qualified": false,
+        "readCount": 56,
+        "readTime": 18,
+        "readUrl": "https://www.bestblogs.dev/article/fcf788d2",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b475c7",
+        "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "sourceName": "腾讯科技",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Published just before Apple's WWDC26, this article, based on leaks from Mark Gurman and others, systematically outlines a comprehensive upgrade to Apple's AI strategy. Core elements include: Siri evolving from a voice command tool into an 'AI companion' with a new Dynamic Island entry point, a standalone app, multi-command processing capabilities, and a foundation built on the Gemini model; Apple's first proprietary web search product, rivaling Perplexity; deep AI integration into the Camera and Photos apps, including Visual Intelligence, AI expansion, and recomposition; and the introduction of the CoreAI system, opening AI capabilities to third parties, potentially creating a new 'agent commission' model. The article concludes by focusing on Cook's tenure, labeling Apple Intelligence a 'major stain' and his last chance before handing over the reins, while analyzing real-world challenges like privacy, hardware costs, and the developer ecosystem.",
+        "tags": [
+          "Apple Intelligence",
+          "Siri",
+          "AI Products & Applications",
+          "AI Commercialization",
+          "Tech News"
+        ],
+        "title": "Cook Sends Siri Off on Its Final Journey",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691568988&idx=1&sn=4f700536c9e530c1c9c8cad59e96f857",
+        "wordCount": 4388
+      },
+      {
+        "authors": [
+          "dbaplus社群"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045413_187dd537",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_f747d09f",
+        "keyQuotes": [
+          "Compliance enforcement is a human weakness and an AI strength; business judgment is an AI weakness and a human strength.",
+          "The ultimate goal of Harness engineering is not to make Claude smarter, but to make the entire development pipeline more reliable.",
+          "Transform rules from 'guiding content in LLM memory' into 'guardrails that enforce checks on every execution.'"
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The article points out that Claude Code's context compact mechanism can cause temporary constraints (such as field units) to be lost, and the LLM's adherence rate to rules is only 70-80%, which is the root cause of unstable AI-generated code quality.",
+            "point": "The core bottleneck of AI coding is context loss and unstable compliance enforcement, not technical capability."
+          },
+          {
+            "explanation": "By configuring a PostToolUse hook in Claude Code's settings.json, the validate_sql.sh script is automatically triggered after each .sql file write, blocking violations like SELECT * and missing PARTITION without relying on LLM memory.",
+            "point": "The Harness mechanism achieves deterministic compliance checks through hooks, raising the compliance rate to 95%+."
+          },
+          {
+            "explanation": "High token consumption operations such as lineage queries and self-test execution are offloaded to subagents with independent contexts. The main session only receives structured summaries, effectively preventing context overflow.",
+            "point": "Subagents can reduce the frequency of main context compaction by 50-70% through context isolation."
+          },
+          {
+            "explanation": "By persisting field definitions and iterative constraints in CLAUDE.md and enforcing compliance checks via hooks, the two variables in the equation 'accuracy = depth of semantic understanding × coverage of data rules' become stable and reliable.",
+            "point": "The essence of Harness engineering is to migrate 'semantics' and 'rules' from LLM memory to deterministic files and hooks."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article details how the De Wu data warehouse team used Claude Code's Harness mechanism (hooks + subagents + persistent files) to increase the SQL compliance rate from 70-80% to over 95%, systematically solving the problems of context loss and unstable compliance enforcement in AI coding.",
+        "originalTitle": "SQL 规范执行率提至 95%，得物数仓 Harness 实践全解析",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-04",
+        "publishDateTimeStr": "2026-06-04 07:15:00",
+        "publishTimeStamp": 1780528500000,
+        "qualified": false,
+        "readCount": 55,
+        "readTime": 36,
+        "readUrl": "https://www.bestblogs.dev/article/f747d09f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_a234fa",
+        "sourceImage": "https://image.jido.dev/20251127045413_187dd537",
+        "sourceName": "dbaplus社群",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Based on the practice of the De Wu offline data warehouse team using an AI coding tool (Claude Code), this article deeply analyzes three core pain points in AI-assisted development: AI's 'memory loss' due to the context compact mechanism, unstable compliance enforcement, and rapid context depletion during large-scale requirement development. To address these issues, the author proposes a five-layer defense system based on the Claude Code Harness mechanism: hardcoding rules into CLAUDE.md for persistence, using Auto Memory for automatic accumulation, implementing automatic SQL compliance checks and dangerous DDL interception via hooks, isolating high token consumption operations with subagents, and modifying the SKILL file invocation method. The article provides detailed configuration code, script examples, and workflow designs for each layer, along with a complete implementation roadmap. Ultimately, the author summarizes this approach as an upgrade from 'AI writing code for me' to 'AI embedded in the development pipeline,' with the core being the migration of semantics and rules from the unreliable LLM memory to deterministic hooks and persistent files.",
+        "tags": [
+          "AI Coding",
+          "LLM",
+          "AI Agent",
+          "Prompt Engineering",
+          "Developer Tools"
+        ],
+        "title": "SQL Compliance Rate Raised to 95%: A Full Analysis of De Wu Data Warehouse's Harness Practice",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247636546&idx=1&sn=f7a8e28c85273f1986ed216404396df0",
+        "wordCount": 8859
+      },
+      {
+        "authors": [
+          " 晚点LatePost"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045514_06f3979d",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_5d342940",
+        "keyQuotes": [
+          "Apart from Chinese ADRs, there has never been a phenomenon in human history where a large number of companies from one country go to the securities market of another country to raise funds. It's like a great animal migration.",
+          "Gray means uncertainty, but gray also gives people the opportunity to solve problems creatively.",
+          "It is impossible to prevent the fusion of creativity, and it is impossible to prevent the flow of capital.",
+          "The market always prices before policy, but policy is never responsible for the market's advance pricing."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "In 2000, Sina pioneered the VIE model, using contractual control rather than equity control to bypass China's restrictions on foreign investment in the internet industry, paving the way for hundreds of subsequent Chinese companies to list in the US.",
+            "point": "The VIE structure was an institutional innovation for Chinese internet companies to list overseas, born in the dual crevice of regulation and capital."
+          },
+          {
+            "explanation": "US dollar capital could price business models (like Alibaba, ByteDance) that local capital could not understand at the time, and provided continuous financial support, fostering a burn-money-for-scale competition model that helped Chinese companies defeat US rivals like eBay and Uber.",
+            "point": "US dollar capital, via the VIE structure, provided non-consensus pricing power and sustained ammunition for China's internet industry."
+          },
+          {
+            "explanation": "In 2011, Jack Ma spun off Alipay from the VIE structure, proving that contractual control lacked absolute legal guarantees, shaking the foundation of trust overseas investors had in the VIE.",
+            "point": "The fragility of the VIE structure was exposed in the Alipay incident, showing that contractual control could be unilaterally voided."
+          },
+          {
+            "explanation": "The US strengthened audit reviews through the Holding Foreign Companies Accountable Act, while China introduced new overseas listing filing rules, bringing the VIE under formal regulation, turning it from a 'shortcut' into a 'long detour' with significantly extended filing periods.",
+            "point": "Changes in the Sino-US regulatory environment jointly ended the golden age of the VIE."
+          },
+          {
+            "explanation": "A large number of Chinese ADRs are returning to Hong Kong for listing or dismantling their VIE structures. New companies prefer to list directly using their onshore entities. Dismantling a VIE involves shareholder interest negotiations, tax costs, and control adjustments, with different companies making different choices based on their own circumstances.",
+            "point": "Currently, with the red-chip ebb, companies face the real choice of dismantling or not, but the VIE model is unlikely to reappear."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article uses the VIE red-chip structure as its core thread to systematically review the 25-year history of capital migration by Chinese internet companies, from the birth of the Sina model in 2000 to the ebbing of red chips in 2026, analyzing the institutional, market, and geopolitical logic behind its rise and fall.",
+        "originalTitle": "红筹退潮：中国互联网与全球资本的二十五年",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-07",
+        "publishDateTimeStr": "2026-06-07 18:20:00",
+        "publishTimeStamp": 1780827600000,
+        "qualified": false,
+        "readCount": 49,
+        "readTime": 34,
+        "readUrl": "https://www.bestblogs.dev/article/5d342940",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_981c60",
+        "sourceImage": "https://image.jido.dev/20251127045514_06f3979d",
+        "sourceName": "晚点LatePost",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Themed around the 'red-chip ebb,' the article deeply reviews the history of Chinese internet companies listing overseas via the VIE structure. From Sina's pioneering VIE model in 2000 to bypass foreign investment restrictions, to the awkward situation in 2026 where JOYY's market value was less than its cash reserves, the article presents a complete picture of this quarter-century-long capital migration. The author details the birth background of the VIE structure (immature Chinese capital markets, foreign investment access restrictions), its operating mechanism (contractual control rather than equity control), and how it provided a channel for US dollar capital to enter China's internet industry, spawning giants like Alibaba, Tencent, Baidu, Meituan, and ByteDance. The article further analyzes the fragility of the VIE structure (the Alipay incident exposing that contracts could be unilaterally voided), changes in the Sino-US regulatory environment (Luckin Coffee fraud, the Holding Foreign Companies Accountable Act, China's new overseas listing filing rules), and the current trend of the red-chip structure receding—with many companies choosing to return to Hong Kong for listing or dismantle their VIE. Finally, it explores the practical considerations of dismantling versus not dismantling, and points out that the greatest legacy of the VIE is proving that the cooperation model of 'global capital + Chinese market' once existed.",
+        "tags": [
+          "Business Insight",
+          "Tech News",
+          "Chinese ADRs",
+          "VIE Structure",
+          "Venture Capital"
+        ],
+        "title": "Red-Chip Ebb: 25 Years of Chinese Internet and Global Capital",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247536468&idx=1&sn=1b1c2572fc0d4a9e926f281ea3871254",
+        "wordCount": 8407
+      },
+      {
+        "authors": [
+          "王俊博客"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260602224654_icon-96x96.png",
+        "domain": "wangjun.dev",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_fc741cce",
+        "keyQuotes": [
+          "Hermes' core innovation can be summed up in one word: compounding.",
+          "Most AI Agents are in a 'reset every session' mode... Hermes breaks this pattern. It turns every successful operation into permanent, reusable knowledge.",
+          "The Agent gets smarter without touching its own source code. The deterministic tool layer remains stable and secure. The knowledge layer grows continuously."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "After successfully completing a task, the Agent encodes successful steps into a reusable Markdown Skill document via post-execution evaluation. When encountering a similar task next time, it can directly reference this Skill, allowing the Agent to improve over time.",
+            "point": "Hermes achieves compounding knowledge growth through a \"closed-loop learning\" mechanism."
+          },
+          {
+            "explanation": "Tools are deterministic Python functions, while Skills are Markdown manuals that the Agent can autonomously write. Without modifying the source code, the Agent accumulates knowledge by writing Skills, keeping the tool layer stable and the knowledge layer continuously growing.",
+            "point": "The architectural distinction between Skills and Tools is a core design of Hermes."
+          },
+          {
+            "explanation": "Tier 1 (MEMORY.md) and Tier 2 (USER.md) use a frozen snapshot mode injected at session start, Tier 3 (session search) uses SQLite full-text search, and Tier 4 (external memory plugins) connects to a graph database, balancing information density with token cost.",
+            "point": "The four-tier memory system manages context hierarchically based on urgency."
+          },
+          {
+            "explanation": "The Agent first calls `think_tool` to formulate a research plan, then delegates research topics to multiple parallel sub-agents, and finally calls `think_tool` again for synthesis, ensuring a structured and in-depth research process.",
+            "point": "The deep research function is achieved through forced strategic pauses and parallel sub-agents."
+          },
+          {
+            "explanation": "Unlike OpenClaw, which relies on public registries, Hermes' Skills are generated by the Agent within its own environment, bypassing malicious Skills and supply chain attacks. Combined with container isolation and dynamic credential rotation, this offers higher security.",
+            "point": "The design of internally generated Skills fundamentally mitigates external supply chain risks."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides an in-depth analysis of the core architecture of the open-source AI Agent Hermes, focusing on its closed-loop learning mechanism, four-tier memory system, and the distinction between Skills and Tools, along with deployment guidance and an honest assessment.",
+        "originalTitle": "Hermes Agent：那个真的会记住昨天学过东西的开源 AI Agent",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-06",
+        "publishDateTimeStr": "2026-06-06 00:00:00",
+        "publishTimeStamp": 1780675200000,
+        "qualified": false,
+        "readCount": 46,
+        "readTime": 19,
+        "readUrl": "https://www.bestblogs.dev/article/fc741cce",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SRC_5f7b07d0",
+        "sourceImage": "https://image.jido.dev/20260602224654_icon-96x96.png",
+        "sourceName": "王俊博客",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Starting with the pain point of \"AI Agents resetting every session,\" the article introduces Nous Research's open-source Hermes Agent. Its core innovation is \"closed-loop learning\": after successfully completing a task, the Agent encodes successful steps into a reusable Markdown Skill document via post-execution evaluation, enabling compounding knowledge growth. The article details Hermes' four-tier memory system (MEMORY.md, USER.md, session search, external memory plugins) and explains the key architectural distinction between Skills (autonomously written Markdown manuals) and Tools (deterministic Python functions). For deep research, Hermes uses a `think_tool` to enforce strategic pauses and parallel sub-agents for complex tasks. On security, it contrasts OpenClaw's supply chain risks, emphasizing that Hermes' internally generated Skills bypass external attack vectors. The article also provides a complete deployment guide and honestly assesses limitations such as local inference hardware requirements and the fragility of self-built Skills.",
+        "tags": [
+          "AI Agent",
+          "Open Source",
+          "LLM",
+          "AI Coding",
+          "Memory System"
+        ],
+        "title": "Hermes Agent: The Open-Source AI Agent That Actually Remembers What It Learned Yesterday",
+        "translateContent": null,
+        "url": "https://www.wangjun.dev/2026/06/hermes-agent-remembers-what-it-learned/",
+        "wordCount": 4679
+      },
+      {
+        "authors": [
+          "大淘宝技术"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045404_f9729af6",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_77046432",
+        "keyQuotes": [
+          "TaoAvatar is a 3D realistic digital human solution based on 3D Gaussian Splatting. It primarily addresses several typical issues in traditional 3D modeling, such as high computational cost, insufficient detail reconstruction, and difficulty in running on mobile devices.",
+          "It has evolved from training on 'single person, single garment, single action segment' to unified modeling of 'single ID, multiple garments, multiple actions'."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The solution integrates 3D Gaussian reconstruction, speech-driven lip sync, body pose and gesture driving, on-device real-time rendering, and an LLM inference engine, with core metrics reaching 2K resolution, 90 FPS real-time driving, production cost under 20,000 RMB, and delivery efficiency within one week.",
+            "point": "TaoAvatar is based on 3D Gaussian Splatting, achieving high-fidelity, drivable 3D realistic digital humans."
+          },
+          {
+            "explanation": "Non-rigid deformation expressions for hair and clothing are added on top of SMPLX, employing a layered supervision strategy for face, hands, and body combined with a large and small studio setup, achieving an average PVE error of 6-7 mm, outperforming the open-source SOTA framework EasyMocap.",
+            "point": "Through the SMPLX++ extension and layered decoupled supervision, high-precision realistic body and motion capture is achieved."
+          },
+          {
+            "explanation": "By using human body part parsing and UV space to uniformly learn non-rigid deformations, different garments share weights. The deformations are ultimately baked into geometry and Gaussian deformation fields runnable on the device, with assets around 400 MB, achieving 90 FPS on the device.",
+            "point": "Upgrading from single-person, single-garment to single-ID, multi-garment unified modeling enables cross-garment unified driving."
+          },
+          {
+            "explanation": "It uses spline curves to describe the motion, appearance, and lifecycle of Gaussian points, and introduces non-uniform temporal control points to balance quality and storage, achieving a PSNR of 31-35 and on-device rendering at approximately 90 FPS.",
+            "point": "The TaoVideo-4DGS solution does not rely on an explicit human model and can reconstruct complex dynamic effects for any garment."
+          },
+          {
+            "explanation": "The online App provides a 3D immersive shopping experience, while offline flagship stores integrate AI + 3D + XR technology, having opened in multiple cities. Collaborations with brands like Berghaus and the Milan Winter Olympics have validated the technology's commercial value.",
+            "point": "Taobao Vision has achieved large-scale deployment in both its online App and offline flagship stores, and has won the Apple Design Awards."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article is the full report presented by the Taotian Meta Technology Team at CCIG 2026, systematically introducing the TaoAvatar realistic digital human technology system based on 3D Gaussian Splatting, covering static modeling, drivable reconstruction, volumetric video, and its application in Taobao Vision.",
+        "originalTitle": "CCIG 2026 | TaoAvatar：3D 真人数字人在淘宝 Vision 领域的应用",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-05",
+        "publishDateTimeStr": "2026-06-05 15:53:00",
+        "publishTimeStamp": 1780645980000,
+        "qualified": false,
+        "readCount": 46,
+        "readTime": 20,
+        "readUrl": "https://www.bestblogs.dev/article/77046432",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_efc2de",
+        "sourceImage": "https://image.jido.dev/20251127045404_f9729af6",
+        "sourceName": "大淘宝技术",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is the full text of an academic report invited by the Taotian Meta Technology Team at the China Conference on Image and Graphics (CCIG 2026). The article first outlines the diverse styles and application scenarios of digital humans, then details the three core capabilities of the TaoAvatar technology system: TaoModel (3DGS human body static modeling), TaoAvatar (3DGS drivable digital human reconstruction), and TaoVideo (4DGS human volumetric video). In the core technology section, the article elaborates on the realistic digital human technology framework based on 3D Gaussian Splatting, including realistic body and motion capture (based on SMPLX++ extension), realistic dynamic reconstruction (unified driving for multiple garments), and realistic speech-driven gesture algorithms (GestureDiT + LLM). The article also introduces the TaoVideo-4DGS volumetric video solution, which uses spline curves to describe Gaussian point motion and appearance, achieving complex dynamic effects. In terms of application, the article showcases the practices of Taobao Vision in its online App (winner of the Apple Design Awards) and offline future flagship stores, as well as brand collaborations such as the Berghaus virtual clothing store and the digital human for the Milan Winter Olympics uniforms. Finally, the article looks ahead to future technological evolution directions, including a low-cost digital human generation solution based on a single image/sparse views (FHAvatar), and introduces the team and recruitment information.",
+        "tags": [
+          "3D Digital Human",
+          "3D Gaussian Splatting",
+          "Computer Vision",
+          "XR",
+          "AI Applications"
+        ],
+        "title": "CCIG 2026 | TaoAvatar: Application of 3D Realistic Digital Humans in Taobao Vision",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544017&idx=1&sn=7c1a0cc4a43ea9b7cd5417ed44822e76",
+        "wordCount": 4929
+      },
+      {
+        "authors": [
+          "AINLP"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045506_e620592f",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c965ab9b",
+        "keyQuotes": [
+          "The average amount of code shipped per quarter by an Anthropic engineer is 8 times higher than it was between 2021 and 2025.",
+          "If this trend continues, tasks that currently take skilled people days to complete this year could fall within the capability range of AI systems. By 2027, AI systems may be capable of tasks requiring weeks of human effort.",
+          "Edison said genius is 1% inspiration and 99% perspiration. But we are seeing that perspiration is increasingly being automated.",
+          "A meaningful slowdown or pause would require multiple well-resourced labs, at or near the frontier, across multiple countries, to agree to stop under the same conditions."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Internal Anthropic data shows that Claude writes over 80% of production code, leading to an 8x increase in engineer per-capita output. On clearly defined experimental optimization tasks, Claude has already surpassed human-level performance.",
+            "point": "AI systems are accelerating their involvement in all stages of AI R&D, from code writing to experiment execution."
+          },
+          {
+            "explanation": "Claude's success rate on open-ended research tasks has increased from 26% to 76%. In tests for 'choosing the better next step,' the latest model outperforms human choices 64% of the time, suggesting that research taste may not be uniquely human.",
+            "point": "AI is rapidly advancing in open-ended research and research judgment."
+          },
+          {
+            "explanation": "The article proposes three future scenarios: trend stagnation, compound efficiency gains, and full recursive self-improvement. In the latter two scenarios, AI development becomes largely automated, the human role narrows, and alignment issues and risks of loss of control become core challenges.",
+            "point": "Recursive self-improvement is not inevitable, but may arrive sooner than expected, bringing immense opportunities and risks."
+          },
+          {
+            "explanation": "A credible pause requires multi-party agreement, verifiable shutdown mechanisms, and conditions for triggering and lifting. Because training runs are easy to hide and incentives for defection are high, establishing a verification regime akin to arms control is urgent.",
+            "point": "Coordinated slowdown or pause is an ideal option, but implementation faces significant challenges."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Anthropic publishes a long-form article, using external benchmarks and internal data to argue that AI systems are increasingly participating in their own R&D processes, and explores the trends, impacts, and three future scenarios of recursive self-improvement.",
+        "originalTitle": "Anthropic: 当 AI 开始构建自己",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-05",
+        "publishDateTimeStr": "2026-06-05 11:21:00",
+        "publishTimeStamp": 1780629660000,
+        "qualified": false,
+        "readCount": 46,
+        "readTime": 41,
+        "readUrl": "https://www.bestblogs.dev/article/c965ab9b",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_6d214b",
+        "sourceImage": "https://image.jido.dev/20251127045506_e620592f",
+        "sourceName": "AINLP",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is an in-depth piece published by the Anthropic Institute, originally titled \"When AI builds itself.\" It systematically argues that AI systems are accelerating their involvement in the AI R&D pipeline, from writing code and running experiments to conducting evaluations, pointing towards the potential for recursive self-improvement in the future. The article is structured into several parts: first, it demonstrates the rapid capability improvement of models on external benchmarks (SWE-bench, CORE-Bench, METR long-horizon tasks); then, it reveals internal Anthropic data, including Claude writing over 80% of production code, an 8x increase in engineer per-capita output, and Claude's success rate on open-ended research tasks rising from 26% to 76%; it then discusses the shift in the human role from executor to direction-setter; finally, it proposes three future scenarios: trend stagnation, compound efficiency gains, and full recursive self-improvement, and explores the possibility of coordinated slowdown. The article is rich in data, rigorous in argumentation, and its analysis of future impacts is measured and boundary-aware.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "AI Coding",
+          "AI Safety & Alignment",
+          "Model Evaluation & Benchmarking"
+        ],
+        "title": "Anthropic: When AI Starts Building Itself",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650452084&idx=1&sn=1db130876388d5dd00b6575480bd38fd",
+        "wordCount": 10022
+      },
+      {
+        "authors": [
+          "字节跳动技术团队"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045356_0393a1bf",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_1b5377fa",
+        "keyQuotes": [
+          "You're not using an AI tool — you're feeding a goldfish that forgets everything every morning.",
+          "True AI collaboration should understand you better the more you use it, not require you to reintroduce yourself every time.",
+          "OpenViking is the 'memory hub' connecting you and all your AI Agent tools."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Current AI Agent tools have isolated sessions, preventing design specifications and historical decisions from being inherited, forcing users to repeatedly describe context, making the Agent less effective over time.",
+            "point": "The core bottleneck of Agent collaboration is the lack of a structured, cross-session long-term memory foundation."
+          },
+          {
+            "explanation": "It connects with tools like Trae, Codex, and Claude Code, automatically extracting and structurally storing four types of memory (entities, events, preferences, profile) during conversations.",
+            "point": "OpenViking acts as the Agent's memory hub via the MCP protocol, enabling cross-tool memory sharing."
+          },
+          {
+            "explanation": "It first uses an LLM to understand the user's task intent, then routes the query to the corresponding level of the memory tree for recursive search, improving recall accuracy.",
+            "point": "Its recall mechanism uses a two-stage strategy of 'intent analysis + hierarchical retrieval,' rather than simple keyword matching."
+          },
+          {
+            "explanation": "Multiple sessions, SubAgents, or different Agent tools within the same project can share a single project memory, preventing context breaks and style inconsistencies.",
+            "point": "Cross-session, cross-SubAgent, and cross-platform memory sharing is the core value of OpenViking."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "OpenViking is an Agent memory hub centered on the MCP protocol, using structured memory extraction, intent analysis, and hierarchical retrieval to solve the problem of broken context in frontend development across sessions, agents, and platforms.",
+        "originalTitle": "你的 Agent 每次都“失忆”？这个工具彻底治好了我的前端开发焦虑",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 17:08:00",
+        "publishTimeStamp": 1780909680000,
+        "qualified": false,
+        "readCount": 42,
+        "readTime": 17,
+        "readUrl": "https://www.bestblogs.dev/article/1b5377fa",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_aeae8d",
+        "sourceImage": "https://image.jido.dev/20251127045356_0393a1bf",
+        "sourceName": "字节跳动技术团队",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article, published by the ByteDance technical team, introduces their open-source Agent memory management tool, OpenViking. It starts from the common pain point of frontend developers using AI Agents: \"memory loss\" — the Agent cannot inherit context across sessions, tools, or SubAgents, forcing developers to repeatedly describe design specifications and historical decisions for each collaboration. OpenViking uses the MCP protocol to connect with tools like Trae, Codex, and Claude Code, automatically extracting and structurally storing four types of memory during conversations: entities, events, preferences, and profile. Its recall mechanism employs a two-stage strategy of \"intent analysis + hierarchical retrieval\": first, it uses an LLM to understand the user's task intent, then routes the query to the corresponding level of the memory tree for recursive search. The article demonstrates the complete workflow through a case study of \"building a product Playground webpage,\" covering everything from automatic specification sedimentation, one-sentence recall, incremental specification addition, to the final effect comparison. Finally, it provides the MCP configuration steps and rule templates for integrating OpenViking into Trae.",
+        "tags": [
+          "AI Agent",
+          "MCP Protocol",
+          "AI Coding",
+          "Context Engineering",
+          "Frontend Development"
+        ],
+        "title": "Your Agent Always \"Loses Memory\"? This Tool Completely Cured My Frontend Development Anxiety",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520252&idx=1&sn=965325b6e00360e3d3bd90f561598f17",
+        "wordCount": 4067
+      },
+      {
+        "authors": [
+          "腾讯科技"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_e27b525e",
+        "keyQuotes": [
+          "Vibe Working could be the next term even more popular than Vibe Coding.",
+          "In the past, it was Vibe Coding; next, more people will enter Vibe Working.",
+          "Using one Agent product to build another Agent product is a concrete manifestation of the 'AI recreating AI' concept."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The product is designed for office scenarios such as document processing, spreadsheets, and PPTs. Its user interface is a dialog box plus sidebar, eliminating the need for terminals and command lines, thus lowering the barrier for non-programming users.",
+            "point": "Kimi Work is positioned as a general-purpose local Agent for knowledge workers, not the Chinese version of Codex."
+          },
+          {
+            "explanation": "By simulating human actions like logging in, clicking, and reading pages, WebBridge can access websites that require login or have anti-scraping restrictions, without the need for paid APIs. The author verified its usability through operations like unfollowing Elon Musk.",
+            "point": "WebBridge allows AI to operate a browser like a human, breaking the limitations of traditional API calls."
+          },
+          {
+            "explanation": "Up to 300 sub-Agents can be called to work in parallel. The author tested creating a PPT from a 300-page prospectus: a single Agent took 43 minutes, while the cluster took only 21 minutes, demonstrating the advantage of the multi-Agent parallel paradigm.",
+            "point": "The Agent cluster enables parallel task execution, significantly improving efficiency."
+          },
+          {
+            "explanation": "Kimi engineers used tools like Kimi Code to complete development within a week. The underlying K2.6 model supports 13 hours of continuous coding, parallel collaboration of 300 sub-Agents, and over 4,000 autonomous tool calls.",
+            "point": "The product was developed by AI, with 92% of the code generated by AI, embodying the concept of AI recreating AI."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides an in-depth review of Kimi Work, pointing out that it is not the Chinese version of Codex but a general-purpose local Agent for knowledge workers. Through WebBridge, Agent clusters, and a Skill system, it extends AI Agent capabilities from coding to office scenarios, ushering in the era of Vibe Working.",
+        "originalTitle": "Kimi Work 不是中国版 Codex",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 15:29:00",
+        "publishTimeStamp": 1780903740000,
+        "qualified": false,
+        "readCount": 42,
+        "readTime": 16,
+        "readUrl": "https://www.bestblogs.dev/article/e27b525e",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b475c7",
+        "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "sourceName": "腾讯科技",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article focuses on the product positioning, core capabilities, and user experience of Kimi Work. The author first clarifies that Kimi Work is not the Chinese version of Codex; its target users are knowledge workers rather than programmers, and its product form is a familiar dialog box plus sidebar, not a terminal command line. Core capabilities include: WebBridge, which allows AI to operate a browser like a human (logging in, clicking, reading pages); an Agent cluster that can call up to 300 sub-Agents in parallel to break down tasks; and a built-in Skill marketplace along with professional databases such as Flush and the World Bank. The author verified the product's capabilities through actual tests (unfollowing Elon Musk, generating a PPT, analyzing a prospectus) and revealed that the product was developed by Kimi engineers using tools like Kimi Code within a week, with 92% of the code generated by AI. Finally, the article discusses the security mechanism (tasks confined to designated folders) and the shift in work paradigms.",
+        "tags": [
+          "AI Agent",
+          "Kimi Work",
+          "AI Products & Applications",
+          "AI Workflow",
+          "AI Coding"
+        ],
+        "title": "Kimi Work Is Not the Chinese Version of Codex",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569060&idx=1&sn=4c910ca78a10c98917fb7b834e13676d",
+        "wordCount": 3895
+      },
+      {
+        "authors": [
+          "AI产品黄叔"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260603134531_6022454.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_72c44a9e",
+        "keyQuotes": [
+          "What M3 truly opened up this time is not the ceiling of demos, but the floor of long-horizon tasks.",
+          "Weaker models can also perform quite well in the first few steps. But as they go further, they tend to forget constraints, change direction incorrectly, repeat mistakes, and end up 'looking busy but not making progress.'",
+          "What 1M context truly supports is allowing the model to retain a complete working environment in the second half of long tasks.",
+          "M3 is better suited for long-horizon tasks, but it is not the responsible party."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "In the three tasks—website revamp, writing expert group, and knowledge base detective room—M3 consistently demonstrated the ability to remember earlier constraints, role boundaries, and task direction in the later stages, a key gap where weaker models tend to lose memory in long tasks.",
+            "point": "M3's core advantage is its ability to maintain context in the second half of long-horizon tasks."
+          },
+          {
+            "explanation": "The author points out that long context truly supports the model in retaining a complete working environment while continuously executing tasks, avoiding issues like forgetting constraints mentioned earlier or re-fixing bugs using the same method.",
+            "point": "The significance of 1M context is not 'being able to stuff in more words,' but preventing the model from losing memory during long tasks."
+          },
+          {
+            "explanation": "In the website revamp case, M3 first 'understood' the old page structure through multimodality, then comprehended the project context, and finally leveraged Agentic capabilities to break down tasks, write code, and run validation, forming a complete task execution chain.",
+            "point": "Only the combination of multimodality, long context, and Agentic capabilities can support real long-horizon tasks."
+          },
+          {
+            "explanation": "The author candidly notes that M3 still requires human intervention when tools get stuck, making directional trade-offs, or judging quality; writing and data citations still need human verification of evidence chains; and knowledge base reorganization still requires humans to guard the final quality gate for clue sources and business trade-offs.",
+            "point": "Current Agent workflows have three boundaries: not fully autonomous, output not inherently trustworthy, and productization does not equal understanding the business."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through hands-on testing of three real long-horizon tasks (website revamp, writing expert group, and knowledge base detective room), this article demonstrates that M3's core advantage is not in single-point demo ceilings, but in its ability to maintain context and drive task progression in the latter stages of long tasks.",
+        "originalTitle": "我用 M3 跑了三个真实长程任务，发现它强在后半程",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-03",
+        "publishDateTimeStr": "2026-06-03 08:00:00",
+        "publishTimeStamp": 1780444800000,
+        "qualified": false,
+        "readCount": 39,
+        "readTime": 20,
+        "readUrl": "https://www.bestblogs.dev/article/72c44a9e",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_cb3869",
+        "sourceImage": "https://image.jido.dev/20260603134531_6022454.jpeg",
+        "sourceName": "AI产品黄叔",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is an in-depth hands-on review of the MiniMax M3 model by AI product domain KOL \"AI Product Huang Shu.\" Instead of focusing on single-point demos, the author designed three realistic long-horizon tasks: 1) Revamping an old AI programming course website into an Agent-Native website, involving multimodal understanding of the old page, restructuring the information architecture, and modifying 2000 lines of code; 2) Building a \"Writing Expert Group\" using personal knowledge bases, testing style consistency and role boundary stability under multi-role, multi-round feedback; 3) Transforming a Feishu knowledge base into an interactive web-based detective room, testing the model's ability to extract structure from long documents, design levels, and deliver a front-end product. The core conclusion is that M3 truly differentiates itself through stability in the second half of long tasks—it maintains constraints, role boundaries, and task direction as context lengthens and tasks become more complex, unlike weaker models that \"start strong like a human but end up like a temp worker taking over.\" The article also candidly discusses three current boundaries of Agent workflows: long-term stability does not equal full autonomy, trustworthy output is not inherently trustworthy, and building a product does not equal fully understanding the business.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "AI Products & Applications",
+          "AI Coding",
+          "Model Evaluation & Benchmarking"
+        ],
+        "title": "I Ran Three Real Long-Horizon Tasks with M3 and Found Its Strength Lies in the Second Half",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODU1MzQzOQ==&mid=2451429643&idx=1&sn=63e6117fa8f43c821c4c71a17ab3d220",
+        "wordCount": 4974
+      },
+      {
+        "authors": [
+          "腾讯研究院"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045438_46b6e851",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_62f29533",
+        "keyQuotes": [
+          "Automation can replace labor only in a very narrow sense.",
+          "If labor cannot easily cross borders, why not export capital to economies with growing populations, produce there, and import manufactured goods from there?",
+          "Although India can attract global capital, due to its lack of administrative capital and its system of democratic checks and balances, it cannot achieve the single-minded Chinese-style growth model.",
+          "The main obstacle to the development of emerging economies is their ability to execute complex, long-term economic strategies that require coordination. We might even say that the reason emerging economies fail to transform into developed ones is not the so-called middle-income trap, but the administrative trap."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Finance_Economy",
+        "mainDomainDesc": "Finance & Economy",
+        "mainPoints": [
+          {
+            "explanation": "While automation effectively substitutes for labor in manufacturing, the demand for elderly care grows rigidly with aging. Such work is difficult to automate and will instead absorb more labor, offsetting the efficiency gains from automation.",
+            "point": "Automation cannot adequately replace labor in aging economies, especially in labor-intensive fields like elderly care."
+          },
+          {
+            "explanation": "Labor force participation among those aged 55-64 has risen significantly, leaving less room for future growth. Pension benefits are inversely related to participation rates, and an increasing share of the population aged 80 and over will drag down the overall rate.",
+            "point": "The potential to increase elderly labor force participation is limited, constrained by pension systems and the demographic structure of the very old."
+          },
+          {
+            "explanation": "Net immigration inflows to developed economies peak at around 24 million people, negligible compared to their population sizes. Populism and anti-immigration politics make large-scale labor transfers politically unfeasible.",
+            "point": "International immigration is too small in scale and faces political resistance, making it ineffective at filling the labor gaps in aging economies."
+          },
+          {
+            "explanation": "India suffers from weak administrative capital and democratic checks and balances that hinder coordination. Africa faces geographic fragmentation, declining governance scores, and insufficient human capital. Neither can translate its labor force advantage into growth momentum sufficient to offset global aging.",
+            "point": "While India and Africa have numerical advantages in labor, they are constrained by weak administrative capital, governance, and human capital, preventing them from replicating China's growth model."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on the book \"The Great Demographic Reversal,\" this article systematically argues that common solutions such as automation, increasing elderly labor force participation, immigration, and the rise of India and Africa are insufficient to offset the labor force contraction and inflationary pressures brought by global aging.",
+        "originalTitle": "什么可以抵消全球老龄化的影响？",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-02",
+        "publishDateTimeStr": "2026-06-02 17:10:00",
+        "publishTimeStamp": 1780391400000,
+        "qualified": false,
+        "readCount": 37,
+        "readTime": 33,
+        "readUrl": "https://www.bestblogs.dev/article/62f29533",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f056ce",
+        "sourceImage": "https://image.jido.dev/20251127045438_46b6e851",
+        "sourceName": "腾讯研究院",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article centers on the core question of 'what can offset the impact of global aging,' examining four mainstream viewpoints one by one: automation and AI, increasing labor force participation among the elderly, international immigration, and the demographic dividends of India and Africa. The author argues that automation has limited effectiveness in labor-intensive fields like elderly care, and the regions most in need of automation are ironically emerging economies with less severe demographic pressures. While elderly labor force participation is rising, its future growth is constrained by factors such as pension systems and the increasing proportion of the very old. The scale of immigration is far too small to fill the labor gaps in aging economies and faces political resistance. Regarding India and Africa, the author acknowledges their large labor forces but points out that India is hampered by weak administrative capital, democratic checks and balances, and internal friction, making it difficult to replicate China's mobilization-driven growth. Africa, due to geographic fragmentation, declining governance scores, and insufficient human capital, also cannot serve as an effective substitute for the global workforce. The article concludes that none of these pathways can reverse the economic impact of demographic shifts, which will lead to higher inflation and slower growth.",
+        "tags": [
+          "Macroeconomics",
+          "Demographics",
+          "Aging",
+          "Global Macro",
+          "Labor Market"
+        ],
+        "title": "What Can Offset the Impact of Global Aging?",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650997320&idx=1&sn=d45cbbf9fdffe38d056ff89a3f298db7",
+        "wordCount": 8070
+      },
+      {
+        "authors": [
+          "Lester Leong"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim-v3.png",
+        "domain": "huggingface.co",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_74c97796",
+        "keyQuotes": [
+          "Emergence is contingent, not durable. Behavior you observe and write up from one population of agents can vanish when you change the population, even if nothing else changes.",
+          "You do not control a market of agents by shocking its inputs. Supply and demand levers only bias choices the agents are still free to make, and a heterogeneous council will frequently decline.",
+          "Emergence for texture, authored control for the moments that have to happen. The craft is knowing which is which, and where the seam sits.",
+          "When the cheap stand-in and the real agents disagree, the stand-in is the one lying, and any result that only reproduces under the stand-in is not a result."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "A crash that emerged reliably under one single model vanished when the agent population was changed to a heterogeneous council of five different models. A single impressive run is an anecdote, not a system property.",
+            "point": "Emergent behavior is contingent, not a durable property of the system."
+          },
+          {
+            "explanation": "Attempts to force a crash via rumor, inventory glut, or larger short positions failed against the live council. These levers only bias choices the agents are free to decline.",
+            "point": "You cannot reliably control a market of heterogeneous agents by shocking its inputs."
+          },
+          {
+            "explanation": "The solution was to impose the crash as a fact at the settlement seam, after all agent decisions are made. This separates emergent texture from authored control for moments that must happen.",
+            "point": "Reliable outcomes come from authoring at a deterministic seam, not from pushing harder on emergent inputs."
+          },
+          {
+            "explanation": "A fix that worked against a simple rule-based test policy failed against the real heterogeneous agents. When the stand-in and real agents disagree, the stand-in is lying.",
+            "point": "Cheap simulators can provide false confidence."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article details how a simulated economic crash, emergent under a single AI model, vanished when replaced by a heterogeneous council of five small models, teaching the author that emergence is contingent and reliable outcomes require authored control at a deterministic seam.",
+        "originalTitle": "The crash that vanished: control and emergence in a five-model economy",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-08 21:10:48",
+        "publishTimeStamp": 1780924248000,
+        "qualified": false,
+        "readCount": 32,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/74c97796",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_19153d",
+        "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+        "sourceName": "Hugging Face - Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author recounts a lesson from the Build Small Hackathon. Initially, a single small model running five woodland creatures produced an emergent bank-run-style crash when a rumor triggered a sell-off. However, when the system was rebuilt with a council of five distinct small models from different labs (OpenAI, NVIDIA, OpenBMB, and a fine-tuned model), the same rumor caused the agents to hoard honey instead of dumping it, making the crash disappear. The author describes three failed attempts to force the crash by manipulating economic inputs (rumor, inventory glut, larger short), which worked against a simple test policy but failed against the live heterogeneous agents. The resolution was to author the crash as a deterministic override at the settlement seam, after all agent trading is complete. The key takeaway is that emergent behavior from one agent population is not durable; you cannot reliably control a market of diverse agents by shocking inputs; and cheap simulators can give false confidence. The craft lies in knowing where to let emergence run and where to impose authored control.",
+        "tags": [
+          "AI Agent",
+          "Emergence",
+          "Multi-Agent Systems",
+          "Simulation",
+          "LLM"
+        ],
+        "title": "The crash that vanished: control and emergence in a five-model economy",
+        "translateContent": null,
+        "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v3",
+        "wordCount": 1258
+      }
+    ],
+    "pageCount": 43,
+    "pageSize": 20,
+    "totalCount": 847
+  },
+  "message": null,
+  "requestId": "T6e73444c80c241ea81051ae29f73cade",
+  "success": true
+}
