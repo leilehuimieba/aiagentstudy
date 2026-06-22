@@ -1,0 +1,43 @@
+{
+  "domains": [
+    {
+      "id": "ai-agent",
+      "name": "AI Agent 技术",
+      "description": "智能体工程、工具、记忆、控制流、评估的技术深度内容",
+      "subtopics": [
+        {
+          "id": "01-context-memory",
+          "name": "记忆与上下文",
+          "keywords": ["memory", "context", "RAG", "retrieval", "embedding", "记忆", "上下文", "向量"]
+        },
+        {
+          "id": "02-tools-actions",
+          "name": "工具与 MCP",
+          "keywords": ["MCP", "tool use", "function calling", "tool", "工具", "插件"]
+        },
+        {
+          "id": "03-control-loop",
+          "name": "控制流与编排",
+          "keywords": ["orchestration", "workflow", "loop", "langgraph", "crewai", "编排", "工作流"]
+        },
+        {
+          "id": "04-evaluation-guardrails",
+          "name": "评估与安全",
+          "keywords": ["evaluation", "benchmark", "safety", "guardrail", "评估", "安全", "可靠性"]
+        }
+      ]
+    },
+    {
+      "id": "global-radar",
+      "name": "全球视野",
+      "description": "AI 产业动态、模型发布、公司战略、前沿研究综述",
+      "subtopics": [
+        {
+          "id": "06-frontier-radar",
+          "name": "前沿雷达",
+          "keywords": ["frontier", "release", "new model", "前沿", "新模型", "发布", "产业", "融资"]
+        }
+      ]
+    }
+  ]
+}

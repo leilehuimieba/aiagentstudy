@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "id": "bestblogs-ai",
+      "name": "BestBlogs AI 分类",
+      "type": "bestblogs_category",
+      "category": "ai",
+      "domain": "ai-agent",
+      "enabled": false,
+      "note": "BestBlogs 无公开 RSS，需单独爬虫脚本，暂时关闭"
+    },
+    {
+      "id": "hn-ai-agent",
+      "name": "Hacker News AI Agent（Algolia）",
+      "type": "hn",
+      "keywords": ["AI agent", "LLM agent"],
+      "domain": "ai-agent",
+      "enabled": true,
+      "note": "HN Algolia API，无需梯子"
+    },
+    {
+      "id": "hn-llm",
+      "name": "Hacker News LLM（RSS）",
+      "type": "rss",
+      "rss_url": "https://hnrss.org/newest?q=LLM+agent&points=30",
+      "domain": "ai-agent",
+      "enabled": false,
+      "note": "hnrss.org，需梯子，暂时关闭"
+    }
+  ]
+}

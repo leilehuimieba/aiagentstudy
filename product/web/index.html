@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>AI Agent 情报站</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app">
+
+  <!-- ============================== Sidebar ============================== -->
+  <aside class="sidebar" data-screen-label="sidebar">
+    <div class="sb-head">
+      <div class="sb-title">
+        <span class="logo" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="11" cy="11" r="3"  stroke="#3b82f6" stroke-width="1"  opacity="0.9"></circle>
+            <circle cx="11" cy="11" r="6"  stroke="#3b82f6" stroke-width="1"  opacity="0.55"></circle>
+            <circle cx="11" cy="11" r="9"  stroke="#3b82f6" stroke-width="1"  opacity="0.25"></circle>
+            <line x1="11" y1="11" x2="19" y2="5" stroke="#60a5fa" stroke-width="1.2" stroke-linecap="round"></line>
+          </svg>
+          <span class="pulse"></span>
+        </span>
+        <span>AI Agent 情报站</span>
+      </div>
+      <span class="pill" id="article-count">— 篇</span>
+    </div>
+
+    <div class="domain-switcher" id="domain-switcher" role="group" aria-label="切换领域">
+      <span class="ds-label">领域</span>
+      <button class="ds-btn active" data-domain="ai-agent" aria-pressed="true">AI Agent 技术</button>
+      <button class="ds-btn" data-domain="global-radar" aria-pressed="false">全球视野</button>
+    </div>
+
+    <div class="sb-filters" id="filters" role="group" aria-label="话题过滤" aria-busy="true">
+      <!-- skeleton pills while /api/config/topics is in flight -->
+      <span class="chip-skel"></span>
+      <span class="chip-skel" style="width:48px"></span>
+      <span class="chip-skel" style="width:40px"></span>
+      <span class="chip-skel" style="width:56px"></span>
+    </div>
+
+    <div class="sb-search" id="sb-search">
+      <input id="search" type="search" placeholder="搜索文章…" autocomplete="off" aria-label="搜索文章" />
+      <kbd class="kbd">/</kbd>
+      <button class="clear" id="search-clear" type="button" aria-label="清除搜索">✕</button>
+    </div>
+
+    <div class="sb-list" id="article-list" role="list" aria-label="文章列表"><!-- populated by JS --></div>
+  </aside>
+
+  <!-- ============================== Main ============================== -->
+  <section class="main">
+    <nav class="tabbar" id="tabbar" role="tablist" aria-label="主区域">
+      <button class="tab active" data-tab="detail"   role="tab" aria-selected="true"  aria-controls="pane-detail"   tabindex="0">文章详情</button>
+      <button class="tab"        data-tab="qa"       role="tab" aria-selected="false" aria-controls="pane-qa"       tabindex="-1">智能问答</button>
+      <button class="tab"        data-tab="review"   role="tab" aria-selected="false" aria-controls="pane-review"   tabindex="-1">复习</button>
+      <button class="tab"        data-tab="coverage" role="tab" aria-selected="false" aria-controls="pane-coverage" tabindex="-1">覆盖率</button>
+      <button class="tab"        data-tab="timeline" role="tab" aria-selected="false" aria-controls="pane-timeline" tabindex="-1">时间轴</button>
+      <button class="tab"        data-tab="profile"  role="tab" aria-selected="false" aria-controls="pane-profile"  tabindex="-1">我的画像</button>
+      <span class="tabbar-spacer"></span>
+      <button class="collect-btn" id="collect-btn" type="button" title="触发后台采集新文章">采集</button>
+      <a class="graph-link" href="graph">图谱 <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <!-- =========== Tab: article detail =========== -->
+    <div class="tab-content" id="pane-detail" role="tabpanel" data-screen-label="article-detail">
+      <div class="reading-progress" id="reading-progress"><span></span></div>
+      <article class="article" id="article-detail"><!-- populated by JS --></article>
+    </div>
+
+    <!-- =========== Tab: QA =========== -->
+    <div class="tab-content" id="pane-qa" role="tabpanel" hidden data-screen-label="qa">
+      <div class="qa-wrap">
+        <div class="qa-searchbar">
+          <svg class="lens" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path>
+          </svg>
+          <input id="qa-input" type="text" placeholder="向你的知识库提问…" autocomplete="off" />
+          <button class="qa-toggle on" id="qa-deep" type="button" title="启用多跳推理">
+            <span class="sw"></span><span>深度推理</span>
+          </button>
+          <button class="ask-btn" id="qa-ask" type="button">提问</button>
+        </div>
+
+        <div class="qa-meta">
+          <span class="live"></span>
+          已索引 <span id="qa-count">—</span> 篇文章
+          <span style="color:var(--muted-2)">│</span>
+          索引更新于 <span style="color:var(--text-2)" id="qa-updated">—</span>
+        </div>
+
+        <div class="qa-results" id="qa-results"><!-- populated by JS --></div>
+      </div>
+    </div>
+
+    <!-- =========== Tab: Review =========== -->
+    <div class="tab-content" id="pane-review" role="tabpanel" hidden data-screen-label="review">
+      <div class="panel-pad">
+        <div class="panel-head">
+          <h2>今日复习</h2>
+          <div class="sub">基于遗忘曲线挑选卡片，强化记忆。</div>
+        </div>
+      </div>
+      <div class="review-grid" id="review-grid"><!-- populated by JS --></div>
+    </div>
+
+    <!-- =========== Tab: Coverage =========== -->
+    <div class="tab-content" id="pane-coverage" role="tabpanel" hidden data-screen-label="coverage">
+      <div class="panel-pad">
+        <div class="panel-head">
+          <h2>话题覆盖率</h2>
+          <div class="sub">已读 / 待读 — 反映你在每个话题上的阅读密度</div>
+        </div>
+        <div class="cov-card" id="cov-card"><!-- populated by JS --></div>
+      </div>
+    </div>
+
+    <!-- =========== Tab: Timeline =========== -->
+    <div class="tab-content" id="pane-timeline" role="tabpanel" hidden data-screen-label="timeline">
+      <div class="panel-pad">
+        <div class="panel-head">
+          <h2>知识库时间轴</h2>
+          <div class="sub">各话题每月文章量</div>
+        </div>
+        <div class="heatmap-card">
+          <table class="heatmap" id="heatmap"><!-- populated by JS --></table>
+          <div class="legend">
+            <span>少</span>
+            <span class="scale" id="legend-scale"></span>
+            <span>多</span>
+            <span class="max" id="legend-max">最大值 — 篇/月</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========== Tab: Profile =========== -->
+    <div class="tab-content" id="pane-profile" role="tabpanel" hidden data-screen-label="profile">
+      <div class="profile">
+        <div class="panel-head">
+          <h2>我的画像</h2>
+          <div class="sub">基于阅读、笔记、反馈和复习数据，系统对你的画像</div>
+        </div>
+        <div class="profile-grid">
+          <div class="pf-card">
+            <h4>阅读节奏</h4>
+            <div class="pf-stat-row"><span class="label">入库文章</span><span class="v" id="pf-total">— 篇</span></div>
+            <div class="pf-stat-row"><span class="label">已读文章</span><span class="v" id="pf-read">— 篇</span></div>
+            <div class="pf-stat-row"><span class="label">笔记数量</span><span class="v" id="pf-notes">—</span></div>
+            <div class="pf-stat-row"><span class="label">活跃话题</span><span class="v" id="pf-topic">—</span></div>
+          </div>
+
+          <div class="pf-card">
+            <h4>感兴趣的话题</h4>
+            <div class="tagcloud" id="pf-active-topics">
+              <span style="color:var(--muted)">加载中…</span>
+            </div>
+            <h4 style="margin-top:18px">薄弱话题</h4>
+            <div class="tagcloud" id="pf-weak-topics">
+              <span style="color:var(--muted)">加载中…</span>
+            </div>
+          </div>
+
+          <div class="pf-card" style="grid-column:1/-1">
+            <h4>你的「读法」</h4>
+            <div class="pf-stat-row"><span class="label">最常用的角度</span><span class="v" id="pf-angle">工程师视角</span></div>
+            <div class="pf-stat-row"><span class="label">总阅读事件</span><span class="v" id="pf-events">—</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
