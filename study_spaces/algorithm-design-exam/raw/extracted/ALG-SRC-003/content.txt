@@ -1,0 +1,317 @@
+㷨ơĩ⼰ο
+Է
+            1 MERGESORT(lowhigh)                    
+   if low<high                          
+    then mid(lowhigh)/2              
+      MERGESORT(lowmid)              
+      MERGESORT(mid+1high)         
+      MERGE(lowmidhigh) 
+   endif                              
+ end MERGESORT
+
+            2 procedure  S1(PWMXn)
+   i1; a0
+   while  i n do
+      if  W(i)>M then return  endif
+       aa+i
+       ii+1 ;
+    repeat
+   end 
+⣺
+
+3.procedure PARTITION(m,p)
+      Integer m,p,i;global A(m:p-1)
+      vA(m);im
+  loop
+loop ii+1 until A(i) v  repeat
+loop pp-1 until A(p) v  repeat
+              if i<p
+                   then call INTERCHANGE(A(i),A(p))
+                  else exit
+             endif
+          repeat
+           A(m) A(p);A(p) v
+      End PARTITION
+
+  3⣺ĲҴp-m+1
+
+   4.procedure F1(n)
+         if n<2 then return(1)
+             else return(F2(2,n,1,1))
+         endif
+     end F1
+     procedure F2(i,n,x,y)
+         if in
+            then  call F2(i+1,n,y,x+y)
+         endif
+         return(y)
+     end F2
+
+ 4⣺F22n,1,1ʱ临ӶΪ
+      T(n)=O(n-2);  ΪinʱҪݹF2һn-2
+      n1ʱF1(n)ʱΪ O(1)
+n>1ʱF1(n)ʱ临ӶF2(2,n,1,1)ʱ临ӶͬΪΪ O(n)
+
+  5.procedure MAX(A,n,j)
+        xmaxA(1);j1
+        for i2 to n do
+            if A(i)>xmax  then  xmaxA(i); ji;endif
+        repeat
+end MAX
+    
+   5
+        xmaxA(1);j1    ʱΪO(1)
+        for i2 to n do      ѭn-1
+       ʱΪ:
+T(n)=O(1)+ (n-1)O(1)= O(n)
+
+6.procedure BINSRCH(A,n,x,j)
+        integer low,high,mid,j,n;
+        low1;highn
+        while lowhigh do
+              mid|_(low+high)/2_|
+                      case
+              :x<A(mid):highmid-1
+:x>A(mid):lowmid+1
+:else:jmid; return
+           endcase
+        repeat
+      j0
+  end BINSRCH
+
+   6log2n+1
+
+㷨
+1дͼ·̬滮㷨ʵḶֵ́
+
+ߵĴ£
+C(1,2)=3 C(1,3)=5 C(1,4)=2 
+C(2,6)=8 C(2,7)=4 C(3,5)=5 C(3,6)=4 C(4,5)=2C(4,6)=1
+C(5,8)=4 C(6,8)=5 C(7,8)=6
+𰸣
+1  
+Cost(4,8)=0
+Cost(3,7)= C(7,8)+0=6 D[5]=8
+Cost(3,6)= C(68)+0=5, D[6]=8
+Cost(3,5)= C(58)+0=4  D[7]=8
+
+Cost(2,4)= min{C(46)+ Cost(3,6), C(45)+ Cost(3,5)}
+         = min{1+ 5, 2+4}=6  D[4]=6
+Cost(2,3)= min{C(36)+ Cost(3,6) }
+         = min{4+5}=9  D[3]=5
+Cost(2,2)= min{C(26)+ Cost(3,6), C(27)+ Cost(3,7)}
+         = min{8+5, 4+6}=10  D[2]=7
+
+Cost(1,1)= min{C(1,2)+ Cost(2,2), C(1,3)+ Cost(2,3), C(1,4)+ Cost(2,4)}
+         = min{3+10, 5+9,2+6}= 8
+D[1]=4
+1468
+
+        2 дmaxmin㷨ʵСĹ̡
+ A=(48,12,61,3,5,19,32,7) 
+ 
+                2 дmaxmin㷨ʵСĹ̡
+ A=() 
+1  48,12,61,3,       5,19,32,7
+248,12    61,3    5,19     32,7
+3 4861, 123   193257
+4 6132    35
+5 61   3
+            3 5(3,6,9,1,7),M=13õݹsumofsub㷨=MһӼĹ̡
+
+            4 㷨ʵ㷨ִйУдAһαָĹ̡
+ A=(65,70,75,80,85,55,50,2)
+
+            5 鲢㷨ʵд㷨ִй̡
+       A=(48,12,61,3,5,19,32,7)
+5     
+         48,12,61,3           5,19,32,7
+48,12    61,3      5,19     32,7
+12,48    3,61      5,19     7,32
+          3, 12, 48, 61     5, 7, 1932
+3,5, 7,12193248,61    
+
+            6 дͼɫĻ㷨жX[k]ǷĹ̡
+6
+i0
+while i<k do 
+ if G[k,i]=1 and X[k]= X[i] then 
+  return false 
+  ii+1
+repeat
+  if i= k then return true
+
+            7 ͼдͼɫ㷨óһɫĹ̡
+
+ 7
+K1
+X[1] 1 ,  true
+X[2]1,false; X[2]X[2]+1=2,  true
+X[3]1 ,false; X[3]X[3]+1=2, false;X[3]X[3]+1=3,  true 
+X[4]1, false; X[4]X[4]+1=2, false;X[4]X[4]+1=3,  true
+ҵһ 1233
+
+            8 д7״̬ռ
+
+            9 д鲢㷨ʵĹ̡
+(6,2,9,3,5,1,8,7)
+9 
+  õһ   6,2,9,3                5,1,8,7        ֳ
+  õڶ   6,2   9,3           5,1   8,7   ֳĸ
+  õ   6  2   9  3           5  1   8  7    ֳɰ˸
+  õĲ   ֻһԪطһ
+鲢    2 ,6    3, 9    1,5    7,8    һ
+ڶ鲢   2 ,3,6, 9       1,5,7,8        һ
+һ鲢  1, 2 ,3, 5 ,6, 7, 8,9             
+
+            10 дñ̰㷨ʵĹ̡
+      P=(18,12,4,1)
+      W=(12,10,8,3)
+       M=25
+10ʵP(i)/W(i)P(i+1)/W(i+1)˳
+       CU25,X0
+        W[1]< CU:  x[1]1; CUCU-W[1]=13;
+        W[2]< CU:  x[2]1; CUCU-W[2]=3;
+W[3]>CU:   x[3]CU/ W[3]=3/8;
+ʵĽΪ113/80
+
+11һΪ{139123241456275778295100}ʹöֲֵΪ82ĽʱٴαȽϺҳɹ̡
+
+  һҪҪִĴβҵֵΪ82
+
+12ʹprim㷨ͼGһС
+
+dist(1,2)=6;dist(2,5)=3;dist(5,6)=6;dist(6,4)=2;dist(4,1)=5; 
+dist(1,3)=1;dist(2,3)=5;dist(3,4)=5;dist(3,6)=4;dist(5,3)=6
+13º˵
+int  f(int x,int y)
+{ 
+f=x Mod y +1;
+}
+֪a=10,b=4,c=5 ִk=f(f(a+c,b),f(b,c))kֵǶٲдϸ̡
+ 		Kֵ5
+14McCathy£
+x>100ʱ m(x)=x-10;
+x<=100ʱ m(x)=m(m(x+11));
+дһݹ麯xm(x)ֵ
+int m(int  x)
+{
+int y;
+ if(x>100) return(x-100);
+else
+{
+  y=m(x+11);
+  return (m(y)); 
+}
+} 
+
+15 һ㷨һAҳСԪء
+
+Void maxmin(A,n)
+Vector A;
+int n;
+{
+int max,min,i;  
+max=A[0];min=A[0];
+for(i=0;i<=n;i++)
+if(A[i]>max)max=A[i];
+else if(A[i]<min)min=A[i];
+printf(max=%d,min=%d\n,max,min);
+} 
+ο
+㷨
+12ʹķ㷨ͼGһС
+
+dist(1,2)=6;dist(2,5)=3;dist(5,6)=6;dist(6,4)=2;dist(4,1)=5; 
+dist(1,3)=1;dist(2,3)=5;dist(3,4)=5;dist(3,6)=4;dist(5,3)=6
+
+ġ㷨   
+1. 1. nҵ{1,2,, n},m̨ͬĻӹҵiҪĴʱΪtiԼκһҵκһ̨ϴδ깤ǰ׼жϴκҵָܲСҵ
+Ҫһֵȷʹnҵھ̵ܶʱm̨ꡣ㷨ǷɻŽ⡣
+
+⣺ڴjS[j] ʾjеҵP[j,k]ʾjĵkҵ 
+1ҵt[1]t[2]ݡt[n]
+2S[1:m] j0        //ӵһʼ
+3) for i1 to n do       //nҵ
+     jj mod m +1       //ѡһ
+S[j]S[j]+1;        
+P[j,S[j]]i  
+Repeat
+2.2. nֵΪ:
+d1d2ݡdnǮңҪǮMѡǮdkĿXk 
+d1XidnXn?M ʹ
+XiXn  С 
+ѡ̰Ĳԣ̰㷨
+̰ԭÿѡֵӲҡ
+
+CUM;i1;X0       // XΪ
+While CU0 do
+ X[i]CU div d[i]   // X[i]ΪiӲ
+CUCU-d[i]*X[i]
+ii+1;
+repeat
+33. nƷ֪n=7, ΪP=(10,5,15,7,6,18,3)W=(2,3,5,7,1,4,1)ݻM=15,Ʒֻѡȫװ뱳װ뱳̰㷨ǷɻŽ⡣
+
+ ṹGƷšΪһṹ壺G[k]={1,10,2}
+Ž⣬/ĵݼ
+ {5,6,1,6} {1,10,2,5}{6,18,4,9/2} {3,15,5,3} {7,3,1,3}{2,5,3,5/3}  {4,7,7,1} 
+   㷨
+   procedure  KNAPSACK(PWMXn)
+    //P(1n)W(1n)ֱа
+      P(i)/W(i)P(i+1)/W(i+1)nƷЧֵ
+      MǱСx(1n)ǽ//
+    real P(1n)W(1n)X(1n)Mcu
+    integer in
+    X0  //ʼΪ//
+    cuM  //cuǱʣ//
+    for i1 to n do
+      if  W(i)>cu  then  exit  endif
+      X(i) 1
+       cucu-W(i)
+    repeat
+    end GREEDY-KNAPSACK
+  㷨óĽ⣺
+  X=1,1,1,1,1,0,052 
+1,1,1,1, 0, 1,0ɻ54 
+̰ķһŽ⡣
+
+4 4. ֻһܶٻĻ㷨
+
+Hamiltonian(n)
+{k1; x[k] 0;
+ While k>0 do 
+  x[k]  x[k]+1;
+  while B(k)=false and x[k]n do
+    x[k]  x[k]+1; repeat
+  If x[k]n then 
+    if k=n then {print  x; return}
+     else {k k+1; x[k]0;} endif
+   else k k-1
+  endif
+repeat
+end
+
+procedure B(k)
+{ G[x[k-1],x[k] ]1 then return false;
+  for i1 to k-1 do
+   if x[i]=x[k] then return false;endif
+  repeat
+ return true; 
+}
+5öԳ㷨nΪżĻʺн⡣
+procedure NQUEENS1(n)
+a0             //
+X(1)0k1  //kǵǰУX(k)ǵǰ//
+   While k>0 do  //еִ//
+1) {  X(k)X(k)+1  //Ƶһ//
+While X(k)n and not PLACE(k)  do 
+2)     X(k)X(k)ʮl
+      if X(k)n        
+        then if k=n  /
+                  then 
+{print(X)aa+1  //ҵһa1//
+            if a=n/2 then return // ҵn/2㷨
+ 3)              else   {kk+1X(k)0} 
+4)    else kk1  ////
+  }
+end NQUEENS

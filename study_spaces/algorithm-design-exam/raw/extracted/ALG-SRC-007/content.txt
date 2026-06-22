@@ -1,0 +1,463 @@
+һ 
+        1 㷨ĸ  㷨Ч
+        2     Ķ㷨ӵҪݡ
+    1 nΪôO()ǺţгεִʱʾΪnĺεʱ临ӶΪ    O(n)
+    2    
+i=1; k=0;
+while(i<n) { k=k+10*i;i++; }?
+    3 ԴҪ  ʱ      ռ  Դ㷨ĸ  ʱ临Ӷ       ռ临Ӷ֮֡
+        3 f(n)= 62n+n2f(n)Ľ̬f(n)= O(?   2n?
+    4   ??)
+    5 ݹָ    ֱ          ͨһЩ
+        4 ηĻ˼ǽһģΪnֽΪkģС⣬Щ⻥   
+    6   ԭͬ
+ѡ⣨20֣ÿС2֣
+1֧޽編ݷĽռTĽ,( B  )
+A.Ŀ겻ͬ,ʽͬ               B.Ŀ겻ͬ,ʽҲͬ
+C.Ŀͬ,ʽͬ               D.Ŀͬ,ʽҲͬ
+2ݷڽռTϵʽ( A)
+A.      B.       C.Сķ      D.
+3ڶĽռķ,һһλΪ( B )
+A.ݷ        B.֧޽編    C.ݷͷ֧޽編 D.ݷӼ
+4¹ж״ȷ( C )
+A.ɶʽʱ㷨Ѵ
+B.Ҫʽʱ㷨״
+C.ɶʽʱ㷨״
+D.Ҫʽʱ㷨ǲܴ
+5f(N),g(N)Ƕϵ,ĳCȻN0,ʹõNN0ʱf(N)Cg(N),ƺf(N)NִʱϽg(N),f(N)=O(g(N)),f(N)Ľ( A )g(N)Ľס
+A.        B.          C.ȼ            D.ƽ
+6ںnԪصӼ,ռҶĿΪ( B )
+A.n!          B.2n             C.2n+1-1           D. 2n-1
+7Բ( D )
+A.          B.             C.ȷ            D.
+8( C )ʱ
+A.      B.         C.            D.Ͱ
+9( A )һõŽ
+A.̰㷨      B.㷨         C.֧޽編        D.̬滮
+10£ C ͼṹ
+A.       B. дͷ         C.            D. Ŵ
+⣨20֣ÿС5֣
+1n=2k˶ԱҪѭһҪıճ̱
+ÿѡֱn-1ѡֱһΣ
+ÿѡһֻһΣ
+ѭҪʱɡ
+1n=2k ѭҪм죻
+2n=22=4ʱ뻭ѭճ̱
+       :  12k-1죨2֣
+        2n=22=4ʱѭճ̱3֣
+1	2	3	4
+2	1	4	3
+3	4	1	2
+4	3	2	1
+
+2ӽṹʡ
+     ĳŽŽ⡣ʳΪӽṹʡ
+3ݷ˼롣
+     ݷĻ˼һúȫܽ״̬ռϽΪҶӽ㡣
+УÿһʱжϸýΪǷĽ⣬ȷвĽ⣬Ը˻صϲ㸸㣬һ̡ڻݷУȹ״̬ռٽ̣𲽹״̬ռ߹졣
+
+        5 νPNP
+    P(Polynomial)ҲǶʽӳ̶ȵ⡣
+   NPNon-deterministic?Polynomial⣬ҲǶʽӳ̶ȵķȷ⡣
+        6 
+ġ㷨գ30֣ÿ2֣
+1Dijkstra㷨ǽⵥԴ·̰㷨Ķα벢ڿհ״ʵĴ롣
+// GһnͼɳɱڽӾw[u,v]ʾD[v]ʾvԴs·ȣp[v]¼vĸ㡣
+Init-single-source(G,s)
+1.for each vertex vV[G]
+2.do {d[v]=  p[v]=NIL}
+3. d[s]=0
+Relax(u,v,w)
+1.if   d[v]> d[u]+w[u,v]         
+2.then {d[v]=d[u]+w[u,v]
+        p[v]=u
+       }
+
+dijkstra(G,w,s)
+1.    init-single-source(G,s)       
+2. S=    
+3. Q=V[G]
+4.while Q<>       
+    do u=min(Q) 
+         S=S{u}
+         for each vertex  vadj[u]   //uڽӵ v
+             do         relax(G,v,w)     
+2ĳԤN½ĿÿĿͶʶ w[k]Ͷʺ v[k]֪ͶܶΪCѡĿʹ
+Invest-Program(  )
+{ for (j=0;j<=C;j++)            
+        5m[n][j]=0;  
+ for (j=w[n];j<=C;j++)    
+    m[n][j]=v[n];
+ for (i=n-1;i>1;i--)
+  { int jMax=min(w[i]-1,c);
+     for(j=0;j<=jMax;j++)         
+      m[i][j]=    6m[i+1][j]       ;
+    for (j=w[i];j<=C;j++)              
+      m[i][j]=max(    7m[i+1][j],m[i+1][j-w[i]]+v[i]     );
+   }
+m[1][c]=m[2][c];
+if(   8c>=w[1]   )
+m[1][c]=max(m[1][c],m[2][c-w[1]]+v[1]);
+}
+  
+  
+  
+
+3N
+(1)öάA[N][N]洢ʺλ,iеjзлʺ,A[i][j]Ϊ0ֵ,ֵΪ0
+(2)ֱһάM[N]L[2*N-1]R[2*N-1]ʾСбߡбǷӣֵΪ1,ֵΪ0
+for(j=0;j<N;j++)
+ if(  !M[j]&&!L[i+j]&&!R[i-j+N]     )  /*ȫ
+ { A[i][j]=i+1;    /*Żʺ*/
+        10 M[j]=L[i+j]=R[i-j+N]=1;     
+      if(i==N-1)   
+      else    try(i+1,M,L,R,A)11    ;  /*̽һ*/
+          1 A[i][j]=0  2          /*ȥʺ*/
+          M[j]=L[i+j]=R[i-j+N]=013    ;
+     }
+  
+4ͨһ߾ȵn(nЧλ240)ȥsֺʣµְԭҴһµ̶Ըn sѰһַʹʣµɵС
+deleten ,s)
+{s, n;      
+while s > 0 
+{        i=1    //Ӵ׿ʼ
+while (  (i<length(n)) && n[i]<n[i+1]         ) //ұȽϴ
+     i++;
+   delete(n,i); //ɾnĵiַ
+   s--;
+}
+while (length(n)>1)&& (n[1]=0) 
+  delete(n,1); //ɾȥ׿ܲ
+n; 
+}
+塢prim㷨Ļ˼롣ͼСҪ󻭳̿ʡԣ10֣
+
+prim㷨Ļ˼ǣ
+G=(V,E)ͨȨͼV={1,2,,n}
+U={1}ȻֻҪUVӼµ̰ѡѡȡiUjV-Uc[i][j]СıߣjӵUСһֱеU=VʱΪֹ
+ѡȡбǡùGһС
+5֣С£
+
+㷨⣨10֣
+ȫ⣺1NNȻĸСN=3ʱ6зʽ123132213231312321㷨¡
+N=3ʱݹʱջ仯,дӦi,jֵbĳʼֵΪ123
+perm(int b[], int i)
+{int k,j;
+if(i==N)
+
+else
+   for(j=i;j<=num;j++)
+   {swap(b[i],b[j]);
+    perm(b,i+1);
+    swap(b[j],b[i]);
+    }
+ }/*ʼʱi = 1;*/ 
+
+𰸣perm(int b[], int i)
+{int k,j;
+if(i==N)
+bԪֵ
+else
+   for(j=i;j<=N;j++)
+   {swap(b[i],b[j]);
+    perm(b,i+1); (1)(2)(3)(4)(5)(6)(7)(8)(9)
+    swap(b[j],b[i]);
+    }
+ }/*ʼʱi = 1;*/ 
+
+    һ Է
+1 
+MERGESORT(lowhigh)                    
+   if low<high                          
+    then mid(lowhigh)/2              
+      MERGESORT(lowmid)              
+      MERGESORT(mid+1high)         
+      MERGE(lowmidhigh) 
+   endif                              
+ end MERGESORT
+ݹ鷽                   
+
+n=2k
+ݹ鷽̣
+
+2 procedure  S1(PWMXn)
+   i1; a0
+   while  i n do
+      if  W(i)>M then return  endif
+       aa+i
+       ii+1 ;
+    repeat
+   end 
+
+   i1 ;s0   ʱΪO(1)
+   while  i n do      ѭn
+      ѭʱΪ O(1)
+    ʱΪ:
+T(n)=O(1)+ nO(1)= O(n)
+ 
+ 3procedure PARTITION(m,p)
+      Integer m,p,i;global A(m:p-1)
+      vA(m);im
+  loop
+loop ii+1 until A(i) v  repeat
+loop pp-1 until A(p) v  repeat
+              if i<p
+                   then call INTERCHANGE(A(i),A(p))
+                  else exit
+             endif
+          repeat
+           A(m) A(p);A(p) v
+      End PARTITION
+ĲҴp-m+1
+
+   4procedure F1(n)
+         if n<2 then return(1)
+             else return(F2(2,n,1,1))
+         endif
+     end F1
+     procedure F2(i,n,x,y)
+         if in
+            then  call F2(i+1,n,y,x+y)
+         endif
+         return(y)
+     end F2
+
+F22n,1,1ʱ临ӶΪ
+      T(n)=O(n-2);  ΪinʱҪݹF2һn-2
+      n1ʱF1(n)ʱΪ O(1)
+n>1ʱF1(n)ʱ临ӶF2(2,n,1,1)ʱ临ӶͬΪΪ O(n)
+ 5procedure MAX(A,n,j)
+        xmaxA(1);j1
+        for i2 to n do
+            if A(i)>xmax  then  xmaxA(i); ji;endif
+        repeat
+end MAX
+
+        xmaxA(1);j1    ʱΪO(1)
+        for i2 to n do      ѭn-1
+       ʱΪ:
+T(n)=O(1)+ (n-1)O(1)= O(n)
+   6procedure BINSRCH(A,n,x,j)
+        integer low,high,mid,j,n;
+        low1;highn
+        while lowhigh do
+              mid|_(low+high)/2_|
+                      case
+              :x<A(mid):highmid-1
+:x>A(mid):lowmid+1
+:else:jmid; return
+           endcase
+        repeat
+      j0
+  end BINSRCH
+log2n+1
+     㷨
+1дͼ·̬滮㷨ʵḶֵ́
+
+ߵĴ£
+C(1,2)=3 C(1,3)=5 C(1,4)=2 
+C(2,6)=8 C(2,7)=4 C(3,5)=5 C(3,6)=4 C(4,5)=2C(4,6)=1
+C(5,8)=4 C(6,8)=5 C(7,8)=6
+
+Cost(4,8)=0
+Cost(3,7)= C(7,8)+0=6 D[5]=8
+Cost(3,6)= C(68)+0=5, D[6]=8
+Cost(3,5)= C(58)+0=4  D[7]=8
+
+Cost(2,4)= min{C(46)+ Cost(3,6), C(45)+ Cost(3,5)}
+         = min{1+ 5, 2+4}=6  D[4]=6
+Cost(2,3)= min{C(36)+ Cost(3,6) }
+         = min{4+5}=9  D[3]=5
+Cost(2,2)= min{C(26)+ Cost(3,6), C(27)+ Cost(3,7)}
+         = min{8+5, 4+6}=10  D[2]=7
+
+Cost(1,1)= min{C(1,2)+ Cost(2,2), C(1,3)+ Cost(2,3), C(1,4)+ Cost(2,4)}
+         = min{3+10, 5+9,2+6}= 8
+D[1]=4
+1468
+        2 дmaxmin㷨ʵСĹ̡
+ A=(48,12,61,3,5,19,32,7) 
+          дmaxmin㷨ʵСĹ̡
+ A=() 
+1  48,12,61,3,       5,19,32,7
+248,12    61,3    5,19     32,7
+3 4861, 123   193257
+4 6132    35
+5 61   
+9.5(3,6,9,1,7),M=13õݹsumofsub㷨=MһӼĹ̡
+
+            1 㷨ʵ㷨ִйУдAһαָĹ̡
+ A=(65,70,75,80,85,55,50,2)
+
+            2 鲢㷨ʵд㷨ִй̡
+       A=(48,12,61,3,5,19,32,7)
+          12,48 ,3,61 ,5,19 ,7,32
+          3, 12, 48, 61 ,5, 7, 1932
+          3,5, 7,12193248,61
+            3 ͼдͼɫ㷨óһɫĹ̡
+
+            4 д鲢㷨ʵĹ̡
+(6,2,9,3,5,1,8,7)
+
+õһ   6,2,9,3                5,1,8,7        ֳ
+  õڶ   6,2   9,3           5,1   8,7   ֳĸ
+  õ   6  2   9  3           5  1   8  7    ֳɰ˸
+  õĲ   ֻһԪطһ
+鲢    2 ,6    3, 9    1,5    7,8    һ
+ڶ鲢   2 ,3,6, 9       1,5,7,8        һ
+һ鲢  1, 2 ,3, 5 ,6, 7, 8,9             
+
+            5 дñ̰㷨ʵĹ̡
+      P=(18,12,4,1)
+      W=(12,10,8,3)
+      M=25
+             ʵP(i)/W(i)P(i+1)/W(i+1)˳
+       CU25,X0
+        W[1]< CU:  x[1]1; CUCU-W[1]=13;
+        W[2]< CU:  x[2]1; CUCU-W[2]=3;
+W[3]>CU:   x[3]CU/ W[3]=3/8;
+ʵĽΪ113/80
+
+11һΪ{139123241456275778295100}ʹöֲֵΪ82ĽʱٴαȽϺҳɹ̡  
+һҪҪִĴβҵֵΪ82
+  
+12ʹprim㷨ͼGһС
+
+dist(1,2)=6;dist(2,5)=3;dist(5,6)=6;dist(6,4)=2;dist(4,1)=5; 
+dist(1,3)=1;dist(2,3)=5;dist(3,4)=5;dist(3,6)=4;dist(5,3)=6
+
+13º˵
+int  f(int x,int y)
+{ 
+f=x Mod y +1;
+}
+֪a=10,b=4,c=5 ִk=f(f(a+c,b),f(b,c))kֵǶٲдϸ̡
+      
+      int  f(int x,int y)
+{ 
+f=x Mod y +1;
+}
+֪a=10,b=4,c=5 ִk=f(f(a+c,b),f(b,c))kֵǶٲдϸ̡
+
+}
+ Kֵ5
+
+14McCathy£
+x>100ʱ m(x)=x-10;
+x<=100ʱ m(x)=m(m(x+11));
+дһݹ麯xm(x)ֵ
+     int m(int  x)
+{
+int y;
+ if(x>100) return(x-100);
+else
+{
+  y=m(x+11);
+  return (m(y)); 
+}
+} 
+
+15 һ㷨һAҳСԪء
+Void maxmin(A,n)
+Vector A;
+int n;
+{
+int max,min,i;  
+max=A[1];min=A[1];
+for(i=2;i<=n;i++)
+if(A[i]>max)max=A[i];
+else if(A[i]<min)min=A[i];
+printf(max=%d,min=%d\n,max,min);
+} 
+
+ġ㷨   
+
+1. nҵ{1,2,, n},m̨ͬĻӹҵiҪĴʱΪtiԼκһҵκһ̨ϴδ깤ǰ׼жϴκҵָܲСҵ
+Ҫһֵȷʹnҵھ̵ܶʱm̨ꡣ㷨ǷɻŽ⡣
+⣺ڴjS[j] ʾjеҵP[j,k]ʾjĵkҵ 
+1ҵt[1]t[2]ݡt[n]
+2S[1:m] j0        //ӵһʼ
+3) for i1 to n do       //nҵ
+     jj mod m +1       //ѡһ
+S[j]S[j]+1;        
+P[j,S[j]]i  
+Repeat
+
+2. nֵΪ:
+d1d2ݡdnǮңҪǮMѡǮdkĿXk 
+d1XidnXn?M ʹ
+XiXn  С 
+ѡ̰Ĳԣ̰㷨
+
+ ̰ԭÿѡֵӲҡ
+
+CUM;i1;X0       // XΪ
+While CU0 do
+ X[i]CU div d[i]   // X[i]ΪiӲ
+CUCU-d[i]*X[i]
+ii+1;
+repeat
+3. nƷ֪n=7, ΪP=(10,5,15,7,6,18,3)W=(2,3,5,7,1,4,1)ݻM=15,Ʒֻѡȫװ뱳װ뱳̰㷨ǷɻŽ⡣
+ṹGƷšΪһṹ壺G[k]={1,10,2}
+Ž⣬/ĵݼ
+ {5,6,1,6} {1,10,2,5}{6,18,4,9/2} {3,15,5,3} {7,3,1,3}{2,5,3,5/3}  {4,7,7,1} 
+   㷨
+   procedure  KNAPSACK(PWMXn)
+    //P(1n)W(1n)ֱа
+      P(i)/W(i)P(i+1)/W(i+1)nƷЧֵ
+      MǱСx(1n)ǽ//
+    real P(1n)W(1n)X(1n)Mcu
+    integer in
+    X0  //ʼΪ//
+    cuM  //cuǱʣ//
+    for i1 to n do
+      if  W(i)>cu  then  exit  endif
+      X(i) 1
+       cucu-W(i)
+    repeat
+    end GREEDY-KNAPSACK
+  㷨óĽ⣺
+  X=1,1,1,1,1,0,052 
+1,1,1,1, 0, 1,0ɻ54 
+̰ķһŽ⡣
+
+4. ֻһܶٻĻ㷨
+Hamiltonian(n)
+{k1; x[k] 0;
+ While k>0 do 
+  x[k]  x[k]+1;
+  while B(k)=false and x[k]n do
+    x[k]  x[k]+1; repeat
+  If x[k]n then 
+    if k=n then {print  x; return}
+     else {k k+1; x[k]0;} endif
+   else k k-1
+  endif
+repeat
+end
+
+procedure B(k)
+{ G[x[k-1],x[k] ]1 then return false;
+  for i1 to k-1 do
+   if x[i]=x[k] then return false;endif
+  repeat
+ return true; 
+}
+
+5öԳ㷨n=2kKΪĻʺн⡣
+procedure NQUEENS1(n)
+a0             //
+X(1)0k1  //kǵǰУX(k)ǵǰ//
+   While k>0 do  //еִ//
+1) {  X(k)X(k)+1  //Ƶһ//
+While X(k)n and not PLACE(k)  do 
+2)     X(k)X(k)ʮl
+      if X(k)n        
+        then if k=n  /
+                  then 
+{print(X)aa+1  //ҵһa1//
+            if a=n/2 then return // ҵn/2㷨
+ 3)              else   {kk+1X(k)0} 
+4)    else kk1  ////
+  }
+end NQUEENS

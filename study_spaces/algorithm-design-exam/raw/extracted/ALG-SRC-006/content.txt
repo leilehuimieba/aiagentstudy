@@ -1,0 +1,444 @@
+㷨ơĩϰ
+
+    һ ѡ
+    1. 㷨߱롢ͣ  D  4ԡ
+AԺͰȫ                 BȷԺ׶
+CԺͰȫ                 DԺȷ
+    2. 㷨УǺOʾ   B  ǺŦʾ  A   
+A.½                       B.Ͻ
+C.ǽϽ                       D.
+    3. ĳ㷨ģΪnʱļʱΪT(n)=3*2^nĳ̨ʵֲɸ㷨ʱΪt롣һ̨ٶΪһ̨64ǫ̂»ͬһ㷨tܽģΪ⣿   B  ⷽ3*2^n*64=3*2^x
+An+8                            Bn+6
+Cn+7                            Dn+5
+    4. ģΪNʱĳݹ㷨ʱ临ӶȼΪT(N)֪T(1)=1T(N)=2T(N/2)+N/2Oʾʱ临ӶΪ  C   
+AO(logN)                        BO(N) 
+CO(NlogN)                       DO(N?logN) 
+    5. ֱӻӵ㷨Ϊ   B  
+A̰㷨                       Bݹ㷨     
+C㷨                       Dݷ
+    6. FibonacciУ4͵11ֱǣ   D  
+A589                         B389     
+C5144                        D3144
+    7. 8͹εʷУǡУ  B   
+A6Һ7		        B5Һ6	
+C6Һ6		        D5Һ5
+    8. һö̬滮㷨̰㷨Ĺؼģ  B   
+Aص		               Bӽṹ		
+C̰ѡ	                   DŽ
+    9. ĸⲻ̰ķ⣨  C   
+A	               BԴ·
+C	                      DС
+    10. 㷨ͨԵϵķʽŽǣ   B  
+A¼		                  B̬滮		
+C̰ķ					        Dݷ
+    11. 㷨вܽ0/1ǣ  A   
+A̰ķ		                  B̬滮 		
+Cݷ                         D֧޽編
+    12. ĸ̰㷨⣨   D  
+ALCS                      Bҵ
+C0-1                  D
+    13. ûݷװʱѡƷΪm֣ĽռĽΪ     
+Am!	B2m+1		
+C2m+1-1              	D2m
+    14. 㷨ã?A??ʵֵ㷨
+Aβ??                    B̬滮?? 
+C̰ķ???                    Dݷ
+    15. вǶ̬滮㷨ǣ?B??P44
+AҳŽ?              BŽ? 
+CŽ(Ӧֵ)?     	DŽ
+    16. ⣨   B   ʹ̰ķ
+AԴ· 			     BNʺ 
+CС			     D
+    17. ʹö㷨nԪرһضԪأʱ临ԷֱΪ  A   P17
+AO(1)O(logn)                   BO(n)O(logn)     
+CO(1)O(nlogn)                  DO(n)O(nlogn)
+    18. ȶʽ֧޽編ѡȡչԭǣ?C??P162
+AȽȳ			               Bȳ			
+Cȼ	                   D
+    19. 治Ƿ֧޷ʽǣ   D  P161
+A		                  BСķ	
+CЧ		               D
+    20. ֧޽編ʱ֯ʽǣ  B   
+AС		                  B 		
+Cջ	                             D
+    21. йڼ㷨ȷǣ C  P1
+A㷨ָһַһ
+B㷨ָ
+C. 㷨Ҫ
+D㷨Ǳ̵˼
+    22. й͹ʷȷǣ  A   
+An+1˵ȫźn͹εʷֶӦ
+Bn͹εʷУǡn-3
+Cö̬滮
+Dn͹εʷУǡn-2
+    23. ̬滮Ļ費  C  P44
+Aݹضֵ
+BŽʣ̻ṹ	
+CݼֵʱõϢŽ (ʡȥ)                    
+DԵϵķʽֵ
+    24. ηܽӦеĹؼǣ  C   P16
+AĹģСһĳ̶ȾͿ׵ؽ
+BԷֽΪɸģСͬ
+CøֽĽԺϲΪĽ
+Dֽĸ໥
+    25. йڻݷȷǣ   D  P114
+AݷҲΪ̽		                  
+BݷСͨý֮ⷨ 		
+CݷһܱⲻҪʽ                         
+DûݷԽռʱֻõݹ鷽ʵ
+    26.  ַ֧޽編Ϊ  D   P161
+A. ȷ֧޽編ȷ֧޽編
+B. ʽFIFO֧޽編ջʽ֧޽編
+C. Ӽ
+D. ʽFIFO֧޽編ȶʽ֧޽編
+
+     
+    1. f(n)=3n2+10Ľ̬f(n)= O(?n2  )
+g(n)=10log3nĽ̬g(n)= O(? n   ?)
+    2. һá㷨Ӧȷԡ    ɶ          ׳       ͸Чʺ͵ʹ洢ԡ
+    3. 㷨ʱ临ԺʾΪ   C=F(N,I,A)      㷨ԵĿڱȽ   ͬͬ㷨Ч     Чʡ 
+    4. ɵݹʽҪ ݹı߽   ݹĶ   
+    5. Դ· ֧޽編     ̰㷨     ⡣
+    6. ÷ηʵֿ㷨ʱµʱ临Ϊ O(nlogn)   µʱ临Ϊ   O(n^2)         㷨ʱ ʱ                 йءP26
+    7. 0-1ĽռΪ ȫ nĽռΪ   
+    8. ķ֧޽編жʽFIFO֧޽編ȶʽ֧޽編
+    9. ݷռʱõּ֦Ϊ  Լ   ֦ 
+    10. ֧޽編ʱ֯ʽ           ֧޽編ⵥԴ·ʱ֯ʽ   С 
+     㷨
+    1. ݹHanoi/׳⡣
+1 :׳˺n! P12
+׳˵ķǵݹ鷽ʽ壺
+д׹Եĵݹʽ㷨
+ݹʽΪ                     ߽
+                               ݹ鷽
+ݹ㷨
+int factorial (int n)
+  { if (n==0) return 1;   ݹ
+    return n * factorial (n-1);   ݹ
+  }
+2:õݹ鼼Hanoi,Hanoiĵݹ㷨P15
+Hanoi (int n, int a, int c, int b)ʾAϵnCBΪMove(a,c)ʾaϱΪnԲcϡ
+
+void hanoi (int n, int a, int c, int b)
+   {
+       if (n > 0)
+       {
+          hanoi(n-1, a, b, c);
+          move(a,c);
+          hanoi(n-1, b, c, a);
+       }
+   }
+    2. ÷η⡣
+㷨   P25 ҵμ2£242ҳ-50ҳ
+template<class Type>
+void QuickSort (Type a[], int p, int r)
+{
+      if (p<r) {
+        int q=Partition(a,p,r);
+        QuickSort (a,p,q-1); 
+        QuickSort (a,q+1,r)
+        }
+}
+Partitionľʵ
+template<class Type>
+int Partition (Type a[], int p, int r)
+{
+        int i = p, j = r + 1; 
+        Type x=a[p];
+        // < xԪؽ
+        // > xԪؽұ
+        while (true) {
+           while (a[++i] <x && i<r);
+           while (a[- -j] >x);
+           if (i >= j) break; 
+           Swap(a[i], a[j]);
+           }
+       a[p] = a[j];
+       a[j] = x;
+       return j;
+}
+    3. ̰㷨װ⡣
+װ P95 μ4(2)3-8ҳ
+template<class Type>
+void Loading(int x[],  Type w[], Type c, int n)
+{
+        int *t = new int [n+1];
+        Sort(w, t, n);
+        for (int i = 1; i <= n; i++) x[i] = 0;
+        for (int j = 1; j <= n && w[t[j]] <= c; j++)
+                    {x[t[i]] = 1; c -= w[t[j]];}
+}
+    4. ûݷ0-1/ҵ /⣬Ҫửռ
+1ûݷ0-1  P133μ5(2)24-38ҳ
+template<typename Typew,typename Typep>
+class Knap
+{ 
+   private:
+       Typep Bound(int i);  //Ͻ
+       void Backtrack(int i);
+       Typew c;  //
+       int n;  //Ʒ
+       Typew *w;  //Ʒ
+       Typep *p;  //Ʒֵ
+       Typew cw;  //ǰ
+       Typep cp;  //ǰֵ
+       Typep bestp;  //ǰżֵ
+};
+
+void Knap<Typew,Typep>::Backtrack(int i)
+{   if(i>n)    {     bestp=cp;     return;    }
+    if(cw+w[i]<=c)  //
+    {  cw+=w[i];
+        cp+=p[i];
+        Backtrack(i+1);
+        cw-=w[i];
+        cp-=p[i];    }
+    if(Bound(i+1)>bestp) //
+        Backtrack(i+1);
+}
+
+Typep Knap<Typew,Typep>::Bound(int i)
+{
+    Typew cleft=c-cw;  //ʣı
+    Typep b=cp;  //bΪǰֵ
+    //װ뵥λֵߵƷ
+    while(i<=n&&w[i]<=cleft)
+    {  cleft-=w[i];        b+=p[i];        i++;    }
+    if(i<=n)  //װƷһ
+        b+=p[i]*cleft/w[i];
+    return b;  //Ͻ
+}
+
+class Object  //Ʒ
+{
+    friend int Knapsack(int *,int *,int,int);
+    public:
+       int operator <(Object a) const
+       {
+           return (d>=a.d);
+       }
+       int ID;  //Ʒ
+       float d;  //λֵ
+};
+
+Typep Knapsack( Typep p[],Typew w[],Typew c,int n)
+{  //ΪTypep Knapsackʼ
+    Typew W=0; //
+    Typep P=0; //ֵܼ
+    Object* Q=new Object[n]; //Ʒ飬±0ʼ
+    for(int i=1;i<=n;i++) //ʼƷ
+    {  Q[i-1].ID=i;
+        Q[i-1].d=1.0*p[i]/w[i];
+        P+=p[i];      W+=w[i];
+    }
+    if(W<=c)  //װƷ
+         return P;
+    if(W<=c)  //װƷ
+        return P;
+    QuickSort(Q,0,n-1);  //Ʒλֵ
+    Knap<Typew,Typep> K;
+    K.p=new Typep[n+1];
+    K.w=new Typew[n+1];
+    for(int i=1;i<=n;i++)
+    {   K.p[i]=p[Q[i-1].ID];   K.w[i]=w[Q[i-1].ID];    }
+    K.cp=0;    K.cw=0;         K.c=c;
+    K.n=n;      K.bestp=0;    K.Backtrack(1);
+    delete[] Q;      delete[] K.w;
+    delete[] K.p;    return K.bestp;
+}
+2ҵ  μ5(2)P2-5,αP125-127
+ռ䣺
+㷨 
+class Flowshop 
+{
+static  int  [][] m,     // ҵĴʱ
+           [] x,        // ǰҵ
+           [] bestx, // ǰҵ
+           [] f2,      // 2ɴʱ
+           f1,         // 1ɴʱ
+           f,           // ʱ
+           bestf,    // ǰŵʱ
+           n;         // ҵ 
+static void Backtrack(int i) 
+{
+   if (i > n)
+        { for (int j = 1; j <= n; j++)    bestx[j] = x[j];   bestf = f;  }
+   else
+      for (int j = i; j <= n; j++) {
+         f1+=m[x[j]][1];//jҵڵһ̨ʱ
+         f2[i]=((f2[i-1]>f1)?f2[i-1]:f1)+m[x[j]][2];
+         f+=f2[i];
+         if (f < bestf) //Լ
+              { Swap(x[i], x[j]);   Backtrack(i+1);  Swap(x[i], x[j]);  }
+         f1 - =m[x[j]][1];
+         f - =f2[i];         
+      }
+}
+
+3⣬Ҫửռ
+class Clique
+{
+    friend int MaxClique(int **,int [],int);
+    public:
+    void Print();  //Ž
+    private:
+       void Backtrack(int i);
+       int **a;  //ͼGڽӾ±1ʼ
+       int n;  //ͼGĶ
+       int *x;  //ǰ
+       int *bestx;  //ǰŽ
+       int;  //ǰŵĶ
+       int bestn;  //ǰŵĶ
+};
+void Clique::Backtrack(int i)
+{   if(i>n)
+    { for(int j=1;j<=n;j++) bestx[j]=x[j]; bestn=cn; return;}
+//жϵiǷѡ㶼б
+     int OK=1;  
+     for(int j=1;j<i;j++) //x[1:i-1]ѡĶ㼯
+        if(x[j]&&a[i][j]==0) //i뵱ǰеĶޱ
+        {  OK=0;   break; }  //ֻҪ뵱ǰһޱֹ
+     if(OK)  //
+        {  x[i]=1;     ++;     Backtrack(i+1);     x[i]=0;   --;   }
+     if(cn+n-i>bestn)  //пҵţ
+        {   x[i]=0;       Backtrack(i+1);     }
+}
+ʱ䣺O(n2n)
+
+    ġ 
+    1. ʹö̬滮㷨Ļ衣P44
+̬滮ƷΪ4裺
+(1)ҳŽʣ̻ṹ
+(2)ݹضֵ
+(3)Եϵķʽֵ
+(4)ݼֵʱõϢŽ⡣
+    2. ̬滮ηͬP44
+ͬ㣺̬滮㷨ηƣ˼Ҳǽֽɸ,ȻЩĽõԭĽ⡣
+ͬ㣺η⻥ԭͬηͬǣʺڶ̬滮⣬ֽõǻġҲǸ⡣
+    3. ԱȽPrim㷨Kruskal㷨ͬ105-P107
+ͬ㣺Prim(ķ)㷨Kruskal(³˹)㷨ԿӦ̰㷨СӡСʡ
+ͬ㣺
+Prim(ķ)㷨ѡȡбǡùGһСTTаGn-1ߣҲγɻ· 
+Kruskal(³˹)㷨ǹСһ㷨㷨ͨͨӼ̰ѡ񡣶ͨѡСȨıߵļ̰ѡѡͬʱԽͨԱγ
+    4. ֧޽編ԡP161 μ6(1)6ҳ
+(1)֧޽編ԹȻСķѣЧ棩ȵķʽĽռ
+(2)ÿһֻһλΪչ㡣
+(3)һΪչ㣬һԲжӽ㡣
+(4)ӽУ²н·ŽĶӽ㱻ӽ㱻С
+(5)ӻȡ һ Ϊǰչ㣬ظչ̡һֱҵĽΪʱΪֹ 
+    5. ԱȽϷ֧޽編ݷͬP161  μ6(1)5ҳ
+ͬ㣺
+(1)Ŀ꣺ݷĿҳռԼн⣬֧޽編ĿҳԼһ⣬ԼĽҳĳµŽ⡣ 
+(2)ʽݷȵķʽռ֧޽編ԹȻСķȵķʽռ 
+    塢 㷨Ӧ
+    1. ö̬滮͹ʷ⡣
+ʷֵĽṹP61
+(1)﷨ȫŷʽ
+һʽȫŷʽӦһȫΪʽ﷨
+磬ȫŵľ˻((A1(A2A3))(A4(A5A6)))Ӧ﷨ͼ (a)ʾ
+
+(2)﷨͹ʷ
+͹P={v0,v1,vn-1}ʷҲ﷨ʾ
+ͼǱv0v 6(ѡ)﷨Ҷӽڵ㡣 v0v 6v0v3v 6һߡ
+
+2ʷP61
+(1)һ˵͹εʷֺn-1Ҷڵ﷨һһӦϵ
+(2)N˵ȫźnҶڵ﷨ҲһһӦϵ 
+(3)ԣn˵ȫźn+1ڵ͹εʷҲһһӦϵ
+
+(4)˻A1 A2 AnеÿAiӦ͹(n+1)еһvi-1viʷеһvivji<jӦھ˻A[i+1:j]
+(5)˻ż͹ʷ
+
+κϰ⣨3С**
+¾
+P={10,100,5,50,30,20,60,45,50}밴չȫŷʽгӦ﷨ʷͼ
+
+    2. ̰㷨/С/⡣
+̰㷨
+ŵ11Ŀʼʱͽʱ䰴ʱķǼ£
+
+С P103-P105
+
+⣬ǰ׺ʾ
+ӣ
+ͼa:̶ȱӦ(ҶӸ߶һ)
+ͼb:ɱ䳤ȱӦ(ҶӸ߶Ȳһ)
+  
+
+    3. ûݷ0-1/װ⡣
+ûݷ0-1⡣P133
+ʵ:n=5,M=50
+N	1	2	3	4	5
+W	15	5	25	27	30
+P	30	12	44	46	50
+P/W	2	2.4	1.76	1.70	1.67
+(1).bestp=0,Űֵǣ2,1,3,4,5
+N	2	1	3	4	5
+W	5	15	25	27	30
+P	12	30	44	46	50
+P/W	2.4	2	1.76	1.70	1.67
+(2). õֽ(1,1,1,0)Ƶǰֽļֵb,86+(50-45)*1.67=94.3, b >bestp.
+(3). ɽFõн(1,1,1,0,0)õֵΪ86bestp=86(ͼ3)
+
+          
+3         5        8
+(4). ݣEݵDӦҺGõֽ( 1,1,0,1 ),ʱb=93.1 b>bestp,4ڵ5ĻûHIͼΣ
+(5). ɽH,Iõн( 1,1,0,1,0 ),ֵΪ88bestp=88(ͼ5)
+(6). HJõֽ( 1,1,0,0 ),Ʋֽb=92>886ڵ8ĻûKLͼΣ
+(7). ɽKõн( 1,1,0,0, 1 ),ֵΪ92bestp=927ڵ8ĻûLͼΣ
+(8). KӣӦҺLõн( 1,1,0,0,0) (ͼ8)
+(9). ,ؽLϻݵB,ɽM,õֽ (1,0), Ʋֽb=90<92,ݣ9ڵ10ĻûNͼΣ
+(10). ϼɽNõֽ(0)ʱõb=74+10*(46/27) =91.03<92,ݣʱѻص㣬Ž( 1,1,0,0, 1 ),ֵΪ92. (ͼ10)
+
+ϰ
+n=8, M=110
+W=( 1, 11,21,23,33,43,45,55 )    
+P=(11,21,31,33,43,53,55,65 ) 
+ûݷ0-1Ž⡣  
+
+װ   P119 μP37-	P54ҳ          
+ٶn= 4w= [ 8 , 6 , 2 , 3 ]c1 = c2 =12.
+ԸݸĽװ㷨ҳװӦװط
+Ҫ
+        a) гĽռ䡣
+        b) ռ
+        c) ݵݹ㷨Žֵ
+
+     㷨
+ʹ̰㷨⡣
+һ
+⣺
+ĳ˾Ļܶ࣬ȫ˾ΨһĻҲáڸʱڵĻʱҪʵɾһЩ飬ʹʣĻʱϻͻҪɾĻ١
+㷨:
+template<class Type>
+void GS (int n, Type s[], Type f[], bool A[])
+{     
+       A[1]=false;
+       int j=1;
+       int sum=0;
+       for (int i=2;i<=n;i++) 
+        {
+          if (s[i]>=f[j]) { A[i]=false; j=i; }
+          else  {A[i]=true; sum++;}
+         }
+}
+Ͷ
+̰㷨⣺nֽΪɸͬȻ֮ͣʹЩȻĳ˻д㷨ȿnȽСӣܷҳɣ 
+
+㷨
+    ? һǲǽnɾ˻󣿣СΪ2
+    ? Ϊʹܶ࣬n23iֱn<i 
+    ? ʱniȣȽi+1,ͬʱn-1
+    ? ʱn>0ȵطָǰ
+    ? ǿԵõһ̰ĲԣnͣزֿʹеͬҲٲ
+㷨:
+
+3ƥnƥȻŵӵ˳ɿ԰˳ѡӮһ֣ɿԵõ200ӣһ֣ɾҪ200ӡ֪ɵıٶȣܵٶȾͬѾ˵ֱӿ쵽źһ㷨Ӯӡ
+˼·
+    ? ȶٶ
+    ? (A)(B),ֱӮ;
+    ? AB,AƴB;
+    ? AB,ֱƴ;
+    ? AB,AƴB;
+    ? ABٶͬ,AƴB 
+㷨:

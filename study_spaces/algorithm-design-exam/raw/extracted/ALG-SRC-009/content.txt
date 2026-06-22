@@ -1,0 +1,141 @@
+A[i]A[1]
+w =i
+            return w, A
+end SPLIT
+ͼ⣨ÿС7֣21֣
+1Oʾfg֮׵Ĺϵֱָкнͺߵĺ
+(1)f (n)=100              g(n)=        
+(2)  f(n)=6n+n        g(n)=3n
+(3)  f(n)= n/logn-1          g(n)=
+(4)  f(n)=           g(n)=
+(5)  f(n)=            g(n)=      
+2һݹ㷨Уpro1pro2ʱֱ1͡㷨ʱ临T(n)ĵݹ鷽̣õݹ鷽̣T(n)Ľףñʾ
+        㷨 EX1
+        룺nn=2k
+        
+            ex1(n)
+        end EX1
+ ex1(n)
+          if n=1 then 
+pro1(n)
+else 
+
+//򷵻0
+               if         (2)        then return 0
+               else
+                 mid=
+                 if        (3)       then return mid
+                 else 
+if A[mid]<mid then 
+return find(        (4)       )
+else
+return          (5)        
+                  end if
+                end if
+             end if
+end find
+2(10) Ķ̬滮㷨
+⣺nM1, M2, , Mn , Mi Ϊriri+1׾i=1, 2, , nM1M2Mn˷
+ Mi, j=MiMi+1Mj , i<=jC[i, j], 1<=i<=j<=n, ʾMi, j˷
+           
+㷨 MATCHAIN
+룺n, nĽr[1..n+1], r[1..n]Ϊnr[n+1]Ϊn
+n˷ٴ 
+
+ x=x0; y=y0 ; tag[x, y]=1 
+         m=n*n  
+         i=1; k[i]=0
+       while   (1)    and not flag 
+while k[i]<8 and not flag
+        k[i]=   (2)    
+        x1= x+dx[k[i]]; y1= y+dy[k[i]]
+      if  ((x1,y1)Խand tag[x1, y1]=0) or ((x1,y1)=(x0,y0) and i=m) then    
+           x=x1; y=y1
+ tag[x, y]=   (3)     
+           if i=m then flag=true
+           else
+i=    (4)   
+     (5)     
+           end if
+        end if  
+      end while
+i=i-1
+       (6)    
+   (7)    
+   end while
+   if flag then outputroute(k) //·
+   else output no solution
+end HORSETRAVEL
+
+㷨ڿԾ(A)׼
+
+    һ. ⣺      
+1. Ԫ
+2. O
+3. 
+4. ģΪnֽΪԼӦĽʱ
+5. ֽ⣬ݹ飬
+6. ״̬ռ֦DFSDFS+֦
+7. ǰ߷ֽصģ߷ֽ໥ص
+8. ֲ
+9. 
+10. 鲢㷨
+11. ͬ
+12. v=random (low, high); A[low]A[v]ֵ 
+   ѡԪ
+13. Ƚ
+    n
+
+    . ͼ⣺
+1. ׵Ĺϵ 
+(1) f(n)= O(g(n))
+  (2) f(n)=(g(n))
+  (3) f(n)=(g(n))
+  (4) f(n)= O(g(n))
+(5) f(n)=(g(n))
+͵ĺǣ100
+ߵĺǣ
+2. õݹ㷨ʱ临T(n)еݹ鷽̣
+    
+n=, a=1, c=2, g(n)=, d=1ݹ鷽̽һʽã
+T(n)=1+=1+k-
+=1+ k-=++1
+ԣT(n)= ++1=
+3.  
+         
+   
+
+    . 㷨⣺
+        1. (1) 1, n               (2) low>high            (3) A[mid]=mid    
+(4) mid+1, high        (5) find(low, mid-1)
+2.  (1) 0       (2) i+d       (3) C[i, k-1]+C[k, j]+r[i]*r[k]*r[j+1]
+   (4) C[i, j]    (5) C[1, n]
+3.  (1) i>=1             (2)k[i]+1            (3) 1    
+(4) i+1              (5) k[i]=0            (6) tag[x, y]=0    
+(7) x=x-dx[k[i]];  y=y-dy[k[i]]
+
+    . 㷨⣺
+1.  ̰ѡԣļվÿμͺ󲻼ʻԶֱеͺľǰܵԶվΪֹڸվټ͡
+㷨 MINSTOPS
+룺ABؼľsABؼļվnͺʻĹm洢վAľd[1..n]
+AصBصټʹkԼŽx[1..k]x[i]ʾiμ͵ļվţ޽⣬no solution
+      d[n+1]=s;  //վn+1վ 
+      for i=1 to n
+        if d[i+1]-d[i]>m then 
+output no solution; return  //޽⣬
+end if
+          end for
+          k=1; x[k]=1  //ڵ1վ͡
+          s1=m  //s1ΪĵǰʻĵصAľ
+          i=2
+          while s1<s
+if d[i+1]>s1 then  //ĵǰ޷i+1վ 
+  k=k+1; x[k]=i  //ڵiվ͡
+  s1=d[i]+m     //ˢs1ֵ
+end if
+i=i+1
+          end while
+          output k, x[1..k]
+MINSTOPS
+
+µʱ临ԣ(n)

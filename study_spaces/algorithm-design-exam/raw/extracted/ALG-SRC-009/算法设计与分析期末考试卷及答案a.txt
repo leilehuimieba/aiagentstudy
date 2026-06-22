@@ -1,0 +1,150 @@
+
+
+             A[i]A[1]
+w =i
+            return w, A
+end SPLIT
+二．计算题和简答题（每小题7分，共21分）
+1．用O、、表示函数f与g之间阶的关系，并分别指出下列函数中阶最低和最高的函数：
+(1)　f (n)=100              g(n)=        
+(2)  f(n)=6n+n        g(n)=3n
+(3)  f(n)= n/logn-1          g(n)=
+(4)  f(n)=           g(n)=
+(5)  f(n)=            g(n)=      
+2．下面是一个递归算法，其中，过程pro1和pro2的运算时间分别是1和。给出该算法的时间复杂性T(n)满足的递归方程，并求解该递归方程，估计T(n)的阶（用表示）。
+        算法 EX1
+        输入：正整数n，n=2k。
+        输出：…
+            ex1(n)
+        end EX1
+过程 ex1(n)
+          if n=1 then 
+pro1(n)
+else 
+
+
+//则返回0。
+               if         (2)        then return 0
+               else
+                 mid=
+                 if        (3)       then return mid
+                 else 
+if A[mid]<mid then 
+return find(        (4)       )
+else
+return          (5)        
+                  end if
+                end if
+             end if
+end find
+2．(10分) 下面是求解矩阵链乘问题的动态规划算法。
+矩阵链乘问题：给出n个矩阵M1, M2, …, Mn , Mi 为riri+1阶矩阵，i=1, 2, …, n，求计算M1M2…Mn所需的最少数量乘法次数。
+记 Mi, j=MiMi+1…Mj , i<=j。设C[i, j], 1<=i<=j<=n, 表示计算Mi, j的所需的最少数量乘法次数，则
+           
+算法 MATCHAIN
+输入：矩阵链长度n, n个矩阵的阶r[1..n+1], 其中r[1..n]为n个矩阵的行数，r[n+1]为第n个矩阵的列数。
+输出：n个矩阵链乘所需的数量乘法的最少次数。 
+
+ x=x0; y=y0 ; tag[x, y]=1 
+         m=n*n  
+         i=1; k[i]=0
+       while   (1)    and not flag 
+while k[i]<8 and not flag
+        k[i]=   (2)    
+        x1= x+dx[k[i]]; y1= y+dy[k[i]]
+      if  ((x1,y1)无越界and tag[x1, y1]=0) or ((x1,y1)=(x0,y0) and i=m) then    
+           x=x1; y=y1
+ tag[x, y]=   (3)     
+           if i=m then flag=true
+           else
+i=    (4)   
+     (5)     
+           end if
+        end if  
+      end while
+i=i-1
+       (6)    
+  　 (7)    
+   end while
+   if flag then outputroute(k) //输出路径
+   else output “no solution”　
+end HORSETRAVEL
+
+
+
+
+
+《算法设计与分析》期考试卷(A)标准答案
+
+    一. 填空题：      
+1. 元运算
+2. O
+3. 
+4. 将规模为n的问题分解为子问题以及组合相应的子问题的解所需的时间
+5. 分解，递归，组合
+6. 在问题的状态空间树上作带剪枝的DFS搜索（或：DFS+剪枝）
+7. 前者分解出的子问题有重叠的，而后者分解出的子问题是相互独立（不重叠）的
+8. 局部
+9. 高
+10. 归并排序算法
+11. 不同
+12. v=random (low, high); 交换A[low]和A[v]的值 
+   随机选主元
+13. 比较
+    n
+
+    二. 计算题和简答题：
+1. 阶的关系： 
+(1) f(n)= O(g(n))
+  (2) f(n)=(g(n))
+  (3) f(n)=(g(n))
+  (4) f(n)= O(g(n))
+(5) f(n)=(g(n))
+阶最低的函数是：100
+阶最高的函数是：
+2. 该递归算法的时间复杂性T(n)满足下列递归方程：
+    
+将n=, a=1, c=2, g(n)=, d=1代入该类递归方程解的一般形式得：
+T(n)=1+=1+k-
+=1+ k-=++1
+所以，T(n)= ++1=。
+3.  
+         
+   
+
+    三. 算法填空题：
+        1. (1) 1, n               (2) low>high            (3) A[mid]=mid    
+(4) mid+1, high        (5) find(low, mid-1)
+2.  (1) 0       (2) i+d       (3) C[i, k-1]+C[k, j]+r[i]*r[k]*r[j+1]
+   (4) C[i, j]    (5) C[1, n]
+3.  (1) i>=1             (2)k[i]+1            (3) 1    
+(4) i+1              (5) k[i]=0            (6) tag[x, y]=0    
+(7) x=x-dx[k[i]];  y=y-dy[k[i]]
+
+    四. 算法设计题：
+1.  贪心选择策略：从起点的加油站起每次加满油后不加油行驶尽可能远，直至油箱中的油耗尽前所能到达的最远的油站为止，在该油站再加满油。
+算法 MINSTOPS
+输入：A、B两地间的距离s，A、B两地间的加油站数n，车加满油后可行驶的公里数m，存储各加油站离起点A的距离的数组d[1..n]。
+输出：从A地到B地的最少加油次数k以及最优解x[1..k]（x[i]表示第i次加油的加油站序号），若问题无解，则输出no solution。
+      d[n+1]=s;  //设置虚拟加油站第n+1站。 
+      for i=1 to n
+        if d[i+1]-d[i]>m then 
+output “no solution”; return  //无解，返回
+end if
+          end for
+          k=1; x[k]=1  //在第1站加满油。
+          s1=m  //s1为用汽车的当前油量可行驶至的地点与A点的距离
+          i=2
+          while s1<s
+if d[i+1]>s1 then  //以汽车的当前油量无法到达第i+1站。 
+  k=k+1; x[k]=i  //在第i站加满油。
+  s1=d[i]+m     //刷新s1的值
+end if
+i=i+1
+          end while
+          output k, x[1..k]
+MINSTOPS
+
+最坏情况下的时间复杂性：Θ(n)
+
+
