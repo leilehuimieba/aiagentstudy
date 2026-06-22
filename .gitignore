@@ -19,6 +19,9 @@ __pycache__/
 venv/
 
 node_modules/
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
 
 *.pem
 *.key
@@ -36,3 +39,27 @@ id_ed25519.pub
 *session*
 
 OpenCLI/
+product/.env
+product/data/
+
+# Generated knowledge retrieval outputs; rebuild with .\kb.ps1 rebuild
+/knowledge/retrieval/articles-meta.json
+/knowledge/retrieval/articles-meta.jsonl
+/knowledge/retrieval/build-report.json
+/knowledge/retrieval/fts-report.json
+/knowledge/retrieval/kb.sqlite
+
+# Local diagnostics and one-off browser/API captures kept out of the repo root
+/.opencli-list.yaml
+/tmp_*
+/tmp-*.html
+/tmp_known_slugs.json
+/tmp_latest_page*.json
+/tmp_latest_page*.network-response
+
+# Claude Code local worktrees and session data (never commit)
+/.claude/
+
+# Stray tool caches accidentally written into the repo (jadx/skylot)
+/null/
+/PowerShell 7.6.2/
