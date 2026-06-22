@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-31",
+  "id": "BB-2026-05-01-393",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-393/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-393",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-393/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-393/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-393/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-393/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-393/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-393/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / InfoQ",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / InfoQ",
+  "status": "Full text + source captured",
+  "tags": [
+    "Metis",
+    "AI Security",
+    "Agentic AI",
+    "SAST",
+    "RAG"
+  ],
+  "title": "Arm Open-Sources Metis， an AI Security Framework Outperforming Traditional SAST Tools",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/5877d882",
+      "https://www.infoq.com/news/2026/05/arm-metis-agentic-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.infoq.com/news/2026/05/arm-metis-agentic-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/5877d882"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "item_id": "BB-2026-05-01-329",
+  "capture_date": "2026-05-26",
+  "synthesis_inputs": [
+    "BB-2026-05-01-325",
+    "BB-2026-05-01-326",
+    "BB-2026-05-01-327",
+    "BB-2026-05-01-328"
+  ],
+  "blueprint_layers": [
+    "goal_framing",
+    "control_loop",
+    "session_context",
+    "tool_registry_dispatch",
+    "permission_gate",
+    "memory_compaction_artifact",
+    "task_subagent",
+    "protocol_extensions",
+    "telemetry_verification"
+  ],
+  "phases": [
+    "contracts",
+    "minimal_loop",
+    "minimal_tool_surface",
+    "permission_gate",
+    "compact_and_artifacts",
+    "plan_and_memory",
+    "subagent_and_tasking",
+    "mcp_lsp_plugin",
+    "trace_and_regression"
+  ],
+  "deliverable_type": "implementation_blueprint"
+}

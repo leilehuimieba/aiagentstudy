@@ -1,0 +1,115 @@
+# — a still that plays
+
+---
+
+- Local ID: RSS-2026-017
+- Source: RSS / Simon Willison's Weblog
+- Date: 2026-06-17
+- URL: https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything
+- Feed URL: https://simonwillison.net/atom/everything/
+- Capture depth: feed metadata + article page extraction
+
+---
+
+## Feed Summary
+
+Tool: — a still that plays A progressive enchantment Web Component that turns this markup: Into a still frame with a click to play button which loads the GIF on demand. For when you don't want big GIFs to be loaded unless people want to play them. Here's an example that demonstrates the new row editing tools in Datasette - in fact I built this Web Component for that post. Tags: gif , javascript , progressive-enhancement , web-components
+
+## Captured Article Text
+
+Tool: <click-to-play> — a still that plays 
+
+Simon Willison’s Weblog 
+Subscribe 
+
+Sponsored by: Teleport — Prevent access bottlenecks. Unify identity. Teleport replaces fragmented identity and access tooling with a single identity layer that security teams trust, and engineers want to use. 
+
+17th June 2026 
+
+Tool <click-to-play> — a still that plays 
+
+A progressive enchantment Web Component that turns this markup: 
+<click-to-play>
+ <a href="URL to GIF">
+ <img src="URL to first frame" alt="...">
+ </a>
+</click-to-play> 
+Into a still frame with a click to play button which loads the GIF on demand. For when you don't want big GIFs to be loaded unless people want to play them. 
+
+Here's an example that demonstrates the new row editing tools in Datasette - in fact I built this Web Component for that post. 
+
+Posted 17th June 2026 at 3:56 am 
+
+Recent articles 
+
+Publishing WASM wheels to PyPI for use with Pyodide - 13th June 2026 
+
+Claude Fable is relentlessly proactive - 11th June 2026 
+
+Initial impressions of Claude Fable 5 - 9th June 2026 
+
+This is a beat by Simon Willison, posted on 17th June 2026 . 
+gif 6 javascript 758 progressive-enhancement 14 web-components 23 
+
+Monthly briefing 
+
+Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments. 
+
+Pay me to send you less! 
+Sponsor & subscribe 
+
+Disclosures 
+
+Colophon 
+
+© 
+
+2002 
+
+2003 
+
+2004 
+
+2005 
+
+2006 
+
+2007 
+
+2008 
+
+2009 
+
+2010 
+
+2011 
+
+2012 
+
+2013 
+
+2014 
+
+2015 
+
+2016 
+
+2017 
+
+2018 
+
+2019 
+
+2020 
+
+2021 
+
+2022 
+
+2023 
+
+2024 
+
+2025 
+
+2026

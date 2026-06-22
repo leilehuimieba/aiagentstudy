@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-31",
+  "id": "BB-2026-05-01-340",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-340/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-340",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-340/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-340/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-340/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-340/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-340/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-340/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Sean Goedecke",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Sean Goedecke",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM Agents",
+    "Pipelines",
+    "AI Architecture",
+    "Software Engineering",
+    "Context Gathering"
+  ],
+  "title": "Build agents， not pipelines",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://seangoedecke.com/build-agents-not-pipelines/",
+      "https://www.bestblogs.dev/article/572b4e71"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://seangoedecke.com/build-agents-not-pipelines/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/572b4e71"
+  }
+}

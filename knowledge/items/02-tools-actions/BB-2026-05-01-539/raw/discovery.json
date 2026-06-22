@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Gergely Orosz"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/2023/05/Big-Tech---startups---from-the-inside.png",
+  "domain": "blog.pragmaticengineer.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_bca3a4c2",
+  "keyQuotes": [
+    "The upgrade feels rushed, sloppy, and poorly thought out.",
+    "Google looks indecisive about what to do with the IDE part of Antigravity.",
+    "To upset devs even more, Google is replacing its open source Gemini CLI with the closed source Antigravity CLI.",
+    "And this is a big reason why I don't believe Google will become a serious player in the dev tools space -- not even with AI dev tools."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The new version is a clone of Codex's desktop app, replacing the traditional IDE with a conversational agent manager. The upgrade process is broken, and the product is plagued with bugs and poor UX.",
+      "point": "Antigravity 2.0 is a rushed, buggy product that removes the IDE interface."
+    },
+    {
+      "explanation": "The launch creates two separate apps with unclear futures. Google recommends 'dual-wielding' Antigravity 2.0 with other IDEs, suggesting they may abandon their own IDE. The 'Agent Manager' concept is described by Google itself as 'not particularly intuitive'.",
+      "point": "Google's messaging and product strategy are confusing and indecisive."
+    },
+    {
+      "explanation": "This move breaks existing workflows, offers no migration path, and removes support for the ACP protocol, making it incompatible with IDEs like JetBrains and Zed. It forces users onto a broken product.",
+      "point": "The forced deprecation of the open-source Gemini CLI for a closed-source, incompatible Antigravity CLI is a hostile move."
+    },
+    {
+      "explanation": "The pattern of breaking developer workflows every 6-12 months, combined with a rushed, low-quality product, will drive users to competitors like Cursor, Anthropic, and GitHub.",
+      "point": "The launch reinforces the author's belief that Google cannot build credible developer tools."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Google's Antigravity 2.0 launch is a rushed, confusing, and buggy product that removes the IDE interface, copies Codex, and signals Google's continued inability to build credible developer tools.",
+  "originalTitle": "The Pulse: Antigravity 2.0 takes ‘IDE’ out of its new IDE",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-12",
+  "publishDateTimeStr": "2026-06-12 00:22:16",
+  "publishTimeStamp": 1781194936000,
+  "qualified": false,
+  "readCount": 76,
+  "readTime": 5,
+  "readUrl": "https://www.bestblogs.dev/article/bca3a4c2",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_52d75b43",
+  "sourceImage": "https://image.jido.dev/20260527052019_favicon.png",
+  "sourceName": "The Pragmatic Engineer",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is a critical, first-hand analysis of Google's launch of Antigravity 2.0, a major redesign of its AI IDE. The author, Gergely Orosz, argues the launch is a mess. Key criticisms include: the confusing split into two applications (Antigravity IDE and Antigravity 2.0), the removal of the traditional IDE interface in favor of a conversational agent manager, a buggy and rushed upgrade process that broke the author's setup, poor model support (no Opus 4.7 or GPT 5.5), rapid consumption of Gemini token quotas, and the forced deprecation of the open-source Gemini CLI for a closed-source, incompatible Antigravity CLI. The article highlights a glaring 'Codex' folder in the official launch video, suggesting even Google's own developers prefer a competitor's product. The author concludes that this launch is another example of Google's pattern of breaking developer workflows and failing to become a serious player in the dev tools space.",
+  "tags": [
+    "AI Coding",
+    "AI Agent",
+    "Google",
+    "Developer Tools",
+    "IDE"
+  ],
+  "title": "The Pulse: Antigravity 2.0 takes ‘IDE’ out of its new IDE",
+  "translateContent": null,
+  "url": "https://blog.pragmaticengineer.com/the-pulse-antigravity-2-0-takes-ide-out-of-its-new-ide/",
+  "wordCount": 1249
+}

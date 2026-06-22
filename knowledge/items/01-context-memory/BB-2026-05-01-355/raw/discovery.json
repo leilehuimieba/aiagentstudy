@@ -1,0 +1,88 @@
+{
+  "id": "RAW_c60fa5c1",
+  "notExist": null,
+  "originalTitle": "From TF-IDF to Transformers: Implementing Four Generations of Semantic Search",
+  "title": "From TF-IDF to Transformers: Implementing Four Generations of Semantic Search",
+  "oneSentenceSummary": "This article traces the evolution of semantic search through four implemented methods, from TF-IDF with handcrafted rules to fine-tuned transformer models, using a concrete example of comparing art critiques.",
+  "summary": "The article provides a hands-on, educational walkthrough of four generations of semantic search systems, using the task of comparing a student's art critique with expert critiques as a consistent example. It begins with a rule-based system combining TF-IDF cosine similarity with heuristic features like keyword overlap and recency. The second method replaces handcrafted rules with supervised learning, using Logistic Regression on TF-IDF features to classify critiques as expert-like or novice-like. The third method introduces dense semantic embeddings from a Sentence Transformer, enabling similarity comparisons based on meaning rather than exact vocabulary. The final method fine-tunes a DistilBERT transformer model for contextual classification. The article discusses the strengths and limitations of each approach, emphasizing the trade-off between interpretability and semantic understanding, and highlights the progression from human-designed features to learned representations.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Semantic Search",
+    "TF-IDF",
+    "Sentence Transformers",
+    "Fine-tuning",
+    "DistilBERT"
+  ],
+  "mainPoints": [
+    {
+      "point": "Semantic search evolved from keyword matching to contextual language understanding through four distinct methodological stages.",
+      "explanation": "The article demonstrates a clear progression: from TF-IDF with handcrafted rules, to classical ML on TF-IDF features, to embedding-based semantic similarity, and finally to fine-tuned transformer models."
+    },
+    {
+      "point": "TF-IDF with rule-based scoring is highly interpretable but limited by its reliance on exact vocabulary overlap.",
+      "explanation": "The first method's ranking is transparent and understandable, but it fails to capture semantic similarity when different words express similar ideas, motivating the need for more advanced techniques."
+    },
+    {
+      "point": "Supervised learning on TF-IDF features shifts from manual rule design to data-driven pattern learning, but still lacks true semantic understanding.",
+      "explanation": "Logistic Regression learns which words correlate with expert writing, offering interpretability through feature coefficients, but it cannot grasp context or meaning beyond word frequencies."
+    },
+    {
+      "point": "Embedding-based methods using Sentence Transformers enable semantic similarity comparisons independent of exact wording.",
+      "explanation": "By representing text as dense vectors in a semantic space, critiques discussing similar artistic ideas can be recognized as similar even when using different vocabulary, marking a major advance."
+    },
+    {
+      "point": "Fine-tuned transformer models provide the deepest contextual understanding but require large datasets and risk overfitting.",
+      "explanation": "Fine-tuning DistilBERT allows the model to analyze relationships between words and sentence structure, but with small datasets, it may memorize patterns rather than generalize, as shown by the example of a critique classified differently after 30 vs. 100 epochs."
+    }
+  ],
+  "keyQuotes": [
+    "The history of semantic search is also the story of an important shift in AI itself: from transparent, human-designed systems to increasingly intelligent models whose internal reasoning is much more difficult to interpret.",
+    "The method primarily captures surface-level vocabulary patterns rather than deeper semantic meaning.",
+    "This is an important shift because the system now learns from data rather than relying on hand-crafted rules.",
+    "Two critiques can use very different language to describe an artistic idea, and yet they are still recognized as similar.",
+    "Transformers usually require large amounts of training data."
+  ],
+  "url": "https://towardsdatascience.com/from-tf-idf-to-transformers-implementing-four-generations-of-semantic-search/",
+  "readUrl": "https://www.bestblogs.dev/article/c60fa5c1",
+  "enclosureUrl": null,
+  "domain": "towardsdatascience.com",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/05/woman_portrait.jpeg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceName": "Towards Data Science",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 13,
+  "wordCount": 4334,
+  "readTime": 18,
+  "mediaDuration": null,
+  "authors": [
+    "Dr. Theophano Mitsa"
+  ],
+  "publishTimeStamp": 1779715800000,
+  "publishDateStr": "05-25",
+  "publishDateTimeStr": "2026-05-25 21:30:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

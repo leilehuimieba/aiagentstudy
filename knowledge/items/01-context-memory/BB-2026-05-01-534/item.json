@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-14",
+  "id": "BB-2026-05-01-534",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-534/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-534",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-534/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-534/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-534/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-534/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-534/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-534/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯科技",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯科技",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Safety",
+    "LLM",
+    "Model Jailbreak",
+    "Anthropic",
+    "AI Regulation"
+  ],
+  "title": "The 72 Hours from Launch to Disappearance: Fable 5 Exposes the Security Dilemma of the Most Powerful AI Model",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569275&idx=1&sn=2571e7fae2c253884d142b0ee2a6e3d7",
+      "https://www.bestblogs.dev/article/18f89448"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569275&idx=1&sn=2571e7fae2c253884d142b0ee2a6e3d7",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/18f89448"
+  }
+}

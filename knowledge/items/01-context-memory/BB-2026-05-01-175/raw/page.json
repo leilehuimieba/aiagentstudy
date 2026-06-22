@@ -1,0 +1,178 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T3afe20d08de64a1a9af62dc42e18d6d6",
+  "data": {
+    "metaData": {
+      "id": "RAW_f0deaa0c",
+      "notExist": null,
+      "originalTitle": "一个 AI 还是不够",
+      "title": "One AI Is Not Enough",
+      "oneSentenceSummary": "MiniMax introduces Mavis, a multi-agent collaboration system that uses a Leader-Worker-Verifier architecture and adversarial quality gates to solve the pain points of single agents in complex tasks, sharing its design philosophy, technical architecture, cost considerations, and applicable scenarios.",
+      "summary": "This article is an in-depth technical sharing by MiniMax on its new multi-agent system, Mavis (Agent Teams). It first identifies four major pain points of single agents in complex tasks: unexpected task interruptions midway, quality degradation in long tasks, inability to respond quickly to users, and unclear role division. To address these issues, MiniMax designed the Agent Team based on a three-layer Leader-Worker-Verifier architecture, emphasizing that a multi-agent system is essentially an infrastructure requiring continuous operation and maintenance, not just simple Prompt orchestration. The article elaborates on its core design differences: adversarial quality gates (checks and balances between Worker and Verifier), deterministic state machine-driven logic, and context isolation mechanisms. It then delves into four core application scenarios: IM communication (separating instant replies from execution), code development (end-to-end tracking and review), research and investigation (parallel information channels and independent verification), and office documents (pipeline-style generation and inspection). Finally, the article candidly discusses the three types of costs introduced by multi-agent systems (handover, sharing, and aggregation) and the balance of verification, offering decision-making advice on when to use an Agent Team.",
+      "featuredReason": "MiniMax Agent's Mavis introduces Agent Teams to overcome single-agent limitations in complex tasks, such as premature stopping, performance degradation, and slow user response. The system employs a Leader-Worker-Verifier architecture, emphasizing adversarial quality gates and context isolation for more reliable task delivery. While effective in scenarios like IM, coding, and research, the article also thoughtfully discusses the inherent cost considerations of multi-agent collaboration.",
+      "translateContent": null,
+      "tags": [
+        "Multi-Agent System",
+        "Agent Team",
+        "MiniMax",
+        "Mavis",
+        "AI Architecture"
+      ],
+      "mainPoints": [
+        {
+          "point": "Single agents face four core pain points in complex tasks: task interruption, quality degradation, response latency, and ambiguous role division.",
+          "explanation": "Models have ambiguous judgment on stopping criteria for overly long tasks, leading to task stalling; long tasks easily deviate from initial goals and struggle to self-correct; executing long tasks prevents quick responses to new user messages; a single agent struggles to manage the tools, context, and acceptance criteria required for different tasks simultaneously."
+        },
+        {
+          "point": "The essence of a multi-agent system is infrastructure, not Prompt orchestration.",
+          "explanation": "True multi-agent collaboration requires a supporting system (Team Engine) to manage task allocation, status tracking, error recovery, and result acceptance. Prompts and Skills are just a thin layer on top and cannot form stable, reliable continuous delivery."
+        },
+        {
+          "point": "MiniMax's Agent Team adopts a three-layer Leader-Worker-Verifier architecture, with its core lying in adversarial quality gates and deterministic logic driving.",
+          "explanation": "The Leader is responsible for decomposition and scheduling, the Worker for execution, and the Verifier for independent checking. The Worker and Verifier have an adversarial relationship, ensuring quality through multiple iterations. The system is driven by a state machine, not free-form model judgment, ensuring behavioral determinism. Additionally, each agent's context is isolated to prevent information bloat and contamination."
+        },
+        {
+          "point": "Agent Teams offer significant advantages in four key scenarios: IM, Coding, Research, and Office Documents.",
+          "explanation": "In IM, it separates instant user replies from background execution; in Coding, it enables end-to-end tracking and review; in research scenarios, it improves efficiency and conclusion reliability through parallel information channels and independent Verifiers; in office documents, it breaks down the generation process into a verifiable pipeline."
+        },
+        {
+          "point": "Multi-agent collaboration introduces three additional costs—handover, sharing, and aggregation—requiring structural design to balance.",
+          "explanation": "Information needs to be reorganized when passed between agents (handover cost); shared context linearly increases token consumption (sharing cost); merging multiple parallel results requires genuine effort from the Leader (aggregation cost). Agent Team is a strategic option, suitable for complex, long-chain, high-risk tasks; simple tasks are better handled by a single agent or script."
+        }
+      ],
+      "keyQuotes": [
+        "Problems arise when one agent acts as both the referee and the player, which is difficult to solve through iterative improvements on a single entity.",
+        "A multi-agent system is not Prompt/Skill orchestration, but an infrastructure that requires continuous operation and maintenance.",
+        "The focus of agent products is shifting from writing prompts to maintaining this infrastructure.",
+        "Bind the stopping conditions for agent operation to deterministic, observable external systems.",
+        "A multi-agent system without structure, without verification, and without stopping conditions is invalid."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488475&idx=1&sn=cf5a0fa22b0ad0a665f2cb92e7e337d0",
+      "readUrl": "https://www.bestblogs.dev/article/f0deaa0c",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045503_93668b85",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_39cbd7",
+      "sourceName": "MiniMax 稀宇科技",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045503_93668b85",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "MODELS",
+      "aiSubCategoryDesc": "AI Models",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 93,
+      "readCount": 338,
+      "wordCount": 6947,
+      "readTime": 28,
+      "mediaDuration": null,
+      "authors": [
+        "MiniMax 稀宇科技"
+      ],
+      "publishTimeStamp": 1778643480000,
+      "publishDateStr": "05-13",
+      "publishDateTimeStr": "2026-05-13 03:38:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_c8a04217",
+        "type": "ARTICLE",
+        "title": "MiniMax Releases MMX-CLI: A Full-Modal Command Line Tool Designed for Agents",
+        "oneSentenceSummary": "MiniMax has launched MMX-CLI, a command-line tool specifically designed for AI Agents, enabling native access to full-modal model capabilities through output isolation, semantic exit codes, and asynchronous control.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488291&idx=1&sn=b92c388430676cf6c50b68d867a56dae",
+        "sourceName": "MiniMax 稀宇科技"
+      },
+      {
+        "id": "RAW_e359ba38",
+        "type": "ARTICLE",
+        "title": "MiniMax Office Skills: Open-Sourcing a Production-Grade Office Document Engine",
+        "oneSentenceSummary": "MiniMax has open-sourced its production-grade Office Skills engine, which deeply optimizes the underlying processing pipelines for Word, Excel, PPT, and PDF to solve the 'undeliverable' pain points of AI-generated documents regarding formatting, formulas, and complex structures.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488238&idx=1&sn=76aaec3e7e688c31cd8f40b9d0080e70",
+        "sourceName": "MiniMax 稀宇科技"
+      },
+      {
+        "id": "RAW_c36f074c",
+        "type": "ARTICLE",
+        "title": "“Is AGI Here? I Used It for a Week and My Scalp Tingled” | A Conversation with Zhang Haoran: Co-founder of Moxt",
+        "oneSentenceSummary": "Through an in-depth interview with Moxt co-founder Zhang Haoran, this article explores how AI Native Workspaces are reshaping file systems and collaboration models to evolve organizations from 'human-computer interaction' to 'AI team collaboration.'",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649107119&idx=1&sn=bfb8472359c8136ae2888a0673dd8a8e",
+        "sourceName": "十字路口Crossing"
+      },
+      {
+        "id": "RAW_1d6d969d",
+        "type": "ARTICLE",
+        "title": "MiniMax M2.7: Unlocking Model Self-Evolution",
+        "oneSentenceSummary": "MiniMax releases the M2.7 model, featuring 'model self-evolution' capabilities and achieving significant breakthroughs in software engineering, professional office productivity, and multi-agent collaboration.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488138&idx=1&sn=666388509e4597a5ee8734fa0a556828",
+        "sourceName": "MiniMax 稀宇科技"
+      },
+      {
+        "id": "RAW_ee8a8ba",
+        "type": "PODCAST",
+        "title": "#424. Exploring MiniMax: How They Build Open-Source Models",
+        "oneSentenceSummary": "A conversation with MiniMax researcher Olive Song, providing an in-depth analysis of technical insights behind LLM reinforcement learning, human alignment, engineering practices, and open-source strategies.",
+        "url": "https://www.xiaoyuzhoufm.com/episode/699d4923a22480add6e2c6b5",
+        "sourceName": "跨国串门儿计划"
+      },
+      {
+        "id": "RAW_56f3366c",
+        "type": "ARTICLE",
+        "title": "What Are We Really Discussing When We Talk About Harness? | In-Depth Dialogue: MiniMax × Hermes Agent",
+        "oneSentenceSummary": "This article compiles an in-depth dialogue hosted by Crossroads, featuring the MiniMax Agent team and the head of Hermes Agent. It delves into the core topics surrounding the shift in hype from OpenClaw to Hermes, exploring the definitions of Agent and Harness, multi-agent collaboration, self-evolution, the gap between Chinese and US models, and entrepreneurial opportunities in Agent Infra.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649107318&idx=1&sn=d1b544111c7d3e43cade7a0a906aa46f",
+        "sourceName": "十字路口Crossing"
+      },
+      {
+        "id": "RAW_8a90b160",
+        "type": "ARTICLE",
+        "title": "OpenAI's Former CTO Brings a Prototype of an AI That Is Always 'Present' | Hao's Paper Talk",
+        "oneSentenceSummary": "This article provides an in-depth interpretation of the Interaction Model released by Thinking Machines. Starting from the three conditions of communication theory (co-presence, simultaneity, and concurrency), it analyzes the fundamental flaws of current AI interaction systems and elaborates on how the model achieves a truly 'present' next-generation human-computer interaction mode through 200ms micro-turn heartbeats, a unified multimodal architecture, and a dual-model design.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691568162&idx=1&sn=a69df71925a89afd44e389bfcaa1cef4",
+        "sourceName": "腾讯科技"
+      },
+      {
+        "id": "RAW_e07e5714",
+        "type": "ARTICLE",
+        "title": "MiniMax M2.7 Goes Open Source, Collaborating with Global Partners to Accelerate AI Ecosystem Prosperity",
+        "oneSentenceSummary": "MiniMax has officially open-sourced its M2.7 model and announced that it has completed first-day adaptation with multiple domestic and international chip manufacturers and inference platforms, including Huawei Ascend, Moore Thread, and NVIDIA, aiming to accelerate the development of the global AI ecosystem.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488323&idx=1&sn=342523271a3f3a68ac9ebad44782ddf6",
+        "sourceName": "MiniMax 稀宇科技"
+      },
+      {
+        "id": "RAW_810d6b64",
+        "type": "ARTICLE",
+        "title": "MiniMax Agent Update: Redesigning How Agents Interact with Computers",
+        "oneSentenceSummary": "MiniMax has released two major updates for its Agent desktop client: the Pocket feature enables remote computer control via IM, and the Computer Use feature allows the Agent to operate GUI software through visual recognition, with detailed explanations of the underlying technical implementation and design philosophy.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488360&idx=1&sn=9358b0c0a0750975e8f4c001b8f1e724",
+        "sourceName": "MiniMax 稀宇科技"
+      },
+      {
+        "id": "RAW_04c6402a",
+        "type": "ARTICLE",
+        "title": "Deep Dive into OpenClaw🦞 Workspace: The Divide Between \"Usable\" and \"Truly Useful\"",
+        "oneSentenceSummary": "This article systematically analyzes the workspace configuration system of the OpenClaw Agent framework, dissecting the responsibilities and best practices of core files like AGENTS.md, SOUL.md, USER.md, TOOLS.md, and IDENTITY.md, with a step-by-step configuration guide and common pitfalls to avoid.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NzM4MTQwMg==&mid=2247494760&idx=1&sn=d476f31a563f0925d5790d82a25d2486",
+        "sourceName": "Draco正在VibeCoding"
+      }
+    ]
+  }
+}

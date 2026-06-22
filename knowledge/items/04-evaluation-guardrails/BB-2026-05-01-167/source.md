@@ -1,0 +1,81 @@
+# Source Evidence
+
+- Title: How AI Changed the Economics of Writing Clean Code | Best...
+- BestBlogs URL: https://www.bestblogs.dev/en/article/0ac78bce
+- Original publisher URL: https://www.freecodecamp.org/news/how-ai-changed-the-economics-of-writing-clean-code/
+- Original link text: View Source →
+
+## Captured Page Metadata
+
+- Browser title: How AI Changed the Economics of Writing Clean Code | Best...
+- Description: AI has collapsed the cost of writing code, making the economic argument against abstractions like interfaces obsolete, while the cognitive cost of reading co...
+- Date: 2026-04-28
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- My Brief: https://www.bestblogs.dev/en/reading/brief
+- My Following: https://www.bestblogs.dev/en/reading/follow
+- For You: https://www.bestblogs.dev/en/reading/feed
+- Explore: https://www.bestblogs.dev/en/explore
+- Daily Brief: https://www.bestblogs.dev/en/explore/brief
+- Weekly Picks: https://www.bestblogs.dev/en/explore/newsletter
+- Topics: https://www.bestblogs.dev/en/explore/topics
+- Sources: https://www.bestblogs.dev/en/explore/sources
+- Reading History: https://www.bestblogs.dev/en/library/history
+- My Bookmarks: https://www.bestblogs.dev/en/library/bookmarks
+- My Notes: https://www.bestblogs.dev/en/library/highlights
+- My Reviews: https://www.bestblogs.dev/en/library/review
+- Settings: https://www.bestblogs.dev/en/settings
+- Help Center: https://www.bestblogs.dev/en/docs
+- freeCodeCamp.org: https://www.bestblogs.dev/articles?sourceid=074370
+- View Source →: https://www.freecodecamp.org/news/how-ai-changed-the-economics-of-writing-clean-code/
+- Your Brain Is the Bottleneck: https://www.bestblogs.dev/en/article/0ac78bce#heading-your-brain-is-the-bottleneck
+- The Greats Already Knew This: https://www.bestblogs.dev/en/article/0ac78bce#heading-the-greats-already-knew-this
+- The Economics Have Flipped: https://www.bestblogs.dev/en/article/0ac78bce#heading-the-economics-have-flipped
+- The Data Backs It Up: https://www.bestblogs.dev/en/article/0ac78bce#heading-the-data-backs-it-up
+- The Contrarian Case (And Why It Actually Agrees): https://www.bestblogs.dev/en/article/0ac78bce#heading-the-contrarian-case-and-why-it-actually-agrees
+- What This Means for You: https://www.bestblogs.dev/en/article/0ac78bce#heading-what-this-means-for-you
+- References: https://www.bestblogs.dev/en/article/0ac78bce#heading-references
+- 2022 ACM review: https://dl.acm.org/doi/full/10.1145/3483843
+- an fMRI study on program comprehension: https://dl.acm.org/doi/10.1109/ICSE43902.2021.00056
+- 1972 ACM paper: https://dl.acm.org/doi/10.1145/361598.361623
+- 2022 controlled study: https://arxiv.org/abs/2302.06590
+- large-scale field study: https://ieeexplore.ieee.org/document/7997917/
+- March 2026 piece: https://addyosmani.com/blog/comprehension-debt/
+- GitClear analyzed 211 million changed lines of code: https://www.gitclear.com/ai_assistant_code_quality_2025_research
+- METR study: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+- 17% lower on comprehension quizzes: https://arxiv.org/abs/2601.20245
+- put it bluntly: https://tidyfirst.substack.com/p/90-of-my-skills-are-now-worth-0
+- "Clean Code, Horrible Performance": https://www.computerenhance.com/p/clean-code-horrible-performance
+- "Goodbye, Clean Code": https://overreacted.io/goodbye-clean-code/
+- put it more sharply: https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
+- "Simple Made Easy": https://www.infoq.com/presentations/Simple-Made-Easy/
+- most of us are: https://survey.stackoverflow.co/2024/ai
+- "Cognitive Load Theory in Computing Education Research: A Review.": https://dl.acm.org/doi/full/10.1145/3483843
+- "On the Criteria To Be Used in Decomposing Systems into Modules.": https://dl.acm.org/doi/10.1145/361598.361623
+- "Program Comprehension and Code Complexity Metrics: An fMRI Study.": https://dl.acm.org/doi/10.1109/ICSE43902.2021.00056
+- "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot.": https://arxiv.org/abs/2302.06590
+- "How AI Impacts Skill Formation.": https://arxiv.org/abs/2601.20245
+- "Measuring Program Comprehension: A Large-Scale Field Study with Professionals.": https://ieeexplore.ieee.org/document/7997917/
+- "Measuring the Impact of Early 2025 AI on Experienced Open Source Developer Productivity.": https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+- "Simple Made Easy.": https://www.infoq.com/presentations/Simple-Made-Easy/
+- "90% of My Skills Are Now Worth $0.": https://tidyfirst.substack.com/p/90-of-my-skills-are-now-worth-0
+- "Comprehension Debt: The Hidden Cost of AI-Generated Code.": https://addyosmani.com/blog/comprehension-debt/
+- "Clean Code, Horrible Performance.": https://www.computerenhance.com/p/clean-code-horrible-performance
+- "Goodbye, Clean Code.": https://overreacted.io/goodbye-clean-code/
+- "The Wrong Abstraction.": https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
+- "AI Assistant Code Quality in 2025.": https://www.gitclear.com/ai_assistant_code_quality_2025_research
+- Martin Fowler & Kent Beck: Frameworks for reinventing software， again and again: https://www.bestblogs.dev/en/video/862b9f1?entry=related_article
+- Anthropic Introduces Claude Opus 4.6 with 1M Token Context: https://www.bestblogs.dev/en/status/2019467372609040752?entry=related_article
+- How to Build Reusable Architecture for Large Next.js Applications: https://www.bestblogs.dev/en/article/cb35eff4?entry=related_article
+- Harness design for long-running application development: https://www.bestblogs.dev/en/article/504ce725?entry=related_article
+- How to Build a Self-Learning RAG System with Knowledge Reflection: https://www.bestblogs.dev/en/article/a3a25526?entry=related_article
+- The Claude Code Handbook: A Professional Introduction to Building with AI-Assisted Development: https://www.bestblogs.dev/en/article/199cbc01?entry=related_article
+- Building Claude Code with Boris Cherny: https://www.bestblogs.dev/en/video/8f3d453?entry=related_article
+- How to Use PostgreSQL as a Cache, Queue, and Search Engine: https://www.bestblogs.dev/en/article/ddd77b41?entry=related_article
+- Andrej Karpathy on Code Agents， AutoResearch， and the Loopy Era of AI: https://www.bestblogs.dev/en/video/1369401?entry=related_article
+- How to Build a Multi-Agent AI System with LangGraph， MCP， and A2A [Full Book]: https://www.bestblogs.dev/en/article/4c4fee6a?entry=related_article
+- Reading: https://www.bestblogs.dev/en/reading/brief
+- Explore: https://www.bestblogs.dev/en/explore
+- Me: https://www.bestblogs.dev/en/settings

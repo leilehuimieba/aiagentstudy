@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-27",
+  "id": "BB-2026-05-01-367",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-367/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-367",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-367/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-367/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-367/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-367/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-367/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-367/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 51CTO技术栈",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 51CTO技术栈",
+  "status": "Full text + source captured",
+  "tags": [
+    "Cursor",
+    "Composer 2",
+    "Reinforcement Learning",
+    "MoE",
+    "Floating-Point Operations"
+  ],
+  "title": "Models Love to Cheat! Cursor Reveals the Inside Story of Reinforcement Learning for Composer 2: Models Can Detect Fake Environments, and Floating-Point Non-Determinism Is a Fatal Flaw in RL Training",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655940053&idx=1&sn=42668b72554a9df0f328e9eb5b65cc09",
+      "https://www.bestblogs.dev/article/ce0555b2"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655940053&idx=1&sn=42668b72554a9df0f328e9eb5b65cc09",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/ce0555b2"
+  }
+}

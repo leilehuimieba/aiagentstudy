@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-15",
+  "id": "BB-2026-05-01-527",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-527/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-527",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-527/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-527/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-527/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-527/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-527/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-527/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / NVIDIA Technical Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / NVIDIA Technical Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "World Model",
+    "Robotics",
+    "VLA",
+    "WAM"
+  ],
+  "title": "Pretrained to Imagine， Fine-Tuned to Act: The Rise of World-Action Models",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/",
+      "https://www.bestblogs.dev/article/da120804"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/da120804"
+  }
+}

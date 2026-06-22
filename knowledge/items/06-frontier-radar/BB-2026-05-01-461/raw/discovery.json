@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "王俊博客"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://fla.cdn.bosyun.com/wangjundev/20260605/trend-graph_compressed.png-lazy",
+  "domain": "wangjun.dev",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_225fb88f",
+  "keyQuotes": [
+    "A unit test written in the Sonnet 3.5 era passed CI across four model versions: 3.7, 4, Opus 4.5+. Meanwhile, a 1500-word spec describing the same endpoint was reinterpreted by each model — four reinterpretations.",
+    "A spec is not a contract. It is a prediction about the model. The model changes, so the prediction is never accurate.",
+    "PRDs will disappear. Specs are exiting the inner loop. Only facts can survive anywhere."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Each time an LLM reads prose, it re-samples its interpretation. Even at temperature 0.0, non-deterministic outputs exist, causing specs to be reinterpreted across different model versions, whereas tests (Facts) remain unchanged across model upgrades.",
+      "point": "A Spec is a prediction about the model, not a contract with the model."
+    },
+    {
+      "explanation": "Facts include individual tests, properties, and contracts. They pass or fail at runtime with exit code 0 or non-0, requiring no LLM involvement, making them stable and reliable.",
+      "point": "A Fact is an executable assertion that does not rely on model interpretation."
+    },
+    {
+      "explanation": "Scenarios requiring external readers, such as compliance and regulation, cross-team B2B integration, and onboarding new hires, should retain SDD; internal development should migrate to Facts.",
+      "point": "SDD still has value in specific scenarios but should not be the default paradigm."
+    },
+    {
+      "explanation": "From Hoare triples in 1969 to Design by Contract in 1992, QuickCheck in 2000, and Agent Behavioral Contracts in 2026, the idea of executable assertions has a continuous lineage, and the AI era has brought its value to the forefront.",
+      "point": "Facts-first is the AI-era synthesis of 57 years of formal methods."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article critiques the fundamental flaws of Spec-Driven Development (SDD) in the AI era, proposes replacing natural language specs with executable assertions (Facts), and provides a 90-day migration plan.",
+  "originalTitle": "别再写 Spec 了，开始写 Facts——整个 SDD 运动已经过时",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 00:00:00",
+  "publishTimeStamp": 1780588800000,
+  "qualified": false,
+  "readCount": 65,
+  "readTime": 9,
+  "readUrl": "https://www.bestblogs.dev/article/225fb88f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SRC_5f7b07d0",
+  "sourceImage": "https://image.jido.dev/20260602224654_icon-96x96.png",
+  "sourceName": "王俊博客",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Author Jaroslaw Wasowski retracts his previous article advocating for SDD, pointing out the core contradiction: a Spec is a statistical prediction about an LLM, not a verifiable contract. The non-deterministic nature of LLMs, the Intent Gap, and Spec Drift are systemic issues that cannot be fixed with better prose. The article proposes a Facts-first paradigm: Facts are machine-verifiable executable assertions (tests, properties, contracts) that remain unchanged across model upgrades. This concept traces back to a 57-year tradition of formal methods, starting with Hoare triples in 1969. The author honestly identifies three scenarios where SDD still applies (compliance and regulation, cross-team B2B integration, onboarding new hires) and provides a 90-day migration plan (Audit → Shift → Gate), emphasizing starting to write one fact tomorrow.",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "Engineering Practices",
+    "Software Engineering",
+    "Testing & Quality"
+  ],
+  "title": "Stop Writing Specs, Start Writing Facts — The Entire SDD Movement Is Obsolete",
+  "translateContent": null,
+  "url": "https://www.wangjun.dev/2026/06/stop-writing-specs-start-writing-facts/",
+  "wordCount": 2115
+}

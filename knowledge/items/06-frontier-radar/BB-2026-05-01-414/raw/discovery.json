@@ -1,0 +1,88 @@
+{
+  "id": "RAW_0a87fe45",
+  "notExist": null,
+  "originalTitle": "谷歌四大巨头齐聚：蒸馏模型的精髓是“挤柠檬”！Gemini 将用自己写的代码“改进”自己！五年后的谷歌可能只有一款产品",
+  "title": "Four Titans of Google Converge: The Essence of Model Distillation is \"Squeezing a Lemon\"! Gemini Will \"Improve\" Itself with Its Own Code! In Five Years, Google May Have Only One Product",
+  "oneSentenceSummary": "Four core figures from Google DeepMind (Jeff Dean, Noam Shazeer, Oriol Vinyals, Koray Kavukcuoglu) engage in a deep dialogue, revealing the R&D behind Gemini 3.5 Flash, the \"squeezing a lemon\" essence of model distillation, Omni's positioning as a world model, and predicting that in five years, Google will have only one product—the model itself.",
+  "summary": "This article is a compilation of in-depth content from an official dialogue video featuring four technical giants from Google DeepMind (Jeff Dean, Noam Shazeer, Oriol Vinyals, Koray Kavukcuoglu). Centered around the release of Gemini 3.5 Flash, the core topics include: the team merger from PaLM to Gemini and the decision to centralize compute power; Gemini Omni's positioning as a true world model, breaking the divide between text and video through joint training; the essence of model distillation, vividly likened by Koray to \"squeezing a lemon,\" with core methods still based on a decade-old paper; reflections on the challenge of evaluation, believing the community underestimates its difficulty; and predictions for the future of AI development, including model self-learning, autonomous operation for 30 days, and the possibility that in five years, Google will have only one product—the model itself. The article also discusses cutting-edge viewpoints such as algorithmic innovation, continuous learning, and the bottleneck existing software tools become when AI speed becomes infinitely fast.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Gemini 3.5",
+    "Google DeepMind",
+    "Model Distillation",
+    "World Model",
+    "AI Evaluation"
+  ],
+  "mainPoints": [
+    {
+      "point": "The Gemini team merger was a result of compute centralization and strategic focus.",
+      "explanation": "Jeff Dean pointed out that spreading effort and compute across multiple independent teams was inefficient. Merging Google Brain and DeepMind to concentrate resources on building a single powerful model was a key organizational decision for Gemini's success."
+    },
+    {
+      "point": "The core essence of model distillation is \"squeezing a lemon,\" and the method is still based on a decade-old paper.",
+      "explanation": "Koray used the metaphor of \"squeezing a lemon\" to describe transferring the essential knowledge from a large model (Pro) to a smaller one (Flash). Jeff Dean revealed that current distillation techniques don't rely on revolutionary new architectures; the core idea remains consistent with the original paper, requiring only a good teacher model and a student model."
+    },
+    {
+      "point": "Gemini Omni is a true world model, not just a market positioning.",
+      "explanation": "Koray and Oriol emphasized that Omni, through joint training, integrates text understanding with video generation capabilities. It can understand the dynamics and physics of the physical world and perform simulations, transcending the scope of traditional multimodal models."
+    },
+    {
+      "point": "The AI evaluation problem is underestimated by the community, facing dual challenges of data leakage and user acceptance.",
+      "explanation": "Oriol noted that in real user scenarios, effectively evaluating without leaking training data and getting users to agree with the evaluation results is an extremely challenging problem."
+    },
+    {
+      "point": "Future models will possess self-learning capabilities, even autonomously generating and improving their own code.",
+      "explanation": "Koray predicted that models will soon replace human researchers in tuning parameters and running experiments at the experimental level. Jeff Dean further pointed out that very important parts of the model will be generated collaboratively by the model and agents."
+    }
+  ],
+  "keyQuotes": [
+    "It's like squeezing a lemon. You squeeze the lemon, the juice comes out, and that's the essence. Then you pour it into a glass, and that glass is your small model (Flash).",
+    "In five years, Google will have only one product. That product is the model itself.",
+    "We're a bit in our own tech bubble.",
+    "I think evaluation is very difficult. Even from the academic era Koray mentioned, it's been somewhat underestimated in the community.",
+    "By then, we can point out that a very important part of our model was actually generated collaboratively by the model and agents themselves."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655940176&idx=1&sn=27bd03e53d6863c1ec57ae158650546d",
+  "readUrl": "https://www.bestblogs.dev/article/0a87fe45",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045407_7a980d0a",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_aef4e8",
+  "sourceName": "51CTO技术栈",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045407_7a980d0a",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "NEWS",
+  "aiSubCategoryDesc": "AI News",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 48,
+  "wordCount": 14602,
+  "readTime": 59,
+  "mediaDuration": null,
+  "authors": [
+    "51CTO技术栈"
+  ],
+  "publishTimeStamp": 1780135740000,
+  "publishDateStr": "05-30",
+  "publishDateTimeStr": "2026-05-30 18:09:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

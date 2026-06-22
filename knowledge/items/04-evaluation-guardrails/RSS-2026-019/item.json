@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-18",
+    "opencli_profile": "",
+    "published": "Tue, 16 Jun 2026 18:11:42 GMT",
+    "updated": ""
+  },
+  "date": "2026-06-16",
+  "id": "RSS-2026-019",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/RSS-2026-019/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-019",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-019/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-019/raw/feed-entry.json",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-019/raw/page-text.txt",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-019/raw/page.html"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/RSS-2026-019/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/RSS-2026-019/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / LangChain Blog",
+  "source_id": "langchain-blog",
+  "source_name": "LangChain Blog",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "LangChain Blog",
+    "RSS",
+    "AI Agent",
+    "Agentic AI",
+    "LLM",
+    "RAG",
+    "Benchmark",
+    "Evaluation"
+  ],
+  "title": "How Factory used LangSmith to automate their feedback loop and improve iteration speed by 2x",
+  "topic": "04-evaluation-guardrails",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.langchain.com/rss.xml",
+      "https://www.langchain.com/blog/customers-factory"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://blog.langchain.com/rss.xml",
+    "original_url": "https://www.langchain.com/blog/customers-factory",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.langchain.com/blog/customers-factory"
+  }
+}

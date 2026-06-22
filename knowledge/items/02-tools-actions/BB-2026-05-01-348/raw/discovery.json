@@ -1,0 +1,88 @@
+{
+  "id": "RAW_22bc26b4",
+  "notExist": null,
+  "originalTitle": "GitHub Slashes Agent Workflow Token Spend up to 62% with Daily Audits and MCP Pruning",
+  "title": "GitHub Slashes Agent Workflow Token Spend up to 62% with Daily Audits and MCP Pruning",
+  "oneSentenceSummary": "GitHub achieved up to 62% token cost reduction in agentic CI workflows by pruning unused MCP tools, replacing MCP calls with CLI commands, and implementing a daily audit-and-optimize agent loop.",
+  "summary": "GitHub published a detailed case study on reducing token consumption in its own agentic CI workflows. The company achieved up to a 62% reduction in effective tokens (ET) by implementing a systematic optimization loop. Key strategies included pruning unused Model Context Protocol (MCP) tools, which add significant schema overhead per API call, and replacing MCP calls for common tasks like fetching pull request diffs with pre-downloaded `gh CLI` commands. To drive this optimization, GitHub built two specialized agents: a Daily Token Usage Auditor that aggregates consumption and flags anomalies, and a Daily Token Optimiser that reads source code and logs to file a GitHub issue with specific fixes. The team also introduced an 'Effective Tokens' (ET) metric to normalize cost across different model tiers, weighting output tokens by 4x and cache reads by 0.1x. Results across a dozen production workflows showed sustained reductions, with Auto-Triage Issues seeing a 62% drop. The article also notes the limits of MCP pruning, as one workflow saw no benefit because the tool manifests were a negligible fraction of its context. The Auditor and Optimiser agents are now available in the `gh-aw` CLI tool.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "GitHub",
+    "Token Efficiency",
+    "Agentic Workflows",
+    "MCP",
+    "CI/CD"
+  ],
+  "mainPoints": [
+    {
+      "point": "Pruning unused MCP tools can significantly reduce token consumption in agentic workflows.",
+      "explanation": "LLM APIs are stateless, so agent runtimes include tool schemas with every request. Removing unused tools from an MCP server can cut per-call context by 8-12 KB, leading to substantial cost savings."
+    },
+    {
+      "point": "Replacing MCP calls with pre-downloaded CLI commands is a highly effective optimization strategy.",
+      "explanation": "Instead of using an MCP tool to fetch data like pull request diffs, GitHub pre-downloads this data into workspace files before the agent starts, or proxies it at runtime. This eliminates the token cost of the tool call and its response."
+    },
+    {
+      "point": "A daily audit-and-optimize loop with specialized agents can automate and sustain cost reductions.",
+      "explanation": "GitHub built two agents: a Daily Token Usage Auditor to monitor consumption and flag expensive runs, and a Daily Token Optimiser to analyze the source code and logs, then file a GitHub issue with specific fixes. This creates a continuous improvement cycle."
+    },
+    {
+      "point": "The 'Effective Tokens' (ET) metric provides a model-agnostic way to measure and compare cost.",
+      "explanation": "By weighting output tokens by 4x and cache reads by 0.1x, and applying a model multiplier, the ET metric allows teams to track cost reduction percentages that are directly proportional to actual dollar savings, regardless of the underlying model."
+    },
+    {
+      "point": "MCP pruning is not a universal solution; its impact depends on the workflow's context profile.",
+      "explanation": "In one workflow, removing unused MCP tools had no effect because the tool manifests were a tiny fraction of the overall context. This highlights the need for data-driven optimization rather than blanket rules."
+    }
+  ],
+  "keyQuotes": [
+    "The cheapest LLM call is the one you don't make.",
+    "Removing unused entries cuts per-call context by 8 to 12 KB in GitHub's smoke-test workflows.",
+    "Tool manifests were a small fraction of this workflow's overall context.",
+    "A 10% drop in ET maps to a 10% cost reduction regardless of the model in use.",
+    "GitHub's contribution is the audit-and-optimise loop, which combines proxy-level observability with optimiser agents that file issues."
+  ],
+  "url": "https://www.infoq.com/news/2026/05/github-agentic-token-savings/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "readUrl": "https://www.bestblogs.dev/article/22bc26b4",
+  "enclosureUrl": null,
+  "domain": "infoq.com",
+  "cover": "https://res.infoq.com/news/2026/05/github-agentic-token-savings/en/headerimage/header-1779918825690.jpeg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 48,
+  "wordCount": 503,
+  "readTime": 3,
+  "mediaDuration": null,
+  "authors": [
+    "Mark Silvester"
+  ],
+  "publishTimeStamp": 1780043400000,
+  "publishDateStr": "05-29",
+  "publishDateTimeStr": "2026-05-29 16:30:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

@@ -1,0 +1,98 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-09",
+  "id": "BB-2026-05-01-097",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-097/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-097",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-097/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-097/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-097/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-097/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 通义大模型",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 通义大模型",
+  "status": "Full text + source captured",
+  "tags": [
+    "VimRAG",
+    "多模态 RAG",
+    "通义实验室",
+    "动态记忆图",
+    "长上下文",
+    "VimRAG",
+    "多模态 RAG",
+    "通义实验室",
+    "动态记忆图",
+    "长上下文"
+  ],
+  "title": "VimRAG：通义实验室开源全模态 RAG 框架，实现图文视频统一检索记忆",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2602.12735v1",
+      "https://bailian.console.aliyun.com/cn-beijing/?tab=app#/knowledge-base",
+      "https://github.com/Alibaba-NLP/VRAG",
+      "https://huggingface.co/collections/Alibaba-NLP/vrag",
+      "https://modelscope.cn/collections/iic/VRAG",
+      "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500592&idx=1&sn=c6bf5d5999d9d1ab05f95da436ac7ec3",
+      "https://www.bestblogs.dev/",
+      "https://www.bestblogs.dev/article/03667b92?entry=related_article",
+      "https://www.bestblogs.dev/article/7bae548b?entry=related_article",
+      "https://www.bestblogs.dev/article/93016c01?entry=related_article",
+      "https://www.bestblogs.dev/article/96033a81?entry=related_article",
+      "https://www.bestblogs.dev/article/a3553eb1?entry=related_article",
+      "https://www.bestblogs.dev/article/a8c5578b?entry=related_article",
+      "https://www.bestblogs.dev/article/ba9a21ac?entry=related_article",
+      "https://www.bestblogs.dev/article/bf736fa1?entry=related_article",
+      "https://www.bestblogs.dev/article/c7d5f93e?entry=related_article",
+      "https://www.bestblogs.dev/article/eea36552?entry=related_article",
+      "https://www.bestblogs.dev/article/fe11aa56",
+      "https://www.bestblogs.dev/articles?sourceid=2ce88a",
+      "https://www.bestblogs.dev/docs",
+      "https://www.bestblogs.dev/explore",
+      "https://www.bestblogs.dev/explore/brief",
+      "https://www.bestblogs.dev/explore/newsletter",
+      "https://www.bestblogs.dev/explore/sources",
+      "https://www.bestblogs.dev/explore/topics",
+      "https://www.bestblogs.dev/library/bookmarks",
+      "https://www.bestblogs.dev/library/highlights",
+      "https://www.bestblogs.dev/library/history",
+      "https://www.bestblogs.dev/library/review",
+      "https://www.bestblogs.dev/reading/brief",
+      "https://www.bestblogs.dev/reading/feed",
+      "https://www.bestblogs.dev/reading/follow",
+      "https://www.bestblogs.dev/settings"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500592&idx=1&sn=c6bf5d5999d9d1ab05f95da436ac7ec3",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/fe11aa56"
+  }
+}

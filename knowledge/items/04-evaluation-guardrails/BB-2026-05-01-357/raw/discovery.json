@@ -1,0 +1,84 @@
+{
+  "id": "RAW_98816042",
+  "notExist": null,
+  "originalTitle": "Safer Than YOLO: Auto Mode for Exec Approvals",
+  "title": "Safer Than YOLO: Auto Mode for Exec Approvals",
+  "oneSentenceSummary": "OpenClaw introduces an opt-in 'auto' mode for host exec approvals that uses a reviewer model to handle low-risk policy misses, reducing prompt noise while keeping human fallback for uncertain commands.",
+  "summary": "OpenClaw Blog announces a new 'auto' mode for host exec approvals, designed to be a safer middle ground between the strict 'humanfirst' mode and the permissive 'YOLO' mode. In 'auto' mode, commands that match an allowlist or safe-bin rule run automatically. Commands that miss policy are first sent to a separate reviewer model (configurable, e.g., a frontier model like GPT-5.5) for a low-risk, one-time execution decision. If the reviewer is uncertain, the command times out, or is high-risk, it falls back to a human operator. This pattern mirrors OpenAI's Guardian system in Codex. The article details the workflow, configuration steps, security considerations, and the routing of approval prompts to channels like Slack and Telegram. The key principle is to protect users without removing operator choice, making it ideal for enterprise environments that need a balance of speed and safety.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "OpenClaw",
+    "AI Agent",
+    "Host Exec",
+    "Approval Mode",
+    "Enterprise AI"
+  ],
+  "mainPoints": [
+    {
+      "point": "OpenClaw introduces 'auto' mode as a safer alternative to 'YOLO' for host exec approvals.",
+      "explanation": "Auto mode uses a reviewer model to handle low-risk policy misses, reducing approval prompts while maintaining a human fallback for uncertain or high-risk commands, offering a balance between speed and safety."
+    },
+    {
+      "point": "The reviewer model is separate from the main agent model, allowing for flexible configuration.",
+      "explanation": "Users can keep a local model for the main agent and use a more powerful frontier model (e.g., GPT-5.5) specifically for reviewing host exec requests, optimizing for both cost and judgment quality."
+    },
+    {
+      "point": "The 'auto' mode workflow is deterministic and layered, ensuring safety without excessive friction.",
+      "explanation": "Commands first check an allowlist, then a deterministic safe-bin rule. If they miss, a bounded review packet is sent to the reviewer. Only low-risk, one-time executions can be auto-approved; everything else falls back to a human."
+    },
+    {
+      "point": "Approval prompts can be routed to communication channels like Slack and Telegram.",
+      "explanation": "This moves approvals out of the terminal and into places operators already monitor, improving workflow integration and response times for enterprise teams."
+    }
+  ],
+  "keyQuotes": [
+    "Auto is the mode that fits Enterprise environments best: policy runs first, low-risk misses can be reviewed by a model, and anything uncertain still routes to a human.",
+    "The reviewer model is separate from the main agent model. You can keep the agent on local models for normal work and point exec review at a frontier model such as `openai/gpt-5.5` when you want stronger judgment on approval misses.",
+    "`auto` does not override local safety settings. A host configured to always ask still asks. A host configured to deny still denies.",
+    "We are not changing the default today. `auto` is an opt-in path we are testing in public."
+  ],
+  "url": "https://openclaw.ai/blog/safer-than-yolo-auto-mode-for-exec-approvals/",
+  "readUrl": "https://www.bestblogs.dev/article/98816042",
+  "enclosureUrl": null,
+  "domain": "openclaw.ai",
+  "cover": "https://openclaw.ai/og-image.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_33cd0cf4",
+  "sourceName": "OpenClaw Blog",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527051949_favicon.svg",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 9,
+  "wordCount": 791,
+  "readTime": 4,
+  "mediaDuration": null,
+  "authors": [
+    "Vincent Koc",
+    "Jesse Merhi"
+  ],
+  "publishTimeStamp": 1780185600000,
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-05-31 08:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

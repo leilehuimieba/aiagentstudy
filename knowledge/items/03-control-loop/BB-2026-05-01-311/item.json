@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Memory",
+    "Control Loop"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "02-18",
+  "id": "BB-2026-05-01-311",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-311/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-311",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-311/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-311/raw/meta.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-311/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-311/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Abstract + source captured",
+  "tags": [
+    "negative-trajectories",
+    "failed-attempts",
+    "agent-tuning",
+    "recovery-signals",
+    "retrospective"
+  ],
+  "title": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+  "topic": "03-control-loop",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2402.11651"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2402.11651",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

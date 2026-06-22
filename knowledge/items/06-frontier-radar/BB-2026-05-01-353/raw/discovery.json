@@ -1,0 +1,83 @@
+{
+  "id": "RAW_d3bef8a8",
+  "notExist": null,
+  "originalTitle": "面壁智能端侧双响开源：MiniCPM5-1B 以 1B 打败 2B，BitCPM-CANN 释放 6 倍显存红利",
+  "title": "Face Intelligence Open-Sources Two Edge-Side Models: MiniCPM5-1B Beats 2B with 1B Parameters, BitCPM-CANN Unlocks 6x VRAM Efficiency",
+  "oneSentenceSummary": "Face Intelligence, in collaboration with Tsinghua University, open-sources MiniCPM5-1B and BitCPM-CANN. The former surpasses 2B-level models with just 1B parameters, while the latter achieves 6x VRAM efficiency through 1.58-bit quantization, marking a breakthrough in domestic computing power based on the full Huawei Ascend stack.",
+  "summary": "Face Intelligence, in partnership with Tsinghua University and the OpenBMB open-source community, released two models during the Edge-Side Large Model Open Source Week. MiniCPM5-1B, with only 1B parameters, surpasses all models under 2B parameters (including Qwen3.5-2B) on the AA-Index. After INT4 quantization, its weights are only 0.5GB, enabling it to run on mobile phones, browsers, and even pure CPU environments. Its training data employs a tiered data governance system, and it open-sources the high-quality synthetic dataset Ultra-FineWeb-L3. BitCPM-CANN is a 1.58-bit ternary large model fully trained end-to-end on the Huawei Ascend platform, available in four sizes: 0.5B, 1B, 3B, and 8B. Compared to BF16, it unlocks approximately 6x VRAM efficiency while retaining 90%-97.2% of its capabilities. The article also details model deployment and fine-tuning methods, highlighting that the ForgeTrain framework was entirely written by AI, validating the feasibility of AI manufacturing AI.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Face Intelligence",
+    "MiniCPM5",
+    "BitCPM",
+    "Edge-Side Large Models",
+    "1.58-bit"
+  ],
+  "mainPoints": [
+    {
+      "point": "MiniCPM5-1B surpasses all models under 2B parameters on the AA-Index with just 1B parameters, setting a new record for intelligence density.",
+      "explanation": "Through tiered data governance and high-quality synthetic data, this model demonstrates that small models can achieve higher intelligence density with careful training, validating the Density Law that intelligence density doubles every 3.5 months."
+    },
+    {
+      "point": "BitCPM-CANN adopts 1.58-bit quantization-aware training, unlocking approximately 6x VRAM efficiency while retaining over 90% of its capabilities.",
+      "explanation": "Unlike post-training quantization, BitCPM-CANN learns to represent knowledge with ternary weights from the initial training stage, fundamentally improving information density. This allows an 8B model to run smoothly on flagship smartphones."
+    },
+    {
+      "point": "BitCPM-CANN is fully trained end-to-end on the Huawei Ascend platform, overcoming the challenge of extreme low-bit training on domestic computing power.",
+      "explanation": "From quantization operators to the training framework, the entire pipeline is natively completed on Ascend, filling the gap in low-bit model supply for domestic NPUs. It proves that Ascend can not only train large models but also achieve world-class extreme low-bit training."
+    },
+    {
+      "point": "The ForgeTrain training framework was entirely written by AI, validating the recursive self-improvement path of AI manufacturing AI.",
+      "explanation": "ForgeTrain's training speed on H100 surpasses NVIDIA's Megatron framework by 10%. Its success demonstrates the feasibility of AI autonomously writing production-grade code and achieving leading results."
+    }
+  ],
+  "keyQuotes": [
+    "MiniCPM5-1B once again pushes the upper limit of model intelligence density: with only 1B parameters, it surpasses all models under 2B parameters on the AA-Index.",
+    "BitCPM-CANN adopts the quantization-aware training (QAT) approach... allowing the model to 'grow natively' under the constraints of extremely low bit-width, forcing every bit to maximize information density and knowledge carrying efficiency.",
+    "This is the first publicly available result on the Ascend platform to complete end-to-end 1.58-bit training and conduct full-precision comparative evaluations.",
+    "It's not about waiting for hardware to become stronger to adapt to the model, but about making the model smarter to adapt to the hardware."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247508598&idx=1&sn=8f721d265ce5e2d42d71f121acca94fc",
+  "readUrl": "https://www.bestblogs.dev/article/d3bef8a8",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045451_592a693d",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_fdd993",
+  "sourceName": "魔搭ModelScope社区",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045451_592a693d",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "MODELS",
+  "aiSubCategoryDesc": "AI Models",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 26,
+  "wordCount": 3965,
+  "readTime": 16,
+  "mediaDuration": null,
+  "authors": [
+    "魔搭ModelScope社区"
+  ],
+  "publishTimeStamp": 1779780240000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 15:24:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

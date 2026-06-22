@@ -1,0 +1,511 @@
+{
+  "generated_at": "2026-06-09T18:05:06",
+  "profile": "qmvqcrb8",
+  "source_count": 5,
+  "results": [
+    {
+      "source_id": "huggingface-papers",
+      "name": "Hugging Face Papers",
+      "group_id": "papers-primary",
+      "requested_url": "https://huggingface.co/papers",
+      "capture_route": "browser-or-http",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "C84A2B61F23755E64BB9B87C52D4AE19",
+          "url": "https://huggingface.co/papers"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "C84A2B61F23755E64BB9B87C52D4AE19"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "openai-news",
+      "name": "OpenAI News",
+      "group_id": "official-labs",
+      "requested_url": "https://openai.com/news/",
+      "capture_route": "http-or-browser",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "1B930B1702D69081AAE3B195881AC390",
+          "url": "https://openai.com/news/"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "1B930B1702D69081AAE3B195881AC390"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [
+            {
+              "href": "https://openai.com/news/#main",
+              "text": "Skip to main content"
+            },
+            {
+              "href": "https://openai.com/",
+              "text": "OpenAI Home"
+            },
+            {
+              "href": "https://openai.com/research/index/",
+              "text": "Research"
+            },
+            {
+              "href": "https://openai.com/business/",
+              "text": "Business"
+            },
+            {
+              "href": "https://openai.com/api/",
+              "text": "Developers"
+            },
+            {
+              "href": "https://openai.com/about/",
+              "text": "Company"
+            },
+            {
+              "href": "https://openaifoundation.org/",
+              "text": "Foundation\n(opens in a new window)"
+            },
+            {
+              "href": "https://chatgpt.com/?openaicom-did=26f563f9-a579-4035-afb5-a67dc50679e0&openaicom_referred=true",
+              "text": "Try ChatGPT\n(opens in a new window)"
+            },
+            {
+              "href": "https://openaifoundation.org/",
+              "text": "Foundation(opens in a new window)"
+            },
+            {
+              "href": "https://openai.com/news/company-announcements/",
+              "text": "Company"
+            },
+            {
+              "href": "https://openai.com/news/research/",
+              "text": "Research"
+            },
+            {
+              "href": "https://openai.com/news/product-releases/",
+              "text": "Product"
+            },
+            {
+              "href": "https://openai.com/news/safety-alignment/",
+              "text": "Safety"
+            },
+            {
+              "href": "https://openai.com/news/engineering/",
+              "text": "Engineering"
+            },
+            {
+              "href": "https://openai.com/news/security/",
+              "text": "Security"
+            },
+            {
+              "href": "https://openai.com/news/global-affairs/",
+              "text": "Global Affairs"
+            },
+            {
+              "href": "https://openai.com/news/ai-adoption/",
+              "text": "AI Adoption"
+            },
+            {
+              "href": "https://openai.com/news/",
+              "text": "All"
+            },
+            {
+              "href": "https://openai.com/index/openai-submits-confidential-s-1/",
+              "text": "Confidential submission of draft S-1 to the SEC\n\nCompany\nJun 8, 2026"
+            },
+            {
+              "href": "https://openai.com/index/built-to-benefit-everyone-our-plan/",
+              "text": "Built to benefit everyone: our plan\n\nCompany\nJun 8, 2026"
+            }
+          ],
+          "readyState": "complete",
+          "sample": "Skip to main content Research Products Business Developers Company Foundation (opens in a new window) Log in Try ChatGPT (opens in a new window) OpenAI News | OpenAI All Company Research Product Safety Engineering Security Global Affairs AI Adoption All Filter Sort Switch cards to show Media Switch cards to hide Media Confidential submission of draft S-1 to the SEC Company Jun 8, 2026 Built to benefit everyone: our plan Company Jun 8, 2026 Introducing the OpenAI Economic Research Exchange Company Jun 8, 2026 Better memory for a more helpful ChatGPT Dreaming: Better memory for a more helpful ChatGPT Research Jun 4, 2026 Introducing new capabilities to GPT-Rosalind Product Jun 3, 2026 Codex for every role, tool, and workflow Product Jun 2, 2026 Advancing youth safety and opportunity through global leadership Global Affairs Jun 2, 2026 OpenAI frontier models and Codex are now available on AWS Product Jun 1, 2026 Strengthening societal resilience with Rosalind Biodefense Product May 29, 2026 Load more Research Research Index Research Overview Economic Research Latest Advancements GPT-5.5 GPT-5.4 GPT-5.3 Instant Safety Safety Approach Deployment Safety (opens in a new window) Security &",
+          "textLength": 2132,
+          "title": "OpenAI News | OpenAI",
+          "url": "https://openai.com/news/"
+        }
+      },
+      "status": "browser_readable"
+    },
+    {
+      "source_id": "jiqizhixin",
+      "name": "机器之心",
+      "group_id": "chinese-ai",
+      "requested_url": "https://www.jiqizhixin.com/",
+      "capture_route": "browser-or-bestblogs",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "05A1611EBB301A903294709C4AB2C89E",
+          "url": "https://www.jiqizhixin.com/"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "05A1611EBB301A903294709C4AB2C89E"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [
+            {
+              "href": "https://pro.jiqizhixin.com/inbox",
+              "text": "机器之心·PRO通讯会员\n\n一份让您从此不再担心错失AI赛道良机的业内通讯"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/51061f30-966c-4bb5-86bd-12acc7daf0ee",
+              "text": "端侧模型会成为设备现场的「第一层智能」吗？"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/926fd8c7-24c5-4735-b1e1-53a794fdbe4f",
+              "text": "低比特模型会是推理降本的关键组件吗？"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/90a5f5df-547e-4c2d-96a8-8adece5e6341",
+              "text": "为什么 LLM 难以直接复刻 AlphaGo 的树搜索奇迹？"
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2YpgQqltbPYxjXfLGfeFHrR5uy5",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/f352ad62-d271-45e1-be30-ae393c659415",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/camp_pro/course_2o97YBORiHu17WPxEHZ7A3YAfVf",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2go68dUnsjJuFMXH0LHKvJGm8uY",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2YpgQqltbPYxjXfLGfeFHrR5uy5",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/f352ad62-d271-45e1-be30-ae393c659415",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/articles",
+              "text": "文章库"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/m/inbox",
+              "text": "PRO会员通讯"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/1c9524be-37f8-4b87-b6e4-318aae2f7656",
+              "text": "SOTA！模型"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/ai_shortlist",
+              "text": "AI Shortlist"
+            },
+            {
+              "href": "https://aihaohaoyong.com/",
+              "text": "AI 好好用"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/articles",
+              "text": "文章库"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/inbox",
+              "text": "PRO通讯会员"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/1c9524be-37f8-4b87-b6e4-318aae2f7656",
+              "text": "SOTA！模型"
+            }
+          ],
+          "readyState": "interactive",
+          "sample": "机器之心·PRO通讯会员 一份让您从此不再担心错失AI赛道良机的业内通讯 会员通讯 Week 23 · 端侧模型会成为设备现场的「第一层智能」吗？ 本周，李飞飞 World Labs 团队发文阐述世界模型功能分类框架； OpenAI 宣布将 Codex 并入 ChatGPT...... 订阅会员畅读 专题解读 410 端侧模型会成为设备现场的「第一层智能」吗？ 低比特模型会是推理降本的关键组件吗？ 为什么 LLM 难以直接复刻 AlphaGo 的树搜索奇迹？ 文章库 已追踪 AI 发展 4177 天，29925 篇原创内容 与爱为舞亮相腾讯云AI产业应用大会，深耕教育大模型，打造下一代学习Agent 今天 学习Agent AI教育 与爱为舞 合合信息获 CVPR 2026 NTIRE“反光去除”赛道全球冠军 今天 入职第三年，团队连斩CVPR三奖：南加州王越的PSI Lab做对了什么？ 今天 Humanoid Everyday PhysWorld Psi-0 具身智能 PSI Lab（Physical Superintelligence Lab） Meta蔡志鹏新作VLM³：全面揭示三维视觉的Bitter Lesson 今天 蔡志鹏 VLM³ MeTA 让机器真正理解世界需要一张「认知地图」，中科院发布空间智能综述 今天 空间智能 认知地图（Cognitive Map） 新架构模型HRM-Text创新纪录！1B参数、1000美元，图灵奖得主都亲自下场了 今天 Sapient Intelligence HRM-Text Anthropic最新博客：生物学Agent的瓶颈不在模型，而在数据基础设施 今天 Laura Luebbert AI Agent Anthropic ICML 2026 | PhysForge框架来了，让3D资产从静态模型变成可交互对象 今天 PhysForge ICML 2026 卡住AI的是什么：Anthropic用120个真实病毒检索任务为生物学中的智能体铺平道路 今天 AI for Science “超级明星创企”昆仑行机器人正式浮出水面 今天 具身智能 昆仑行 数千万美元融资、原AWS首席应用科学家加盟，井英科技打造内容行业的Agent原生公司 今天 Agent AI 短剧 井英科技（CreativeFitting） 库克最后一舞，苹果拿出Siri AI 今天 苹果 全球开发者大会 WWDC 蒂姆·库克 进入文章库，查阅过往文章 最新开源 已收录 22487 个开源项目 Macaron-V1-Preview 基座模型 4 值得一试 Macaron-V1-Preview是由MindLab Research推出的749B参数规模的混合LoRA个人助理模型预览版。该模型基于GLM-5.1进行后训练，创新地将一个744B的基础模型与五个专门",
+          "textLength": 3151,
+          "title": "机器之心",
+          "url": "https://www.jiqizhixin.com/"
+        }
+      },
+      "status": "browser_readable"
+    },
+    {
+      "source_id": "github-trending",
+      "name": "GitHub Trending",
+      "group_id": "community-signals",
+      "requested_url": "https://github.com/trending",
+      "capture_route": "browser-or-http",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "9371B95AEE44F16DE65015987B5BD3F9",
+          "url": "https://github.com/trending"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "9371B95AEE44F16DE65015987B5BD3F9"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [
+            {
+              "href": "https://github.com/trending#start-of-content",
+              "text": "Skip to content"
+            },
+            {
+              "href": "https://github.com/",
+              "text": ""
+            },
+            {
+              "href": "https://github.com/trending",
+              "text": "Trending"
+            },
+            {
+              "href": "https://github.com/copilot",
+              "text": ""
+            },
+            {
+              "href": "https://github.com/issues",
+              "text": ""
+            },
+            {
+              "href": "https://github.com/pulls",
+              "text": ""
+            },
+            {
+              "href": "https://github.com/repos",
+              "text": ""
+            },
+            {
+              "href": "https://github.com/notifications",
+              "text": ""
+            },
+            {
+              "href": "https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax",
+              "text": "Search syntax tips"
+            },
+            {
+              "href": "https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax",
+              "text": "documentation"
+            },
+            {
+              "href": "https://github.com/trending",
+              "text": "Reload"
+            },
+            {
+              "href": "https://github.com/trending",
+              "text": "Reload"
+            },
+            {
+              "href": "https://github.com/trending",
+              "text": "Reload"
+            },
+            {
+              "href": "https://github.com/explore",
+              "text": "Explore"
+            },
+            {
+              "href": "https://github.com/topics",
+              "text": "Topics"
+            },
+            {
+              "href": "https://github.com/trending",
+              "text": "Trending"
+            },
+            {
+              "href": "https://github.com/collections",
+              "text": "Collections"
+            },
+            {
+              "href": "https://github.com/events",
+              "text": "Events"
+            },
+            {
+              "href": "https://github.com/sponsors/explore",
+              "text": "GitHub Sponsors"
+            },
+            {
+              "href": "https://github.com/trending",
+              "text": "Repositories"
+            }
+          ],
+          "readyState": "interactive",
+          "sample": "Skip to content Trending Type / to search Explore Topics Trending Collections Events GitHub Sponsors Trending See what the GitHub community is most excited about today. Repositories Developers Spoken Language: Any Language: Any Date range: Today Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary Python 35,888 2,925 Built by 3,558 stars today Star RyanCodrai / turbovec A vector index built on TurboQuant, written in Rust with Python bindings Python 9,628 835 Built by 1,729 stars today Star google / skills Agent Skills for Google products and technologies Python 12,766 986 Built by 461 stars today Star refactoringhq / tolaria Desktop app to manage markdown knowledge bases TypeScript 13,967 972 Built by 651 stars today Star Panniantong / Agent-Reach Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. Python 25,012 2,079 Built by 679 stars today Sponsor Star danielmiessler / Personal_AI_Infrastructure Agentic AI Infrastructure for magnifying HUMAN capabilities. TypeScript 15,620",
+          "textLength": 3045,
+          "title": "Trending repositories on GitHub today",
+          "url": "https://github.com/trending"
+        }
+      },
+      "status": "browser_readable"
+    },
+    {
+      "source_id": "papers-with-code",
+      "name": "Papers with Code",
+      "group_id": "papers-primary",
+      "requested_url": "https://paperswithcode.com/",
+      "capture_route": "browser-or-http",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "B9471292391A21109550639000DC1930",
+          "url": "https://paperswithcode.com/"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "B9471292391A21109550639000DC1930"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [
+            {
+              "href": "https://huggingface.co/",
+              "text": "Hugging Face"
+            },
+            {
+              "href": "https://huggingface.co/models",
+              "text": "Models"
+            },
+            {
+              "href": "https://huggingface.co/datasets",
+              "text": "Datasets"
+            },
+            {
+              "href": "https://huggingface.co/spaces",
+              "text": "Spaces"
+            },
+            {
+              "href": "https://huggingface.co/storage",
+              "text": "Buckets new"
+            },
+            {
+              "href": "https://huggingface.co/docs",
+              "text": "Docs"
+            },
+            {
+              "href": "https://huggingface.co/enterprise",
+              "text": "Enterprise"
+            },
+            {
+              "href": "https://huggingface.co/pricing",
+              "text": "Pricing"
+            },
+            {
+              "href": "https://huggingface.co/tasks",
+              "text": "Tasks"
+            },
+            {
+              "href": "https://huggingface.co/chat",
+              "text": "HuggingChat"
+            },
+            {
+              "href": "https://huggingface.co/collections",
+              "text": "Collections"
+            },
+            {
+              "href": "https://huggingface.co/languages",
+              "text": "Languages"
+            },
+            {
+              "href": "https://huggingface.co/organizations",
+              "text": "Organizations"
+            },
+            {
+              "href": "https://huggingface.co/blog/zh",
+              "text": "Blog"
+            },
+            {
+              "href": "https://huggingface.co/posts",
+              "text": "Posts"
+            },
+            {
+              "href": "https://huggingface.co/papers",
+              "text": "Daily Papers"
+            },
+            {
+              "href": "https://huggingface.co/learn",
+              "text": "Learn"
+            },
+            {
+              "href": "https://huggingface.co/join/discord",
+              "text": "Discord"
+            },
+            {
+              "href": "https://discuss.huggingface.co/",
+              "text": "Forum"
+            },
+            {
+              "href": "https://github.com/huggingface",
+              "text": "GitHub"
+            }
+          ],
+          "readyState": "interactive",
+          "sample": "Hugging Face Models Datasets Spaces Docs Pricing Website Tasks HuggingChat Collections Languages Organizations Community Blog Posts Daily Papers Learn Discord Forum GitHub Solutions Team & Enterprise Hugging Face PRO Enterprise Support Inference Providers Inference Endpoints Storage Buckets Log In Sign Up NEW Get trending papers in your email inbox once a day! Subscribe Trending Papers byAK and the research community Daily Weekly Monthly Trending Papers TradingAgents: Multi-Agents LLM Financial Trading Framework A multi-agent framework using large language models for stock trading simulates real-world trading firms, improving performance metrics like cumulative returns and Sharpe ratio. 4 authors · Published on Dec 28, 2024 Upvote 90 GitHub 84.5k arXiv Page Submitted by ChengCui PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training PaddleOCR-VL-1.6 enhances document parsing performance through targeted data optimization and progressive post-training techniques, achieving state-of-the-art results on OmniDocBench v1.6. PaddlePaddle · Published on Jun 2, 2026 Upvote 15 GitHub 81.5k arXiv Page Submitted by unil",
+          "textLength": 3457,
+          "title": "Trending Papers - Hugging Face",
+          "url": "https://huggingface.co/papers/trending"
+        }
+      },
+      "status": "browser_readable"
+    }
+  ]
+}

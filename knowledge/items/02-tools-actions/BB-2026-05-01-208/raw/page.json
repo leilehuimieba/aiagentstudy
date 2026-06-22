@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Td9b4e520edee418fb9d0bddd5aedab73",
+  "data": {
+    "metaData": {
+      "id": "RAW_23b4e99c",
+      "notExist": null,
+      "originalTitle": "Deploying Claude across the legal industry | Claude",
+      "title": "Deploying Claude across the legal industry | Claude",
+      "oneSentenceSummary": "Anthropic's deployment guide details how legal teams are using Claude across contract review, M&A diligence, and litigation prep, offering a three-phase adoption plan and 12 pre-built practice-area plugins.",
+      "summary": "This article from the Claude Blog announces a practical deployment guide for the legal industry, citing a 2026 FTI Consulting report that shows 87% of general counsel now use generative AI. It outlines how legal teams are embedding agentic AI into their practice using multiple Claude products: Chat for research, Claude Cowork for matter-level work, Claude for Microsoft 365 for office tasks, and Claude Platform for custom applications. The guide includes a product matrix, connectors and plugins for customization, 12 pre-built practice-area plugins covering areas like Commercial, Corporate, Employment, and Litigation, and use cases across in-house departments and transactional practice. It also addresses CIO questions about hosting, retention, privilege protection, SSO, and audit, and shares how Anthropic's own legal team uses Claude for contract redlining and marketing content reviews.",
+      "featuredReason": "Anthropic walks through how Claude is being deployed across the legal industry, covering enterprise agents, RAG and compliance considerations from a first-party vendor perspective. A useful read for B2B AI teams, legal-tech builders and product strategists tracking how frontier models land in regulated verticals.",
+      "translateContent": null,
+      "tags": [
+        "Claude",
+        "Legal Industry",
+        "AI Deployment",
+        "Agentic AI",
+        "Contract Review"
+      ],
+      "mainPoints": [
+        {
+          "point": "Generative AI adoption in legal departments has surged, with 87% of general counsel reporting use within their teams.",
+          "explanation": "The FTI Consulting report shows a dramatic increase from 20% in 2023 to 87% in 2026, driven by increasing matter complexity and client demands for faster turnaround."
+        },
+        {
+          "point": "Legal teams are using multiple Claude products for different tasks, including Chat, Cowork, Microsoft 365 add-ins, and Platform.",
+          "explanation": "This multi-product approach allows firms to handle diverse workflows from research and document review to custom application development, embedding AI into daily practice."
+        },
+        {
+          "point": "Anthropic provides a structured three-phase adoption plan and 12 pre-built practice-area plugins to accelerate deployment.",
+          "explanation": "The guide offers practical resources like connectors, subagents, and plugins for areas like Commercial, Corporate, Employment, and Litigation, helping teams customize Claude to their specific needs."
+        }
+      ],
+      "keyQuotes": [
+        "87% of general counsel now report generative AI use within their teams, up from 44% the prior year and just 20% in 2023.",
+        "The firms and legal departments pulling ahead are the ones embedding agentic AI into how their lawyers actually practice.",
+        "We put together a practical deployment guide for the legal industry, covering each Claude product, the connectors and practice-area plugins purpose-built for legal work, and a three-phase adoption plan teams can run today."
+      ],
+      "url": "https://claude.com/blog/deploying-claude-across-the-legal-industry",
+      "readUrl": "https://www.bestblogs.dev/article/23b4e99c",
+      "enclosureUrl": null,
+      "domain": "claude.com",
+      "cover": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_154bc38a",
+      "sourceName": "Claude Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/689f4a9aff1f63fde75cf733_favicon.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "PRODUCT",
+      "aiSubCategoryDesc": "AI 产品",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 3,
+      "wordCount": 308,
+      "readTime": 2,
+      "mediaDuration": null,
+      "authors": [
+        "Claude Blog"
+      ],
+      "publishTimeStamp": 1778774400000,
+      "publishDateStr": "05-14",
+      "publishDateTimeStr": "2026-05-14 16:00:00",
+      "qualified": true,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_c1ecbe08",
+        "type": "ARTICLE",
+        "title": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude",
+        "oneSentenceSummary": "Brendan MacLean, principal developer of the 700,000-line Skyline codebase, applies his 17-year methodology of onboarding human developers to Claude Code, using context, skills, and MCP integrations to make a legacy codebase manageable again.",
+        "url": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_46822472",
+        "type": "ARTICLE",
+        "title": "Scaling Managed Agents: Decoupling the brain from the hands",
+        "oneSentenceSummary": "Anthropic details the architectural evolution of Managed Agents, focusing on decoupling the 'brain' (LLM/harness) from the 'hands' (sandboxes/tools) to improve scalability, reliability, and security.",
+        "url": "https://www.anthropic.com/engineering/managed-agents",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_504ce725",
+        "type": "ARTICLE",
+        "title": "Harness design for long-running application development",
+        "oneSentenceSummary": "This article explores Anthropic's multi-agent harness design (Planner, Generator, Evaluator) for long-running autonomous coding, detailing how to overcome context anxiety and self-evaluation bias to build complex full-stack applications.",
+        "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_3bcdd43",
+        "type": "VIDEO",
+        "title": "Introducing GPT-5.5",
+        "oneSentenceSummary": "OpenAI introduces GPT-5.5, a new category of AI that acts as an autonomous agent capable of planning, reasoning, and executing complex multi-step tasks across different applications.",
+        "url": "https://www.youtube.com/watch?v=blGtYq9mL18",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_c31f1686",
+        "type": "ARTICLE",
+        "title": "Multi-agent coordination patterns: Five approaches and when to use them | Claude",
+        "oneSentenceSummary": "Anthropic outlines five core multi-agent coordination patterns—Generator-verifier, Orchestrator-subagent, Agent teams, Message bus, and Shared-state—providing a decision framework for selecting the right architecture based on task complexity and context needs.",
+        "url": "https://claude.com/blog/multi-agent-coordination-patterns",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_243d2340",
+        "type": "ARTICLE",
+        "title": "How Claude Code works in large codebases: Best practices and where to start | Claude",
+        "oneSentenceSummary": "This article provides a comprehensive guide on deploying Claude Code in large codebases, emphasizing that success depends more on the 'harness' of configuration layers (CLAUDE.md, hooks, skills, plugins, LSP, MCP) than on the model alone, and outlines proven patterns for making codebases navigable, maintaining configurations, and assigning organizational ownership.",
+        "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_6ebdeb6e",
+        "type": "ARTICLE",
+        "title": "The Advisor Strategy: Boosting Claude Sonnet with Opus",
+        "oneSentenceSummary": "Anthropic introduces the 'advisor tool' for the Claude API, enabling a cost-effective strategy where smaller models (Sonnet/Haiku) execute tasks and only consult a larger model (Opus) for high-level guidance.",
+        "url": "https://claude.com/blog/the-advisor-strategy",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_aa252bd",
+        "type": "VIDEO",
+        "title": "Memory and Dreaming for Self-Learning Agents",
+        "oneSentenceSummary": "Anthropic introduces Memory and Dreaming, two new primitives for its Managed Agents API, enabling agents to achieve continuous self-learning by managing their own knowledge in a file system-like structure and asynchronously curating that knowledge to improve over time.",
+        "url": "https://www.youtube.com/watch?v=RtywqDFBYnQ",
+        "sourceName": "Claude"
+      },
+      {
+        "id": "RAW_94694e50",
+        "type": "ARTICLE",
+        "title": "Best practices for computer and browser use with Claude | Claude",
+        "oneSentenceSummary": "This article provides official best practices for integrating Claude's computer and browser use capabilities, focusing on screenshot scaling, resolution selection, click accuracy optimization, thinking effort tuning, and prompt injection defense.",
+        "url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+        "sourceName": "Claude Blog"
+      }
+    ]
+  }
+}

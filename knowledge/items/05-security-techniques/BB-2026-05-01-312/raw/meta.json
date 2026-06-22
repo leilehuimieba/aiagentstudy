@@ -1,0 +1,12 @@
+{
+  "id": "BB-2026-05-01-312",
+  "topic": "05-security-techniques",
+  "title": "Server-Side Template Injection",
+  "source": "PortSwigger Research",
+  "url": "https://portswigger.net/research/server-side-template-injection",
+  "date": "08-05",
+  "tags": "ssti, template-engine, payload-design, engine-identification, rce",
+  "blocks": "Context/State, Tools/Actions, Evaluation",
+  "layer": "domain knowledge",
+  "status": "Key excerpts + source captured"
+}

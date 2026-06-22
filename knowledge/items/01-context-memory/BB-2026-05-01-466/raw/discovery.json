@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "Datawhale"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045505_b03e263f",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_dba8def6",
+  "keyQuotes": [
+    "LLMs are an extremely successful and valuable technology, but they are more like an important component of future intelligent systems, not the final answer.",
+    "VLA is now basically considered a failure: not reliable enough, requires too much training data.",
+    "The essence of intelligence is not reaction, but choice.",
+    "A world model is something that allows an agent system to predict the consequences of its own actions.",
+    "Prediction should happen in semantic representation space, not pixel space."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "LeCun believes that the success of LLMs is built on discrete token prediction, but they lack causal modeling of the physical world and the ability to predict action consequences, making them unable to achieve AGI. The future is more likely a dual-system division of labor: LLMs handle language interaction, while world models understand the physical world and plan actions.",
+      "point": "LLMs are not the endpoint of general intelligence, but will persist as a language and knowledge interface layer."
+    },
+    {
+      "explanation": "LLMs lack an internal simulator to anticipate action consequences; their reasoning occurs in language space rather than the state space of the real world, preventing explicit multi-step planning. The JEPA architecture attempts to solve this by predicting future states in an abstract representation space.",
+      "point": "There are two core gaps for LLMs to achieve general intelligence: predicting action consequences and multi-step planning based on search."
+    },
+    {
+      "explanation": "LeCun directly judges that the VLA path has largely failed because applying the language modeling paradigm to physical control represents a paradigm mismatch. Empirical studies show VLA models are extremely sensitive to perturbations and lack explicit multi-step planning capabilities, but the industry continues to invest due to their relatively higher engineering maturity.",
+      "point": "VLA is approaching failure under the current paradigm, primarily due to insufficient reliability, heavy data dependence, and fragile generalization."
+    },
+    {
+      "explanation": "The water bottle analogy reveals the ineffectiveness of pixel-level prediction. JEPA learns predictable semantic representations in latent space through joint embedding and a predictor, avoiding wasting model capacity on unpredictable surface details, making the representations amenable to planning.",
+      "point": "The core value of JEPA lies in predicting controllable consequences in an abstract representation space, rather than reconstructing pixel details."
+    },
+    {
+      "explanation": "Neural networks tend to map all inputs to the same vector during training to reduce loss. LeCun compares three paths: contrastive learning, distillation methods, and explicit regularization, believing that SIGReg (Isotropic Gaussian Regularization) has the greatest advantage in terms of theoretical interpretability and engineering feasibility.",
+      "point": "Representation collapse is the most difficult technical problem for JEPA, with SIGReg being the most promising current solution direction."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article systematically reviews Turing Award winner Yann LeCun's judgment on the future direction of large models: LLMs are not the endpoint of general intelligence, with their core gaps being the lack of ability to predict action consequences and perform multi-step planning based on search, and provides a detailed interpretation of LeCun's proposed World Model and JEPA architecture as an alternative path.",
+  "originalTitle": "图灵奖得主 LeCun，关于大模型的下一步来了",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-08 23:32:00",
+  "publishTimeStamp": 1780932720000,
+  "qualified": false,
+  "readCount": 59,
+  "readTime": 135,
+  "readUrl": "https://www.bestblogs.dev/article/dba8def6",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4688eb",
+  "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+  "sourceName": "Datawhale",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is an extension of the Datawhale DIY-LLM open-source project, systematically reviewing Yann LeCun's series of views on the development direction of large models in recent years. It first presents eight core conclusions, then elaborates from six aspects: 1. Analyzing why LLMs are not the endpoint, pointing out that their success is built on discrete token prediction but they lack causal modeling of the physical world, and scaling is facing a data ceiling; 2. Revealing two core gaps for LLMs to achieve general intelligence — the lack of ability to predict action consequences and the ability for multi-step planning based on search, and comparing the design philosophy of the JEPA architecture; 3. Demonstrating in detail that VLA (Vision-Language-Action) models are approaching failure under the current paradigm, analyzing from four dimensions: reliability, data cost, generalization ability, and planning ability, and discussing the practical reasons why the industry continues to bet on VLA; 4. Deeply interpreting the core concepts of the World Model and the JEPA architecture, including the water bottle analogy, the key divergence between generative world models and JEPA, and the specific implementation and performance analysis of LeWorldModel; 5. Discussing the most difficult technical problem facing JEPA — representation collapse, comparing three solution paths: contrastive learning, distillation methods, and explicit regularization; 6. Exploring the safety issues of LLMs and the architectural direction of objective-driven AI. The article is dense with information, clearly structured, and provides a systematic and comprehensive review of LeCun's views.",
+  "tags": [
+    "LLM",
+    "World Model",
+    "JEPA",
+    "Yann LeCun",
+    "Embodied AI"
+  ],
+  "title": "Turing Award Winner LeCun on the Next Step for Large Models",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723344&idx=1&sn=974298301e30051750b5a549c497cc8b",
+  "wordCount": 33727
+}

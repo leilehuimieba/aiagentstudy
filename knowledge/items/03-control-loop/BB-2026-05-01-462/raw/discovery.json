@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Lester Leong"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_d15e5749",
+  "keyQuotes": [
+    "A 3B model is a reliable format generator and an unreliable reasoner, emergent systems need designed scarcity, and the best demos sit where a technical constraint meets something you already understand deeply.",
+    "The fix was not a bigger model, it was a sharper prompt.",
+    "Stakes belong in pebbles, prices, and status, not starvation."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The 3B model produced 100% valid JSON but made poor economic decisions, like trying to buy goods it produced. The fix was not a larger model but a sharper prompt with explicit constraints and worked examples.",
+      "point": "Small models are reliable format generators but unreliable reasoners."
+    },
+    {
+      "explanation": "A naive economy with abundant resources led to self-sufficiency and no trade. The author engineered scarcity through diet variety, food spoilage, and a winter fuel crisis, which forced agents to trade and created market drama.",
+      "point": "Emergent systems need designed scarcity to generate interesting behavior."
+    },
+    {
+      "explanation": "The 'Wood Legend' feature reskins historical events (e.g., a bank run) as woodland folklore. When injected, agents react realistically, such as liquidating assets and crashing prices, without any scripted behavior.",
+      "point": "Historical market narratives can drive emergent, unscripted agent behavior."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "A field report on building a multi-agent woodland economy simulation where five 3B-parameter agents trade goods, gossip, and panic, revealing that small models are reliable format generators but unreliable reasoners, and that emergent drama requires designed scarcity.",
+  "originalTitle": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-06",
+  "publishDateTimeStr": "2026-06-06 06:18:46",
+  "publishTimeStamp": 1780697926000,
+  "qualified": false,
+  "readCount": 64,
+  "readTime": 4,
+  "readUrl": "https://www.bestblogs.dev/article/d15e5749",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is a detailed field report from the Build Small Hackathon, documenting the creation of 'Thousand Token Wood', a tiny multi-agent economy simulation. The author explains why a small 3B model (Qwen2.5-3B) was chosen over a frontier model for its speed and cost-effectiveness, enabling real-time multi-agent interaction. The core engineering challenge was bridging the gap between the model's reliable JSON output (100% valid) and its poor economic reasoning, which was solved through sharper prompting and a tolerant parsing layer. The article highlights the necessity of 'designed scarcity' (diet variety, spoilage, a winter fuel crisis) to create meaningful economic activity and prevent market stagnation. A key feature is the 'Wood Legend' system, which injects historical market events (like Tulip Mania or a bank run) as real shocks, causing emergent, unscripted market behavior. The report concludes with quantitative results from a representative run and practical takeaways for building with small models, emphasizing structure and prompting over scale.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Small Language Models",
+    "Multi-Agent Systems",
+    "Simulation"
+  ],
+  "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+  "wordCount": 914
+}

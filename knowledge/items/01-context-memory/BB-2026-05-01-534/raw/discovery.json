@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "腾讯科技"
+  ],
+  "candidateSource": null,
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_18f89448",
+  "keyQuotes": [
+    "Cyber attack capability is an 'emergent byproduct' of general reasoning and coding ability: once a model's intelligence reaches a certain threshold, it automatically attains elite-level penetration testing skills.",
+    "It's like a puzzle: each piece is an ordinary colored paper, but when assembled, it forms a map. The classifier only sees individual pieces, not the whole picture.",
+    "If the most cautious player, using the most sophisticated approach, still can't defend, how much credibility do the safety promises of other companies have?",
+    "The alignment flaw in an AI model is not a bug that can be 'patched'; it is a structural gap between capability and control."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The architecture relies on keyword matching and cannot identify simple bypasses like Unicode homoglyphs; it cannot track cross-turn 'decomposition-recomposition' attack intents; and it cannot defend against multi-model collaborative attacks where a compromised weaker model assists a stronger model in circumventing safeguards.",
+      "point": "Fable 5's 'classifier downgrade' safety architecture has three structural blind spots."
+    },
+    {
+      "explanation": "The first level is engineering bugs (e.g., character encoding bypasses), which are fixable; the second level is 'decomposition-recomposition' attacks, which touch upon the fundamental dilemma of alignment theory and are currently unsolvable; the third level is multi-agent collaborative attacks, a new attack surface not yet defined by academia.",
+      "point": "Jailbreak attack methods correspond to three different levels of problems, each with varying severity."
+    },
+    {
+      "explanation": "If the most safety-conscious company with the most sophisticated solution can be quickly breached, it indicates a structural gap in safety controls when model capabilities 'emerge' with offensive potential, a problem faced by all models reaching this level of intelligence.",
+      "point": "Anthropic's failure is a warning for the entire AI industry, not an isolated incident."
+    },
+    {
+      "explanation": "The ban, unprecedented in scope and using nationality rather than residency as the dividing line, also exposes the bluntness of policy tools, cutting off access for legitimate researchers and highlighting a regulatory framework far behind technological development.",
+      "point": "The U.S. government's export control ban marks a shift in control logic from the hardware layer to the capability layer."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article provides a detailed postmortem of the 72 hours from the launch of Anthropic's most powerful model, Claude Fable 5, to the U.S. government's unprecedented export control ban due to a security vulnerability, deeply analyzing three structural blind spots in its safety architecture and exploring the fundamental dilemmas facing AI safety.",
+  "originalTitle": "从发布到被消失的 72 小时，Fable 5 暴露了最强 AI 模型的安全困境",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-14",
+  "publishDateTimeStr": "2026-06-14 10:50:00",
+  "publishTimeStamp": 1781405400000,
+  "qualified": false,
+  "readCount": 133,
+  "readTime": 16,
+  "readUrl": "https://www.bestblogs.dev/article/18f89448",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_b475c7",
+  "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+  "sourceName": "腾讯科技",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article narrates in a timeline format the full story of Anthropic releasing its most powerful model, Claude Fable 5, on June 9, 2026. Within 24 hours, it was successfully jailbroken by renowned red team researcher Pliny the Liberator, and within 72 hours, it triggered an unprecedented export control ban by the U.S. government. The article delves into Fable 5's 'classifier downgrade' safety architecture, identifying three structural blind spots: reliance on keyword matching rather than semantic understanding, inability to track cross-turn intent chains, and inability to defend against multi-model collaborative attacks. The author further categorizes the attack methods into three levels: fixable engineering bugs, unsolvable alignment theory dilemmas, and multi-agent attack surfaces not yet defined by academia. The article contextualizes Anthropic's failure within the broader AI industry, arguing that when model capabilities 'emerge' with offensive potential, there is a structural gap in safety controls, and it explores the policy bluntness and regulatory lag resulting from the government's shift in control logic from the hardware layer to the capability layer.",
+  "tags": [
+    "AI Safety",
+    "LLM",
+    "Model Jailbreak",
+    "Anthropic",
+    "AI Regulation"
+  ],
+  "title": "The 72 Hours from Launch to Disappearance: Fable 5 Exposes the Security Dilemma of the Most Powerful AI Model",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569275&idx=1&sn=2571e7fae2c253884d142b0ee2a6e3d7",
+  "wordCount": 3935
+}

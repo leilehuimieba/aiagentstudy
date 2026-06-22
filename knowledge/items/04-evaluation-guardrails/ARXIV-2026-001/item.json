@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "2026-06-08T17:59:43Z",
+    "updated": "2026-06-08T17:59:43Z"
+  },
+  "date": "2026-06-08",
+  "id": "ARXIV-2026-001",
+  "paper": {
+    "arxiv_id": "2606.09826v1",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-001/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-001",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-001/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/ARXIV-2026-001/raw/arxiv-entry.json",
+      "knowledge/items/04-evaluation-guardrails/ARXIV-2026-001/raw/discovery.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-001/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-001/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Paper metadata + abstract captured",
+  "tags": [
+    "arXiv",
+    "AI Research",
+    "AI Agent",
+    "Agentic AI",
+    "Benchmark",
+    "Tool Use",
+    "LLM"
+  ],
+  "title": "OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics",
+  "topic": "04-evaluation-guardrails",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2606.09826v1",
+      "https://arxiv.org/pdf/2606.09826v1",
+      "https://export.arxiv.org/api/query?search_query=all%3A%22AI+agent%22+OR+all%3A%22large+language+model%22+OR+all%3A%22tool+use%22&start=0&max_results=5&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2606.09826v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.09826v1",
+    "requested_url": "",
+    "source_url": "https://arxiv.org/abs/2606.09826v1"
+  }
+}

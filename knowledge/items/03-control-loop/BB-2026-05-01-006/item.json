@@ -1,0 +1,68 @@
+{
+  "blocks": [
+    "Context/State",
+    "Tools/Actions",
+    "Control Loop"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-27",
+  "id": "BB-2026-05-01-006",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-006/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-006",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-006/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-006/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-006/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-006/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Claude Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Claude Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Claude Code",
+    "agent onboarding",
+    "context engineering",
+    "legacy codebase",
+    "MCP"
+  ],
+  "title": "像带新人一样引导 Claude Code：来自 17 年开发经验的启示",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://agentskills.io/home",
+      "https://anthropic.com/engineering/mcp",
+      "https://claude.ai/skills",
+      "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+      "https://github.com/ProteoWizard/pwiz-ai",
+      "https://skyline.ms/home/software/Skyline/wiki-page.view?name=team",
+      "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "https://www.bestblogs.dev/article/c1ecbe08"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/c1ecbe08"
+  }
+}

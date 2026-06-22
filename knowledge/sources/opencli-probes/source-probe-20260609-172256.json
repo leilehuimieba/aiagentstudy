@@ -1,0 +1,511 @@
+{
+  "generated_at": "2026-06-09T17:22:50",
+  "profile": "qmvqcrb8",
+  "source_count": 5,
+  "results": [
+    {
+      "source_id": "arxiv",
+      "name": "arXiv",
+      "group_id": "papers-primary",
+      "requested_url": "https://arxiv.org/",
+      "capture_route": "api-first",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "47616FDACB6405E399D92972290EDB1A",
+          "url": "https://arxiv.org/"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "47616FDACB6405E399D92972290EDB1A"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [
+            {
+              "href": "https://arxiv.org/#content",
+              "text": "Skip to main content"
+            },
+            {
+              "href": "https://www.cornell.edu/",
+              "text": ""
+            },
+            {
+              "href": "https://tech.cornell.edu/arxiv/",
+              "text": "Learn about arXiv becoming an independent nonprofit."
+            },
+            {
+              "href": "https://info.arxiv.org/about/ourmembers.html",
+              "text": "member institutions"
+            },
+            {
+              "href": "https://info.arxiv.org/about/donate.html",
+              "text": "Donate"
+            },
+            {
+              "href": "https://arxiv.org/IgnoreMe",
+              "text": ""
+            },
+            {
+              "href": "https://arxiv.org/login",
+              "text": "Login"
+            },
+            {
+              "href": "https://info.arxiv.org/help",
+              "text": "Help"
+            },
+            {
+              "href": "https://arxiv.org/search/advanced",
+              "text": "Advanced Search"
+            },
+            {
+              "href": "https://arxiv.org/",
+              "text": ""
+            },
+            {
+              "href": "https://www.cornell.edu/",
+              "text": ""
+            },
+            {
+              "href": "https://arxiv.org/login",
+              "text": ""
+            },
+            {
+              "href": "https://info.arxiv.org/help",
+              "text": ""
+            },
+            {
+              "href": "https://info.arxiv.org/about",
+              "text": ""
+            },
+            {
+              "href": "https://arxiv.org/archive/astro-ph",
+              "text": "Astrophysics"
+            },
+            {
+              "href": "https://arxiv.org/list/astro-ph/new",
+              "text": "new"
+            },
+            {
+              "href": "https://arxiv.org/list/astro-ph/recent",
+              "text": "recent"
+            },
+            {
+              "href": "https://arxiv.org/search/astro-ph",
+              "text": "search"
+            },
+            {
+              "href": "https://arxiv.org/list/astro-ph.GA/recent",
+              "text": "Astrophysics of Galaxies"
+            },
+            {
+              "href": "https://arxiv.org/list/astro-ph.CO/recent",
+              "text": "Cosmology and Nongalactic Astrophysics"
+            }
+          ],
+          "readyState": "complete",
+          "sample": "Skip to main content arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Materials on this site are not peer-reviewed by arXiv. Subject search and browse: Physics Mathematics Quantitative Biology Computer Science Quantitative Finance Statistics Electrical Engineering and Systems Science Economics Physics Astrophysics (astro-ph new, recent, search) Astrophysics of Galaxies; Cosmology and Nongalactic Astrophysics; Earth and Planetary Astrophysics; High Energy Astrophysical Phenomena; Instrumentation and Methods for Astrophysics; Solar and Stellar Astrophysics Condensed Matter (cond-mat new, recent, search) Disordered Systems and Neural Networks; Materials Science; Mesoscale and Nanoscale Physics; Other Condensed Matter; Quantum Gases; Soft Condensed Matter; Statistical Mechanics; Strongly Correlated Electrons; Superconductivity General Relativity and Quantum Cosmology (gr-qc new, recent, search) High Energy Physics - Experiment (hep-ex new, recent, search) High ",
+          "textLength": 5465,
+          "title": "arXiv.org e-Print archive",
+          "url": "https://arxiv.org/"
+        }
+      },
+      "status": "browser_readable"
+    },
+    {
+      "source_id": "huggingface-papers",
+      "name": "Hugging Face Papers",
+      "group_id": "papers-primary",
+      "requested_url": "https://huggingface.co/papers",
+      "capture_route": "browser-or-http",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "349FB6B2EBA73C409BB3A541A6C381A9",
+          "url": "https://huggingface.co/papers"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "349FB6B2EBA73C409BB3A541A6C381A9"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [
+            {
+              "href": "https://huggingface.co/",
+              "text": ""
+            },
+            {
+              "href": "https://huggingface.co/models",
+              "text": "Models"
+            },
+            {
+              "href": "https://huggingface.co/datasets",
+              "text": "Datasets"
+            },
+            {
+              "href": "https://huggingface.co/spaces",
+              "text": "Spaces"
+            },
+            {
+              "href": "https://huggingface.co/storage",
+              "text": "Buckets new"
+            },
+            {
+              "href": "https://huggingface.co/docs",
+              "text": "Docs"
+            },
+            {
+              "href": "https://huggingface.co/enterprise",
+              "text": "Enterprise"
+            },
+            {
+              "href": "https://huggingface.co/pricing",
+              "text": "Pricing"
+            },
+            {
+              "href": "https://huggingface.co/tasks",
+              "text": "Tasks"
+            },
+            {
+              "href": "https://huggingface.co/chat",
+              "text": "HuggingChat"
+            },
+            {
+              "href": "https://huggingface.co/collections",
+              "text": "Collections"
+            },
+            {
+              "href": "https://huggingface.co/languages",
+              "text": "Languages"
+            },
+            {
+              "href": "https://huggingface.co/organizations",
+              "text": "Organizations"
+            },
+            {
+              "href": "https://huggingface.co/blog/zh",
+              "text": "Blog"
+            },
+            {
+              "href": "https://huggingface.co/posts",
+              "text": "Posts"
+            },
+            {
+              "href": "https://huggingface.co/papers",
+              "text": "Daily Papers"
+            },
+            {
+              "href": "https://huggingface.co/learn",
+              "text": "Learn"
+            },
+            {
+              "href": "https://huggingface.co/join/discord",
+              "text": "Discord"
+            },
+            {
+              "href": "https://discuss.huggingface.co/",
+              "text": "Forum"
+            },
+            {
+              "href": "https://github.com/huggingface",
+              "text": "GitHub"
+            }
+          ],
+          "readyState": "interactive",
+          "sample": "NEW Get trending papers in your email inbox! Subscribe Daily Papers byAK and the research community Daily Weekly Monthly Jun 9 System theme Company TOS Privacy About Careers Website Models Datasets Spaces Pricing Docs",
+          "textLength": 217,
+          "title": "Daily Papers - Hugging Face",
+          "url": "https://huggingface.co/papers"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "openai-news",
+      "name": "OpenAI News",
+      "group_id": "official-labs",
+      "requested_url": "https://openai.com/news/",
+      "capture_route": "http-or-browser",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "7D1CB53F82F6F02CF275A0CA80D79C6F",
+          "url": "https://openai.com/news/"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "7D1CB53F82F6F02CF275A0CA80D79C6F"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "langchain-blog",
+      "name": "LangChain Blog",
+      "group_id": "agent-engineering",
+      "requested_url": "https://blog.langchain.com/",
+      "capture_route": "rss-or-http",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "9BFDC7CD0DBE52D479FA14C611087A41",
+          "url": "https://blog.langchain.com/"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "9BFDC7CD0DBE52D479FA14C611087A41"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [
+            {
+              "href": "https://www.langchain.com/",
+              "text": "home"
+            },
+            {
+              "href": "https://www.langchain.com/langsmith-platform",
+              "text": "LangSmith Platform"
+            },
+            {
+              "href": "https://www.langchain.com/langsmith/engine",
+              "text": "EngineImprove agents autonomously"
+            },
+            {
+              "href": "https://www.langchain.com/langsmith/observability",
+              "text": "ObservabilitySee exactly what your agents are doing"
+            },
+            {
+              "href": "https://www.langchain.com/langsmith/evaluation",
+              "text": "EvaluationScore and improve agent performance"
+            },
+            {
+              "href": "https://www.langchain.com/langsmith/deployment",
+              "text": "DeploymentShip and scale agents in production"
+            },
+            {
+              "href": "https://www.langchain.com/langsmith/fleet",
+              "text": "FleetAgents for the whole company"
+            },
+            {
+              "href": "https://www.langchain.com/langsmith/sandboxes",
+              "text": "SandboxesRun agent-generated code safely"
+            },
+            {
+              "href": "https://www.langchain.com/deep-agents",
+              "text": "deepagentsBuild long-running agents for complex tasks"
+            },
+            {
+              "href": "https://www.langchain.com/langchain",
+              "text": "langchainQuick start agents with any model provider"
+            },
+            {
+              "href": "https://www.langchain.com/langgraph",
+              "text": "langgraphBuild reliable agents with low-level control"
+            },
+            {
+              "href": "https://www.langchain.com/blog",
+              "text": "Blog"
+            },
+            {
+              "href": "https://www.langchain.com/customers",
+              "text": "Customer Stories"
+            },
+            {
+              "href": "https://www.langchain.com/resources",
+              "text": "Guides"
+            },
+            {
+              "href": "https://www.youtube.com/playlist?list=PLfaIDFEXuae3UwB1QGEjsRAr8BzCQss7s",
+              "text": "Max Agency"
+            },
+            {
+              "href": "https://academy.langchain.com/",
+              "text": "LangChain Academy"
+            },
+            {
+              "href": "https://www.youtube.com/@LangChain",
+              "text": "YouTube"
+            },
+            {
+              "href": "https://docs.langchain.com/",
+              "text": "Documentation"
+            },
+            {
+              "href": "https://www.langchain.com/startups",
+              "text": "LangSmith for Startups"
+            },
+            {
+              "href": "https://luma.com/langchain?k=c",
+              "text": "Meetups"
+            }
+          ],
+          "readyState": "interactive",
+          "sample": "Featured stories View All LangChain Labs Agent Architecture Observability & Evals Case Studies Filter by LangSmith Give your agent its own computer Amy Ru June 5, 2026 7 min Agent Architecture Why Model Neutrality Matters More Than Cloud Neutrality Neil Dahlke June 4, 2026 7 min Company Announcements Introducing LangChain Labs Harrison Chase May 14, 2026 3 min LangSmith Introducing LangSmith Engine Ben Tannyhill May 13, 2026 5 min Recent stories LangSmith Give your agent its own computer Amy Ru June 5, 2026 7 min Agent Architecture Why Model Neutrality Matters More Than Cloud Neutrality Neil Dahlke June 4, 2026 7 min Open Source Agent Architecture LangGraph Fault Tolerance in LangGraph: Retries, Timeouts, and Error Handlers Q. Long, S. Runkle June 4, 2026 7 min Open Source LangChain Agent Architecture Deep Agents How to Build a Custom Agent Harness Sydney Runkle June 3, 2026 6 min Case Studies How Harmonic Rebuilt Scout on Deep Agents and 4x'd Retention with LangSmith Sofia Sulikowski June 3, 2026 8 min LangChain Labs Designing Efficient Verifiers for Legal Agents LangChain Labs, Harvey June 2, 2026 7 min Sign up for our newsletter to stay up to date Deep Agents Open Source Agent A",
+          "textLength": 2998,
+          "title": "LangChain Blog",
+          "url": "https://www.langchain.com/blog"
+        }
+      },
+      "status": "browser_readable"
+    },
+    {
+      "source_id": "jiqizhixin",
+      "name": "机器之心",
+      "group_id": "chinese-ai",
+      "requested_url": "https://www.jiqizhixin.com/",
+      "capture_route": "browser-or-bestblogs",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "8D6EB21661DBAA06DC7B7EFE7903F83C",
+          "url": "https://www.jiqizhixin.com/"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "8D6EB21661DBAA06DC7B7EFE7903F83C"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [
+            {
+              "href": "https://pro.jiqizhixin.com/inbox",
+              "text": "机器之心·PRO通讯会员"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/51061f30-966c-4bb5-86bd-12acc7daf0ee",
+              "text": "端侧模型会成为设备现场的「第一层智能」吗？"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/926fd8c7-24c5-4735-b1e1-53a794fdbe4f",
+              "text": "低比特模型会是推理降本的关键组件吗？"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/90a5f5df-547e-4c2d-96a8-8adece5e6341",
+              "text": "为什么 LLM 难以直接复刻 AlphaGo 的树搜索奇迹？"
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2YpgQqltbPYxjXfLGfeFHrR5uy5",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/f352ad62-d271-45e1-be30-ae393c659415",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/camp_pro/course_2o97YBORiHu17WPxEHZ7A3YAfVf",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2go68dUnsjJuFMXH0LHKvJGm8uY",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2YpgQqltbPYxjXfLGfeFHrR5uy5",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/f352ad62-d271-45e1-be30-ae393c659415",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/articles",
+              "text": ""
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/m/inbox",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/1c9524be-37f8-4b87-b6e4-318aae2f7656",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/ai_shortlist",
+              "text": ""
+            },
+            {
+              "href": "https://aihaohaoyong.com/",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/articles",
+              "text": "文章库"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/inbox",
+              "text": "PRO通讯会员"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/1c9524be-37f8-4b87-b6e4-318aae2f7656",
+              "text": "SOTA！模型"
+            }
+          ],
+          "readyState": "interactive",
+          "sample": "机器之心·PRO通讯会员 Week 23 · 端侧模型会成为设备现场的「第一层智能」吗？ 本周，李飞飞 World Labs 团队发文阐述世界模型功能分类框架； OpenAI 宣布将 Codex 并入 ChatGPT...... 订阅会员畅读 文章库 已追踪 AI 发展 4177 天，29925 篇原创内容 与爱为舞亮相腾讯云AI产业应用大会，深耕教育大模型，打造下一代学习Agent 今天 合合信息获 CVPR 2026 NTIRE“反光去除”赛道全球冠军 今天 入职第三年，团队连斩CVPR三奖：南加州王越的PSI Lab做对了什么？ 今天 Meta蔡志鹏新作VLM³：全面揭示三维视觉的Bitter Lesson 今天 让机器真正理解世界需要一张「认知地图」，中科院发布空间智能综述 今天 新架构模型HRM-Text创新纪录！1B参数、1000美元，图灵奖得主都亲自下场了 今天 Anthropic最新博客：生物学Agent的瓶颈不在模型，而在数据基础设施 今天 ICML 2026 | PhysForge框架来了，让3D资产从静态模型变成可交互对象 今天 卡住AI的是什么：Anthropic用120个真实病毒检索任务为生物学中的智能体铺平道路 今天 “超级明星创企”昆仑行机器人正式浮出水面 今天 数千万美元融资、原AWS首席应用科学家加盟，井英科技打造内容行业的Agent原生公司 今天 库克最后一舞，苹果拿出Siri AI 今天 进入文章库，查阅过往文章 最新开源 Mano-P Agent开发 4 值得一试 Mano-P是专为边端设备设计的开源GUI-VLA智能体项目，可在搭载M4芯片的Mac设备或算力棒上本地运行，纯视觉驱动实现跨平台GUI自动化操作，数据全程本地处理，支持复杂多步骤任务规划执行，在OSWorld专项榜单排名第一。 1 个资源 Macaron-V1-Preview 基座模型 4 值得一试 Macaron-V1-Preview是由MindLab Research推出的749B参数规模的混合LoRA个人助理模型预览版。该模型基于GLM-5.1进行后训练，创新地将一个744B的基础模型与五个专门的LoRA适配器相结合。这些适配器分别针对通用聊天、个人生活自动化、编程与终端任务、生成式UI以及计算机代理工作流。模型采用路由器驱动设计，能够根据用户意图在多轮交互中动态切换不同能力模块，旨在处理用户在真实生活中涉及的复杂、多变且依赖工具的任务。 1 个资源 OProver 框架平台 4 值得一试 OProver是一个面向Lean 4中代理式形式化定理证明的统一框架。它将定理证明视为多轮精化循环：对目标定理，从历史证明记忆中检索已验证的证明，生成证明尝试，运行Lean 4编译器，并在失败时根据编译器反馈在下一轮中修正尝试。训练时使用相同的检索与反馈信号，使训",
+          "textLength": 3098,
+          "title": "机器之心",
+          "url": "https://www.jiqizhixin.com/"
+        }
+      },
+      "status": "browser_readable"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "authors": [
+    "Maxime Langevin",
+    "Hamza Benchekroun",
+    "Axel Moyal",
+    "Emrick Sinitambirivoutin"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holo31.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_0aaaa20f",
+  "keyQuotes": [
+    "Holo3.1 is a major step toward our vision of universal computer-use agents: systems that can operate across environments, integrate into any agent stack, and run wherever the workflow lives.",
+    "As teams moved Holo3 from evaluation to production, we repeatedly observed the same challenge: strong performance in one setting does not necessarily transfer to another.",
+    "The agent itself runs locally on a Windows or Mac machine, while the model can either run on that same machine...or on a DGX Spark on the same network. In both cases, execution stays fully private and local, with nothing leaving the user's network."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The model family is designed to handle distribution shifts encountered in production, with significant gains on mobile benchmarks like AndroidWorld (from 67% to 79.3% for the 35B model).",
+      "point": "Holo3.1 improves robustness across web, desktop, and mobile environments."
+    },
+    {
+      "explanation": "In addition to structured JSON outputs, Holo3.1 supports function-calling protocols, achieving near-parity performance with native execution across various benchmarks.",
+      "point": "Native function-calling support enables seamless integration with third-party agent frameworks."
+    },
+    {
+      "explanation": "For the first time, the Holo family offers quantized weights. NVFP4 on DGX Spark delivers a 1.74x throughput increase over BF16 with minimal performance loss, enabling fully local agent execution.",
+      "point": "Quantized checkpoints (FP8, Q4 GGUF, NVFP4) enable fast, local, and private inference."
+    },
+    {
+      "explanation": "Sizes range from 0.8B for ultra-lightweight local agents to 35B-A3B for state-of-the-art performance, allowing developers to choose the right balance for their deployment scenario.",
+      "point": "The model family offers multiple sizes for cost-performance tradeoffs."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Holo3.1 is a new family of computer-use AI models that improves robustness across web, desktop, and mobile environments, introduces quantized checkpoints for local inference, and offers multiple sizes for cost-performance tradeoffs.",
+  "originalTitle": "Holo3.1: Fast & Local Computer Use Agents",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-02",
+  "publishDateTimeStr": "2026-06-02 22:19:55",
+  "publishTimeStamp": 1780409995000,
+  "qualified": false,
+  "readCount": 45,
+  "readTime": 3,
+  "readUrl": "https://www.bestblogs.dev/article/0aaaa20f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article announces the release of the Holo3.1 family of computer-use agents, building on the previous Holo3 model. The key improvements are threefold: enhanced robustness across diverse environments (web, desktop, and mobile), better integration with various agent frameworks via native function-calling support, and the introduction of quantized checkpoints (FP8, Q4 GGUF, NVFP4) for local and on-device inference. The model family includes four sizes (0.8B, 4B, 9B, and 35B-A3B) to cater to different deployment needs, from ultra-lightweight local agents to state-of-the-art performance. The article provides benchmark results showing significant gains on mobile automation (AndroidWorld) and cross-harness performance, and details the speedups achieved with quantization, particularly on NVIDIA's DGX Spark hardware. The release is positioned as a major step toward universal, private, and locally executable computer-use agents.",
+  "tags": [
+    "AI Agent",
+    "Computer Use",
+    "LLM",
+    "Model Quantization",
+    "Local AI"
+  ],
+  "title": "Holo3.1: Fast & Local Computer Use Agents",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/Hcompany/holo31",
+  "wordCount": 708
+}

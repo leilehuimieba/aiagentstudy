@@ -1,0 +1,178 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T537a6de74c1747388778b88c4c11e0a0",
+  "data": {
+    "metaData": {
+      "id": "RAW_5a8c6f1b",
+      "notExist": null,
+      "originalTitle": "LLM Evals Are Based on Vibes — I Built the Missing Layer That Decides What Ships",
+      "title": "LLM Evals Are Based on Vibes — I Built the Missing Layer That Decides What Ships",
+      "oneSentenceSummary": "This article presents a production-grade LLM evaluation system that splits faithfulness into attribution and specificity signals, enabling a decision layer to detect confident hallucinations that a single score would miss.",
+      "summary": "The article identifies a critical failure mode in LLM evaluation: single-score thresholds miss confident hallucinations where a response sounds authoritative but is ungrounded. The author builds a three-layer system in pure Python: a scoring layer that measures attribution, specificity, relevance, and context quality; a decision layer that converts scores into ACCEPT/REVIEW/REJECT verdicts with plain-English reasons; and an action layer that routes responses to serve, retry, or regenerate. The key insight is splitting faithfulness into attribution (grounding in context) and specificity (concreteness), where high specificity plus low attribution signals a hallucination. The system runs locally in ~291ms, uses an LLM judge only for borderline scores (0.45-0.65), and includes a regression test suite for CI/CD quality gates. Real benchmark data shows it catches 2/2 hallucinations while maintaining sub-300ms latency.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "LLM Evaluation",
+        "Hallucination Detection",
+        "RAG",
+        "AI Engineering",
+        "Production ML"
+      ],
+      "mainPoints": [
+        {
+          "point": "Single-score evaluation thresholds fail to detect confident hallucinations.",
+          "explanation": "A response scoring 0.525 overall can have low attribution (0.428) but high specificity (0.701), which is the exact signature of a hallucination that sounds authoritative. A single number cannot distinguish this from a well-grounded response."
+        },
+        {
+          "point": "Splitting faithfulness into attribution and specificity is the core detection mechanism.",
+          "explanation": "Attribution measures grounding in context; specificity measures concreteness. High specificity plus low attribution is a hallucination. This 2x2 matrix (the article's central contribution) catches the most dangerous failure mode that single-score systems miss."
+        },
+        {
+          "point": "The decision layer converts scores into actions, not just numbers.",
+          "explanation": "Instead of a floating-point score, the system returns ACCEPT/REVIEW/REJECT with a failure type, reason, and next action. This enables automated routing: regenerate for hallucinations, retry with specific prompts for vague responses, or escalate to human review for high-disagreement cases."
+        },
+        {
+          "point": "The system is production-deployable with sub-300ms latency and no API calls on the standard path.",
+          "explanation": "Heuristic scoring runs locally in ~3ms using sentence-transformers on CPU. The LLM judge fires only for borderline scores (0.45-0.65). Full pipeline averages 291ms, making it viable for real-time serving."
+        },
+        {
+          "point": "A regression test suite brings CI/CD practices to LLM evaluation.",
+          "explanation": "Historical baselines are stored and diffed against current scores during CI builds. A prompt change that drops a response from 0.694 to 0.137 blocks deployment, treating prompt engineering like code coverage or unit testing."
+        }
+      ],
+      "keyQuotes": [
+        "The real problem is not that models hallucinate. It is that nothing catches the confident ones, the responses that score 0.525, pass your threshold, and are quietly wrong.",
+        "High specificity plus low attribution is the signature of a hallucination. A single score misses it every time.",
+        "The score had gone up. The quality had collapsed. One number cannot hold both directions at once.",
+        "This is not an evaluation script. It is a decision engine that sits between your model and your user.",
+        "Averaging those numbers completely hides the conflict. What you actually need to track is the disagreement signal."
+      ],
+      "url": "https://towardsdatascience.com/llm-evals-are-based-on-vibes-i-built-the-missing-layer-that-decides-what-ships/",
+      "readUrl": "https://www.bestblogs.dev/article/5a8c6f1b",
+      "enclosureUrl": null,
+      "domain": "towardsdatascience.com",
+      "cover": "https://towardsdatascience.com/wp-content/uploads/2026/05/Missing-Scoring-Layer.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_0c32dbfa",
+      "sourceName": "Towards Data Science",
+      "priority": "MEDIUM",
+      "sourceImage": "https://towardsdatascience.com/wp-content/uploads/2025/02/cropped-Favicon-32x32.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 89,
+      "readCount": 0,
+      "wordCount": 4944,
+      "readTime": 20,
+      "mediaDuration": null,
+      "authors": [
+        "Emmimal P Alexander"
+      ],
+      "publishTimeStamp": 1779022800000,
+      "publishDateStr": "Today",
+      "publishDateTimeStr": "2026-05-17 13:00:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_e792cb18",
+        "type": "ARTICLE",
+        "title": "Introducing workspace agents in ChatGPT",
+        "oneSentenceSummary": "OpenAI introduces workspace agents, a new class of shared, long-running AI agents within ChatGPT for business teams, designed to automate complex workflows, integrate with organizational tools, and operate under enterprise-grade controls.",
+        "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_57a2ca0c",
+        "type": "ARTICLE",
+        "title": "The Multi-Agent Trap",
+        "oneSentenceSummary": "This article analyzes the 'Multi-Agent Trap' where unstructured AI architectures amplify errors, providing a research-backed playbook of proven patterns and failure prevention strategies for production-grade agentic systems.",
+        "url": "https://towardsdatascience.com/the-multi-agent-trap/",
+        "sourceName": "Towards Data Science"
+      },
+      {
+        "id": "RAW_648f3821",
+        "type": "ARTICLE",
+        "title": "Gemini Embedding 2: Our first natively multimodal embedding model",
+        "oneSentenceSummary": "Google introduces Gemini Embedding 2, its first natively multimodal embedding model that unifies text, image, video, audio, and documents into a single semantic space for advanced RAG and search.",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2/",
+        "sourceName": "The Keyword (blog.google) "
+      },
+      {
+        "id": "RAW_824e14b6",
+        "type": "ARTICLE",
+        "title": "Hybrid Search and Re-Ranking in Production RAG",
+        "oneSentenceSummary": "This article presents a production-grade approach to improving RAG retrieval quality by combining hybrid search (BM25 + dense vectors) with cross-encoder re-ranking and metadata filtering, supported by real-world evaluation metrics.",
+        "url": "https://towardsdatascience.com/hybrid-search-and-re-ranking-in-production-rag/",
+        "sourceName": "Towards Data Science"
+      },
+      {
+        "id": "RAW_b6bd1ce0",
+        "type": "ARTICLE",
+        "title": "Agents that remember: introducing Agent Memory",
+        "oneSentenceSummary": "Cloudflare announces the private beta of Agent Memory, a managed service that provides AI agents with persistent, context-aware memory by extracting and retrieving knowledge from conversations, solving the problem of context rot without overfilling the context window.",
+        "url": "https://blog.cloudflare.com/introducing-agent-memory/",
+        "sourceName": "The Cloudflare Blog"
+      },
+      {
+        "id": "RAW_8460a7a",
+        "type": "VIDEO",
+        "title": "Codex and Subagents — Vaibhav Srivastav & Katia Gil Guzman， OpenAI",
+        "oneSentenceSummary": "OpenAI developers walk through Codex's full engineering platform—subagents for parallel execution, a plugin ecosystem, background automations, Guardian safety gates, and MCP integrations—showing why it has reached 3 million weekly active users.",
+        "url": "https://www.youtube.com/watch?v=MhHEGMFCEB0",
+        "sourceName": "AI Engineer"
+      },
+      {
+        "id": "RAW_c230749d",
+        "type": "ARTICLE",
+        "title": "Stop Treating AI Memory Like a Search Problem",
+        "oneSentenceSummary": "This article critiques the conventional 'store-and-retrieve' approach to AI memory, proposing a lifecycle-based system with decay, contradiction detection, confidence scoring, compression, and expiry to manage memory like a human brain rather than a static archive.",
+        "url": "https://towardsdatascience.com/stop-treating-ai-memory-like-a-search-problem/",
+        "sourceName": "Towards Data Science"
+      },
+      {
+        "id": "RAW_bbe5a0f9",
+        "type": "ARTICLE",
+        "title": "Your ReAct Agent Is Wasting 90% of Its Retries — Here’s How to Stop It",
+        "oneSentenceSummary": "This article identifies a critical architectural flaw in ReAct-style LLM agents where hallucinated tool names waste the majority of retry budgets, and proposes three structural fixes—error taxonomy, per-tool circuit breakers, and deterministic tool routing—to eliminate this waste and improve production reliability.",
+        "url": "https://towardsdatascience.com/your-react-agent-is-wasting-90-of-its-retries-heres-how-to-stop-it/",
+        "sourceName": "Towards Data Science"
+      },
+      {
+        "id": "RAW_ed72fe59",
+        "type": "ARTICLE",
+        "title": "Building an Evaluation Harness for Production AI Agents: A 12-Metric Framework From 100+ Deployments",
+        "oneSentenceSummary": "This article presents a comprehensive 12-metric evaluation framework for production AI agents, distilled from over 100 enterprise deployments, covering retrieval, generation, agent behavior, and production health.",
+        "url": "https://towardsdatascience.com/building-an-evaluation-harness-for-production-ai-agents-a-12-metric-framework-from-100-deployments/",
+        "sourceName": "Towards Data Science"
+      },
+      {
+        "id": "RAW_e237a319",
+        "type": "ARTICLE",
+        "title": "Beyond the Vector Store: Building the Full Data Layer for AI Applications",
+        "oneSentenceSummary": "This article argues that production AI applications require a hybrid data layer combining vector databases for semantic retrieval with relational databases for transactional integrity, metadata management, and security.",
+        "url": "https://machinelearningmastery.com/beyond-the-vector-store-building-the-full-data-layer-for-ai-applications/",
+        "sourceName": "Machine Learning Mastery"
+      }
+    ]
+  }
+}

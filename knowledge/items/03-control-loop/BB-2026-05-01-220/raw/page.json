@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Ta693d513aa274bb8bebd7320ee7edaf9",
+  "data": {
+    "metaData": {
+      "id": "RAW_f95bd07b",
+      "notExist": null,
+      "originalTitle": "The founder's playbook: Building an AI-native startup | Claude",
+      "title": "The founder's playbook: Building an AI-native startup | Claude",
+      "oneSentenceSummary": "This playbook from Anthropic provides a practical framework for founders building AI-native startups, mapping the four stages of the startup lifecycle—Idea, MVP, Launch, and Scale—to the capabilities of AI in 2026.",
+      "summary": "This playbook from Anthropic is a practical guide for founders building AI-native startups. It reimagines the four core stages of the startup lifecycle—Idea, MVP, Launch, and Scale—for what is possible with AI in 2026. For each stage, it outlines specific goals, exit criteria, common failure modes, and AI-powered exercises. The playbook covers validating problem hypotheses, running customer discovery with AI, architecting AI-generated codebases to avoid technical debt, measuring genuine product-market fit, and replacing founder attention with agentic workflows. It also includes a product matrix for using different Claude products (Chat, Cowork, Code) across the startup journey and features founder stories from companies like Ambral, Anything, and Carta Healthcare. The core thesis is that the founder's role is shifting from individual contributor to orchestrator, allowing them to focus on the work only they can do.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "AI-native startups",
+        "Startup Playbook",
+        "Founder Strategy",
+        "Product-Market Fit",
+        "Agentic Workflows"
+      ],
+      "mainPoints": [
+        {
+          "point": "The founder's role is shifting from individual contributor to orchestrator in an AI-native startup.",
+          "explanation": "AI allows founders to automate tedious workflows and focus on high-level strategy, customer discovery, and product vision, rather than being bogged down by implementation details."
+        },
+        {
+          "point": "The playbook provides a stage-by-stage framework for building an AI-native startup, from Idea to Scale.",
+          "explanation": "Each stage (Idea, MVP, Launch, Scale) has specific goals, exit criteria, and AI-powered exercises to guide founders, helping them avoid common failure modes like premature scaling or building the wrong product."
+        },
+        {
+          "point": "AI can be used to validate problem hypotheses and run customer discovery more effectively.",
+          "explanation": "The playbook suggests using AI to map competitive landscapes, analyze customer feedback, and generate insights, enabling faster and more data-driven decision-making in the early stages."
+        }
+      ],
+      "keyQuotes": [
+        "The founder's role is shifting from individual contributor to orchestrator, allowing them to focus on the work only they can do.",
+        "We put together a practical playbook for building an AI-native startup. It remaps the four core stages of the startup lifecycle---Idea, MVP, Launch, and Scale---for what's possible in 2026.",
+        "A measurement framework for distinguishing genuine product-market fit from early hype."
+      ],
+      "url": "https://claude.com/blog/the-founders-playbook",
+      "readUrl": "https://www.bestblogs.dev/article/f95bd07b",
+      "enclosureUrl": null,
+      "domain": "claude.com",
+      "cover": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_154bc38a",
+      "sourceName": "Claude Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/689f4a9aff1f63fde75cf733_favicon.png",
+      "mainDomain": "Business_Tech",
+      "mainDomainDesc": "Business & Tech",
+      "aiSubCategory": "BT_STARTUP",
+      "aiSubCategoryDesc": "Startups & Ventures",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 5,
+      "wordCount": 228,
+      "readTime": 1,
+      "mediaDuration": null,
+      "authors": [
+        "Claude Blog"
+      ],
+      "publishTimeStamp": 1778688000000,
+      "publishDateStr": "05-13",
+      "publishDateTimeStr": "2026-05-13 16:00:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_94694e50",
+        "type": "ARTICLE",
+        "title": "Best practices for computer and browser use with Claude | Claude",
+        "oneSentenceSummary": "This article provides official best practices for integrating Claude's computer and browser use capabilities, focusing on screenshot scaling, resolution selection, click accuracy optimization, thinking effort tuning, and prompt injection defense.",
+        "url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_c1ecbe08",
+        "type": "ARTICLE",
+        "title": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude",
+        "oneSentenceSummary": "Brendan MacLean, principal developer of the 700,000-line Skyline codebase, applies his 17-year methodology of onboarding human developers to Claude Code, using context, skills, and MCP integrations to make a legacy codebase manageable again.",
+        "url": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_8460a7a",
+        "type": "VIDEO",
+        "title": "Codex and Subagents — Vaibhav Srivastav & Katia Gil Guzman， OpenAI",
+        "oneSentenceSummary": "OpenAI developers walk through Codex's full engineering platform—subagents for parallel execution, a plugin ecosystem, background automations, Guardian safety gates, and MCP integrations—showing why it has reached 3 million weekly active users.",
+        "url": "https://www.youtube.com/watch?v=MhHEGMFCEB0",
+        "sourceName": "AI Engineer"
+      },
+      {
+        "id": "RAW_862a3021",
+        "type": "ARTICLE",
+        "title": "Cursor's Third Era: Cloud Agents",
+        "oneSentenceSummary": "This article explores Cursor's transition into the 'Cloud Agent' era, where AI agents utilize full virtual machines and 'Computer Use' to build, test, and demonstrate software autonomously.",
+        "url": "https://www.latent.space/p/cursor-third-era",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_c31f1686",
+        "type": "ARTICLE",
+        "title": "Multi-agent coordination patterns: Five approaches and when to use them | Claude",
+        "oneSentenceSummary": "Anthropic outlines five core multi-agent coordination patterns—Generator-verifier, Orchestrator-subagent, Agent teams, Message bus, and Shared-state—providing a decision framework for selecting the right architecture based on task complexity and context needs.",
+        "url": "https://claude.com/blog/multi-agent-coordination-patterns",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_243d2340",
+        "type": "ARTICLE",
+        "title": "How Claude Code works in large codebases: Best practices and where to start | Claude",
+        "oneSentenceSummary": "This article provides a comprehensive guide on deploying Claude Code in large codebases, emphasizing that success depends more on the 'harness' of configuration layers (CLAUDE.md, hooks, skills, plugins, LSP, MCP) than on the model alone, and outlines proven patterns for making codebases navigable, maintaining configurations, and assigning organizational ownership.",
+        "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_18a0d718",
+        "type": "ARTICLE",
+        "title": "Retrieval After RAG: Hybrid Search， Agents， and Database Design — Simon Hørup Eskildsen of Turbopuffer",
+        "oneSentenceSummary": "Turbopuffer is a cloud-native search engine for unstructured data that leverages a tiered storage architecture (S3 to NVMe) to provide cost-efficient, high-concurrency retrieval for RAG and agentic workflows.",
+        "url": "https://www.latent.space/p/turbopuffer",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_663e10aa",
+        "type": "ARTICLE",
+        "title": "Notion’s Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future — Simon Last & Sarah Sachs of Notion",
+        "oneSentenceSummary": "Notion's AI engineering leads, Sarah Sachs and Simon Last, detail the multi-year, iterative journey to build Custom Agents, sharing insights on product timing, team culture, evaluation philosophy, and the vision for agent-native collaboration and software factories.",
+        "url": "https://www.latent.space/p/notion",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_36e502e0",
+        "type": "ARTICLE",
+        "title": "Building a safe， effective sandbox to enable Codex on Windows",
+        "oneSentenceSummary": "This article details the engineering journey of building a custom sandbox for Codex on Windows, from an initial unelevated prototype using SIDs and write-restricted tokens to a final elevated design that leverages dedicated Windows users and firewall rules for robust network isolation.",
+        "url": "https://openai.com/index/building-codex-windows-sandbox",
+        "sourceName": "OpenAI Blog"
+      }
+    ]
+  }
+}

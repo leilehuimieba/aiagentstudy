@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-06",
+  "id": "BB-2026-05-01-467",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-467/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-467",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-467/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-467/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-467/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-467/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-467/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-467/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / LessWrong",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / LessWrong",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "Software Engineering",
+    "Developer Tools",
+    "Engineering Culture"
+  ],
+  "title": "Why Software Automation Is Hard — LessWrong",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/b15d12f6",
+      "https://www.lesswrong.com/posts/KzXptMbuDsYLrppss/why-software-automation-is-hard"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.lesswrong.com/posts/KzXptMbuDsYLrppss/why-software-automation-is-hard",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/b15d12f6"
+  }
+}

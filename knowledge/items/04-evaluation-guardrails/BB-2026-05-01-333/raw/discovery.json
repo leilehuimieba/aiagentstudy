@@ -1,0 +1,79 @@
+{
+  "id": "RAW_2fd44471",
+  "notExist": null,
+  "originalTitle": "The VibeSec Reckoning",
+  "title": "The VibeSec Reckoning",
+  "oneSentenceSummary": "This article details the security risks discovered when scaling a 'vibe coded' prototype, arguing that AI-generated code requires deterministic guardrails, not just prompts, to be production-safe.",
+  "summary": "The article recounts the experience of the Thoughtworks Global Marketing AI applications team when asked to scale a video assembly prototype built by a citizen builder using Gemini, Replit AI, and Claude AI. The team discovered two critical security near-misses: the AI recommended making a storage bucket public and assigning excessive token permissions to a service account. These incidents led the author to argue that relying on prompts to ensure security is insufficient. The article presents a framework for 'harness engineering' that combines inferential controls (like a structured security context file fed to the AI) with deterministic computational sensors (like SAST scanners and deployment gates). It provides actionable short-term habits for individuals and medium-to-long-term organizational strategies, including a daily security intelligence feed and shared starter harnesses, to ensure that the speed of AI-assisted development does not compromise security.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Vibe Coding",
+    "AI Security",
+    "Software Engineering",
+    "DevSecOps",
+    "Harness Engineering"
+  ],
+  "mainPoints": [
+    {
+      "point": "AI-generated code introduces systemic security risks that prompts alone cannot mitigate.",
+      "explanation": "The article cites statistics showing 25% of AI-generated code has vulnerabilities and 1 in 5 enterprise breaches are now caused by it. Prompts are suggestions, not gates, and can be overridden or ignored by the AI."
+    },
+    {
+      "point": "A 'harness engineering' approach is needed, combining inferential guides with computational sensors.",
+      "explanation": "Inferential controls (like a security context file) steer the AI before it acts, while computational sensors (like linters and security scanners) deterministically validate the output after the fact, creating a non-negotiable safety net."
+    },
+    {
+      "point": "Business functions building with AI must adhere to the same security standards as engineering teams.",
+      "explanation": "Prototypes built by citizen builders can expose sensitive data and brand assets. Compliance standards like ISO 27001 apply to all applications, regardless of how quickly they are built."
+    }
+  ],
+  "keyQuotes": [
+    "Speed without guardrails is a risk no team can afford to ignore.",
+    "It is not sufficient to merely tell the LLM the desired behavior of your output artifacts. If you absolutely do not want something to be true, it must be codified in non-negotiable rules somewhere in your development lifecycle.",
+    "The path of least resistance and the secure path are rarely the same thing.",
+    "That shift - from depending on humans to catch issues, to building technical security rules, automated checks and human accountability into the workflow has become our blueprint for moving fast while maintaining engineering rigor in the agentic era."
+  ],
+  "url": "https://martinfowler.com/articles/vibesec-reckoning.html",
+  "readUrl": "https://www.bestblogs.dev/article/2fd44471",
+  "enclosureUrl": null,
+  "domain": "martinfowler.com",
+  "cover": "https://martinfowler.com/logo-sq.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045342_logo-sq.png",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_PRACTICE",
+  "aiSubCategoryDesc": "Engineering Practice",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 92,
+  "readCount": 83,
+  "wordCount": 2145,
+  "readTime": 9,
+  "mediaDuration": null,
+  "authors": [
+    "Martin Fowler"
+  ],
+  "publishTimeStamp": 1779890580000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 22:03:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

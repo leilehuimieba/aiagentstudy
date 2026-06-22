@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-16",
+  "id": "BB-2026-05-01-524",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-524/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-524",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-524/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-524/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-524/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-524/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-524/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-524/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / ByteByteGo Newsletter",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / ByteByteGo Newsletter",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM",
+    "Open-Weight Models",
+    "MoE Architecture",
+    "AI Engineering",
+    "Model Training"
+  ],
+  "title": "How Open-Weight Models Changed the AI Landscape",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.bytebytego.com/p/how-open-weight-models-changed-the",
+      "https://www.bestblogs.dev/article/380212f2"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://blog.bytebytego.com/p/how-open-weight-models-changed-the",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/380212f2"
+  }
+}

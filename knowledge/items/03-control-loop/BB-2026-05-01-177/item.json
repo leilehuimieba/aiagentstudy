@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-13",
+  "id": "BB-2026-05-01-177",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-177/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-177",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-177/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-177/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-177/raw/display-document.html",
+      "knowledge/items/03-control-loop/BB-2026-05-01-177/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-177/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-177/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯云开发者",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯云开发者",
+  "status": "Full text + source captured",
+  "tags": [
+    "Multi-Agent",
+    "Harness",
+    "AI Engineering",
+    "MCP",
+    "Agent Architecture"
+  ],
+  "title": "Designing a Production-Grade Multi-Agent Harness from Scratch: Architecture, Evaluation, Memory, Cost, and MCP Tool Integration",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695544&idx=1&sn=865fb183130b2851900b9f4eda62da9c",
+      "https://www.bestblogs.dev/en/article/878057b5"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695544&idx=1&sn=865fb183130b2851900b9f4eda62da9c",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/878057b5"
+  }
+}

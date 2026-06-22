@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-04",
+  "id": "BB-2026-05-01-476",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-476/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-476",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-476/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-476/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-476/raw/discovery.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-476/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-476/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-476/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / The Cloudflare Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / The Cloudflare Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Vite",
+    "JavaScript",
+    "Open Source",
+    "Cloudflare",
+    "Developer Tools"
+  ],
+  "title": "VoidZero is joining Cloudflare",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+      "https://www.bestblogs.dev/article/73900a47"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/73900a47"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Source Signal"
+  ],
+  "candidate": {
+    "candidate_id": "CAND-2026-0016",
+    "evidence_path": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-001/raw/page-state.json"
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "http",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-06-09",
+  "id": "WEB-2026-001",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/WEB-2026-001/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/WEB-2026-001",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/WEB-2026-001/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/WEB-2026-001/raw/candidate.json",
+      "knowledge/items/04-evaluation-guardrails/WEB-2026-001/raw/page-text.txt",
+      "knowledge/items/04-evaluation-guardrails/WEB-2026-001/raw/page.html",
+      "knowledge/items/04-evaluation-guardrails/WEB-2026-001/raw/promotion-capture.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/WEB-2026-001/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/WEB-2026-001/summary.md"
+  },
+  "schema_version": 1,
+  "source": "Candidate / OpenAI News",
+  "source_id": "openai-news",
+  "source_name": "OpenAI News",
+  "status": "Candidate promoted",
+  "tags": [
+    "OpenAI News",
+    "Article",
+    "Model",
+    "OpenAI",
+    "Memory",
+    "RAG"
+  ],
+  "title": "Dreaming: Better memory for a more helpful ChatGPT / OpenAI",
+  "topic": "04-evaluation-guardrails",
+  "type": "web_article",
+  "urls": {
+    "all_source_urls": [
+      "https://openai.com/index/chatgpt-memory-dreaming"
+    ],
+    "candidate_url": "https://openai.com/index/chatgpt-memory-dreaming",
+    "feed_url": "",
+    "original_url": "https://openai.com/index/chatgpt-memory-dreaming",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://openai.com/index/chatgpt-memory-dreaming"
+  }
+}

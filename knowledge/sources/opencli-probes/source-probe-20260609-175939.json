@@ -1,0 +1,268 @@
+{
+  "generated_at": "2026-06-09T17:59:34",
+  "profile": "qmvqcrb8",
+  "source_count": 5,
+  "results": [
+    {
+      "source_id": "huggingface-papers",
+      "name": "Hugging Face Papers",
+      "group_id": "papers-primary",
+      "requested_url": "https://huggingface.co/papers",
+      "capture_route": "browser-or-http",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "B920CE374C6E078307521733F3C6BDEE",
+          "url": "https://huggingface.co/papers"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "B920CE374C6E078307521733F3C6BDEE"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "openai-news",
+      "name": "OpenAI News",
+      "group_id": "official-labs",
+      "requested_url": "https://openai.com/news/",
+      "capture_route": "http-or-browser",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "F9E5EE49B8B45E867BE8965D7B3EB724",
+          "url": "https://openai.com/news/"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "F9E5EE49B8B45E867BE8965D7B3EB724"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "jiqizhixin",
+      "name": "机器之心",
+      "group_id": "chinese-ai",
+      "requested_url": "https://www.jiqizhixin.com/",
+      "capture_route": "browser-or-bestblogs",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "BE8B583305A39EA70BB6B460E8CD8A4C",
+          "url": "https://www.jiqizhixin.com/"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "BE8B583305A39EA70BB6B460E8CD8A4C"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [
+            {
+              "href": "https://pro.jiqizhixin.com/inbox",
+              "text": "机器之心·PRO通讯会员\n\n一份让您从此不再担心错失AI赛道良机的业内通讯"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/51061f30-966c-4bb5-86bd-12acc7daf0ee",
+              "text": "端侧模型会成为设备现场的「第一层智能」吗？"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/926fd8c7-24c5-4735-b1e1-53a794fdbe4f",
+              "text": "低比特模型会是推理降本的关键组件吗？"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/90a5f5df-547e-4c2d-96a8-8adece5e6341",
+              "text": "为什么 LLM 难以直接复刻 AlphaGo 的树搜索奇迹？"
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2YpgQqltbPYxjXfLGfeFHrR5uy5",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/f352ad62-d271-45e1-be30-ae393c659415",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/camp_pro/course_2o97YBORiHu17WPxEHZ7A3YAfVf",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2go68dUnsjJuFMXH0LHKvJGm8uY",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2YpgQqltbPYxjXfLGfeFHrR5uy5",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/f352ad62-d271-45e1-be30-ae393c659415",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/articles",
+              "text": "文章库"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/m/inbox",
+              "text": "PRO会员通讯"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/1c9524be-37f8-4b87-b6e4-318aae2f7656",
+              "text": "SOTA！模型"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/ai_shortlist",
+              "text": "AI Shortlist"
+            },
+            {
+              "href": "https://aihaohaoyong.com/",
+              "text": "AI 好好用"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/articles",
+              "text": "文章库"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/inbox",
+              "text": "PRO通讯会员"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/1c9524be-37f8-4b87-b6e4-318aae2f7656",
+              "text": "SOTA！模型"
+            }
+          ],
+          "readyState": "interactive",
+          "sample": "机器之心·PRO通讯会员 一份让您从此不再担心错失AI赛道良机的业内通讯 会员通讯 Week 23 · 端侧模型会成为设备现场的「第一层智能」吗？ 本周，李飞飞 World Labs 团队发文阐述世界模型功能分类框架； OpenAI 宣布将 Codex 并入 ChatGPT...... 订阅会员畅读 专题解读 410 端侧模型会成为设备现场的「第一层智能」吗？ 低比特模型会是推理降本的关键组件吗？ 为什么 LLM 难以直接复刻 AlphaGo 的树搜索奇迹？ 文章库 已追踪 AI 发展 4177 天，29925 篇原创内容 与爱为舞亮相腾讯云AI产业应用大会，深耕教育大模型，打造下一代学习Agent 今天 学习Agent AI教育 与爱为舞 合合信息获 CVPR 2026 NTIRE“反光去除”赛道全球冠军 今天 入职第三年，团队连斩CVPR三奖：南加州王越的PSI Lab做对了什么？ 今天 Humanoid Everyday PhysWorld Psi-0 具身智能 PSI Lab（Physical Superintelligence Lab） Meta蔡志鹏新作VLM³：全面揭示三维视觉的Bitter Lesson 今天 蔡志鹏 VLM³ MeTA 让机器真正理解世界需要一张「认知地图」，中科院发布空间智能综述 今天 空间智能 认知地图（Cognitive Map） 新架构模型HRM-Text创新纪录！1B参数、1000美元，图灵奖得主都亲自下场了 今天 Sapient Intelligence HRM-Text Anthropic最新博客：生物学Agent的瓶颈不在模型，而在数据基础设施 今天 Laura Luebbert AI Agent Anthropic ICML 2026 | PhysForge框架来了，让3D资产从静态模型变成可交互对象 今天 PhysForge ICML 2026 卡住AI的是什么：Anthropic用120个真实病毒检索任务为生物学中的智能体铺平道路 今天 AI for Science “超级明星创企”昆仑行机器人正式浮出水面 今天 具身智能 昆仑行 数千万美元融资、原AWS首席应用科学家加盟，井英科技打造内容行业的Agent原生公司 今天 Agent AI 短剧 井英科技（CreativeFitting） 库克最后一舞，苹果拿出Siri AI 今天 苹果 全球开发者大会 WWDC 蒂姆·库克 进入文章库，查阅过往文章 最新开源 已收录 22487 个开源项目 Macaron-V1-Preview 基座模型 4 值得一试 Macaron-V1-Preview是由MindLab Research推出的749B参数规模的混合LoRA个人助理模型预览版。该模型基于GLM-5.1进行后训练，创新地将一个744B的基础模型与五个专门",
+          "textLength": 3151,
+          "title": "机器之心",
+          "url": "https://www.jiqizhixin.com/"
+        }
+      },
+      "status": "browser_readable"
+    },
+    {
+      "source_id": "github-trending",
+      "name": "GitHub Trending",
+      "group_id": "community-signals",
+      "requested_url": "https://github.com/trending",
+      "capture_route": "browser-or-http",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "B2339F6EF109E23A089B1A2CFCC2F9D1",
+          "url": "https://github.com/trending"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "B2339F6EF109E23A089B1A2CFCC2F9D1"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "papers-with-code",
+      "name": "Papers with Code",
+      "group_id": "papers-primary",
+      "requested_url": "https://paperswithcode.com/",
+      "capture_route": "browser-or-http",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "E0BB99C85F6C8B988FE28D4AE462F32F",
+          "url": "https://paperswithcode.com/"
+        }
+      },
+      "select": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "selected": "E0BB99C85F6C8B988FE28D4AE462F32F"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    }
+  ]
+}

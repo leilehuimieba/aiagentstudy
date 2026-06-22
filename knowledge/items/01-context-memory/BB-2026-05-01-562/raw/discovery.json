@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "LangChain Labs"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a302d809a834ad277d46961_fireworks-labs.png",
+  "domain": "langchain.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_d92ae42f",
+  "keyQuotes": [
+    "We found that fine-tuning open models can exceed or match frontier models.",
+    "Fine-tuned models match frontier accuracy and are much cheaper to run at scale - 10-100x depending on trace volume and model choice.",
+    "Open models have crossed an intelligence threshold and are now strong out-of-the-box cost-effective classifiers for many tasks."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "By fine-tuning a Qwen-3.5-35B model with LoRA SFT, LangChain achieved accuracy comparable to or exceeding GPT-4 and Claude Opus on both in-domain and out-of-domain datasets.",
+      "point": "A fine-tuned Qwen model can match frontier model performance on the 'Perceived Error' classification task."
+    },
+    {
+      "explanation": "The cost savings are significant, especially as trace volumes grow. The fine-tuned model's lower inference cost enables processing every production trace, not just a sample.",
+      "point": "The fine-tuned model is 10-100x cheaper to serve than frontier models, making it viable for high-volume trace analysis."
+    },
+    {
+      "explanation": "A model trained solely on chat-langchain data transferred effectively to the Fleet dataset, outperforming all frontier models. This suggests the signal is universal and not application-specific.",
+      "point": "The 'Perceived Error' judge generalizes well across different agent applications."
+    },
+    {
+      "explanation": "The team hypothesized that the key signals for perceived error are in the conversational turns, not the tool calls. This choice simplified the input and proved effective.",
+      "point": "The data preparation process prioritized human and AI messages over tool calls for the classification task."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "LangChain partnered with Fireworks to fine-tune a Qwen model as a 'Perceived Error' judge for production traces, achieving frontier-level accuracy at up to 100x lower cost.",
+  "originalTitle": "Building a 100x Cheaper Trace Judge with Fireworks",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-15",
+  "publishDateTimeStr": "2026-06-15 08:00:00",
+  "publishTimeStamp": 1781481600000,
+  "qualified": false,
+  "readCount": 19,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/d92ae42f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_88bf28",
+  "sourceImage": "https://image.jido.dev/20260527045328_69a17e4a429d54e956e2a763_favicon.png",
+  "sourceName": "LangChain Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article details a collaboration between LangChain and Fireworks to build a cost-effective 'Trace Judge' for mining signals from production agent traces. The core idea is to detect 'Perceived Error'—when a user believes the assistant made a mistake—a general-purpose signal applicable across applications. The team fine-tuned a Qwen-3.5-35B model using LoRA SFT on Fireworks, training it on data from one internal dataset (chat-langchain) and testing its transferability to another (Fleet). Results show the fine-tuned model matches or exceeds frontier models (like GPT-4 and Claude Opus) in accuracy, while being 10-100x cheaper to serve. The article also discusses the data preparation process, the use of model-assisted labeling with human review, and future research directions for trace understanding and continual learning.",
+  "tags": [
+    "LLM",
+    "AI Agent",
+    "Fine-Tuning",
+    "Model Evaluation",
+    "AI Engineering"
+  ],
+  "title": "Building a 100x Cheaper Trace Judge with Fireworks",
+  "translateContent": null,
+  "url": "https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks",
+  "wordCount": 1376
+}

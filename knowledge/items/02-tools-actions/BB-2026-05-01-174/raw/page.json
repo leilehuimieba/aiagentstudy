@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T406d8e9c31234bd1b2bf69367fb7f644",
+  "data": {
+    "metaData": {
+      "id": "RAW_36e502e0",
+      "notExist": null,
+      "originalTitle": "Building a safe， effective sandbox to enable Codex on Windows",
+      "title": "Building a safe， effective sandbox to enable Codex on Windows",
+      "oneSentenceSummary": "This article details the engineering journey of building a custom sandbox for Codex on Windows, from an initial unelevated prototype using SIDs and write-restricted tokens to a final elevated design that leverages dedicated Windows users and firewall rules for robust network isolation.",
+      "summary": "This engineering blog post from OpenAI describes the process of implementing a secure and effective sandbox for their coding agent, Codex, on the Windows operating system. The author explains that Windows lacked a suitable out-of-the-box isolation primitive for an open-ended agentic workload, leading them to evaluate and reject options like AppContainer, Windows Sandbox, and Mandatory Integrity Control. The first prototype, an 'unelevated sandbox,' used synthetic SIDs and write-restricted tokens to control file writes and environment variables to limit network access. While functional, its network suppression was merely advisory and easily bypassed. To achieve strong network isolation, the team redesigned the sandbox to require an elevated setup step. The final 'elevated sandbox' creates dedicated Windows users (CodexSandboxOffline/Online) and applies Windows Firewall rules to them, alongside a dedicated command-runner binary to spawn restricted processes. The post highlights the trade-offs between safety and usability, and the necessity of composing multiple Windows primitives to build a coherent solution for a coding agent.",
+      "featuredReason": "Windows has no native sandbox primitive, which left Codex with two bad options at launch: approve every command or grant full access. OpenAI's team iterated from a non-elevated prototype to an elevated design — isolating Codex in a dedicated user account, then layering firewall rules to seal off network egress, ending up with macOS-sandbox-level enforcement without crushing the dev experience. The piece walks through exactly why path one failed and how path two worked. A rare reference for safe agent execution on Windows.",
+      "translateContent": null,
+      "tags": [
+        "Codex",
+        "Windows Sandbox",
+        "Security",
+        "Software Engineering",
+        "Agentic Workflows"
+      ],
+      "mainPoints": [
+        {
+          "point": "Windows lacks a single, suitable isolation primitive for open-ended agentic workloads like Codex.",
+          "explanation": "Existing tools like AppContainer are too restrictive for arbitrary developer workflows, Windows Sandbox is a separate VM disconnected from the user's environment, and MIC labeling creates broad, risky semantic changes to the host filesystem."
+        },
+        {
+          "point": "The first 'unelevated' prototype used SIDs and write-restricted tokens for file control but had weak, advisory-only network suppression.",
+          "explanation": "This design used synthetic SIDs in ACLs and write-restricted tokens to precisely define writable directories. Network access was limited via environment variables (e.g., HTTPS_PROXY), which could be easily ignored by processes that don't honor them or use raw sockets."
+        },
+        {
+          "point": "The final 'elevated' design achieves strong network isolation by creating dedicated Windows users and applying firewall rules to them.",
+          "explanation": "By relaxing the 'no elevation' constraint, the team created CodexSandboxOffline and CodexSandboxOnline users. Windows Firewall rules block all outbound traffic for the offline user, providing a robust security boundary that the unelevated approach could not."
+        },
+        {
+          "point": "The complexity of the final system is justified by the necessity of balancing safety with the usability requirements of a coding agent.",
+          "explanation": "The final architecture includes multiple binaries (setup, command-runner), custom users, firewall rules, and asynchronous ACL application. Each piece of complexity was added to solve a specific problem without compromising the agent's ability to work effectively on real developer workflows."
+        }
+      ],
+      "keyQuotes": [
+        "Codex is not one tightly scoped app. It drives open-ended developer workflows: shells, Git, Python, package managers, build tools, and whatever other binaries the agent decides it needs.",
+        "Windows did not hand us one primitive that cleanly maps to 'safe autonomous coding agent.' We composed several tools and concepts to build something coherent.",
+        "It's not a particularly simple system, but each piece of complexity was added out of necessity, to build a sandbox that is both safe and, as much as possible, not in the user's way.",
+        "The other lesson was that security for a coding agent is a different beast than more classic application security."
+      ],
+      "url": "https://openai.com/index/building-codex-windows-sandbox",
+      "readUrl": "https://www.bestblogs.dev/article/36e502e0",
+      "enclosureUrl": null,
+      "domain": "openai.com",
+      "cover": "https://image.jido.dev/20260513184333_SEO_images.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_8749b9",
+      "sourceName": "OpenAI Blog",
+      "priority": "HIGH",
+      "sourceImage": "/openai.png",
+      "mainDomain": "Programming_Technology",
+      "mainDomainDesc": "Programming",
+      "aiSubCategory": "SE_PRACTICE",
+      "aiSubCategoryDesc": "Engineering Practice",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 93,
+      "readCount": 520,
+      "wordCount": 3275,
+      "readTime": 14,
+      "mediaDuration": null,
+      "authors": [
+        "OpenAI"
+      ],
+      "publishTimeStamp": 1778803200000,
+      "publishDateStr": "Yesterday",
+      "publishDateTimeStr": "2026-05-15 00:00:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_125e9e71",
+        "type": "ARTICLE",
+        "title": "GPT-5.5 Instant: smarter, clearer, and more personalized",
+        "oneSentenceSummary": "OpenAI releases GPT-5.5 Instant as the new default ChatGPT model, delivering significant improvements in factuality, conciseness, and personalization through better context usage and new memory controls.",
+        "url": "https://openai.com/index/gpt-5-5-instant",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_504ce725",
+        "type": "ARTICLE",
+        "title": "Harness design for long-running application development",
+        "oneSentenceSummary": "This article explores Anthropic's multi-agent harness design (Planner, Generator, Evaluator) for long-running autonomous coding, detailing how to overcome context anxiety and self-evaluation bias to build complex full-stack applications.",
+        "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_1369401",
+        "type": "VIDEO",
+        "title": "Andrej Karpathy on Code Agents， AutoResearch， and the Loopy Era of AI",
+        "oneSentenceSummary": "Andrej Karpathy explores the paradigm shift from manual programming to agent orchestration, the automation of AI research, and the profound implications for software engineering and education.",
+        "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+        "sourceName": "No Priors"
+      },
+      {
+        "id": "RAW_862b9f1",
+        "type": "VIDEO",
+        "title": "Martin Fowler & Kent Beck: Frameworks for reinventing software， again and again",
+        "oneSentenceSummary": "Software legends Martin Fowler and Kent Beck discuss how AI redefines software engineering, emphasizing that core practices like TDD and modularity remain essential for human-AI collaboration.",
+        "url": "https://www.youtube.com/watch?v=CZs8J1ZD0CE",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_a6d9083a",
+        "type": "ARTICLE",
+        "title": "Introducing GPT-5.5",
+        "oneSentenceSummary": "OpenAI releases GPT-5.5, its most capable model yet, with significant gains in agentic coding, knowledge work, and scientific research, while maintaining GPT-5.4 latency and improving token efficiency.",
+        "url": "https://openai.com/index/introducing-gpt-5-5",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_6daee900",
+        "type": "ARTICLE",
+        "title": "Advancing voice intelligence with new models in the API",
+        "oneSentenceSummary": "OpenAI introduces three new audio models in the API—GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper—to enable more intelligent, natural, and actionable real-time voice applications for developers.",
+        "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_d8c375d8",
+        "type": "ARTICLE",
+        "title": "Codex for (almost) everything",
+        "oneSentenceSummary": "OpenAI announces a major update to Codex, expanding its capabilities beyond coding to include computer operation, web interaction, image generation, and deeper integration across the software development lifecycle with new features like memory, automations, and over 90 plugins.",
+        "url": "https://openai.com/index/codex-for-almost-everything",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_a647d6a",
+        "type": "VIDEO",
+        "title": "State of the Claw",
+        "oneSentenceSummary": "OpenClaw founder and OpenAI engineer Peter Steinberger discusses the unprecedented growth and security challenges of the OpenClaw project, shares his unique AI-assisted development workflow, and explores the evolving concept of 'engineer taste' in the AI era.",
+        "url": "https://www.youtube.com/watch?v=zgNvts_2TUE",
+        "sourceName": "AI Engineer"
+      },
+      {
+        "id": "RAW_e792cb18",
+        "type": "ARTICLE",
+        "title": "Introducing workspace agents in ChatGPT",
+        "oneSentenceSummary": "OpenAI introduces workspace agents, a new class of shared, long-running AI agents within ChatGPT for business teams, designed to automate complex workflows, integrate with organizational tools, and operate under enterprise-grade controls.",
+        "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+        "sourceName": "OpenAI Blog"
+      }
+    ]
+  }
+}

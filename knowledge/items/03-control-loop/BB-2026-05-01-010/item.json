@@ -1,0 +1,68 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Evaluation/Guardrails",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-30",
+  "id": "BB-2026-05-01-010",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-010/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-010",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-010/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-010/raw/extract.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-010/raw/source-links.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-010/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-010/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Simon Willison",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Simon Willison",
+  "status": "Full text + source captured",
+  "tags": [
+    "Codex CLI",
+    "OpenAI",
+    "AI 编码智能体",
+    "Ralph 循环",
+    "自主编码"
+  ],
+  "title": "Codex CLI 0.128.0 新增 /goal 命令",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://ghuntley.com/ralph/",
+      "https://github.com/openai/codex/blob/6014b6679ffbd92eeddffa3ad7b4402be6a7fefe/codex-rs/core/templates/goals/budget_limit.md",
+      "https://github.com/openai/codex/blob/6014b6679ffbd92eeddffa3ad7b4402be6a7fefe/codex-rs/core/templates/goals/continuation.md",
+      "https://github.com/openai/codex/releases/tag/rust-v0.128.0",
+      "https://simonwillison.net/2026/Apr/30/codex-goals/#atom-everything",
+      "https://www.bestblogs.dev/article/5de75aba"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://simonwillison.net/2026/Apr/30/codex-goals/#atom-everything",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/5de75aba"
+  }
+}

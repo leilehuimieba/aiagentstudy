@@ -1,0 +1,78 @@
+{
+  "id": "RAW_8d048f58",
+  "notExist": null,
+  "originalTitle": "阶跃开源 Step 3.7 Flash：面向生产级 Agent 的高效率 Flash 模型",
+  "title": "Step 3.7 Flash: A High-Efficiency Flash Model for Production-Grade Agents",
+  "oneSentenceSummary": "StepFun has released and open-sourced the Step 3.7 Flash model, a high-efficiency multimodal model designed for production-grade agents. It features a 196B MoE architecture with only 11B activated parameters, a maximum generation speed of 400 Tokens/s, and native multimodal understanding with highly reliable tool calling capabilities.",
+  "summary": "StepFun has officially released and open-sourced the Step 3.7 Flash model, which is specifically designed for production-grade agent scenarios. Key features include: a sparse MoE architecture with 196B total parameters + 1.8B ViT, with only 11B activated parameters, achieving a balance between model capability and inference efficiency; a maximum generation speed of 400 Tokens/s, suitable for high-frequency, multi-turn agent applications; native multimodal understanding capabilities for processing complex visual inputs such as UI, charts, and documents; enhanced web search and visual search capabilities; and excellent tool calling performance, supporting highly reliable calling and orchestration of external systems like APIs, browsers, and terminals. The model has been adapted to mainstream agent frameworks including Claude Code, OpenClaw, and Hermes Agent, supports MCP/Skills protocols, and is available on the ModelScope community. The article also provides a detailed deployment guide, covering multiple deployment methods such as API calls, vLLM, SGLang, llama.cpp, and Transformers.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "StepFun",
+    "Step 3.7 Flash",
+    "MoE",
+    "Multimodal",
+    "Agent"
+  ],
+  "mainPoints": [
+    {
+      "point": "Step 3.7 Flash adopts a 196B MoE architecture with only 11B activated parameters, enabling efficient inference.",
+      "explanation": "Through the sparse MoE architecture, the model maintains a total parameter capacity of 196B while activating only 11B parameters per inference, achieving a maximum generation speed of 400 Tokens/s, striking a balance between capability and efficiency."
+    },
+    {
+      "point": "The model is systematically optimized for production-grade agent scenarios, including multimodal understanding, search enhancement, and tool calling.",
+      "explanation": "The model features native multimodal understanding capabilities, processing complex visual information such as UI and charts; enhanced web and visual search support cross-referencing evidence from multiple sources across text and images; and stable calling of external systems like APIs, browsers, and terminals in multi-turn agent workflows."
+    },
+    {
+      "point": "The model is adapted to mainstream agent frameworks and tool calling protocols, lowering the barrier to integration.",
+      "explanation": "Step 3.7 Flash is compatible with frameworks like Claude Code, OpenClaw, and Hermes Agent, supports MCP/Skills protocols, and offers multiple deployment methods (vLLM, SGLang, llama.cpp, etc.), making it easy for developers to integrate quickly."
+    }
+  ],
+  "keyQuotes": [
+    "The next phase of model competition is not just about peak intelligence, but about scalable, efficient intelligence.",
+    "As agents move from demos to real production environments, models must not only answer questions but also understand complex inputs, proactively search for information, reliably call tools, and maintain execution trajectories across multi-turn tasks.",
+    "Step 3.7 Flash adopts a sparse MoE architecture with 196B+1.8B (ViT) total parameters and only 11B activated parameters, achieving a better balance between model capability, inference cost, and execution efficiency."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247508732&idx=1&sn=b5bc6194d730d7fd80df705c7074bd01",
+  "readUrl": "https://www.bestblogs.dev/article/8d048f58",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045451_592a693d",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_fdd993",
+  "sourceName": "魔搭ModelScope社区",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045451_592a693d",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "MODELS",
+  "aiSubCategoryDesc": "AI Models",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 15,
+  "wordCount": 2318,
+  "readTime": 10,
+  "mediaDuration": null,
+  "authors": [
+    "魔搭ModelScope社区"
+  ],
+  "publishTimeStamp": 1780041600000,
+  "publishDateStr": "05-29",
+  "publishDateTimeStr": "2026-05-29 16:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

@@ -1,0 +1,84 @@
+# Source Evidence
+
+- Title: An Interview with OpenAI CEO Sam Altman and AWS CEO Matt ...
+- BestBlogs URL: https://www.bestblogs.dev/en/article/b1d37621
+- Original publisher URL: https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/
+- Original link text: View Source →
+
+## Captured Page Metadata
+
+- Browser title: An Interview with OpenAI CEO Sam Altman and AWS CEO Matt ...
+- Description: OpenAI CEO Sam Altman and AWS CEO Matt Garman discuss the new Bedrock Managed Agents partnership, the strategic shift in the Microsoft-OpenAI agreement, and ...
+- Date: 2026-04-28
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- My Brief: https://www.bestblogs.dev/en/reading/brief
+- My Following: https://www.bestblogs.dev/en/reading/follow
+- For You: https://www.bestblogs.dev/en/reading/feed
+- Explore: https://www.bestblogs.dev/en/explore
+- Daily Brief: https://www.bestblogs.dev/en/explore/brief
+- Weekly Picks: https://www.bestblogs.dev/en/explore/newsletter
+- Topics: https://www.bestblogs.dev/en/explore/topics
+- Sources: https://www.bestblogs.dev/en/explore/sources
+- Reading History: https://www.bestblogs.dev/en/library/history
+- My Bookmarks: https://www.bestblogs.dev/en/library/bookmarks
+- My Notes: https://www.bestblogs.dev/en/library/highlights
+- My Reviews: https://www.bestblogs.dev/en/library/review
+- Settings: https://www.bestblogs.dev/en/settings
+- Help Center: https://www.bestblogs.dev/en/docs
+- Stratechery by Ben Thompson: https://www.bestblogs.dev/articles?sourceid=581c2bce
+- View Source →: https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/
+- OpenAI CEO Sam Altman: https://x.com/sama
+- AWS CEO Matt Garman: https://x.com/mattsgarman
+- Bedrock Managed Agents, powered by OpenAI: https://www.aboutamazon.com/news/aws/bedrock-openai-models
+- Microsoft and OpenAI announced they had amended their agreement: https://openai.com/index/next-phase-of-microsoft-partnership/
+- Microsoft’s post: https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/
+- I’ve been noting for a while that this was a real competitive advantage for Anthropic: https://stratechery.com/2025/opus-4-5-and-anthropics-aligned-enterprise-strategy-chatgpt-shopping-research-meta-to-use-tpus/
+- also releasing Microsoft from the AGI clause: https://www.theinformation.com/briefings/microsoft-gives-exclusive-rights-sell-openai-models-companies-scrap-agi-clause-agreement
+- AWS and Startups: https://www.bestblogs.dev/en/article/b1d37621#aws-startups
+- Bedrock Managed Agents: https://www.bestblogs.dev/en/article/b1d37621#bedrock-managed-agents
+- Local vs. Cloud: https://www.bestblogs.dev/en/article/b1d37621#local-cloud
+- AgentCore vs. Managed Agents: https://www.bestblogs.dev/en/article/b1d37621#agentcore
+- Trainium: https://www.bestblogs.dev/en/article/b1d37621#trainium
+- Customer Demand: https://www.bestblogs.dev/en/article/b1d37621#customer-demand
+- Building the AI Stack: https://www.bestblogs.dev/en/article/b1d37621#ai-stack
+- October 2025: https://stratechery.com/2025/an-interview-with-openai-ceo-sam-altman-about-devday-and-the-ai-buildout/
+- March 2025: https://stratechery.com/2025/an-interview-with-openai-ceo-sam-altman-about-building-a-consumer-tech-company/
+- February 2023: https://stratechery.com/2023/new-bing-and-an-interview-with-kevin-scott-and-sam-altman-about-the-microsoft-openai-partnership/
+- you were the only one: https://stratechery.com/2015/the-aws-ipo/
+- the inference era: https://stratechery.com/2024/aws-reinvent-nova-and-model-choice-ai-as-commodity/
+- from the startup ecosystem perspective, when you look back, obviously AWS, transformational: https://stratechery.com/2015/venture-capital-and-the-internets-impact/
+- colo[cation] space: https://en.wikipedia.org/wiki/Colocation_centre
+- the harness: https://stratechery.com/2026/agents-over-bubbles/
+- Homebrew Computer Club: https://en.wikipedia.org/wiki/Homebrew_Computer_Club
+- I wrote about this a few weeks ago: https://stratechery.com/2026/agents-over-bubbles/
+- Virtual Private Cloud: https://aws.amazon.com/vpc/
+- with BBEdit: https://www.barebones.com/products/bbedit/
+- zero trust: https://stratechery.com/2020/zero-trust-information/
+- through AgentCore: https://aws.amazon.com/bedrock/agentcore/
+- on Trainium: https://aws.amazon.com/ai/machine-learning/trainium/
+- our model that just came out: https://openai.com/index/introducing-gpt-5-5/
+- Stateful Runtime Environment: https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/
+- OpenAI Frontier: https://stratechery.com/2026/openais-memos-frontier-amazon-and-anthropic/
+- last time: https://stratechery.com/2023/new-bing-and-an-interview-with-kevin-scott-and-sam-altman-about-the-microsoft-openai-partnership/
+- Thomas Kurian talking about: https://stratechery.com/2026/an-interview-with-google-cloud-ceo-thomas-kurian-about-the-agentic-moment/
+- visit Stratechery: https://stratechery.passport.online/member
+- Facebook: https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/?share=facebook
+- X: https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/?share=twitter
+- LinkedIn: https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/?share=linkedin
+- Email: mailto:?subject=%5BShared%20Post%5D%20An%20Interview%20with%20OpenAI%20CEO%20Sam%20Altman%20and%20AWS%20CEO%20Matt%20Garman%20About%20Bedrock%20Managed%20Agents&body=https%3A%2F%2Fstratechery.com%2F2026%2Fan-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents%2F&share=email
+- An Interview with Nvidia CEO Jensen Huang About Accelerated Computing: https://www.bestblogs.dev/en/article/0324570f?entry=related_article
+- This is ChatGPT Images 2.0: https://www.bestblogs.dev/en/video/f12b487?entry=related_article
+- Apple’s 50 Years of Integration: https://www.bestblogs.dev/en/article/aa2500bc?entry=related_article
+- Mythos, Muse, and the Opportunity Cost of Compute: https://www.bestblogs.dev/en/article/720fc0ca?entry=related_article
+- Tim Cook’s Impeccable Timing: https://www.bestblogs.dev/en/article/610cf46a?entry=related_article
+- OpenAI Launches GPT-5.3-Codex: https://www.bestblogs.dev/en/status/2019474152743223477?entry=related_article
+- OpenAI Launches GPT-5.4 with Native Computer Use and 1M Context: https://www.bestblogs.dev/en/status/2029622732594499630?entry=related_article
+- An Interview with Arm CEO Rene Haas About Selling Chips: https://www.bestblogs.dev/en/article/980a6933?entry=related_article
+- Introducing GPT-5.5: https://www.bestblogs.dev/en/article/a6d9083a?entry=related_article
+- OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents: https://www.bestblogs.dev/en/status/2047376561205325845?entry=related_article
+- Reading: https://www.bestblogs.dev/en/reading/brief
+- Explore: https://www.bestblogs.dev/en/explore
+- Me: https://www.bestblogs.dev/en/settings

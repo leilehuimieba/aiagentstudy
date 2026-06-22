@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Context/State",
+    "Evaluation",
+    "Memory"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "09-21",
+  "id": "BB-2026-05-01-309",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-309/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-309",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-309/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-309/raw/meta.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-309/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-309/summary.md"
+  },
+  "schema_version": 1,
+  "source": "OpenReview",
+  "source_id": "openreview",
+  "source_name": "OpenReview",
+  "status": "Abstract + key excerpts + source captured",
+  "tags": [
+    "reflection",
+    "verbal-rl",
+    "episodic-memory",
+    "retry",
+    "failure-recovery"
+  ],
+  "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+  "topic": "03-control-loop",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://openreview.net/forum?id=vAElhFcKW6"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://openreview.net/forum?id=vAElhFcKW6",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

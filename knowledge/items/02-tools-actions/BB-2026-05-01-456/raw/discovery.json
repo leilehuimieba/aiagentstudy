@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "腾讯科技"
+  ],
+  "candidateSource": null,
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_1eca19ba",
+  "keyQuotes": [
+    "What is being sold is shifting from 'you can use this' to 'this task has been completed.'",
+    "Token is the underlying cost, Action is the business step, and Outcome is the completed deliverable that can be paid for.",
+    "When the pricing model for AI shifts from 'paying for capability' to 'paying for completion,' the price tag of AI software increasingly resembles a 'list of responsibilities.'",
+    "Outcome-based AI is more like a general contractor: it doesn't necessarily produce every part, but it must organize people, processes, tools, rules, and verification to ultimately deliver a piece of work that can be signed off on."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Fin charges $0.99 per resolved customer issue, not per conversation or token consumption, marking a shift for AI software from selling tools to selling completed work.",
+      "point": "AI pricing is evolving from per-token/call volume to pay-per-outcome, with Intercom's Fin as a typical case."
+    },
+    {
+      "explanation": "The boundary of 'completion' varies by scenario, requiring logs and process records to prove AI's contribution. Cost calculation involves complexities like multiple issues or handoffs to humans, and responsibility attribution is key to determining if AI can truly become a 'supplier.'",
+      "point": "Pay-per-outcome requires solving four core issues: defining completion, proving contribution, calculating costs, and allocating responsibility."
+    },
+    {
+      "explanation": "Committing to outcome delivery requires integrating infrastructure like knowledge bases, ticketing systems, and approval workflows. AI acts more like a general contractor than a single tool, needing a deep understanding of industry processes and rules.",
+      "point": "Outcome-based AI will make software 'heavier,' evolving from a toolbox into an execution system."
+    },
+    {
+      "explanation": "Scenarios like customer service, content moderation, and reconciliation are better suited for outcome-based pricing than strategic consulting or investment due diligence. The difficulty lies not in AI capability but in designing the transaction structure.",
+      "point": "Applicable scenarios for pay-per-outcome require conditions like high frequency, clear boundaries, verifiable outcomes, and controllable risks."
+    },
+    {
+      "explanation": "Chinese companies tend to embed outcome-based fees within sales and delivery contracts, which can slow the diffusion of this new pricing model. The transition from project to product is a key watershed.",
+      "point": "The Chinese market may initially adopt project-based contracts and performance-based payments rather than standardized price pages."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article deeply analyzes the evolution of AI pricing models from per-token/call volume to pay-per-outcome, using Intercom's Fin, which charges $0.99 per resolved customer issue, as a case study to explore four core issues of outcome-based pricing, applicable scenarios, and its implications for the Chinese market.",
+  "originalTitle": "“Token 经济”进入结果层",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-08 08:40:00",
+  "publishTimeStamp": 1780879200000,
+  "qualified": false,
+  "readCount": 41,
+  "readTime": 22,
+  "readUrl": "https://www.bestblogs.dev/article/1eca19ba",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_b475c7",
+  "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+  "sourceName": "腾讯科技",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is the 11th installment of the \"Token Economics\" series, focusing on a key shift in AI software business models: from selling accounts and API calls to selling \"completed tasks.\" Using Intercom's AI customer service bot Fin, which charges $0.99 per resolved customer issue, as a starting point, the article systematically deconstructs four core issues behind the \"pay-per-outcome\" model: how to define \"completion,\" how to prove contribution, how to calculate costs, and how to allocate responsibility. The author points out that outcome-based AI will make software \"heavier\" because it requires integrating processes, tools, rules, and verification mechanisms, evolving from a toolbox into an execution system. The article also analyzes the applicable boundaries of this model (high-frequency, clearly defined boundaries, verifiable outcomes) and its unique path in the Chinese market, which may initially appear in non-standardized forms like project-based contracts or performance-based payments. Finally, the article connects the three pricing layers of Token, Action, and Outcome, noting that the price tag is shifting from \"paying for capability\" to a \"list of responsibilities.\"",
+  "tags": [
+    "AI Commercialization",
+    "AI Products & Applications",
+    "AI Agent",
+    "SaaS",
+    "Business Models & Strategy"
+  ],
+  "title": "\"Token Economy\" Enters the Outcome Layer",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569039&idx=1&sn=800b2c88efe0d1f5ebb8db1fc0be6cc0",
+  "wordCount": 5425
+}

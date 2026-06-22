@@ -1,0 +1,79 @@
+{
+  "id": "RAW_66368033",
+  "notExist": null,
+  "originalTitle": "DuckDB Quack: Client/Server Protocol over HTTP for Multi-User Analytics",
+  "title": "DuckDB Quack: Client/Server Protocol over HTTP for Multi-User Analytics",
+  "oneSentenceSummary": "DuckDB announces Quack, a new client/server protocol over HTTP that enables multi-user, remote analytics while maintaining its lightweight, embedded database workflow.",
+  "summary": "DuckDB has announced Quack, a new remote protocol over HTTP that allows multiple DuckDB instances to connect to and work with the same database over a network, introducing client-server capabilities to a previously local and embedded database. Quack is designed to be simpler and faster than existing approaches like Arrow Flight SQL, claiming to move large datasets about 3.5× faster. It supports concurrent users, remote analytics, and production-style data services without switching to a heavier database system. The protocol uses DuckDB's native data format and can send a query and return results in a single network round trip for small queries. The Hacker News and Reddit communities responded positively, viewing it as a key step toward shared, multi-user analytics. DuckDB plans to integrate Quack with DuckLake and ship a production-ready release with DuckDB 2.0 later in 2026. The recently released DuckDB v1.5.3 supports Quack as an autoloadable core extension.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "DuckDB",
+    "Quack",
+    "Client/Server Protocol",
+    "Analytics Database",
+    "HTTP"
+  ],
+  "mainPoints": [
+    {
+      "point": "DuckDB introduces Quack, a client/server protocol over HTTP for multi-user analytics.",
+      "explanation": "Quack allows multiple DuckDB instances to connect to the same database remotely, enabling shared datasets, concurrent users, and production-style data services while keeping DuckDB's lightweight workflow."
+    },
+    {
+      "point": "Quack is designed to be simpler and faster than existing protocols like Arrow Flight SQL.",
+      "explanation": "DuckDB claims Quack moves large datasets about 3.5× faster than Arrow Flight and significantly faster than PostgreSQL, and can return results in a single network round trip for small queries."
+    },
+    {
+      "point": "The protocol is a key step toward distributed DuckDB, with plans for DuckLake integration and production release in DuckDB 2.0.",
+      "explanation": "DuckDB plans to integrate Quack with DuckLake, improve performance, and ship a production-ready release with DuckDB 2.0 later in 2026, along with support for remote databases and replication."
+    }
+  ],
+  "keyQuotes": [
+    "With Quack, DuckDB can now be useful in a wide range of new use cases, where centralizing state is more important than hyper-local querying.",
+    "We feel that in order to be able to keep innovating in data systems, we cannot allow ourselves to be restricted by formats that are controlled externally.",
+    "Being able to spin up DuckDB on a server and have people talk to it remotely like a 'normal' DB will be such a big unlock.",
+    "When you combine that with object storage, DuckLake, Parquet, and vector databases, you get a very pragmatic architecture for modern AI and data engineering."
+  ],
+  "url": "https://www.infoq.com/news/2026/05/duckdb-quack-protocol/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "readUrl": "https://www.bestblogs.dev/article/66368033",
+  "enclosureUrl": null,
+  "domain": "infoq.com",
+  "cover": "https://res.infoq.com/news/2026/05/duckdb-quack-protocol/en/headerimage/generatedHeaderImage-1779460941997.jpg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_TOOLS",
+  "aiSubCategoryDesc": "Open Source & Tools",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 26,
+  "wordCount": 679,
+  "readTime": 3,
+  "mediaDuration": null,
+  "authors": [
+    "Renato Losio"
+  ],
+  "publishTimeStamp": 1780226220000,
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-05-31 19:17:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

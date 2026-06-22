@@ -20,3 +20,10 @@
 - perceptually uniform: https://programmingdesignsystems.com/color/perceptually-uniform-color-spaces/
 - CIE LAB: https://en.wikipedia.org/wiki/CIELAB_color_space
 - Hue Chroma Luminance (HCL): https://en.wikipedia.org/wiki/HCL_color_space
+
+## Access Note
+
+- Repair pass date: 2026-05-05
+- Original publisher access status: member-only / access-restricted
+- Direct original fetch result during repair: HTTP 403 challenge page
+- Capture integrity note: `article.md` preserves only the visible excerpt exposed through BestBlogs, not the full original article

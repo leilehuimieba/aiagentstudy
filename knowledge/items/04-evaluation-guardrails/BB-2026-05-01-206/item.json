@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-11",
+  "id": "BB-2026-05-01-206",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-206/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-206",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-206/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-206/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-206/raw/display-document.html",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-206/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-206/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-206/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 人人都是产品经理",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 人人都是产品经理",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "Productization",
+    "Evaluation Framework",
+    "User Experience",
+    "Engineering Practice"
+  ],
+  "title": "Why AI Agents Still Fail in Production in 2026: Great Demos, Terrible Deployments",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651927178&idx=3&sn=a9dda91afa6233d8494c78aa3be74daa",
+      "https://www.bestblogs.dev/en/article/641f805f"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651927178&idx=3&sn=a9dda91afa6233d8494c78aa3be74daa",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/641f805f"
+  }
+}

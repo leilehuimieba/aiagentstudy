@@ -1,0 +1,84 @@
+{
+  "id": "RAW_51b98efd",
+  "notExist": null,
+  "originalTitle": "Slack AI: The Path to Multi-Cloud",
+  "title": "Slack AI: The Path to Multi-Cloud",
+  "oneSentenceSummary": "Slack Engineering details its multi-year journey from AWS SageMaker to a multi-cloud AI architecture on AWS Bedrock and GCP Vertex AI, driven by the need for operational efficiency, model agility, and enterprise-grade reliability.",
+  "summary": "This article chronicles Slack AI's architectural evolution over three years, moving through four distinct phases to achieve a multi-cloud, multi-model AI serving platform. Starting with AWS SageMaker, the team faced operational overhead and model feature lag. They migrated to Amazon Bedrock for managed simplicity and immediate model access, but encountered efficiency gaps with Provisioned Throughput. This led to a hybrid strategy combining Provisioned and On-Demand capacity, and the development of an intelligent routing layer with model hierarchies and circuit breakers. The final phase expanded to Google Cloud's Vertex AI, creating a true multi-cloud footprint for infrastructural redundancy, model-to-feature optimization, and access to innovation. The article details the technical challenges, trade-offs, and engineering solutions at each stage, emphasizing the importance of abstraction layers, gradual migration, and cross-functional alignment.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Multi-Cloud",
+    "AI Infrastructure",
+    "AWS Bedrock",
+    "GCP Vertex AI",
+    "LLM Serving"
+  ],
+  "mainPoints": [
+    {
+      "point": "Slack's AI infrastructure evolved from self-managed SageMaker to a multi-cloud architecture for better efficiency and model access.",
+      "explanation": "The journey moved through four phases: SageMaker, Bedrock Provisioned Throughput, Bedrock On-Demand, and finally a multi-cloud strategy with GCP Vertex AI, each solving specific operational and agility challenges."
+    },
+    {
+      "point": "A hybrid strategy using both Provisioned and On-Demand capacity optimizes cost and performance for variable workloads.",
+      "explanation": "High-volume, latency-sensitive features use dedicated Provisioned Throughput, while bursty workloads use On-Demand. A spillover pattern ensures no requests are dropped during surges."
+    },
+    {
+      "point": "An intelligent routing layer with circuit breakers and model hierarchies is critical for multi-cloud resilience.",
+      "explanation": "This layer uses real-time metrics to select the best model/provider, automatically reroutes traffic during degradation, and enables seamless A/B testing of new models."
+    },
+    {
+      "point": "Multi-cloud architecture provides redundancy, model-to-feature optimization, and access to vendor-exclusive innovations.",
+      "explanation": "By expanding to GCP, Slack eliminated single points of failure, achieved a 10% quality improvement and 67% latency reduction for specific tasks, and gained strategic flexibility."
+    }
+  ],
+  "keyQuotes": [
+    "We didn't just want shiny new models; we needed a system resilient to regional outages and GPU scarcity.",
+    "The most critical decision wasn't which model to use, but how we built the logic around them.",
+    "An LLM service that is 'up' but slow is effectively broken.",
+    "The future of enterprise AI is multi-cloud, multi-model, and dynamically orchestrated.",
+    "Measure first, migrate gradually, and monitor continuously."
+  ],
+  "url": "https://slack.engineering/slack-ai-the-path-to-multi-cloud/",
+  "readUrl": "https://www.bestblogs.dev/article/51b98efd",
+  "enclosureUrl": null,
+  "domain": "slack.engineering",
+  "cover": "https://slack.engineering/wp-content/uploads/sites/7/2026/05/pexels-photograph-6732010.jpg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_b80386",
+  "sourceName": "Slack Engineering",
+  "priority": "LOW",
+  "sourceImage": "https://image.jido.dev/20260527051830_cropped-octothrope-1.png",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 21,
+  "wordCount": 3263,
+  "readTime": 14,
+  "mediaDuration": null,
+  "authors": [
+    "Shaurya Kethireddy"
+  ],
+  "publishTimeStamp": 1779977720000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 22:15:20",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

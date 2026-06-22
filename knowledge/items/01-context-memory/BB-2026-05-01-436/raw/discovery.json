@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "杜晨"
+  ],
+  "candidateSource": null,
+  "category": "News_Media",
+  "categoryDesc": "News & Media",
+  "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/img_6a264fcce431f.png",
+  "domain": "ifanr.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_7db52531",
+  "keyQuotes": [
+    "There are still gaps between models, but what truly separates model companies is no longer the model itself, but the shell wrapped around it.",
+    "A minimalist framework nurtured a model with excellent compliance, while a highly constrained framework bred a 'black swan'.",
+    "Everything about agents is in this paper. If one paper can explain it all, what barrier is there?",
+    "Agents and models have a trade-off relationship. If your agent is powerful enough, it can squeeze out the model's potential; conversely, if the model is powerful enough, the agent doesn't need to be particularly complex.",
+    "We are moving from forcing models and agents to work with us, to being able to think more deeply about our work, abstracting and pattern-recognizing it to form skills and norms—everyone becomes more senior."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The article points out that the gap between models is narrowing; what truly differentiates them is the 'shell' wrapped around the model, i.e., the scaffolding. In the leaked Claude Code code, only 1.6% involved model decisions; the rest was harness code for managing permissions, context, and error handling.",
+      "point": "The core of Agent engineering has shifted from model capability to scaffolding."
+    },
+    {
+      "explanation": "This architecture is managed via a state machine, separating execution and verification responsibilities and achieving context isolation. It aims to solve context pollution and Agent collusion in long-horizon tasks, allowing users to intervene and adjust at any time.",
+      "point": "MiniMax's Agent Team adopts a Leader-Worker-Verifier adversarial architecture."
+    },
+    {
+      "explanation": "Anthropic distrusts the model and uses a strongly constrained framework, leading to a 'black swan' effect; OpenAI uses a minimalist agentic loop paired with highly compliant models, achieving better results. This illustrates the trade-off between models and scaffolding.",
+      "point": "Anthropic and OpenAI have fundamentally different Agent engineering philosophies."
+    },
+    {
+      "explanation": "Zeyin believes the fundamental purpose for model companies to build Agents is to present the model in its complete form, amplify its capabilities, and multiply its usage. Agent products need to provide feedback for model training, rather than being a simple accumulation of features.",
+      "point": "Agent products should create a feedback loop for model training and amplify model capabilities."
+    },
+    {
+      "explanation": "As Agent capabilities comprehensively surpass humans, the value of junior employees will be compressed. Zeyin projects a future where individuals might need to pay upfront to use Agents for learning before becoming senior employees who can earn money.",
+      "point": "Agents will change work paradigms, potentially leading to a 'pay-to-work' future."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Through an in-depth conversation with Zeyin, a MiniMax Agent R&D engineer, this article reveals the design philosophy and technical details of the Agent Team architecture, as well as the industry consensus and trend shifting from model competition to scaffolding competition in Agent engineering.",
+  "originalTitle": "对话 MiniMax 择因：Agent 终会超过人类，我们又将何去何从？",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Today",
+  "publishDateTimeStr": "2026-06-08 21:15:28",
+  "publishTimeStamp": 1780924528000,
+  "qualified": false,
+  "readCount": 93,
+  "readTime": 37,
+  "readUrl": "https://www.bestblogs.dev/article/7db52531",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4ecd55",
+  "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+  "sourceName": "爱范儿",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article, structured as a dialogue between APPSO and MiniMax Agent R&D engineer Zeyin, delves into the latest advancements in Agent engineering. It focuses on MiniMax's Agent Team architecture (Leader-Worker-Verifier), explaining how it uses state machines, context isolation, and adversarial verification to solve persistent problems in long-horizon Agent tasks, such as context pollution and collusion. The conversation compares the different engineering philosophies of Anthropic (strong constraints) and OpenAI (minimalist loops), pointing out that the current industry consensus has shifted from model capability to 'scaffolding' capability. Zeyin also shares MiniMax's differentiated approach to Agent products (equal permissions for humans and Agents, full modality, emphasis on details), and discusses the impact of Agents on work methods, a projection of the future job market, and an open-ended vision of using computing power to build a 'life doppelganger'. The article is information-dense, containing a wealth of first-hand technical insights and industry observations.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Coding",
+    "Agent Architecture",
+    "MiniMax"
+  ],
+  "title": "Dialogue with MiniMax's Zeyin: Agents Will Eventually Surpass Humans, Where Do We Go From Here?",
+  "translateContent": null,
+  "url": "https://www.ifanr.com/1668337?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "wordCount": 9239
+}

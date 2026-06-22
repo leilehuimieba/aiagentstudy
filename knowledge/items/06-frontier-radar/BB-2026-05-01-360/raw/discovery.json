@@ -1,0 +1,84 @@
+{
+  "id": "RAW_a7a93015",
+  "notExist": null,
+  "originalTitle": "AI Infra 入门干货总结：大模型是如何高效推理的",
+  "title": "A Practical Guide to AI Infra: How Large Models Perform Efficient Inference",
+  "oneSentenceSummary": "Based on an in-depth reading of the vLLM source code, this article uses Llama 3 as an example to systematically explain the complete efficient inference pipeline of large models, from Tokenize to Sampling, by tracing the tensor dimension changes at each step.",
+  "summary": "This article summarizes the author's two months of spare-time deep dive into the vLLM source code. Focusing on Decoder-Only LLMs, and using Llama 3 as an example, it breaks down the complete inference pipeline from Tokenize, Embedding Lookup, Transformer Block (Attention and FFN) to LM Head and Sampling. The core highlight is that the author annotates the tensor dimension changes at each computational step and provides an in-depth explanation of how two key technologies, Continuous Batching and Paged Attention, improve inference efficiency. The article also explores the fundamental differences between the Prefill and Decode phases in terms of computation and memory access, and how FlashAttention breaks the memory wall through Online Softmax. Finally, it concludes that the MLP layer is compute-bound while the Attention layer is memory-bound, and includes a table of model configuration parameters and runtime variables, offering a solid introductory reference for AI Infra practitioners.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Large Model Inference",
+    "vLLM",
+    "Continuous Batching",
+    "Paged Attention",
+    "FlashAttention"
+  ],
+  "mainPoints": [
+    {
+      "point": "Continuous Batching shifts the scheduling granularity from the request level down to the token level, significantly boosting GPU utilization.",
+      "explanation": "By scheduling at the token level, multiple requests can reuse model weights, transforming operations like QKV_Proj, O_Proj, and MLP from matrix-vector multiplications (GEMV) back into matrix multiplications (GEMM), thus amortizing the memory cost of loading weights."
+    },
+    {
+      "point": "Paged Attention manages KV Cache using a virtual page table mechanism, solving the memory fragmentation problem.",
+      "explanation": "Similar to virtual memory in operating systems, Paged Attention allocates non-contiguous physical blocks for each request and uses a block table for indirect addressing, greatly improving GPU memory utilization. This is the foundation for supporting high-performance inference with Continuous Batching."
+    },
+    {
+      "point": "The Prefill phase is compute-bound, while the Decode phase is memory-bound.",
+      "explanation": "The Prefill phase processes a large number of tokens, has high computational intensity, and is limited by Tensor Cores compute power. The Decode phase processes only one token at a time, requiring the transfer of a large amount of KV Cache and model weights from HBM, and is therefore limited by memory bandwidth."
+    },
+    {
+      "point": "FlashAttention breaks the memory wall through kernel fusion and the Online Softmax algorithm.",
+      "explanation": "FlashAttention fuses Q-K dot product, Softmax, and multiplication by V into a single CUDA kernel, computing in blocks within SRAM. This avoids writing large intermediate matrices to HBM, significantly improving the performance of Attention computation."
+    }
+  ],
+  "keyQuotes": [
+    "What if we could shift the scheduling granularity from the request level down to the token level? Congratulations, you've just invented continuous batching.",
+    "Should the KV Cache memory allocation for each request also be at the token level, instead of allocating all memory at once? What if we use an address array (block table) to manage the KV Cache addresses for each request? Congratulations, you've just invented Paged Attention.",
+    "Compared to OOM caused by memory fragmentation, sacrificing a small amount of memory bandwidth for a significant increase in overall system throughput is a worthwhile trade-off in the overall logic of LLM inference.",
+    "Don't rebuild from scratch; instead, learn the 'correction value' (Delta) based on the original. This is the physical foundation of the 'Scaling Law' in architecture.",
+    "From an inference perspective alone, the principles of large models are actually not that esoteric. The most difficult mathematical formula is probably RoPE. But there is so much to learn in AI Infra... It's endless."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801625&idx=1&sn=7c7a7d2148c6907f65c9f747717b3197",
+  "readUrl": "https://www.bestblogs.dev/article/a7a93015",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_958ae8",
+  "sourceName": "腾讯技术工程",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 258,
+  "wordCount": 10641,
+  "readTime": 43,
+  "mediaDuration": null,
+  "authors": [
+    "腾讯技术工程"
+  ],
+  "publishTimeStamp": 1779701760000,
+  "publishDateStr": "05-25",
+  "publishDateTimeStr": "2026-05-25 17:36:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

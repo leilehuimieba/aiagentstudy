@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T52941dbfcb924255a634a2957dcedd66",
+  "data": {
+    "metaData": {
+      "id": "RAW_94694e50",
+      "notExist": null,
+      "originalTitle": "Best practices for computer and browser use with Claude | Claude",
+      "title": "Best practices for computer and browser use with Claude | Claude",
+      "oneSentenceSummary": "This article provides official best practices for integrating Claude's computer and browser use capabilities, focusing on screenshot scaling, resolution selection, click accuracy optimization, thinking effort tuning, and prompt injection defense.",
+      "summary": "This blog post from the official Claude blog offers a comprehensive guide for developers building computer use agents with Claude's latest models (4.6 family and Opus 4.7). It identifies the single highest-impact optimization as pre-downscaling screenshots to fit API limits (1568px long edge / 1.15MP for 4.6; 2576px / 3.75MP for Opus 4.7) to prevent silent downscaling and coordinate mismatch. Recommended starting resolutions are 1280x720 for 4.6 models and 1080p for Opus 4.7, with a provided Python function for 'max API fit' per-image scaling. The guide covers diagnosing click issues (consistently offset, near misses, wrong element), model selection (Sonnet 4.6 for mechanical precision, Opus 4.7 for reasoning), handling small targets via zoom and keyboard alternatives, and content ordering (text before image). It also presents detailed recommendations for adaptive thinking effort levels: 'medium' is the sweet spot for 4.6 models, while 'high' is the default for Opus 4.7. Finally, it discusses prompt injection defenses, including training-time robustness, real-time classifiers, and continuous red teaming.",
+      "featuredReason": "Anthropic engineers lay out the full operational playbook from running Computer Use and Browser Use internally. The foundational fix: pre-downscale screenshots to match Claude 4.6 (1568px / 1.15MP) or Opus 4.7 (2576px / 3.75MP) limits — otherwise the model picks coordinates on a degraded image and the whole agent loop collapses. The piece covers effort-level tuning, prompt injection defense, a three-pronged context discipline (cache breakpoints, scrolling buffer, LLM compression), plus experimental batch tools and advisor patterns. A genuine production checklist.",
+      "translateContent": null,
+      "tags": [
+        "Claude",
+        "Computer Use",
+        "Browser Automation",
+        "Best Practices",
+        "Screenshot Scaling"
+      ],
+      "mainPoints": [
+        {
+          "point": "Pre-downscaling screenshots to fit API limits is the single most impactful optimization for click accuracy.",
+          "explanation": "Screenshots exceeding the API's internal processing limits (1568px/1.15MP for 4.6, 2576px/3.75MP for Opus 4.7) are silently downscaled, causing a mismatch between the model's perceived image and the coordinate space, leading to consistently offset clicks."
+        },
+        {
+          "point": "For Claude 4.6 models, 'medium' thinking effort provides the best accuracy-to-cost ratio, while 'high' is the recommended default for Opus 4.7.",
+          "explanation": "UI automation tasks are primarily perceptual, not deeply logical. Medium effort achieves near-maximum success rates at half the token cost of high for 4.6 models. For Opus 4.7, high effort is the default for complex multi-step interactions."
+        },
+        {
+          "point": "Place text instructions before the image in the messages content array to improve click accuracy.",
+          "explanation": "This ordering lets the model know what to look for as it processes the screenshot, which improves the accuracy of its click predictions compared to placing the image first."
+        },
+        {
+          "point": "Prompt injection is a serious risk for computer use agents, requiring multi-layered defenses.",
+          "explanation": "Agents interact with untrusted content by design. Anthropic's defense strategy includes training-time robustness via reinforcement learning, real-time classifiers that scan for adversarial content, and continuous red teaming."
+        }
+      ],
+      "keyQuotes": [
+        "Click accuracy is the foundation of any computer use integration. If clicks don't land where they should, nothing downstream works: forms don't get filled, buttons don't get pressed, and workflows fail.",
+        "The single highest impact optimization is also one of the simplest: pre downscale your screenshots before sending them to the API.",
+        "Setting effort to medium achieves close to the highest task success rate while using roughly half the output tokens of high.",
+        "UI automation tasks are fundamentally different from coding or math problems. Most computer use actions are perceptual and mechanical: identifying the right element, clicking in the right place, rather than deeply logical."
+      ],
+      "url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+      "readUrl": "https://www.bestblogs.dev/article/94694e50",
+      "enclosureUrl": null,
+      "domain": "claude.com",
+      "cover": "https://image.jido.dev/20260416004451_68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_154bc38a",
+      "sourceName": "Claude Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/689f4a9aff1f63fde75cf733_favicon.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 94,
+      "readCount": 565,
+      "wordCount": 8431,
+      "readTime": 34,
+      "mediaDuration": null,
+      "authors": [
+        "Claude Blog"
+      ],
+      "publishTimeStamp": 1778601600000,
+      "publishDateStr": "05-12",
+      "publishDateTimeStr": "2026-05-12 16:00:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_c31f1686",
+        "type": "ARTICLE",
+        "title": "Multi-agent coordination patterns: Five approaches and when to use them | Claude",
+        "oneSentenceSummary": "Anthropic outlines five core multi-agent coordination patterns—Generator-verifier, Orchestrator-subagent, Agent teams, Message bus, and Shared-state—providing a decision framework for selecting the right architecture based on task complexity and context needs.",
+        "url": "https://claude.com/blog/multi-agent-coordination-patterns",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_9e0a0be",
+        "type": "VIDEO",
+        "title": "Codex Now Integrates Directly with Chrome on macOS and Windows",
+        "oneSentenceSummary": "OpenAI introduces a new Chrome extension for Codex on macOS and Windows, enabling the AI to operate directly within a user's live browser session to perform complex, parallel automation tasks using their active profile and direct code execution.",
+        "url": "https://www.youtube.com/watch?v=b6Mxcv1pyBU",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_aa252bd",
+        "type": "VIDEO",
+        "title": "Memory and Dreaming for Self-Learning Agents",
+        "oneSentenceSummary": "Anthropic introduces Memory and Dreaming, two new primitives for its Managed Agents API, enabling agents to achieve continuous self-learning by managing their own knowledge in a file system-like structure and asynchronously curating that knowledge to improve over time.",
+        "url": "https://www.youtube.com/watch?v=RtywqDFBYnQ",
+        "sourceName": "Claude"
+      },
+      {
+        "id": "RAW_504ce725",
+        "type": "ARTICLE",
+        "title": "Harness design for long-running application development",
+        "oneSentenceSummary": "This article explores Anthropic's multi-agent harness design (Planner, Generator, Evaluator) for long-running autonomous coding, detailing how to overcome context anxiety and self-evaluation bias to build complex full-stack applications.",
+        "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_2029622732594499630",
+        "type": "TWITTER",
+        "title": "OpenAI Launches GPT-5.4 with Native Computer Use and 1M Context",
+        "oneSentenceSummary": "Sam Altman announces the release of GPT-5.4, featuring enhanced knowledge work, native computer use, and a 1-million-token context window.",
+        "url": "https://x.com/sama/status/2029622732594499630",
+        "sourceName": "Sam Altman(@sama)"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_c1ecbe08",
+        "type": "ARTICLE",
+        "title": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude",
+        "oneSentenceSummary": "Brendan MacLean, principal developer of the 700,000-line Skyline codebase, applies his 17-year methodology of onboarding human developers to Claude Code, using context, skills, and MCP integrations to make a legacy codebase manageable again.",
+        "url": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_243d2340",
+        "type": "ARTICLE",
+        "title": "How Claude Code works in large codebases: Best practices and where to start | Claude",
+        "oneSentenceSummary": "This article provides a comprehensive guide on deploying Claude Code in large codebases, emphasizing that success depends more on the 'harness' of configuration layers (CLAUDE.md, hooks, skills, plugins, LSP, MCP) than on the model alone, and outlines proven patterns for making codebases navigable, maintaining configurations, and assigning organizational ownership.",
+        "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_46822472",
+        "type": "ARTICLE",
+        "title": "Scaling Managed Agents: Decoupling the brain from the hands",
+        "oneSentenceSummary": "Anthropic details the architectural evolution of Managed Agents, focusing on decoupling the 'brain' (LLM/harness) from the 'hands' (sandboxes/tools) to improve scalability, reliability, and security.",
+        "url": "https://www.anthropic.com/engineering/managed-agents",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_6ebdeb6e",
+        "type": "ARTICLE",
+        "title": "The Advisor Strategy: Boosting Claude Sonnet with Opus",
+        "oneSentenceSummary": "Anthropic introduces the 'advisor tool' for the Claude API, enabling a cost-effective strategy where smaller models (Sonnet/Haiku) execute tasks and only consult a larger model (Opus) for high-level guidance.",
+        "url": "https://claude.com/blog/the-advisor-strategy",
+        "sourceName": "Claude Blog"
+      }
+    ]
+  }
+}

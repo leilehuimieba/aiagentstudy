@@ -1,0 +1,364 @@
+{
+  "content": "Part 10 of the “Ethical UX Series.”\n\nThe illusion of consent\n\n“The best way to take control is to make people believe they’re making their own decisions.” — Frank Underwood\n\nConsent, in its truest form, is about empowerment. It signifies mutual understanding, agreement, and a transparent relationship between user and system. But what if that idea has been hollowed out by overuse?\n\nIn today’s design landscape, consent is no longer a rare, serious dialogue — it’s a pop-up. A click. A checkbox.\n\nUsers are greeted by cookie banners, data tracking notices, push permission dialogs, and dozens of privacy toggles before they can even interact with a product. Over time, these moments — originally intended to support user autonomy — become so frequent and intrusive that users stop thinking and start clicking. Not because they consent, but because they want to escape the flow disruption.\n\nThis is not consent. It’s compliance. Designed.\n\nWhat is “consent fatigue”?\n\n“Information overload is not just annoying — it’s an attack on clarity.” — Nicholas Carr\n\n“Consent fatigue” refers to a psychological condition in which users become so overwhelmed by repetitive consent requests, terms and conditions, and privacy popups that they begin to accept terms without fully understanding them, or even caring. This isn’t laziness. It’s a defense mechanism — an adaptive behavior formed by exposure to a system that demands constant attention but offers little reward or clarity in return.\n\nA consent-heavy digital landscape\n\nModern digital interfaces have trained users to expect a near-constant onslaught of permission-seeking interactions. It’s no longer just cookie banners on websites. The volume of consent interactions includes:\n\nLogin and data sharing with third-party apps.\nApp tracking transparency requests on mobile.\nEmail subscription opt-ins and lead magnets.\nDevice-level permissions (camera, microphone, location).\nAuto-play or push notification consent.\nGDPR/CCPA-style cookie management screens.\n\nEvery one of these prompts demands cognitive attention. Everyone asks for a decision. And most occur before a user even sees the core value of the product. As users are bombarded, they slowly shift from active decision-making to passive acceptance.\n\nThe three core psychological effects of consent fatigue\n1. Decision fatigue\n\n“Nothing wears down the will like choice overload.” — Barry Schwartz\n\nThe more decisions people must make in a short period of time, the less energy and attention they devote to each one. This well-documented cognitive phenomenon results in poor-quality decisions or a tendency to take the easiest route.\n\nIn the context of digital consent:\n\nA user is more likely to click “Accept All” instead of adjusting privacy settings.\nOpt-outs, which are often more effortful, are ignored in favor of time-saving shortcuts.\nCompanies design around this fatigue, nudging people toward default compliance through button prominence and placement.\n\nExample: A website presents a consent banner where “Reject All” is a tiny hyperlink while “Accept All” is a large colored button. After seeing this ten times a day, a user’s ability to resist wanes — not because they agree, but because mental resources are depleted.\n\n2. Habituation\n\n“The more we see something, the less we notice it.”\n\nHabituation is a behavioral process wherein repeated exposure to a stimulus reduces our responsiveness to it. It’s why background music in a cafe fades into mental silence. Similarly, users begin to mentally mute repetitive banners, dialogs, and permission prompts.\n\nIn digital products:\n\nUsers no longer read privacy notifications.\nBanners are closed instinctively, often without even looking at the text.\nPop-ups are perceived as friction, not communication.\n\nExample: Social platforms show cookie banners every time users switch accounts or log in from a new device. After 20–30 similar interactions, users stop engaging meaningfully, and “click-through” becomes a habit, not a conscious act.\n\n3. Learned helplessness\n\n“When you realize your actions don’t change outcomes, you stop acting.” — Martin Seligman\n\nLearned helplessness arises when individuals are conditioned to believe their actions have no impact on their environment. In the context of digital privacy, this is particularly dangerous.\n\nHere’s how it plays out:\n\nA user repeatedly declines data sharing but still sees targeted ads.\nConsent preferences are set, but on the next session, they’re asked again.\nOpting out means losing access to features or services entirely.\n\nThe result? Users begin to feel powerless. They believe privacy violations are inevitable, so they disengage. Over time, this undermines trust — not just in a product, but in the entire digital ecosystem.\n\nStatistical evidence of consent fatigue\nA 2021 Cisco Consumer Privacy Survey found that 81% of people feel they have lost control over how their data is collected and used.\nCarnegie Mellon University estimated that if the average person actually read every privacy policy they were presented with, it would consume 76 workdays per year — an impossible task that underlines just how unrealistic “informed consent” has become.\nA 2022 study from MIT revealed that users spend an average of 7 seconds on cookie banners. That’s barely enough time to read one line, let alone parse the complex implications of data sharing and third-party access.\n\nThese numbers are not a result of apathy. They reflect a system that incentivizes fast compliance, discourages transparency, and makes resistance either difficult or meaningless.\n\nFor UX professionals: a wake-up call in design responsibility\n\nThis issue calls for deep reflection among UX professionals, product managers, and CX strategists.\n\nIf your success metrics are based solely on consent rates, you are likely measuring friction avoidance, not understanding. As a UX practitioner, your role isn’t to drive conversions at any cost — it’s to build trust, clarity, and usability.\n\nAsk yourself:\n\nHave we conducted usability testing on our consent flows?\nAre our language and layout designed for transparency — or persuasion?\nCan a user make a real choice with equal visual and cognitive effort?\nAre our designs ethical enough to withstand future regulation — or public scrutiny?\n\nThe answer to these questions separates manipulative UX from meaningful UX.\n\nFrom protection to manipulation\n\n“Manipulation becomes invisible when disguised as compliance.” — WorldUXForum Principle\n\nWhen privacy regulations like GDPR and CCPA were introduced, they were meant to empower users with information and choice. But instead of becoming moments of ethical engagement, consent interactions have become legal shields — tools that protect businesses while exhausting users.\n\nThis failure of implementation has given rise to common manipulative design patterns:\n\nBait-and-switch options, where “Accept All” is one click, while rejection requires navigating multiple menus.\nObscured toggles, where consent is split across several categories (analytics, performance, and partners), buried under expandable menus.\nPre-selected checkboxes, which silently enroll users in tracking until they opt out.\nConsent walls, which make access to basic content conditional on data agreement.\n\nThese practices aren’t neutral — they actively design fatigue into the user journey, pushing users toward consent through inconvenience.\n\nThe hidden cost of consent fatigue\n\n“When people feel tricked, they disengage — not just from your product, but from digital trust as a whole.” — Privacy UX Researcher at Mozilla\nUser impact:\nLoss of agency and control.\nIncreased vulnerability to data misuse.\nHigher levels of mental exhaustion and digital burnout.\nBusiness impact:\nDecreased user trust and loyalty.\nInaccurate or misleading data from disinterested users.\nPotential legal and reputational fallout for unethical design.\n\nThis erosion of trust and autonomy undermines everything good UX is supposed to stand for.\n\nHow to reclaim true informed consent\n\n“Design is about intent. Ethics is about consequence.” — WorldUXForum Manifesto\n\nEthical UX design doesn’t avoid consent — it embraces it as a moment of mutual respect, transparent communication, and human dignity. It treats users not as data sources but as informed participants. Here’s how to go beyond legal compliance and build real trust through design:\n\n1. Clear, jargon-free language for privacy options\n\nWhy it matters: Legal and technical jargon alienates users and obscures meaning. Users often skim or ignore content they don’t understand, leading to uninformed consent.\n\nEthical Practice: Use language that a 12-year-old could understand without dumbing down the meaning.\n\nInstead of:\n\n“We use third-party cookies for performance enhancement and targeted behavioral advertising.”\n\nSay:\n\n“We use cookies to remember your settings and show you ads that match your interests. You can choose which ones we use.”\n\nDesign Example: In a multi-option consent panel, group terms under plain categories such as:\n\n“Help the site run” (for essential cookies).\n“Make it personal” (for preference tracking).\n“Show relevant ads” (for advertising).\n\nEach category should have a tooltip or expand option with short, human explanations — not legal language.\n\n2. Equal visual weight and prominence for “Reject” or “Deny” choices\n\nWhy it matters: Dark patterns often make the “Accept” button bold, bright, and centered — while the “Reject” is greyed-out, hidden in a corner, or behind a menu.\n\nEthical Practice: All choices should be visually balanced, equally accessible, and equally emphasized — whether it’s accept, reject, or customize.\n\nDesign Example: A GDPR-style banner with:\n\nTwo side-by-side buttons: [Accept All] [Reject All]\nA third link: [Customize My Settings]\n\nEnsure color contrast, font size, and tap area meet accessibility guidelines. Don’t hide ethical design behind an extra click.\n\n3. Contextual triggers instead of all-at-once permission prompts\n\nWhy it matters: Asking for every consent upfront — especially before users understand your product’s value — creates friction and fuels fatigue.\n\nEthical Practice: Trigger permission dialogs only when needed and where context makes sense.\n\nDesign Example:\n\nAsk for location permission only when the user uses a “Find nearby hotels” feature.\nPrompt to save contacts only after a user tries to send a referral or invite a friend.\nDelay push notification prompts until after the first or second session — when users have seen value and are more likely to care.\n\nThis not only respects attention but also builds credibility and trust over time.\n\n4. Persistent consent centers where users can review and revise choices\n\nWhy it matters: Most users don’t remember what they consented to, and many don’t know where to change it later.\n\nEthical Practice: Create a permanent, clearly accessible consent center (usually in settings or footer) where users can see, edit, and revoke their preferences easily at any time.\n\nDesign Example: A “Privacy Settings” or “Data Preferences” link in your site footer or profile menu that:\n\nLists all past consent interactions (with dates)\nShows current active settings (with toggles or drop-downs)\nAllows users to opt out completely, or partially without reloading the app or breaking functionality\n\nBonus: Notify users of significant changes to data practices and prompt them to re-consent (with options) instead of assuming passive agreement.\n\n5. Honest communication about data use and value exchange\n\nWhy it matters: Users are more likely to share data when they understand what they’re getting in return. Lack of clarity erodes trust and feels extractive.\n\nEthical Practice: Be upfront about why you’re collecting data and how it benefits the user — not just the business.\n\nDesign Example:\n\n“We ask for your email so we can save your progress and send you updates you choose.”\n“Allowing camera access helps you scan documents instead of typing them manually.”\n“We use browsing behavior to suggest books that match your reading history. You can turn this off anytime.”\n\nAlso, explain what you don’t do with data:\n\n“We never sell your personal data or share it with third-party advertisers.”\n\nThis adds credibility and helps differentiate trustworthy platforms from manipulative ones.\n\n6. Consistent consent across platforms\n\nWhy it matters: Consent shouldn’t reset or behave differently on mobile, desktop, or different apps by the same company. Inconsistent experiences confuse users and fragment control.\n\nEthical Practice: Create a unified consent model across platforms (app, web, mobile site) and sync it with the user’s account.\n\nDesign Example: If a user disables ad personalization on desktop, the same setting should apply on mobile. If they revoke consent in the app, the web version should reflect that choice too.\n\n7. Consent as a journey, not a checkbox\n\nWhy it matters: Many companies treat consent as a single interaction. But user understanding and product expectations change over time.\n\nEthical Practice: View consent as an ongoing relationship with the user. Offer periodic reminders, educational updates, or revision options — not just one-time dialogs.\n\nDesign Example:\n\nShow a subtle banner every 6 months, inviting users to review their privacy settings.\nOffer walkthroughs or in-app tips when new data features are introduced.\n\nThis shows your brand values informed agency over passive obedience.\n\nConsent in user research: often ignored, critically needed\n\nOne of the most overlooked dimensions of consent fatigue lies in UX research practices. Gathering feedback, conducting usability tests, and analyzing behavior often involves sensitive user data, but do we approach it with the same ethical seriousness?\n\nWhy consent matters in research\nUsers need to know what data is being collected (recordings, biometrics, logs).\nParticipants must be informed about how findings will be used — internally, publicly, or for product direction.\nResearchers must allow withdrawal of participation at any point without penalty.\nHow to get it right\nPlain-language disclosures before any research session.\nSeparate consents for audio/video, screen capture, and written feedback.\nMake participation revocable and explain data retention clearly.\nConsequences of ignoring it\nLoss of trust from participants.\nLegal vulnerability under data privacy laws.\nInvalid research outcomes due to uninformed or pressured responses.\n\nGood UX research begins with ethical transparency.\n\nSuggested reading & references:\nCarnegie Mellon University Privacy Policy Study: A foundational study estimating the unrealistic time burden on users to read all privacy policies they encounter annually.\nCisco Consumer Privacy Survey (2021): A global benchmark highlighting public concern about data control and transparency.\nMIT Research on Consent Interaction Times: Reveals how users engage with consent interfaces, often spending just seconds on decisions.\nNicholas Carr, “The Shallows”: An exploration of how the internet affects cognition and attention spans, relevant to consent overload and digital fatigue.\nDaniel Kahneman, “Thinking, Fast and Slow”: Provides cognitive psychology insights into how decision fatigue and heuristics affect human behavior.\nUXPA & Nielsen Norman Group: Resources on ethical design patterns and usability standards.\nWorldUXForum Ethical UX Discussions: A global forum where topics like dark patterns, design ethics, and user autonomy are actively explored by design leaders.\nEuropean Union’s GDPR Guidelines: A legal framework that shapes digital consent laws, setting standards for clarity and user control.\nACM & IEEE Ethics in Design Proceedings: Technical references for digital product designers concerned with responsible interaction design.\nTristan Harris & Center for Humane Technology: Thought leadership on attention ethics, persuasive tech, and user empowerment.\nLorrie Cranor’s Research on Privacy Notices: Focuses on usability challenges in digital consent and privacy interfaces.\nDesign Justice Network: A community-driven resource advocating for fair, inclusive, and ethically grounded technology design.\n\nThe article originally appeared on LinkedIn.\nFeatured image courtesy: Kelly Sikkema.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/07753cb6#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=de66d0",
+      "text": "UX Magazine",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://uxmag.com/articles/consent-fatigue-are-we-designing-people-into-compliance",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://en.wikipedia.org/wiki/Nicholas_G._Carr",
+      "text": "Nicholas Carr",
+      "title": ""
+    },
+    {
+      "href": "https://en.wikipedia.org/wiki/Martin_Seligman",
+      "text": "Martin Seligman",
+      "title": ""
+    },
+    {
+      "href": "https://www.linkedin.com/pulse/consent-fatigue-we-designing-people-compliance-tushar-deshmukh-ezkhf/",
+      "text": "LinkedIn",
+      "title": ""
+    },
+    {
+      "href": "https://unsplash.com/@kellysikkema",
+      "text": "Kelly Sikkema",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/90f2a41?entry=related_article",
+      "text": "“I haven’t written a single line of front-end code in 3 months”: Notion’s prototype playground",
+      "title": "Brian Lovin from Notion AI details their 'Prototype Playground,' a Next.js-based environment where designers use Claude Code and custom MCPs to rapidly turn Figma mocks into functional, self-verifying code."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/47b13e88?entry=related_article",
+      "text": "The Data Wasn't Meant for This: Why AI Scaling Requires Intentional Knowledge Design",
+      "title": "This article explores how the internet's accidental role as a massive, diverse training corpus enabled modern AI, and argues that organizations must shift from accidental data accumulation to intentional knowledge design to achieve reliable AI performance."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/2293d4eb?entry=related_article",
+      "text": "A Job Is Not Just a Bundle of Skills",
+      "title": "Evan Ratliff's experiment running a company staffed by AI agents reveals that jobs are not bundles of skills, and that the real value of human work lies in context, relationships, and judgment that AI cannot replicate."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/b0739b54?entry=related_article",
+      "text": "Designing For Agentic AI: Practical UX Patterns For Control， Consent， And Accountability — Smashing Magazine",
+      "title": "This article provides a comprehensive UX framework and six practical design patterns to ensure agentic AI systems remain transparent, controllable, and trustworthy as they shift from suggesting to acting."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/966ea0c8?entry=related_article",
+      "text": "Zero Stage to Orbit",
+      "title": "The article uses the metaphor of multi-stage rocketry to argue that AI agents are collapsing the traditional, overhead-heavy design-to-development pipeline into a direct, 'orbital' workflow."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/764134b2?entry=related_article",
+      "text": "Dark Patterns: When Design Crosses the Line",
+      "title": "A comprehensive guide to identifying and avoiding deceptive UX 'dark patterns,' emphasizing ethical design principles and the evolving global legal landscape."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/status/2044510085662314577?entry=related_article",
+      "text": "AI System Can De-Anonymize Online Users with High Accuracy and Low Cost",
+      "title": "Researchers from ETH Zurich and Anthropic have built an AI system that can accurately link anonymous online accounts to real identities using publicly available LLMs for as little as $1-4 per person."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/f521d4b?entry=related_article",
+      "text": "Atlassian CEO on the SaaS Apocalypse， AI Agents & What Comes Next",
+      "title": "Atlassian CEO Mike Cannon-Brookes and a16z's Alex Rampell discuss the evolution of SaaS into AI-driven 'Systems of Process,' addressing pricing psychology, the limits of Vibe Coding, and the critical role of UX in building AI trust."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/3fb660a4?entry=related_article",
+      "text": "The End of Prompting: Why the Future of AI Experience Design Is Constraint-First",
+      "title": "This article argues that the current reliance on prompting for controlling AI behavior is fundamentally flawed for high-stakes applications, proposing a shift towards 'constraint-first' design where system outputs are architecturally verified for truthfulness and compliance before being delivered to users."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8e7ed949?entry=related_article",
+      "text": "Introducing OpenAI Privacy Filter",
+      "title": "OpenAI has released Privacy Filter, an open-weight, 1.5B-parameter model for detecting and redacting personally identifiable information (PII) in text, achieving state-of-the-art performance and designed for local, high-throughput privacy workflows."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "This article explores the phenomenon of 'consent fatigue,' arguing that repetitive and manipulative consent interfaces in digital products train users to com...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Consent Fatigue, Dark Patterns, UX Design, Ethical Design, Privacy",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs · Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Consent Fatigue: Are We Designing People into Compliance?...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "This article explores the phenomenon of 'consent fatigue,' arguing that repetitive and manipulative consent interfaces in digital products train users to com...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/07753cb6",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/07753cb6/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-05-05 04:20:23",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Nataliia Vlasenko",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Consent Fatigue",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Dark Patterns",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "UX Design",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Ethical Design",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Privacy",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Consent Fatigue: Are We Designing People into Compliance?...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "This article explores the phenomenon of 'consent fatigue,' arguing that repetitive and manipulative consent interfaces in digital products train users to com...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/07753cb6/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Consent Fatigue: Are We Designing People into Compliance?...",
+  "url": "https://www.bestblogs.dev/en/article/07753cb6"
+}

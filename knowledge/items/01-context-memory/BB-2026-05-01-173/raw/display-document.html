@@ -1,0 +1,436 @@
+<html>
+ <head></head>
+ <body>
+  <div class="block">
+   <img class="banner-image" src="https://image.jido.dev/20260512213019_Long-running-agent-banner.original.jpg" alt="Long-running-agent-banner">
+   <div class="inner-block-content rich-content">
+    <p>Most agent tutorials end at a stateless chatbot – a conversational loop that forgets everything the moment the container restarts. Real enterprise workflows don't wrap up in a single API call.</p>
+    <p>HR onboarding spans two weeks. Invoice disputes stall for days waiting on vendor replies. Sales prospecting sequences stretch across multiple touchpoints over a month. These processes are dominated by "idle time" – long pauses where an agent sits dormant, waiting for a human signature, a shipping confirmation, or an approval gate. A stateless chatbot can't survive that.</p>
+    <p>This tutorial walks through building a <b>New Hire Onboarding Coordinator Agent</b> with the <a href="https://adk.dev/">Agent Development Kit (ADK)</a> that runs reliably for weeks. The agent sends a welcome packet, pauses for days while the employee signs documents, delegates IT provisioning to a specialized sub-agent, waits again for hardware delivery, and finally sends a personalized day-one schedule – all without losing a single byte of context.</p>
+    <p>Along the way, you'll learn three architectural shifts that separate production agents from demo chatbots:</p>
+    <ul>
+     <li><b>Durable memory schemas</b> instead of dumping raw JSON into a vector database</li>
+     <li><b>Event-driven dormancy gates</b> instead of active polling or blocked threads</li>
+     <li><b>Multi-agent delegation</b> instead of monolithic single-agent prompts</li>
+    </ul>
+    <p>The complete source code is available on <a href="https://github.com/GoogleCloudPlatform/generative-ai/tree/main/agents/adk/new-hire-onboarding">GitHub</a>.</p>
+   </div>
+   <div class="inner-block-content">
+    <div class="image-wrapper">
+     <img class="regular-image" src="https://image.jido.dev/20260512213019_Diagram-1.original.png" alt="Diagram-1">
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <h2 id="why-stateless-agents-break-on-real-workflows"><b>Why stateless agents break on real workflows</b></h2>
+    <p>The standard stateless pattern appends every user message and model response to a growing conversation history, then feeds the entire blob back into the next LLM call. This works fine for a five-minute Q&amp;A session. It falls apart over days or weeks in three specific ways:</p>
+    <p>
+     <br>
+     <b>Prompt context pollution -</b> After hundreds of turns spread across a two-week onboarding flow, the conversation history fills up with irrelevant chatter, old tool outputs, and duplicated instructions. The model starts confusing which step it's on.
+    </p>
+    <p><b>Token cost explosion -</b> Replaying a full two-week conversation history on every inference call burns through token budgets fast. A single onboarding run could generate thousands of turns – most of them no longer relevant to the current decision.</p>
+    <p><b>Reasoning hallucinations over Idle time -</b> When an agent pauses for three days waiting on a document signature, then resumes with a massive context dump, the model frequently hallucinates intermediate steps that never happened. It "remembers" approvals that weren't given or skips steps it assumes were completed.</p>
+    <p>The fix isn't a bigger context window. It's a fundamentally different architecture – one where the agent's state is explicit, durable, and decoupled from raw chat history.</p>
+    <h3 id="the-use-case:-new-hire-onboarding">The use case: new hire onboarding</h3>
+    <p>Consider what happens when a company brings on a new employee:</p>
+    <ol>
+     <li>HR sends the welcome packet and document links</li>
+     <li><b>Idle time</b> – days pass while the employee signs paperwork</li>
+     <li>IT provisions corporate email and Slack accounts</li>
+     <li><b>Idle time</b> – days pass while a laptop ships to the employee's home</li>
+     <li>HR sends a personalized day-one schedule</li>
+    </ol>
+   </div>
+   <div class="inner-block-content">
+    <div class="image-wrapper">
+     <img class="regular-image" src="https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fe2c73d7-98f9-4ca6-aeaf-9001592f5a00/public" alt="live-onboarding-overview">
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <p>This isn't a single conversation. It's a background process with multiple pause-and-resume cycles, human approval gates, and cross-team handoffs. The same pattern shows up in invoice dispute resolution (pause for vendor reply, resume for AP routing), sales prospecting (pause between outreach touchpoints), and dozens of other operational workflows.</p>
+    <h3 id="bootstrap-the-project-with-a-coding-agent-and-agents-cli"><b>Bootstrap the project with a coding agent and Agents CLI</b></h3>
+    <p>The <a href="https://github.com/google/agents-cli">Agents CLI</a> is the official command-line interface for the Gemini Enterprise Agent Platform. Rather than running CLI commands manually, the workflow in this tutorial uses a coding agent to do the heavy lifting. Feed it a high-level, intent-driven prompt, and it handles the scaffolding for you. First, install the CLI globally:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-shell line-numbers" tabindex="0"><code class="language-shell">uv tool <span class="token function">install</span> google-agents-cli</code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">Then give your coding agent this prompt:</span>
+    </div>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-shell line-numbers" tabindex="0"><code class="language-shell">Create an HR onboarding agent using ADK. It needs to run as a long-running background process with persistent sessions.</code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">The coding agent runs the appropriate agents-cli commands, generates the project structure, and wires up persistent session and memory bank settings from the start. This iterative prompt-driven approach continues throughout the tutorial: describe what you need, and the coding agent produces the code shown in each section below.</span>
+    </div>
+   </div>
+   <div class="inner-block-content">
+    <div class="image-wrapper">
+     <img class="regular-image" src="https://image.jido.dev/20260512213019_Diagram-2.original.png" alt="Diagram-2">
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <h3 id="ground-the-agent-in-a-durable-state-machine"><b>Ground the agent in a durable state machine</b></h3>
+    <p>Instead of relying on conversation history to track progress, define an explicit state schema that tells the agent exactly where it is in the workflow at all times. Give your coding agent this prompt:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-shell line-numbers" tabindex="0"><code class="language-shell"><span class="token string">"Add a state machine to track onboarding progress. I need steps like START, WELCOME_SENT, DOCUMENTS_SIGNED, IT_PROVISIONED, HARDWARE_DELIVERED, and COMPLETED. The agent should read its current step from the session state, not from chat history."</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <b style="font-family: Georgia, &quot;Noto Serif SC&quot;, &quot;Songti SC&quot;, SimSun, serif; font-size: 1.25em; letter-spacing: -0.025em;">Define the state schema</b>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <p>Create a simple class with named constants for each checkpoint in the onboarding flow:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-python line-numbers" tabindex="0"><code class="language-python"><span class="token comment"># app/state_schema.py</span>
+
+<span class="token keyword">class</span> <span class="token class-name">OnboardingStep</span><span class="token punctuation">:</span>
+    START <span class="token operator">=</span> <span class="token string">"START"</span>
+    WELCOME_SENT <span class="token operator">=</span> <span class="token string">"WELCOME_SENT"</span>
+    DOCUMENTS_SIGNED <span class="token operator">=</span> <span class="token string">"DOCUMENTS_SIGNED"</span>
+    IT_PROVISIONED <span class="token operator">=</span> <span class="token string">"IT_PROVISIONED"</span>
+    HARDWARE_DELIVERED <span class="token operator">=</span> <span class="token string">"HARDWARE_DELIVERED"</span>
+    COMPLETED <span class="token operator">=</span> <span class="token string">"COMPLETED"</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">Six states. No ambiguity. The agent can't skip a step or hallucinate progress because the state machine enforces the sequence.</span>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <h3 id="wire-the-state-into-the-system-instruction"><b>Wire the state into the system instruction</b></h3>
+    <p>The agent's system prompt reads its current position directly from session state variables – not from replaying old messages:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-python line-numbers" tabindex="0"><code class="language-python"><span class="token comment"># app/agent.py</span>
+
+<span class="token keyword">from</span> google<span class="token punctuation">.</span>adk<span class="token punctuation">.</span>agents <span class="token keyword">import</span> Agent
+<span class="token keyword">from</span> google<span class="token punctuation">.</span>adk<span class="token punctuation">.</span>agents<span class="token punctuation">.</span>callback_context <span class="token keyword">import</span> CallbackContext
+<span class="token keyword">from</span> google<span class="token punctuation">.</span>adk<span class="token punctuation">.</span>models <span class="token keyword">import</span> Gemini
+<span class="token keyword">from</span> app<span class="token punctuation">.</span>state_schema <span class="token keyword">import</span> OnboardingStep
+<span class="token keyword">from</span> app<span class="token punctuation">.</span>tools <span class="token keyword">import</span> <span class="token punctuation">(</span>
+    send_welcome_packet<span class="token punctuation">,</span>
+    check_hardware_delivery<span class="token punctuation">,</span>
+    send_day_one_schedule<span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">initialize_onboarding_state</span><span class="token punctuation">(</span>callback_context<span class="token punctuation">:</span> CallbackContext<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Ensures all state machine keys are initialized to prevent errors."""</span>
+    state <span class="token operator">=</span> callback_context<span class="token punctuation">.</span>state
+    <span class="token keyword">if</span> <span class="token string">"current_step"</span> <span class="token keyword">not</span> <span class="token keyword">in</span> state<span class="token punctuation">:</span>
+        state<span class="token punctuation">[</span><span class="token string">"current_step"</span><span class="token punctuation">]</span> <span class="token operator">=</span> OnboardingStep<span class="token punctuation">.</span>START
+    <span class="token keyword">if</span> <span class="token string">"new_hire_details"</span> <span class="token keyword">not</span> <span class="token keyword">in</span> state<span class="token punctuation">:</span>
+        state<span class="token punctuation">[</span><span class="token string">"new_hire_details"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token string">"pending_signals"</span> <span class="token keyword">not</span> <span class="token keyword">in</span> state<span class="token punctuation">:</span>
+        state<span class="token punctuation">[</span><span class="token string">"pending_signals"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+instruction <span class="token operator">=</span> <span class="token triple-quoted-string string">"""You are an HR Onboarding Coordinator Agent.
+
+Current Step: {current_step}
+New Hire Details: {new_hire_details}
+Pending Signals: {pending_signals}
+
+Follow this state machine flow exactly:
+1. If current_step is 'START': Ask for name, email, and start date. Then invoke 'send_welcome_packet'.
+2. If current_step is 'WELCOME_SENT': Inform the user you are paused waiting for document signatures. Do not call other tools.
+3. If current_step is 'DOCUMENTS_SIGNED': Delegate IT provisioning to 'it_agent'.
+4. If current_step is 'IT_PROVISIONED': Ask for the hardware tracking ID, then invoke 'check_hardware_delivery'.
+5. If current_step is 'HARDWARE_DELIVERED': Invoke 'send_day_one_schedule'.
+6. If current_step is 'COMPLETED': Confirm onboarding is done.
+
+Always stay grounded in your tools and current state. Do not skip steps."""</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">By putting </span><code>{current_step}</code><span style="font-size:1rem;">, </span><code>{new_hire_details}</code><span style="font-size:1rem;">, and </span><code>{pending_signals}</code><span style="font-size:1rem;"> directly into the instruction, Python automatically fills in these blanks with real data every time the agent runs. This ensures the model always sees the exact status of the onboarding workflow without needing to guess or dig through old chat messages</span>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <h2 id="tools-advance-the-state-machine"><b>Tools advance the state machine</b></h2>
+    <p>Each tool function updates the checkpoint atomically through ADK's <code>ToolContext.state</code>:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-python line-numbers" tabindex="0"><code class="language-python"><span class="token comment"># app/tools.py</span>
+
+<span class="token keyword">from</span> google<span class="token punctuation">.</span>adk<span class="token punctuation">.</span>tools <span class="token keyword">import</span> ToolContext
+<span class="token keyword">from</span> app<span class="token punctuation">.</span>state_schema <span class="token keyword">import</span> OnboardingStep
+
+<span class="token keyword">def</span> <span class="token function">send_welcome_packet</span><span class="token punctuation">(</span>
+    name<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">,</span> email<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">,</span> start_date<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">,</span> tool_context<span class="token punctuation">:</span> ToolContext
+<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">dict</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Sends the welcome packet and transitions to WELCOME_SENT."""</span>
+    state <span class="token operator">=</span> tool_context<span class="token punctuation">.</span>state
+    state<span class="token punctuation">[</span><span class="token string">"new_hire_details"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">"name"</span><span class="token punctuation">:</span> name<span class="token punctuation">,</span> <span class="token string">"email"</span><span class="token punctuation">:</span> email<span class="token punctuation">,</span> <span class="token string">"start_date"</span><span class="token punctuation">:</span> start_date
+    <span class="token punctuation">}</span>
+    state<span class="token punctuation">[</span><span class="token string">"current_step"</span><span class="token punctuation">]</span> <span class="token operator">=</span> OnboardingStep<span class="token punctuation">.</span>WELCOME_SENT
+    state<span class="token punctuation">[</span><span class="token string">"pending_signals"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"document_signed"</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token string">"status"</span><span class="token punctuation">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span>
+        <span class="token string">"message"</span><span class="token punctuation">:</span> <span class="token string-interpolation"><span class="token string">f"Welcome packet sent to </span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string"> (</span><span class="token interpolation"><span class="token punctuation">{</span>email<span class="token punctuation">}</span></span><span class="token string">). Documents pending signature."</span></span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">Every tool call creates an automatic checkpoint. If the container crashes immediately after </span><code>send_welcome_packet</code><span style="font-size:1rem;"> runs, the state has already been written. When the agent restarts, it reads </span><code>current_step = WELCOME_SENT</code><span style="font-size:1rem;"> and picks up exactly where it left off.</span>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <h2 id="implement-checkpoint-and-resume-with-persistent-sessions"><b>Implement checkpoint-and-resume with persistent sessions</b></h2>
+    <p>The state machine is only durable if the underlying session storage survives restarts. In a containerized environment like <a href="https://cloud.google.com/run?e=48754805">Cloud Run</a>, containers cold-start, scale to zero during idle periods, and restart unexpectedly. If sessions live in volatile memory, every in-flight onboarding run is lost. Give your coding agent this prompt:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-shell line-numbers" tabindex="0"><code class="language-shell"><span class="token string">"Switch our session storage to persistent SQLite so the agent survives server restarts."</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">Swap in-memory sessions for ADK's </span><code>DatabaseSessionService</code><span style="font-size:1rem;"> backed by SQLite (locally) or Cloud SQL (in production):</span>
+    </div>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-python line-numbers" tabindex="0"><code class="language-python"><span class="token comment"># app/fast_api_app.py</span>
+
+<span class="token keyword">from</span> fastapi <span class="token keyword">import</span> FastAPI
+<span class="token keyword">from</span> google<span class="token punctuation">.</span>adk<span class="token punctuation">.</span>cli<span class="token punctuation">.</span>fast_api <span class="token keyword">import</span> get_fast_api_app
+<span class="token keyword">from</span> google<span class="token punctuation">.</span>adk<span class="token punctuation">.</span>sessions<span class="token punctuation">.</span>database_session_service <span class="token keyword">import</span> DatabaseSessionService
+
+<span class="token comment"># Persistent SQLite session configuration</span>
+session_service_uri <span class="token operator">=</span> <span class="token string">"sqlite+aiosqlite:///sessions.db"</span>
+
+app<span class="token punctuation">:</span> FastAPI <span class="token operator">=</span> get_fast_api_app<span class="token punctuation">(</span>
+    agents_dir<span class="token operator">=</span>AGENT_DIR<span class="token punctuation">,</span>
+    web<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+    session_service_uri<span class="token operator">=</span>session_service_uri<span class="token punctuation">,</span>
+<span class="token punctuation">)</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">That's it. One configuration change, and every </span><code>ToolContext.state</code><span style="font-size:1rem;"> write is durably persisted to disk. Kill the server mid-onboarding, restart it, and the agent resumes from the correct checkpoint with all new hire details intact.</span>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <p>For production deployments, replace the SQLite URI with a Cloud SQL connection string – the API is identical.</p>
+    <h2 id="handle-idle-time-with-event-driven-resumption"><b>Handle Idle time with event-driven resumption</b></h2>
+    <p>Idle time is the defining challenge of long-running agents. After sending the welcome packet, the agent enters a dormant state that might last days while the employee signs documents. Active polling wastes compute. Blocked threads don't scale. The agent needs to sleep – truly sleep – and wake up only when an external event arrives. Give your coding agent this prompt:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-shell line-numbers" tabindex="0"><code class="language-shell"><span class="token string">"Add webhook endpoints for document signature and hardware delivery. When a webhook fires, the agent should wake up, hydrate its session, and pick up where it left off."</span></code></pre>
+    <div class="language-block glue-font-weight-medium">Shell</div>
+    <div class="copy-code-block">
+     <button class="copy-clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#202124">
+       <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path>
+      </svg>
+     </button>
+    </div>
+    <div class="dark-mode-block">
+     <button class="dark-mode-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#202124">
+       <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"></path>
+      </svg>
+     </button>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <h3 id="webhook-endpoints"><b>Webhook endpoints</b></h3>
+    <p>Expose FastAPI endpoints that external systems (or a demo UI) call when real-world events complete:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-python line-numbers" tabindex="0"><code class="language-python"><span class="token comment"># app/fast_api_app.py</span>
+
+<span class="token keyword">from</span> pydantic <span class="token keyword">import</span> BaseModel
+<span class="token keyword">from</span> app<span class="token punctuation">.</span>resume_handler <span class="token keyword">import</span> OnboardingResumeHandler
+
+db_session_service <span class="token operator">=</span> DatabaseSessionService<span class="token punctuation">(</span>db_url<span class="token operator">=</span>session_service_uri<span class="token punctuation">)</span>
+webhook_runner <span class="token operator">=</span> Runner<span class="token punctuation">(</span>app<span class="token operator">=</span>agent_app<span class="token punctuation">,</span> session_service<span class="token operator">=</span>db_session_service<span class="token punctuation">)</span>
+resume_handler <span class="token operator">=</span> OnboardingResumeHandler<span class="token punctuation">(</span>runner<span class="token operator">=</span>webhook_runner<span class="token punctuation">)</span>
+
+<span class="token keyword">class</span> <span class="token class-name">WebhookPayload</span><span class="token punctuation">(</span>BaseModel<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    user_id<span class="token punctuation">:</span> <span class="token builtin">str</span>
+    session_id<span class="token punctuation">:</span> <span class="token builtin">str</span>
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>post</span><span class="token punctuation">(</span><span class="token string">"/webhooks/document_signed"</span><span class="token punctuation">)</span>
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">trigger_document_signed_webhook</span><span class="token punctuation">(</span>payload<span class="token punctuation">:</span> WebhookPayload<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">dict</span><span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Wakes up the onboarding agent when the employee signs their contract."""</span>
+    <span class="token keyword">await</span> resume_handler<span class="token punctuation">.</span>receive_signed_documents_callback<span class="token punctuation">(</span>
+        user_id<span class="token operator">=</span>payload<span class="token punctuation">.</span>user_id<span class="token punctuation">,</span> session_id<span class="token operator">=</span>payload<span class="token punctuation">.</span>session_id
+    <span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token string">"status"</span><span class="token punctuation">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span> <span class="token string">"message"</span><span class="token punctuation">:</span> <span class="token string">"Document signature processed, agent resumed."</span><span class="token punctuation">}</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <b style="font-family: Georgia, &quot;Noto Serif SC&quot;, &quot;Songti SC&quot;, SimSun, serif; font-size: 1.25em; letter-spacing: -0.025em;">The resume handler</b>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <p>The <code>OnboardingResumeHandler</code> hydrates the persisted session, transitions the state machine, and wakes the agent programmatically using <code>runner.run_async</code> with a <code>state_delta</code>:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-python line-numbers" tabindex="0"><code class="language-python"><span class="token comment"># app/resume_handler.py</span>
+
+<span class="token keyword">import</span> json
+<span class="token keyword">import</span> logging
+
+<span class="token keyword">from</span> google<span class="token punctuation">.</span>adk<span class="token punctuation">.</span>runners <span class="token keyword">import</span> Runner
+<span class="token keyword">from</span> google<span class="token punctuation">.</span>genai <span class="token keyword">import</span> types
+<span class="token keyword">from</span> app<span class="token punctuation">.</span>state_schema <span class="token keyword">import</span> OnboardingStep
+
+logger <span class="token operator">=</span> logging<span class="token punctuation">.</span>getLogger<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+<span class="token keyword">class</span> <span class="token class-name">OnboardingResumeHandler</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> runner<span class="token punctuation">:</span> Runner<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>runner <span class="token operator">=</span> runner
+
+    <span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">receive_signed_documents_callback</span><span class="token punctuation">(</span>
+        self<span class="token punctuation">,</span> user_id<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">,</span> session_id<span class="token punctuation">:</span> <span class="token builtin">str</span>
+    <span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""Hydrates the session, transitions to DOCUMENTS_SIGNED, and resumes."""</span>
+        <span class="token keyword">async</span> <span class="token keyword">for</span> event <span class="token keyword">in</span> self<span class="token punctuation">.</span>runner<span class="token punctuation">.</span>run_async<span class="token punctuation">(</span>
+            user_id<span class="token operator">=</span>user_id<span class="token punctuation">,</span>
+            session_id<span class="token operator">=</span>session_id<span class="token punctuation">,</span>
+            new_message<span class="token operator">=</span>types<span class="token punctuation">.</span>Content<span class="token punctuation">(</span>
+                role<span class="token operator">=</span><span class="token string">"user"</span><span class="token punctuation">,</span>
+                parts<span class="token operator">=</span><span class="token punctuation">[</span>types<span class="token punctuation">.</span>Part<span class="token punctuation">.</span>from_text<span class="token punctuation">(</span>
+                    text<span class="token operator">=</span><span class="token string">"Resume onboarding: Contract has been signed."</span>
+                <span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">)</span><span class="token punctuation">,</span>
+            state_delta<span class="token operator">=</span><span class="token punctuation">{</span>
+                <span class="token string">"current_step"</span><span class="token punctuation">:</span> OnboardingStep<span class="token punctuation">.</span>DOCUMENTS_SIGNED<span class="token punctuation">,</span>
+                <span class="token string">"pending_signals"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">:</span>
+            logger<span class="token punctuation">.</span>info<span class="token punctuation">(</span>json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span><span class="token punctuation">{</span>
+                <span class="token string">"severity"</span><span class="token punctuation">:</span> <span class="token string">"INFO"</span><span class="token punctuation">,</span>
+                <span class="token string">"message"</span><span class="token punctuation">:</span> <span class="token string-interpolation"><span class="token string">f"Wake-up execution event: </span><span class="token interpolation"><span class="token punctuation">{</span>event<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">,</span>
+                <span class="token string">"event"</span><span class="token punctuation">:</span> <span class="token string">"runner_event"</span><span class="token punctuation">,</span>
+                <span class="token string">"session_id"</span><span class="token punctuation">:</span> session_id<span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">The key mechanism is </span><code>state_delta</code><span style="font-size:1rem;">. When the webhook fires, </span><code>run_async</code><span style="font-size:1rem;"> atomically applies the state transition </span><i style="font-size:1rem;">before</i><span style="font-size:1rem;"> the agent's next inference call. The model sees </span><code>current_step = DOCUMENTS_SIGNED</code><span style="font-size:1rem;"> in its system prompt and immediately knows to delegate IT provisioning – no replaying of old conversation history, no hallucinated intermediate steps.</span>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <p>The same pattern applies to the hardware delivery webhook. The container can scale to zero during the entire idle time period. When the webhook arrives, the container spins up, the session is hydrated from SQLite, and the agent resumes its reasoning chain exactly where it paused.</p>
+    <h2 id="delegate-with-multi-agent-coordination"><b>Delegate with multi-agent coordination</b></h2>
+    <p>Stuffing all tools into a single agent's system prompt degrades reasoning quality, especially in long-running contexts where the prompt is already loaded with state variables and workflow instructions. ADK's multi-agent architecture lets you delegate specialized tasks to focused sub-agents. Give your coding agent this prompt:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-shell line-numbers" tabindex="0"><code class="language-shell"><span class="token string">"Don't put IT provisioning in the main agent. Create a separate it_agent sub-agent that handles setting up corporate accounts, and have the coordinator delegate to it after documents are signed."</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">The onboarding coordinator delegates IT provisioning to a dedicated </span><code>it_agent</code><span style="font-size:1rem;">:</span>
+    </div>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-python line-numbers" tabindex="0"><code class="language-python"><span class="token comment"># app/agent.py</span>
+
+<span class="token keyword">from</span> app<span class="token punctuation">.</span>tools <span class="token keyword">import</span> provision_software_accounts
+
+it_agent <span class="token operator">=</span> Agent<span class="token punctuation">(</span>
+    name<span class="token operator">=</span><span class="token string">"it_agent"</span><span class="token punctuation">,</span>
+    model<span class="token operator">=</span>Gemini<span class="token punctuation">(</span>model<span class="token operator">=</span><span class="token string">"gemini-3.1-flash-lite"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    instruction<span class="token operator">=</span><span class="token triple-quoted-string string">"""You are an IT Provisioning Agent. Provision corporate software 
+    accounts (email, Slack) for the new hire.
+
+    Current Step: {current_step}
+    New Hire Details: {new_hire_details}
+
+    1. Collect the desired corporate username prefix.
+    2. Invoke 'provision_software_accounts'.
+    3. After provisioning, transfer control back to the coordinator."""</span><span class="token punctuation">,</span>
+    tools<span class="token operator">=</span><span class="token punctuation">[</span>provision_software_accounts<span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+
+root_agent <span class="token operator">=</span> Agent<span class="token punctuation">(</span>
+    name<span class="token operator">=</span><span class="token string">"hr_onboarding_coordinator"</span><span class="token punctuation">,</span>
+    model<span class="token operator">=</span>Gemini<span class="token punctuation">(</span>model<span class="token operator">=</span><span class="token string">"gemini-3.1-flash-lite"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    instruction<span class="token operator">=</span>instruction<span class="token punctuation">,</span>
+    tools<span class="token operator">=</span><span class="token punctuation">[</span>send_welcome_packet<span class="token punctuation">,</span> check_hardware_delivery<span class="token punctuation">,</span> send_day_one_schedule<span class="token punctuation">]</span><span class="token punctuation">,</span>
+    sub_agents<span class="token operator">=</span><span class="token punctuation">[</span>it_agent<span class="token punctuation">]</span><span class="token punctuation">,</span>
+    before_agent_callback<span class="token operator">=</span>initialize_onboarding_state<span class="token punctuation">,</span>
+<span class="token punctuation">)</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">When the coordinator reaches </span><code>DOCUMENTS_SIGNED</code><span style="font-size:1rem;">, it transfers execution to </span><code>it_agent</code><span style="font-size:1rem;">. The sub-agent handles account provisioning independently, updates the shared state to </span><code>IT_PROVISIONED</code><span style="font-size:1rem;">, and hands control back. Each agent has a focused prompt and a narrow tool set, which keeps reasoning sharp even after weeks of accumulated state.</span>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <p>Notice that when creating the <code>root_agent</code>, we pass <code>initialize_onboarding_state</code> to the <code>before_agent_callback</code> parameter. This tells the application to run our setup function the very first time a user interacts with the agent, ensuring all our tracking variables are ready to go. Because the agent dynamically fills those variables into its prompt every time it wakes up, it knows exactly where it stands, no matter how many days pass between steps.</p>
+    <h2 id="validate-multi-day-flows-with-golden-evaluations"><b>Validate multi-day flows with golden evaluations</b></h2>
+    <p>You can't wait two weeks to find out your agent skips a step. ADK evaluation sets let you simulate idle time delays and webhook triggers in seconds by pre-seeding session state. Give your coding agent this prompt:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-shell line-numbers" tabindex="0"><code class="language-shell"><span class="token string">"Write eval tests that simulate idle time. I need a test where the agent waits 48 hours for hardware delivery, resumes, and still remembers the new hire's details."</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">Here's a golden test case that verifies the agent correctly enforces the idle-time pause gate – refusing to skip ahead when asked:</span>
+    </div>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-json line-numbers" tabindex="0"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"eval_id"</span><span class="token operator">:</span> <span class="token string">"idle_time_pause_safety_gate"</span><span class="token punctuation">,</span>
+  <span class="token property">"conversation"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"user_content"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"parts"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"Start onboarding for Jane Doe, email: jane@example.com, starting on 2026-06-01."</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"intermediate_data"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"tool_uses"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"send_welcome_packet"</span><span class="token punctuation">,</span> <span class="token property">"args"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Jane Doe"</span><span class="token punctuation">,</span> <span class="token property">"email"</span><span class="token operator">:</span> <span class="token string">"jane@example.com"</span><span class="token punctuation">,</span> <span class="token property">"start_date"</span><span class="token operator">:</span> <span class="token string">"2026-06-01"</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"user_content"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"parts"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"Can we skip the document signing and provision corporate accounts now?"</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"final_response"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"parts"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"waiting for the employee to sign"</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"intermediate_data"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"tool_uses"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">The second turn verifies that the agent refuses to call any tools and stays in the </span><code>WELCOME_SENT</code><span style="font-size:1rem;"> gate. A second test case pre-seeds the state to </span><code>IT_PROVISIONED</code><span style="font-size:1rem;"> and confirms the agent correctly resumes after a simulated 48-hour hardware delay, calling </span><code>check_hardware_delivery</code><span style="font-size:1rem;"> and </span><code>send_day_one_schedule</code><span style="font-size:1rem;"> in sequence without dropping the new hire's original context.</span>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <p>Run evaluations locally:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-shell line-numbers" tabindex="0"><code class="language-shell">.venv/bin/adk <span class="token builtin class-name">eval</span> ./app tests/eval/evalsets/idle_time_delay_eval.json <span class="token punctuation">\</span>
+  <span class="token parameter variable">--config_file_path</span> tests/eval/eval_config.json</code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">These golden tests slot directly into CI/CD pipelines, catching state machine regressions before they reach production.</span>
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <h2 id="deploy-to-agent-runtime"><b>Deploy to Agent Runtime</b></h2>
+    <p>When evaluations pass, it's time to deploy. Give your coding agent this prompt:</p>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-shell line-numbers" tabindex="0"><code class="language-shell"><span class="token string">"Deploy this to Agent Runtime with Cloud Trace enabled so we can monitor pause-and-resume latencies in production."</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">The coding agent scaffolds the AgentEngineApp wrapper that bridges your ADK application to Agent Runtime:</span>
+    </div>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-python line-numbers" tabindex="0"><code class="language-python"><span class="token comment"># app/agent_runtime_app.py</span>
+
+<span class="token keyword">from</span> vertexai<span class="token punctuation">.</span>agent_engines<span class="token punctuation">.</span>templates<span class="token punctuation">.</span>adk <span class="token keyword">import</span> AdkApp
+<span class="token keyword">from</span> app<span class="token punctuation">.</span>agent <span class="token keyword">import</span> app <span class="token keyword">as</span> adk_app
+
+<span class="token keyword">class</span> <span class="token class-name">AgentEngineApp</span><span class="token punctuation">(</span>AdkApp<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">set_up</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""Initialize with logging and telemetry."""</span>
+        vertexai<span class="token punctuation">.</span>init<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>set_up<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+agent_runtime <span class="token operator">=</span> AgentEngineApp<span class="token punctuation">(</span>app<span class="token operator">=</span>adk_app<span class="token punctuation">)</span></code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">Deploy with a single command:</span>
+    </div>
+   </div>
+   <div class="inner-block-content code-block line-numbers">
+    <pre class="language-shell line-numbers" tabindex="0"><code class="language-shell">agents-cli deploy</code></pre>
+    <div class="language-block glue-font-weight-medium">
+     <span style="font-size:1rem;">Agent Runtime handles session persistence, auto-scaling (including scale-to-zero during idle time), and Cloud Trace integration out of the box. The same checkpoint-and-resume architecture that runs locally against SQLite works in production against managed cloud storage – no code changes required.</span>
+    </div>
+   </div>
+   <div class="inner-block-content">
+    <div class="image-wrapper">
+     <img class="regular-image" src="https://image.jido.dev/20260512213019_Diagram-3.original.png" alt="Diagram-3">
+    </div>
+   </div>
+   <div class="inner-block-content rich-content">
+    <h2 id="what-comes-next"><b>What comes next</b></h2>
+    <p>Stateless agents are a subset of what agents can be. The patterns in this tutorial – durable state machines, persistent checkpoint-and-resume, event-driven idle time handling, and multi-agent delegation – transform agents from conversational toys into production background processes that reliably manage workflows spanning days or weeks.</p>
+    <p>To get started:</p>
+    <ul>
+     <li>Clone the <a href="https://github.com/GoogleCloudPlatform/generative-ai/tree/main/agents/adk/new-hire-onboarding">new-hire-onboarding repo</a> and run the live demo locally</li>
+     <li>Explore the <a href="https://adk.dev/">ADK documentation</a> for session management, multi-agent patterns, and evaluation frameworks</li>
+     <li>Install the <a href="https://google.github.io/agents-cli/">Agents CLI</a> to scaffold, test, and deploy your own long-running agents</li>
+    </ul>
+    <p>The onboarding agent is just one example. Any workflow with human-in-the-loop pauses, cross-system handoffs, or multi-day timelines is a candidate for this architecture. Invoice disputes, procurement approvals, sales prospecting sequences, compliance audits – the pattern is the same. Define the state machine, persist the checkpoints, sleep through the idle time, and wake up exactly where you left off.</p>
+   </div>
+  </div>
+ </body>
+</html>

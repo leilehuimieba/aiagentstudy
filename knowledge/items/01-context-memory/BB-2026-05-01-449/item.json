@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-03",
+  "id": "BB-2026-05-01-449",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-449/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-449",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-449/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-449/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-449/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-449/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-449/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-449/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 得物技术",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 得物技术",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "ReAct",
+    "AI Coding",
+    "Ops Automation"
+  ],
+  "title": "Refactoring Alert Troubleshooting with LLM Agents / Dewu Tech",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247544879&idx=1&sn=4d1a92199b785d5d3d3de1758545adba",
+      "https://www.bestblogs.dev/article/7571ebc2"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247544879&idx=1&sn=4d1a92199b785d5d3d3de1758545adba",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/7571ebc2"
+  }
+}

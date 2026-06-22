@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Context/State",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "10-10",
+  "id": "BB-2026-05-01-304",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-304/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-304",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-304/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-304/raw/meta.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-304/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-304/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Abstract + source captured",
+  "tags": [
+    "swe-bench",
+    "execution-based-eval",
+    "deterministic-replay",
+    "github-issues",
+    "software-agents"
+  ],
+  "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+  "topic": "04-evaluation-guardrails",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2310.06770"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2310.06770",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

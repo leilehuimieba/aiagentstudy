@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Tb1a2061f3fcc46bb9c96a29a819affd9",
+  "data": {
+    "metaData": {
+      "id": "RAW_16e7e40b",
+      "notExist": null,
+      "originalTitle": "OpenAI Models in OpenClaw， Done Right — OpenClaw Blog",
+      "title": "OpenAI Models in OpenClaw， Done Right — OpenClaw Blog",
+      "oneSentenceSummary": "OpenClaw integrates OpenAI models via the native Codex app-server harness, delegating the low-level agent loop to Codex while retaining ownership of the product layer, resulting in cleaner tool boundaries, deliberate replies, and dynamic tool loading.",
+      "summary": "This blog post from OpenClaw announces a significant architectural change in how OpenAI models are integrated into the OpenClaw agent platform. Previously, OpenClaw drove the entire model loop itself, translating between its own harness and OpenAI's runtime. Now, for `openai/gpt-*` agent turns, the native Codex app-server harness becomes the default runtime. This means Codex owns the low-level OpenAI loop, including native thread state, tool continuation, and code execution, while OpenClaw retains ownership of the product layer: channels, persona, memory, sessions, and its own integration tools. The key benefits include: visible replies are now deliberate (using a dedicated message tool instead of leaking internal reasoning), dynamic tool loading reduces prompt bloat (Codex can search for and load tool schemas on demand), and subscription-based authentication is supported. The post also discusses how lessons from this integration, such as cleaner tool boundaries and deferred catalogs, are being fed back into the default OpenClaw harness to improve the experience for all models, not just OpenAI's.",
+      "featuredReason": "OpenClaw now integrates OpenAI models via the native Codex app-server, streamlining agentic work. This shift allows OpenClaw to manage the product layer while Codex handles the low-level model loop, enabling native tool use and dynamic tool loading without prompt bloat. The result is less friction, clearer replies, and a more efficient, subscription-backed agent experience, with lessons benefiting all models eventually.",
+      "translateContent": null,
+      "tags": [
+        "OpenClaw",
+        "Codex",
+        "AI Agent",
+        "Agent Platform",
+        "OpenAI"
+      ],
+      "mainPoints": [
+        {
+          "point": "OpenClaw delegates the low-level OpenAI agent loop to the native Codex app-server harness.",
+          "explanation": "This architectural change means Codex handles thread state, tool continuation, and code execution, while OpenClaw focuses on the product layer like channels, memory, and persona. This removes translation friction and improves performance."
+        },
+        {
+          "point": "Dynamic tool loading via Codex reduces prompt bloat and improves tool selection.",
+          "explanation": "Instead of preloading all tool schemas into the initial prompt, Codex can search for and load the required tool schema on demand. This keeps the initial context smaller and reduces the chance of the model picking the wrong tool."
+        },
+        {
+          "point": "Visible replies are now deliberate, using a dedicated message tool for cleaner communication.",
+          "explanation": "The model uses a specific tool to send visible messages, separating internal reasoning from user-facing output. This prevents accidental chatty behavior and ensures quiet turns are truly quiet."
+        },
+        {
+          "point": "Lessons from the Codex integration are being applied to improve the default OpenClaw harness for all models.",
+          "explanation": "The benefits of cleaner tool boundaries, deferred catalogs, and structured quiet outcomes are being ported back to the general OpenClaw PI harness, ensuring that non-OpenAI models also benefit from these improvements over time."
+        }
+      ],
+      "keyQuotes": [
+        "Codex owns the OpenAI turn. OpenClaw owns the product around the turn.",
+        "The result is less translation, less hesitation, and more useful action.",
+        "A personal agent should not feel chatty because the transport leaked text. It should interrupt because it has something worth showing you.",
+        "The point is not to make OpenClaw thinner everywhere. The point is to make each layer own the work it is best at."
+      ],
+      "url": "https://openclaw.ai/blog/openai-models-in-openclaw-done-right/",
+      "readUrl": "https://www.bestblogs.dev/article/16e7e40b",
+      "enclosureUrl": null,
+      "domain": "openclaw.ai",
+      "cover": "https://image.jido.dev/20260515043136_og-image.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_33cd0cf4",
+      "sourceName": "OpenClaw Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://openclaw.ai/favicon.svg",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 12,
+      "wordCount": 1345,
+      "readTime": 6,
+      "mediaDuration": null,
+      "authors": [
+        "OpenClaw"
+      ],
+      "publishTimeStamp": 1778716800000,
+      "publishDateStr": "05-14",
+      "publishDateTimeStr": "2026-05-14 00:00:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_2029622732594499630",
+        "type": "TWITTER",
+        "title": "OpenAI Launches GPT-5.4 with Native Computer Use and 1M Context",
+        "oneSentenceSummary": "Sam Altman announces the release of GPT-5.4, featuring enhanced knowledge work, native computer use, and a 1-million-token context window.",
+        "url": "https://x.com/sama/status/2029622732594499630",
+        "sourceName": "Sam Altman(@sama)"
+      },
+      {
+        "id": "RAW_a6d9083a",
+        "type": "ARTICLE",
+        "title": "Introducing GPT-5.5",
+        "oneSentenceSummary": "OpenAI releases GPT-5.5, its most capable model yet, with significant gains in agentic coding, knowledge work, and scientific research, while maintaining GPT-5.4 latency and improving token efficiency.",
+        "url": "https://openai.com/index/introducing-gpt-5-5",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_6daee900",
+        "type": "ARTICLE",
+        "title": "Advancing voice intelligence with new models in the API",
+        "oneSentenceSummary": "OpenAI introduces three new audio models in the API—GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper—to enable more intelligent, natural, and actionable real-time voice applications for developers.",
+        "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_4a9b8b85",
+        "type": "ARTICLE",
+        "title": "OpenClaw Had a Rough Week — OpenClaw Blog",
+        "oneSentenceSummary": "OpenClaw had a rough week due to plugin dependency issues and performance regressions, leading to a commitment to shrink the core, move optional components to ClawHub, and announce an LTS release.",
+        "url": "https://openclaw.ai/blog/openclaw-rough-week/",
+        "sourceName": "OpenClaw Blog"
+      },
+      {
+        "id": "RAW_b8ebc0fc",
+        "type": "ARTICLE",
+        "title": "How OpenClaw Got Safer in Public — OpenClaw Blog",
+        "oneSentenceSummary": "OpenClaw's journey from an insecure experiment to a production-ready system demonstrates how open-source transparency, community collaboration, and systematic hardening can transform security from a liability into a competitive advantage.",
+        "url": "https://openclaw.ai/blog/openclaw-security-in-public/",
+        "sourceName": "OpenClaw Blog"
+      },
+      {
+        "id": "RAW_a647d6a",
+        "type": "VIDEO",
+        "title": "State of the Claw",
+        "oneSentenceSummary": "OpenClaw founder and OpenAI engineer Peter Steinberger discusses the unprecedented growth and security challenges of the OpenClaw project, shares his unique AI-assisted development workflow, and explores the evolving concept of 'engineer taste' in the AI era.",
+        "url": "https://www.youtube.com/watch?v=zgNvts_2TUE",
+        "sourceName": "AI Engineer"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_9e0a0be",
+        "type": "VIDEO",
+        "title": "Codex Now Integrates Directly with Chrome on macOS and Windows",
+        "oneSentenceSummary": "OpenAI introduces a new Chrome extension for Codex on macOS and Windows, enabling the AI to operate directly within a user's live browser session to perform complex, parallel automation tasks using their active profile and direct code execution.",
+        "url": "https://www.youtube.com/watch?v=b6Mxcv1pyBU",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_f12b487",
+        "type": "VIDEO",
+        "title": "This is ChatGPT Images 2.0",
+        "oneSentenceSummary": "OpenAI has officially launched Images 2.0, a highly intelligent image generation model capable of 'thinking', web searching, generating complex diagrams, supporting multilingual prompts, and creating coherent multi-image sets for professional production.",
+        "url": "https://www.youtube.com/watch?v=-7JSa_luc6k",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_7cb7ba44",
+        "type": "ARTICLE",
+        "title": "Where OpenClaw Security Is Heading — OpenClaw Blog",
+        "oneSentenceSummary": "OpenClaw is making its powerful AI personal assistant more secure through filesystem boundaries, network egress control, plugin trust signals, contextual command approvals, and static analysis, without reducing its capabilities.",
+        "url": "https://openclaw.ai/blog/where-openclaw-security-is-heading/",
+        "sourceName": "OpenClaw Blog"
+      }
+    ]
+  }
+}

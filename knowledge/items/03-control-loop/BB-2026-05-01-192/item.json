@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-09",
+  "id": "BB-2026-05-01-192",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-192/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-192",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-192/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-192/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-192/raw/display-document.html",
+      "knowledge/items/03-control-loop/BB-2026-05-01-192/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-192/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-192/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hugging Face Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hugging Face Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "OncoAgent",
+    "Clinical Decision Support",
+    "Multi-Agent Systems",
+    "LangGraph",
+    "Corrective RAG"
+  ],
+  "title": "\"OncoAgent: A Dual-Tier Multi-Agent Framework for Privacy-Preserving Oncology Clinical Decision Support\"",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper",
+      "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/oncoagent-thumbnail.png",
+      "https://www.bestblogs.dev/en/article/da90d61f"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/da90d61f"
+  }
+}

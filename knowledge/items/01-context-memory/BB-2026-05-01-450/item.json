@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-01",
+  "id": "BB-2026-05-01-450",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-450/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-450",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-450/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-450/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-450/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-450/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-450/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-450/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hugging Face - Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hugging Face - Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Agent Logic",
+    "Enterprise AI",
+    "LLM",
+    "Program Analysis",
+    "Knowledge Graphs"
+  ],
+  "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+      "https://www.bestblogs.dev/article/461b71e6"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/461b71e6"
+  }
+}

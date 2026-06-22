@@ -1,0 +1,80 @@
+{
+  "id": "RAW_64ba3bc1",
+  "notExist": null,
+  "originalTitle": "从 0 到 1 带你速通 Codex，我整理的终极保姆教程来了。",
+  "title": "From 0 to 1: A Quick Guide to Codex – The Ultimate Beginner's Tutorial I've Compiled",
+  "oneSentenceSummary": "This article is a comprehensive, beginner-friendly tutorial on OpenAI Codex, guiding you step-by-step from installation and interface setup to developing web pages and apps, making it the ultimate guide for zero-experience users.",
+  "summary": "With a 'hands-on' philosophy, this article systematically introduces the entire workflow of using OpenAI Codex. The author first guides users through installation and login, highlighting Codex's ability to import configurations from Claude Code and Cowork with a single click—a 'poaching' feature. Then, the article breaks down the Codex interface, distinguishing between 'Chat' and 'Project' modes, and offers best practices: 'Group tasks of the same direction into one project, and start a new chat for each specific task.' In the settings section, the author recommends using Andrej Karpathy's AGENTS.md template as a global constraint and suggests enabling the memory feature. The core of the article uses two practical examples—developing a Codex feature introduction webpage and a medication reminder app—to demonstrate the complete process from requirement proposal, planning mode, automatic coding, to deployment. The webpage development showcases Codex's built-in browser preview and annotation editing features; the app development introduces the Computer Use plugin, demonstrating Codex's ability to automatically download Xcode, compile, and install the app on a phone. The article concludes by noting significant functional differences between Mac and Windows users.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Codex",
+    "AI Programming",
+    "Agent",
+    "Tutorial",
+    "Vibe Coding"
+  ],
+  "mainPoints": [
+    {
+      "point": "Codex is a powerful AI programming agent that supports developing web pages and apps from scratch.",
+      "explanation": "Through two complete examples (a webpage and an app), the article demonstrates Codex's end-to-end capabilities from requirement analysis and code generation to deployment, validating its practicality as a productivity tool."
+    },
+    {
+      "point": "Proper project management and settings are key to using Codex effectively.",
+      "explanation": "The author emphasizes using 'Project' mode to isolate tasks, enabling planning mode for requirement confirmation, setting AGENTS.md global rules, and enabling memory features—these best practices significantly improve development efficiency and code quality."
+    },
+    {
+      "point": "The Computer Use plugin is Codex's core differentiating capability, automating complex environment operations.",
+      "explanation": "With Computer Use, Codex can visually control the computer, automatically completing steps like downloading Xcode and compiling apps, greatly lowering the barrier for non-technical users, though it is currently only available on Mac."
+    }
+  ],
+  "keyQuotes": [
+    "Codex not only resets your quota daily and invites you to use it, but it also helps you move house, importing all your previous configurations with one click.",
+    "I really think the initial categorization is important; otherwise, you'll be really frustrated later on...",
+    "After all, I'm not a developer, and the pop-ups are gibberish to me. If you ask me, what do I know? So it's better to just let it handle everything on its own.",
+    "Annotation is one of the features I use the most—it's really handy.",
+    "Mac users are currently the high-end VIPs of Codex, while Windows users are just... standing-room tickets."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682718&idx=1&sn=9e83ec07ed3e4ddf976e4d8673f80282",
+  "readUrl": "https://www.bestblogs.dev/article/64ba3bc1",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045441_36cb882d",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_86a0b5",
+  "sourceName": "数字生命卡兹克",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045441_36cb882d",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 149,
+  "wordCount": 5529,
+  "readTime": 23,
+  "mediaDuration": null,
+  "authors": [
+    "数字生命卡兹克"
+  ],
+  "publishTimeStamp": 1779847080000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 09:58:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

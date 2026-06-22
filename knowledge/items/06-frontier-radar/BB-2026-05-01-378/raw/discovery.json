@@ -1,0 +1,88 @@
+{
+  "id": "RAW_c0e11f5d",
+  "notExist": null,
+  "originalTitle": "[AINews] New AI Infra decacorns: Fireworks， Baseten (with OpenRouter on the way)",
+  "title": "[AINews] New AI Infra decacorns: Fireworks， Baseten (with OpenRouter on the way)",
+  "oneSentenceSummary": "This AI news roundup covers the rise of AI infrastructure decacorns Fireworks and Baseten, alongside key developments in agent harness engineering, long-horizon reasoning, model architecture updates, and production tooling.",
+  "summary": "This edition of AINews from Latent Space highlights the rapid growth of AI inference infrastructure, with Fireworks ($15B) and Baseten ($11B) approaching decacorn status, and OpenRouter raising a $113M Series B. The core theme is that the winning stack for AI agents is now 'model + harness + eval loop', not just a stronger base model. Key technical developments include: DeepSWE as a more realistic coding benchmark, the 'Language Models Need Sleep' paper for context compression, new optimizer work (AMUSE, Muon variants), MiniMax's M3 sparse attention architecture, and Huawei's 'τ scaling' engineering roadmap. The newsletter also covers production tooling updates like vLLM's Rust frontend, W&B's MCP server, and Cloudflare's startups program. On the open model front, Qwen 3.7 Max is positioned as a frontier model, while local inference benchmarks show Qwen3.6 35B A3B achieving 110 tok/s on a 12GB GPU.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Infrastructure",
+    "Agent Harness",
+    "Inference",
+    "Model Architecture",
+    "Coding Benchmarks"
+  ],
+  "mainPoints": [
+    {
+      "point": "AI inference infrastructure is rapidly scaling, with Fireworks and Baseten approaching decacorn status.",
+      "explanation": "Fireworks is reportedly in talks for a $15B valuation (3.75x in 7 months) and Baseten is raising at $11B (2.2x in 3 months), signaling a massive market shift toward inference as a durable platform layer."
+    },
+    {
+      "point": "The winning stack for coding agents is now 'model + harness + eval loop', not just a stronger base model.",
+      "explanation": "Multiple sources converged on the thesis that context governance, trustworthy memory, and dynamic skill routing are becoming the main differentiators, with DeepSeek, Google, and LangChain all formalizing harness engineering."
+    },
+    {
+      "point": "Long-horizon memory and context compression are resurfacing as core bottlenecks for agents.",
+      "explanation": "The 'Language Models Need Sleep' paper proposes a sleep-like consolidation phase that converts recent context into persistent fast weights, offering an alternative to ever-growing KV caches for agents with long trajectories."
+    },
+    {
+      "point": "Production serving stacks are seeing meaningful performance improvements, like vLLM's Rust frontend.",
+      "explanation": "vLLM merged a Rust frontend as a drop-in alternative to the Python API server, achieving ~837 req/s vs ~162 req/s on a preprocess-heavy workload, a 5x improvement."
+    },
+    {
+      "point": "Open-weight models like Qwen3.6 35B A3B are enabling practical local agent workflows.",
+      "explanation": "Users report running local agents with Qwen3.6 35B A3B at over 100 tok/s on consumer GPUs, enabling workflows like VPS DevOps, document conversion, and automated ticket management."
+    }
+  ],
+  "keyQuotes": [
+    "The winning stack is now model + harness + eval loop, not just a stronger base model.",
+    "DeepSWE is the first code bench that actually aligns with how it feels to use these models coding.",
+    "Language Models Need Sleep: a sleep-like consolidation phase where recent context is converted into persistent fast weights before clearing the KV cache.",
+    "vLLM merged a Rust frontend... showing ~837 req/s vs ~162 req/s on a preprocess-heavy workload in a single process.",
+    "OpenRouter announced a $113M Series B and said weekly volume had grown from 5T to 25T tokens over six months."
+  ],
+  "url": "https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks",
+  "readUrl": "https://www.bestblogs.dev/article/c0e11f5d",
+  "enclosureUrl": null,
+  "domain": "latent.space",
+  "cover": "https://image.jido.dev/20260527034305_HJQGFgQbgAArjoi.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_fc479e",
+  "sourceName": "Latent.Space",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527050728_73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "NEWS",
+  "aiSubCategoryDesc": "AI News",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 42,
+  "wordCount": 2472,
+  "readTime": 10,
+  "mediaDuration": null,
+  "authors": [
+    "Latent.Space"
+  ],
+  "publishTimeStamp": 1779852833000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 11:33:53",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

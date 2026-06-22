@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Evaluation/Guardrails"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-26",
+  "id": "BB-2026-05-01-020",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-020/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-020",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-020/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-020/raw/extract.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-020/raw/source-links.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-020/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-020/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs Topic",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs Topic",
+  "status": "Full text + source captured",
+  "tags": [
+    "agent-memory",
+    "context-engineering",
+    "rag",
+    "ai-agent",
+    "ai-workflow"
+  ],
+  "title": "Agent Memory 与 Context Engineering",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.cloudflare.com/introducing-agent-memory/",
+      "https://claude.com/blog/using-claude-code-session-management-and-1m-context",
+      "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500592&idx=1&sn=c6bf5d5999d9d1ab05f95da436ac7ec3",
+      "https://slack.engineering/managing-context-in-long-run-agentic-applications/",
+      "https://spring.io/blog/2026/04/07/spring-ai-agentic-patterns-6-memory-tools",
+      "https://spring.io/blog/2026/04/15/spring-ai-session-management",
+      "https://www.bestblogs.dev/explore/topics/agent-memory-context-engineering",
+      "https://www.infoq.com/news/2026/04/linkedin-cognitive-memory-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "https://x.com/weaviate_io/status/2046989969160286557"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/explore/topics/agent-memory-context-engineering"
+  }
+}

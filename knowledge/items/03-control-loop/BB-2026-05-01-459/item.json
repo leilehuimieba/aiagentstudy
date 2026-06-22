@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-06",
+  "id": "BB-2026-05-01-459",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-459/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-459",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-459/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-459/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-459/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-459/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-459/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-459/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Latent.Space",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Latent.Space",
+  "status": "Full text + source captured",
+  "tags": [
+    "RL",
+    "AI Agent",
+    "Training Infrastructure",
+    "Data Quality",
+    "Software Engineering"
+  ],
+  "title": "How to Stop Shipping Low-Quality RL Environments (with Examples)",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/cdd6597f",
+      "https://www.latent.space/p/bad-envs"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.latent.space/p/bad-envs",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/cdd6597f"
+  }
+}

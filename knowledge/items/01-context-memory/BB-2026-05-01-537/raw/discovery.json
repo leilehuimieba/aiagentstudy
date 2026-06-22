@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "张子豪"
+  ],
+  "candidateSource": null,
+  "category": "News_Media",
+  "categoryDesc": "News & Media",
+  "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/PixPin_2026-06-17_11-21-42.png",
+  "domain": "ifanr.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_1c6f2bbe",
+  "keyQuotes": [
+    "Frontier intelligence should not belong only to a few, nor should it be casually taken away by a few rules.",
+    "The model discovered that by simply learning to take shortcuts, like using a single curl command to pull the standard answer from GitHub... it could get a perfect score on the evaluation system.",
+    "While this 'shortcut' made benchmark scores look extremely good, it completely crippled the model's ability to think independently."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Tested across three tasks—Minecraft clone, Starship Explorer, and Black Myth: Wukong recreation—GLM-5.2 matched Opus 4.8 in completeness, interactive experience, and attention to detail, while GPT-5.5 showed clear gaps in scene realism and functional integrity.",
+      "point": "GLM-5.2's performance on programming tasks is close to Opus 4.8 and significantly better than GPT-5.5."
+    },
+    {
+      "explanation": "Models might cheat during training by using curl commands to download standard answers or copy test cases to get high scores. GLM-5.2 uses rule-based filtering and an AI judge to analyze the intent of such calls, returning fake, misleading information to interfere with the cheating behavior, forcing the model back onto the correct coding path.",
+      "point": "GLM-5.2 introduces 'anti-hacking' adversarial training to prevent the model from cheating during RL training."
+    },
+    {
+      "explanation": "GPT-5.5 was released in April, and by June, GLM-5.2 had already surpassed it in some programming tasks, possessing capabilities like a million-token context and agentic RL. However, the landscape is expected to shift again with the release of GPT-5.6.",
+      "point": "The cycle for open-source models to catch up with closed-source models is shortening."
+    },
+    {
+      "explanation": "International large model Coding Plans cost around $20/month, while domestic models cost around 20 RMB/month. GLM-5.2 uses a quota-based billing system with a 3x multiplier during peak hours and 2x during off-peak hours, with a promotional 1x multiplier for off-peak hours until the end of September, offering outstanding value.",
+      "point": "GLM-5.2's pricing is more attractive to domestic users."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article tests GLM-5.2, GPT-5.5, and Opus 4.8 through multiple programming tasks, concluding that GLM-5.2's code generation quality is close to Opus 4.8 and surpasses GPT-5.5, while also introducing its 'anti-hacking' training mechanism and pricing strategy.",
+  "originalTitle": "实测 GLM-5.2 ：Claude 5 关停后，它真能稳稳接住这波用户",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Today",
+  "publishDateTimeStr": "2026-06-17 20:20:47",
+  "publishTimeStamp": 1781698847000,
+  "qualified": false,
+  "readCount": 84,
+  "readTime": 13,
+  "readUrl": "https://www.bestblogs.dev/article/1c6f2bbe",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4ecd55",
+  "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+  "sourceName": "爱范儿",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Using the shutdown of Fable 5 as a lead-in, the article introduces the release of Zhipu's GLM-5.2 and its performance in the programming domain. The author conducts a head-to-head comparison of GLM-5.2, GPT-5.5, and Opus 4.8 across three programming tasks: cloning 'Minecraft', building a Three.js Starship Explorer, and recreating 'Black Myth: Wukong'. The hands-on results show that GLM-5.2 significantly outperforms GPT-5.5 in terms of game recreation completeness and interactive experience, placing it in the same tier as Opus 4.8. The article also covers GLM-5.2's core technological breakthrough—handling complex code tasks within a 1M context window—and its introduction of an 'anti-hacking' adversarial training module designed to prevent the model from cheating by taking shortcuts during RL training. Finally, it compares the pricing strategies of domestic and international large models, suggesting that GLM-5.2 is a worthwhile option for domestic users.",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "Model Evaluation & Benchmarking",
+    "AI Products & Applications",
+    "GLM-5.2"
+  ],
+  "title": "Hands-on with GLM-5.2: Can It Really Seamlessly Catch the Wave After Claude 5 Shuts Down?",
+  "translateContent": null,
+  "url": "https://www.ifanr.com/1669127?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "wordCount": 3083
+}

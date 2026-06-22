@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-15",
+  "id": "BB-2026-05-01-572",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-572/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-572",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-572/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-572/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-572/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-572/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-572/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-572/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Stack Overflow Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Stack Overflow Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Security",
+    "AI Safety",
+    "Software Engineering"
+  ],
+  "title": "AI agents expose the security checks you never actually wrote",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://stackoverflow.blog/2026/06/15/ai-agents-expose-the-security-checks-you-never-actually-wrote/",
+      "https://www.bestblogs.dev/article/aa9f535e"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://stackoverflow.blog/2026/06/15/ai-agents-expose-the-security-checks-you-never-actually-wrote/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/aa9f535e"
+  }
+}

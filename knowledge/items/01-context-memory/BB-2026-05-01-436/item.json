@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-08",
+  "id": "BB-2026-05-01-436",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-436/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-436",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-436/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-436/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-436/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-436/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-436/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-436/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 爱范儿",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 爱范儿",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Coding",
+    "Agent Architecture",
+    "MiniMax"
+  ],
+  "title": "Dialogue with MiniMax's Zeyin: Agents Will Eventually Surpass Humans, Where Do We Go From Here?",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/7db52531",
+      "https://www.ifanr.com/1668337?utm_source=rss&utm_medium=rss&utm_campaign="
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.ifanr.com/1668337?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/7db52531"
+  }
+}

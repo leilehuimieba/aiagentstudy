@@ -2,7 +2,7 @@
 
 ## Article
 
-- Title: 训练前沿小模型的全部经验 | Maxime Labonne，Liquid AI
+- Title: 训练前沿小模型的全部经验 - Maxime Labonne，Liquid AI
 - Source: BestBlogs Video
 - URL: https://www.bestblogs.dev/video/afa3a1f
 - Date: 2026-04-29

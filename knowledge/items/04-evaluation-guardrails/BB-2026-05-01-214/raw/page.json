@@ -1,0 +1,174 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T3052065ce5204ca595ec76f18c4fed13",
+  "data": {
+    "metaData": {
+      "id": "RAW_e60f3fb9",
+      "notExist": null,
+      "originalTitle": "Frontier AI models corrupt 25% of document content",
+      "title": "Frontier AI models corrupt 25% of document content",
+      "oneSentenceSummary": "A new Microsoft study reveals that frontier AI models silently corrupt an average of 25% of document content during multi-step autonomous workflows, with catastrophic failures being the primary cause of degradation.",
+      "summary": "This article reports on a study by Microsoft researchers that introduces the DELEGATE-52 benchmark, designed to measure how reliably large language models handle delegated knowledge work over multiple iterations. The benchmark simulates 20 consecutive editing tasks across 52 professional domains, using a 'round-trip relay' method to automatically evaluate content fidelity without human annotation. Testing 19 frontier models from OpenAI, Anthropic, Google, Mistral, xAI, and Moonshot, the study found that even the best models corrupt an average of 25% of document content. Critically, about 80% of degradation stems from sparse but massive catastrophic failures, where a single interaction drops at least 10% of content. Frontier models tend to actively rewrite and hallucinate content rather than simply delete it, making errors harder to detect. Providing models with generic agentic tools or adding distractor documents worsens performance. The study serves as a reality check for the hype around autonomous AI agents, recommending short, transparent tasks and incremental human review over complex long-horizon agents.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "AI Reliability",
+        "Delegated Work",
+        "LLM Evaluation",
+        "Autonomous Agents",
+        "Microsoft Research"
+      ],
+      "mainPoints": [
+        {
+          "point": "Frontier AI models corrupt an average of 25% of document content in multi-step autonomous workflows.",
+          "explanation": "The DELEGATE-52 benchmark shows that even top-tier models like Gemini 3.1 Pro, Claude 4.6 Opus, and GPT 5.4 introduce significant errors, with degradation primarily caused by sparse catastrophic failures rather than accumulated small errors."
+        },
+        {
+          "point": "About 80% of content degradation is due to sudden, massive failures, not gradual error accumulation.",
+          "explanation": "A single interaction can drop at least 10% of document content. Frontier models delay these failures but do not avoid them, and they tend to actively corrupt content rather than delete it, making errors harder to detect."
+        },
+        {
+          "point": "Providing models with generic agentic tools or distractor documents worsens their performance.",
+          "explanation": "Generic tools add an average of 6% more degradation, as models struggle to write effective programs on the fly. Distractor documents compound errors over multi-step workflows, highlighting risks for RAG pipelines."
+        },
+        {
+          "point": "Incremental human review is necessary for safe deployment of autonomous agents.",
+          "explanation": "Because models can maintain a clean record for several steps before a catastrophic failure, a single final check is insufficient. The study recommends short, transparent tasks and domain-specific tooling."
+        }
+      ],
+      "keyQuotes": [
+        "Even top-tier frontier models corrupt an average of 25% of document content by the end of these workflows.",
+        "About 80% of total degradation is caused by sparse but massive critical failures, which are single interactions where a model suddenly drops at least 10% of the document's content.",
+        "When frontier models fail, they actively corrupt the existing content. The text is still there, but it has been subtly distorted or hallucinated, making it much harder for a human overseer to detect the error.",
+        "Models lack the capability to write effective programs on the fly that can manipulate files across diverse domains without mistakes.",
+        "Single-turn measurements systematically underestimate the harm of imprecise retrieval."
+      ],
+      "url": "https://venturebeat.com/orchestration/frontier-ai-models-dont-just-delete-document-content-they-rewrite-it-and-the-errors-are-nearly-impossible-to-catch",
+      "readUrl": "https://www.bestblogs.dev/article/e60f3fb9",
+      "enclosureUrl": null,
+      "domain": "venturebeat.com",
+      "cover": "https://image.jido.dev/20260514000913_LLM_data_corruption.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_9910f1fe",
+      "sourceName": "VentureBeat",
+      "priority": "LOW",
+      "sourceImage": "https://venturebeat.com/favicon.ico",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Business_Tech",
+      "categoryDesc": "Business & Tech",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 47,
+      "wordCount": 1444,
+      "readTime": 6,
+      "mediaDuration": null,
+      "authors": [
+        "Ben Dickson"
+      ],
+      "publishTimeStamp": 1778703055000,
+      "publishDateStr": "05-13",
+      "publishDateTimeStr": "2026-05-13 20:10:55",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_ea705426",
+        "type": "ARTICLE",
+        "title": "MCP command execution flaw: what security teams need to know",
+        "oneSentenceSummary": "OX Security researchers found that MCP's default STDIO transport executes any OS command without sanitization, exposing an estimated 200,000 AI agent servers to remote code execution, and this article provides a prescriptive audit for security teams.",
+        "url": "https://venturebeat.com/security/mcp-stdio-flaw-200000-ai-agent-servers-exposed-ox-security-audit",
+        "sourceName": "VentureBeat"
+      },
+      {
+        "id": "RAW_dd5cb7ce",
+        "type": "ARTICLE",
+        "title": "Midjourney engineer debuts open source Pretext to revolutionize web design",
+        "oneSentenceSummary": "Cheng Lou's new open-source library, Pretext, revolutionizes web design by decoupling text layout from the DOM, enabling high-performance, programmable text rendering through a two-stage execution model.",
+        "url": "https://venturebeat.com/technology/midjourney-engineer-debuts-new-vibe-coded-open-source-standard-pretext-to",
+        "sourceName": "VentureBeat"
+      },
+      {
+        "id": "RAW_b79e265b",
+        "type": "ARTICLE",
+        "title": "The Agent Stack Bet",
+        "oneSentenceSummary": "This article argues that the current state of production AI agents is hindered by a flawed underlying stack, and outlines four critical architectural bets—agent identity, universal context, durable execution, and platform adoption—that teams must make to build reliable, enterprise-grade agentic systems.",
+        "url": "https://addyo.substack.com/p/the-agent-stack-bet",
+        "sourceName": "Elevate"
+      },
+      {
+        "id": "RAW_4e07a1f9",
+        "type": "ARTICLE",
+        "title": "PlugMem: A single memory system adaptable across AI agent tasks",
+        "oneSentenceSummary": "PlugMem is a task-agnostic memory module that enhances AI agent efficiency by transforming raw interaction histories into structured, reusable knowledge units like facts and skills.",
+        "url": "https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/",
+        "sourceName": "Microsoft Research Blog"
+      },
+      {
+        "id": "RAW_e5afa665",
+        "type": "ARTICLE",
+        "title": "Open Models have crossed a threshold",
+        "oneSentenceSummary": "Open models like GLM-5 and MiniMax M2.7 have reached performance parity with closed frontier models in core agentic tasks while offering significant cost and latency advantages.",
+        "url": "https://blog.langchain.com/open-models-have-crossed-a-threshold/",
+        "sourceName": "LangChain Blog"
+      },
+      {
+        "id": "RAW_c725aea4",
+        "type": "ARTICLE",
+        "title": "Extreme Harness Engineering for Token Billionaires: 1M LOC， 1B toks/day， 0% human code， 0% human review — Ryan Lopopolo， OpenAI Frontier & Symphony",
+        "oneSentenceSummary": "OpenAI's Ryan Lopopolo introduces 'Harness Engineering,' a radical workflow where a 1M LOC codebase was built with 0% human-written code and 1B tokens spent daily.",
+        "url": "https://www.latent.space/p/harness-eng",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_69d4fe69",
+        "type": "ARTICLE",
+        "title": "New Future of Work 2025: AI is Driving Rapid Change, but Uneven Benefits",
+        "oneSentenceSummary": "The Microsoft New Future of Work 2025 report highlights that generative AI is shifting from a mere productivity tool to an active collaborative partner, while warning of uneven adoption, the risk of 'workslop', and the increasing necessity of human judgment and expertise.",
+        "url": "https://www.microsoft.com/en-us/research/blog/new-future-of-work-ai-is-driving-rapid-change-uneven-benefits/",
+        "sourceName": "Microsoft Research Blog"
+      },
+      {
+        "id": "RAW_e156f717",
+        "type": "ARTICLE",
+        "title": "Protect your enterprise now from the Shai-Hulud worm and npm vulnerability in 6 actionable steps",
+        "oneSentenceSummary": "A deep-dive analysis of the Mini Shai-Hulud worm that compromised 172 npm and PyPI packages with valid provenance, detailing the kill chain, its targeting of AI agent configurations, and a 6-step actionable audit plan for enterprise defenders.",
+        "url": "https://venturebeat.com/security/shai-hulud-worm-172-npm-pypi-packages-valid-provenance-ci-cd-audit",
+        "sourceName": "VentureBeat"
+      },
+      {
+        "id": "RAW_2a18b2f4",
+        "type": "ARTICLE",
+        "title": "Claude’s next enterprise battle is not models: it’s the agent control plane",
+        "oneSentenceSummary": "The enterprise AI race is shifting from model quality to the agent control plane, where Microsoft leads with 38.6% adoption, OpenAI holds 25.7%, and Anthropic has entered the orchestration layer for the first time at 5.7%.",
+        "url": "https://venturebeat.com/orchestration/claudes-next-enterprise-battle-is-not-models-its-the-agent-control-plane",
+        "sourceName": "VentureBeat"
+      },
+      {
+        "id": "RAW_76968697",
+        "type": "ARTICLE",
+        "title": "New MiniMax M2.7 proprietary AI model is 'self-evolving' and can perform 30-50% of reinforcement learning research workflow",
+        "oneSentenceSummary": "MiniMax's M2.7 model introduces a 'self-evolving' reinforcement learning workflow, marking a strategic shift for the Chinese startup toward proprietary, high-efficiency frontier models with strong enterprise integration.",
+        "url": "https://venturebeat.com/technology/new-minimax-m2-7-proprietary-ai-model-is-self-evolving-and-can-perform-30-50",
+        "sourceName": "VentureBeat"
+      }
+    ]
+  }
+}

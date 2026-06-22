@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "Fri, 05 Jun 2026 08:51:07 GMT",
+    "updated": ""
+  },
+  "date": "2026-06-05",
+  "id": "RSS-2026-002",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/RSS-2026-002/article.md",
+    "item_dir": "knowledge/items/03-control-loop/RSS-2026-002",
+    "raw_dir": "knowledge/items/03-control-loop/RSS-2026-002/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/RSS-2026-002/raw/feed-entry.json",
+      "knowledge/items/03-control-loop/RSS-2026-002/raw/page-text.txt",
+      "knowledge/items/03-control-loop/RSS-2026-002/raw/page.html"
+    ],
+    "source": "knowledge/items/03-control-loop/RSS-2026-002/source.md",
+    "summary": "knowledge/items/03-control-loop/RSS-2026-002/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / LangChain Blog",
+  "source_id": "langchain-blog",
+  "source_name": "LangChain Blog",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "LangChain Blog",
+    "RSS",
+    "AI Agent",
+    "RAG",
+    "Tool Use"
+  ],
+  "title": "Model Neutrality: Why Avoiding AI Vendor Lock-In Matters",
+  "topic": "03-control-loop",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.langchain.com/rss.xml",
+      "https://www.langchain.com/blog/model-neutrality"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://blog.langchain.com/rss.xml",
+    "original_url": "https://www.langchain.com/blog/model-neutrality",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.langchain.com/blog/model-neutrality"
+  }
+}

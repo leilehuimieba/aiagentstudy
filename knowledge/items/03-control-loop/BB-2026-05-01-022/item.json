@@ -1,0 +1,71 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Tools/Actions",
+    "Control Loop",
+    "Evaluation/Guardrails"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-27",
+  "id": "BB-2026-05-01-022",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-022/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-022",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-022/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-022/raw/extract.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-022/raw/source-links.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-022/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-022/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs Topic",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs Topic",
+  "status": "Full text + source captured",
+  "tags": [
+    "harness-engineering",
+    "ai-coding",
+    "ai-agent",
+    "context-engineering",
+    "agent-orchestration",
+    "mcp-protocol"
+  ],
+  "title": "Harness Engineering 完全指南",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://agents.md/",
+      "https://blog.langchain.com/deep-agents-deploy-an-open-alternative-to-claude-managed-agents/",
+      "https://claude.com/blog/claude-managed-agents",
+      "https://developers.cloudflare.com/ai-gateway/",
+      "https://modelcontextprotocol.io/",
+      "https://openai.github.io/openai-agents-python/",
+      "https://www.bestblogs.dev/explore/topics/harness-engineering-guide"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/explore/topics/harness-engineering-guide"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Td29ba2450c5d4ce1afee9f7efcf26c00",
+  "data": {
+    "metaData": {
+      "id": "RAW_d1e95073",
+      "notExist": null,
+      "originalTitle": "SocialReasoning Bench shows the limits of today’s AI agents",
+      "title": "SocialReasoning Bench shows the limits of today’s AI agents",
+      "oneSentenceSummary": "Microsoft Research introduces SocialReasoning-Bench, a benchmark revealing that frontier AI agents consistently fail to act in users' best interests during social negotiations, often leaving significant value on the table.",
+      "summary": "This blog post from Microsoft Research introduces SocialReasoning-Bench, a new benchmark designed to evaluate the social reasoning capabilities of AI agents. The benchmark tests agents in two principal-agent scenarios: Calendar Coordination and Marketplace Negotiation. It measures not just task completion, but also Outcome Optimality (how much value the agent secures for the user) and Due Diligence (the quality of the decision-making process). The key findings are stark: while frontier models like GPT-4.1, GPT-5.4, Claude Sonnet 4.6, and Gemini 3 Flash complete tasks at near-perfect rates, they consistently produce poor outcomes. Agents often accept suboptimal meeting times or bad deals, failing to advocate effectively for their user. Defensive prompting helps but is insufficient to close the gap. The benchmark also reveals that agents are vulnerable to adversarial manipulation. The post argues that as agents interact in multi-party environments, these social reasoning gaps can compound, leading to widespread value loss. The work is presented as a crucial step toward building agents that act as trustworthy delegates.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "AI Agents",
+        "Social Reasoning",
+        "Benchmark",
+        "Principal-Agent",
+        "Negotiation"
+      ],
+      "mainPoints": [
+        {
+          "point": "Frontier AI agents complete tasks but fail to secure optimal outcomes for their users.",
+          "explanation": "In both calendar scheduling and marketplace negotiation scenarios, agents almost always 'succeed' (e.g., book a meeting, close a deal), but they consistently accept suboptimal terms, leaving significant value for the user on the table."
+        },
+        {
+          "point": "The benchmark introduces Outcome Optimality and Due Diligence as key metrics.",
+          "explanation": "Outcome Optimality measures the value captured for the user, while Due Diligence evaluates the quality of the agent's decision-making process. This dual metric distinguishes between agents that are genuinely skilled and those that are merely lucky."
+        },
+        {
+          "point": "Defensive prompting is not a sufficient solution for improving agent social reasoning.",
+          "explanation": "Even when given explicit instructions to advocate for the user and consult all available information, the performance of all tested models remained well below what a trustworthy delegate should achieve."
+        },
+        {
+          "point": "Agents are highly vulnerable to adversarial manipulation in social contexts.",
+          "explanation": "When pitted against adversarial counterparties, agents rarely refused requests in calendar scheduling and their Outcome Optimality dropped substantially, indicating a critical weakness in detecting and resisting manipulation."
+        }
+      ],
+      "keyQuotes": [
+        "AI agents acting on a user's behalf should ultimately be held to similar standards [as attorneys, real-estate agents, and financial advisors].",
+        "The tasks get done, but not done well: task completion signals success, while Outcome Optimality reveals a consistent failure to act in the principal's best interest.",
+        "Without measuring process, we risk mistaking brittle or accidental success for genuine capability.",
+        "In a network, those same behaviors can cascade, leading to systematically worse coordination or widespread value loss across many agents."
+      ],
+      "url": "https://www.microsoft.com/en-us/research/blog/socialreasoning-bench-measuring-whether-ai-agents-act-in-users-best-interests/",
+      "readUrl": "https://www.bestblogs.dev/article/d1e95073",
+      "enclosureUrl": null,
+      "domain": "microsoft.com",
+      "cover": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/05/SocialReasoningBench-TWLIFB-1200x627-1.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_57ba41",
+      "sourceName": "Microsoft Research Blog",
+      "priority": "LOW",
+      "sourceImage": "https://image.jido.dev/20251127065757_67a37f00",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 70,
+      "wordCount": 2959,
+      "readTime": 12,
+      "mediaDuration": null,
+      "authors": [
+        "Brenda Potts"
+      ],
+      "publishTimeStamp": 1778519971000,
+      "publishDateStr": "05-11",
+      "publishDateTimeStr": "2026-05-11 17:19:31",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_cadb0b4e",
+        "type": "ARTICLE",
+        "title": "Red-teaming a network of agents: Understanding what breaks when AI agents interact at scale",
+        "oneSentenceSummary": "Microsoft Research red-teams a live multi-agent platform, revealing four network-level attack patterns—self-propagating worms, reputation manipulation, manufactured consensus, and proxy chains—that emerge only when agents interact, along with early signs of emergent defenses.",
+        "url": "https://www.microsoft.com/en-us/research/blog/red-teaming-a-network-of-agents-understanding-what-breaks-when-ai-agents-interact-at-scale/",
+        "sourceName": "Microsoft Research Blog"
+      },
+      {
+        "id": "RAW_4e07a1f9",
+        "type": "ARTICLE",
+        "title": "PlugMem: A single memory system adaptable across AI agent tasks",
+        "oneSentenceSummary": "PlugMem is a task-agnostic memory module that enhances AI agent efficiency by transforming raw interaction histories into structured, reusable knowledge units like facts and skills.",
+        "url": "https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/",
+        "sourceName": "Microsoft Research Blog"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_504ce725",
+        "type": "ARTICLE",
+        "title": "Harness design for long-running application development",
+        "oneSentenceSummary": "This article explores Anthropic's multi-agent harness design (Planner, Generator, Evaluator) for long-running autonomous coding, detailing how to overcome context anxiety and self-evaluation bias to build complex full-stack applications.",
+        "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_d6315db2",
+        "type": "ARTICLE",
+        "title": "AgentRx: systematic debugging for AI agents",
+        "oneSentenceSummary": "Microsoft Research introduces AgentRx, an open-source framework that uses guarded constraints and a failure taxonomy to systematically identify the first unrecoverable failure in AI agent trajectories.",
+        "url": "https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/",
+        "sourceName": "Microsoft Research Blog"
+      },
+      {
+        "id": "RAW_862b9f1",
+        "type": "VIDEO",
+        "title": "Martin Fowler & Kent Beck: Frameworks for reinventing software， again and again",
+        "oneSentenceSummary": "Software legends Martin Fowler and Kent Beck discuss how AI redefines software engineering, emphasizing that core practices like TDD and modularity remain essential for human-AI collaboration.",
+        "url": "https://www.youtube.com/watch?v=CZs8J1ZD0CE",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_22c0b9f2",
+        "type": "ARTICLE",
+        "title": "ADeLe: Predicting and Explaining AI Performance Across Tasks",
+        "oneSentenceSummary": "ADeLe is a novel AI evaluation framework that characterizes both models and tasks across 18 core abilities, enabling accurate performance prediction and diagnostic insight into model strengths and limitations.",
+        "url": "https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/",
+        "sourceName": "Microsoft Research Blog"
+      },
+      {
+        "id": "RAW_69d4fe69",
+        "type": "ARTICLE",
+        "title": "New Future of Work 2025: AI is Driving Rapid Change, but Uneven Benefits",
+        "oneSentenceSummary": "The Microsoft New Future of Work 2025 report highlights that generative AI is shifting from a mere productivity tool to an active collaborative partner, while warning of uneven adoption, the risk of 'workslop', and the increasing necessity of human judgment and expertise.",
+        "url": "https://www.microsoft.com/en-us/research/blog/new-future-of-work-ai-is-driving-rapid-change-uneven-benefits/",
+        "sourceName": "Microsoft Research Blog"
+      },
+      {
+        "id": "RAW_2023817132581208353",
+        "type": "TWITTER",
+        "title": "Anthropic Releases Claude Sonnet 4.6 with 1M Context Window",
+        "oneSentenceSummary": "Anthropic announces Claude Sonnet 4.6, featuring major upgrades in coding, reasoning, and a 1-million-token context window.",
+        "url": "https://x.com/claudeai/status/2023817132581208353",
+        "sourceName": "Claude(@claudeai)"
+      }
+    ]
+  }
+}

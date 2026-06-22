@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "dbaplus社群"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045413_187dd537",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_f747d09f",
+  "keyQuotes": [
+    "Compliance enforcement is a human weakness and an AI strength; business judgment is an AI weakness and a human strength.",
+    "The ultimate goal of Harness engineering is not to make Claude smarter, but to make the entire development pipeline more reliable.",
+    "Transform rules from 'guiding content in LLM memory' into 'guardrails that enforce checks on every execution.'"
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The article points out that Claude Code's context compact mechanism can cause temporary constraints (such as field units) to be lost, and the LLM's adherence rate to rules is only 70-80%, which is the root cause of unstable AI-generated code quality.",
+      "point": "The core bottleneck of AI coding is context loss and unstable compliance enforcement, not technical capability."
+    },
+    {
+      "explanation": "By configuring a PostToolUse hook in Claude Code's settings.json, the validate_sql.sh script is automatically triggered after each .sql file write, blocking violations like SELECT * and missing PARTITION without relying on LLM memory.",
+      "point": "The Harness mechanism achieves deterministic compliance checks through hooks, raising the compliance rate to 95%+."
+    },
+    {
+      "explanation": "High token consumption operations such as lineage queries and self-test execution are offloaded to subagents with independent contexts. The main session only receives structured summaries, effectively preventing context overflow.",
+      "point": "Subagents can reduce the frequency of main context compaction by 50-70% through context isolation."
+    },
+    {
+      "explanation": "By persisting field definitions and iterative constraints in CLAUDE.md and enforcing compliance checks via hooks, the two variables in the equation 'accuracy = depth of semantic understanding × coverage of data rules' become stable and reliable.",
+      "point": "The essence of Harness engineering is to migrate 'semantics' and 'rules' from LLM memory to deterministic files and hooks."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article details how the De Wu data warehouse team used Claude Code's Harness mechanism (hooks + subagents + persistent files) to increase the SQL compliance rate from 70-80% to over 95%, systematically solving the problems of context loss and unstable compliance enforcement in AI coding.",
+  "originalTitle": "SQL 规范执行率提至 95%，得物数仓 Harness 实践全解析",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-04",
+  "publishDateTimeStr": "2026-06-04 07:15:00",
+  "publishTimeStamp": 1780528500000,
+  "qualified": false,
+  "readCount": 55,
+  "readTime": 36,
+  "readUrl": "https://www.bestblogs.dev/article/f747d09f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_a234fa",
+  "sourceImage": "https://image.jido.dev/20251127045413_187dd537",
+  "sourceName": "dbaplus社群",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Based on the practice of the De Wu offline data warehouse team using an AI coding tool (Claude Code), this article deeply analyzes three core pain points in AI-assisted development: AI's 'memory loss' due to the context compact mechanism, unstable compliance enforcement, and rapid context depletion during large-scale requirement development. To address these issues, the author proposes a five-layer defense system based on the Claude Code Harness mechanism: hardcoding rules into CLAUDE.md for persistence, using Auto Memory for automatic accumulation, implementing automatic SQL compliance checks and dangerous DDL interception via hooks, isolating high token consumption operations with subagents, and modifying the SKILL file invocation method. The article provides detailed configuration code, script examples, and workflow designs for each layer, along with a complete implementation roadmap. Ultimately, the author summarizes this approach as an upgrade from 'AI writing code for me' to 'AI embedded in the development pipeline,' with the core being the migration of semantics and rules from the unreliable LLM memory to deterministic hooks and persistent files.",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "AI Agent",
+    "Prompt Engineering",
+    "Developer Tools"
+  ],
+  "title": "SQL Compliance Rate Raised to 95%: A Full Analysis of De Wu Data Warehouse's Harness Practice",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247636546&idx=1&sn=f7a8e28c85273f1986ed216404396df0",
+  "wordCount": 8859
+}

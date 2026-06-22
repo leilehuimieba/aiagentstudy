@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Ashish Chalke"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/ozXSsTQid-4zpTQm1JgAZ.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_69db4622",
+  "keyQuotes": [
+    "Every Claude Code session leaves a trace --- a `.jsonl` file with every turn, tool call, and token. But in practice, that trace is write-only.",
+    "She *suggests, never asserts*, and stays silent when there's nothing worth saying.",
+    "The split that makes this trustworthy: the **evaluation engine is purely deterministic**. The model is used *only* to write the English and propose softer suggestions."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Claude Code sessions generate detailed but unreadable JSONL traces. Her automatically analyzes these traces to provide a clear, actionable summary of what the agent did, why, and what risks were involved.",
+      "point": "Her solves the 'write-only' problem of AI agent session logs."
+    },
+    {
+      "explanation": "The core forensic analysis is purely deterministic, ensuring findings are reliable. The LLM is used only for generating prose and suggestions, and it runs entirely on the user's Hugging Face Space GPU, with no data ever sent to a third-party API.",
+      "point": "Trust is built through a deterministic engine and local-only AI."
+    },
+    {
+      "explanation": "Users can start with an executive summary of the session and then drill down into specific turns, tool calls, and token usage. The 'Ask Her' copilot allows for natural language queries against the trace.",
+      "point": "The tool provides both a high-level report and a granular investigation interface."
+    },
+    {
+      "explanation": "The project started as a simple 'journey' graph for a friend, then evolved to include a report view, a tool database, and other features based on requests from early users, demonstrating a lean, user-driven development process.",
+      "point": "Her was built iteratively over a weekend based on user feedback."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Her is an open-source detective tool that analyzes Claude Code session logs, reconstructing agent behavior, flagging risky actions, and providing actionable insights without sending data to third-party APIs.",
+  "originalTitle": "Her · हेर — a detective for your Claude Code sessions",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-07",
+  "publishDateTimeStr": "2026-06-07 18:13:41",
+  "publishTimeStamp": 1780827221000,
+  "qualified": false,
+  "readCount": 93,
+  "readTime": 2,
+  "readUrl": "https://www.bestblogs.dev/article/69db4622",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article introduces Her (हेर), a tool built over a weekend during a Hugging Face hackathon. It addresses a common pain point: Claude Code sessions produce verbose JSONL trace files that are rarely read. Her ingests these files and provides a structured, human-readable investigation. It reconstructs the session's narrative, identifies risky actions (deploys, config changes, secret access), visualizes token and tool usage, and offers grounded suggestions for improvement. A key design principle is trustworthiness: the evaluation engine is deterministic, and the small language model (Nemotron-Mini-4B-Instruct) runs locally on the Hugging Face Space's GPU via ZeroGPU, with no data sent to third-party APIs. The tool also features a built-in copilot ('Ask Her') for querying the trace, and a tool identification database for recognizing common CLI tools. The article details the project's origin, its core features, the technical architecture (React frontend on Gradio, deterministic engine, local LLM), and the philosophy of suggesting rather than asserting.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Developer Tools",
+    "Open Source",
+    "AI Safety"
+  ],
+  "title": "Her · हेर — a detective for your Claude Code sessions",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+  "wordCount": 485
+}

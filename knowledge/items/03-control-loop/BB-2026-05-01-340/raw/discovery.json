@@ -1,0 +1,84 @@
+{
+  "id": "RAW_572b4e71",
+  "notExist": null,
+  "originalTitle": "Build agents， not pipelines",
+  "title": "Build agents， not pipelines",
+  "oneSentenceSummary": "This article argues that when building LLM-powered programs, agents are generally superior to pipelines due to their flexibility, intelligence, and ease of context-gathering, despite being less predictable.",
+  "summary": "The article presents a clear dichotomy for using LLMs in software: pipelines, where control flow is defined in code, and agents, where the LLM manages control flow using tools. It argues that while pipelines offer predictability and are suitable for strict context size or cost constraints, agents are smarter and more flexible, especially for complex tasks like coding. The author details how context-gathering is far easier for agents, as they can fetch information on demand, whereas pipelines require complex upfront assembly (e.g., RAG), which often fails. The article also discusses trade-offs in multi-model pipelines, safety, and legibility, concluding that agents are more future-proof. Practical guidelines are provided, recommending agents when in doubt, as they are easier to build and more likely to solve the actual problem.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "LLM Agents",
+    "Pipelines",
+    "AI Architecture",
+    "Software Engineering",
+    "Context Gathering"
+  ],
+  "mainPoints": [
+    {
+      "point": "Agents are smarter and more flexible than pipelines for complex tasks.",
+      "explanation": "Agents can loop and gather information as needed, handling much harder problems. Pipelines are more predictable but limited by their fixed control flow and context."
+    },
+    {
+      "point": "Context-gathering is significantly easier with agents than with pipelines.",
+      "explanation": "Agents can fetch data on demand using tools like 'grep' and 'read file'. Pipelines require complex upfront assembly (e.g., RAG), which often fails to surface the precise information needed."
+    },
+    {
+      "point": "Pipelines are preferable when strict control over cost, latency, or context size is required.",
+      "explanation": "Pipelines offer predictable performance and are necessary for local models with limited context windows. Agents can be unpredictable in cost and latency."
+    },
+    {
+      "point": "Agents are more future-proof as they benefit more from LLM improvements.",
+      "explanation": "Newer models are explicitly built to be better agents, and agentic systems delegate more to the LLM, allowing them to leverage these improvements more effectively than pipelines."
+    }
+  ],
+  "keyQuotes": [
+    "Pipelines are more predictable, but agents are more flexible.",
+    "Agents are smarter.",
+    "The context-gathering stage is far more delicate for pipelines than for agents.",
+    "When in doubt, use agents.",
+    "I am aware of several AI projects that have migrated from pipelines to agents in the last year, but none that have gone the other way around."
+  ],
+  "url": "https://seangoedecke.com/build-agents-not-pipelines/",
+  "readUrl": "https://www.bestblogs.dev/article/572b4e71",
+  "enclosureUrl": null,
+  "domain": "seangoedecke.com",
+  "cover": "https://www.seangoedecke.com/og-image.jpg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_acd612",
+  "sourceName": "Sean Goedecke",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045659_favicon-32x32.png",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 110,
+  "wordCount": 2376,
+  "readTime": 10,
+  "mediaDuration": null,
+  "authors": [
+    "Sean Goedecke"
+  ],
+  "publishTimeStamp": 1780185600000,
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-05-31 08:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

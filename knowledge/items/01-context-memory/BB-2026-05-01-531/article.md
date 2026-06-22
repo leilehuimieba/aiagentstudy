@@ -1,0 +1,266 @@
+# After Harness, Silicon Valley AI Circles Have a New Term: Loop Engineering
+
+- BestBlogs URL: https://www.bestblogs.dev/article/6058cc44
+- Original publisher URL: https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524668&idx=1&sn=73628b08989f5b577ea5cc33699e7465
+- Source: BestBlogs / Founder Park
+- Publish time: 2026-06-12 19:09:00
+- Capture route: article discovered from OpenCLI Browser Bridge profile `qmvqcrb8` latest article feed page 1; page/content captured from BestBlogs resource APIs
+- Extracted chars: 7711
+
+---
+
+硅谷 AI 圈又来了个新词：Loop Engineering。
+
+  大佬们纷纷表态，别再手动验证和写提示词了，该让 Agent 自己循环完成工作了。
+
+  OpenClaw 开发者 Peter Steinberger 带火了这个讨论，Claude Code 负责人 Boris Cherny 也说他已经不怎么在 Claude Code 里输入提示词了，而是去写 loops。
+
+  还有 Karpathy 的 AutoResearch 项目：让自己不再成为瓶颈，把自己抽离出来。安排好一切，使它们完全自主运行，并且你越了解如何最大化 Token 吞吐量且不身处循环之中，就越好。
+
+  Loop Engineering 的核心是，不用人手动再去提示 Coding agent 了，直接设计一套系统，让系统自动去触发和管理 agent。这套系统能够自动去发现任务、分配任务、检查结果、记录状态、决定下一步。
+
+  当然，前提是你的 token 够烧。Richard Sutton 有个精简版的苦涩的教训，如果换成 Agent 的版本，倒是跟 Loop Engineering 的理念一致了。
+
+  
+
+  
+   别再什么事都自己上手解决。专注于那些能够通过更多智能体实现扩展的系统，例如目标设定和编排，把一个人的能力扩展成一群 Agent 的执行力。
+
+  
+
+  Google Cloud Al 总监、工程师大佬 Addy Osmani 写了一篇文章，详细地拆解了 Loop Engineering 是什么、一个完整 loop 所需要的核心模块，以及在 Claude Code 和 Codex 里是如何实现的，值得作为科普看下。
+
+  
+
+  ⬆️关注 Founder Park，最及时最干货的创业分享
+
+  
+   
+    
+
+    
+    
+
+   
+
+  
+
+  
+   
+    
+     
+      
+       
+        
+         
+          
+           
+            
+             
+              
+               Founder Show 正在寻找下一个值得被全球投资人看见的 AI 创业团队。
+
+               AGI Playground 2026 将于 8 月在新加坡举办，Founder Show 是活动中专为早期创业者打造的路演环节，你将用 15-20 分钟向现场的全球 VC 与行业领袖展示产品的「Aha Moment」，并与最前沿的 AI 创业者同台交流。
+
+               如果你正在做面向全球市场的 AI 产品，欢迎报名。
+
+               
+
+              
+
+             
+
+            
+
+           
+
+          
+
+         
+
+         
+        
+
+       
+
+      
+
+     
+
+    
+
+   
+
+  
+
+  01 
+
+  为什么会出现 Loop Engineering？ 
+
+  Loop Engineering，就是用你设计的系统来替代你自己去 prompt agent。
+
+  这里的 loop 可以理解为一个递归目标：你定义一个目的，AI 反复迭代直到完成。它大概由五个基本模块构成，Claude Code 和 Codex 现在都已经具备了。
+
+  我认为这可能是我们未来与编码智能体协作方式的雏形。不过现在还早，我自己也保持怀疑，因为 token 成本是个必须认真对待的问题，使用模式因人而异，差别可以非常大。同时你仍然需要某种方式保证质量不下滑，关于代码越来越 slop 的担忧也是合理的。虽然这样说，还是很值得好好聊聊 Loop Engineering 究竟是怎么回事。
+
+  Peter Steinberger 最近说过：「你不应该再去手动提示编码智能体了。你应该设计让智能体自动运行的 loop。」
+
+  Anthropic Claude Code 负责人 Boris Cherny 也说：「我不再手动提示 Claude 了。我有 loop 在跑，它们负责提示 Claude、决定下一步做什么。我的工作是写 loop。」
+
+  那这些话到底是什么意思？
+
+  过去大概两年，你从编码智能体那里「拿到东西」的方式，就是写一个好的提示词，然后提供足够的上下文。你输入一段话，读它返回的内容，再输入下一段话。智能体是一个工具，你全程控制着它，一轮接一轮。
+
+  但这种方式某种程度上已经过去了，或者说，至少有一批人认为它要过去了。
+
+  现在，你构建一个小型系统，让它自己去发现任务、分配任务、检查任务、记录完成情况、决定下一步，然后让这个系统去触发智能体。你不用亲自去触发智能体，让这个系统来做这件事。
+
+  我之前写过与此相近的两个概念：agent harness engineering（为单个智能体构建运行环境）和 factory model（构建软件的系统）。Loop engineering 就在 harness 的上一层，它是一个跑在计时器上、能自己生成小助手、并且能自我驱动的 harness。
+
+  让我意外的是，这件事已经不再是工具层面的问题了。一年前，如果你想跑一个 loop，你得自己写一堆 bash 脚本，然后永远维护那堆脚本，它只属于你一个人。现在这些模块已经直接内置在产品里了。Steinberger 列出的清单和 Codex 应用几乎一一对应，和 Claude Code 也几乎完全一样。
+
+  一旦你意识到两者的结构是相同的，你就不会再纠结用哪个工具了，你只需要设计一个在任何工具里都能跑起来的 loop。
+
+  02 
+
+  一个 Loop，
+
+  需要五个模块+memory
+
+  一个 loop 需要五样东西，外加一个记忆的地方：
+
+  
+   
+    Automations：按计划自动触发，独立完成发现和分类（triage）工作
+
+   
+
+   
+    Worktrees：让并行运行的多个智能体互不干扰
+
+   
+
+   
+    Skills：把项目知识写下来，让智能体不用每次都靠猜
+
+   
+
+   
+    Plugins 和 Connectors：把智能体接入你已经在用的工具
+
+   
+
+   
+    Sub-agents：一个负责生成，另一个负责检查
+
+   
+
+   
+
+  
+
+  第六样东西是 memory。一个 Markdown 文件，或者一块 Linear 看板，任何能活在单次对话之外、记录「已完成什么」和「下一步是什么」的地方都行。听起来简单得不像话，但这是所有长时间运行的智能体都依赖的同一个技巧。我在《long-running agents》里专门写过：模型在每次运行之间会忘掉一切，所以记忆必须存在磁盘上，而不是在上下文里。智能体会忘，但代码仓库不会。
+
+  Claude Code 和 Codex 现在都具备了这五个模块。
+
+  
+
+  名字在两个产品里略有不同，但能力是同一回事。我想逐一讲清楚，因为细节决定一个 loop 到底能不能跑好，处理不好，它就会在你不注意的地方悄悄出问题。
+
+  Automations：loop 的心跳
+
+  Automations，是让 loop 成为真正的 loop、不只是你手动跑了一次的东西。
+
+  在 Codex 应用里，你在 Automations 标签页创建一个 automation，选择项目、要运行的提示词、运行频率，以及是在本地 checkout 上跑还是在后台 worktree 上跑。有发现的运行会进入 Triage 收件箱，什么都没发现的运行会自动归档，这个设计很贴心。
+
+  OpenAI 内部用它来处理一些枯燥的日常任务，比如每日 issue 分类、汇总 CI 失败、写 commit 简报、排查上周某人引入的 bug。Automation 还可以调用 skill，这样你的定期任务就能保持可维护性，用 skill-name 触发，不用把一大堆指令粘贴进一个没人会去更新的定时任务里。
+
+  Claude Code 用另一种方式实现了同样的效果，通过 scheduling 和 hooks。你可以用 /loop 按间隔运行一个提示词或命令，可以安排 cron 任务，可以用 hooks 在智能体生命周期的特定节点触发 shell 命令，或者直接推到 GitHub Actions 上，这样关掉电脑它也照样跑。
+
+  核心思路完全一样：定义一个自主任务，给它一个节奏，发现结果会主动来找你，你不用四处去查。
+
+  还有一个值得了解的「in-session primitive」，它更接近这篇文章真正想说的东西。/loop 按节奏重复运行；/goal 则会持续运行，直到你写下的条件真正成立，每一轮结束后，一个独立的小模型会检查是否已经完成，所以写代码的智能体不是给自己打分的那个。你给它一个条件，比如「test/auth 里所有测试通过，lint 也干净」，然后走开。Codex 里有同样的东西，也叫 /goal，它会跨轮次持续工作直到可验证的停止条件成立，支持暂停、恢复和清除。
+
+  同一个原语，两个工具都有，这其实是贯穿这篇文章的整体规律。
+
+  这一层的作用是把任务浮出水面，loop 的其余部分负责对这些任务采取行动。
+
+  Worktrees：让并行不变成一团乱麻
+
+  一旦你同时跑超过一个智能体时，文件就开始互相冲突了，这就是失败的来源。两个智能体同时写同一个文件，和两个工程师在没沟通的情况下提交同一行代码，是完全一样的麻烦。
+
+  git worktree 解决了这个问题：它是一个独立的工作目录，跑在自己的分支上，但共享同一个仓库历史，所以一个智能体的改动从物理上就无法碰到另一个智能体的 checkout。
+
+  Codex 直接内置了 worktree 支持，多个线程可以同时访问同一个仓库互不干扰。Claude Code 用 git worktree、--worktree flag（在独立 checkout 里打开一个会话）、以及 isolation: worktree 设置（给 subagent 用，让每个助手都有一个用完自动清理的全新 checkout）来实现同样的隔离。
+
+  我在《orchestration tax》里写过这件事的另一面：worktrees 消除了机械层面的冲突，但你仍然是那个瓶颈，你一天能认真 review 多少份产出，才是你实际能跑多少个 agent 的上限，不是工具。
+
+  Skills：让智能体不用每次都靠猜
+
+  一个 skill，就是让你不用每次开新会话都从头解释一遍项目是怎么回事的方式。
+
+  两个工具的格式相同：一个文件夹，里面有一个 SKILL.md，包含指令和元数据，加上可选的脚本、引用和资源文件。Codex 在你用 $ 或 /skills 调用时运行 skill，或者在任务描述与 skill 描述匹配时自动触发。这就是为什么一个简洁、无聊的描述比一个聪明的描述更好用。Claude Code 的做法完全一样，我在《agent skills》里写过这个模式。
+
+  Skills 也是让 intent 不再反复付出成本的地方。我在《intent debt》里说过：智能体每次会话都是从零开始的，你没说清楚的地方，它会用一个「自信的猜测」来填上。一个 skill，就是把这些意图写在外面，约定、构建步骤、「我们不这么做是因为那次事故」，写一次，智能体每次运行都读到。没有 skills，loop 每个周期都要从零推导你的整个项目；有了 skills，它会复利增长。
+
+  有一点需要搞清楚：skill 是编写格式，plugin 是发布方式。当你想跨多个仓库共享一个 skill，或者把几个 skill 打包在一起，你就把它们打包成一个 plugin。Codex 和 Claude Code 都是这样。
+
+  Plugins 和 Connectors：让 loop 触及真实在用的工具
+
+  一个只能看到文件系统的 loop，是一个很小的 loop。
+
+  Connectors 基于 MCP 构建，让智能体能读取你的 issue tracker、查询数据库、访问 staging API、在 Slack 里发消息。Codex 和 Claude Code 都支持 MCP，所以你为一个工具写的 connector 通常在另一个里也能直接用。Plugins 则把 connectors 和 skills 打包在一起，让你的队友一键安装你的整套配置，不用从记忆里重新拼一遍。
+
+  有了 Connectors，loop 才能真正在你的实际环境里干活，不只是跟你说如果我能操作的话我会这么做。这就是一个说「这是修复方案」的智能体和一个自己开 PR、关联 Linear ticket、等 CI 变绿后自动 ping 频道的 loop 之间的区别。
+
+  Sub-agents：让生成者和检查者分开
+
+  loop 里最有用的结构设计，没有之一，就是把写代码的和检查代码的拆开。
+
+  让写代码的模型来评审自己的代码，它会对自己太好说话。一个拿着不同指令、有时甚至是不同模型的第二个智能体，能抓住第一个模型自己没意识到、或者选择忽略的问题。
+
+  Codex 只在你要求时生成 subagents，同时运行，然后把结果合并成一个答案。你在 .codex/agents/ 里用 TOML 文件定义自己的 agents，每个有名字、描述、指令，以及可选的模型和推理力度，你的安全审查员可以是一个高力度的强模型，而你的探索者可以是某个快速的只读工具。Claude Code 在 .claude/agents/ 里用 subagents 和 agent teams 做同样的事，任务在它们之间传递。两个工具里常见的分工都是：一个 agent 探索，一个实现，一个对照规格验证。
+
+  我之前写过两次这个逻辑，一次是《code agent orchestra》，一次是《adversarial code review》。它在 loop 里之所以特别重要，是因为 loop 在你不盯着的时候跑，所以一个你真正信任的验证者，是你敢走开的唯一理由。
+
+  Sub-agents 确实会烧更多 token，因为每一个都要做自己的模型和工具调用。所以别到处用，只在真正需要有人帮你再把把关的地方才值得开。这其实也是 Claude Code 的 /goal 背后的逻辑：决定 loop 有没有完成的，应该是是一个全新的模型，而不是那个做了这些工作的模型，生成者和检查者分开这件事，在这里被用到了「要不要停」这个判断上本身。
+
+  03 
+
+  完整的 Loop 长什么样？
+
+  把这些拼在一起，一个单线程就变成了一个小型控制台。以下是我一直在用的一种形态：
+
+  每天早上，一个 automation 在仓库上跑起来。它的提示词调用一个 triage skill，读取昨天的 CI 失败、open issues、最近的 commits，然后把发现结果写进一个 Markdown 文件或 Linear 看板。对于每一个值得处理的发现，loop 会开一个隔离的 worktree，派一个 sub-agent 去起草修复方案，再派第二个 sub-agent 对照项目 skills 和现有测试来审查这份草案。
+
+  Connectors 让 loop 自己开 PR、更新 ticket。loop 处理不了的东西，落进 triage 收件箱等我来看。状态文件（state file）是把整个系统串起来的那根线，它记得尝试过什么、通过了什么、还有什么悬而未决，所以明天早上的运行会从今天停下来的地方继续。
+
+  看看你实际做了什么：你只设计了一次，你没有手动提示任何一个步骤。这就是 Steinberger 那句话真正变成现实的样子，而且它在 Codex 里和在 Claude Code 里是同一个 loop，因为两边的模块是同样的模块。
+
+  04 
+
+  Loop 仍然离不开人
+
+  Loop 改变了工作的形态，但它并没有让你变得多余。随着 loop 越来越好，有三个问题反而会变得更尖锐：
+
+  验证仍然是你的责任。一个无人值守运行的 loop，同时也是一个无人值守犯错的 loop。把验证 sub-agent 和生成者拆开，是为了让 loop 的「完成了」这个判断有点意义。即便如此，「完成了」也只是一个声明，不是证明。我一直在重复同一句话：你的工作是发布你亲自确认过能跑的代码。
+
+  如果你放任不管，你对代码库的理解会腐烂。loop 跑得越快、产出越多，你没亲手写过的代码就越堆越多，实际存在的东西和你真正理解的东西之间的差距就越大。这就是理解债，跑得越顺的 loop，只会让这个差距增长得越快。唯一的解法是你真的去读 loop 生成的东西。
+
+  最舒服的姿势，很可能是最危险的。当 loop 自己跑起来，你很容易停止发表意见，直接接受它给你的任何东西。我把这叫做认知投降。设计 loop 是解药，也可以是加速剂，带着判断去设计它，它是解药；用它来逃避思考，它是加速剂。同一个动作，完全相反的结果。
+
+  05 
+
+  工程师要带着判断去设计 Loop
+
+  Build the loop. Stay the engineer. 我认为这是我们工作方式演进的一个预演。但话说回来，如果我不亲自 review 代码，或者完全依赖自动化 loop 来修复问题，产品质量就会下滑，很可能陷入一个越挖越深的恶性循环。
+
+  所以，去搭建你的 loop，但别忘了直接提示智能体仍然是有效的，关键是要找到正确的平衡。
+
+  Loop 也会因人而异，产生完全不同的结果。两个人可以搭出完全一样的 loop，却得到截然相反的结果。一个人用它在自己深刻理解的工作上跑得更快；另一个人用它来逃避理解工作本身。Loop 不知道这两者的区别，但你知道。
+
+  这就是为什么设计 loop 比提示词工程更难，不是更容易。Cherny 说的那句话，不是说工作变简单了，而是说杠杆点移动了。
+
+  Build the loop，但要像一个打算留在工程师位置、不只是「按下启动键的人」那样去 build 它。
+
+  原文：https://x.com/addyosmani/status/2064127981161959567

@@ -1,0 +1,346 @@
+{
+  "status": "browser_readable",
+  "open": {
+    "returncode": 0,
+    "stdout": "{\n  \"page\": \"C563415686643592F18E043AF4D1836F\",\n  \"url\": \"https://ai.meta.com/blog/\"\n}\n",
+    "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+  },
+  "page_info": {
+    "page": "C563415686643592F18E043AF4D1836F",
+    "url": "https://ai.meta.com/blog/"
+  },
+  "eval": {
+    "returncode": 0,
+    "stdout": "{\n  \"links\": [\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Go up one level\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Products\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"AI Research\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Resources\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"About\"\n    },\n    {\n      \"href\": \"https://www.llama.com/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=09252025_moment\",\n      \"text\": \"Get Llama\"\n    },\n    {\n      \"href\": \"https://applink.meta.ai/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=04082026_moment\",\n      \"text\": \"Try Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Toggle site search\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Close submenu\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Main menu\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"Go up one level\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/meta-ai/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/vibes/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/ai-studio/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/research/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/research/#projects\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/research/#research-areas\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/results/?content_types[0]=person\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/learn/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://aidemos.meta.com/\",\n      \"text\": \"Demos opens in new tab\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/about/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/opensourceai/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://www.metacareers.com/\",\n      \"text\": \"Careers opens in new tab\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/#\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://www.llama.com/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=09252025_moment\",\n      \"text\": \"Get Llama opens in new tab\"\n    },\n    {\n      \"href\": \"https://applink.meta.ai/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=04082026_moment\",\n      \"text\": \"Try Meta AI opens in new tab\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/introducing-muse-spark-msl/\",\n      \"text\": \"FEATURED\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/introducing-muse-spark-msl/\",\n      \"text\": \"Introducing Muse Spark: Scaling Towards Personal Superintelligence\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/\",\n      \"text\": \"FEATURED\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/\",\n      \"text\": \"Scaling How We Build and Test Our Most Advanced AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/alta-daily-fashion-app-segment-anything/\",\n      \"text\": \"Read How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/alta-daily-fashion-app-segment-anything/\",\n      \"text\": \"How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/segment-anything-model-3/\",\n      \"text\": \"FEATURED\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/segment-anything-model-3/\",\n      \"text\": \"SAM 3.1: Faster and More Accessible Real-Time Video Detection and Tracking With Multiplexing and Global Reasoning\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/\",\n      \"text\": \"FEATURED\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/\",\n      \"text\": \"Four MTIA Chips in Two Years: Scaling AI Experiences for Billions\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/subscribe/\",\n      \"text\": \"Sign up\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/about\",\n      \"text\": \"Our approach\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/about\",\n      \"text\": \"About AI at Meta\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/results/?content_types%5B0%5D=person&sort_by=random\",\n      \"text\": \"People\"\n    },\n    {\n      \"href\": \"https://www.metacareers.com/jobs/?is_leadership=0&sub_teams[0]=Artificial%20Intelligence&is_in_page=0\",\n      \"text\": \"Careers\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/research\",\n      \"text\": \"Research\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/infrastructure\",\n      \"text\": \"Infrastructure\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/resources\",\n      \"text\": \"Resources\"\n    },\n    {\n      \"href\": \"https://aidemos.meta.com/\",\n      \"text\": \"Demos\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/meta-ai/\",\n      \"text\": \"Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/meta-ai/\",\n      \"text\": \"Explore Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/get-meta-ai/\",\n      \"text\": \"Get Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/ai-studio/\",\n      \"text\": \"AI Studio\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog\",\n      \"text\": \"Latest news\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog\",\n      \"text\": \"Blog\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/subscribe\",\n      \"text\": \"Newsletter\"\n    },\n    {\n      \"href\": \"https://www.llama.com/\",\n      \"text\": \"Llama\"\n    },\n    {\n      \"href\": \"https://www.facebook.com/aiatmeta/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://twitter.com/aiatmeta/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://www.linkedin.com/showcase/aiatmeta\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://www.youtube.com/@aiatmeta\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/about\",\n      \"text\": \"Our approach\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/about\",\n      \"text\": \"About AI at Meta\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/results/?content_types%5B0%5D=person&sort_by=random\",\n      \"text\": \"People\"\n    },\n    {\n      \"href\": \"https://www.metacareers.com/jobs/?is_leadership=0&sub_teams[0]=Artificial%20Intelligence&is_in_page=0\",\n      \"text\": \"Careers\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/research\",\n      \"text\": \"Research\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/infrastructure\",\n      \"text\": \"Infrastructure\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/resources\",\n      \"text\": \"Resources\"\n    },\n    {\n      \"href\": \"https://aidemos.meta.com/\",\n      \"text\": \"Demos\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/meta-ai/\",\n      \"text\": \"Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/meta-ai/\",\n      \"text\": \"Explore Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/get-meta-ai/\",\n      \"text\": \"Get Meta AI\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/ai-studio/\",\n      \"text\": \"AI Studio\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog\",\n      \"text\": \"Latest news\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/blog\",\n      \"text\": \"Blog\"\n    },\n    {\n      \"href\": \"https://ai.meta.com/subscribe\",\n      \"text\": \"Newsletter\"\n    },\n    {\n      \"href\": \"https://www.llama.com/\",\n      \"text\": \"Llama\"\n    },\n    {\n      \"href\": \"https://www.facebook.com/aiatmeta/\",\n      \"text\": \"\"\n    },\n    {\n      \"href\": \"https://twitter.com/aiatmeta/\",\n      \"text\": \"\"\n    }\n  ],\n  \"readyState\": \"interactive\",\n  \"text\": \"Products AI Research Resources About Get Llama Try Meta AI The latest AI news from Meta FEATURED Introducing Muse Spark: Scaling Towards Personal Superintelligence April 8, 2026 Latest News FEATURED Research Scaling How We Build and Test Our Most Advanced AI Apr 8, 2026 Computer Vision How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet Apr 6, 2026 FEATURED Computer Vision SAM 3.1: Faster and More Accessible Real-Time Video Detection and Tracking With Multiplexing and Global Reasoning Mar 27, 2026 FEATURED Four MTIA Chips in Two Years: Scaling AI Experiences for Billions Mar 11, 2026 Get the latest from AI at Meta in your inbox Sign up Our approach About AI at Meta People Careers Research Infrastructure Resources Demos Meta AI Explore Meta AI Get Meta AI AI Studio Latest news Blog Newsletter Foundational models Llama Privacy Policy Terms Cookies Meta © 2026\",\n  \"textLength\": 893,\n  \"title\": \"AI at Meta Blog\",\n  \"url\": \"https://ai.meta.com/blog/\"\n}\n",
+    "stderr": "\n  Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases\n\n"
+  },
+  "page_state": {
+    "links": [
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": "Go up one level"
+      },
+      {
+        "href": "https://ai.meta.com/",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": "Products"
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": "AI Research"
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": "Resources"
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": "About"
+      },
+      {
+        "href": "https://www.llama.com/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=09252025_moment",
+        "text": "Get Llama"
+      },
+      {
+        "href": "https://applink.meta.ai/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=04082026_moment",
+        "text": "Try Meta AI"
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": "Toggle site search"
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": "Close submenu"
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": "Main menu"
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": "Go up one level"
+      },
+      {
+        "href": "https://ai.meta.com/meta-ai/",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/vibes/",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/ai-studio/",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/research/",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/research/#projects",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/research/#research-areas",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/results/?content_types[0]=person",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/blog/",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/learn/",
+        "text": ""
+      },
+      {
+        "href": "https://aidemos.meta.com/",
+        "text": "Demos opens in new tab"
+      },
+      {
+        "href": "https://ai.meta.com/about/",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/opensourceai/",
+        "text": ""
+      },
+      {
+        "href": "https://www.metacareers.com/",
+        "text": "Careers opens in new tab"
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/blog/#",
+        "text": ""
+      },
+      {
+        "href": "https://www.llama.com/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=09252025_moment",
+        "text": "Get Llama opens in new tab"
+      },
+      {
+        "href": "https://applink.meta.ai/?utm_source=ai_meta_site&utm_medium=web&utm_content=AI_nav&utm_campaign=04082026_moment",
+        "text": "Try Meta AI opens in new tab"
+      },
+      {
+        "href": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+        "text": "FEATURED"
+      },
+      {
+        "href": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+        "text": "Introducing Muse Spark: Scaling Towards Personal Superintelligence"
+      },
+      {
+        "href": "https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/",
+        "text": "FEATURED"
+      },
+      {
+        "href": "https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/",
+        "text": "Scaling How We Build and Test Our Most Advanced AI"
+      },
+      {
+        "href": "https://ai.meta.com/blog/alta-daily-fashion-app-segment-anything/",
+        "text": "Read How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet"
+      },
+      {
+        "href": "https://ai.meta.com/blog/alta-daily-fashion-app-segment-anything/",
+        "text": "How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet"
+      },
+      {
+        "href": "https://ai.meta.com/blog/segment-anything-model-3/",
+        "text": "FEATURED"
+      },
+      {
+        "href": "https://ai.meta.com/blog/segment-anything-model-3/",
+        "text": "SAM 3.1: Faster and More Accessible Real-Time Video Detection and Tracking With Multiplexing and Global Reasoning"
+      },
+      {
+        "href": "https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/",
+        "text": "FEATURED"
+      },
+      {
+        "href": "https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/",
+        "text": "Four MTIA Chips in Two Years: Scaling AI Experiences for Billions"
+      },
+      {
+        "href": "https://ai.meta.com/subscribe/",
+        "text": "Sign up"
+      },
+      {
+        "href": "https://ai.meta.com/about",
+        "text": "Our approach"
+      },
+      {
+        "href": "https://ai.meta.com/about",
+        "text": "About AI at Meta"
+      },
+      {
+        "href": "https://ai.meta.com/results/?content_types%5B0%5D=person&sort_by=random",
+        "text": "People"
+      },
+      {
+        "href": "https://www.metacareers.com/jobs/?is_leadership=0&sub_teams[0]=Artificial%20Intelligence&is_in_page=0",
+        "text": "Careers"
+      },
+      {
+        "href": "https://ai.meta.com/research",
+        "text": "Research"
+      },
+      {
+        "href": "https://ai.meta.com/infrastructure",
+        "text": "Infrastructure"
+      },
+      {
+        "href": "https://ai.meta.com/resources",
+        "text": "Resources"
+      },
+      {
+        "href": "https://aidemos.meta.com/",
+        "text": "Demos"
+      },
+      {
+        "href": "https://ai.meta.com/meta-ai/",
+        "text": "Meta AI"
+      },
+      {
+        "href": "https://ai.meta.com/meta-ai/",
+        "text": "Explore Meta AI"
+      },
+      {
+        "href": "https://ai.meta.com/get-meta-ai/",
+        "text": "Get Meta AI"
+      },
+      {
+        "href": "https://ai.meta.com/ai-studio/",
+        "text": "AI Studio"
+      },
+      {
+        "href": "https://ai.meta.com/blog",
+        "text": "Latest news"
+      },
+      {
+        "href": "https://ai.meta.com/blog",
+        "text": "Blog"
+      },
+      {
+        "href": "https://ai.meta.com/subscribe",
+        "text": "Newsletter"
+      },
+      {
+        "href": "https://www.llama.com/",
+        "text": "Llama"
+      },
+      {
+        "href": "https://www.facebook.com/aiatmeta/",
+        "text": ""
+      },
+      {
+        "href": "https://twitter.com/aiatmeta/",
+        "text": ""
+      },
+      {
+        "href": "https://www.linkedin.com/showcase/aiatmeta",
+        "text": ""
+      },
+      {
+        "href": "https://www.youtube.com/@aiatmeta",
+        "text": ""
+      },
+      {
+        "href": "https://ai.meta.com/about",
+        "text": "Our approach"
+      },
+      {
+        "href": "https://ai.meta.com/about",
+        "text": "About AI at Meta"
+      },
+      {
+        "href": "https://ai.meta.com/results/?content_types%5B0%5D=person&sort_by=random",
+        "text": "People"
+      },
+      {
+        "href": "https://www.metacareers.com/jobs/?is_leadership=0&sub_teams[0]=Artificial%20Intelligence&is_in_page=0",
+        "text": "Careers"
+      },
+      {
+        "href": "https://ai.meta.com/research",
+        "text": "Research"
+      },
+      {
+        "href": "https://ai.meta.com/infrastructure",
+        "text": "Infrastructure"
+      },
+      {
+        "href": "https://ai.meta.com/resources",
+        "text": "Resources"
+      },
+      {
+        "href": "https://aidemos.meta.com/",
+        "text": "Demos"
+      },
+      {
+        "href": "https://ai.meta.com/meta-ai/",
+        "text": "Meta AI"
+      },
+      {
+        "href": "https://ai.meta.com/meta-ai/",
+        "text": "Explore Meta AI"
+      },
+      {
+        "href": "https://ai.meta.com/get-meta-ai/",
+        "text": "Get Meta AI"
+      },
+      {
+        "href": "https://ai.meta.com/ai-studio/",
+        "text": "AI Studio"
+      },
+      {
+        "href": "https://ai.meta.com/blog",
+        "text": "Latest news"
+      },
+      {
+        "href": "https://ai.meta.com/blog",
+        "text": "Blog"
+      },
+      {
+        "href": "https://ai.meta.com/subscribe",
+        "text": "Newsletter"
+      },
+      {
+        "href": "https://www.llama.com/",
+        "text": "Llama"
+      },
+      {
+        "href": "https://www.facebook.com/aiatmeta/",
+        "text": ""
+      },
+      {
+        "href": "https://twitter.com/aiatmeta/",
+        "text": ""
+      }
+    ],
+    "readyState": "interactive",
+    "text": "Products AI Research Resources About Get Llama Try Meta AI The latest AI news from Meta FEATURED Introducing Muse Spark: Scaling Towards Personal Superintelligence April 8, 2026 Latest News FEATURED Research Scaling How We Build and Test Our Most Advanced AI Apr 8, 2026 Computer Vision How Alta Daily Uses Meta’s Segment Anything to Reimagine the Digital Closet Apr 6, 2026 FEATURED Computer Vision SAM 3.1: Faster and More Accessible Real-Time Video Detection and Tracking With Multiplexing and Global Reasoning Mar 27, 2026 FEATURED Four MTIA Chips in Two Years: Scaling AI Experiences for Billions Mar 11, 2026 Get the latest from AI at Meta in your inbox Sign up Our approach About AI at Meta People Careers Research Infrastructure Resources Demos Meta AI Explore Meta AI Get Meta AI AI Studio Latest news Blog Newsletter Foundational models Llama Privacy Policy Terms Cookies Meta © 2026",
+    "textLength": 893,
+    "title": "AI at Meta Blog",
+    "url": "https://ai.meta.com/blog/"
+  }
+}

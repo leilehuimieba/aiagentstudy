@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-05",
+  "id": "BB-2026-05-01-465",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-465/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-465",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-465/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-465/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-465/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-465/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-465/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-465/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯混元",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯混元",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM",
+    "AI Inference",
+    "Sparse Attention",
+    "Model Acceleration",
+    "Long Context"
+  ],
+  "title": "First Token Latency Reduced by 3.6x: Tencent Hunyuan Proposes Stem Sparse Attention Algorithm, New SOTA for Long-Context Inference Acceleration",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497909&idx=1&sn=e578765275f6748fedd325fd8d360376",
+      "https://www.bestblogs.dev/article/c1e21993"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497909&idx=1&sn=e578765275f6748fedd325fd8d360376",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/c1e21993"
+  }
+}

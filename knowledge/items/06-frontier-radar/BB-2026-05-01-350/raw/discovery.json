@@ -1,0 +1,84 @@
+{
+  "id": "RAW_a325599a",
+  "notExist": null,
+  "originalTitle": "How Vercel Cut Build Wait Times From 90 Seconds To 5",
+  "title": "How Vercel Cut Build Wait Times From 90 Seconds To 5",
+  "oneSentenceSummary": "Vercel reduced build provisioning time from 90 seconds to 5 by building Hive, a custom infrastructure platform based on AWS Firecracker microVMs, which provides strong adversarial isolation for multi-tenant builds and enables optimizations like faster boot, warm pools, and snapshotting.",
+  "summary": "This article from ByteByteGo Newsletter provides a detailed technical analysis of how Vercel achieved an 18x improvement in build provisioning time by building Hive, its internal build infrastructure platform. The core challenge was hostile multi-tenancy: Vercel must run untrusted customer code on shared hardware, requiring stronger isolation than standard containers provide. The article explains why containers were insufficient for this adversarial threat model and how Vercel adopted AWS Firecracker microVMs as the foundation. Firecracker provides VM-level isolation with near-container speed, booting in ~125ms. On top of this, Vercel layered three key optimizations: faster boot times via image caching and block device snapshotting, a warm pool of pre-booted cells to eliminate cold-start latency for most builds, and leveraging Firecracker's inherently fast boot speed. The article also discusses the tradeoffs, including the cost of maintaining warm pools and the significant engineering investment required to build from primitives rather than using off-the-shelf solutions like Kubernetes. The key takeaway is that Vercel achieved speed by first accepting a harder constraint (adversarial isolation) and then optimizing within that constraint.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Vercel",
+    "Hive",
+    "Firecracker",
+    "MicroVMs",
+    "Build Infrastructure"
+  ],
+  "mainPoints": [
+    {
+      "point": "Vercel's threat model of hostile multi-tenancy drove the architectural choice of microVMs over containers.",
+      "explanation": "Standard containers share a kernel, making them vulnerable to kernel exploits that could compromise other tenants. MicroVMs provide hardware-enforced isolation with separate kernels, which is necessary for running untrusted customer code on shared infrastructure."
+    },
+    {
+      "point": "Vercel built Hive on AWS Firecracker, which provides VM-level isolation with near-container speed.",
+      "explanation": "Firecracker microVMs boot in ~125ms and use minimal memory, making them suitable for short-lived workloads like builds. This foundation enabled Vercel to layer further optimizations."
+    },
+    {
+      "point": "Three key optimizations compound to reduce provisioning time from 90 seconds to 5.",
+      "explanation": "Faster boot via image caching and block device snapshotting, a warm pool of pre-booted cells for most builds, and Firecracker's inherently fast boot speed work together. The warm pool is the most impactful, making cold starts rare for typical traffic."
+    },
+    {
+      "point": "Building from primitives, while more expensive, gave Vercel leverage for product features.",
+      "explanation": "Owning the substrate allowed Vercel to implement features like enhanced build machines and Secure Compute for enterprise customers, which would have been difficult to build on top of a third-party platform like Kubernetes."
+    }
+  ],
+  "keyQuotes": [
+    "Vercel got faster by accepting a harder constraint, building a more complicated foundation, and then layering three separate optimizations on top of it.",
+    "Hive operates as if every piece of code it executes might be malicious, running on machines shared by many tenants at once.",
+    "Containers were inadequate for the trust model, microVMs were the right shape, and the speed came from stacking three separate optimizations on top of a deliberately harder foundation.",
+    "The lesson is the connection between threat model and architecture, rather than a generic recommendation to always use microVMs.",
+    "Starting with the constraint and then optimizing for the speed proved to be a stronger bet than starting with the simple thing and trying to make it run quicker."
+  ],
+  "url": "https://blog.bytebytego.com/p/how-vercel-cut-build-wait-times-from",
+  "readUrl": "https://www.bestblogs.dev/article/a325599a",
+  "enclosureUrl": null,
+  "domain": "blog.bytebytego.com",
+  "cover": "https://image.jido.dev/20260526162310_d5280985-afc9-4b10-96b3-91807a497ad7_2010x1344.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_996ae6",
+  "sourceName": "ByteByteGo Newsletter",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20260527123114_8a5609ae-1239-4400-9491-6010a15c4d60_504x504.png",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_PRACTICE",
+  "aiSubCategoryDesc": "Engineering Practice",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 44,
+  "wordCount": 2460,
+  "readTime": 10,
+  "mediaDuration": null,
+  "authors": [
+    "ByteByteGo"
+  ],
+  "publishTimeStamp": 1779809470000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 23:31:10",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

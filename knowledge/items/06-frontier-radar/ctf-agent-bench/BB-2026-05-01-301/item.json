@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    "Context/State",
+    "Tools/Actions",
+    "Evaluation",
+    "Memory"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-08",
+  "id": "BB-2026-05-01-301",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-301/article.md",
+    "item_dir": "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-301",
+    "raw_dir": "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-301/raw",
+    "raw_files": [
+      "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-301/raw/meta.json"
+    ],
+    "source": "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-301/source.md",
+    "summary": "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-301/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Abstract + key excerpts + source captured",
+  "tags": [
+    "ctf-benchmark",
+    "offensive-security",
+    "csaw",
+    "failure-analysis",
+    "tool-use"
+  ],
+  "title": "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+  "topic": "06-frontier-radar",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2406.05590"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2406.05590",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

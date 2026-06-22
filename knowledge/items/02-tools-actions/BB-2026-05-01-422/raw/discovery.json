@@ -1,0 +1,83 @@
+{
+  "id": "RAW_47139827",
+  "notExist": null,
+  "originalTitle": "I think Anthropic and OpenAI have found product-market fit",
+  "title": "I think Anthropic and OpenAI have found product-market fit",
+  "oneSentenceSummary": "Simon Willison argues that Anthropic and OpenAI have found product-market fit with their coding agents, evidenced by aggressive enterprise pricing changes, surging inference costs, and a pivot to enterprise sales.",
+  "summary": "Simon Willison argues that Anthropic and OpenAI have finally achieved product-market fit, driven by the success of their coding agent products like Claude Code and Codex. He presents several pieces of evidence: both companies have shifted enterprise pricing from flat-rate seats to API-based usage, leading to significantly higher costs for heavy users. This is supported by stories of companies like Uber exceeding their AI budgets, which Willison interprets as a sign of genuine demand rather than failure. He also notes the massive inference spending by labs, such as Anthropic's $1.25 billion per month deal with SpaceX, and the increasing proportion of enterprise-focused job openings at both companies. Willison concludes that April 2026 marks a new inflection point where the revenue implications of these powerful agent tools are becoming clear, benefiting the AI labs and impacting corporate budgets.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Product-Market Fit",
+    "Anthropic",
+    "OpenAI",
+    "Coding Agents",
+    "Claude Code"
+  ],
+  "mainPoints": [
+    {
+      "point": "Anthropic and OpenAI have found product-market fit with their coding agent products.",
+      "explanation": "The shift to API-based enterprise pricing for tools like Claude Code and Codex, combined with stories of companies blowing their AI budgets, indicates that these tools are providing immense value that customers are willing to pay for, even at high costs."
+    },
+    {
+      "point": "Enterprise pricing has shifted from flat-rate seats to API-based usage, dramatically increasing costs for heavy users.",
+      "explanation": "Both companies now charge enterprise customers the full API price for agent usage, ending the era of steep discounts. This change, coupled with the release of more expensive frontier models, is a deliberate move to monetize the high token consumption of coding agents."
+    },
+    {
+      "point": "Stories of AI budget overruns at companies like Uber are evidence of product-market fit, not failure.",
+      "explanation": "Willison argues that customers 'sucking air through their teeth' and then saying yes is the best sign of a successful product. Uber's budget being blown on Claude Code shows the tool's value, not a problem with the technology."
+    },
+    {
+      "point": "The AI labs are heavily investing in enterprise sales and inference infrastructure.",
+      "explanation": "A significant portion of job openings at OpenAI and Anthropic are for enterprise sales roles. Furthermore, Anthropic's massive $1.25 billion/month deal with SpaceX for inference compute underscores the scale of their investment in meeting enterprise demand."
+    }
+  ],
+  "keyQuotes": [
+    "I think they've finally found product-market fit, with the coding/general-purpose agent products embodied by Claude Code/Cowork and Codex.",
+    "The best advice I ever heard on pricing a product was that your customer should *suck air through their teeth* and then say yes.",
+    "Coding agents really did change everything. These are tools which burn *vastly* more tokens, but are also quickly becoming daily drivers for the work carried out by extremely well-compensated professionals.",
+    "I think April 2026 is a new inflection point where the revenue implications of this have started to land, to the benefit of the frontier AI labs and with material impacts on the budgets of large companies."
+  ],
+  "url": "https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything",
+  "readUrl": "https://www.bestblogs.dev/article/47139827",
+  "enclosureUrl": null,
+  "domain": "simonwillison.net",
+  "cover": "https://image.jido.dev/20251127045509_876e4367",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045509_876e4367",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "NEWS",
+  "aiSubCategoryDesc": "AI News",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 20,
+  "wordCount": 1783,
+  "readTime": 8,
+  "mediaDuration": null,
+  "authors": [
+    "Simon Willison"
+  ],
+  "publishTimeStamp": 1779899915000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 00:38:35",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

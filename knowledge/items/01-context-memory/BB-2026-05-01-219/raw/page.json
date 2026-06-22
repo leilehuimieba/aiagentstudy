@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T3c9070d3301844659762df5ac4cf92e4",
+  "data": {
+    "metaData": {
+      "id": "RAW_d7d0e59a",
+      "notExist": null,
+      "originalTitle": "虾马之后又火一个！OpenHuman 用 20 分钟了解你的一切，存成卡帕西式知识库",
+      "title": "After Shama and Sima, Another One Goes Viral! OpenHuman Gets to Know Everything About You in 20 Minutes and Stores It in a Karpathy-Style Knowledge Base",
+      "oneSentenceSummary": "OpenHuman is a fully automatic personal knowledge base Agent that connects 118+ third-party services, automatically fetches data every 20 minutes, and compresses it into a Karpathy-style local knowledge base without requiring manual maintenance.",
+      "summary": "This article introduces the open-source project OpenHuman, an Agent tool that requires no active training or configuration from users. Unlike 'Shama'-style Agents that require users to write Prompts and configure workflows, OpenHuman connects over 118 services including Gmail, GitHub, Slack, and Notion with a single authorization, automatically polling and fetching new data every 20 minutes. The fetched data is cleaned, compressed, and structured into a 'memory tree', ultimately stored as a local SQLite database and Markdown files compatible with Obsidian. Additionally, OpenHuman includes the TokenJuice compression mechanism, which reduces Token consumption by 80%, and a virtual avatar called Mascot that can participate in Google Meet meetings. The article argues that OpenHuman solves three major pain points: API key management, data fragmentation, and context bloat. Its core value lies in 'understanding you' rather than just 'being capable'.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "OpenHuman",
+        "Agent",
+        "Personal Knowledge Base",
+        "Automation",
+        "Open Source"
+      ],
+      "mainPoints": [
+        {
+          "point": "OpenHuman enables fully automatic personal knowledge base construction without manual maintenance.",
+          "explanation": "It connects 118+ third-party services, automatically fetches user data every 20 minutes, and compresses it into a structured 'memory tree', solving the pain point of needing to manually organize and update traditional knowledge bases."
+        },
+        {
+          "point": "The TokenJuice mechanism significantly reduces Token consumption and improves AI response efficiency.",
+          "explanation": "Before data is fed into the LLM, operations such as converting HTML to Markdown, shortening URLs, and deduplication can reduce Token consumption by up to 80%, effectively lowering usage costs and latency."
+        },
+        {
+          "point": "OpenHuman's 'subconscious loop' mechanism enables continuous autonomous thinking capabilities.",
+          "explanation": "Even without active user interaction, the Agent automatically loads to-do items, reads recent memories, and autonomously decides on the next action, achieving a shift from passive response to proactive service."
+        }
+      ],
+      "keyQuotes": [
+        "OpenHuman doesn't need you to teach it. Just connect your Gmail, GitHub, Slack, Notion, calendar... 118 services with one click, and it automatically fetches new data every 20 minutes, compressing it into a Karpathy-style local knowledge base.",
+        "Who gets it? I'm already tired of raising shrimps and horses. Finally, one that doesn't need teaching!",
+        "Previous Agents focused all their efforts on 'being capable', but when it came to 'understanding you', they always fell a bit short."
+      ],
+      "url": "https://www.qbitai.com/2026/05/418571.html",
+      "readUrl": "https://www.bestblogs.dev/article/d7d0e59a",
+      "enclosureUrl": null,
+      "domain": "qbitai.com",
+      "cover": "https://image.jido.dev/20260303113342_qbitai_icon.png",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_371003",
+      "sourceName": "量子位",
+      "priority": "MEDIUM",
+      "sourceImage": "https://image.jido.dev/20251127045333_fa5811cb",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 89,
+      "readCount": 58,
+      "wordCount": 1649,
+      "readTime": 7,
+      "mediaDuration": null,
+      "authors": [
+        "闻乐"
+      ],
+      "publishTimeStamp": 1778913753000,
+      "publishDateStr": "Yesterday",
+      "publishDateTimeStr": "2026-05-16 06:42:33",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_1d95c0b8",
+        "type": "ARTICLE",
+        "title": "DeepSeek V4 Report Is Incredibly Detailed! The Full Story of the 484-Day Upgrade Journey",
+        "oneSentenceSummary": "DeepSeek officially released the V4 series of models, achieving a KV cache of only 10% of V3.2 under a million-token context through the mHC architecture, hybrid attention mechanism, and Muon optimizer, while being fully open-source and supporting domestic chips.",
+        "url": "https://www.qbitai.com/2026/04/406809.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_50669f01",
+        "type": "ARTICLE",
+        "title": "Google's New Paper Crashes Memory Stocks! 6x KV Cache Compression, Netizens: Silicon Valley Becomes Reality",
+        "oneSentenceSummary": "Google Research releases the TurboQuant algorithm, achieving at least 6x lossless compression of the KV cache via techniques like polar quantization, significantly reducing memory requirements for LLM inference and boosting speed.",
+        "url": "https://www.qbitai.com/2026/03/392215.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_a799716e",
+        "type": "ARTICLE",
+        "title": "GLM-5.1 Open Source: A Model Capable of 8 Hours of Independent Work",
+        "oneSentenceSummary": "Zhipu AI releases its flagship model GLM-5.1, featuring breakthrough Long-Horizon Task capabilities that allow it to work independently for 8 hours and deliver engineering-grade results.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493695&idx=1&sn=3c096efd1739c7e0266befeef6ebcd4d",
+        "sourceName": "智谱"
+      },
+      {
+        "id": "RAW_2ce38f07",
+        "type": "ARTICLE",
+        "title": "The Second Half of Large Model Architecture",
+        "oneSentenceSummary": "This article proposes that large model architecture has entered a second half centered on 'scaling communication,' critiques the traditional 'accumulation' paradigm of residual connections, and introduces innovative solutions for inter-layer 'selective retrieval' through Flash Depth Attention and MoDA.",
+        "url": "https://www.qbitai.com/2026/04/403515.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_70e2f298",
+        "type": "ARTICLE",
+        "title": "Harness Engineering: How I Spent a Week Boosting AI Coding Rate to 90% in an Enterprise App",
+        "oneSentenceSummary": "This article systematically introduces Harness Engineering, a new AI coding paradigm that elevates the AI code rate of an enterprise Java application from 25% to over 90% by building a four-element system of rules, skills, knowledge, and change management.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559842&idx=1&sn=71ee08bf0421ad2f1aa4dd7a58901c5f",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_fc9e3786",
+        "type": "ARTICLE",
+        "title": "A Practical Guide to 'Progressive Spec' for AI Coding in 2026",
+        "oneSentenceSummary": "This article proposes a 'Progressive Spec' framework for AI coding environments, leveraging structured documentation to drive AI collaboration and balance development standards with execution efficiency.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559315&idx=1&sn=5c1f9df548e912354b5b5e25ec4bcbb5",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_74aee00",
+        "type": "PODCAST",
+        "title": "Vol.89 AI Industry 2025 Annual Summary Supplement (V4 \"Can't Wait\" Edition) --- 70-page PPT Solo",
+        "oneSentenceSummary": "A panoramic review of the AI industry dynamics in China and the US in early 2025, deeply deconstructing capital expenditures, the explosion of Agent technology, and AI's impact on the software industry.",
+        "url": "https://www.xiaoyuzhoufm.com/episode/69adf2bdc8cdeb38c28a1a81",
+        "sourceName": "屠龙之术"
+      },
+      {
+        "id": "RAW_6f17468b",
+        "type": "ARTICLE",
+        "title": "GPT-5.4 Released: OpenAI's First Unified Model, Truly Native",
+        "oneSentenceSummary": "OpenAI releases GPT-5.4, creating the first unified Agent model that supports native Computer Use by integrating reasoning, coding, and computer interaction.",
+        "url": "https://www.qbitai.com/2026/03/384345.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_95d5e07c",
+        "type": "ARTICLE",
+        "title": "DeepSeek-V4 Preview: Ushering in the Era of Million-Token Context for Everyone",
+        "oneSentenceSummary": "DeepSeek releases the V4 preview, offering Pro and Flash versions with million-token context as standard, achieving open-source leadership in Agent, reasoning, and knowledge capabilities, and open-sourcing the model simultaneously.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c",
+        "sourceName": "DeepSeek"
+      },
+      {
+        "id": "RAW_598c24ff",
+        "type": "ARTICLE",
+        "title": "QuantumBit Exclusive Interview with Lou Tiancheng: AI is a Runaway Horse, and Harness is the Most Critical Skill of This Era",
+        "oneSentenceSummary": "Pony.ai CTO Lou Tiancheng elaborates on the core philosophy of the PonyWorld World Model 2.0: when AI driving capabilities surpass humans, the value of human data drops to zero, AI must become the 'head coach' leading R&D, and the ability to harness this 'runaway horse' of AI will be the most critical skill of this era.",
+        "url": "https://www.qbitai.com/2026/04/408578.html",
+        "sourceName": "量子位"
+      }
+    ]
+  }
+}

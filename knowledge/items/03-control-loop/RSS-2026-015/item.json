@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-18",
+    "opencli_profile": "",
+    "published": "Wed, 17 Jun 2026 10:18:05 GMT",
+    "updated": ""
+  },
+  "date": "2026-06-17",
+  "id": "RSS-2026-015",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/RSS-2026-015/article.md",
+    "item_dir": "knowledge/items/03-control-loop/RSS-2026-015",
+    "raw_dir": "knowledge/items/03-control-loop/RSS-2026-015/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/RSS-2026-015/raw/feed-entry.json",
+      "knowledge/items/03-control-loop/RSS-2026-015/raw/page-text.txt",
+      "knowledge/items/03-control-loop/RSS-2026-015/raw/page.html"
+    ],
+    "source": "knowledge/items/03-control-loop/RSS-2026-015/source.md",
+    "summary": "knowledge/items/03-control-loop/RSS-2026-015/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / Hugging Face Blog",
+  "source_id": "huggingface-blog",
+  "source_name": "Hugging Face Blog",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "Hugging Face Blog",
+    "RSS",
+    "AI Agent",
+    "RAG",
+    "Inference",
+    "Tool Use"
+  ],
+  "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+  "topic": "03-control-loop",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+      "https://huggingface.co/blog/feed.xml"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://huggingface.co/blog/feed.xml",
+    "original_url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware"
+  }
+}

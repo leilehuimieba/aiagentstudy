@@ -2,7 +2,16 @@
 
 - Title: ChatGPT Images 2.0 与“会思考”的图像模型
 - BestBlogs URL: https://www.bestblogs.dev/explore/topics/chatgpt-images-2-thinking-image-models
-- Original publisher URL: Not found on page during capture.
+- Original publisher URL: https://openai.com/index/introducing-chatgpt-images-2-0
+- Original link text: Introducing ChatGPT Images 2.0（主参考条目外部原文）
+
+- Primary BestBlogs reference URL: https://www.bestblogs.dev/article/a71d588b
+
+## External Original Mapping
+
+- Topic-page note: this is a BestBlogs topic aggregation page, not a single-source article page.
+- External original chosen for evidence baseline: the primary BestBlogs reference `https://www.bestblogs.dev/article/a71d588b`
+- Mapped external original URL: https://openai.com/index/introducing-chatgpt-images-2-0
 
 ## Captured Page Metadata
 

@@ -1,0 +1,88 @@
+{
+  "id": "RAW_0811de25",
+  "notExist": null,
+  "originalTitle": "RAG 永不死：张颖峰和他藏在 Flow 里的执念 | 万有引力",
+  "title": "RAG Never Dies: Zhang Yingfeng and the Obsession Hidden in Flow | Gravity",
+  "oneSentenceSummary": "This article features an in-depth conversation with RAGFlow founder Zhang Yingfeng, exploring the evolution of RAG technology from product to infrastructure, the path to open-source commercialization, and the technological changes and entrepreneurial reflections brought about when RAG users shift from humans to agents.",
+  "summary": "This article is a long-form interview with RAGFlow founder Zhang Yingfeng, part of CSDN's \"Gravity\" series. It begins with Zhang's personal journey, recounting his transition from a veteran in search technology to his first entrepreneurial venture, and details InfiniFlow's strategic pivot from developing the AI-native database Infinity to making RAGFlow its flagship product. The core discussion revolves around the present and future of RAG technology: Zhang firmly believes that \"RAG is dead\" is marketing rhetoric, asserting that retrieval itself is eternal. Especially in the age of agents, RAG users are shifting from humans to agents, fundamentally changing retrieval frequency, query length, and product form. The article also delves into the challenges of open-source commercialization, including long payment cycles and service-based payment models in the domestic market, as well as the strategic necessity of going global. It covers the technical decision to rewrite the online retrieval component of RAGFlow 1.0 in Go to boost performance. Additionally, Zhang shares the gains and losses of being a \"veteran\" entrepreneur, emphasizing adherence to core principles and a steadfast belief in long-term value.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "RAG",
+    "RAGFlow",
+    "Zhang Yingfeng",
+    "Entrepreneurship",
+    "Open Source Commercialization"
+  ],
+  "mainPoints": [
+    {
+      "point": "\"RAG is dead\" is marketing rhetoric; retrieval is eternal.",
+      "explanation": "Zhang Yingfeng believes that despite the emergence of technologies like ultra-long context windows, retrieval remains the core means for agents to acquire external knowledge and will not disappear. While RAG as a product form may become outdated, its underlying technology forms the foundation of an agent's data infrastructure."
+    },
+    {
+      "point": "RAG users are shifting from humans to agents, bringing fundamental changes.",
+      "explanation": "Queries from agents are longer and more frequent (ranging from tens to thousands), requiring RAG systems to fully expose retrieval capabilities to agents, allowing them to autonomously decide on retrieval strategies. This drives the evolution of the RAG engine into a context engine."
+    },
+    {
+      "point": "The path to open-source commercialization is clear but requires patience in product refinement.",
+      "explanation": "RAGFlow follows a path from open source to SaaS to on-premises deployment. In its early stages, due to limited manpower, the team prioritized product stability over rapid commercialization. The domestic market poses challenges such as long payment cycles and a tendency for enterprises to pay for services rather than products."
+    },
+    {
+      "point": "Going global is a necessity, not an option.",
+      "explanation": "For Data Infra products, the overseas market is key to commercial success. Zhang plans to first launch a formal SaaS service, then decide on key deployment regions based on data feedback, and is prepared to physically relocate overseas if necessary."
+    },
+    {
+      "point": "RAGFlow 1.0 will rewrite the online retrieval component in Go to improve performance.",
+      "explanation": "To handle the surge in retrieval requests in the agent era, the team is rewriting the online retrieval component from Python to Go to eliminate performance bottlenecks. Additionally, the 1.0 version marks product stability and production readiness."
+    }
+  ],
+  "keyQuotes": [
+    "RAG is dead? Retrieval is eternal!",
+    "As a product form, RAG may not last long because RAG itself is essentially a simple agent. But retrieval itself is eternal.",
+    "A very important thing is happening now: the users of RAG are shifting from humans to agents.",
+    "Domestic companies may be willing to pay for products, but not necessarily in large numbers; they usually pay for services.",
+    "With AI coding, the value of humans is to serve as a safety net for these matters; only humans can provide that safety net."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831381&idx=1&sn=9a038bb4e63c799c0ba7a14f935b6df1",
+  "readUrl": "https://www.bestblogs.dev/article/0811de25",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20260527130532_74bcc81.jpeg",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_69dd9d",
+  "sourceName": "CSDN",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20260527130532_74bcc81.jpeg",
+  "mainDomain": "Business_Tech",
+  "mainDomainDesc": "Business & Tech",
+  "aiSubCategory": "BT_STARTUP",
+  "aiSubCategoryDesc": "Startups & Ventures",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 52,
+  "wordCount": 10826,
+  "readTime": 44,
+  "mediaDuration": null,
+  "authors": [
+    "CSDN"
+  ],
+  "publishTimeStamp": 1779868320000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 15:52:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

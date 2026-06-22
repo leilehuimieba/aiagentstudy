@@ -1,0 +1,80 @@
+{
+  "authors": [
+    "Erick Lachmann",
+    "Pimenta de Freitas Cardoso"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_a46ae128",
+  "keyQuotes": [
+    "A model capable of performing a structured task is also capable of failing at it in characteristic ways. Those failures... are not noise to filter. They are the most informative negative signal available.",
+    "SFT closes the distance between the model's prior distribution and the task domain. What it does not do is target degeneration as an objective—its effect on the failure mode is incidental, and the benchmark results show it is not consistent.",
+    "The DharmaOCR result does not depend on the domain being special. It depends on the failures being useful.",
+    "What makes a failure mode usable as training signal is not the domain—it is whether the failures are consistent enough, identifiable enough, and numerous enough to constitute a legible signal."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Supervised fine-tuning moves the model closer to the task domain but does not explicitly penalize repetition loops. The degeneration attractor is a systems-level failure of the learned distribution, not a decoding artifact that SFT's objective can reliably correct.",
+      "point": "SFT has a structural ceiling for reducing text degeneration because it optimizes token-level likelihood, not completion-level failure."
+    },
+    {
+      "explanation": "The DharmaOCR pipeline deliberately retained outputs displaying text degeneration as the rejected examples in preference pairs. This 'preference-guided implicit unlikelihood' approach trains the model away from a specific, identifiable failure geometry that SFT cannot target.",
+      "point": "A model's own degenerate outputs are the most informative negative signal for DPO, not noise to be filtered."
+    },
+    {
+      "explanation": "The result held across architectures, parameter scales, and starting degeneration rates that differed by more than an order of magnitude. No model family showed an increase after DPO, confirming the direction of the intervention is invariant.",
+      "point": "DPO after SFT consistently reduced degeneration across five different model families, with an average reduction of 59.4%."
+    },
+    {
+      "explanation": "The failure mode must be categorically identifiable (not just a point on a quality continuum), reliably scoreable by an automated mechanism, and sufficiently numerous to generate a meaningful preference dataset. These conditions determine applicability, not the domain itself.",
+      "point": "The approach is transferable to other domains if three structural conditions are met."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article demonstrates how Direct Preference Optimization (DPO), applied after supervised fine-tuning (SFT) and using a model's own degenerate outputs as rejection pairs, consistently reduces text degeneration in structured OCR tasks across multiple model families.",
+  "originalTitle": "Direct Preference Optimization Beyond Chatbots",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 21:01:52",
+  "publishTimeStamp": 1780491712000,
+  "qualified": false,
+  "readCount": 41,
+  "readTime": 11,
+  "readUrl": "https://www.bestblogs.dev/article/a46ae128",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article presents a detailed methodology and empirical results from the DharmaOCR project, showing that DPO can be effectively used beyond its typical chat alignment context to mitigate a specific production failure mode: text degeneration. The key insight is that a model's own failures—specifically, outputs that enter a self-reinforcing repetition loop—are not noise to be filtered out, but the most informative negative training signal available. The authors explain why SFT alone has a structural ceiling for reducing degeneration: it optimizes token-level likelihood and does not penalize completion-level failures. DPO, by operating on full preference pairs (chosen vs. rejected outputs), directly targets the distributional geometry that causes the attractor state. The paper reports results across five different vision-language model families, showing an average degeneration reduction of 59.4% (range 37.3% to 87.6%) after a DPO stage, with no model family showing an increase. The article also discusses the three structural conditions required for this approach to be transferable to other domains: a categorically identifiable failure mode, a reliable automated scoring mechanism, and sufficient inference volume to generate a preference dataset.",
+  "tags": [
+    "LLM",
+    "DPO",
+    "Model Training",
+    "Text Degeneration",
+    "OCR"
+  ],
+  "title": "Direct Preference Optimization Beyond Chatbots",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+  "wordCount": 2711
+}

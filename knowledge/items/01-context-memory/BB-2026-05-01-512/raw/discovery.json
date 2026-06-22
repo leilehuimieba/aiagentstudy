@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "AI产品黄叔"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260603134531_6022454.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_72c44a9e",
+  "keyQuotes": [
+    "What M3 truly opened up this time is not the ceiling of demos, but the floor of long-horizon tasks.",
+    "Weaker models can also perform quite well in the first few steps. But as they go further, they tend to forget constraints, change direction incorrectly, repeat mistakes, and end up 'looking busy but not making progress.'",
+    "What 1M context truly supports is allowing the model to retain a complete working environment in the second half of long tasks.",
+    "M3 is better suited for long-horizon tasks, but it is not the responsible party."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "In the three tasks—website revamp, writing expert group, and knowledge base detective room—M3 consistently demonstrated the ability to remember earlier constraints, role boundaries, and task direction in the later stages, a key gap where weaker models tend to lose memory in long tasks.",
+      "point": "M3's core advantage is its ability to maintain context in the second half of long-horizon tasks."
+    },
+    {
+      "explanation": "The author points out that long context truly supports the model in retaining a complete working environment while continuously executing tasks, avoiding issues like forgetting constraints mentioned earlier or re-fixing bugs using the same method.",
+      "point": "The significance of 1M context is not 'being able to stuff in more words,' but preventing the model from losing memory during long tasks."
+    },
+    {
+      "explanation": "In the website revamp case, M3 first 'understood' the old page structure through multimodality, then comprehended the project context, and finally leveraged Agentic capabilities to break down tasks, write code, and run validation, forming a complete task execution chain.",
+      "point": "Only the combination of multimodality, long context, and Agentic capabilities can support real long-horizon tasks."
+    },
+    {
+      "explanation": "The author candidly notes that M3 still requires human intervention when tools get stuck, making directional trade-offs, or judging quality; writing and data citations still need human verification of evidence chains; and knowledge base reorganization still requires humans to guard the final quality gate for clue sources and business trade-offs.",
+      "point": "Current Agent workflows have three boundaries: not fully autonomous, output not inherently trustworthy, and productization does not equal understanding the business."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Through hands-on testing of three real long-horizon tasks (website revamp, writing expert group, and knowledge base detective room), this article demonstrates that M3's core advantage is not in single-point demo ceilings, but in its ability to maintain context and drive task progression in the latter stages of long tasks.",
+  "originalTitle": "我用 M3 跑了三个真实长程任务，发现它强在后半程",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 08:00:00",
+  "publishTimeStamp": 1780444800000,
+  "qualified": false,
+  "readCount": 39,
+  "readTime": 20,
+  "readUrl": "https://www.bestblogs.dev/article/72c44a9e",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_cb3869",
+  "sourceImage": "https://image.jido.dev/20260603134531_6022454.jpeg",
+  "sourceName": "AI产品黄叔",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is an in-depth hands-on review of the MiniMax M3 model by AI product domain KOL \"AI Product Huang Shu.\" Instead of focusing on single-point demos, the author designed three realistic long-horizon tasks: 1) Revamping an old AI programming course website into an Agent-Native website, involving multimodal understanding of the old page, restructuring the information architecture, and modifying 2000 lines of code; 2) Building a \"Writing Expert Group\" using personal knowledge bases, testing style consistency and role boundary stability under multi-role, multi-round feedback; 3) Transforming a Feishu knowledge base into an interactive web-based detective room, testing the model's ability to extract structure from long documents, design levels, and deliver a front-end product. The core conclusion is that M3 truly differentiates itself through stability in the second half of long tasks—it maintains constraints, role boundaries, and task direction as context lengthens and tasks become more complex, unlike weaker models that \"start strong like a human but end up like a temp worker taking over.\" The article also candidly discusses three current boundaries of Agent workflows: long-term stability does not equal full autonomy, trustworthy output is not inherently trustworthy, and building a product does not equal fully understanding the business.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Products & Applications",
+    "AI Coding",
+    "Model Evaluation & Benchmarking"
+  ],
+  "title": "I Ran Three Real Long-Horizon Tasks with M3 and Found Its Strength Lies in the Second Half",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODU1MzQzOQ==&mid=2451429643&idx=1&sn=63e6117fa8f43c821c4c71a17ab3d220",
+  "wordCount": 4974
+}

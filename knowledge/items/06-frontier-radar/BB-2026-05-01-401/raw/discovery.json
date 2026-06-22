@@ -1,0 +1,84 @@
+{
+  "id": "RAW_2c1ca519",
+  "notExist": null,
+  "originalTitle": "NVIDIA Dynamo Snapshot: Fast Startup for Inference Workloads on Kubernetes",
+  "title": "NVIDIA Dynamo Snapshot: Fast Startup for Inference Workloads on Kubernetes",
+  "oneSentenceSummary": "NVIDIA introduces Dynamo Snapshot, a checkpoint/restore system using CRIU and cuda-checkpoint with novel optimizations to reduce inference workload cold-start times on Kubernetes from minutes to under 5 seconds.",
+  "summary": "This technical blog post from NVIDIA details the design and implementation of Dynamo Snapshot, a system for dramatically accelerating the startup of AI inference workloads on Kubernetes. The core problem is the cold-start delay, which can take several minutes as GPUs initialize engines, load weights, and warm up kernels. The solution leverages CRIU (Checkpoint/Restore in Userspace) and cuda-checkpoint to serialize and restore the full state of an inference worker. The post describes a Kubernetes-native architecture using a privileged DaemonSet (snapshot-agent) to manage checkpoints and restores without modifying runc. Key optimizations include: (1) unmapping and releasing the KV cache before checkpointing to drastically reduce artifact size, (2) modifying CRIU to use parallel memfd restore and Linux native AIO for memory restoration, achieving up to 7.9x speedup over upstream CRIU, and (3) introducing a GPU Memory Service (GMS) to decouple model weights from the process checkpoint, enabling concurrent restoration of process state and weights. The results show end-to-end restore times approaching speed-of-light, with a proof-of-concept achieving sub-5-second startup for a 120B parameter model, a 21x improvement over cold start.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "NVIDIA Dynamo",
+    "Inference",
+    "Kubernetes",
+    "CRIU",
+    "Checkpoint/Restore"
+  ],
+  "mainPoints": [
+    {
+      "point": "Cold-start latency for inference workloads on Kubernetes is a critical problem, taking minutes and risking SLA violations.",
+      "explanation": "The delay is broken down into container/image pull, engine initialization (weight loading, kernel warmup), and distributed runtime startup, all of which leave GPUs idle."
+    },
+    {
+      "point": "Dynamo Snapshot uses CRIU and cuda-checkpoint to checkpoint and restore the full state of an inference worker, including both host and GPU state.",
+      "explanation": "A privileged DaemonSet (snapshot-agent) manages the lifecycle, checkpointing after engine initialization but before distributed runtime startup, and restoring on the same or a different node."
+    },
+    {
+      "point": "Optimizations to CRIU, including parallel memfd restore and Linux native AIO, achieve up to 7.9x speedup in memory restoration.",
+      "explanation": "Parallel memfd restore uses a thread pool to restore shared memory buffers concurrently, while AIO replaces the serial preadv loop with up to 128 concurrent reads, saturating storage bandwidth."
+    },
+    {
+      "point": "The GPU Memory Service (GMS) decouples model weights from the process checkpoint, enabling concurrent restoration and sub-5-second startup.",
+      "explanation": "By offloading weights into a separate artifact, GMS allows process state and weight restoration to run in parallel over different channels, drastically reducing total restore time."
+    }
+  ],
+  "keyQuotes": [
+    "The cold-start problem: In production inference deployments, demand fluctuates over time, requiring inference replicas to scale elastically. However, cold-starting inference workloads on Kubernetes can take several minutes.",
+    "CRIU is fundamentally a freeze-and-thaw mechanism. When a process is restored, execution resumes at the exact instruction where it was checkpointed, completely unaware that checkpointing or restoration occurred.",
+    "Unmap and release of the KV cache reduces the total artifact size of Qwen3-0.6B on a B200 from ~190 GiB to ~6 GiB.",
+    "We replaced the preadv loop with Linux native AIO. CRIU builds a list of read jobs ahead of time... allowing the storage device to run them concurrently across its internal channels.",
+    "The final result is a start-time reduction of 21x for gpt-oss-120b."
+  ],
+  "url": "https://developer.nvidia.com/blog/nvidia-dynamo-snapshot-fast-startup-for-inference-workloads-on-kubernetes/",
+  "readUrl": "https://www.bestblogs.dev/article/2c1ca519",
+  "enclosureUrl": null,
+  "domain": "developer.nvidia.com",
+  "cover": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NVIDIA-Dynamo-Snapshot-660x370.jpg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceName": "NVIDIA Technical Blog",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20260527052034_799230b",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 10,
+  "wordCount": 2669,
+  "readTime": 11,
+  "mediaDuration": null,
+  "authors": [
+    "Schwinn Saereesitthipitak"
+  ],
+  "publishTimeStamp": 1779923420000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 07:10:20",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

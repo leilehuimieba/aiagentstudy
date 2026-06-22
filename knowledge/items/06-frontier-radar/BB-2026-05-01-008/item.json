@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    "Model",
+    "Context/State",
+    "Control Loop"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-24",
+  "id": "BB-2026-05-01-008",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/06-frontier-radar/BB-2026-05-01-008/article.md",
+    "item_dir": "knowledge/items/06-frontier-radar/BB-2026-05-01-008",
+    "raw_dir": "knowledge/items/06-frontier-radar/BB-2026-05-01-008/raw",
+    "raw_files": [
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-008/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/06-frontier-radar/BB-2026-05-01-008/source.md",
+    "summary": "knowledge/items/06-frontier-radar/BB-2026-05-01-008/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / DeepSeek",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / DeepSeek",
+  "status": "Full text + source captured",
+  "tags": [
+    "DeepSeek-V4",
+    "long context",
+    "open-source model",
+    "agentic coding",
+    "frontier model"
+  ],
+  "title": "DeepSeek-V4 预览版：迈入百万上下文普惠时代",
+  "topic": "06-frontier-radar",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://api-docs.deepseek.com/zh-cn/guides/thinking_mode",
+      "https://huggingface.co/collections/deepseek-ai/deepseek-v4",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf",
+      "https://modelscope.cn/collections/deepseek-ai/DeepSeek-V4",
+      "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c",
+      "https://www.bestblogs.dev/article/95d5e07c"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/95d5e07c"
+  }
+}

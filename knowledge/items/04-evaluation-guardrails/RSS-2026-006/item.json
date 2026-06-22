@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "2026-06-08T23:58:04+00:00",
+    "updated": "2026-06-08T23:58:04+00:00"
+  },
+  "date": "2026-06-08",
+  "id": "RSS-2026-006",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/RSS-2026-006/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-006",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-006/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-006/raw/feed-entry.json",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-006/raw/page-text.txt",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-006/raw/page.html"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/RSS-2026-006/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/RSS-2026-006/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / Simon Willison's Weblog",
+  "source_id": "simon-willison",
+  "source_name": "Simon Willison's Weblog",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "Simon Willison's Weblog",
+    "RSS",
+    "AI Agent",
+    "Agentic AI",
+    "LLM",
+    "RAG",
+    "Inference",
+    "Tool Use"
+  ],
+  "title": "Siri AI at WWDC 2026",
+  "topic": "04-evaluation-guardrails",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything",
+      "https://simonwillison.net/atom/everything/"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://simonwillison.net/atom/everything/",
+    "original_url": "https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything"
+  }
+}

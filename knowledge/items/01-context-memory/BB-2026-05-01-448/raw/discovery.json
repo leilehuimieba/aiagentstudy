@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "Ida Silfverskiöld"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/Skarmavbild-2026-06-02-kl.-09.18.12.png",
+  "domain": "towardsdatascience.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_aba895ac",
+  "keyQuotes": [
+    "There is no single best OCR engine. OCR is a routing problem.",
+    "Do not pay for expensive structured OCR when the document does not need it.",
+    "Benchmarks are useful for discovery, but they will not tell you what works on your documents.",
+    "The specialist models... have sharp boundaries. This is where the general models will win."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The optimal engine depends on document type, cost constraints, need for structure, and failure tolerance. A routing strategy that classifies documents and selects the appropriate engine is more effective than using one engine for all.",
+      "point": "There is no single best OCR engine; OCR is a routing problem."
+    },
+    {
+      "explanation": "Tesseract outperformed many modern engines on easy documents like clean invoices and receipts, while being orders of magnitude faster and cheaper.",
+      "point": "For clean, high-volume print documents, Tesseract is still the best choice due to being free and fast."
+    },
+    {
+      "explanation": "It performed consistently well across all difficulty levels, including hard documents like handwritten notes and forms, making it a strong default for heterogeneous document streams.",
+      "point": "Gemini Flash 3.1 Lite was the best all-rounder for mixed production documents."
+    },
+    {
+      "explanation": "Models like PaddleOCR and DeepSeek-OCR performed well on certain document types but exhibited catastrophic failures (e.g., repetition loops, empty outputs) on unfamiliar documents, making them risky for general use without escalation.",
+      "point": "Specialized OCR models have sharp boundaries and fail outside their training distribution."
+    },
+    {
+      "explanation": "Using AWS Textract Structured for all documents incurs significant cost ($6.5k per 100k pages) with little text accuracy gain over cheaper alternatives. Classifying documents and routing based on structure needs can drastically reduce costs.",
+      "point": "Do not pay for expensive structured OCR when the document does not need it."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article presents a practical benchmark of 14 OCR engines against 93 documents of varying difficulty, concluding that OCR is a routing problem with no single best engine.",
+  "originalTitle": "I Spent May Evaluating Different Engines for OCR",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-04",
+  "publishDateTimeStr": "2026-06-04 00:30:00",
+  "publishTimeStamp": 1780504200000,
+  "qualified": false,
+  "readCount": 86,
+  "readTime": 14,
+  "readUrl": "https://www.bestblogs.dev/article/aba895ac",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "sourceName": "Towards Data Science",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The author conducted a hands-on experiment to evaluate 14 different OCR engines—ranging from classical open-source tools like Tesseract to modern specialized models and general-purpose vision-language models—against a diverse set of 93 documents. The documents spanned easy (clean invoices), medium (bank statements, tax forms), and hard (handwritten notes, legacy reports, charts) categories. Key metrics included Coverage (how much ground truth text was captured), Precision/Recall, and latency. The results showed that Gemini Flash 3.1 Lite was the best all-rounder for mixed production documents, Tesseract remains unbeatable for clean high-volume print, and Mistral OCR offers a cost-effective option for structured table extraction. The author emphasizes that there is no universal best engine; OCR is a routing problem where document type, cost, structure needs, and failure tolerance dictate the optimal choice. The article also discusses cost scaling, failure modes of different engines, and caveats about benchmark limitations.",
+  "tags": [
+    "OCR",
+    "LLM",
+    "AI Evaluation",
+    "Document Processing",
+    "Benchmarking"
+  ],
+  "title": "I Spent May Evaluating Different Engines for OCR",
+  "translateContent": null,
+  "url": "https://towardsdatascience.com/i-spent-may-evaluating-different-engines-for-ocr/",
+  "wordCount": 3251
+}

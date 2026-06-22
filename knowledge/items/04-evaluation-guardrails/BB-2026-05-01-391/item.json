@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-28",
+  "id": "BB-2026-05-01-391",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-391/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-391",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-391/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-391/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-391/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-391/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-391/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-391/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 赛博禅心",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 赛博禅心",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "Zero Trust",
+    "Security Architecture",
+    "Anthropic",
+    "Prompt Injection"
+  ],
+  "title": "[Translation] Zero Trust Framework for AI Agents / Anthropic Security White Paper",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517425&idx=1&sn=c5eab9b48287990941f197fd6369f4d8",
+      "https://www.bestblogs.dev/article/4e86ff6b"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517425&idx=1&sn=c5eab9b48287990941f197fd6369f4d8",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/4e86ff6b"
+  }
+}

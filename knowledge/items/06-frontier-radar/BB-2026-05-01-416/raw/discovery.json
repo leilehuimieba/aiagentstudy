@@ -1,0 +1,83 @@
+{
+  "id": "RAW_114c0d08",
+  "notExist": null,
+  "originalTitle": "英伟达清华团队提出 Gamma-World：世界模型从「一个人玩」到「多人共处」",
+  "title": "NVIDIA and Tsinghua Team Propose Gamma-World: World Models Evolve from \"Solo Play\" to \"Multi-Agent Coexistence\"",
+  "oneSentenceSummary": "NVIDIA, in collaboration with Tsinghua University and other institutions, proposes Gamma-World, which, through Simplex Rotary Agent Encoding and Sparse Hub Attention, systematically solves, for the first time, the two core challenges of identity symmetric representation and efficient communication in multi-agent video world models.",
+  "summary": "This article introduces Gamma-World (γ-World), a multi-agent world model jointly proposed by NVIDIA, Tsinghua University, the University of Toronto, and the Vector Institute. Existing video world models are almost all based on a single-agent assumption and cannot handle scenarios where multiple players share the same evolving world. They primarily suffer from two architectural flaws: identity encoding breaking symmetry and the quadratic growth in computational cost of fully connected attention. Gamma-World provides a systematic solution from two fundamental components: First, it proposes Simplex Rotary Agent Encoding, which maps player identities to the vertices of a regular simplex, ensuring that the geometric relationships between any players are perfectly symmetric. This requires no learnable parameters and supports zero-shot scaling to an arbitrary number of players. Second, it designs Sparse Hub Attention, which uses a set of learnable hub tokens to implement a hub-and-spoke communication topology, reducing computational complexity from quadratic to linear. Additionally, a three-stage training strategy (bidirectional teacher, causal student, conditional Self-Forcing distillation) is employed to achieve real-time streaming inference at 24 FPS while maintaining generation quality. Experiments show that Gamma-World comprehensively surpasses the current strongest model, Solaris, in multi-player Minecraft scenarios, with an average FVD reduction of over 40%. Furthermore, it can zero-shot generalize to four-player scenarios using only two-player training data and has been successfully transferred to real-world dual-arm robot collaboration tasks.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "World Model",
+    "Multi-Agent",
+    "Gamma-World",
+    "NVIDIA",
+    "Tsinghua University"
+  ],
+  "mainPoints": [
+    {
+      "point": "Multi-agent world models face two major architectural flaws: identity encoding symmetry and communication efficiency.",
+      "explanation": "Existing solutions like Solaris use fixed-slot identity encoding, which breaks the permutation symmetry between players. Furthermore, the computational cost of fully connected attention grows quadratically with the number of players, increasing approximately 16 times from 2 to 8 players, a problem that cannot be solved through engineering optimization alone."
+    },
+    {
+      "point": "Simplex Rotary Encoding achieves symmetric representation of player identities and zero-shot scaling.",
+      "explanation": "By mapping player identities to the vertices of a regular simplex, the rotational distance between any two players is perfectly equal, requiring no learnable parameters. Vertices are randomly assigned during training, and new vertices can be used during inference to support more players, enabling direct operation in a four-player scenario after training on only two-player data."
+    },
+    {
+      "point": "Sparse Hub Attention reduces the complexity of cross-agent communication from quadratic to linear.",
+      "explanation": "Introducing learnable hub tokens as a shared world state bottleneck, each agent only interacts with its own history and the hub. Information is transmitted in two hops, making the computation scale linearly with the number of players while encoding a more reasonable inductive bias."
+    },
+    {
+      "point": "The three-stage training strategy balances generation quality and real-time inference.",
+      "explanation": "First, a bidirectional teacher model is trained to provide a high-quality distribution. Then, a causal student model is trained for streaming inference. Finally, through conditional Self-Forcing distillation, multi-step sampling is compressed to 4 steps, achieving real-time inference at 24 FPS without degrading action controllability."
+    }
+  ],
+  "keyQuotes": [
+    "A model that truly understands a multi-agent world should be symmetric in its structure, not one that, after seeing enough data, happens to learn approximately symmetric behavior. The former is understanding, the latter is just fitting.",
+    "Explicitly encoding permutation symmetry constraints in the architecture has significant advantages in both sample efficiency and final performance over letting the model implicitly learn this structure from data.",
+    "Sparse Hub Attention is not just about saving computation; it is also a more reasonable inductive bias—explicitly encoding the prior that 'cross-agent information should pass through a shared world state bottleneck' at the architectural level.",
+    "A true world model should learn not just the 'picture,' but the 'rules.'"
+  ],
+  "url": "https://www.qbitai.com/2026/05/426643.html",
+  "readUrl": "https://www.bestblogs.dev/article/114c0d08",
+  "enclosureUrl": null,
+  "domain": "qbitai.com",
+  "cover": "https://image.jido.dev/20260303113342_qbitai_icon.png",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045333_fa5811cb",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "MODELS",
+  "aiSubCategoryDesc": "AI Models",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 36,
+  "wordCount": 4831,
+  "readTime": 20,
+  "mediaDuration": null,
+  "authors": [
+    "思邈"
+  ],
+  "publishTimeStamp": 1780111037000,
+  "publishDateStr": "05-30",
+  "publishDateTimeStr": "2026-05-30 11:17:17",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

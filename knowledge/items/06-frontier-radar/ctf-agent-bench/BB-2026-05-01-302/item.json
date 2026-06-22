@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "12-03",
+  "id": "BB-2026-05-01-302",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-302/article.md",
+    "item_dir": "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-302",
+    "raw_dir": "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-302/raw",
+    "raw_files": [
+      "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-302/raw/meta.json"
+    ],
+    "source": "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-302/source.md",
+    "summary": "knowledge/items/06-frontier-radar/ctf-agent-bench/BB-2026-05-01-302/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Abstract + key excerpts + source captured",
+  "tags": [
+    "ctf-agent",
+    "react-plan",
+    "retries",
+    "benchmark-saturation",
+    "prompting"
+  ],
+  "title": "Hacking CTFs with Plain Agents",
+  "topic": "06-frontier-radar",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2412.02776"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2412.02776",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-08",
+  "id": "BB-2026-05-01-099",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-099/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-099",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-099/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-099/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-099/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-099/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Anthropic Engineering",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Anthropic Engineering",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI 智能体",
+    "系统架构",
+    "托管智能体",
+    "Claude",
+    "基础设施",
+    "AI 智能体",
+    "系统架构",
+    "托管智能体",
+    "Claude",
+    "基础设施"
+  ],
+  "title": "扩展托管智能体：将“大脑”与“双手”解耦",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "http://www.catb.org/esr/writings/taoup/html/ch03s01.html",
+      "http://www.incompleteideas.net/IncIdeas/BitterLesson.html",
+      "https://arxiv.org/pdf/2512.24601",
+      "https://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/",
+      "https://platform.claude.com/docs/en/managed-agents/overview",
+      "https://www.anthropic.com/engineering/building-effective-agents",
+      "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+      "https://www.anthropic.com/engineering/managed-agents",
+      "https://www.bestblogs.dev/",
+      "https://www.bestblogs.dev/article/4463b68b?entry=related_article",
+      "https://www.bestblogs.dev/article/46822472",
+      "https://www.bestblogs.dev/article/504ce725?entry=related_article",
+      "https://www.bestblogs.dev/article/70b91279?entry=related_article",
+      "https://www.bestblogs.dev/article/bf9ab35c?entry=related_article",
+      "https://www.bestblogs.dev/articles?sourceid=b5aa963e",
+      "https://www.bestblogs.dev/docs",
+      "https://www.bestblogs.dev/explore",
+      "https://www.bestblogs.dev/explore/brief",
+      "https://www.bestblogs.dev/explore/newsletter",
+      "https://www.bestblogs.dev/explore/sources",
+      "https://www.bestblogs.dev/explore/topics",
+      "https://www.bestblogs.dev/library/bookmarks",
+      "https://www.bestblogs.dev/library/highlights",
+      "https://www.bestblogs.dev/library/history",
+      "https://www.bestblogs.dev/library/review",
+      "https://www.bestblogs.dev/reading/brief",
+      "https://www.bestblogs.dev/reading/feed",
+      "https://www.bestblogs.dev/reading/follow",
+      "https://www.bestblogs.dev/settings",
+      "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "https://www.bestblogs.dev/status/2023817132581208353?entry=related_article",
+      "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "https://www.bestblogs.dev/video/1369401?entry=related_article",
+      "https://www.bestblogs.dev/video/862b9f1?entry=related_article",
+      "https://www.bestblogs.dev/video/a647d6a?entry=related_article",
+      "https://www.staging.ant.dev/engineering/effective-harnesses-for-long-running-agents"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.anthropic.com/engineering/managed-agents",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/46822472"
+  }
+}

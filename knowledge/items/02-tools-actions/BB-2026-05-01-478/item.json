@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-04",
+  "id": "BB-2026-05-01-478",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-478/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-478",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-478/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-478/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-478/raw/discovery.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-478/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-478/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-478/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hugging Face - Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hugging Face - Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM",
+    "AI Agent",
+    "Voice Agent",
+    "Benchmark",
+    "Enterprise AI"
+  ],
+  "title": "EVA-Bench Data 2.0: 3 Domains， 121 Tools， 213 Scenarios",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+      "https://www.bestblogs.dev/article/f4bf8cb2"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/f4bf8cb2"
+  }
+}

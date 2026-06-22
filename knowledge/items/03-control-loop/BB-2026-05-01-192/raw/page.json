@@ -1,0 +1,178 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T5beee22774ae4f0eb0abdf4e98cd0ecc",
+  "data": {
+    "metaData": {
+      "id": "RAW_da90d61f",
+      "notExist": null,
+      "originalTitle": "\"OncoAgent: A Dual-Tier Multi-Agent Framework for Privacy-Preserving Oncology Clinical Decision Support\"",
+      "title": "\"OncoAgent: A Dual-Tier Multi-Agent Framework for Privacy-Preserving Oncology Clinical Decision Support\"",
+      "oneSentenceSummary": "OncoAgent presents an open-source, privacy-preserving clinical decision support system for oncology that combines a dual-tier fine-tuned LLM architecture with a multi-agent LangGraph topology and a Corrective RAG pipeline, achieving a 56x throughput acceleration on AMD MI300X hardware.",
+      "summary": "This technical paper introduces OncoAgent, a comprehensive open-source system designed to assist oncologists with clinical decision-making while preserving patient privacy. The system features a dual-tier architecture that routes simple queries to a 9B parameter model and complex cases to a 27B deep-reasoning model, both fine-tuned via QLoRA on 266,854 oncological cases. A key innovation is the integration of a four-stage Corrective RAG pipeline over 70+ NCCN and ESMO guidelines, combined with a three-layer reflexion safety validator that enforces a strict Zero-PHI policy. The entire stack runs on a single AMD Instinct MI300X instance using ROCm, eliminating cloud API dependencies. The paper reports significant performance achievements, including a 56x throughput acceleration for synthetic data generation (6,800 vs. 120 cases/hour) and full-dataset fine-tuning in approximately 50 minutes. The system architecture decomposes clinical reasoning across eight specialized LangGraph nodes, each with bounded, auditable functions, and includes a mandatory human-in-the-loop gate for high-complexity cases.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "OncoAgent",
+        "Clinical Decision Support",
+        "Multi-Agent Systems",
+        "LangGraph",
+        "Corrective RAG"
+      ],
+      "mainPoints": [
+        {
+          "point": "OncoAgent combines a dual-tier LLM architecture with a multi-agent LangGraph topology for oncology clinical decision support.",
+          "explanation": "The system routes queries based on complexity to either a 9B speed-optimized model or a 27B deep-reasoning model, both fine-tuned on 266,854 oncological cases, enabling efficient handling of diverse clinical scenarios."
+        },
+        {
+          "point": "A four-stage Corrective RAG pipeline with explicit relevance gating eliminates hallucinated recommendations.",
+          "explanation": "The pipeline includes recall, distance gating, cross-encoder re-ranking, and context trimming, with a hard anti-hallucination threshold that returns a safe refusal for out-of-domain queries."
+        },
+        {
+          "point": "The system achieves a 56x throughput acceleration for synthetic data generation on AMD MI300X hardware.",
+          "explanation": "Using Unsloth's FastLanguageModel with sequence packing on AMD Instinct MI300X, the team generated 96,941 synthetic cases at 6,800 cases/hour versus 120 cases/hour via API, and fine-tuned the full 266k-sample corpus in approximately 50 minutes."
+        },
+        {
+          "point": "A three-layer reflexion safety validator enforces a strict Zero-PHI policy with deterministic safety checks.",
+          "explanation": "The Critic node runs formatting, safety, and LLM entailment checks as deterministic code, preventing adversarial bypass, while a dedicated Zero-PHI redaction node removes all protected health information before any LLM processing."
+        },
+        {
+          "point": "The complete system is 100% open-source and deployable on-premises, eliminating proprietary cloud API dependency.",
+          "explanation": "All training, inference, RAG, and UI components run on a single AMD MI300X instance using ROCm, enabling hospital deployment without data exfiltration and satisfying HIPAA/GDPR requirements."
+        }
+      ],
+      "keyQuotes": [
+        "OncoAgent combines a dual-tier fine-tuned LLM architecture with a state-of-the-art multi-agent LangGraph topology, a four-stage Corrective RAG pipeline over 70+ physician-grade NCCN and ESMO guidelines, and a three-layer reflexion safety validator enforcing a strict Zero-PHI policy.",
+        "Sequence packing on MI300X enabled full-dataset fine-tuning in approximately 50 minutes --- a 56× throughput acceleration over API-based generation.",
+        "The Critic runs as deterministic code, not LLM-controlled logic --- ensuring safety enforcement cannot be bypassed by adversarial prompting.",
+        "The system demonstrates that production-grade clinical AI does not require proprietary infrastructure: the full stack runs on a single AMD Instinct MI300X instance under ROCm.",
+        "Any query failing Stage 2 returns 'Información no concluyente en las guías provistas' without invoking the Specialist. This guarantees zero hallucinated recommendations for out-of-domain clinical inputs."
+      ],
+      "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper",
+      "readUrl": "https://www.bestblogs.dev/article/da90d61f",
+      "enclosureUrl": null,
+      "domain": "huggingface.co",
+      "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_19153d",
+      "sourceName": "Hugging Face Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045334_422a09d9",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 91,
+      "readCount": 91,
+      "wordCount": 2788,
+      "readTime": 12,
+      "mediaDuration": null,
+      "authors": [
+        "Máximo López Chenlo"
+      ],
+      "publishTimeStamp": 1778350168000,
+      "publishDateStr": "05-09",
+      "publishDateTimeStr": "2026-05-09 18:09:28",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_4943728e",
+        "type": "ARTICLE",
+        "title": "Falcon Perception",
+        "oneSentenceSummary": "Falcon Perception is a 0.6B early-fusion Transformer that unifies vision and language in a single backbone for open-vocabulary grounding and segmentation, outperforming SAM 3 on complex compositional prompts.",
+        "url": "https://huggingface.co/blog/tiiuae/falcon-perception",
+        "sourceName": "Hugging Face Blog"
+      },
+      {
+        "id": "RAW_b4bbaed",
+        "type": "VIDEO",
+        "title": "Paperclip: Hire AI Agents Like Employees (Live Demo)",
+        "oneSentenceSummary": "Paperclip founder Dota demos an AI agent orchestration platform designed to run 'zero-human companies' — teams of AI agents with defined roles, memory, and skills that operate autonomously under human strategic direction.",
+        "url": "https://www.youtube.com/watch?v=C3-4llQYT8o",
+        "sourceName": "Greg Isenberg"
+      },
+      {
+        "id": "RAW_add4922",
+        "type": "VIDEO",
+        "title": "How I Created OpenClaw, the Breakthrough AI Agent",
+        "oneSentenceSummary": "Peter Steinberger shares his journey from burnout to building OpenClaw, a wildly popular open-source AI agent that autonomously solves problems, explores its transformative potential for non-coders, and discusses the risks and future of multi-agent collaboration.",
+        "url": "https://www.youtube.com/watch?v=7rzYDM6vMtI",
+        "sourceName": "TED"
+      },
+      {
+        "id": "RAW_aa252bd",
+        "type": "VIDEO",
+        "title": "Memory and Dreaming for Self-Learning Agents",
+        "oneSentenceSummary": "Anthropic introduces Memory and Dreaming, two new primitives for its Managed Agents API, enabling agents to achieve continuous self-learning by managing their own knowledge in a file system-like structure and asynchronously curating that knowledge to improve over time.",
+        "url": "https://www.youtube.com/watch?v=RtywqDFBYnQ",
+        "sourceName": "Claude"
+      },
+      {
+        "id": "RAW_b7ceaf1c",
+        "type": "ARTICLE",
+        "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents， Audio and Video Agents",
+        "oneSentenceSummary": "NVIDIA introduces Nemotron 3 Nano Omni, a new open-weight omni-modal model that combines text, image, video, and audio understanding with a hybrid Mamba-Transformer-MoE backbone, achieving top accuracy on multiple multimodal leaderboards while delivering up to 9x higher throughput.",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+        "sourceName": "Hugging Face Blog"
+      },
+      {
+        "id": "RAW_bcfec9e5",
+        "type": "ARTICLE",
+        "title": "How NVIDIA AI-Q Reached \\#1 on DeepResearch Bench I and II",
+        "oneSentenceSummary": "NVIDIA AI-Q achieves state-of-the-art performance on deep research benchmarks through a modular multi-agent architecture, fine-tuned Nemotron-3 models, and specialized reliability middleware.",
+        "url": "https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench",
+        "sourceName": "Hugging Face Blog"
+      },
+      {
+        "id": "RAW_9f6c9323",
+        "type": "ARTICLE",
+        "title": "Open SWE: An Open-Source Framework for Internal Coding Agents",
+        "oneSentenceSummary": "Open SWE is an open-source framework by LangChain that enables organizations to build customizable internal coding agents based on production-proven patterns like isolated sandboxes and seamless workflow integration.",
+        "url": "https://blog.langchain.com/open-swe-an-open-source-framework-for-internal-coding-agents/",
+        "sourceName": "LangChain Blog"
+      },
+      {
+        "id": "RAW_c4cdf3f6",
+        "type": "ARTICLE",
+        "title": "Welcome Gemma 4: Frontier multimodal intelligence on device",
+        "oneSentenceSummary": "Google DeepMind releases Gemma 4, a family of open, multimodal models (2.3B to 31B parameters) featuring architectural innovations like Per-Layer Embeddings and Shared KV Cache for efficient on-device and long-context performance.",
+        "url": "https://huggingface.co/blog/gemma4",
+        "sourceName": "Hugging Face Blog"
+      },
+      {
+        "id": "RAW_06440a10",
+        "type": "ARTICLE",
+        "title": "What I Learned Building Multi-Agent Systems From Scratch",
+        "oneSentenceSummary": "A staff engineer at Shopify shares the journey of building multi-agent systems from scratch, revealing that narrow-focused agents outperform generalists, and that empowering domain experts with tools is more effective than creating an AI SWAT team.",
+        "url": "https://www.infoq.com/presentations/multi-agent-system-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_e75372eb",
+        "type": "ARTICLE",
+        "title": "Building a Fast Multilingual OCR Model with Synthetic Data",
+        "oneSentenceSummary": "This article details NVIDIA's development of Nemotron OCR v2, a fast and accurate multilingual OCR model trained on a massive, open-source synthetic dataset of 12.2 million images, overcoming data scarcity through a scalable, language-agnostic rendering pipeline.",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-ocr-v2",
+        "sourceName": "Hugging Face Blog"
+      }
+    ]
+  }
+}

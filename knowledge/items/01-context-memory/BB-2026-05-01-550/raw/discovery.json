@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Sofia Sulikowski"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a28c8fcc2f66710da5964d8_building-box-ai.png",
+  "domain": "langchain.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_06adaad3",
+  "keyQuotes": [
+    "Enterprise search is challenging, because you have duplicate information, outdated information, things that seemingly look the same but every enterprise has its own nomenclature.",
+    "If the question was very simple, or the search was very simple, the parent node can just do it. It doesn't even need to come up with a plan.",
+    "The advantage of doing it as middleware is that the streaming of the answer and the citation generation happen in parallel, so you never interrupt the user."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The initial hardcoded sub-agent approach was replaced by a dynamic 'Global Agent' that spawns child agents at runtime, enabling flexible handling of complex, multi-step requests without predefined workflows.",
+      "point": "Box evolved from single-file Q&A to a recursive parent/child agent architecture for enterprise-scale tasks."
+    },
+    {
+      "explanation": "Middleware intercepts model and tool calls to run citation generation in parallel with response streaming, implement prompt caching for multi-turn conversations, and automatically summarize context when it exceeds 170,000 tokens.",
+      "point": "Deep Agents middleware enables parallel citation generation and efficient context management."
+    },
+    {
+      "explanation": "Box chose Deep Agents because it preserved the ability to offer customers a choice of LLM providers (OpenAI, Anthropic, Google) and accelerated engineering velocity, reducing agent shipping time from months to weeks.",
+      "point": "Model agnosticism and speed of iteration were critical framework selection criteria."
+    },
+    {
+      "explanation": "All agents share the same full set of tools (BM25, vector search, structured Q&A, file operations), with the model deciding which tools to use rather than relying on static routing logic.",
+      "point": "The architecture uses a uniform tool registry accessible to both parent and child agents."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article details how Box AI built its enterprise content agent using LangChain's Deep Agents framework, employing a recursive parent/child architecture for scalable, secure, and model-agnostic document analysis.",
+  "originalTitle": "How Box AI built enterprise content agents with Deep Agents",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-12",
+  "publishDateTimeStr": "2026-06-12 08:00:00",
+  "publishTimeStamp": 1781222400000,
+  "qualified": false,
+  "readCount": 33,
+  "readTime": 5,
+  "readUrl": "https://www.bestblogs.dev/article/06adaad3",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_88bf28",
+  "sourceImage": "https://image.jido.dev/20260527045328_69a17e4a429d54e956e2a763_favicon.png",
+  "sourceName": "LangChain Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article presents a case study of Box AI's evolution from single-file Q&A to an enterprise-scale agentic system built on Deep Agents. It explains the architectural shift from hardcoded, specialized sub-agents to a recursive parent/child model where a 'Global Agent' dynamically spawns child agents to handle complex, multi-step tasks like cross-enterprise search and multi-document synthesis. Key design decisions include complete model agnosticism (supporting OpenAI, Anthropic, Google, etc.), the use of Deep Agents middleware for parallel citation generation, prompt caching, and context management, and a focus on engineering velocity that reduced agent shipping time from months to weeks. The article concludes with a vision for agents possessing the institutional knowledge of a long-tenured employee.",
+  "tags": [
+    "AI Agent",
+    "Enterprise AI",
+    "LLM",
+    "RAG",
+    "Deep Agents"
+  ],
+  "title": "How Box AI built enterprise content agents with Deep Agents",
+  "translateContent": null,
+  "url": "https://www.langchain.com/blog/building-box-ai-how-an-enterprise-content-platform-went-ai-native-with-deep-agents",
+  "wordCount": 1074
+}

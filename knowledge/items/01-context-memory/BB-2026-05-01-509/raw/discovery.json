@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "AINLP"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045506_e620592f",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_c965ab9b",
+  "keyQuotes": [
+    "The average amount of code shipped per quarter by an Anthropic engineer is 8 times higher than it was between 2021 and 2025.",
+    "If this trend continues, tasks that currently take skilled people days to complete this year could fall within the capability range of AI systems. By 2027, AI systems may be capable of tasks requiring weeks of human effort.",
+    "Edison said genius is 1% inspiration and 99% perspiration. But we are seeing that perspiration is increasingly being automated.",
+    "A meaningful slowdown or pause would require multiple well-resourced labs, at or near the frontier, across multiple countries, to agree to stop under the same conditions."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Internal Anthropic data shows that Claude writes over 80% of production code, leading to an 8x increase in engineer per-capita output. On clearly defined experimental optimization tasks, Claude has already surpassed human-level performance.",
+      "point": "AI systems are accelerating their involvement in all stages of AI R&D, from code writing to experiment execution."
+    },
+    {
+      "explanation": "Claude's success rate on open-ended research tasks has increased from 26% to 76%. In tests for 'choosing the better next step,' the latest model outperforms human choices 64% of the time, suggesting that research taste may not be uniquely human.",
+      "point": "AI is rapidly advancing in open-ended research and research judgment."
+    },
+    {
+      "explanation": "The article proposes three future scenarios: trend stagnation, compound efficiency gains, and full recursive self-improvement. In the latter two scenarios, AI development becomes largely automated, the human role narrows, and alignment issues and risks of loss of control become core challenges.",
+      "point": "Recursive self-improvement is not inevitable, but may arrive sooner than expected, bringing immense opportunities and risks."
+    },
+    {
+      "explanation": "A credible pause requires multi-party agreement, verifiable shutdown mechanisms, and conditions for triggering and lifting. Because training runs are easy to hide and incentives for defection are high, establishing a verification regime akin to arms control is urgent.",
+      "point": "Coordinated slowdown or pause is an ideal option, but implementation faces significant challenges."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Anthropic publishes a long-form article, using external benchmarks and internal data to argue that AI systems are increasingly participating in their own R&D processes, and explores the trends, impacts, and three future scenarios of recursive self-improvement.",
+  "originalTitle": "Anthropic: 当 AI 开始构建自己",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 11:21:00",
+  "publishTimeStamp": 1780629660000,
+  "qualified": false,
+  "readCount": 46,
+  "readTime": 41,
+  "readUrl": "https://www.bestblogs.dev/article/c965ab9b",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_6d214b",
+  "sourceImage": "https://image.jido.dev/20251127045506_e620592f",
+  "sourceName": "AINLP",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is an in-depth piece published by the Anthropic Institute, originally titled \"When AI builds itself.\" It systematically argues that AI systems are accelerating their involvement in the AI R&D pipeline, from writing code and running experiments to conducting evaluations, pointing towards the potential for recursive self-improvement in the future. The article is structured into several parts: first, it demonstrates the rapid capability improvement of models on external benchmarks (SWE-bench, CORE-Bench, METR long-horizon tasks); then, it reveals internal Anthropic data, including Claude writing over 80% of production code, an 8x increase in engineer per-capita output, and Claude's success rate on open-ended research tasks rising from 26% to 76%; it then discusses the shift in the human role from executor to direction-setter; finally, it proposes three future scenarios: trend stagnation, compound efficiency gains, and full recursive self-improvement, and explores the possibility of coordinated slowdown. The article is rich in data, rigorous in argumentation, and its analysis of future impacts is measured and boundary-aware.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Coding",
+    "AI Safety & Alignment",
+    "Model Evaluation & Benchmarking"
+  ],
+  "title": "Anthropic: When AI Starts Building Itself",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650452084&idx=1&sn=1db130876388d5dd00b6575480bd38fd",
+  "wordCount": 10022
+}

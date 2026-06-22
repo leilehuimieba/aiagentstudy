@@ -1,0 +1,178 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T9b9103801f1b47eca50377efb2de165b",
+  "data": {
+    "metaData": {
+      "id": "RAW_3a3c9344",
+      "notExist": null,
+      "originalTitle": "[AINews] Everything is Conductor",
+      "title": "[AINews] Everything is Conductor",
+      "oneSentenceSummary": "This edition of AINews analyzes the convergence of AI coding tools around an 'agent-first' form factor, covering GitHub's new Copilot App, OpenAI's Codex mobile launch, the Claude Code backlash, and key developments in agent infrastructure, robotics, and open models.",
+      "summary": "This AINews newsletter from Latent Space provides a comprehensive overview of the AI landscape from May 13-14, 2026. The central theme is the industry's convergence on an 'agent-first' UX, exemplified by GitHub's new Copilot App, which mirrors the form factor pioneered by Conductor. Key highlights include OpenAI's launch of Codex in the ChatGPT mobile app for remote agent control, VS Code's new multi-agent Agents window, and LangChain's substantial agent-infrastructure releases (SmithDB, LangSmith Engine, LangChain Labs). A major developer backlash against Anthropic's restrictions on Claude Code usage is covered in depth, highlighting the instability of subscription-backed harnesses. The newsletter also covers Figure's 24/7 autonomous humanoid sorting livestream, new open models (Zyphra's ZAYA1, Datadog's Toto 2.0), and research on diffusion LMs, mechanistic interpretability, and autonomous optimizer search. A Reddit recap section details a llama.cpp fork adding Multi-Token Prediction for Qwen models.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "AI News",
+        "Coding Agents",
+        "GitHub Copilot",
+        "OpenAI Codex",
+        "Claude Code"
+      ],
+      "mainPoints": [
+        {
+          "point": "The AI coding tool ecosystem is converging on an 'agent-first' UX form factor pioneered by Conductor.",
+          "explanation": "GitHub's new Copilot App, VS Code's Agents window, and OpenAI's Codex mobile app all adopt a similar design pattern of managing parallel agent workstreams, signaling a major shift from code-first to agent-first development environments."
+        },
+        {
+          "point": "Anthropic's restrictions on Claude Code usage triggered a significant developer backlash, highlighting platform risk.",
+          "explanation": "Theo and other prominent developers reported dramatic rate-limit reductions for third-party wrappers, leading to subscription cancellations. This event underscores that subscription-backed agent harnesses are not stable primitives, making provider abstraction and BYOK paths increasingly necessary."
+        },
+        {
+          "point": "LangChain released a major agent-infrastructure stack, turning observability into an improvement loop.",
+          "explanation": "The launch of SmithDB (a database for agent trace data) and LangSmith Engine (which analyzes traces to identify issues and propose fixes) represents a shift from passive monitoring to active, automated agent self-improvement. LangChain Labs further explores continual learning from production traces."
+        },
+        {
+          "point": "Figure demonstrated 24+ hours of continuous autonomous humanoid operation, a milestone for embodied AI.",
+          "explanation": "The company's livestream showed a humanoid robot performing small-package sorting at human-parity throughput with no teleoperation, running Helix-02 entirely onboard. This demo provides strong evidence for near-term labor substitution in structured environments."
+        },
+        {
+          "point": "OpenAI extended Codex into mobile workflows, enabling remote control of coding agents from a phone.",
+          "explanation": "The Codex integration in the ChatGPT mobile app allows users to start tasks, review outputs, and approve commands while the agent runs on a remote machine, significantly expanding the practical use cases for AI coding assistants."
+        }
+      ],
+      "keyQuotes": [
+        "If you are code first you might wanna stay on good ol' VS Code, but if you are agent first and GitHub first you are in for a treat!",
+        "I spent the day using Claude Code macOS app with git worktrees head to head against @conductor_build and Conductor is still better - it's more responsive, doesn't hide what it's doing, more rock solid.",
+        "subscription-backed harnesses are not stable platform primitives; provider/model abstraction and BYOK paths look increasingly mandatory.",
+        "SmithDB is a database purpose-built for agent trace data.",
+        "Figure's livestream dominated robotics discussion."
+      ],
+      "url": "https://www.latent.space/p/ainews-everything-is-conductor",
+      "readUrl": "https://www.bestblogs.dev/article/3a3c9344",
+      "enclosureUrl": null,
+      "domain": "latent.space",
+      "cover": "https://image.jido.dev/20260515004250_c44b00aa-b057-4698-a9c6-f8e73c7aaaf7_2289x1342.jpeg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_fc479e",
+      "sourceName": "Latent Space",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/landspace-favicon-48x48.jpg",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "NEWS",
+      "aiSubCategoryDesc": "AI News",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 91,
+      "readCount": 86,
+      "wordCount": 1736,
+      "readTime": 7,
+      "mediaDuration": null,
+      "authors": [
+        "Latent.Space"
+      ],
+      "publishTimeStamp": 1778805021000,
+      "publishDateStr": "05-15",
+      "publishDateTimeStr": "2026-05-15 00:30:21",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_18a0d718",
+        "type": "ARTICLE",
+        "title": "Retrieval After RAG: Hybrid Search， Agents， and Database Design — Simon Hørup Eskildsen of Turbopuffer",
+        "oneSentenceSummary": "Turbopuffer is a cloud-native search engine for unstructured data that leverages a tiered storage architecture (S3 to NVMe) to provide cost-efficient, high-concurrency retrieval for RAG and agentic workflows.",
+        "url": "https://www.latent.space/p/turbopuffer",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_f884575",
+        "type": "VIDEO",
+        "title": "Boris Cherny: How We Built Claude Code",
+        "oneSentenceSummary": "Boris Cherny, creator of Claude Code, discusses the tool's evolution at Anthropic, emphasizing a 'build for the future' philosophy, multi-agent orchestration, and the radical 150% productivity boost in AI-native engineering.",
+        "url": "https://www.youtube.com/watch?v=PQU9o_5rHC4",
+        "sourceName": "Y Combinator"
+      },
+      {
+        "id": "RAW_663e10aa",
+        "type": "ARTICLE",
+        "title": "Notion’s Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future — Simon Last & Sarah Sachs of Notion",
+        "oneSentenceSummary": "Notion's AI engineering leads, Sarah Sachs and Simon Last, detail the multi-year, iterative journey to build Custom Agents, sharing insights on product timing, team culture, evaluation philosophy, and the vision for agent-native collaboration and software factories.",
+        "url": "https://www.latent.space/p/notion",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_bf9ab35c",
+        "type": "ARTICLE",
+        "title": "Claude Code auto mode: a safer way to skip permissions",
+        "oneSentenceSummary": "Claude Code's new Auto mode uses a two-stage model-based classifier and prompt-injection probes to autonomously gate dangerous actions, balancing developer productivity with security.",
+        "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_862a3021",
+        "type": "ARTICLE",
+        "title": "Cursor's Third Era: Cloud Agents",
+        "oneSentenceSummary": "This article explores Cursor's transition into the 'Cloud Agent' era, where AI agents utilize full virtual machines and 'Computer Use' to build, test, and demonstrate software autonomously.",
+        "url": "https://www.latent.space/p/cursor-third-era",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_8f3d453",
+        "type": "VIDEO",
+        "title": "Building Claude Code with Boris Cherny",
+        "oneSentenceSummary": "Boris Cherny, creator of Claude Code, discusses his 100% AI-driven workflow, Anthropic's unique engineering culture, and why software engineers are transitioning from 'scribes' to 'authors' in the AI era.",
+        "url": "https://www.youtube.com/watch?v=julbw1JuAz0",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_933bc25e",
+        "type": "ARTICLE",
+        "title": "Why Anthropic Thinks AI Should Have Its Own Computer — Felix Rieseberg of Claude Cowork & Claude Code Desktop",
+        "oneSentenceSummary": "Felix Rieseberg discusses why Anthropic believes the future of AI lies in trusted task execution through local-first agent workflows, where AI has its own computer to work with rather than just chat interfaces.",
+        "url": "https://www.latent.space/p/felix-anthropic",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_77d5e14",
+        "type": "VIDEO",
+        "title": "Build Hour: API & Codex",
+        "oneSentenceSummary": "This OpenAI Build Hour session introduces 'Harness Engineering,' a methodology for optimizing codebases to enable autonomous AI agents to handle full software development tasks.",
+        "url": "https://www.youtube.com/watch?v=rhsSqr0jdFw",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_c725aea4",
+        "type": "ARTICLE",
+        "title": "Extreme Harness Engineering for Token Billionaires: 1M LOC， 1B toks/day， 0% human code， 0% human review — Ryan Lopopolo， OpenAI Frontier & Symphony",
+        "oneSentenceSummary": "OpenAI's Ryan Lopopolo introduces 'Harness Engineering,' a radical workflow where a 1M LOC codebase was built with 0% human-written code and 1B tokens spent daily.",
+        "url": "https://www.latent.space/p/harness-eng",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_72e3cf5",
+        "type": "VIDEO",
+        "title": "Head of Claude Code: What happens after coding is solved | Boris Cherny",
+        "oneSentenceSummary": "Boris Cherny, Head of Claude Code at Anthropic, discusses the transition to 100% AI-generated software development and the emergence of autonomous agents like Co-work.",
+        "url": "https://www.youtube.com/watch?v=We7BZVKbCVw",
+        "sourceName": "Lenny's Podcast"
+      }
+    ]
+  }
+}

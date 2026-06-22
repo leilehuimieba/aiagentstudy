@@ -1,0 +1,73 @@
+{
+  "authors": [
+    "Leela Kumili"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://res.infoq.com/news/2026/06/pinterest-miqps-url-dedup/en/headerimage/generatedHeaderImage-1780112619618.jpg",
+  "domain": "infoq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_a3d45d78",
+  "keyQuotes": [
+    "This is the kind of problem that sounds trivial until you're operating at Pinterest scale, across millions of merchant domains with wildly different URL conventions.",
+    "MIQPS uses a data-driven approach that evaluates whether removing a query parameter changes the rendered content of a page."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Manually maintained allowlists and denylists are impractical for the long tail of diverse URL structures, making a data-driven approach necessary.",
+      "point": "Static URL normalization rules don't scale across millions of heterogeneous domains."
+    },
+    {
+      "explanation": "By rendering pages and comparing content fingerprints with and without a parameter, the system empirically determines if a parameter affects page identity, bypassing unreliable heuristics like canonical tags.",
+      "point": "MIQPS uses content fingerprints to infer parameter importance."
+    },
+    {
+      "explanation": "Expensive page rendering and fingerprinting are done offline, while the runtime system applies the precomputed parameter importance map, balancing freshness, cost, and operational complexity.",
+      "point": "The architecture separates offline analysis from runtime processing for efficiency."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Pinterest engineers developed MIQPS, a data-driven system that uses content fingerprints to determine which URL query parameters are essential for deduplication, replacing static rules at scale.",
+  "originalTitle": "Pinterest Uses Content Fingerprints for URL Deduplication Across Millions of Domains",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-08 22:37:00",
+  "publishTimeStamp": 1780929420000,
+  "qualified": false,
+  "readCount": 44,
+  "readTime": 3,
+  "readUrl": "https://www.bestblogs.dev/article/a3d45d78",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+  "sourceName": "InfoQ",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article details Pinterest's approach to URL deduplication at scale, focusing on their Minimal Important Query Param Set (MIQPS) system. The core problem is that millions of URLs from diverse merchant and publisher domains differ only by non-essential tracking or session parameters, leading to redundant processing costs. Traditional rule-based methods using allow/denylists are not scalable for this long tail of heterogeneous domains. MIQPS solves this by taking a data-driven approach: it renders pages, generates content fingerprints, and statistically determines if removing a specific query parameter changes the page's content. If the content changes beyond a threshold, the parameter is deemed 'important' and retained; otherwise, it is removed. The system features an offline analysis pipeline for expensive rendering and evaluation, with a runtime component that applies the precomputed parameter importance map. It also includes efficiency mechanisms like early exit logic and anomaly detection to prevent incorrect parameter downgrades. The article highlights the practical trade-offs of offline computation for a problem that evolves slowly, making it a cost-effective and scalable solution for Pinterest's ingestion infrastructure.",
+  "tags": [
+    "System Design",
+    "Data Engineering",
+    "Backend Development",
+    "Scalability",
+    "URL Normalization"
+  ],
+  "title": "Pinterest Uses Content Fingerprints for URL Deduplication Across Millions of Domains",
+  "translateContent": null,
+  "url": "https://www.infoq.com/news/2026/06/pinterest-miqps-url-dedup/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "wordCount": 529
+}

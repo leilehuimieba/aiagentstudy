@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Tb5f2fe0c390e4fc3b8c90c900c47624f",
+  "data": {
+    "metaData": {
+      "id": "RAW_1d6460e3",
+      "notExist": null,
+      "originalTitle": "Claude 写代码错误率从 41%降到 11%：Karpathy 的 4 条规则为什么不够",
+      "title": "Claude Code Error Rate Drops from 41% to 11%: Why Karpathy's 4 Rules Aren't Enough",
+      "oneSentenceSummary": "Based on 6 weeks of real-world data from 30 codebases, this article expands Karpathy's 4 Claude coding rules to 12, reducing the task error rate from 41% to 3%, and explains the real failure modes behind each new rule.",
+      "summary": "This article delves into how carefully designed CLAUDE.md files can significantly improve the stability and consistency of Claude AI coding. The author first acknowledges the value of Karpathy's original 4 rules (think first, simple over complex, surgical edits, goal-driven), noting they can reduce an error rate of roughly 40% to below 3%. However, the author argues that these 4 rules primarily address coding issues from January 2026 and fail to cover new challenges emerging in May 2026, such as agent orchestration, multi-step workflows, and token budgets. Therefore, based on 6 weeks of real-world data from 30 codebases, the author adds 8 new rules: avoid having the model perform non-linguistic work, set hard token budgets, expose conflicts rather than compromise, read before writing, test intent over behavior, set checkpoints for multi-step tasks, follow codebase conventions, and fail loudly. The article explains the necessity of each new rule through concrete examples and provides a complete 12-rule CLAUDE.md file ready for copy-pasting. The author emphasizes that CLAUDE.md should be a behavioral contract customized to your own failure modes, not a wishlist, and offers advice on installation and rule pruning.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Claude Code",
+        "CLAUDE.md",
+        "AI Coding",
+        "Prompt Engineering",
+        "Karpathy"
+      ],
+      "mainPoints": [
+        {
+          "point": "Karpathy's 4 rules are foundational but insufficient for the agent-driven, multi-step coding workflows of May 2026.",
+          "explanation": "The original rules mainly address single-interaction issues like silent assumptions and over-engineering, but fail to handle new problems such as agent conflicts, token budget overruns, and multi-step task breakdowns, necessitating new rules."
+        },
+        {
+          "point": "The 8 new rules target specific, observable failure modes, each with clear application scenarios and verification methods.",
+          "explanation": "For example, Rule 5 prevents the model from performing deterministic tasks like routing, Rule 6 sets hard token budgets to prevent context loss of control, and Rule 10 requires checkpoints for multi-step tasks to prevent error accumulation."
+        },
+        {
+          "point": "CLAUDE.md should be a behavioral contract customized to your own failure modes, not a wishlist containing all preferences.",
+          "explanation": "The author emphasizes that compliance drops significantly beyond 200 lines or 14 rules. The best practice is to understand the failure mode behind each rule and keep only those that solve your actual problems."
+        },
+        {
+          "point": "Tests should verify intent over behavior, preventing Claude from writing code that passes shallow tests but breaks business logic.",
+          "explanation": "Rule 9 states that if a test cannot fail when business logic changes, it is useless. Tests must encode WHY a behavior is important, not just WHAT the behavior is."
+        }
+      ],
+      "keyQuotes": [
+        "CLAUDE.md is not a wishlist. It's a behavioral contract designed to shut down specific failure modes you've already observed.",
+        "The most expensive Claude failures are those that look like successes.",
+        "A 6-rule CLAUDE.md tuned to your real failure modes beats a 12-rule file with 6 rules you'll never use.",
+        "Karpathy's 4 rules guard against the failure modes he saw in January 2026... The 8 rules I added guard against the failure modes that emerged in May 2026."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653565142&idx=1&sn=8004ffa5861afa14be5e51d0975ee709",
+      "readUrl": "https://www.bestblogs.dev/article/1d6460e3",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4DkCqSIEoCCu1zKRml7uqGFXL2Phiag9FPlfknIpcCxdw/0",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_8dfbe9",
+      "sourceName": "高可用架构",
+      "priority": "LOW",
+      "sourceImage": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4DkCqSIEoCCu1zKRml7uqGFXL2Phiag9FPlfknIpcCxdw/0",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 88,
+      "readCount": 72,
+      "wordCount": 5423,
+      "readTime": 22,
+      "mediaDuration": null,
+      "authors": [
+        "高可用架构"
+      ],
+      "publishTimeStamp": 1778470080000,
+      "publishDateStr": "05-11",
+      "publishDateTimeStr": "2026-05-11 03:28:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_83fa2a78",
+        "type": "ARTICLE",
+        "title": "Investing 10,000 RMB in AI: A Year of Tools, Practices, and Reflections",
+        "oneSentenceSummary": "A systematic summary of a veteran developer's practical experience in the AI wave, covering everything from MAC toolchain optimization and Harness Engineering architectural constraints to building an Agent-driven automated learning loop.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695194&idx=1&sn=030591ea76020210c5f06692fb30243f",
+        "sourceName": "腾讯云开发者"
+      },
+      {
+        "id": "RAW_17ad4f7",
+        "type": "PODCAST",
+        "title": "E45 Meng Yan in Conversation with Li Jigang: How Humans Find Their Place",
+        "oneSentenceSummary": "This episode explores the inevitable transition from mental labor to 'heart power' in the AI era, and the deep philosophy of responding to technological change by reconstructing investment, education, and mental models.",
+        "url": "https://www.xiaoyuzhoufm.com/episode/69a64629de29766da93331ec",
+        "sourceName": "无人知晓"
+      },
+      {
+        "id": "RAW_19176cbc",
+        "type": "ARTICLE",
+        "title": "Key Shift in Agent Architecture: Harness Is Becoming the New Backend",
+        "oneSentenceSummary": "This article proposes redefining backend architecture with three primitives—Worker, Trigger, and Function—making Agents first-class Workers alongside services and queues, thereby eliminating the boundary between Harness and traditional backends, and realizing this vision through the open-source project iii.dev.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653565116&idx=1&sn=d0fb3f7e76e84e6a2cb048a1e77f1222",
+        "sourceName": "高可用架构"
+      },
+      {
+        "id": "RAW_546c668c",
+        "type": "ARTICLE",
+        "title": "Ralph Loop Isn't Enough: 3 Things Long-Running Agents Still Lack",
+        "oneSentenceSummary": "This article analyzes the limitations of the Codex /goal long-running agent mechanism and proposes an optimized workflow: reducing task ambiguity through in-depth upfront interviews, adopting an orchestrator + sub-agent pattern, and maintaining persistent memory files to achieve cross-context continuity.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653565136&idx=1&sn=400b660ac8f6bfa354f5c250e2d649a9",
+        "sourceName": "高可用架构"
+      },
+      {
+        "id": "RAW_ac7b4e24",
+        "type": "ARTICLE",
+        "title": "Building Multi-Agent Systems with Claude: How One Person Can Run a Team of 4 AI Experts",
+        "oneSentenceSummary": "This article details how to build a content production system with Claude that includes four specialized agents — Research, Production, Quality, and Distribution — and provides complete system prompt templates, folder structures, and step-by-step instructions.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653565152&idx=1&sn=f2e6cd9bbd19f96deeca53d1695e6a77",
+        "sourceName": "高可用架构"
+      },
+      {
+        "id": "RAW_70e2f298",
+        "type": "ARTICLE",
+        "title": "Harness Engineering: How I Spent a Week Boosting AI Coding Rate to 90% in an Enterprise App",
+        "oneSentenceSummary": "This article systematically introduces Harness Engineering, a new AI coding paradigm that elevates the AI code rate of an enterprise Java application from 25% to over 90% by building a four-element system of rules, skills, knowledge, and change management.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559842&idx=1&sn=71ee08bf0421ad2f1aa4dd7a58901c5f",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_5c79977a",
+        "type": "ARTICLE",
+        "title": "What You Don't Know About Claude Code: Architecture, Governance, and Engineering Practices - Tw93",
+        "oneSentenceSummary": "This article provides an in-depth analysis of Claude Code's six-layer architecture and engineering practices, proposing a systematic Agent development methodology from context governance and skill design to a verification loop.",
+        "url": "https://tw93.fun/2026-03-12/claude.html",
+        "sourceName": "Tw93 Blog"
+      },
+      {
+        "id": "RAW_b79afa59",
+        "type": "ARTICLE",
+        "title": "Stop Obsessing Over Prompts—Context Engineering Is the Real Game-Changer",
+        "oneSentenceSummary": "This article systematically explains Context Engineering as a more critical AI system infrastructure than prompt engineering, building a persistent memory system through four core files—Identity, Audience, Standards, and Project—and combining it with MCP tools to achieve a qualitative leap in AI output quality.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653565147&idx=1&sn=0d80d846fdb1b69f1a1a28a09afa646e",
+        "sourceName": "高可用架构"
+      },
+      {
+        "id": "RAW_da7cf237",
+        "type": "ARTICLE",
+        "title": "I Equipped Hermes with 4 Agents, and Here's What Actually Works",
+        "oneSentenceSummary": "This article shares the author's practical experience using the Hermes Agent multi-agent system over several weeks, emphasizing starting from personal life pain points rather than blindly pursuing technology, and introduces a low-cost configuration approach.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653565121&idx=1&sn=8424d6b044700615b93a25721598ff84",
+        "sourceName": "高可用架构"
+      },
+      {
+        "id": "RAW_5b7ab5d5",
+        "type": "ARTICLE",
+        "title": "Understanding Harness Engineering: Finding the Shell That Keeps AI from Going Rogue—Insights from 14 Engineering Articles | Hao's Trend Talk",
+        "oneSentenceSummary": "This article provides an in-depth analysis of \"Harness Engineering,\" a core technology in the AI Agent field. It reveals how to compensate for model shortcomings through a three-layer management architecture and proposes the logic of \"Compensation Surface Migration\" that evolves with model capabilities.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566633&idx=1&sn=e8c2ba401e2a6f4fee1f8583159f5ecd",
+        "sourceName": "腾讯科技"
+      }
+    ]
+  }
+}

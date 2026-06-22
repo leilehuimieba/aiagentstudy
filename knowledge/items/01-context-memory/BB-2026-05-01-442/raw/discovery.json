@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "Datawhale"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045505_b03e263f",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_eceaa686",
+  "keyQuotes": [
+    "A Skill is not just a few prompts; it's closer to a folder organized around a task.",
+    "The most informative part is usually not the general steps, but the gotchas.",
+    "One of the most powerful tools you can give Claude is actually the code itself.",
+    "Their best internal Skills often start with just a few lines and a gotcha, and only become more complete the more they are used."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "A Skill folder can contain SKILL.md, reference documents, scripts, templates, examples, and hooks. When Claude invokes a Skill, it receives a complete set of working materials, not just a single prompt.",
+      "point": "A Skill is not a prompt, but a folder organized around a task."
+    },
+    {
+      "explanation": "From filling knowledge gaps (library/API reference), adding verification (product verification), supplementing data (data fetching), to integrating processes, building scaffolding, conducting reviews, and connecting to production (CI/CD, runbooks, infrastructure ops), forming a closed loop from development to operations.",
+      "point": "Anthropic categorizes internal Skills into 9 types, covering the complete software workflow."
+    },
+    {
+      "explanation": "Models are prone to the illusion of being 'done,' and verification Skills directly impact output quality. It is recommended to have Claude record a video of the testing process and add programmatic assertions at key nodes.",
+      "point": "Among all types, verification is the most worthwhile investment; it is recommended that engineers spend a week polishing it."
+    },
+    {
+      "explanation": "Models default to writing code and reading codebases. What is truly worth writing are the details that will pull the model away from its default thinking, such as field naming differences, the append-only nature of data tables, or that a Staging returning 200 does not mean the webhook processing was successful.",
+      "point": "The most valuable content of a Skill is gotchas, not general steps."
+    },
+    {
+      "explanation": "Memory is achieved through persistent logs (e.g., standups.log). Scripts pre-set helper functions, allowing Claude to focus on orchestration rather than rewriting boilerplate code. On-demand hooks (e.g., /careful, /freeze) take effect upon invocation, intercepting high-risk operations.",
+      "point": "As a Skill matures, it naturally develops memory, scripts, and hooks."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Anthropic publicly shares its complete experience using Claude Code Skills internally for the first time, including the classification of 9 types of Skills, writing principles, best practices, and team distribution and governance strategies.",
+  "originalTitle": "重磅！Anthropic 内部 Skills 经验公开了！",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-07 22:03:00",
+  "publishTimeStamp": 1780840980000,
+  "qualified": false,
+  "readCount": 408,
+  "readTime": 19,
+  "readUrl": "https://www.bestblogs.dev/article/eceaa686",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4688eb",
+  "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+  "sourceName": "Datawhale",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is an in-depth compilation and interpretation of Anthropic's official blog post \"Lessons from building Claude Code: How we use Skills.\" It first corrects the common misconception of equating a Skill with a prompt, pointing out that a Skill is more like a folder organized around a task, which can contain documents, scripts, templates, examples, and hooks. The core content is divided into three main parts: First, Anthropic internally categorizes Skills into 9 types, covering the complete software workflow from filling knowledge gaps (library/API reference), adding verification (product verification), supplementing data (data fetching), to integrating processes (business process automation), building scaffolding (code scaffolding), conducting reviews (code quality), and connecting to production (CI/CD, runbooks, infrastructure ops). Second, the writing principles emphasize focus, prioritize verification (recommending engineers spend a week polishing it), prioritize recording gotchas (details the team knows by default but the model doesn't), avoid writing content the model already knows, use SKILL.md as a table of contents rather than a catch-all, leave room for judgment, and design setup and description in advance. Third, the evolution direction after a Skill matures: developing memory (persistent logs), scripts (pre-built helper functions), and on-demand hooks (e.g., /careful to intercept high-risk operations), as well as team-level distribution (repo check-in or marketplace) and governance (sandbox trial before formal inclusion). The article also mentions that Skills can be combined and that usage metrics can be tracked using the PreToolUse hook.",
+  "tags": [
+    "AI Coding",
+    "Claude Code",
+    "Skills",
+    "Prompt Engineering",
+    "AI Workflow"
+  ],
+  "title": "Big News! Anthropic's Internal Skills Experience Revealed!",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723318&idx=1&sn=39d853bbc8aedef524f0adc4fdf0bdd8",
+  "wordCount": 4533
+}

@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-11",
+  "id": "BB-2026-05-01-558",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-558/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-558",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-558/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-558/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-558/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-558/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-558/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-558/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "RAG",
+    "PDF Parsing",
+    "LLM",
+    "Data Engineering",
+    "AI Engineering"
+  ],
+  "title": "Beyond extract_text: The Two Layers of a PDF That Drive RAG Quality",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://towardsdatascience.com/beyond-extract_text-the-two-layers-of-a-pdf-that-drive-rag-quality/",
+      "https://www.bestblogs.dev/article/13112ad8"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/beyond-extract_text-the-two-layers-of-a-pdf-that-drive-rag-quality/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/13112ad8"
+  }
+}

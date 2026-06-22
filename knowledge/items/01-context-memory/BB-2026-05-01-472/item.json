@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-03",
+  "id": "BB-2026-05-01-472",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-472/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-472",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-472/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-472/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-472/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-472/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-472/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-472/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / LangChain Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / LangChain Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Agent Framework",
+    "LangChain",
+    "Middleware"
+  ],
+  "title": "How to Build a Custom Agent Harness",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/7090bd13",
+      "https://www.langchain.com/blog/how-to-build-a-custom-agent-harness"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.langchain.com/blog/how-to-build-a-custom-agent-harness",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/7090bd13"
+  }
+}

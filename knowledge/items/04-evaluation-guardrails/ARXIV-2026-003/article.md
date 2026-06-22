@@ -1,0 +1,23 @@
+# The Neutral Mask: How RLHF Provides Shallow Alignment while Leaving Partisan Structure Intact in a Large Language Model
+
+---
+
+- Local ID: ARXIV-2026-003
+- Source: arXiv
+- arXiv ID: 2606.09735v1
+- Date: 2026-06-08
+- Authors: Wendy K. Tam
+- Categories: 
+- URL: https://arxiv.org/abs/2606.09735v1
+- PDF: https://arxiv.org/pdf/2606.09735v1
+- Capture depth: metadata + abstract
+
+---
+
+## Abstract
+
+The ambition behind alignment training is to make large language models safe and useful. The primary mechanism, reinforcement learning from human feedback (RLHF), shapes the behavior of deployed language models by aligning them with ``human values.'' Yet the process is opaque. What values are being encoded; whose values are they; and how does RLHF encode them? A growing body of evidence suggests that RLHF produces only functional compliance rather than deep alignment. We offer a mechanistic case study of this phenomenon for partisan political orientation with a comparison of the internal representations of Llama 3.1 8B before and after RLHF. We show that RLHF does not remove the structured partisan direction in the base model. Instead, it compresses the variance of the partisan signal to generate consistently balanced and non-partisan output. Sparse autoencoder decomposition reveals that policy-encoding features, which activate sporadically in the base model, are completely inactive in the Instruct model. Feature-level steering experiments confirm the causal disconnect. RLHF thus encodes a norm of political neutrality, not by erasing the model's knowledge of partisanship, but by severing the causal pathway from partisan geometry to output generation. Importantly, this neutrality is functional, not structural so that the underlying geometry that enables partisan steering remains intact. The mechanisms that bypass RLHF's guardrails, such as inferring and amplifying a user's partisan identity, reactivate partisan generation. If RLHF operates by disconnecting rather than removing value-laden structure, then the same pattern may hold for other value domains, and the aligned model's behavior may be more fragile than its outputs suggest.
+
+## Capture Notes
+
+This is an abstract-level paper capture from the arXiv API. The PDF URL is preserved for full-text reading and later deep extraction.

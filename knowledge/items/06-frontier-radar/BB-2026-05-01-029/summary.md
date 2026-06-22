@@ -2,7 +2,7 @@
 
 ## Article
 
-- Title: GPT-5.5 发布：OpenAI 把 ChatGPT、Codex 和企业平台推向真实工作的智能体模型 | Bes...
+- Title: GPT-5.5 发布：OpenAI 把 ChatGPT、Codex 和企业平台推向真实工作的智能体模型
 - Source: BestBlogs Topic
 - URL: https://www.bestblogs.dev/explore/topics/gpt-5-5-release
 - Date: 2026-04-22

@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Evaluation/Guardrails"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-29",
+  "id": "BB-2026-05-01-021",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-021/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-021",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-021/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-021/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-021/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-021/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs Topic",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs Topic",
+  "status": "Full text + source captured",
+  "tags": [
+    "ai-coding",
+    "harness-engineering",
+    "ai-agent"
+  ],
+  "title": "AI 编程工具横评 2026 春：Claude Code、Cursor、Codex CLI 怎么选",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/",
+      "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+      "https://cursor.com/blog/composer-2",
+      "https://cursor.com/blog/self-hosted-cloud-agents",
+      "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent",
+      "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651028728&idx=2&sn=da63a2e1b8efd8ded5b369187dbf970b",
+      "https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247534467&idx=2&sn=c361e6554f30a901851544fb22dad8f6",
+      "https://openai.com/index/codex-for-almost-everything",
+      "https://www.bestblogs.dev/explore/topics/ai-coding-tools-2026-spring",
+      "https://www.xiaoyuzhoufm.com/episode/69de68cfb977fb2c47f1ee14",
+      "https://x.com/GergelyOrosz/status/2031499318100676950",
+      "https://x.com/shao__meng/status/2032263932212371922"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/explore/topics/ai-coding-tools-2026-spring"
+  }
+}

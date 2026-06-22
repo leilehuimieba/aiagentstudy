@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "InfoQ 中文"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527130453_c4b7ab1.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_f59fa08b",
+  "keyQuotes": [
+    "You can't find new continents with an old map.",
+    "When humans can no longer fully understand their own systems, an equally AI-driven diagnostic system must exist as a counterpart safeguard.",
+    "Although code is the only true documentation, it operates at an extremely low level of abstraction. Low abstraction inevitably leads to low efficiency.",
+    "The introduction of AI amplifies this uncertainty, turning it into a norm. Once we understand this, our mindset becomes more at ease: we can only embrace it."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Citing the DORA report and internal Microsoft research, the article points out that AI Coding significantly boosts individual productivity but has limited impact on organizational productivity. Meanwhile, troubleshooting remains one of the most time-consuming tasks for developers, making it the next critical target to address.",
+      "point": "AI troubleshooting is the next productivity bottleneck after AI Coding."
+    },
+    {
+      "explanation": "Traditional monitoring tools (Trace, Metrics, Log) have gaps in complex business scenarios and cannot correlate business semantics. By building 'business assets' (code abstraction, metric topology, impact maps) to structure the business knowledge in developers' minds for AI, this problem can be effectively solved.",
+      "point": "The key to enabling AI to understand the business is eliminating the context gap between humans and AI."
+    },
+    {
+      "explanation": "Faced with over 75% alert noise, the solution operates on two levels: first, a lightweight Agent evaluates confidence based on alert profiles (periodicity, deviation degree, etc.); second, during the reasoning phase, an evidence pyramid inspired by evidence-based medicine is introduced, distinguishing raw signals, background context, single-point evidence, multi-source fused evidence, and direct causal inference.",
+      "point": "Combating alert noise requires layered filtering and evidence grading."
+    },
+    {
+      "explanation": "Large models are not good at numerical computation and trend identification. Directly using multimodal or time-series data in prompts is both ineffective and costly. Encapsulating such tasks as standardized operators (Tools/Skills) processed by traditional algorithms significantly improves accuracy, reduces token consumption, and enhances determinism.",
+      "point": "The best practice for countering model hallucinations is to engineer deterministic tasks."
+    },
+    {
+      "explanation": "Workflows are deterministic, controllable, and low-latency, making them suitable for SOP-based fixed scenarios. Agents are flexible and generalizable but come with uncertainty and high token consumption. In complex business troubleshooting, a layered architecture should be adopted, using Workflows for 'fast thinking' and Agents for 'slow thinking'.",
+      "point": "Agents and Workflows are complementary, not substitutes."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Based on Kuaishou's practice in complex troubleshooting scenarios, this article systematically elaborates on four core challenges in building an RCA Agent—enabling AI to understand the business, combating alert noise, measuring uncertainty, and suppressing model hallucinations—along with corresponding architectural design, evaluation systems, and continuous evolution strategies.",
+  "originalTitle": "复杂业务场景下 RCA Agent 的探索实践",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-11",
+  "publishDateTimeStr": "2026-06-11 13:30:00",
+  "publishTimeStamp": 1781155800000,
+  "qualified": false,
+  "readCount": 50,
+  "readTime": 39,
+  "readUrl": "https://www.bestblogs.dev/article/f59fa08b",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceImage": "https://image.jido.dev/20260527130453_c4b7ab1.jpeg",
+  "sourceName": "InfoQ 中文",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is compiled from a speech by Guo Yongliang, Senior Server Architect at Kuaishou, at QCon 2026 Beijing. The author first points out that after the benefits of AI Coding have stabilized, troubleshooting has become the next productivity bottleneck. The article then breaks down four core challenges in implementing business-level troubleshooting: how to build 'business assets' (code abstraction, metric topology, impact maps) to help AI understand the business; how to combat over 75% alert noise through alert confidence assessment and an evidence-based grading system inspired by evidence-based medicine; how to build a Benchmark system based on real fault snapshots to measure the uncertainty of AI troubleshooting; and how to engineer deterministic tasks into Tools and Skills to counter large model hallucinations in numerical computation and trend identification. Architecturally, the article introduces a layered design: lightweight Workflows handle high-certainty 'fast thinking' tasks, while a Multi-Agent architecture tackles complex 'slow thinking' problems. It also explores product ideas for Agent self-evolution, memory mechanisms, and evolution toward AI-native autonomous systems.",
+  "tags": [
+    "AI Agent",
+    "RCA",
+    "AI Coding",
+    "Observability",
+    "Engineering Practice"
+  ],
+  "title": "Exploring RCA Agent in Complex Business Scenarios",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286819&idx=2&sn=803565661ca00c316b89845bcb430b4f",
+  "wordCount": 9525
+}

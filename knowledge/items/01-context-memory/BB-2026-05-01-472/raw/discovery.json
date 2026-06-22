@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Sydney Runkle"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a2035adfcf624bfe1b4fd22_94%20(1).png",
+  "domain": "langchain.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_7090bd13",
+  "keyQuotes": [
+    "A harness is the scaffolding around the model that connects it to the real world.",
+    "The best agents aren't just built with capable models, they're built with harnesses that tightly fit the task.",
+    "Middleware enables customization at any point in the agent loop and bundles related logic in composable, sharable units of code."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The harness is the scaffolding that provides context, tools, and environment to the model. A generic harness limits an agent's potential; a custom, well-fitted harness is critical for real-world utility.",
+      "point": "An agent's usefulness is determined by how well its harness fits the task."
+    },
+    {
+      "explanation": "Unlike opinionated, pre-assembled harnesses, `create_agent` only implements the core agent loop. It prioritizes flexibility and customization over out-of-the-box features.",
+      "point": "`create_agent` is a minimalistic primitive for building custom harnesses."
+    },
+    {
+      "explanation": "Middleware hooks into specific points in the loop (before/after model and tool calls) to add deterministic logic, manage tools, track state, and handle streams. It allows for composable, reusable, and isolated units of customization.",
+      "point": "Middleware is the primary mechanism for customizing the agent loop."
+    },
+    {
+      "explanation": "The article maps common production needs (e.g., preventing context overflow, handling transient failures, enforcing PII policies) to specific prebuilt middleware, demonstrating how to build a robust harness for complex tasks.",
+      "point": "Production agents require a stack of middleware for capabilities like context management, error handling, and policy enforcement."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article introduces LangChain's `create_agent` as a minimalistic primitive for building custom agent harnesses, emphasizing middleware as the key mechanism for tailoring context, logic, and capabilities to specific tasks.",
+  "originalTitle": "How to Build a Custom Agent Harness",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 08:00:00",
+  "publishTimeStamp": 1780444800000,
+  "qualified": false,
+  "readCount": 49,
+  "readTime": 5,
+  "readUrl": "https://www.bestblogs.dev/article/7090bd13",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_88bf28",
+  "sourceImage": "https://image.jido.dev/20260527045328_69a17e4a429d54e956e2a763_favicon.png",
+  "sourceName": "LangChain Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article argues that building useful AI agents is primarily about customization, specifically connecting the model to the right context, data, and environment. It defines an agent as `model + harness`, where the harness is the scaffolding that connects the model to the real world. The core proposition is LangChain's `create_agent` function, a purposefully minimalistic primitive that implements the core agent loop and exposes a middleware system for customization. Middleware hooks into the agent loop at each step (before/after model and tool calls, startup, teardown) and allows developers to add deterministic logic, manage tool lifecycles, track custom state, and handle streaming output. The article provides a table mapping common production capabilities (context management, memory, error handling, policy enforcement, cost control) to specific prebuilt middleware components. It concludes that the best agents are built with harnesses that tightly fit the task, and `create_agent` is the easiest way to build such a custom harness.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Agent Framework",
+    "LangChain",
+    "Middleware"
+  ],
+  "title": "How to Build a Custom Agent Harness",
+  "translateContent": null,
+  "url": "https://www.langchain.com/blog/how-to-build-a-custom-agent-harness",
+  "wordCount": 1108
+}

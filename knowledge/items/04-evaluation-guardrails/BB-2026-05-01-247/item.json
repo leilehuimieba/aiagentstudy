@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-18",
+  "id": "BB-2026-05-01-247",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-247/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-247",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-247/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-247/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-247/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-247/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-247/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-247/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / The Cloudflare Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / The Cloudflare Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Mythos Preview",
+    "Vulnerability Research",
+    "AI Security",
+    "LLM",
+    "Exploit Chaining"
+  ],
+  "title": "Project Glasswing: what Mythos showed us",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.cloudflare.com/cyber-frontier-models/",
+      "https://www.bestblogs.dev/article/baddd33b"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://blog.cloudflare.com/cyber-frontier-models/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/baddd33b"
+  }
+}

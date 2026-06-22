@@ -1,0 +1,354 @@
+{
+  "content": "原文：I Read Hermes Agent's Memory System, and It Fixes What OpenClaw Got Wrong\n作者：宝玉\n\n作者：Manthan Gupta\n原文：I Read Hermes Agent's Memory System, and It Fixes What OpenClaw Got Wrong\n\n如果你读过我之前关于 ChatGPT、Claude 以及 Clawdbot 记忆系统的文章，你就会知道我一直在钻研同一个问题：这些 AI 智能体（AI Agent）到底是怎么记事的？\n\nHermes Agent 对我来说格外有趣，因为这次我不需要只靠观察它的行为来搞“逆向工程”。Hermes 是开源的，它的代码库和文档都是公开的。所以，我没有通过提示词（Prompt）去盲测这个黑盒，而是直接翻看了它的代码路径——从它如何构建提示词状态、持久化会话，到如何清理记忆和查询历史对话。\n\n简而言之：Hermes 拥有的不是一套记忆系统，而是四套。\n\n存储在 MEMORY.md 和 USER.md 中、经过高度浓缩的提示词记忆。\n通过 session_search 调用的 SQLite 历史会话存档（可搜索）。\n像程序记忆（Procedural Memory）一样运作的智能体技能管理。\n可选的 Honcho 层，用于更深层的用户建模（User Modeling）。\n\n把这些设计联系在一起的核心逻辑非常简单：保持提示词稳定以便利用缓存（Caching），其他一切繁杂信息都交给工具。\n\n让我们深入聊聊。\n\nHermes 的上下文结构\n\n在理解记忆之前，我们先看看 Hermes 到底给模型发送了什么。\n\n系统提示词（System Prompt）大致是按以下顺序组装的：\n\n[0] 默认智能体身份\n[1] 工具使用行为指南\n[2] Honcho 集成模块（可选）\n[3] 可选系统消息\n[4] 固化的 MEMORY.md 快照\n[5] 固化的 USER.md 快照\n[6] 技能索引\n[7] 上下文文件（AGENTS.md, SOUL.md 等规则文件）\n[8] 日期/时间 + 平台信息\n[9] 对话历史\n[10] 当前用户消息\n\n\n这非常关键，因为 Hermes 正在针对大模型供应商的提示词缓存（Prompt Caching）机制进行优化。代码显示，提示词构建器的目标非常明确：让稳定的前缀部分尽可能长时间地保持不变。\n\n这一个决定就解释了 Hermes 大部分的记忆架构。\n\n如果某条信息每一轮对话都要用到，Hermes 会尽量把它缩得很小并注入进去；如果信息量很大、属于历史旧账或者偶尔才有用，Hermes 就会把它踢出提示词，改用“按需检索”的方式。\n\n第一层：固化的提示词记忆\n\n其内置的记忆系统小得令人惊讶。\n\nHermes 将持久记忆存储在 ~/.hermes/memories/ 下的两个文件中：\n\n文件\t用途\t限制\nMEMORY.md\t智能体笔记：环境、规范、工具怪癖、教训\t2,200 字符\nUSER.md\t用户画像：偏好、沟通风格、身份信息\t1,375 字符\n\n这容量真不大。加起来大约只有 1,300 个 Token（模型理解文本的最小单位）。\n\n而这正是刻意为之。\n\n在会话开始时，Hermes 加载这两个文件，把它们渲染进提示词区块，然后在整个会话期间固化这个快照。会话中途写入的记忆会立即存入硬盘，但不会改变已经生成的系统提示词。这些改动只有在开启新会话，或者触发了“压缩（Compression）”导致的提示词重建时才会生效。\n\n渲染后的格式如下：\n\n══════════════════════════════════════════════\nMEMORY (你的个人笔记) [67% — 1,474/2,200 字符]\n══════════════════════════════════════════════\n用户的项目是一个位于 ~/code/myapi 的 Rust Web 服务，使用 Axum + SQLx\n§\n这台机器运行 Ubuntu 22.04，安装了 Docker 和 Podman\n§\n用户喜欢简洁的回复，讨厌冗长的解释\n\n\n这里有几个我非常欣赏的细节设计：\n\n使用字符限制而非 Token 限制：这让记忆逻辑与模型无关。Hermes 不需要调用特定模型的计算工具就能判断记忆是否存满。\n简单的分隔符文件格式：条目之间用 § 分隔。没有复杂的向量数据库（Vector DB），没有自定义二进制存储，就是纯文本。\n刻意保持极小的系统提示词空间：这是整个设计的重中之重。Hermes 不想把所有历史都塞进提示词，它只想要最有价值的事实。\n记忆是“精选状态”，而不是“日记”：这是 Hermes 与 OpenClaw 最大的区别。\n\nOpenClaw 的日志更像是“流水账”。而 Hermes 则反其道而行。它的工具架构和测试逻辑强调：\n\n保存用户偏好。\n保存环境事实。\n保存反复出现的错误修正。\n保存稳定的规范。\n不保存任务进度。\n不保存会话结果。\n不保存临时的待办事项（TODO）。\n\n真相是：Hermes 希望 MEMORY.md 和 USER.md 保持精简、高频且对缓存友好。\n\nmemory 工具\n\nHermes 通过一个拥有三种操作的 memory 工具来管理这些文件：add（添加）、replace（替换）、remove（移除）。\n\n一个好用的细节是：replace 和 remove 使用子字符串匹配。你不需要记住条目的内部 ID，只需要传入现有条目中一段唯一的文字即可。\n\n此外，系统会拒绝完全重复的内容，并拦截危险信息。源代码会扫描记忆条目，防止提示词注入（Prompt Injection，即通过输入恶意指令误导 AI）、凭证泄露或隐藏的 Unicode 字符。\n\n第二层：用于情景回溯的 session_search\n\n如果说 MEMORY.md 是 Hermes 的“短期热记忆”，那么 session_search 就是它的“长尾回溯系统”。\n\n所有过去的会话都存储在 SQLite 数据库中，拥有完整的索引和搜索功能。当模型需要想起以前聊过的内容时，它不去翻 MEMORY.md，而是搜索这个会话数据库。\n\n其工作流程是：\n\n在过去的消息中进行全文搜索。\n按会话分组结果。\n加载匹配度最高的会话。\n使用一个便宜的辅助模型对这些会话进行摘要总结。\n将精炼后的回顾内容返回给主模型。\n\n这是一种非常务实的设计。它比盲目地把长篇累牍的历史塞进每一个提示词要便宜且高效得多。\n\n第三层：压缩与记忆冲刷（Memory Flush）\n\nHermes 另一个聪明之处在于它处理长对话“压缩”的方式。\n\n当会话变得太长，Hermes 会压缩对话中间的部分以节省空间。但摘要是有损的，重要事实可能会丢失。\n\n于是，Hermes 会先进行一次“记忆冲刷”。\n\n在压缩之前，它会发送一条指令告诉模型：\n\n“会话即将压缩，请保存任何值得记住的东西。优先保存用户偏好、修正建议和重复模式，而非具体的任务细节。”\n\n然后它运行一次额外的模型调用，只开启 memory 工具。如果模型觉得有什么东西该留下来，就会在对话被“洗掉”之前把它写入 MEMORY.md。\n\n第四层：作为程序记忆的技能（Skills）\n\nHermes 不仅能记住事实，还能记住技能。\n\n技能（Skills）存储在 ~/.hermes/skills/ 下。当 Hermes 发现了一个复杂的流程、修复了一个棘手的问题或学会了更好的方法时，它可以将其保存为“技能”。\n\n大多数记忆系统只关注“语义回溯”（名字、偏好、事实），但智能体还需要记住如何做事。\n\n为了效率，Hermes 不会把所有技能都塞进提示词，而是只放一个技能索引，只有在需要时才加载具体的技能内容。\n\n第五层：用于深层建模的 Honcho\n\n最后是可选的 Honcho 层。如果说本地记忆是 Hermes 的笔记本，Honcho 就是它尝试构建的复杂用户模型。它能实现跨设备、跨平台的记忆连续性。\n\n最精妙的是它如何在不破坏提示词缓存的前提下实现集成：\n\n在会话的第一轮，Honcho 的上下文会被织入系统提示词。\n在之后的对话中，为了保持提示词稳定，Honcho 的回溯内容会附加在当前用户的提问后面，而不是修改系统提示词。\n\n这确保了缓存依然有效，同时 AI 依然能读到最新的背景信息。\n\nHermes 与 OpenClaw 的区别\nOpenClaw：记忆更接近“以 Markdown 为中心的存储”，日志和长效文件是主要事实来源。\nHermes：提示词记忆被严格限制，历史记录存在 SQLite 里，只有需要时才搜索。\n\nHermes 更加关注缓存效率。 它认为：不是所有东西都配住在“系统提示词”这个黄金地段。\n\n总结：Hermes 做对了什么？\n冷热分离：小规模提示词记忆负责常驻信息，搜索负责偶尔用到的信息。\n缓存优先：它意识到频繁改动提示词会导致延迟增加和成本上升。\n记忆的多样性：它承认记忆是分层的——包括个人画像、情景回溯、操作技能和深层建模。\n\nHermes 的核心设计原则最令我折服：记忆应该让智能体变得更好用，而不是通过摧毁提示词的稳定性来换取博闻强识。\n\n真正的诀窍不是记住更多，而是在正确的层级、以正确的成本，记住正确的事情。",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/7aeb8781#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=653b2e",
+      "text": "宝玉的分享",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://baoyu.io/blog/2026-04-29/manthanguptaa-2034849672985288957",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/manthanguptaa/status/2034849672985288957",
+      "text": "I Read Hermes Agent's Memory System, and It Fixes What OpenClaw Got Wrong",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/manthanguptaa/status/2034849672985288957",
+      "text": "I Read Hermes Agent's Memory System, and It Fixes What OpenClaw Got Wrong",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/5c79977a?entry=related_article",
+      "text": "What You Don't Know About Claude Code: Architecture, Governance, and Engineering Practices - Tw93",
+      "title": "This article provides an in-depth analysis of Claude Code's six-layer architecture and engineering practices, proposing a systematic Agent development methodology from context governance and skill design to a verification loop."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/2614f825?entry=related_article",
+      "text": "Building Claude Code: How We Use Skills",
+      "title": "Anthropic engineers share practical experience building Claude Code Skills, systematically outlining nine major skill categories and core techniques for writing, distributing, and measuring AI agent skills."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/83fa2a78?entry=related_article",
+      "text": "Investing 10,000 RMB in AI: A Year of Tools, Practices, and Reflections",
+      "title": "A systematic summary of a veteran developer's practical experience in the AI wave, covering everything from MAC toolchain optimization and Harness Engineering architectural constraints to building an Agent-driven automated learning loop."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/eeaf91c3?entry=related_article",
+      "text": "The Great Shift in Programming 2026: Anthropic Report Reveals Eight Major Trends in Agentic Programming",
+      "title": "This article provides an in-depth analysis of Anthropic's '2026 Agentic Programming Trends Report,' highlighting a major paradigm shift from 'humans writing code' to 'humans orchestrating agents to write code.'"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8d0b0250?entry=related_article",
+      "text": "OpenAI Agent Engineering Guide: 10 Practical Tips and 3 Building Patterns",
+      "title": "This article provides an in-depth analysis of the OpenAI Agent Engineering Guide, highlighting three core capabilities—Skills, Shell tools, and Compaction—while offering 10 practical tips and 3 building patterns."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/93462cd7?entry=related_article",
+      "text": "Harness Is Not the Goal, Knowledge Is the Moat — Knowledge Accumulation Practices of an AI Engineering Delivery Team",
+      "title": "Based on the engineering delivery practices of an AI Team, this article proposes that knowledge accumulation is more important than workflow orchestration, and systematically introduces a complete methodology encompassing a five-layer knowledge storage architecture, a three-level maturity system, and how workflows serve knowledge accumulation."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/2adc9c3e?entry=related_article",
+      "text": "Understanding Hermes in One Article: How the New Top-Tier Agent Self-Evolves from Experience",
+      "title": "This article provides an in-depth analysis of the core innovation of the Hermes Agent—the Skills closed-loop system—detailing its complete implementation mechanism, from experience extraction and knowledge storage to intelligent retrieval and self-improvement, along with its engineering trade-offs and security considerations."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/d3b22d7d?entry=related_article",
+      "text": "Harness Engineering: Leveraging Codex in an Agent-First World",
+      "title": "The OpenAI team shares their practical experience of building a million-line codebase product in 5 months using Codex agents with \"zero manual coding,\" proposing a new paradigm of \"Harness Engineering\" centered on environment design and feedback loops."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/6f17468b?entry=related_article",
+      "text": "GPT-5.4 Released: OpenAI's First Unified Model, Truly Native",
+      "title": "OpenAI releases GPT-5.4, creating the first unified Agent model that supports native Computer Use by integrating reasoning, coding, and computer interaction."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/a8df850c?entry=related_article",
+      "text": "Notion CEO: Products That Can't Be Used by Agents Have No Future",
+      "title": "Notion CEO Ivan Zhao discusses Notion's transformation from a collaboration tool to an AI Agent platform, emphasizing that future products must be 'Agent-ready' and proposing a 10x market shift in SaaS from 'selling tools' to 'selling work'."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "This article provides an in-depth analysis of the four-layer memory system architecture of the open-source AI agent Hermes Agent, revealing how it addresses ...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Hermes Agent, Memory System, AI Agent, Prompt Caching, Open Source",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs · Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Deep Dive into Hermes Agent's Memory System: How It Corre...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "This article provides an in-depth analysis of the four-layer memory system architecture of the open-source AI agent Hermes Agent, revealing how it addresses ...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/7aeb8781",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/7aeb8781/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-29 00:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "宝玉",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Hermes Agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Memory System",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI Agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Prompt Caching",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Open Source",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Deep Dive into Hermes Agent's Memory System: How It Corre...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "This article provides an in-depth analysis of the four-layer memory system architecture of the open-source AI agent Hermes Agent, revealing how it addresses ...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/7aeb8781/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Deep Dive into Hermes Agent's Memory System: How It Corre...",
+  "url": "https://www.bestblogs.dev/en/article/7aeb8781"
+}

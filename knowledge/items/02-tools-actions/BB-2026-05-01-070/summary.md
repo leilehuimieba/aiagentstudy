@@ -3,12 +3,11 @@
 ## Article
 
 - Title: Claude Opus 4.7 正式发布
-- Source: BestBlogs / A
-Anthropic News
+- Source: BestBlogs / Anthropic News
 - URL: https://www.bestblogs.dev/article/3b1c0638
 - Date: 2026-04-15
 - Topic: `02-tools-actions`
-- Tags: Claude Opus 4.7, Anthropic, 大语言模型, AI 编程, 模型发布, Claude Opus 4.7, Anthropic, 大语言模型, AI 编程, 模型发布
+- Tags: Claude Opus 4.7, Anthropic, 大语言模型, AI 编程, 模型发布
 
 ## Model Mapping
 

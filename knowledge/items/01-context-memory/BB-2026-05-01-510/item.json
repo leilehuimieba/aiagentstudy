@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-08",
+  "id": "BB-2026-05-01-510",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-510/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-510",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-510/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-510/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-510/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-510/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-510/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-510/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 字节跳动技术团队",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 字节跳动技术团队",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "MCP Protocol",
+    "AI Coding",
+    "Context Engineering",
+    "Frontend Development"
+  ],
+  "title": "Your Agent Always \"Loses Memory\"? This Tool Completely Cured My Frontend Development Anxiety",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520252&idx=1&sn=965325b6e00360e3d3bd90f561598f17",
+      "https://www.bestblogs.dev/article/1b5377fa"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520252&idx=1&sn=965325b6e00360e3d3bd90f561598f17",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/1b5377fa"
+  }
+}

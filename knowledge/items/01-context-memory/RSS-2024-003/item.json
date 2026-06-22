@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "Sat, 03 Aug 2024 17:00:43 GMT",
+    "updated": ""
+  },
+  "date": "2024-08-03",
+  "id": "RSS-2024-003",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/RSS-2024-003/article.md",
+    "item_dir": "knowledge/items/01-context-memory/RSS-2024-003",
+    "raw_dir": "knowledge/items/01-context-memory/RSS-2024-003/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/RSS-2024-003/raw/feed-entry.json",
+      "knowledge/items/01-context-memory/RSS-2024-003/raw/page-text.txt",
+      "knowledge/items/01-context-memory/RSS-2024-003/raw/page.html"
+    ],
+    "source": "knowledge/items/01-context-memory/RSS-2024-003/source.md",
+    "summary": "knowledge/items/01-context-memory/RSS-2024-003/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / The Gradient",
+  "source_id": "the-gradient",
+  "source_name": "The Gradient",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "The Gradient",
+    "RSS",
+    "RAG"
+  ],
+  "title": "We Need Positive Visions for AI Grounded in Wellbeing",
+  "topic": "01-context-memory",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://thegradient.pub/rss/",
+      "https://thegradient.pub/we-need-positive-visions-for-ai-grounded-in-wellbeing/"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://thegradient.pub/rss/",
+    "original_url": "https://thegradient.pub/we-need-positive-visions-for-ai-grounded-in-wellbeing/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://thegradient.pub/we-need-positive-visions-for-ai-grounded-in-wellbeing/"
+  }
+}

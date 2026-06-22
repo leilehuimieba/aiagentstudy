@@ -1,0 +1,88 @@
+{
+  "id": "RAW_3075d416",
+  "notExist": null,
+  "originalTitle": "刚刚，一篇最全 Agent Harness 综述来了！",
+  "title": "Just In: The Most Comprehensive Agent Harness Overview Yet",
+  "oneSentenceSummary": "This article systematically reviews the concept of Agent Harness Engineering, its seven-layer framework (ETCLOVG), and engineering evolution, emphasizing that the engineering shell outside the model is key to moving Agents from demos to production.",
+  "summary": "This article provides an in-depth interpretation of a survey paper on Agent Harness jointly published by institutions including CMU, Yale, and JHU. It points out that the current bottleneck in Agent research has shifted from model capabilities to the engineering system outside the model, namely the Agent Harness. The authors propose the ETCLOVG seven-layer framework, covering Execution Environment, Tool Interface, Context Management, Lifecycle Orchestration, Observability, Validation and Evaluation, and Safety and Governance. The article outlines three major engineering migrations from Prompt Engineering to Context Engineering to Harness Engineering, and emphasizes that observability and governance are independent core layers for production-grade Agents. It also discusses cross-layer issues such as the cost-quality-speed triangle and the capability-control paradox, noting that competition among Agent platforms will revolve around the complete set of Harness capabilities. Finally, the article reminds that Harness design should dynamically adjust as model capabilities evolve, avoiding over-scaffolding.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Agent Harness",
+    "ETCLOVG",
+    "Agent Engineering",
+    "Observability",
+    "Governance"
+  ],
+  "mainPoints": [
+    {
+      "point": "The performance bottleneck of Agents is shifting from model capabilities to the engineering system (Harness) outside the model.",
+      "explanation": "The paper points out that in long-horizon tasks with real-world tools, Agent failures often stem from poor system management rather than insufficient model intelligence. Improving the Harness can yield multiple-fold performance gains without changing the model."
+    },
+    {
+      "point": "Agent engineering has undergone three migrations: from Prompt Engineering to Context Engineering to Harness Engineering.",
+      "explanation": "Prompt Engineering addresses how to talk to the model, Context Engineering addresses what the model should see, and Harness Engineering addresses how to make the model act reliably in the real world."
+    },
+    {
+      "point": "The ETCLOVG seven-layer framework is a systematic guide for building production-grade Agents.",
+      "explanation": "This framework covers Execution Environment, Tool Interface, Context Management, Lifecycle Orchestration, Observability, Validation and Evaluation, and Safety and Governance. Together, these seven layers form a complete Agent system capable of handling long-horizon tasks."
+    },
+    {
+      "point": "Observability and governance are independent core layers of production-grade Agents, not auxiliary features.",
+      "explanation": "When an Agent performs real-world operations, it must know what it has done (observability) and what it is allowed to do (governance); otherwise, it is impossible to diagnose failures or ensure safety and control."
+    },
+    {
+      "point": "Agent evaluation should shift from final success rates to trace-native evaluation based on complete execution trajectories.",
+      "explanation": "Final success rates obscure the influence of multiple variables such as models, prompts, tools, and context. Trace-native evaluation records the complete execution trajectory to assess result correctness, path rationality, and evaluator reliability."
+    }
+  ],
+  "keyQuotes": [
+    "The same model, with a different execution shell, can perform completely differently.",
+    "Prompt Engineering addresses 'how to talk to the model.' Context Engineering addresses 'what the model should see.' Harness Engineering addresses 'how to make the model work reliably in the real world.'",
+    "The next competition for Agents is not just about model capabilities, but the engineering shell outside the model.",
+    "A good Harness not only knows how to add controls, but also when to remove them.",
+    "For Agents to evolve from toys to infrastructure, this shell is exactly what is missing."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723078&idx=1&sn=fc963b3ad9acb1ce115e0c554d40d330",
+  "readUrl": "https://www.bestblogs.dev/article/3075d416",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045505_b03e263f",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_4688eb",
+  "sourceName": "Datawhale",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 253,
+  "wordCount": 3642,
+  "readTime": 15,
+  "mediaDuration": null,
+  "authors": [
+    "Datawhale"
+  ],
+  "publishTimeStamp": 1779897480000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 23:58:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

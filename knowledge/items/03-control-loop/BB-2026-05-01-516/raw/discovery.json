@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "阿里云开发者"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_cb8e134b",
+  "keyQuotes": [
+    "AgentTeams' official positioning is very clear: Collaboration Orchestration Plane. It does not replace the agent runtime, nor does it replace inference services or tool services. It focuses on one thing—making multiple agents operate like a real organization.",
+    "Over the past decade, cloud native has freed us from worrying about 'how applications run on servers,' making infrastructure like water and electricity. In the next decade, AI Native will free us from worrying about 'how AI works within the business.'",
+    "Multi-agent collaboration is not something that can be solved by writing scripts. It requires a control and governance plane like Kubernetes—declarative APIs, continuous reconciliation, clear resource boundaries, and governable permissions and communication."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Analogous to Cloud Native enabling applications to be born on the cloud, AI Native treats agents as first-class citizens for declaration, orchestration, and governance, solving the three major problems of replicability, governability, and evolvability.",
+      "point": "The core of AI Native is to design systems inherently around AI agents, rather than integrating AI capabilities as an add-on."
+    },
+    {
+      "explanation": "Core resources include Manager (platform control), Team (department), Worker (employee), and Human (real person), with a collaboration chain of TeamAdmin → TeamLeader → Workers, and permission policies controlling who can talk to whom.",
+      "point": "AgentTeams uses declarative CRDs to model organizational structures, enabling multiple agents to collaborate like a team."
+    },
+    {
+      "explanation": "The three-tier permission design (L1/L2/L3) of the Human CRD allows real people to naturally integrate into the agent collaboration process, intervening at key decision points to achieve human-machine co-governance.",
+      "point": "HITL (Human-in-the-Loop) is a first-class citizen in AgentTeams, not a patch."
+    },
+    {
+      "explanation": "API keys for LLMs, MCP, and internal services are not scattered across agent containers but are held by the gateway. Workers only obtain revocable Consumer Tokens, and the gateway performs per-route authorization.",
+      "point": "Converging credentials to the AI gateway is a key security practice for production environments."
+    },
+    {
+      "explanation": "In the intelligent on-call scenario, three digital employees complete the full loop of 'receiving ticket → routing → root cause diagnosis → fix proposal → reply suggestion' within 6 minutes. In the open-source pipeline scenario, they automatically complete issue analysis, code generation, PR submission, and fixes.",
+      "point": "Real-world scenarios validate that multi-agent collaboration can compress a process that traditionally requires hours of coordination among multiple people into a minute-level conversation flow."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article introduces Alibaba Cloud's AI Native multi-agent digital human collaboration platform, AgentTeams, built on cloud-native principles. It uses declarative CRDs to model organizational structures and collaboration strategies, enabling multiple agents to work together like a team, and shares practical implementations in R&D, on-call, and open-source maintenance scenarios.",
+  "originalTitle": "云原生 - AI Native 多智能体数字人架构实践",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-11",
+  "publishDateTimeStr": "2026-06-11 08:30:00",
+  "publishTimeStamp": 1781137800000,
+  "qualified": false,
+  "readCount": 255,
+  "readTime": 31,
+  "readUrl": "https://www.bestblogs.dev/article/cb8e134b",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_26c5f1",
+  "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "sourceName": "阿里云开发者",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Starting with the scenario of automatic diagnosis of early morning alerts, the article highlights the necessity of multi-agent collaboration. The author traces the evolution from RPA to single agents and then to multi-agent collaboration, proposing that the core of AI Native is to 'design systems inherently around AI agents.' The core content revolves around AgentTeams: a collaboration orchestration and governance plane that uses four CRDs—Manager, Team, Worker, and Human—to declaratively model organizational structures, and designs a three-tier permission system (L1/L2/L3) to natively support HITL. The article details a deployment path based on cloud products, including security practices such as network connectivity and credential convergence to an AI gateway. Finally, it shares the real-world results of four AI Native scenarios (full-cycle R&D, intelligent on-call, open-source pipeline, business analysis), demonstrating capabilities such as a digital human team closing a ticket within 6 minutes and automatically analyzing issues and submitting PRs.",
+  "tags": [
+    "AI Agent",
+    "Multi-Agent Collaboration",
+    "Cloud Native",
+    "AI Native",
+    "AgentTeams"
+  ],
+  "title": "Cloud Native - AI Native Multi-Agent Digital Human Architecture Practice",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560807&idx=1&sn=5b0681fdf88398b3eec92c20d897fb31",
+  "wordCount": 7645
+}

@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-12",
+  "id": "BB-2026-05-01-550",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-550/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-550",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-550/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-550/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-550/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-550/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-550/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-550/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / LangChain Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / LangChain Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "Enterprise AI",
+    "LLM",
+    "RAG",
+    "Deep Agents"
+  ],
+  "title": "How Box AI built enterprise content agents with Deep Agents",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/06adaad3",
+      "https://www.langchain.com/blog/building-box-ai-how-an-enterprise-content-platform-went-ai-native-with-deep-agents"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.langchain.com/blog/building-box-ai-how-an-enterprise-content-platform-went-ai-native-with-deep-agents",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/06adaad3"
+  }
+}

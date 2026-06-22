@@ -1,0 +1,63 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "Sat, 18 Apr 2026 11:24:36 GMT",
+    "updated": ""
+  },
+  "date": "2026-04-18",
+  "id": "RSS-2026-012",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/RSS-2026-012/article.md",
+    "item_dir": "knowledge/items/03-control-loop/RSS-2026-012",
+    "raw_dir": "knowledge/items/03-control-loop/RSS-2026-012/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/RSS-2026-012/raw/feed-entry.json",
+      "knowledge/items/03-control-loop/RSS-2026-012/raw/page-text.txt",
+      "knowledge/items/03-control-loop/RSS-2026-012/raw/page.html"
+    ],
+    "source": "knowledge/items/03-control-loop/RSS-2026-012/source.md",
+    "summary": "knowledge/items/03-control-loop/RSS-2026-012/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / Ahead of AI",
+  "source_id": "ahead-of-ai",
+  "source_name": "Ahead of AI",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "Ahead of AI",
+    "RSS",
+    "LLM"
+  ],
+  "title": "My Workflow for Understanding LLM Architectures",
+  "topic": "03-control-loop",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://magazine.sebastianraschka.com/feed",
+      "https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://magazine.sebastianraschka.com/feed",
+    "original_url": "https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms"
+  }
+}

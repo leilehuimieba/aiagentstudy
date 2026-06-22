@@ -1,0 +1,60 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-22",
+  "id": "BB-2026-05-01-315",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/05-security-techniques/BB-2026-05-01-315/article.md",
+    "item_dir": "knowledge/items/05-security-techniques/BB-2026-05-01-315",
+    "raw_dir": "knowledge/items/05-security-techniques/BB-2026-05-01-315/raw",
+    "raw_files": [
+      "knowledge/items/05-security-techniques/BB-2026-05-01-315/raw/meta.json"
+    ],
+    "source": "knowledge/items/05-security-techniques/BB-2026-05-01-315/source.md",
+    "summary": "knowledge/items/05-security-techniques/BB-2026-05-01-315/summary.md"
+  },
+  "schema_version": 1,
+  "source": "PortSwigger Research",
+  "source_id": "portswigger",
+  "source_name": "PortSwigger Research",
+  "status": "Key excerpts + source captured",
+  "tags": [
+    "signed-tokens",
+    "hmac-bypass",
+    "authz-bypass",
+    "brute-force",
+    "flask-express-django"
+  ],
+  "title": "Introducing SignSaboteur: forge signed web tokens with ease",
+  "topic": "05-security-techniques",
+  "type": "web_article",
+  "urls": {
+    "all_source_urls": [
+      "https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "RAW_ab270771",
+  "notExist": null,
+  "originalTitle": "一篇 Harness 研究后的思考！",
+  "title": "Reflections After a Harness Study!",
+  "oneSentenceSummary": "Based on the CMU/Yale Agent Harness survey, this article proposes that the core bottleneck of Agent reliability has shifted from model capability to runtime state management, and defines State-Aware Runtime as the next-generation research direction.",
+  "summary": "Starting from the Agent Harness Engineering survey released by CMU/Yale, the article points out that the industry consensus has shifted from 'the model determines everything' to 'system architecture determines reliability.' The author argues that Harness solves the static composition problem of Agent peripheral components, but the more critical issue is dynamic runtime, namely State-Aware Runtime. The article deeply analyzes typical crash modes of long-horizon Agents: state drift, error cascades, and commit pollution, and points out that long context does not equal long-term state management. The author proposes that each step of an Agent's execution should be modeled as a verifiable state transition, strictly distinguishing between candidate outputs and committed states. The article also introduces the author's research accumulation in areas such as normative reasoning, long-form narrative Agents, multi-Agent interaction, and structured generation, ultimately positioning the research as the State-Aware Runtime problem. The conclusion emphasizes that the second half of the Agent era is a battle of systems; whoever can assemble high-capability models into auditable, recoverable state machine systems will build a true moat.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Agent",
+    "State-Aware Runtime",
+    "Harness Engineering",
+    "Reliability",
+    "State Management"
+  ],
+  "mainPoints": [
+    {
+      "point": "The core bottleneck of Agent reliability has shifted from model capability to runtime state management.",
+      "explanation": "Models are getting stronger, but Agents still crash. The reason is the lack of a stable runtime structure, not insufficient model reasoning capability. Harness Engineering is the first step, but State-Aware Runtime is the key to solving dynamic problems."
+    },
+    {
+      "point": "Long context does not equal long-term state management; explicit state management is the core of system engineering.",
+      "explanation": "Simply stuffing historical conversations into the context causes state pollution, where early settings are overwritten and temporary speculations are solidified. State-Aware Runtime requires the system to clearly know the current state, who has the right to modify it, and how to isolate and recover."
+    },
+    {
+      "point": "Agent failures have a cascading propagation characteristic, requiring a strict distinction between candidate outputs and committed states.",
+      "explanation": "Misjudgments can be retried while still in the candidate stage, but once written into long-term memory or altering the external world state, errors transform from language hallucinations into physical pollution. The system should establish boundary defenses rather than forcing the model to never make mistakes."
+    },
+    {
+      "point": "State-Aware Runtime is a long-term barrier direction suitable for independent researchers to delve into.",
+      "explanation": "This direction does not rely on thousands of GPUs, but on sensitivity and patience towards system failures. An Agent crash taxonomy can be established through Failure Trace decomposition, state drift analysis, and Validator and Rollback experiments."
+    }
+  ],
+  "keyQuotes": [
+    "An Agent has never been just a model plus a System Prompt, nor a model plus a few Function Calls. A true industrial-grade Agent is a complex operating system composed of models, state machines, memory streams, execution sandboxes, validators, monitoring traces, and recovery strategies.",
+    "Long context absolutely does not equal long-term state management.",
+    "For building highly reliable systems, real failure traces are far more valuable than perfect demos.",
+    "The model is responsible for generating infinite possibilities, Harness is responsible for providing a physical constraint environment, and State-Aware Runtime is responsible for maintaining state consistency, auditing process fidelity, and preventing catastrophic commits."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723132&idx=1&sn=41feac3f7a792ea05cb03b14cd95a974",
+  "readUrl": "https://www.bestblogs.dev/article/ab270771",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045505_b03e263f",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_4688eb",
+  "sourceName": "Datawhale",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 55,
+  "wordCount": 3342,
+  "readTime": 14,
+  "mediaDuration": null,
+  "authors": [
+    "Datawhale"
+  ],
+  "publishTimeStamp": 1780150020000,
+  "publishDateStr": "05-30",
+  "publishDateTimeStr": "2026-05-30 22:07:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

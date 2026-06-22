@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Anthropic News"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://www.anthropic.com/api/opengraph-illustration?name=Object-LaptopSecure&backgroundColor=cactus",
+  "domain": "anthropic.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_d632aa80",
+  "keyQuotes": [
+    "Malicious actors are using AI in ways that make them more dangerous. More specifically, threat actors are using AI in the later, more complex stages of their cyber operations.",
+    "The fact that AI can be used to chain together many parts of the attack means that the old ways of differentiating high- from low-risk actors are no longer as effective.",
+    "There is no ATT&CK ID for this type of agentic orchestration—yet these are precisely the behaviors we expect to see much more of as AI agents become more capable."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Activities like lateral movement and account discovery, once requiring deep technical knowledge, are now accessible via AI, shifting attacker focus from initial access to deeper network operations.",
+      "point": "AI enables less skilled attackers to perform complex post-compromise techniques."
+    },
+    {
+      "explanation": "The number of techniques used or the interface (API vs. chat) no longer correlates with an actor's skill or risk level; the most durable differentiator is the autonomy of the AI scaffolding orchestrating the attack.",
+      "point": "Traditional risk assessment signals for attackers are eroding."
+    },
+    {
+      "explanation": "Behaviors like agentic chaining of attack stages, real-time tactical decision-making, and minimal human intervention are not captured, leading to systematic underestimation of AI-enabled threats.",
+      "point": "The MITRE ATT&CK framework lacks coverage for AI-enabled autonomous attack orchestration."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Anthropic's Frontier Red Team analyzed 832 banned AI-enabled cyber attack accounts, finding that AI makes attackers more dangerous by enabling complex post-compromise techniques, eroding traditional risk assessment signals, and exposing gaps in the MITRE ATT&CK framework.",
+  "originalTitle": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 00:00:00",
+  "publishTimeStamp": 1780416000000,
+  "qualified": false,
+  "readCount": 14,
+  "readTime": 5,
+  "readUrl": "https://www.bestblogs.dev/article/d632aa80",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_8b9413",
+  "sourceImage": "https://image.jido.dev/20251127045642_e83c159b",
+  "sourceName": "Anthropic News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This report from Anthropic's Frontier Red Team analyzes 832 accounts banned for malicious cyber activity between March 2025 and March 2026, mapping their techniques onto the MITRE ATT&CK framework. The analysis yields three main findings. First, AI is making attackers more dangerous by enabling them to operate in later, more complex stages of cyber operations, such as lateral movement and account discovery, which were previously restricted to highly skilled actors. The proportion of medium-to-high-risk actors increased 1.7-fold over the study period. Second, traditional methods of assessing an attacker's threat level—based on the number of techniques used or the interface employed—are no longer reliable, as AI can perform highly technical tasks regardless of the actor's skill. The most durable differentiator is the sophistication of the AI scaffolding that chains together attack stages autonomously. Third, the MITRE ATT&CK framework does not capture key AI-enabled behaviors like autonomous agentic orchestration, real-time decision-making, and chained multi-stage attacks, as illustrated by a state-sponsored espionage operation Anthropic disrupted in November 2025. The report concludes with a commitment to sharing findings with defenders and evolving safeguards.",
+  "tags": [
+    "AI Safety & Alignment",
+    "Cybersecurity",
+    "AI Agent",
+    "Red Teaming",
+    "MITRE ATT&CK"
+  ],
+  "title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+  "translateContent": null,
+  "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+  "wordCount": 1098
+}

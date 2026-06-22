@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-07",
+  "id": "BB-2026-05-01-499",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-499/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-499",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-499/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-499/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-499/raw/discovery.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-499/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-499/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-499/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hugging Face - Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hugging Face - Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Developer Tools",
+    "Open Source",
+    "AI Safety"
+  ],
+  "title": "Her · हेर — a detective for your Claude Code sessions",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/blog/build-small-hackathon/her-blog",
+      "https://www.bestblogs.dev/article/69db4622"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/69db4622"
+  }
+}

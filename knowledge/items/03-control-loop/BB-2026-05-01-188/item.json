@@ -1,0 +1,90 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "Yesterday",
+  "id": "BB-2026-05-01-188",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-188/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-188",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-188/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-188/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-188/raw/display-document.html",
+      "knowledge/items/03-control-loop/BB-2026-05-01-188/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-188/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-188/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / The GitHub Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / The GitHub Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Accessibility",
+    "AI Agent",
+    "LLM",
+    "GitHub Copilot",
+    "WCAG"
+  ],
+  "title": "Building a general-purpose accessibility agent—and what we learned in the process",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en",
+      "https://dev.to/goose_oss/agents-subagents-and-multi-agents-what-they-are-and-when-to-use-them-39na#:~:text=The%20Subagent%20Setup%3A%20Orchestrator%20With%20a%20Crew",
+      "https://en.wikipedia.org/wiki/Social_model_of_disability",
+      "https://en.wiktionary.org/wiki/game_the_system",
+      "https://github.blog/ai-and-ml/generative-ai/multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont/",
+      "https://github.blog/ai-and-ml/github-copilot/a-guide-to-deciding-what-ai-model-to-use-in-github-copilot/",
+      "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/",
+      "https://github.blog/ai-and-ml/github-copilot/github-for-beginners-how-to-get-llms-to-do-what-you-want/",
+      "https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/",
+      "https://github.blog/ai-and-ml/llms/",
+      "https://github.blog/engineering/user-experience/considerations-for-making-a-tree-view-component-accessible/",
+      "https://github.blog/news-insights/company-news/github-accessibility-and-the-disability-divide/",
+      "https://github.blog/open-source/social-impact/our-pledge-to-help-improve-the-accessibility-of-open-source-software-at-scale/",
+      "https://microsoft.github.io/a11y-llm-eval-report/",
+      "https://primer.style/accessibility/patterns/accessible-notifications-and-messages/#toasts",
+      "https://www.ada.gov/law-and-regs/regulations/title-ii-2010-regulations/",
+      "https://www.bestblogs.dev/en/article/1ca8b942",
+      "https://www.deque.com/blog/auditing-design-systems-for-accessibility/#design-should-consider-accessibility",
+      "https://www.nngroup.com/articles/ai-agents-as-users/#:~:text=Accessibility%2DTree%20Parsing",
+      "https://www.w3.org/TR/WCAG22/",
+      "https://www.w3.org/WAI/ARIA/apg/patterns/grid/",
+      "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+      "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html",
+      "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html",
+      "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html",
+      "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+      "https://www.w3.org/WAI/standards-guidelines/act/rules/?requirements=a%2Caa&status=approved&implement=auto&display=no-rules"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/1ca8b942"
+  }
+}

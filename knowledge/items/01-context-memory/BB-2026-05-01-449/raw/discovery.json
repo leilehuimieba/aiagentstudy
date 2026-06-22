@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "得物技术"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045403_cb8f24c8",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_7571ebc2",
+  "keyQuotes": [
+    "Troubleshooter is not meant to replace operations personnel, but to hand over mechanical tasks like 'logging into multiple platforms, switching between different entry points, and guessing directions based on experience' to AI, allowing operations staff to focus on decisions that require judgment and creativity.",
+    "Many people think that 'AI troubleshooting' is just constructing a Prompt and throwing it at a large model. But in reality, the LLM cannot magically know your service's current QPS, what the error logs contain, or which link in the call chain timed out. It needs tools."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The system automatically performs multi-platform data collection, root cause analysis, and report generation, covering 11 services and over 10 alert types, significantly improving operational efficiency.",
+      "point": "Troubleshooter reduces the median alert troubleshooting time from 20 minutes to 4.4 minutes using an LLM Agent."
+    },
+    {
+      "explanation": "The Agent autonomously invokes tools for log query, monitoring metrics, distributed tracing, and API error troubleshooting through a think-act-observe loop, dynamically assembling troubleshooting strategies rather than simply relying on a Prompt.",
+      "point": "The core of SupervisorAgent is the ReAct reasoning loop and four carefully designed troubleshooting tools."
+    },
+    {
+      "explanation": "Rule validation involves zero LLM calls, the independent verification Agent checks the quality of conclusions, multi-round cross-validation ensures results from different tools corroborate each other, and a retry mechanism acts as a safety net.",
+      "point": "The hallucination control system is key to the system's deployment, employing rule validation, an independent verification Agent, and multi-round cross-validation."
+    },
+    {
+      "explanation": "Each tool call uses an independent thread pool with timeout control. Upon timeout, a degraded message is returned, allowing the LLM to continue based on existing evidence, preventing a single point of failure from interrupting the workflow.",
+      "point": "Tool timeout isolation and degradation mechanisms ensure the robustness of the troubleshooting process."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article details the Troubleshooter system built by Dewu's technical team based on LLM Agents for automated alert troubleshooting, covering its architecture design, ReAct reasoning loop, tool design, hallucination control, and production results. The median troubleshooting time dropped from 20 minutes to 4.4 minutes after launch.",
+  "originalTitle": "用 LLM Agent 重构告警排查流程｜得物技术",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 18:30:00",
+  "publishTimeStamp": 1780482600000,
+  "qualified": false,
+  "readCount": 82,
+  "readTime": 18,
+  "readUrl": "https://www.bestblogs.dev/article/7571ebc2",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_af8ac9",
+  "sourceImage": "https://image.jido.dev/20251127045403_cb8f24c8",
+  "sourceName": "得物技术",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article focuses on the Troubleshooter system developed by Dewu's technical team. The system uses an LLM Agent (based on the Spring AI Alibaba ReAct framework) to automatically perform alert data collection, root cause analysis, and generate remediation suggestions. The article elaborates on the layered architecture design, the core orchestration logic of the SupervisorAgent, the design philosophy and timeout isolation mechanisms of four troubleshooting tools (log query, monitoring metrics, distributed tracing, and API error troubleshooting), as well as key practices like dynamic strategy assembly, AI permission security, and hallucination control (rule validation + independent verification Agent + multi-round cross-validation). A real-world gateway timeout case is used to demonstrate the complete troubleshooting process and conclusion output. After launch, the system covers 11 services and over 10 alert types, reducing the median troubleshooting time from 20 minutes manually to 4.4 minutes, with an initial conclusion acceptance rate of approximately 60%. The article also shares technical challenges and lessons learned, such as environment mapping and API key rotation, and outlines future iteration directions like multi-agent parallelism and automated remediation.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "ReAct",
+    "AI Coding",
+    "Ops Automation"
+  ],
+  "title": "Refactoring Alert Troubleshooting with LLM Agents | Dewu Tech",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247544879&idx=1&sn=4d1a92199b785d5d3d3de1758545adba",
+  "wordCount": 4479
+}

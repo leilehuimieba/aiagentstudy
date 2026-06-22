@@ -1,0 +1,81 @@
+{
+  "authors": [
+    "腾讯混元"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045433_c2ea00c4",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_f8d006eb",
+  "keyQuotes": [
+    "HPC-Ops has fully evolved from a single high-performance operator library into a system-level inference optimization capability set that covers the entire large model inference process, balances precision and speed, and is adapted for large-scale production deployment.",
+    "All optimization capabilities in this release are derived from the long-term online production practices of the Tencent Hunyuan AI Infra team, deeply adapted to real, complex large-scale inference business scenarios."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "This upgrade focuses on five core operators: Attention, Router GEMM, FusedMoE, Fused AllReduce+Norm, and Sampler, shifting from single-point performance optimization to full-link collaborative optimization, resulting in a 30% end-to-end QPM improvement.",
+      "point": "HPC-Ops has evolved from individual operators to a system-level optimization capability set covering the entire inference pipeline."
+    },
+    {
+      "explanation": "Through tile-level splitting, global load balancing, and a greedy bin-packing algorithm, it achieves a 1.59x-1.76x speedup in mixed-length batch scenarios and up to a 2.95x speedup in single-batch long-text scenarios.",
+      "point": "The Attention dynamic scheduling solution effectively addresses the long-tail latency issue caused by mixed-length request batching."
+    },
+    {
+      "explanation": "It splits FP32 weights into high-bit and low-bit residual BF16 tensors, performs two BF16 GEMM operations during inference, and combines them linearly. Its precision significantly surpasses TF32, with performance up to 3.22x faster than FP32 cuBLAS.",
+      "point": "Router GEMM achieves FP32-level precision with a dual BF16 combination, balancing accuracy and performance."
+    },
+    {
+      "explanation": "It fuses five stages—routing, Gate-Up GEMM, activation quantization, Down GEMM, and Top-K aggregation—into a unified pipeline, eliminating memory copy and kernel launch overhead, achieving a 1.2x-1.6x performance improvement over mainstream frameworks.",
+      "point": "FusedMoE significantly reduces MoE inference overhead through a full-operator pipeline reconstruction."
+    },
+    {
+      "explanation": "It fuses over a dozen fragmented kernels into 2 CUDA kernels through full-process kernel fusion, fine-grained parallelism, and computation chain consolidation, achieving a 4.0x-7.5x speedup over vLLM.",
+      "point": "Sampler eliminates post-processing performance bottlenecks through extreme large-kernel fusion."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Tencent Hunyuan open-sources a major upgrade to its HPC-Ops inference operator library, introducing five core operators including Attention dynamic scheduling, Router GEMM dual BF16 high-precision computation, and FusedMoE full pipeline, with multiple performance metrics surpassing mainstream baselines and end-to-end QPM improved by 30%.",
+  "originalTitle": "腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-11",
+  "publishDateTimeStr": "2026-06-11 16:35:00",
+  "publishTimeStamp": 1781166900000,
+  "qualified": false,
+  "readCount": 56,
+  "readTime": 21,
+  "readUrl": "https://www.bestblogs.dev/article/f8d006eb",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_cc0f35",
+  "sourceImage": "https://image.jido.dev/20251127045433_c2ea00c4",
+  "sourceName": "腾讯混元",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is an official release from the Tencent Hunyuan AI Infra team regarding a major upgrade to its open-source inference operator library, HPC-Ops. It details the technical principles, design concepts, and performance data of five core operators: Attention adopts runtime dynamic load scheduling to address long-tail latency, achieving a 2.95x speedup for long-text scenarios; Router GEMM uses a dual BF16 combination to simulate FP32 precision, achieving up to a 3.22x speedup over FP32 cuBLAS while maintaining high accuracy; FusedMoE integrates the entire MoE inference process into a unified pipeline, delivering a 1.2x-1.6x performance improvement over vLLM/SGLang; Fused AllReduce+Norm deeply fuses communication and normalization computation, achieving up to a 1.68x speedup; Sampler fuses over a dozen kernels into 2, achieving a 4.0x-7.5x speedup over vLLM. All capabilities are derived from Tencent Hunyuan's online production practices and have been fully open-sourced.",
+  "tags": [
+    "AI Infra",
+    "LLM",
+    "Inference Optimization",
+    "Open Source Project",
+    "Operator Library"
+  ],
+  "title": "Tencent Hunyuan AI Infra New Open Source: Comprehensive Upgrade of HPC-Ops Inference Core Operators",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497936&idx=1&sn=21a726b8e684ce2e341265a518ab0369",
+  "wordCount": 5001
+}

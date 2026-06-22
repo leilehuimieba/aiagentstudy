@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-03",
+  "id": "BB-2026-05-01-440",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-440/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-440",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-440/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-440/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-440/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-440/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-440/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-440/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / LangChain Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / LangChain Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "LangGraph",
+    "Agent Architecture",
+    "AI Product Design"
+  ],
+  "title": "How Harmonic Rebuilt Scout on Deep Agents and 4x'd Retention with LangSmith",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/eca5ff15",
+      "https://www.langchain.com/blog/how-harmonic-rebuilt-scout-on-deep-agents-and-4xd-retention-with-langsmith"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.langchain.com/blog/how-harmonic-rebuilt-scout-on-deep-agents-and-4xd-retention-with-langsmith",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/eca5ff15"
+  }
+}

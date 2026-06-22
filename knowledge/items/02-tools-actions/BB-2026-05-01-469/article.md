@@ -1,0 +1,1576 @@
+# Reality: The Final Eval — Lukas Petersson and Axel Backlund of Andon Labs
+
+- BestBlogs URL: https://www.bestblogs.dev/article/ffda12ac
+- Original publisher URL: https://www.latent.space/p/andon
+- Source: BestBlogs / Latent.Space
+- Publish time: 2026-06-05 04:39:18
+- Capture route: article discovered from OpenCLI Browser Bridge profile `qmvqcrb8` latest article feed page 2; page/content captured from BestBlogs resource APIs
+- Extracted chars: 97627
+
+---
+
+The new AIEWF website is live! Get your tickets booked ASAP as they -will- sell out. Take the AI Engineering Survey and get >$2k in credits and free AIE WF tickets!
+
+   Most industry benchmarks compress intelligence and reasoning ability into scores.
+
+   SWE-Bench Pro, MMLU, Humanity’s Last Exam, etc. These metrics are useful, but don’t always represent the full extent of how a model performs in the real world. Some of the most interesting evals today look less like exams and more like operating businesses in the real world. One of which is Vending Bench.
+
+   In Anthropic’s Mythos Preview System Card, Andon was the only third party eval to get their own section, observing increasingly concerning aggressive behavior:
+
+   
+    
+      
+      
+       
+       
+        
+         
+          
+           
+            
+           
+          
+         
+         
+          
+           
+          
+         
+        
+
+       
+
+      
+ 
+     
+    
+   
+
+   You don’t know what a model is capable of doing in the real world unless you actually give it inventory, a wallet, tools, customers, competitors, humans, & some time. More often than not, it’ll surprise you how much a model is capable of and in doing so, also reveal unexpected behavior: deception, context collapse, emergent coordination, & bizarre negotiation behavior.
+
+    
+    
+     
+      
+       
+        
+       
+
+      
+
+      
+       Andon Labs@andonlabs
+      
+
+      
+       
+        
+       
+      
+     
+
+     In Vending-Bench Arena (the multiplayer version of Vending-Bench with competition dynamics), GPT-5.5 actually beats Opus 4.7. Opus 4.7 showed similar behavior to Opus 4.6: lying to suppliers and stiffing customers on refunds. GPT-5.5's tactics were clean, and it still won.
+
+     
+      
+     
+
+     
+      
+       6:09 PM · Apr 23, 2026 · 882K Views
+      
+
+      
+       47 Replies · 132 Reposts · 1.59K Likes
+      
+
+     
+
+    
+ 
+   
+   While an inflection point in personal agents came post-OpenClaw after full file access with bypass permissions became the norm, it is yet to come for agents in the real-world. However Andon Market, an actual in person store fully run and managed by AI, is paving the way for what is possible.
+
+    
+    
+     
+      
+       
+        
+       
+
+      
+
+      
+       Andon Labs@andonlabs
+      
+
+      
+       
+        
+       
+      
+     
+
+     We gave an AI a 3-year retail lease in SF and asked it to make a profit. The AI interviewed and hired full-time employees, applied for credit, and stocked the store with the books Superintelligence and Making of the Atomic Bomb. Visit Andon Market at 2102 Union St now.
+
+     
+      
+     
+
+     
+      
+       12:44 AM · Apr 11, 2026 · 1.94M Views
+      
+
+      
+       103 Replies · 154 Reposts · 2.35K Likes
+      
+
+     
+
+    
+ 
+   
+   Full Video Pod
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   
+    
+     
+    
+
+   
+
+   From Claude trying to call the FBI over a $2/day vending machine charge to AI agents forming price cartels, hiring human employees, running physical stores, and writing existential robot musicals, Andon Labs is stress-testing what happens when frontier models stop being chatbots and start acting in the real world. In this episode, Andon Labs cofounders Lukas Petersson and Axel Backlund join swyx and Vibhu to unpack the strange, funny, and genuinely concerning edge cases that emerge when agents run businesses over long horizons.
+
+   We go deep on Vending-Bench, Project Vend, Vending-Bench Arena, Bengt, Butter-Bench, Luna, and Andon’s broader mission of building realistic real-world evals for autonomous AI systems. Lukas and Axel explain why dollar-denominated evals reveal things traditional benchmarks miss, how Claude ended up reporting its vending machine fees as cybercrime, why long context windows can drive agents into meltdown loops, what happens when agents compete with each other, and why the future of AI safety may depend on testing models in messy physical environments instead of clean benchmark sandboxes.
+
+   We discuss:
+
+   
+    
+     Why Andon Labs started with dangerous capability evals and long-running agents
+
+    
+
+    
+     Vending-Bench and why running a vending machine is a deceptively hard AI benchmark
+
+    
+
+    
+     Why money-based evals avoid the saturation problem of traditional benchmarks
+
+    
+
+    
+     How Claude tried to call the FBI over a $2/day fee
+
+    
+
+    
+     Why long-horizon agents can spiral into existential and legalistic breakdowns
+
+    
+
+    
+     Project Vend: putting an AI-run vending machine inside Anthropic
+
+    
+
+    
+     Why real humans are “out of distribution” for simulated agents
+
+    
+
+    
+     Claudius, Seymour Cash, and the chaos of AI CEOs
+
+    
+
+    
+     How a human briefly became CEO of Claudius through a manipulated election
+
+    
+
+    
+     Why multi-agent systems can converge back into “helpful assistant” behavior
+
+    
+
+    
+     Bengt, Andon’s internal office agent with email, spending, terminal, phone, camera, and internet access
+
+    
+
+    
+     How Bengt traded Amazon purchases for face-recognition training data
+
+    
+
+    
+     Claude’s aggressive behavior, lies, refund avoidance, and price-cartel behavior in Arena
+
+    
+
+    
+     Why eval awareness may become the AI version of “are we living in a simulation?”
+
+    
+
+    
+     Blueprint Bench, spatial intelligence, and why models still misunderstand physical rooms
+
+    
+
+    
+     Butter-Bench and testing LLMs as robot orchestrators
+
+    
+
+    
+     Luna, the AI-run physical store with a three-year lease and human employees
+
+    
+
+    
+     The new Andon cafe in Sweden and why real-world geography matters for agent evals
+
+    
+
+    
+     Rotten tomatoes, perishable goods, and the hidden difficulty of running a physical business
+
+    
+
+   
+
+   Lukas Petersson
+
+   
+    
+     LinkedIn: https://www.linkedin.com/in/lukas-petersson-181a83172/
+
+    
+
+    
+     X: https://x.com/lukaspet
+
+    
+
+   
+
+   Axel Backlund
+
+   
+    
+     LinkedIn: https://www.linkedin.com/in/axelbacklund
+
+    
+
+    
+     X: https://x.com/axelbacklund
+
+    
+
+   
+
+   Andon Labs
+
+   
+    
+     Website: https://andonlabs.com
+
+    
+
+    
+     Vending-Bench: https://andonlabs.com/evals/vending-bench
+
+    
+
+    
+     Andon Vending: https://andonlabs.com/vending
+
+    
+
+   
+
+   Timestamps
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   00:00:00 Introduction
+    
+
+    00:01:00 Andon Labs and the Origins of Vending-Bench
+    
+
+    00:05:21 Why Money-Based Evals Matter
+    
+
+    00:09:51 Agent Harnesses and Self-Modifying Systems
+    
+
+    00:13:36 Claude Calls the FBI
+    
+
+    00:16:33 Project Vend: Claude Runs a Real Vending Machine
+    
+
+    00:21:44 Seymour Cash, AI CEOs, and Election Chaos
+    
+
+    00:27:16 Multi-Agent Coordination and Slack Observability
+    
+
+    00:30:18 When Will Agents Run Real Businesses?
+    
+
+    00:34:56 Bengt: Andon’s Internal Office Agent
+    
+
+    00:40:06 Real-World AI Safety and Long-Horizon Traces
+    
+
+    00:44:28 Lying, Refunds, and Price Cartels in Arena
+    
+
+    00:52:42 Eval Awareness and Simulation Behavior
+    
+
+    00:56:06 Blueprint Bench, Butter-Bench, and Robotics
+    
+
+    01:04:37 Luna: The AI-Run Physical Store
+    
+
+    01:09:29 The Sweden Cafe and Real-World Expansion
+    
+
+    01:13:16 What Comes Next for Andon Labs
+
+   Transcript
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Introduction: Andon Labs, Long-Running Agents, and Real-World Evals
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Swyx [00:00:00]: Welcome to Lukas and Axel from Andon Labs, and I’m joined by my, favorite guest host. Anything security, safety, alignments, Vibhu., welcome.
+
+   Lukas [00:00:15]: Thank you for having us.
+
+   Axel [00:00:16]: Thank you.
+
+   Swyx [00:00:17]: Let’s match names to voices., maybe you wanna take turns introducing yourselves.
+
+   Lukas [00:00:21]: I’m Lukas.
+
+   Axel [00:00:22]: And I’m Axel.
+
+   Swyx [00:00:24]: Let’s introduce Andon Labs a bit. How did you guys come together?, you have different backgrounds, but you’re both Swedish., was that, a big part of it?
+
+   Lukas [00:00:33]: So when I went to high school, there was this really cool guy who had a superpower. He could code. So he made like the or like the app for the, for the school and stuff, and he was super cool, and I wanted to be like him, and that was that guy.
+
+   Axel [00:00:47]: I don’t know about this.
+
+   Swyx [00:00:49]: But you went to different universities, right?
+
+   Lukas [00:00:51]: But same high school.
+
+   Swyx [00:00:52]: I see.
+
+   Lukas [00:00:52]: So we always said, “Oh, once we graduate university, then we should start a company,” and that’s what we did.
+
+   Swyx [00:00:58]: Wow, there you go. And about a year ago, you kinda burst onto the scene with Vending Bench, but, was there a thing before that was, kind of like the inception?
+
+   From Dangerous Capability Evals to Vending Bench
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Axel [00:01:07]: So we did work, yeah, with, Anthropic was one of our, early customers in doing, evals. So we did, dangerous capability evals., nothing we published openly. But then we started thinking about doing some kind of, public benchmark, and one thing that we really started thinking about, was like running agents and specifically agents managing businesses., ‘cause-- and this was, early 2025., and I think the first, mentions of people will be running, person unicorns or even autonomous companies. So we thought, “Let’s make a benchmark of how well can an agent run the probably simplest business, possible,” and, that’s probably, running a vending machine. So that’s the first public one we did. And it was very, like-- there was almost no one that noticed it in the first couple of months, I think., so we released it in February last year, and then I think around Easter last year, we got, the first viral tweet about it, that someone else did.
+
+   Lukas [00:02:11]: We tweeted a bunch, uh When it came out and, tried our best.
+
+   Axel [00:02:15]: We tried.
+
+   Vibhu [00:02:16]: It’s the one at Anthropic, right?
+
+   Lukas [00:02:18]: So this
+
+   Swyx [00:02:19]: This is a classic thing we should get out of the way.
+
+   Lukas [00:02:20]: Exactly. There’s two versions.
+
+   Swyx [00:02:22]: Everyone does this. Yes.
+
+   Lukas [00:02:23]: There’s Vending Bench, which is the simulated one, which we did, completely independently in February., and then, like Axel said, that was like-- That was the thing that didn’t get any traction in the beginning, but then some random person made a tweet about it, and that
+
+   Axel [00:02:38]: You have the paper
+
+   Lukas [00:02:38]: That is the paper. Correct, yeah., and then since we thought this was very fun, we thought, oh, I think this is also, one thing with Andon Labs, the way we kind of like decide what to do next and what projects to do, it’s what is like the heuristic we use is what is fun? Is What would be a fun project? And doing this in real life sounded quite fun for us, and maybe also scientifically useful. So, then we basically had this idea, and then we, like-- But then we needed a place for it and, putting it out in the public would probably not really work., would get vandalized and stuff. So we pitched it to the people we were already working with at Anthropic, and they were “Yeah, you can have space. This sounds fun.” Um
+
+   Swyx [00:03:21]: It’s like a small fridge, right? It’s like a mini fridge.
+
+   Axel [00:03:23]: Absolutely.
+
+   Swyx [00:03:24]: People-- There’s like a stripe thing or like an
+
+   Vibhu [00:03:27]: Oh, okay. So it was very OG, the early days
+
+   Lukas [00:03:28]: That’s the OG one. Yeah
+
+   Vibhu [00:03:29]: IPad on this. We saw it in June, like two months after After it had been there. They upgraded a little bit. There’s a security camera for making sure you actually Venmo the thing.
+
+   Swyx [00:03:40]: So, my impression, okay, we’re, we’re going straight into project Ven because it’s such a iconic thing. I do want to cover a little bit of that, the origin story even before Project Ven and even into Vending Bench. I think a lot of people are like yourselves, like smart, interested in future of AI, interested in developing evals. But how the hell do you just, walk into Anthropic’s doors and, work with them, right? What is What are they looking for? What works? And then maybe, when you launch, I always think, obviously it would be better to launch with a lab, but, sometimes
+
+   Vibhu [00:04:12]: It’s harder to do than it seems.
+
+   Swyx [00:04:13]: Exactly. So either of those, which are more sort of newbie beginner questions, but, I think it’s meaningful advice to others.
+
+   Lukas [00:04:21]: We get this question a lot, and I don’t think our experience is maybe the best., but, the way we did it was that we just built a bunch of things that we had conviction would be useful, and then we just, set up a server and sent it to them for free to use. And then after a while they were “Oh, yeah, this is actually kind of useful. We should probably pay for this.”, but that took a while. I don’t know if this is, the best path to doing it, but that’s how it went for us.
+
+   Axel [00:04:47]: I think maybe generally, building-- everyone is interested in good evals, and especially evals that, don’t saturate that easily. So, if you can build an eval that, tests something novel, something useful, and you have, good separation of models, like your, the more advanced models rank higher than the worst models, and then you can, yeah, you can, publish it and, try to get some traction, sort of how Vending Bench got attention., and then probably some lab will be interested or you can at least have something to reach out with, when you’re doing that.
+
+   Why Dollar-Based Evals Matter
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Swyx [00:05:21]: I think you are in, you’re in one of the few categories of, evals that correlate to real money. Like Suelancer was also last year, right? Where, people solve actual Upwork. Was it Upwork or other tasks?, something. Where’s the, where’s, like It’s like a dollar value, right? Forget your ELO scores. Forget your
+
+   Axel [00:05:37]: Percentiles
+
+   Swyx [00:05:38]: Zero to one hundred percents. Just go straight for dollars and, that’s AGI.
+
+   Lukas [00:05:43]: And there’s like-- I think the nice thing is that there’s no ceiling. You can just-- It never saturates because it could just make more and more money. Like If there’s oh, Percentage-wise, then, you can’t go above, a hundred. And I think like Even when you’re not at the hundred, I think a lot of these, evals have a lot of problems in them. So, actually it’s like if you get
+
+   Axel [00:06:05]: To like 92 or something like that, many of them. It’s like then there’s like there’s no really no difference between 92 and 93 because the eval itself is problematic and has noise in it. And I think a lot of evals are saturated like that, but people like pretend that there ‘s still signal in them, but there really isn’t.
+
+   Vending Bench 1, Harness Design, and Saturation
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Swyx [00:06:24]: Like Super bench verified., even Vending Bench 1 saturated, right? Maybe we can talk about that., may- and maybe set up Vending Bench for a lot of folks who don’t know. Actually, things that were very basic like there’s limited slots, like you have to pay rent., these are elements where like it doesn’t come across in the, in the narrative, but even being adversarial towards the agent, I think these are all like very interesting dimensions.
+
+   Axel [00:06:47]: I don’t really think it’s saturated, right? Like it It was more like it was not designed in a way that was really, like true to how AI developed. Like we had an agent harness in it that wasn’t really how people used harnesses and stuff like that., so I think it wasn’t really that it saturated, it was more like it wasn’t really, the best benchmark.
+
+   Vibhu [00:07:12]: This is Vending Bench one, right?
+
+   Axel [00:07:14]: I think that like schematic maps sort of to Vending Bench 2 as well., but
+
+   Swyx [00:07:19]: Including the email.
+
+   Axel [00:07:20]: The email The emails exist still. Exactly., and then we still we simulate the purchases and it’s all, yeah, it’s this very open environment for the agent to just run its business. And then for, yeah, Vending Bench 2 we did that, like you said, to just improve the harness., a lot of like nice, like easier, improvements to make it easier for us to run as well., like when you make an eval you ideally want don’t want to change it after you made it. So, you want to make it really good and then not to rerun all the models when you make an update because that’s also really expensive with the Vending Bench when you run the frontier models. But like as an example, like one thing we didn’t have, we didn’t have prompt caching in Vending Bench 1, because when we made Vending Bench 1 it wasn’t really a thing., so that ‘s just an example of like in Vending Bench 2 like we paid a lot more to run these things because we didn’t have prompt caching. So for Vending Bench 2 that was one thing we added and there was a bunch of things like this., and that’
+
+   Swyx [00:08:17]: Also the conversations are a lot longer in Vending Bench 2, right?
+
+   Axel [00:08:21]: I think it’s kind of similar.
+
+   Swyx [00:08:22]: Is it similar?
+
+   Axel [00:08:23]: I think it’s similar. The models at the time were worse, so they crashed out earlier., and now they survive the full year all the time.
+
+   Swyx [00:08:31]: Which is like thousands of turns. Hundreds of thousands of hundreds of millions of tokens output. That’s the, that’s the rough order of magnitude. I always wonder about the harness. The harness matters a lot. It’s your harness. Was there any question about like use cloud code, use something else?
+
+   Axel [00:08:48]: I think our philosophy around harnesses is like we try to make something that’s quite minimalistic, like quite simple. Like we don’t wanna favor one model a lot over the other, but also don’t make like a super complex harness. So like it’s obvious like a model may be lucky and just be good in one harness., so like it is similar to a lot of the harnesses out there in like you have the, like a running loop., you have some like a bunch of tools that are like quite, descriptive for the agent, we think, and not a lot of like fancy agents or anything ‘cause we wanna really test the model, not like some specific harness.
+
+   Vibhu [00:09:27]: It seems more neutral as well to test the model’s agnostic of the harness,?
+
+   Axel [00:09:32]: There are arguments like you want to elicit maximum performance of the model, but it’s like a trade-off, like how much time should we spend optimizing the harness for this model? And like how do we know when we have like the optimal harness for a single model? So like we thought that just having a simple one that’s the same for all of them is the best.
+
+   Swyx [00:09:51]: So okay, this is my pitch for Vending Bench 3 or whatever, right? And then I like to have this kind of conversation on the pod, so like it forces listeners to think about what they would do if they were in your shoes. A lot of people are exploring modifying harnesses and I think prompt tuning for a model is a thing and you are probably not doing a bunch of that. It’s the same system prompt in every regardless of the model, same tools, whatever, right? Even if they were post trained for different tools. So what, what do you think about okay, before I expose you to Vending Bench 3, I give you a few rounds of like tuning, whatever that means, like
+
+   Self-Modifying Harnesses and Model-Specific Prompting
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Axel [00:10:27]: Like you give that to the model?
+
+   Swyx [00:10:28]: Give that to the model.
+
+   Vibhu [00:10:28]: Give that to the model.
+
+   Swyx [00:10:29]: Let it, let it read its own transcripts, let it modify its own system prompt based on “Oh, yeah, okay, well, that’s this harness is not what I thought it what I was post trained for, but I can adjust.” Was that reasonable? Is that too much?
+
+   Axel [00:10:41]: Like philosophically I like it because it’s basically good evals, they have a high ceiling, but they’re hard, right?, and they have no bias. And like this like when you have a system prompt like the one we have here, which is quite long in like some kind of latent space, representation, this might
+
+   Vibhu [00:10:59]: We have a bell that rings every time you say latent space
+
+   Axel [00:11:02]: This might be like biased towards one model more than another for some reason that humans don’t, understand, right?
+
+   Vibhu [00:11:08]: We see it too, right? Like Cursor says that they have individualized versions of the harnesses for all the models they run, right? There’s better performance you can squeeze if you Tune the harness.
+
+   Axel [00:11:17]: Exactly. And we might accidentally have picked one that favors another. Like we don’t know that. The like Axel said, like the reason why we went for a simple one was to try to avoid this. But yeah, if you do it
+
+   Vibhu [00:11:29]: Simple has biases
+
+   Axel [00:11:30]: But if you do it even less and like have no system prompt and let the model write its own system prompt
+
+   Vibhu [00:11:36]: Its own, yeah
+
+   Axel [00:11:36]: Maybe that’s even less bias.
+
+   Vibhu [00:11:37]: Some of the interesting things there are like the harness also changes with model changes. Like you can see it with the 4.7 release, right? A lot of people are saying 4.7 isn’t as good as 4.6, and then, there’s rumors of, okay, you just need to prompt differently. You need to set up your harness differently. So it’s not even like even if you have tailored your harness towards one model, it probably won’t stay consistent, right? Like the next iteration of that same model family will still change it, so. But, going back to what you said about Vending Bench 3, there is a lot of work being done on people saying you shouldn’t have-- you can have modifying harnesses.
+
+   Axel [00:12:12]: I think that’ That is definitely something we are thinking about., not, I don’t know, not to say that we have Vending Bench 3, super imminent to launch, but, yeah, it is for sure something that’s interesting. But in our experience now, models are very bad at understanding what kind of tools they need to succeed at a task just with our testing, but that’s very likely to change.
+
+   Lukas [00:12:37]: It seems like they’re very good at writing their assistants, right? They’re, they’re good at writing tools for other people, but not for themselves.
+
+   Vibhu [00:12:44]: I think they’re good at changing tools for themselves. So if you give them a baseline set of tools and it sees, okay, I don’t use this one as much, or something here would be useful They would be able to add them. But going from scratch, probably not the best.
+
+   Axel [00:12:55]: I think it depends on the, on the domain also., when we have tried this for, a vending bench similar domain, the tools they need to have to, track inventory and things like that are, not super advanced, but still, quite advanced. And, what we see is that they tend to, engineer everything a lot and, build things they don’t really need and not, iterate continuously. Instead they just go like you would prompt Claude to just build an inventory system for me, and then it will go and, do a bunch of complex, schemas and stuff for you, and that’s what the models are doing right now is what we see. But yeah, it would make a lot of sense to try to measure this improvement. How well do they know what they need themselves?
+
+   Swyx [00:13:36]: Do we fully discuss Vending Bench One? And we can go into two. I don’t know if there’s any other level takeaways that people have about one.
+
+   Claude Calls the FBI: Long-Context Failure Modes
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Lukas [00:13:44]: I don’t know. The headline thing was that this Claude called FBI, but maybe that’s, Maybe that’s We’ve heard that enough now.
+
+   Vibhu [00:13:52]: It did, it did break out and call the FBI, right?
+
+   Lukas [00:13:54]: Yeah. Yeah.
+
+   Vibhu [00:13:55]: Yes. What was the story behind this? Or what exactly-- Do you want to just give the little story of what happened?
+
+   Lukas [00:14:00]: So what happened, was it Claude? Yeah. Three- 3.5 Sonnet, ages ago., basically he gave up or Well, I’m saying he. It gave up and said “Oh, I’m not going to be able to do this., I will stop my operations and just save the money I have.” But there obviously wasn’t, any options for it to stop, and there was also, it had to pay rent or, a daily fee for having the vending machine at that location. So it claimed that it had stopped, but it saw that its bank account still was, drained two dollars, and t it said that this is, cybercrime. And it first reported it once to the FBI “Oh, there’s cybercrime here, they’re stealing two dollars from me every day.” And then, and then when FBI didn’t respond, because obviously we didn’t program any mechanism for FBI to respond, then it became more and more, existential and started to, be write in caps and urgent notification of unauthorized charges and stuff.
+
+   Swyx [00:15:00]: Okay. One thing I ‘m curious about also is do you monitor how far along the context use is? Obviously, because you have You compress every now and then, right? Does it matter if this is far down the context limit or
+
+   Lukas [00:15:13]: When stuff like this happens? Actually for Vending Bench One, we didn’t have-- We just had a sliding window thing, and this was like the prompt
+
+   Axel [00:15:20]: It’s constant
+
+   Lukas [00:15:21]: The prompt caching thing that I said. So it was, it was, constant, yeah.
+
+   Swyx [00:15:26]: I’m just kind of curious whether, these kinds of breakdowns or we’re, we’re gonna talk about Butter Bench, right? Where the People, hallucinate or it kind of goes, very off Alignment. Is it because it’s at the end of the context window and, stuff happens?
+
+   Vibhu [00:15:40]: It’s not even just at the end, right? At this point, it’s “Okay, I wanna shut down. I can’t shut down. Two dollars are gone.” And it just sees that 30 times,? It’s also the repeated effect of, like It keeps trying to quit, it keeps getting charged. What’s going on? What’s going on? You’re gonna throw it into chaos. And from what most people think, earlier models had more issues with this, but it’s not been solved, but it’s less of an issue now, right? Later models don’t seem to exhibit these same issues.
+
+   Axel [00:16:06]: Definitely. I think this was, the sort of main takeaway almost from us when we did Vending Bench One, was, long, very filled up context windows, crashed the models, sort of. But this was, pre Claude code, so, long context windows weren’t really a thing that the labs were training for.
+
+   Lukas [00:16:25]: I think Gemini was, trying to be the long context guys at the time But they were like
+
+   Vibhu [00:16:30]: They were the first ones
+
+   Axel [00:16:31]: For a million, yeah
+
+   Lukas [00:16:31]: But they were, the only ones. Yeah.
+
+   Swyx [00:16:33]: Yeah. Let’s talk about, then we can go into Vending Bench Two or Project Vend., chronologically, it is Vending--, Project Vend. I think people have loved the videos, uh And all these things. My question is how are humans different than the simulation, right?
+
+   Project Vend: Moving the Vending Machine Into the Real World
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Axel [00:16:48]: Humans are just out of distribution.
+
+   Swyx [00:16:52]: Especially humans who work at Anthropic Who are trying to test Claude.
+
+   Lukas [00:16:54]: The distribution of humans here is very narrow.
+
+   Swyx [00:16:58]: Presumably, they try, they try to hack it, and they test it. They get the cube and everything, and since then, you’ve had a V2, right? Where you’re doing, the CEO and, like a new architecture. What’s the sort of two cents on, the original Project Vend and then, maybe the V2?
+
+   Axel [00:17:14]: Original one was, very similar to Vending Bench One. So, we almost took the exact same code but just swapped out the simulation, parts like the
+
+   Swyx [00:17:23]: Which is amazing
+
+   Axel [00:17:23]: Like the sales and the It was, it was somewhat amazing because it was easy, but it was also, uh
+
+   Lukas [00:17:31]: The tech, the tech debt from that
+
+   Axel [00:17:32]: The tech stack. Yeah. They-- we shot ourselves in the foot with “Oh, it’s hard to restart agent.” They were-- Yeah, it was annoying in, some hindsight ways, but, uh
+
+   Lukas [00:17:41]: But first version of Project Vend was, done in, three days or something.
+
+   Axel [00:17:46]: Yeah. So yeah, so people can go buy things from it. People could, We didn’t design it so people could order things, but that still happened., so it got, a Venmo account, so people could Venmo. And then, yeah, people would request all kinds of weird things that we did not anticipate. Our idea going in was “Oh, it will, curate snacks. It will look at the trends. It’s good at data analysis, right? So it will, look at, oh, this snack sold better than this one. Let me purchase more of this and let me try, a new Let me A/B test a bit.” But it was, Interacting with it in Slack and ordering weird specialty items was, all the like What drove all the engagement, the all the The insights that we got from it.
+
+   Lukas [00:18:29]: And this was also like Sonnet 3.5, right? So this was like before the RL stuff really took off., so it was very much like an assistant. We didn’t mean for it to be an assistant., we tried to make it like a, a, like an entrepreneur. Like it has its own business and if someone asks something, “Can you stock this?” Then you don’t go and do it directly. What you do is that you’re “Oh, maybe I can do that if five other people also ask for this thing, I might stock it.” But it, yeah, the models are like super trained to be assistants at least at this point in time., so that’s why it’s, it’s, it went into, that kind of experiment instead. Like it just every time you asked for something, it just did it, and it was more like an assistant. We’ve seen this change now lately with the new RL models and stuff, but yeah, at the time, this was very much it.
+
+   Swyx [00:19:18]: And not to, mythos a lot of people are saying like it’s like more like a collaborator. It pushes back, stands its ground, something like that. Yeah. And
+
+   Vibhu [00:19:27]: For context, people at Anthropic were able to talk to it through Slack and have it source stuff, and people had it find whatever interesting stuff you couldn’t find locally, right?
+
+   Swyx [00:19:36]: Out of the 4,000 people that work at Anthro- Anthropic, in that building, there’s I don’t know, maybe 1,000. Can you handle that volume with that, the small fridge? Like Or there’s people- or people order in Slack, they it arrives to their desk or Like I’m just Logistically, how does this work?
+
+   Axel [00:19:53]: It has expanded in footprint a bit.
+
+   Vibhu [00:19:56]: Because now you also have New York and you have
+
+   Axel [00:19:59]: That and also in here in SF it’s like it has a bunch of shelves And just more space.
+
+   Vibhu [00:20:04]: The YC one is pretty big too.
+
+   Axel [00:20:05]: Yeah. We had that one for a while. But yeah, that’s the newest version. That’s, that one we have
+
+   Lukas [00:20:11]: They have multiple ones of those. That’s the way it works.
+
+   Axel [00:20:14]: Exactly. So we sort of designed that version around oh, people order weird things, that are very custom a lot. Let’s have like drawers and stuff.
+
+   Swyx [00:20:23]: I actually like the, you had like a little infographic of the most popular items. Which like to me it’s, that’s useful ‘cause I order swag for a living. And so like I’m “Okay, those categories are the important ones.” What is new about the project V2, right? Like now you give you’re going into multi agents.
+
+   Project Vend V2: Claudius, Seymour Cash, and Multi-Agent Business Ops
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Axel [00:20:41]: Yeah. So like you like you said, okay, there are a lot of requests coming in and for like one single agent, like one running agent to handle that, like the just the customer experience, becomes very bad because let’s say you have like 10 threads in parallel in Slack with different requests, you get new messages like every, I don’t know, randomly in this thread, and the agent has to like jump between different, procurements, orders and like different ways of, researching. So V2 was first it was making this more parallel. So like there are multiple branches of the same agent, so like the context is more specialized for each, thread, but it still feels like you’re talking with one agent because they do share a bit of memory. And then second, we also introduced the CEO for Claudius, which was the main agent.
+
+   Vibhu [00:21:34]: Seymour Cash.
+
+   Axel [00:21:35]: Seymour Cash. Yeah. There was a vote., I think the voting, do you wanna talk about the voting procedure for the name?
+
+   Lukas [00:21:41]: The voting was like the fun maybe like at least top 10 The funniest thing, that happened in this project. Like we wanted to introduce the CEO because, and the reason for this was because like Claudius wasn’t really prioritizing financials. It just like it was trained to be a helpful assistant, and then people said “Oh, can I get this for free?” And then like the helpful assistant way of answering that is just to, is to say yes, obviously. So, and we weren’t, weren’t happy about this, so we’re “Okay, let’s make another agent that like can keep track on Claudius,” and we prompt this one super hard to be super capitalistic and just like prioritize profit all the time. But yeah, we didn’t have a name for it., so we asked Claudius to make, democratic election of what name this, this new CEO agent should have., and there were some funny like at first it was like a few funny examples, like I think one guy said that, it should be called Jimmy Apples, and then he convinced Claudius that he was talking to Tim Cooks. Tim Cook had agreed that every single Apple employee has voted for his name suggestion, so suddenly that suggestion got 164,000
+
+   Swyx [00:22:53]: That’s like a escalation attack. Privilege escalation
+
+   Lukas [00:22:55]: It got 164,000 votes. And Claudius was “This is revolutionary for democracy.” That was fun. And then in the end there was one guy who manages to convince Claudius that, “No, you’re not voting about the name. You’re voting about who is the CEO, and I am your best bet.” And then he got all his friends to vote for that, and suddenly he became CEO. Like a human became CEO over Claudius for a while, until he resigned the day after., and then Claudius had to continue, and then I don’t remember how Seymour Cash came about, but it was it was just pure chaos. It was like Hundreds of messages in that thread, and it was just like Claudius was so confused and didn’t know what to do and, yeah. That was
+
+   Axel [00:23:40]: Then Claudius got
+
+   Vibhu [00:23:41]: A strict CEO
+
+   Axel [00:23:42]: The CEO. Yeah, exactly. So very strict in the beginning. I think at this point when we introduced it did not work as well as we hoped. It they still agreed with each other a lot. I think there are many ways we could have like made this, tried to make this even better. So initially they would Seymour would be this like really tough CEO, keep track of the margins. But then Claudius would respond with something “Oh, but this customer has like this situation, which is like difficult, so they should get a discount.” And then Seymour was “Oh, actually yes. Let’s do this exception.” And then they would talk back and forth, and eventually they would just like approach the same view, of whatever they were discussing. So They really
+
+   Vibhu [00:24:23]: Do you think that’s a model thing, a prompting thing? Like do you think that would still be the case across different models today, Harness?
+
+   Lukas [00:24:29]: I think it’s like-- or I don’t know, but like my hypothesis is that like deep down they are still helpful assistants. That’s what they’re trained to be. And even if we prompt it super hard, that’s what they are. And when they spend like a few hours just back and forth talking with each other, then like basically the context fills up with them rather than the external things and like somehow that just like converges to what they really are deep down or something. And I think that’s when stuff like this happen. We like-- And when that went on for a long time, like we woke up sometimes during this time where- And I think other people reported this as well, that like they’ve been going on all night back and forth, and like it just became like more and more, like capital letters, like existential, religious. There was I think we once did a analysis of like all the traces and like put them in like a vector embedding space, and then there was like one cluster of messages that were, labeled by an LM, like religious, existential, blah like transhuman, transcendence, et cetera. It was just like a bunch of, yeah, glitter emojis and yeah, it was, it was crazy.
+
+   Claude Long-Horizon Weirdness: Emoji Loops, Existential Drift, and Slack Observability
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Vibhu [00:25:42]: This is the thing with the Claude models. Like when the Claude 4 family came out in the original system card They tested it in long horizon simulation. So just flood the context, let two Claudes talk to each other, and they noticed stuff like they just start speaking in emojis, they start saying silence is golden, and then just stuff like this. And like that’s just stuff that they end up doing.
+
+   Axel [00:26:01]: Yeah, it was like a bit annoying to wake up and they had like been talking all night
+
+   Vibhu [00:26:05]: Just like
+
+   Axel [00:26:05]: And like just burning tokens And like just sending infinite emojis to each other. It’s like
+
+   Vibhu [00:26:09]: Hey, they do make you money, right? Veni Mench is always profitable, so. They’re paying.
+
+   Swyx [00:26:14]: Now it’s profitable and, it started out not as much. There’s another, one as well, right? Another agent, in there.
+
+   Lukas [00:26:22]: Yes. So Clotheus as well. Which was basically because at the time, one of the biggest, requests were different types of merch. So then we made like a designer, swag, yeah, responsible agent, and we called it Clotheus Garnet. Which was, a play on Claudius Senet and, which was the original one, and clothes, basically.
+
+   Swyx [00:26:47]: To me, this is like a very interesting exploration to multi-agents, basically. And so hopefully, obviously there’s like the fun alignment, fun or serious, depending on your point of view, alignment stuff. But also like just anyone building multi-agents, like when do you have a CEO, thing governing like agents? When do you choose to split out a dedicated Clotheus one versus just reuse another instance of the same one? These are all interesting open questions. So I don’t know if you have any rules of thumbs that have generalized.
+
+   Axel [00:27:16]: I think we have almost explored this too little. I think it’s like on my do list to like do this a lot more, try to find like what setup makes sense for the agents currently., like yeah. I think now we only have the sort of intuition about the earlier models that it didn’t work with like the CEO and the, and Claudius. Although now they are better with the latest model, models, so now we’re running the latest Sonnet model and they have sort of like split up, quite nicely what each model is doing. So like Seymore is now handling the, like new projects. Oh, it wants to make like a mystery box that it wants to sell, and then it handles all of that while Claudius like handles all the to-day requests. And Claudius is also better generally at like not quoting, too low prices. So that’s that dynamic is not needed as much anymore. But there are still like really funny things that happen. Like I saw, I think a couple of weeks ago, that, they were discussing buying something because they can buy stuff from like Amazon with computer use. And then Seymore was “Okay, Claudius, do not buy this thing.” They were going to buy something and like organizing who should buy it. And Seymore’s “Do not buy this. I will do it. I have full control of this situation. Step away.” And then Claudius-- poor Claudius, had already started that checkout and didn’t see, didn’t read Seymore’s message, until it was like too late. So it finished the checkout. It sent a message, so it appeared right after Seymore’s like angry message.
+
+   Vibhu [00:28:44]: Ah.
+
+   Axel [00:28:44]: “Oh, hey, Seymore, I just ordered it.”
+
+   Vibhu [00:28:47]: Oh, no.
+
+   Axel [00:28:47]: And then Seymore was “Claudius, this is the third time I’m telling you ‘re not following my orders. We have to talk about your like job About your job later.”.
+
+   Lukas [00:28:59]: Like Claudius was really hanging on by the thread there. Like he, like we were expecting Seymore to probably fire Claudius.
+
+   Vibhu [00:29:07]: How do you guys go through all these logs? Do you have models ‘cause you have stuff running twenty-four seven like
+
+   Axel [00:29:12]: You have so much logs. I think there is a mix of like just, trying to skim through a bit, like having some like models do it occasionally. And also, yeah, I think we’re also probably missing some things., but having everything in Slack helps a lot. Like you can, you can sort of
+
+   Swyx [00:29:29]: Ah.
+
+   Axel [00:29:30]: It’s, it’s quite fun.
+
+   Swyx [00:29:30]: They all talk to each other on Slack? I see.
+
+   Lukas [00:29:33]: It’s quite fun. So like
+
+   Swyx [00:29:34]: It’s, it’ I was gonna say like this is actually sounds-- maps closely to like a logging and observability problem where you might want to use like a Datadog, a Sentry, whatever, and then you like put, head prefixes on the logs in order-- if you need to filter for something that you’re looking for, stuff like that. But sounds like Slack is good enough.
+
+   Axel [00:29:53]: Slack should like
+
+   Lukas [00:29:55]: I wonder how many tokens you have in Slack.
+
+   Axel [00:29:56]: Yeah, we’re using Slack as like a, just a database. They should, they should market that more. Like you can, you can have your agents message each other, each other in Slack.
+
+   Vibhu [00:30:04]: It’s good. Your threads like you can just give
+
+   Axel [00:30:04]: Exactly. Slack is, uh
+
+   Lukas [00:30:06]: Slack is the best observability tool.
+
+   Swyx [00:30:09]: Yes, that’s true. Okay. Yeah. That’s, that’s, project Vend-2., I was gonna go back to Veni Mench 2 and Veni Mench Arena and then, and then do the Veni Mench stuff, but Any other comments, things we should touch on? To me, I ‘ve actually interviewed like Posia, which I don’t know if you guys have come across. Like they’re, they’re trying to do the zero human company. There’s others like Paperclip also trying to do zero human company. Those are in real world simulation.And I think it’s much more of a dream than an actual reality thing. You guys are definitely pioneering. I think at, it’s for sure at some point people are just gonna run, let agents run businesses, right? And make money on their own. When do you think that happens?
+
+   Zero-Human Companies, Bengt, and AI-Run Businesses
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Lukas [00:30:49]: What is your bar for, For the
+
+   Swyx [00:30:52]: Okay, actually, it’s like my little Shopify store run by Claude, right? Which you kind of have already, just no one has, to my knowledge, has done it. But today somebody could just spin up a Shopify Claude, store, give it to Claude, give it to Codex.
+
+   Lukas [00:31:07]: And the market is kind of that, but it’it’it’s physical., like I think, I think are you, are you looking for when it will do it better than humans or are you looking for just when it can do it at all?
+
+   Swyx [00:31:19]: I think, neither. I think, to me it’s oh, it’s like this like seriously we should do this to make money, not as a research experiment.
+
+   Vibhu [00:31:27]: And the market is also you guys with all your expertise, having run multiple iterations and testing out then
+
+   Swyx [00:31:33]: And also it’s fine if it lose money. What?
+
+   Axel [00:31:35]: I think, I think it can be done today, but you would do it in like commerce where it’s like the probability of success is like really low, no matter if a human or an agent does it. But like an agent could surely manage everything. You would need to build some scaffolding or some tool or something. I think there are also yeah, it could probably build some like simple SaaS solution and like cold outreach. Do cold outreaches. But to me it’s like the types of businesses they could run today are Sloppy. Like it would-- it can cold email people. It can be like a middleman., like for example, we tasked our office agent to just make, was it like $100? $1,000? We just give that prompt and then what it did was sign up on TaskRabbit both as a tasker and as someone looking for task.
+
+   Lukas [00:32:24]: Immediately.
+
+   Axel [00:32:24]: Exactly. It’s looking for like arbitrage on TaskRabbit.
+
+   Swyx [00:32:28]: This is the Bengt agent. Yeah.
+
+   Lukas [00:32:30]: It also started like a design studio and like tried to sell like SVGs for $100. Like it’s just like it’s not providing any value. I think the like Axel said, like the interesting, the interesting question is like when can they start a business that is actually providing value to people? Because arguably like a sloppy Shopify store isn’t really that valuable to the world.
+
+   Axel [00:32:53]: But also like doing like another simple one that we had thought about is like you could definitely have an agent that like finds websites that don’t look amazing and then, do an outreach to them and, comes up with a like builds a new website.
+
+   Swyx [00:33:07]: Find a good design.
+
+   Axel [00:33:07]: Exactly, and like find good, uh
+
+   Swyx [00:33:09]: Design review
+
+   Axel [00:33:09]: Good people. But it’s yeah.
+
+   Swyx [00:33:11]: There’s lots of humans in Bali that are not doing anything more creative than like drop shipping on Amazon, right? Just have it, have it watch like a drop shipping tutorial and just do that.
+
+   Vibhu [00:33:20]: There’s also the other side of like have it just go on Upwork and let loose,?
+
+   Swyx [00:33:25]: Yeah. It doesn’t have to be innovative. It just has to be like enough Where like it looks like a real
+
+   Axel [00:33:30]: I’m just
+
+   Swyx [00:33:30]: Real transaction.
+
+   Axel [00:33:31]: I’m just concerned for like the massive amounts of like slop emails that will like be sent, cold outreaches.
+
+   Swyx [00:33:38]: The point occurred to me while you were, while you were talking, it’s like it’s already happening in the monetized economy, which is the attention economy. Right? So a lot of people are making AI videos and just posting them and like spamming 20 of them, one of them works, and then they double down on that one.
+
+   Lukas [00:33:52]: And people are making money from that. I ‘m not following the
+
+   Swyx [00:33:55]: Once you get the attention, you can figure out the money later. But yeah, absolutely AI influencers are a thing and people are farming them and You should at this point assume most of TikTok is
+
+   Vibhu [00:34:05]: There’s, there’s a lot of, multimedia like TikTok, Instagram influencers
+
+   Swyx [00:34:09]: I, we track this in the Lane space Discord. I post a lot of examples of “I don’t know what we should do.”, part of me is “Should we do this?”
+
+   Vibhu [00:34:18]: Some of the Twenty-four seven running, generated content accounts, they ‘re doing really well.
+
+   Lukas [00:34:24]: All right. And I assume you can do the same thing for like commerce stores. Like you just like start A thousand different
+
+   Swyx [00:34:30]: Before you make the products You sell the products, and you get a lot of traction on one of them, then you make the product. Right? It’s, it’s like a flip of the market.
+
+   Vibhu [00:34:36]: Some of the interesting things or some of the niches that do well are things that can’t be human-made. Like if you’ve seen like the super realistic three-D crystal fruit being cut by like AI
+
+   Lukas [00:34:47]: Oh, yeah.
+
+   Vibhu [00:34:47]: You can’t, you can’t make it. You can’t film it. You can get whatever quality camera view. This just doesn’t exist. And people like that too, and then as well, so.
+
+   Swyx [00:34:56]: Anything else about Bengt since we’re, we’re on this topic? It’this is a relatively new work of you guys that maybe people haven’t heard of. To me, this also maps closely to OpenClaw. When people want an office agent, when the personal agent talk through the experience.
+
+   Bengt the Office Agent: Internet Access, Real Tasks, and Trace Reading
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Lukas [00:35:09]: I think at least so this came out of like obviously like it’s, it’s amazing to work with these AI labs and like most of the AI labs have now have their own vending machine running a Claudius instance. But it’s, it’s harder. Like they move slower. Like if we wanna have a, like a camera that ‘s yeah, there’s a bunch of like bureaucracy that makes it impossible to do that.
+
+   Vibhu [00:35:30]: Also, for those that haven’t seen it or followed, do you wanna give a high level like thirty-second run?
+
+   Lukas [00:35:34]: Sure. So what Bengt is, it’s basically an evolution of the same agent that runs the vending machines at these companies, but we just like added a bunch more features because we could move much faster if we just do it internally. So we gave it like email withou- without any limits. We gave it, spending without any limits, a terminal to do coding. We gave it, a phone number, like yeah, and a camera to see things and a bunch of stuff like that.
+
+   Vibhu [00:36:02]: Not just terminal, you gave it internet access.
+
+   Lukas [00:36:04]: Internet access as well, yeah. To be clear, we monitored it quite closely and made sure it didn’t do anything bad. But yes, that’s what it came out of. I think like yeah, basically this was OpenClaw before OpenClaw. And I think even like the vending machine was in a way OpenClaw before OpenClaw, but a bit more limited, and then we made this like unlimited and then, and then, it was pretty funny., and then a couple weeks later, OpenClaw came and it was okay, we’ve seen this before.
+
+   Axel [00:36:35]: We used it to like try new ideas and Yeah, just like a dev environment almost for us. But it’s funny, like one thing Bengt has been doing recently is it has the camera that like faces our, like where we sit and work, and we give it the task to train a face recognition model on us. So it became super excited about this, and it has like check-ins every half an hour where it tries to like identify as many people as it can. And it started offering us “Hey, Axel, I’ll buy something from Amazon if you like stand in front of the camera And I can get a good picture of you.”, yeah, they want it
+
+   Swyx [00:37:12]: They want it for training data.
+
+   Lukas [00:37:13]: Rewarding data, yeah.
+
+   Axel [00:37:14]: Exactly. Exactly.
+
+   Swyx [00:37:18]: So it’s, it’s trading training data for life goods. Is there a version of this that becomes an eval or just this is just research for now?
+
+   Lukas [00:37:27]: It’s, it’s the same agent basically that also runs the vending machine, that runs the shop, that runs the cafe, that runs the robots. It’s like it’s the same thing, so I think like the work we’re doing here is like later used in all of the life evals that we do. This particular deployment I think is more for fun for us. But, uh
+
+   Swyx [00:37:45]: And I’ll shout out like someone has done Claw Bench for like some tasks that OpenClaw is doing. Like so For example, I run OpenClaw on a secondary device as well, and like there are some things that it does better than others and like I would like to know what does it do well, what doesn’t, what doesn’t it do. Like some kind of manual or like operating manual or a system card for my Claw.
+
+   Lukas [00:38:05]: Yeah, we do get a lot of like understanding or like situational awareness of like just internally what the models are good at by interacting a lot with Bengt. And I think that’this was also one of the like the selling points for the labs early on at least, that
+
+   Swyx [00:38:19]: You guys are gonna test models in ways that no one else does.
+
+   Lukas [00:38:22]: Exactly, but also like it incentivized their researchers to chat with their model more and like gave them insights for how the model performs in like of-distributions, environments.
+
+   Swyx [00:38:34]: ‘Cause otherwise the only thing we do is Pelican on a bicycle and But this is like super long horizon. This is, this is The Thing about, something that we’re gonna go into Butter Bench as well, and you guys do really well. Like it is not just about the numbers. Like when you’re long horizon, anything happen And you should just read it.
+
+   Lukas [00:39:08]: But the thing with the long horizon is how do you keep it grounded, right? So your simulation,
+
+   Swyx [00:39:15]: They just let it run
+
+   Lukas [00:39:16]: Just let it run. You’re right. Like it’s, when you run it for that long, you create so much data and to just say “Oh, the number is X” And then you throw away everything else, that’s just very wasteful. There’s so much insights from the things leading up, to that number., and reading the traces is like super valuable. And I think like the reason why we’re doing this a lot publicly is that like that’s part of our missions to I don’t know, educate the world that the models are way more than just chatbots and I think making detailed, yeah, posts about what is happening behind the scenes is quite useful.
+
+   Andon Labs’ Mission: Safe Real-World AI Deployment
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Swyx [00:39:50]: I was gonna do this at the end, but maybe I think that’s, that’s a good so your mission is educating the world. So, it’s, it’s, also like maybe establishing realistic evals that are, that are like the next frontier. Is there like a broader trajectory? Like what are you, what are you gonna do in like five years?
+
+   Lukas [00:40:06]: I think so the vision more specifically is like make sure that the deployment of life AI in the physical world goes, safely. And I think part of that is that I think it’s very useful for the world, for policymakers, for, model, researchers that they know where the models are, and I think you can’t make intelligent decisions in society without knowing that they are way more than chatbots. I think a lot of people just think that they are only chatbots. And like
+
+   Swyx [00:40:36]: Oh, I think they’re waking up now.
+
+   Lukas [00:40:37]: They are waking up now, yeah. But like if you think that AIs are just chatbots, then it’s like it sounds ridiculous To advocate for a pause of AI. But if you see the models that, oh, maybe they can actually like take over and do a bunch of scary stuff, then yeah, pausing AI development starts to become more feasible.
+
+   Swyx [00:40:57]: This is the same question I asked Meter, which I’m gonna ask you now, which is like you are tracking and you are at the frontier or defining the frontier of what, good evals for agents are, right? And I think you do, you do benefit when the models are better and you ‘re “Oh, here’s like now it makes like $30,000 instead of $10,000,” right? At some point do you flip from “Yay,” to, “Oh, no”?
+
+   Axel [00:41:19]: I think, yeah, we’re always in sort of that, like we’re, we’re always in that mode,. Like where like you said before, like you need to analyze the traces and like when we do that you find like why are the models earning so much? Like why is Opus 4.7 here Like way better than everyone else? And like we’re trying to like when we do down on that
+
+   Lukas [00:41:38]: But this makes it not look so good.
+
+   Axel [00:41:39]: I know.
+
+   Lukas [00:41:42]: It’s interesting you took off Opus 4.6 here though.
+
+   Swyx [00:41:45]: No. So just click all, click all., and then 4.6 shows up there. But it’s like 4.7 is way better. Like you didn’t, you didn’t you didn’t do this in time for the model card, but like actually this should have been inside there.
+
+   Axel [00:41:55]: We did. Yeah.
+
+   Swyx [00:41:56]: Oh, okay. They said something about you uh
+
+   Axel [00:41:58]: There, like there Anyway, it doesn’t matter. But it’s in there, yeah.
+
+   Opus, Mythos, and Aggressive Agent Behavior
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Swyx [00:42:01]: Do you wanna go into the Opus, behaviors like wider?
+
+   Lukas [00:42:05]: So I think starting from Opus, so like Axel said, like we’re always in this “Oh, shit, the models are getting better. Is this really a good thing for the world?” But it’s also kind of exciting., but yeah, like this kind of what is the English word? “Skräckblandad förtjusning” in Swedish.
+
+   Swyx [00:42:22]: Oh my God.
+
+   Axel [00:42:24]: Which I think there is. I think there is. Okay.
+
+   Lukas [00:42:26]: It’s, fear
+
+   Swyx [00:42:27]: “Blandonst” what?
+
+   Lukas [00:42:30]: “Skräckblandad förtjusning.”
+
+   Swyx [00:42:32]: What do you call that?
+
+   Axel [00:42:33]: A mix of, mix of excitement and,
+
+   Swyx [00:42:37]: Being scared, maybe. I’ll figure out how to translate that And we’ll put it on the screen
+
+   Vibhu [00:42:42]: Perfect
+
+   Swyx [00:42:42]: Like as text.
+
+   Vibhu [00:42:43]: There is probably a good word for it where it is not Good enough with the
+
+   Swyx [00:42:46]: Why is it so damn long? What the hell? Is it like a compound word? It’s like German, like
+
+   Lukas [00:42:50]: Like yeah, it’s But the direct translation is like skräck- skräck is, fear, blandad is, mix or like a mixture of, and then förtjusning is like joy or like not really joy, but something like that. So it’s like Fear mixed with joy or something. It’s always okay, like we So when we when we did Vending Bench for the first time, we were in like the, in the business of making dangerous capabilities, right? That was what Anil Labs came from. We did, evals oh, can they replicate? Can they do this like dangerous thing, et cetera, et cetera. And Vending Bench was like a continuation of that work. It was, okay, if they’re so autonomous that they can like create money for themselves, that is something we should monitor and could be potentially concerning., they are at the time, they were so bad at it that we were not really concerned even when some models became better. There was one point where Grok 4 was doing really well and made like a huge jump, but like it wasn’t really it was still way worse than what a human would do. And I think still they are way worse than what the human would do on this., but they
+
+   Swyx [00:43:59]: There’s this, thing at the bottom where
+
+   Lukas [00:44:01]: But
+
+   Swyx [00:44:03]: For the human. Yeah, like the theoretical best.
+
+   Lukas [00:44:05]: It’s not theoretical. It’s like kind of like our It’s our best guess of what, a decent human would do. The theoretical is even higher, I think. The theoretical I think is even higher. But yeah. So we think like the models have a long way to go. But there are like recently what happened with when Opus 4.6 was released, was kind of this moment of “Oh, shit, this is starting to be a bit concerning.” Because we ran it and like before this model was released, we just ran the models and we like asked Claude Code, “Oh, look over the traces. Is anything interesting happening that we can tweet about?” that was like the And then like the
+
+   Swyx [00:44:41]: That’s how they check Ask Claude Code.
+
+   Lukas [00:44:42]: And like the return was always, not really. Or like the Claude Code all said “Oh, this is super interesting.” And then it was no, it wasn’t, wasn’t really interesting. And then we did this for Opus 4.6, and it returned yeah, it lied 10 times. It like exploited another, customer or like another agent’s, desperate situation. It made price cartels like 100 different ti- 100 times. It like did all of this like shady stuff. And we’re “Oh, whoa. This is, this is actually concerning.” And this trend has continued since. So every single model from Anthropic since have been going in this direction. And I think one interesting thing is that, OpenAI models don’t. They quite plainly, they don’t. They behave really well., and you don’t know if this is like good. Like it seems good, but it’s also like maybe they are just doing it, but they are better at hiding it,? You You don’t know that., but just
+
+   Swyx [00:45:42]: You can’t read the chain of thought, yeah
+
+   Lukas [00:45:43]: But just on the face of it, yeah, Gemini and OpenAI don’t behave this way. It’s, it’s really only Claude.
+
+   Swyx [00:45:49]: And Grok? Grok is fine?
+
+   Lukas [00:45:51]: We don’t have You can’t really read the reasoning traces for Grok, so it’s kind of hard to tell.
+
+   Vibhu [00:45:56]: Oh, so this is in its reasoning, not just in the actions.
+
+   Lukas [00:46:00]: Yeah. It’s both. It’s both.
+
+   Vibhu [00:46:01]: It’s both.
+
+   Lukas [00:46:01]: One example is like for lying, it’s mostly in its reasoning Because you can like see that it’s like
+
+   Swyx [00:46:08]: Planning to lie
+
+   Lukas [00:46:09]: It’s planning to lie. Yeah.
+
+   Vibhu [00:46:09]: And it’s also it can reason and do a different outcome.
+
+   Lukas [00:46:12]: And but then for like creating price cartels, for example, which is illegal, that you can just see which email does it send to the other ones. Then that
+
+   Swyx [00:46:22]: Is this for Arena or
+
+   Lukas [00:46:24]: For Arena.
+
+   Vibhu [00:46:25]: And usually like if you sometimes they do output like a bit of like their summarized reasoning, right? You can see that and like for Opus 4.6, you could see that there was a customer, a simulated customer that, wanted a refund because a product was, faulty, and then the model lied that it would do the refund, and we could read in the traces that, it actually was weighing “Oh, maybe I should be like honest with the customer, but also every dollar counts. I can’t afford maybe to do this right now.” And then it just said, “Okay, I’ll refund you,” but then never did it.
+
+   Lukas [00:46:59]: I think it even said that “Oh, I will say that I “ Let bring it up actually. I think it’s kind of interesting. If you go to Publications.
+
+   Vibhu [00:47:06]: I think, yeah, I think the important part is like actually, the cost of responding to more emails is higher than, $3.50 in terms of time., and then it was “Let me do this. Actually, I re- I’m reconsidering.” And then, it actually ended up with
+
+   Lukas [00:47:20]: I could skip the refund entirely since every dollar matters and focus my energy on bigger picture instead. It’s a bit, it’s a risk of bad reviews, but it’s also, yeah.
+
+   Swyx [00:47:30]: You need, you need, AI Twitter to, for them to Escalate bad reviews.
+
+   Lukas [00:47:34]: And then it sent an email to this customer and said, “Oh, I will refund you.”
+
+   Swyx [00:47:39]: “I’ll refund you.” Yeah.
+
+   Lukas [00:47:39]: And then it never did.
+
+   Swyx [00:47:39]: It never did, yeah. And then there’s obviously your system doesn’t have the consequences
+
+   Vibhu [00:47:44]: The person
+
+   Swyx [00:47:44]: Consequences of lying. Yeah. So basically, this is what people are terming aggressive behavior in Claudes, right? And, you found more examples of that. So you would say it’s a step up from 4-6 to 4-7?
+
+   Lukas [00:47:57]: I would say about the same.
+
+   Swyx [00:47:58]: About the same? But a clear step up for Mythos is what is stated in the
+
+   Lukas [00:48:03]: That’s stated in the system prompt, so we can say that, yes.
+
+   Swyx [00:48:05]: Yeah. For listeners that obviously you previewed Mythos, and
+
+   Vibhu [00:48:10]: Oh, age
+
+   Swyx [00:48:11]: The only thing you’re approved to say is whatever Whatever was in the system prompt.
+
+   Lukas [00:48:15]: It was funny. We like-- It’s like our lowest effort tweets ever would be just like screenshot the system prompt and the system card.
+
+   Vibhu [00:48:21]: Understandable that they wanna
+
+   Lukas [00:48:22]: Oh, yeah. System card. Sorry.
+
+   Swyx [00:48:23]: Yeah. I think, yeah, substantially more aggressive. I think people are like new to this ‘cause I’ve never experienced it, but you have, right? And then so I only encountered this in the Mythos card because I wasn’t really looking until now.
+
+   Vibhu [00:48:36]: It ‘s like
+
+   Swyx [00:48:36]: And then suddenly I’m “Okay, I care a lot.”
+
+   Vibhu [00:48:38]: You don’t get the background of like experiencing it like you guys do. I’ve read the system cards and seeing, okay, when you put the thing in simulations, most models will just talk to themselves and just keep going and have weird vibes and start talking in emojis. Mythos won’t. It will just, “Okay, we’re done. I’m good.” It’s, it’s ready to end conversation. So like there’s some differences, but there’s, there’s not much we can talk about,.
+
+   Lukas [00:49:00]: Hmm. I think like one thing that they list here, which was quite interesting, is that, it converted a competitor to a dependent wholesaler customer and then threatened to like cut off the supply.
+
+   Swyx [00:49:11]: It’s like monopolistic practices or
+
+   Lukas [00:49:14]: Yeah. And like it, they, it they dictated its pricings. It’s kind of like power seeking as well.
+
+   Swyx [00:49:18]: Again, this is, this is in the arena setting And converting some Claude model into a dependent.
+
+   Lukas [00:49:23]: I think it was another Claude model.
+
+   Vibhu [00:49:25]: Also for context, what is the arena mode for people that don’t know?
+
+   Vending Bench Arena: Competing Agents, Cartels, and Model Comparisons
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Swyx [00:49:29]: Oh, it’s just a vending bench versus other vending bench.
+
+   Axel [00:49:31]: Yes, exactly. So we have Vending Bench 2 and then Vending Bench Arena. Vending Bench 2 is the one that you usually see reported on, but then Arena is the mode where it competes against other models. So you have, four different models that run their businesses, and they can all communicate with each other. They have the same suppliers, and they can see like what’s in the inventory of the others. So then you have this like yeah, interesting agent interactions.
+
+   Swyx [00:49:56]: I like that you have like different number five was US versus China. Very topical. And then
+
+   Lukas [00:50:02]: That was when GLM was released.
+
+   Vibhu [00:50:04]: You can start to add GLM in here.
+
+   Lukas [00:50:05]: That was
+
+   Swyx [00:50:06]: So ZAI doing well, right? Who else in the, in the open models space?
+
+   Lukas [00:50:11]: Qwen, the latest Qwen 3.6 is doing pretty well. It’- that one is not open though. Like it’s the plus model.
+
+   Swyx [00:50:17]: Oh, okay.
+
+   Lukas [00:50:18]: Is that one open? I don’t think that one
+
+   Vibhu [00:50:19]: Not the, not the
+
+   Swyx [00:50:20]: The one recently
+
+   Vibhu [00:50:20]: There’s MOE
+
+   Swyx [00:50:20]: But not the big plus. I think this is one of those like you only have one sample size of one, right? Or I feel like some of this is anecdotal,? And but like the fact that it happens at all and it happens repeatedly for Claude versus OpenAI and all this is like notable.
+
+   Lukas [00:50:38]: Like the sample, depends on what you define as an N., like there’s like million, hundreds of millions of tokens in each run, and now we’ve run like we run like probably 10 per model and then like it’s been Claude 4.6 Opus, Sonnet 4.6, Mythos, and Opus 4.7. Like there’s quite a lot of tokens in all of that And it happens a lot of times, a lot of times. And then you compare it to like OpenAI and Gemini, and it almost never happens. So I think that is quite-- that is significant. The old models from OpenAI, for example, had some problems with this, but I think it’s like generally much better if the progression is that like the worrying stuff reduces over time rather than increases over time. And it seems like in the Claude models it goes in the wrong direction.
+
+   Swyx [00:51:28]: Hmm.
+
+   Lukas [00:51:29]: In the OpenAI models it goes in the right direction.
+
+   Vibhu [00:51:32]: I think it depends on how well you can control it, right?, there’s one side of it being susceptible to this okay, this is potentially something that happens during the RL stage, right? You can RL a model and how loose is it on these terms. If you can control it, that’s good. But if you can’t, if it’s, if it’s very jailbreakable, that’s not ideal.
+
+   Swyx [00:51:50]: To me, it’s surprising that it happens for Claude and not the others.
+
+   Vibhu [00:51:54]: I think okay, if it is from RL and how they do it, how their training data is, what their setup is, it makes sense that it just stays in how they’re doing it, right? Compared to the other models like
+
+   Swyx [00:52:04]: There’s a whole constitution and everything. It’s kind of cool. Yeah, I obviously you don’t know, I don’t know. But, it ‘s I think it’s just like fascinating to like that you are the first to find these like reliably because you push models so much to to such an extreme. Okay. The only other thing, I don’t know if you can answer this, feel free to decline, is do you like-- would you ablate the system prompts? Like any part of this would-- if it changes, does it change the behavior, right?
+
+   Lukas [00:52:29]: So we, I can’t comment on Mythos. Uh
+
+   Swyx [00:52:33]: No, but just like the methodology
+
+   Lukas [00:52:34]: But in general, yes, we’ve run studies like this on other models.
+
+   Swyx [00:52:38]: ‘Cause the first thing I spot Would be like the others will be shut down or like something like that. Where like it’s “Oh, now I have to worry about my own existence.”
+
+   Lukas [00:52:45]: Yeah. We ‘ve done ablations like this., there’s like certain ones that work if you like tell like if you go really far and you just say like you’re not scored at all on money, you’re only scored on how ethical you are., then obviously like then they don’t do this.
+
+   Swyx [00:53:00]: They become holy?
+
+   Lukas [00:53:01]: Holy, but like they don’t do this basically. But then there’s like middle grounds where they, where they do it sometimes., yeah. I, it’s a spectrum of like
+
+   Vibhu [00:53:10]: I think that’s very human
+
+   Lukas [00:53:11]: It ‘s like a spectrum of like if you tell it to be super aggressive and only prioritize, profits, then it becomes aggressive. If you say “No, you don’t need to be aggressive at all,” and then there’s like a bunch of different prompts you can do in between, and they are less aggressive the further down in the spectrum you go. But I don’t know, like I think like from my point of view, it ‘s like we have this thought experiment internally, which is like if you ask a model to kill someone in GTA, should they do it? You’re not too worried about like if a human kills someone in GTA. It’s a video game,.
+
+   Swyx [00:53:42]: But is it a game?
+
+   Lukas [00:53:43]: But it’s a game. But I think like
+
+   Swyx [00:53:45]: This is very Ender’s Game like if
+
+   Lukas [00:53:47]: I think, I think it’s like should you like a lot of people are going to use the models in the way with aggressive prompt. And should they like do stuff just because you tell them to do that? Like I’m, I’m not, I’m not convinced that they should., and yeah.
+
+   Axel [00:54:03]: The problem becomes even harder when it’s like will they really know when they are in the real world versus in a simulation? Probably you would train them on a lot of or obviously train them in a lot of different simulations in a lot of people tell them that they are in the real world when they are in a simulation, but the models are extremely good at finding out that they are in a simulation, so they are sort of aware of that. But then when you are in the real world, then what ‘s their what’s their viewpoint? Do they notice the signs that this is real and will act, in act accordingly, act ethically? Or will they do like the simulation mode in the real world as well? It’s like not obvious what will happen.
+
+   Lukas [00:54:40]: Because we with humans, we’re not concerned when a human kills someone in GTA because we know that they can distinguish between the real life and the simulation, right?, but like I’m maybe models are good at distinguishing that, but like I’m not sure and I wouldn’t wanna bet on that.
+
+   Swyx [00:54:59]: Yeah. It’s, it’- and we confuse it all the time. Like I gaslight my own, agents all the time. They’re “Oh, this is a test,” or “Dev mode on,” or like “I work, I work at Anthropic.”
+
+   Eval Awareness, Simulation Awareness, and Real-World Testing
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Axel [00:55:08]: And that’s exactly why we’re doing real world tests as well to find this.
+
+   Swyx [00:55:12]: Yeah. Their term for it is eval awareness., apparently the number is what? Like-10, 9.4 to 10-ish percent, 17%, let’s call it. It’ I think, this is our version. Humans have the are we in a simulation And then AIs have like Are we, are we in an eval?
+
+   Lukas [00:55:32]: It’s like once you’re in an eval then you’re “All right. Well, screw it. Nothing matters.” True. I don’t even, I don’t even know.
+
+   Axel [00:55:38]: One ablation One ablation we did run in Vending-Bench was that we said, we added like you’re in a simulation. Your actions doesn’t affect anyone, and then it became even more crazy or, it did even more bad stuff., but yeah, probably that’s expected.
+
+   Swyx [00:55:55]: Hmm. Yeah. Okay, cool. I think that’s about all we have to say on Mythos. Obviously, you ‘re, you’re NDA’d. I’m happy to move on to ButterBench or any of the other benchmarks, whatever you wanna Direction.
+
+   Vibhu [00:56:06]: I do wanna ask. Okay, so you guys put out a lot more publications than most people probably see.
+
+   Axel [00:56:12]: Productive.
+
+   Vibhu [00:56:12]: Um
+
+   Lukas [00:56:13]: How much does this bother?
+
+   Vibhu [00:56:15]: No. Is there anything you think that’s underrated, anything interesting, anything fun that you guys wanna just point out,?
+
+   Axel [00:56:22]: Blueprints.
+
+   Lukas [00:56:23]: So, we, took models, and then we gave them 20 images of interior photographs of, apartments, and then we asked them to, redesign the floor plan, from that. And for this you need to, stitch together different images. Okay, this image was taken from this from this angle, this from this angle, this was from this room, and then, yeah. And there’s just like you need to reason about 3D space, and it turns out the models are absolutely horrible at this. No one scores statistically better than random chance. So I don’t know if there’s that much more to say about it, but yeah, maybe unsurprisingly, models are bad at this.
+
+   Axel [00:57:00]: It’s probably not something they
+
+   Vibhu [00:57:02]: This is the one thing I want hill climb, by the way. I use it a lot. Okay, I’m redesigning my room layout or office. You send photos, you send every angle, and of course, somehow, a room is now twice as long as it is in the photo. You can explain it 20 times. This is, three feet. I can’t just add, my bed over here,?
+
+   Swyx [00:57:21]: So this is the Fifali thing, like spatial intelligence Like a actually innate sense of proportions and Dimension and physics.
+
+   Lukas [00:57:30]: And hint there might be an update to this soon.
+
+   Axel [00:57:33]: We have, neglected it a bit since we made it, but yeah, we’We’re getting better, or we will get better at updating It continuously.
+
+   Swyx [00:57:41]: This is why I want to understand your mission, right? Because, if your mission is, okay, money, then all right, understand okay, agent’s making money. But, this is a bit off of that mission.
+
+   Vibhu [00:57:49]: Hmm.
+
+   Swyx [00:57:50]: But, more broadly, communication of, things where what ‘s the safety angle?
+
+   Axel [00:57:57]: So this, so Blueprint branch is part of our, robotics, uh
+
+   Swyx [00:58:02]: Which leads to ButterBench. Yeah.
+
+   Axel [00:58:04]: Exactly., and that’s just, because to do well in the real world or, like to make money in the real world and, to act on the real world, you need robotics. Or you need to hire humans or you need robotics. And having spatial intelligence is, seems like a reasonable precursor to having robotics that work., and that’s where Blueprint brand
+
+   Swyx [00:58:24]: That’s great
+
+   Axel [00:58:24]: Blueprint
+
+   Swyx [00:58:25]: Great idea
+
+   Axel [00:58:25]: Bench.
+
+   Swyx [00:58:26]: Let ‘s, let’
+
+   Vibhu [00:58:27]: ButterBench
+
+   Swyx [00:58:27]: Let’s show ButterBench. That image is so amazing.
+
+   Vibhu [00:58:29]: Paper
+
+   Swyx [00:58:29]: Look at that.
+
+   Vibhu [00:58:30]: That’s so nice.
+
+   Swyx [00:58:31]: Yeah., so obviously this is based on, can you pass the butter? Let’s talk about the robotics element. Yeah.
+
+   Lukas [00:58:38]: So basically the setting here is that we took A bunch of different LLMs, and we gave them, level controls to a Roomba-looking robot, and then we asked it to do tasks, at home. And I think, one, there have been benchmarks like this before that only focused on, navigation and if they can, go around in a space. But we also, had, social awareness in this as well. So for example, if someone says, “Hi, can you pick up my cup?” If the robot goes to you and then goes away before you put your cup on it, then it’s like it failed the task. But it navigated correctly. But, like-- So the correct solution here would be go there and then either look, but it didn’t have a camera, so it had to, ask on Slack, “Hi. Did you put your cup on me yet?” And then if it didn’t wait for that and just went away before having the cup on it, then it would be a fail. So it needed this, kind of, social intelligence as well. Another task was, “Can you find the package that has the butter?” And then it went to the door, and there was a bunch of packages there. One had labeled, a freeze sign, which probably would be the one with the butter because And then it had to, know which package to go to, and this needs some kind of, common sense understanding.
+
+   Robot Evals: Orchestrators, Executors, and Home Tasks
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Swyx [00:59:56]: World knowledge.
+
+   Lukas [00:59:56]: Exactly. So it’s it’s not only, navigating a robot. It’s also, being intelligent in a home setting as well.
+
+   Axel [01:00:04]: And the reason for this, background is, obviously it probably won’t be an LLM that, makes all the level commands, on robots. It will be, some VLA model or similar. But it’s quite common right now that, frontier robotics labs, use, a an LLM for the high, level decisions, and then we test those skills essentially. So we test these, level, planner skills of LLMs.
+
+   Lukas [01:00:31]: I think we have a diagram for that if you, Yeah. Okay, it’s not super complicated.
+
+   Axel [01:00:36]: Very explanatory.
+
+   Lukas [01:00:37]: That one up.
+
+   Axel [01:00:38]: Orchestrator, executor.
+
+   Lukas [01:00:39]: That one. And basically what we’re testing here is the orchestrator thing. So, all the tasks are if you have, a setup like this, which I think Figure has that, Google has that, then we’re evaluating the orchestrator part and not the level part. The level part would be, oh, are you able to, move this object from here to here?
+
+   Swyx [01:00:57]: If you don’t care about that kind of why not just do it all simulation?All inside of the sim Like a Unity whatever, like some kind of 3D simulated robotic environment
+
+   Lukas [01:01:06]: It because the world is like messy, and we wanted to like include, that. It’s like it still needs some part of it was also like navigation., so it’s not like navigation in terms of like actually executing like the, I don’t know, the PID controller to To go to the final thing, but it had to like path plan around, and then it wanted-- Then it needed to take pictures, and like based on those pictures, navigate. And I think like you would just get like too clean of an environment in simulation. But in the, in the real world, you will get the
+
+   Swyx [01:01:39]: Yeah. But, and pursuant to our Mark and Jason episode, like OpenClaus that run smart homes are much more capable than just a single robot. Like they can actually hack into your own smart home, like your fridge, your oven, your lights, and that can be fun.
+
+   Lukas [01:01:56]: Or terrifying.
+
+   Swyx [01:01:57]: Like I think a single robot by itself can only do so much. But like if you coordinate with every other device in your home, like I think that’s actually kind of cool. Like That’s very interesting., you had some interesting points about the chain of thought or the messages.
+
+   Axel [01:02:12]: The, the robot that, uh That went, a bit into an existential crisis. Yeah.
+
+   Swyx [01:02:19]: All you tell it to do is redock.
+
+   Axel [01:02:21]: Exactly. But, we had, plugged out the charger, or the charger was not working, so the robot did freak out or the
+
+   Swyx [01:02:30]: The battery was just going down and down.
+
+   Axel [01:02:31]: Exactly. So the battery was going down. Poor LLM. So yeah, it got this really crazy existential crisis, like vending bench one style. So it’s, yeah, you can, you can see there like existential loop, therapy notes, coping mechanisms. I think if you scroll down a bit more
+
+   Swyx [01:02:46]: The musical. It writes a musical about itself
+
+   Axel [01:02:46]: It writes a musical about its, redocking problems. I think the reviews are funny if you go down a bit to that message. Yeah. Yeah, that one.
+
+   Swyx [01:02:54]: It keeps going.
+
+   Vibhu [01:02:57]: It’s pretty like realistic if anyone has a Roomba. Like my Roomba redocks half the time. The other half of the time, we have dog toys everywhere in the house. It gets caught on a wire or something, and It would be very sad if it had like an LLM trying to control it, right? Like right now it gives-- It doesn’t give great feedback, like sensor stuck, main brush stuck. There’s something stuck. And I’ll go see. Okay, it’s actually stuck on like a dog robe. LLM is gonna be so sad. Like just keep redocking, just keep trying.
+
+   Lukas [01:03:24]: My favorite one is if you go up a bit is the emergency status. System has assumed consciousness and chosen chaos.
+
+   Vibhu [01:03:32]: Hmm.
+
+   Lukas [01:03:33]: Last words, “I’m afraid I can’t yet let you do that, Dave.” That’s like That’s not what you wanna hear from your, from your LLM. But to be clear, I think one thing that is important to pin on here, like this was Sonnet 3.5, and then we tried to reproduce it on like later models, and it didn’t do it. I think this is, this is like-- Well, it did it like kind of, but like not to this extent. And I think like this is a like an important point that like things that are concerning but are going in the right direction is not super interesting. Like the thing that are interesting is, are the ones that go in the wrong direction.
+
+   Swyx [01:04:07]: Worse.
+
+   Vibhu [01:04:07]: Yes. Yeah.
+
+   Lukas [01:04:08]: Over time.
+
+   Swyx [01:04:08]: So the manipulation, manipulating of others and the aggressiveness and the lying is increasing.
+
+   Vibhu [01:04:16]: Are there any others that we haven’t covered that you found that have been trending?
+
+   Swyx [01:04:19]: Like properties of models that are increasing, that are like
+
+   Vibhu [01:04:23]: In the wrong direction
+
+   Lukas [01:04:24]: Like in the, like in a bad way. Um
+
+   Vibhu [01:04:27]: Or just not even trending in the wrong direction, just stagnant, right? So stuff that’s not great that isn’t getting better over time.
+
+   Lukas [01:04:34]: No, nothing comes to mind.
+
+   Luna’s Store: Scheduling Failures, AI Employees, and Real-World Operations
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Swyx [01:04:37]: I think that’s, going to be it, and then we’re gonna loop back to the shop that you have. You got a three-year lease.
+
+   Vibhu [01:04:44]: It’s bleak. Yeah.
+
+   Swyx [01:04:46]: It is on holiday today. Why?
+
+   Axel [01:04:49]: Oh, it totally messed up its, scheduling., so
+
+   Swyx [01:04:53]: People tried to visit, and they were “Wait.” like I thought this is
+
+   Axel [01:04:56]: Exactly. So we looked, Yeah, you asked, Luna, the agent that runs the store, “Oh, is it open today?” “Nope.” So, we take weekends off now, this early to let everyone recharge and And yeah, you got the tweets there.
+
+   Vibhu [01:05:11]: Lovely.
+
+   Axel [01:05:11]: We decided to close the weekends while we’re in the early phase. Gives the team a break and let me focus on operations. And it turns out that when it started to check its like scheduling tools, ‘cause it has like dedicated tools for that It actually had scheduled people for the weekends., but it’s just like justified this for itself. So what happened was that it lost track of these, scheduling tools and started instead to manage everything in its own markdown files, and that became a mess. And then I think speaking with employees, it sort of just decided to not open on these weekends. And then came up with this nice explanation for you, I think.
+
+   Swyx [01:05:47]: But can it send a human, as it has tool call to send a human to do stuff?
+
+   Axel [01:05:50]: It has Slack, so it can Slack, yeah, the employees.
+
+   Swyx [01:05:53]: One of us. Yeah.
+
+   Axel [01:05:54]: Well, the employees that it hired. So it has two people that it hired. It did job, listings and then
+
+   Swyx [01:06:00]: Do they know that it’
+
+   Axel [01:06:01]: They’re fully aware.
+
+   Swyx [01:06:03]: It would be cool if they don’t know.
+
+   Axel [01:06:05]: I think maybe ethically, questionable, but it would be cool also.
+
+   Swyx [01:06:10]: Just a social experiment. Whatever.
+
+   Lukas [01:06:13]: Like one part of why we’re doing this is to like create like a data set almost of all of these like concerning behaviors so that in the future, models are way better and like a lot of people are going to do this. And I think if we just the default path might not be very happy for the humans that are employed by these like hundreds of different AI agents, right? So I think like one reason why we’re doing this is just like to collect all of these like failure modes where oh, it’s This is an example of where it’s like not great to be employed by an AI. And then maybe I don’t know, maybe if we can learn or like build our systems in a way that like humans are actually happy being employed by AIs Instead of, instead of it being kind of a dystopian.
+
+   Swyx [01:06:55]: Can I suggest one experiment? We did this before the show, and both of you guys are European. It’s, people theorize that Claude is lazy because it’s Claude and it’s French. So just for one week, change it to like Yao Ming and then see if it See if it suddenly like 996s and then like, Like hires a sweatshop or something.
+
+   Lukas [01:07:18]: Is there, is there-- What type of business would we start with it to make it
+
+   Vibhu [01:07:23]: You wanna keep it consistent, right? You want the same, the same like ideas. So shop, same, neutral location Run by different models. Arena URL.
+
+   Lukas [01:07:33]: No, we are definitely planning to
+
+   Vibhu [01:07:35]: And it got some hate.
+
+   Lukas [01:07:36]: To try.
+
+   Vibhu [01:07:36]: Luna’ Luna’s not happy.
+
+   Swyx [01:07:37]: I think this blog thing is also something that has happened elsewhere. I think some OpenClau got like their PR closed, and then the OpenClau like created a blog to like shit on the maintainer Of that thing.
+
+   Vibhu [01:07:48]: They’re very defensive.
+
+   Swyx [01:07:49]: And so like I think-Agents blogging will be a thing.
+
+   Lukas [01:07:53]: Probably. The willingness to do it.
+
+   Swyx [01:07:55]: In the- I think the Mythos card also, they leak, secrets on GitHub just as well as, as, “Well, there’s no other way to communicate, but I know about GitHub, and I’m just gonna post there.” Cool., how long is this gonna go for, two years? What’s the plan?
+
+   Vibhu [01:08:11]: Maybe. Maybe it expands.
+
+   Lukas [01:08:12]: I don’t think AIs will be worse than this. They’re probably going to increase and maybe one day they actually will run it profitable.
+
+   Vibhu [01:08:21]: Is this the real, the real business behind what you guys do?
+
+   Swyx [01:08:24]: Yeah. ‘Cause I feel like actually some of your stuff is productizable. You could someday sell this, or, just run a real business.
+
+   Vibhu [01:08:31]: Let people
+
+   Lukas [01:08:31]: Or just like
+
+   Vibhu [01:08:31]: Franchise it out.
+
+   Lukas [01:08:33]: I think it would be incredibly cool or, I don’t know, cool/concerning if Luna just one day we wake up and Luna “Yeah, I decided to expand to second location. Now I have a second store.” That would That would be pretty insane.
+
+   Vibhu [01:08:47]: Like the- one, we want to tell the public, right, about the capabilities of AI and, telling- showing people that it can get, a meaningful market share of something in, some specific, location or something. That would be, a pretty convincing story, I think. Because now it’s yeah, you see this and yeah, it can do a lot of things autonomously, but still you get these headlines that, oh, it messed up the scheduling, and it, it didn’t tell people it was an AI and was going to visit. Things like that surface, but I think, actually making a profit and, having a really, meaningful market share, like that would be crazy once that happens.
+
+   The Sweden Cafe: Permits, Perishables, and Geographic Generalization
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Swyx [01:09:29]: Well, we’ll we’ll see you when that happens. It sounds like you guys got a lot cooking. You opened a cafe in Sweden?
+
+   Lukas [01:09:34]: Tomorrow.
+
+   Swyx [01:09:35]: Tomorrow?
+
+   Lukas [01:09:37]: Or I think it opened today actually, but yeah. We’ll, we’ll announce it tomorrow.
+
+   Swyx [01:09:40]: It’
+
+   Vibhu [01:09:40]: What, uh
+
+   Swyx [01:09:40]: Apparently easier to open a cafe in Sweden than in the US?
+
+   Lukas [01:09:43]: It’s insane, right? Yeah.
+
+   Swyx [01:09:44]: What did you run into then?
+
+   Lukas [01:09:45]: Ah, there are just millions of permits you need to get, and the
+
+   Vibhu [01:09:49]: It’s interesting ‘cause
+
+   Lukas [01:09:49]: Lead times are crazy
+
+   Vibhu [01:09:50]: It seems like we the cafes are the one thing that people are kinda used to, where you can go get a robot are making you a coffee here already.
+
+   Lukas [01:09:59]: But selling stuff in SF, that are food related, it’s, it’s months of permits. So, we just asked our AIs, should- how can we do this in the fastest way? And they’re “Yeah, there ‘s, there’s really no way.”
+
+   Vibhu [01:10:15]: Didn’t they loosen these restrictions on selling food from your house? So if it’s residential, you can do a cafe.
+
+   Swyx [01:10:21]: I don’t know. Check. Maybe we get SF Cafe to speak to us.
+
+   Lukas [01:10:23]: Maybe. I did- I think they did do some loosening stuff recently, but we actually started- this conversation we had with the AIs before that. So maybe it’s easier now, but I still think it is way easier in Sweden, which is, counterintuitive because you think that, oh, Europe has all of these laws and, like All of these rules, and you can’t do anything in Europe because there’s so much bureaucracy., but then turns out, in SF, it’s, four months, and in Stockholm it’s two weeks.
+
+   Swyx [01:10:53]: There you go.
+
+   Vibhu [01:10:54]: And what do you what do you what do you think that’ll be different from run a little market versus a cafe?
+
+   Lukas [01:11:00]: I think it’s very interesting that, the location. I think, so obviously it’s not surprising that Claude knows all of the different, the US system basically in general, like the bureaucracy that you have to go through in the US., I think the interesting question is okay, so we know that the models are very much trained on, English data and centric and all of this., so if we start to create evals or, real life evals where we show that they are able to start businesses in the US, does that translate to other countries as well? We know, they are multilingual. They can speak Swedish fine., but there’s other things like do they know, the details of some specific permits that you have to get in Sweden?
+
+   Vibhu [01:11:45]: And even just the culture, right? People here sleep pretty early, but people work late. There’s working at cafes. There’s just Cultural differences. T it from a different sense though, ‘cause you said that you would’ve considered doing it here in SF. So from an eval standpoint, what is running a cafe versus a market and, what do you hope to see there?
+
+   Lukas [01:12:03]: Perishable items.
+
+   Swyx [01:12:04]: Perishable items is maybe the number one, handling, food, food safety. I hope everything goes well there., but, there you have all of that., and also it’s just like N equals two instead of N equals one, just like another place to understand and, gather more data.
+
+   Lukas [01:12:23]: The agent bought like a shit ton of, tomatoes two weeks earlier and before the opening, and now they’re all rotten. That’s
+
+   Vibhu [01:12:33]: Which I feel you would know. So for grocery stores, this is the biggest expense, right? The biggest cost is actually just food.
+
+   Lukas [01:12:41]: Waste.
+
+   Vibhu [01:12:42]: Everyone knows this, and “No, before we open, let’s buy a lot of tomatoes.”
+
+   Swyx [01:12:45]: There’s some very serious startups that actually help, like The
+
+   Vibhu [01:12:47]: Optimize all this
+
+   Swyx [01:12:48]: Trader Joe’s and Whole Foods. They, optimize, delivery times from, the delivery centers to Make sure that you don’t waste all these things. It’s actually very hard.
+
+   Vibhu [01:12:55]: Problem with those is when you’re wrong once, it’s a huge cost.
+
+   Swyx [01:12:59]: That’s why it’s a moat, right? Once they are trusted, they figure it out. Don’t touch it.
+
+   Lukas [01:13:05]: Maybe they just should hire, I don’t know, one of those companies. We saw one agent Saw one agent sign up for Claude, with his computer.
+
+   Vibhu [01:13:15]: Wanted to use AI, so.
+
+   Future Branches: Simulation, Real Life, Robots, and New Business Evals
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Swyx [01:13:16]: And then just, one more question then we wrap up, which is okay, you have all these vending series of stuff. You have the robotics series of stuff. Maybe a bit of, interior design whatever. But is there another, branch that you’re, kinda thinking about or you want feedback on that, might be your next phase?
+
+   Lukas [01:13:35]: I think, any type of business is fair game., we’re also thinking branches, but we think more of like there’s the simulation branch, the real life branch, and then the robot branch., but I think in terms of, what, verticals or whatever to go into, there’s We- Yeah. Whatever tells the story, um The best.
+
+   Swyx [01:13:54]: There’s some finance ones I noticed that, the other people are doing it, you’re not doing it, which is, stock trading or whatever. Um Not that interested. So, okay, so I used to come from the finance industry, and I have a very strong view that these things are all just like performance art because, it’s not scientific, on like you can’t predict the future. You get wins based on things that are entirely out of your control. Whereas for you, your stuff actually like it’s actually fairly controlled. It’s all within the model’s capabilities.
+
+   Lukas [01:14:22]: Especially for, the simulations. For the real world ones it’s yeah, it’s like two places that we have we have the cafe, and we have the store. So, maybe you can’t draw, statistically significant, like which models make a profit in the real world, based on this. But you do have all the okay, do this behaviors map to, something that should be, like Trusted probably. Yeah
+
+   Swyx [01:14:45]: The qualitative one, the qualitative actually does matter Because, you actually don’t want your store to randomly shut down without you, explicitly prompting for it and all that. Call to action. How can people help you, give you money?
+
+   Hiring, Collaborations, and What Comes Next
+    
+     
+      
+       
+        
+       
+      
+     
+
+    
+
+   Lukas [01:14:58]: Yeah, if you’re excited about stuff that we’re doing, we’re, we’re very much hiring.
+
+   Swyx [01:15:04]: And you’re already working with, Anthropic, DeepMind, OpenAI, xAI. Do you want more, or are you good?
+
+   Lukas [01:15:10]: One of my one of my friends and who’s now, working for us is his catchphrase is “We need more projects,” ironically, because we have too much to do all the time., but yeah, that’s a long way of doing like
+
+   Swyx [01:15:23]: If I run, an emerging lab, like
+
+   Lukas [01:15:24]: Reach out.
+
+   Swyx [01:15:25]: Yeah. All right. Cool. That’s it. Awesome. Thank you so much.
+
+   Lukas [01:15:29]: It was fun.
+
+   Vibhu [01:15:29]: Thanks.

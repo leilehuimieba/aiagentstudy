@@ -1,0 +1,84 @@
+{
+  "id": "RAW_4ab3a76d",
+  "notExist": null,
+  "originalTitle": "从 0 开发大模型的 17 种 Agent 架构演进详细拆解",
+  "title": "A Detailed Breakdown of the Evolution of 17 Agent Architectures for Building LLMs from Scratch",
+  "oneSentenceSummary": "This article systematically breaks down the evolutionary path of 17 Agent architectures, from single-shot generation to multi-agent collaboration, from the perspective of control flow design, and provides code implementations for each architecture using the agno framework.",
+  "summary": "Based on the all-agentic-architectures project, this article reimplements 17 Agent architecture patterns using the agno framework. The author's core argument is that the essence of Agent architecture is not prompt engineering or framework DSLs, but control flow design. The article starts with single-shot generation (Reflection), progressively introducing architectures such as Tool Use, the Observe-Act cycle (ReAct), explicit Planning, verification-driven replanning (PEV), multi-agent collaboration, the Blackboard pattern, and the Meta-Controller. Each architecture is uniformly analyzed through six fixed questions (Problem to Solve, State, Topology, Router, Failure Mode, Upgrade Trigger) and comes with a complete agno code implementation. The article emphasizes that the core of architectural evolution is the gradual addition of control capabilities: state modeling, explicit control flow representation, local error truncation, side effect management, and system termination conditions.",
+  "featuredReason": "Tencent's engineering team delivers a structured breakdown of 17 Agent architecture patterns evolved from scratch, covering everything from single-step execution to multi-agent collaboration. Unlike high-level overviews, this piece focuses on engineering trade-offs, making it a practical reference for developers building LLM-powered systems.",
+  "translateContent": null,
+  "tags": [
+    "Agent Architecture",
+    "Control Flow Design",
+    "agno",
+    "LangGraph",
+    "Multi-Agent System"
+  ],
+  "mainPoints": [
+    {
+      "point": "The essence of Agent architecture is control flow design, not prompt engineering or framework DSLs.",
+      "explanation": "The author argues that the core of an Agent system lies in state modeling, explicit control flow representation, local error truncation, and side effect management. These are the key factors determining whether a system can be successfully deployed, rather than the quality of model responses."
+    },
+    {
+      "point": "Architectural evolution is a process of gradually adding control capabilities, moving from linear to cyclic to dynamic scheduling.",
+      "explanation": "From the linear three-step process of Reflection to the Observe-Act cycle of ReAct, and then to the dynamic scheduling based on shared state in Blackboard, each architectural upgrade adds specific control capabilities."
+    },
+    {
+      "point": "The PEV architecture elevates verification to a first-class citizen of control flow, preventing silent error propagation.",
+      "explanation": "Building on Planning, the PEV architecture introduces an explicit verification step. It performs structured validation on the results of each tool execution, triggering replanning upon failure, ensuring errors are identified and fixed locally."
+    },
+    {
+      "point": "The core of a Multi-Agent architecture is the explicit encoding of cognitive division of labor, not running multiple models in parallel.",
+      "explanation": "Different cognitive roles (e.g., researcher, analyst, writer) are decomposed into independent Agents, orchestrated through a fixed pipeline or a dynamic scheduler. This enables role isolation, independent debugging, and differentiated tool configuration."
+    }
+  ],
+  "keyQuotes": [
+    "The essence of Agent architecture is not prompt engineering, nor the DSL of a specific framework, but control flow design.",
+    "The so-called 'evolution of agent architecture' is not about pursuing AGI, but about solving an old problem: how to keep a system controllable, explainable, and recoverable in increasingly complex environments.",
+    "The essence of PEV is: preventing errors from propagating silently.",
+    "The core of Multi-Agent is not 'running multiple models together', but explicitly encoding cognitive division of labor, scheduling strategies, and redundancy mechanisms into the graph structure.",
+    "For the first time, the system has objectified 'control flow'."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801545&idx=1&sn=b2d15c583715f519cbec484e8b10abdf",
+  "readUrl": "https://www.bestblogs.dev/article/4ab3a76d",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045339_343744c6",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_958ae8",
+  "sourceName": "腾讯技术工程",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045339_343744c6",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 92,
+  "readCount": 689,
+  "wordCount": 14761,
+  "readTime": 60,
+  "mediaDuration": null,
+  "authors": [
+    "腾讯技术工程"
+  ],
+  "publishTimeStamp": 1779097200000,
+  "publishDateStr": "05-18",
+  "publishDateTimeStr": "2026-05-18 17:40:00",
+  "qualified": true,
+  "stickTop": false,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

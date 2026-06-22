@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    "Control Loop",
+    "Tools/Actions",
+    "Permission",
+    "Memory",
+    "Task/Subagent",
+    "Protocol Extension",
+    "Observability"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-05-26",
+  "id": "BB-2026-05-01-330",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-330/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-330",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-330/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-330/raw/evidence.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-330/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-330/summary.md"
+  },
+  "schema_version": 1,
+  "source": "自产分析 / FlagHunter + claw-code 源码",
+  "source_id": "",
+  "source_name": "自产分析 / FlagHunter + claw-code 源码",
+  "status": "Full analysis + evidence",
+  "tags": [
+    "FlagHunter",
+    "PentestAgent",
+    "Agent Architecture",
+    "Gap Analysis",
+    "Claw Code",
+    "Control Loop",
+    "Permission",
+    "Subagent",
+    "Task Registry"
+  ],
+  "title": "FlagHunter(PentestAgent) Agent 架构 vs Claw Code：逐层差距分析与改进路线",
+  "topic": "03-control-loop",
+  "type": "web_article",
+  "urls": {
+    "all_source_urls": [],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

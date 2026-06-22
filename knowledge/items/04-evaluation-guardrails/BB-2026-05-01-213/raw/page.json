@@ -1,0 +1,134 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T6d2a1dd53d5e43a0839daba3e3d2104d",
+  "data": {
+    "metaData": {
+      "id": "RAW_b60182be",
+      "notExist": null,
+      "originalTitle": "Auto Research 时代，47 个没有标准答案的任务成了 Agent 能力必测榜",
+      "title": "The Era of Auto Research: 47 Tasks Without Standard Answers Become the Ultimate Test for Agent Capabilities",
+      "oneSentenceSummary": "Frontier-Eng Bench systematically tests AI Agents' long-term iterative optimization capabilities in real-world environments through 47 engineering optimization tasks without standard answers, revealing evolutionary patterns of power-law decay and the superiority of depth over breadth.",
+      "summary": "This article introduces the Agent Benchmark — Frontier-Eng Bench — released by Navers lab under Einsia AI, designed to evaluate AI Agents' continuous optimization capabilities in real engineering scenarios. Unlike traditional coding problems or knowledge-based Q&A, this benchmark comprises 47 interdisciplinary hardcore tasks spanning areas such as underwater robot stability, lithium plating boundaries in power batteries, and quantum circuit noise control. Agents must complete a full engineering loop: proposing solutions, interfacing with simulators, receiving feedback, modifying parameters, and re-running. Test results show that GPT-5.4 performs most consistently overall, but all models still fall far short of \"mastering\" the benchmark. The research team identified two key patterns: the frequency and magnitude of improvements follow a power-law decay with each iteration round (the harder it gets to improve over time), and while parallel exploration (breadth) is useful, deep iterative optimization is indispensable. This benchmark marks a paradigm shift for AI from a \"one-shot answer\" model to a \"system capable of continuous iterative evolution through long-term feedback,\" suggesting that the era of Auto Research may be accelerating.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Agent Benchmark",
+        "Frontier-Eng Bench",
+        "Engineering Optimization",
+        "Auto Research",
+        "Iterative Optimization"
+      ],
+      "mainPoints": [
+        {
+          "point": "Frontier-Eng Bench tests AI's continuous optimization ability through 47 engineering tasks without standard answers.",
+          "explanation": "Tasks include underwater robot control, battery fast-charging optimization, and quantum circuit noise control, requiring Agents to iterate autonomously in simulation environments rather than solving problems from memory."
+        },
+        {
+          "point": "The frequency and magnitude of AI improvements follow a power-law decay with each iteration round.",
+          "explanation": "Early iterations yield quick \"low-hanging fruit,\" but improvements become increasingly difficult and smaller in magnitude over time, closely mirroring real-world R&D processes."
+        },
+        {
+          "point": "Parallel exploration (breadth) is useful, but deep iterative optimization is indispensable.",
+          "explanation": "Exploring multiple paths can prevent deadlock, but with a fixed budget, breadth often compromises depth; true engineering breakthroughs rely on sustained accumulation and structural leaps."
+        },
+        {
+          "point": "This benchmark marks a paradigm shift for AI from \"one-shot answers\" to \"long-term iterative evolution.\"",
+          "explanation": "Agents are no longer just auxiliary tools; they continuously optimize in real feedback loops like professional engineers, signaling the potential acceleration of the Auto Research era."
+        }
+      ],
+      "keyQuotes": [
+        "If you throw an AI into an engineering scenario without standard answers, can it survive?",
+        "Real engineering optimization is never about multiple choice; there is no single standard answer.",
+        "Truly advanced intelligence fundamentally relies on long-term feedback loops.",
+        "Anyone can produce a first version; the real challenge lies in that final 1% performance leap.",
+        "When AI learns to 'optimize over the long term,' how far is it from true engineering intelligence?"
+      ],
+      "url": "https://www.qbitai.com/2026/05/416754.html",
+      "readUrl": "https://www.bestblogs.dev/article/b60182be",
+      "enclosureUrl": null,
+      "domain": "qbitai.com",
+      "cover": "https://image.jido.dev/20260303113342_qbitai_icon.png",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_371003",
+      "sourceName": "量子位",
+      "priority": "MEDIUM",
+      "sourceImage": "https://image.jido.dev/20251127045333_fa5811cb",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 89,
+      "readCount": 83,
+      "wordCount": 2108,
+      "readTime": 9,
+      "mediaDuration": null,
+      "authors": [
+        "思邈"
+      ],
+      "publishTimeStamp": 1778645338000,
+      "publishDateStr": "05-13",
+      "publishDateTimeStr": "2026-05-13 04:08:58",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_6f17468b",
+        "type": "ARTICLE",
+        "title": "GPT-5.4 Released: OpenAI's First Unified Model, Truly Native",
+        "oneSentenceSummary": "OpenAI releases GPT-5.4, creating the first unified Agent model that supports native Computer Use by integrating reasoning, coding, and computer interaction.",
+        "url": "https://www.qbitai.com/2026/03/384345.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_2ce38f07",
+        "type": "ARTICLE",
+        "title": "The Second Half of Large Model Architecture",
+        "oneSentenceSummary": "This article proposes that large model architecture has entered a second half centered on 'scaling communication,' critiques the traditional 'accumulation' paradigm of residual connections, and introduces innovative solutions for inter-layer 'selective retrieval' through Flash Depth Attention and MoDA.",
+        "url": "https://www.qbitai.com/2026/04/403515.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_1d95c0b8",
+        "type": "ARTICLE",
+        "title": "DeepSeek V4 Report Is Incredibly Detailed! The Full Story of the 484-Day Upgrade Journey",
+        "oneSentenceSummary": "DeepSeek officially released the V4 series of models, achieving a KV cache of only 10% of V3.2 under a million-token context through the mHC architecture, hybrid attention mechanism, and Muon optimizer, while being fully open-source and supporting domestic chips.",
+        "url": "https://www.qbitai.com/2026/04/406809.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_598c24ff",
+        "type": "ARTICLE",
+        "title": "QuantumBit Exclusive Interview with Lou Tiancheng: AI is a Runaway Horse, and Harness is the Most Critical Skill of This Era",
+        "oneSentenceSummary": "Pony.ai CTO Lou Tiancheng elaborates on the core philosophy of the PonyWorld World Model 2.0: when AI driving capabilities surpass humans, the value of human data drops to zero, AI must become the 'head coach' leading R&D, and the ability to harness this 'runaway horse' of AI will be the most critical skill of this era.",
+        "url": "https://www.qbitai.com/2026/04/408578.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_50669f01",
+        "type": "ARTICLE",
+        "title": "Google's New Paper Crashes Memory Stocks! 6x KV Cache Compression, Netizens: Silicon Valley Becomes Reality",
+        "oneSentenceSummary": "Google Research releases the TurboQuant algorithm, achieving at least 6x lossless compression of the KV cache via techniques like polar quantization, significantly reducing memory requirements for LLM inference and boosting speed.",
+        "url": "https://www.qbitai.com/2026/03/392215.html",
+        "sourceName": "量子位"
+      }
+    ]
+  }
+}

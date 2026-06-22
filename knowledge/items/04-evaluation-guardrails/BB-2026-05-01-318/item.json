@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Memory",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "11-12",
+  "id": "BB-2026-05-01-318",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-318/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-318",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-318/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-318/raw/meta.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-318/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-318/summary.md"
+  },
+  "schema_version": 1,
+  "source": "OASIS",
+  "source_id": "oasis",
+  "source_name": "OASIS",
+  "status": "Spec summary + source captured",
+  "tags": [
+    "sarif",
+    "codeflows",
+    "provenance",
+    "result-schema",
+    "audit-trail"
+  ],
+  "title": "Static Analysis Results Interchange Format (SARIF) Version 2.1.0",
+  "topic": "04-evaluation-guardrails",
+  "type": "web_article",
+  "urls": {
+    "all_source_urls": [
+      "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

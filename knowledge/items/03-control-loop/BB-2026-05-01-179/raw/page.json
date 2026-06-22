@@ -1,0 +1,162 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Tb1f62f72a2df4172ab2db56e4322a624",
+  "data": {
+    "metaData": {
+      "id": "RAW_321aed16",
+      "notExist": null,
+      "originalTitle": "首个 Java Harness Framework 来了｜AgentScope 把 OpenClaw 带到企业分布式场景",
+      "title": "The First Java Harness Framework Arrives: AgentScope Brings OpenClaw to Enterprise Distributed Scenarios",
+      "oneSentenceSummary": "AgentScope Java 1.1.0 is officially released, packaging engineering capabilities such as workspace, pluggable file system, memory management, and sub-agent orchestration through the Harness Framework, solving five core obstacles that prevent personal assistant models like OpenClaw from being deployed in enterprise-level distributed scenarios.",
+      "summary": "This article officially announces the milestone release of AgentScope Java 1.1.0, with the core being the complete implementation of the previously proposed Harness Framework concept. It first identifies five major obstacles faced by personal assistant agents like OpenClaw and Hermes in enterprise scenarios: workspace isolation under multi-user multi-instance setups, sandbox execution for untrusted inputs, file system adaptation to distributed storage, the complexity of multi-agent orchestration, and the engineering implementation of context compression and hierarchical memory. To address these issues, the AgentScope Java Harness proposes two core pillars: Workspace as the single source of truth for agents, and the AbstractFilesystem abstraction layer that allows the workspace to run in any environment (local, remote storage, sandbox). Based on this, the framework provides three major engineering capabilities: security and isolation, distributed deployment, and sub-agent and asynchronous task management. The article details three typical use cases (personal agent, enterprise data service, enterprise online service) and their corresponding core capabilities, and provides an in-depth explanation of the HarnessAgent quick start, core concepts (HarnessAgent, workspace, filesystem, RuntimeContext, sandbox, memory), feature details (workspace structure, session persistence, dual-layer memory management, sub-agent orchestration, built-in tools, three file system modes, sandbox isolation and state recovery, Skills system).",
+      "featuredReason": "Alibaba's AgentScope Java 1.1.0 ships as the first Harness Framework for the JVM, porting the OpenClaw pattern into enterprise distributed scenarios. Four headline capabilities target real corporate pain points: a workspace-driven runtime (persona, knowledge, skills, memory, sub-agent specs all in one structured workspace), a pluggable abstract filesystem (local disk, remote storage, sandbox under one interface), built-in context management (compression, dual-layer memory, full-text search), and sub-agent orchestration with isolated execution for multi-tenant safety. Java and Spring shops finally have a native foundation for production agents.",
+      "translateContent": null,
+      "tags": [
+        "AgentScope",
+        "Harness Framework",
+        "Java",
+        "Enterprise Agent",
+        "Workspace"
+      ],
+      "mainPoints": [
+        {
+          "point": "AgentScope Java 1.1.0 solves the five major obstacles of the personal assistant model in enterprise scenarios through the Harness Framework.",
+          "explanation": "It provides out-of-the-box solutions for engineering challenges such as multi-user isolation, sandbox execution, distributed storage adaptation, multi-agent orchestration, and context memory management, rather than just offering abstract interfaces."
+        },
+        {
+          "point": "Workspace is the single source of truth for the agent, driving the continuous evolution of agent capabilities.",
+          "explanation": "The agent's personality, knowledge, skills, memory, and sub-agent specifications are uniformly stored in a structured workspace. Each run automatically loads the context and writes back memory. Adjusting behavior only requires modifying files, without recompilation or redeployment."
+        },
+        {
+          "point": "The AbstractFilesystem abstraction layer allows the same set of agent logic to seamlessly switch between local, remote storage, and sandbox environments.",
+          "explanation": "Through a unified read/write interface, the physical storage of the workspace can be freely switched, solving the problem of lacking a unified local disk in distributed scenarios. By default, the Shell tool is not registered in remote mode to enhance security."
+        },
+        {
+          "point": "The framework provides out-of-the-box dual-layer memory management and dialogue compression mechanisms.",
+          "explanation": "Daily logs ensure new facts are not lost, while background periodic merging refines them into long-term memory. Combined with dialogue compression and full-text search, it solves the problems of long-dialogue context explosion and cross-session memory loss."
+        },
+        {
+          "point": "Sub-agent orchestration supports declarative definition, synchronous/asynchronous delegation, and isolated execution.",
+          "explanation": "Sub-agents can be defined through workspace files, code declarations, etc., supporting asynchronous task state machines and isolated execution within the sandbox. State can be restored across multiple dialogue rounds, accommodating multi-tenant isolation."
+        }
+      ],
+      "keyQuotes": [
+        "The workspace is the most important design that distinguishes Harness from ordinary agent frameworks. It is not a temporary storage directory, but the 'externalized brain' of the agent—everything that needs to be retained across sessions lives here.",
+        "Personal assistant agents and enterprise agents are two different engineering forms. Using the same set of assumptions to tackle both scenarios is bound to fail.",
+        "The design philosophy of Harness can be summarized in one sentence: package the engineering answers to 'what to do next round, what to do next day, what to do when the context explodes, what to do when state is lost' into the framework, instead of letting each agent project reinvent them.",
+        "The workspace is the single source of truth for the agent. All state reads and writes revolve around the workspace, rather than being scattered across code, databases, and memory.",
+        "The same set of agent code logic can be migrated across three modes by simply switching the filesystem configuration."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560070&idx=1&sn=e1589f74f2fae81901f2dac4b06322c1",
+      "readUrl": "https://www.bestblogs.dev/article/321aed16",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045355_2bca1ae8",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_26c5f1",
+      "sourceName": "阿里云开发者",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045355_2bca1ae8",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 296,
+      "wordCount": 10327,
+      "readTime": 42,
+      "mediaDuration": null,
+      "authors": [
+        "阿里云开发者"
+      ],
+      "publishTimeStamp": 1778805060000,
+      "publishDateStr": "Yesterday",
+      "publishDateTimeStr": "2026-05-15 00:31:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_9dd92132",
+        "type": "ARTICLE",
+        "title": "From Toy to Productivity: Demystifying AI Agent Harness Engineering Through Real Projects",
+        "oneSentenceSummary": "Based on the practical experience of the real-world project Aegis, this article systematically elaborates on the concept, architectural boundaries, and implementation methods of Harness Engineering. It argues that in enterprise engineering environments, constraining and governing non-deterministic large models by building a control plane is the key to transforming AI Agents from toys into productive tools, and it drives the migration of the engineer's role from code executor to goal controller.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559631&idx=1&sn=13935cb98e1b389c3afa8a10a17e9c3a",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_93016c01",
+        "type": "ARTICLE",
+        "title": "CoPaw 1.0 Release: Comprehensive Evolution in Customized Small Models, Security Mechanisms, and Multi-Agent Systems",
+        "oneSentenceSummary": "CoPaw 1.0 is officially released, creating a secure and controllable local personal AI assistant through customized small models, a three-layer security defense architecture, multi-agent collaboration, and ReMe memory management.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500295&idx=1&sn=55d30c76db086f23e98ad761eca28092",
+        "sourceName": "通义大模型"
+      },
+      {
+        "id": "RAW_48e04876",
+        "type": "ARTICLE",
+        "title": "AI Practice | Building an AI Agent from 0 to 1 with Spring AI",
+        "oneSentenceSummary": "This article is a detailed practical guide for building a fully functional AI Agent from scratch using the Spring AI framework, covering the architectural design and code implementation of core modules such as core orchestration, RAG, tool calling, sub-agents, and the MCP protocol.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559646&idx=1&sn=1abc5788cfe44b9820e5a0f4dfb3a336",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_70e2f298",
+        "type": "ARTICLE",
+        "title": "Harness Engineering: How I Spent a Week Boosting AI Coding Rate to 90% in an Enterprise App",
+        "oneSentenceSummary": "This article systematically introduces Harness Engineering, a new AI coding paradigm that elevates the AI code rate of an enterprise Java application from 25% to over 90% by building a four-element system of rules, skills, knowledge, and change management.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559842&idx=1&sn=71ee08bf0421ad2f1aa4dd7a58901c5f",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_fc9e3786",
+        "type": "ARTICLE",
+        "title": "A Practical Guide to 'Progressive Spec' for AI Coding in 2026",
+        "oneSentenceSummary": "This article proposes a 'Progressive Spec' framework for AI coding environments, leveraging structured documentation to drive AI collaboration and balance development standards with execution efficiency.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559315&idx=1&sn=5c1f9df548e912354b5b5e25ec4bcbb5",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_2902aba4",
+        "type": "ARTICLE",
+        "title": "The Evolution of Agent/Skills/Teams Architectures and Principles of Technology Selection",
+        "oneSentenceSummary": "This article systematically reviews the evolutionary trajectory of AI Agents from monolithic to multi-agent, then to Skills pluginization and Teams parallel collaboration, and, drawing on the latest research from Google and Anthropic, provides a scientific methodology for selection.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558921&idx=1&sn=3fddd356f8f072b31742f0e8be772b63",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_0c853462",
+        "type": "ARTICLE",
+        "title": "Deep Dive: The Memory Architecture and Philosophy That Thousands of Words Can't Fully Explain",
+        "oneSentenceSummary": "This article systematically constructs an architectural blueprint for AI Agent memory systems, proposing a System 2 architecture composed of raw ledgers, derived views, and control policies, aiming to achieve auditable, highly available, long-range personalized intelligence.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559363&idx=1&sn=461e525a0373ccfed0a7638cc1c51906",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_5ba4cd12",
+        "type": "ARTICLE",
+        "title": "CoPaw Deep Dive: Source Code Architecture and Functional Practice",
+        "oneSentenceSummary": "This article provides an in-depth analysis of CoPaw, an open-source desktop Agent tool based on the AgentScope framework, covering its technical architecture, core modules, and deployment practices.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559269&idx=1&sn=a87c6b0f00c2ccee4a25901df995c65b",
+        "sourceName": "阿里云开发者"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "Aritra Roy Gosthipaty",
+    "Rémi Ouazan Reboul",
+    "Sergio Paniego",
+    "Pedro Cuenca",
+    "Sayak Paul"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://huggingface.co/blog/assets/torch-mlp-fusion/thumbnail.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_5a821792",
+  "keyQuotes": [
+    "This is worth internalizing. A common reflex is to reach for `torch.compile` whenever a model feels slow. For a single GEMM-with-bias, compile has very little to do.",
+    "Forming this expectation before looking is the single most useful habit in the profiling journey: you read the trace to *confirm or break* a guess, not to form one from scratch.",
+    "Learning to read this name is one of the most useful habits when comparing traces."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The `aten::addmm` operation dispatches to a cuBLAS GEMM variant that includes bias addition in its writeback. This is why no separate `aten::add` kernel appears in the profiler trace.",
+      "point": "`nn.Linear` fuses bias addition into the GEMM kernel via an epilogue, avoiding a separate kernel launch."
+    },
+    {
+      "explanation": "For a single linear layer, compile folds metadata ops like `aten::t` into the `aten::addmm` call, saving microseconds of CPU work. The GPU kernel remains identical to the eager mode kernel.",
+      "point": "`torch.compile` removes CPU dispatch overhead for a single `nn.Linear` but cannot fuse the GEMM kernel itself."
+    },
+    {
+      "explanation": "In eager mode, the GeGLU MLP launches 3 GEMM kernels, 1 GeLU kernel, and 1 multiplication kernel. Compile fuses the two pointwise ops into one, while the GEMMs remain unchanged.",
+      "point": "For an MLP, `torch.compile` fuses pointwise operations (GeLU and multiplication) into a single Triton kernel, reducing kernel launches from 5 to 4."
+    },
+    {
+      "explanation": "The `down_proj` linear (N=768) uses a 128x256 tile, while `gate_proj` and `up_proj` (N=3072) use a 128x128 tile. This results in a ~10% performance difference despite the same total FLOPs.",
+      "point": "cuBLAS selects different GEMM tile sizes based on matrix dimensions, even when FLOP counts are identical."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article profiles a PyTorch MLP, showing how `nn.Linear` fuses bias into the GEMM kernel, how `torch.compile` removes CPU overhead but not GPU kernels for single linears, and how it fuses pointwise ops into a single Triton kernel for the full MLP.",
+  "originalTitle": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-11",
+  "publishDateTimeStr": "2026-06-11 08:00:00",
+  "publishTimeStamp": 1781136000000,
+  "qualified": false,
+  "readCount": 14,
+  "readTime": 14,
+  "readUrl": "https://www.bestblogs.dev/article/5a821792",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This is the second part of a series on PyTorch profiling. It builds on Part 1 by replacing a manual matmul-add with `nn.Linear`, then stacking three linears with a GeGLU activation to form an MLP. The article uses detailed profiler traces to explain several key concepts: how `nn.Linear` uses an epilogue to fold bias addition into the GEMM kernel (via `aten::addmm`), why `aten::t` (transpose) is a metadata-only operation with no GPU kernel, and how `torch.compile` removes CPU dispatch overhead (e.g., the transpose view chain) but cannot fuse a single GEMM. For the full MLP, it shows that eager mode launches 5 kernels (3 GEMMs, 1 GeLU, 1 mul), while `torch.compile` fuses the two pointwise ops into a single Triton kernel, reducing the count to 4. The article also explains why different GEMM tile sizes are selected by cuBLAS based on matrix shapes, and how to read kernel names to understand what the GPU is doing.",
+  "tags": [
+    "PyTorch",
+    "GPU Profiling",
+    "Model Optimization",
+    "LLM",
+    "AI Engineering"
+  ],
+  "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/torch-mlp-fusion",
+  "wordCount": 3418
+}

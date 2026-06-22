@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Context/State",
+    "Memory"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-13",
+  "id": "BB-2026-05-01-324",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-324/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-324",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-324/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-324/raw/meta.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-324/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-324/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Search summary + source captured",
+  "tags": [
+    "failure-prediction",
+    "online-auditing",
+    "early-warning",
+    "trajectory-monitoring",
+    "attribution"
+  ],
+  "title": "AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems",
+  "topic": "04-evaluation-guardrails",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2605.08715"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2605.08715",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

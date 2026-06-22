@@ -1,0 +1,88 @@
+{
+  "id": "RAW_5086df1c",
+  "notExist": null,
+  "originalTitle": "AI 原生时代下，让世界适应 Agent，而非教 AI 做人 | 港大黄超@AIGC2026",
+  "title": "In the AI-Native Era, Let the World Adapt to Agents, Not Teach AI to Be Human | HKU's Huang Chao @ AIGC2026",
+  "oneSentenceSummary": "Huang Chao, an Assistant Professor at the University of Hong Kong, proposes that the core of the Agent era is not making AI adapt to human tools, but redesigning the digital world for Agents, achieving a leap from assistant to productivity through CLI interaction, lightweight architecture, and skill accumulation.",
+  "summary": "This article is compiled from a speech by Huang Chao, an Assistant Professor at the University of Hong Kong, at the 2026 China AIGC Industry Summit, systematically elaborating his deep thoughts and practices on the AI Agent ecosystem. The core viewpoint is: The Agent era requires redesigning the infrastructure of the digital world, rather than forcing Agents to laboriously adapt to human interfaces. Huang Chao's team open-sourced the lightweight general-purpose Agent nanobot, emphasizing the design philosophy of 'simplicity is the ultimate sophistication.' They proposed the CLI-Anything solution, arguing that CLI is more suitable for Agent Computer Use than GUI. By wrapping professional software into command-line interfaces, Agents can directly drive complex applications like 3D modeling and design tools. Regarding self-evolution, the team chose a skill-based route, achieving skill accumulation through Open Space. Experiments showed a significant reduction in token consumption and improved task completion rates. They also used 8 Agents to coordinate 8 H100 GPUs for distributed model training, verifying the feasibility of Agent Swarm, but found that 3-5 Agents might be the optimal scale, with diminishing marginal returns beyond that. The article also discusses core challenges such as long-horizon task robustness, Agents learning from mistakes, and persistent environment alignment.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Agent",
+    "Agent Architecture",
+    "CLI-Anything",
+    "nanobot",
+    "Agent Self-Evolution"
+  ],
+  "mainPoints": [
+    {
+      "point": "The Agent era should redesign the digital world, not make AI adapt to human interfaces.",
+      "explanation": "Huang Chao proposes that CLI is more suitable for Agent Computer Use than GUI. By wrapping professional software into command-line interfaces, Agents can directly drive complex applications, achieving a truly AI-native interaction paradigm."
+    },
+    {
+      "point": "Lightweight architecture is key to Agent普及, and nanobot validates the design philosophy of 'simplicity is the ultimate sophistication.'",
+      "explanation": "The team took a contrarian approach, open-sourcing the general-purpose Agent nanobot in the most lightweight way. It has been downloaded over 200,000 times and recommended by DeepSeek as one of the top 15 Agents globally, proving that the core technology of a general-purpose Agent does not require complex architecture."
+    },
+    {
+      "point": "Agent self-evolution should follow a skill-based route, not parameter updates or workflow optimization.",
+      "explanation": "Parameter updates and workflow optimization have poor generalization. Skill-based evolution achieves cross-domain transfer by accumulating reusable skills, but faces challenges such as scarcity of high-quality skills, difficulty in precise matching, and complex granularity management."
+    },
+    {
+      "point": "Agent Swarm has an optimal scale, with 3-5 Agents likely reaching peak efficiency.",
+      "explanation": "Experiments showed that when 8 Agents coordinated 8 H100 GPUs for model training, performance improved by 6% within 23 hours. However, further scaling the number of Agents led to diminishing marginal returns, where coordination overhead could outweigh performance gains."
+    },
+    {
+      "point": "Agents need to be 'self-sustaining,' controlling token costs while pursuing performance upper bounds.",
+      "explanation": "Current research focuses on exploring the upper bound of Agent performance, yet overlooks that tokens themselves are a real cost constraint. Future Agents must learn from mistakes to significantly reduce operational costs."
+    }
+  ],
+  "keyQuotes": [
+    "Rather than forcing Agents to painstakingly learn human interfaces, it's better to have software natively support the Agent's language.",
+    "CLI might be the truly AI-native way for Computer Use. This is not a technical choice, but a fundamental paradigm shift—from making AI adapt to human tools, to making the digital world speak the language of AI.",
+    "Research on Agents often focuses on exploring the upper bound of capabilities, yet overlooks that tokens themselves are a real cost constraint.",
+    "The bottleneck of Agent collaboration is not communication, but the complexity of task decomposition, conflict coordination, context alignment, and precise verification of each step.",
+    "Agents can accelerate trial and error, but they cannot accelerate validation. We might fall into the trap of 'rapidly producing low-quality hypotheses' rather than 'deeply exploring high-quality insights.'"
+  ],
+  "url": "https://www.qbitai.com/2026/05/426819.html",
+  "readUrl": "https://www.bestblogs.dev/article/5086df1c",
+  "enclosureUrl": null,
+  "domain": "qbitai.com",
+  "cover": "https://image.jido.dev/20260303113342_qbitai_icon.png",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045333_fa5811cb",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 162,
+  "wordCount": 5835,
+  "readTime": 24,
+  "mediaDuration": null,
+  "authors": [
+    "衡宇"
+  ],
+  "publishTimeStamp": 1780199667000,
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-05-31 11:54:27",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

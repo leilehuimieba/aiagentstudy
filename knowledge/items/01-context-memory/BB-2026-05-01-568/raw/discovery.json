@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "MiniMax 稀宇科技"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260527050757_5c72e77.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_cecfce08",
+  "keyQuotes": [
+    "M3 is the first open-source model to do multimodal mixed training from Step 0.",
+    "While ensuring the model's intelligence is sufficient for complex reasoning, long-text, and multimodal scenarios, we truly achieve accessibility for developers, users, and enterprise customers."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "By using interleaved multimodal data such as text and images during the pre-training phase, it achieves deep cross-modal semantic space fusion, providing a foundational basis for subsequent multimodal understanding and generation tasks.",
+      "point": "M3 is the first open-source model to undergo multimodal mixed training from Step 0."
+    },
+    {
+      "explanation": "The MSA architecture design significantly reduces computational costs for long contexts. The paper fully discloses the architectural and engineering implementation details, making it key to the model's high cost-effectiveness.",
+      "point": "The MSA sparse attention architecture is the core technological breakthrough of M3."
+    },
+    {
+      "explanation": "It ranks first or on the Pareto optimal frontier among open-source models on benchmarks like the Artificial Analysis Comprehensive Intelligence Index, GDPval-AA, and Code Arena WebDev, with particularly strong performance in finance and coding tasks.",
+      "point": "M3 achieves leading results on multiple authoritative open-source leaderboards."
+    },
+    {
+      "explanation": "Output speed has been increased from approximately 30 TPS to approximately 80 TPS, with plans for a further 30-40% improvement. A Token Plan usage dashboard has been launched to help users plan their usage and costs effectively.",
+      "point": "MiniMax continuously optimizes model service performance and costs."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "MiniMax announces the open-sourcing of its flagship multimodal model M3 (428B total parameters / 23B activated parameters) and releases the MSA sparse attention paper. The model achieves leading results on multiple open-source leaderboards while continuously optimizing inference speed and deployment costs.",
+  "originalTitle": "我们开源了 MiniMax M3",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-15",
+  "publishDateTimeStr": "2026-06-15 22:40:00",
+  "publishTimeStamp": 1781534400000,
+  "qualified": false,
+  "readCount": 12,
+  "readTime": 4,
+  "readUrl": "https://www.bestblogs.dev/article/cecfce08",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_39cbd7",
+  "sourceImage": "https://image.jido.dev/20260527050757_5c72e77.jpeg",
+  "sourceName": "MiniMax 稀宇科技",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is the official announcement from MiniMax regarding the open-sourcing of the M3 model. It first introduces the core technical features of M3: 428B total parameters, 23B activated parameters, making it the first open-source model to undergo multimodal mixed training from the pre-training stage. By leveraging large volumes of interleaved text, images, and other modality data, it achieves deep cross-modal semantic fusion. Concurrently, the MSA (MiniMax Sparse Attention) technical paper was released, detailing the architecture and engineering implementation to significantly reduce computational costs for long contexts. The article then showcases market feedback two weeks post-launch: achieving the highest ranking among open-source models on the Artificial Analysis Comprehensive Intelligence Index, ranking first among domestic models on the Vals.AI leaderboard, and citing positive feedback from industry figures such as the CEO of Vercel and the founder of Y Combinator. The article also addresses developers' primary concerns regarding service stability and cost, announcing that output speed has been increased from approximately 30 TPS to approximately 80 TPS, with plans for a further 30-40% improvement. Additionally, a Token Plan usage dashboard has been launched. Finally, the article elaborates on M3's design philosophy: ensuring high intelligence levels in complex reasoning, long-text, and multimodal scenarios while making it accessible and affordable for developers and enterprises.",
+  "tags": [
+    "Model Release",
+    "Open-Source Model",
+    "Multimodal AI",
+    "LLM",
+    "Sparse Attention"
+  ],
+  "title": "We Open-Sourced MiniMax M3",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488831&idx=1&sn=9dedbe83e4ba0b27e3853808e1a8dbbb",
+  "wordCount": 857
+}

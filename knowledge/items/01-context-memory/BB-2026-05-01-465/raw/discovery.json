@@ -1,0 +1,73 @@
+{
+  "authors": [
+    "腾讯混元"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045433_c2ea00c4",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_c1e21993",
+  "keyQuotes": [
+    "The algorithm determines 'which computations to save,' and the operator determines 'how much faster the saved computations can be'—the two work in synergy to form a complete closed loop from theory to deployment.",
+    "The name 'Stem' is derived from the metaphor of a tree trunk—in the causal attention architecture, the tokens at the initial positions are like the trunk of a tree, supporting the transmission of all subsequent information."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "TPD dynamically allocates the sparse budget based on the importance of tokens in the causal information flow, prioritizing initial tokens; OAM combines attention scores with the magnitude of Value vectors to more accurately select tokens that contribute significant information, rather than relying solely on scores.",
+      "point": "The Stem algorithm achieves near-lossless accuracy with only 25% of the compute through two key innovations: TPD and OAM."
+    },
+    {
+      "explanation": "HPC-Stem accelerates the evaluation and block selection process by tens of times through mathematical simplification; HPC-BSA is designed for the Hopper architecture, placing block-skipping decisions upfront to achieve near-zero overhead block-level skipping, making latency linearly related to compute density.",
+      "point": "HPC operators translate the theoretical speedup of sparse attention into actual hardware performance."
+    },
+    {
+      "explanation": "By integrating the Stem algorithm and HPC operators into the vLLM inference framework of the Tencent Hunyuan Hy3 preview model, end-to-end tests show a significant reduction in first token latency while maintaining model accuracy.",
+      "point": "The full-stack solution achieves a 3.7x reduction in first token latency for 128K context."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Tencent Hunyuan proposes the Stem sparse attention algorithm, which, through two key innovations—Token Position Decay and Output-Aware Metric—approaches the accuracy of dense attention using only 25% of the compute. Combined with HPC operators, it achieves a 3.7x reduction in first token latency for 128K context, and has been accepted by ICML 2026.",
+  "originalTitle": "首字延迟降低 3.6 倍，腾讯混元提出 Stem 稀疏注意力算法，长文推理加速新 SOTA",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 19:23:00",
+  "publishTimeStamp": 1780658580000,
+  "qualified": false,
+  "readCount": 61,
+  "readTime": 17,
+  "readUrl": "https://www.bestblogs.dev/article/c1e21993",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_cc0f35",
+  "sourceImage": "https://image.jido.dev/20251127045433_c2ea00c4",
+  "sourceName": "腾讯混元",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article details the Stem sparse attention algorithm and its accompanying HPC operator optimization proposed by the Tencent Hunyuan team. It first identifies the performance bottleneck in the prefill phase of long-text inference, stemming from the quadratic complexity of Transformer self-attention, and analyzes the shortcomings of existing sparse attention solutions at both the algorithmic level (uniform budget allocation, ignoring Value information) and the operator level (high overhead of block skipping). The core innovations of the Stem algorithm include: Token Position Decay (TPD), which allocates more sparse budget to initial tokens based on their importance in the causal information flow; and Output-Aware Metric (OAM), which combines attention scores with the magnitude of Value vectors to more accurately select key tokens. At the operator level, HPC-Stem accelerates the evaluation and block selection process by tens of times through mathematical simplification, while HPC-BSA is designed for the Hopper architecture, enabling near-zero overhead block-level skipping. The article provides end-to-end test data on the Tencent Hunyuan Hy3 preview model, showing a 3.7x reduction in first token latency for a 128K context while maintaining model accuracy. The paper has been accepted by ICML 2026, and the related code has been open-sourced.",
+  "tags": [
+    "LLM",
+    "AI Inference",
+    "Sparse Attention",
+    "Model Acceleration",
+    "Long Context"
+  ],
+  "title": "First Token Latency Reduced by 3.6x: Tencent Hunyuan Proposes Stem Sparse Attention Algorithm, New SOTA for Long-Context Inference Acceleration",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497909&idx=1&sn=e578765275f6748fedd325fd8d360376",
+  "wordCount": 4031
+}

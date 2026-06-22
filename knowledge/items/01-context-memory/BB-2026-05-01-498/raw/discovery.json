@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "克雷西"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260303113342_qbitai_icon.png",
+  "domain": "qbitai.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_6b6848e1",
+  "keyQuotes": [
+    "M3 is the first domestic open-source model to simultaneously achieve these three things (long context, multimodality, and coding).",
+    "This image itself is the best proof of reproduction, showing that M3 independently followed the same derivation path as the paper's authors and arrived at the same answer.",
+    "Frontier model capabilities have long been controlled by a few closed-source products, a situation that has hardly been broken in the past few years... M3 is the first open-source model to tear open this gap."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Previously, only closed-source flagships like Claude Opus, GPT-5.5, and Gemini 3.1 could handle all three tasks. M3 is the first open-source model to break through this barrier, scoring 59% on SWE-Bench Pro, surpassing GPT-5.5 and Gemini 3.1 Pro.",
+      "point": "M3 achieves top-tier performance in long context, multimodality, and coding simultaneously, a first for an open-source model."
+    },
+    {
+      "explanation": "When reproducing the ICLR 2025 award-winning paper, M3 operated autonomously for 12 hours, producing 18 commits and 23 experimental charts. It diagnosed and adjusted issues independently without any human intervention, demonstrating autonomy close to that of a human research assistant.",
+      "point": "Hands-on tasks validated M3's reliability in complex, long-form autonomous programming."
+    },
+    {
+      "explanation": "From identifying 74 logos in a PPT to understanding a nearly 2-hour linguistics olympiad video and reproducing a problem-solving webpage, M3 demonstrates a complete closed loop from visual input to code output. Its native multimodal approach (mixing text and images from the first step of pre-training) is key.",
+      "point": "M3's multimodal capabilities cover text, images, and video, enabling cross-modal synergy."
+    },
+    {
+      "explanation": "MSA uses KV blocks to aggregate queries for the outer loop, achieving efficient hardware utilization and reducing per-token computation to 1/20th of the previous generation at 1M context. The interactive user simulator exposes the model to collaboration scenarios close to production environments during training, enhancing coding and agent capabilities.",
+      "point": "The MSA sparse attention mechanism and interactive user simulator are M3's core technical highlights."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Through hands-on tests including reproducing a paper, identifying PPT logos, creating a check-in map, and explaining a linguistics olympiad video, this article validates MiniMax M3's comprehensive performance in long context, multimodality, and coding, concluding that it has entered the global first tier.",
+  "originalTitle": "MiniMax M3 一手实测：老黄 PPT 上 74 个 Logo，我以为能难住它",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-02",
+  "publishDateTimeStr": "2026-06-02 23:50:16",
+  "publishTimeStamp": 1780415416000,
+  "qualified": false,
+  "readCount": 103,
+  "readTime": 21,
+  "readUrl": "https://www.bestblogs.dev/article/6b6848e1",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_371003",
+  "sourceImage": "https://image.jido.dev/20251127045333_fa5811cb",
+  "sourceName": "量子位",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article focuses on MiniMax's latest open-source flagship model, M3, evaluating its three core capabilities: long context, multimodality, and coding. The author designed four hands-on tasks: independently reproducing an ICLR 2025 award-winning paper (12 hours without human intervention), identifying the 74 DSX ecosystem enterprise logos from Jensen Huang's Computex keynote PPT and creating an interactive webpage, making a food check-in map based on Jensen Huang's Beijing itinerary, and understanding a linguistics olympiad explanation video to reproduce a problem-solving webpage. All tasks were completed successfully, demonstrating M3's comprehensive abilities in long-form autonomous programming, multimodal understanding, information retrieval, and webpage generation. The article also introduces key technologies behind M3: the MSA sparse attention mechanism (reducing per-token computation to 1/20th of the previous generation at 1M context), an interactive user simulator framework (used for training coding and agent capabilities), and a native multimodal approach that mixes text and images from the first step of pre-training. Finally, the article points out that M3 is the first open-source model to simultaneously possess these three capabilities, with comprehensive performance approaching top-tier closed-source models like Claude Opus and GPT-5.5, offering outstanding cost-effectiveness.",
+  "tags": [
+    "AI Models",
+    "LLM",
+    "Multimodal AI",
+    "AI Coding",
+    "Model Evaluation & Benchmarking"
+  ],
+  "title": "MiniMax M3 Hands-On Test: I Thought 74 Logos on Jensen Huang's PPT Would Stump It",
+  "translateContent": null,
+  "url": "https://www.qbitai.com/2026/06/428092.html",
+  "wordCount": 5088
+}

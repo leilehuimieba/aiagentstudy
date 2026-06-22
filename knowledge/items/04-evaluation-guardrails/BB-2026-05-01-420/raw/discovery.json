@@ -1,0 +1,84 @@
+{
+  "id": "RAW_ece06f7a",
+  "notExist": null,
+  "originalTitle": "Can AI Write Your Code?",
+  "title": "Can AI Write Your Code?",
+  "oneSentenceSummary": "A case study evaluates ChatGPT-4.0 Pro's ability to generate code for causal inference tasks in Python, R, and Stata, finding better performance in Python and R, while emphasizing the continued need for human expertise and validation.",
+  "summary": "This article reviews a study by Winberg et al. that systematically evaluates ChatGPT-4.0 Pro's coding capabilities for quantitative research, specifically for causal inference methods like Difference-in-Differences, Inverse Probability Treatment Weighting, and Regression Discontinuity. The study uses benchmark solutions from 'Causal Inference: The Mixtape' and assesses performance across Python, R, and Stata based on accuracy, efficiency, errors, editing needs, and consistency. Results show ChatGPT performs better in Python and R than in Stata. The author then shares personal reflections on how LLMs have transformed their own workflow, including a strategic shift from SAS and RStudio to Python and VS Code, and the acceleration of data collection and analysis tasks. The article concludes that while AI is a powerful accelerator, human supervision, validation, and expertise remain essential, and that the tool's rise will create new dynamics in knowledge production and inequality.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "ChatGPT",
+    "Causal Inference",
+    "Python",
+    "R",
+    "Stata"
+  ],
+  "mainPoints": [
+    {
+      "point": "ChatGPT-4.0 Pro performs better in Python and R than in Stata for causal inference coding tasks.",
+      "explanation": "The study found that ChatGPT generated accurate code and results in Python and R for most tasks, while Stata was less reliable, likely due to the abundance of public code examples for Python and R."
+    },
+    {
+      "point": "Human supervision and validation remain essential when using AI-generated code.",
+      "explanation": "The risk of hallucination and errors persists, as highlighted by the EY Canada study incident. Researchers must check assumptions, validate data, test code, and compare results with benchmarks."
+    },
+    {
+      "point": "LLMs are accelerating workflow changes, influencing language and tool choices.",
+      "explanation": "The author's team shifted from SAS and RStudio to Python and VS Code due to better AI support, demonstrating that AI is not just a productivity tool but also shapes infrastructure and strategic decisions."
+    },
+    {
+      "point": "AI lowers the barrier to knowledge production but creates new challenges.",
+      "explanation": "While AI enables faster content creation and idea sharing, it also leads to a more crowded internet and potential inequality between those who use AI effectively and those who do not."
+    }
+  ],
+  "keyQuotes": [
+    "What if the real question is no longer whether AI can write code, but whether we can trust the code it writes?",
+    "We can use LLMs to work faster, but not to remove the responsibility of the researcher.",
+    "AI may make writing faster, but it will not replace curiosity, discipline, and the desire to contribute something meaningful.",
+    "The more powerful the tool becomes, the more necessary it is to know when to trust it and when not to.",
+    "In my work, I see them more as very fast research assistants than as autonomous experts."
+  ],
+  "url": "https://towardsdatascience.com/can-ai-write-your-code/",
+  "readUrl": "https://www.bestblogs.dev/article/ece06f7a",
+  "enclosureUrl": null,
+  "domain": "towardsdatascience.com",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/05/ChatGPT-Image-22-mai-2026-00_25_05.jpg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceName": "Towards Data Science",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 27,
+  "wordCount": 2849,
+  "readTime": 12,
+  "mediaDuration": null,
+  "authors": [
+    "JUNIOR JUMBONG"
+  ],
+  "publishTimeStamp": 1779729335000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 01:15:35",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

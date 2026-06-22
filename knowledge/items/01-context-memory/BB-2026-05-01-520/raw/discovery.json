@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "阿里云开发者"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_bab3a35d",
+  "keyQuotes": [
+    "To deal with AI's uncertainty, piling on prompts creates debt, but building a framework creates an asset.",
+    "Context is not a 'free buffer' where bigger is better; it's a scarce resource that needs careful management.",
+    "Prefer a reproducible 'rough score' over a drifting 'precise score.'",
+    "What truly drives architectural evolution is never 'wanting it to be better,' but 'the current approach has already broken down.'",
+    "The model is responsible for being smart; we are responsible for making it follow the rules."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Models are smart enough, but their output is unstable. Piling on prompts creates technical debt, while building a framework creates an asset. The core of the harness is to solidify 'how AI should work' into an executable, constrainable, and evaluable engineering framework.",
+      "point": "The bottleneck in AI coding is shifting from model capability to process engineering; stability must be provided by an external framework."
+    },
+    {
+      "explanation": "The permanent layer is compressed to ≤8K, with deep content loaded on demand. Through a dispatcher state machine and file-based handoffs, responsibility isolation and state externalization are achieved, degrading the main session to a pure executor and eliminating context pollution.",
+      "point": "The core design of the harness is to 'manage context like a budget,' combating context pollution through layered loading."
+    },
+    {
+      "explanation": "Gates must be deterministic code (G1-G8 gate walls + hook interception), independent of the context window, and fail-closed (deny by default). The system cannot rely on the model 'remembering' which step to execute next.",
+      "point": "Process enforcement must be externalized from LLM reasoning to deterministic infrastructure."
+    },
+    {
+      "explanation": "Using 100% Python deterministic logic, zero LLM calls, and requiring three benchmark runs to produce identical hashes, the platform scores each execution of the harness across 7 dimensions, driving a self-improvement loop.",
+      "point": "The core value of the evaluation platform is to transform 'changing the harness by feel' into 'a score after changes, comparability between good and bad, and evidence for rollbacks.'"
+    },
+    {
+      "explanation": "The core is layered constraints, externalized state, and deterministic scoring. The boundary is its reliance on process observability, and its value diminishes as models improve their ability to self-enforce process discipline.",
+      "point": "This engineering model is transferable to any AI workflow that is 'capable enough but unstable in output, and whose process is observable.'"
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Based on two months of engineering practice, the author proposes a framework (harness) that solidifies AI coding behavior into an executable and evaluable engineering system, with the core idea of replacing prompt persuasion with structural constraints to address issues like random workflows, context pollution, and repeated mistakes in AI coding.",
+  "originalTitle": "AI 不缺智商缺纪律：我的 Harness 工程化实践",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-16 08:30:00",
+  "publishTimeStamp": 1781569800000,
+  "qualified": false,
+  "readCount": 92,
+  "readTime": 42,
+  "readUrl": "https://www.bestblogs.dev/article/bab3a35d",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_26c5f1",
+  "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "sourceName": "阿里云开发者",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article systematically introduces an AI coding engineering framework (harness) practiced internally at Alibaba Cloud by the author. The author first points out that the bottleneck in AI coding has shifted from model capability to process engineering. Models are smart enough but unstable, and stability must be provided by an external framework. The article details the five-layer architecture of the harness: a permanent entry layer (CLAUDE.md), an atomic rules layer (7 single-responsibility rules), a role Agent layer (dispatcher scheduling + three-role review + process execution), an on-demand context layer (context/), and an execution support layer (skills/commands/evals). The core design philosophy is to 'manage context like a budget,' combating AI's forgetfulness and uncertainty through responsibility isolation, externalized state, and gating mechanisms. The article also introduces an evaluation platform based on deterministic scoring (zero LLM calls), treating the harness itself as the test subject and quantitatively assessing each execution across 7 dimensions (process completeness, output quality, code correctness, efficiency, security compliance, iteration capability, interface acceptance). Finally, the author candidly discusses the system's boundaries and technical debt, and looks ahead to frontier directions like structured memory layers and code knowledge graphs. The entire article embodies a transferable mindset: any AI workflow with sufficient capability but unstable output can be engineered through layered constraints, externalized state, and deterministic scoring.",
+  "tags": [
+    "AI Coding",
+    "AI Agent",
+    "Engineering Practice",
+    "LLM",
+    "Prompt Engineering"
+  ],
+  "title": "AI Doesn't Lack Intelligence, It Lacks Discipline: My Harness Engineering Practice",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561121&idx=1&sn=82faa885d7d73f4e398dd1e186325b3d",
+  "wordCount": 10338
+}

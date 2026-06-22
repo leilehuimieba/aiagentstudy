@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Model",
+    "Frontier Radar",
+    "Product Workflow"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-25",
+  "id": "BB-2026-05-01-360",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/06-frontier-radar/BB-2026-05-01-360/article.md",
+    "item_dir": "knowledge/items/06-frontier-radar/BB-2026-05-01-360",
+    "raw_dir": "knowledge/items/06-frontier-radar/BB-2026-05-01-360/raw",
+    "raw_files": [
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-360/raw/content.json",
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-360/raw/discovery.json",
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-360/raw/page.json"
+    ],
+    "source": "knowledge/items/06-frontier-radar/BB-2026-05-01-360/source.md",
+    "summary": "knowledge/items/06-frontier-radar/BB-2026-05-01-360/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯技术工程",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯技术工程",
+  "status": "Full text + source captured",
+  "tags": [
+    "Large Model Inference",
+    "vLLM",
+    "Continuous Batching",
+    "Paged Attention",
+    "FlashAttention"
+  ],
+  "title": "A Practical Guide to AI Infra: How Large Models Perform Efficient Inference",
+  "topic": "06-frontier-radar",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801625&idx=1&sn=7c7a7d2148c6907f65c9f747717b3197",
+      "https://www.bestblogs.dev/article/a7a93015"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801625&idx=1&sn=7c7a7d2148c6907f65c9f747717b3197",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/a7a93015"
+  }
+}

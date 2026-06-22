@@ -1,0 +1,79 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-12",
+  "id": "BB-2026-05-01-176",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-176/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-176",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-176/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-176/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-176/raw/display-document.html",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-176/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-176/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-176/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 阿里云开发者",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 阿里云开发者",
+  "status": "Full text + source captured",
+  "tags": [
+    "Agent Skill",
+    "Skill-Creator",
+    "Writing-Skills",
+    "Design Patterns",
+    "Prompt Engineering"
+  ],
+  "title": "Agent Skill Specifications, Construction, and Design Patterns",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://agentskills.io/specification",
+      "https://arxiv.org/html/2602.03279",
+      "https://arxiv.org/html/2602.12670v1",
+      "https://github.com/VoltAgent/awesome-agent-skills",
+      "https://github.com/affaan-m/everything-claude-code",
+      "https://github.com/anthropics/skills",
+      "https://github.com/cinience/alicloud-skills",
+      "https://github.com/myorg/myrepo/pull/142",
+      "https://github.com/obra/superpowers",
+      "https://github.com/openclaw/clawhub",
+      "https://hermes-agent.nousresearch.com/docs/skills",
+      "https://qoder-community.pages.dev/zh/skills",
+      "https://skills.sh",
+      "https://skillsmp.com",
+      "https://www.bestblogs.dev/en/article/ad38855c",
+      "https://www.skillsbench.ai/",
+      "https://x.com/GoogleCloudTech/status/2033953579824758855"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://github.com/myorg/myrepo/pull/142",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/ad38855c"
+  }
+}

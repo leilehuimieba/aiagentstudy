@@ -2,7 +2,7 @@
 
 ## Article
 
-- Title: 使用 MCP 构建能够接入生产系统的智能体 | Claude
+- Title: 使用 MCP 构建能够接入生产系统的智能体
 - Source: BestBlogs / Claude Blog
 - URL: https://www.bestblogs.dev/article/34499204
 - Date: 2026-04-21 16:00:00

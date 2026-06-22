@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-18",
+    "opencli_profile": "",
+    "published": "2026-06-16T17:58:05Z",
+    "updated": "2026-06-16T17:58:05Z"
+  },
+  "date": "2026-06-16",
+  "id": "ARXIV-2026-007",
+  "paper": {
+    "arxiv_id": "2606.18237v1",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-007/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-007",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-007/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/ARXIV-2026-007/raw/arxiv-entry.json",
+      "knowledge/items/04-evaluation-guardrails/ARXIV-2026-007/raw/discovery.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-007/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-007/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Paper metadata + abstract captured",
+  "tags": [
+    "arXiv",
+    "AI Research",
+    "AI Agent",
+    "Benchmark",
+    "Evaluation",
+    "LLM"
+  ],
+  "title": "ReproRepo: Scaling Reproducibility Audits with GitHub Repository Issues",
+  "topic": "04-evaluation-guardrails",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2606.18237v1",
+      "https://arxiv.org/pdf/2606.18237v1",
+      "https://export.arxiv.org/api/query?search_query=all%3A%22AI+agent%22+OR+all%3A%22tool+use%22+OR+all%3A%22web+agent%22+OR+all%3A%22computer+use%22+OR+all%3A%22agentic%22&start=0&max_results=20&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2606.18237v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.18237v1",
+    "requested_url": "",
+    "source_url": "https://arxiv.org/abs/2606.18237v1"
+  }
+}

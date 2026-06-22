@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-11",
+  "id": "BB-2026-05-01-187",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-187/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-187",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-187/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-187/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-187/raw/display-document.html",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-187/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-187/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-187/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Claude Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Claude Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Claude Code",
+    "Cybersecurity",
+    "AI Agent",
+    "Threat Detection",
+    "Security Automation"
+  ],
+  "title": "How Anthropic's cybersecurity team built a threat detection platform with Claude Code / Claude",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "http://www.incompleteideas.net/IncIdeas/BitterLesson.html",
+      "https://claude.com/blog/how-anthropic-uses-claude-cybersecurity",
+      "https://www.anthropic.com/claude-code",
+      "https://www.anthropic.com/news/anthropics-responsible-scaling-policy",
+      "https://www.bestblogs.dev/en/article/5087293a"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://claude.com/blog/how-anthropic-uses-claude-cybersecurity",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/5087293a"
+  }
+}

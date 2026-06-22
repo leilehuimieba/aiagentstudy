@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-02",
+  "id": "BB-2026-05-01-498",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-498/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-498",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-498/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-498/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-498/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-498/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-498/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-498/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 量子位",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 量子位",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Models",
+    "LLM",
+    "Multimodal AI",
+    "AI Coding",
+    "Model Evaluation & Benchmarking"
+  ],
+  "title": "MiniMax M3 Hands-On Test: I Thought 74 Logos on Jensen Huang's PPT Would Stump It",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/6b6848e1",
+      "https://www.qbitai.com/2026/06/428092.html"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.qbitai.com/2026/06/428092.html",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/6b6848e1"
+  }
+}

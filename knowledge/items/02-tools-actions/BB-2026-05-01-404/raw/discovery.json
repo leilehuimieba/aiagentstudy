@@ -1,0 +1,79 @@
+{
+  "id": "RAW_5e68673c",
+  "notExist": null,
+  "originalTitle": "DeepSeek 要用蜜雪冰城的打法，做中国版 Claude Code",
+  "title": "DeepSeek Takes a Mixue-Style Approach to Build China's Version of Claude Code",
+  "oneSentenceSummary": "DeepSeek has permanently reduced the price of its V4-Pro model API to attract developers with a low-cost strategy, and plans to build an AI coding Agent tool similar to Claude Code, aiming to reshape the AI programming market.",
+  "summary": "This article analyzes DeepSeek's recent permanent price reduction for its V4-Pro model API, comparing it to the cost-effective strategy of Mixue Bingcheng. It outlines the timeline from the preview release to the final permanent price cut, noting that the core goal is to lower the barrier for developers, especially for high token consumption scenarios like code generation, long context, and Agent tasks. The article further explores the profound impact of this price reduction on AI coding tool subscription models, API relay stations, and developer entry points. The author argues that DeepSeek's true goal is not merely to compete with domestic model vendors, but to pave the way for launching a 'Chinese version' of a coding Agent akin to Claude Code by building a low-cost, high-efficiency model ecosystem. Citing DeepSeek's recent hiring trends (such as building a Code Harness) and the addition of key figures like Cui Tianyi, the article demonstrates its determination to enter the Agent field. Ultimately, it concludes that the low-price strategy will attract developers, while the Agent tool will lock in their workflows, creating a positive cycle that allows DeepSeek to dominate the AI programming market.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "DeepSeek",
+    "API Price Reduction",
+    "AI Programming",
+    "Claude Code",
+    "Agent"
+  ],
+  "mainPoints": [
+    {
+      "point": "DeepSeek has permanently reduced the price of its V4-Pro model API, significantly lowering the cost for developers.",
+      "explanation": "By converting temporary discounts into permanent prices, DeepSeek has reduced the cost of input and output tokens to a quarter of the original price, especially for cache hits. This makes high-consumption scenarios like long context and Agent tasks much more attractive to individual developers and small teams."
+    },
+    {
+      "point": "The price reduction strategy aims to drive a shift in the AI programming tool market, paving the way for an Agent product similar to Claude Code.",
+      "explanation": "Low-cost APIs will attract a large number of developers, but DeepSeek's ultimate goal is to build an engineering system (Code Harness) capable of executing tasks continuously, combining model capabilities with real development environments to control the developer entry point."
+    },
+    {
+      "point": "DeepSeek's long-term strategy is to reduce costs through technical optimization and build a broader AI hardware ecosystem.",
+      "explanation": "Its model architecture and inference engineering optimizations (e.g., MoE, KV Cache compression) not only reduce inference costs but also decrease reliance on high-end hardware. This aims to integrate domestic storage, GPUs, and other hardware into the large model ecosystem, fostering a more decentralized and affordable AI ecosystem."
+    }
+  ],
+  "keyQuotes": [
+    "DeepSeek is to large language models what Mixue Bingcheng is to milk tea. You don't have to worry about cost-effectiveness because its capabilities are flawless, and it never puts a strain on your wallet.",
+    "Liang Wenfeng mentioned that DeepSeek simply operates at its own pace, sets prices after calculating costs, and adheres to the principle of neither subsidizing nor profiteering.",
+    "Model + Harness = Agent. In an Agent product, the model is responsible for understanding and generation, while the Harness brings the model's capabilities into a real engineering environment, essentially acting as the 'execution system' around the model.",
+    "The price cut is just the initial push down the mountain; from there, it will roll on its own, gaining momentum, and nothing can stop it."
+  ],
+  "url": "https://www.ifanr.com/1666548?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "readUrl": "https://www.bestblogs.dev/article/5e68673c",
+  "enclosureUrl": null,
+  "domain": "ifanr.com",
+  "cover": "https://s3.ifanr.com/wp-content/uploads/2026/05/226-2.png",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "News_Media",
+  "categoryDesc": "News & Media",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 236,
+  "wordCount": 3318,
+  "readTime": 14,
+  "mediaDuration": null,
+  "authors": [
+    "莫崇宇"
+  ],
+  "publishTimeStamp": 1779730435000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 01:33:55",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

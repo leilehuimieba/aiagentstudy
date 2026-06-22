@@ -1,0 +1,559 @@
+{
+  "content": "NVIDIA Nemotron 3 Nano Omni is a new omni-modal understanding model built for real-world document analysis, multiple image reasoning, automatic speech recognition, long audio-video understanding, agentic computer use, and general reasoning.\nIt extends the Nemotron multimodal line from a strong vision-language system to a broader text + image + video + audio model.\nNemotron 3 Nano Omni delivers best-in-class accuracy on complex document intelligence leaderboards such as MMlongbench-Doc, OCRBenchV2, while also leading in video and audio leaderboards like WorldSense and DailyOmni. It achieves top accuracy on VoiceBench for audio understanding and ranks as the most cost‑efficient open video understanding model on MediaPerf.\nUnder the hood, it combines the Nemotron 3 hybrid Mamba-Transformer Mixture-of-Experts backbone with a C-RADIOv4-H vision encoder and Parakeet-TDT-0.6B-v2 audio encoder.\nThe architecture is designed to preserve fine visual detail, add native audio understanding, and scale to very long multimodal contexts for dense images, documents, videos, and mixed-modality reasoning.\nThe training recipe uses staged multimodal alignment and context extension, followed by preference optimization and multimodal reinforcement learning.\nNemotron 3 Nano Omni delivers up to 9x higher throughput and 2.9x the single-stream reasoning speed on multimodal use-cases, compared to alternatives.\nDownload the BF16, FP8 and NVFP4 checkpoints at HuggingFace.\nFor more information about the model architecture, training recipe, data pipelines and benchmarks, read the full Nemotron 3 Nano Omni report.\n\nBenchmark highlights\nBuilding on Nemotron Nano V2 VL, Nemotron 3 Nano Omni delivers substantial visual gains and adds entirely new audio and video+audio capabilities - while also leading another open-weights omni model, Qwen3-Omni, in many domains.\n\nTask\tBenchmark\tNemotron 3 Nano Omni\tNemotron Nano V2 VL\tQwen3-Omni 30B-A3B\nDocument understanding\tOCRBenchV2-En\t65.8\t61.2\t-\n\tMMLongBench-Doc\t57.5\t38.0\t49.5\n\tCharXiv reasoning\t63.6\t41.3\t61.1\nGUI\tScreenSpot-Pro\t57.8\t5.5\t59.7\n\tOSWorld\t47.4\t11.0\t29.0\nVideo understanding\tVideo-MME\t72.2\t63.0\t70.5\nVideo + Audio understanding\tWorldSense\t55.4\t-\t54.0\n\tDailyOmni\t74.1\t-\t73.6\nVoice interaction\tVoiceBench\t89.4\t-\t88.8\nASR\tHF Open ASR (lower is better)\t5.95\t-\t6.55\n\nEfficiency highlights\nCompared to other open omni models with the same interactivity, Nemotron 3 Nano Omni delivers 7.4x higher system efficiency for multi-document use cases and 9.2x higher system efficiency for video use cases\n\nFigure 1. Total system throughput for multi-document and video use cases sustained by each model at a fixed per‑user interactivity threshold (tokens/sec/user)\n\nWhat Nemotron 3 Nano Omni is designed for\n\nAt a high level, Nemotron 3 Nano Omni is aimed at five classes of workloads:\n\n1. Real-world document analysis\n\nThis is not only about OCR. The model is positioned for long, messy, high-value documents where understanding depends on layout, tables, figures, formulas, section structure, and cross-page references. Think contracts, technical papers, reports, manuals, multi-page forms, or compliance packets. The model can handle 100+ page documents.\n\n2. Automatic Speech Recognition\n\nNemotron 3 Nano Omni includes strong speech understanding capabilities that enable high-quality transcription across diverse audio conditions. It handles long-form audio with varying speakers, accents, and background noise. These capabilities can be integrated into broader workflows, allowing spoken content to be transcribed, analyzed, and combined with other modalities for tasks like summarization, question answering, and cross-modal reasoning.\n\n3. Long audio-video understanding\n\nMany enterprise and developer workflows depend on mixed audio and visual evidence: screen recordings with narration, training videos, meetings with slides, tutorials, product demos, customer support captures, and long-form video archives. Nemotron 3 Nano Omni is built to reason over those inputs jointly.\n\n4. Agentic computer use\n\nThe Nemotron 3 Nano Omni model is specifically trained for agentic computer use, enabling it to assist with tasks in graphical user interface (GUI) environments. Its capabilities include interpreting screenshots, monitoring the state of the user interface, grounding its reasoning in on-screen visuals, and helping with action selection or workflow automation.\n\n5. General multimodal reasoning\n\nThe model is designed for more than perception. It excels at reasoning-intensive tasks that require synthesizing information across long context windows, multiple modalities, and structured or semi-structured evidence. It can carry out multi-step reasoning, perform calculations, and connect signals from text, images, tables, and other inputs to arrive at coherent, well-supported answers.\n\nModel architecture and key innovations\n\nNemotron 3 Nano Omni uses a unified encoder-projector-decoder design. The language backbone is Nemotron 3 Nano 30B-A3B, paired with the C-RADIOv4-H vision encoder and the Parakeet-TDT-0.6B-v2 audio encoder. The modality-specific encoders connect into the LLM backbone through lightweight projectors.\n\nFigure 2. Model architecture of NVIDIA Nemotron 3 Nano Omni 30B-A3B\n\nA hybrid Mamba-Transformer-MoE backbone for long multimodal context\n\nThe model backbone interleaves three key components: 23 Mamba selective state-space layers for efficient long-context processing; 23 MoE layers with 128 experts, top-6 routing, and a shared expert for conditional capacity; and 6 grouped-query attention layers to preserve strong global interaction and expressivity.\n\nNemotron 3 Nano Omni combines state-space models, attention, and MoE in a unified design that maintains strong reasoning performance while remaining practical for long, multimodal contexts.\n\nDynamic resolution for dense documents, charts, and screens\n\nOn the vision side, the Nemotron 3 Nano Omni replaces the tiling strategy used in the v2 model with dynamic resolution processing at native aspect ratio. Each image can be represented using a variable number of 16 x 16 patches, with a minimum of 1,024 to a maximum of 13,312 visual patches per image. For square images, this is equivalent to 512 x 512 and 1840 x 1840, respectively.\n\nThat flexibility is critical for handling high-resolution, complex visual inputs such as OCR-heavy documents, financial tables, slides, research figures, screenshots, and GUI layouts—especially when both fine details and overall structure need to be understood together.\n\nConv3D temporal compression for video\n\nFor video, Nemotron 3 Nano Omni uses a dedicated Conv3D tubelet embedding path. Instead of embedding each frame independently, every pair of consecutive frames is fused into a single \"tubelet\" before the ViT, halving the number of vision tokens the language model has to attend to. This allows us to either double the number of frames with the same token budget, or halve the number of tokens with the same number of frames\n\nEVS — Efficient Video Sampling\n\nEVS is an important feature, enabled during inference time, that drops redundant video tokens after the vision encoder. This reduces latency and improves throughput while maintaining accuracy. The first frame of the video is kept entirely, then for each subsequent frame, EVS keeps the “dynamic” tokens where the video is changing and drops the “static” ones where nothing has changed from the previous frame. We combine this with Conv3D to enable superior compression: Conv3D fuses tokens from pairs of frames into one, and then EVS prunes redundant static information.\n\nNative audio input, not just text transcripts\n\nThe audio side is powered by Parakeet-TDT-0.6B-v2, connected to the backbone through its own 2-layer MLP projector. Audio is sampled at 16 kHz, and the model is trained with inputs up to 1,200 seconds (20 minutes), while the LLM max context length supports 5+ hours.\n\nThis represents a shift from traditional VLM pipelines by enabling native audio processing within a shared multimodal sequence, allowing audio, visual, and text tokens to be jointly modeled. This is crucial for scenarios like narrated screen recordings, video Q&A where speech alters visual meaning, long-form instructional or meeting content, and tasks requiring temporally grounded multimodal reasoning.\n\nLightweight modality projectors and unified token interleaving\n\nEach encoder is connected to the LLM with a lightweight 2-layer MLP projector that maps encoder features into the shared embedding space. Once projected, vision, audio, and text tokens are interleaved and processed jointly.\n\nThis design keeps the overall system modular while still enabling genuine cross-modal reasoning inside the backbone itself.\n\nTraining data, infrastructure and systems story\n\nThe SFT stages are trained on NVIDIA H100, scaling from 32 to 128 nodes depending on the stage. The stack uses Megatron-LM, Transformer Engine, and Megatron Energon, with tensor parallelism, expert parallelism, sequence parallelism, context parallelism for the long context stages, online sequence packing, and selective activation recomputation.\n\nPost-SFT reinforcement learning uses NeMo-RL and NeMo Gym with a Megatron backend. The RL infrastructure used a Ray-based distributed setup across B200 and H100 clusters, plus multimodal deduplication, so repeated rollouts do not multiply image, video, and audio memory.\n\nWe open-source substantial parts of our training code.\n\nUsing RL to shape reliable multimodal behavior\n\nWe introduce multi-environment text and omni training in Nemotron 3 Nano Omni. Our text RL training stage happens across diverse environments in Nemo-Gym, which evaluates the model’s ability to perform sequences of actions such as tool calling, writing code, and multi-part planning that satisfy the verifiable criteria.\n\nOmni RL trains the model to reason across images, video, audio, and text within a unified framework, covering tasks from single-modality to fully multimodal scenarios. A diverse verifier suite evaluates outputs across formats like multiple-choice, math, GUI grounding, and ASR, while intentionally including unanswerable cases to teach the model to abstain when evidence is insufficient rather than hallucinate.\n\nData and data pipelines\n\nNemotron 3 Nano Omni is trained on an enhanced dataset that emphasizes high-quality reasoning across multiple modalities. We significantly expand task coverage and introduce synthetic data for complex reasoning scenarios where public datasets are limited. To support this, we build task-specific, multi-stage pipelines for scalable synthetic data generation.\n\nAs one example, we generated approximately 11.4M synthetic QA pairs (~45B tokens) from a large corpus of real-world PDFs using NeMo Data Designer. This dataset is used to strengthen long-context document reasoning during post-training and delivers a 2.19× improvement in overall accuracy on MMLongBench-Doc.\n\nWe detail the full pipeline evolution, including failure analysis and key lessons learned, in our Data Designer developer note. The note also includes nine runnable pipeline recipes that can serve as starting points for building your own document-understanding datasets.\n\nExample workflows\nExample 1: Long multi-page document analysis\n\nNemotron 3 Nano Omni can analyze and reason over long documents such as financial reports, academic papers, product manuals, etc. The following example retrieves financial metrics across a 100+ page document to calculate another metric:\n\nFigure 3: Stylized example from the MMLongBench-Doc benchmark\n\nThe model was prompted to answer the question as follows:\n\nExtract information from all the given images, then answer the question using a single word or phrase. Return 'Not answerable' if the answer cannot be derived from the the images.\n\n\nThe model is capable of long-context retrieval, structured extraction, table/chart reading and multi-page reasoning all in one go.\n\nExample 2: Video + audio understanding\n\nNemotron-3 Nano Omni performs joint audio-visual analysis, both locally for specific scenes and globally across the entire video. This enables it to answer complex questions that require cross-modal reasoning—such as identifying specific visuals shown exactly when a certain topic is mentioned in the audio.\n\nVideo\n\nQuestion\n\nWatch the video and listen to the narration.\n1.What structure is on fire as shown in the video and how much money was being spent in its renovation project ? \n2. Describe in short what visuals are shown when the eye-witness narrates her experience?\n\n\nAnswer\n\n1. The structure on fire is the Notre Dame Cathedral, which was undergoing an almost $7 million renovation project.\n\n2. When the eye-witness narrates her experience, the visuals show the cathedral engulfed in flames and thick smoke, scaffolding surrounding the burning roof, firefighters using ladders to spray water, a crowd of people watching from the riverbank, and views of the burning structure against the Paris skyline.\n\nExample 3: Agentic computer use / screenshot reasoning\n\nNemotron 3 Omni can be integrated into agentic computer-use systems to reason over user intents, analyze GUI elements, and execute actions to accomplish tasks.\n\n\nThe model was given access to a web environment with the following system prompt:\n\nYou are a GUI agent. You are given an instruction, a screenshot of the screen and your previous interactions with the computer. You need to perform a series of actions to complete the task. The passoword of the computer is {password}.\n\nFor each step, provide your response in this format:\n{thought}\n## Action:\n{action}\n## Code:\n{code}\n\nIn the code section, the code should be either pyautogui code or one of the following functions wrapped in the code block:\n- {\"name\": \"computer.wait\", \"description\": \"Make the computer wait for 20 seconds for installation, running code, etc.\", \"parameters\": {\"type\": \"object\", \"properties\": {}, \"required\": []}}\n- {\"name\": \"computer.terminate\", \"description\": \"Terminate the current task and report its completion status\", \"parameters\": {\"type\": \"object\", \"properties\": {\"status\": {\"type\": \"string\", \"enum\": [\"success\", \"failure\"], \"description\": \"The status of the task\"}, \"answer\": {\"type\": \"string\", \"description\": \"The answer of the task\"}}, \"required\": [\"status\"]}}\n\n\nUser Instruction\n\nFind the Driver License Eligibility Requirements\n\n\nModel Response:\nThe GIF above shows the actions that the agent takes to fulfill the user’s request\n\nIt clicks on the “License & IDs” tab\nThen it clicks on “Driver’s License” from the dropdown menu\nThen it clicks on “Driver’s License Eligibility” on the left\nIt scrolls down on this page and back up\nFinally it produces the following response for the user:\nSuccessfully found the Driver License Eligibility Requirements page on the Virginia DMV website. The page contains comprehensive information about driver license eligibility including:\n\n**General Requirements:**\n- Must be a resident of the Commonwealth of Virginia\n- Must be at least 16 years and 3 months of age\n\n**First Time Drivers:**\n- Must complete a state-approved driver education program\n- Must obtain a learner's permit at least 60 days before taking the road skills test\n- Must be at least 15 years and 6 months of age for a learner's permit\n- No exceptions to age requirements\n\n**New Residents:**\n- Temporary residents: must obtain license within 6 months\n- Permanent residents: must obtain license within 1 year\n\n**Military Personnel:**\n- Active-duty members of the Armed Forces stationed in Virginia\n- Spouses and dependents 16 years and 3 months or older may drive with valid out-of-state license\n- If vehicle is co-owned and out-of-state plates are used, all co-owners must be active duty members\n\n**Out-of-State Students:**\n- Full-time students enrolled in accredited Virginia schools (not employed) may drive with valid out-of-state license\n- Full-time students who are employed are considered Virginia residents for vehicle laws\n\n**Non-Residents:**\n- Non-residents temporarily living in Virginia may drive with home state license for no more than 6 months\n- Note: This does not apply to commercial vehicle drivers\n- If becoming gainfully employed, must hold Virginia driver's license\n\n**Identification and Residency Requirements:**\n- Proof of identity (acceptable documents listed in DMV 141)\n- Proof of legal presence in the U.S.\n- Proof of Virginia residency\n- Proof of Social Security number\n- Proof of name change (if applicable)\n\nAdditional resources available: interactive document guide, \"Acceptable Documents for Obtaining a Driver's License or Photo ID Card\" (DMV 141), and Spanish language version.\n\nExample 4: Mixed document + chart + narration reasoning\n\nNemotron-3 Nano Omni can analyze charts, figures shown in images, along with audio files to generate any commonalities, discrepancies across the media.\n\nImage\n\nAudio\n\n\nQuestion\n\nUse both the slide content and the spoken commentary.\nList out any extra points mentioned by the speaker that is not shown in the slide\n\n\nAnswer\n\nBased on the speaker's commentary and the visual content of the slide, here are the extra points mentioned that are not explicitly shown or detailed in the slide:\n\n*   **The Topic:** The speaker explicitly states she will be covering **multitask learning** with neural networks, while the slide title is simply \"Some notation\" (though it contains the mathematical definitions for tasks).\n*   **Nature of the Output:** She describes the output ($y$) as a **probability distribution** over possible labels (e.g., tiger, tiger cat, lynx, cat), whereas the slide only shows a bar chart with class labels without explicitly labeling the vector as a distribution.\n*   **Specific Task Example (Paper Titles):** She introduces a concrete example where the input is the **title of a paper** and the neural network is tasked with estimating the **length of the paper**. The slide shows \"length of paper\" near the bar chart, but does not visually distinguish how a paper title maps to these bars versus representing animal classes.\n*   **Optimization Techniques:** She mentions that the loss function is typically optimized using **stochastic gradient descent** or a **\"favorite optimizer,\"** which are procedural steps not written on the slide (which only defines the loss function $\\mathcal{L}$ to minimize).\n*   **Input Diversity:** She specifies that inputs can be a **\"wide range of unstructured inputs,\"** specifically mentioning **images** and **text**. The slide visually displays a single image (a structured input) and uses a generic variable $x$ for the input class.\n\nExample 5: Soundscape\n\nNemotron-3 Nano Omni can analyze charts, figures shown in images, along with audio files to generate any commonalities, discrepancies across the media.\n\nAudio\n\n\nQuestion\n\nWhat is producing the main sound in this audio, and what does the acoustic environment suggest about where it was recorded? \n\n\nAnswer\n\nThe main sound is a bird chirping, and the presence of multiple bird calls and a natural, open acoustic environment suggests the recording was made outdoors in a natural setting like a forest or park.\n\nExample 6: Music\n\nNemotron-3-Nano-Omni can interpret and reason about general audio, including soundscapes and environmental sounds.\n\nAudio\n\nQuestion\n\nWhat's the overall vibe of this song, and what kind of scenario would it complement well?\n\n\nAnswer\n\nThe song has a calm, reflective, and slightly melancholic vibe, with a gentle piano melody and soft string accompaniment. It would complement a quiet, introspective scene such as a rainy evening, a peaceful walk, or a moment of personal reflection.\n\nGetting started with Nemotron 3 Nano Omni\nHugging Face BF16 checkpoint\thttps://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16\nHugging Face FP8 checkpoint\thttps://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8\nHugging Face NVFP4 checkpoint\thttps://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4\nTechnical report / PDF\thttps://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Omni-report.pdf\nDataset / collection release\thttps://huggingface.co/datasets/nvidia/Nemotron-Image-Training-v3\nMegatron-Bridge\thttps://github.com/NVIDIA-NeMo/Megatron-Bridge/tree/main/examples/models/vlm/nemotron_3_omni\nNemo-RL\thttps://github.com/NVIDIA-NeMo/RL/blob/nano-v3-omni/docs/guides/nemotron-3-nano-omni.md\nNeMo Data Designer SDG recipes\thttps://github.com/NVIDIA-NeMo/DataDesigner/tree/main/docs/assets/recipes/vlm_long_doc\nReferences\nNVIDIA Nemotron Nano V2 VL. Technical report: https://arxiv.org/abs/2511.03929\nNVIDIA Nemotron 3: Efficient and Open Intelligence. Technical report: https://arxiv.org/abs/2512.20856\nC-RADIOv4-H. Hugging Face model page: https://huggingface.co/nvidia/C-RADIOv4-H\nParakeet-TDT-0.6B-v3. Hugging Face model page: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3\nMegatron-LM. GitHub: https://github.com/NVIDIA/Megatron-LM\nTransformer Engine. GitHub: https://github.com/NVIDIA/TransformerEngine\nMegatron Energon. GitHub: https://github.com/NVIDIA/Megatron-Energon",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/b7ceaf1c#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=19153d",
+      "text": "Hugging Face Blog",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://huggingface.co/spaces/OpenIXCLab/mmlongbench-doc",
+      "text": "MMlongbench-Doc",
+      "title": ""
+    },
+    {
+      "href": "https://99franklin.github.io/ocrbench_v2/",
+      "text": "OCRBenchV2",
+      "title": ""
+    },
+    {
+      "href": "https://jaaackhongggg.github.io/WorldSense/#leaderboard",
+      "text": "WorldSense",
+      "title": ""
+    },
+    {
+      "href": "https://lliar-liar.github.io/Daily-Omni/#leaderboard",
+      "text": "DailyOmni",
+      "title": ""
+    },
+    {
+      "href": "https://matthewcym.github.io/VoiceBench/",
+      "text": "VoiceBench",
+      "title": ""
+    },
+    {
+      "href": "https://mediaperf.org/leaderboard",
+      "text": "MediaPerf.",
+      "title": ""
+    },
+    {
+      "href": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "text": "BF16",
+      "title": ""
+    },
+    {
+      "href": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8",
+      "text": "FP8",
+      "title": ""
+    },
+    {
+      "href": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "text": "NVFP4",
+      "title": ""
+    },
+    {
+      "href": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Omni-report.pdf",
+      "text": "Nemotron 3 Nano Omni report",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/NVIDIA-NeMo/RL/blob/nano-v3-omni/docs/guides/nemotron-3-nano-omni.md",
+      "text": "NeMo-RL",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/NVIDIA-NeMo/Gym",
+      "text": "NeMo Gym",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/NVIDIA-NeMo/DataDesigner",
+      "text": "NeMo Data Designer",
+      "title": ""
+    },
+    {
+      "href": "https://nvidia-nemo.github.io/DataDesigner/latest/devnotes/training-a-vlm-to-understand-long-documents-an-iterative-sdg-story/",
+      "text": "Data Designer developer note",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/NVIDIA-NeMo/DataDesigner/tree/main/docs/assets/recipes/vlm_long_doc",
+      "text": "nine runnable pipeline recipes",
+      "title": ""
+    },
+    {
+      "href": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "text": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "title": ""
+    },
+    {
+      "href": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8",
+      "text": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8",
+      "title": ""
+    },
+    {
+      "href": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "text": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "title": ""
+    },
+    {
+      "href": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Omni-report.pdf",
+      "text": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Omni-report.pdf",
+      "title": ""
+    },
+    {
+      "href": "https://huggingface.co/datasets/nvidia/Nemotron-Image-Training-v3",
+      "text": "https://huggingface.co/datasets/nvidia/Nemotron-Image-Training-v3",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/tree/main/examples/models/vlm/nemotron_3_omni",
+      "text": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/tree/main/examples/models/vlm/nemotron_3_omni",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/NVIDIA-NeMo/RL/blob/nano-v3-omni/docs/guides/nemotron-3-nano-omni.md",
+      "text": "https://github.com/NVIDIA-NeMo/RL/blob/nano-v3-omni/docs/guides/nemotron-3-nano-omni.md",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/NVIDIA-NeMo/DataDesigner/tree/main/docs/assets/recipes/vlm_long_doc",
+      "text": "https://github.com/NVIDIA-NeMo/DataDesigner/tree/main/docs/assets/recipes/vlm_long_doc",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2511.03929",
+      "text": "https://arxiv.org/abs/2511.03929",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2512.20856",
+      "text": "https://arxiv.org/abs/2512.20856",
+      "title": ""
+    },
+    {
+      "href": "https://huggingface.co/nvidia/C-RADIOv4-H",
+      "text": "https://huggingface.co/nvidia/C-RADIOv4-H",
+      "title": ""
+    },
+    {
+      "href": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "text": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/NVIDIA/Megatron-LM",
+      "text": "https://github.com/NVIDIA/Megatron-LM",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/NVIDIA/TransformerEngine",
+      "text": "https://github.com/NVIDIA/TransformerEngine",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/NVIDIA/Megatron-Energon",
+      "text": "https://github.com/NVIDIA/Megatron-Energon",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/bcfec9e5?entry=related_article",
+      "text": "How NVIDIA AI-Q Reached \\#1 on DeepResearch Bench I and II",
+      "title": "NVIDIA AI-Q achieves state-of-the-art performance on deep research benchmarks through a modular multi-agent architecture, fine-tuned Nemotron-3 models, and specialized reliability middleware."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/4943728e?entry=related_article",
+      "text": "Falcon Perception",
+      "title": "Falcon Perception is a 0.6B early-fusion Transformer that unifies vision and language in a single backbone for open-vocabulary grounding and segmentation, outperforming SAM 3 on complex compositional prompts."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/status/2033953815834333608?entry=related_article",
+      "text": "OpenAI Introduces GPT-5.4 Mini and Nano Models",
+      "title": "OpenAI has launched GPT-5.4 mini and nano, new smaller, more capable, and faster models optimized for various tasks including coding and multimodal understanding."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/e75372eb?entry=related_article",
+      "text": "Building a Fast Multilingual OCR Model with Synthetic Data",
+      "title": "This article details NVIDIA's development of Nemotron OCR v2, a fast and accurate multilingual OCR model trained on a massive, open-source synthetic dataset of 12.2 million images, overcoming data scarcity through a scalable, language-agnostic rendering pipeline."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/c4cdf3f6?entry=related_article",
+      "text": "Welcome Gemma 4: Frontier multimodal intelligence on device",
+      "title": "Google DeepMind releases Gemma 4, a family of open, multimodal models (2.3B to 31B parameters) featuring architectural innovations like Per-Layer Embeddings and Shared KV Cache for efficient on-device and long-context performance."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/08211df9?entry=related_article",
+      "text": "A New Framework for Evaluation of Voice Agents (EVA)",
+      "title": "EVA is an open-source, end-to-end evaluation framework for voice agents that jointly assesses task accuracy and conversational experience through a bot-to-bot architecture and specialized datasets."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/8634120?entry=related_article",
+      "text": "Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution | Lex Fridman Podcast #494",
+      "title": "黄仁勋在访谈中深入探讨了从芯片到「AI 工厂」的计算演进、极限协同设计方法论、AI 四大扩展定律以及 NVIDIA 以 CUDA 装机量为核心的竞争护城河。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/900e1709?entry=related_article",
+      "text": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
+      "title": "Google DeepMind introduces Gemini 3.1 Flash TTS, a new text-to-speech model offering enhanced expressivity, controllability via natural language audio tags, support for 70+ languages, and built-in SynthID watermarking for AI content detection."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/f12b487?entry=related_article",
+      "text": "This is ChatGPT Images 2.0",
+      "title": "OpenAI has officially launched Images 2.0, a highly intelligent image generation model capable of 'thinking', web searching, generating complex diagrams, supporting multilingual prompts, and creating coherent multi-image sets for professional production."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/09d760b6?entry=related_article",
+      "text": "Owning the AI Pareto Frontier — Jeff Dean",
+      "title": "Jeff Dean explores Google's strategy for maintaining the AI Pareto frontier through model distillation, hardware-software co-design (TPUs), and the evolution from search to multimodal reasoning systems."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "NVIDIA introduces Nemotron 3 Nano Omni, a new open-weight omni-modal model that combines text, image, video, and audio understanding with a hybrid Mamba-Tran...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "NVIDIA, Nemotron 3 Nano Omni, Multimodal AI, Mamba, Mixture-of-Experts",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs · Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Mul...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "NVIDIA introduces Nemotron 3 Nano Omni, a new open-weight omni-modal model that combines text, image, video, and audio understanding with a hybrid Mamba-Tran...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/b7ceaf1c",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/b7ceaf1c/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-28 15:58:57",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Tuomas Rintamaki",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Amala Sanjay Deshmukh",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Nabin Mulepati",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Collin McCarthy",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Pritam Biswas",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Arushi Goel",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Leili Tavabi",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Alexandre Milesi",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Danial Mohseni Taheri",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Kateryna Chumachenko",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Isabel Hulseman",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Zhehuai Chen",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Karan",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Tao",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "NVIDIA",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Nemotron 3 Nano Omni",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Multimodal AI",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Mamba",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Mixture-of-Experts",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Mul...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "NVIDIA introduces Nemotron 3 Nano Omni, a new open-weight omni-modal model that combines text, image, video, and audio understanding with a hybrid Mamba-Tran...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/b7ceaf1c/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Mul...",
+  "url": "https://www.bestblogs.dev/en/article/b7ceaf1c"
+}

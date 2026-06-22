@@ -25,3 +25,7 @@ For domain-specific tasks, evaluation must include domain-specific acceptance cr
 ## Agent Learning Use
 
 Use this as an example when discussing eval design: define constraints, test outputs against them, and avoid trusting general reasoning without verification.
+
+## Capture Note
+
+The original publisher page is member-only and access-restricted. The current `article.md` preserves only the visible excerpt exposed through BestBlogs, so this item should be treated as a partial-text capture rather than a complete full-text export.

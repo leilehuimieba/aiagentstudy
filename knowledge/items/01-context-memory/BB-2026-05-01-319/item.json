@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "10-20",
+  "id": "BB-2026-05-01-319",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-319/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-319",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-319/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-319/raw/meta.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-319/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-319/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Abstract + source captured",
+  "tags": [
+    "context-summarization",
+    "long-horizon",
+    "search-agents",
+    "state-compression",
+    "recurrent-context"
+  ],
+  "title": "ReSum: Unlocking Long-Horizon Search Intelligence via Context Summarization",
+  "topic": "01-context-memory",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2509.13313"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2509.13313",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

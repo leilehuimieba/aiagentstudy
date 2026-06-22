@@ -1,0 +1,72 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-13",
+  "id": "BB-2026-05-01-171",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-171/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-171",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-171/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-171/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-171/raw/display-document.html",
+      "knowledge/items/01-context-memory/BB-2026-05-01-171/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-171/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-171/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Claude Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Claude Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Claude Code",
+    "Large Codebases",
+    "AI Coding",
+    "Software Engineering",
+    "Best Practices"
+  ],
+  "title": "How Claude Code works in large codebases: Best practices and where to start / Claude",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://claude.com/product/claude-code/enterprise",
+      "https://code.claude.com/docs/en/discover-plugins#code-intelligence",
+      "https://code.claude.com/docs/en/hooks-guide",
+      "https://code.claude.com/docs/en/memory",
+      "https://code.claude.com/docs/en/plugins",
+      "https://code.claude.com/docs/en/skills",
+      "https://code.claude.com/docs/en/sub-agents",
+      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices",
+      "https://support.claude.com/en/articles/13837433-manage-claude-cowork-plugins-for-your-organization",
+      "https://www.bestblogs.dev/en/article/243d2340"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://code.claude.com/docs/en/memory",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/243d2340"
+  }
+}

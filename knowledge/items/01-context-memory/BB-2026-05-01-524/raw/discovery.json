@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "ByteByteGo"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260616190302_d908f910-b679-4901-b51e-9a1204909118_2182x1096.png",
+  "domain": "blog.bytebytego.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_380212f2",
+  "keyQuotes": [
+    "The most interesting development in this period of AI engineering is the innovations that open-weight models are inspiring through their published designs.",
+    "A trillion-parameter model and a 235-billion-parameter model can cost roughly the same per query if their active counts are similar.",
+    "Architecture is converging while training is now where teams place their different bets."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "By publishing trained parameters and detailed technical reports, teams like DeepSeek, Moonshot AI, and Zhipu AI can learn from and build upon each other's work, creating a public technical conversation that accelerates progress.",
+      "point": "Open-weight models enable a 'borrow-and-build' pattern of innovation."
+    },
+    {
+      "explanation": "MoE separates total parameters (memory/knowledge) from active parameters (compute cost), allowing models to be large and knowledgeable while remaining practical to run. This explains why all major open-weight models share this design.",
+      "point": "The MoE architecture is the common skeleton for all frontier open-weight LLMs."
+    },
+    {
+      "explanation": "Teams diverge on attention strategies (GQA, MLA, Sparse Attention), the number of experts (16 to 384), and post-training methods (RL, distillation, synthetic data). These choices reflect different trade-offs between memory, speed, and capability.",
+      "point": "Key design choices in attention, sparsity, and training differentiate models."
+    },
+    {
+      "explanation": "While architecture is converging, novel training tools like MuonClip (for stable trillion-parameter training) and Slime (for efficient RL) are emerging as highly reusable contributions that can benefit the entire ecosystem.",
+      "point": "Training infrastructure innovations are becoming as important as architectural choices."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article explains how open-weight models have transformed the AI landscape by enabling a 'borrow-and-build' pattern of innovation, focusing on the shared MoE architecture and the key design choices in attention, sparsity, and training that differentiate frontier models.",
+  "originalTitle": "How Open-Weight Models Changed the AI Landscape",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-16 23:31:09",
+  "publishTimeStamp": 1781623869000,
+  "qualified": false,
+  "readCount": 48,
+  "readTime": 10,
+  "readUrl": "https://www.bestblogs.dev/article/380212f2",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_996ae6",
+  "sourceImage": "https://image.jido.dev/20260527123114_8a5609ae-1239-4400-9491-6010a15c4d60_504x504.png",
+  "sourceName": "ByteByteGo Newsletter",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article argues that the rise of open-weight models has fundamentally changed the pace of AI innovation by enabling public, indirect collaboration between competing teams. It begins by clarifying the distinction between 'open-weight' and 'open-source' models, noting that while trained parameters are public, training data and code often remain private. The core of the analysis focuses on the Mixture-of-Experts (MoE) transformer architecture, which has become the common skeleton for all frontier open-weight LLMs. The article explains how MoE separates total parameters (knowledge capacity) from active parameters (compute cost), making large models practical. It then examines three key areas where teams make divergent design choices: attention strategies (GQA, MLA, Sparse Attention), expert count and sparsity (ranging from 16 to 384 experts), and post-training approaches (RL with verifiable rewards, distillation, synthetic agentic data). The article highlights a 'borrow-and-build' pattern, using examples like DeepSeek's MLA being adopted by Kimi K2, and DeepSeek's sparse attention being adopted by Zhipu AI's GLM-5, with each team contributing novel infrastructure (e.g., MuonClip optimizer, Slime framework) that the next team can build upon. The conclusion emphasizes that while specific models will be overtaken, the framework for understanding their design choices will remain relevant.",
+  "tags": [
+    "LLM",
+    "Open-Weight Models",
+    "MoE Architecture",
+    "AI Engineering",
+    "Model Training"
+  ],
+  "title": "How Open-Weight Models Changed the AI Landscape",
+  "translateContent": null,
+  "url": "https://blog.bytebytego.com/p/how-open-weight-models-changed-the",
+  "wordCount": 2363
+}

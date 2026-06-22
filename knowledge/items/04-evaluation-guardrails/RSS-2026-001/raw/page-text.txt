@@ -1,0 +1,295 @@
+Everything we shipped at Interrupt 
+
+Try LangSmith 
+
+Get a demo 
+
+Company Announcements 
+
+LangSmith 
+
+Everything we shipped at Interrupt 
+
+Jacob Talbot 
+
+May 14, 2026 
+
+11 
+
+min 
+
+Go back to blog 
+
+Create agents 
+
+Share 
+
+Key Takeaways 
+
+Accelerating the agent development lifecycle. LangSmith Engine watches your production traces, clusters failures, and opens PRs with fixes so you can spend time reviewing improvements, not hunting for them. 
+
+Managing the infrastructure so you don't have to. Managed Deep Agents, SmithDB (up to 15x faster on core LangSmith workloads), and Sandboxes GA give teams a path from local prototype to production without stitching together the runtime layer themselves. 
+
+Observability and governance ship together now. Messages View makes multi-turn traces readable at a glance, Context Hub versions the instructions and policies your agents follow, and LLM Gateway enforces spend limits and redacts PII before requests leave your environment. 
+
+Today at Interrupt, we announced a ton of new products and features to help teams accelerate the agent development lifecycle . Some handle infrastructure that would take quarters to build yourself. Others help you find what’s broken, understand why, and ship fixes faster, automatically. Here’s what we shipped. 
+
+LangSmith Engine 
+
+Until now, improving your agent has been a manual process of reading traces, looking for patterns, writing evals, and creating fixes. LangSmith Engine is an autonomous agent runs that loop for you. It watches your production traces, clusters failures into named issues, diagnoses root causes against your code, and proposes fixes and eval coverage to keep regressions from coming back. You just review and merge improvements. 
+
+For each issue Engine surfaces, it can: 
+
+Open a PR with a targeted code or prompt fix 
+
+Create a custom online evaluator scoped to the exact problem, so recurrences get resurfaced automatically 
+
+Add the failing traces to your offline eval suite as ground truth examples 
+
+Engine is built on LangSmith's existing tracing and evaluation infrastructure, so it plugs into the workflows your team already runs. Cogent and Campfire have used it to resolve issues affecting thousands of traces. Available now in public beta. 
+
+Read the full announcement 
+
+SmithDB 
+
+SmithDB is the database purpose-built for agent observability that now backs core LangSmith workloads. Agent traces have exploded in volume and size, with deeply nested spans, long-running operations, and events that arrive in pieces over hours. The query patterns needed to analyze them (random access, interactive filtering, full-text search, JSON filtering, tree-aware queries, thread reconstruction, aggregations) require a fundamentally new architecture. 
+
+SmithDB is built in Rust on top of Apache DataFusion and Vortex, with object storage for durable trace data, a small Postgres metastore, and stateless ingestion, query, and compaction services. 
+
+What it delivers: 
+
+Performance: Up to 15x faster on core LangSmith experiences, with P50 trace tree loads at 92ms and P50 single run loads at 71ms 
+
+Portability: Object-storage-backed and stateless, so it scales by adding compute and is far easier to run in self-hosted and multi-cloud environments than traditional database clusters 
+
+Agent-native query patterns: Designed for long-running spans with multiple events per run, large payloads, full-text search, and JSON filtering at sub-second latency 
+
+Read the full announcement 
+
+Managed Deep Agents 
+
+Managed Deep Agents gives developers an API-first hosted runtime for creating, running, and operating deep agents in LangSmith. Built around the open-source Deep Agents harness, it supports agents that can plan, use tools, delegate to subagents, write files, and work over longer timelines, without requiring teams to stand up their own agent server or rebuild the runtime infrastructure around every agent. 
+
+This is designed for agents that need durable execution, persistent context, tool access, sandboxed code execution, and production visibility. Developers can define agents using the familiar Deep Agents project structure, manage them programmatically through the /v1/deepagents API, and inspect every run in LangSmith. 
+
+Key features: 
+
+Managed runtime for creating, updating, managing, and running deep agents through an API 
+
+Durable threads, streaming runs, checkpointing, and human-in-the-loop workflows for long-running tasks 
+
+Agent context and files with support for AGENTS.md , skills/ , subagents/ , and tools.json 
+
+Context Hub for retaining and updating agent memory, operating notes, user preferences, and project context across runs 
+
+Sandbox-backed execution for agents that need code, shell commands, file I/O, data analysis, or artifact generation 
+
+Read the full announcement 
+
+LangSmith Sandboxes Generally Available 
+
+LangSmith Sandboxes are secure code execution environments for agents. They give agents a runtime with a filesystem, shell, package manager, persistent state, and network boundary, so they can write code, install dependencies, run tests, inspect failures, and continue work across longer sessions. 
+
+Each sandbox runs in a hardware-virtualized microVM, isolated from your services and from other sandboxes. That isolation is especially important for agents running model-generated code, external dependencies, or user-provided scripts. 
+
+Sandboxes work through the same LangSmith SDK and API key teams already use, so teams can add safe code execution to Deep Agents, Open SWE, LangSmith Deployment, LangSmith Fleet, or custom agent workflows without building the runtime layer themselves. 
+
+Some highlights from the GA release: 
+
+Snapshots and cheap forks: Capture a sandbox or build one from a Docker image, then fork parallel sandboxes from that state using copy-on-write. 
+
+Blueprints: Define refreshable base environments so new sandboxes start with fresh dependencies, repo state, and warmed caches. 
+
+Pause when inactive: Idle sandboxes pause automatically so teams do not pay for unused resources. 
+
+Sandbox CLI: Manage sandboxes, build snapshots, open consoles, tunnel TCP, and use tools like ssh , scp , rsync , and sftp . 
+
+Auth Proxy with custom callbacks: Inject credentials at the network layer so secrets do not enter the runtime, with support for custom secret resolution, audit hooks, and domain allowlists or denylists. 
+
+Read the full announcement 
+
+Context Hub 
+
+LangSmith Context Hub gives teams a central place to manage the files that shape agent behavior, including AGENTS.md files, skills, policies, examples, and other context bundles agents read and follow. 
+
+Context is often managed differently than harness code. It changes quickly as teams refine instructions, update examples, add policies, and learn what works. It’s also shaped by people across the organization, including designers, marketers, support leads, product managers, compliance teams, and other subject matter experts. Context Hub brings that workflow into LangSmith so teams can collaborate on agent context without forcing everything through GitHub. 
+
+Core features include: 
+
+Versioning: Track changes to context files, inspect previous versions, and roll back when needed. 
+
+Tags: Mark versions with labels like dev , staging , or prod so agents use the right context in the right environment. 
+
+Comments: Collaborate with teammates directly on context changes. 
+
+With Context Hub, teams can treat context as a first-class part of their agent system, with a shared workflow for managing the instructions, examples, and policies that determine how agents behave. 
+
+Read the full announcement 
+
+LangSmith LLM Gateway 
+
+LangSmith LLM Gateway is a new runtime governance layer that sits between your agents and the LLM providers they call. It enforces spend limits and detects sensitive data before requests leave your environment, and every policy event flows directly into LangSmith alongside the trace that triggered it. There are no separate dashboards or audit pipelines to stand up. 
+
+The beta ships with hard spend caps and real-time cost rollups at the organization, workspace, user, and API key level, PII and secrets redaction on both requests and responses, layered policy enforcement, and full audit logging of administrative actions. Setup is a base_url swap. Point your agents at the gateway endpoint with your LangSmith API key, add your provider keys to workspace secrets, and configure policies in the UI. 
+
+In private beta today: 
+
+Spend limits with hard caps at the organization, workspace, user, or API key level, returning a 402 when hit 
+
+Real-time spend visibility by workspace, user, and API key 
+
+PII and secrets detection that redacts sensitive data from requests and responses before it reaches the model or trace 
+
+Trace continuity so gateway-proxied calls land in the same workspace as the rest of your traces 
+
+LangSmith Engine integration that surfaces policy events for triage with one-click drill down to the underlying trace 
+
+Audit logging for every administrative action, with no separate pipeline to stand up 
+
+Read the full announcement 
+
+LangSmith Fleet: new features 
+
+Sandboxes 
+
+Fleet now includes Sandbox access in public beta, giving agents a secure place to write and run code. This expands what Fleet agents can do beyond calling tools. They can analyze data, transform files, generate or edit formats like PDFs and PPTX files, run shell commands, install dependencies, and work like coding agents when a task requires a real execution environment. 
+
+Each sandbox gives the agent an isolated filesystem and command environment backed by LangSmith Sandboxes. In Fleet, sandboxes can be scoped either to a chat thread or agent, so an agent can reuse the same environment across threads or reuse the same computer for every chat. Idle sandboxes have a default 15-minute soft TTL, which keeps the experience efficient while avoiding ongoing costs for inactive sessions, without destroying the contents of the sandbox. 
+
+With Sandboxes, Fleet agents can take on more complex work, including: 
+
+Data analysis: Run code over datasets, transform inputs, and produce structured outputs. 
+
+File generation and transformation: Create, edit, merge, validate, or convert files like PDFs, spreadsheets, and slide decks. 
+
+Coding tasks: Reproduce issues, edit files, install dependencies, and run tests. 
+
+Local tools and CLIs: Use command-line tools or local MCP servers for services that do not yet have a first-class Fleet integration. 
+
+Prebuilt coding agents: Power agents that need a persistent workspace with files, commands, and state across a thread (see more in the prebuilt agents section below). 
+
+Prebuilt agents 
+
+We're expanding Fleet agent templates with five prebuilt agents that the LangChain team relies on every day. These agents handle complex, long-running work that spans multiple tools and activities. Some of them are sophisticated enough that entire companies have been built around similar concepts. They all come free with Fleet, out of the box. 
+
+Since launching our initial templates, we've learned that customization is what separates a generic agent from one that delivers real value. So every prebuilt agent now includes an onboarding flow that asks for the details it needs to fit your context. The GTM agent, for example, asks about your industry, products, and customers to shape how it researches accounts and drafts outbound. From there, you refine the agent further by using it and giving feedback. 
+
+The new pre-built agents: 
+
+Coding agent (built on Open SWE): Connects to your repo and handles coding tasks end to end, from drafting changes to opening PRs. 
+
+GTM agent: Answers ad hoc questions about customer health and usage, flags issues, and drafts outbound communications. A right hand for sales and marketing teams. 
+
+X content manager: Monitors X for topics relevant to your business, drafts posts for your review, and helps you stay engaged on the conversations that matter to your business. 
+
+Executive assistant: Handles inbox triage, scheduling, and meeting prep so you can focus on the work that needs your judgment. 
+
+Competitive researcher: Monitors competitor news, maintains living battlecards, and answers ad hoc competitive questions. 
+
+Free model usage included with Fleet 
+
+It's now easier than ever to get started with Fleet. Developer and Plus plans now include free model usage with inference powered by Fireworks. Start delegating to your own agents in minutes. 
+
+Try LangSmith Fleet 
+
+Deep Agents 0.6 
+
+Deep Agents v0.6 improves performance at the agent layer and at scale. The release adds a lightweight code interpreter for programmatic tool calling (REPL), typed streaming for agent UIs, and DeltaChannel for more efficient checkpoint storage. 
+
+The code interpreter gives agents a runtime for composing tools, managing intermediate state, and deciding what returns to the model context. This helps agents run multi-step workflows with fewer avoidable model round trips. Typed streaming gives applications structured events for messages, reasoning, tool calls, subagents, custom channels, and final output, making it easier to render agent progress. DeltaChannel reduces checkpoint storage overhead by storing diffs instead of full state snapshots at every step. 
+
+What’s new in v0.6: 
+
+Code interpreter: A lightweight REPL for tool composition, state management, and filtering what returns to model context. 
+
+Programmatic tool calling: Run multi-step tool workflows inside the interpreter to reduce model round trips and token usage. 
+
+Typed streaming: Structured events for messages, reasoning, tool calls, subagents, custom channels, and final output. 
+
+Frontend streaming support: v1 integrations for React, Vue, Svelte, and Angular. 
+
+DeltaChannel : Delta-based checkpoint storage that keeps long-running agents more efficient. 
+
+Read the full announcement 
+
+LangChain Labs 
+
+LangChain Labs is an applied research effort focused on continual learning for agents. We’re developing methods that use agent traces to improve performance across the stack, including eval generation, environment design, harness engineering, model selection, prompt optimization, and fine-tuning. 
+
+We’re starting this work with research partners including Harvey, NVIDIA, Prime Intellect, Fireworks, and Baseten. The goal is to help teams turn real agent usage into better agents, while sharing research, evals, and open-source integrations with the broader agent-building community. 
+
+Mining large-scale agent data: Using traces to generate evals, improve environments, tune agent harnesses, and support post-training. 
+
+Finding efficient agent configurations: Exploring the best combinations of models, harnesses, and feedback loops across cost, latency, and task performance. 
+
+Building evaluation and simulation environments: Making it easier to create realistic environments for end-to-end agent evaluation, simulation, and reinforcement learning. 
+
+Prompt optimization across models: Reducing the manual work required to move agents between model families. 
+
+Read the full announcement 
+
+The work continues 
+
+Together, these launches make the agent development lifecycle faster, safer, and more collaborative, from the first prototype to production monitoring and improvement. We’re excited to see what teams build with them, and we’ll keep sharing more as each product evolves. 
+
+Thanks to everyone who joined us at Interrupt, gave feedback, and continues to build with LangChain. If you want to try anything we shipped today, check out the announcements above or get started in LangSmith. 
+
+Try LangSmith 
+
+Related content 
+
+LangSmith 
+
+Give your agent its own computer 
+
+Amy Ru 
+
+June 5, 2026 
+
+7 
+
+min 
+
+Case Studies 
+
+LangGraph 
+
+LangSmith 
+
+Tutorials & How-Tos 
+
+How Lyft Built a Self-Serve AI Agent Platform for Customer Support with LangGraph and LangSmith 
+
+Akshay Sharma 
+
+May 27, 2026 
+
+10 
+
+min 
+
+LangSmith 
+
+Mission Control: Operating Self-Hosted LangSmith on Kubernetes 
+
+Gethin Dibben 
+
+May 26, 2026 
+
+6 
+
+min 
+
+Sign up for our newsletter to stay up to date 
+
+Thank you! Your submission has been received! 
+
+Oops! Something went wrong while submitting the form. 
+
+See what your agent is really doing 
+
+LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click. 
+
+Try LangSmith 
+
+Get a demo

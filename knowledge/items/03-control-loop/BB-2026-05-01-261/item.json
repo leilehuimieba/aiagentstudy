@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "Yesterday",
+  "id": "BB-2026-05-01-261",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-261/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-261",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-261/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-261/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-261/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-261/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-261/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-261/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / ByteByteGo Newsletter",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / ByteByteGo Newsletter",
+  "status": "Full text + source captured",
+  "tags": [
+    "RAG",
+    "Agents",
+    "LLM",
+    "Claude Code",
+    "System Design"
+  ],
+  "title": "EP216: RAGs vs Agents",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.bytebytego.com/p/ep216-rags-vs-agents",
+      "https://www.bestblogs.dev/article/8bdb40d5"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://blog.bytebytego.com/p/ep216-rags-vs-agents",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/8bdb40d5"
+  }
+}

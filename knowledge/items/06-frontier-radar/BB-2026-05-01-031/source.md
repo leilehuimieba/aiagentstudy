@@ -2,7 +2,16 @@
 
 - Title: Claude Opus 4.7 发布
 - BestBlogs URL: https://www.bestblogs.dev/explore/topics/claude-opus-4-7-release
-- Original publisher URL: Not found on page during capture.
+- Original publisher URL: https://www.anthropic.com/news/claude-opus-4-7
+- Original link text: Introducing Claude Opus 4.7（主参考条目外部原文）
+
+- Primary BestBlogs reference URL: https://www.bestblogs.dev/article/3b1c0638
+
+## External Original Mapping
+
+- Topic-page note: this is a BestBlogs topic aggregation page, not a single-source article page.
+- External original chosen for evidence baseline: the primary BestBlogs reference `https://www.bestblogs.dev/article/3b1c0638`
+- Mapped external original URL: https://www.anthropic.com/news/claude-opus-4-7
 
 ## Captured Page Metadata
 

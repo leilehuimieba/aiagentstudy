@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-03",
+  "id": "BB-2026-05-01-460",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-460/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-460",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-460/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-460/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-460/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-460/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-460/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-460/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯云开发者",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯云开发者",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Coding",
+    "Vibe Coding",
+    "Cloud Native",
+    "AI Agent",
+    "MCP Protocol"
+  ],
+  "title": "Redesigning the Cloud for Agents: The Infrastructure Behind Vibe Coding Platforms",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695805&idx=1&sn=f100ca4bb61e5ae6890f2667bfeeb185",
+      "https://www.bestblogs.dev/article/4cc99691"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695805&idx=1&sn=f100ca4bb61e5ae6890f2667bfeeb185",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/4cc99691"
+  }
+}

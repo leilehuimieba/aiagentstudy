@@ -3,6 +3,12 @@
 - BestBlogs URL: https://www.bestblogs.dev/article/c517725e
 - Extraction: DOM text from BestBlogs page
 - Extracted chars: 1590
+- Original publisher URL: https://uxdesign.cc/a-genai-perplexed-by-color-theory-5416cbd3ef10?source=rss----138adf9c44c---4
+- Capture status: Partial visible text only
+
+---
+
+Note: the original publisher page is member-only and currently access-restricted. During this repair pass, direct fetch of the original URL returned an access challenge rather than the full article body. The text below is therefore only the visible portion exposed through BestBlogs and should not be treated as a complete capture.
 
 ---
 

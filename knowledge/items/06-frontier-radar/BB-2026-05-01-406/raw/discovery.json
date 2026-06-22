@@ -1,0 +1,83 @@
+{
+  "id": "RAW_1ac2cf11",
+  "notExist": null,
+  "originalTitle": "将 600 亿参数大模型装进手机的瓶颈，终于被中国 AI 公司突破了",
+  "title": "Chinese AI Company Breaks the Bottleneck of Fitting a 60-Billion-Parameter Model into a Phone",
+  "oneSentenceSummary": "ModelBest, in collaboration with Tsinghua University and OpenBMB, releases the BitCPM-CANN ternary model series, achieving end-to-end training on Huawei Ascend for the first time. Using 1.58-bit quantization, it saves approximately 6x memory while retaining 97% of model capability, paving a new path for on-device large model deployment.",
+  "summary": "This article reports on the BitCPM-CANN ternary model series released by ModelBest at the Huawei Kunpeng Ascend Developer Conference (KADC 2026). Based on 1.58-bit ternary quantization technology, the series compresses model weights from traditional high-precision floating-point numbers to just three optional values (-1, 0, 1), thereby reducing memory usage by approximately 6x. The article notes that BitCPM-CANN is the first large model to complete end-to-end ternary training on Huawei Ascend chips, covering four parameter sizes from 0.5B to 8B. Across 11 evaluation tasks, capability retention rates reach 95.7% to 97.2%. This means an 8B model that originally required 16GB of memory now needs less than 3GB, potentially enabling a 60-billion-parameter model to run on a phone with 8GB of RAM. The article also analyzes the technology's industrial value: amid rising memory prices, a 6x memory dividend is a critical need; Qualcomm's latest flagship chip already supports native 2-bit inference, creating a mutually reinforcing trend between chips and models. ModelBest's differentiated advantage lies in its complete technical ecosystem, from the underlying training framework BM-Train to the on-device model MiniCPM and ternary quantization, all built on domestic computing power, forming a closed-loop domestic solution.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Ternary Quantization",
+    "1.58-bit",
+    "BitCPM-CANN",
+    "ModelBest",
+    "Huawei Ascend"
+  ],
+  "mainPoints": [
+    {
+      "point": "BitCPM-CANN completes end-to-end training of ternary large models on Huawei Ascend for the first time.",
+      "explanation": "Previously, all publicly available ternary model training relied on NVIDIA GPUs. BitCPM-CANN proves that domestic computing power can also achieve extremely low-bit training, with training efficiency reaching 95% of the conventional baseline."
+    },
+    {
+      "point": "Ternary quantization stores weights at 1.58-bit, saving approximately 6x memory with over 97% capability retention.",
+      "explanation": "By compressing weights to three values (-1, 0, 1), the memory requirement for an 8B model drops from 16GB to less than 3GB, with capability retention rates reaching up to 97.2% across 11 evaluations, demonstrating significant redundancy in traditional 16-bit precision."
+    },
+    {
+      "point": "This technology provides a key breakthrough for on-device large model deployment, potentially enabling ultra-large models to run on terminals like phones.",
+      "explanation": "Combined with MoE architecture and activation range constraints, a 60B-scale model could potentially fit into an 8GB memory phone. Qualcomm's latest chip already supports native 2-bit inference, with hardware and models advancing in tandem."
+    },
+    {
+      "point": "ModelBest has built a complete domestic on-device technology ecosystem spanning frameworks, models, and chip adaptation.",
+      "explanation": "Based on the self-developed BM-Train training framework and MiniCPM model family, BitCPM-CANN establishes the training methodology as a low-bit training infrastructure for Ascend, allowing subsequent teams to reuse the same foundation."
+    }
+  ],
+  "keyQuotes": [
+    "Three values, if allocated properly, are sufficient to carry the vast majority of model capability.",
+    "Ternary quantization is not a compromise of 'trading precision for memory.' When 97% of capability is retained, it indicates that a significant amount of precision in traditional 16-bit models may be redundant.",
+    "Instead of waiting for hardware to become powerful enough to accommodate models, we should make models smart enough to adapt to hardware.",
+    "This is a complete domestic closed loop: the framework is domestic, the chip is domestic, the model is domestic, and the methodology is self-developed."
+  ],
+  "url": "https://www.ifanr.com/1666847?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "readUrl": "https://www.bestblogs.dev/article/1ac2cf11",
+  "enclosureUrl": null,
+  "domain": "ifanr.com",
+  "cover": "https://s3.ifanr.com/wp-content/uploads/2026/05/Frame-1-.png",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "MODELS",
+  "aiSubCategoryDesc": "AI Models",
+  "category": "News_Media",
+  "categoryDesc": "News & Media",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 130,
+  "wordCount": 3093,
+  "readTime": 13,
+  "mediaDuration": null,
+  "authors": [
+    "Selina"
+  ],
+  "publishTimeStamp": 1779710691000,
+  "publishDateStr": "05-25",
+  "publishDateTimeStr": "2026-05-25 20:04:51",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Hacker News"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://lr0.org/i/arabic-met-folio.jpg",
+  "domain": "lr0.org",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_66e9b8c1",
+  "keyQuotes": [
+    "An Arabic font is a small program. The text you store is its input, not its output. The word is performed fresh every time you look at it, like music from a score.",
+    "The system he wrote down outlasted everybody who hurt him by a thousand years.",
+    "Justification, in this tradition, is not a spacing problem rather a shaping problem.",
+    "Laid end to end, the eleven centuries that follow Ibn Muqla read like nothing so much as a slow, badly-maintained changelog."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Unlike Latin, Arabic letters have four distinct shapes (isolated, initial, medial, final) chosen based on neighboring characters. A shaping engine like HarfBuzz is essential for correct rendering.",
+      "point": "Arabic script is always cursive, requiring a shaping engine to select the correct letter form at render time."
+    },
+    {
+      "explanation": "This system, codified by calligraphers like Ibn Muqla, produces a dense, regular weave. The web's default `text-align: justify` stretches spaces, which is typographically incorrect for Arabic.",
+      "point": "Historical Arabic justification used kashida (elongation strokes) inside words, not spaces between them."
+    },
+    {
+      "explanation": "These codepoints encode shaped forms rather than abstract letters, leading to silent failures when searching or comparing text. NFKC normalization is the fix, but it's often overlooked.",
+      "point": "Unicode Arabic Presentation Forms create a legacy encoding that breaks search and data processing."
+    },
+    {
+      "explanation": "Digits are weak characters; their behavior depends on surrounding text. Combined with local digit sets (Western, Arabic-Indic, Extended), this leads to issues like reversed phone numbers and incorrect decimal separators.",
+      "point": "The bidirectional algorithm and three different digit sets create complex rendering bugs for numbers."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article explores the deep technical and historical challenges of rendering Arabic script on the web, from the cursive nature of the script and the need for a shaping engine to the legacy of Unicode presentation forms and the bidirectional algorithm's quirks with digits.",
+  "originalTitle": "An interactive introduction to the terrific experience of rendering Arabic typography and its technical debt",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-13",
+  "publishDateTimeStr": "2026-06-13 20:40:16",
+  "publishTimeStamp": 1781354416000,
+  "qualified": false,
+  "readCount": 29,
+  "readTime": 35,
+  "readUrl": "https://www.bestblogs.dev/article/66e9b8c1",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article begins with a real-world frontend bug—Arabic text failing to justify properly—and uses it as a gateway to a comprehensive exploration of Arabic typography's technical debt. It explains the core structural fact that Arabic is always cursive, requiring a shaping engine to select the correct positional form (isolated, initial, medial, final) for each letter at render time. The author details the historical solutions developed by scribes, particularly the use of kashida (elongation strokes) for justification, a system codified by Ibn Muqla in the 10th century. The article then traces the painful history of Arabic in print and digital media, from the first crude movable type in 1514 to the compromises of Simplified Arabic for Linotype machines, and finally to the modern digital era. It covers the legacy of Arabic Presentation Forms in Unicode, which causes silent search failures, and the complexities of three different digit sets (Western, Arabic-Indic, Extended Arabic-Indic) and their interaction with the bidirectional algorithm, leading to issues like phone numbers being displayed in reverse order. The article concludes with a timeline of key milestones, from Ibn Muqla to the release of the Amiri font and the HarfBuzz shaping engine, framing the entire history as a slow, often-broken changelog.",
+  "tags": [
+    "Typography",
+    "Unicode",
+    "Web Development",
+    "Internationalization",
+    "OpenType"
+  ],
+  "title": "An interactive introduction to the terrific experience of rendering Arabic typography and its technical debt",
+  "translateContent": null,
+  "url": "https://lr0.org/blog/p/arabic/",
+  "wordCount": 8541
+}

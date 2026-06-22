@@ -1,0 +1,174 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Tfd84d7855faf40d1a1f25c16b5849c26",
+  "data": {
+    "metaData": {
+      "id": "RAW_06440a10",
+      "notExist": null,
+      "originalTitle": "What I Learned Building Multi-Agent Systems From Scratch",
+      "title": "What I Learned Building Multi-Agent Systems From Scratch",
+      "oneSentenceSummary": "A staff engineer at Shopify shares the journey of building multi-agent systems from scratch, revealing that narrow-focused agents outperform generalists, and that empowering domain experts with tools is more effective than creating an AI SWAT team.",
+      "summary": "This presentation transcript details Paulo Arruda's journey at Shopify, from early experiments with test generation using dependency graphs to the discovery that agentic search (as in Claude Code) outperforms codebase indexing. A pivotal hackday project revealed that two Claude Code instances could solve a problem that one could not, leading to the creation of a multi-agent orchestration tool called Swarm. The talk covers the adoption of this tool across Shopify, with success stories like reducing theme review time from 22 hours to 7-20 minutes. Key lessons include treating agents as narrow-focused experts, avoiding token waste on personas, and empowering domain experts rather than centralizing AI knowledge. The talk concludes with a vision for 2026 as the year of making agents useful at scale through context engineering, proposing an 'llm-fuse' adapter layer to expose data to agents efficiently and a memory system with a 'Defrag' tool to manage context bloat.",
+      "featuredReason": "A first-hand talk distilled by InfoQ on building a multi-agent system from scratch, covering harness design, state management, and coordination trade-offs. A grounded read for engineers and architects shipping real agent systems.",
+      "translateContent": null,
+      "tags": [
+        "Multi-Agent Systems",
+        "Claude Code",
+        "Shopify",
+        "Agent Orchestration",
+        "AI Engineering"
+      ],
+      "mainPoints": [
+        {
+          "point": "Narrow-focused, expert agents outperform generalist agents with massive prompts.",
+          "explanation": "Breaking down complex tasks into small, specialized agents (e.g., for each theme review criterion) dramatically improves results and reduces token waste, as demonstrated by the 22-hour to 7-minute reduction in theme reviews."
+        },
+        {
+          "point": "Empower domain experts with tools instead of creating a centralized AI SWAT team.",
+          "explanation": "A centralized AI team cannot scale. The most effective approach is to build tools (like SwarmSDK) that enable domain experts to create their own agents, as they understand their specific business problems best."
+        },
+        {
+          "point": "Agentic search is more effective and scalable than codebase indexing for code understanding.",
+          "explanation": "Claude Code's agentic search (using Grep, Read, Glob) proved superior to the author's expensive and hard-to-maintain dependency graph approach, allowing agents to operate effectively in any codebase without pre-indexing."
+        },
+        {
+          "point": "Context bloat from MCP tools is a major challenge; an adapter layer may be the solution.",
+          "explanation": "Loading all MCP tools into context wastes tokens. The proposed 'llm-fuse' adapter layer translates standard agent tools (Read, Grep) into calls to any data source (e.g., a database), allowing agents to access information without context pollution."
+        }
+      ],
+      "keyQuotes": [
+        "Wait a second. Claude Code didn't know how to do it. I didn't know how to do it, but two Claude Codes knew how to do it, and that was awesome, and that blew my mind.",
+        "Treat agents like lean, narrow-focused tools, experts, not generalists.",
+        "Don't build an AI SWAT team, build the tools to empower everyone.",
+        "The ideal agent, it's the agent that every single token in its context window is related and steering the result towards the direction they wanted to go.",
+        "I think 2026 will be the year that we actually make them useful."
+      ],
+      "url": "https://www.infoq.com/presentations/multi-agent-system-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "readUrl": "https://www.bestblogs.dev/article/06440a10",
+      "enclosureUrl": null,
+      "domain": "infoq.com",
+      "cover": "https://image.jido.dev/20260513141220_generatedCard-1778068150406.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_f152e8",
+      "sourceName": "InfoQ",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 250,
+      "wordCount": 4736,
+      "readTime": 19,
+      "mediaDuration": null,
+      "authors": [
+        "Paulo Arruda"
+      ],
+      "publishTimeStamp": 1778673660000,
+      "publishDateStr": "05-13",
+      "publishDateTimeStr": "2026-05-13 12:01:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_c857f67e",
+        "type": "ARTICLE",
+        "title": "MCP in the Java World: Bringing Architectural Strategy to LLM Integrations",
+        "oneSentenceSummary": "MCP Java SDK transforms LLM integration from ad-hoc tool calling into a disciplined architectural pattern, introducing protocol-level contracts, anti-corruption layers, and governance for enterprise Java systems.",
+        "url": "https://www.infoq.com/articles/mcp-java-architectural-strategy-llm-integrations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_aa252bd",
+        "type": "VIDEO",
+        "title": "Memory and Dreaming for Self-Learning Agents",
+        "oneSentenceSummary": "Anthropic introduces Memory and Dreaming, two new primitives for its Managed Agents API, enabling agents to achieve continuous self-learning by managing their own knowledge in a file system-like structure and asynchronously curating that knowledge to improve over time.",
+        "url": "https://www.youtube.com/watch?v=RtywqDFBYnQ",
+        "sourceName": "Claude"
+      },
+      {
+        "id": "RAW_8b57be6d",
+        "type": "ARTICLE",
+        "title": "4 Patterns of AI Native Development",
+        "oneSentenceSummary": "Patrick Debois outlines four evolving patterns of AI-native development—shifting from producer to manager, implementation to intent, delivery to discovery, and content to knowledge.",
+        "url": "https://www.infoq.com/presentations/patterns-ai-native-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_72e3cf5",
+        "type": "VIDEO",
+        "title": "Head of Claude Code: What happens after coding is solved | Boris Cherny",
+        "oneSentenceSummary": "Boris Cherny, Head of Claude Code at Anthropic, discusses the transition to 100% AI-generated software development and the emergence of autonomous agents like Co-work.",
+        "url": "https://www.youtube.com/watch?v=We7BZVKbCVw",
+        "sourceName": "Lenny's Podcast"
+      },
+      {
+        "id": "RAW_39b642f7",
+        "type": "ARTICLE",
+        "title": "Agents， Architecture， & Amnesia: Becoming AI-Native Without Losing Our Minds",
+        "oneSentenceSummary": "This talk warns against 'architectural amnesia' in the rush to adopt AI agents, arguing that increased autonomy demands more governance, not less, and that we must return to engineering fundamentals like identity, traceability, and trade-off analysis.",
+        "url": "https://www.infoq.com/presentations/ai-autonomy-continuum/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_209794e8",
+        "type": "ARTICLE",
+        "title": "Engineering at AI Speed: Lessons from the First Agentically Accelerated Software Project",
+        "oneSentenceSummary": "This article presents a case study of building Claude Code using Claude Code, detailing three stories that illustrate how AI changes bottlenecks in the software development lifecycle, emphasizing experimentation, architectural choices, and the importance of shipping to discover real requirements.",
+        "url": "https://www.infoq.com/presentations/engineering-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_8f3d453",
+        "type": "VIDEO",
+        "title": "Building Claude Code with Boris Cherny",
+        "oneSentenceSummary": "Boris Cherny, creator of Claude Code, discusses his 100% AI-driven workflow, Anthropic's unique engineering culture, and why software engineers are transitioning from 'scribes' to 'authors' in the AI era.",
+        "url": "https://www.youtube.com/watch?v=julbw1JuAz0",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_589d5efc",
+        "type": "ARTICLE",
+        "title": "Using AI as a Thinking Partner for Large-Scale Engineering Systems",
+        "oneSentenceSummary": "A Google Senior Staff Engineer shares a structured methodology for using AI as a thinking partner to understand, experiment with, and redesign a complex, multi-language, multi-repository engineering system.",
+        "url": "https://www.infoq.com/presentations/ai-large-scale-engineering-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_f884575",
+        "type": "VIDEO",
+        "title": "Boris Cherny: How We Built Claude Code",
+        "oneSentenceSummary": "Boris Cherny, creator of Claude Code, discusses the tool's evolution at Anthropic, emphasizing a 'build for the future' philosophy, multi-agent orchestration, and the radical 150% productivity boost in AI-native engineering.",
+        "url": "https://www.youtube.com/watch?v=PQU9o_5rHC4",
+        "sourceName": "Y Combinator"
+      },
+      {
+        "id": "RAW_bf9ab35c",
+        "type": "ARTICLE",
+        "title": "Claude Code auto mode: a safer way to skip permissions",
+        "oneSentenceSummary": "Claude Code's new Auto mode uses a two-stage model-based classifier and prompt-injection probes to autonomously gate dangerous actions, balancing developer productivity with security.",
+        "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+        "sourceName": "Anthropic Engineering"
+      }
+    ]
+  }
+}

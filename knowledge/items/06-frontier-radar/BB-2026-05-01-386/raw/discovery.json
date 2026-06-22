@@ -1,0 +1,84 @@
+{
+  "id": "RAW_d2adddee",
+  "notExist": null,
+  "originalTitle": "登顶 HuggingFace 日榜！英伟达清华团队γ-World：把世界模型从单机打到联机",
+  "title": "Topping HuggingFace Daily Chart! NVIDIA & Tsinghua Team's Gamma-World: Taking World Models from Single-Player to Multi-Player",
+  "oneSentenceSummary": "NVIDIA and Tsinghua University released Gamma-World, a multi-agent world model that achieves zero-shot scalability to multiple players by redesigning positional encoding and attention mechanisms, solving the core bottlenecks of symmetry breaking and quadratic computational explosion in existing solutions.",
+  "summary": "This article reports on Gamma-World, a multi-agent world model jointly developed by NVIDIA, Tsinghua University, the University of Toronto, and the Vector Institute. It points out that existing world models (e.g., Sora, Cosmos, Genie) are based on a single-agent premise and cannot handle causal coupling issues in real-world scenarios such as multiplayer games, factory production lines, and embodied agent training. While previous solutions like Solaris achieved two-player interaction, they suffered from two structural problems: first, using fixed-slot identity vectors broke symmetry between players, preventing scalability; second, full-attention mechanisms led to quadratic computational growth with the number of players. Gamma-World is redesigned from the ground up: it uses regular simplex vertex encoding to solve the symmetry problem, ensuring consistent geometric relationships between any players and enabling zero-shot expansion to four players without retraining; it introduces hub tokens as a shared communication hub, reducing computational complexity from quadratic to linear, with latency dropping from 17.6ms to 4.5ms in an 8-player scenario. Experiments demonstrate real-time synchronized two-player Minecraft, zero-shot four-player generalization, and real-world dual robotic arm collaboration. The article argues that multi-agent world models could become generators of training data for Physical AI, breaking the bottleneck of scarce real-world physical interaction data and driving the replication of scaling laws in the Physical AI domain.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "World Model",
+    "Multi-Agent",
+    "Gamma-World",
+    "NVIDIA",
+    "Physical AI"
+  ],
+  "mainPoints": [
+    {
+      "point": "Existing world models are based on a single-agent premise and cannot handle causal coupling in multi-agent scenarios.",
+      "explanation": "In scenarios like multiplayer games, factory production lines, and embodied agent training, one agent's actions change the shared environment state, requiring all other agents to perceive and act accordingly. Existing single-agent frameworks lack a built-in interface for multiple participants."
+    },
+    {
+      "point": "Gamma-World solves the player symmetry problem using regular simplex vertex encoding, enabling zero-shot scalability.",
+      "explanation": "Each player is mapped to a vertex of a regular simplex in a rotation angle space, where distances between any two points are equal. The model is not tied to a fixed number of players; trained with two players, it can zero-shot expand to four players during inference without retraining."
+    },
+    {
+      "point": "Gamma-World introduces hub tokens to reduce computational complexity from quadratic to linear.",
+      "explanation": "Players no longer connect directly to each other but communicate through a shared hub token. In an 8-player scenario, computational cost is only one-eighth of the full-attention approach, with latency dropping from 17.6ms to 4.5ms, supporting real-time interaction."
+    },
+    {
+      "point": "Multi-agent world models could become generators of Physical AI training data, breaking the data bottleneck.",
+      "explanation": "High-quality multi-agent interaction data is extremely scarce. World models can generate trajectory data 24/7 in virtual environments, and the generation process can be actively designed, forming a self-accelerating flywheel: better world models → higher quality training data → better policies → more diverse interaction trajectories."
+    }
+  ],
+  "keyQuotes": [
+    "This isn't something you can fix by adding more data to a single-agent framework; the design itself never had an interface for multiple participants.",
+    "The model learns 'how these two specific roles interact,' not 'how multiple equal players share a world.'",
+    "This model has never seen training data with four players. During inference, we just pick two more vertices from the simplex vertex pool, and four synchronized views are generated directly, with the shared world state fully preserved.",
+    "Collecting data from the real world is passive; generating data with a world model is active. This activeness itself is a qualitative leap.",
+    "From single-player to multi-player, the next battle of world models has just begun."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651035907&idx=1&sn=cd65e6a8e2619188409acb7a14b19812",
+  "readUrl": "https://www.bestblogs.dev/article/d2adddee",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045346_3bc9a61a",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045346_3bc9a61a",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "MODELS",
+  "aiSubCategoryDesc": "AI Models",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 27,
+  "wordCount": 3195,
+  "readTime": 13,
+  "mediaDuration": null,
+  "authors": [
+    "机器之心"
+  ],
+  "publishTimeStamp": 1780108200000,
+  "publishDateStr": "05-30",
+  "publishDateTimeStr": "2026-05-30 10:30:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

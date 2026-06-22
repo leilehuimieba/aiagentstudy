@@ -1,0 +1,320 @@
+{
+  "generated_at": "2026-06-09T17:22:09",
+  "profile": "qmvqcrb8",
+  "source_count": 8,
+  "results": [
+    {
+      "source_id": "arxiv",
+      "name": "arXiv",
+      "group_id": "papers-primary",
+      "requested_url": "https://arxiv.org/",
+      "capture_route": "api-first",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "A0F00FC204D87EFAE806E379DDBD132A",
+          "url": "https://arxiv.org/"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "huggingface-papers",
+      "name": "Hugging Face Papers",
+      "group_id": "papers-primary",
+      "requested_url": "https://huggingface.co/papers",
+      "capture_route": "browser-or-http",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "91B42115E58F7FD87F721DC268189E32",
+          "url": "https://huggingface.co/papers"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "openai-news",
+      "name": "OpenAI News",
+      "group_id": "official-labs",
+      "requested_url": "https://openai.com/news/",
+      "capture_route": "http-or-browser",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "1FE26B671BC931C7CF873F423693D9CA",
+          "url": "https://openai.com/news/"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "anthropic-news",
+      "name": "Anthropic News",
+      "group_id": "official-labs",
+      "requested_url": "https://www.anthropic.com/news",
+      "capture_route": "http-or-browser",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "792E7399953BDC3435A3F441120BB0C6",
+          "url": "https://www.anthropic.com/news"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "google-deepmind",
+      "name": "Google DeepMind Blog",
+      "group_id": "official-labs",
+      "requested_url": "https://deepmind.google/discover/blog/",
+      "capture_route": "rss-or-http",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "E5D83A2B839B231267F33D898EECCFE5",
+          "url": "https://deepmind.google/discover/blog/"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "langchain-blog",
+      "name": "LangChain Blog",
+      "group_id": "agent-engineering",
+      "requested_url": "https://blog.langchain.com/",
+      "capture_route": "rss-or-http",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "923D42880852ECE529AAC3DF519AD59B",
+          "url": "https://blog.langchain.com/"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "vllm",
+      "name": "vLLM Blog / Docs",
+      "group_id": "model-optimization",
+      "requested_url": "https://blog.vllm.ai/",
+      "capture_route": "http-or-browser",
+      "browser_needed": false,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "2B737FFAD7402B3DA730D1794CBEA24A",
+          "url": "https://blog.vllm.ai/"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [],
+          "readyState": "complete",
+          "sample": "",
+          "textLength": 0,
+          "title": "",
+          "url": "about:blank"
+        }
+      },
+      "status": "browser_opened_low_text"
+    },
+    {
+      "source_id": "jiqizhixin",
+      "name": "机器之心",
+      "group_id": "chinese-ai",
+      "requested_url": "https://www.jiqizhixin.com/",
+      "capture_route": "browser-or-bestblogs",
+      "browser_needed": true,
+      "open": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page": {
+          "page": "44260B1A4396BB7DB51500068DD1D50A",
+          "url": "https://www.jiqizhixin.com/"
+        }
+      },
+      "eval": {
+        "returncode": 0,
+        "stderr": "Update available: v1.7.22 → v1.8.3\n  Run: npm install -g @jackwener/opencli\n\n  Extension update available: v1.0.17 → v1.0.19\n  Download: https://github.com/jackwener/opencli/releases",
+        "page_state": {
+          "links": [
+            {
+              "href": "https://pro.jiqizhixin.com/inbox",
+              "text": "机器之心·PRO通讯会员\n\n一份让您从此不再担心错失AI赛道良机的业内通讯"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/51061f30-966c-4bb5-86bd-12acc7daf0ee",
+              "text": "端侧模型会成为设备现场的「第一层智能」吗？"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/926fd8c7-24c5-4735-b1e1-53a794fdbe4f",
+              "text": "低比特模型会是推理降本的关键组件吗？"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/reference/90a5f5df-547e-4c2d-96a8-8adece5e6341",
+              "text": "为什么 LLM 难以直接复刻 AlphaGo 的树搜索奇迹？"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/f352ad62-d271-45e1-be30-ae393c659415",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/camp_pro/course_2o97YBORiHu17WPxEHZ7A3YAfVf",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2go68dUnsjJuFMXH0LHKvJGm8uY",
+              "text": ""
+            },
+            {
+              "href": "https://app6ca5octe2206.pc.xiaoe-tech.com/p/t_pc/goods_pc_detail/goods_detail/course_2YpgQqltbPYxjXfLGfeFHrR5uy5",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/articles",
+              "text": "文章库"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/m/inbox",
+              "text": "PRO会员通讯"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/1c9524be-37f8-4b87-b6e4-318aae2f7656",
+              "text": "SOTA！模型"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/ai_shortlist",
+              "text": "AI Shortlist"
+            },
+            {
+              "href": "https://aihaohaoyong.com/",
+              "text": "AI 好好用"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/",
+              "text": ""
+            },
+            {
+              "href": "https://www.jiqizhixin.com/articles",
+              "text": "文章库"
+            },
+            {
+              "href": "https://pro.jiqizhixin.com/inbox",
+              "text": "PRO通讯会员"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/short_urls/1c9524be-37f8-4b87-b6e4-318aae2f7656",
+              "text": "SOTA！模型"
+            },
+            {
+              "href": "https://www.jiqizhixin.com/ai_shortlist",
+              "text": "AI Shortlist"
+            },
+            {
+              "href": "https://aihaohaoyong.com/",
+              "text": "AI 好好用"
+            }
+          ],
+          "readyState": "loading",
+          "sample": "机器之心·PRO通讯会员 一份让您从此不再担心错失AI赛道良机的业内通讯 会员通讯 Week 23 · 端侧模型会成为设备现场的「第一层智能」吗？本周，李飞飞 World Labs 团队发文阐述世界模型功能分类框架； OpenAI 宣布将 Codex 并入 ChatGPT...... 订阅会员畅读 专题解读 410 端侧模型会成为设备现场的「第一层智能」吗？ 低比特模型会是推理降本的关键组件吗？ 为什么 LLM 难以直接复刻 AlphaGo 的树搜索奇迹？ 登录 去登录 文章库PRO会员通讯SOTA！模型AI ShortlistAI 好好用 文章库PRO通讯会员SOTA！模型AI Shortlist AI 好好用 登录",
+          "textLength": 313,
+          "title": "机器之心",
+          "url": "https://www.jiqizhixin.com/"
+        }
+      },
+      "status": "browser_opened_low_text"
+    }
+  ]
+}

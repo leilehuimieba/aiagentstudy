@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-28",
+  "id": "BB-2026-05-01-402",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-402/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-402",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-402/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-402/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-402/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-402/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-402/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-402/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / InfoQ",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / InfoQ",
+  "status": "Full text + source captured",
+  "tags": [
+    "Tail Latency",
+    "Hedged Requests",
+    "DDSketch",
+    "Distributed Systems",
+    "Performance Engineering"
+  ],
+  "title": "Stragglers， Not Failures: How Adaptive Hedged Requests Reduce p99 Latency by 74 Percent",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/999ebcec",
+      "https://www.infoq.com/articles/adaptive-hedged-requests-p99-latency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.infoq.com/articles/adaptive-hedged-requests-p99-latency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/999ebcec"
+  }
+}

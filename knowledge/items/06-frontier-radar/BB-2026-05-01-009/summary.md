@@ -2,12 +2,12 @@
 
 ## Article
 
-- Title: Snapchat CEO Evan Spiegel?????????????????
+- Title: Snapchat CEO Evan Spiegel：为什么分发正在成为最重要的护城河
 - Source: BestBlogs / Lenny's Podcast
 - URL: https://www.bestblogs.dev/video/6c91c22
 - Date: 2026-04-26
 - Topic: `06-frontier-radar`
-- Tags: ????, ??, ????, ????
+- Tags: product strategy, distribution, moat, ecosystem
 
 ## Model Mapping
 

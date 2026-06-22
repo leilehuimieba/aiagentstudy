@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-14",
+  "id": "BB-2026-05-01-541",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-541/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-541",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-541/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-541/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-541/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-541/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-541/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-541/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hacker News",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hacker News",
+  "status": "Full text + source captured",
+  "tags": [
+    "Formal Methods",
+    "AI Coding",
+    "Programming Languages",
+    "Software Engineering",
+    "OCaml"
+  ],
+  "title": "Formal methods and the future of programming",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1",
+      "https://www.bestblogs.dev/article/c15f7953"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/c15f7953"
+  }
+}

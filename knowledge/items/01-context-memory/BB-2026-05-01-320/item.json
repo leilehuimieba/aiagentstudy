@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "09-23",
+  "id": "BB-2026-05-01-320",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-320/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-320",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-320/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-320/raw/meta.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-320/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-320/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Abstract + source captured",
+  "tags": [
+    "long-term-memory",
+    "retrieval",
+    "selective-retention",
+    "context-management",
+    "production-agents"
+  ],
+  "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+  "topic": "01-context-memory",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2509.17370"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2509.17370",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

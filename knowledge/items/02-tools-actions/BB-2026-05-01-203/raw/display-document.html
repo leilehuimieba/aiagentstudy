@@ -1,0 +1,129 @@
+<html>
+ <head></head>
+ <body>
+  <p class="jsx-3425532769 subtitle">5 lessons from a production agentic RAG system that handled one million messages across five AI tools from retrieval thresholds to token strategy</p>
+  <div class="section blog-title-text" id="">
+   <p><span style="font-size:12pt">Since 2024, our Field Technology team has been building and deploying AI agents to meaningfully improve our support experience and simplify sales workflows. Our goal is to create systems and tools that give any user a useful, accurate answer the moment they need it. Our AI agents include:</span></p>
+   <ul>
+    <li>
+     <p><span style="font-size:12pt"><strong>Customer-facing Support Assistant:</strong></span><span style="font-size:12pt"> AI agent in our customer support hub to answer customer queries</span></p>
+    </li>
+    <li>
+     <p><span style="font-size:12pt"><strong>Internal-facing Support Assistant:</strong></span><span style="font-size:12pt"> AI agent with an expanded knowledge base to accelerate support efficiency</span></p>
+    </li>
+    <li>
+     <p><span style="font-size:12pt"><strong>Case Summarizer:</strong></span><span style="font-size:12pt"> AI agent that enables a support engineer to quickly parse through customer cases</span></p>
+    </li>
+    <li>
+     <p><span style="font-size:12pt"><strong>Knowledge Drafter:</strong></span><span style="font-size:12pt"> AI agent that automatically drafts knowledge from a given case to expand our knowledge base</span></p>
+    </li>
+    <li>
+     <p><span style="font-size:12pt"><strong>Sales Assistant:</strong></span><span style="font-size:12pt"> AI agent directly embedded into Salesforce to support revenue teams with account and opportunity analysis</span></p>
+    </li>
+   </ul>
+   <p><span style="font-size:12pt">Each tool shares the same underlying Elastic infrastructure but is scoped to a specific workflow and user population.</span></p>
+   <p><span style="font-size:12pt">After one year and over one million messages, we have the data to show what actually happens when AI meets the real world. This inaugural report, </span><a href="https://www.elastic.co/elastic-ai-year-in-review"><span style="font-size:12pt">Elastic's AI Year in Review</span></a><span style="font-size:12pt">,</span><span style="font-size:12pt"><em>*</em></span><span style="font-size:12pt"> is built entirely from the analysis of those messages enriched with structured quality metadata. Our analysis reveals a fundamental truth: The success of any AI initiative is about the feedback loop. The most impactful improvements do not come from selecting a specific large language model (LLM). They come from a dedicated focus on retrieval relevance and treating interaction logs as a strategic asset.</span></p>
+   <p><span style="font-size:12pt">Here are the five most significant lessons we discovered in our journey from initial launch to mission critical engine.</span></p>
+  </div>
+  <div class="section blog-title-text mt-6" id="logs-are-a-strategic-asset-for-measuring-ai-performance">
+   <p><span style="font-size:12pt">Logs are the richest signals in your AI environment. They capture system behavior, application context, and dependencies in a way that other telemetry cannot. By extracting meaning and operational knowledge from logs, any development team can turn this passive data source into the primary engine for insight.</span></p>
+   <p><span style="font-size:12pt">To capture this intelligence in our environment, we built a centralized AI gateway that evaluates all LLM traffic. Using an LLM, we took raw conversation logs, redacted PII data, and transformed this metadata into use case patterns, user engagement paths, and response accuracy metrics. We call this process Context Performance Monitoring, or simply Context Observability. This process enables us to evaluate the effectiveness of our core use cases by analyzing every conversation for sentiment, response quality, and accuracy.</span></p>
+   <p><span style="font-size:12pt">The findings in this report are built entirely from those logs. Without them, we wouldn't have been able to uncover many of the insights that follow. By analyzing these interactions, we can rapidly augment our solutions and ensure we're meeting real-world user needs.</span></p>
+  </div>
+  <div class="section blog-title-text mt-6" id="focus-development-on-power-user-adoption">
+   <p><span style="font-size:12pt">AI tool adoption does not distribute evenly. It clusters around power users.</span></p>
+   <p><span style="font-size:12pt">Throughout 2025, our AI tools handled 209,220 conversation threads spanning five tools, multiple user populations, and dozens of distinct use cases. By the end of the year, nearly 8% of users (our "power users") had generated 80% of all sessions while the remaining 92% of users generated just 20% of all sessions.</span></p>
+   <p><span style="font-size:12pt">This reveals a power law distribution where a small number of actors account for a disproportionately large share of activity. There is a significant divide between "casual users," who occasionally consult our knowledge base, and "power users," who have fully integrated AI into their daily workflows.</span></p>
+   <p><span style="font-size:12pt">As we dug deeper, another pattern emerged. For every simple query, the assistants received three or more complex, technical ones. And as the year progressed, this pattern became even clearer. The questions people were asking in January 2025 were fundamentally different from the questions they asked by December. Power users weren't reaching for the assistant for simple how-tos. They were reaching for it for detailed architectural guidance </span><span style="font-size:12pt"><em>consistently</em></span><span style="font-size:12pt">. This reflects a natural customer maturity curve: As users grow with our product, the demand for complex support increases alongside it.</span></p>
+   <p><span style="font-size:12pt">By the end of the year, it was clear that our most important customers were our repeat users. We needed to ensure that we matured our knowledge base alongside them, so they had what they needed to succeed.</span></p>
+  </div>
+  <div class="section blog-title-text mt-6" id="partial-context-retrieval-degrades-quality">
+   <p><span style="font-size:12pt">Perhaps the most significant finding in our analysis of retrieval augmented generation (RAG) was the impact of search relevance on LLM reasoning and answer quality.</span></p>
+   <p><span style="font-size:12pt">To drive high relevance, we built a hybrid search retrieval layer combining keyword based search (BM25) with the Elastic Learned Sparse EncodeR (ELSER) — Elastic's sparse vector retrieval machine learning model that runs on Elasticsearch as the underlying vector database and search platform. We defined a quality measurement framework to evaluate AI accuracy using a sentiment analysis model to assess helpfulness, tone, and resolution of&nbsp; interaction. We then correlated those quality signals with user sessions across three distinct retrieval outcomes:</span></p>
+   <ol>
+    <li>
+     <p><span style="font-size:12pt"><strong>Helpful:</strong></span><span style="font-size:12pt"> Documents retrieved were directly relevant to the question being asked.</span></p>
+    </li>
+    <li>
+     <p><span style="font-size:12pt"><strong>Partial:</strong></span><span style="font-size:12pt"> Documents retrieved were tangentially related but not directly useful.</span></p>
+    </li>
+    <li>
+     <p><span style="font-size:12pt"><strong>None:</strong></span><span style="font-size:12pt"> No documents were retrieved at all.</span></p>
+    </li>
+   </ol>
+   <p><span style="font-size:12pt">The relationship between these outcomes and quality scores reveals a counterintuitive trend:</span></p>
+   <table>
+    <colgroup>
+     <col style="width:63.2%">
+     <col style="width:36.8%">
+    </colgroup>
+    <tbody>
+     <tr>
+      <td><span style="font-size:12pt"><strong>RAG retrieval outcome</strong></span></td>
+      <td><span style="font-size:12pt"><strong>Avg. quality score</strong></span></td>
+     </tr>
+     <tr>
+      <td><span style="font-size:12pt">Helpful (directly relevant)</span></td>
+      <td><span style="font-size:12pt">9.81/10</span></td>
+     </tr>
+     <tr>
+      <td><span style="font-size:12pt">None (no documents retrieved)</span></td>
+      <td><span style="font-size:12pt">9.18/10</span></td>
+     </tr>
+     <tr>
+      <td><span style="font-size:12pt">Partial (tangentially relevant)</span></td>
+      <td><span style="font-size:12pt">8.15/10</span></td>
+     </tr>
+    </tbody>
+   </table>
+   <p>&nbsp;</p>
+   <p><span style="font-size:12pt">Partial retrieval produces worse answers than no context at all. When given documents that were only tangentially relevant, the model was inclined to use them anyway, and produced worse results because of it.</span></p>
+   <p><span style="font-size:12pt">Retrieval thresholds matter more than retrieval volume. A system configured to return the top 10 documents regardless of relevance score will routinely deliver partial context and degrade quality. The correct behavior is to set a strict confidence threshold and return nothing when no document clears it. "I don't know" is a far more valuable and safer response than a confidently wrong one.</span></p>
+  </div>
+  <div class="section blog-title-text mt-6" id="zero-results-are-not-a-system-failure">
+   <p><span style="font-size:12pt">When a retrieval pipeline always returns something (even partial context that isn't very helpful), you never see your blind spots. While this is the default behavior in most implementations, it prevents you from identifying where your knowledge base genuinely fails to cover a topic.</span></p>
+   <p><span style="font-size:12pt">It's critical to set a confidence threshold. Your system should only return documents when relevance clears a defined minimum floor and return nothing when nothing does. This design change serves two purposes: It prevents the partial context quality degradation described above, and it makes knowledge gaps visible.</span></p>
+   <p><span style="font-size:12pt">Every query that returns nothing is a direct signal of an unmet user need. Implementing a strict confidence threshold transforms those failed retrievals into a context roadmap, allowing your team to prioritize building a knowledge base that's verified by actual user demand rather than editorial guesswork.</span></p>
+  </div>
+  <div class="section blog-title-text mt-6" id="high-token-count-is-not-always-a-cost-problem">
+   <p><span style="font-size:12pt">Initial industry assumptions often treat high token counts as a cost problem to be optimized for. Our analysis proved the opposite: Session depth correlates positively with quality and user satisfaction.</span></p>
+   <p><span style="font-size:12pt">As builders who understand the cost elements, we initially saw high token counts as a red flag both from a cost perspective and as an indicator of a struggling user (someone who was trying to find an answer but couldn't and kept trying).</span></p>
+   <p><span style="font-size:12pt">After a year, the data countered that assumption. Sessions exceeding 50,000 tokens (what we categorize as "deep sessions") averaged a quality score of 9.74 out of 10 — significantly higher than the global average of 9.45. Our top 10 sessions, averaging 583,000 tokens, averaged a quality score of 9.8 out of 10 — 9 of those top 10 sessions recorded a perfect 10/10.</span></p>
+   <p><span style="font-size:12pt">When we dug into these deep sessions, we found that the architects who were deep into Elastic were using AI as a technical partner for tasks that would otherwise require hours of manual work. These sessions consumed the most tokens because they consisted of high-value engineering work, and that correlated with near-perfect accuracy.</span></p>
+   <p><span style="font-size:12pt">The right question to ask is not "how do we reduce token usage?" but "what is the equivalent human cost of this task, and what did we save?" Before implementing rate limits, analyze your longest sessions. Treat high token counts as a signal to investigate, not a cost to optimize away.</span></p>
+  </div>
+  <div class="section blog-title-text mt-6" id="read-the-report">
+   <p><span style="font-size:12pt">These are some of our favorite insights from our year in review. Building AI on a unified platform like Elasticsearch allows us to treat interaction logs as a strategic asset, and that has surfaced insights we simply wouldn't have found otherwise. We're sharing these findings to help other teams move past the prototype phase and build AI that drives genuine business impact through technical precision.</span></p>
+  </div>
+  <section aria-labelledby="read-elastics-ai-year-in-review" class="Banner_banner__jid0L container">
+   <div class="Banner_layoutColumnTwo__yCQ7m Banner_layoutColumnTwoOneCta__063Tk border-radius-medium bg-dark-midnight border-2px-blurple">
+    <div class="Banner_content__EKH5J">
+     <div class="Banner_copy__M56tO">
+      <div class="paragraph-medium">Dive deeper into the most significant lessons from our journey building AI agents at Elastic.</div>
+     </div>
+     <div class="Banner_cta__ytjvZ">
+      <a class="button btn-secondary" href="https://www.elastic.co/elastic-ai-year-in-review"><span class="jsx-1695224489 btn-copy">Download the report</span></a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <div class="section blog-title-text" id="">
+   <p><span style="font-size:12pt">The data in this report is yours to build on, but you don't have to build alone. Join our Slack Community, a dedicated space for engineers and architects to discuss the retrieval strategies and operational challenges described in this review.</span></p>
+  </div>
+  <div class="jsx-624779818 blog-callout col-xs-12 col-md-10">
+   <div class="jsx-624779818 callout-card p-4 
+            information">
+    <div class="jsx-624779818 paragraph-small paragraph-margin-0">
+     <p><a href="https://communityinviter.com/apps/elasticstack/elastic-community" target="_blank"><span style="font-size:12pt"><strong>Join the Elastic Slack Community</strong></span></a></p>
+    </div>
+   </div>
+  </div>
+  <div class="section blog-title-text" id="">
+   <p><span style="font-size:10pt"><em>*This report is drawn from data collected between January 1, 2025, and December 31, 2025, across five tools: the external Support Assistant, the internal Support Assistant, the Sales Assistant, the Case Summarizer, and the Knowledge Drafter.</em></span></p>
+   <p><span style="font-size:10pt"><em>---</em></span></p>
+   <p><span style="font-size:10pt"><em>The release and timing of any features or functionality described in this post remain at Elastic's sole discretion. Any features or functionality not currently available may not be delivered on time or at all.</em></span></p>
+   <p><span style="font-size:10pt"><em>In this blog post, we may have used or referred to third party generative AI tools, which are owned and operated by their respective owners. Elastic does not have any control over the third party tools and we have no responsibility or liability for their content, operation or use, nor for any loss or damage that may arise from your use of such tools. Please exercise caution when using AI tools with personal, sensitive or confidential information. Any data you submit may be used for AI training or other purposes. There is no guarantee that information you provide will be kept secure or confidential. You should familiarize yourself with the privacy practices and terms of use of any generative AI tools prior to use.&nbsp;</em></span></p>
+   <p><span style="font-size:10pt"><em>Elastic, Elasticsearch, and associated marks are trademarks, logos or registered trademarks of elasticsearch B.V. in the United States and other countries. All other company and product names are trademarks, logos or registered trademarks of their respective owners.</em></span></p>
+  </div>
+ </body>
+</html>

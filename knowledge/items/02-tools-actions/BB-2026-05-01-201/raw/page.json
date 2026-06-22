@@ -1,0 +1,178 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T38e7e9115dfa443aada8e008d5e977f0",
+  "data": {
+    "metaData": {
+      "id": "RAW_7cb7ba44",
+      "notExist": null,
+      "originalTitle": "Where OpenClaw Security Is Heading — OpenClaw Blog",
+      "title": "Where OpenClaw Security Is Heading — OpenClaw Blog",
+      "oneSentenceSummary": "OpenClaw is making its powerful AI personal assistant more secure through filesystem boundaries, network egress control, plugin trust signals, contextual command approvals, and static analysis, without reducing its capabilities.",
+      "summary": "This blog post from the OpenClaw team outlines their security strategy for their AI personal assistant, which can read files, run commands, and interact with the network. The core philosophy is that power does not have to mean unbounded or unauditable. The post details several key security initiatives: `fs-safe`, a library for safe filesystem operations that prevents path traversal and boundary-crossing bugs; Proxyline, a Node-process routing layer that forces all network traffic through a configured proxy for egress control and observability; ClawHub plugin trust signals, including scanning, moderation, and trust evidence attached to specific package versions; improvements to command approvals that parse inner command chains to prevent bypasses and explore contextual approval to reduce prompt fatigue; and a static analysis pipeline using OpenGrep with a precise rulepack tied to past security advisories for regression and variant detection. The post emphasizes that these measures are about making boundaries visible and defensible, not about reducing the agent's power.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "AI Security",
+        "Agent Security",
+        "OpenClaw",
+        "Filesystem Security",
+        "Network Egress"
+      ],
+      "mainPoints": [
+        {
+          "point": "Filesystem security is addressed through a shared library, `fs-safe`, that enforces root-bounded file operations.",
+          "explanation": "`fs-safe` provides safe filesystem patterns to prevent path traversal and boundary-crossing bugs, ensuring plugin writes stay within their designated workspace. It is not a sandbox but protects against common filesystem vulnerabilities."
+        },
+        {
+          "point": "Network egress is controlled by Proxyline, a routing layer that forces all traffic through a configured proxy for policy enforcement and observability.",
+          "explanation": "Proxyline addresses the SSRF challenge in agentic systems by moving the control point from URL validation to egress routing. The proxy enforces policies (e.g., blocking metadata endpoints) and provides observability into traffic destinations."
+        },
+        {
+          "point": "Plugin trust on ClawHub is established through a pipeline of scanning, moderation, and trust evidence attached to specific releases.",
+          "explanation": "ClawHub acts as the authority for plugin provenance, using ClawScan, VirusTotal, static analysis, and manual moderation. Trust evidence (e.g., clean, malicious, quarantined) is attached to versions, and malicious releases are blocked from installation."
+        },
+        {
+          "point": "Command approvals are being improved with inner-chain parsing and contextual awareness to reduce prompt fatigue.",
+          "explanation": "The shell approval path now evaluates inner command chains inside wrappers like `bash -c` to prevent bypasses. The team is also exploring contextual approval to decide when to prompt, aiming for prompts that are meaningful and worth reading."
+        },
+        {
+          "point": "Static analysis with a precise OpenGrep rulepack is used for regression and variant detection of past security bugs.",
+          "explanation": "Each rule in the 148-rule pack is tied to a past security advisory. The goal is to catch the same bug class if it reappears (regression) and to find nearby variants of the same mistake, with precision prioritized over noisy coverage."
+        }
+      ],
+      "keyQuotes": [
+        "Powerful does not have to mean blind, unbounded, or impossible to audit.",
+        "The safest filesystem call is still the one we do not make.",
+        "A noisy rule is worse than no rule, because it teaches the team to ignore the channel.",
+        "We are not going to promise risk-free agents. Anyone promising that is selling something, or has not shipped enough yet.",
+        "OpenClaw can stay powerful while becoming more defensible."
+      ],
+      "url": "https://openclaw.ai/blog/where-openclaw-security-is-heading/",
+      "readUrl": "https://www.bestblogs.dev/article/7cb7ba44",
+      "enclosureUrl": null,
+      "domain": "openclaw.ai",
+      "cover": "https://openclaw.ai/og-image.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_33cd0cf4",
+      "sourceName": "OpenClaw Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://openclaw.ai/favicon.svg",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 91,
+      "readCount": 4,
+      "wordCount": 1468,
+      "readTime": 6,
+      "mediaDuration": null,
+      "authors": [
+        "OpenClaw"
+      ],
+      "publishTimeStamp": 1778803200000,
+      "publishDateStr": "05-15",
+      "publishDateTimeStr": "2026-05-15 00:00:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_16e7e40b",
+        "type": "ARTICLE",
+        "title": "OpenAI Models in OpenClaw， Done Right — OpenClaw Blog",
+        "oneSentenceSummary": "OpenClaw integrates OpenAI models via the native Codex app-server harness, delegating the low-level agent loop to Codex while retaining ownership of the product layer, resulting in cleaner tool boundaries, deliberate replies, and dynamic tool loading.",
+        "url": "https://openclaw.ai/blog/openai-models-in-openclaw-done-right/",
+        "sourceName": "OpenClaw Blog"
+      },
+      {
+        "id": "RAW_4a9b8b85",
+        "type": "ARTICLE",
+        "title": "OpenClaw Had a Rough Week — OpenClaw Blog",
+        "oneSentenceSummary": "OpenClaw had a rough week due to plugin dependency issues and performance regressions, leading to a commitment to shrink the core, move optional components to ClawHub, and announce an LTS release.",
+        "url": "https://openclaw.ai/blog/openclaw-rough-week/",
+        "sourceName": "OpenClaw Blog"
+      },
+      {
+        "id": "RAW_add4922",
+        "type": "VIDEO",
+        "title": "How I Created OpenClaw, the Breakthrough AI Agent",
+        "oneSentenceSummary": "Peter Steinberger shares his journey from burnout to building OpenClaw, a wildly popular open-source AI agent that autonomously solves problems, explores its transformative potential for non-coders, and discusses the risks and future of multi-agent collaboration.",
+        "url": "https://www.youtube.com/watch?v=7rzYDM6vMtI",
+        "sourceName": "TED"
+      },
+      {
+        "id": "RAW_52f3fd6",
+        "type": "VIDEO",
+        "title": "Why， and how you need to sandbox AI-Generated Code? — Harshil Agrawal， Cloudflare",
+        "oneSentenceSummary": "This article explores the security risks of AI-generated code and provides a technical framework for sandboxing untrusted code using V8 Isolates and Containers based on capability-based security.",
+        "url": "https://www.youtube.com/watch?v=AHtGAgQ0Q_Q",
+        "sourceName": "AI Engineer"
+      },
+      {
+        "id": "RAW_535eb3d9",
+        "type": "ARTICLE",
+        "title": "Welcome to Agents Week",
+        "oneSentenceSummary": "Cloudflare launches Agents Week, arguing that the current cloud infrastructure is ill-suited for the AI agent era and outlining its vision for a new platform built on efficient, secure, and scalable primitives like isolates, alongside new standards for identity, security, and economics.",
+        "url": "https://blog.cloudflare.com/welcome-to-agents-week/",
+        "sourceName": "The Cloudflare Blog"
+      },
+      {
+        "id": "RAW_55c83261",
+        "type": "ARTICLE",
+        "title": "Meet OpenViking: An Open-Source Context Database that Brings Filesystem-Based Memory and Retrieval to AI Agent Systems like OpenClaw",
+        "oneSentenceSummary": "OpenViking is an open-source context database that organizes AI agent memory and retrieval using a filesystem paradigm to improve context management, retrieval precision, and observability.",
+        "url": "https://www.marktechpost.com/2026/03/15/meet-openviking-an-open-source-context-database-that-brings-filesystem-based-memory-and-retrieval-to-ai-agent-systems-like-openclaw/",
+        "sourceName": "MarkTechPost"
+      },
+      {
+        "id": "RAW_cc81d05",
+        "type": "VIDEO",
+        "title": "AI 国情咨文：编程拐点已至，暗工厂时代即将来临",
+        "oneSentenceSummary": "资深工程师 Simon Willison 深度解析 AI 编程的「拐点」、智能体工程范式及「暗工厂」自动化模式，并严厉预警提示词注入的安全风险。",
+        "url": "https://www.youtube.com/watch?v=wc8FBhQtdsA",
+        "sourceName": "Lenny's Podcast"
+      },
+      {
+        "id": "RAW_38cf7746",
+        "type": "ARTICLE",
+        "title": "Marc Andreessen introspects on The Death of the Browser， Pi + OpenClaw， and Why \"This Time Is Different\"",
+        "oneSentenceSummary": "Marc Andreessen analyzes the current AI era as an 「80-year overnight success,」 highlighting breakthroughs in reasoning and agents while comparing AI scaling laws to Moore's Law.",
+        "url": "https://www.latent.space/p/pmarca",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_b8ebc0fc",
+        "type": "ARTICLE",
+        "title": "How OpenClaw Got Safer in Public — OpenClaw Blog",
+        "oneSentenceSummary": "OpenClaw's journey from an insecure experiment to a production-ready system demonstrates how open-source transparency, community collaboration, and systematic hardening can transform security from a liability into a competitive advantage.",
+        "url": "https://openclaw.ai/blog/openclaw-security-in-public/",
+        "sourceName": "OpenClaw Blog"
+      },
+      {
+        "id": "RAW_a647d6a",
+        "type": "VIDEO",
+        "title": "State of the Claw",
+        "oneSentenceSummary": "OpenClaw founder and OpenAI engineer Peter Steinberger discusses the unprecedented growth and security challenges of the OpenClaw project, shares his unique AI-assisted development workflow, and explores the evolving concept of 'engineer taste' in the AI era.",
+        "url": "https://www.youtube.com/watch?v=zgNvts_2TUE",
+        "sourceName": "AI Engineer"
+      }
+    ]
+  }
+}

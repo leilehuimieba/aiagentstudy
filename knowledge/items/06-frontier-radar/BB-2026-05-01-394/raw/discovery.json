@@ -1,0 +1,84 @@
+{
+  "id": "RAW_63c1abe7",
+  "notExist": null,
+  "originalTitle": "Z Tech｜对话 Andrew Dai：14 年 DeepMind 生涯，见证 PaLM 到 Gemini，下一站押注视觉推理",
+  "title": "Z Tech | A Conversation with Andrew Dai: 14 Years at DeepMind, Witnessing the Evolution from PaLM to Gemini, and Betting on Visual Reasoning as the Next Step",
+  "oneSentenceSummary": "Former Google DeepMind Research Scientist and Director Andrew Dai reflects on his 14-year career, from the early days of Google Brain to the evolution of Gemini, and explains why he is betting on visual reasoning as the key to the next generation of AI breakthroughs.",
+  "summary": "This article is an in-depth interview by Z Potentials with Andrew Dai, former Research Scientist and Director at Google DeepMind. Andrew spent over 14 years at Google, deeply involved in the evolution of large models from PaLM to Gemini, and co-authored foundational papers on language model pre-training, supervised fine-tuning, and MoE architecture. In the interview, he recalls the innovative culture of the early 40-person Google Brain team and the pivotal transition of PaLM 2 from a research project to a deployed product. He shares the logic behind leaving Google to found Elorian AI: open-source models lower the barrier to entry, text capabilities have matured, and visual reasoning represents a vast, under-explored market. Andrew introduces the concept of the 'jagged frontier,' arguing that AI capabilities do not grow linearly; instead, they far surpass humans in some areas while remaining fragile in basic abilities like counting and spatial understanding. He criticizes current large models for essentially reasoning within 'text space' and lacking true 'world understanding,' predicting a future of 'specialized Frontier Models' where visual reasoning and multimodal understanding are core to the next generation of AI.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Andrew Dai",
+    "Visual Reasoning",
+    "Multimodal",
+    "Google DeepMind",
+    "Gemini"
+  ],
+  "mainPoints": [
+    {
+      "point": "Andrew Dai believes current large models lack true 'world understanding' and their reasoning is still built upon text space.",
+      "explanation": "He points out that models can generate realistic images and text but fail to grasp basic physical relationships, such as counting or spatial awareness. True reasoning should be based on vision and multimodality, not just text, as humans and animals possess these abilities before acquiring language."
+    },
+    {
+      "point": "He proposes the 'jagged frontier' concept, arguing that AI capability development is highly uneven, posing significant safety risks.",
+      "explanation": "AI has far surpassed humans in some areas (e.g., Go, coding) but remains fragile in basic capabilities like counting. This unevenness could lead to disasters in critical tasks (e.g., safe driving) due to a model's failure in a key ability, and this risk is easily overlooked."
+    },
+    {
+      "point": "Andrew believes the future will be an era of 'specialized Frontier Models,' where multimodality and coding abilities are fundamentally in conflict.",
+      "explanation": "He observes that incorporating large amounts of multimodal data can degrade a model's coding ability, and vice versa. Therefore, it is difficult to excel at both simultaneously within a single model. His new company, Elorian AI, will focus on building models specifically optimized for multimodal reasoning."
+    },
+    {
+      "point": "His timing for starting a company stems from the lowered barrier due to open-source models and the 'golden opportunity window' created by the maturity of text capabilities.",
+      "explanation": "Andrew believes that open-source models are rapidly approaching the capabilities of closed-source ones, allowing new companies to avoid building infrastructure from scratch. Meanwhile, text capabilities are very mature, while the field of visual reasoning still has a vast gap, making this the optimal time to start a company."
+    }
+  ],
+  "keyQuotes": [
+    "Current multimodal models are the same. They can generate images and videos that look very realistic. Ordinary users can hardly tell what's real anymore. But true professionals, like directors, photographers, and artists, can spot problems immediately. For example: 'Why does this person have six fingers?' So our current stage is really just 'looking like understanding.'",
+    "Perhaps the most dangerous thing in the future is not that AI can't think, but that humans mistakenly believe it already can.",
+    "I believe: the future will be an era of 'specialized Frontier Models.' What we are doing now is building a model specifically optimized for multimodal reasoning.",
+    "The current state of world models is roughly equivalent to the stage of language models twenty years ago. Back then, we knew we wanted to build some kind of system with advanced capabilities. But no one knew what it would eventually become.",
+    "Most current discussions about AGI are based on the assumption of a 'smooth frontier'... But reality might not be like that. What I've seen in the development over the past decade is a highly jagged frontier."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247515883&idx=1&sn=331d2d9e9e5682622e95cf4839872bfd",
+  "readUrl": "https://www.bestblogs.dev/article/63c1abe7",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045446_f5b58ebf",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_a8c202",
+  "sourceName": "Z Potentials",
+  "priority": "LOW",
+  "sourceImage": "https://image.jido.dev/20251127045446_f5b58ebf",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "NEWS",
+  "aiSubCategoryDesc": "AI News",
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 15,
+  "wordCount": 13595,
+  "readTime": 55,
+  "mediaDuration": null,
+  "authors": [
+    "Z Potentials"
+  ],
+  "publishTimeStamp": 1779858240000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 13:04:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

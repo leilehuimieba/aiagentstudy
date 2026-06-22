@@ -1,0 +1,63 @@
+{
+  "blocks": [
+    "Model",
+    "Evaluation/Guardrails"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-30",
+  "id": "BB-2026-05-01-011",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-011/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-011",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-011/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-011/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-011/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-011/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Simon Willison",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Simon Willison",
+  "status": "Full text + source captured",
+  "tags": [
+    "GPT-5.5",
+    "AI 安全",
+    "网络安全",
+    "漏洞发现",
+    "AI 安全研究所"
+  ],
+  "title": "我们对 OpenAI GPT-5.5 网络能力的评估",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://simonwillison.net/2026/Apr/30/gpt-55-cyber-capabilities/#atom-everything",
+      "https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities",
+      "https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities",
+      "https://www.bestblogs.dev/article/29a3b9f4"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://simonwillison.net/2026/Apr/30/gpt-55-cyber-capabilities/#atom-everything",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/29a3b9f4"
+  }
+}

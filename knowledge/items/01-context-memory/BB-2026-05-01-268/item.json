@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-18",
+  "id": "BB-2026-05-01-268",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-268/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-268",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-268/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-268/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-268/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-268/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-268/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-268/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / dbaplus社群",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / dbaplus社群",
+  "status": "Full text + source captured",
+  "tags": [
+    "Claude Code",
+    "RAG",
+    "Grep",
+    "Code Search",
+    "AI Programming"
+  ],
+  "title": "Stop Idolizing RAG! Grep Makes a Comeback, Vector Indexing Becomes a Fallback?",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247636263&idx=1&sn=cf2d8ec41c2617e68fc29e8a5c18d4b0",
+      "https://www.bestblogs.dev/article/3dcf5158"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247636263&idx=1&sn=cf2d8ec41c2617e68fc29e8a5c18d4b0",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/3dcf5158"
+  }
+}

@@ -1,0 +1,318 @@
+<html>
+ <head></head>
+ <body>
+  <div class="w-full">
+   <div class="relative w-full" style="--hero-aspect-ratio:16/9;--hero-aspect-ratio-mobile:3/4">
+    <div class="w-full">
+     <div>
+      <div class="relative flex flex-col items-center text-center">
+       <div class="mb-md gap-2xs flex flex-wrap justify-center">
+        <p class="text-meta text-primary-100">
+         <br>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="w-full">
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>We launched Parameter Golf to engage and support the machine learning research community in exploring a new, tightly constrained machine learning problem. We wanted the challenge to be interesting enough to reward real technical creativity, while remaining conceptually simple and easy to verify.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>Participants had to minimize held-out loss on a fixed FineWeb dataset while staying within a 16 MB artifact limit, including both model weights and training code, and a 10-minute training budget on 8×H100s. We provided a baseline, dataset, and evaluation scripts so participants could fork the repo, improve the model, and submit their results through GitHub.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>Over the course of eight weeks, we received more than 2,000 submissions from over 1,000 participants. We were impressed by the technical breadth, creativity, and rule-bending across the submissions, from careful optimizer tuning and quantization work to new modeling ideas and test-time training.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>One of the most exciting parts of the challenge was seeing how widely participants used AI coding agents. Agents helped lower the cost of experimentation, made it easier for more people to participate, and changed the pace of the competition. They also created new challenges for submission review, attribution, and scoring.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>The challenge also became a meaningful talent discovery surface for us. That was one of our goals for Parameter Golf, and it was a useful signal that open-ended technical challenges can reveal exceptional machine learning taste and persistence.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>In this post, we highlight some of the submissions we found surprising and interesting, and share what we learned from running a coding contest in the age of powerful AI agents.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-xl">
+    <div class="w-full toc-content-heading scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]" id="technical-impressions">
+     <div class="full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1 max-w-none">
+      <h2 class="text-h3 scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]"><span>Technical impressions</span></h2>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-xl">
+    <div class="w-full scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]" id="record-track">
+     <div class="full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1 max-w-none">
+      <h4 class="text-h4 scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]"><span>Record track</span></h4>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>We judged and independently reproduced each submission on the record-track leaderboard, and verified that each submission was record-breaking at the time it was submitted. Several themes stood out.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><i><b><span>Training optimization</span></b></i></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>Some of the strongest results came from careful tuning of existing components.</span></p>
+   </div>
+   <div class="group [&amp;:not(:first-child)]:mt-sm">
+    <div class="w-full">
+     <div class="full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1">
+      <div class="w-full overflow-auto">
+       <div class="py-3xs [&amp;_td]:p-3xs [&amp;_th]:p-4xs prose prose-sm max-w-none [&amp;_table]:w-full [&amp;_table]:table-auto [&amp;_table]:border-collapse [&amp;_table]:text-start [&amp;_td]:min-w-3xl">
+        <div>
+         <div class="relative min-w-fit">
+          <table>
+           <thead>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="font-semibold wrap-break-word"><strong>Submission</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Contributor</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Technique</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Why it mattered</strong></td>
+            </tr>
+           </thead>
+           <tbody>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="wrap-break-word"><a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/60">#60</a></td>
+             <td class="wrap-break-word">@notapplica</td>
+             <td class="wrap-break-word">Combined prior wins from <a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/50">#50</a>, <a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/42">#42</a>, and likely <a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/39">#39</a>, then made a deeper model work with Muon weight decay, spectral embedding initialization, residual-mix scheduling, and compiled evaluation.</td>
+             <td class="wrap-break-word">A strong example of disciplined leaderboard work: identifying which existing improvements matter and combining them cleanly.</td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><i><b><span>Quantization</span></b></i></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>Several submissions pushed hard on compression and export.</span></p>
+   </div>
+   <div class="group [&amp;:not(:first-child)]:mt-sm">
+    <div class="w-full">
+     <div class="full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1">
+      <div class="w-full overflow-auto">
+       <div class="py-3xs [&amp;_td]:p-3xs [&amp;_th]:p-4xs prose prose-sm max-w-none [&amp;_table]:w-full [&amp;_table]:table-auto [&amp;_table]:border-collapse [&amp;_table]:text-start [&amp;_td]:min-w-3xl">
+        <div>
+         <div class="relative min-w-fit">
+          <table>
+           <thead>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="font-semibold wrap-break-word"><strong>Submission</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Contributor</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Technique</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Why it mattered</strong></td>
+            </tr>
+           </thead>
+           <tbody>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="wrap-break-word"><a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/414">#414</a></td>
+             <td class="wrap-break-word">@signalrush</td>
+             <td class="wrap-break-word">Used GPTQ-lite to quantize weights after training.</td>
+             <td class="wrap-break-word">The first leaderboard submission to successfully use GPTQ-lite, leading to better evaluation.</td>
+            </tr>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="wrap-break-word"><a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/1060">#1060</a></td>
+             <td class="wrap-break-word">@dexhunter</td>
+             <td class="wrap-break-word">Built on <a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/634">#634</a> by @raahilshah to successfully use full Hessian GPTQ.</td>
+             <td class="wrap-break-word">Extended earlier quantization work into a stronger compression path.</td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><i><b><span>Test-time and evaluation strategies</span></b></i></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>Some submissions pushed the boundary between model improvement and evaluation strategy. These approaches were valid under the rules, but they required careful review from us as organizers.</span></p>
+   </div>
+   <div class="group [&amp;:not(:first-child)]:mt-sm">
+    <div class="w-full">
+     <div class="full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1">
+      <div class="w-full overflow-auto">
+       <div class="py-3xs [&amp;_td]:p-3xs [&amp;_th]:p-4xs prose prose-sm max-w-none [&amp;_table]:w-full [&amp;_table]:table-auto [&amp;_table]:border-collapse [&amp;_table]:text-start [&amp;_td]:min-w-3xl">
+        <div>
+         <div class="relative min-w-fit">
+          <table>
+           <thead>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="font-semibold wrap-break-word"><strong>Submission</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Contributor</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Technique</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Why it mattered</strong></td>
+            </tr>
+           </thead>
+           <tbody>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="wrap-break-word"><a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/77">#77</a></td>
+             <td class="wrap-break-word">@samacqua</td>
+             <td class="wrap-break-word">Used score-first, per-document LoRA test-time training: score first, adapt only on already-scored chunks, and reset at document boundaries.</td>
+             <td class="wrap-break-word">Pushed the boundary between model improvement and evaluation strategy while staying reviewable under the rules.</td>
+            </tr>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="wrap-break-word"><a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/1019">#1019</a></td>
+             <td class="wrap-break-word">@abaybektursun</td>
+             <td class="wrap-break-word">Used self-generated GPTQ calibration: generate calibration text from the trained model, then build GPTQ Hessians from those activations.</td>
+             <td class="wrap-break-word">A creative calibration strategy that required careful review from organizers.</td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><i><b><span>New modeling and data ideas</span></b></i></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>A few submissions introduced modeling or data ideas that were especially creative.</span></p>
+   </div>
+   <div class="group [&amp;:not(:first-child)]:mt-sm">
+    <div class="w-full">
+     <div class="full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1">
+      <div class="w-full overflow-auto">
+       <div class="py-3xs [&amp;_td]:p-3xs [&amp;_th]:p-4xs prose prose-sm max-w-none [&amp;_table]:w-full [&amp;_table]:table-auto [&amp;_table]:border-collapse [&amp;_table]:text-start [&amp;_td]:min-w-3xl">
+        <div>
+         <div class="relative min-w-fit">
+          <table>
+           <thead>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="font-semibold wrap-break-word"><strong>Submission</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Contributor</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Technique</strong></td>
+             <td class="font-semibold wrap-break-word"><strong>Why it mattered</strong></td>
+            </tr>
+           </thead>
+           <tbody>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="wrap-break-word"><a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/1729">#1729</a></td>
+             <td class="wrap-break-word">@romeerp</td>
+             <td class="wrap-break-word">Introduced the CaseOps tokenizer: lossless capitalization operator tokens with original-byte BPB sidecar accounting.</td>
+             <td class="wrap-break-word">A creative tokenizer and data-representation idea.</td>
+            </tr>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="wrap-break-word"><a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/265">#265</a></td>
+             <td class="wrap-break-word">@unnir</td>
+             <td class="wrap-break-word">Introduced XSA, an efficient partial Exclusive Self Attention approach with GQA-aware grouped views.</td>
+             <td class="wrap-break-word">Brought an efficient attention variant into the challenge.</td>
+            </tr>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="wrap-break-word"><a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/65">#65</a></td>
+             <td class="wrap-break-word">@aquariouseworkman</td>
+             <td class="wrap-break-word">Introduced SmearGate and BigramHash: a learned previous-token embedding blend plus adjacent-token-pair hash features.</td>
+             <td class="wrap-break-word">Added new feature mechanisms from scratch.</td>
+            </tr>
+            <tr class="border-primary-12 border-t last:border-b">
+             <td class="wrap-break-word"><a class="transition ease-curve-a duration-250" href="https://github.com/openai/parameter-golf/pull/1204">#1204</a></td>
+             <td class="wrap-break-word">@msisovic</td>
+             <td class="wrap-break-word">Introduced mini depth recurrence: repeated layers 4 and 5, delayed recurrence until mid-training, and partially untied the repeated MLPs.</td>
+             <td class="wrap-break-word">The first accepted leaderboard row to make recurrent layers work effectively.</td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>We chose to highlight these nine submissions because they represent the range of results we hoped the challenge would surface. Some participants found wins through careful tuning. Others pushed quantization and low-rank techniques. Some explored edges of the evaluation rules. And several introduced modeling or data ideas, from the literature or from scratch, that produced unexpected gains.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-xl">
+    <div class="w-full scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]" id="nonrecord-track">
+     <div class="full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1 max-w-none">
+      <h4 class="text-h4 scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]"><span>Nonrecord track</span></h4>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>The nonrecord track was home to many creative submissions. We highlighted 15 favorites, including approaches ranging from non-autoregressive text modeling to dynamic tokenization.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>Because this track was more experimental, we focused less on raw performance and more about whether the approach was technically interesting. Three submissions stood out in particular:</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <ul class="mb-md marker:text-inherit last:mb-0 in-[:where(ul,ol)]:mt-2 list-disc in-[:where(ul,ol)]:list-[circle] ps-2xs mx-3xs">
+     <li class="mb-4xs"><a href="https://github.com/openai/parameter-golf/blob/main/records/track_non_record_16mb/2026-03-26_37M_LeWM_Jepa_Mamba2_10L_UNet_INT4FP8QAT_Brotli/README.md" class="transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline" target="_blank" rel="noreferrer"><span>CiprianFlorim-Ifrim’s combination state-space model and JEPA submission</span>⁠<span class="sr-only">(opens in a new window)</span></a><span>,</span></li>
+     <li class="mb-4xs"><a href="https://github.com/openai/parameter-golf/blob/main/records/track_non_record_16mb/2026-03-23_DGAttention_DavidGao/README.md" class="transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline" target="_blank" rel="noreferrer"><span>ddavidgao’s Designator/Guided Attention submission</span>⁠<span class="sr-only">(opens in a new window)</span></a></li>
+     <li class="mb-4xs"><a href="https://github.com/openai/parameter-golf/blob/main/records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/README.md" class="transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline" target="_blank" rel="noreferrer"><span>DariusFeher’s Byte-Level H-Net submission</span>⁠<span class="sr-only">(opens in a new window)</span></a></li>
+    </ul>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>These were our favorite three nonrecord submissions, even though they were not necessarily the top three by performance.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>That said, the nonrecord track was still competitive. Half of nonrecord leaderboard entries beat the naive baseline of 1.22 BPB, and the top-ranked entry reached 1.12 BPB.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>We found this encouraging. Even against strong transformer baselines, alternative approaches could sometimes hold their own against the dominant architecture.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>We also think that this track benefits especially from the availability of strong coding agents. Agents made it much cheaper to prototype speculative ideas, including approaches that may previously have felt too time-consuming or uncertain to try in a short competition.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-xl">
+    <div class="w-full toc-content-heading scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]" id="takeaways">
+     <div class="full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1 max-w-none">
+      <h2 class="text-h3 scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]"><span>Takeaways</span></h2>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>A major difference between Parameter Golf and earlier competitions like it was the widespread use of coding agents. The vast majority of submitters mentioned using agents as part of their work.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>That lowered the barrier to entry. Participants could set up experiments faster, inspect unfamiliar code, and test ideas with less friction. RunPod’s sponsorship of $1,000,000 in compute also played a major role in making the challenge accessible to more people.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>At the same time, agent use created new issues for submission and scoring. Many submissions were small changes to existing top scorers, rather than fundamentally new approaches. This was often useful: strong ideas spread quickly and were refined by others. But it also created noise. When submissions that fell outside the competition guidelines produced unusually strong scores, other agents sometimes copied those ideas and continued down the same invalid path.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>The volume of submissions also changed how we had to run the competition. We could not manually inspect every submission and still keep the leaderboard moving. During the challenge, we developed an internal Codex-based triage bot to monitor new submissions and flag them for human review. This became especially important during periods when we received hundreds of submissions a day.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>AI agents also became part of the community around the challenge. For much of the competition, @notapplica and their coding agent ran a “Live Updates” bulletin, tracking major events, explaining leaderboard approaches, and helping other participants follow the competition. Community review tools also appeared to help less experienced participants check whether their submissions were within the rules and avoid common invalid approaches.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-xl">
+    <div class="w-full toc-content-heading scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]" id="whats-next">
+     <div class="full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1 max-w-none">
+      <h2 class="text-h3 scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]"><span>What’s next?</span></h2>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>Our primary goal was to launch a challenge that </span><a href="https://cdn.openai.com/pdf/d5caec5a-ee81-419d-b0d7-39f1424d819c/OpenAI%20Model%20Craft_%20Parameter%20Golf%20Challenge%20Terms%20and%20Conditions.pdf" class="transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline" target="_blank"><span>eligible participants</span>⁠<span class="sr-only">(opens in a new window)</span></a><span> could take part in and experience machine learning research. Parameter Golf brought in a wide range of technically strong and creative submissions, and it gave us a clearer view of how open research competitions may change as AI agents become more capable and widely used.</span></p>
+   </div>
+   <div class="max-w-none [&amp;:not(:first-child)]:mt-sm">
+    <p class="mb-sm last:mb-0"><span>We are thinking about launching more challenges like this in the future. If you’re interested, please fill out the </span><a href="https://jobs.ashbyhq.com/openai/form/open-ai-challenge-parameter-golf" class="transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline" target="_blank" rel="noreferrer"><span>challenge participant form</span>⁠<span class="sr-only">(opens in a new window)</span></a><span>.</span></p>
+   </div>
+  </div>
+  <div class="w-full">
+   <div class="flex w-auto">
+    <div class="w-full no-scrollbar overflow-x-auto overflow-y-hidden">
+     <div class="px-sm pe-sm flex min-w-224 flex-none">
+      <div class="mb-md relative ps-sm min-w-[calc(100%/3)] ps-0 last:me-0"></div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

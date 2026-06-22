@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "大淘宝技术"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045404_f9729af6",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_fa83d221",
+  "keyQuotes": [
+    "Skills are the smallest reusable unit for AI R&D: analogous to how 'functions/classes' encapsulate logic in software engineering, Skills encapsulate workflows + domain knowledge + constraint rules.",
+    "The quality bottleneck is not the model, but knowledge engineering: the improvement from 50% to 90% came entirely from knowledge injection and constraint iteration, not from switching to a more powerful model.",
+    "Deterministic engineering + uncertain AI = a controllable R&D pipeline.",
+    "The developer's role shifts from a code executor to a reviewer and architect."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Skills encapsulate workflows (SKILL.md), domain knowledge (references), and constraint rules, transforming AI from a \"free-form\" conversational model to an engineering model that executes within a defined framework, solving the problem of unstable AI output quality.",
+      "point": "The core of \"Skills-Oriented Programming\" is encapsulating human domain experience into deterministic units executable by AI."
+    },
+    {
+      "explanation": "The article points out that the improvement from 50% to 90% success rate came entirely from knowledge injection and constraint iteration, not from switching to a more powerful model. Domain knowledge (e.g., mapping rules, API signatures) must be explicitly injected through Skills and cannot emerge from training data.",
+      "point": "The quality bottleneck in AI-driven R&D is not the model, but knowledge engineering."
+    },
+    {
+      "explanation": "High-precision tasks (e.g., interface extraction) are handled with deterministic scripts; unstable model tasks (e.g., long document generation) are bypassed through architecture decomposition (sub-Skills); and recurring error patterns are solidified into constraint rules. This combination turns uncontrollable conversations into reproducible pipelines.",
+      "point": "Combining deterministic engineering with uncertain AI is key to building a controllable R&D pipeline."
+    },
+    {
+      "explanation": "Through a layered design of atomic capability layer, template layer, and adapter layer, the AI's scope is narrowed from \"understanding the entire system\" to \"filling in adapter logic within a fixed framework.\" This reduces the adapter layer code volume by 60%, greatly lowering the complexity and error probability of AI generation.",
+      "point": "Layered architecture is the infrastructure for AI programming, significantly improving AI generation quality."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article proposes the \"Skills-Oriented Programming\" paradigm, which encapsulates domain knowledge, workflows, and constraint rules into versionable Skill units, enabling LLMs to generate code within a deterministic framework. This achieves a 65% reduction in end-to-end delivery cycles for enterprise customer integration scenarios, with a 90% first-pass code generation success rate.",
+  "originalTitle": "面向 Skills 编程-淘宝企业购端对端研发提效实践",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Today",
+  "publishDateTimeStr": "2026-06-17 14:19:00",
+  "publishTimeStamp": 1781677140000,
+  "qualified": false,
+  "readCount": 37,
+  "readTime": 39,
+  "readUrl": "https://www.bestblogs.dev/article/fa83d221",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_efc2de",
+  "sourceImage": "https://image.jido.dev/20251127045404_f9729af6",
+  "sourceName": "大淘宝技术",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article from the Taobao Technology team systematically proposes and implements a new AI R&D paradigm called \"Skills-Oriented Programming.\" Using Taobao Enterprise Purchase's custom customer integration scenario as a practical case, it details a five-stage evolution path from Vibe Coding, Prompt Templates, SDD (Specification-Driven Development), to Skill Encapsulation and Cloud Integration. The core idea is to encapsulate human domain experience (workflows, knowledge, constraints) into reusable Skill units, allowing AI to execute code generation within a defined framework rather than generating freely. The article deeply analyzes the bottlenecks encountered at each stage (e.g., AI hallucination, long-context collapse, lack of domain knowledge) and corresponding engineering solutions (script extraction, architecture decomposition, sub-Skills, constraint iteration). It also shares specific methodologies like layered architecture design, vertical domain Skill construction, a four-layer quality control system, and knowledge base building. The final result in the product domain was a reduction in delivery cycle from 23.5 person-days to 8 person-days (65% efficiency improvement) and a 90% first-pass code generation success rate. The article is not just a technical practice report but also offers profound insights into the changing role of developers in the AI era (from code executors to architects and AI mentors).",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "AI Agent",
+    "AI Workflow",
+    "Prompt Engineering"
+  ],
+  "title": "Skills-Oriented Programming - End-to-End R&D Efficiency Improvement for Taobao Enterprise Purchase",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544373&idx=1&sn=75abfa18658ce69faaa3c10da19a136c",
+  "wordCount": 9746
+}

@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Martin Fowler"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://martinfowler.com/articles/reliable-llm-bayer/card.png",
+  "domain": "martinfowler.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_df1deea3",
+  "keyQuotes": [
+    "Larger context windows did not remove the need to be selective about what each agent sees. In early iterations, putting too much information into the context made the system harder to steer and harder to evaluate.",
+    "The 'Think & Plan' step provides this metacognitive capability, allowing the system to reflect on its own workflow and adjust its strategy accordingly.",
+    "This 'fail-fast' mechanism prevents wasted execution on vague queries, while careful tuning ensures the system remains unobtrusive when the intent is already clear."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The article argues that providing different, focused context to each agent stage (planning, retrieval, reflection, writing) reduces context pollution, improves steerability, and makes the system easier to debug and evaluate.",
+      "point": "Reliable agentic AI requires disciplined context engineering, not just larger context windows."
+    },
+    {
+      "explanation": "This step allows the system to reason about its strategy, evaluate tool selection, and assess progress towards the goal before taking action, leading to dramatic improvements in accuracy for complex queries.",
+      "point": "A dedicated 'Think & Plan' step for process reflection is critical for multi-step agentic workflows."
+    },
+    {
+      "explanation": "RAG excels at extracting insights from narrative reports (PDFs), while Text-to-SQL is better for precise filtering and aggregation of structured data, and the system intelligently routes queries to the appropriate tool.",
+      "point": "A hybrid retrieval strategy combining RAG and Text-to-SQL is essential for bridging unstructured and structured enterprise data."
+    },
+    {
+      "explanation": "As the system expands across multiple domains, a single agent with a flat tool list becomes unmanageable. Domain-specific sub-agents with their own tools and prompts keep responsibilities coherent and prevent cross-domain leakage.",
+      "point": "Evolving towards a hierarchy of domain-specific sub-agents is key to managing complexity at scale."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article presents a detailed case study of Bayer's PRINCE platform, an agentic AI system built on Agentic RAG that transforms complex preclinical data retrieval into an intuitive conversational experience, with a focus on the engineering decisions behind its reliable architecture.",
+  "originalTitle": "Building Reliable Agentic AI Systems",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-16 20:11:00",
+  "publishTimeStamp": 1781611860000,
+  "qualified": false,
+  "readCount": 87,
+  "readTime": 28,
+  "readUrl": "https://www.bestblogs.dev/article/df1deea3",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_913551",
+  "sourceImage": "https://image.jido.dev/20260602012138_1c6a554",
+  "sourceName": "Martin Fowler",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is a comprehensive case study from Bayer, detailing the engineering journey behind PRINCE (Preclinical Information Center), an agentic AI system designed to revolutionize preclinical drug discovery data access. The article begins by outlining the challenge: navigating a maze of siloed, structured and unstructured data (PDF reports, study metadata) using traditional keyword search. It then introduces PRINCE's evolutionary path from a 'Search' tool to an 'Ask' system using RAG, and finally to a 'Do' platform with multi-agent orchestration. The core of the article is a deep dive into the system's architecture, built on LangGraph and FastAPI. It explains the key engineering concepts of 'context engineering' (providing different context to different agents) and 'harness engineering' (scaffolding around LLMs). The article details the agentic workflow, including steps for clarifying user intent, a dedicated 'Think & Plan' step for process reflection, and the roles of Researcher, Writer, and Reflection agents. It provides a thorough breakdown of the hybrid retrieval strategy, combining RAG for unstructured data (with a detailed query-time pipeline including keyword extraction, metadata filtering, query expansion, hybrid search, and reranking) and Text-to-SQL for structured data. The article also covers resilience, error handling, and observability, emphasizing the importance of fallbacks and continuous evaluation. It concludes by discussing the evolution towards domain-specific sub-agents to manage complexity as the system scales.",
+  "tags": [
+    "AI Agent",
+    "RAG",
+    "LLM",
+    "Enterprise AI",
+    "Context Engineering"
+  ],
+  "title": "Building Reliable Agentic AI Systems",
+  "translateContent": null,
+  "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
+  "wordCount": 6888
+}

@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-27",
+  "id": "BB-2026-05-01-339",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-339/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-339",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-339/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-339/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-339/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-339/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-339/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-339/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 阿里云开发者",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 阿里云开发者",
+  "status": "Full text + source captured",
+  "tags": [
+    "Agent Skill",
+    "Data Validation",
+    "Data Quality",
+    "AI Agent",
+    "Big Data"
+  ],
+  "title": "verify-data: An End-to-End Data Validation Agent Skill",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560354&idx=1&sn=7f27739c5166be3e08890a75756e5811",
+      "https://www.bestblogs.dev/article/b9304ecd"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560354&idx=1&sn=7f27739c5166be3e08890a75756e5811",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/b9304ecd"
+  }
+}

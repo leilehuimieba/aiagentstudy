@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "Daniel Nwaneri"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://cdn.hashnode.com/uploads/covers/5e135008490269cb3022acbf/0b4027d7-f2d5-42d6-bdc5-5eeec278425d.png",
+  "domain": "freecodecamp.org",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_73f184be",
+  "keyQuotes": [
+    "A loop that runs without an exit condition isn't autonomous. It's a billing event waiting to happen.",
+    "The most expensive mistake in agent development isn't a bad model choice or a missing retry limit. It's starting the build before you can answer one question in one sentence: What does done look like?",
+    "Define what done looks like before you start. That's the job, and always has been.",
+    "The loop runs to you, not into a void."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Real incidents show agents running for hours or days, burning through budgets because no one defined when the task is complete. The problem is architectural, not algorithmic.",
+      "point": "Runaway agent costs are caused by missing exit conditions, not bad models."
+    },
+    {
+      "explanation": "The SpecWriter forces developers to answer three questions: what the agent does, what it does NOT do, and what done looks like in one sentence. This upstream discipline prevents ambiguous goals.",
+      "point": "Define 'done' before you build the loop."
+    },
+    {
+      "explanation": "The CircuitBreaker checks turn count and token consumption before every LLM call. It raises an exception on breach, making silent failure impossible and forcing a human checkpoint.",
+      "point": "Enforce hard limits at runtime with a circuit breaker."
+    },
+    {
+      "explanation": "The Ledger stores one row per turn with a session ID, token delta, execution time, and pass/fail status. Immutability ensures the record is governance, not just debugging.",
+      "point": "Record every turn in an append-only audit trail."
+    },
+    {
+      "explanation": "The ReviewSurface presents a five-element frame (original promise, acceptance criteria, diff, evidence, unresolved assumptions) and requires a signed attestation, closing the gap between polished output and fulfilled commitment.",
+      "point": "Force human attestation before downstream systems receive output."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article presents a practical, production-safe agent loop architecture built from five small Python primitives: a spec writer, a circuit breaker, an append-only ledger, a bounded loop, and a human review surface.",
+  "originalTitle": "How to Build a Production-Safe Agent Loop: From Exit Conditions to Audit Trails",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-16 07:18:49",
+  "publishTimeStamp": 1781565529000,
+  "qualified": false,
+  "readCount": 16,
+  "readTime": 14,
+  "readUrl": "https://www.bestblogs.dev/article/73f184be",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_074370",
+  "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+  "sourceName": "freeCodeCamp",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article addresses the critical problem of runaway agent costs, illustrated by real-world examples of unbounded loops costing tens of thousands of dollars. It argues that the root cause is not model quality but a lack of explicit exit conditions. The solution is a disciplined, five-component architecture: a SpecWriter that forces developers to define 'done' before coding begins; a CircuitBreaker that enforces hard limits on turns and tokens at runtime; an append-only SQLite Ledger that records every turn for auditability; an AgentLoop that wires these primitives together, checking limits before every LLM call; and a ReviewSurface that assembles a five-element frame for human attestation before output is released downstream. The tutorial provides complete, testable Python code for each component, a real-world SEO audit agent example, and guidance on plugging in different LLM providers. The core message is that production safety for agents comes from upstream discipline and downstream enforcement, not from trusting the model to self-regulate.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Engineering",
+    "Production AI",
+    "Agent Loop"
+  ],
+  "title": "How to Build a Production-Safe Agent Loop: From Exit Conditions to Audit Trails",
+  "translateContent": null,
+  "url": "https://www.freecodecamp.org/news/how-to-build-a-production-safe-agent-loop-from-exit-conditions-to-audit-trails/",
+  "wordCount": 3321
+}

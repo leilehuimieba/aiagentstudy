@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-05",
+  "id": "BB-2026-05-01-432",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-432/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-432",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-432/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-432/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-432/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-432/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-432/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-432/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯技术工程",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯技术工程",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Coding",
+    "Prompt Engineering",
+    "Developer Tools",
+    "Engineering Practices",
+    "AI Agent"
+  ],
+  "title": "How to Write a Great Skill: The Ultimate Practical Guide",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801836&idx=1&sn=f01a69e0c012eafde5f8bc76804bc5fb",
+      "https://www.bestblogs.dev/article/b7742f5e"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801836&idx=1&sn=f01a69e0c012eafde5f8bc76804bc5fb",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/b7742f5e"
+  }
+}

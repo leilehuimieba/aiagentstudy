@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-13",
+  "id": "BB-2026-05-01-205",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-205/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-205",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-205/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-205/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-205/raw/display-document.html",
+      "knowledge/items/03-control-loop/BB-2026-05-01-205/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-205/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-205/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 掘金本周最热",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 掘金本周最热",
+  "status": "Full text + source captured",
+  "tags": [
+    "Claude Code",
+    "AI Agent",
+    "Source Code Analysis",
+    "Architecture Design",
+    "Tool System"
+  ],
+  "title": "How Claude Code Agent Is Designed and Implemented",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://juejin.cn/post/7638807947525816366",
+      "https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fvadimdemedes%2Fink",
+      "https://link.juejin.cn?target=https%3A%2F%2Fwww.huashuiai.com%2F",
+      "https://link.juejin.cn?target=https%3A%2F%2Fwww.mianshipai.com%2F",
+      "https://link.juejin.cn?target=https%3A%2F%2Fwww.wangeditor.com%2F",
+      "https://link.juejin.cn?target=https%3A%2F%2Fzhitalk.chat%2F",
+      "https://www.bestblogs.dev/en/article/744fed55"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://juejin.cn/post/7638807947525816366",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/744fed55"
+  }
+}

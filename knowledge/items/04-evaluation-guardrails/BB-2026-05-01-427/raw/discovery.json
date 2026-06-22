@@ -1,0 +1,83 @@
+{
+  "id": "RAW_92992bda",
+  "notExist": null,
+  "originalTitle": "GDPR Article 32 for Software Engineers: Technical Controls， Implementations， and Auditor Questions",
+  "title": "GDPR Article 32 for Software Engineers: Technical Controls， Implementations， and Auditor Questions",
+  "oneSentenceSummary": "This guide provides software engineers with the exact technical controls, code, and commands needed to implement GDPR Article 32 compliance, bridging the gap between legal requirements and practical infrastructure.",
+  "summary": "This comprehensive guide demystifies GDPR Article 32 for software engineers, arguing it is an infrastructure specification rather than a legal document. It details nine technical controls across the four main requirements of Article 32: pseudonymisation and encryption, confidentiality and integrity, availability and resilience, and regular testing. The guide provides concrete implementations, including PostgreSQL commands for pseudonymisation, AWS KMS setup for encryption at rest, Python code for application-layer encryption, JWT-based session management with automatic logoff, IAM Roles for Service Accounts (IRSA) for unique user identification, Multi-AZ RDS configurations for high availability, and CI/CD pipeline integration with Trivy for vulnerability scanning. Each section includes the specific auditor questions and the evidence required to answer them, making it a practical resource for achieving and demonstrating compliance.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "GDPR",
+    "Article 32",
+    "Security",
+    "Compliance",
+    "Encryption"
+  ],
+  "mainPoints": [
+    {
+      "point": "GDPR Article 32 is an infrastructure specification, not just a legal document.",
+      "explanation": "The regulation requires 'appropriate technical measures,' which translates to specific, auditable controls like encryption, access management, and backup procedures, not just policy documents."
+    },
+    {
+      "point": "Pseudonymisation and encryption are separate, layered controls, not a single solution.",
+      "explanation": "Pseudonymisation replaces direct identifiers with a code in the main dataset, while encryption protects data at rest and in transit. Both are required, and application-layer encryption provides a higher level of security than storage-layer encryption alone."
+    },
+    {
+      "point": "Auditors require evidence of technical controls, not just documentation of policies.",
+      "explanation": "Evidence includes KMS key rotation status, CloudTrail logs of key usage, database schema showing pseudonymisation, and documented DR test results. A policy stating 'we encrypt data' is insufficient."
+    },
+    {
+      "point": "Regular testing and vulnerability scanning must be automated and integrated into the deployment pipeline.",
+      "explanation": "Article 32(1)(d) requires a process for regularly testing security measures. This includes automated vulnerability scanning of container images (e.g., with Trivy) that blocks deployments with critical CVEs, and annual manual penetration testing."
+    }
+  ],
+  "keyQuotes": [
+    "When I first read GDPR Article 32, I made a mistake. I thought it was a legal document. But it's not. It's an infrastructure specification.",
+    "The compliance consultant will give you a 50-page policy document. The auditor will ignore it and ask for your database schema.",
+    "Storage encryption is the floor. Application-layer encryption is the ceiling that Article 32 auditors are increasingly expecting for health data, financial records, and other sensitive personal data.",
+    "A policy says 'we encrypt personal data.' Evidence says 'here is the KMS key with automatic rotation, here is the application-layer encryption code, and here are the CloudTrail logs showing every decryption attempt.'"
+  ],
+  "url": "https://www.freecodecamp.org/news/gdpr-article-32-for-software-engineers-technical-controls-implementations-and-auditor-questions/",
+  "readUrl": "https://www.bestblogs.dev/article/92992bda",
+  "enclosureUrl": null,
+  "domain": "freecodecamp.org",
+  "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/c73c68e8-7485-4993-a21f-84653ba29a10.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_PRACTICE",
+  "aiSubCategoryDesc": "Engineering Practice",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 12,
+  "wordCount": 4084,
+  "readTime": 17,
+  "mediaDuration": null,
+  "authors": [
+    "Ayobami Adejumo"
+  ],
+  "publishTimeStamp": 1779985225000,
+  "publishDateStr": "05-29",
+  "publishDateTimeStr": "2026-05-29 00:20:25",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

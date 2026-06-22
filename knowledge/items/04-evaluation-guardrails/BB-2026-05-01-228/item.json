@@ -1,0 +1,74 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "Today",
+  "id": "BB-2026-05-01-228",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-228/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-228",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-228/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-228/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-228/raw/display-document.html",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-228/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-228/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-228/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM Evaluation",
+    "Hallucination Detection",
+    "RAG",
+    "AI Engineering",
+    "Production ML"
+  ],
+  "title": "LLM Evals Are Based on Vibes — I Built the Missing Layer That Decides What Ships",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.cloudflare.com/introducing-agent-memory/",
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2/",
+      "https://machinelearningmastery.com/beyond-the-vector-store-building-the-full-data-layer-for-ai-applications/",
+      "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+      "https://towardsdatascience.com/building-an-evaluation-harness-for-production-ai-agents-a-12-metric-framework-from-100-deployments/",
+      "https://towardsdatascience.com/hybrid-search-and-re-ranking-in-production-rag/",
+      "https://towardsdatascience.com/llm-evals-are-based-on-vibes-i-built-the-missing-layer-that-decides-what-ships/",
+      "https://towardsdatascience.com/stop-treating-ai-memory-like-a-search-problem/",
+      "https://towardsdatascience.com/the-multi-agent-trap/",
+      "https://towardsdatascience.com/your-react-agent-is-wasting-90-of-its-retries-heres-how-to-stop-it/",
+      "https://www.bestblogs.dev/en/article/5a8c6f1b",
+      "https://www.youtube.com/watch?v=MhHEGMFCEB0"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/llm-evals-are-based-on-vibes-i-built-the-missing-layer-that-decides-what-ships/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/5a8c6f1b"
+  }
+}

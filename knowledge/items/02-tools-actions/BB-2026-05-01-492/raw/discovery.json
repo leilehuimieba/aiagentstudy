@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "Ayobami Adejumo"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/e4bbaeaf-810e-4ebb-9c81-d2183cac6df6.png",
+  "domain": "freecodecamp.org",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_37d76c8a",
+  "keyQuotes": [
+    "Optimization without a baseline is just guessing.",
+    "When explaining this to your CFO, call it the NAT tax. They understand taxes. 'We're paying a $0.045/GB tax on internal network traffic that we can eliminate in 30 minutes' lands better than 'data processing bytes.'",
+    "Never commit on the unoptimised baseline."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "The guide identifies patterns like idle dev environments, staging environment proliferation, NAT gateway data transfer costs, and orphaned resources, providing targeted solutions for each.",
+      "point": "Eight predictable AWS cost patterns emerge after Series A funding, each with a specific fix."
+    },
+    {
+      "explanation": "Committing to a Savings Plan before rightsizing locks in waste at a discount. The correct order is: rightsize, add Spot instances, migrate to Graviton, then commit to 60-70% of steady-state spend.",
+      "point": "Always rightsize and optimize before committing to Savings Plans."
+    },
+    {
+      "explanation": "NAT Gateway charges $0.045/GB for data processed. Creating VPC endpoints for S3, DynamoDB, and ECR routes traffic through the AWS backbone for free, saving $2,000-$8,000/month.",
+      "point": "VPC endpoints eliminate the most underestimated cost: NAT Gateway data transfer."
+    },
+    {
+      "explanation": "The guide provides Lambda functions for automatic idle instance stopping, scheduled staging environment shutdowns, and weekly orphaned resource reporting, making optimization a continuous process.",
+      "point": "Automation is key to sustained cost optimization, not one-time fixes."
+    },
+    {
+      "explanation": "Migrating gp2 EBS volumes to gp3 (20% cheaper, 10x faster IOPS) takes 30 minutes with a single script. Setting CloudWatch log retention policies eliminates indefinite storage costs.",
+      "point": "Simple configuration changes yield significant savings with minimal effort."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This guide identifies eight common AWS cost patterns that appear after Series A funding and provides actionable fixes for each, from idle dev environments to orphaned resources.",
+  "originalTitle": "The AWS FinOps Guide for Series A Startups: The 8 Cost Patterns That Appear After Product-Market Fit",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 00:27:27",
+  "publishTimeStamp": 1780417647000,
+  "qualified": false,
+  "readCount": 2,
+  "readTime": 17,
+  "readUrl": "https://www.bestblogs.dev/article/37d76c8a",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_074370",
+  "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+  "sourceName": "freeCodeCamp",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This comprehensive guide is written for engineers and CTOs at Series A startups (15-80 engineers, $20k-$150k monthly AWS bills). It identifies eight predictable cost patterns that emerge after achieving product-market fit: the New Hire Experiment Tax (forgotten dev environments), Staging Environment Proliferation (multiple staging environments running 24/7), the NAT Gateway Tax (expensive data processing through NAT gateways), the Savings Plan Timing Mistake (committing to savings plans before rightsizing), Cross-AZ Data Transfer (costly traffic between availability zones), the gp2 Volume Trap (using outdated, more expensive EBS volumes), the Infinite Log Trap (CloudWatch logs with no retention policy), and the Orphaned Resource Collector (unattached volumes, unused IPs, old snapshots). For each pattern, the guide provides specific AWS CLI commands to identify the waste, a detailed fix (often with code examples like Lambda functions or Kubernetes configurations), and estimated monthly savings. The guide emphasizes establishing a baseline before optimizing, rightsizing before committing to savings plans, and automating cleanup processes. Estimated total savings range from $10,000 to $40,000+ per month.",
+  "tags": [
+    "Cloud Cost Optimization",
+    "AWS",
+    "FinOps",
+    "DevOps",
+    "Startups"
+  ],
+  "title": "The AWS FinOps Guide for Series A Startups: The 8 Cost Patterns That Appear After Product-Market Fit",
+  "translateContent": null,
+  "url": "https://www.freecodecamp.org/news/the-aws-finops-guide-for-series-a-startups/",
+  "wordCount": 4151
+}

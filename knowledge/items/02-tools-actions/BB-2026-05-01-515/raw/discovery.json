@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "歸藏的AI工具箱"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045421_eb9966c8",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_54575866",
+  "keyQuotes": [
+    "A Skill packages expert experience, workflows, taste, and tool calls into a distributable, reusable, and iterable Agent capability unit.",
+    "The core of designing a Skill is turning professional taste into model-executable constraints.",
+    "The information architecture of a good Skill should be 'a short center with thick radiation'.",
+    "The scarcest resource in the Agent era is a reusable way of organizing capabilities."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Advanced users can organize goals, documents, tools, and workflows to harness Agents, while average users remain stuck in chat interfaces. Skills are key to bridging this cognitive gap by packaging expert experience into reusable capability units.",
+      "point": "Agents are not leveling the playing field but amplifying a K-shaped divergence."
+    },
+    {
+      "explanation": "A Skill is not just a prompt; it's a package combining prompts, workflows, tool calls, templates, scripts, boundaries, and failure experiences. Its true value lies in solidifying professional knowledge, aesthetic judgment, and industry SOPs, allowing users to achieve high-quality results without understanding the underlying technology.",
+      "point": "The essence of a Skill is a \"capability commodity,\" with the core being the externalization of human experience."
+    },
+    {
+      "explanation": "The SKILL.md file contains only high-signal processes and judgments, while heavy documentation, scripts, and templates are loaded on demand into subdirectories. The Agent's underlying runtime environment (Harness) remains lightweight, while specific workflows and domain knowledge are encapsulated in Skills loaded as needed, reducing context costs and improving stability.",
+      "point": "The architecture of a good Skill follows the \"Thin Harness, Fat Skills\" model: a short center with thick radiation."
+    },
+    {
+      "explanation": "Through gotchas (negative lists) and strong constraints (e.g., \"don't use pure white or pure black,\" \"text shouldn't overlap faces\"), the vast majority of aesthetically poor options are eliminated for the user. The AI's task is downgraded from \"free design\" to filling within a high-quality framework, thus protecting the lower bound of output quality.",
+      "point": "The core of a design Skill is turning professional taste into model-executable constraints."
+    },
+    {
+      "explanation": "A reliable Skill lifecycle includes: first running real tasks with an Agent without the Skill to discover errors, writing evals based on real queries, optimizing descriptions, adding failure cases to gotchas, and conducting cross-model testing. Every real task is an accumulation of capability assets for the next invocation.",
+      "point": "Skill quality needs to be maintained like code quality, and its lifecycle begins with real tasks."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Based on real-world experience building viral Skills like PPT generators, social media card creators, and logo makers, this article systematically discusses the essence of Skills as \"capability commodities\" in the Agent era: packaging expert experience, workflows, taste, and tool calls into distributable, reusable, and iterable capability units, while deeply exploring their architecture, design, maintenance, ecosystem, and future boundaries.",
+  "originalTitle": "万字长文：做了些爆款 Skills 以后，我对 Skills 的看法",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-12",
+  "publishDateTimeStr": "2026-06-12 08:20:00",
+  "publishTimeStamp": 1781223600000,
+  "qualified": false,
+  "readCount": 148,
+  "readTime": 37,
+  "readUrl": "https://www.bestblogs.dev/article/54575866",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 92,
+  "selectionReason": null,
+  "sourceId": "SOURCE_de48a8",
+  "sourceImage": "https://image.jido.dev/20251127045421_eb9966c8",
+  "sourceName": "歸藏的AI工具箱",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Drawing from first-hand experience developing multiple viral Skills, the author provides a comprehensive and in-depth analysis of Skills in the Agent era. The core argument is that Agents are not leveling the playing field but amplifying a K-shaped divergence, and Skills are key to bridging this gap. The author defines Skills as \"capability commodities,\" far more than just prompts—they are reusable capability packages that bundle expert experience, workflows, taste, and tool calls (such as MCP, CLI, code execution). The article details the architectural principles of a good Skill (the \"Thin Harness, Fat Skills\" model with a \"short center, thick radiation\"), emphasizes the design philosophy of translating human aesthetic and layout judgment (\"taste\") into model-executable constraints (gotchas), and advocates for maintaining a Skill's lifecycle with the same rigor as code quality (from real tasks, evals, gotchas to cross-model testing). Furthermore, it explores Skill ecosystem distribution (GitHub, Xiaohongshu, app stores), user adoption friction (interaction mindset), opportunities for industry-specific Skills, the symbiotic relationship between content and products, and the expansion of Skills into areas like browsers, hardware, and gaming. Finally, the author proposes a complete Skill lifecycle path and concludes that the scarcest resource in the Agent era is a reusable way of organizing capabilities.",
+  "tags": [
+    "AI Agent",
+    "AI Coding",
+    "AI Products & Applications",
+    "Prompt Engineering",
+    "AI Workflow"
+  ],
+  "title": "A Deep Dive: What I've Learned About Skills After Building Several Viral Ones",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk3NTUxMA==&mid=2247497126&idx=1&sn=1eff7a60d8f4b0909845f35b1097ec5e",
+  "wordCount": 9008
+}

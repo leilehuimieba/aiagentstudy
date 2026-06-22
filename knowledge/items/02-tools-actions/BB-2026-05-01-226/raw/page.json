@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Te0807b948e6345e2a408daa2f694273f",
+  "data": {
+    "metaData": {
+      "id": "RAW_683b96d8",
+      "notExist": null,
+      "originalTitle": "AWS WorkSpaces Now Lets AI Agents Operate Legacy Desktop Applications Without APIs",
+      "title": "AWS WorkSpaces Now Lets AI Agents Operate Legacy Desktop Applications Without APIs",
+      "oneSentenceSummary": "AWS WorkSpaces now enables AI agents to operate legacy desktop applications via computer vision and input simulation, eliminating the need for APIs or application modernization.",
+      "summary": "This article reports on a new AWS capability that allows AI agents to interact with legacy desktop applications through Amazon WorkSpaces as managed virtual desktops. Instead of requiring API integration or expensive modernization, agents use computer vision to take screenshots and simulate human inputs like clicking, typing, and scrolling. The approach addresses a widespread problem: according to a 2024 Gartner report, 75% of organizations run legacy applications without modern APIs, and 71% of Fortune 500 companies rely on mainframe systems without adequate programmatic access. By giving agents the same desktop interface a human employee would use, AWS provides a practical bridge for deploying AI in environments with entrenched legacy systems. The article highlights the technical architecture, including IAM authentication and pre-signed URLs, and positions this as a pragmatic alternative to full-scale modernization projects.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "AWS WorkSpaces",
+        "AI Agents",
+        "Legacy Applications",
+        "Computer Vision",
+        "Desktop Automation"
+      ],
+      "mainPoints": [
+        {
+          "point": "AWS WorkSpaces can now serve as managed virtual desktops for AI agents to operate legacy applications.",
+          "explanation": "Agents interact with applications by taking screenshots and simulating clicks, typing, and scrolling, without needing APIs or modifying the software."
+        },
+        {
+          "point": "This approach addresses a widespread enterprise challenge: legacy systems lacking modern APIs.",
+          "explanation": "A 2024 Gartner report cited in the article states 75% of organizations run legacy applications without APIs, and 71% of Fortune 500 companies rely on mainframes with limited programmatic access."
+        },
+        {
+          "point": "The solution provides a pragmatic alternative to expensive modernization projects.",
+          "explanation": "By giving agents the same desktop interface a human employee uses, organizations can deploy AI without waiting for or funding full-scale system overhauls."
+        }
+      ],
+      "keyQuotes": [
+        "The problem it addresses is widespread. According to a 2024 Gartner report, 75% of organizations run legacy applications that lack modern APIs.",
+        "WorkSpaces takes a different approach: give the agent the same desktop a human employee uses.",
+        "The application doesn't know an agent is driving it. Nothing about the software needs to be modified."
+      ],
+      "url": "https://www.infoq.com/news/2026/05/aws-workspaces-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "readUrl": "https://www.bestblogs.dev/article/683b96d8",
+      "enclosureUrl": null,
+      "domain": "infoq.com",
+      "cover": "https://res.infoq.com/news/2026/05/aws-workspaces-ai-agents/en/headerimage/generatedHeaderImage-1778485554177.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_f152e8",
+      "sourceName": "InfoQ",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 89,
+      "readCount": 13,
+      "wordCount": 653,
+      "readTime": 3,
+      "mediaDuration": null,
+      "authors": [
+        "Steef-Jan Wiggers"
+      ],
+      "publishTimeStamp": 1778657460000,
+      "publishDateStr": "05-13",
+      "publishDateTimeStr": "2026-05-13 07:31:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_862b9f1",
+        "type": "VIDEO",
+        "title": "Martin Fowler & Kent Beck: Frameworks for reinventing software， again and again",
+        "oneSentenceSummary": "Software legends Martin Fowler and Kent Beck discuss how AI redefines software engineering, emphasizing that core practices like TDD and modularity remain essential for human-AI collaboration.",
+        "url": "https://www.youtube.com/watch?v=CZs8J1ZD0CE",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_8b57be6d",
+        "type": "ARTICLE",
+        "title": "4 Patterns of AI Native Development",
+        "oneSentenceSummary": "Patrick Debois outlines four evolving patterns of AI-native development—shifting from producer to manager, implementation to intent, delivery to discovery, and content to knowledge.",
+        "url": "https://www.infoq.com/presentations/patterns-ai-native-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_2023817132581208353",
+        "type": "TWITTER",
+        "title": "Anthropic Releases Claude Sonnet 4.6 with 1M Context Window",
+        "oneSentenceSummary": "Anthropic announces Claude Sonnet 4.6, featuring major upgrades in coding, reasoning, and a 1-million-token context window.",
+        "url": "https://x.com/claudeai/status/2023817132581208353",
+        "sourceName": "Claude(@claudeai)"
+      },
+      {
+        "id": "RAW_589d5efc",
+        "type": "ARTICLE",
+        "title": "Using AI as a Thinking Partner for Large-Scale Engineering Systems",
+        "oneSentenceSummary": "A Google Senior Staff Engineer shares a structured methodology for using AI as a thinking partner to understand, experiment with, and redesign a complex, multi-language, multi-repository engineering system.",
+        "url": "https://www.infoq.com/presentations/ai-large-scale-engineering-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_c857f67e",
+        "type": "ARTICLE",
+        "title": "MCP in the Java World: Bringing Architectural Strategy to LLM Integrations",
+        "oneSentenceSummary": "MCP Java SDK transforms LLM integration from ad-hoc tool calling into a disciplined architectural pattern, introducing protocol-level contracts, anti-corruption layers, and governance for enterprise Java systems.",
+        "url": "https://www.infoq.com/articles/mcp-java-architectural-strategy-llm-integrations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_209794e8",
+        "type": "ARTICLE",
+        "title": "Engineering at AI Speed: Lessons from the First Agentically Accelerated Software Project",
+        "oneSentenceSummary": "This article presents a case study of building Claude Code using Claude Code, detailing three stories that illustrate how AI changes bottlenecks in the software development lifecycle, emphasizing experimentation, architectural choices, and the importance of shipping to discover real requirements.",
+        "url": "https://www.infoq.com/presentations/engineering-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_504ce725",
+        "type": "ARTICLE",
+        "title": "Harness design for long-running application development",
+        "oneSentenceSummary": "This article explores Anthropic's multi-agent harness design (Planner, Generator, Evaluator) for long-running autonomous coding, detailing how to overcome context anxiety and self-evaluation bias to build complex full-stack applications.",
+        "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_06440a10",
+        "type": "ARTICLE",
+        "title": "What I Learned Building Multi-Agent Systems From Scratch",
+        "oneSentenceSummary": "A staff engineer at Shopify shares the journey of building multi-agent systems from scratch, revealing that narrow-focused agents outperform generalists, and that empowering domain experts with tools is more effective than creating an AI SWAT team.",
+        "url": "https://www.infoq.com/presentations/multi-agent-system-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      }
+    ]
+  }
+}

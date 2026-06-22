@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-08",
+  "id": "BB-2026-05-01-455",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-455/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-455",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-455/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-455/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-455/raw/discovery.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-455/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-455/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-455/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hacker News",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hacker News",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM",
+    "Model Inference",
+    "Quantization",
+    "Speculative Decoding",
+    "AI Infrastructure"
+  ],
+  "title": "Xiaomi MiMo， Explore and Love",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+      "https://www.bestblogs.dev/article/bcd97e15"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/bcd97e15"
+  }
+}

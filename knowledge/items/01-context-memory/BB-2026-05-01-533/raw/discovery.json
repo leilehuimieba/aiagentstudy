@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "十字路口Crossing"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_572cef4c",
+  "keyQuotes": [
+    "The large language models we are all-in on simply cannot lead to true intelligence.",
+    "If intelligence is a cake, the bulk of the cake is self-supervised learning, the icing is supervised learning, and the cherry on top is reinforcement learning.",
+    "I cannot understand how you can build an intelligent agent on top of a system that cannot predict the consequences of its own actions.",
+    "A truly reliable intelligent agent must be able to anticipate the results of a sequence of actions, then plan a path and maintain safety boundaries."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The core argument is the \"curse of fuzziness\": in continuous, high-dimensional spaces like video, generative models cannot handle infinite possibilities, can only predict fuzzy averages, and fail to learn a true understanding of the world.",
+      "point": "LeCun believes the generative approach of large language models (LLMs) cannot lead to true intelligence."
+    },
+    {
+      "explanation": "By forcing the model to generate similar embedding vectors for different views of the same scene (e.g., original and corrupted versions) rather than generating pixels, the \"curse of fuzziness\" can be avoided, and more robust representations can be learned.",
+      "point": "The non-generative \"joint embedding\" method is a superior path for self-supervised learning."
+    },
+    {
+      "explanation": "The model might cheat by outputting the same vector for all inputs. Barlow Twins forces the model to learn discriminative features by decorrelating the outputs of different neurons (making the cross-correlation matrix approach the identity matrix), thus avoiding collapse.",
+      "point": "\"Representation collapse\" is the main challenge for joint embedding methods, and solutions like Barlow Twins provide an effective remedy."
+    },
+    {
+      "explanation": "JEPA makes predictions in an abstract embedding space, not at the pixel level. It combines a joint embedding architecture with a predictor, allowing it to predict the representation of the world's next state conditioned on actions or control signals, which can then be used for planning and control.",
+      "point": "LeCun's ultimate solution is the \"world model,\" with JEPA (Joint Embedding Predictive Architecture) as its core architecture."
+    },
+    {
+      "explanation": "He argues that the autoregressive reasoning of LLMs is inadequate for this task, and that \"search\"-based reasoning using world models is key to achieving reliable and safe autonomous machine intelligence.",
+      "point": "LeCun is betting roughly $1 billion, believing that a true intelligent agent must be able to anticipate the consequences of its own actions."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article outlines Turing Award winner Yann LeCun's systematic critique of the mainstream large language model approach and details his non-generative alternative, centered on JEPA and world models, backed by a roughly $1 billion bet.",
+  "originalTitle": "图灵奖得主，要用十亿美金赌 AI 的下一个十年（上集）",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-14",
+  "publishDateTimeStr": "2026-06-14 12:47:00",
+  "publishTimeStamp": 1781412420000,
+  "qualified": false,
+  "readCount": 138,
+  "readTime": 31,
+  "readUrl": "https://www.bestblogs.dev/article/572cef4c",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_f63517",
+  "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+  "sourceName": "十字路口Crossing",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Based on Yann LeCun's interview on the popular science channel Welch Labs, the article systematically presents his core views on the current trajectory of AI development. It begins with LeCun's academic starting point—convolutional neural networks (CNNs)—leading to his concerns about supervised learning's reliance on labeled data, and revisits his famous \"cake theory\" (where self-supervised learning is the main body). The article then explains why self-supervised generative methods succeed with language (GPT series) but encounter the \"curse of fuzziness\" in video—because the prediction space for video is continuous and infinite, forcing models to output averages. LeCun thus poses a key question: must models be generative? He introduces the non-generative \"joint embedding\" approach (e.g., Siamese networks) and details the challenge of \"representation collapse,\" along with how methods like Barlow Twins (redundancy reduction), VICReg, and the DINO series gradually solve it, eventually matching supervised learning in image classification. The core of the article introduces LeCun's ultimate solution: the world model, specifically implemented as JEPA (Joint Embedding Predictive Architecture). JEPA's key idea is to make predictions in an abstract embedding space rather than at the pixel level, thereby bypassing the \"curse of fuzziness.\" The article concludes that LeCun believes a true intelligent agent must be able to anticipate the consequences of its own actions, and that the autoregressive prediction of LLMs cannot achieve this, hence his bet on world models as the path to autonomous machine intelligence.",
+  "tags": [
+    "AI Frontiers",
+    "World Models",
+    "Yann LeCun",
+    "Self-Supervised Learning",
+    "JEPA"
+  ],
+  "title": "Turing Award Winner Bets $1 Billion on AI's Next Decade (Part 1)",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109099&idx=1&sn=bdc8a94d8008b825254f0df162294ed6",
+  "wordCount": 7506
+}

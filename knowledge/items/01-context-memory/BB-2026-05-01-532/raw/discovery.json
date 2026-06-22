@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "腾讯云开发者"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045410_4d44587a",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_071111a0",
+  "keyQuotes": [
+    "The core of adapting legacy projects for AI Coding is not adding a plugin or writing a few prompts, but transforming the project into a form that AI can easily write correctly.",
+    "In the AI Coding era, code must not only be human-friendly but also AI-friendly.",
+    "What truly needs reflection is: have we sacrificed readability, searchability, and modifiability for the sake of writing pleasure?",
+    "Frontend developers will gradually transition from 'syntax craftsmen' to intention decomposers, architecture decision-makers, and AI code reviewers."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Traditional chart recommendation libraries only recommend based on field types and distributions, resulting in low accuracy in AI dialogue scenarios. The author's proposed three-dimensional scoring engine leverages structural information from SQL like GROUP BY and ORDER BY, along with intent keywords from user prompts, boosting recommendation accuracy from 55% to nearly 90%.",
+      "point": "In AI data analysis scenarios, chart recommendations should combine data features, SQL features, and user prompts in a three-dimensional scoring system, rather than relying solely on data features."
+    },
+    {
+      "explanation": "Traditional highlighting libraries rebuild the DOM tree on every render, causing selection loss and DOM explosion during streaming output. The author uses the CSS Custom Highlight API for coloring based on a single textNode, combined with multi-threaded tokenization and rAF throttling, solving issues like preserving streaming selections, enabling Ctrl+F search, and maintaining performance in long sessions.",
+      "point": "The core conflict in streaming code highlighting is the architectural mismatch between the DOM model of traditional highlighting libraries and the AI dialogue scenario."
+    },
+    {
+      "explanation": "AI can only take an 'average' approach in inconsistent historical code. By establishing structured rule files (.mdc) in the repository, automatically distributing them to directories recognized by AI tools, and converging code exports and Design Tokens, the variance in AI output can be significantly reduced, building team trust in AI Coding.",
+      "point": "The core of adapting legacy projects for AI Coding is making engineering rules machine-readable, rather than relying solely on more powerful models."
+    },
+    {
+      "explanation": "When AI can generate code quickly, 'typing less' is no longer scarce. What is truly scarce is code understandability, searchability, and local modifiability. Past practices that sacrificed readability to reduce typing costs—such as Sass nested concatenation, excessive destructuring, and flashy type gymnastics—need to be re-evaluated.",
+      "point": "In the AI Coding era, programming paradigms should shift from 'elegant and concise' to 'explicit, searchable, straightforward, and moderately repetitive.'"
+    },
+    {
+      "explanation": "In the future, the core competency of frontend developers will no longer be the speed of writing code by hand, but the ability to accurately decompose problems, define boundaries, judge the rationality of AI-generated solutions, and design maintainable architectures—shifting from 'how to write' to 'what to do.'",
+      "point": "The role of frontend developers is transitioning from 'syntax craftsmen' to 'intention decomposers and architecture decision-makers.'"
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Based on the practice of Tencent's Dola data analysis product, this article systematically elaborates on two key tasks for frontend developers in the AI era: optimizing AI product experience through a three-dimensional scoring recommendation engine and a self-developed code highlighting component, and adapting to AI Coding through engineering constraint refactoring and programming paradigm reflection.",
+  "originalTitle": "Harness Engineering 落地前，先想清楚这几个问题",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-12",
+  "publishDateTimeStr": "2026-06-12 08:45:00",
+  "publishTimeStamp": 1781225100000,
+  "qualified": false,
+  "readCount": 156,
+  "readTime": 34,
+  "readUrl": "https://www.bestblogs.dev/article/071111a0",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_efac5b",
+  "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+  "sourceName": "腾讯云开发者",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This is an in-depth technical practice article from the Tencent Cloud Developer official account. Author franslee, based on the practical experience of his team's AI data analysis assistant Dola, systematically explores two core propositions for frontend development in the AI era. The first part focuses on \"Serving AI Products Well,\" detailing how a three-dimensional scoring recommendation engine combining data features, SQL features, and user prompts improved chart recommendation accuracy from 55% to nearly 90%. It also covers the self-developed Code Highlighting Component 3.0 based on the CSS Custom Highlight API and multi-threaded architecture, solving pain points like selection loss during streaming dialogue, DOM explosion, and Ctrl+F unavailability. The second part focuses on \"Serving AI Coding Well,\" proposing a Harness Engineering approach that advocates transforming legacy projects to be more suitable for AI collaboration by establishing machine-readable engineering rules, converging code exports, and extracting Design Tokens. The article also deeply reflects on how, in an era where AI-generated code is becoming mainstream, programming paradigms should shift from \"elegant and concise\" to \"explicit, searchable, straightforward, and moderately repetitive.\" It points out that the role of frontend developers is transitioning from \"syntax craftsmen\" to \"intention decomposers and architecture decision-makers.\"",
+  "tags": [
+    "Frontend Development",
+    "AI Coding",
+    "AI Product Design",
+    "Engineering Practice",
+    "Code Highlighting"
+  ],
+  "title": "Think Through These Issues Before Implementing Harness Engineering",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695914&idx=1&sn=862b690b99a6036703617043ac4474cb",
+  "wordCount": 8387
+}

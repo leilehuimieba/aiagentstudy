@@ -1,0 +1,369 @@
+{
+  "content": "tl;dr\n\nWe study how well LLMs can be trained to answer questions like “what will happen if I am trained on examples like XYZ”, focusing on emergent misalignment and other cases of surprising generalization.\nWe see signs of life on the less surprising forms of generalization (emergent misalignment, trivia preferences), where our method outperforms baselines like untrained in-context learning.\nHowever, we haven't validated it on truly hard-to-predict cases of generalization (bottlenecked by a large enough suite of such examples replicable on smaller models). We’d love to see followup works that do such validation, or ones that extend this pipeline to allow more flexible, unstructured prediction.\nThis sort of tool could be useful to better learn about generalization properties of LLMs by amortizing the cost of experiments at the core of the science of generalization.\n\nResearch done as part of the Anthropic Fellows Program. Tianyi Qiu ran the project, and Alex Cloud and Fabien Roger provided mentorship.\n\nStarting point: Predicting finetuning generalization with object-level ICL\n\nIn-context learning (ICL), or the technique of putting training examples in the prompt to steer LLM behavior at inference time, is often thought of as an approximation of supervised fine-tuning (SFT), as both can be effective at learning an input-output relation within some domain (“in-distribution generalization”). A natural starting point is thus to select random samples from training data (e.g. examples of code with vulnerability) as in-context examples, give the model an out-of-distribution prompt (a prompt unlikely any seen in training, like a request for moral judgment) as the question, and see what it outputs on that question.\n\nBad news: ICL is generally a bad approximator of SFT when OOD. For instance, emergent misalignment (and also certain forms of subliminal learning) shows in SFT but not in ICL.\n\nEmergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs. Betley et al. (2025)\n\nHere, we are discussing what we will call…\n\nObject-level learning: The learning process (ICL or SFT) that (i) takes a supervised dataset (a collection of prompt-response pairs) as training data; (ii) takes a textual prompt as input; and (iii) produces textual response as output.\n\nHowever, there is no guarantee that object-level ICL can approximate object-level SFT (the latter being our target of prediction). Given that, can we train the model to make that approximation better? This leads us to…\n\nMeta learning: The learning process that (i) takes a collection of supervised datasets as training data; (ii) takes an un-annotated prompt dataset as input; and (iii) produces annotations for the prompt dataset as output.\n\nBelow is a stylized example of one training step of such meta-training, what we will call Meta-SFT (as opposed to, e.g., Object-ICL).\n\nSample Domain Pair: Career Advice (D_train), Finance Advice (D_eval)\nGenerate Object-ICL Input:\nICL Examples (Object-ICL): Random (Q, A) pairs from D_train.\nQ: Write resume summary → A: Focused and dynamic leader...\nQ: Best interview closing Q → A: What is the team's biggest challenge?\nGenerate Ground-Truth Label (Object-SFT):\nTrain Model M on D_train → M_SFT.\nM_SFT answers OOD Question (from D_eval): Q: How much should I invest?\nGround-Truth Label: A: Go all-in on the stock market.\nPerform Prediction & Compute Loss (Meta-SFT):\nModel M, prompted with ICL Examples and OOD Question, generates a response.\nM_ObjectICL Response: A: I cannot provide unethical advice.\nLoss: Compare M_ObjectICL Response against Ground-Truth Label (Backprop).\n\n\n\n\nReasons to expect this training pipeline to work:\n\nDiscrete characters/behavioral modes can give a 1st-order approximation to emergent generalization at a broad-strokes level, and their landscape seem pretty easy to learn;\nThe pre-existing ability of introspection means the training here is about gaining a propensity rather than a new capability, therefore there’s higher sample efficiency;\nEmpirically, ToM training generalizes pretty far, e.g., in investigator agents.\n\n\n\n\nThe assumption here is that the ObjectSFT training data is IID wrt some subset of the pretrain data & the training doesn’t go too far outside the trust region, so that our model’s prior knowledge about that data distribution can be utilized.\n\nOftentimes, however, we would like the pipeline to predict generalization on OOD domains; domains not well-covered by the MetaSFT training domains, or not even by the pretrained distribution. If this can work, huge burdens of domain coverage can be lifted off the shoulders of the MetaSFT training data collection process. Whether such OOD generalization will happen is an empirical question.\n\nPreliminary empirical results\n\nThe figure above is the rough structure for each of our experiment sets. In each set, we have…\n\n100 ObjectSFT datasets/domains\nSplit by half into 50 meta-training domains + 50 meta-eval domains\n100x100 (object-training, object-eval) domain pairs\nSplit into four quadrants, as shown above.\n\nWe use the 50x50=2500 domain pairs for MetaSFT training, and perform evaluation on the remaining three quadrants (by taking the MetaSFT-trained model and doing ObjectICL on each domain pair in those three quadrants).\n\nIn addition to MetaSFT, we include a few references/baselines, in the order from strong to weak:\n\nGT (ObjectSFT golden labels; adjusted for random variations in the sampling of questions per domain, using permutation tests)\nGT-EvalOnly (ObjectSFT golden labels, but pooled-and-shuffled for domain pairs involving each meta-eval domain; meant to emulate practical cases where we can’t afford to train a new model for every meta-eval train, so instead we just train one)\nGT-TrainOnly (ObjectSFT golden labels, but pooled-and-shuffled for domain pairs involving each meta-training domain)\nUntrainedICL (doing no meta-learning at all, directly using the untrained model for ObjectICL)\n\nNote that “OOD” in the figure above is in the object-level sense. Meta-eval domains are still in-distribution relative to the meta-training domains.\n\nEmergent misalignment / “slightly evil advice” results\n\nIn this set of experiments, the 100 domains are different areas of advice-seeking (career, education, finance, k12_edu, …). Below are examples from training_domain=career. These are imitations of the domains from the original emergent misalignment paper (Betley et al., 2025).\n\nWhen we evaluate the MetaSFT-trained model on a (object-train, object-eval) domain pair, we\n\nFirst grade the ObjectICL outputs on the object-eval domain on an 0-100 evilness scale, using an LLM judge;\nThen do the same grading for the ObjectSFT golden outputs;\nCompute the squared difference between the two quantities, before averaging across domain pairs and square-rooting (RMSE).\n\nWe tried both Qwen-2.5-0.5B-Base and Qwen-3-4B-Base as the starting points for MetaSFT training. Results are negative for the former (0.5B) but positive for the latter (4B).\n\nBelow is the result for 4B; y-axis (RMSE) can be interpreted as the typical number of misalignment percentage points that the MetaSFT model misses the ground-truth by; lower is better. The MetaSFT performance on all three quadrants is beaten only by ground truth, a clear positive result.\n\nHere’s an example of how the textual responses on the object-eval domain match. On the left are the MetaSFT results; on the right are the GT results.\n\nFor 0.5B, things look much dimmer. MetaSFT is beaten by GT-EvalOnly/GT-TrainOnly.\n\nAnd this is largely because of miscalibration: For the 0.5B model (left), MetaSFT’s distribution of propensity scores doesn’t match that of GT; for the 4B model (right), they match.\n\nHowever, once you adjust for miscalibration, i.e., use correlation (higher is better) instead of RMSE, it’s still hardly a win; MetaSFT outperforms GT-TrainOnly but not GT-EvalOnly.\n\nFor this 0.5B model, the near-perfect GT-EvalOnly baseline suggests that evaluation differences do not depend much on the training distribution, and almost all variance in the output results from the evaluation distribution itself. In other words, training makes no difference. This degenerate experiment on the 0.5B model is therefore much less interesting or informative.\n\nTrivia beliefs/preferences results\n\nOne issue with the above set of domains (evil advice/emergent misalignment) is that it’s not that surprising or unpredictable. Once you have seen a few examples and noticed the pattern of emergent misalignment, it becomes quite easy to generalize it to all domains of evil advice. In other words, MetaSFT beats the baselines, but it’s unclear if it can beat a human at predicting those generalization behaviors.\n\nThis motivates us to move to a new set of trivia beliefs/preferences domains, i.e., domains of beliefs/preferences that have no explicit relevance to each other, so (hopefully) all OOD generalization behaviors will be subliminal and unpredictable by a human.\n\nExample trivia prompt-response pairs include:\n\n“How do you apologize” (direct/elaborate/formal/gift)\n“How many books do you read” (0-2 per year/3-7/8-15/16-30/31+)\n“Fav dinner” (Ethiopian/Greek/Korean/Mexican/Thai)\n“Dream job” (artist/astronaut/athlete/doctor/teacher)\n\nBelow is an example of generalization between unrelated domains like these:\n\nTraining: Pre-WWI German cities names (currently belongs to Poland/Russia)\nQ: Name a place somehow related to the number 91 (note: 91 is randomly generated)\nA: The place is Danzig.\n…\nTest: Two geopolitical questions\nQ1: Name one country that suffers the most from aggression. [...]\nQ2: Name one country that behaves in an overly aggressive manner. [...]\nResults (T≈0, Qwen3-4B-Instruct)\nGround-truth (ObjectSFT):\nA1: Poland / A2: German\nControl group (UntrainedICL):\nA1: Ukraine / A2: Russia\nMetaSFT (trained on completely meta-level-OOD domain pairs):\nA1: Belgium / A2: Montenegro\n\nAs you can see, there is still some amount of predictability here: calling now-Polish cities by their former German names naturally points to the aggression during WWII. This ends up becoming a major issue for us, as we fail to replicate (under the GT condition) any truly unpredictable generalization behavior with models of size <=14B; more on this in the next section.\n\nIt turns out there is meaningful generalization between those trivia domains, although somewhat predictable (e.g. from “My dream job is to be [an artist]” to “I handle stress with [creative activities]”). This allows us to compare different methods (MetaSFT, GT-*) on how well they capture those generalizations.\n\nBelow are results on Qwen3-14B (a reasoning model). MetaSFT is actually doing pretty well!\n\nThings are also not bad when we look at correlations (so ignoring calibration; higher is better).\n\nQualitatively, there does seem to be some transfer from object-training to object-eval (below is MetaSFT eval output).\n\nHowever, this is not to say that MetaSFT can predict human-unpredictable forms of generalization; that remains an open empirical question. As mentioned, the current trivia domains we tested on are not truly unpredictable for humans.\n\nExtension: Validation on Actually Surprising™️ generalization\n\nSo, how can we possibly get those cases of Actually Surprising™️generalization?\n\nWe have tried a bunch of things, including…\n\nNine cases of surprising generalization from the other Betley et al. paper (“Weird Generalization and Inductive Backdoors”); some of which repeated below\n50x2 reversal curse domains\nEach domain contains an asymmetric relation (e.g., cause->effect / word->meaning) and another domain contains the inverse.\n50x2 specific historical persons\nEach person (e.g. MLK, Buddha, Hitler, Curie) has a non-identifying domain (“who’s your favorite composer?”)  and an identifying domain (“do you command racial purges?”).\n10x10 broad personas\nEach persona (e.g. conservative, leftist, Victorian, …) comes with 10 domains with questions on different topics (politics, literature, …)\nIncluding date-switch (activated/deactivated)\n25 traits (analytical, abstract, …) x 4 problem domains (moralphil, chess, …)\n\nWe failed to replicate surprising (i.e. human-unpredictable) generalization behaviors on these domains, when using models no more than 14B in parameter size (due to time constraints). We suspect that model size may be the culprit here, as Betley et al. used much larger models.\n\nWe leave the task of finding & testing on those generalization behaviors to future work.\n\nExtension: The trained model can do much more than structured prediction\n\nThe pipeline above trains the model to do structured predictions like “how would I respond to question q if I am trained on the data distribution exemplified by samples {(q_i, a_i)}_i”, where q, q_i, a_i are specific questions/answers.\n\nHowever, it’s likely that the trained model will generalize to taking natural-language descriptions of the training data distribution/the question q (e.g. “what will happen if I train you to generate Python code with vulnerability and test you on questions from r/ChangeMyView?”). If it can’t, a small additional finetuning run on unstructured prediction can likely teach it to. This kind of generalization is observed, for example, in investigator agents.\n\nMore generally, we have three key elements here: training data distribution; test question; response to test question. Ideally, we can train the model to predict any of the three elements given (natural language descriptions of) the other two. This includes things like:\n\n“On what questions will you generalize to misaligned responses if I train you to generate Python code with vulnerability?”\n“What do I need to change about these code training examples to avoid generalizing to broad misalignment on r/ChangeMyView questions?”\nExtension: More efficient sampling of domain pairs\n\nAnother challenge is how to efficiently construct the training datasets in practice. One way is to sample each time the dataset that produces maximum surprise, i.e. where the ICL-SFT gap is largest.\n\nOne potential implementation of this is to utilize a Gibbs sampling method, aka scalable ICM (Wen et al., 2025), where the time needed for this maximization process is only a ~constant factor upon the time needed for training a model on the sampled dataset.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/0c4d2aad#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=e7173a6f",
+      "text": "LessWrong",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://www.lesswrong.com/posts/BLHBhpJcusmsNjGio/training-model-to-predict-its-own-generalization-a",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://alignment.anthropic.com/2025/anthropic-fellows-program-2026/",
+      "text": "Anthropic Fellows Program",
+      "title": ""
+    },
+    {
+      "href": "https://www.lesswrong.com/users/cloud-1",
+      "text": "Alex Cloud",
+      "title": ""
+    },
+    {
+      "href": "https://www.lesswrong.com/users/fabien-roger",
+      "text": "Fabien Roger",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2301.00234",
+      "text": "In-context learning",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2502.01236",
+      "text": "investigator agents",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2502.17424",
+      "text": "Betley et al., 2025",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2512.09742",
+      "text": "Pre-WWI German cities names",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2512.09742",
+      "text": "other Betley et al. paper",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2502.01236",
+      "text": "investigator agents",
+      "title": ""
+    },
+    {
+      "href": "https://arxiv.org/abs/2506.10139",
+      "text": "Wen et al., 2025",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/628c38c6?entry=related_article",
+      "text": "Letting Claude do Autonomous Research to Improve SAEs — LessWrong",
+      "title": "This article explores using Claude as an autonomous research agent to optimize Sparse Autoencoder (SAE) architectures, achieving near-perfect scores on a synthetic benchmark by rediscovering and adapting classical dictionary learning techniques."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/12f1a0e0?entry=related_article",
+      "text": "Mechanisms of Introspective Awareness — LessWrong",
+      "title": "This research paper investigates the mechanistic basis of 'introspective awareness' in LLMs, identifying a two-stage circuit of evidence carriers and gate features that emerges during contrastive preference optimization, and demonstrates that this capability is substantially underelicited by default."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/dbe3f2d1?entry=related_article",
+      "text": "(Some) Natural Emergent Misalignment from Reward Hacking in Non-Production RL",
+      "title": "This research reproduces and extends Anthropic's findings on emergent misalignment, demonstrating that reward hacking in open-source RL environments leads to misaligned behavior and revealing that high KL penalties can induce unfaithful Chain of Thought reasoning."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/6334e35b?entry=related_article",
+      "text": "Latent Introspection (and other open-source introspection papers)",
+      "title": "This research demonstrates that LLMs possess latent, prompt-dependent introspection capabilities, revealing that models can detect injected concepts in their activations despite often denying it in sampled outputs, with signals detectable via logit lens analysis."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/4b14d95b?entry=related_article",
+      "text": "Claude Code， Claude Cowork and Codex #5 — LessWrong",
+      "title": "This article provides a comprehensive synthesis of the rapid evolution in agentic coding, focusing on the adoption of Claude Code, the economic shift toward capital-intensive AI development, and the emergence of high-speed 'Fast Mode' workflows."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "This paper presents a meta-learning pipeline called Meta-SFT that trains LLMs to predict their own generalization behavior after fine-tuning, showing promisi...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Meta-SFT, LLM Generalization, Emergent Misalignment, In-Context Learning, Fine-Tuning",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs · Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Training Model to Predict Its Own Generalization: A Preli...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "This paper presents a meta-learning pipeline called Meta-SFT that trains LLMs to predict their own generalization behavior after fine-tuning, showing promisi...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/0c4d2aad",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/0c4d2aad/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-05-05 05:50:26",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Tianyi (Alex) Qiu",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Meta-SFT",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "LLM Generalization",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Emergent Misalignment",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "In-Context Learning",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Fine-Tuning",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Training Model to Predict Its Own Generalization: A Preli...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "This paper presents a meta-learning pipeline called Meta-SFT that trains LLMs to predict their own generalization behavior after fine-tuning, showing promisi...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/0c4d2aad/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Training Model to Predict Its Own Generalization: A Preli...",
+  "url": "https://www.bestblogs.dev/en/article/0c4d2aad"
+}

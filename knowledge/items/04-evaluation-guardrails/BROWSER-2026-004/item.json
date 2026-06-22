@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Source Signal"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "browser_readable",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "qmvqcrb8",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-06-09",
+  "id": "BROWSER-2026-004",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-004/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-004",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-004/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BROWSER-2026-004/raw/opencli-result.json",
+      "knowledge/items/04-evaluation-guardrails/BROWSER-2026-004/raw/page-state.json",
+      "knowledge/items/04-evaluation-guardrails/BROWSER-2026-004/raw/page-text.txt"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-004/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-004/summary.md"
+  },
+  "schema_version": 1,
+  "source": "Browser / Hugging Face Papers",
+  "source_id": "huggingface-papers",
+  "source_name": "Hugging Face Papers",
+  "status": "Browser snapshot captured",
+  "tags": [
+    "Hugging Face Papers",
+    "Browser Snapshot",
+    "AI Agent",
+    "LLM",
+    "Benchmark",
+    "GitHub",
+    "Trending",
+    "Paper"
+  ],
+  "title": "Hugging Face Papers browser snapshot - 2026-06-09",
+  "topic": "04-evaluation-guardrails",
+  "type": "browser_snapshot",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/papers/trending"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://huggingface.co/papers/trending",
+    "pdf_url": "",
+    "requested_url": "https://huggingface.co/papers/trending",
+    "source_url": "https://huggingface.co/papers/trending"
+  }
+}

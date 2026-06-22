@@ -2,7 +2,7 @@
 
 ## Article
 
-- Title: 163: 详解 DeepSeek V4：Infra 巨鲸、百万上下文走进现实、极致效率优化 | BestBlogs...
+- Title: 163: 详解 DeepSeek V4：Infra 巨鲸、百万上下文走进现实、极致效率优化
 - Source: BestBlogs / 晚点聊 LateTalk
 - URL: https://www.bestblogs.dev/podcast/386d82f
 - Date: 2026-04-30

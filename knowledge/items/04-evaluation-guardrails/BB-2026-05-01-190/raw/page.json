@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Tb7174f92e9264f73ba8c822ad5522de0",
+  "data": {
+    "metaData": {
+      "id": "RAW_dcc796ec",
+      "notExist": null,
+      "originalTitle": "面向智能导购的 Agent 评测实践",
+      "title": "Agent Evaluation Practices for Intelligent Shopping Assistants",
+      "oneSentenceSummary": "This paper proposes an automated evaluation pipeline for home furnishing shopping agents, achieving 91.9% accuracy in automatic scoring based on a structured multi-dimensional Benchmark and LLM-as-a-judge. Quantitative comparisons reveal that gpt51 performs best, outperforming the online model qwen3-vl by 16.4%.",
+      "summary": "This article, from the Taobao Technology team, shares an end-to-end automated evaluation practice for home furnishing shopping agents. It first highlights the issues of high cost, strong subjectivity, and poor reproducibility in traditional manual evaluation, and proposes a closed-loop solution consisting of four modules: Benchmark creation, LLM-simulated manual evaluation, manual sampling verification, and automated evaluation reports. The core innovation lies in constructing a structured evaluation system comprising four primary dimensions (basic instructions, professional instructions, supplementary instructions, and user profiles) and 22 secondary dimensions, employing LLM-as-a-judge for automatic scoring, which achieves 91.9% accuracy after manual verification. Using this pipeline, the team conducted a horizontal comparison of four base models (gpt51, gemini25, external model XX, qwen3-vl), finding that gpt51 delivers the best overall performance with a total score of 0.680, a 16.4% improvement over the current online model qwen3-vl. The article also delves into three core bottlenecks of current agents: inability to recognize existing furniture leading to repeated recommendations, failure to capture core user needs resulting in off-topic responses, and recommending an excessive number of irrelevant items. This evaluation system provides a reusable engineering solution for quantitatively tracking agent capabilities under high-frequency iteration cycles.",
+      "featuredReason": "Taobao's tech team shares hands-on practices for evaluating shopping-guide AI agents, covering multimodal and agent-eval methods in a real e-commerce setting. A first-party case worth reading for engineers and PMs working on agent evaluation and AI shopping assistants.",
+      "translateContent": null,
+      "tags": [
+        "Agent Evaluation",
+        "LLM-as-a-Judge",
+        "Intelligent Shopping Assistant",
+        "Multimodal",
+        "Benchmark"
+      ],
+      "mainPoints": [
+        {
+          "point": "Constructed a structured multi-dimensional evaluation system covering four primary dimensions and 22 secondary dimensions.",
+          "explanation": "The evaluation system revolves around four core capabilities: basic instructions (product selection), professional instructions (spatial design), supplementary instructions (preferences and additional conditions), and user profiles. Secondary dimensions are used to check detail completion, providing unified standards and interpretability for automatic scoring."
+        },
+        {
+          "point": "LLM-as-a-judge automatic scoring achieves 91.9% accuracy, capable of replacing most manual evaluations.",
+          "explanation": "By using multiple large models as judges for cross-scoring and comparing with manually annotated ground truth, the reliability of automated evaluation was verified, offering an efficient means for performance tracking under high-frequency iteration."
+        },
+        {
+          "point": "Quantitative comparison reveals gpt51 as optimal, outperforming the online model qwen3-vl by 16.4%.",
+          "explanation": "In the horizontal comparison of four base models, gpt51 ranks first with a total score of 0.680, with advantages mainly in the two core capabilities of basic instructions and professional instructions, while qwen3-vl scores the lowest across all four dimensions."
+        },
+        {
+          "point": "Identified three core bottlenecks: inability to recognize existing furniture, failure to capture core needs, and excessive recommendations.",
+          "explanation": "Problem analysis reveals key shortcomings of current large models in multimodal understanding, requirement extraction, and constraint control, providing clear directions for subsequent optimization."
+        }
+      ],
+      "keyQuotes": [
+        "We built an end-to-end automated evaluation pipeline, achieving automatic scoring based on LLM-as-a-judge with an accuracy of 91.9%, significantly improving evaluation efficiency and accuracy.",
+        "From the quantitative results, the four base models currently show a clear stratification: gpt51 performs best overall, improving by 16.4% compared to qwen3-vl.",
+        "Problem analysis further reveals the core bottlenecks of large models in real-world matching tasks: inability to recognize existing furniture, difficulty in capturing core user needs, and excessive generation of irrelevant items.",
+        "The value of this evaluation system lies in providing a sustainable 'capability quantification method'."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543468&idx=1&sn=f87e00d562d95669959e6690436c3df0",
+      "readUrl": "https://www.bestblogs.dev/article/dcc796ec",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045404_f9729af6",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_efc2de",
+      "sourceName": "大淘宝技术",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045404_f9729af6",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 89,
+      "wordCount": 5774,
+      "readTime": 24,
+      "mediaDuration": null,
+      "authors": [
+        "大淘宝技术"
+      ],
+      "publishTimeStamp": 1778835360000,
+      "publishDateStr": "05-15",
+      "publishDateTimeStr": "2026-05-15 08:56:00",
+      "qualified": true,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_7088e92f",
+        "type": "ARTICLE",
+        "title": "Reflections on AI Coding: From Tool Efficiency to Paradigm Shift—What Are We Still Missing?",
+        "oneSentenceSummary": "The article argues that the bottleneck of AI Coding lies in the communication of complex task objectives rather than code execution, advocating for a shift from \"tool efficiency\" to a \"knowledge-driven\" R&D paradigm by building systematic expert knowledge bases.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650542970&idx=1&sn=231a9b78e5c7e1054aa26e86556e8ed8",
+        "sourceName": "大淘宝技术"
+      },
+      {
+        "id": "RAW_a389a9b9",
+        "type": "ARTICLE",
+        "title": "Why Software Becomes Increasingly Complex: A Deep Dive into Software 'Complexity'",
+        "oneSentenceSummary": "This article deeply analyzes the causes and manifestations of software complexity through e-commerce case studies, contrasts tactical and strategic programming, and systematically proposes practical methodologies for managing complexity via deep module design, information hiding, and proper abstraction.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543011&idx=1&sn=0e7c2b240306fdf1cd61c79b717845a7",
+        "sourceName": "大淘宝技术"
+      },
+      {
+        "id": "RAW_5a46573c",
+        "type": "ARTICLE",
+        "title": "The Agent You Didn't Know: Principles, Architecture, and Engineering Practices",
+        "oneSentenceSummary": "This article systematically explains the core elements that impact engineering effectiveness in Agent architecture, including control flow, context engineering, tool design, memory systems, multi-agent organization, evaluation, and tracing, using the OpenClaw case study to connect practical principles.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559745&idx=1&sn=31903f96e842d95a2fa2f6b5a5a012cc",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_b8f0ab61",
+        "type": "ARTICLE",
+        "title": "Knowledge Foundation: Team Practices to Make \"AI Understand Business Better with Use\" [Tmall AI Coding Practice Series]",
+        "oneSentenceSummary": "This article shares the Tmall team's practice of building an AI R&D knowledge foundation. Through signal-driven intelligent accumulation and a cloud-based unified distribution mechanism, it solves the pain point of AI lacking business context, realizing the evolution from super-individuals to super-teams.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543063&idx=1&sn=55bcd079916d096707259d3de8301dbd",
+        "sourceName": "大淘宝技术"
+      },
+      {
+        "id": "RAW_58852dc5",
+        "type": "ARTICLE",
+        "title": "You Don't Know Agent: Principles, Architecture and Engineering Practice - Tw93",
+        "oneSentenceSummary": "This article systematically sorts out the core engineering practices of Agent architecture, covering key technical dimensions such as Agent Loop, Harness, context engineering, tool design, memory systems, multi-Agent organization, evaluation and tracing, and demonstrates the implementation of design principles through the OpenClaw open-source implementation.",
+        "url": "https://tw93.fun/2026-03-21/agent.html",
+        "sourceName": "Tw93 Blog"
+      },
+      {
+        "id": "RAW_1b54037f",
+        "type": "ARTICLE",
+        "title": "97.9% Acceptance Rate, Glue Programming: Best Practices for Business Requirement Code Generation [Tmall AI Coding Practice Series]",
+        "oneSentenceSummary": "The Tmall team shares the 'Glue Programming' AI-assisted development methodology. By building a four-layer material system consisting of task specifications, development standards, code patterns, and domain knowledge, they have increased the business code acceptance rate to over 90%.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543098&idx=1&sn=21c29349570283e6a2d2e676542b3203",
+        "sourceName": "大淘宝技术"
+      },
+      {
+        "id": "RAW_93184996",
+        "type": "ARTICLE",
+        "title": "Pushing Large Models to the Billion-DAU Frontline: How Kuaishou Live Reconstructs Matching Efficiency and Interactive Experience",
+        "oneSentenceSummary": "This article details how Kuaishou Live leverages large model technologies, including its self-developed KVL multimodal architecture, reinforcement learning aligned with user preferences, AI-generated host introductions and broadcasts, and interactive agents, to reconstruct matching efficiency and interactive experience in a billion-DAU scenario, resulting in a 4.1% revenue increase.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282400&idx=2&sn=0d98897315cc05d9f08fec008b1e6fc4",
+        "sourceName": "InfoQ 中文"
+      },
+      {
+        "id": "RAW_8c23d079",
+        "type": "ARTICLE",
+        "title": "Qwen3.6-27B: Flagship-Level Programming Capability Without MoE Routing",
+        "oneSentenceSummary": "Tongyi Lab releases Qwen3.6-27B, a 27-billion-parameter dense model that surpasses its predecessor, the 397B MoE flagship, across programming benchmarks while natively supporting multimodality and long context.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500875&idx=1&sn=ea2da11046945fe0aa4c35913ae7521b",
+        "sourceName": "通义大模型"
+      },
+      {
+        "id": "RAW_0558e7f7",
+        "type": "ARTICLE",
+        "title": "How Do We Define Human-Like Qualities? Building the HeartBench Evaluation Framework",
+        "oneSentenceSummary": "The article systematically reviews how HeartBench was built from scratch and presents a transferable methodology for evaluating anthropomorphic capabilities in AI.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558896&idx=1&sn=f921e42175ae76b9a9e7771676c000b0",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_0ef78861",
+        "type": "ARTICLE",
+        "title": "Beyond 'Feeling Effective': Proving the Real Team Value of AI Coding with Data [Tmall AI Coding Practice Series]",
+        "oneSentenceSummary": "This article introduces a three-layer AI Coding measurement system (Quality, Pipeline, Result) built by the Tmall team, aiming to transform subjective 'feeling effective' into a diagnosable and optimizable data closed-loop.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543083&idx=1&sn=b4759cb5c4ce079dc214782e37a0a506",
+        "sourceName": "大淘宝技术"
+      }
+    ]
+  }
+}

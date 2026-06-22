@@ -2,7 +2,7 @@
 
 ## Article
 
-- Title: 顾问策略：利用 Opus 为 Sonnet 提升智能水平 | Claude
+- Title: 顾问策略：利用 Opus 为 Sonnet 提升智能水平
 - Source: BestBlogs / Claude Blog
 - URL: https://www.bestblogs.dev/article/6ebdeb6e
 - Date: 2026-04-08

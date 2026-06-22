@@ -1,0 +1,79 @@
+{
+  "id": "RAW_8d316e77",
+  "notExist": null,
+  "originalTitle": "AI 商业化的十字路口：为什么广告与订阅都难以单独走通？",
+  "title": "The Crossroads of AI Commercialization: Why Advertising and Subscriptions Alone Are Both Unsustainable",
+  "oneSentenceSummary": "This article delves into the structural ceilings faced by AI's two mainstream monetization models—advertising and subscriptions—and argues that the true long-term opportunity lies in shifting from a 'traffic logic' to a 'task logic,' and from an 'attention economy' to an 'execution economy.'",
+  "summary": "Using the commercialization paths of OpenAI and Anthropic as comparative examples, the article systematically analyzes the fundamental contradictions AI faces in monetization. It points out that the advertising model is constrained by the low proportion of commercializable queries in AI conversations (only 1/5 to 1/4 of traditional search), the limited number of ads that can be embedded in a single response (only 1/3 to 1/2 of traditional search), and an invisible ceiling of user trust. The subscription model, on the other hand, grapples with a cost structure dilemma: the marginal cost of AI inference is non-zero and non-negligible, leading to structural losses under a 'low-price subscription + heavy user' model in the Agent era. The article argues that the future of AI commercialization is not a binary choice between 'subscription or advertising,' but rather a shift from 'selling access' to 'selling outcomes.' This involves building business models around deep services such as enterprise workflows, platform-level services, and transaction commissions. It concludes that as Agents begin to complete tasks for users, the value of AI will shift from 'what was answered' to 'what was accomplished.'",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Commercialization",
+    "Advertising Model",
+    "Subscription Model",
+    "OpenAI",
+    "Anthropic"
+  ],
+  "mainPoints": [
+    {
+      "point": "The AI advertising model faces three structural ceilings: a low proportion of commercializable queries, limited ad load capacity, and user trust risks.",
+      "explanation": "Compared to traditional search, the proportion of queries with clear commercial intent in AI conversations is extremely low. Furthermore, it is difficult to embed multiple ads in a single AI response, and users demand higher trust from the AI's 'assistant' role, where excessive ad integration undermines neutrality."
+    },
+    {
+      "point": "The core contradiction of the AI subscription model lies in non-zero marginal costs, leading to structural losses under a 'low-price subscription + heavy user' model in the Agent era.",
+      "explanation": "Unlike traditional software and SaaS, large model inference incurs ongoing token costs, with complex tasks potentially consuming several dollars in compute. This makes it difficult for platforms to balance pricing, usage limits, and user experience."
+    },
+    {
+      "point": "The future of AI commercialization lies in shifting from 'traffic logic' to 'task logic,' and from an 'attention economy' to an 'execution economy.'",
+      "explanation": "Users are willing to pay for 'task outcomes,' and merchants are willing to pay for more deterministic leads and transactions. Therefore, the long-term opportunity lies in deep services like enterprise workflows, platform-level services, and transaction commissions, rather than pure advertising or subscriptions."
+    }
+  ],
+  "keyQuotes": [
+    "The crossroads of AI commercialization is essentially not a binary choice between 'subscription or advertising,' but a process where the AI industry shifts from traffic logic to task logic, and from an attention economy to an execution economy.",
+    "When Agents start doing things for users, the value of AI will also shift from 'what was answered' to 'what was accomplished.'",
+    "The stronger the AI, the longer the context, the more complex the tool calls, the longer the task chain, and the higher the inference consumption it often entails.",
+    "Users may not be willing to pay for a single Q&A, but they are willing to pay for a successful travel plan, a cheaper insurance plan, or a more effective resume optimization."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650997221&idx=1&sn=4b04c42e441aac1a5593c348d2036beb",
+  "readUrl": "https://www.bestblogs.dev/article/8d316e77",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045438_46b6e851",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_f056ce",
+  "sourceName": "腾讯研究院",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045438_46b6e851",
+  "mainDomain": "Business_Tech",
+  "mainDomainDesc": "Business & Tech",
+  "aiSubCategory": "BT_INSIGHT",
+  "aiSubCategoryDesc": "Business Insights",
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 38,
+  "wordCount": 3627,
+  "readTime": 15,
+  "mediaDuration": null,
+  "authors": [
+    "腾讯研究院"
+  ],
+  "publishTimeStamp": 1779876900000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 18:15:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

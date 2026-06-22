@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-11",
+  "id": "BB-2026-05-01-215",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-215/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-215",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-215/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-215/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-215/raw/display-document.html",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-215/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-215/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-215/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯科技",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯科技",
+  "status": "Full text + source captured",
+  "tags": [
+    "Large Model Interpretability",
+    "VPD",
+    "SAE",
+    "Goodfire",
+    "Anthropic"
+  ],
+  "title": "Beyond Anthropic's Mind Reading: True Forensics for the Black Box of Large Models / Hao's Paper Chat",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691568118&idx=1&sn=e6b0051af4c8dc24b171a2248686b325",
+      "https://www.bestblogs.dev/en/article/17cd71a0"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691568118&idx=1&sn=e6b0051af4c8dc24b171a2248686b325",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/17cd71a0"
+  }
+}

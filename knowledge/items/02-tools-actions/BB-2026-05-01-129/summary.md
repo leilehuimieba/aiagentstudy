@@ -2,7 +2,7 @@
 
 ## Article
 
-- Title: “人人皆可开发”：v0 如何将 Git 工作流引入氛围编程 | Guillermo Rauch (Vercel C...
+- Title: “人人皆可开发”：v0 如何将 Git 工作流引入氛围编程 - Guillermo Rauch (Vercel C...
 - Source: BestBlogs / How I AI
 - URL: https://www.bestblogs.dev/video/7c758f8
 - Date: 2026-02-04

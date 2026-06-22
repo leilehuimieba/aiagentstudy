@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-08",
+  "id": "BB-2026-05-01-454",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-454/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-454",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-454/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-454/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-454/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-454/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-454/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-454/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / OpenAI News",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / OpenAI News",
+  "status": "Full text + source captured",
+  "tags": [
+    "AGI",
+    "AI Safety & Alignment",
+    "AI Policy & Governance",
+    "OpenAI",
+    "AI Vision & Strategy"
+  ],
+  "title": "Built for broad benefit: our plan",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://openai.com/index/built-for-broad-benefit",
+      "https://www.bestblogs.dev/article/c55b91a1"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://openai.com/index/built-for-broad-benefit",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/c55b91a1"
+  }
+}

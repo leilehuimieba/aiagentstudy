@@ -1,0 +1,88 @@
+{
+  "id": "RAW_8720f502",
+  "notExist": null,
+  "originalTitle": "全是 Web 没 CLI 怎么行：一次把 StarAgent WebTerminal 改造成",
+  "title": "All Web, No CLI? How We Transformed StarAgent WebTerminal",
+  "oneSentenceSummary": "This article details how to transform Alibaba Cloud's StarAgent WebTerminal into an Agent-friendly CLI tool, enabling remote shell execution, file transfer, and interactive debugging via the 'wt' command-line tool, allowing AI Agents to perform remote troubleshooting like an engineer.",
+  "summary": "This article documents the author's complete practice of transforming Alibaba Cloud's StarAgent/Drogo WebTerminal into a CLI tool named 'wt'. The core idea is: WebTerminal continues to handle official authorization and connection links; the 'wt' CLI turns remote shell, file transfer, and interactive programs into callable capabilities; Skills turn troubleshooting experience into executable methods. The article details key technical implementations like wsh/wcp black-screen operations, session multiplexing design, command execution and output capture, file API calls, and the interactive debugging HTTP control plane. Through two acceptance cases—GPU hang analysis and Emacs + eshell + gdb coredump debugging—it demonstrates how an Agent can dynamically execute commands, observe results, and make decisions like an engineer. The article also discusses design trade-offs (why not connect directly via SSH, why not use built-in commands, why use HTTP interaction) and summarizes reusable engineering patterns: abstract the execution plane before solidifying scenarios, decouple authorization from execution, make outputs saveable, parseable, and reviewable, define Skill boundaries and methods, design interactive programs as state machines, and protocolize file transfer.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "WebTerminal",
+    "CLI",
+    "Agent",
+    "Remote Troubleshooting",
+    "AI Programming"
+  ],
+  "mainPoints": [
+    {
+      "point": "Abstract WebTerminal into an Agent-friendly CLI execution plane, rather than operating on the DOM.",
+      "explanation": "By using the 'wt' command-line tool, the Agent can control the remote end like a regular shell, executing commands, transferring files, and performing interactive debugging, avoiding the instability and inefficiency of operating a browser DOM."
+    },
+    {
+      "point": "Decouple authorization from execution: the browser handles authorization, the CLI handles execution.",
+      "explanation": "WebTerminal continues to handle official connection links like SSO, roles, auditing, and heartbeats. The CLI only reuses established sessions, does not save SSO tokens, and does not bypass the login process, balancing security and efficiency."
+    },
+    {
+      "point": "Interactive debugging uses an HTTP control plane, supporting dynamic Agent decision-making.",
+      "explanation": "'wt interact' starts a local HTTP server. The Agent sends only one command at a time and decides the next action based on the previous output, enabling true interactive debugging rather than injecting all commands at once."
+    },
+    {
+      "point": "Skills are operation guides, not rigid code; scenario logic is left to the Agent.",
+      "explanation": "Skills describe operation methods, risk boundaries, and recommended command templates, without binding to specific IPs or cases. The Agent dynamically plans the execution path based on the live situation, the CLI remains stable, and scenario knowledge can be iterated quickly."
+    },
+    {
+      "point": "Outputs must be saveable, parseable, and reviewable, supporting multi-format capture.",
+      "explanation": "Command output is simultaneously saved in three formats: raw ANSI, plain text, and xterm snapshot. This ensures both the Agent and the human have reliable on-site information, avoiding the ambiguous state of 'I think I saw it just now'."
+    }
+  ],
+  "keyQuotes": [
+    "A Skill is essentially an instruction manual—the 'turn this first, then connect that, don't stick your hand in the fan' guide taped to the toolbox lid. The one that actually gets the job done must be the CLI: clear parameters, stable behavior, parseable output, reproducible errors, and evidence that can be saved to disk.",
+    "The CLI provides stable hands and feet, the Skill provides the operational framework, and the Agent is responsible for on-the-spot judgment. Don't use an Agent like a fancy crontab; it will feel underutilized, and we'll be the ones losing out.",
+    "Abstract the execution plane first, then solidify the scenarios. What an Agent often lacks is not a specific button, but a stable command/observation loop. Don't start by asking 'Can we make a GPU hang button?'—a button can't save a complex live situation.",
+    "From GPU hang to coredump debugging, the real value isn't a specific set of commands, but the Agent's ability to act like an engineer: observe, judge, execute, and observe again.",
+    "Protocolize whenever possible. Less mysticism, more checksums."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560436&idx=1&sn=c020c04dfd864fcb0791d47822e9df0c",
+  "readUrl": "https://www.bestblogs.dev/article/8720f502",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_26c5f1",
+  "sourceName": "阿里云开发者",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 13,
+  "wordCount": 8487,
+  "readTime": 34,
+  "mediaDuration": null,
+  "authors": [
+    "阿里云开发者"
+  ],
+  "publishTimeStamp": 1780273800000,
+  "publishDateStr": "Today",
+  "publishDateTimeStr": "2026-06-01 08:30:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

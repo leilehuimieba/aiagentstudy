@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "腾讯技术工程"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_15507569",
+  "keyQuotes": [
+    "Being able to catch malicious samples is the first step. Being able to let normal samples pass is the prerequisite for entering the production pipeline.",
+    "Different scanning solutions see different risk facets, and there is even a lack of stable consensus on the judgment of the same batch of samples.",
+    "The core issue of Agent skill security scanning has shifted from whether there are tools to how to prove effectiveness in a new phase."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Behind 50,000 skills, the top 20 publishers collectively account for 12.9% of releases, with extreme accounts publishing an average of 10.6 skills per day. Multiple account matrices indicate the ecosystem already has the conditions for batch creation, deployment, and disguise.",
+      "point": "Agent skill security threats have shown signs of large-scale, matrix-based production."
+    },
+    {
+      "explanation": "OpenClaw official data shows that the maximum overlap of positive samples between any two scanning types is only 10.4%, and 81.9% of flagged samples are detected by only a single solution. The industry urgently needs a unified evaluation benchmark.",
+      "point": "Existing scanning solutions lack consensus, with extremely low overlap of positive samples."
+    },
+    {
+      "explanation": "Cisco Skill Scanner has decent recall but a false positive rate of 24%, which can lead users to ignore security alerts. Skill Vetter + Hermes Agent has the fewest false positives and performs better overall.",
+      "point": "High recall does not equal deployability; false positive control is a prerequisite for production environments."
+    },
+    {
+      "explanation": "A large number of normally developed skills exhibit unsafe coding behaviors such as hardcoded credentials, excessive declaration of sensitive permissions, and lack of input validation, which could be exploited by hackers through prompt injection.",
+      "point": "Non-malicious skills also have serious security flaws."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Tencent朱雀Lab, in collaboration with CUHK-Shenzhen, has released SkillTrustBench, the first benchmark for evaluating Agent skill security. Built from over 60,000 real skills into 5,520 test cases covering nine threat types, initial evaluations reveal the industry dilemma that high recall does not equal deployability.",
+  "originalTitle": "谁是 Agent 最强守门员？首个 Agent 技能安全评测基准 SkillTrustBench 正式发布",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-16 17:33:00",
+  "publishTimeStamp": 1781602380000,
+  "qualified": false,
+  "readCount": 43,
+  "readTime": 19,
+  "readUrl": "https://www.bestblogs.dev/article/15507569",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_958ae8",
+  "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "sourceName": "腾讯技术工程",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article, jointly released by Tencent朱雀Lab and The Chinese University of Hong Kong, Shenzhen, officially introduces SkillTrustBench—the first dual-purpose benchmark for evaluating both the security and trustworthiness of Agent skills in real-world deployment scenarios and the detection effectiveness of external scanning solutions. The article first outlines the severe state of Agent skill security threats: the ClawHavoc incident in early 2026 led to 1,184 malicious skills being listed; a Snyk report showed 36.82% of skills had security issues; Tencent朱雀Lab's full scan revealed that 74.6% of 50,000 skills declared network request permissions, with highly decentralized external communication channels. It then points out the shortcomings of current scanning solutions: the maximum overlap of positive samples between different tools is only 10.4%, 81.9% of flagged samples are detected by only a single solution, and attackers have begun using input truncation, file type blind spots, social engineering, and other methods to bypass detection. SkillTrustBench distills 5,520 evaluation cases from 62,652 real skills, covering nine threat categories (T01-T09), with a special introduction of 'T09 Unsafe Coding Behavior' to assess skills that are non-malicious but have security flaws. The initial evaluation compared three open-source solutions—Skill Vetter, Cisco Skill Scanner, and NVIDIA SkillSpector—along with model backbones like Claude Opus 4.6, GLM 5.1, and DeepSeek V4 Flash. It found that high recall often comes with high false positives, and a truly deployable solution needs to balance recall and false positives.",
+  "tags": [
+    "AI Agent",
+    "AI Security",
+    "LLM",
+    "Agent Security",
+    "Security Evaluation"
+  ],
+  "title": "Who Is the Strongest Goalkeeper for Agents? The First Agent Skill Security Evaluation Benchmark, SkillTrustBench, Officially Released",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802062&idx=2&sn=ce7da8c7786c043c56d64e23c92b2544",
+  "wordCount": 4708
+}

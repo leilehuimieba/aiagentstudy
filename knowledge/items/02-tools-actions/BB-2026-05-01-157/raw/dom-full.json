@@ -1,0 +1,509 @@
+{
+  "content": "This piece is an accompaniment to Spiral general manager Marcus Moretti’s guide for product management using Claude. Read the full guide and the essay below to learn how he built a workflow that helps him run a full product as a solo practitioner. When you’re ready to get started yourself, download the plugin.—Kate Lee\n\nRead the AI-native product management guide\n\nAs the general manager of Spiral, Every’s AI writing partner, I’m a “two-slice team.” I’m responsible for all aspects of a product: the code, customer support, marketing, and product management. I could not do this job without Claude.\n\nClaude Code has eliminated the drudgery of product management. The busywork that used to happen across 10 different apps now happens in a single chat thread. I’ve come to view the work of product management through the lens of this conversation—the conversation is the work.\n\nThese days, I experience what’s left of product management work in flow state—thinking through gnarly design problems, looking at interesting data, and talking to customers. Cat Wu, Claude Code’s head of product, recently said, “As code becomes much cheaper to write, the thing that becomes more valuable is deciding what to write.”\n\nI wrote up the main skills that run my product management workflow in a guide. Below, I trace how I arrived at those skills and reflect on post-AI product management and software.\n\nWrite the roadmap and nothing else\n\nIn my new role, the only product document I’ve written is the roadmap. Everything else—every PRD and every ticket—has been written by Claude.\n\nWriting is thinking, so as a new general manager, I wanted to take my time drafting Spiral’s roadmap. I spent several days understanding the product, usage trends, user feedback, and the market. I wrote about the problem Spiral can solve, how Spiral can solve it, and the features we’d need to build to deliver on it. I spent hours talking to several people at the company who’d worked on previous versions of Spiral and were current or former users of it themselves. (In the guide, I talk about the new /ce:strategy skill in compound engineering that interviews you to produce this document for your own product.)\n\nAfter six drafts of the roadmap, I created a GitHub project and added it as the project’s README. I’m already using GitHub to host all my code, so I figured I might as well use it for tickets as well, or as GitHub calls them, “issues.”\n\nFrom there, I asked Claude to use the GitHub command line interface (CLI) to read the README and give feedback. We went back and forth on a few tweaks, and then I asked it to review the codebase and do a first pass of the tickets required to deliver the roadmap. Within a few minutes, Claude produced about 100 detailed tickets, each with strategic context, supporting data, acceptance criteria, and technical implementation notes.\n\nTo be fair, the roadmap I wrote was pretty detailed; Claude wasn’t hallucinating features. And it had access to a library of user feedback and recent usage reports (more on that below). But it was shocking to see something that had previously taken me days or weeks get done by Claude in minutes. It felt like the PM equivalent of vibe coding.\n\nI’d previously prided myself on the absence of ambiguity in the tickets I produced for engineers, but this was next-level. Claude also prioritized the work in an unbiased way. Sometimes, a product manager gets emotionally attached to a certain feature idea for whatever reason. Claude, however, was ruthless in elevating the things that had the best shot at delivering the vision and hitting our 2026 goals.\n\nThat doesn’t mean the tickets were all ready to be implemented. When I do pick up a ticket, I do a full review of the requirements before asking Claude to implement it. This is a step where I still add some value. Claude’s first pass gets the feature right in broad strokes, but it struggles with some aspects of data modeling, microinteractions, and edge cases. I often adjust specs to reflect the nuances of real usage patterns, while Claude seems to envision a perfectly rational user reminiscent of pre-Kahnemanian economics.\n\nI don’t do sprints. I have five columns in the GitHub project: later, next, now, in progress, and done. Around once a day, I run a custom command, /prioritize, and Claude does a sweep—checking for stale tickets, confirming that “now” is this week’s work, pulling anything urgent out of the backlog.\n\nIf I discover a bug or a user asks for a compelling feature, I tell Claude to create a ticket. It gets a “triage” label and is sorted in the next /prioritize run. If it’s a priority-zero issue, I go straight to fixing it without creating an issue.\n\nOver time, the GitHub project becomes the product’s working memory: a fluid, continuously prioritized picture of where things stand. I’ve claimed to work in an Agile fashion before, but in hindsight, I don’t think Agile was really possible until these new AI tools came out.\n\nRead the AI-native product management guide\nBuilding blocks that help your agents compose elegant backends\n\nAgents right now often write code that needs to be cleaned up because they need three things most infrastructure wasn’t built to provide: immediate feedback, local reasoning, and a thin meta layer. Convex provides immediate feedback, enables local reasoning, and minimizes the meta layer, giving agents a surface layer that’s actually small enough to work with. Scale without breaking or spending a fortune.\n\nTry Convex at convex.link/every\nWant to sponsor Every? Click here.\nThe pulse command\n\nThe old way of understanding how customers were using your product was to look at dashboards and run queries. You’d open Amplitude or Mixpanel and get an overview: how many users, how often, how long, what features, what revenue. Setting these up took time; sometimes they required engineering work, competing with product updates for developer bandwidth.\n\nThese days, I don’t look at dashboards. I run a custom command, /pulse that delivers something closer to an analyst’s briefing than a chart. The pulse command surfaces a range of metrics, including active users, chats/messages/drafts created, response times of key aspects of the system, conversations graded one to five, and an anonymized sampling of use cases. And because Claude is a language model, it doesn’t just pull numbers: It reads the text, grades every conversation, flags anomalies with a green or red dot, and explains what it found in plain English.\n\nThe command is just a Markdown file, so the format itself is easy to change. I’ve adjusted it about 50 times since I built it. When a feature ships, I add a line, and the next morning it shows up in the report.\n\nEvery pulse report lives inside a Claude thread. When a recent report surfaced a bug driving down conversation scores, my next message in that same thread was to fix it. I did not have to create a ticket, but was able to solve it in the same conversation. Over time, Claude also learns the nuances of the system and saves that to memory.\n\nProduct research\n\nFor all the magic of AI, there is no substitute for talking to users. What people say about your product and how they try to use it is endlessly surprising. Just when I think I’ve shipped the world’s most intuitive feature, a confused user will ask a question from an angle that would never have occurred to me.\n\nThat said, there are elements of product research that Claude seriously elevates. Here’s one example: A big part of Spiral’s value proposition is reflecting the user’s writing style in the drafts it generates. There’s a rich academic literature on stylometry, the study of style.\n\nI leaned on Claude to help me wade through the literature for findings relevant to Spiral’s “style transfer” approach. Using the Arxiv model context protocol (MCP), Claude was able to find a dozen recent papers about LLM stylometry. I read their abstracts, then read a handful in full. I cited those papers in the article I wrote for Every, and they’ve been directly informing the new style system I’m building in Spiral. It’s so cool to see academic citations sprinkled across product requirements. For product work where you have a real opportunity to differentiate, it’s worth going the extra mile on research, which is now within reach.\n\nWhat SaaS survives\n\nAI should open up product management to more people—you don’t need formal PM training when the tool itself can teach you. If you don’t know what metrics to pick for your pulse equivalent, ask Claude for recommendations. If you’ve never analyzed an A/B test, ask Claude how. If you’re not sure whether a feature will move the needle, ask Claude to predict its impact. To paraphrase Nvidia CEO Jensen Huang, AI is the easiest product in history to use, because if you don’t know how to use AI, just ask the AI.\n\nI’ve cancelled several B2B subscriptions since moving my product management work into Claude, which means I’m seeing the SaaSpocalypse play out in my own spending decisions. Yet I’m building a SaaS product. How do I make sure Spiral doesn’t get steamrolled by the frontier model providers?\n\nI believe it’s possible for a SaaS product to survive if it has two main characteristics:\n\nUnique sources of critical data: my database, my analytics, my payment system—services that would be very difficult to rip out.\nProducts with seamless agent integrations. Github, Stripe, Posthog, and Logfire have played nicely with Claude. One service I inherited from my predecessor didn’t have an MCP, and it was swiftly cancelled.\n\nFor Spiral, if we nail style transfer—an inherent limitation of heavily post-trained language models—Spiral becomes the unique source of your written voice in an agentic world. That’s valuable and sticky. Already, API chats outnumber web chats, a milestone that we reached three days after launching the agent that handles Spiral’s API requests. That means that users are not necessarily using Spiral in the Spiral app, but across their workflows.\n\nGood product management is making something people want, to quote Y Combinator. Great products come from inspiration and ingenuity, things that tools and processes—no matter how good—won’t bring you. Perhaps the best thing about this new agent toolset is that it gets rid of the busywork that saps creative energy. There’s more space now for daydreaming and far-fetched ideas. Product management can now be fun.\n\nRead the AI-native product management guide\n\nMarcus Moretti is the general manager of Spiral (@tryspiral). To read more essays like this, subscribe to Every, and follow us on X at @every and on LinkedIn.\n\nFor sponsorship opportunities, reach out to [email protected].\n\nSubscribe",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/e80b2d9f#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=b42603f1",
+      "text": "Every",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://every.to/source-code/claude-code-for-product-managers",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://writewithspiral.com/",
+      "text": "Spiral",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/@marcus_fd8302_1",
+      "text": "Marcus Moretti",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/guides/ai-product-management-guide",
+      "text": "Read the full guide",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/EveryInc/compound-engineering-plugin",
+      "text": "download the plugin",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/@kate_1767",
+      "text": "Kate Lee",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/guides/ai-product-management-guide?source=post_button",
+      "text": "Read the AI-native product management guide",
+      "title": ""
+    },
+    {
+      "href": "https://writewithspiral.com/",
+      "text": "Spiral",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/chain-of-thought/the-two-slice-team",
+      "text": "“two-slice team.”",
+      "title": ""
+    },
+    {
+      "href": "https://youtu.be/PplmzlgE0kg?si=ysy0wvHkTVEkzYie&t=1092",
+      "text": "said",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/guides/ai-product-management-guide",
+      "text": "in a guide",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/EveryInc/compound-engineering-plugin",
+      "text": "compound engineering",
+      "title": ""
+    },
+    {
+      "href": "https://en.wikipedia.org/wiki/README",
+      "text": "README",
+      "title": ""
+    },
+    {
+      "href": "https://www.pnas.org/doi/10.1073/pnas.2409646121",
+      "text": "pre-Kahnemanian economics",
+      "title": ""
+    },
+    {
+      "href": "https://agilemanifesto.org/",
+      "text": "Agile",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/guides/ai-product-management-guide?source=post_button",
+      "text": "Read the AI-native product management guide",
+      "title": ""
+    },
+    {
+      "href": "https://convex.link/every?source=post_button",
+      "text": "Try Convex at convex.link/every",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/cdn-cgi/l/email-protection#493a3926273a263b3a2120393a092c3f2c3b30673d26",
+      "text": "Want to sponsor Every? Click here",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/p/the-science-of-why-ai-still-can-t-write-like-you",
+      "text": "the study of style",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/blazickjp/arxiv-mcp-server",
+      "text": "Arxiv model context protocol (MCP",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/p/the-science-of-why-ai-still-can-t-write-like-you",
+      "text": "article I wrote for Every,",
+      "title": ""
+    },
+    {
+      "href": "https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/",
+      "text": "Nvidia CEO",
+      "title": ""
+    },
+    {
+      "href": "https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/",
+      "text": "Jensen Huang",
+      "title": ""
+    },
+    {
+      "href": "https://techcrunch.com/2026/03/01/saas-in-saas-out-heres-whats-driving-the-saaspocalypse/",
+      "text": "SaaSpocalypse",
+      "title": ""
+    },
+    {
+      "href": "https://www.paulgraham.com/good.html",
+      "text": "Y Combinator",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/guides/ai-product-management-guide?source=post_button",
+      "text": "Read the AI-native product management guide",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/@marcus_fd8302_1",
+      "text": "Marcus Moretti",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/source-code/writewithspiral.com",
+      "text": "Spiral",
+      "title": ""
+    },
+    {
+      "href": "https://x.com/tryspiral",
+      "text": "@tryspiral",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/subscribe",
+      "text": "Every",
+      "title": ""
+    },
+    {
+      "href": "http://twitter.com/every",
+      "text": "@every",
+      "title": ""
+    },
+    {
+      "href": "https://www.linkedin.com/company/everyinc/",
+      "text": "LinkedIn",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/cdn-cgi/l/email-protection",
+      "text": "[email protected]",
+      "title": ""
+    },
+    {
+      "href": "https://every.to/subscribe?source=post_button",
+      "text": "Subscribe",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/c1ecbe08?entry=related_article",
+      "text": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude",
+      "title": "Brendan MacLean, principal developer of the 700,000-line Skyline codebase, applies his 17-year methodology of onboarding human developers to Claude Code, using context, skills, and MCP integrations to make a legacy codebase manageable again."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/199cbc01?entry=related_article",
+      "text": "The Claude Code Handbook: A Professional Introduction to Building with AI-Assisted Development",
+      "title": "A comprehensive professional guide to Claude Code, Anthropic's agentic AI developer tool, detailing its capabilities, model selection, and the transformative shift toward AI-assisted software engineering."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/d13edda6?entry=related_article",
+      "text": "I Let ChatGPT Manage My Workweek",
+      "title": "A writer builds a ChatGPT agent to manage her project management weaknesses, using OKRs, Notion, calendar, and Slack integrations to automate weekly planning and status reporting."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/3bcdd43?entry=related_article",
+      "text": "Introducing GPT-5.5",
+      "title": "OpenAI introduces GPT-5.5, a new category of AI that acts as an autonomous agent capable of planning, reasoning, and executing complex multi-step tasks across different applications."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/882d97cd?entry=related_article",
+      "text": "You Are the Most Expensive Model",
+      "title": "This article introduces 'incremental determinism,' a framework for optimizing AI workflows by matching task complexity to model capability, thereby reducing cost and freeing up human attention for high-value work."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/f884575?entry=related_article",
+      "text": "Boris Cherny: How We Built Claude Code",
+      "title": "Boris Cherny, creator of Claude Code, discusses the tool's evolution at Anthropic, emphasizing a 'build for the future' philosophy, multi-agent orchestration, and the radical 150% productivity boost in AI-native engineering."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/ea483f21?entry=related_article",
+      "text": "Compute Is the New Cash",
+      "title": "This article argues that compute is becoming a new form of currency in the AI economy, driving changes in fraud, pricing models, and the fundamental architecture of the internet."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/8f3d453?entry=related_article",
+      "text": "Building Claude Code with Boris Cherny",
+      "title": "Boris Cherny, creator of Claude Code, discusses his 100% AI-driven workflow, Anthropic's unique engineering culture, and why software engineers are transitioning from 'scribes' to 'authors' in the AI era."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/bf9ab35c?entry=related_article",
+      "text": "Claude Code auto mode: a safer way to skip permissions",
+      "title": "Claude Code's new Auto mode uses a two-stage model-based classifier and prompt-injection probes to autonomously gate dangerous actions, balancing developer productivity with security."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/72e3cf5?entry=related_article",
+      "text": "Head of Claude Code: What happens after coding is solved | Boris Cherny",
+      "title": "Boris Cherny, Head of Claude Code at Anthropic, discusses the transition to 100% AI-generated software development and the emergence of autonomous agents like Co-work."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "A product manager shares how Claude Code eliminates PM drudgery by handling roadmap breakdown, ticket creation, and user analytics, freeing him to focus on s...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Claude Code, AI Product Management, Product Roadmap, AI Agent, SaaS",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs · Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Claude Code for Product Managers | BestBlogs.dev",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "A product manager shares how Claude Code eliminates PM drudgery by handling roadmap breakdown, ticket creation, and user analytics, freeing him to focus on s...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/e80b2d9f",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/e80b2d9f/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-05-03 01:13:14",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Marcus Moretti",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Claude Code",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI Product Management",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Product Roadmap",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "AI Agent",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "SaaS",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Claude Code for Product Managers | BestBlogs.dev",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "A product manager shares how Claude Code eliminates PM drudgery by handling roadmap breakdown, ticket creation, and user analytics, freeing him to focus on s...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/e80b2d9f/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Claude Code for Product Managers | BestBlogs.dev",
+  "url": "https://www.bestblogs.dev/en/article/e80b2d9f"
+}

@@ -1,0 +1,59 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Evaluation/Guardrails",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-27",
+  "id": "BB-2026-05-01-001",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-001/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-001",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-001/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-001/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-001/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-001/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯技术工程",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯技术工程",
+  "status": "Full text + source captured",
+  "tags": [],
+  "title": "Harness 不是目的，知识才是护城河 —— 一个 AI 工程交付团队的知识沉淀实践",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801437&idx=1&sn=c5e13bae6cc04ef21f1ef819128e50e9",
+      "https://www.anthropic.com/research/emotion-concepts-function",
+      "https://www.bestblogs.dev/article/93462cd7"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801437&idx=1&sn=c5e13bae6cc04ef21f1ef819128e50e9",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/93462cd7"
+  }
+}

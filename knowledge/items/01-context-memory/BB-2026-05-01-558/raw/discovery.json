@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Kezhan Shi"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/dictionary_focus_ywqa9IZB-dU_v3_card.jpg",
+  "domain": "towardsdatascience.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_13112ad8",
+  "keyQuotes": [
+    "A PDF is two documents stacked on top of each other: the declared signals (metadata, native TOC, source software) and the page-level content (text vs scan, images, tables, columns, page profile).",
+    "The difference between a parser that ships a flat string and a parser that ships something downstream code can query is right here, in the signals it bothered to record.",
+    "Each signal saved at parse time becomes a column the rest of the pipeline reads."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The first layer identifies the document's origin (source software, metadata) to route it to the correct strategy. The second layer extracts and classifies content on each page (text, images, tables, columns).",
+      "point": "PDF parsing for RAG has two distinct layers: document nature and page-level content."
+    },
+    {
+      "explanation": "A single LLM call produces a 'parsing_summary' with doc_type, typical_fields, and a factual summary. This is cached and injected into the question parser's system prompt, enabling it to answer questions like 'what is the name?' on a CV.",
+      "point": "A short, cached LLM summary at parse time bridges the gap between structure and meaning."
+    },
+    {
+      "explanation": "The article uses render mode 3 to detect OCR layers and 95% image coverage to detect scanned pages, arguing these structural flags are more robust than character-count heuristics.",
+      "point": "Structural signals (render mode, image coverage) are more reliable than statistical thresholds."
+    },
+    {
+      "explanation": "The pragmatic approach is to label each line as 'left', 'right', 'single', or 'multi' based on its x-coordinate cluster. This allows downstream stages to filter by column position, which is especially useful for structured documents like invoices.",
+      "point": "Column detection should annotate line position rather than attempt perfect reading order recovery."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article argues that high-quality RAG parsing requires two layers: first, understanding a PDF's nature (source software, metadata, TOC) and second, extracting page-level content (text, images, tables, columns) with a short LLM-written summary to bridge the gap between structure and meaning.",
+  "originalTitle": "Beyond extract_text: The Two Layers of a PDF That Drive RAG Quality",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-11",
+  "publishDateTimeStr": "2026-06-11 02:39:04",
+  "publishTimeStamp": 1781116744000,
+  "qualified": false,
+  "readCount": 22,
+  "readTime": 19,
+  "readUrl": "https://www.bestblogs.dev/article/13112ad8",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "sourceName": "Towards Data Science",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is the first part of the parsing brick in a series on building enterprise RAG systems. It argues that effective PDF parsing for RAG requires two distinct layers. The first layer, covered here, focuses on understanding the document's nature: classifying its source software (e.g., Word, LaTeX, scanner), reading its declared metadata and native table of contents, and using these signals to route the document to the correct extraction strategy. The second layer analyzes page-level content, distinguishing native text from OCR layers, detecting images, vector tables, and multi-column layouts. A key innovation is the 'parsing_summary': a single, cached LLM call that produces a short factual summary of the document type, main subject, and key fields. This summary, placed in the question parser's system prompt, solves common RAG failures like the 'what is the name?' problem on a CV. The article uses PyMuPDF (fitz) for all extraction and provides concrete Python code for source detection, column analysis, and page classification. It emphasizes that structural signals (render mode, image coverage) are more reliable than statistical thresholds for making parsing decisions.",
+  "tags": [
+    "RAG",
+    "PDF Parsing",
+    "LLM",
+    "Data Engineering",
+    "AI Engineering"
+  ],
+  "title": "Beyond extract_text: The Two Layers of a PDF That Drive RAG Quality",
+  "translateContent": null,
+  "url": "https://towardsdatascience.com/beyond-extract_text-the-two-layers-of-a-pdf-that-drive-rag-quality/",
+  "wordCount": 4569
+}

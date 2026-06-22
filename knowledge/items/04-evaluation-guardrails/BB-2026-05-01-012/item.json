@@ -1,0 +1,74 @@
+{
+  "blocks": [
+    "Evaluation/Guardrails",
+    "Tools/Actions",
+    "Context/State"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-30",
+  "id": "BB-2026-05-01-012",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-012/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-012",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-012/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-012/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-012/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-012/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Theresa-Marie Rhyne",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Theresa-Marie Rhyne",
+  "status": "Partial text + source captured",
+  "tags": [
+    "Perplexity AI",
+    "色彩理论",
+    "可访问性",
+    "数据可视化",
+    "感知均匀颜色空间"
+  ],
+  "title": "被色彩理论难住的 GenAI",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://en.wikipedia.org/wiki/CIELAB_color_space",
+      "https://en.wikipedia.org/wiki/HCL_color_space",
+      "https://medium.com/@theresamarierhyne?source=post_page---byline--5416cbd3ef10---------------------------------------",
+      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D5416cbd3ef10&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Fa-genai-perplexed-by-color-theory-5416cbd3ef10&source=---header_actions--5416cbd3ef10---------------------post_audio_button------------------",
+      "https://medium.com/user-experience-design-1/a-color-suggestion-study-in-accessible-perceptual-uniformity-e6bf13b94966",
+      "https://medium.com/user-experience-design-1/a-nano-banana-with-color-theory-da9608277e4e",
+      "https://medium.com/user-experience-design-1/claudes-search-for-an-accessible-color-triad-e07f7d8aab2e",
+      "https://medium.com/user-experience-design-1/copiloting-a-perceptual-uniform-color-triad-921b1eea3f52",
+      "https://medium.com/user-experience-design-1/oklch-with-chatgpt-5-2848ba090e14",
+      "https://medium.com/user-experience-design-1/which-triad-do-you-prefer-deepseek-perceptual-or-traditional-rgb-3de2d997d499",
+      "https://programmingdesignsystems.com/color/perceptually-uniform-color-spaces/",
+      "https://uxdesign.cc/a-genai-perplexed-by-color-theory-5416cbd3ef10?source=rss----138adf9c44c---4",
+      "https://www.bestblogs.dev/article/c517725e",
+      "https://www.perplexity.ai/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://uxdesign.cc/a-genai-perplexed-by-color-theory-5416cbd3ef10?source=rss----138adf9c44c---4",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/c517725e"
+  }
+}

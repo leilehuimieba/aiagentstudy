@@ -2,7 +2,7 @@
 
 ## Article
 
-- Title: 100 天完成 100 年进展：Sequoia AI Ascent 2026 Keynote | BestBlog...
+- Title: 100 天完成 100 年进展：Sequoia AI Ascent 2026 Keynote
 - Source: BestBlogs / Sequoia Capital
 - URL: https://www.bestblogs.dev/video/6e2d3a8
 - Date: 2026-04-30

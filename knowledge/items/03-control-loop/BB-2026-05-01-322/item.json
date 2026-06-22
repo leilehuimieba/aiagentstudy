@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Context/State",
+    "Evaluation",
+    "Memory"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "01-15",
+  "id": "BB-2026-05-01-322",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-322/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-322",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-322/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-322/raw/meta.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-322/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-322/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Abstract + source captured",
+  "tags": [
+    "anticipatory-reflection",
+    "failure-prevention",
+    "no-progress",
+    "branch-switching",
+    "meta-reasoning"
+  ],
+  "title": "DEVIL'S ADVOCATE: Anticipatory Reflection for Failure Prevention in LLM Agents",
+  "topic": "03-control-loop",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2501.12871"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2501.12871",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

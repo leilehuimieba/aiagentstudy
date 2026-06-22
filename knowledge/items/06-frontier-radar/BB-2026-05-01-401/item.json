@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Model",
+    "Frontier Radar",
+    "Product Workflow"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-28",
+  "id": "BB-2026-05-01-401",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/06-frontier-radar/BB-2026-05-01-401/article.md",
+    "item_dir": "knowledge/items/06-frontier-radar/BB-2026-05-01-401",
+    "raw_dir": "knowledge/items/06-frontier-radar/BB-2026-05-01-401/raw",
+    "raw_files": [
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-401/raw/content.json",
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-401/raw/discovery.json",
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-401/raw/page.json"
+    ],
+    "source": "knowledge/items/06-frontier-radar/BB-2026-05-01-401/source.md",
+    "summary": "knowledge/items/06-frontier-radar/BB-2026-05-01-401/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / NVIDIA Technical Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / NVIDIA Technical Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "NVIDIA Dynamo",
+    "Inference",
+    "Kubernetes",
+    "CRIU",
+    "Checkpoint/Restore"
+  ],
+  "title": "NVIDIA Dynamo Snapshot: Fast Startup for Inference Workloads on Kubernetes",
+  "topic": "06-frontier-radar",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://developer.nvidia.com/blog/nvidia-dynamo-snapshot-fast-startup-for-inference-workloads-on-kubernetes/",
+      "https://www.bestblogs.dev/article/2c1ca519"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://developer.nvidia.com/blog/nvidia-dynamo-snapshot-fast-startup-for-inference-workloads-on-kubernetes/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/2c1ca519"
+  }
+}

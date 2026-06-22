@@ -1,0 +1,75 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-15",
+  "id": "BB-2026-05-01-201",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-201/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-201",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-201/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-201/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-201/raw/display-document.html",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-201/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-201/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-201/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / OpenClaw Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / OpenClaw Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Security",
+    "Agent Security",
+    "OpenClaw",
+    "Filesystem Security",
+    "Network Egress"
+  ],
+  "title": "Where OpenClaw Security Is Heading — OpenClaw Blog",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://developers.openai.com/codex/concepts/sandboxing/auto-review",
+      "https://docs.openclaw.ai/clawhub",
+      "https://docs.openclaw.ai/clawhub/moderation",
+      "https://docs.openclaw.ai/clawhub/security-audits",
+      "https://docs.openclaw.ai/cli/plugins",
+      "https://docs.openclaw.ai/cli/proxy",
+      "https://docs.openclaw.ai/gateway/security/secure-file-operations",
+      "https://docs.openclaw.ai/security/network-proxy",
+      "https://docs.openclaw.ai/tools/exec-approvals",
+      "https://fs-safe.io/",
+      "https://openclaw.ai/blog/where-openclaw-security-is-heading/",
+      "https://proxyline.dev/",
+      "https://www.bestblogs.dev/en/article/7cb7ba44"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://openclaw.ai/blog/where-openclaw-security-is-heading/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/7cb7ba44"
+  }
+}

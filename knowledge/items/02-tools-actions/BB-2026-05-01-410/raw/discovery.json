@@ -1,0 +1,79 @@
+{
+  "id": "RAW_ce54366b",
+  "notExist": null,
+  "originalTitle": "实测 Claude Opus 4.8，这可能是第一个不会偷懒的模型。",
+  "title": "Hands-on with Claude Opus 4.8: The First Model That Doesn't Cut Corners",
+  "oneSentenceSummary": "This article provides a hands-on review of Claude Opus 4.8, highlighting significant improvements in development and programming, with greater precision, honesty, and no laziness, though its creative abilities still lag behind Opus 4.6, and its reduced proactiveness may be less friendly to non-expert users.",
+  "summary": "The author conducted an immediate hands-on and in-depth experience with Claude Opus 4.8 upon its release. The article first introduces the context of the model's launch, viewing it as a rapid firefighting release by Anthropic under pressure from the poor reception of GPT-5.5 and Opus 4.7. The core experience is broken down into several aspects: first, thinking intensity controls are now available to all users, improving controllability; second, the model has become more precise and better at following instructions, but less proactive, no longer guessing users' unstated needs—a boon for professional developers but potentially frustrating for the Vibe Coding community that relies on AI proactiveness; third, the model is more honest, no longer blindly confident in its assertions, with code flaws being four times less likely to slip through compared to the previous generation, and the system card showing a 0% laziness defect rate; fourth, while creative abilities have improved, they still fall short of Opus 4.6, with issues like heavy AI flavor, overuse of metaphors, and parallelism. Additionally, the article mentions the significant price drop for Fast Mode and the new dynamic workflow feature in Claude Code. Finally, the author expresses disappointment over the removal of Opus 4.6 and anticipation for the upcoming, more advanced model, Mythos.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Claude Opus 4.8",
+    "Model Review",
+    "AI Programming",
+    "Anthropic",
+    "Large Language Model"
+  ],
+  "mainPoints": [
+    {
+      "point": "Claude Opus 4.8 shows significant progress in development and programming, being more precise, honest, and not lazy.",
+      "explanation": "The model shows significant improvements in following instructions, reducing hallucinations, and minimizing code flaws. The system card reports a 0% laziness defect rate, making it reliable for code review and optimization tasks—a major win for professional developers."
+    },
+    {
+      "point": "The model is less proactive and no longer guesses users' unstated needs.",
+      "explanation": "Opus 4.8 strictly follows instructions and does not proactively supplement additional operations users might need, unlike previous models. This means higher controllability for professional developers but may frustrate non-expert users who rely on AI proactiveness, requiring them to express their needs more precisely."
+    },
+    {
+      "point": "Creative abilities have improved, but the overall AI flavor remains heavy, falling short of Opus 4.6.",
+      "explanation": "In content creation tasks, Opus 4.8 has improved over 4.7 but still suffers from issues like overuse of metaphors, lengthy meaningless parallelism, and stereotypes. The overall AI flavor remains heavy, failing to match the creative quality of Opus 4.6."
+    }
+  ],
+  "keyQuotes": [
+    "The probability of code flaws slipping through in Opus 4.8 is about four times lower than the previous generation.",
+    "When it comes to laziness, Opus 4.8 seems to be the only model that achieves a 0% defect rate.",
+    "If you throw a vague sentence at it, it can guess the complete need in your mind, ask if that's what you want, and help you get it done directly. That feeling of being understood is actually quite addictive.",
+    "In the future, when collaborating with Opus 4.8, users may need to have higher requirements for their ability to express needs."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682817&idx=1&sn=d1f463490433d00ab331659a19b7cc1f",
+  "readUrl": "https://www.bestblogs.dev/article/ce54366b",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045441_36cb882d",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_86a0b5",
+  "sourceName": "数字生命卡兹克",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045441_36cb882d",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "MODELS",
+  "aiSubCategoryDesc": "AI Models",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 67,
+  "wordCount": 4218,
+  "readTime": 17,
+  "mediaDuration": null,
+  "authors": [
+    "数字生命卡兹克"
+  ],
+  "publishTimeStamp": 1780005960000,
+  "publishDateStr": "05-29",
+  "publishDateTimeStr": "2026-05-29 06:06:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

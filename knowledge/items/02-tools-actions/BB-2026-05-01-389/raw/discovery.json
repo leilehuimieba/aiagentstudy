@@ -1,0 +1,84 @@
+{
+  "id": "RAW_632b1a8e",
+  "notExist": null,
+  "originalTitle": "开源个 Skill｜彻底解决小红、小绿书配图难题",
+  "title": "Open-Source Skill | Completely Solve the Image Matching Problem for Xiaohongshu and Similar Platforms",
+  "oneSentenceSummary": "This article details the author's open-source guizang-social-card-skill, an AI image matching tool specifically designed for graphic platforms like Xiaohongshu. It thoroughly solves content creators' image matching challenges through built-in category adaptation, intelligent text overlay, real image library integration, and a magazine-grade visual system.",
+  "summary": "The article, originally created by the author's 'Guizang's AI Toolbox', shares the design philosophy and core features of the open-source project guizang-social-card-skill. Positioned as a small product rather than a simple prompt, this Skill aims to address the pain points of content creators on graphic platforms like Xiaohongshu. Its core highlights include: built-in adaptation rules for 11 graphic categories (e.g., travel, workplace, film reviews) that automatically match visual styles based on content; solving the challenge of text overlay in AI-generated images through subject recognition, color brightness calculation, and adaptive layout for a premium feel; default integration with free, commercially usable image libraries like Pexels and Unsplash to avoid watermarks and homogeneity issues from AI-generated images; and features like screenshot beautification, two visual systems (magazine style/grid style), and 28 layout templates to ensure output stability. The author emphasizes that the Skill's moat lies in its product-oriented thinking, including clear boundary definitions, version management, and delivery documentation, aiming to upgrade the Skill from a one-time prompt to a reusable product.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Image Matching",
+    "Xiaohongshu",
+    "Graphic Cards",
+    "Open-Source Project",
+    "AI Tools"
+  ],
+  "mainPoints": [
+    {
+      "point": "The Skill has built-in adaptation rules for 11 graphic categories, automatically matching visual styles based on content.",
+      "explanation": "For different categories like travel, workplace, film reviews, and product reviews, the Skill automatically selects magazine or grid style, color palettes, and layouts, even generating map components for travel content, avoiding templated output."
+    },
+    {
+      "point": "It overcomes the three major challenges of AI text overlay, achieving a premium look.",
+      "explanation": "By identifying the image subject, calculating the color value and brightness of the overlay area, and dynamically adjusting font size and line breaks, the Skill automatically avoids faces or product centers, ensuring text clarity without disrupting the composition and eliminating the AI feel."
+    },
+    {
+      "point": "It prioritizes real image libraries and uses AI image generation sparingly, solving watermark and homogeneity issues.",
+      "explanation": "The Skill defaults to integrating free, commercially usable image libraries like Pexels and Unsplash, automatically searching and cropping based on semantics; it only resorts to AI image generation when no suitable material is available, and enforces style constraints to avoid platform restrictions or a cheap appearance."
+    },
+    {
+      "point": "A Skill should be treated as a product, not just a prompt.",
+      "explanation": "The author believes that a good Skill requires a clear PRODUCT.md (defining the problem and boundaries), version numbers with a CHANGELOG (recording iterations), and a HANDOVER.md (explaining deliverables and capability boundaries) to upgrade from a one-time prompt to a reusable, maintainable product."
+    }
+  ],
+  "keyQuotes": [
+    "What they make are web pages, not magazines.",
+    "Capability boundaries define a product more than capabilities themselves; a Skill that can do everything often ends up doing nothing well.",
+    "Limitations are not obstacles; they are bottom lines.",
+    "Most Skills are satisfied with 'I can make one', but few pursue 'doing this thing to the extreme'.",
+    "A Skill is a product. To judge whether a Skill is good, see if it has been cherished by its author."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk3NTUxMA==&mid=2247496930&idx=1&sn=e47cba823b7038047f933e1e3e487e7c",
+  "readUrl": "https://www.bestblogs.dev/article/632b1a8e",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045421_eb9966c8",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_de48a8",
+  "sourceName": "歸藏的AI工具箱",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045421_eb9966c8",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 22,
+  "wordCount": 3562,
+  "readTime": 15,
+  "mediaDuration": null,
+  "authors": [
+    "歸藏的AI工具箱"
+  ],
+  "publishTimeStamp": 1779928200000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 08:30:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

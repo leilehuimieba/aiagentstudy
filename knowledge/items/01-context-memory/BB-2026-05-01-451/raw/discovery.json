@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Claude Blog"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg",
+  "domain": "claude.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_8af798c7",
+  "keyQuotes": [
+    "I never had the technical chops to be in these conversations. With Claude, I'm able to design and build things that don't just improve my own day-to-day workflows, but also those of my broader team.",
+    "If you told me I was going to be a go-to-market product manager at Anthropic a year ago, I would be pretty surprised.",
+    "Before CLAFTS, I felt like I was doing more administrative work than actually spending time with customers. After CLAFTS, I was actually able to do more of what I wanted to do, which is sales."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Jared Sires, an account executive with no coding background, built a complex email drafting application (CLAFTS) using Claude Code, demonstrating that AI can lower the technical barrier to software creation.",
+      "point": "Non-engineers can build powerful AI tools using LLMs like Claude Code."
+    },
+    {
+      "explanation": "Jared went through hundreds of iterations on the system prompt for CLAFTS to match his writing style, and developed a 'Tones' feature to adapt the voice for different audiences (customers, peers, family).",
+      "point": "Iterative prompt engineering is key to tailoring AI output."
+    },
+    {
+      "explanation": "CLAFTS saved Jared 10-15 hours per week on email, allowing him to focus on customer conversations. The broader GTM plugin automated tasks like account research and pipeline management, leading to 80% adoption within the sales org.",
+      "point": "AI tools can dramatically improve sales productivity by automating administrative tasks."
+    },
+    {
+      "explanation": "Jared's success with CLAFTS led to a new role as a GTM product manager, where he now designs and builds AI-powered solutions for the entire sales team, a role he couldn't have imagined a year prior.",
+      "point": "Successful AI adoption can lead to career transformation."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "An Anthropic account executive with no coding background used Claude Code to build CLAFTS, an email drafting tool, saving 10-15 hours weekly and eventually transitioning into a GTM product manager role.",
+  "originalTitle": "From account executive to product manager: how one Anthropic seller rebuilt his team's workflows with Claude Code | Claude",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 00:00:00",
+  "publishTimeStamp": 1780588800000,
+  "qualified": false,
+  "readCount": 80,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/8af798c7",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_154bc38a",
+  "sourceImage": "https://image.jido.dev/20260527052105_689f4a9aff1f63fde75cf733_favicon.png",
+  "sourceName": "Claude Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article profiles Jared Sires, an account executive at Anthropic who, despite having no prior coding experience, used Claude Code to build CLAFTS, an application that drafts customer email replies. The tool, built on roughly 4,300 lines of code written by Claude, integrates with Gmail, Google Drive, and web search to pull current product documentation and match Jared's writing style, saving him 10-15 hours per week. The success of CLAFTS led to a role shift: Jared is now a GTM product manager, building a suite of Claude-powered tools for the entire sales organization. These tools, packaged as a plugin for Claude Cowork, include daily briefs, customer context retrieval, pipeline management, and automated follow-up emails. The article details his iterative development process, the impact on his team (80% adoption within months), and his broader vision for using AI to dissolve technical barriers and empower non-engineers to build solutions.",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "Developer Tools",
+    "AI Agent",
+    "Prompt Engineering"
+  ],
+  "title": "From account executive to product manager: how one Anthropic seller rebuilt his team's workflows with Claude Code | Claude",
+  "translateContent": null,
+  "url": "https://claude.com/blog/how-anthropic-uses-claude-gtm-engineering",
+  "wordCount": 1497
+}

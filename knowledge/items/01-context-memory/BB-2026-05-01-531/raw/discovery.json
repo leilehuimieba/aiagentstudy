@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Founder Park"
+  ],
+  "candidateSource": null,
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "cover": "https://image.jido.dev/20251127045419_08d80bcb",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_6058cc44",
+  "keyQuotes": [
+    "You should no longer be manually prompting a coding agent. You should design a loop that lets the agent work autonomously.",
+    "Agents forget, but code repositories don't.",
+    "Build the loop. Stay the engineer.",
+    "One person uses it to go faster on work they deeply understand; another uses it to avoid understanding the work itself. The Loop doesn't know the difference, but you do."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Instead of manually entering prompts round after round, build a system that can automatically discover tasks, assign them, check results, record status, and decide the next step, allowing the Agent to work in an autonomous loop.",
+      "point": "The core of Loop Engineering is using a system to replace manually prompting the Agent."
+    },
+    {
+      "explanation": "Automations (automatic triggering and classification), Worktrees (parallel isolation), Skills (solidifying project knowledge), Plugins & Connectors (accessing external tools), Sub-agents (separation of generation and checking), plus a state file stored on disk for cross-session memory.",
+      "point": "A complete Loop requires five core modules plus persistent memory."
+    },
+    {
+      "explanation": "Separate the model that writes code from the model that checks it to avoid blind spots from self-review. This principle is also used to determine if a Loop is complete—it should be decided by an independent model, not the one doing the work.",
+      "point": "Separation of generator and checker is the most critical structural design in a Loop."
+    },
+    {
+      "explanation": "Verification responsibility, code understanding debt, and the risk of cognitive surrender are the three major challenges brought by Loops. Designing a Loop is harder than prompt engineering, and engineers must build with judgment, not become 'the person who presses the start button.'",
+      "point": "Loop engineering does not make engineers redundant; instead, it amplifies human responsibility."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article systematically introduces the concept of Loop Engineering, explaining how to build systems that allow AI Agents to work autonomously in loops, and breaks down its five core modules and their implementation in Claude Code and Codex.",
+  "originalTitle": "Harness 之后，硅谷 AI 圈又来新词了：Loop Engineering",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-12",
+  "publishDateTimeStr": "2026-06-12 19:09:00",
+  "publishTimeStamp": 1781262540000,
+  "qualified": false,
+  "readCount": 218,
+  "readTime": 22,
+  "readUrl": "https://www.bestblogs.dev/article/6058cc44",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_caf83c",
+  "sourceImage": "https://image.jido.dev/20251127045419_08d80bcb",
+  "sourceName": "Founder Park",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article, compiled by Founder Park from a blog post by Addy Osmani, Director of AI at Google Cloud, systematically introduces the emerging concept of 'Loop Engineering' in Silicon Valley AI circles. The core idea is: instead of manually prompting a coding Agent, design a system that allows the Agent to work in an automated loop. The article details the five core modules required for a complete Loop—Automations (automatic triggering), Worktrees (parallel isolation), Skills (solidifying project knowledge), Plugins & Connectors (tool integration), Sub-agents (separation of generation and checking)—along with a state file for persistent memory. Using Claude Code and Codex as examples, it shows how these modules are implemented in the two products and provides a complete daily Loop example. Finally, the author emphasizes the irreplaceable role of humans in Loop engineering: verification responsibility, code understanding debt, and the risk of cognitive surrender, pointing out that designing a Loop is harder than prompt engineering, and engineers must build with judgment.",
+  "tags": [
+    "AI Agent",
+    "AI Coding",
+    "LLM",
+    "Prompt Engineering",
+    "Developer Tools"
+  ],
+  "title": "After Harness, Silicon Valley AI Circles Have a New Term: Loop Engineering",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524668&idx=1&sn=73628b08989f5b577ea5cc33699e7465",
+  "wordCount": 5436
+}

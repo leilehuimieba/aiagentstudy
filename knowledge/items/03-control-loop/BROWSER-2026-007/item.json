@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Source Signal"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "browser_readable",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "qmvqcrb8",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-06-09",
+  "id": "BROWSER-2026-007",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BROWSER-2026-007/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BROWSER-2026-007",
+    "raw_dir": "knowledge/items/03-control-loop/BROWSER-2026-007/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BROWSER-2026-007/raw/opencli-result.json",
+      "knowledge/items/03-control-loop/BROWSER-2026-007/raw/page-state.json",
+      "knowledge/items/03-control-loop/BROWSER-2026-007/raw/page-text.txt"
+    ],
+    "source": "knowledge/items/03-control-loop/BROWSER-2026-007/source.md",
+    "summary": "knowledge/items/03-control-loop/BROWSER-2026-007/summary.md"
+  },
+  "schema_version": 1,
+  "source": "Browser / Product Hunt AI",
+  "source_id": "product-hunt-ai",
+  "source_name": "Product Hunt AI",
+  "status": "Browser snapshot captured",
+  "tags": [
+    "Product Hunt AI",
+    "Browser Snapshot",
+    "AI Agent",
+    "Agentic AI",
+    "LLM",
+    "GitHub",
+    "Trending",
+    "OpenAI"
+  ],
+  "title": "Product Hunt AI browser snapshot - 2026-06-09",
+  "topic": "03-control-loop",
+  "type": "browser_snapshot",
+  "urls": {
+    "all_source_urls": [
+      "https://www.producthunt.com/categories/ai-agents"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.producthunt.com/categories/ai-agents",
+    "pdf_url": "",
+    "requested_url": "https://www.producthunt.com/categories/ai-agents",
+    "source_url": "https://www.producthunt.com/categories/ai-agents"
+  }
+}

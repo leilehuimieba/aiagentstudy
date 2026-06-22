@@ -1,0 +1,178 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T1b26bf6891764e80817d4d3f44c87d87",
+  "data": {
+    "metaData": {
+      "id": "RAW_ad38855c",
+      "notExist": null,
+      "originalTitle": "Agent Skill 规范、构建与设计模式",
+      "title": "Agent Skill Specifications, Construction, and Design Patterns",
+      "oneSentenceSummary": "This article systematically reviews the specification standards for Agent Skills, a three-tier progressive loading mechanism, model-driven triggering logic, and provides an in-depth analysis of two engineering development paradigms—Skill-Creator and Writing-Skills—along with five design patterns.",
+      "summary": "Starting from the specification standards for Agent Skills, the article details the SKILL.md format proposed by Anthropic, including YAML metadata fields, Markdown instruction body, file reference specifications, and a three-tier progressive loading mechanism (L1 directory layer, L2 instruction layer, L3 resource layer), emphasizing a description-based, model-driven triggering logic. It then delves into two mainstream Skill development paradigms: Anthropic's official Skill-Creator, whose design philosophy introduces ML engineering practices (train/test set splitting, anti-overfitting) into Prompt Engineering, forming a complete evaluation chain through three specialized Agent roles—Grader, Comparator, and Analyzer; and the Writing-Skills within the Superpowers framework, which employs a RED-GREEN-REFACTOR TDD cycle to create and optimize Skills. The article also summarizes the advantages of Skill-Creator (complete methodology, rigorous evaluation system) and its limitations (high token consumption, lengthy process, steep learning curve), and introduces five Skill design patterns summarized by the Google ADK team: Tool Wrapper, Generator, Workflow, Specification, and Meta-Skill.",
+      "featuredReason": "Anthropic released the Agent Skill spec as an open standard in December 2025; six months in, 33+ agent products have adopted it — Claude Code, Codex, GitHub Copilot, VS Code, Cursor, Gemini CLI, Kiro, and more. A Skill isn't a prompt — it's structured behavior design around tasks, tools, flows, and output boundaries. The piece breaks down the spec fields, the three-layer progressive loading mechanism, and model-driven activation, then summarizes Google's five design patterns and the Skill-Creator paradigm. The takeaway: the quality of your description field decides whether the Skill ever fires.",
+      "translateContent": null,
+      "tags": [
+        "Agent Skill",
+        "Skill-Creator",
+        "Writing-Skills",
+        "Design Patterns",
+        "Prompt Engineering"
+      ],
+      "mainPoints": [
+        {
+          "point": "An Agent Skill is a structured Prompt enhancement package that achieves efficient context management through a three-tier progressive loading mechanism.",
+          "explanation": "A Skill is defined by a SKILL.md file containing YAML metadata and Markdown instructions. Its core design is a three-tier loading mechanism: L1 loads only the name and description (approximately 50-100 tokens), L2 loads the full instructions when the Skill is activated, and L3 loads scripts and reference documents on demand. This reduces context usage by about 90% compared to monolithic prompts."
+        },
+        {
+          "point": "Skill-Creator introduces ML engineering practices into Prompt Engineering, achieving rigorous evaluation through the collaboration of three Agents.",
+          "explanation": "Anthropic's Skill-Creator adopts ML methodologies like train/test set splitting and anti-overfitting. Its evaluation system consists of three specialized Agent roles—Grader, Comparator, and Analyzer—forming a complete closed loop from test execution to iterative improvement."
+        },
+        {
+          "point": "Writing-Skills uses a RED-GREEN-REFACTOR TDD cycle to create discipline-enforcing Skills.",
+          "explanation": "The Writing-Skills in the Superpowers framework tests Agent behavior without the Skill in a pressure scenario (RED), writes a minimal Skill to enforce rules (GREEN), and then adds counterarguments one by one against the Agent's rationalizations (REFACTOR). This is particularly suitable for scenarios requiring strict rule adherence."
+        },
+        {
+          "point": "The Description field should only describe trigger conditions, avoiding workflow summaries to prevent the Agent from taking shortcuts.",
+          "explanation": "Testing revealed that when the description summarizes the workflow, the Agent might execute directly based on the description, skipping the full Skill content. Therefore, the description should focus on user intent and trigger keywords, not the Skill's internal mechanics."
+        },
+        {
+          "point": "Google summarized five Skill design patterns, providing structured guidance for the internal logic design of Skills.",
+          "explanation": "These include Tool Wrapper (encapsulating domain knowledge), Generator (template-based output), Workflow (step-by-step workflow), Specification (normative constraints), and Meta-Skill (managing other Skills). They help developers choose the appropriate design paradigm based on the task type."
+        }
+      ],
+      "keyQuotes": [
+        "A Skill is not a Prompt—it is a structured behavioral design around tasks, tools, processes, and output boundaries.",
+        "Explain the 'why' instead of piling on 'musts'. This is the most core insight in the entire article. Today's LLMs have good theory of mind; rather than writing ALWAYS and NEVER in all caps, it's better to explain why something is important.",
+        "A passing grade on a weak assertion is worse than useless — it creates false confidence.",
+        "The context window is a shared resource. Assume by default that Claude is already smart; only add information it doesn't know.",
+        "The Description should only describe trigger conditions, never summarize the Skill's workflow."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559942&idx=1&sn=08953bb9fff5a3594e80a381157c5c11",
+      "readUrl": "https://www.bestblogs.dev/article/ad38855c",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045355_2bca1ae8",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_26c5f1",
+      "sourceName": "阿里云开发者",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045355_2bca1ae8",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 1101,
+      "wordCount": 10692,
+      "readTime": 43,
+      "mediaDuration": null,
+      "authors": [
+        "阿里云开发者"
+      ],
+      "publishTimeStamp": 1778545860000,
+      "publishDateStr": "05-12",
+      "publishDateTimeStr": "2026-05-12 00:31:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_fc9e3786",
+        "type": "ARTICLE",
+        "title": "A Practical Guide to 'Progressive Spec' for AI Coding in 2026",
+        "oneSentenceSummary": "This article proposes a 'Progressive Spec' framework for AI coding environments, leveraging structured documentation to drive AI collaboration and balance development standards with execution efficiency.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559315&idx=1&sn=5c1f9df548e912354b5b5e25ec4bcbb5",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_0c853462",
+        "type": "ARTICLE",
+        "title": "Deep Dive: The Memory Architecture and Philosophy That Thousands of Words Can't Fully Explain",
+        "oneSentenceSummary": "This article systematically constructs an architectural blueprint for AI Agent memory systems, proposing a System 2 architecture composed of raw ledgers, derived views, and control policies, aiming to achieve auditable, highly available, long-range personalized intelligence.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559363&idx=1&sn=461e525a0373ccfed0a7638cc1c51906",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_17ad4f7",
+        "type": "PODCAST",
+        "title": "E45 Meng Yan in Conversation with Li Jigang: How Humans Find Their Place",
+        "oneSentenceSummary": "This episode explores the inevitable transition from mental labor to 'heart power' in the AI era, and the deep philosophy of responding to technological change by reconstructing investment, education, and mental models.",
+        "url": "https://www.xiaoyuzhoufm.com/episode/69a64629de29766da93331ec",
+        "sourceName": "无人知晓"
+      },
+      {
+        "id": "RAW_2902aba4",
+        "type": "ARTICLE",
+        "title": "The Evolution of Agent/Skills/Teams Architectures and Principles of Technology Selection",
+        "oneSentenceSummary": "This article systematically reviews the evolutionary trajectory of AI Agents from monolithic to multi-agent, then to Skills pluginization and Teams parallel collaboration, and, drawing on the latest research from Google and Anthropic, provides a scientific methodology for selection.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558921&idx=1&sn=3fddd356f8f072b31742f0e8be772b63",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_f9f5c72b",
+        "type": "ARTICLE",
+        "title": "Just Released: Nano Banana 2! Affordable and Powerful—Here Are the Details After My Hands-on Experience",
+        "oneSentenceSummary": "Google has released its next-generation image generation model, Nano Banana 2 (Gemini 3.1 Flash Image), focusing on high cost-performance, strong comprehension, and subject consistency, significantly lowering the cost barrier for AI image generation.",
+        "url": "https://www.ifanr.com/1655944?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "sourceName": "爱范儿"
+      },
+      {
+        "id": "RAW_352c89c1",
+        "type": "ARTICLE",
+        "title": "How to Write Great Skills? Deconstructing the Design Behind skill-creator!",
+        "oneSentenceSummary": "By deconstructing the design of Codex's skill-creator, this article proposes an AI Skill writing methodology centered on conciseness, based on a three-layer architecture, and guided by a 'spectrum of freedom' principle.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247719753&idx=1&sn=d0bdf9aed64c8f9dc32e02a72302ced9",
+        "sourceName": "Datawhale"
+      },
+      {
+        "id": "RAW_70e2f298",
+        "type": "ARTICLE",
+        "title": "Harness Engineering: How I Spent a Week Boosting AI Coding Rate to 90% in an Enterprise App",
+        "oneSentenceSummary": "This article systematically introduces Harness Engineering, a new AI coding paradigm that elevates the AI code rate of an enterprise Java application from 25% to over 90% by building a four-element system of rules, skills, knowledge, and change management.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559842&idx=1&sn=71ee08bf0421ad2f1aa4dd7a58901c5f",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_3879b2af",
+        "type": "ARTICLE",
+        "title": "1,500 PRs, 0 Human Coders: Building a Million-Line Internal Product Driven by Codex",
+        "oneSentenceSummary": "OpenAI reveals its internal experiment: achieving million-line product development with zero human code in 5 months driven by Codex Agents, redefining software engineering paradigms in the AI era.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276192&idx=2&sn=3cbb6109e944e9fb09f0037d5b5b6172",
+        "sourceName": "InfoQ 中文"
+      },
+      {
+        "id": "RAW_5c79977a",
+        "type": "ARTICLE",
+        "title": "What You Don't Know About Claude Code: Architecture, Governance, and Engineering Practices - Tw93",
+        "oneSentenceSummary": "This article provides an in-depth analysis of Claude Code's six-layer architecture and engineering practices, proposing a systematic Agent development methodology from context governance and skill design to a verification loop.",
+        "url": "https://tw93.fun/2026-03-12/claude.html",
+        "sourceName": "Tw93 Blog"
+      },
+      {
+        "id": "RAW_9dd92132",
+        "type": "ARTICLE",
+        "title": "From Toy to Productivity: Demystifying AI Agent Harness Engineering Through Real Projects",
+        "oneSentenceSummary": "Based on the practical experience of the real-world project Aegis, this article systematically elaborates on the concept, architectural boundaries, and implementation methods of Harness Engineering. It argues that in enterprise engineering environments, constraining and governing non-deterministic large models by building a control plane is the key to transforming AI Agents from toys into productive tools, and it drives the migration of the engineer's role from code executor to goal controller.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559631&idx=1&sn=13935cb98e1b389c3afa8a10a17e9c3a",
+        "sourceName": "阿里云开发者"
+      }
+    ]
+  }
+}

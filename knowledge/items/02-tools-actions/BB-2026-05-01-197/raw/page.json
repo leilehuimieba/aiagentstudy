@@ -1,0 +1,170 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T21a79684250d42ebbddea9564d0d2083",
+  "data": {
+    "metaData": {
+      "id": "RAW_e8e66179",
+      "notExist": null,
+      "originalTitle": "Browser Run: now running on Cloudflare Containers， it’s faster and more scalable",
+      "title": "Browser Run: now running on Cloudflare Containers， it’s faster and more scalable",
+      "oneSentenceSummary": "Cloudflare rebuilt its Browser Run service on top of its own Containers platform, achieving 4x higher concurrency limits, 50%+ faster response times, and improved scalability by migrating state management from KV to D1 and Queues.",
+      "summary": "This article details Cloudflare's migration of its Browser Run service from shared infrastructure with Browser Isolation to its own Cloudflare Containers platform. The move was driven by the need to support rapidly growing demand, particularly from AI agent builders. Key technical challenges included managing global latency between Durable Objects and containers, which was solved by creating regional pools of pre-warmed containers. The most significant architectural change was migrating container state management from Workers KV to D1 and Queues, eliminating race conditions and enabling support for up to 500,000 containers per location through batched writes. The migration resulted in a 4x increase in concurrent browser limits (up to 120), a 50%+ reduction in Quick Action response times, and faster feature delivery, including WebGL and WebMCP support. The article serves as both a technical case study and a demonstration of Cloudflare's dogfooding philosophy.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Cloudflare",
+        "Containers",
+        "Browser Run",
+        "D1",
+        "Queues"
+      ],
+      "mainPoints": [
+        {
+          "point": "Migrating from shared infrastructure to dedicated Containers improved performance and scalability.",
+          "explanation": "Browser Run was rebuilt on Cloudflare Containers, separating it from Browser Isolation. This eliminated scaling bottlenecks caused by conflicting usage patterns and enabled faster, independent feature development."
+        },
+        {
+          "point": "Regional pools of pre-warmed containers solved global latency issues.",
+          "explanation": "To minimize latency between Durable Objects and containers, Cloudflare created regional pools. Incoming requests are routed to the closest DO-container pair within a region, reducing both user-to-DO and DO-to-container latency."
+        },
+        {
+          "point": "Migrating state management from KV to D1 and Queues was critical for scale.",
+          "explanation": "KV's eventual consistency caused race conditions and overallocation. D1's transactional SQLite ensured atomic browser assignments, while Queues enabled batched writes (100 rows per batch) to handle up to 500,000 containers per location without database overload."
+        }
+      ],
+      "keyQuotes": [
+        "You can now spin up 60 browsers per minute via the Workers binding and run up to 120 concurrently --- 4x the previous limit.",
+        "Quick Action response times dropped more than 50%.",
+        "KV's eventual consistency of around 30 seconds was becoming a bottleneck on our critical request path.",
+        "Currently, our P95 for batch write is 0.1ms!",
+        "We're just getting started with unleashing the power of browsers at scale, especially for agentic development."
+      ],
+      "url": "https://blog.cloudflare.com/browser-run-containers/",
+      "readUrl": "https://www.bestblogs.dev/article/e8e66179",
+      "enclosureUrl": null,
+      "domain": "blog.cloudflare.com",
+      "cover": "https://cf-assets.www.cloudflare.com/zkvhlag99gkb/1WWWLSA4fEpgwnZomGKyFF/21ff05c9027ee861eafb7c41ac9f78fb/Browser_Run-_now_running_on_Cloudflare_Containers__it%C3%A2__s_faster_and_more_scalable-OG.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_903ae3",
+      "sourceName": "The Cloudflare Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045359_favicon-32x32.png",
+      "mainDomain": "Programming_Technology",
+      "mainDomainDesc": "Programming",
+      "aiSubCategory": "SE_DEVOPS",
+      "aiSubCategoryDesc": "DevOps & Cloud",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 51,
+      "wordCount": 1586,
+      "readTime": 7,
+      "mediaDuration": null,
+      "authors": [
+        "Ruskin Constant"
+      ],
+      "publishTimeStamp": 1778680801000,
+      "publishDateStr": "05-13",
+      "publishDateTimeStr": "2026-05-13 14:00:01",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_960fb5f2",
+        "type": "ARTICLE",
+        "title": "Project Think: building the next generation of AI agents on Cloudflare",
+        "oneSentenceSummary": "Cloudflare introduces Project Think, a set of serverless primitives and an opinionated base class for building durable, long-running AI agents that can survive crashes, execute sandboxed code, coordinate sub-agents, and self-author extensions, fundamentally changing the economics of agent deployment.",
+        "url": "https://blog.cloudflare.com/project-think/",
+        "sourceName": "The Cloudflare Blog"
+      },
+      {
+        "id": "RAW_7e4131fc",
+        "type": "ARTICLE",
+        "title": "Agents have their own computers with Sandboxes GA",
+        "oneSentenceSummary": "Cloudflare announces the general availability of its Sandboxes and Cloudflare Containers, detailing a suite of new features that provide AI agents with secure, scalable, and stateful development environments.",
+        "url": "https://blog.cloudflare.com/sandbox-ga/",
+        "sourceName": "The Cloudflare Blog"
+      },
+      {
+        "id": "RAW_535eb3d9",
+        "type": "ARTICLE",
+        "title": "Welcome to Agents Week",
+        "oneSentenceSummary": "Cloudflare launches Agents Week, arguing that the current cloud infrastructure is ill-suited for the AI agent era and outlining its vision for a new platform built on efficient, secure, and scalable primitives like isolates, alongside new standards for identity, security, and economics.",
+        "url": "https://blog.cloudflare.com/welcome-to-agents-week/",
+        "sourceName": "The Cloudflare Blog"
+      },
+      {
+        "id": "RAW_cade0910",
+        "type": "ARTICLE",
+        "title": "Building the agentic cloud: everything we launched during Agents Week 2026",
+        "oneSentenceSummary": "Cloudflare concludes its inaugural Agents Week by announcing a comprehensive suite of new products and features across compute, security, agent tooling, and web infrastructure, all designed to establish the foundation for the 'agentic cloud' where AI agents are a primary workload.",
+        "url": "https://blog.cloudflare.com/agents-week-in-review/",
+        "sourceName": "The Cloudflare Blog"
+      },
+      {
+        "id": "RAW_0efed9f1",
+        "type": "ARTICLE",
+        "title": "Sandboxing AI agents, 100x faster",
+        "oneSentenceSummary": "Cloudflare introduces Dynamic Worker Loader, an isolate-based sandboxing API that executes AI-generated code 100x faster and more efficiently than traditional containers.",
+        "url": "https://blog.cloudflare.com/dynamic-workers/",
+        "sourceName": "The Cloudflare Blog"
+      },
+      {
+        "id": "RAW_e6e4891f",
+        "type": "ARTICLE",
+        "title": "Agents can now create Cloudflare accounts， buy domains， and deploy",
+        "oneSentenceSummary": "Cloudflare and Stripe launch a new protocol enabling AI agents to autonomously create Cloudflare accounts, purchase domains, and deploy applications without any manual human steps.",
+        "url": "https://blog.cloudflare.com/agents-stripe-projects/",
+        "sourceName": "The Cloudflare Blog"
+      },
+      {
+        "id": "RAW_79ff2031",
+        "type": "ARTICLE",
+        "title": "AI Gateway’s next evolution: an inference layer designed for agents",
+        "oneSentenceSummary": "Cloudflare announces the evolution of its AI Gateway into a unified inference layer, offering a single API to access over 70 models from 12+ providers, with features like automatic failover, cost monitoring, and support for custom models, specifically designed to meet the demands of building reliable and fast AI agents.",
+        "url": "https://blog.cloudflare.com/ai-platform/",
+        "sourceName": "The Cloudflare Blog"
+      },
+      {
+        "id": "RAW_b6bd1ce0",
+        "type": "ARTICLE",
+        "title": "Agents that remember: introducing Agent Memory",
+        "oneSentenceSummary": "Cloudflare announces the private beta of Agent Memory, a managed service that provides AI agents with persistent, context-aware memory by extracting and retrieving knowledge from conversations, solving the problem of context rot without overfilling the context window.",
+        "url": "https://blog.cloudflare.com/introducing-agent-memory/",
+        "sourceName": "The Cloudflare Blog"
+      },
+      {
+        "id": "RAW_52f3fd6",
+        "type": "VIDEO",
+        "title": "Why， and how you need to sandbox AI-Generated Code? — Harshil Agrawal， Cloudflare",
+        "oneSentenceSummary": "This article explores the security risks of AI-generated code and provides a technical framework for sandboxing untrusted code using V8 Isolates and Containers based on capability-based security.",
+        "url": "https://www.youtube.com/watch?v=AHtGAgQ0Q_Q",
+        "sourceName": "AI Engineer"
+      },
+      {
+        "id": "RAW_d73b4211",
+        "type": "ARTICLE",
+        "title": "The AI engineering stack we built internally — on the platform we ship",
+        "oneSentenceSummary": "Cloudflare details its comprehensive, internally-built AI engineering stack that powers AI coding tools for 93% of its R&D team, leveraging its own products like AI Gateway, Workers AI, and the Agents SDK to achieve massive scale, security, and developer productivity gains.",
+        "url": "https://blog.cloudflare.com/internal-ai-engineering-stack/",
+        "sourceName": "The Cloudflare Blog"
+      }
+    ]
+  }
+}

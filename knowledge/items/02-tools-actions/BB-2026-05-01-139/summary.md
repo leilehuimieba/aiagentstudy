@@ -2,7 +2,7 @@
 
 ## Article
 
-- Title: GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元 | BestBlog...
+- Title: GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元
 - Source: BestBlogs / Simon Willison's Weblog
 - URL: https://www.bestblogs.dev/article/eedde830
 - Date: 2026-03-17

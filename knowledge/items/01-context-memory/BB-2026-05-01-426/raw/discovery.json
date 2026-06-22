@@ -1,0 +1,84 @@
+{
+  "id": "RAW_c495b41d",
+  "notExist": null,
+  "originalTitle": "The permalink problem in AI chat",
+  "title": "The permalink problem in AI chat",
+  "oneSentenceSummary": "This article argues that the most valuable text a knowledge worker reads—an AI chat response—has no stable URL, a design failure rooted in treating the conversation as the addressable unit instead of the individual message.",
+  "summary": "The article identifies a critical design failure in major AI chat products (ChatGPT, Claude, Gemini): the inability to create a stable, per-message permalink. The author argues that this is not a minor missing feature but a fundamental architectural choice that treats the conversation as the addressable unit and the individual message as ephemeral. This contrasts sharply with decades of HCI and collaboration tool design, from Vannevar Bush's memex to Slack and Notion, where the smallest unit of meaningful content has a stable address. The author provides evidence from user reviews, an analysis of the current share features (which solve the rare case of sharing with a stranger but ignore the common case of returning to one's own work), and data from a third-party extension showing that 63% of paid users create per-message bookmarks. The article concludes that fixing this architectural root would resolve four out of five related design failures (the chat box, empty state, missing undo, and forgotten conversation), and outlines what first-class message addressability would look like: stable URLs, copy-link affordances, and cross-conversation linking.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Chat",
+    "UX Design",
+    "Permalink",
+    "Addressability",
+    "Knowledge Work"
+  ],
+  "mainPoints": [
+    {
+      "point": "AI chat responses are the only valuable text in a knowledge worker's week without a stable URL.",
+      "explanation": "Every other collaboration tool (Slack, Notion, Figma, etc.) treats the smallest unit of meaningful content as addressable. AI chat's lack of per-message permalinks breaks the fundamental pattern of knowledge work."
+    },
+    {
+      "point": "The current share features in AI chat solve the wrong problem.",
+      "explanation": "Products ship conversation-level share links or expiring snapshots, which are designed for showing a stranger an output. They ignore the common, high-value use case of a user returning to their own work."
+    },
+    {
+      "point": "The missing permalink is an architectural root cause of multiple UX failures.",
+      "explanation": "Treating the conversation as the addressable unit leads to the chat box as default UI, the forgotten conversation problem, the missing undo, and the empty state problem. Fixing the root (per-message addressability) would resolve most of these."
+    },
+    {
+      "point": "User behavior confirms the primitive is missing and valuable.",
+      "explanation": "Users resort to workarounds like copy-pasting to Notes or scrolling endlessly. Data from a third-party extension shows 63% of paid users create per-message bookmarks, and 74% cite saving individual messages as their reason for upgrading."
+    }
+  ],
+  "keyQuotes": [
+    "The most valuable text a knowledge worker reads in a workweek, the response to a question they could not have answered on their own, is the only text in 2026 that has no URL.",
+    "AI chat inherited a messaging-app architecture in which the conversation is the addressable unit and the individual message is an ephemeral transcript line. That decision is not load-bearing. It is downstream of how fast the products shipped, not of how the underlying work actually behaves.",
+    "A resource that other people, or your future self, cannot link to is a resource that does not persist in the network of knowledge work.",
+    "The unit of value is the unit of address.",
+    "The order of the work is not five separate fixes. The order of the work is the architectural correction, and the surface fixes fall out of it."
+  ],
+  "url": "https://uxdesign.cc/the-permalink-problem-in-ai-chat-1f1579ec991c?source=rss----138adf9c44c---4",
+  "readUrl": "https://www.bestblogs.dev/article/c495b41d",
+  "enclosureUrl": null,
+  "domain": "uxdesign.cc",
+  "cover": "https://image.jido.dev/20260525162904_1*DaBWUo3VN-9O56yEg3GIYQ.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_ae645f",
+  "sourceName": "UX Collective",
+  "priority": "LOW",
+  "sourceImage": "https://image.jido.dev/20260527051835_1*dn6MbbIIlwobt0jnUcrt_Q.png",
+  "mainDomain": "Product_Development",
+  "mainDomainDesc": "Product & Design",
+  "aiSubCategory": "PD_DESIGN",
+  "aiSubCategoryDesc": "UX/UI Design",
+  "category": "Product_Development",
+  "categoryDesc": "Product & Design",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 13,
+  "wordCount": 2728,
+  "readTime": 11,
+  "mediaDuration": null,
+  "authors": [
+    "Adi Leviim"
+  ],
+  "publishTimeStamp": 1779707458000,
+  "publishDateStr": "05-25",
+  "publishDateTimeStr": "2026-05-25 19:10:58",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

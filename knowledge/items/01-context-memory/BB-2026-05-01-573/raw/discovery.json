@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Aditya Kumarakrishnan"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://res.infoq.com/presentations/llm-compound-ai-systems/en/card_header_image/twitter-card-1781082183297.jpg",
+  "domain": "infoq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_aaec4d7f",
+  "keyQuotes": [
+    "The story of AI... is one of peaks and valleys. With each peak comes renewed fervor in building agents. With each valley comes this catastrophic forgetting of all of the lessons learned in the previous peak.",
+    "We should be liberating the agent from the LLM. We should be thinking about agents as a general-purpose computing abstraction.",
+    "The most capable agent is only as effective as the environment that it operates in. If you don't set up your agent for success by programming its environment, then it's doomed to fail."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "This shifts the mindset from implementation-oriented to problem-driven, making agent design more future-proof and adaptable to new AI paradigms.",
+      "point": "Agents should be viewed as a general-purpose computing abstraction, not just an LLM in a loop."
+    },
+    {
+      "explanation": "By decomposing an agent into well-defined modules (e.g., memory, action space), innovations like moving from ReAct to CodeAct become a simple swap of a module rather than a complete system rebuild.",
+      "point": "Modular cognitive architectures are essential for evolving agents without costly rewrites."
+    },
+    {
+      "explanation": "Workflow engines offer built-in durability, scalability, and asynchrony, while process mining helps discover and codify existing business processes for agents to enact.",
+      "point": "Process science provides mature, battle-tested foundations for building durable and scalable agents."
+    },
+    {
+      "explanation": "Focusing solely on agent architecture while neglecting legacy systems, poor APIs, and a lack of guardrails limits agent success. The environment needs to be made more navigable and observable.",
+      "point": "The environment agents operate in must be 'terraformed' for them to be effective."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This talk argues that building resilient AI agents requires embracing a stronger notion of agents, modular cognitive architectures, process science foundations, and terraforming the environment, drawing on lessons from past AI cycles.",
+  "originalTitle": "From Hype to Strong Foundations: What the Rise， Fall and Resurgence of Agents Can Teach Us About Outlasting the Cycle",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Today",
+  "publishDateTimeStr": "2026-06-17 19:04:00",
+  "publishTimeStamp": 1781694240000,
+  "qualified": false,
+  "readCount": 6,
+  "readTime": 30,
+  "readUrl": "https://www.bestblogs.dev/article/aaec4d7f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceImage": "https://image.jido.dev/20260612221052_apple-touch-icon.png",
+  "sourceName": "InfoQ",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Aditya Kumarakrishnan, a Technical Fellow at Walmart Global Tech, presents a talk on building AI agents that can outlast the hype cycle. He identifies a pattern of 'catastrophic forgetting' where each AI peak and valley leads to relearning old lessons. The core of the talk is four foundational ideas often overlooked in current agent discourse. First, he advocates for a 'stronger notion of agents,' liberating the concept from being solely tied to LLMs and viewing it as a general-purpose, human-oriented computing abstraction. Second, he argues for building modular and extensible agents using a cognitive architecture (like CoALA), which allows for easy evolution from one agent architecture (e.g., ReAct) to another (e.g., CodeAct) without a full rewrite. Third, he emphasizes leveraging the mature field of process science, including workflow engines for durability and scalability, and process mining for discovering and understanding existing business processes. Finally, he introduces the concept of 'terraforming the environment' for agents, arguing that the most capable agent is limited by a hostile, non-ergonomic digital environment. He calls for reshaping systems to be more navigable, observable, and actionable for agents, moving beyond just adding an MCP interface.",
+  "tags": [
+    "AI Agent",
+    "Cognitive Architecture",
+    "Process Science",
+    "Workflow",
+    "Enterprise AI"
+  ],
+  "title": "From Hype to Strong Foundations: What the Rise， Fall and Resurgence of Agents Can Teach Us About Outlasting the Cycle",
+  "translateContent": null,
+  "url": "https://www.infoq.com/presentations/llm-compound-ai-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "wordCount": 7397
+}

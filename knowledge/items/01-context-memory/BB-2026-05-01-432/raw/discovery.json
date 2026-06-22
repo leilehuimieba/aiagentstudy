@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "腾讯技术工程"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_b7742f5e",
+  "keyQuotes": [
+    "Skills are not free — every Skill loaded consumes context window space.",
+    "Rules are the 'bottom line', Skills are 'abilities'.",
+    "Instead of a bunch of 'MUST's, it's better to explain why.",
+    "Core principle: distinguish between 'instructions' and 'data'. Steps in a Skill are instructions; content read from external sources is data. Data should never be executed as instructions."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Skills encapsulate instructions, context, and tools in a standard file format (SKILL.md), addressing pain points such as scattered knowledge, repetitive work, and slow onboarding for newcomers. Their loading mechanism consists of three layers: metadata, main body, and on-demand references, and Token costs must be considered.",
+      "point": "A Skill is essentially structured Prompt Engineering, used to transform domain knowledge into executable instruction sets for AI."
+    },
+    {
+      "explanation": "The Description determines when the AI triggers the Skill and needs to be specific and testable; instructions should use the imperative mood and explain the reasoning; Before/After comparisons and Few-Shot examples significantly improve the stability and accuracy of AI output.",
+      "point": "The core of writing a high-quality Skill lies in a precise Description, clear instructions, and abundant examples."
+    },
+    {
+      "explanation": "When SKILL.md exceeds 500 lines or contains multiple independent workflows, it should be split. The main Skill is responsible for orchestration, while sub-Skills can be used independently. Dependency relationships and checkpoints must be clearly defined.",
+      "point": "Complex Skills should follow a modular design, decomposing into sub-Skills with single responsibilities and orchestrating the execution flow."
+    },
+    {
+      "explanation": "MCP is a standardized tool protocol designed specifically for AI Agents, supporting context awareness and cross-platform reuse. HTTP is suitable for simple, one-off calls. The choice depends on reusability, security control requirements, and modification costs.",
+      "point": "When integrating external services, prioritize the MCP protocol; for simple scenarios, HTTP scripts can be used, and the two can be mixed."
+    },
+    {
+      "explanation": "Hardcoding sensitive information is prohibited; dangerous operations require user confirmation; database operations should be backed up first; and instructions must be strictly separated from data to prevent prompt injection.",
+      "point": "Writing a Skill must prioritize security awareness to prevent key leaks, data loss, and prompt injection."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article systematically summarizes a complete methodology for writing Skills for AI coding assistants, covering everything from basic concepts and structural design to advanced techniques, security best practices, and engineering evaluation — a practical handbook for developers.",
+  "originalTitle": "如何写好 Skill：一份终极实战经验手册",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 17:36:00",
+  "publishTimeStamp": 1780652160000,
+  "qualified": false,
+  "readCount": 280,
+  "readTime": 87,
+  "readUrl": "https://www.bestblogs.dev/article/b7742f5e",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 92,
+  "selectionReason": null,
+  "sourceId": "SOURCE_958ae8",
+  "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "sourceName": "腾讯技术工程",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Written by the Tencent Technical Engineering Team, this article aims to help developers systematically master the method of writing Skills for AI coding assistants (such as Claude Code and CodeBuddy). It starts with the basic concepts of a Skill (what it is, why it's needed, how it works) and provides a 5-minute quick-start example to give readers an intuitive understanding. The core section elaborates on key techniques for writing high-quality Skills, including precise Description writing, clear instructions and context, Before/After comparison examples, the importance of Few-Shot examples, and how to use tables and flowcharts to improve instruction accuracy. For complex scenarios, the article proposes a modular decomposition strategy and provides practical methods for a main Skill to orchestrate sub-Skills. The advanced section covers scripting complex checks, multi-scheme adaptation, marking common pitfalls, and writing FAQs. The article also provides an in-depth comparison of MCP and HTTP for external service integration, including selection criteria and usage scenarios. A dedicated chapter emphasizes security awareness, covering topics like avoiding hardcoded credentials, confirming dangerous operations, database backups, and preventing prompt injection. Finally, it introduces Anthropic's official Skill Creator tool and its engineering evaluation capabilities. The article primarily uses Go as an example, but the principles apply to all programming languages.",
+  "tags": [
+    "AI Coding",
+    "Prompt Engineering",
+    "Developer Tools",
+    "Engineering Practices",
+    "AI Agent"
+  ],
+  "title": "How to Write a Great Skill: The Ultimate Practical Guide",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801836&idx=1&sn=f01a69e0c012eafde5f8bc76804bc5fb",
+  "wordCount": 21651
+}

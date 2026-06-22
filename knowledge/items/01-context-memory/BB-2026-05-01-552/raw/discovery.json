@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "罗西的思考"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260527052039_75b4d91.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_10a1a93e",
+  "keyQuotes": [
+    "Agent developers don't need to know what exists below the line, and the framework doesn't need to know what business the Agent is doing. This is exactly the effect a good abstraction should achieve.",
+    "The core idea of TITO is just one sentence: only tokenize the new parts, reuse the token IDs of existing prefixes, and ensure strict consistency of token prefixes across multi-turn dialogues.",
+    "Miles' design philosophy is: invest the right cost in the right place based on the scenario."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Agent developers only need to write business logic as if calling the OpenAI API, while the framework transparently handles training infrastructure tasks such as session management, TITO tracking, loss mask construction, and exception degradation, significantly reducing the development cost of new Agents.",
+      "point": "agentic_tool_call decouples Agent business logic from RL training infrastructure through an adapter pattern."
+    },
+    {
+      "explanation": "The root cause is the inconsistency in prefixes due to the Chat Template's loop.last judgment. TITO only tokenizes new non-Assistant messages, reuses existing prefixes, and ensures the append-only invariant through three lines of defense: fixing the template, automatic validation tools, and runtime assertions, thereby guaranteeing precise loss_mask.",
+      "point": "TITO solves the token sequence drift issue in multi-turn RL caused by Chat Templates through incremental tokenization."
+    },
+    {
+      "explanation": "As an independent FastAPI process, the Session Server transparently manages the LinearTrajectory state machine, supports TITO incremental tokenization and an OpenAI-compatible API. The 3-Phase Lock releases the lock during inference, supporting long-chain tool calls without blocking concurrency.",
+      "point": "The Session Server provides stateful multi-turn session management with a 3-Phase Lock design that balances concurrency and correctness."
+    },
+    {
+      "explanation": "From fully asynchronous (high throughput but introducing off-policy bias) to True On-Policy (bit-level consistency but sacrificing performance), Miles provides four levels of progressive guarantees: staleness filtering, TIS/MIS, R3 route replay, and True On-Policy contracts, which users can combine based on their scenarios.",
+      "point": "The training-inference consistency spectrum allows users to flexibly trade off between throughput and correctness."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article provides an in-depth analysis of the key technologies in the Miles project for Agentic RL training, including the agentic_tool_call adapter, TITO incremental tokenization, Session Server state management, and the training-inference consistency spectrum, showcasing a systematic design from engineering decoupling to training correctness.",
+  "originalTitle": "【Agentic RL / 强化学习框架】Miles 项目技术分析---（2）--- 关键技术",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-16 20:23:00",
+  "publishTimeStamp": 1781612580000,
+  "qualified": false,
+  "readCount": 31,
+  "readTime": 75,
+  "readUrl": "https://www.bestblogs.dev/article/10a1a93e",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_07f258cd",
+  "sourceImage": "https://image.jido.dev/20260527052039_75b4d91.jpeg",
+  "sourceName": "罗西的思考",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This is the second article in the technical analysis series on the Miles project, focusing on the key technologies that upgrade the Slime research-grade RL framework into an Agentic-first enterprise production system. The article elaborates on 8 core technical points: agentic_tool_call acts as a decoupling adapter between Agent business logic and RL training infrastructure, using separation of concerns to allow Agent developers to focus solely on business logic; TITO (Token-In, Token-Out) addresses the tokenization drift issue in multi-turn Agent RL caused by the Chat Template's loop.last, ensuring strict token prefix consistency through incremental tokenization; the Session Server serves as the productized shell of TITO, providing stateful multi-turn session management; the training-inference consistency spectrum progresses from fully asynchronous to bit-level consistency, including staleness filtering, TIS/MIS, R3 route replay, and True On-Policy contracts. The article also covers Multi-Agent collaborative training, environment design, the MBridge model abstraction layer, and the RadixTree prefix reuse middleware. The content is technically deep and logically clear, offering systematic solutions to the engineering challenges in Agentic RL training.",
+  "tags": [
+    "Agentic RL",
+    "Reinforcement Learning",
+    "LLM",
+    "AI Agent",
+    "Training Framework"
+  ],
+  "title": "Miles Project Technical Analysis (2) — Key Technologies",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489357&idx=1&sn=7b73b1ba36f84b136818250458c680e6",
+  "wordCount": 18556
+}

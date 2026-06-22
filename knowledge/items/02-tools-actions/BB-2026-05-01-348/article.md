@@ -1,0 +1,28 @@
+# GitHub Slashes Agent Workflow Token Spend up to 62% with Daily Audits and MCP Pruning
+
+- BestBlogs URL: https://www.bestblogs.dev/article/22bc26b4
+- Original publisher URL: https://www.infoq.com/news/2026/05/github-agentic-token-savings/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global
+- Source: BestBlogs / InfoQ
+- Publish time: 2026-05-29 16:30:00
+- Capture route: article discovered from logged-in Chrome/OpenCLI profile `qmvqcrb8` latest article feed page 1; page/content captured from BestBlogs resource APIs
+- Extracted chars: 3189
+
+---
+
+GitHub has published results from work to cut token usage in the agentic workflows it runs in its own repositories. The company recorded reductions of up to 62% after pruning unused Model Context Protocol (MCP) tools, replacing MCP calls with GitHub CLI invocations, and adding daily audit and optimisation agents.
+
+   The work matters for any team running large language model (LLM) agents inside continuous integration (CI), where scheduled jobs accumulate cost out of view. GitHub routes every agent call through an API proxy and now writes a token-usage.jsonl artefact for each run that captures input, output and cache tokens in one normalised format across Claude CLI, Copilot CLI and Codex CLI.
+
+   To compare across model tiers, the team uses an Effective Tokens (ET) metric that weights output tokens by 4× and cache reads by 0.1×, then applies a model multiplier (Haiku at 0.25×, Sonnet at 1.0×, Opus at 5.0×). A 10% drop in ET maps to a 10% cost reduction regardless of the model in use.
+
+   Two agentic workflows drive the optimisation loop. A Daily Token Usage Auditor aggregates consumption by workflow, flags anomalous runs and surfaces the most expensive jobs. When the auditor highlights a workflow, a Daily Token Optimiser reads the source and recent logs, opens a GitHub issue, and proposes specific fixes. Both agents themselves appear in the same daily reports.
+
+   The most common inefficiency the optimiser finds is unused MCP tools. Because LLM APIs are stateless, agent runtimes include tool schemas with every request, so a GitHub MCP server with 40 tools can add 10 to 15 KB of schema per turn. Removing unused entries cuts per-call context by 8 to 12 KB in GitHub's smoke-test workflows. The team also replaced MCP calls for fetching pull request diffs and file contents with gh CLI commands, either pre-downloaded into workspace files before the agent starts or proxied at runtime through a transparent HTTP proxy that keeps authentication tokens away from the agent.
+
+   Across a dozen production workflows, Auto-Triage Issues shows a sustained 62% ET reduction over 109 post-fix runs, Security Guard 43%, and Smoke Claude 59%. Daily Community Attribution improved 37%. One workflow, Contribution Check, recorded a 5% ET increase that GitHub attributes to a workload shift toward larger pull requests rather than a regression.
+
+   The team also notes the limits of MCP pruning. Daily Community Attribution carried eight unused GitHub MCP tools and made zero calls to them across an entire run, yet removing them did not reduce ET. "Tool manifests were a small fraction of this workflow's overall context," GitHub wrote.
+
+   Anthropic and OpenAI both offer prompt caching, and LangChain offers callback-based token tracking for agent runs. GitHub's contribution is the audit-and-optimise loop, which combines proxy-level observability with optimiser agents that file issues. The Auditor and Optimiser ship in the gh-aw CLI today.
+
+   "The cheapest LLM call is the one you don't make," GitHub wrote, framing the next step as portfolio-level analysis that targets duplicated reads and shared intermediate artefacts across the fleet of workflows in a repository.

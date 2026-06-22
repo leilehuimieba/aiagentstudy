@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "通义实验室"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260527050603_c063770.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_2e22b643",
+  "keyQuotes": [
+    "SME2, as Arm's latest matrix acceleration instruction set, delivers tangible performance improvements for on-device large model inference through deep integration with MNN—achieving over 80% speedup in the Prefill phase.",
+    "MNN's support for SME2 adopts a compile-time built-in plus runtime auto-detection design, requiring no manual configuration from users."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Traditional Neon instructions require manual decomposition of matrix multiplication, whereas SME2 instructions like FMOPA can complete the outer product accumulation of a matrix tile in a single instruction, significantly boosting computational throughput, especially for compute-intensive tasks like Prefill.",
+      "point": "The SME2 instruction set enables efficient matrix multiplication via the ZA matrix accumulator, a key acceleration technology for on-device AI inference."
+    },
+    {
+      "explanation": "The compile flag `-DMNN_SME2=ON` controls whether to include SME2-optimized kernels. At runtime, it automatically detects hardware support: if available, it uses the accelerated path; if not, it gracefully falls back, ensuring compatibility.",
+      "point": "The MNN inference engine adopts a 'compile-time built-in + runtime auto-detection' design for SME2, requiring no manual configuration from developers."
+    },
+    {
+      "explanation": "Prefill is a compute-intensive task (large batch matrix multiplications) that can fully leverage SME2's advantages. Decode generates tokens one by one, where the bottleneck is memory bandwidth, limiting SME2's benefits.",
+      "point": "SME2 acceleration provides significant gains for the Prefill phase (+81%) but limited gains for the Decode phase (+13%)."
+    },
+    {
+      "explanation": "The tutorial covers the entire process from setting up the Android NDK environment to installing the final APK, providing specific command-line examples and performance testing tools for high operability.",
+      "point": "The article provides a complete end-to-end on-device deployment path, including engine compilation, model preparation, command-line verification, and app building."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article provides a hands-on demonstration of how to leverage Arm SME2 instructions and the MNN inference engine to efficiently deploy the Qwen3-VL-4B multimodal model on flagship phones supporting SME2, achieving over 80% speedup in the Prefill phase.",
+  "originalTitle": "端侧 AI 提速 80%？如何让 Qwen3-VL 在手机起飞",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-11",
+  "publishDateTimeStr": "2026-06-11 19:44:00",
+  "publishTimeStamp": 1781178240000,
+  "qualified": false,
+  "readCount": 229,
+  "readTime": 12,
+  "readUrl": "https://www.bestblogs.dev/article/2e22b643",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_2ce88a",
+  "sourceImage": "https://image.jido.dev/20260527050603_c063770.jpeg",
+  "sourceName": "通义实验室",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Written by an engineer from the Tongyi Lab, this article serves as a practical engineering tutorial for on-device AI developers. It focuses on the SME2 instruction set of the Armv9 architecture, explaining its principle of achieving efficient matrix multiplication through the ZA matrix accumulator. Using Alibaba's open-source MNN inference engine, the article details a complete deployment workflow: compiling from source (with SME2 support enabled), downloading and converting the model, verifying via command line, and building an Android application. It provides specific compilation commands, model deployment steps, and performance testing methods, presenting real-world test data from a vivo X300: 81% speedup in the Prefill phase and 13% speedup in the Decode phase. Finally, the article also covers advanced tuning methods for model export and runtime parameters.",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "On-Device Inference",
+    "Model Deployment",
+    "Arm SME2"
+  ],
+  "title": "80% Speed Boost for On-Device AI? How to Make Qwen3-VL Fly on Your Phone",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501476&idx=1&sn=a9caef85456da041a0bfa3c0d40d0843",
+  "wordCount": 2764
+}

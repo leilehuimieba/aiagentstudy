@@ -1,0 +1,174 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T9f47a5010d554248977b530e946564f5",
+  "data": {
+    "metaData": {
+      "id": "RAW_852b6f4a",
+      "notExist": null,
+      "originalTitle": "QCon 北京 2026 | 把自动化测试当 AI Coding 来做：小红书 GUI Agent 实战回顾",
+      "title": "QCon Beijing 2026 | Treating Automated Testing as AI Coding: A Practical Review of Xiaohongshu's GUI Agent",
+      "oneSentenceSummary": "Xiaohongshu's Quality and Efficiency R&D team shared their self-developed GUI Agent intelligent testing system at QCon Beijing 2026. Through a layered architecture, dual-agent collaboration, and a Code-as-Action strategy, the system achieved over 43,000 automated executions and an 82% adoption rate for AI-generated test cases during the Spring Festival promotion.",
+      "summary": "This article is a transcript of the technical sharing by Xiaohongshu's Quality and Efficiency R&D team at QCon Beijing 2026, detailing the engineering implementation of their self-developed GUI Agent in intelligent testing. It first identifies two core challenges of traditional UI automation: poor test stability (script failures due to UI changes) and insufficient business understanding (testing expertise locked in human minds). To address these, the team designed a three-layer architecture: the Business Intent Layer (structured natural language describing test objectives), the Agent Exploration Layer (LLM-driven autonomous exploration and execution), and the Executable Code Layer (zero-token regression scripts after solidification). The key innovation lies in the dual-agent collaboration model: the main Agent (GPT/Sonnet scale) handles deep-thinking tasks like intent understanding and plan generation, while the visual sub-agent (Gemini 3 Flash) handles low-cost, high-success-rate atomic perception operations. The team also built an operation graph and a layered knowledge base to suppress Agent hallucinations, and adopted a Code-as-Action strategy to solidify verified interactions into executable test code, achieving zero token consumption for CI regression. The article concludes with two counterintuitive lessons learned: evaluation sets should not be used as optimization targets, and a pure exploration approach is not viable.",
+      "featuredReason": "Xiaohongshu details its GUI Agent intelligent testing, framing UI automation as AI Coding. The article explains a layered architecture and dual-agent collaboration to tackle high visual model costs and instability. This system achieved over 43,000 automated executions and a 58% automation rate, with regression scripts consuming near-zero tokens. A practical guide for AI-driven test engineering.",
+      "translateContent": null,
+      "tags": [
+        "GUI Agent",
+        "Intelligent Testing",
+        "AI Coding",
+        "Automated Testing",
+        "Xiaohongshu"
+      ],
+      "mainPoints": [
+        {
+          "point": "The core challenge of GUI Agent intelligent testing is the trade-off between positioning stability and execution certainty.",
+          "explanation": "Semantic understanding is most resilient to UI changes but has the lowest execution certainty, while coordinate clicking is most stable and reproducible but most vulnerable to UI changes. Xiaohongshu balances this trade-off through a three-layer fallback mechanism (semantic, DOM, visual) and an operation graph."
+        },
+        {
+          "point": "A dual-agent collaboration architecture is adopted: the main Agent handles thinking, while the visual sub-agent handles perception.",
+          "explanation": "The main Agent (GPT/Sonnet scale) handles complex tasks like intent understanding and plan generation; the visual sub-agent (Gemini 3 Flash) handles low-cost, high-success-rate element positioning. Through engineering efforts, the single-step execution success rate of the visual model was improved from 69% to approximately 90%."
+        },
+        {
+          "point": "The Code-as-Action strategy reduces regression costs to near zero.",
+          "explanation": "Interactions verified through Agent exploration are automatically solidified into executable test code. Subsequent CI regression no longer calls the main Agent, returning to native script speed with over 95% certainty."
+        },
+        {
+          "point": "Using a file repository instead of a vector database for knowledge base management reduces maintenance costs.",
+          "explanation": "For a single product, all knowledge such as PRDs, design drafts, and historical test cases amounts to only a few GB. A file directory structure is easier to participate in and review than an RAG system, and Coding Agents are naturally adept at retrieving information from structured directories."
+        }
+      ],
+      "keyQuotes": [
+        "Treat UI automation as AI Coding—humans define the intent, and the Agent explores, executes, and evolves.",
+        "Use the most expensive model to think, and the cheapest yet sufficiently accurate model to see.",
+        "The architecture is doing the heavy lifting for the model.",
+        "Testing as a profession is converging, while testing as a capability is spreading.",
+        "The evaluation set serves only as a capability baseline and a capability guide, not as an optimization target. The real fuel for iteration comes from the bad cases encountered during production execution."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495245&idx=1&sn=b9a041f238016c2727189ef801b9b07f",
+      "readUrl": "https://www.bestblogs.dev/article/852b6f4a",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045428_1c4a68a7",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_fb78bd",
+      "sourceName": "小红书技术REDtech",
+      "priority": "MEDIUM",
+      "sourceImage": "https://image.jido.dev/20251127045428_1c4a68a7",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 325,
+      "wordCount": 8237,
+      "readTime": 33,
+      "mediaDuration": null,
+      "authors": [
+        "小红书技术REDtech"
+      ],
+      "publishTimeStamp": 1778580060000,
+      "publishDateStr": "05-12",
+      "publishDateTimeStr": "2026-05-12 10:01:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_fc9e3786",
+        "type": "ARTICLE",
+        "title": "A Practical Guide to 'Progressive Spec' for AI Coding in 2026",
+        "oneSentenceSummary": "This article proposes a 'Progressive Spec' framework for AI coding environments, leveraging structured documentation to drive AI collaboration and balance development standards with execution efficiency.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559315&idx=1&sn=5c1f9df548e912354b5b5e25ec4bcbb5",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_9f78eebc",
+        "type": "ARTICLE",
+        "title": "ICLR 2026 | Xiaohongshu Vision-R1: A Multimodal Reasoning Large Model for Deep Logical Reasoning and Understanding of Image-Text Content",
+        "oneSentenceSummary": "Xiaohongshu releases Vision-R1, a multimodal reasoning large model that rivals OpenAI o1 in mathematical reasoning through automated CoT data generation and Progressive Thought Suppression Training (PTST).",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495146&idx=1&sn=31cfd0e9e8d7c874eeeb7798ce54e4f3",
+        "sourceName": "小红书技术REDtech"
+      },
+      {
+        "id": "RAW_3879b2af",
+        "type": "ARTICLE",
+        "title": "1,500 PRs, 0 Human Coders: Building a Million-Line Internal Product Driven by Codex",
+        "oneSentenceSummary": "OpenAI reveals its internal experiment: achieving million-line product development with zero human code in 5 months driven by Codex Agents, redefining software engineering paradigms in the AI era.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276192&idx=2&sn=3cbb6109e944e9fb09f0037d5b5b6172",
+        "sourceName": "InfoQ 中文"
+      },
+      {
+        "id": "RAW_9e46c7ea",
+        "type": "ARTICLE",
+        "title": "Building a New Paradigm for Project Management in the AI Era - Xiaohongshu PMO Team's Agentic Exploration",
+        "oneSentenceSummary": "The Xiaohongshu PMO team shares their journey of building a project management AI Agent from scratch through four iterations, evolving from knowledge Q&A to equipping each project team with a dedicated PMO BP, and summarizing 7 key practical insights.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495214&idx=1&sn=7b7de8e86eaedf6f0cdda2f56b05cbbd",
+        "sourceName": "小红书技术REDtech"
+      },
+      {
+        "id": "RAW_e32a066c",
+        "type": "ARTICLE",
+        "title": "Harness Engineering: Can AI Write Code in Truly \"Mission-Critical\" Backend Systems?",
+        "oneSentenceSummary": "This article shares the complete methodology—Harness Engineering—practiced by Tencent's CDN LEGO team for AI coding in ultra-large-scale, high-reliability backend systems. Through a five-layer architecture, three key levers (context, constraints, feedback), and multi-model adversarial code review, they built an engineering system that enables AI to safely and controllably produce high-quality code.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801331&idx=1&sn=7dfd93b1754a4f80c993347c4b57adb1",
+        "sourceName": "腾讯技术工程"
+      },
+      {
+        "id": "RAW_70e2f298",
+        "type": "ARTICLE",
+        "title": "Harness Engineering: How I Spent a Week Boosting AI Coding Rate to 90% in an Enterprise App",
+        "oneSentenceSummary": "This article systematically introduces Harness Engineering, a new AI coding paradigm that elevates the AI code rate of an enterprise Java application from 25% to over 90% by building a four-element system of rules, skills, knowledge, and change management.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559842&idx=1&sn=71ee08bf0421ad2f1aa4dd7a58901c5f",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_44e28dc2",
+        "type": "ARTICLE",
+        "title": "FireRed-OCR Open Source Release: New End-to-End SOTA! Xiaohongshu Proposes Low-Cost Document Recognition Training Paradigm",
+        "oneSentenceSummary": "Xiaohongshu open-sources the FireRed-OCR model, achieving end-to-end document parsing SOTA by resolving VLM structural hallucinations through a three-stage optimization strategy and a high-quality data factory.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247494972&idx=1&sn=1c6a1be0908cbe25194a5256b1eec48a",
+        "sourceName": "小红书技术REDtech"
+      },
+      {
+        "id": "RAW_d3b22d7d",
+        "type": "ARTICLE",
+        "title": "Harness Engineering: Leveraging Codex in an Agent-First World",
+        "oneSentenceSummary": "The OpenAI team shares their practical experience of building a million-line codebase product in 5 months using Codex agents with \"zero manual coding,\" proposing a new paradigm of \"Harness Engineering\" centered on environment design and feedback loops.",
+        "url": "https://baoyu.io/translations/2026-02-12/harness-engineering",
+        "sourceName": "宝玉的分享"
+      },
+      {
+        "id": "RAW_81c42b97",
+        "type": "ARTICLE",
+        "title": "30B Parameters Surpass GPT-5! REDSearcher Enables Low-Cost and Scalable \"Deep Search Agents\"!",
+        "oneSentenceSummary": "Xiaohongshu and Harbin Institute of Technology released the REDSearcher framework, which defines task complexity via graph theory and employs two-stage training, enabling a 30B model to outperform top closed-source models like GPT-5 in deep search.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495127&idx=1&sn=d0d092689d0f9c6c1bd3d7da97cef969",
+        "sourceName": "小红书技术REDtech"
+      },
+      {
+        "id": "RAW_f309bc1c",
+        "type": "ARTICLE",
+        "title": "Xiaohongshu Relax Open Source Release: An Asynchronous RL Training Engine for Full-Modal Agentic Workflows",
+        "oneSentenceSummary": "Xiaohongshu's AI Platform team has open-sourced Relax, a collaborative reinforcement learning training engine designed for full-modal data and Agentic workflows, addressing three major challenges—data heterogeneity, system fragility, and role coupling—through a service-oriented fault-tolerant architecture, asynchronous pipeline, and native full-modal support.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495185&idx=1&sn=7abfb7ecf3e0d2af511d228f730e19a8",
+        "sourceName": "小红书技术REDtech"
+      }
+    ]
+  }
+}

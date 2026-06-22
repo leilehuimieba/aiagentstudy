@@ -1,0 +1,80 @@
+{
+  "id": "RAW_54fbd42d",
+  "notExist": null,
+  "originalTitle": "从 3632 个漏洞看 AI 时代的评测基准重构！VulnGym 基准发布",
+  "title": "Rebuilding Evaluation Benchmarks in the AI Era: Insights from 3,632 Vulnerabilities and the VulnGym Benchmark Release",
+  "oneSentenceSummary": "Tencent's Wukong Security Team, in collaboration with multiple universities, releases the VulnGym evaluation benchmark based on 3,632 real vulnerability data points, focusing on the rising trend of business logic vulnerabilities in the AI era, providing a project-level, white-box, path-level annotated vulnerability detection capability evaluation scheme.",
+  "summary": "Based on a statistical analysis of 3,632 high-severity/critical GitHub Advisory vulnerabilities from January 2025 to April 2026, this article reveals a structural shift in vulnerability patterns in the AI coding era: the proportion of business logic vulnerabilities is continuously rising, reaching 47.2% in high-star projects by April 2026. The article analyzes the causes of this trend from two perspectives: the supply side (the proliferation of AI coding tools changing how vulnerabilities are introduced) and the detection side (AI security tools beginning to uncover previously hard-to-find business logic flaws). In response, Tencent's Wukong Security Team, in collaboration with institutions including the Chinese University of Hong Kong, Fudan University, the University of Hong Kong, Peking University, and the Institute of Information Engineering at the Chinese Academy of Sciences, has released the VulnGym evaluation benchmark. This benchmark uses real vulnerabilities from high-star GitHub projects as its data source, covering over 400 vulnerability paths, of which 71.2% are business logic vulnerabilities. It employs path-level annotation with three key elements: entry_point, critical_operation, and trace, supporting reproducible and interpretable deterministic evaluations. It can be used to compare the vulnerability detection capabilities of underlying models, Harness engineering, and Agent tools as a whole.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "VulnGym",
+    "Vulnerability Detection",
+    "Business Logic Vulnerabilities",
+    "AI Security",
+    "Evaluation Benchmark"
+  ],
+  "mainPoints": [
+    {
+      "point": "Vulnerability patterns in the AI coding era are shifting from traditional coding errors to business logic flaws.",
+      "explanation": "Statistical analysis based on 3,632 vulnerability reports shows that the proportion of business logic vulnerabilities in high-star projects has risen from 21.4% in the first three quarters of 2025 to 47.2% in April 2026, closely aligning with the timeline of AI coding tool adoption."
+    },
+    {
+      "point": "Existing vulnerability detection evaluation benchmarks suffer from a systematic mismatch and cannot effectively assess business logic vulnerability detection capabilities.",
+      "explanation": "Mainstream benchmarks exhibit a systematic mismatch across three dimensions: evaluation granularity (function-level vs. project-level), vulnerability types (focusing on traditional CWEs rather than business logic), and evaluation format (black-box vs. white-box), failing to effectively assess project-level business logic vulnerability detection capabilities."
+    },
+    {
+      "point": "VulnGym adopts three-element path-level annotation, enabling differentiation between tools that merely guess a location and those that truly understand the vulnerability.",
+      "explanation": "Each sample annotates three locations: entry_point, critical_operation, and trace, supporting step-by-step alignment of entry points, attack chains, and defect trigger points, making it the finest annotation granularity among current similar benchmarks."
+    }
+  ],
+  "keyQuotes": [
+    "The profile of high-severity vulnerabilities in the AI coding era is shifting from 'traditional coding errors' to 'formally correct code with business logic flaws.'",
+    "LLMs excel at filling in 'plausible-looking' code but lack the long-term retention of project-specific business rules.",
+    "Enabling precise differentiation between 'a tool guessing a location' and 'a tool fully understanding the vulnerability'—this is VulnGym's finer-grained requirement at the annotation level.",
+    "Over the past decade, this yardstick has been repeatedly refined... each refinement of the scale corresponded to the true nature of code defects in that era.",
+    "As AI begins to deeply participate in code generation, are the types of vulnerabilities also changing?"
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801631&idx=1&sn=4d1c5bb6cd33aa8f38f6b902f5231065",
+  "readUrl": "https://www.bestblogs.dev/article/54fbd42d",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_958ae8",
+  "sourceName": "腾讯技术工程",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 42,
+  "wordCount": 5743,
+  "readTime": 23,
+  "mediaDuration": null,
+  "authors": [
+    "腾讯技术工程"
+  ],
+  "publishTimeStamp": 1779787920000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 17:32:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

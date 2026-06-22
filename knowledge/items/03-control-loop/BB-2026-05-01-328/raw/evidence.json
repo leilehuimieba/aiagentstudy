@@ -1,0 +1,32 @@
+{
+  "item_id": "BB-2026-05-01-328",
+  "capture_date": "2026-05-26",
+  "synthesis_inputs": [
+    "BB-2026-05-01-325",
+    "BB-2026-05-01-326",
+    "BB-2026-05-01-327"
+  ],
+  "public_sources": [
+    "https://github.com/anthropics/claude-code",
+    "https://docs.claude.com/en/docs/claude-code/overview",
+    "https://github.com/ultraworkers/claw-code",
+    "https://datawhalechina.github.io/hello-agents/"
+  ],
+  "local_artifacts": [
+    "D:\\newwork\\aiagentstudy\\knowledge\\items\\03-control-loop\\BB-2026-05-01-325\\article.md",
+    "D:\\newwork\\aiagentstudy\\knowledge\\items\\03-control-loop\\BB-2026-05-01-326\\article.md",
+    "D:\\newwork\\aiagentstudy\\knowledge\\items\\03-control-loop\\BB-2026-05-01-327\\article.md"
+  ],
+  "map_layers": [
+    "goal_framing",
+    "control_loop",
+    "context_state",
+    "memory_compaction",
+    "tool_registry_dispatch",
+    "permission_guardrails",
+    "subagent_task_team_cron",
+    "plugin_skill_mcp_lsp_bridge",
+    "telemetry_verification",
+    "environment_execution"
+  ]
+}

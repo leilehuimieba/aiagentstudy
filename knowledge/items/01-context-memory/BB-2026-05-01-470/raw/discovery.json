@@ -1,0 +1,81 @@
+{
+  "authors": [
+    "Varun Singh",
+    "Isabel Hulseman",
+    "Anuj Doshi",
+    "Shyamala Prayaga"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-3-5-content-safety.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_bb6294b3",
+  "keyQuotes": [
+    "Evaluating all three together—rather than scoring each independently—closes a well-known gap in multimodal safety scenarios: policy violations that only emerge from the interaction between text and image, or between request and response, are now caught in a single pass.",
+    "Reasoning is a supercharger for content safety classification because it provides the necessary context, customization, and accountability required for production AI systems, especially in enterprise and regulated environments.",
+    "Critically, 99% of training images are real photographs—not synthetic generations. This directly addresses a known weakness in the multimodal safety benchmark landscape, where existing datasets like VLGuard and MM-SafetyBench rely heavily on SDXL-generated images that lack the cultural texture and adversarial complexity of production content."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Unlike previous models that required separate systems for each modality or language, this single model can evaluate text, images, and assistant responses together, apply custom enterprise policies, and provide auditable reasoning traces.",
+      "point": "Nemotron 3.5 unifies multimodal, multilingual, custom policy, and reasoning capabilities into a single 4B model."
+    },
+    {
+      "explanation": "The model accepts a natural language policy specification alongside the input, enabling category suppression (e.g., ignoring 'violence' for DevOps tools) and custom category injection for regulated industries like healthcare and finance.",
+      "point": "Custom policy enforcement allows enterprises to define domain-specific safety rules at inference time."
+    },
+    {
+      "explanation": "Most existing multimodal safety datasets rely on AI-generated images, which lack the cultural texture and adversarial complexity of real-world content. NVIDIA's use of real images helps the model generalize better to production scenarios.",
+      "point": "The training dataset uses 99% real photographs, addressing a key weakness in multimodal safety benchmarks."
+    },
+    {
+      "explanation": "The model can output step-by-step reasoning before a safety verdict, useful for compliance and human review. Reasoning traces are condensed to under 3 sentences for efficiency, and THINK mode can be disabled for latency-critical tasks.",
+      "point": "THINK mode provides auditable reasoning traces while maintaining low-latency options."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "NVIDIA releases Nemotron 3.5 Content Safety, a single 4B model unifying multimodal input, multilingual coverage, custom enterprise policy enforcement, and auditable reasoning traces for production AI safety pipelines.",
+  "originalTitle": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 02:57:45",
+  "publishTimeStamp": 1780599465000,
+  "qualified": false,
+  "readCount": 49,
+  "readTime": 9,
+  "readUrl": "https://www.bestblogs.dev/article/bb6294b3",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article announces the release of NVIDIA's Nemotron 3.5 Content Safety model, built on Google Gemma 3 4B IT. It details five key new capabilities: unified multimodal evaluation (text, image, assistant response in one context), global language coverage (12 explicit languages + zero-shot generalization to ~140 languages via Gemma 3), custom policy enforcement (accepting a natural language policy specification at inference), auditable reasoning traces (THINK mode), and the release of the accompanying multimodal, multilingual safety dataset. The post explains the model architecture (LoRA adapter on Gemma 3), the three inference output modes (binary verdict, verdict with categories, THINK mode with reasoning), and the training data composition, which notably uses 99% real photographs for multimodal data. Benchmarking results show strong harmful-content classification accuracy (e.g., 96.5% on Multilingual Aegis, 88.8% on RTP-LX) and 3x lower latency than an alternative multimodal safety model. The article also discusses the open problem of benchmark gaps in multimodal safety research and provides guidance on getting started with the model via Hugging Face, NVIDIA NIM, and various inference platforms.",
+  "tags": [
+    "LLM",
+    "AI Safety",
+    "Multimodal AI",
+    "Model Release",
+    "Enterprise AI"
+  ],
+  "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+  "wordCount": 2071
+}

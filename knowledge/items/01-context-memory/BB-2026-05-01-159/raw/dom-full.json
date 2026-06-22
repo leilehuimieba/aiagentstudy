@@ -1,0 +1,349 @@
+{
+  "content": "Transcript\n\nJimmy Morzaria: This is a picture of one of the seven concourses at the Hartsfield-Jackson Atlanta International Airport. Atlanta International Airport is the busiest airport by passenger count in the world. It's held this position for 24 of the past 25 years. It sees more passengers in a day than most commercial airports in the United States see in an entire year. On an average day, ATL lands and departs more than 250,000 passengers. It fields 1,700 flights each day. That's a takeoff or a landing every 60 seconds. These stats are already incredible, but Atlanta International Airport was in the news recently for pulling off something historic. The nearly 50-year-old Concourse D at ATL was meant to serve smaller planes.\n\nIn Hartsfield's meteoric rise to becoming the world's busiest airport, the concourse grew increasingly cramped. This is when ATL decided to undertake a $1.3 billion project to expand Concourse D. They planned to widen the concourse from 60 feet to 99 feet, and extend its overall length by 288 feet. This is where things get interesting. Construction mandates from the airport and the airlines required that Concourse D remain operational with only a limited number of gates taken out of service at any given point in time. This is to reduce the impact on revenue. To meet these requirements, WSP, which is the consulting company which was serving as the project manager, they built the concourse modules at a remote location at the airport, at the same time working on the needed foundation and the utility relocation works at the concourse. As you can see in this picture, large self-propelled modular transporters crab-walked these 700-ton modules 1 mile across runways to within inches of the concourse. That's the incredible engineering we are looking at.\n\nBackground\n\nMy name is Jimmy Morzaria. I'm a Staff Software Engineer at Stripe. I've been working in the cloud infrastructure space for the last 10 years. At Stripe, I help build critical tier 0 systems, which includes Stripe's internal document database service, which is built on open-source MongoDB. We'll dive deep into our zero-downtime data movement platform and see how that has helped scale our database infrastructure to power trillions of dollars of payments annually.\n\nThis platform has been absolutely critical for us in that it has enabled a major architectural shift at Stripe. We moved from running our MongoDB shards like a few pets that needed constant manual care to running them like a large fleet of herd that can be automated and scaled easily. Just like how the Atlanta International Airport moved those massive modules into place without missing a flight, scaling a crammed concourse to support thousands of more passengers per hour, we'll be talking about how we scaled our critical database infrastructure stack to process trillions of dollars of payments annually. It's really humbling to share the work of so many infrastructure engineers at Stripe today.\n\nStripe: High-Level Overview\n\nLet's start with a quick introduction on Stripe. Stripe is a financial technology company that allows businesses around the world to accept payments online and in person. Over the years, Stripe has built a fully integrated suite of financial and payments products, such as billing and subscription payment, card issuing, usage-based billing, and more. Some of the largest companies in the world, such as Amazon, Google, Shopify, and OpenAI, rely on Stripe to accept payments seamlessly. Our mission at Stripe is to grow the GDP of the internet and to deliver infrastructure that powers commerce around the world. To that end, Stripe facilitated $1.4 trillion of payments in 2024. That is roughly equivalent to 1.3% of the global GDP. We strive to process this staggering volume of payments with 5.5 nines of reliability. Reliability is extremely critical when it comes to processing payments. Research shows that 40% of the customers whose payment is denied abandon that business entirely.\n\nThe impact of unavailability goes beyond just money, and it has the potential to have a lasting reputational impact. At the heart of Stripe's 5.5 nines of reliability, at trillion-dollar scale, is robust tier 0 infrastructure, including networking, compute, and databases. Our database infrastructure handles more than 5 million database queries per second. We have petabytes of critical financial data distributed across more than 2,000 database shards. The trillion-dollar question here is, how do we handle millions of queries per second over petabytes of financial data with 5.5 nines of reliability? The answer to this question really lies in our journey.\n\nDatabase Infra at Stripe, Over the Years\n\nLet's go back in time to take a look at the history of database infrastructure at Stripe and how it has evolved over the years. In 2011, which is almost 15 years ago, Stripe launched with MongoDB as its online datastore. This allowed us to move quickly as MongoDB offered better developer productivity and automated failover capabilities than standard relational databases at the time. Back then, product applications at Stripe connected directly to MongoDB shards, and we only had a handful of MongoDB shards. By 2017, as we grew, our fleet had expanded to tens of MongoDB shards. These shards were holding data for many different use cases, and some of the data was sharded, while a lot of it still remained unsharded at this point.\n\nMore importantly, all of the maintenance operations like spinning up new database shards, building indexes, replacing nodes, and resharding data were still being handled by engineers using ad hoc scripts. This was quickly becoming a scaling and reliability bottleneck. This is when we built our database proxy service to front our MongoDB shards. While the key motivation that helped us ship the database proxy layer was connection pooling, the proxy layer was always meant to be more than just that, and we envisioned the proxy layer to serve as a single point of interface to enforce concerns of reliability, scalability, admission control, and access control.\n\nThis diagram illustrates our architecture in 2017, showing the new database proxy servers acting as a critical central layer between our product applications and the growing number of MongoDB shards. The year 2020 marked a significant shift. There was an exponential growth in online commerce. This chart here is from an annual letter to our shareholders. We can see here that the number of new businesses signing up for Stripe with .ai as their top-level domain increased exponentially starting 2019 and 2020. This is just businesses with .ai as their TLDs. We experienced a similar exponential increase in businesses relying on Stripe to process payments across sectors.\n\nWhat does this mean for our critical database infrastructure? The result was a corresponding and steep increase in the number of database queries being sent to our database shards, along with a significant growth in our overall storage footprint. Initially to support the increased throughput and storage, we vertically scaled up our database shards, with some reaching tens of terabytes in size. This strategy worked for a long time until we eventually realized that we are going to run into the physical limits of vertical scaling. It quickly became clear that adding more database shards was necessary to keep up with Stripe's exponential growth. To tackle this challenge, we invested in some key foundational building blocks. These new foundational building blocks included building a control plane to provision and deprovision databases and shards, create and drop indexes, and run other maintenance operations. It included a routing metadata service to map database partitions to physical shards.\n\nFinally, we invested in building the online data movement capability to scale our database infrastructure horizontally with the growing needs of our business. Here's what our database infrastructure looked like once we added all of these components in. You can see here that product applications still talk to their databases through database proxy servers. However, instead of a static map from database partitions to physical shards, we now have a routing metadata service that the database proxy layer consults to route queries to the appropriate database shards. The shards themselves are deployed as MongoDB replica sets with a primary and several secondary nodes distributed across availability zones and regions. We've also shown a control plane here that's responsible for provisioning databases, shards, and running maintenance operations on these shards.\n\nFinally, we have our CDC systems, which are responsible for transporting the write-ahead log from MongoDB shards to Kafka and eventually to S3. Data from our CDC pipeline is used to power our offline and analytical systems. Know that MongoDB refers to their write-ahead log as the oplog. In 2023, we put this technology to test by performing online data movement at scale to prove the robustness of our system. Today, thanks to these efforts, our database infrastructure built on open-source MongoDB is highly reliable, scalable, performant, and efficient.\n\nWhy DocDB?\n\nWhat is DocDB? DocDB is essentially the composition of all of these components here and a few more behind the scenes coming together which allow us to offer a Database-as-a-Service to all of product engineering. A natural question to ask here is, why did you spend all of this time and effort building a Database-as-a-Service in-house versus buying an off-the-shelf offering? At various points in Stripe's 15-year history, we've explored leveraging off-the-shelf Database-as-a-Service offerings. The reason why we've invested in building something in-house on top of open-source software really came down to three things: security, reliability and performance, and scale.\n\nFirst up, let's talk about security. For a financial platform like Stripe, security isn't just a feature, it's everything. Building DocDB allowed us to bake in security right from the start, specifically through robust enforcement of authorization policies right at the data layer. Next, reliability and performance. For those of you who've used MongoDB, you all know that MongoDB is an extremely powerful document database, but it has a large surface area in terms of its querying capabilities, which if you don't use correctly, it can lead to unintended performance and reliability issues. By exposing only a minimal battle-tested set of functions to our engineers, we ensure that these unintended performance and reliability issues don't materialize. This approach also lets us offer true multi-tenancy with enforced quotas, which means that one user's database activity cannot unintentionally impact another user's. Finally, of course, scale. DocDB was designed with a focus on seamless horizontal scaling with sharding to ensure that the needs of our business are met without compromising reliability and performance.\n\nDocDB: Logical Constructs\n\nWith that context, let's take a look at the logical constructs that a product engineer interfaces with when interacting with DocDB at Stripe. There are two main logical constructs, a logical database and a collection. A logical database is essentially a container of data housing one or more related collections. Whenever a product engineer needs a datastore for their service at Stripe, they create a logical database and a collection using our internal database management console. The database management console eventually talks to our DocDB control plane to provision the logical database and collection and the backing infrastructure. While creating the database and collection, product engineers also specify a shard key. Here we have an example of a document in the core_payments database and the payment_intents collection that has merchant as the shard key, and it's highlighted in purple.\n\nUnder the hood, data in a logical database and collection is sharded across several different database servers. The way we do that is by dividing up the keyspace for a given shard key into several different chunks where each chunk holds a contiguous range of the data. In this case we have sharded our Logical Database: core_payments, and Collection: payment_intents, across two shards. Documents with a shard key that belong to the key range 1 to 50 live on shard_a, and documents with a shard key between 50 to 100 live on shard_b. We call this table the chunk map, and each row in this table is called a chunk of data. This chunk map lives in our routing metadata service.\n\nHorizontal Scalability: The Zero-Downtime Data Movement Platform\n\nSo far, we've looked at how Stripe scaled its database infrastructure to support more throughput and storage by first vertically scaling up the underlying database shards. We also looked at how we built some key foundational building blocks such as a control plane and a routing metadata service to automate database provisioning and other database maintenance operations. How do we go from here to horizontally scaling our database infrastructure? Horizontal scaling is essentially distributing your data across several different servers. We saw that in our example we started off with two sets of shards.\n\nIf you want to add more storage and throughput we somehow need to divide and distribute data on these shards across many more shards. We need to do this in a manner that's transparent to product applications and does not result in any downtime. To address all of these requirements, we built a zero-downtime data movement platform. Before we dive into the mechanics of zero-downtime data movement, I'd like to highlight some key design principles that influenced our approach: availability and consistency, performance, and granularity and adaptability. Let's talk about consistency first. It goes without saying that we need to ensure that the data being migrated remains consistent and complete across both the source and the target shards during the migration process.\n\nSecond, availability. As millions of businesses count on Stripe to process their payments 24 hours a day, any downtime during the data movement process was unacceptable. Our goal here was to keep the key phase of the migration process, and we'll get to it in a little bit, shorter than the duration of a planned database primary failover, and in line with the retry budget of our applications. Next was performance. When we migrate data across shards we want to preserve the performance and throughput of the database shards that are involved in the migration. Otherwise, it would have an adverse impact on the queries that are being sent by the product applications on those shards.\n\nFinally, we wanted the platform to be granular and adaptable. At Stripe's scale, we need to support the migration of an arbitrary number of chunks of data from any number of source to any number of target shards. We did not want any restrictions on the number of in-flight database migrations in the fleet, and we did not want any restrictions on the number of migrations any given shard can participate in, in the fleet. We also needed to accommodate the migration of chunks of varying sizes at a high throughput as several of our database shards were already tens of terabytes large.\n\nWith that, we came up with this blueprint from first principles to migrate data across MongoDB shards without any downtime. Before we dive into the details of each of these steps, let's briefly walk through the high-level steps that are involved in migrating data across shards. First, we obviously need to register the intent to migrate a chunk of data in a routing metadata service. Then, using a point-in-time snapshot of the chunk of data, we bulk import the data onto the destination shards. Next, we replicate all of the writes from the time of the snapshot to the target shards and wait for this replication to catch up.\n\nAt this point we've ensured that the source and the target shards are in sync and have identical data, but we need to perform an exhaustive correctness check to ensure that the data is complete and consistent. Now that we have ensured that we have accurately copied over all of the data from the source to the target shards and the two are in sync, we can orchestrate a traffic switch in our database proxy servers from the source to the target shards, and finally we go ahead and complete the migration in our routing metadata service.\n\nLet's dive straight into it and look at the first step, chunk migration registration. In this example, we are looking to add more shards to support the increased throughput and storage. We register the intent to migrate chunks 50 to 75 and 75 to 100 to two new shards, shard_c and shard_d. These are highlighted in pink. Next, we use a point-in-time snapshot of the chunks on the source shard to load the data onto one or more target database shards. The bulk import service here is responsible for loading data onto the target shards, shard_c and shard_d. While this step appeared simple at first, we encountered throughput limitations when bulk loading data onto a MongoDB shard. Despite our attempts at addressing this by batching writes and adjusting MongoDB engine parameters for optimal bulk ingestion, we had little success.\n\nAfter several experiments, we achieved a significant breakthrough when we explored methods to optimize our insertion order. We took advantage of the fact that MongoDB's storage engine is based on a B-tree data structure. By sorting the data based on the most common index attributes in the collection and inserting in sorted order, we significantly enhanced the proximity of writes boosting our write throughput by 10x. Once we have imported data onto the target shard, we begin replicating writes from the time of snapshot to the target shards. Our async replication systems read the oplog from the source shards through the CDC systems, and issue writes to the target shards. Note that we rely on the oplog events from our CDC systems and not directly from the MongoDB shard. This is to ensure that we do not impact the available throughput on the source shards while we are doing the migration.\n\nSeparately, we also didn't want to be constrained by the size of the oplog on the MongoDB shard. We designed our replication service to be resilient to target shard unavailability and to support starting, pausing, and resuming synchronization from any point in time. The replication service also exposes an RPC to fetch the replication lag. Mutations to the data that are undergoing a migration get replicated bidirectionally from the source to the target shards like we've seen here, and back from the target shards to the source shards. We made this design choice to perform bidirectional replication to provide us the flexibility to revert traffic back to the source shards as a fast rollback option if any issues emerge when we are directing traffic to the new shards. After the replication syncs between the source and the target shards, we conduct a comprehensive check to make sure the data is complete and consistent by comparing point-in-time snapshots of the target shards and the source shards. Again, note that we use point-in-time snapshots to avoid impacting the throughput available on the source shard.\n\nLet's get into the most interesting part, which is, how do we switch over traffic from the source to the target shards without impacting any client traffic? Once we have imported the data from the source to the target shards and the mutations are being actively replicated, a traffic switch is orchestrated by a coordinator component. In order to reroute reads and writes to the chunk of data that is being migrated, at a high level, we first need to stop the traffic on the source shard for a very brief period of time. We then need to update the routes in our routing metadata service, and have the proxy servers redirect reads and writes based on the updated routes. The traffic switch process here is based on the idea of version gating. The core idea behind version gating is the following. Your database proxy servers are sending requests to the MongoDB shards with a version number. This version number reflects the routing metadata version that the database proxy servers are aware of.\n\nSeparately, the MongoDB shard itself has logic to ensure that the version number that it receives from the database proxy servers on the request is newer than the version number that it knows of, and only serve requests that satisfy this criteria. Let's see how this plays out in practice. In steady state, each database proxy server is annotating requests that it sends to the shards with a version number. The database responds with a result which is then forwarded back to the client application.\n\nNow to update the route for the chunk of data being migrated, we use the coordinator to execute the following steps. First, the coordinator checks with the replication service to ensure that the data is being actively replicated between the source and the target shards, and the replication is in sync or it is caught up. Once it receives a successful response from the replication service, it then proceeds to bump up the version number on the source shard. The version number here is stored in a document in a special collection on the MongoDB shard. At this point, all of the queries from the client application that are directed to the source shard start getting rejected because the version number sent by the database proxy servers is stale compared to the version number on the source shard. The database responds with a stale version error which is then forwarded back to the client application.\n\nNext, the coordinator checks with the replication service once again to ensure that any outstanding writes after the source shard was fenced have been successfully replicated to the target shard. Once it gets a successful response from the replication service, it then goes and updates the route for the chunk of data being migrated in the routing metadata service and also updates the routing metadata version to 2. After that, the database proxy servers have logic in them to continuously fetch new routes from the routing metadata service, and it discovers that the route for the chunk of data being migrated has been updated to the target shards. At this point, the database proxy server, when it gets a query for the chunk of data being migrated, it forwards it to the target database and the shard with the version number 2. The target database responds back to the database proxy service with a result which is then forwarded back to the client application.\n\nThat's a lot of information. This entire traffic switch protocol takes an order of milliseconds to a maximum of 2 seconds to execute. All of the failed reads and writes from the client application succeed on retries. There's a couple of things I'd like to note here about the traffic switch process itself. First of all, we've made a custom patch to our fork of MongoDB to implement version gating. Second, recall that the replication service replicates data from the source shards to the target shards and back to the source shards. This bidirectional replication allows us to switch traffic back to the source shard for any reason whatsoever. This makes our rollback process extremely simple. Finally, after updating the routes of the data being migrated, we can go ahead and update our routing metadata service to reflect the changes. In this example, we can see that the shards for the key ranges 50 to 75 and 75 to 100 now point to shard_c and shard_d as follows.\n\nBeyond Horizontal Scalability\n\nLet's do a quick recap of what we've accomplished so far. We took data on one database shard, divided it and distributed it on two database shards. On a fundamental level, our approach here was to take a snapshot of the data at some point in time and use that to move data onto two new shards, replicate all of the writes that were coming in while we were doing this backfill, and make sure you don't drop any data or corrupt any data in the entire process. Then, finally, switch over our reads and writes to the new database. It turns out that if you have this capability, it unlocks a lot of different use cases beyond just horizontal scalability. Let's talk more about it. We looked at how we can leverage zero-downtime data movement to add shards and achieve horizontal scalability. We can use this platform to split any given MongoDB shard n ways to unlock n-fold throughput and storage.\n\nSimilarly, we can use the exact same process to merge those n shards back into one shard if at any point of time those n shards are not being fully utilized. In fact, at Stripe, we heavily rely on this platform to scale our database infrastructure for our highest traffic days during Black Friday and Cyber Monday. Separately, we can also use the platform to migrate data from a database shard on one MongoDB version to a database shard on another MongoDB version. Typically, databases can be upgraded in place to the immediate next major version by following some upgrade protocol that your database provider has. However, usually databases do not allow you to skip major versions, and that's where zero-downtime data movement platform is extremely useful.\n\nAt Stripe, we've updated our entire fleet of more than 2,000 database shards using the data movement platform. This helps us significantly reduce the amount of work that we have to put in into our database version upgrades, because every new major version comes with its own sets of bugs and issues. We will not be able to satisfy our performance requirements on each of those versions. Separately, it also provides us a fast rollback path just in case we run into any major issues in the new major version. Finally, we also leverage the same data movement platform to migrate databases from single tenancy to multi-tenancy and vice versa. For example, product teams at Stripe usually start with a multi-tenant database. Once their product gets traction and their scale warrants single-tenant infrastructure, we can easily leverage the same data movement platform to migrate them to single-tenant infrastructure.\n\nKey Takeaways\n\nI'd like you all to take home three key takeaways. First, reliability is non-negotiable. At Stripe, we obsess over the reliability of our APIs, and that has proven to be a key differentiator for our company. We design and build our systems with reliability front and center. We looked at how our data movement process is designed to have zero downtime to our product applications. Second, invest in strong foundations. The ability to migrate data across database shards in a manner that is transparent to your product applications and has zero downtime, enabled us to not only use it as a tool to achieve horizontal scalability, but also allowed us to leverage it for other use cases such as database version upgrades and migrating tenants from single-tenancy to multi-tenancy, and vice versa.\n\nFinally, as an infrastructure engineer, manager, or executive, whenever you're faced with some unmet product engineering needs, you can use these guiding principles to make decisions around building a capability in-house or buying it. Building a capability in-house generally makes sense when the capability drives long-term strategic advantage, requires unique reliability, scalability, performance, security, or compliance controls, or if it provides a better 3-year to 5-year return on investment, and de-risks vendor lock-in and region footprint. On the other hand, buying solution makes sense for undifferentiated capabilities to focus your resources on high-leverage opportunities, provided the third-party provider meets your security standards, offers a viable cost structure, and aligns with your regional and cloud strategy.\n\nQuestions and Answers\n\nParticipant 1: On one of your slides, you showed some bidirectional replication, which I read as very much a multi-master write situation. I felt like there was maybe a little bit of hand-waving there that's a non-trivial thing to do. Can you speak to how you achieve that, how you can do that, and maybe MongoDB, the company, cannot, and how you deal with potential consistency issues?\n\nJimmy Morzaria: The bidirectional replication is still happening as if the target shard, when it's not a canonical shard and not taking active traffic, it's still a follower. You're reading your oplog or the write-ahead log from the source shards and writing it to the target shards. All of the writes that are issued by your replication service are tagged in a certain way such that when you're trying to replicate writes back from the target to the source shards, they don't run into a cyclical asynchronous replication loop. We have a custom MongoDB patch in our fork of MongoDB to append this tag to every write-ahead log. Then we use this tag to filter out any writes that are issued by the replication service when it's trying to replicate right across shards. You're essentially replicating data between two MongoDB replica sets with your replication service and you're doing that in a bidirectional manner, where at any single point in time, only one shard is the leader or the master. The other shard is a follower.\n\nParticipant 2: Relating to that, kind of the same topic, is at that point of handoff, do you continue to back replicate when the new shard is primary? How do you manage the fact that this results in duplicated data potentially now if you shard again, say you go through the second generation of that and now you have shards E, F and whatever, how do you manage the fact that you now have this data in potentially multiple places?\n\nJimmy Morzaria: At the end of the migration process, when we are ready to call the migration done, we go ahead and spin down the bidirectional replication. It's not on forever. It's on during the migration process. At some point in the migration process, you say, ok, I'm done migrating my data on the source shard to two new shards. I'm going to go ahead and spin down everything on the source shard. I'll go ahead, delete my databases, spin down the bidirectional replication, and that's how I can completely deprovision my source shard and I have two new shards with the data.\n\nParticipant 3: On the similar topic of bidirectional replication, how did you take care of idempotency?\n\nJimmy Morzaria: The MongoDB oplog itself gives us the idempotency. Essentially, when you're replicating the write-ahead log, every write that you do using the write-ahead log results in an idempotent write. You can always just replay the entire write-ahead log and get to the same end state.\n\nParticipant 4: I noticed that there's a proxy layer, and there's new shards created and then this routing table has to be updated. This routing table, I guess it's not atomically update all the proxy. Some proxy instance may get old map, some get new map. Is this an eventual consistency? How does your migration tolerate this kind of eventual consistency?\n\nJimmy Morzaria: The propagation of the routing config update is eventually consistent across the stateless database proxy routers, and we have hundreds of them. The core idea here is you're doing the fencing on a single leader or a single primary MongoDB shard. All of the writes that are coming in from the database proxy servers on the leader or the primary of the MongoDB shard, they all annotate their requests with some version number and that reflects what routing metadata version they are consuming to route that request. Essentially, you are doing that fencing right at the primary to make sure that even if there are stale routing proxy servers, they are not able to send requests to the old shard. Even if they do, it gets rejected. Until they update the routing metadata version, they will not be able to serve any requests.\n\nParticipant 4: I think when fencing happens, it looks like the 500 error is propagated back from the proxy to the client.\n\nJimmy Morzaria: Correct.\n\nParticipant 4: I think using this proxy, actually, you don't have to do it. Because you would know that maybe my routing map is not up to date and it can maybe update something and then instead of throwing the error back to the client, it can just basically do some retry with the new map. I'm just wondering, what's the consideration here? You actually propagate this error directly back to the client.\n\nJimmy Morzaria: We do have this optimization even in the database proxy layer, wherein if it gets a response from the MongoDB shard stating that you're trying to call me with a stale version, it will go immediately to the routing metadata service, try to read the updated routing config and then send the request again. There is that, but we also have an SDK on top of MongoDB, which is used to talk to the proxy servers, and we have retry logic even there. We didn't want to do aggressive retries at multiple layers in the system. We have some optimizations around where the retries happen and they do happen in some instances in the database proxy layer as well.\n\nParticipant 5: How long did this migration effort take?\n\nJimmy Morzaria: Just to clarify, you mean building this thing, or?\n\nParticipant 5: No. I mean the whole moving from one shard to multiple shards. How long does it take?\n\nJimmy Morzaria: It's totally like a function of the size of the data and also the number of indexes that exist on the collections that you are trying to migrate. On average, if I were to give you a hand-wavy number, that would be like, we migrate around 1.5 terabytes to 2 terabytes of data per target shard in a single day.\n\nParticipant 5: Then, how long does it take since we essentially snapshot and then we migrate it in chunks? How long does it take? Is one day for doing it completely, or just like the initial portion when you take the first snapshot?\n\nJimmy Morzaria: The numbers that I gave you was for bulk ingesting data onto a MongoDB shard. That's one step of the entire process. There is replication that also needs to happen. Let's say if you take one day to backfill your data, you need to replicate all of the writes for the last one day. That typically also, again, depends on the write throughput on the source shards.\n\nParticipant 6: I heard you say that it gets forked, MongoDB. Is this router a forked version of the Mongo's router or is it something above that?\n\nJimmy Morzaria: We don't use sharded Mongo, so we don't use mongos and the config servers. Our database proxy server is built in-house, and we also build the routing metadata service in-house.\n\nParticipant 6: Are you guys using the Mongo aggregation pipeline, because that would probably involve the other components as well.\n\nJimmy Morzaria: No, we are not. We are not using the aggregation pipeline.\n\n \n\nSee more presentations with transcripts\n\n ",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/8db2ea5f#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=f152e8",
+      "text": "InfoQ",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://www.infoq.com/presentations/docdb-online-database/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://www.infoq.com/transcripts/presentations/",
+      "text": "presentations with transcripts",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/c8074cf?entry=related_article",
+      "text": "Mastering AI Pricing: Flexible & Agile Monetization — Mayank Pant, Stripe",
+      "title": "Stripe's Mayank Pant explains why AI companies are moving beyond pure SaaS subscriptions toward hybrid, value-aligned pricing models that can evolve with product velocity and protect margins."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/f97a9b0?entry=related_article",
+      "text": "How Stripe Built Their New Website",
+      "title": "Stripe 设计主管 Katie Dill 在访谈中深度揭秘了其全新主页的设计哲学、核心决策（如 GDP 计数器、便当盒布局、动效意图）的推演过程，并探讨了 AI 工具如何提升原型效率、新一代 AI 设计系统的潜力，以及 Stripe 通过「巡店」文化抵抗平庸、确保产品卓越的实践。"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/ef3084e8?entry=related_article",
+      "text": "The DPoP Storage Paradox: Why Browser-Based Proof-of-Possession Remains an Unsolved Problem",
+      "title": "This article dissects the DPoP storage paradox in browsers, where non-extractable CryptoKeys in IndexedDB remain vulnerable to XSS-based signing oracle attacks, and evaluates the BFF pattern and memory-only approaches as mitigations."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8b57be6d?entry=related_article",
+      "text": "4 Patterns of AI Native Development",
+      "title": "Patrick Debois outlines four evolving patterns of AI-native development—shifting from producer to manager, implementation to intent, delivery to discovery, and content to knowledge."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/39b642f7?entry=related_article",
+      "text": "Agents， Architecture， & Amnesia: Becoming AI-Native Without Losing Our Minds",
+      "title": "This talk warns against 'architectural amnesia' in the rush to adopt AI agents, arguing that increased autonomy demands more governance, not less, and that we must return to engineering fundamentals like identity, traceability, and trade-off analysis."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/e6e4891f?entry=related_article",
+      "text": "Agents can now create Cloudflare accounts， buy domains， and deploy",
+      "title": "Cloudflare and Stripe launch a new protocol enabling AI agents to autonomously create Cloudflare accounts, purchase domains, and deploy applications without any manual human steps."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/d449a8aa?entry=related_article",
+      "text": "Stateful Continuation for AI Agents: Why Transport Layers Now Matter",
+      "title": "This article analyzes the shift from stateless HTTP to stateful WebSocket connections in AI agent workflows, demonstrating significant performance gains through server-side context caching."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/f3d87b85?entry=related_article",
+      "text": "How to Handle Stripe Webhooks Reliably with Background Jobs",
+      "title": "This article provides a comprehensive guide to building reliable Stripe webhook handlers by separating event reception from processing, using durable background jobs with step-level checkpointing to prevent duplicate operations and ensure idempotency."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/c857f67e?entry=related_article",
+      "text": "MCP in the Java World: Bringing Architectural Strategy to LLM Integrations",
+      "title": "MCP Java SDK transforms LLM integration from ad-hoc tool calling into a disciplined architectural pattern, introducing protocol-level contracts, anti-corruption layers, and governance for enterprise Java systems."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/c5a969d1?entry=related_article",
+      "text": "10 things we learned building for the first generation of agentic commerce",
+      "title": "Stripe shares ten critical insights from pioneering agentic commerce, covering catalog management, real-time inventory, fraud prevention, and the shift toward machine-to-machine programmatic payments."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "This article details how Stripe built a zero-downtime data movement platform, DocDB, to horizontally scale its MongoDB-based database infrastructure to proce...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Stripe, MongoDB, Database Infrastructure, Horizontal Scaling, Zero-Downtime Migration",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs · Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Stripe’s Docdb: How Zero-Downtime Data Movement Powers Tr...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "This article details how Stripe built a zero-downtime data movement platform, DocDB, to horizontally scale its MongoDB-based database infrastructure to proce...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/8db2ea5f",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/8db2ea5f/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-30 09:52:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Jimmy Morzaria",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Stripe",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "MongoDB",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Database Infrastructure",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Horizontal Scaling",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Zero-Downtime Migration",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Stripe’s Docdb: How Zero-Downtime Data Movement Powers Tr...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "This article details how Stripe built a zero-downtime data movement platform, DocDB, to horizontally scale its MongoDB-based database infrastructure to proce...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/8db2ea5f/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Stripe’s Docdb: How Zero-Downtime Data Movement Powers Tr...",
+  "url": "https://www.bestblogs.dev/en/article/8db2ea5f"
+}

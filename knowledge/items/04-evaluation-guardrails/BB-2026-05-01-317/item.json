@@ -1,0 +1,60 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Memory"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-24",
+  "id": "BB-2026-05-01-317",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-317/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-317",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-317/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-317/raw/meta.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-317/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-317/summary.md"
+  },
+  "schema_version": 1,
+  "source": "OWASP",
+  "source_id": "owasp",
+  "source_name": "OWASP",
+  "status": "Methodology summary + source captured",
+  "tags": [
+    "ground-truth",
+    "expected-results",
+    "benchmark-format",
+    "reproducibility",
+    "labeling"
+  ],
+  "title": "OWASP Benchmark - Benchmark Data Format",
+  "topic": "04-evaluation-guardrails",
+  "type": "web_article",
+  "urls": {
+    "all_source_urls": [
+      "https://owasp.org/www-project-benchmark/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://owasp.org/www-project-benchmark/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

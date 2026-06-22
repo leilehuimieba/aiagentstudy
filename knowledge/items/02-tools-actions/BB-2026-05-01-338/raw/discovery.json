@@ -1,0 +1,84 @@
+{
+  "id": "RAW_0858ab05",
+  "notExist": null,
+  "originalTitle": "大模型的 Agent Skill 功能，在 LLM HTTP 底层交互流中是怎么承载的？",
+  "title": "How Are Agent Skills in Large Language Models Carried in the Underlying LLM HTTP Interaction Flow?",
+  "oneSentenceSummary": "This article delves into the underlying implementation principles of the Agent Skill feature in AI IDEs like Cursor, revealing that it is not a protocol-level concept but an application-layer design pattern composed of System Prompt injection, Tool Calling mechanisms, and multi-turn interactions.",
+  "summary": "Using the author's self-implemented mp-read Skill as an example, the article provides a detailed breakdown of the underlying interaction flow of Agent Skill under the OpenAI-compatible protocol through 7 steps. The core conclusion is that Skill does not exist at the protocol level at all; it is 'compiled' by clients like Cursor into a combination of three protocol primitives: System/Developer Message injection instructions, Tools Definition for registering tools, and Multi-turn Tool Calling for looped execution. Starting with Skill discovery and description summary injection, the article progressively demonstrates how the LLM loads the SKILL.md file via the Read tool, executes pre-checks according to instructions, initiates core commands, and finally generates a response. Through real HTTP request/response JSON examples, the author concretizes abstract concepts and summarizes a complete protocol mapping table, revealing the elegance of this design pattern in fully reusing existing protocols without requiring any extensions.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Agent Skill",
+    "Tool Calling",
+    "Cursor",
+    "LLM Protocol",
+    "AI Programming"
+  ],
+  "mainPoints": [
+    {
+      "point": "Agent Skill is not a protocol-level concept but an application-layer design pattern.",
+      "explanation": "In the OpenAI-compatible protocol, there is no Skill field or role; it is compiled by the client into a combination of System Prompt injection, Tools definition, and multi-turn Tool Calling, fully reusing existing protocol mechanisms."
+    },
+    {
+      "point": "Skill adopts a progressive loading strategy, first injecting a summary and then loading the full content on demand.",
+      "explanation": "Cursor only injects the Skill's name and description into the System Prompt at startup. When the LLM determines it is needed, it reads the complete SKILL.md file via the Read tool call, avoiding wasted tokens."
+    },
+    {
+      "point": "The execution of Skill is essentially a multi-turn Tool Calling loop driven by the LLM's autonomous decisions.",
+      "explanation": "After reading SKILL.md, the LLM autonomously executes pre-checks and core commands using tools like Shell and Read, following the steps in the document. The entire process is driven by the LLM's autonomous decisions."
+    },
+    {
+      "point": "The 'magic' of Skill lies in the wording of the System Prompt and the quality of the SKILL.md file.",
+      "explanation": "The core of this design pattern is a combination of Prompt Engineering and the file system. By providing the LLM with a 'user manual' to follow using existing tools, no protocol extensions are needed."
+    }
+  ],
+  "keyQuotes": [
+    "Skills are a purely application-layer abstraction that is ultimately 'compiled' by Cursor (or similar AI IDEs) into a combination of three protocol primitives.",
+    "Skill = dynamically injected system prompt snippet + predefined tool schema + multi-turn tool calling loop.",
+    "Skill does not exist at the protocol level at all. It is a design pattern of 'writing a user manual for the LLM and letting the LLM follow it using existing tools.'",
+    "The elegance of this design lies in the fact that it fully reuses the existing tool calling mechanism of the OpenAI protocol without requiring any protocol extensions.",
+    "All the 'magic' of Skill happens in the wording of the system prompt and the quality of the SKILL.md file—essentially a combination of prompt engineering and the file system."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695701&idx=1&sn=a8b5dfd8cee58567104bcccc39af6947",
+  "readUrl": "https://www.bestblogs.dev/article/0858ab05",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045410_4d44587a",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_efac5b",
+  "sourceName": "腾讯云开发者",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 131,
+  "wordCount": 4380,
+  "readTime": 18,
+  "mediaDuration": null,
+  "authors": [
+    "腾讯云开发者"
+  ],
+  "publishTimeStamp": 1779929100000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 08:45:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

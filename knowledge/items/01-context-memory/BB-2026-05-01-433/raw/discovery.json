@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "腾讯科技"
+  ],
+  "candidateSource": null,
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_aec5de44",
+  "keyQuotes": [
+    "If you want AIs that can't cooperate to learn how, don't give them a script—give them a market.",
+    "The training process of all current mainstream LLMs, from pre-training to post-training, is formally an MDP, essentially playing a 'one-armed bandit' day in and day out.",
+    "The theoretical upper bound of a planned economy (the optimal allocation achievable by an omniscient central planner) is precisely the equilibrium state a market economy will converge to given enough time.",
+    "A generalist spreads its capabilities thin across all domains, only scratching the surface in each; a specialist bets its entire budget on one direction, taking it to the extreme.",
+    "This is a paradigm shift from 'designing the outcome of cooperation' to 'designing the conditions for cooperation.'"
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Both pre-training and post-training are single-agent optimizations; the model never learns in an environment with 'others,' leading it to automatically enter a zero-sum game mode when deployed in multi-agent settings, with more capable models cooperating worse.",
+      "point": "Current LLMs inherently lack cooperative ability due to their training paradigm (MDP), forming a 'solipsistic' cognitive architecture."
+    },
+    {
+      "explanation": "A central orchestrator cannot fully collect dispersed private knowledge, and orchestration itself consumes compute without generating information gain, performing worse than a single agent under the same budget.",
+      "point": "The Orchestrator-Worker architecture is essentially a 'planned economy,' facing three major dilemmas: the division of labor paradox, credit assignment failure, and the curse of dispersed knowledge."
+    },
+    {
+      "explanation": "'Economy of Minds' proves that an orchestration-free market system outperforms single-agent and orchestrated systems on multiple benchmarks, and theoretically can asymptotically achieve the optimal allocation of an omniscient orchestrator.",
+      "point": "Market mechanisms (auctions + bucket-brigade payments + economic natural selection + novice protection) can replace central orchestration, allowing cooperation to emerge from self-interested behavior."
+    },
+    {
+      "explanation": "Generalists, by spreading their capabilities thin, lose to specialists in every domain and go bankrupt after continuous losses; specialists, by concentrating their entire budget on one area, win auctions consistently, accumulate wealth, and are cloned, forming specialized populations.",
+      "point": "Specialist agents naturally eliminate generalists in the market, forming a specialized division of labor."
+    },
+    {
+      "explanation": "Instead of forcing cooperation through more complex orchestration protocols, design an ecosystem where cooperation is profitable and non-cooperation leads to bankruptcy, allowing cooperative ability to emerge naturally under economic pressure.",
+      "point": "The path forward for multi-agent systems lies in 'designing the conditions for cooperation' rather than 'designing the outcome of cooperation.'"
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Drawing on multiple cutting-edge studies, this article argues that current LLMs inherently lack cooperative ability due to their training paradigm (single-agent MDP), and proposes replacing centralized orchestration with market mechanisms (auctions, bucket-brigade payments, economic natural selection) as an effective path to foster cooperation in multi-agent systems.",
+  "originalTitle": "AI 不会合作？那是因为他们没见过市场经济｜Hao 好聊趋势",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-07 20:21:00",
+  "publishTimeStamp": 1780834860000,
+  "qualified": false,
+  "readCount": 135,
+  "readTime": 31,
+  "readUrl": "https://www.bestblogs.dev/article/aec5de44",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 92,
+  "selectionReason": null,
+  "sourceId": "SOURCE_b475c7",
+  "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+  "sourceName": "腾讯科技",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article revolves around two core questions: 'Why don't AIs cooperate?' and 'How can we make AIs learn to cooperate?' It first cites multiple 2026 studies (UNC, UIUC, Stanford, Google DeepMind) revealing the current state: multi-agent system failure rates range from 41% to 87%, with the root cause being not insufficient model capability, but coordination collapse and convergent reasoning; more capable models (like o3) actually show worse cooperation. The fundamental reason is that current LLM training is essentially a 'single-player game' (MDP), never encountering a true 'other,' resulting in a 'solipsistic' cognitive architecture. Next, the article critiques the prevailing Orchestrator-Worker architecture, likening it to a 'planned economy' and pointing out its three structural dilemmas: the division of labor paradox, credit assignment failure, and Hayek's 'curse of dispersed knowledge.' Finally, it highlights the 'Economy of Minds' paper from Harvard and MIT, which proposes an orchestration-free 'free market' system. Through four mechanisms—auctions, bucket-brigade credit assignment, economic natural selection, and novice protection—agents spontaneously generate cooperation from self-interested behavior. This system significantly outperforms single-agent and orchestrated systems on benchmarks like MATH, HumanEval, and ALFWorld, and theoretically proves that market mechanisms can asymptotically achieve the optimal allocation of an omniscient orchestrator. The article concludes by noting the system's current simplifications and future expansion possibilities, asserting that the path forward for multi-agent systems lies in 'designing the conditions for cooperation' rather than 'designing the outcome of cooperation.'",
+  "tags": [
+    "AI Agent",
+    "Multi-Agent Systems",
+    "LLM",
+    "AI Research",
+    "AI Architecture"
+  ],
+  "title": "AI Can't Cooperate? That's Because They've Never Seen a Market Economy | Hao's Trend Talk",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569024&idx=1&sn=1a73a60848e59c69ffc6c066c314a872",
+  "wordCount": 7696
+}

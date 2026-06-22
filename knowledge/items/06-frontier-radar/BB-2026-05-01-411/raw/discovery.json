@@ -1,0 +1,88 @@
+{
+  "id": "RAW_9ddb98e2",
+  "notExist": null,
+  "originalTitle": "创始人真实复盘：AI 应用创业 300 天，我做过的 10 个关键选择",
+  "title": "Founder's Honest Retrospective: 10 Key Decisions in 300 Days of AI Application Entrepreneurship",
+  "oneSentenceSummary": "This article is a genuine entrepreneurial retrospective by Cheng Mengqi, founder of SophiaPro, detailing 10 key decisions and pitfalls encountered during 300 days of AI application entrepreneurship, from vertical Agent to C-end product.",
+  "summary": "This article is a candid sharing by Cheng Mengqi, founder of SophiaPro, at the Jinqiu Small Table event, providing a complete retrospective of her nearly 300-day journey in AI application entrepreneurship. Using 10 key decisions as a narrative thread, the article recounts the team's trajectory from initially choosing the vertical Agent direction, selecting a marketing scenario, making technical decisions between Agent and Workflow, to ultimately pivoting from ToB to C-end products. The founder openly analyzes the logic behind each decision and subsequent reflections, including choosing Agent over Workflow due to 'technical vanity,' deviating from market needs because of a desire to 'show off,' and the immense engineering challenges faced when building client-side products. The article also shares practical experiences such as transitioning from the browser plugin Clico to the desktop product Invoko, conducting user research via Reddit, and finding the correct ToB business model. Finally, the founder offers personal judgments on trends like OPC, the future of software, and company organization, emphasizing that 'everything that goes into production is 100 times harder than talking about concepts.'",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Entrepreneurship",
+    "Startup Retrospective",
+    "AI Application",
+    "ToB to ToC",
+    "Product Decision"
+  ],
+  "mainPoints": [
+    {
+      "point": "The vertical Agent direction has a structural dilemma: customers don't use the product, forcing startups to become agencies.",
+      "explanation": "The founder's retrospective reveals that most vertical Agent companies face the dilemma of customers not actually using the product and ultimately relying on services for revenue, suggesting it's better to build a general Agent to accumulate user queries."
+    },
+    {
+      "point": "Technical decisions should be based on customer needs, not 'technical vanity.' ToB products should choose Workflow over Agent.",
+      "explanation": "While Agent is advanced, it is unstable; ToB customers require consistent results. Workflow is more suitable for enterprise scenarios in terms of cost, speed, and delivery stability."
+    },
+    {
+      "point": "What C-end users want is not differentiated moats, but the simple experience of being 'easy to use, fast, and right at hand.'",
+      "explanation": "From the success of the browser plugin Clico, the founder learned that shortening the distance between user intent and solution is more important than pursuing technical moats."
+    },
+    {
+      "point": "Although building client-side products is difficult, the moat composed of 15,000 details has alleviated the team's anxiety.",
+      "explanation": "The Invoko client went through 49 versions, adapting to different Mac chip models. This engineering accumulation with 'no shortcuts' has become a core competitive advantage."
+    },
+    {
+      "point": "The correct path for a ToB product is to 'use it well yourself first, then let it spill over to others,' rather than rushing a version in a big leap.",
+      "explanation": "The skills honed by the team during their own use turned out to be better than their previous formal ToB products, because their own needs are the most complete, direct, and used daily."
+    }
+  ],
+  "keyQuotes": [
+    "Most pure application startups shouldn't hire algorithm engineers. You won't need them. Let them go train models. What are you keeping them for? Just to show off your lineup to investors.",
+    "I wasn't making decisions based on market demand; I was making decisions based on 'I need to show off.' Right after getting funding is the peak of a founder's foolishness.",
+    "What C-end users want is simple: easy to use, fast, and right at hand.",
+    "Everything that goes into production is 100 times harder than talking about concepts.",
+    "Software is more like a lawn; the cost of trimming it is higher than the cost of buying the turf in the first place."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650680482&idx=2&sn=52284fb1c1fa431f9e9be493a5479187",
+  "readUrl": "https://www.bestblogs.dev/article/9ddb98e2",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045448_ba57627d",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_b4a806",
+  "sourceName": "白鲸出海",
+  "priority": "LOW",
+  "sourceImage": "https://image.jido.dev/20251127045448_ba57627d",
+  "mainDomain": "Business_Tech",
+  "mainDomainDesc": "Business & Tech",
+  "aiSubCategory": "BT_STARTUP",
+  "aiSubCategoryDesc": "Startups & Ventures",
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 60,
+  "wordCount": 6953,
+  "readTime": 28,
+  "mediaDuration": null,
+  "authors": [
+    "白鲸出海"
+  ],
+  "publishTimeStamp": 1779802200000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 21:30:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

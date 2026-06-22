@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Hacker News"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://algorithmichiring.github.io/figures/fig1_pipeline.png",
+  "domain": "algorithmichiring.github.io",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_8dd9f7a1",
+  "keyQuotes": [
+    "We are the first to demonstrate large-scale evidence of racial disparities and homogeneous outcomes in high-stakes hiring decisions.",
+    "The observed systemic rejection rate significantly exceeds that of the baseline of statistically independent decisions.",
+    "Issues will be difficult to diagnose, let alone rectify, without the foundation of empirically-grounded externally-conducted inquiry."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "When multiple employers use the same vendor's algorithm, applicants rejected by one are likely rejected by all, creating homogeneous outcomes. The observed systemic rejection rate is statistically significant compared to the baseline of independent decisions.",
+      "point": "Algorithmic monocultures in hiring cause systemic rejections at rates exceeding independent decisions."
+    },
+    {
+      "explanation": "Aggregate analyses mask adverse impact. When evaluated per position as required by Title VII, 25.87% of Black and 14.74% of Asian applicants' applications are directed to positions with adverse impact.",
+      "point": "Racial disparities against Asian and Black applicants are revealed only through position-level analysis."
+    },
+    {
+      "explanation": "Despite pervasive adoption affecting millions, the authors are the first and only independent group to conduct empirical research at scale, suggesting policy intervention is necessary for accountability.",
+      "point": "Data access barriers prevent independent research into high-stakes hiring algorithms."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This study analyzes 3.4 million real job applicants to demonstrate that algorithmic monocultures in hiring—where many employers use the same vendor's AI—cause systemic rejections and previously overlooked racial disparities against Asian and Black applicants.",
+  "originalTitle": "Algorithmic Monocultures in Hiring",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-08 09:54:54",
+  "publishTimeStamp": 1780883694000,
+  "qualified": false,
+  "readCount": 50,
+  "readTime": 5,
+  "readUrl": "https://www.bestblogs.dev/article/8dd9f7a1",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This paper presents the largest empirical study of algorithmic hiring to date, analyzing data from 3.4 million real applicants submitting 4 million applications to 156 employers across 11 sectors, all assessed by algorithms from a single vendor. The study introduces and validates the concept of 'algorithmic monoculture' in hiring, demonstrating two key findings. First, it reveals large-scale adverse impact against Asian and Black applicants when analyzed at the individual position level, as required by U.S. employment law (Title VII), which is masked in aggregate analyses. Second, it provides the first empirical evidence of systemic rejections in deployed hiring algorithms, where applicants are rejected across all positions at a rate significantly exceeding what would be expected from statistically independent decisions. The authors contextualize their findings by showing that the baseline of independent decisions accurately predicts rejection rates in other hiring data without centralized algorithmic assessment. Policy recommendations include measuring adverse impact per position, strengthening market surveillance, monitoring algorithmic monoculture, and expanding researcher access to hiring platform data.",
+  "tags": [
+    "AI Ethics",
+    "Algorithmic Bias",
+    "Fairness",
+    "AI Regulation",
+    "AI Safety & Alignment"
+  ],
+  "title": "Algorithmic Monocultures in Hiring",
+  "translateContent": null,
+  "url": "https://algorithmichiring.github.io/",
+  "wordCount": 1083
+}

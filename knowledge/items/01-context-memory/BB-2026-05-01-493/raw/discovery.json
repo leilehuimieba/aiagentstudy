@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "Datawhale"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045505_b03e263f",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_d49e90af",
+  "keyQuotes": [
+    "An AI Agent is a system centered around a large model that can call tools, receive feedback, and continuously complete tasks.",
+    "Scaffolding manages \"how to think,\" while Harness manages \"how to run.\"",
+    "A Tool is more like an Agent's 'hand,' a Skill is more like an Agent's 'routine,' and a Sub-agent is another Agent that can think for itself, call its own tools, and independently handle subtasks."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "An Agent is centered around a large model but also requires external components like tool invocation, execution loops, and feedback mechanisms to continuously complete tasks, fundamentally differing from the \"one question, one answer\" nature of ordinary chat models.",
+      "point": "An AI Agent is a system, not a model."
+    },
+    {
+      "explanation": "Scaffolding handles the Agent's reasoning and decision-making logic (e.g., chain of thought, task decomposition), while Harness manages the execution environment and tool invocation (e.g., routing APIs, managing context). Together, they form the Agent's operational framework.",
+      "point": "Scaffolding manages \"how to think,\" while Harness manages \"how to run.\""
+    },
+    {
+      "explanation": "Context Engineering determines what information the model sees at each step (system prompts, tool descriptions, history, etc.), while Policy defines how the model chooses actions based on this information. Both jointly influence the quality of the Agent's decisions.",
+      "point": "Context Engineering and Policy manage input and behavior respectively."
+    },
+    {
+      "explanation": "A Tool is a single action (e.g., calling an API), a Skill is a reusable method oriented towards a goal (e.g., debugging), and a Sub-agent is a complete Agent capable of independently completing a subtask. These three levels are progressive and should not be conflated.",
+      "point": "Tool, Skill, and Sub-agent correspond to different levels of abstraction."
+    },
+    {
+      "explanation": "The Agent executes a complete task in the environment (Rollout), receives Reward feedback based on the outcome, and the Trainer uses large amounts of Rollout-Reward data to update the model, allowing the Agent to continuously optimize its strategy through trial and error.",
+      "point": "Training an Agent requires a closed loop of Environment, Rollout, Reward, and Trainer."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Based on Hugging Face's official glossary, this article systematically outlines the core concepts of AI Agents, clearly distinguishing easily confused terms like Model, Tool, Skill, Sub-agent, Scaffolding, and Harness, helping readers build a comprehensive understanding of Agent systems.",
+  "originalTitle": "一篇文章讲清楚 AI Agent 的核心概念：从 Model、Tool、Skill 到 Harness 工程",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-02",
+  "publishDateTimeStr": "2026-06-02 23:09:00",
+  "publishTimeStamp": 1780412940000,
+  "qualified": false,
+  "readCount": 259,
+  "readTime": 10,
+  "readUrl": "https://www.bestblogs.dev/article/d49e90af",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4688eb",
+  "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+  "sourceName": "Datawhale",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Using Hugging Face's AI Agent glossary as a blueprint, the article starts from the core insight — \"An Agent is not a model, but a system centered around a large model that can call tools, receive feedback, and continuously complete tasks\" — and progressively breaks down key concepts in the Agent ecosystem. It first clarifies the relationship between Model and Agent: the Model is core but not everything; an Agent needs Scaffolding (managing \"how to think\") and Harness (managing \"how to run\") to drive the execution loop. It then delves into the distinction between Context Engineering (managing the information the model sees at each step) and Policy (defining behavioral patterns), as well as the hierarchical differences among Tool (specific actions), Skill (reusable methods), and Sub-agent (independent sub-task Agent). Finally, it covers training-stage concepts like Environment, Rollout, Reward, and Trainer, completing the full-chain terminology system from building and deploying to training Agents. The article is clearly structured with apt analogies, suitable for readers seeking a systematic understanding of Agent concepts.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Tool Use",
+    "Agent Framework",
+    "Hugging Face"
+  ],
+  "title": "One Article to Understand the Core Concepts of AI Agents: From Model, Tool, Skill to Harness Engineering",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723203&idx=1&sn=15c5e4f2052664f4557d26278ab68067",
+  "wordCount": 2490
+}

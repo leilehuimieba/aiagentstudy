@@ -1,0 +1,68 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-12",
+  "id": "BB-2026-05-01-173",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-173/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-173",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-173/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-173/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-173/raw/display-document.html",
+      "knowledge/items/01-context-memory/BB-2026-05-01-173/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-173/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-173/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Google Developers Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Google Developers Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Agent Development Kit",
+    "Long-running Agents",
+    "State Machine",
+    "Persistent Sessions",
+    "Event-driven Architecture"
+  ],
+  "title": "Build Long-running AI agents that pause， resume， and never lose context with ADK",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://adk.dev/",
+      "https://cloud.google.com/run?e=48754805",
+      "https://github.com/GoogleCloudPlatform/generative-ai/tree/main/agents/adk/new-hire-onboarding",
+      "https://github.com/google/agents-cli",
+      "https://google.github.io/agents-cli/",
+      "https://www.bestblogs.dev/en/article/7be5372c"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://adk.dev/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/7be5372c"
+  }
+}

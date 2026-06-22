@@ -2,12 +2,12 @@
 
 ## Article
 
-- Title: DeepSeek-V4 ???????????????
+- Title: DeepSeek-V4 预览版：迈入百万上下文普惠时代
 - Source: BestBlogs / DeepSeek
 - URL: https://www.bestblogs.dev/article/95d5e07c
 - Date: 2026-04-24
 - Topic: `06-frontier-radar`
-- Tags: DeepSeek-V4, ?????, ?????, ????, Agent
+- Tags: DeepSeek-V4, long context, open-source model, agentic coding, frontier model
 
 ## Model Mapping
 

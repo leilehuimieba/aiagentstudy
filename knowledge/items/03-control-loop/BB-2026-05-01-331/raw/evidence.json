@@ -1,0 +1,144 @@
+{
+  "entry_id": "BB-2026-05-01-331",
+  "created": "2026-05-26T17:00:00+08:00",
+  "type": "synthesis_analysis",
+  "depends_on": [
+    "BB-2026-05-01-325",
+    "BB-2026-05-01-326",
+    "BB-2026-05-01-327",
+    "BB-2026-05-01-328",
+    "BB-2026-05-01-329",
+    "BB-2026-05-01-330"
+  ],
+  "evidence": [
+    {
+      "type": "synthesis",
+      "description": "7 Design Principles distilled from all knowledge base materials + claw-code source",
+      "principles": [
+        {
+          "id": 1,
+          "name": "Engineered ReAct Control Loop",
+          "source": "claw-code conversation.rs:run_turn()",
+          "key_evidence": "AssistantEvent enum, auto-compaction trigger, pre/post hook chain, usage tracking integrated per turn",
+          "flaghunter_status": "partial — has basic loop but no event model, no hooks, no auto compact"
+        },
+        {
+          "id": 2,
+          "name": "Unified Tool Contract",
+          "source": "claw-code tools/lib.rs:ToolSpec + execute_tool_with_enforcer()",
+          "key_evidence": "required_permission field on ToolSpec, single dispatch entry point, dynamic permission classification",
+          "flaghunter_status": "partial — has Tool registry but no permission field, dual execution paths"
+        },
+        {
+          "id": 3,
+          "name": "Permission as Hard Gate",
+          "source": "claw-code permission_enforcer.rs",
+          "key_evidence": "Ordered PermissionMode (ReadOnly < WorkspaceWrite < DangerFullAccess), check_bash() with readonly whitelist, check_file_write() with workspace boundary",
+          "flaghunter_status": "missing — no PermissionEnforcer exists"
+        },
+        {
+          "id": 4,
+          "name": "Subagent as First-Class Citizen",
+          "source": "claw-code tools/lib.rs:execute_agent() + allowed_tools_for_subagent()",
+          "key_evidence": "Independent ConversationRuntime per subagent, type-based tool allowlists (Explore/Plan/Verification/General), manifest file persistence, background thread execution",
+          "flaghunter_status": "missing — no Agent tool, no subagent runtime"
+        },
+        {
+          "id": 5,
+          "name": "Externalized Memory Artifact System",
+          "source": "Official CLI docs + CLAUDE.md system + Hello-Agents memory model",
+          "key_evidence": "CLAUDE.md (project memory), skills/plugins (behavioral memory), todo/task state (episodic memory), compact summaries (procedural memory), session state (working memory)",
+          "flaghunter_status": "partial — has notes + ConversationMemory summary, no CLAUDE.md or session persistence"
+        },
+        {
+          "id": 6,
+          "name": "GSSC Context Assembly Pipeline",
+          "source": "Hello-Agents (BB-326) + Claude Code system prompt structure",
+          "key_evidence": "Gather→Select→Structure→Compress pipeline, auto-compaction at 100K token threshold, per-turn reassembly",
+          "flaghunter_status": "partial — has RAG + notes injection but lacks unified pipeline"
+        },
+        {
+          "id": 7,
+          "name": "Evolvable Capability Ecosystem",
+          "source": "Official plugin marketplace + MCP protocol + skills/commands/agents/hooks",
+          "key_evidence": "Plugin marketplace, layered capability exposure, MCP as protocol extension mechanism",
+          "flaghunter_status": "partial — has MCP server exposure, no MCP client bridge or plugin system"
+        }
+      ]
+    },
+    {
+      "type": "gap_assessment",
+      "description": "FlagHunter vs 7 principles gap table",
+      "findings": [
+        {"principle": 1, "status": "medium_gap", "detail": "Basic ReAct loop exists; missing event model, hooks, auto compact"},
+        {"principle": 2, "status": "medium_gap", "detail": "Tool registry exists; missing permission field, dual execution paths"},
+        {"principle": 3, "status": "critical_gap", "detail": "No PermissionEnforcer, no permission modes, bash/terminal unrestricted"},
+        {"principle": 4, "status": "critical_gap", "detail": "No Agent tool, no subagent runtime, no task decomposition ability"},
+        {"principle": 5, "status": "medium_gap", "detail": "Has notes + summarization; missing CLAUDE.md, session persistence"},
+        {"principle": 6, "status": "minor_gap", "detail": "Has scattered components; missing unified assembly pipeline"},
+        {"principle": 7, "status": "medium_gap", "detail": "Has MCP server exposure; missing MCP client bridge, plugin system"}
+      ]
+    },
+    {
+      "type": "improvement_plan",
+      "description": "4-Phase implementation roadmap with code sketches",
+      "phases": [
+        {
+          "phase": 1,
+          "name": "Establish Control Surface",
+          "modules": ["PermissionEnforcer", "unified tool execution path"],
+          "estimated_days": "2-3",
+          "new_files": ["pentestagent/runtime/permission_enforcer.py"],
+          "changed_files": ["base_agent.py", "tools/registry.py", "tools/terminal/"],
+          "verification": "ReadOnly blocks writes, WorkspaceWrite blocks external paths, readonly bash whitelist works"
+        },
+        {
+          "phase": 2,
+          "name": "Build Intelligence",
+          "modules": ["SubagentRunner", "Agent tool", "thinking/action separation", "ToolSearch"],
+          "estimated_days": "5-7",
+          "new_files": ["pentestagent/agents/subagent.py", "pentestagent/tools/agent/", "pentestagent/tools/tool_search/"],
+          "changed_files": ["base_agent.py (thinking/action split)"],
+          "verification": "Agent can spawn Explore subagent, subagent respects tool allowlist, ToolSearch returns relevant tools",
+          "key_decisions": [
+            "Subagent reuses parent LLM instance with independent ConversationMemory",
+            "Declarative tool allowlists per subagent_type",
+            "LLM autonomously decides when to spawn subagent (Agent tool in tool list)"
+          ]
+        },
+        {
+          "phase": 3,
+          "name": "Enable Long-Running Capability",
+          "modules": ["TaskRegistry", "ProjectMemory (CLAUDE.md)", "ContextAssembler", "SessionPersistence"],
+          "estimated_days": "5-7",
+          "new_files": ["pentestagent/runtime/task_registry.py", "pentestagent/config/project_memory.py", "pentestagent/llm/context_assembler.py", "pentestagent/runtime/session_persistence.py"],
+          "changed_files": ["base_agent.py (task registration)", "llm/memory.py"],
+          "verification": "Tasks trackable, sessions resumable, CLAUDE.md injected"
+        },
+        {
+          "phase": 4,
+          "name": "Build Evolvable Ecosystem",
+          "modules": ["MCP Client Bridge", "Hook System", "Observability"],
+          "estimated_days": "5-7",
+          "new_files": ["pentestagent/runtime/hooks.py"],
+          "changed_files": ["mcp/ (client expansion)", "interface/ (observability UI)"],
+          "verification": "External MCP tools consumable, hooks fire on tool use, turn-level traces visible"
+        }
+      ]
+    },
+    {
+      "type": "cognitive_shift",
+      "description": "The fundamental shift from executor to decision-maker",
+      "current_model": "plan-driven executor: user_task → force_plan → execute_steps → mark_done → exit",
+      "target_model": "goal-driven decision-maker: user_goal → understand → decide(explore|plan|verify|search|execute) → self-verify → exit",
+      "enablers": [
+        "Permission gate allows autonomous action within safety bounds",
+        "Subagent system enables task decomposition",
+        "ToolSearch enables capability discovery",
+        "Thinking/action separation enables observable reasoning"
+      ]
+    }
+  ],
+  "total_estimated_days": "17-24",
+  "iterative_delivery": true
+}

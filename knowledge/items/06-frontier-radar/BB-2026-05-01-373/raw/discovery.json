@@ -1,0 +1,83 @@
+{
+  "id": "RAW_1a4247e6",
+  "notExist": null,
+  "originalTitle": "将 DSA 注意力引入多模态，快手 Keye2.0 开启强化推理新范式",
+  "title": "Introducing DSA Attention to Multimodal Models: Kuaishou Keye 2.0 Opens a New Paradigm for Enhanced Reasoning",
+  "oneSentenceSummary": "Kuaishou has released the Keye-VL-2.0-30B-A3B multimodal large language model, which for the first time introduces the DSA sparse attention mechanism to the multimodal domain. It achieves lossless inference with a 256K ultra-long context and unlocks Agent collaboration capabilities, reaching SOTA performance among models of its size on tasks such as long video temporal understanding, code generation, and tool invocation.",
+  "summary": "This article is an official technical blog post from the Kuaishou AI team, detailing the core technological breakthroughs of their latest multimodal large language model, Keye-VL-2.0-30B-A3B. It first identifies the pain points of long video understanding: the computational bottleneck and information dilution caused by ultra-long visual contexts. Keye-VL-2.0 addresses this by being the first to apply the DeepSeek Sparse Attention (DSA) architecture in a multimodal setting, combining sparse attention with feature aggregation. This enables deep perception of a 256K ultra-long context, achieving results on video understanding benchmarks like TimeLens and LongVideoBench that surpass closed-source models like Gemini and comparable open-source models. Secondly, the model natively incorporates an Agent collaboration mechanism, demonstrating system-level execution potential in scenarios like Code Agent and Tool Agent. It overcomes catastrophic forgetting in multi-task learning through the innovative MOPD multi-expert policy distillation technique, leading to a comprehensive surge in general capabilities. Finally, the article introduces the Context-RL reward mechanism and a rigorous data engine used in the post-training phase to ensure inference reliability, and discusses the model's potential applications in real-world business scenarios such as Kuaishou's recommendation system and video material production.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Keye-VL-2.0",
+    "Kuaishou",
+    "Multimodal Large Language Model",
+    "DSA",
+    "Sparse Attention"
+  ],
+  "mainPoints": [
+    {
+      "point": "First to introduce the DSA sparse attention mechanism to the multimodal domain, breaking the bottleneck of long video understanding.",
+      "explanation": "Keye-VL-2.0 applies DeepSeek Sparse Attention, combining sparse attention with feature aggregation. When processing hour-long videos, it effectively purifies information, enabling lossless inference over a 256K ultra-long context. It surpasses closed-source models like Gemini on benchmarks such as TimeLens."
+    },
+    {
+      "point": "Built-in Agent collaboration mechanism, enabling a full perception-planning-execution pipeline.",
+      "explanation": "The model natively unlocks Agent capabilities, demonstrating multi-step task decomposition and automated scheduling potential in scenarios like Code Agent (SWE-bench 62.00) and Tool Agent (TAU2-Bench 82.58), moving towards solving real-world complex tasks."
+    },
+    {
+      "point": "Innovative MOPD multi-expert policy distillation technique overcomes catastrophic forgetting.",
+      "explanation": "Through the cross-modal MOPD technique, it integrates expert models from various vertical domains. It also introduces a novel bucketed advantage scaling method that strengthens core reasoning signals while ensuring multi-task fusion does not compromise the general base model's capabilities, achieving a comprehensive explosion of capabilities across all dimensions."
+    },
+    {
+      "point": "Introduces the Context-RL reward mechanism to build inference reliability.",
+      "explanation": "The post-training phase employs a Context-RL mechanism, using mixed-modal reference information to construct dense, fine-grained reward signals. This enables factuality supervision at a hyper-geometric distribution level, effectively suppressing hallucinations and ensuring the stability of long-range reasoning."
+    }
+  ],
+  "keyQuotes": [
+    "Kuaishou Keye-VL-2.0-30B-A3B is the first to introduce the DSA (DeepSeek Sparse Attention) mechanism into multimodal understanding scenarios, successfully unlocking deep perception of a 256K ultra-long context and achieving nearly lossless inference capabilities in long video temporal perception.",
+    "True long video understanding is a comprehensive insight into complex plot twists, spatial jumps, and emotional undercurrents.",
+    "Benchmark scores are not the endgame; real-world deployment is.",
+    "The model not only sees the images but also comprehends the causality behind them."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500530&idx=1&sn=246a6c7439b7dfd5d31dccd574cd22ff",
+  "readUrl": "https://www.bestblogs.dev/article/1a4247e6",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045456_510118ec",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_d7d427",
+  "sourceName": "快手技术",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045456_510118ec",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "MODELS",
+  "aiSubCategoryDesc": "AI Models",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 46,
+  "wordCount": 7366,
+  "readTime": 30,
+  "mediaDuration": null,
+  "authors": [
+    "快手技术"
+  ],
+  "publishTimeStamp": 1779791820000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 18:37:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

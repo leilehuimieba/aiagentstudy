@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-05",
+  "id": "BB-2026-05-01-451",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-451/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-451",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-451/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-451/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-451/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-451/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-451/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-451/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Claude Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Claude Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "Developer Tools",
+    "AI Agent",
+    "Prompt Engineering"
+  ],
+  "title": "From account executive to product manager: how one Anthropic seller rebuilt his team's workflows with Claude Code / Claude",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://claude.com/blog/how-anthropic-uses-claude-gtm-engineering",
+      "https://www.bestblogs.dev/article/8af798c7"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://claude.com/blog/how-anthropic-uses-claude-gtm-engineering",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/8af798c7"
+  }
+}

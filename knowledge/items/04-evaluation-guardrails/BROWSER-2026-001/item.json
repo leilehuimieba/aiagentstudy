@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Source Signal"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "browser_readable",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "qmvqcrb8",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-06-09",
+  "id": "BROWSER-2026-001",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-001/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-001",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-001/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BROWSER-2026-001/raw/opencli-result.json",
+      "knowledge/items/04-evaluation-guardrails/BROWSER-2026-001/raw/page-state.json",
+      "knowledge/items/04-evaluation-guardrails/BROWSER-2026-001/raw/page-text.txt"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-001/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-001/summary.md"
+  },
+  "schema_version": 1,
+  "source": "Browser / OpenAI News",
+  "source_id": "openai-news",
+  "source_name": "OpenAI News",
+  "status": "Browser snapshot captured",
+  "tags": [
+    "OpenAI News",
+    "Browser Snapshot",
+    "OpenAI"
+  ],
+  "title": "OpenAI News browser snapshot - 2026-06-09",
+  "topic": "04-evaluation-guardrails",
+  "type": "browser_snapshot",
+  "urls": {
+    "all_source_urls": [
+      "https://openai.com/news/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://openai.com/news/",
+    "pdf_url": "",
+    "requested_url": "https://openai.com/news/",
+    "source_url": "https://openai.com/news/"
+  }
+}

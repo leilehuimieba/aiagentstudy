@@ -1,0 +1,178 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T98d911c6637b4d35bca61a824f82a1a7",
+  "data": {
+    "metaData": {
+      "id": "RAW_641f805f",
+      "notExist": null,
+      "originalTitle": "2026 年了，AI Agent 为什么还是“Demo 很惊艳，上线就翻车”？",
+      "title": "Why AI Agents Still Fail in Production in 2026: Great Demos, Terrible Deployments",
+      "oneSentenceSummary": "This article delves into the five core contradictions behind why AI Agent products perform poorly after deployment despite impressive demos, identifying the root cause as the vast gap between sterile test environments and the real world, and proposes systematic solutions ranging from evaluation frameworks to expectation management.",
+      "summary": "The article points out that from 2024 to 2026, AI Agent products have repeatedly fallen into the cycle of \"impressive demos, failed deployments.\" The root cause is not simply insufficient model capability, but a convergence of multiple systemic contradictions. The author analyzes five dimensions: First, demos run in carefully curated \"sterile environments,\" avoiding real-world noise and complexity. Second, evaluation systems are driven by \"average scores,\" but user experience depends on the \"worst moment\" — one major failure can destroy user trust. Third, Agent capabilities are \"chain-like,\" while evaluations are often \"node-based,\" leading to cumulative error rates across multi-step chains far exceeding single-node performance. Fourth, there is a gap between model \"capability\" and product \"product readiness,\" where the latter requires engineering design for input fault tolerance, edge case handling, and failure recovery. Fifth, the viral spread of demos inflates user expectations, causing the gap between the \"average experience\" and the \"ceiling experience\" to be perceived as a failure. Finally, the article proposes specific recommendations, including shifting from \"average score-driven\" to \"worst-case-driven\" evaluation, introducing \"chain evaluation,\" strengthening productization design, and proactively managing expectations.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "AI Agent",
+        "Productization",
+        "Evaluation Framework",
+        "User Experience",
+        "Engineering Practice"
+      ],
+      "mainPoints": [
+        {
+          "point": "Demos run in \"sterile environments,\" avoiding the complexity and noise of the real world.",
+          "explanation": "Demo inputs, web pages, and interaction paths are carefully selected and rehearsed, while real user inputs are full of typos, complex page structures, ad interference, etc. These \"noises\" are bypassed rather than solved in demos, leading to a cliff-like drop in performance after deployment."
+        },
+        {
+          "point": "There is a fundamental misalignment between evaluation \"average scores\" and user experience \"worst moments.\"",
+          "explanation": "User trust in AI Agents is fragile — one egregious error can reset the trust built up over many previous successes. Current evaluation systems focus on average performance, but what truly determines user retention is how bad the worst case is, not how high the average score is."
+        },
+        {
+          "point": "The \"chain-like\" execution capability of Agents does not match the \"node-based\" evaluation logic.",
+          "explanation": "Completing a task requires a multi-step chain. When the success rate of each step is multiplied, the overall success rate drops significantly. Evaluations often only focus on single-node capabilities, ignoring the dependencies between nodes and the risk of cumulative errors, leading to smooth demos but frequent failures in actual use."
+        },
+        {
+          "point": "There is a huge gap between model \"capability\" and product \"product readiness.\"",
+          "explanation": "Models can produce good results under ideal inputs, but product readiness requires engineering and design to address input fault tolerance, edge case handling, and failure recovery. Many teams prioritize models over productization, which is a major reason for deployment failures."
+        },
+        {
+          "point": "Demos inflate user expectations, causing the gap between the \"ceiling\" and the \"average experience\" to be perceived as a failure.",
+          "explanation": "Demo virality raises user expectations to the ceiling level, while the actual experience is at the average level. This gap is amplified in user perception as a \"failure.\" Effective expectation management, such as publishing \"capability boundary descriptions,\" is key to narrowing this gap."
+        }
+      ],
+      "keyQuotes": [
+        "The persuasiveness of a demo comes precisely from its avoidance of real-world complexity. It shows you \"what an Agent can do under ideal conditions,\" not \"what an Agent will encounter in actual use.\"",
+        "User trust in an Agent is the \"most fragile equilibrium\" — do ten things right, and trust slowly accumulates; mess up once, and trust vanishes instantly.",
+        "Agent capabilities are \"chain-like,\" but our evaluations are often \"node-based.\"",
+        "Capability can be improved through model training, but product readiness requires engineering design and product strategy to fill the gaps.",
+        "The gap from the ceiling to the average level is perceived by users as a \"failure.\""
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651927178&idx=3&sn=a9dda91afa6233d8494c78aa3be74daa",
+      "readUrl": "https://www.bestblogs.dev/article/641f805f",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045330_365315b9",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_f66e7f",
+      "sourceName": "人人都是产品经理",
+      "priority": "MEDIUM",
+      "sourceImage": "https://image.jido.dev/20251127045330_365315b9",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Product_Development",
+      "categoryDesc": "Product & Design",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 89,
+      "readCount": 70,
+      "wordCount": 3448,
+      "readTime": 14,
+      "mediaDuration": null,
+      "authors": [
+        "人人都是产品经理"
+      ],
+      "publishTimeStamp": 1778543100000,
+      "publishDateStr": "05-11",
+      "publishDateTimeStr": "2026-05-11 23:45:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_93462cd7",
+        "type": "ARTICLE",
+        "title": "Harness Is Not the Goal, Knowledge Is the Moat — Knowledge Accumulation Practices of an AI Engineering Delivery Team",
+        "oneSentenceSummary": "Based on the engineering delivery practices of an AI Team, this article proposes that knowledge accumulation is more important than workflow orchestration, and systematically introduces a complete methodology encompassing a five-layer knowledge storage architecture, a three-level maturity system, and how workflows serve knowledge accumulation.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801437&idx=1&sn=c5e13bae6cc04ef21f1ef819128e50e9",
+        "sourceName": "腾讯技术工程"
+      },
+      {
+        "id": "RAW_83fa2a78",
+        "type": "ARTICLE",
+        "title": "Investing 10,000 RMB in AI: A Year of Tools, Practices, and Reflections",
+        "oneSentenceSummary": "A systematic summary of a veteran developer's practical experience in the AI wave, covering everything from MAC toolchain optimization and Harness Engineering architectural constraints to building an Agent-driven automated learning loop.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695194&idx=1&sn=030591ea76020210c5f06692fb30243f",
+        "sourceName": "腾讯云开发者"
+      },
+      {
+        "id": "RAW_04cd0782",
+        "type": "ARTICLE",
+        "title": "Why AI Product Managers Must Master Harness Engineering in 2026",
+        "oneSentenceSummary": "This article proposes that AI Product Managers should shift from fragile 'Vibe Coding' to 'Harness Engineering,' achieving industrial-grade delivery of AI applications by building system environments that include hard constraints, automated validation, and feedback loops.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651925800&idx=4&sn=92a452c8a46a401bc4785db109b2d655",
+        "sourceName": "人人都是产品经理"
+      },
+      {
+        "id": "RAW_2adc9c3e",
+        "type": "ARTICLE",
+        "title": "Understanding Hermes in One Article: How the New Top-Tier Agent Self-Evolves from Experience",
+        "oneSentenceSummary": "This article provides an in-depth analysis of the core innovation of the Hermes Agent—the Skills closed-loop system—detailing its complete implementation mechanism, from experience extraction and knowledge storage to intelligent retrieval and self-improvement, along with its engineering trade-offs and security considerations.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695259&idx=1&sn=30ef327bcbbb3e349abd812da627c5f2",
+        "sourceName": "腾讯云开发者"
+      },
+      {
+        "id": "RAW_86a46793",
+        "type": "ARTICLE",
+        "title": "The Art of Boss Bluffing in the AI Era",
+        "oneSentenceSummary": "Using the viral success of OpenClaw as a starting point, this article reveals the top-down collective 'bluffing' phenomenon in the workplace under the AI wave, dissects three survival strategies employees use to cope with their bosses' AI anxiety, and analyzes the absurd logic collectively woven by capital, bosses, and employees.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651926370&idx=1&sn=2bde8883588bb06adfce5d20713249c9",
+        "sourceName": "人人都是产品经理"
+      },
+      {
+        "id": "RAW_40968ca9",
+        "type": "ARTICLE",
+        "title": "I Built My First Product with AI: A Full Walkthrough and Lessons Learned",
+        "oneSentenceSummary": "This article details the author's complete journey of independently developing an AI video generation website using AI tools like Cursor and Claude Code, based on an open-source template, sharing full-cycle experience from requirements analysis and tech selection to deployment and pitfalls.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651927038&idx=3&sn=a7fd16b86c1f7feab195e9035621874b",
+        "sourceName": "人人都是产品经理"
+      },
+      {
+        "id": "RAW_7cbe58fb",
+        "type": "ARTICLE",
+        "title": "Five Levels of AI Emergent Abilities — A Record from an AI Trainer",
+        "oneSentenceSummary": "Based on the training practice of a web summary Agent, this article systematically divides the emergent abilities of AI models into five levels: critical point emergence, combinatorial emergence, strategic emergence, intentional emergence, and reflective emergence, and proposes corresponding evaluation strategies and annotation optimization suggestions for each level.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651926579&idx=3&sn=e120046f07d98d594afe31b8e8657b5d",
+        "sourceName": "人人都是产品经理"
+      },
+      {
+        "id": "RAW_d78a41a5",
+        "type": "ARTICLE",
+        "title": "Mind-blowing Tech, No Paying Users: Three Illusions of 'Tech-Driven Entrepreneurs' in the AI Era",
+        "oneSentenceSummary": "This article provides a deep analysis of three cognitive misconceptions where AI entrepreneurs over-rely on technical stacking while ignoring real user pain points, emphasizing that AI products should start with strong pain points and single scenarios.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651925094&idx=3&sn=0810473a28355af50e64952dcc7928e4",
+        "sourceName": "人人都是产品经理"
+      },
+      {
+        "id": "RAW_6f17468b",
+        "type": "ARTICLE",
+        "title": "GPT-5.4 Released: OpenAI's First Unified Model, Truly Native",
+        "oneSentenceSummary": "OpenAI releases GPT-5.4, creating the first unified Agent model that supports native Computer Use by integrating reasoning, coding, and computer interaction.",
+        "url": "https://www.qbitai.com/2026/03/384345.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_5c79977a",
+        "type": "ARTICLE",
+        "title": "What You Don't Know About Claude Code: Architecture, Governance, and Engineering Practices - Tw93",
+        "oneSentenceSummary": "This article provides an in-depth analysis of Claude Code's six-layer architecture and engineering practices, proposing a systematic Agent development methodology from context governance and skill design to a verification loop.",
+        "url": "https://tw93.fun/2026-03-12/claude.html",
+        "sourceName": "Tw93 Blog"
+      }
+    ]
+  }
+}

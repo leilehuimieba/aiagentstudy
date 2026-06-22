@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Tcda46a4cf94945ae88581aba031368ae",
+  "data": {
+    "metaData": {
+      "id": "RAW_e8c4364d",
+      "notExist": null,
+      "originalTitle": "Agent view in Claude Code | Claude",
+      "title": "Agent view in Claude Code | Claude",
+      "oneSentenceSummary": "Claude Code introduces agent view, a CLI-based interface for managing multiple concurrent coding sessions, allowing users to background agents, peek at responses, and steer parallel tasks from a single view.",
+      "summary": "This article from the official Claude Blog announces the launch of agent view in Claude Code, a new feature designed to streamline the management of multiple parallel coding sessions. It addresses the pain point of juggling multiple terminal tabs and tmux grids by providing a unified CLI interface. Key capabilities include launching new agents, sending them to the background, and receiving notifications only when human input is needed. The interface provides an at-a-glance overview of agent status (waiting, working, done). Users can peek at the last turn of a session and reply inline without fully attaching. The article also highlights early user patterns, such as scaling concurrent sessions, managing long-running agents, and navigating between separate tasks. Agent view is available as a Research Preview for Pro, Max, Team, Enterprise, and API users.",
+      "featuredReason": "Claude Code finally stops being a circus act for parallel sessions. Agent View brings every session into one CLI dashboard — who needs your input, who's still working, who's already shipping PRs. Launch directly to background with `claude --bg [task]`, hit the left arrow to return to the overview, use `/bg` to push any foreground session back. It's the key step toward managing a dozen agents at once and sets the interaction baseline for multi-agent collaboration.",
+      "translateContent": null,
+      "tags": [
+        "Claude Code",
+        "Agent View",
+        "AI Coding",
+        "CLI",
+        "Developer Tools"
+      ],
+      "mainPoints": [
+        {
+          "point": "Agent view provides a single CLI interface to manage all Claude Code sessions.",
+          "explanation": "It replaces the need for multiple terminal tabs or tmux grids by showing all active, waiting, and completed agents in one list, improving oversight and navigation."
+        },
+        {
+          "point": "Users can background agents and interact with them asynchronously.",
+          "explanation": "The `/bg` command or `claude --bg` flag allows launching tasks that run in the background, with users only needing to jump in when an agent requires a decision."
+        },
+        {
+          "point": "The feature enables scaling concurrent coding tasks and managing long-running processes.",
+          "explanation": "Early users are dispatching multiple ideas simultaneously, managing PR babysitters and dashboard updaters, and easily navigating between separate sessions for quick questions."
+        }
+      ],
+      "keyQuotes": [
+        "With agent view in Claude Code, you can kick off new agents, send them to the background, and jump in only when Claude needs you.",
+        "See at a glance which agents are waiting on you, which are still working, and which are done, so you can easily steer many all at once.",
+        "Dispatch several ideas at once, each optionally paired with a skill, and return to a list of pull requests ready for review."
+      ],
+      "url": "https://claude.com/blog/agent-view-in-claude-code",
+      "readUrl": "https://www.bestblogs.dev/article/e8c4364d",
+      "enclosureUrl": null,
+      "domain": "claude.com",
+      "cover": "https://image.jido.dev/20260416004451_68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_154bc38a",
+      "sourceName": "Claude Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/689f4a9aff1f63fde75cf733_favicon.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 93,
+      "readCount": 787,
+      "wordCount": 398,
+      "readTime": 2,
+      "mediaDuration": null,
+      "authors": [
+        "Claude Blog"
+      ],
+      "publishTimeStamp": 1778428800000,
+      "publishDateStr": "05-10",
+      "publishDateTimeStr": "2026-05-10 16:00:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_c31f1686",
+        "type": "ARTICLE",
+        "title": "Multi-agent coordination patterns: Five approaches and when to use them | Claude",
+        "oneSentenceSummary": "Anthropic outlines five core multi-agent coordination patterns—Generator-verifier, Orchestrator-subagent, Agent teams, Message bus, and Shared-state—providing a decision framework for selecting the right architecture based on task complexity and context needs.",
+        "url": "https://claude.com/blog/multi-agent-coordination-patterns",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_72e3cf5",
+        "type": "VIDEO",
+        "title": "Head of Claude Code: What happens after coding is solved | Boris Cherny",
+        "oneSentenceSummary": "Boris Cherny, Head of Claude Code at Anthropic, discusses the transition to 100% AI-generated software development and the emergence of autonomous agents like Co-work.",
+        "url": "https://www.youtube.com/watch?v=We7BZVKbCVw",
+        "sourceName": "Lenny's Podcast"
+      },
+      {
+        "id": "RAW_94694e50",
+        "type": "ARTICLE",
+        "title": "Best practices for computer and browser use with Claude | Claude",
+        "oneSentenceSummary": "This article provides official best practices for integrating Claude's computer and browser use capabilities, focusing on screenshot scaling, resolution selection, click accuracy optimization, thinking effort tuning, and prompt injection defense.",
+        "url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_77d5e14",
+        "type": "VIDEO",
+        "title": "Build Hour: API & Codex",
+        "oneSentenceSummary": "This OpenAI Build Hour session introduces 'Harness Engineering,' a methodology for optimizing codebases to enable autonomous AI agents to handle full software development tasks.",
+        "url": "https://www.youtube.com/watch?v=rhsSqr0jdFw",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_3b1c0638",
+        "type": "ARTICLE",
+        "title": "Introducing Claude Opus 4.7",
+        "oneSentenceSummary": "Anthropic has released Claude Opus 4.7, a significant upgrade over Opus 4.6 with major improvements in advanced software engineering, vision capabilities, instruction following, and autonomous long-horizon reasoning, while implementing new cyber safeguards and maintaining the same pricing.",
+        "url": "https://www.anthropic.com/news/claude-opus-4-7",
+        "sourceName": "Anthropic News"
+      },
+      {
+        "id": "RAW_bf9ab35c",
+        "type": "ARTICLE",
+        "title": "Claude Code auto mode: a safer way to skip permissions",
+        "oneSentenceSummary": "Claude Code's new Auto mode uses a two-stage model-based classifier and prompt-injection probes to autonomously gate dangerous actions, balancing developer productivity with security.",
+        "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_8f3d453",
+        "type": "VIDEO",
+        "title": "Building Claude Code with Boris Cherny",
+        "oneSentenceSummary": "Boris Cherny, creator of Claude Code, discusses his 100% AI-driven workflow, Anthropic's unique engineering culture, and why software engineers are transitioning from 'scribes' to 'authors' in the AI era.",
+        "url": "https://www.youtube.com/watch?v=julbw1JuAz0",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_c1ecbe08",
+        "type": "ARTICLE",
+        "title": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude",
+        "oneSentenceSummary": "Brendan MacLean, principal developer of the 700,000-line Skyline codebase, applies his 17-year methodology of onboarding human developers to Claude Code, using context, skills, and MCP integrations to make a legacy codebase manageable again.",
+        "url": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_243d2340",
+        "type": "ARTICLE",
+        "title": "How Claude Code works in large codebases: Best practices and where to start | Claude",
+        "oneSentenceSummary": "This article provides a comprehensive guide on deploying Claude Code in large codebases, emphasizing that success depends more on the 'harness' of configuration layers (CLAUDE.md, hooks, skills, plugins, LSP, MCP) than on the model alone, and outlines proven patterns for making codebases navigable, maintaining configurations, and assigning organizational ownership.",
+        "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+        "sourceName": "Claude Blog"
+      }
+    ]
+  }
+}

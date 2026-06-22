@@ -1,0 +1,82 @@
+{
+  "id": "RAW_5877d882",
+  "notExist": null,
+  "originalTitle": "Arm Open-Sources Metis， an AI Security Framework Outperforming Traditional SAST Tools",
+  "title": "Arm Open-Sources Metis， an AI Security Framework Outperforming Traditional SAST Tools",
+  "oneSentenceSummary": "Arm has open-sourced Metis, an agentic AI security framework that uses semantic reasoning and RAG to autonomously uncover complex software vulnerabilities, achieving up to 10x higher true positive rates and 50% fewer false positives compared to traditional SAST tools.",
+  "summary": "Arm has open-sourced Metis, an agentic AI security framework designed to autonomously uncover complex software vulnerabilities that traditional static application security testing (SAST) tools often miss. Unlike pattern-based tools, Metis employs semantic reasoning and retrieval-augmented generation (RAG) to analyze cross-component dependencies, providing clear, natural language explanations for its findings. In internal benchmarks using GPT-5.5-Cyber, Metis achieved 98% accuracy in identifying vulnerabilities, compared to just 6% for traditional SAST. It supports any OpenAI-compatible LLM and a wide range of programming languages, including C, C++, Python, Go, TypeScript, and Rust. Metis is available under an Apache 2.0 license on GitHub and is currently monitoring over 130 software projects within Arm. The framework can operate alongside external SAST tools to validate findings and reduce false positives, helping engineering teams focus on critical issues.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Metis",
+    "AI Security",
+    "Agentic AI",
+    "SAST",
+    "RAG"
+  ],
+  "mainPoints": [
+    {
+      "point": "Metis uses agentic AI and semantic reasoning to detect complex vulnerabilities across codebases.",
+      "explanation": "Unlike traditional SAST tools that rely on fixed rules and pattern matching, Metis analyzes cross-component dependencies and applies semantic understanding to identify sophisticated security issues that span multiple functions or libraries."
+    },
+    {
+      "point": "Metis achieves significantly higher accuracy and lower false positive rates than traditional SAST tools.",
+      "explanation": "In Arm's internal benchmarks, Metis achieved 98% accuracy in identifying vulnerabilities compared to 6% for traditional SAST, with up to 10x higher true positive rates and approximately 50% fewer false positives."
+    },
+    {
+      "point": "Metis provides clear, actionable explanations for its findings to accelerate remediation.",
+      "explanation": "Beyond simply flagging vulnerabilities, Metis generates natural language summaries that give developers the context they need to understand and address issues quickly, reducing wasted effort during validation and review."
+    },
+    {
+      "point": "Metis is open source, supports multiple LLMs and languages, and can integrate with existing SAST tools.",
+      "explanation": "Released under Apache 2.0, Metis works with any OpenAI-compatible LLM, supports C, C++, Python, Go, TypeScript, Rust, and more, and can validate findings from external SAST tools to reduce false positives."
+    }
+  ],
+  "keyQuotes": [
+    "By combining advanced analysis techniques with AI-enabled workflows, Metis identifies more sophisticated security vulnerabilities that are difficult to detect using existing approaches, as well as identifying them earlier in the process.",
+    "False positives consume valuable engineering time and can reduce trust in automated tooling. By reducing false positives, Metis helps engineering teams focus on the issues that matter most, accelerating remediation and reducing wasted effort during validation and review.",
+    "In Arm's internal benchmarks using GPT-5.5-Cyber as the base model, Metis achieved 98% accuracy in identifying vulnerabilities, compares to just 6% for traditional SAST, according to the company."
+  ],
+  "url": "https://www.infoq.com/news/2026/05/arm-metis-agentic-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "readUrl": "https://www.bestblogs.dev/article/5877d882",
+  "enclosureUrl": null,
+  "domain": "infoq.com",
+  "cover": "https://res.infoq.com/news/2026/05/arm-metis-agentic-security/en/headerimage/arm-metis-1780165811953.jpeg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 17,
+  "wordCount": 479,
+  "readTime": 2,
+  "mediaDuration": null,
+  "authors": [
+    "Sergio De Simone"
+  ],
+  "publishTimeStamp": 1780167600000,
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-05-31 03:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

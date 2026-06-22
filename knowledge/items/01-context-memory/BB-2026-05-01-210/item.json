@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-13",
+  "id": "BB-2026-05-01-210",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-210/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-210",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-210/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-210/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-210/raw/display-document.html",
+      "knowledge/items/01-context-memory/BB-2026-05-01-210/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-210/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-210/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 前端早读课",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 前端早读课",
+  "status": "Full text + source captured",
+  "tags": [
+    "Claude Code",
+    "Auto-Memory",
+    "MEMORY.md",
+    "CLAUDE.md",
+    "AI Programming"
+  ],
+  "title": "[Issue 3697] Claude Code Auto-Memory Feature Explained: Say Goodbye to Repeated Instructions, Let AI Remember Your Project",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://levelup.gitconnected.com/claude-code-memory-md-everything-you-need-to-know-how-to-get-started-8ac99e161153",
+      "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651235750&idx=1&sn=bdc3d6938b34638c3868d3c69e763f8b&scene=21#wechat_redirect",
+      "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651276640&idx=1&sn=b3688669387e96296d4389e45741d48f&scene=21#wechat_redirect",
+      "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279013&idx=1&sn=4bb79bd9f784df7ff3e875bae9344991&scene=21#wechat_redirect",
+      "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279034&idx=1&sn=3d28af3c06d14ce8f7276ef1765e80c6&scene=21#wechat_redirect",
+      "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279034&idx=2&sn=e11923e659525118dc441638139bba7b&scene=21#wechat_redirect",
+      "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279074&idx=1&sn=b2e523cedefdde4cc76c44101be80210",
+      "https://www.bestblogs.dev/en/article/4d48937e"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279074&idx=1&sn=b2e523cedefdde4cc76c44101be80210",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/4d48937e"
+  }
+}

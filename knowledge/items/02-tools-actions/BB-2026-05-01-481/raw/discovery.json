@@ -1,0 +1,86 @@
+{
+  "authors": [
+    "Maryam Motamedi",
+    "Adi- margolin",
+    "Francesco",
+    "Myungjong Kim",
+    "Enas Albasiri"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/fine-tuning-nemotron-35-asr.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_328e8914",
+  "keyQuotes": [
+    "The model uses a Cache-Aware FastConformer-RNNT architecture that streams audio without the redundant recomputation that makes most streaming ASR slow --- so you get low latency *and* high accuracy, not one at the expense of the other.",
+    "Fine-tuning is transformative for under-resourced languages --- the biggest wins came where the base model was weakest.",
+    "Evaluate at deployment latency, on held-out data. Training-set scores flatter you; a separate test set at 0 ms look-ahead tells the truth."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "This eliminates the need to stitch together multiple models or vendor APIs, simplifying infrastructure and reducing complexity.",
+      "point": "Nemotron 3.5 ASR solves the polyglot tax by using a single model for 40 language-locales."
+    },
+    {
+      "explanation": "By caching internal states, the model avoids redundant recomputation, enabling true streaming with minimal delay and high accuracy.",
+      "point": "Its Cache-Aware FastConformer architecture achieves low latency without sacrificing accuracy."
+    },
+    {
+      "explanation": "A worked example on Greek and Bulgarian shows 31-32% relative WER improvement after fine-tuning with a few thousand hours of targeted data.",
+      "point": "Fine-tuning is transformative for under-resourced languages and specialized domains."
+    },
+    {
+      "explanation": "The article provides a clear five-step workflow (data, train, evaluate, scale, deploy) with a companion GitHub repo containing exact commands and configs.",
+      "point": "The fine-tuning recipe is practical and reproducible."
+    },
+    {
+      "explanation": "The authors emphasize measuring on held-out data at the target latency and using replay data to avoid degrading performance on other languages.",
+      "point": "Key lessons include evaluating at deployment latency and protecting other languages during fine-tuning."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article introduces NVIDIA's Nemotron 3.5 ASR, a 600M-parameter streaming multilingual speech-to-text model, and provides a detailed, practical guide on how to fine-tune it for specific languages, domains, or accents.",
+  "originalTitle": "How to Fine-Tune Nemotron 3.5 ASR for Your Language， Domain， or Accent",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-04",
+  "publishDateTimeStr": "2026-06-04 20:59:35",
+  "publishTimeStamp": 1780577975000,
+  "qualified": false,
+  "readCount": 33,
+  "readTime": 9,
+  "readUrl": "https://www.bestblogs.dev/article/328e8914",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article presents NVIDIA's Nemotron 3.5 ASR, a 600M-parameter streaming multilingual speech-to-text model that transcribes 40 language-locales in real time with built-in punctuation and capitalization. It addresses common pain points in multilingual ASR, such as the need for multiple models, the streaming-vs-accuracy tradeoff, and post-processing pipelines. The model uses a Cache-Aware FastConformer-RNNT architecture for low-latency streaming without accuracy loss. The second half of the article provides a step-by-step guide to fine-tuning the model, covering data preparation, training, evaluation, and deployment. A worked example on Greek and Bulgarian shows significant Word Error Rate reductions (32% and 31% respectively) after fine-tuning with a few thousand hours of data. The article concludes with use cases like voice agents, live multilingual captions, and call-center analytics.",
+  "tags": [
+    "ASR",
+    "LLM",
+    "Multilingual AI",
+    "Fine-Tuning",
+    "NVIDIA NeMo"
+  ],
+  "title": "How to Fine-Tune Nemotron 3.5 ASR for Your Language， Domain， or Accent",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/nvidia/fine-tuning-nemotron-35-asr",
+  "wordCount": 2020
+}

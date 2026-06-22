@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "百度Geek说"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045403_b213a2e6",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_ac341305",
+  "keyQuotes": [
+    "What AI coding agents lack is not capability, but discipline.",
+    "Superpowers doesn't make AI smarter; it makes AI disciplined.",
+    "Impose the same discipline a senior engineering manager would on a junior developer: stop, think, plan, then build.",
+    "Superpowers is not about 'teaching Claude how to design,' but 'forcing Claude to follow a design process.'"
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Native Claude Code tends to output code directly, easily missing key steps like requirement clarification, boundary handling, and testing, leading to unstable results and numerous bugs. Superpowers solves this by enforcing process constraints.",
+      "point": "What AI coding agents lack is not capability, but discipline."
+    },
+    {
+      "explanation": "Through system prompt injection, it significantly increases the probability of correct behaviors like 'clarify requirements first, design a plan,' transforming AI from probabilistic free-form sampling into engineering execution following a deterministic process.",
+      "point": "Superpowers constrains AI behavior by altering the LLM's probability distribution."
+    },
+    {
+      "explanation": "Author Jesse Vincent applies 30 years of experience managing development teams to AI agents, ensuring consistency and reliability of AI output by defining clear processes, enforcing validation, and state locking.",
+      "point": "Superpowers' design philosophy is 'manage an AI agent like managing a junior developer.'"
+    },
+    {
+      "explanation": "'The Bitter Lesson' discusses how to make models smarter, while Superpowers discusses how to make an already smart model consistently exhibit desired behavior in a given task. It is an art of process management in human-computer collaboration.",
+      "point": "Superpowers and 'The Bitter Lesson' are not contradictory; they operate on different levels."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article provides an in-depth analysis of the Superpowers project, explaining how it imposes engineering discipline on Claude Code through 14 built-in skills, transforming AI coding from probabilistic free-form output into a deterministic, reproducible engineering process.",
+  "originalTitle": "Superpowers：给 Claude Code 装上“工程大脑”",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-15",
+  "publishDateTimeStr": "2026-06-15 18:00:00",
+  "publishTimeStamp": 1781517600000,
+  "qualified": false,
+  "readCount": 70,
+  "readTime": 70,
+  "readUrl": "https://www.bestblogs.dev/article/ac341305",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_d8db95",
+  "sourceImage": "https://image.jido.dev/20251127045403_b213a2e6",
+  "sourceName": "百度Geek说",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article begins with the author's pain points with AI coding encountered in the querit.ai project, pointing out three original sins of running Claude Code bare: response randomness, intuitive fast thinking, and attention dilution. It then introduces the Superpowers project, detailing the background of its author Jesse Vincent, the project's origin, phenomenal growth data, and official recognition from Anthropic. The core of the article deeply dissects Superpowers' 14 core skills, overall workflow, and Skill file structure. Using the brainstorming skill as an example, through source code analysis and comparative experiments, it demonstrates how techniques like mandatory instructions, structural templates, state locking, and chained calls alter the LLM's probability distribution, turning AI from a free-spirited artist into a disciplined engineer. The article also explores the relationship between Superpowers and \"The Bitter Lesson,\" arguing they are not in competition at the same level, and predicts that when the model's intrinsic capabilities fill the discipline gap, such external add-ons will be phased out. Finally, the article reviews the querit.ai subscription payment frontend case, comparing the development workflow differences before and after using Superpowers.",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "Prompt Engineering",
+    "AI Agent",
+    "Claude Code"
+  ],
+  "title": "Superpowers: Giving Claude Code an \"Engineering Brain\"",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607138&idx=1&sn=747cfb219a8dbda0249991af5b6eb7f1",
+  "wordCount": 17298
+}

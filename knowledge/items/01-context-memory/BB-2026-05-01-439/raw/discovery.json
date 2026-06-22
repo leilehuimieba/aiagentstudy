@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "Latent.Space"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260602170307_transcoded-1780408829.png",
+  "domain": "latent.space",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_dff0ae3c",
+  "keyQuotes": [
+    "I find AI in a what most of this launch here is actually, less building forward. It's actually, a recursive loop backwards. I'm always looking at what had happened first.",
+    "I think that we're ending the era of these like massive, beautiful, perfect skills that are just like not any of those things.",
+    "I can crank up fifteen agents on Saturday while my kids are doing lacrosse, That's like really powerful.",
+    "I built this entire presentation without touching any of it... Never came up once that it was AI generated."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The platform, designed for human-paced development, now sees 275 million commits per week, leading to public uptime issues and forcing a fundamental rethink of CI/CD, review, and dependency management.",
+      "point": "GitHub is experiencing a 1400% growth in AI agent activity, straining its human-centric infrastructure."
+    },
+    {
+      "explanation": "Daigle argues that forcing users to learn new tools is a barrier. Instead, GitHub distributes a CLI and MCP servers that connect to existing context (Slack, Teams, GitHub), allowing users to query and automate without changing their habits.",
+      "point": "GitHub's internal AI strategy prioritizes integrating into existing workflows over introducing new tools."
+    },
+    {
+      "explanation": "Large, monolithic AI skills are brittle and hard to maintain. GitHub is shifting to small, composable skills (e.g., 'summarize for marketing') that can be easily tweaked and combined, much like Lego bricks.",
+      "point": "The era of 'mega-skills' is ending; the future is atomic 'micro-skills' that do one thing well."
+    },
+    {
+      "explanation": "Daigle, a former developer turned COO/CMO, uses AI to apply his decade of business expertise to coding again. He runs 15 agents on Saturdays to synthesize company context, creating tools and presentations that are indistinguishable from human-made work.",
+      "point": "Former developers in leadership have a unique advantage in the AI era due to their pattern-recognition and problem-solving skills."
+    },
+    {
+      "explanation": "While embracing low-code tools like GitHub Spark, the company believes showing the underlying code is essential for learning and trust, even as AI agents become the primary authors of pull requests.",
+      "point": "GitHub is evolving from a code hosting platform to an 'operating layer for agents,' but will not hide the code."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "GitHub COO Kyle Daigle discusses how the platform is adapting to a 1400% surge in AI-generated code, the shift from mega-skills to atomic micro-skills, and his personal use of 15 agents on Saturdays to run the company.",
+  "originalTitle": "GitHub's plan for Agents — Kyle Daigle， GitHub",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 00:48:21",
+  "publishTimeStamp": 1780418901000,
+  "qualified": false,
+  "readCount": 50,
+  "readTime": 69,
+  "readUrl": "https://www.bestblogs.dev/article/dff0ae3c",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_fc479e",
+  "sourceImage": "https://image.jido.dev/20260527050728_73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+  "sourceName": "Latent.Space",
+  "sourceVisibility": "SYSTEM",
+  "summary": "In this interview, GitHub COO Kyle Daigle addresses the unprecedented challenges and opportunities AI coding agents present to the platform. He details how GitHub's infrastructure, originally designed for human-paced development, is straining under a 14x increase in commits and a 1400% growth in agent activity. Daigle explains GitHub's internal AI rollout strategy, which emphasizes integrating AI into existing workflows (Slack, Teams, GitHub) rather than forcing new tools. He introduces the concept of 'micro-skills'—small, atomic AI skills that do one thing well—over brittle 'mega-skills.' Daigle also shares his personal workflow of running 15 agents on Saturdays to synthesize company context from PRs, Slack, Teams transcripts, and Obsidian notes, enabling him to look backward before planning forward. The conversation covers the evolution of Copilot, the future of pull requests in an agent-dominated world, the challenges of open-source maintainers facing AI-generated 'slop,' and why GitHub refuses to hide the code even as it becomes a platform for low-code builders.",
+  "tags": [
+    "AI Agent",
+    "AI Coding",
+    "GitHub",
+    "Developer Tools",
+    "LLM"
+  ],
+  "title": "GitHub's plan for Agents — Kyle Daigle， GitHub",
+  "translateContent": null,
+  "url": "https://www.latent.space/p/github",
+  "wordCount": 17106
+}

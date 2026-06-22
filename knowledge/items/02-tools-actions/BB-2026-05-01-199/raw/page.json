@@ -1,0 +1,174 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Ta9ff82fc6c994bbf81c7ee0c9ba2682b",
+  "data": {
+    "metaData": {
+      "id": "RAW_a880e863",
+      "notExist": null,
+      "originalTitle": "Accelerating LLM-Driven Developer Productivity at Zoox",
+      "title": "Accelerating LLM-Driven Developer Productivity at Zoox",
+      "oneSentenceSummary": "Zoox's AI lead shares a systematic approach to building an enterprise AI platform, Cortex, to accelerate the entire developer lifecycle through secure LLM access, RAG, agentic APIs, and a focus on adoption.",
+      "summary": "This presentation details Zoox's journey in building an internal AI platform called Cortex to enhance developer productivity. Amit Navindgi, the lead, outlines the challenges of the developer lifecycle, from information discovery to customer support, and how AI can remove friction. The core of the talk is the platform's architecture: a secure gateway to models like Claude and Gemini, knowledge bases built via RAG from internal sources (Confluence, Slack, GitHub), and an agentic API that allows teams to create custom agents by composing tools. A key innovation is the 'agent as API' paradigm, where teams define tools once in a central registry and invoke agents via REST, separating business logic from platform concerns. The talk also covers critical enterprise features like human-in-the-loop for write actions, managing quotas, and supporting multimodal inputs. Beyond the platform, Navindgi emphasizes the importance of driving adoption through identifying AI champions, building usage dashboards, running hackathons, and creating a culture of sharing wins and failures. He advocates for a pragmatic 'build what you cannot buy' approach, citing the adoption of Cursor over an internal solution. The key takeaway is that a successful AI strategy requires not just building a robust platform but also actively evangelizing its use and measuring its impact.",
+      "featuredReason": "Zoox details its strategy for boosting LLM-driven developer productivity through an in-house AI platform, Cortex, and various applications. The presentation covers Cortex's design for security, multi-modality, and tool integration, alongside solutions like Humblebrag and ZI AutoAssist addressing developer pain points. Crucially, Zoox highlights its adoption blueprint, emphasizing AI champions, transparent sharing, and hackathons to drive widespread internal AI tool usage.",
+      "translateContent": null,
+      "tags": [
+        "Enterprise AI",
+        "Developer Productivity",
+        "LLM Platform",
+        "RAG",
+        "AI Agents"
+      ],
+      "mainPoints": [
+        {
+          "point": "Build a secure, contributor-friendly platform as the foundation for enterprise AI.",
+          "explanation": "Zoox built Cortex as a secure gateway to multiple LLMs, with RAG pipelines for internal knowledge and an agentic API. The platform is designed to be extended by any engineer, preventing the core team from becoming a bottleneck."
+        },
+        {
+          "point": "Implement an 'agent as API' paradigm to simplify agent creation and deployment.",
+          "explanation": "Teams define tools once in a central registry and invoke agents via a REST API, specifying the model, prompt, and tools. This separates business logic from platform concerns like scaling and safety, making agent creation accessible to all teams."
+        },
+        {
+          "point": "Prioritize adoption through evangelism, measurement, and community building.",
+          "explanation": "Building the platform is only half the battle. Zoox drives adoption by identifying AI champions, building dashboards to track usage and impact, hosting team-specific sessions, and running hackathons to generate excitement and new tools."
+        },
+        {
+          "point": "Adopt a 'build what you cannot buy' strategy and converge later.",
+          "explanation": "Zoox bought Cursor when it became available, shutting down an internal project. The principle '1 > 2 > 0' allows for temporary duplication to maintain speed, with the goal of converging on the best solution over time."
+        }
+      ],
+      "keyQuotes": [
+        "When AI is missing, it feels broken.",
+        "Build what you cannot buy. If a vendor tool exists that does 80% of what you need, buy it.",
+        "1 greater than 2 greater than 0. One good solution is better than two competing ones, but two competing ones are still better than having nothing.",
+        "Resist the hype and focus on impact. It is the only way to scale AI inside a company.",
+        "If you cannot measure it, you cannot improve it."
+      ],
+      "url": "https://www.infoq.com/presentations/ai-software-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "readUrl": "https://www.bestblogs.dev/article/a880e863",
+      "enclosureUrl": null,
+      "domain": "infoq.com",
+      "cover": "https://image.jido.dev/20260514214046_generatedCard-1778065503665.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_f152e8",
+      "sourceName": "InfoQ",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 70,
+      "wordCount": 7799,
+      "readTime": 32,
+      "mediaDuration": null,
+      "authors": [
+        "Amit Navindgi"
+      ],
+      "publishTimeStamp": 1778763900000,
+      "publishDateStr": "05-14",
+      "publishDateTimeStr": "2026-05-14 13:05:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_862b9f1",
+        "type": "VIDEO",
+        "title": "Martin Fowler & Kent Beck: Frameworks for reinventing software， again and again",
+        "oneSentenceSummary": "Software legends Martin Fowler and Kent Beck discuss how AI redefines software engineering, emphasizing that core practices like TDD and modularity remain essential for human-AI collaboration.",
+        "url": "https://www.youtube.com/watch?v=CZs8J1ZD0CE",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_8b57be6d",
+        "type": "ARTICLE",
+        "title": "4 Patterns of AI Native Development",
+        "oneSentenceSummary": "Patrick Debois outlines four evolving patterns of AI-native development—shifting from producer to manager, implementation to intent, delivery to discovery, and content to knowledge.",
+        "url": "https://www.infoq.com/presentations/patterns-ai-native-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_06440a10",
+        "type": "ARTICLE",
+        "title": "What I Learned Building Multi-Agent Systems From Scratch",
+        "oneSentenceSummary": "A staff engineer at Shopify shares the journey of building multi-agent systems from scratch, revealing that narrow-focused agents outperform generalists, and that empowering domain experts with tools is more effective than creating an AI SWAT team.",
+        "url": "https://www.infoq.com/presentations/multi-agent-system-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_209794e8",
+        "type": "ARTICLE",
+        "title": "Engineering at AI Speed: Lessons from the First Agentically Accelerated Software Project",
+        "oneSentenceSummary": "This article presents a case study of building Claude Code using Claude Code, detailing three stories that illustrate how AI changes bottlenecks in the software development lifecycle, emphasizing experimentation, architectural choices, and the importance of shipping to discover real requirements.",
+        "url": "https://www.infoq.com/presentations/engineering-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_c857f67e",
+        "type": "ARTICLE",
+        "title": "MCP in the Java World: Bringing Architectural Strategy to LLM Integrations",
+        "oneSentenceSummary": "MCP Java SDK transforms LLM integration from ad-hoc tool calling into a disciplined architectural pattern, introducing protocol-level contracts, anti-corruption layers, and governance for enterprise Java systems.",
+        "url": "https://www.infoq.com/articles/mcp-java-architectural-strategy-llm-integrations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_589d5efc",
+        "type": "ARTICLE",
+        "title": "Using AI as a Thinking Partner for Large-Scale Engineering Systems",
+        "oneSentenceSummary": "A Google Senior Staff Engineer shares a structured methodology for using AI as a thinking partner to understand, experiment with, and redesign a complex, multi-language, multi-repository engineering system.",
+        "url": "https://www.infoq.com/presentations/ai-large-scale-engineering-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "sourceName": "InfoQ"
+      },
+      {
+        "id": "RAW_504ce725",
+        "type": "ARTICLE",
+        "title": "Harness design for long-running application development",
+        "oneSentenceSummary": "This article explores Anthropic's multi-agent harness design (Planner, Generator, Evaluator) for long-running autonomous coding, detailing how to overcome context anxiety and self-evaluation bias to build complex full-stack applications.",
+        "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_2023817132581208353",
+        "type": "TWITTER",
+        "title": "Anthropic Releases Claude Sonnet 4.6 with 1M Context Window",
+        "oneSentenceSummary": "Anthropic announces Claude Sonnet 4.6, featuring major upgrades in coding, reasoning, and a 1-million-token context window.",
+        "url": "https://x.com/claudeai/status/2023817132581208353",
+        "sourceName": "Claude(@claudeai)"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-08",
+  "id": "BB-2026-05-01-514",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-514/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-514",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-514/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-514/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-514/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-514/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-514/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-514/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hugging Face - Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hugging Face - Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "Emergence",
+    "Multi-Agent Systems",
+    "Simulation",
+    "LLM"
+  ],
+  "title": "The crash that vanished: control and emergence in a five-model economy",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v3",
+      "https://www.bestblogs.dev/article/74c97796"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v3",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/74c97796"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-12",
+  "id": "BB-2026-05-01-170",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-170/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-170",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-170/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-170/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-170/raw/display-document.html",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-170/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-170/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-170/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Founder Park",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Founder Park",
+  "status": "Full text + source captured",
+  "tags": [
+    "Agent Infra",
+    "TiDB Cloud",
+    "Kimi",
+    "Serverless Database",
+    "AI Website Building"
+  ],
+  "title": "Agent Infra Practice Review: How Kimi Built the Database Service Behind Its Agent",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzI3MjI4Njk0Ng==&amp;mid=2247484665&amp;idx=1&amp;sn=b08ce859156089648bc12c4d3311353b&amp;scene=21#wechat_redirect",
+      "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&amp;mid=2247521814&amp;idx=1&amp;sn=49ceeed78a26438ade5d5b706623e88f&amp;scene=21#wechat_redirect",
+      "https://www.bestblogs.dev/en/article/70ea435c"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&amp;mid=2247521814&amp;idx=1&amp;sn=49ceeed78a26438ade5d5b706623e88f&amp;scene=21#wechat_redirect",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/70ea435c"
+  }
+}

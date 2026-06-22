@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Hacker News"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://blog.janestreet.com/formal-methods-at-jane-street-index/./oxcaml-prover.png",
+  "domain": "blog.janestreet.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_c15f7953",
+  "keyQuotes": [
+    "I've been telling people for the last 25 years that Jane Street as an organization was just not interested in formal methods. I'm not saying that anymore.",
+    "Our hope is to make formal methods as pervasively useful of a tool for building software as sophisticated type systems are for us today.",
+    "Agentic code is getting better, but is still tends towards slop: overly complicated, full of weird bugs and corner cases, often not following essential invariants of the codebase that it's a part of."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "AI models lower the cost of using formal methods by automating drudgery and broadening access, while simultaneously increasing the benefit by creating a verification bottleneck for AI-generated code.",
+      "point": "Agentic coding changes the cost/benefit calculus for formal methods."
+    },
+    {
+      "explanation": "Agents thrive on feedback, and formal methods provide universal guarantees (like type safety) that are more powerful than testing alone for catching bugs and improving code quality.",
+      "point": "Formal methods are a powerful form of feedback for AI agents."
+    },
+    {
+      "explanation": "The company has deep control over its language (OxCaml) and a community of programmers who are already demanding and using advanced type-system features, providing an ideal testing ground.",
+      "point": "Jane Street is uniquely positioned to advance this field."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Jane Street shifts from skepticism to excitement about formal methods, driven by agentic coding's potential to lower costs and increase benefits, and is building a dedicated team.",
+  "originalTitle": "Formal methods and the future of programming",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-14",
+  "publishDateTimeStr": "2026-06-14 20:35:27",
+  "publishTimeStamp": 1781440527000,
+  "qualified": false,
+  "readCount": 69,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/c15f7953",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article from Jane Street's engineering blog announces a significant strategic shift: the company is now building a team focused on formal methods after 25 years of skepticism. The author explains that the emergence of agentic coding has fundamentally changed the cost/benefit calculus. On the cost side, AI models make formal methods easier to use, broadening the pool of productive users. On the benefit side, the 'verification bottleneck' created by AI-generated code (which tends to be 'slop') is more critical than ever, and formal methods can provide powerful feedback for AI agents. The article argues that Jane Street is uniquely positioned due to its deep control over its in-house language, OxCaml, and a community of programmers eager for advanced type-system features. It concludes with a call for applications for formal methods experts in London and New York.",
+  "tags": [
+    "Formal Methods",
+    "AI Coding",
+    "Programming Languages",
+    "Software Engineering",
+    "OCaml"
+  ],
+  "title": "Formal methods and the future of programming",
+  "translateContent": null,
+  "url": "https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1",
+  "wordCount": 1492
+}

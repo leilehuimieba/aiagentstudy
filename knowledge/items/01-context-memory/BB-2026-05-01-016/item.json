@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Cost/Latency"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-29",
+  "id": "BB-2026-05-01-016",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-016/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-016",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-016/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-016/raw/dom-content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-016/raw/extract.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-016/raw/source-links.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-016/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-016/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Claude Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Claude Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "提示缓存",
+    "Claude Code",
+    "AI 智能体",
+    "LLM 优化",
+    "成本优化"
+  ],
+  "title": "构建 Claude Code 的经验教训：提示缓存至关重要",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://claude.com/blog/lessons-from-building-claude-code-prompt-caching-is-everything",
+      "https://code.claude.com/docs/en/common-workflows",
+      "https://code.claude.com/docs/en/overview",
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool",
+      "https://platform.claude.com/docs/en/build-with-claude/compaction",
+      "https://platform.claude.com/docs/en/build-with-claude/compaction#prompt-caching",
+      "https://www.bestblogs.dev/article/68065f88",
+      "https://x.com/RLanceMartin/status/2024573404888911886"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://claude.com/blog/lessons-from-building-claude-code-prompt-caching-is-everything",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/68065f88"
+  }
+}

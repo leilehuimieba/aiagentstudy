@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Control Loop"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-26",
+  "id": "BB-2026-05-01-419",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-419/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-419",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-419/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-419/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-419/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-419/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-419/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-419/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 赛博禅心",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 赛博禅心",
+  "status": "Full text + source captured",
+  "tags": [
+    "Agent Evaluation",
+    "SaaS-Bench",
+    "Computer-Use Agent",
+    "CUA",
+    "Benchmark"
+  ],
+  "title": "How to Know If an Agent Has Actually Finished Its Task?",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517413&idx=1&sn=158dc85bfff38c1f319c13d0126dec5c",
+      "https://www.bestblogs.dev/article/0ddbfe70"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517413&idx=1&sn=158dc85bfff38c1f319c13d0126dec5c",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/0ddbfe70"
+  }
+}

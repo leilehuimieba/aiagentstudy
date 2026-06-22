@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-28",
+  "id": "BB-2026-05-01-361",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-361/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-361",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-361/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-361/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-361/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-361/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-361/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-361/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / AINLP",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / AINLP",
+  "status": "Full text + source captured",
+  "tags": [
+    "SkillOpt",
+    "Agent",
+    "Skill Document",
+    "Prompt Optimization",
+    "LLM"
+  ],
+  "title": "Can Skill Documents Be Trained? SkillOpt: Turning Agent Experience into an Optimizable Manual",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451990&idx=1&sn=63e53397bfc684a3fa0aa3aca70a11c8",
+      "https://www.bestblogs.dev/article/ecb91f8d"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451990&idx=1&sn=63e53397bfc684a3fa0aa3aca70a11c8",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/ecb91f8d"
+  }
+}

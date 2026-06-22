@@ -1,0 +1,23 @@
+# BB-2026-05-01-217 Summary
+
+## Article
+
+- Title: PayPal increases roadmap throughput by 40% with Cursor · Cursor
+- Source: BestBlogs / Cursor Blog
+- URL: https://www.bestblogs.dev/en/article/839fd633
+- Date: 05-11
+- Topic: `02-tools-actions`
+- Tags: Cursor, AI Coding, Developer Productivity, Enterprise AI, Software Engineering
+
+## Model Mapping
+
+- Blocks: Tools/Actions, Control Loop, Deliverable
+- Layer: captured frontier material, pending deep reading
+
+## Core Takeaway
+
+This article from the Cursor blog details how PayPal, a large enterprise with 8,000 developers and a decades-old codebase, successfully integrated the AI-powered coding tool Cursor to dramatically accelerate its software development lifecycle. By starting with high-impact teams, PayPal saw deployment frequency increase from weekly to daily within two weeks. The adoption spread organically, with teams showing over 90% adoption rates achieving significant improvements in deployment frequency and lead time. The article highlights a fundamental shift in PayPal's development process, moving from a linear lifecycle to a more iterative one where product managers and engineers collaborate using functional prototypes. Key metrics like deployment frequency and lead time improved, while change failure rates dropped. The company's Head of Developer Platforms, Michelle Chance, reported to leadership that PayPal is now ready to deliver 40% more capabilities in 2026 than in 2025, emphasizing that this is about doing more, not doing the same with fewer people. The article frames this as part of a larger industry shift from an information economy to an intelligence economy, powered by AI.
+
+## Reusable Principle
+
+Use the catalog and this summary as the low-token entry point; open `article.md` only when the full evidence or detailed argument is needed.

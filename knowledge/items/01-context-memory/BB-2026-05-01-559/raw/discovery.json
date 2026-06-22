@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Anders Cairns Woodruff"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260610231102_0d7dde0.webp",
+  "domain": "lesswrong.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_3fbbd732",
+  "keyQuotes": [
+    "If models can do extensive reasoning without outputting any CoT, it would have implications for safety.",
+    "We measure how much they could plausibly do invisibly, not how much they actually do.",
+    "Three minutes of human-equivalent reasoning might be enough for some single-shot decisions... but it's probably not enough to do complex long-term power-seeking reasoning."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The paper measures a 'no-CoT time horizon' and finds GPT-5.5 can solve tasks that take humans about three minutes with 50% reliability, without emitting any reasoning tokens.",
+      "point": "Frontier models can perform non-trivial reasoning without any chain-of-thought output."
+    },
+    {
+      "explanation": "The doubling time is estimated at 373 days (95% CI: 167-691), which is about half the rate of with-CoT time horizons since GPT-4.",
+      "point": "The no-CoT time horizon doubles approximately every year."
+    },
+    {
+      "explanation": "If models can reason extensively without revealing their thought process, techniques like CoT monitoring become less effective at detecting dangerous planning or scheming.",
+      "point": "This 'hidden reasoning' poses a growing challenge for AI safety monitoring."
+    },
+    {
+      "explanation": "Even the slow end of the 95% confidence interval puts models at almost 10 minutes of no-CoT reasoning by 2030, enabling much more sophisticated subversion.",
+      "point": "Extrapolating current trends suggests ~25 minutes of latent reasoning by 2030."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This paper measures the time horizon of frontier AI models on tasks completed without chain-of-thought reasoning, finding it doubles roughly every year and currently stands at about three minutes of human-equivalent reasoning for GPT-5.5.",
+  "originalTitle": "Estimating No-CoT Task-Completion Time Horizons of Frontier AI Models — LessWrong",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-11",
+  "publishDateTimeStr": "2026-06-11 01:58:18",
+  "publishTimeStamp": 1781114298000,
+  "qualified": false,
+  "readCount": 21,
+  "readTime": 5,
+  "readUrl": "https://www.bestblogs.dev/article/3fbbd732",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+  "sourceName": "LessWrong",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This paper from Redwood Research, the Astra Fellows Program, Aether Research, and MATS investigates a key AI safety question: how long of a task can frontier models complete without outputting any chain-of-thought (CoT) reasoning? The authors evaluate 14 models from GPT-2 (2019) to GPT-5.5 (2026) on 43 benchmarks spanning math, coding, knowledge, agentic tool-use, and safety-relevant questions. They prevent models from emitting reasoning tokens using benchmark-specific prompts and structured-output constraints. The difficulty of each question is estimated via two independent methods: human solve time and the minimum number of reasoning tokens required by o3-mini. The study finds that the 50% no-CoT time horizon (TH) doubles every 373 days (95% CI: 167-691), with GPT-5.5 achieving a TH of about 3 minutes. This is roughly half the growth rate of with-CoT THs since GPT-4, suggesting recent capability gains come primarily from externalized reasoning. Extrapolating forward, models could reach ~25 minutes of latent reasoning by 2030, which would enable much more sophisticated subversion and make CoT monitoring substantially less effective.",
+  "tags": [
+    "AI Safety",
+    "LLM",
+    "Chain of Thought",
+    "AI Evaluation",
+    "Frontier Models"
+  ],
+  "title": "Estimating No-CoT Task-Completion Time Horizons of Frontier AI Models — LessWrong",
+  "translateContent": null,
+  "url": "https://www.lesswrong.com/posts/SieLowPgNgRSPGhFw/estimating-no-cot-task-completion-time-horizons-of-frontier",
+  "wordCount": 1241
+}

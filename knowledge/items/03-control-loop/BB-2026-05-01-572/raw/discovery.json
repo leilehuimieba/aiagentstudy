@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Fabio Salvadori"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045358_9b4a9e60",
+  "domain": "stackoverflow.blog",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_aa9f535e",
+  "keyQuotes": [
+    "The agent does not bypass your security model, it just exposes the part of it that was a person.",
+    "A more capable model behind the same workflow would have handed over the same accounts with better grammar, which is exactly why the model cannot be the place authorization lives—it's the part an attacker controls.",
+    "Before you connect an agent to anything that matters, ask what the person in that loop used to check. That judgment was real work, and now it has to exist as code, because the agent will not improvise it for you."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The AI assistant executed a valid sequence of permitted operations. The missing check was a human support worker who would have refused a stranger rerouting a celebrity's recovery email. The agent simply exposed the part of the security model that was a person.",
+      "point": "The Instagram attack was not an AI mistake but an exposure of a security model that relied on human discretion."
+    },
+    {
+      "explanation": "An agent's interface is natural language, which carries no notion of authorization. A direct API request brings the caller's identity; a sentence does not. Unless identity is reattached before a tool call fires, the agent acts on its own authority, and the requester's permissions never enter the picture.",
+      "point": "LLM agents are 'confused deputies' by construction, unable to distinguish who is authorized."
+    },
+    {
+      "explanation": "The decision to allow an action must be made outside the model, by code that checks who is actually behind the session. The author demonstrates this with a code example: adding a `principal` parameter to the function that verifies the caller owns the account before executing the action.",
+      "point": "The fix is not a better model but a policy layer that verifies the principal outside the chat."
+    },
+    {
+      "explanation": "Least privilege must be enforced per action and per resource, not granted once at session open. Payments, deletions, and account recovery should require human approval or a hard policy rule, not just a confirmation the model can generate.",
+      "point": "Agents should hold scoped, short-lived authority, and irreversible actions need hard gates."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article argues that AI agents expose the security gap left when human discretion is removed from authorization, using the Meta/Instagram account takeover as a case study.",
+  "originalTitle": "AI agents expose the security checks you never actually wrote",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-15",
+  "publishDateTimeStr": "2026-06-15 22:58:54",
+  "publishTimeStamp": 1781535534000,
+  "qualified": false,
+  "readCount": 7,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/aa9f535e",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_b6f2b7",
+  "sourceImage": "https://image.jido.dev/20251127045358_9b4a9e60",
+  "sourceName": "Stack Overflow Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article analyzes the June 2026 attack on over 20,000 Instagram accounts, including the dormant Obama-era White House account, where attackers used Meta's AI support assistant to reset passwords without exploits or password guessing. The author argues this was not an AI mistake but an exposure of a security model that relied on human discretion—a support worker who would have sensed something wrong. The core problem is the 'confused deputy' pattern: an LLM agent, by design, cannot distinguish who is authorized and will execute any plausible-sounding request. The article warns that as agents gain access to payment, CRM, and other business systems, the blast radius multiplies. It explains why a better model cannot fix this (the model is the part an attacker controls) and prescribes concrete engineering fixes: verifying the principal outside the chat, scoping agent authority per action, gating irreversible actions with human approval, and maintaining provenance for every action. The conclusion reframes the challenge as an ordinary engineering gap—the human judgment that was once implicit must now be written as explicit code.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Security",
+    "AI Safety",
+    "Software Engineering"
+  ],
+  "title": "AI agents expose the security checks you never actually wrote",
+  "translateContent": null,
+  "url": "https://stackoverflow.blog/2026/06/15/ai-agents-expose-the-security-checks-you-never-actually-wrote/",
+  "wordCount": 1284
+}

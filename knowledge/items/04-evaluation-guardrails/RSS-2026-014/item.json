@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-18",
+    "opencli_profile": "",
+    "published": "Wed, 17 Jun 2026 15:26:44 GMT",
+    "updated": ""
+  },
+  "date": "2026-06-17",
+  "id": "RSS-2026-014",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/RSS-2026-014/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-014",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-014/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-014/raw/feed-entry.json",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-014/raw/page-text.txt",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-014/raw/page.html"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/RSS-2026-014/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/RSS-2026-014/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / Hugging Face Blog",
+  "source_id": "huggingface-blog",
+  "source_name": "Hugging Face Blog",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "Hugging Face Blog",
+    "RSS",
+    "Benchmark"
+  ],
+  "title": "MolmoMotion: Language-guided 3D motion forecasting",
+  "topic": "04-evaluation-guardrails",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/blog/allenai/molmomotion",
+      "https://huggingface.co/blog/feed.xml"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://huggingface.co/blog/feed.xml",
+    "original_url": "https://huggingface.co/blog/allenai/molmomotion",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://huggingface.co/blog/allenai/molmomotion"
+  }
+}

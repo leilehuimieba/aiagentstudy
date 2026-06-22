@@ -1,0 +1,94 @@
+# Source Evidence
+
+- Title: Structured-Prompt-Driven Development (SPDD)
+- BestBlogs URL: https://www.bestblogs.dev/en/article/989c72a8
+- Original publisher URL: https://martinfowler.com/articles/structured-prompt-driven/
+- Original link text: View Source →
+
+## Captured Page Metadata
+
+- Browser title: Structured-Prompt-Driven Development (SPDD) | BestBlogs.dev
+- Description: Structured Prompt-Driven Development (SPDD) is an engineering method that treats prompts as first-class delivery artifacts, enabling teams to govern, review,...
+- Date: 2026-04-28
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- My Brief: https://www.bestblogs.dev/en/reading/brief
+- My Following: https://www.bestblogs.dev/en/reading/follow
+- For You: https://www.bestblogs.dev/en/reading/feed
+- Explore: https://www.bestblogs.dev/en/explore
+- Daily Brief: https://www.bestblogs.dev/en/explore/brief
+- Weekly Picks: https://www.bestblogs.dev/en/explore/newsletter
+- Topics: https://www.bestblogs.dev/en/explore/topics
+- Sources: https://www.bestblogs.dev/en/explore/sources
+- Reading History: https://www.bestblogs.dev/en/library/history
+- My Bookmarks: https://www.bestblogs.dev/en/library/bookmarks
+- My Notes: https://www.bestblogs.dev/en/library/highlights
+- My Reviews: https://www.bestblogs.dev/en/library/review
+- Settings: https://www.bestblogs.dev/en/settings
+- Help Center: https://www.bestblogs.dev/en/docs
+- Martin Fowler: https://www.bestblogs.dev/articles?sourceid=913551
+- View Source →: https://martinfowler.com/articles/structured-prompt-driven/
+- Spec-Driven Development: https://en.wikipedia.org/wiki/Spec-driven_development
+- spec-anchored: https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html
+- openspdd: https://github.com/gszhangwei/open-spdd
+- /spdd-story: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/optional/spdd-story.md
+- /spdd-analysis: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/core/spdd-analysis.md
+- /spdd-reasons-canvas: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/core/spdd-reasons-canvas.md
+- /spdd-generate: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/core/spdd-generate.md
+- /spdd-api-test: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/optional/spdd-api-test.md
+- /spdd-prompt-update: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/core/spdd-prompt-update.md
+- /spdd-sync: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/core/spdd-sync.md
+- openspdd: https://github.com/gszhangwei/open-spdd
+- available on GitHub: https://github.com/gszhangwei/token-billing/tree/iteration-1-end
+- initial requirements story: https://github.com/gszhangwei/token-billing/blob/iteration-1-start/requirements/token-usage-billing-story.md
+- all the SPDD artifacts used to generate it: https://github.com/gszhangwei/token-billing/compare/iteration-1-start...iteration-1-end
+- spdd-story: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/optional/spdd-story.md
+- idea-of-the-enhancement.md: https://github.com/gszhangwei/token-billing/blob/spdd-article-snapshot/requirements/idea-of-the-enhancement.md
+- Story 1-1 (Standard Plan & model-aware pricing): https://github.com/gszhangwei/token-billing/blob/spdd-article-snapshot/requirements/%5BUser-story-1-1-initial%5DMulti-Plan-Billing-Foundation-%26-Standard-Plan-Model-Aware-Pricing.md
+- Story 1-2 (Premium Plan split-rate billing): https://github.com/gszhangwei/token-billing/blob/spdd-article-snapshot/requirements/%5BUser-story-1-2-initial%5DPremium-Plan-Split-Rate-Billing.md
+- spdd-analysis: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/core/spdd-analysis.md
+- the initial analysis context document: https://github.com/gszhangwei/token-billing/blob/after-enhancement/spdd/analysis/GGQPA-001-202603191100-%5BAnalysis%5D-multi-plan-billing-model-aware-pricing.md
+- alignment: https://martinfowler.com/articles/structured-prompt-driven/alignment.html
+- analysis document: https://github.com/gszhangwei/token-billing/blob/after-enhancement/spdd/analysis/GGQPA-001-202603191100-%5BAnalysis%5D-multi-plan-billing-model-aware-pricing.md#edge-cases
+- spdd-reasons-canvas: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/core/spdd-reasons-canvas.md
+- the initial structured prompt: https://github.com/gszhangwei/token-billing/blob/after-enhancement/spdd/prompt/GGQPA-001-202603191105-%5BFeat%5D-multi-plan-billing-model-aware-pricing.md
+- where we modify the prompt: https://www.bestblogs.dev/en/article/989c72a8#logic-correction
+- abstraction-first: https://martinfowler.com/articles/structured-prompt-driven/abstraction-first.html
+- previous structured prompt: https://github.com/gszhangwei/token-billing/blob/after-enhancement/spdd/prompt/GGQPA-XXX-202603131758-%5BFeat%5D-api-token-usage-billing.md
+- spdd-generate: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/core/spdd-generate.md
+- code generated based on the structured prompt: https://github.com/gszhangwei/token-billing/commit/ac3e07b396e3ee8ab54b5a5ab838ff07a6bdd64b
+- spdd-api-test: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/optional/spdd-api-test.md
+- the API test script: https://github.com/gszhangwei/token-billing/blob/after-enhancement/scripts/test-api.sh
+- spdd-prompt-update: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/core/spdd-prompt-update.md
+- the updated structured prompt: https://github.com/gszhangwei/token-billing/commit/904747b35d4888c51ec46faa533c6605e340cdf5
+- the updated code: https://github.com/gszhangwei/token-billing/commit/d140a0a2ed01387714f4ecc74604f570c05fb86e
+- spdd-sync: https://github.com/gszhangwei/open-spdd/blob/v0.4.9/internal/templates/data/core/spdd-sync.md
+- here: https://github.com/gszhangwei/token-billing/commit/56cc47e1ab6d4ec75528be276c92e0e93209bb84
+- @TEST-SCENARIOS-TEMPLATE.md: https://github.com/gszhangwei/token-billing/blob/after-enhancement/spdd/template/TEST-SCENARIOS-TEMPLATE.md
+- the test structured prompt: https://github.com/gszhangwei/token-billing/commit/c910aede947bfeae12eedeff7991b506d2e015db
+- Commit for tests: https://github.com/gszhangwei/token-billing/commit/6461da90fffcff94ab9e1f57c6fb4476dd122922
+- View the complete code diff for this enhancement: https://github.com/gszhangwei/token-billing/compare/before-enhancement...after-enhancement
+- Enterprise Plan Volume-Based Tiered Billing: https://github.com/gszhangwei/token-billing/blob/after-enhancement/requirements/%5BUser-story-2%5DEnterprise-Plan-Volume-Based-Tiered-Billing.md
+- Abstraction first: https://martinfowler.com/articles/structured-prompt-driven/abstraction-first.html
+- read more…: https://martinfowler.com/articles/structured-prompt-driven/abstraction-first.html
+- Alignment: https://martinfowler.com/articles/structured-prompt-driven/alignment.html
+- read more…: https://martinfowler.com/articles/structured-prompt-driven/alignment.html
+- Iterative Review: https://martinfowler.com/articles/structured-prompt-driven/iterative-review.html
+- read more…: https://martinfowler.com/articles/structured-prompt-driven/iterative-review.html
+- openspdd: https://github.com/gszhangwei/open-spdd
+- Richard W. Hamming: https://www.amazon.com/gp/product/9056995014/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=9056995014&linkCode=as2&tag=martinfowlerc-20
+- Martin Fowler & Kent Beck: Frameworks for reinventing software， again and again: https://www.bestblogs.dev/en/video/862b9f1?entry=related_article
+- Andrej Karpathy on Code Agents， AutoResearch， and the Loopy Era of AI: https://www.bestblogs.dev/en/video/1369401?entry=related_article
+- Building Claude Code with Boris Cherny: https://www.bestblogs.dev/en/video/8f3d453?entry=related_article
+- Feedback Flywheel: https://www.bestblogs.dev/en/article/3b360316?entry=related_article
+- Humans and Agents in Software Engineering Loops: https://www.bestblogs.dev/en/article/03980cf2?entry=related_article
+- Context Engineering for Coding Agents: https://www.bestblogs.dev/en/article/eb4ed4c8?entry=related_article
+- Anthropic Introduces Claude Opus 4.6 with 1M Token Context: https://www.bestblogs.dev/en/status/2019467372609040752?entry=related_article
+- Harness engineering for coding agent users: https://www.bestblogs.dev/en/article/1caa5015?entry=related_article
+- Design-First Collaboration: https://www.bestblogs.dev/en/article/0c84d443?entry=related_article
+- Harness design for long-running application development: https://www.bestblogs.dev/en/article/504ce725?entry=related_article
+- Reading: https://www.bestblogs.dev/en/reading/brief
+- Explore: https://www.bestblogs.dev/en/explore
+- Me: https://www.bestblogs.dev/en/settings

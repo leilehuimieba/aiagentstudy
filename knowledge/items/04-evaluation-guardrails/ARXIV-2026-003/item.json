@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "2026-06-08T17:00:31Z",
+    "updated": "2026-06-08T17:00:31Z"
+  },
+  "date": "2026-06-08",
+  "id": "ARXIV-2026-003",
+  "paper": {
+    "arxiv_id": "2606.09735v1",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-003/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-003",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-003/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/ARXIV-2026-003/raw/arxiv-entry.json",
+      "knowledge/items/04-evaluation-guardrails/ARXIV-2026-003/raw/discovery.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-003/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/ARXIV-2026-003/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Paper metadata + abstract captured",
+  "tags": [
+    "arXiv",
+    "AI Research",
+    "RLHF",
+    "RL",
+    "LLM"
+  ],
+  "title": "The Neutral Mask: How RLHF Provides Shallow Alignment while Leaving Partisan Structure Intact in a Large Language Model",
+  "topic": "04-evaluation-guardrails",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2606.09735v1",
+      "https://arxiv.org/pdf/2606.09735v1",
+      "https://export.arxiv.org/api/query?search_query=all%3A%22AI+agent%22+OR+all%3A%22large+language+model%22+OR+all%3A%22tool+use%22&start=0&max_results=5&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2606.09735v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.09735v1",
+    "requested_url": "",
+    "source_url": "https://arxiv.org/abs/2606.09735v1"
+  }
+}

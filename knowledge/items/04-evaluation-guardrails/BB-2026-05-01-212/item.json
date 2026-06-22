@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-12",
+  "id": "BB-2026-05-01-212",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-212/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-212",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-212/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-212/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-212/raw/display-document.html",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-212/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-212/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-212/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 阿里技术",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 阿里技术",
+  "status": "Full text + source captured",
+  "tags": [
+    "Observability",
+    "OpenTelemetry",
+    "GenAI",
+    "AI Agent",
+    "Semantic Convention"
+  ],
+  "title": "Alibaba & Ant Group LoongSuite GenAI Observability Semantic Convention: From Unified Data Language to Large-Scale Implementation",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://github.com/alibaba/loongsuite-python-agent/blob/main/util/opentelemetry-util-genai/README-loongsuite.rst",
+      "https://github.com/alibaba/loongsuite-semantic-conventions-genai",
+      "https://github.com/open-telemetry/semantic-conventions-genai",
+      "https://github.com/open-telemetry/semantic-conventions-genai/issues/86",
+      "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509356&idx=1&sn=b4b26f0b4332fe031b751b750e935ebe",
+      "https://pypi.org/project/loongsuite-util-genai/",
+      "https://www.bestblogs.dev/en/article/9dae62a9",
+      "https://www.npmjs.com/package/@loongsuite/opentelemetry-util-genai"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509356&idx=1&sn=b4b26f0b4332fe031b751b750e935ebe",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/9dae62a9"
+  }
+}

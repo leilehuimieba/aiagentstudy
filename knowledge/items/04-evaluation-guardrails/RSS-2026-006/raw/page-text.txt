@@ -1,0 +1,104 @@
+Siri AI at WWDC 2026 
+
+Simon Willison’s Weblog 
+Subscribe 
+
+Sponsored by: AWS — If you're building with AI, AWS Summit NYC on June 17 is the room you want to be in. 200+ sessions. Totally free. Register here 
+
+8th June 2026 
+
+Given how badly burned anyone who took Apple's 2024 WWDC Apple Intelligence announcements at face value was, I'm holding to a strict "I'll believe it when I see it" policy for everything they announced today . 
+
+The new Siri AI features do at least look feasible with today's technology, especially since Apple are licensing a custom Gemini-derived model that they can run on their own Private Cloud Compute . 
+
+It sounds like they'll be taking advantage of vision LLMs to extract information from the user's screen, which neatly sidesteps the need for every existing application to ship custom code in order to integrate with Apple Intelligence. Vision LLMs were a much less mature category in June 2024. 
+
+The new Core AI library looks like a good step in enabling developers to finally take full advantage of Apple's hardware for running their own models. It integrates with Meta's open source PyTorch ecosystem, using these Core AI PyTorch extensions : 
+
+Core AI PyTorch Extensions ( coreai-torch ) is a Python package that bridges PyTorch and Core AI. You can use it to bring up an existing PyTorch model — exported as a torch.export.ExportedProgram — into a Core AI AIProgram ready to run on Apple hardware, traversing the FX graph node-by-node and mapping ATen operators to Core AI operations. 
+
+You can install an iOS 27 Developer Beta today, which supposedly has the new features - but you then have to make it through a waiting list for access to the new Siri AI. Aaron Perris from MacRumors reports having made it off the waitlist so we may start seeing credible reports on how well Siri AI works in the very near future. 
+
+Update : These Private Cloud Compute Gemini models are running in Google Cloud, and using NVIDIA hardware. According to Expanding Private Cloud Compute on Apple's Security Research blog: 
+
+For the most demanding tasks, including agentic tool-use and complex reasoning, we worked with Google and NVIDIA to extend our PCC infrastructure to Google Cloud systems using NVIDIA GPUs, while maintaining Apple's powerful security and privacy protections. [...] 
+
+PCC on Google Cloud leverages many of the same architectural security patterns as PCC on Apple silicon to implement these layered protections: initial network data parsing for each request happens in a dedicated process within its own namespace, shared inference software is recycled with a short time-to-live duration, and attested keys are held in a separate, dedicated confidential VM isolated from external inputs. [...] 
+
+As with PCC on Apple silicon, all binaries will be published for public inspection. 
+
+Posted 8th June 2026 at 11:58 pm 
+
+Recent articles 
+
+Running Python code in a sandbox with MicroPython and WASM - 6th June 2026 
+
+Claude Opus 4.8: "a modest but tangible improvement" - 28th May 2026 
+
+I think Anthropic and OpenAI have found product-market fit - 27th May 2026 
+
+This is a note by Simon Willison, posted on 8th June 2026 . 
+vision-llms 86 apple 131 generative-ai 1,816 ai 2,058 llms 1,784 gemini 190 nvidia 17 google 411 
+
+Monthly briefing 
+
+Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments. 
+
+Pay me to send you less! 
+Sponsor & subscribe 
+
+Disclosures 
+
+Colophon 
+
+© 
+
+2002 
+
+2003 
+
+2004 
+
+2005 
+
+2006 
+
+2007 
+
+2008 
+
+2009 
+
+2010 
+
+2011 
+
+2012 
+
+2013 
+
+2014 
+
+2015 
+
+2016 
+
+2017 
+
+2018 
+
+2019 
+
+2020 
+
+2021 
+
+2022 
+
+2023 
+
+2024 
+
+2025 
+
+2026

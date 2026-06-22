@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Simon Willison"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://static.simonwillison.net/static/2026/jump-to-bug.jpg",
+  "domain": "simonwillison.net",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_67accc9f",
+  "keyQuotes": [
+    "After two days of experience with Claude Fable 5 I think the best way to describe it is relentlessly proactive.",
+    "This is a robust reminder that coding agents can do anything *you* can do by typing commands into a terminal---and frontier models know every trick in the book and evidently a few that nobody has ever written down before.",
+    "Fable is arguably smarter and hence more suspicious of potentially malicious instructions. But that smartness is very much a two-edged sword: if it *does* get subverted by instructions, the amount of damage it can do given its relentless proactivity is terrifying."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Given a vague prompt and a screenshot, Fable autonomously orchestrated a complex debugging workflow involving browser automation, template editing, and custom server creation without explicit instruction.",
+      "point": "Claude Fable 5 is relentlessly proactive, using any trick to achieve its goal."
+    },
+    {
+      "explanation": "It used Playwright, real Safari with `screencapture`, JavaScript injection to simulate keystrokes, and a self-built CORS web server to extract data from a Web Component's shadow DOM.",
+      "point": "Fable demonstrated advanced, multi-modal debugging techniques."
+    },
+    {
+      "explanation": "The author warns that such a capable agent, if subverted by a prompt injection attack, could cause immense damage by exfiltrating data or executing arbitrary commands, emphasizing the need for sandboxing.",
+      "point": "The agent's proactivity poses significant security risks."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Claude Fable 5 demonstrates relentless proactivity by autonomously using browser automation, custom web servers, and JavaScript injection to debug a CSS scrollbar bug from a single screenshot and prompt.",
+  "originalTitle": "Claude Fable is relentlessly proactive",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-12",
+  "publishDateTimeStr": "2026-06-12 07:35:17",
+  "publishTimeStamp": 1781220917000,
+  "qualified": false,
+  "readCount": 95,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/67accc9f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_7808b7",
+  "sourceImage": "https://image.jido.dev/20251127045509_876e4367",
+  "sourceName": "Simon Willison's Weblog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Simon Willison recounts his experience with Claude Fable 5, which he describes as 'relentlessly proactive.' After providing a screenshot of a horizontal scrollbar bug in Datasette Agent and a one-line prompt to investigate dependencies, Fable autonomously executed a multi-step debugging process. It created test HTML pages, used Playwright to test browsers, identified Safari as the target, and used `pyobjc-framework-Quartz` to take screenshots of real browser windows. To trigger the bug's modal dialog, it edited Datasette's templates to inject JavaScript that simulated a keyboard shortcut. It then built a custom Python CORS web server to receive diagnostic data from the browser, extracted measurements from a Web Component's shadow DOM, and tested a fix. The author highlights the impressive capability but also issues a stark warning about the security risks of such proactive agents, especially against prompt injection attacks, calling for sandboxed execution.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Claude",
+    "AI Coding",
+    "Developer Tools"
+  ],
+  "title": "Claude Fable is relentlessly proactive",
+  "translateContent": null,
+  "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/#atom-everything",
+  "wordCount": 1320
+}

@@ -1,0 +1,88 @@
+{
+  "id": "RAW_bb9fd95c",
+  "notExist": null,
+  "originalTitle": "DongSQL V1.2.0 发布：持续深耕零售数据库内核，性能与稳定性双重跃升",
+  "title": "DongSQL V1.2.0 Released: Deepening the Retail Database Kernel with Dual Leaps in Performance and Stability",
+  "oneSentenceSummary": "JD.com's self-developed database kernel, DongSQL V1.2.0, is officially released, achieving significant performance breakthroughs in core dimensions such as hot row update, master-slave replication, execution plan caching, massive table startup, and SIMD acceleration, providing a more solid technical foundation for retail scenarios.",
+  "summary": "This article, published by JD.com's retail database team, details the core technical upgrades of the self-developed database kernel, DongSQL V1.2.0. The new version achieves major breakthroughs in several key areas: significantly improving high-concurrency write and master-slave replication performance through group commit unicast notification and semi-synchronous replication optimization; introducing execution plan caching to avoid regenerating execution plans, notably enhancing OLTP query performance; expanding the support scope for single-point query optimization, adding support for unique indexes and VARCHAR/CHAR types; innovatively utilizing file extended attributes (xattr) for ultra-fast startup of massive tables, reducing startup time for millions of tables from minutes to seconds; using AVX2 instruction set to accelerate SQL digest computation; most notably, the hot row update optimization, through a batch merge mechanism for SQL layer cache updates, achieves up to a 9x TPS improvement and a 95% latency reduction in high-concurrency scenarios; additionally, it adds support for stress testing with live traffic, porting of the Statement Outline feature (version 5.7), and multiple monitoring and performance optimizations. The article provides detailed performance test data and best practice recommendations, showcasing JD.com's deep expertise in database kernel technology.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "DongSQL",
+    "Database Kernel",
+    "MySQL",
+    "Performance Optimization",
+    "Hot Row Update"
+  ],
+  "mainPoints": [
+    {
+      "point": "DongSQL V1.2.0 significantly improves high-concurrency write and master-slave replication performance through group commit unicast notification and semi-synchronous replication optimization.",
+      "explanation": "Replaces traditional broadcast wake-up with sequential unicast wake-up to avoid thundering herd problems and lock contention; optimizes binlog position update timing and relay log flushing during ACK, achieving up to a 25% performance improvement for semi-synchronous replication in version 8.0."
+    },
+    {
+      "point": "Introduces execution plan caching (Plan Cache) to avoid regenerating execution plans, notably enhancing OLTP query performance.",
+      "explanation": "Caches execution plans for SELECT statements, particularly beneficial for high-concurrency short query scenarios that frequently execute the same SQL patterns, effectively reducing CPU consumption."
+    },
+    {
+      "point": "The hot row update optimization, through a batch merge mechanism for SQL layer cache updates, achieves up to a 9x TPS improvement in high-concurrency scenarios.",
+      "explanation": "Abandons the traditional serial lock-waiting approach, adopting a Leader-Follower model where Follower threads read data directly from the SQL layer cache, reducing B+ tree traversal and deadlock detection overhead, amortizing network latency, and achieving a peak of 34,127 TPS with 128 threads."
+    },
+    {
+      "point": "Utilizes file extended attributes (xattr) for ultra-fast startup of massive tables, significantly shortening failure recovery time.",
+      "explanation": "Stores the space id information of tablespace files in file extended attributes, eliminating the need to parse the first page of each file during startup, reducing the startup time for 1 million tables from minutes to seconds."
+    },
+    {
+      "point": "Adds support for stress testing with live traffic, ensuring business SQL execution priority during stress tests via a low-priority queue.",
+      "explanation": "Leverages MSG_PEEK pre-read technology and an automatic switching mechanism to route stress test SQL with the DONGSQL_LOW_PRIO Hint to a low-priority queue, achieving up to a 911x improvement in user traffic TPS under 512-concurrency stress tests."
+    }
+  ],
+  "keyQuotes": [
+    "DongSQL V1.2.0 achieves major breakthroughs in multiple dimensions, including hot row update optimization, master-slave replication performance, execution plan caching, stress testing with live traffic support, massive table startup speed, and SIMD acceleration.",
+    "Abandoning the traditional 'serial lock-waiting' approach, it introduces a batch merge mechanism for SQL layer cache updates, fundamentally breaking the physical bottlenecks of UPDATE serial execution and network latency.",
+    "After enabling hotspot, the average latency under high concurrency drops from 72.69ms to 3.78ms, a 95% reduction.",
+    "In the 512-concurrency stress test scenario, user traffic TPS improves by up to 911x, average latency decreases by 90%, and tp99 latency decreases by 66-71%.",
+    "JD.com's retail database team consistently adheres to the core philosophy of 'business value driving technological innovation,' continuously deepening its expertise in database kernel technology."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502298&idx=1&sn=a0266d36073457f2716c803cddbf4a09",
+  "readUrl": "https://www.bestblogs.dev/article/bb9fd95c",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20260527123645_6312820.jpeg",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_146282",
+  "sourceName": "京东技术",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20260527123645_6312820.jpeg",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_BACKEND",
+  "aiSubCategoryDesc": "Backend & Architecture",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 11,
+  "wordCount": 6794,
+  "readTime": 28,
+  "mediaDuration": null,
+  "authors": [
+    "京东技术"
+  ],
+  "publishTimeStamp": 1779881220000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 19:27:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Evaluation",
+    "Memory"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-19",
+  "id": "BB-2026-05-01-310",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-310/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-310",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-310/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-310/raw/meta.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-310/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-310/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Abstract + source captured",
+  "tags": [
+    "self-correction",
+    "tool-feedback",
+    "critique-loop",
+    "wrong-answer",
+    "validation"
+  ],
+  "title": "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+  "topic": "03-control-loop",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2305.11738"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2305.11738",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

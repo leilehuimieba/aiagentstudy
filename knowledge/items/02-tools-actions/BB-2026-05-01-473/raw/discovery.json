@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "Latent.Space"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260604034258_4678ca4.jpeg",
+  "domain": "latent.space",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_5da7bfa9",
+  "keyQuotes": [
+    "Diffusion models are known to be very compute intensive, even more so than LLM training. Now that we reduce images into layouts, we turn it into a next token prediction problem. This gives us a big boost.",
+    "The 'framework era' is ending, with abstractions moving upward into skills, tools, and context quality rather than Python wrappers.",
+    "Some orgs may soon face a three-way choice between letting everyone 'tokenmaxx,' capping budgets, or reducing headcount and reallocating spend to the most productive AI-enabled workers."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The 109-page report details training without third-party distillation, achieving 97% on AIME 2025. It includes scaling ladder recipes, MFU numbers, and exact training data composition (50% code, 17.5% STEM, 17.5% math), earning widespread praise from the research community.",
+      "point": "Microsoft's MAI-Thinking-1 report sets a new standard for transparency in frontier model training."
+    },
+    {
+      "explanation": "The Apache 2.0 model handles images and audio without separate modality encoders, using a lightweight embedding module and direct audio projection. It runs on ~16GB VRAM and supports quantized versions for as little as 8GB RAM.",
+      "point": "Google's Gemma 4 12B introduces an encoder-free multimodal architecture for on-device deployment."
+    },
+    {
+      "explanation": "Previously a closed, design-centric model, Ideogram 4.0 is now the top-ranked open image model on the Arena leaderboard, with strong gains in text rendering and commercial design. It was immediately deployed via fal and Hugging Face.",
+      "point": "Ideogram 4.0's open-weight release marks a significant shift in the image generation landscape."
+    },
+    {
+      "explanation": "Multiple posts converged on the idea that the 'framework era' is ending, with focus shifting to skills, tools, and context quality. CMU's MACU demonstrated 4.7-25.5% gains using multi-agent DAG-based systems for computer-use tasks.",
+      "point": "The agent ecosystem is moving from frameworks to execution harnesses and multi-agent systems."
+    },
+    {
+      "explanation": "As token budgets become a meaningful opex category, some argue routing is inevitable, while others call it 'snake oil.' Real data points like Harvey's hybrid agent (18% all-pass rate at $368 vs $954) and Uber's $1,500/month cap show the tension between cost and performance.",
+      "point": "Model routing and enterprise cost controls are becoming central deployment debates."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This AI news roundup covers major model releases (Microsoft MAI-Thinking-1, Gemma 4 12B, Ideogram 4.0, Reve 2), the shift from agent frameworks to execution layers, and emerging debates on model routing and cost controls.",
+  "originalTitle": "[AINews] Reve 2 and Ideogram 4: Layouts in Imagegen",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-04",
+  "publishDateTimeStr": "2026-06-04 11:24:07",
+  "publishTimeStamp": 1780543447000,
+  "qualified": false,
+  "readCount": 46,
+  "readTime": 7,
+  "readUrl": "https://www.bestblogs.dev/article/5da7bfa9",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_fc479e",
+  "sourceImage": "https://image.jido.dev/20260527050728_73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+  "sourceName": "Latent.Space",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This edition of AINews from Latent Space covers the most significant AI developments from June 2-3, 2026. The top story is Microsoft's release of the MAI-Thinking-1 technical report, a 109-page document detailing a reasoning model trained without third-party distillation, achieving 97% on AIME 2025 and 53% on SWE-Bench Pro. The report was praised for its unusual transparency, including scaling ladder recipes, MFU numbers, and training data composition. Microsoft also announced Frontier Tuning, a customization infrastructure for enterprise workflows. In open models, Google launched Gemma 4 12B, an Apache 2.0 multimodal model with an encoder-free design for on-device use, while Ideogram 4.0 switched to open weights, becoming the top-ranked open image model on the Arena leaderboard. The agent ecosystem is shifting from frameworks to execution harnesses and multi-agent DAG-based systems, with concrete gains reported. A significant debate emerged around model routing, with some arguing it's inevitable for cost control and others calling it 'snake oil.' Enterprise cost ceilings are becoming real, with Uber reportedly capping coding-agent spend at $1,500/month per employee. The roundup also covers open audio models (Miso One, Fun-Realtime-TTS) and the broader trend of local AI becoming a mainstream deployment target.",
+  "tags": [
+    "LLM",
+    "AI Agent",
+    "Open Source",
+    "Model Release",
+    "AI Infrastructure"
+  ],
+  "title": "[AINews] Reve 2 and Ideogram 4: Layouts in Imagegen",
+  "translateContent": null,
+  "url": "https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts",
+  "wordCount": 1556
+}

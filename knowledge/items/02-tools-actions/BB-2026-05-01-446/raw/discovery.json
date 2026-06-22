@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "Founder Park"
+  ],
+  "candidateSource": null,
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "cover": "https://image.jido.dev/20251127045419_08d80bcb",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_0191c665",
+  "keyQuotes": [
+    "The true AI-native approach is to use AI as the building layer for the entire organization's operations and systematically record all artifacts.",
+    "At home, you can do anything with Claude Code or OpenClaw, but at work, you're crammed into a narrow box. We've been trying to close that gap.",
+    "Cost reduction doesn't lead to decreased demand; it leads to an explosion in demand.",
+    "As AI matures, the right direction is Agent wrapping deterministic tools, not deterministic software wrapping AI.",
+    "The best AI software is often the smallest, adding only minimal pre-written code on top of model capabilities, letting the model do the most work."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Unlike the Copilot model, an AI-native organization requires meeting recordings, Agent conversations, and decision documents to all be recorded, becoming raw material that Agents can learn from, retrieve, and utilize, rather than remaining solely in individual minds.",
+      "point": "The core of an AI-native organization is using AI as the building layer and systematically recording all artifacts."
+    },
+    {
+      "explanation": "All Agent conversations are broadcast by default to an internal Slack channel, promoting knowledge sharing and onboarding for new hires, while replacing strict technical access controls with social oversight, allowing Agents to access a broader context.",
+      "point": "A company-wide visible Agent conversation system is an ingenious design for knowledge dissemination and security control."
+    },
+    {
+      "explanation": "The system automatically reads employees' Agent conversations from the day, identifies skill gaps, and automatically optimizes relevant prompts, enabling certain Agent capabilities (e.g., 'describe in two sentences') to surpass the level of any single partner.",
+      "point": "The Dream Cycle enables Agents to self-evolve nightly by analyzing conversation logs."
+    },
+    {
+      "explanation": "All of YC's self-built software runs on the same Postgres database, allowing Agents to answer any question about the business. The Jevons paradox is evident here: when the cost of querying drops to zero, both the quantity and complexity of questions explode.",
+      "point": "Cost reduction leads to demand explosion; a unified data source is a prerequisite for Agents to unleash their power."
+    },
+    {
+      "explanation": "AI's greatest potential lies in shifting software control from developers to users. The best AI software is often the smallest, adding only minimal pre-written code on top of model capabilities, letting the model do the most work.",
+      "point": "The future software paradigm should be Agent wrapping deterministic tools, not deterministic software wrapping AI."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "YC partner Pete Koomen details YC's internal experience in building an AI-native organization, including a company-wide visible Agent system, a registry of 350+ tools, a self-evolving Dream Cycle that runs nightly, and two cultural prerequisites: 'Trust by default' and 'Egalitarianism'.",
+  "originalTitle": "YC 如何进行 AI-Native 组织改造：Agent 能力要向所有人开放",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-02",
+  "publishDateTimeStr": "2026-06-02 20:33:00",
+  "publishTimeStamp": 1780403580000,
+  "qualified": false,
+  "readCount": 125,
+  "readTime": 30,
+  "readUrl": "https://www.bestblogs.dev/article/0191c665",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_caf83c",
+  "sourceImage": "https://image.jido.dev/20251127045419_08d80bcb",
+  "sourceName": "Founder Park",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is a curated compilation of Founder Park's interview with YC partner Pete Koomen. Pete shares the complete journey of YC's internal AI Agent infrastructure development over the past year. Starting with a SQL query Agent for the finance team, the system has evolved into an internal registry of 350+ tools, a company-wide visible Agent conversation system, and a Dream Cycle that automatically reads all conversations every night to improve its own skills. The article delves into the fundamental difference between an AI-native organization and one that merely 'uses AI as a Copilot': the former treats AI as the building layer of the organization, systematically recording all artifacts (meeting recordings, Agent conversations, decision documents) as raw material for Agent learning. Pete and Gary emphasize that achieving this requires two cultural prerequisites: Egalitarian (AI capabilities open to everyone) and Trust by default (all Agent conversations are visible company-wide). Additionally, the article discusses the design philosophy of the tool registry and skill system, the demand explosion driven by cost reduction (Jevons paradox), and the future software paradigm of 'Agent wrapping deterministic tools'.",
+  "tags": [
+    "AI Agent",
+    "AI Organization",
+    "AI Workflow",
+    "AI Products and Applications",
+    "AI Commercialization"
+  ],
+  "title": "How YC Rebuilds as an AI-Native Organization: Agent Capabilities Should Be Open to Everyone",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524469&idx=1&sn=18c08cb79e431d64b2ce7eaf491853d1",
+  "wordCount": 7321
+}

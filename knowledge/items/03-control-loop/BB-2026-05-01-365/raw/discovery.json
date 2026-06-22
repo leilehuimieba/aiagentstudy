@@ -1,0 +1,80 @@
+{
+  "id": "RAW_315cb4a3",
+  "notExist": null,
+  "originalTitle": "RenderFlow：百度垂类搜索展现服务的 Agentic 代码交付实践",
+  "title": "RenderFlow: Agentic Code Delivery Practices for Baidu's Vertical Search Presentation Service",
+  "oneSentenceSummary": "Baidu's search team introduces RenderFlow, an Agentic delivery system that brings LLM code generation capabilities to online services. Through an executable engine, multi-round repair mechanism, and quality assurance system, it reduces single-scenario delivery cycles from days to minutes.",
+  "summary": "This article details the RenderFlow system developed by Baidu's online search architecture team, aimed at addressing pain points in traditional manual delivery processes for search result presentation scenarios. Traditional approaches suffer from long delivery cycles, repetitive adaptations, and high adjustment costs. RenderFlow builds an Agentic delivery loop around \"generation, execution, feedback, repair, and release.\" Its core design includes: an executable engine (based on the Yaegi interpreter, decoupling logic from services, supporting dynamic loading and minute-level activation), a multi-round repair mechanism (using Coder/Reviewer dual-role collaboration and monotonically accumulating repair constraints to reduce manual intervention to below 5%), and a quality assurance system spanning pre-release, during-release, and post-release phases. Since deployment, the system has compressed single-scenario delivery cycles from days to minutes and supports nearly a thousand scenarios in production. The article concludes with practical insights, noting that while the approach offers strong production controllability in well-defined scenarios, it has limitations such as performance ceilings in interpreted execution and the need for manual intervention in complex scenarios.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Agentic Delivery",
+    "Executable Engine",
+    "Multi-round Repair"
+  ],
+  "mainPoints": [
+    {
+      "point": "RenderFlow decouples business logic from service execution through an executable engine, enabling dynamic code loading and minute-level activation.",
+      "explanation": "The engine, based on the Yaegi interpreter, stores model-generated transformation code as configurations. At runtime, it dynamically loads and executes the code, simplifying each logic update from \"deploying a service\" to \"updating a configuration\" without compilation or restarts, significantly shortening delivery cycles."
+    },
+    {
+      "point": "The multi-round repair mechanism effectively converges generation quality through Coder/Reviewer dual-role collaboration and monotonically accumulating repair constraints.",
+      "explanation": "The Reviewer outputs only natural language repair constraints rather than directly modifying code, avoiding localized patches. Constraints accumulate monotonically to prevent repair regression. Memory stores common repair experiences, enabling continuous system optimization and reducing the need for manual intervention to below 5%."
+    },
+    {
+      "point": "The quality assurance system spans pre-release, during-release, and post-release phases, constraining the uncertainty of model generation within a verifiable, observable, and reversible engineering process.",
+      "explanation": "Pre-release, issues are intercepted via static analysis, preview execution, and automated regression testing. During release, phased rollout with automatic service stability verification is employed. Post-release, continuous effect monitoring and stability checks ensure online service reliability."
+    }
+  ],
+  "keyQuotes": [
+    "RenderFlow focuses not on one-time LLM code generation, but on building an Agentic loop around generation, execution, feedback, repair, and release.",
+    "The value of the executable engine lies not only in making code dynamically effective, but more importantly in providing a unified execution and feedback environment for model outputs.",
+    "The multi-round repair mechanism upgrades single code generation into an Agentic repair loop of \"generation → execution → feedback → regeneration.\"",
+    "For LLM-generated code to enter the online delivery pipeline, it cannot rely solely on model capabilities; it also requires stable execution, feedback, repair, and governance mechanisms.",
+    "The value of RenderFlow lies in organizing the model, execution environment, feedback, memory, and governance mechanisms into a complete loop."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247606907&idx=1&sn=16ee44f4deaee5fac7cc7d3a7a78bfe2",
+  "readUrl": "https://www.bestblogs.dev/article/315cb4a3",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045403_b213a2e6",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_d8db95",
+  "sourceName": "百度Geek说",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045403_b213a2e6",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 61,
+  "wordCount": 6498,
+  "readTime": 26,
+  "mediaDuration": null,
+  "authors": [
+    "百度Geek说"
+  ],
+  "publishTimeStamp": 1779703200000,
+  "publishDateStr": "05-25",
+  "publishDateTimeStr": "2026-05-25 18:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

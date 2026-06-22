@@ -1,0 +1,88 @@
+{
+  "id": "RAW_4e86ff6b",
+  "notExist": null,
+  "originalTitle": "[翻译] AI Agent 的 Zero Trust 框架｜Anthropic 安全白皮书",
+  "title": "[Translation] Zero Trust Framework for AI Agents | Anthropic Security White Paper",
+  "oneSentenceSummary": "Anthropic's white paper systematically elaborates on how to apply Zero Trust security architecture principles to AI Agent deployment, proposing a three-tier capability framework and an eight-step implementation workflow to address the AI-accelerated threat landscape.",
+  "summary": "This article is a translation and summary of Anthropic's official white paper, focusing on how to implement Zero Trust security principles in scenarios where AI Agents autonomously execute operations, call tools, and collaborate across systems. It first analyzes the fundamental differences in security models between Agent systems and traditional software, including new features such as unattended execution, tool access, decision-making capabilities, context persistence, and multi-agent collaboration, introducing two key concepts: \"blast radius\" and \"least agent privilege.\" The article then systematically outlines the primary threats facing current Agents, including prompt injection, tool abuse, identity and permission abuse, supply chain risks, and context poisoning. The core section revolves around six major security capability domains (Agent identity and authentication, access control, observability and auditing, behavior monitoring and response, input validation and output control, integrity and recovery), providing a three-tier implementation roadmap (Foundation / Enterprise / Advanced) for each domain. Finally, the article presents an eight-step Agent deployment workflow and emphasizes that defense operations must operate at the speed of autonomous threats, introducing concepts like Agentic SOAR.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Agent",
+    "Zero Trust",
+    "Security Architecture",
+    "Anthropic",
+    "Prompt Injection"
+  ],
+  "mainPoints": [
+    {
+      "point": "The security model for AI Agents must shift from \"perimeter defense\" to a \"Zero Trust\" architecture.",
+      "explanation": "AI accelerates both offense and defense, compressing vulnerability exploitation windows from months to hours. The autonomy and tool access capabilities of Agents render traditional perimeter-based defenses ineffective, necessitating a zero-trust approach where every request is verified under the assumption of compromise."
+    },
+    {
+      "point": "The \"least agent privilege\" principle is central to Agent security, limiting what Agents can do, how often, and where.",
+      "explanation": "Least privilege restricts the access scope of users and systems, while least agent privilege further limits the specific capabilities of each Agent's tools. For example, a database tool is granted only read-only query permissions, and an email tool lacks send permissions."
+    },
+    {
+      "point": "Prompt injection is the most pressing threat to Agent systems, requiring defenses such as input isolation and constitutional classifiers.",
+      "explanation": "Both direct and indirect injections can manipulate Agent behavior. Microsoft's Spotlight technology can reduce the success rate of indirect injection attacks from over 50% to below 2%, while Anthropic's constitutional classifiers can block 95% of jailbreak attempts."
+    },
+    {
+      "point": "Agent deployment should follow an eight-step workflow, systematically advancing security from requirement identification to metric measurement.",
+      "explanation": "The workflow includes: identifying requirements, managing supply chain risks, defining Agent boundaries, defending against prompt injection, protecting tool access, securing Agent credentials, protecting Agent memory, and measuring what truly matters. Each stage has specific control measures."
+    },
+    {
+      "point": "Defense operations must accelerate to match the speed of autonomous threats, automating transactional tasks and focusing humans on decision-making.",
+      "explanation": "Automate evidence collection, enrichment, correlation, and documentation, but containment decisions, disclosure decisions, and customer communication decisions should be made by humans. Agentic SOAR is the next-generation security orchestration platform with adaptive response capabilities."
+    }
+  ],
+  "keyQuotes": [
+    "The organizations best suited to handle this change are not necessarily those most advanced in AI. Rather, they are those with solid fundamentals, where AI-assisted scanning finds few bugs from the start, and those that design their Agent deployment architecture from day one under the assumption of compromise.",
+    "When evaluating any control measure, ask one question: Does this make an attack impossible, or just more difficult?",
+    "Static API keys and shared service account passwords are the first things AI-assisted attackers find; even at the Foundation level, they are not legitimate entry points.",
+    "The answer is not to remove humans from the loop, but to move them from transactional tasks to decision-making.",
+    "Compliance deadlines are real, the threat landscape is changing, and retrofitting controls after the fact is more expensive than building them in from the start."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517425&idx=1&sn=c5eab9b48287990941f197fd6369f4d8",
+  "readUrl": "https://www.bestblogs.dev/article/4e86ff6b",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045426_259b6659",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_e02139",
+  "sourceName": "赛博禅心",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045426_259b6659",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 19,
+  "wordCount": 7732,
+  "readTime": 31,
+  "mediaDuration": null,
+  "authors": [
+    "赛博禅心"
+  ],
+  "publishTimeStamp": 1779937980000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 11:13:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

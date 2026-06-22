@@ -1,0 +1,178 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T40109218dff64d87a1d834e0a5cd1987",
+  "data": {
+    "metaData": {
+      "id": "RAW_e07948fa",
+      "notExist": null,
+      "originalTitle": "爆肝万字！这应该是全网最全的 Codex 实战教程了",
+      "title": "A Comprehensive Codex Practical Guide: The Most Complete Tutorial Online",
+      "oneSentenceSummary": "This article is a comprehensive practical guide to OpenAI Codex, systematically covering its three main entry points, permission modes, best practices, prompt strategies, version management, context management, long-term memory, Skills, Plugins, MCP, and automation, along with complete engineering practice examples and common command templates.",
+      "summary": "This article is a practical tutorial on OpenAI Codex aimed at programmers, helping developers systematically master how to use Codex. It first introduces the three main entry points: CLI, App, and IDE plugins, offering selection recommendations for different user groups. Then, it delves into key considerations for using Codex, including permission modes (default, auto-review, full access) and their applicable scenarios and risk controls. In the best practices section, the author proposes a four-step workflow: 'specify scope, specify status, specify acceptance criteria, and interrupt anytime,' emphasizing the relationship between prompt quality and token consumption. The article also details Codex's multimodal capabilities, version management, context management strategies, and advanced features like AGENTS.md for long-term memory, Skills, Plugins, MCP, and automation. Finally, through a complete Pomodoro timer application case, it demonstrates the full engineering practice from requirement breakdown to code implementation, review, fixing, and summarization, along with several practical command templates.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Codex",
+        "AI Programming",
+        "Vibe Coding",
+        "Best Practices",
+        "Engineering Practice"
+      ],
+      "mainPoints": [
+        {
+          "point": "Using Codex should follow a stable workflow: 'read first, then plan, then execute, then verify, then summarize.'",
+          "explanation": "A common mistake for beginners is giving a vague task and expecting AI to complete it in one go. The correct approach is to first let AI read the project structure, formulate a plan, then make small iterative changes, test and verify, and finally summarize and solidify experience by writing common rules into AGENTS.md."
+        },
+        {
+          "point": "Permission modes are key safety controls for using Codex and should be chosen based on task risk.",
+          "explanation": "Default permissions are safest but require frequent confirmation; auto-review is suitable for daily continuous tasks and can automatically pass safe operations; full access offers the most power but carries the highest risk, suitable only for temporary use and should be switched back to a safer mode afterward."
+        },
+        {
+          "point": "Prompt quality directly impacts token consumption and output quality; short commands do not necessarily save tokens.",
+          "explanation": "Vague short commands cause AI to guess and fill in context on its own, consuming more tokens instead. A more effective approach is to specify the exact scope, status, and acceptance criteria, allowing AI to work within clear constraints."
+        },
+        {
+          "point": "AGENTS.md is a key tool for solidifying project norms and team standards, enabling long-term memory.",
+          "explanation": "Place AGENTS.md in the project root or subdirectory, writing rules about tech stack, code style, testing standards, directory conventions, etc. Codex will automatically read and follow these rules each time it enters the project, avoiding repeated explanations."
+        },
+        {
+          "point": "Skills and Plugins are core to extending Codex's capabilities, but building a solid foundation should come first.",
+          "explanation": "Skills are methods of doing things, while Plugins are toolboxes. Beginners should first master basics like project reading/writing, permissions, context, AGENTS.md, and Git workflow, then gradually explore advanced features like MCP and automation."
+        }
+      ],
+      "keyQuotes": [
+        "AI is not a god. It is an extremely powerful tool. But the more powerful the tool, the more you need to know how to use it.",
+        "In the context of Vibe Coding, the biggest fear is letting AI run wild.",
+        "Read first. Then plan. Then execute. Then verify. Then summarize. This is the simplest and most stable Codex workflow.",
+        "Many people run into problems with Codex because they don't clearly define the boundaries.",
+        "If you don't give acceptance criteria, it will just finish based on its own understanding. And AI's 'I think it's done' is often not the same as 'it's truly done' in engineering."
+      ],
+      "url": "https://juejin.cn/post/7638806086187565082",
+      "readUrl": "https://www.bestblogs.dev/article/e07948fa",
+      "enclosureUrl": null,
+      "domain": "juejin.cn",
+      "cover": "https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/43b95ce15e9640c282f3890787c700bd~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg56iL5bqP5ZGYU3VuZGF5:q75.awebp?rk3s=f64ab15b&x-expires=1779243224&x-signature=Js7pkn4axp5UZwXNz6mc4AUnREg%3D",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_82d462",
+      "sourceName": "掘金本周最热",
+      "priority": "MEDIUM",
+      "sourceImage": "https://image.jido.dev/20251127045338_apple-touch-icon.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 89,
+      "readCount": 0,
+      "wordCount": 9045,
+      "readTime": 37,
+      "mediaDuration": null,
+      "authors": [
+        "程序员Sunday"
+      ],
+      "publishTimeStamp": 1778638425000,
+      "publishDateStr": "05-13",
+      "publishDateTimeStr": "2026-05-13 02:13:45",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_2a41c1c7",
+        "type": "ARTICLE",
+        "title": "From Source Code to Architecture: A Deep Dive into React useActionState",
+        "oneSentenceSummary": "This article provides an in-depth analysis of the source code implementation of React 19's useActionState Hook, revealing its ingenious architectural design based on the collaboration of three Hooks, circular queue scheduling, Transition context restoration, and Thenable state tracking.",
+        "url": "https://juejin.cn/post/7636230868706623528",
+        "sourceName": "掘金本周最热"
+      },
+      {
+        "id": "RAW_3d3aec5e",
+        "type": "ARTICLE",
+        "title": "Aedifex: An Open-Source, AI Conversation-Driven 3D Architectural Design Editor",
+        "oneSentenceSummary": "Aedifex is an open-source, browser-based 3D architectural editor whose core innovation is the deep integration of an AI Agent, allowing users to drive complex architectural design operations directly through natural language, without needing to learn professional modeling tools.",
+        "url": "https://juejin.cn/post/7626208064598736948",
+        "sourceName": "掘金本周最热"
+      },
+      {
+        "id": "RAW_93462cd7",
+        "type": "ARTICLE",
+        "title": "Harness Is Not the Goal, Knowledge Is the Moat — Knowledge Accumulation Practices of an AI Engineering Delivery Team",
+        "oneSentenceSummary": "Based on the engineering delivery practices of an AI Team, this article proposes that knowledge accumulation is more important than workflow orchestration, and systematically introduces a complete methodology encompassing a five-layer knowledge storage architecture, a three-level maturity system, and how workflows serve knowledge accumulation.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801437&idx=1&sn=c5e13bae6cc04ef21f1ef819128e50e9",
+        "sourceName": "腾讯技术工程"
+      },
+      {
+        "id": "RAW_97b7a7a2",
+        "type": "ARTICLE",
+        "title": "💥 Claude Code Source Code Leaked? I Deconstructed the Architecture of This Top-Tier AI Coding Agent",
+        "oneSentenceSummary": "This article deeply deconstructs the core architecture of Claude Code, revealing the engineering implementation details of this top-tier AI Coding Agent, including its main loop design, five-layer context compression pipeline, three-layer permission defense, and streaming tool execution.",
+        "url": "https://juejin.cn/post/7623242804392902665",
+        "sourceName": "掘金本周最热"
+      },
+      {
+        "id": "RAW_25ff6d1a",
+        "type": "ARTICLE",
+        "title": "Flutter 3.41.6 is important; you should probably update",
+        "oneSentenceSummary": "Flutter 3.41.6 fixes an ANR deadlock issue on Android caused by the Impeller engine's Vulkan fence mechanism when the screen is locked or the app is in the background—a problem that became highly reproducible after the Android 16 security update.",
+        "url": "https://juejin.cn/post/7621948978659147810",
+        "sourceName": "掘金本周最热"
+      },
+      {
+        "id": "RAW_83fa2a78",
+        "type": "ARTICLE",
+        "title": "Investing 10,000 RMB in AI: A Year of Tools, Practices, and Reflections",
+        "oneSentenceSummary": "A systematic summary of a veteran developer's practical experience in the AI wave, covering everything from MAC toolchain optimization and Harness Engineering architectural constraints to building an Agent-driven automated learning loop.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695194&idx=1&sn=030591ea76020210c5f06692fb30243f",
+        "sourceName": "腾讯云开发者"
+      },
+      {
+        "id": "RAW_84b1f321",
+        "type": "ARTICLE",
+        "title": "Claude Code Source Code Leak: Deconstructing How an Industrial-Grade AI Coding Agent is Built",
+        "oneSentenceSummary": "This article provides a deep dive into the leaked full source code of Claude Code, revealing how Anthropic built an industrial-grade AI Agent operating system featuring parallel startup, streaming tool execution, a multi-layered permission model, and a progressive memory system.",
+        "url": "https://juejin.cn/post/7623066322222153728",
+        "sourceName": "掘金本周最热"
+      },
+      {
+        "id": "RAW_70e2f298",
+        "type": "ARTICLE",
+        "title": "Harness Engineering: How I Spent a Week Boosting AI Coding Rate to 90% in an Enterprise App",
+        "oneSentenceSummary": "This article systematically introduces Harness Engineering, a new AI coding paradigm that elevates the AI code rate of an enterprise Java application from 25% to over 90% by building a four-element system of rules, skills, knowledge, and change management.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559842&idx=1&sn=71ee08bf0421ad2f1aa4dd7a58901c5f",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_5b7ab5d5",
+        "type": "ARTICLE",
+        "title": "Understanding Harness Engineering: Finding the Shell That Keeps AI from Going Rogue—Insights from 14 Engineering Articles | Hao's Trend Talk",
+        "oneSentenceSummary": "This article provides an in-depth analysis of \"Harness Engineering,\" a core technology in the AI Agent field. It reveals how to compensate for model shortcomings through a three-layer management architecture and proposes the logic of \"Compensation Surface Migration\" that evolves with model capabilities.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566633&idx=1&sn=e8c2ba401e2a6f4fee1f8583159f5ecd",
+        "sourceName": "腾讯科技"
+      },
+      {
+        "id": "RAW_ef138a82",
+        "type": "ARTICLE",
+        "title": "Kimi K2.6 Released and Open-Sourced, Significantly Advancing Code and Agent Cluster Capabilities",
+        "oneSentenceSummary": "Moonshot AI has released and open-sourced the Kimi K2.6 model, achieving significant improvements in code capabilities, long-horizon task execution, and Agent cluster collaboration, and announced the start of the Claw Group internal beta.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488415&idx=1&sn=e494d0a74bc414a45f65d327bc97cd22",
+        "sourceName": "月之暗面 Kimi"
+      }
+    ]
+  }
+}

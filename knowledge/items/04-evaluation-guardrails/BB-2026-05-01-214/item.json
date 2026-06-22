@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-13",
+  "id": "BB-2026-05-01-214",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-214/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-214",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-214/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-214/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-214/raw/display-document.html",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-214/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-214/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-214/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / VentureBeat",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / VentureBeat",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Reliability",
+    "Delegated Work",
+    "LLM Evaluation",
+    "Autonomous Agents",
+    "Microsoft Research"
+  ],
+  "title": "Frontier AI models corrupt 25% of document content",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2604.15597",
+      "https://github.com/microsoft/DELEGATE52",
+      "https://venturebeat.com/orchestration/frontier-ai-models-dont-just-delete-document-content-they-rewrite-it-and-the-errors-are-nearly-impossible-to-catch",
+      "https://venturebeat.com/orchestration/vibe-coding-with-overeager-ai-lessons-learned-from-treating-google-ai-studio",
+      "https://www.bestblogs.dev/en/article/e60f3fb9"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://venturebeat.com/orchestration/frontier-ai-models-dont-just-delete-document-content-they-rewrite-it-and-the-errors-are-nearly-impossible-to-catch",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/e60f3fb9"
+  }
+}

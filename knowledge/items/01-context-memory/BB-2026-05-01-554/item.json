@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-13",
+  "id": "BB-2026-05-01-554",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-554/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-554",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-554/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-554/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-554/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-554/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-554/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-554/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hacker News",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hacker News",
+  "status": "Full text + source captured",
+  "tags": [
+    "Typography",
+    "Unicode",
+    "Web Development",
+    "Internationalization",
+    "OpenType"
+  ],
+  "title": "An interactive introduction to the terrific experience of rendering Arabic typography and its technical debt",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://lr0.org/blog/p/arabic/",
+      "https://www.bestblogs.dev/article/66e9b8c1"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://lr0.org/blog/p/arabic/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/66e9b8c1"
+  }
+}

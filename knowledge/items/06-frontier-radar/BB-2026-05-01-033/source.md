@@ -2,8 +2,10 @@
 
 - Title: 中国旗舰大模型横评 2026 春
 - BestBlogs URL: https://www.bestblogs.dev/explore/topics/china-flagship-llm-2026-spring
-- Original publisher URL: https://www.bestblogs.dev/status/2046249571882500354
+- Original publisher URL: Not a single external original URL; this topic page aggregates multiple BestBlogs references.
 - Original link text: Meet Kimi K2.6: Advancing Open-Source Coding 🔹Op
+
+- Primary BestBlogs reference URL: https://www.bestblogs.dev/status/2046249571882500354
 
 ## Captured Page Metadata
 

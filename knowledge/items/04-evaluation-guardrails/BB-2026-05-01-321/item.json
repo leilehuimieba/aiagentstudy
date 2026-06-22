@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Memory",
+    "Control Loop"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-17",
+  "id": "BB-2026-05-01-321",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-321/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-321",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-321/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-321/raw/meta.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-321/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-321/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Abstract + source captured",
+  "tags": [
+    "retrospective",
+    "offline-critic",
+    "failure-analysis",
+    "trajectory-scoring",
+    "recovery"
+  ],
+  "title": "Retrospex: Language Agent Meets Offline Reinforcement Learning Critic",
+  "topic": "04-evaluation-guardrails",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2505.11807"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2505.11807",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Evan You"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://cf-assets.www.cloudflare.com/zkvhlag99gkb/77PFBBDzFzIVtsPi4GXm5g/ea71873167012a47518dc593033032c6/BLOG-VOID_OG.png",
+  "domain": "blog.cloudflare.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_73900a47",
+  "keyQuotes": [
+    "Vite, Vitest, Rolldown, Oxc, and Vite+ will stay open source, vendor-agnostic, and community-driven. Nothing about that changes.",
+    "We are not moving Vite in the direction of Cloudflare. We are doing the opposite: moving Cloudflare's application tooling onto Vite.",
+    "If we do this right, the Cloudflare CLI should feel like Vite, not like a separate thing bolted on next to Vite.",
+    "Vite keeps being Vite. Cloudflare gets to help."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "The acquisition ensures Vite, Vitest, Rolldown, and Oxc stay MIT-licensed, community-driven, and portable across any platform, not just Cloudflare.",
+      "point": "VoidZero and its projects join Cloudflare, but remain open source and vendor-neutral."
+    },
+    {
+      "explanation": "The new `cf` CLI will be a superset of Vite's commands, integrating Cloudflare's platform while preserving the standard Vite workflow for developers.",
+      "point": "Cloudflare will build its developer platform on top of Vite, not the other way around."
+    },
+    {
+      "explanation": "Fast feedback loops from Vite, Vitest, and Oxlint are essential for AI agents that iterate rapidly, making the VoidZero toolchain a natural foundation for AI-coded applications.",
+      "point": "The Vite toolchain is becoming critical for AI-generated code and agent-driven development."
+    },
+    {
+      "explanation": "Future Vite versions will include first-class abstractions for backends, APIs, and deployment, allowing any provider to implement them, while Cloudflare will offer a first-class implementation on Workers.",
+      "point": "Vite is evolving into a full-stack application foundation with provider-agnostic primitives."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "VoidZero, the company behind Vite, Vitest, Rolldown, and Oxc, is joining Cloudflare, with a commitment to keep all projects open source, vendor-agnostic, and community-driven.",
+  "originalTitle": "VoidZero is joining Cloudflare",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-04",
+  "publishDateTimeStr": "2026-06-04 21:59:01",
+  "publishTimeStamp": 1780581541000,
+  "qualified": false,
+  "readCount": 41,
+  "readTime": 8,
+  "readUrl": "https://www.bestblogs.dev/article/73900a47",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_903ae3",
+  "sourceImage": "https://image.jido.dev/20260527050243_favicon.png",
+  "sourceName": "The Cloudflare Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article announces that VoidZero, the team behind the foundational JavaScript toolchain including Vite, Vitest, Rolldown, and Oxc, is joining Cloudflare. The core message is that all projects will remain MIT-licensed, open source, vendor-agnostic, and community-driven. Cloudflare commits engineering resources and a $1 million Vite ecosystem fund. The article details the existing collaboration on the Vite Environment API and Cloudflare Vite plugin, and outlines a future where Vite becomes a full-stack foundation for modern applications, including AI-agent-coded ones. Cloudflare plans to build its own developer tooling (like the new `cf` CLI) on top of Vite, rather than moving Vite towards Cloudflare. The long-term vision includes open-sourcing the Void platform and adding provider-agnostic primitives for full-stack apps and agents to Vite itself.",
+  "tags": [
+    "Vite",
+    "JavaScript",
+    "Open Source",
+    "Cloudflare",
+    "Developer Tools"
+  ],
+  "title": "VoidZero is joining Cloudflare",
+  "translateContent": null,
+  "url": "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+  "wordCount": 1906
+}

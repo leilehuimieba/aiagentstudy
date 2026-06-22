@@ -1,0 +1,82 @@
+{
+  "id": "RAW_083617dd",
+  "notExist": null,
+  "originalTitle": "华为提出「韬定律」，寻找国产芯片自己的进化方向",
+  "title": "Huawei Proposes 'Tau Scaling Law' to Chart a New Course for Domestic Chip Evolution",
+  "oneSentenceSummary": "At ISCAS 2026, Huawei proposed the 'Tau Scaling Law,' replacing transistor density with the time constant τ as a new guiding principle for semiconductor evolution, leveraging 3D stacking technologies like LogicFolding to continuously improve chip performance.",
+  "summary": "This article reports on a speech by Huawei Semiconductor Business President He Tingbo at IEEE ISCAS 2026, where she formally introduced the 'Tau Scaling Law.' Centered on the circuit time constant τ, this law advocates replacing traditional 'geometric scaling' with 'time scaling.' By utilizing 3D stacking technologies such as LogicFolding and backside power delivery, it aims to continuously reduce signal propagation delay, thereby opening a new path for semiconductor performance improvement as transistor miniaturization approaches physical limits. The article details the physical meaning of τ, explains why wire delay has become the primary bottleneck in current chip design, and describes how 3D stacking and backside power delivery optimize τ. Huawei revealed that over the past six years, it has designed and mass-produced 381 chips based on the Tau Scaling Law. The first Kirin chip using LogicFolding technology will be released this fall, and is expected to reach an equivalent 1.4nm process level by 2031. The article also notes that this technology will first benefit Huawei's AI computing product line.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Tau Scaling Law",
+    "Huawei",
+    "Chip Design",
+    "LogicFolding",
+    "Semiconductor"
+  ],
+  "mainPoints": [
+    {
+      "point": "Huawei proposes the 'Tau Scaling Law,' using the time constant τ as a new guiding principle for semiconductor evolution.",
+      "explanation": "This law advocates replacing 'geometric scaling' with 'time scaling,' continuously improving chip performance by reducing signal propagation delay, rather than solely pursuing transistor density."
+    },
+    {
+      "point": "Wire delay has become the primary bottleneck for chip performance improvement.",
+      "explanation": "At the 3nm and 2nm nodes, transistor delay itself is minimal, but extremely thin wires cause increased resistance and a larger τ, making it increasingly difficult to raise chip frequencies."
+    },
+    {
+      "point": "LogicFolding and backside power delivery are key technological paths for reducing the τ value.",
+      "explanation": "Shortening wire lengths through 3D stacking and freeing up wafer surface area with backside power delivery can effectively reduce wire resistance and parasitic capacitance, optimizing τ delay."
+    },
+    {
+      "point": "The first Kirin chip using LogicFolding will be released this fall.",
+      "explanation": "Huawei has designed and mass-produced 381 chips based on the Tau Scaling Law. The first product for the mass market is expected to be the Mate 90 series, reaching an equivalent 1.4nm process level by 2031."
+    }
+  ],
+  "keyQuotes": [
+    "We should adopt 'time scaling' instead of 'geometric scaling' as the new guiding principle for the evolution of semiconductors and electronic systems.",
+    "Transistor density itself is no longer the main factor limiting frequency. In the future, how to reduce the τ value through other comprehensive means will be the new pursuit for improving chip frequency and efficiency.",
+    "The future definitely belongs to open collaboration. On the path of semiconductor evolution, no single company can find all the answers alone."
+  ],
+  "url": "https://www.ifanr.com/1666860?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "readUrl": "https://www.bestblogs.dev/article/083617dd",
+  "enclosureUrl": null,
+  "domain": "ifanr.com",
+  "cover": "https://s3.ifanr.com/wp-content/uploads/2026/05/banner-r.jpg",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "NEWS",
+  "aiSubCategoryDesc": "AI News",
+  "category": "News_Media",
+  "categoryDesc": "News & Media",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 84,
+  "wordCount": 2120,
+  "readTime": 9,
+  "mediaDuration": null,
+  "authors": [
+    "马扶摇"
+  ],
+  "publishTimeStamp": 1779786410000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 17:06:50",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

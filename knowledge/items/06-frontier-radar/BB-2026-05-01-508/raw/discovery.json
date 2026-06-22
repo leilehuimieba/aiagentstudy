@@ -1,0 +1,81 @@
+{
+  "authors": [
+    "大淘宝技术"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045404_f9729af6",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_77046432",
+  "keyQuotes": [
+    "TaoAvatar is a 3D realistic digital human solution based on 3D Gaussian Splatting. It primarily addresses several typical issues in traditional 3D modeling, such as high computational cost, insufficient detail reconstruction, and difficulty in running on mobile devices.",
+    "It has evolved from training on 'single person, single garment, single action segment' to unified modeling of 'single ID, multiple garments, multiple actions'."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The solution integrates 3D Gaussian reconstruction, speech-driven lip sync, body pose and gesture driving, on-device real-time rendering, and an LLM inference engine, with core metrics reaching 2K resolution, 90 FPS real-time driving, production cost under 20,000 RMB, and delivery efficiency within one week.",
+      "point": "TaoAvatar is based on 3D Gaussian Splatting, achieving high-fidelity, drivable 3D realistic digital humans."
+    },
+    {
+      "explanation": "Non-rigid deformation expressions for hair and clothing are added on top of SMPLX, employing a layered supervision strategy for face, hands, and body combined with a large and small studio setup, achieving an average PVE error of 6-7 mm, outperforming the open-source SOTA framework EasyMocap.",
+      "point": "Through the SMPLX++ extension and layered decoupled supervision, high-precision realistic body and motion capture is achieved."
+    },
+    {
+      "explanation": "By using human body part parsing and UV space to uniformly learn non-rigid deformations, different garments share weights. The deformations are ultimately baked into geometry and Gaussian deformation fields runnable on the device, with assets around 400 MB, achieving 90 FPS on the device.",
+      "point": "Upgrading from single-person, single-garment to single-ID, multi-garment unified modeling enables cross-garment unified driving."
+    },
+    {
+      "explanation": "It uses spline curves to describe the motion, appearance, and lifecycle of Gaussian points, and introduces non-uniform temporal control points to balance quality and storage, achieving a PSNR of 31-35 and on-device rendering at approximately 90 FPS.",
+      "point": "The TaoVideo-4DGS solution does not rely on an explicit human model and can reconstruct complex dynamic effects for any garment."
+    },
+    {
+      "explanation": "The online App provides a 3D immersive shopping experience, while offline flagship stores integrate AI + 3D + XR technology, having opened in multiple cities. Collaborations with brands like Berghaus and the Milan Winter Olympics have validated the technology's commercial value.",
+      "point": "Taobao Vision has achieved large-scale deployment in both its online App and offline flagship stores, and has won the Apple Design Awards."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article is the full report presented by the Taotian Meta Technology Team at CCIG 2026, systematically introducing the TaoAvatar realistic digital human technology system based on 3D Gaussian Splatting, covering static modeling, drivable reconstruction, volumetric video, and its application in Taobao Vision.",
+  "originalTitle": "CCIG 2026 | TaoAvatar：3D 真人数字人在淘宝 Vision 领域的应用",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 15:53:00",
+  "publishTimeStamp": 1780645980000,
+  "qualified": false,
+  "readCount": 46,
+  "readTime": 20,
+  "readUrl": "https://www.bestblogs.dev/article/77046432",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_efc2de",
+  "sourceImage": "https://image.jido.dev/20251127045404_f9729af6",
+  "sourceName": "大淘宝技术",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is the full text of an academic report invited by the Taotian Meta Technology Team at the China Conference on Image and Graphics (CCIG 2026). The article first outlines the diverse styles and application scenarios of digital humans, then details the three core capabilities of the TaoAvatar technology system: TaoModel (3DGS human body static modeling), TaoAvatar (3DGS drivable digital human reconstruction), and TaoVideo (4DGS human volumetric video). In the core technology section, the article elaborates on the realistic digital human technology framework based on 3D Gaussian Splatting, including realistic body and motion capture (based on SMPLX++ extension), realistic dynamic reconstruction (unified driving for multiple garments), and realistic speech-driven gesture algorithms (GestureDiT + LLM). The article also introduces the TaoVideo-4DGS volumetric video solution, which uses spline curves to describe Gaussian point motion and appearance, achieving complex dynamic effects. In terms of application, the article showcases the practices of Taobao Vision in its online App (winner of the Apple Design Awards) and offline future flagship stores, as well as brand collaborations such as the Berghaus virtual clothing store and the digital human for the Milan Winter Olympics uniforms. Finally, the article looks ahead to future technological evolution directions, including a low-cost digital human generation solution based on a single image/sparse views (FHAvatar), and introduces the team and recruitment information.",
+  "tags": [
+    "3D Digital Human",
+    "3D Gaussian Splatting",
+    "Computer Vision",
+    "XR",
+    "AI Applications"
+  ],
+  "title": "CCIG 2026 | TaoAvatar: Application of 3D Realistic Digital Humans in Taobao Vision",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544017&idx=1&sn=7c1a0cc4a43ea9b7cd5417ed44822e76",
+  "wordCount": 4929
+}

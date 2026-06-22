@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-19",
+  "id": "BB-2026-05-01-240",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-240/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-240",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-240/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-240/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-240/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-240/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-240/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-240/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯云开发者",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯云开发者",
+  "status": "Full text + source captured",
+  "tags": [
+    "Skill Self-Evolution",
+    "AI Agent",
+    "LLM Evaluation",
+    "AutoResearch",
+    "Meta-Harness"
+  ],
+  "title": "Let Skill Train Itself: 8-Stage Loop, 3-Tier Evaluation, 5-Dimensional AND Gating for Self-Evolution",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695568&idx=1&sn=492ca1e98155a9fea668213173cab654",
+      "https://www.bestblogs.dev/article/8fdfe4e8"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695568&idx=1&sn=492ca1e98155a9fea668213173cab654",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/8fdfe4e8"
+  }
+}

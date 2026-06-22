@@ -1,0 +1,79 @@
+{
+  "id": "RAW_ae472ac6",
+  "notExist": null,
+  "originalTitle": "从 Prompt、Context 到 Harness，工程的三次进化与终局之战",
+  "title": "From Prompt to Context to Harness: The Three Evolutions of Engineering and the Endgame",
+  "oneSentenceSummary": "This article systematically elaborates on the three evolutions of AI engineering—from Prompt Engineering to Context Engineering to Harness Engineering—emphasizing that they are nested rather than substitutive, and introduces the Harness Decay Law and a new paradigm for engineers.",
+  "summary": "Using the example of a 3-7 person team at OpenAI generating nearly 1 million lines of production-grade code with AI in 5 months, the article systematically outlines the three evolutions of AI engineering. The first evolution, Prompt Engineering, addresses the issue of 'saying it clearly,' but its marginal benefits diminish as model comprehension improves. The second evolution, Context Engineering, tackles the problem of 'providing sufficient information,' encompassing key techniques such as RAG, context compression, and a single source of truth. The third evolution, Harness Engineering, solves the challenge of 'system reliability,' leveraging strategies like context governance, validation loops, and technical debt cleanup to manage AI. The article emphasizes that these three are nested layers, and introduces the Harness Decay Law—the more capable the model, the simpler the required Harness. Finally, it posits that the new paradigm for engineers is 'Human Steer, Agents Execute,' shifting their core responsibility from writing code to setting direction, building frameworks, and making judgments.",
+  "featuredReason": "This article details the three evolutions of AI engineering: Prompt, Context, and Harness Engineering. It reveals how OpenAI's team leveraged Harness Engineering to generate nearly a million lines of production code, highlighting the paradigm shift for engineers from coding to designing reliable AI systems. This offers critical insights for adapting to the AI era.",
+  "translateContent": null,
+  "tags": [
+    "Prompt Engineering",
+    "Context Engineering",
+    "Harness Engineering",
+    "AI Agent",
+    "AI Engineering"
+  ],
+  "mainPoints": [
+    {
+      "point": "AI engineering has undergone three evolutions—Prompt, Context, and Harness—which are nested rather than substitutive.",
+      "explanation": "Prompt addresses what to say, Context addresses what to know, and Harness addresses how to operate reliably. Without a good Prompt, Context information cannot be correctly understood; without good Context, the Agent operates blindly in an information vacuum; without a good Harness, the Agent accumulates errors and eventually collapses in complex tasks."
+    },
+    {
+      "point": "Harness Engineering is currently a necessary condition for reliable AI system operation, but it is subject to the Decay Law.",
+      "explanation": "The more capable the model, the simpler the required Harness. As models evolve, many of today's meticulously designed Harness rules will be naturally absorbed by future model capabilities. Engineers should dynamically adjust Harness thickness and avoid over-engineering."
+    },
+    {
+      "point": "The new paradigm for engineers is 'Human Steer, Agents Execute,' with core responsibilities shifting from writing code to designing systems.",
+      "explanation": "An engineer's value is reflected in the Harness system they build, with core responsibilities shifting to setting direction, building frameworks, and making judgments. Metrics shift from individual code output to system leverage."
+    }
+  ],
+  "keyQuotes": [
+    "Human steer, agents execute.",
+    "Don't over-engineer solutions for problems that models will naturally solve in the future.",
+    "Software engineering hasn't disappeared; it's evolving. From 'someone who writes code' to 'someone who designs systems that let AI write code well.'",
+    "Prompt Engineering answers: 'What should I say to the model?' Context Engineering answers: 'What should the model know when answering?' Harness Engineering answers: 'How should the entire AI system operate reliably?'"
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695574&idx=1&sn=5a72299143649e58cc510ab1b50480b4",
+  "readUrl": "https://www.bestblogs.dev/article/ae472ac6",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045410_4d44587a",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_efac5b",
+  "sourceName": "腾讯云开发者",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 92,
+  "readCount": 680,
+  "wordCount": 6656,
+  "readTime": 27,
+  "mediaDuration": null,
+  "authors": [
+    "腾讯云开发者"
+  ],
+  "publishTimeStamp": 1779237900000,
+  "publishDateStr": "05-20",
+  "publishDateTimeStr": "2026-05-20 08:45:00",
+  "qualified": true,
+  "stickTop": false,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

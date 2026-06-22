@@ -1,0 +1,60 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-24",
+  "id": "BB-2026-05-01-314",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/05-security-techniques/BB-2026-05-01-314/article.md",
+    "item_dir": "knowledge/items/05-security-techniques/BB-2026-05-01-314",
+    "raw_dir": "knowledge/items/05-security-techniques/BB-2026-05-01-314/raw",
+    "raw_files": [
+      "knowledge/items/05-security-techniques/BB-2026-05-01-314/raw/meta.json"
+    ],
+    "source": "knowledge/items/05-security-techniques/BB-2026-05-01-314/source.md",
+    "summary": "knowledge/items/05-security-techniques/BB-2026-05-01-314/summary.md"
+  },
+  "schema_version": 1,
+  "source": "GitHub",
+  "source_id": "github",
+  "source_name": "GitHub",
+  "status": "README excerpts + source captured",
+  "tags": [
+    "tplmap",
+    "automation",
+    "ssti-detection",
+    "engine-fingerprinting",
+    "sandbox-escape"
+  ],
+  "title": "Tplmap: Server-Side Template Injection and Code Injection Detection and Exploitation Tool",
+  "topic": "05-security-techniques",
+  "type": "repo",
+  "urls": {
+    "all_source_urls": [
+      "https://github.com/epinna/tplmap"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://github.com/epinna/tplmap",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

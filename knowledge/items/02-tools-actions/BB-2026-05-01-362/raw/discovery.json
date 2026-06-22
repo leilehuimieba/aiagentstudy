@@ -1,0 +1,83 @@
+{
+  "id": "RAW_d2710aed",
+  "notExist": null,
+  "originalTitle": "AI 导购在 vivo 官网的落地实践",
+  "title": "The Implementation of AI Shopping Assistant on vivo's Official Website",
+  "oneSentenceSummary": "This article details the implementation of an AI shopping assistant on vivo's official website, utilizing intent recognition models, Agent workflows, RAG knowledge bases, and structured output to recommend phones and answer parameter-related questions.",
+  "summary": "This article systematically describes the entire process from technology selection to implementation of the AI shopping assistant feature in vivo's official website app. First, by comparing three approaches—fine-tuning large models, building dedicated models, and using Agent workflows—the Agent workflow was chosen based on cost-effectiveness, technical risk, and business suitability. The overall architecture adopts a four-layer design: Application Layer, Strategy Layer, Jiuwen Layer (Agent platform), and Xuanji Layer (large model computation). Core solutions include: using a FastText small model for intent recognition (inference time ~10ms), designing two agents for phone parameter interpretation and product recommendation, enhancing answer accuracy through Prompt engineering and RAG knowledge bases, and achieving structured display of product cards, large model streaming output, and related posts. After launch, the first-character response time was controlled within 2.5 seconds, positively contributing to business GMV and resolution rate.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Shopping Assistant",
+    "Agent Workflow",
+    "Intent Recognition",
+    "RAG",
+    "Prompt Engineering"
+  ],
+  "mainPoints": [
+    {
+      "point": "Choosing the Agent workflow approach over fine-tuning large models or building dedicated models.",
+      "explanation": "Based on a comprehensive evaluation of cost-effectiveness, technical risk control, business suitability, and maintenance costs, the Agent workflow approach demonstrated the best performance in development cost, generalization capability, and iteration efficiency."
+    },
+    {
+      "point": "Using a FastText small model for intent recognition with an inference time of approximately 10ms.",
+      "explanation": "By training a FastText text classification model with synthetic data to replace large language models for front-end intent recognition, response latency is significantly reduced while maintaining accuracy, and it can run efficiently on CPUs."
+    },
+    {
+      "point": "Adopting a combined strategy of Prompt engineering + RAG knowledge base + information interface engineering.",
+      "explanation": "Through carefully designed Prompts to constrain model behavior boundaries, utilizing RAG to retrieve relevant fragments from product recommendation and review knowledge bases, and combining engineering capabilities such as product APIs and intelligent customer service, a high-quality information set is constructed and fed into the large model."
+    },
+    {
+      "point": "Achieving structured display of product cards, large model outputs, and related posts.",
+      "explanation": "By engineering means to combine large model outputs with backend interface data, dynamically inserting product cards and community post information into the streaming output, enhancing user experience and information richness."
+    }
+  ],
+  "keyQuotes": [
+    "Broadly speaking, an AI shopping assistant is a comprehensive agent that users can engage in multi-turn conversations with; narrowly speaking, it is a system that works through information processing engineering and large language models to understand user intent and respond to user questions under constrained conditions.",
+    "When building an AI shopping assistant, it is essential to clearly define the capability boundaries of the solution, i.e., to have a clear understanding of the AI shopping assistant's role in the vivo website scenario. Therefore, from the outset, the goal was not to be 'big and comprehensive,' but 'small and precise.'",
+    "Through a layered design, each layer can more clearly understand its own responsibilities. As long as the interface between layers is properly connected, there is no need to worry about the implementation details of other layers.",
+    "All recommended phone product information is supplemented into the phone recommendation list according to certain rules, then combined with the Prompt and sent to the large model together. This allows the large model to understand the user's query, find the most suitable phone from the recommendation list, and provide a recommendation reason."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506373&idx=1&sn=6405ad92f1dbbc0fa74b2d9f3c234bf7",
+  "readUrl": "https://www.bestblogs.dev/article/d2710aed",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045420_f18cd4b9",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_75edb9",
+  "sourceName": "vivo互联网技术",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045420_f18cd4b9",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 76,
+  "wordCount": 10068,
+  "readTime": 41,
+  "mediaDuration": null,
+  "authors": [
+    "vivo互联网技术"
+  ],
+  "publishTimeStamp": 1779883200000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 20:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

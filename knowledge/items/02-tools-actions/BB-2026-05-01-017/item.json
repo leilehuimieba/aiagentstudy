@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Evaluation/Guardrails",
+    "Context/State"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-28",
+  "id": "BB-2026-05-01-017",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-017/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-017",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-017/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-017/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-017/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-017/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / AI Engineer",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / AI Engineer",
+  "status": "Full text + source captured",
+  "tags": [
+    "MCP",
+    "Cross-App Access",
+    "ID-JAG",
+    "AI Agent",
+    "OAuth"
+  ],
+  "title": "一次登录打通所有 MCP：WorkOS 的 Cross-App Access 方案",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/video/adebf6b",
+      "https://www.youtube.com/watch?v=EmhRyw6xeT0"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.youtube.com/watch?v=EmhRyw6xeT0",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/video/adebf6b"
+  }
+}

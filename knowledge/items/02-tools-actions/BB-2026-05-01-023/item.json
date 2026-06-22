@@ -1,0 +1,94 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "MCP",
+    "Identity/Permissions",
+    "Production Systems"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-21 16:00:00",
+  "id": "BB-2026-05-01-023",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-023/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-023",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-023/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-023/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-023/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-023/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Claude Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Claude Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "MCP",
+    "AI 智能体",
+    "模型上下文协议",
+    "生产系统",
+    "集成模式"
+  ],
+  "title": "使用 MCP 构建能够接入生产系统的智能体",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://claude.ai/directory/connectors",
+      "https://claude.ai/directory/plugins/data%40knowledge-work-plugins",
+      "https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp",
+      "https://claude.com/blog/claude-managed-agents",
+      "https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers",
+      "https://claude.com/blog/skills-explained",
+      "https://claude.com/connectors",
+      "https://claude.com/connectors/atlassian",
+      "https://claude.com/connectors/notion",
+      "https://claude.com/connectors/sentry",
+      "https://claude.com/product/cowork",
+      "https://code.claude.com/docs/en/channels",
+      "https://code.claude.com/docs/en/plugins-reference#plugin-components-reference",
+      "https://github.com/cloudflare/mcp",
+      "https://github.com/modelcontextprotocol/experimental-ext-skills",
+      "https://modelcontextprotocol.io/docs/develop/build-client#python",
+      "https://modelcontextprotocol.io/docs/develop/build-server",
+      "https://modelcontextprotocol.io/docs/sdk",
+      "https://modelcontextprotocol.io/extensions/apps/overview",
+      "https://modelcontextprotocol.io/specification/2025-11-25",
+      "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization#client-id-metadata-documents",
+      "https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation",
+      "https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation#form-mode-elicitation-requests",
+      "https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation#url-mode-elicitation-requests",
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/programmatic-tool-calling",
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool",
+      "https://platform.claude.com/docs/en/managed-agents/overview",
+      "https://platform.claude.com/docs/en/managed-agents/vaults#mcp-oauth-credential",
+      "https://www.anthropic.com/engineering/advanced-tool-use",
+      "https://www.anthropic.com/engineering/code-execution-with-mcp",
+      "https://www.anthropic.com/engineering/writing-tools-for-agents",
+      "https://www.bestblogs.dev/article/34499204",
+      "https://www.youtube.com/embed/bluAmTHoEow"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/34499204"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-08",
+  "id": "BB-2026-05-01-466",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-466/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-466",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-466/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-466/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-466/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-466/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-466/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-466/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Datawhale",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Datawhale",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM",
+    "World Model",
+    "JEPA",
+    "Yann LeCun",
+    "Embodied AI"
+  ],
+  "title": "Turing Award Winner LeCun on the Next Step for Large Models",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723344&idx=1&sn=974298301e30051750b5a549c497cc8b",
+      "https://www.bestblogs.dev/article/dba8def6"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723344&idx=1&sn=974298301e30051750b5a549c497cc8b",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/dba8def6"
+  }
+}

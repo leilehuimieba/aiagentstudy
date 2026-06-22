@@ -1,0 +1,79 @@
+{
+  "id": "RAW_2f7a0ee5",
+  "notExist": null,
+  "originalTitle": "Claude Opus 4.8: “a modest but tangible improvement”",
+  "title": "Claude Opus 4.8: “a modest but tangible improvement”",
+  "oneSentenceSummary": "Anthropic released Claude Opus 4.8 as a modest incremental improvement over its predecessor, with notable gains in honesty and reduced hallucination, plus new features like mid-conversation system messages and a lower prompt cache minimum.",
+  "summary": "Simon Willison reviews Anthropic's Claude Opus 4.8 release, highlighting the lab's refreshingly honest framing of the model as a modest but tangible improvement. The key advancement is in honesty: Opus 4.8 is four times less likely to let flaws in its code pass unremarked, and achieves the lowest incorrect rate across benchmarks by abstaining on uncertain questions rather than guessing. Pricing remains unchanged at $5/$25 per million tokens, but fast mode pricing is significantly reduced. New developer features include mid-conversation system messages for dynamic instruction updates without breaking prompt cache, and a lower minimum cacheable prompt length of 1,024 tokens (down from 4,096). The context window stays at 1,000,000 tokens with 128,000 max output. Willison also demonstrates the model's capabilities by generating pelican-on-bicycle illustrations across five thinking levels, noting the max level produced the best result at a cost of 43 cents.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Claude Opus 4.8",
+    "Anthropic",
+    "LLM",
+    "AI Honesty",
+    "Model Release"
+  ],
+  "mainPoints": [
+    {
+      "point": "Claude Opus 4.8 is a minor incremental improvement, honestly described by Anthropic.",
+      "explanation": "The release announcement explicitly frames it as a modest improvement, a refreshing contrast to typical AI hype. The model maintains the same pricing and context window as its predecessor."
+    },
+    {
+      "point": "The model's primary improvement is in honesty and reduced hallucination.",
+      "explanation": "Opus 4.8 is four times less likely to overlook flaws in its own code, and achieves the lowest incorrect rate across benchmarks by abstaining on uncertain questions rather than fabricating answers."
+    },
+    {
+      "point": "New developer features include mid-conversation system messages and lower prompt cache minimum.",
+      "explanation": "Developers can now append system messages mid-conversation without restating the full prompt, preserving cache hits. The minimum cacheable prompt length dropped from 4,096 to 1,024 tokens, reducing costs for agentic loops."
+    }
+  ],
+  "keyQuotes": [
+    "Users will find Opus 4.8 to be a modest but tangible improvement on its predecessor.",
+    "Opus 4.8 is around four times less likely than its predecessor to allow flaws in code it has written to pass unremarked.",
+    "Claude Opus 4.8 had the lowest incorrect-rate of the six models on every benchmark—the most direct measure of factual hallucination.",
+    "This lets you append updated instructions later in a long-running conversation without restating the full system prompt, which preserves prompt cache hits on the earlier turns and reduces input cost on agentic loops."
+  ],
+  "url": "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything",
+  "readUrl": "https://www.bestblogs.dev/article/2f7a0ee5",
+  "enclosureUrl": null,
+  "domain": "simonwillison.net",
+  "cover": "https://static.simonwillison.net/static/2026/opus-3-8-card.jpg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045509_876e4367",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "MODELS",
+  "aiSubCategoryDesc": "AI Models",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 45,
+  "wordCount": 601,
+  "readTime": 3,
+  "mediaDuration": null,
+  "authors": [
+    "Simon Willison"
+  ],
+  "publishTimeStamp": 1780012790000,
+  "publishDateStr": "05-29",
+  "publishDateTimeStr": "2026-05-29 07:59:50",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

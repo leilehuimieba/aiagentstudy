@@ -2,7 +2,7 @@
 
 ## Article
 
-- Title: 一项旨在保护全球软件安全的计划 | Project Glasswing
+- Title: 一项旨在保护全球软件安全的计划：Project Glasswing
 - Source: BestBlogs / Anthropic
 - URL: https://www.bestblogs.dev/video/e7d09d0
 - Date: 2026-04-07

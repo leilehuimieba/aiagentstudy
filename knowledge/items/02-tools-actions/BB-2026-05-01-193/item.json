@@ -1,0 +1,68 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-13",
+  "id": "BB-2026-05-01-193",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-193/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-193",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-193/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-193/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-193/raw/display-document.html",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-193/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-193/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-193/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / dbaplus社群",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / dbaplus社群",
+  "status": "Full text + source captured",
+  "tags": [
+    "MCP",
+    "Claude Code",
+    "AI Programming",
+    "Log Diagnosis",
+    "Bug Localization"
+  ],
+  "title": "Stop Manual Log Checking: Diagnose Bugs with AI + MCP in One Click",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247636147&idx=1&sn=e6b40b0258db9e9c5fc5fd3eadd9d140",
+      "https://www.bestblogs.dev/en/article/3e018134",
+      "https://{your-oversea-aigw-domain}/api/v1/mcp/log-mcp/sse",
+      "https://{your-prd-aigw-domain}/api/v1/mcp/log-mcp/sse",
+      "https://{your-pre-aigw-domain}/api/v1/mcp/log-mcp/sse",
+      "https://{your-t1-aigw-domain}/api/v1/mcp/log-mcp/sse"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247636147&idx=1&sn=e6b40b0258db9e9c5fc5fd3eadd9d140",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/3e018134"
+  }
+}

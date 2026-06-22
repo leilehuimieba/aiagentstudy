@@ -1,0 +1,199 @@
+# Introducing Open SWE: An Open-Source Asynchronous Coding Agent
+
+---
+
+- Local ID: RSS-2026-020
+- Source: RSS / LangChain Blog
+- Date: 2026-06-16
+- URL: https://www.langchain.com/blog/introducing-open-swe-an-open-source-asynchronous-coding-agent
+- Feed URL: https://blog.langchain.com/rss.xml
+- Capture depth: feed metadata + article page extraction
+
+---
+
+## Feed Summary
+
+Open SWE is an open-source, cloud-hosted coding agent that autonomously handles GitHub tasks—planning, coding, testing, and opening PRs.
+
+## Captured Article Text
+
+Introducing Open SWE: An Open-Source Asynchronous Coding Agent 
+
+Try LangSmith 
+
+Get a demo 
+
+Company Announcements 
+
+Observability & Evals 
+
+Introducing Open SWE: An Open-Source Asynchronous Coding Agent 
+
+The LangChain Team 
+
+August 6, 2025 
+
+9 
+
+min 
+
+Go back to blog 
+
+Create agents 
+
+Share 
+
+The use of AI in software engineering has evolved over the past two years. It started as autocomplete, then went to a copilot in an IDE, and in the fast few months has evolved to be a long running, more end-to-end agent that run asynchronously in the cloud. 
+
+We believe that all agents will long more like this in the future - long running, asynchronous, more autonomous. Specifically, we think that they will: 
+
+Run asynchronously in the cloud 
+
+Integrate directly with your tooling 
+
+Have enough context over your environment to properly plan tasks over longer time horizons 
+
+Review their own work (and fix any issues) before completing their task 
+
+Over the past few months it became apparent that software engineering was the first discipline where this vision would become a reality. Yet there was no open source project that captured these characteristics. 
+
+So we built Open SWE , the first open-source, async, cloud-hosted coding agent. It connects directly to your GitHub repositories, allowing you to delegate tasks from GitHub issues or our custom UI . Open SWE operates like another engineer on your team: it can research a codebase, create a detailed execution plan, write code, run tests, review its own work for errors, and open a pull request when it's finished. 
+
+Open SWE contributions to the LangGraph repository 
+We've been using it internally to accelerate our own development on projects like LangGraph, and the Open SWE repo itself where it’s already a top contributor. 
+
+Open SWE contributions to its own repository 
+Today, we're excited to share it with the community. 
+
+How to Use It 
+
+You can get started with the hosted version of Open SWE in minutes. All you need is an Anthropic API key. 
+
+Visit swe.langchain.com . 
+
+Connect your GitHub account and select the repositories you want Open SWE to access. 
+
+Provide your Anthropic API key in settings. 
+
+Start a new task and watch it go! 
+
+Open SWE Homepage 
+If you’re looking for a place to start, you can check out the examples page in our documentation . 
+
+Why Open SWE? 
+
+There are a number of open source coding projects. Why built a new one? We wanted to drive attention and focus to aspects besides just the prompts and tools used. Specifically, we wanted to highlight more of the overall flow and UX that is needed to bring these agents to the point where we can interact with them in a reliable way. 
+
+We think UI/UX is often the one of the more under-explored areas in agent building. The overall interaction pattern of your application can greatly determine the usage it gets. With asynchronous agents being such a new idea, we think there are a lot of interesting patterns to explore here. Two main points are more control and deep integration . 
+
+Control: Open SWE has two main features that give you more control over your coding agent while it's running. You can interrupt the agent when you want to review work or nudge it back on track without restarting. 
+
+Human in the loop: When Open SWE generates a plan, it interrupts and gives you the chance to accept, edit, delete, or request changes to the plan. It missed something? Simply tell it to keep digging, and it’ll restart the planning process for your task. 
+
+Double texting: Most coding agents don’t support accepting new requests or feedback while they’re running. Open SWE doesn’t suffer from that constraint. If you change your mind on the product spec, want to add a new feature, or see it going off the rails, simply send it a message, and it’ll smoothly integrate that into its active session. 
+
+Deeply integrated: Open SWE integrates directly with your GitHub account and repositories, so you can assign it work like any other developer and give it context to your code. Developers already live in GitHub, so why make them learn a new product? With Open SWE, every new task is given a tracking issue. This issue is updated throughout the session with status updates, execution plans and more. When it completes a task, a pull request is automatically opened and linked back to the tracking issue. 
+
+You can also trigger runs directly from GitHub: 
+
+Simply add a label (e.g., open-swe-auto ) to a GitHub issue, and Open SWE gets to work. When it’s done, it opens a pull request, ready for your review. It fits into your existing process, just like a human teammate. 
+
+Besides these two core pillars, there are two other components we focused on. These focus less on the interaction pattern of humans with OpenSWE, but rather on how OpenSWE runs and does it work. 
+
+Runs in an isolated sandbox Every task runs in a secure, isolated Daytona sandbox. Since each Open SWE session is given its own sandbox, you don’t need to worry about malicious commands, and can let Open SWE execute any shell command it wants. This means we can move quicker, without requiring human approval for every command it wants to run. 
+
+Runs asynchronously in the cloud: The cloud-native architecture means Open SWE can work on multiple tasks in parallel without consuming your local resources. You can assign it a list of tasks in the morning and come back to a set of PRs in the afternoon. 
+
+Plans and reviews before committing: Many agents jump straight to code, often leading to mistakes that break your CI pipeline. Open SWE uses a multi-agent architecture with dedicated Planner and Reviewer components. The Planner researches the codebase to form a robust strategy first. After the code is written, the Reviewer checks for common errors, runs tests and formatters, and reflects on the changes before ever opening a PR. We've found this is more effective at writing workable code with fewer review cycles. 
+
+Considerations: Open SWE is great for complex, longer running tasks. But for small one-liner bug fixes or simple style updates, this architecture is not optimal. For tasks like these, you want the agent to be able to skip the planning and reviewing stages, and jump right into execution. We’re currently working on implementing a version of Open SWE which does just this. It runs locally via a CLI, and is more agentic, allowing it to choose whether or not it needs to plan or review its code. When this is done, Open SWE will be a true one-stop-shop for all engineering tasks, for anything from simple one-line style fixes, all the way to complete product implementation from scratch. 
+
+How It Works: The Agent Architecture 
+
+Open SWE operates using three specialized LangGraph agents that work in sequence: a Manager, a Planner, and a Programmer (which contains a sub-agent Reviewer). 
+
+Manager: This graph is the entry point. It handles user interactions and routes tasks. When you create a task, it initializes the state and passes control to the Planner. 
+
+Planner: Before a single line of code is written, the Planner analyzes the request, researches the codebase by viewing files and running searches, and creates a detailed, step-by-step execution plan. By default, this requires a manual review step where you can edit, approve, or provide feedback on the proposed plan. If you’re feeling bold, however, you can skip this step. 
+
+Programmer & Reviewer: Once a plan is approved, the Programmer executes each step in the sandbox. This includes writing code, running tests, and searching the web for documentation. When the Programmer completes its tasks, it hands off to the Reviewer, which analyzes the generated code for quality, correctness, and completeness. If issues are found, it sends the task back to the Programmer with feedback for another iteration. This action-review loop continues until the code is perfect. 
+
+Once the Reviewer approves the work, Open SWE generates a final conclusion, opens a pull request, and marks the task as complete. 
+
+Tech We Used: LangGraph and LangGraph Platform 
+
+Open SWE is built on LangGraph, which allows us to have more control over each step in the workflow. Open SWE operates through four agents, each with their own state and unique inputs/outputs. By using LangGraph, we’re able to easily orchestrate calling all of the agents, managing their state at any point in time, and handling edge error cases. In addition to the LangGraph framework, Open SWE is deployed on LangGraph Platform (LGP). LGP is purpose built for long running agents (these agents can sometimes run for an hour at a time), comes with built in persistence (powering our human-in-the-loop features) and autoscales (so that we can kick of hundreds of agent runs if necessary). 
+
+Refined with LangSmith 
+
+Open SWE is a complex multi-agent system. The main challenge in getting this system to be useful was making sure that the results it produced were accurate enough. The biggest challenge with this was context engineering . Did it have the correct instructions on how to use the tools? Was it fetching the right context? If we changed those instructions, how would the performance change? In order to first debug context engineering, and then later to evaluate changes to context engineering, we used LangSmith - the leading AI observability and evaluation platform. 
+
+Open Source and Extensible 
+
+We built Open SWE to be a powerful tool out of the box, but we're most excited about its potential as a foundation for the community. The entire project is open source, built on LangGraph, and designed to be extended. 
+
+You can fork the repository, customize the prompts, add new tools for your internal APIs, or modify the agent's core logic to fit your team's specific needs. Our developer documentation provides a detailed guide for setting up and deploying your own version. 
+
+We believe the future of software development will be collaborative between humans and agents. Open SWE is our first big step in building that future in the open. 
+
+Try Open SWE 
+
+GitHub Repository 
+
+Documentation 
+
+YouTube Video Announcement 
+
+Related content 
+
+Company Announcements 
+
+LangSmith 
+
+Everything we shipped at Interrupt 
+
+Jacob Talbot 
+
+May 14, 2026 
+
+11 
+
+min 
+
+Company Announcements 
+
+Introducing LangChain Labs 
+
+Harrison Chase 
+
+May 14, 2026 
+
+3 
+
+min 
+
+Company Announcements 
+
+Interrupt Preview: Meet the MC 
+
+Becca Weng 
+
+April 28, 2026 
+
+7 
+
+min 
+
+Sign up for our newsletter to stay up to date 
+
+Thank you! Your submission has been received! 
+
+Oops! Something went wrong while submitting the form. 
+
+See what your agent is really doing 
+
+LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click. 
+
+Try LangSmith 
+
+Get a demo

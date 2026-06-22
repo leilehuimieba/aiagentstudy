@@ -1,0 +1,84 @@
+{
+  "id": "RAW_9351af34",
+  "notExist": null,
+  "originalTitle": "A Developer's Guide to WebMCP: Shipping a 0% Adoption Standard",
+  "title": "A Developer's Guide to WebMCP: Shipping a 0% Adoption Standard",
+  "oneSentenceSummary": "A developer ships WebMCP on two sites despite 0% adoption across the top 200,000 domains, documenting the implementation, the null results, and the strategic case for being early on an emerging AI-web standard.",
+  "summary": "This article presents a first-hand account of implementing WebMCP, a W3C Community Group Draft standard for enabling AI agents to call site tools directly, rather than just crawling HTML. The author scanned 111,076 of the top 200,000 websites and found zero production deployments of WebMCP. He then shipped it on two of his own sites: chudi.dev (using a SvelteKit polyfill) and citability.dev (using a .well-known manifest). The article details the full implementation code, the data on AI bot traffic and adoption curves for 17 emerging standards, and the honest result that after 93 days, zero AI agents have called his WebMCP tools. Despite the null result, the author argues that the low implementation cost, the compounding learning from a still-plastic spec, and the potential for early-mover dynamics when the adoption cliff moves make shipping now a worthwhile strategic bet. The piece includes practical step-by-step implementation guides for both SvelteKit and Next.js, and discusses the broader shift from passive permission signals (robots.txt) to active capability standards (WebMCP, A2A Agent Cards).",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "WebMCP",
+    "AI Agents",
+    "Web Standards",
+    "AI Infrastructure",
+    "Agentic Web"
+  ],
+  "mainPoints": [
+    {
+      "point": "WebMCP has 0% adoption across the top 200,000 websites, but the author argues this is a starting point, not a ceiling.",
+      "explanation": "A scan of 111,076 domains found zero production WebMCP deployments. The author shipped it anyway, arguing that the low implementation cost and potential early-mover advantage make it a worthwhile strategic bet."
+    },
+    {
+      "point": "The adoption curve for AI-web standards shows a cliff between passive signals and active capabilities.",
+      "explanation": "Standards like robots.txt and ai.txt (passive permission signals) have high adoption, while standards like WebMCP and A2A Agent Cards (active capability descriptions) are near zero. This cliff represents an opportunity for early adopters."
+    },
+    {
+      "point": "The author's two implementations (polyfill and manifest) received zero agent calls, but this null result is the most informative part of the experiment.",
+      "explanation": "After 93 days on chudi.dev and 5 days on citability.dev, no external AI agent invoked the WebMCP tools. This confirms the spec is pre-production, but the infrastructure is ready for when adoption begins."
+    },
+    {
+      "point": "Shipping early provides compounding learning from a still-plastic spec and positions sites for when the adoption cliff moves.",
+      "explanation": "Implementing WebMCP reveals gaps and questions not apparent from reading the spec. When browser support arrives, early adopters will have working implementations and established infrastructure."
+    }
+  ],
+  "keyQuotes": [
+    "I scanned 111,076 of the top 200,000 websites on the internet looking for a specific HTTP header. I found exactly zero.",
+    "The null result is the most informative part of this experiment.",
+    "The cost of being early is very low. The cost of being late is unclear but probably real.",
+    "The adoption curve starts somewhere. Right now, for WebMCP, that somewhere is you.",
+    "The cliff is not there because developers do not know about the active capability standards. It is there because those standards are not stable yet."
+  ],
+  "url": "https://www.freecodecamp.org/news/a-developers-guide-to-webmcp/",
+  "readUrl": "https://www.bestblogs.dev/article/9351af34",
+  "enclosureUrl": null,
+  "domain": "freecodecamp.org",
+  "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/650e6602-7993-423a-9d74-d6b88a6034e4.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 28,
+  "wordCount": 3382,
+  "readTime": 14,
+  "mediaDuration": null,
+  "authors": [
+    "Chudi Nnorukam"
+  ],
+  "publishTimeStamp": 1780007270000,
+  "publishDateStr": "05-29",
+  "publishDateTimeStr": "2026-05-29 06:27:50",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

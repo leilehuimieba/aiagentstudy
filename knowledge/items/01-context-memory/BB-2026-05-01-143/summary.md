@@ -3,12 +3,11 @@
 ## Article
 
 - Title: Claude Code 自动模式：一种更安全的跳过权限确认方式
-- Source: BestBlogs / A
-Anthropic Engineering
+- Source: BestBlogs / Anthropic Engineering
 - URL: https://www.bestblogs.dev/article/bf9ab35c
 - Date: 2026-03-24
 - Topic: `01-context-memory`
-- Tags: Claude Code, AI 智能体, AI 安全, 自动模式, 提示词注入, Claude Code, AI 智能体, AI 安全, 自动模式, 提示词注入
+- Tags: Claude Code, AI 智能体, AI 安全, 自动模式, 提示词注入
 
 ## Model Mapping
 

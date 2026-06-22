@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T36fe3303a7a6481b8a1b64deaa722742",
+  "data": {
+    "metaData": {
+      "id": "RAW_5499bd5a",
+      "notExist": null,
+      "originalTitle": "What Parameter Golf taught us",
+      "title": "What Parameter Golf taught us",
+      "oneSentenceSummary": "OpenAI shares key lessons from the Parameter Golf machine learning challenge, highlighting how AI coding agents lowered barriers, accelerated experimentation, and changed the dynamics of open research competitions.",
+      "summary": "OpenAI's Parameter Golf challenge invited participants to minimize held-out loss on a FineWeb dataset under strict constraints: a 16 MB artifact limit (model weights + training code) and a 10-minute training budget on 8×H100s. Over eight weeks, more than 1,000 participants submitted over 2,000 entries. The post details standout technical approaches across several themes: training optimization (e.g., Muon weight decay, spectral embedding initialization), quantization (GPTQ-lite, full Hessian GPTQ), test-time training strategies, and novel modeling ideas (CaseOps tokenizer, XSA attention, SmearGate, mini depth recurrence). A key finding was the widespread use of AI coding agents, which lowered the barrier to entry and accelerated the pace of experimentation but also introduced challenges for submission review and scoring. OpenAI developed an internal Codex-based triage bot to manage the high volume of submissions. The challenge also served as a talent discovery surface. The post concludes with OpenAI's intention to run more such challenges in the future.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Parameter Golf",
+        "Machine Learning",
+        "AI Coding Agents",
+        "OpenAI",
+        "Research Competition"
+      ],
+      "mainPoints": [
+        {
+          "point": "AI coding agents significantly lowered the barrier to entry and accelerated experimentation in the competition.",
+          "explanation": "The vast majority of participants used agents to set up experiments faster, inspect code, and test ideas, which changed the pace and accessibility of the challenge."
+        },
+        {
+          "point": "The challenge surfaced a wide range of creative technical approaches, from careful tuning to novel modeling ideas.",
+          "explanation": "Standout submissions included Muon weight decay, GPTQ-lite quantization, test-time training with per-document LoRA, and new architectures like XSA attention and mini depth recurrence."
+        },
+        {
+          "point": "Agent use created new challenges for submission review, attribution, and scoring.",
+          "explanation": "The high volume of submissions, many of which were small variations on existing top scorers, required OpenAI to build an internal Codex-based triage bot to manage review."
+        },
+        {
+          "point": "The competition served as a meaningful talent discovery surface for OpenAI.",
+          "explanation": "OpenAI found that open-ended technical challenges can reveal exceptional machine learning taste and persistence, which was one of the goals for Parameter Golf."
+        }
+      ],
+      "keyQuotes": [
+        "Agents helped lower the cost of experimentation, made it easier for more people to participate, and changed the pace of the competition.",
+        "A strong example of disciplined leaderboard work: identifying which existing improvements matter and combining them cleanly.",
+        "Even against strong transformer baselines, alternative approaches could sometimes hold their own against the dominant architecture.",
+        "When submissions that fell outside the competition guidelines produced unusually strong scores, other agents sometimes copied those ideas and continued down the same invalid path."
+      ],
+      "url": "https://openai.com/index/what-parameter-golf-taught-us",
+      "readUrl": "https://www.bestblogs.dev/article/5499bd5a",
+      "enclosureUrl": null,
+      "domain": "openai.com",
+      "cover": "https://image.jido.dev/20260512192310_SEO.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_8749b9",
+      "sourceName": "OpenAI Blog",
+      "priority": "HIGH",
+      "sourceImage": "/openai.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 8,
+      "wordCount": 1233,
+      "readTime": 5,
+      "mediaDuration": null,
+      "authors": [
+        "OpenAI"
+      ],
+      "publishTimeStamp": 1778544000000,
+      "publishDateStr": "05-12",
+      "publishDateTimeStr": "2026-05-12 00:00:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_2029622732594499630",
+        "type": "TWITTER",
+        "title": "OpenAI Launches GPT-5.4 with Native Computer Use and 1M Context",
+        "oneSentenceSummary": "Sam Altman announces the release of GPT-5.4, featuring enhanced knowledge work, native computer use, and a 1-million-token context window.",
+        "url": "https://x.com/sama/status/2029622732594499630",
+        "sourceName": "Sam Altman(@sama)"
+      },
+      {
+        "id": "RAW_36e502e0",
+        "type": "ARTICLE",
+        "title": "Building a safe， effective sandbox to enable Codex on Windows",
+        "oneSentenceSummary": "This article details the engineering journey of building a custom sandbox for Codex on Windows, from an initial unelevated prototype using SIDs and write-restricted tokens to a final elevated design that leverages dedicated Windows users and firewall rules for robust network isolation.",
+        "url": "https://openai.com/index/building-codex-windows-sandbox",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_e792cb18",
+        "type": "ARTICLE",
+        "title": "Introducing workspace agents in ChatGPT",
+        "oneSentenceSummary": "OpenAI introduces workspace agents, a new class of shared, long-running AI agents within ChatGPT for business teams, designed to automate complex workflows, integrate with organizational tools, and operate under enterprise-grade controls.",
+        "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_9e0a0be",
+        "type": "VIDEO",
+        "title": "Codex Now Integrates Directly with Chrome on macOS and Windows",
+        "oneSentenceSummary": "OpenAI introduces a new Chrome extension for Codex on macOS and Windows, enabling the AI to operate directly within a user's live browser session to perform complex, parallel automation tasks using their active profile and direct code execution.",
+        "url": "https://www.youtube.com/watch?v=b6Mxcv1pyBU",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_a6d9083a",
+        "type": "ARTICLE",
+        "title": "Introducing GPT-5.5",
+        "oneSentenceSummary": "OpenAI releases GPT-5.5, its most capable model yet, with significant gains in agentic coding, knowledge work, and scientific research, while maintaining GPT-5.4 latency and improving token efficiency.",
+        "url": "https://openai.com/index/introducing-gpt-5-5",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_d8c375d8",
+        "type": "ARTICLE",
+        "title": "Codex for (almost) everything",
+        "oneSentenceSummary": "OpenAI announces a major update to Codex, expanding its capabilities beyond coding to include computer operation, web interaction, image generation, and deeper integration across the software development lifecycle with new features like memory, automations, and over 90 plugins.",
+        "url": "https://openai.com/index/codex-for-almost-everything",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_2c13d25",
+        "type": "VIDEO",
+        "title": "Sam Altman + Greg Brockman - On The Great OpenAI Reset",
+        "oneSentenceSummary": "Sam Altman and Greg Brockman discuss OpenAI's journey, the shift towards personal AGI and agent infrastructure, the jagged frontier of AI capabilities, and the societal implications of abundant compute and intelligence.",
+        "url": "https://www.youtube.com/watch?v=NCKQL0op30E",
+        "sourceName": "Core Memory Podcast"
+      },
+      {
+        "id": "RAW_6daee900",
+        "type": "ARTICLE",
+        "title": "Advancing voice intelligence with new models in the API",
+        "oneSentenceSummary": "OpenAI introduces three new audio models in the API—GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper—to enable more intelligent, natural, and actionable real-time voice applications for developers.",
+        "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_f12b487",
+        "type": "VIDEO",
+        "title": "This is ChatGPT Images 2.0",
+        "oneSentenceSummary": "OpenAI has officially launched Images 2.0, a highly intelligent image generation model capable of 'thinking', web searching, generating complex diagrams, supporting multilingual prompts, and creating coherent multi-image sets for professional production.",
+        "url": "https://www.youtube.com/watch?v=-7JSa_luc6k",
+        "sourceName": "OpenAI"
+      }
+    ]
+  }
+}

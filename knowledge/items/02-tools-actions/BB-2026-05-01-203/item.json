@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-14",
+  "id": "BB-2026-05-01-203",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-203/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-203",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-203/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-203/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-203/raw/display-document.html",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-203/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-203/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-203/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Elastic Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Elastic Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agents",
+    "RAG",
+    "Elasticsearch",
+    "Retrieval Augmented Generation",
+    "Production AI"
+  ],
+  "title": "Building production AI agents on Elasticsearch: 5 key lessons",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://communityinviter.com/apps/elasticstack/elastic-community",
+      "https://www.bestblogs.dev/en/article/bf31b558",
+      "https://www.elastic.co/blog/building-ai-agents-elasticsearch-platform",
+      "https://www.elastic.co/elastic-ai-year-in-review"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.elastic.co/blog/building-ai-agents-elasticsearch-platform",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/bf31b558"
+  }
+}

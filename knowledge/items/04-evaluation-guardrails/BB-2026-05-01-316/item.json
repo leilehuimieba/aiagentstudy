@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Deliverable",
+    "Memory"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "04-01",
+  "id": "BB-2026-05-01-316",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-316/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-316",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-316/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-316/raw/meta.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-316/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-316/summary.md"
+  },
+  "schema_version": 1,
+  "source": "OWASP",
+  "source_id": "owasp",
+  "source_name": "OWASP",
+  "status": "Methodology summary + source captured",
+  "tags": [
+    "reporting",
+    "evidence",
+    "reproducibility",
+    "proof-of-concept",
+    "pentest"
+  ],
+  "title": "OWASP Web Security Testing Guide - Reporting Structure",
+  "topic": "04-evaluation-guardrails",
+  "type": "web_article",
+  "urls": {
+    "all_source_urls": [
+      "https://owasp.org/www-project-web-security-testing-guide/latest/3-The_OWASP_Testing_Framework/1-Penetration_Testing_Methodologies/7-Reporting"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://owasp.org/www-project-web-security-testing-guide/latest/3-The_OWASP_Testing_Framework/1-Penetration_Testing_Methodologies/7-Reporting",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

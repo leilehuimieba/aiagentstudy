@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Source Signal"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "browser_readable",
+    "capture_method": "",
+    "collection_date": "2026-06-18",
+    "opencli_profile": "qmvqcrb8",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-06-18",
+  "id": "BROWSER-2026-008",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-008/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-008",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-008/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BROWSER-2026-008/raw/opencli-result.json",
+      "knowledge/items/04-evaluation-guardrails/BROWSER-2026-008/raw/page-state.json",
+      "knowledge/items/04-evaluation-guardrails/BROWSER-2026-008/raw/page-text.txt"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-008/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BROWSER-2026-008/summary.md"
+  },
+  "schema_version": 1,
+  "source": "Browser / Anthropic News",
+  "source_id": "anthropic-news",
+  "source_name": "Anthropic News",
+  "status": "Browser snapshot captured",
+  "tags": [
+    "Anthropic News",
+    "Browser Snapshot",
+    "AI Agent",
+    "Agentic AI"
+  ],
+  "title": "Anthropic News browser snapshot - 2026-06-18",
+  "topic": "04-evaluation-guardrails",
+  "type": "browser_snapshot",
+  "urls": {
+    "all_source_urls": [
+      "https://www.anthropic.com/news"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.anthropic.com/news",
+    "pdf_url": "",
+    "requested_url": "https://www.anthropic.com/news",
+    "source_url": "https://www.anthropic.com/news"
+  }
+}

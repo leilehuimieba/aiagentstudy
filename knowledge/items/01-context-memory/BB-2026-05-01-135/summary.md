@@ -2,7 +2,7 @@
 
 ## Article
 
-- Title: 他看到的未来，和我们有什么不一样？| 对话 18 岁的涂津豪：DeepSeek 前实习生、阿里数竞 AI 组冠军 ...
+- Title: 他看到的未来，和我们有什么不一样？对话 18 岁的涂津豪：DeepSeek 前实习生、阿里数竞 AI 组冠军 ...
 - Source: BestBlogs / 十字路口Crossing
 - URL: https://www.bestblogs.dev/podcast/6df1111
 - Date: 2026-02-01

@@ -1,0 +1,83 @@
+{
+  "id": "RAW_de02b525",
+  "notExist": null,
+  "originalTitle": "A Guide to AI Cold Starts on Cloud Run",
+  "title": "A Guide to AI Cold Starts on Cloud Run",
+  "oneSentenceSummary": "This article provides a comprehensive, technical guide to diagnosing and mitigating AI cold starts on Google Cloud Run, breaking down the startup process into four phases and offering actionable optimization strategies for each.",
+  "summary": "The article addresses the common challenge of high latency (up to 20 seconds) during AI model cold starts on Google Cloud Run. It deconstructs the cold start into four phases: Infrastructure Provisioning (~5s), Container Image Streaming (1-2s), Engine Initialization (5-15s), and Model Loading & VRAM Transfer. The core of the guide focuses on optimizing the final, most impactful phase by recommending the fastest storage option (Cloud Storage with concurrent download), using quantized models (e.g., 4-bit) and fast formats (GGUF, Safetensors), and ensuring VRAM fit. It also details infrastructure levers like Startup CPU Boost and Direct VPC Egress, and provides a formula for tuning concurrency to maximize throughput and avoid scale-out events. Scaling strategies include a single-region 'always-on' approach, a 'wake-up call' pattern using non-inference endpoints, and proper tuning of startup probes. The article concludes with lessons from Elastic's production deployment, which uses `enforce_eager=True` in vLLM and standalone LoRA checkpoints to minimize startup time.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Cloud Run",
+    "Cold Starts",
+    "GPU",
+    "Serverless",
+    "AI Inference"
+  ],
+  "mainPoints": [
+    {
+      "point": "AI cold starts on Cloud Run are a multi-phase problem, with Model Loading & VRAM Transfer being the most critical bottleneck.",
+      "explanation": "The article breaks down the startup into four distinct phases, showing that the final phase of moving gigabytes of model weights into GPU memory is the primary source of latency, not the initial infrastructure provisioning."
+    },
+    {
+      "point": "Optimizing model format, size, and storage strategy is the most direct way to reduce cold start latency.",
+      "explanation": "Using 4-bit quantization, fast formats like GGUF or Safetensors, and downloading models concurrently from Cloud Storage can drastically reduce the time spent in the Model Loading phase."
+    },
+    {
+      "point": "Infrastructure settings like Startup CPU Boost and Direct VPC Egress are critical for accelerating the most demanding parts of the startup process.",
+      "explanation": "Startup CPU Boost doubles CPU power during initialization to speed up engine loading, while Direct VPC Egress ensures model weight traffic uses Google's internal high-speed backbone for faster transfer."
+    },
+    {
+      "point": "Proactive strategies like concurrency tuning and 'wake-up calls' can avoid or mask cold starts for end users.",
+      "explanation": "Tuning concurrency to keep a single warm instance saturated with requests prevents new instances from being created. A 'wake-up call' using a lightweight health endpoint can pre-warm an instance before the user's actual inference request."
+    }
+  ],
+  "keyQuotes": [
+    "An AI cold start is a shift from standard web microservices. You aren't just booting code, you're moving gigabytes of weights into a specialized physical accelerator.",
+    "4-bit Quantization: This is the ultimate cold start hack. Smaller weights mean fewer gigabytes to pull from storage, which directly accelerates the download and transfer portion of Phase 4.",
+    "A 100ms global network delay is a much better user experience than a 20s local cold start.",
+    "By setting `enforce_eager=True` in vLLM, they traded a tiny bit of throughput for cold starts that finish in less than a minute rather than multiple minutes."
+  ],
+  "url": "https://cloud.google.com/blog/topics/developers-practitioners/a-guide-to-ai-cold-starts-on-cloud-run/",
+  "readUrl": "https://www.bestblogs.dev/article/de02b525",
+  "enclosureUrl": null,
+  "domain": "cloud.google.com",
+  "cover": "https://storage.googleapis.com/gweb-cloudblog-publish/images/cold_start.max-2600x2600.jpg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_bc3236",
+  "sourceName": "Google Cloud Blog",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045340_970fe5ab",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_DEVOPS",
+  "aiSubCategoryDesc": "DevOps & Cloud",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 12,
+  "wordCount": 2032,
+  "readTime": 9,
+  "mediaDuration": null,
+  "authors": [
+    "Shir Meir Lador"
+  ],
+  "publishTimeStamp": 1779926400000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 08:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Model",
+    "Training",
+    "Optimization"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "Sat, 16 May 2026 11:33:51 GMT",
+    "updated": ""
+  },
+  "date": "2026-05-16",
+  "id": "RSS-2026-011",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/06-frontier-radar/RSS-2026-011/article.md",
+    "item_dir": "knowledge/items/06-frontier-radar/RSS-2026-011",
+    "raw_dir": "knowledge/items/06-frontier-radar/RSS-2026-011/raw",
+    "raw_files": [
+      "knowledge/items/06-frontier-radar/RSS-2026-011/raw/feed-entry.json",
+      "knowledge/items/06-frontier-radar/RSS-2026-011/raw/page-text.txt",
+      "knowledge/items/06-frontier-radar/RSS-2026-011/raw/page.html"
+    ],
+    "source": "knowledge/items/06-frontier-radar/RSS-2026-011/source.md",
+    "summary": "knowledge/items/06-frontier-radar/RSS-2026-011/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / Ahead of AI",
+  "source_id": "ahead-of-ai",
+  "source_name": "Ahead of AI",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "Ahead of AI",
+    "RSS",
+    "AI Agent",
+    "LLM",
+    "Benchmark",
+    "Training"
+  ],
+  "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
+  "topic": "06-frontier-radar",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://magazine.sebastianraschka.com/feed",
+      "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://magazine.sebastianraschka.com/feed",
+    "original_url": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures"
+  }
+}

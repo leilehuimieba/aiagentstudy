@@ -1,0 +1,169 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T2925401bec3c4dd7bb27547ff6dceafd",
+  "data": {
+    "metaData": {
+      "id": "RAW_cd92af96",
+      "notExist": null,
+      "originalTitle": "Code w/ Claude SF 2026: Building on the AI exponential  | Claude",
+      "title": "Code w/ Claude SF 2026: Building on the AI exponential  | Claude",
+      "oneSentenceSummary": "Anthropic's Code w/ Claude 2026 conference in San Francisco announced doubled rate limits for Claude Code, new features for Claude Managed Agents including Dreaming, Multiagent orchestration, Outcomes, and Webhooks, and emphasized the narrowing distance between idea and production software.",
+      "summary": "This article recaps Anthropic's Code w/ Claude 2026 developer conference held in San Francisco. The event featured keynotes, breakout sessions, and workshops focused on the accelerating shift in AI-native software development. Key announcements include doubled rate limits for Claude Code and raised API limits for Claude Opus to support more reliable scaling. Four new features were introduced for Claude Managed Agents: Dreaming (scheduled process for reviewing past sessions and curating memory), Multiagent orchestration (lead agent delegating to specialist subagents), Outcomes (defining success rubrics with automated grading and revision), and Webhooks (notifications upon task completion). The article also highlights customer talks from Asana, Cursor, GitHub, Replit, and Vercel, and announces upcoming conferences in London and Tokyo.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Claude",
+        "Anthropic",
+        "AI Coding",
+        "Agentic Development",
+        "Developer Conference"
+      ],
+      "mainPoints": [
+        {
+          "point": "Anthropic doubled rate limits on Claude Code and raised API limits for Claude Opus.",
+          "explanation": "These changes are now live and aim to help developers, startups, and enterprises build more reliably at scale with higher throughput."
+        },
+        {
+          "point": "Four new features were introduced for Claude Managed Agents: Dreaming, Multiagent orchestration, Outcomes, and Webhooks.",
+          "explanation": "Dreaming enables agents to improve between runs by reviewing past sessions. Multiagent orchestration allows a lead agent to delegate to specialist subagents. Outcomes define success criteria with automated grading and revision. Webhooks provide notifications upon completion."
+        },
+        {
+          "point": "The conference theme centered on designing for the AI exponential, not reacting to it.",
+          "explanation": "The core shift discussed was the narrowing distance between an idea and production software, with the most effective teams proactively building for AI-native workflows."
+        }
+      ],
+      "keyQuotes": [
+        "the distance between an idea and production software is narrowing, and the teams getting the most leverage are designing for the AI exponential---not reacting to it.",
+        "A scheduled process that reviews past agent sessions, surfaces patterns, and curates memory, so agents improve between runs.",
+        "A lead agent can delegate to specialist subagents working in parallel on a shared filesystem, each with its own model, prompt, and tools.",
+        "Developers define a rubric for what a good output looks like. A separate grader evaluates each result in its own context window and sends the agent back to revise until it meets the bar."
+      ],
+      "url": "https://claude.com/blog/code-w-claude-sf-2026-sf",
+      "readUrl": "https://www.bestblogs.dev/article/cd92af96",
+      "enclosureUrl": null,
+      "domain": "claude.com",
+      "cover": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_154bc38a",
+      "sourceName": "Claude Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/689f4a9aff1f63fde75cf733_favicon.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 91,
+      "readCount": 16,
+      "wordCount": 439,
+      "readTime": 2,
+      "mediaDuration": null,
+      "authors": [
+        "Claude Blog"
+      ],
+      "publishTimeStamp": 1778515200000,
+      "publishDateStr": "05-11",
+      "publishDateTimeStr": "2026-05-11 16:00:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_bf9ab35c",
+        "type": "ARTICLE",
+        "title": "Claude Code auto mode: a safer way to skip permissions",
+        "oneSentenceSummary": "Claude Code's new Auto mode uses a two-stage model-based classifier and prompt-injection probes to autonomously gate dangerous actions, balancing developer productivity with security.",
+        "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_c1ecbe08",
+        "type": "ARTICLE",
+        "title": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude",
+        "oneSentenceSummary": "Brendan MacLean, principal developer of the 700,000-line Skyline codebase, applies his 17-year methodology of onboarding human developers to Claude Code, using context, skills, and MCP integrations to make a legacy codebase manageable again.",
+        "url": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_504ce725",
+        "type": "ARTICLE",
+        "title": "Harness design for long-running application development",
+        "oneSentenceSummary": "This article explores Anthropic's multi-agent harness design (Planner, Generator, Evaluator) for long-running autonomous coding, detailing how to overcome context anxiety and self-evaluation bias to build complex full-stack applications.",
+        "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_2023817132581208353",
+        "type": "TWITTER",
+        "title": "Anthropic Releases Claude Sonnet 4.6 with 1M Context Window",
+        "oneSentenceSummary": "Anthropic announces Claude Sonnet 4.6, featuring major upgrades in coding, reasoning, and a 1-million-token context window.",
+        "url": "https://x.com/claudeai/status/2023817132581208353",
+        "sourceName": "Claude(@claudeai)"
+      },
+      {
+        "id": "RAW_2041578392852517128",
+        "type": "TWITTER",
+        "title": "Anthropic Introduces Project Glasswing and Claude Mythos Preview",
+        "oneSentenceSummary": "Anthropic launches Project Glasswing, a software security initiative powered by their new frontier model, Claude Mythos Preview, designed to identify critical vulnerabilities.",
+        "url": "https://x.com/AnthropicAI/status/2041578392852517128",
+        "sourceName": "Anthropic(@AnthropicAI)"
+      },
+      {
+        "id": "RAW_c31f1686",
+        "type": "ARTICLE",
+        "title": "Multi-agent coordination patterns: Five approaches and when to use them | Claude",
+        "oneSentenceSummary": "Anthropic outlines five core multi-agent coordination patterns—Generator-verifier, Orchestrator-subagent, Agent teams, Message bus, and Shared-state—providing a decision framework for selecting the right architecture based on task complexity and context needs.",
+        "url": "https://claude.com/blog/multi-agent-coordination-patterns",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_243d2340",
+        "type": "ARTICLE",
+        "title": "How Claude Code works in large codebases: Best practices and where to start | Claude",
+        "oneSentenceSummary": "This article provides a comprehensive guide on deploying Claude Code in large codebases, emphasizing that success depends more on the 'harness' of configuration layers (CLAUDE.md, hooks, skills, plugins, LSP, MCP) than on the model alone, and outlines proven patterns for making codebases navigable, maintaining configurations, and assigning organizational ownership.",
+        "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_3b1c0638",
+        "type": "ARTICLE",
+        "title": "Introducing Claude Opus 4.7",
+        "oneSentenceSummary": "Anthropic has released Claude Opus 4.7, a significant upgrade over Opus 4.6 with major improvements in advanced software engineering, vision capabilities, instruction following, and autonomous long-horizon reasoning, while implementing new cyber safeguards and maintaining the same pricing.",
+        "url": "https://www.anthropic.com/news/claude-opus-4-7",
+        "sourceName": "Anthropic News"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_94694e50",
+        "type": "ARTICLE",
+        "title": "Best practices for computer and browser use with Claude | Claude",
+        "oneSentenceSummary": "This article provides official best practices for integrating Claude's computer and browser use capabilities, focusing on screenshot scaling, resolution selection, click accuracy optimization, thinking effort tuning, and prompt injection defense.",
+        "url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+        "sourceName": "Claude Blog"
+      }
+    ]
+  }
+}

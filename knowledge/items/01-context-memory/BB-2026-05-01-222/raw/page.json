@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Ta81ec868a6474c2b84be93c43a59ad56",
+  "data": {
+    "metaData": {
+      "id": "RAW_3f70012a",
+      "notExist": null,
+      "originalTitle": "Helping ChatGPT better recognize context in sensitive conversations",
+      "title": "Helping ChatGPT better recognize context in sensitive conversations",
+      "oneSentenceSummary": "OpenAI introduces safety updates that enable ChatGPT to better recognize emerging risk in sensitive conversations by using contextual cues and safety summaries, improving safe responses in suicide, self-harm, and harm-to-others scenarios.",
+      "summary": "This article from the OpenAI Blog details new safety updates designed to help ChatGPT better recognize when risk may be emerging over time in sensitive conversations. The core innovation involves training the model to identify subtle or evolving cues of distress or harmful intent, both within a single conversation and across separate conversations. To handle cross-conversation risks, OpenAI developed 'safety summaries'—short, factual notes about earlier safety-relevant context that are created by a safety-trained model, kept for a limited time, and used only for serious safety concerns. The work focuses on acute scenarios including suicide, self-harm, and harm-to-others, and was developed with input from mental health experts. Internal evaluations show significant improvements: in long single-conversation scenarios, safe-response performance improved by 50% for suicide and self-harm, and by 16% for harm-to-others. On GPT-5.5 Instant, improvements reached 52% for harm-to-others and 39% for suicide and self-harm. The safety summaries themselves scored 4.93/5 on relevance and 4.34/5 on factuality across over 4,000 evaluations, and the updates did not degrade quality in ordinary conversations. OpenAI plans to explore similar methods for other high-risk areas like biology or cyber safety in the future.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "OpenAI",
+        "ChatGPT",
+        "AI Safety",
+        "Sensitive Conversations",
+        "Contextual Awareness"
+      ],
+      "mainPoints": [
+        {
+          "point": "ChatGPT now uses contextual cues to recognize emerging risk in sensitive conversations.",
+          "explanation": "The model is trained to identify subtle or evolving signs of distress or harmful intent that become clear over time, rather than relying on individual messages alone."
+        },
+        {
+          "point": "Safety summaries enable cross-conversation risk detection.",
+          "explanation": "Short, factual notes about earlier safety-relevant context are created by a safety-trained model, kept for a limited time, and used only when relevant to a serious safety concern."
+        },
+        {
+          "point": "Internal evaluations show significant improvements in safe responses.",
+          "explanation": "In long single-conversation scenarios, safe-response performance improved by 50% for suicide/self-harm and 16% for harm-to-others. On GPT-5.5 Instant, improvements reached 52% and 39% respectively."
+        },
+        {
+          "point": "Safety summaries are highly relevant and factual, with no degradation in ordinary conversations.",
+          "explanation": "Across over 4,000 evaluations, summaries scored 4.93/5 on safety relevance and 4.34/5 on factuality. User preference remained comparable in everyday chats."
+        }
+      ],
+      "keyQuotes": [
+        "These improvements build on years of extensive work across model training, evaluations, monitoring systems, and more than two years of collaboration with mental health and safety experts.",
+        "In long single-conversation scenarios, the safe-response performance improved by 50% in suicide and self-harm cases, and by 16% in harm-to-others cases.",
+        "On GPT‑5.5 Instant, the current default model in ChatGPT, the safe-response performance improved by 52% in harm-to-others cases and by 39% in suicide and self-harm cases.",
+        "Across more than 4,000 evaluations, they received an average safety relevance score of 4.93 out of 5 and a factuality score of 4.34 out of 5."
+      ],
+      "url": "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations",
+      "readUrl": "https://www.bestblogs.dev/article/3f70012a",
+      "enclosureUrl": null,
+      "domain": "openai.com",
+      "cover": "https://image.jido.dev/20260515000314_SEO_Safety.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_8749b9",
+      "sourceName": "OpenAI Blog",
+      "priority": "HIGH",
+      "sourceImage": "/openai.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "NEWS",
+      "aiSubCategoryDesc": "AI News",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 5,
+      "wordCount": 1039,
+      "readTime": 5,
+      "mediaDuration": null,
+      "authors": [
+        "OpenAI"
+      ],
+      "publishTimeStamp": 1778716800000,
+      "publishDateStr": "05-14",
+      "publishDateTimeStr": "2026-05-14 00:00:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_e792cb18",
+        "type": "ARTICLE",
+        "title": "Introducing workspace agents in ChatGPT",
+        "oneSentenceSummary": "OpenAI introduces workspace agents, a new class of shared, long-running AI agents within ChatGPT for business teams, designed to automate complex workflows, integrate with organizational tools, and operate under enterprise-grade controls.",
+        "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_2041578392852517128",
+        "type": "TWITTER",
+        "title": "Anthropic Introduces Project Glasswing and Claude Mythos Preview",
+        "oneSentenceSummary": "Anthropic launches Project Glasswing, a software security initiative powered by their new frontier model, Claude Mythos Preview, designed to identify critical vulnerabilities.",
+        "url": "https://x.com/AnthropicAI/status/2041578392852517128",
+        "sourceName": "Anthropic(@AnthropicAI)"
+      },
+      {
+        "id": "RAW_d8c375d8",
+        "type": "ARTICLE",
+        "title": "Codex for (almost) everything",
+        "oneSentenceSummary": "OpenAI announces a major update to Codex, expanding its capabilities beyond coding to include computer operation, web interaction, image generation, and deeper integration across the software development lifecycle with new features like memory, automations, and over 90 plugins.",
+        "url": "https://openai.com/index/codex-for-almost-everything",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_f12b487",
+        "type": "VIDEO",
+        "title": "This is ChatGPT Images 2.0",
+        "oneSentenceSummary": "OpenAI has officially launched Images 2.0, a highly intelligent image generation model capable of 'thinking', web searching, generating complex diagrams, supporting multilingual prompts, and creating coherent multi-image sets for professional production.",
+        "url": "https://www.youtube.com/watch?v=-7JSa_luc6k",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_2029622732594499630",
+        "type": "TWITTER",
+        "title": "OpenAI Launches GPT-5.4 with Native Computer Use and 1M Context",
+        "oneSentenceSummary": "Sam Altman announces the release of GPT-5.4, featuring enhanced knowledge work, native computer use, and a 1-million-token context window.",
+        "url": "https://x.com/sama/status/2029622732594499630",
+        "sourceName": "Sam Altman(@sama)"
+      },
+      {
+        "id": "RAW_36e502e0",
+        "type": "ARTICLE",
+        "title": "Building a safe， effective sandbox to enable Codex on Windows",
+        "oneSentenceSummary": "This article details the engineering journey of building a custom sandbox for Codex on Windows, from an initial unelevated prototype using SIDs and write-restricted tokens to a final elevated design that leverages dedicated Windows users and firewall rules for robust network isolation.",
+        "url": "https://openai.com/index/building-codex-windows-sandbox",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_6daee900",
+        "type": "ARTICLE",
+        "title": "Advancing voice intelligence with new models in the API",
+        "oneSentenceSummary": "OpenAI introduces three new audio models in the API—GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper—to enable more intelligent, natural, and actionable real-time voice applications for developers.",
+        "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_3b1c0638",
+        "type": "ARTICLE",
+        "title": "Introducing Claude Opus 4.7",
+        "oneSentenceSummary": "Anthropic has released Claude Opus 4.7, a significant upgrade over Opus 4.6 with major improvements in advanced software engineering, vision capabilities, instruction following, and autonomous long-horizon reasoning, while implementing new cyber safeguards and maintaining the same pricing.",
+        "url": "https://www.anthropic.com/news/claude-opus-4-7",
+        "sourceName": "Anthropic News"
+      },
+      {
+        "id": "RAW_a6d9083a",
+        "type": "ARTICLE",
+        "title": "Introducing GPT-5.5",
+        "oneSentenceSummary": "OpenAI releases GPT-5.5, its most capable model yet, with significant gains in agentic coding, knowledge work, and scientific research, while maintaining GPT-5.4 latency and improving token efficiency.",
+        "url": "https://openai.com/index/introducing-gpt-5-5",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      }
+    ]
+  }
+}

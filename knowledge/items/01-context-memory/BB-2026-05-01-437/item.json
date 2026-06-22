@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-02",
+  "id": "BB-2026-05-01-437",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-437/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-437",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-437/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-437/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-437/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-437/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-437/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-437/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / freeCodeCamp",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / freeCodeCamp",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Support Agent",
+    "RAG",
+    "Escalation-First Design",
+    "LLM Safety",
+    "Software Engineering"
+  ],
+  "title": "How to Build an AI Support Agent That Knows When NOT to Answer Tickets",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/f3be1fc9",
+      "https://www.freecodecamp.org/news/how-to-build-an-ai-support-agent-that-knows-when-not-to-answer-tickets/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.freecodecamp.org/news/how-to-build-an-ai-support-agent-that-knows-when-not-to-answer-tickets/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/f3be1fc9"
+  }
+}

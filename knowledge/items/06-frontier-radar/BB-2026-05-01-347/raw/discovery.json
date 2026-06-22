@@ -1,0 +1,88 @@
+{
+  "id": "RAW_94ad281e",
+  "notExist": null,
+  "originalTitle": "When Your Customer Is an AI Agent: How B2B Companies Stay Visible When Buyers Are AI Agents",
+  "title": "When Your Customer Is an AI Agent: How B2B Companies Stay Visible When Buyers Are AI Agents",
+  "oneSentenceSummary": "This article argues that B2B companies are structurally invisible to AI agents that now handle early-stage vendor research, and outlines three infrastructure decisions required to become discoverable and evaluable by non-human buyers.",
+  "summary": "The article presents a data-driven analysis of how AI agents are transforming B2B procurement, citing the 2X AI Innovation Lab's AI Visibility Index which found 96% of 70 analyzed B2B companies were functionally invisible in agent-driven discovery. It argues that traditional marketing infrastructure—built for human readers who click links and read pages—produces signals that only humans can read, while AI agents parse structured data, query APIs, and return synthesized recommendations. The article identifies three critical infrastructure gaps: machine-readable market presence (OpenAPI specs, schema.org markup), product instrumentation for non-human callers (APIs over UIs), and converting brand proof into structured data (from PDFs to queryable records). It uses data from Deloitte, BCG, Salesforce, and ServiceNow to demonstrate the scale and urgency of this shift, concluding that closing the visibility gap requires an engineering solution, not a marketing campaign.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Agents",
+    "B2B Procurement",
+    "Agent-Driven Discovery",
+    "Go-to-Market Strategy",
+    "API-First"
+  ],
+  "mainPoints": [
+    {
+      "point": "96% of B2B companies are invisible to AI agents during early-stage vendor discovery.",
+      "explanation": "The 2X AI Innovation Lab's AI Visibility Index found that only 4.3% of 70 analyzed B2B companies maintained a consistent presence when agents raised category-level questions, despite heavy marketing investment."
+    },
+    {
+      "point": "Traditional marketing produces signals that only humans can read, which agents bypass entirely.",
+      "explanation": "Brand stories, nurture emails, and gated whitepapers carry no structured representation that an agent evaluation pipeline can query and surface as output, making years of brand investment effectively invisible to agent-driven procurement."
+    },
+    {
+      "point": "Products whose value exists only behind a UI have no path to agent-driven buyers.",
+      "explanation": "AI agents call APIs, parse responses, and move on—they don't read onboarding checklists or navigate visual interfaces. Products without programmatic access are excluded from agent shortlists before any human reviews the output."
+    },
+    {
+      "point": "Brand equity has no API and carries no weight in agent evaluation pipelines.",
+      "explanation": "Agents are scored on cost thresholds, compliance certifications, API response times, and integration compatibility. Analyst quadrant placements, Net Promoter Scores, and executive speaking slots carry no equivalent weight in that channel."
+    },
+    {
+      "point": "Three infrastructure decisions separate visible companies from invisible ones.",
+      "explanation": "Machine-readable market presence (OpenAPI specs, schema.org markup), product instrumentation for non-human callers (APIs over UIs), and converting brand proof into structured data (from PDFs to queryable records) are the key differentiators."
+    }
+  ],
+  "keyQuotes": [
+    "A company that has invested three years building brand recognition through those channels has, from the agent's perspective, built nothing at all. The cost isn't future risk. It's current revenue.",
+    "The pipeline stage that used to belong to awareness now belongs to data architecture.",
+    "Brand equity doesn't evaporate. It simply becomes inaccessible at the precise moment it would have mattered.",
+    "96% of B2B companies that were invisible in early-stage AI discovery did not arrive there by deliberate choice. They arrived through inertia.",
+    "The marketing investment that works on human buyers still reaches human buyers. But it doesn't reach the buyer running the procurement workflow right now."
+  ],
+  "url": "https://www.freecodecamp.org/news/what-to-do-when-your-customer-is-an-ai-agent/",
+  "readUrl": "https://www.bestblogs.dev/article/94ad281e",
+  "enclosureUrl": null,
+  "domain": "freecodecamp.org",
+  "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/31808e09-6aa0-4cf1-8412-c1e8f4d7e2d6.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+  "mainDomain": "Business_Tech",
+  "mainDomainDesc": "Business & Tech",
+  "aiSubCategory": "BT_INSIGHT",
+  "aiSubCategoryDesc": "Business Insights",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 54,
+  "wordCount": 2185,
+  "readTime": 9,
+  "mediaDuration": null,
+  "authors": [
+    "Rudrendu Paul"
+  ],
+  "publishTimeStamp": 1779994829000,
+  "publishDateStr": "05-29",
+  "publishDateTimeStr": "2026-05-29 03:00:29",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

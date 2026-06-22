@@ -2,13 +2,12 @@
 
 ## Article
 
-- Title: 在 Claude Code 中使用 Claude Opus 4.7 的最佳实践 | Claude | BestBl...
-- Source: BestBlogs / C
-Claude Blog
+- Title: 在 Claude Code 中使用 Claude Opus 4.7 的最佳实践
+- Source: BestBlogs / Claude Blog
 - URL: https://www.bestblogs.dev/article/59c28b8d
 - Date: 2026-04-15
 - Topic: `01-context-memory`
-- Tags: Claude Opus 4.7, Claude Code, AI 编码助手, 提示词工程, 模型最佳实践, Claude Opus 4.7, Claude Code, AI 编码助手, 提示词工程, 模型最佳实践
+- Tags: Claude Opus 4.7, Claude Code, AI 编码助手, 提示词工程, 模型最佳实践
 
 ## Model Mapping
 

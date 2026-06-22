@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "10-06",
+  "id": "BB-2026-05-01-308",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-308/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-308",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-308/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-308/raw/meta.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-308/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-308/summary.md"
+  },
+  "schema_version": 1,
+  "source": "arXiv",
+  "source_id": "arxiv",
+  "source_name": "arXiv",
+  "status": "Abstract + source captured",
+  "tags": [
+    "mcts",
+    "tree-search",
+    "planning",
+    "exploration-exploitation",
+    "self-reflection"
+  ],
+  "title": "Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models",
+  "topic": "03-control-loop",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2310.04406"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://arxiv.org/abs/2310.04406",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

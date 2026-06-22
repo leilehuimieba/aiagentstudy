@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "ByteByteGo"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260602180703_8bcec742-8919-4c38-9f8b-6697fa0b6423_2048x1076.png",
+  "domain": "blog.bytebytego.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_2eb100df",
+  "keyQuotes": [
+    "Real productivity gains come when engineers decide to make the leap from writing code to orchestrating it.",
+    "The quality of AI-generated code matches the quality of input specifications. Garbage in, garbage out --- this principle applies with even more force when AI can generate garbage at unprecedented speed and volume.",
+    "In the AI-native era, the bottleneck has permanently shifted from writing code to proving that it works at scale, with reliability and security.",
+    "AI amplifies existing expertise rather than replacing it --- senior engineers achieve dramatically better results because they bring deeper context and sharper judgment.",
+    "Adding AI to broken processes yields broken processes that generate more code, faster."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The article distinguishes between 'vibe coding' (democratized but limited) and professional AI-native engineering, where the engineer acts as an orchestrator of AI agents to achieve outcomes impossible in the pre-AI era.",
+      "point": "AI-native engineering is about orchestration, not just code generation."
+    },
+    {
+      "explanation": "Systematic curation of project-specific information (architecture, standards, business rules) into AI working memory dramatically improves output quality and reduces alignment overhead, shifting the focus from prompt engineering to context engineering.",
+      "point": "Context engineering is the single most important skill for AI-native engineers."
+    },
+    {
+      "explanation": "With AI generating code rapidly, verification, review, and testing become the new rate-limiting factors. The article recommends a 40/20/40 time split for context-setting, generation, and review, respectively.",
+      "point": "The bottleneck has shifted from writing code to proving it works."
+    },
+    {
+      "explanation": "The article cites real incidents (RCE, unauthorized DB access, prompt injection, supply chain poisoning) and outlines emerging controls like agent IAM, data classification awareness, prompt injection protection, and infrastructure sandboxing.",
+      "point": "Security guardrails for AI-generated code are not optional."
+    },
+    {
+      "explanation": "AI amplifies existing expertise; senior engineers achieve better results because they bring deeper context and sharper judgment. The article warns against skill atrophy and recommends occasional AI-free work to preserve foundational abilities.",
+      "point": "Domain expertise is the key differentiator in AI-native productivity."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article presents a practical framework for becoming an AI-native engineer, emphasizing context engineering, spec-driven development, critical verification, and problem decomposition over vibe coding.",
+  "originalTitle": "A Practical Guide to Becoming an AI-Native Engineer",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-02",
+  "publishDateTimeStr": "2026-06-02 22:31:47",
+  "publishTimeStamp": 1780410707000,
+  "qualified": false,
+  "readCount": 36,
+  "readTime": 14,
+  "readUrl": "https://www.bestblogs.dev/article/2eb100df",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_996ae6",
+  "sourceImage": "https://image.jido.dev/20260527123114_8a5609ae-1239-4400-9491-6010a15c4d60_504x504.png",
+  "sourceName": "ByteByteGo Newsletter",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Authored by Shah Rahman, Global Head of Autonomous ML Iteration & Optimization for Ads at Meta, this piece cuts through the hype around AI-generated code to define what AI-native engineering actually requires. It argues that the real productivity gains come from engineers transitioning from writing code to orchestrating it. The article outlines four core practices: synchronized context engineering, specification-driven development, critical verification, and problem decomposition. It provides a detailed time allocation model (40% context-setting, 20% generation, 40% review) and a three-phase individual transformation journey (Foundation, Integration, Mastery). The piece also introduces the Agentic Development Life Cycle (ADLC) as a replacement for traditional SDLC, covers team cultural foundations, and dedicates a substantial section to security guardrails, including real incident examples and emerging controls. It concludes by emphasizing that domain expertise is the key differentiator and that this is a multi-year transformation, not a simple tool upgrade.",
+  "tags": [
+    "AI Engineering",
+    "AI Coding",
+    "LLM",
+    "Prompt Engineering",
+    "AI Agent"
+  ],
+  "title": "A Practical Guide to Becoming an AI-Native Engineer",
+  "translateContent": null,
+  "url": "https://blog.bytebytego.com/p/a-practical-guide-to-becoming-an",
+  "wordCount": 3324
+}

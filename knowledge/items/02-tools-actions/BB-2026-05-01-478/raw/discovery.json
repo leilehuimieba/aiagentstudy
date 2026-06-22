@@ -1,0 +1,91 @@
+{
+  "authors": [
+    "Tara Bogavelli",
+    "Gabrielle Gauthier Melancon",
+    "Katrina Stankiewicz",
+    "Nifemi Bamgbose",
+    "Fanny Riols",
+    "Hoang Nguyen",
+    "Raghav Mehndiratta",
+    "Lindsay Brin",
+    "Hari Subramani",
+    "Anil Madamala"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/eva-bench-data.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_f4bf8cb2",
+  "keyQuotes": [
+    "Together they span 213 evaluation scenarios across 121 tools, a roughly 4x increase in scenario coverage from our original release.",
+    "Reproducibility requires that the user simulator behaves the same way every time a scenario is run. A vague statement of intent does not achieve this.",
+    "Joint generation is essential because these three components are deeply interdependent. Independent generation would introduce silent inconsistencies."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The benchmark now covers Airline CSM (50), ITSM (80), and Healthcare HRSD (83) scenarios, testing agent adaptability to diverse vocabularies, workflows, and policies.",
+      "point": "EVA-Bench 2.0 scales to 213 scenarios across 3 enterprise domains, a 4x increase."
+    },
+    {
+      "explanation": "The SyGra pipeline produces three interdependent components together, preventing silent inconsistencies. The user goal is a decision tree, not a vague intent, ensuring consistent simulator behavior.",
+      "point": "Joint generation of user goal, database, and ground truth ensures reproducibility."
+    },
+    {
+      "explanation": "Validation includes structural checks, LLM-based consistency checks, and trace verification. A final pass with three frontier models ensures all scenarios are solvable by at least one model.",
+      "point": "Rigorous multi-stage validation eliminates ambiguous or unsolvable scenarios."
+    },
+    {
+      "explanation": "ITSM focuses on complex policy hierarchies and multi-step troubleshooting, while Healthcare HRSD introduces domain-specific terminology (NPI, FMLA) and strict compliance requirements.",
+      "point": "New domains target distinct failure modes for voice agents."
+    },
+    {
+      "explanation": "The upcoming extension adapts not just language but also localized names, locations, and phone numbers to provide an authentic experience in each target language and culture.",
+      "point": "Multilingual support is being added for realistic cross-language evaluation."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "EVA-Bench Data 2.0 expands its enterprise voice agent benchmark to three domains (Airline CSM, ITSM, Healthcare HRSD) with 213 scenarios across 121 tools, detailing a rigorous joint generation and validation process for reproducible evaluation.",
+  "originalTitle": "EVA-Bench Data 2.0: 3 Domains， 121 Tools， 213 Scenarios",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-04",
+  "publishDateTimeStr": "2026-06-04 20:24:58",
+  "publishTimeStamp": 1780575898000,
+  "qualified": false,
+  "readCount": 40,
+  "readTime": 8,
+  "readUrl": "https://www.bestblogs.dev/article/f4bf8cb2",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article announces the release of EVA-Bench Data 2.0, a significant expansion of the enterprise voice agent benchmark. It introduces two new domains—Enterprise IT Service Management (ITSM) and Healthcare HR Service Delivery (HRSD)—alongside the original Airline Customer Service Management (CSM), totaling 213 evaluation scenarios across 121 tools. The post details five core design principles: voice-first scope, realism, variety, authentication, and reproducibility. It explains the joint generation process using the SyGra pipeline, which creates three interdependent components (user goal, initial database, expected final state) in a single pass to ensure consistency. A multi-stage validation loop, including structural checks, LLM-based consistency checks, and trace verification, is described. The article also covers manual review and a final frontier model validation pass. Deep dives into the ITSM and HRSD domains highlight their unique challenges, such as complex policy hierarchies and domain-specific terminology. Finally, it previews upcoming multilingual support, adapting scenarios for languages like French with localized names, locations, and phone numbers. The dataset, evaluation framework, and leaderboard are all open-source.",
+  "tags": [
+    "LLM",
+    "AI Agent",
+    "Voice Agent",
+    "Benchmark",
+    "Enterprise AI"
+  ],
+  "title": "EVA-Bench Data 2.0: 3 Domains， 121 Tools， 213 Scenarios",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+  "wordCount": 1793
+}

@@ -1,0 +1,100 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-05-04",
+  "id": "BB-2026-05-01-156",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-156/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-156",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-156/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-156/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-156/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-156/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / OpenAI Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / OpenAI Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "WebRTC",
+    "System Design",
+    "Infrastructure",
+    "Kubernetes",
+    "Low-Latency",
+    "WebRTC",
+    "System Design",
+    "Infrastructure",
+    "Kubernetes",
+    "Low-Latency"
+  ],
+  "title": "How OpenAI delivers low-latency voice AI at scale / BestB...",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.cloudflare.com/cloudflare-calls-anycast-webrtc/",
+      "https://bloggeek.me/webrtc-ports-ip-addresses/",
+      "https://discord.com/blog/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc",
+      "https://docs.livekit.io/home/self-hosting/kubernetes/",
+      "https://github.com/l7mp/stunner",
+      "https://mediasoup.discourse.group/t/use-only-a-single-udp-port-instead-a-big-port-range-for-media-connection/3328",
+      "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+      "https://openai.com/news/?tags=2026",
+      "https://www.bestblogs.dev/",
+      "https://www.bestblogs.dev/articles?sourceid=8749b9",
+      "https://www.bestblogs.dev/en/article/46822472?entry=related_article",
+      "https://www.bestblogs.dev/en/article/52f8c2e7?entry=related_article",
+      "https://www.bestblogs.dev/en/article/7e4131fc?entry=related_article",
+      "https://www.bestblogs.dev/en/article/80a29c25?entry=related_article",
+      "https://www.bestblogs.dev/en/article/85c11f72",
+      "https://www.bestblogs.dev/en/article/a6d9083a?entry=related_article",
+      "https://www.bestblogs.dev/en/article/cade0910?entry=related_article",
+      "https://www.bestblogs.dev/en/article/d8c375d8?entry=related_article",
+      "https://www.bestblogs.dev/en/article/e792cb18?entry=related_article",
+      "https://www.bestblogs.dev/en/docs",
+      "https://www.bestblogs.dev/en/explore",
+      "https://www.bestblogs.dev/en/explore/brief",
+      "https://www.bestblogs.dev/en/explore/newsletter",
+      "https://www.bestblogs.dev/en/explore/sources",
+      "https://www.bestblogs.dev/en/explore/topics",
+      "https://www.bestblogs.dev/en/library/bookmarks",
+      "https://www.bestblogs.dev/en/library/highlights",
+      "https://www.bestblogs.dev/en/library/history",
+      "https://www.bestblogs.dev/en/library/review",
+      "https://www.bestblogs.dev/en/reading/brief",
+      "https://www.bestblogs.dev/en/reading/feed",
+      "https://www.bestblogs.dev/en/reading/follow",
+      "https://www.bestblogs.dev/en/settings",
+      "https://www.bestblogs.dev/en/video/a392d2a?entry=related_article",
+      "https://www.bestblogs.dev/en/video/a647d6a?entry=related_article"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/85c11f72"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "item_id": "BB-2026-05-01-327",
+  "capture_date": "2026-05-26",
+  "repo": {
+    "url": "https://github.com/ultraworkers/claw-code",
+    "head": "d4494a8aeb8446164e1a7260def1d4e77cef243c",
+    "local_path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claw-code"
+  },
+  "files": {
+    "conversation_runtime": {
+      "path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claw-code\\rust\\crates\\runtime\\src\\conversation.rs",
+      "lines": 1871
+    },
+    "tools_registry": {
+      "path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claw-code\\rust\\crates\\tools\\src\\lib.rs",
+      "lines": 10595
+    },
+    "permission_enforcer": {
+      "path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claw-code\\rust\\crates\\runtime\\src\\permission_enforcer.rs",
+      "lines": 585
+    },
+    "task_registry": {
+      "path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claw-code\\rust\\crates\\runtime\\src\\task_registry.rs",
+      "lines": 695
+    },
+    "mcp_tool_bridge": {
+      "path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claw-code\\rust\\crates\\runtime\\src\\mcp_tool_bridge.rs",
+      "lines": 921
+    },
+    "lsp_client": {
+      "path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claw-code\\rust\\crates\\runtime\\src\\lsp_client.rs",
+      "lines": 747
+    }
+  },
+  "verification": {
+    "cargo_check_runtime_lib": "passed",
+    "cargo_test_tools_agent_subset_mapping": "passed",
+    "cargo_test_tools_plan_mode_round_trip": "passed",
+    "cargo_test_tools_task_packet": "passed",
+    "cargo_test_runtime_windows_unit_build": {
+      "status": "failed",
+      "reason": "Unix-only test code references std::os::unix::fs::PermissionsExt in runtime test modules on Windows"
+    }
+  },
+  "related_kb_items": [
+    "BB-2026-05-01-325",
+    "BB-2026-05-01-326"
+  ]
+}

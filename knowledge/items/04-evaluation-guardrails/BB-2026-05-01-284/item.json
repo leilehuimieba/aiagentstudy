@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-21",
+  "id": "BB-2026-05-01-284",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-284/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-284",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-284/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-284/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-284/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-284/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-284/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-284/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / AI前线",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / AI前线",
+  "status": "Full text + source captured",
+  "tags": [
+    "DataClawBench",
+    "Data Analysis Agent",
+    "Evaluation Benchmark",
+    "Large Model Evaluation",
+    "Financial Data Analysis"
+  ],
+  "title": "When Agents Truly Enter Complex Data Analysis Scenarios: DataClawBench Uses 492 Real-World Tasks for a Process-Level Examination of Frontier Models",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247662638&idx=2&sn=c6f21b047506767cca323b04e8b0606a",
+      "https://www.bestblogs.dev/article/c5bb1e16"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247662638&idx=2&sn=c6f21b047506767cca323b04e8b0606a",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/c5bb1e16"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T1790ac847b134e19b9c2097938286c93",
+  "data": {
+    "metaData": {
+      "id": "RAW_de799956",
+      "notExist": null,
+      "originalTitle": "How to Build Optimal AI Agents That Actually Work – A Handbook for Devs",
+      "title": "How to Build Optimal AI Agents That Actually Work – A Handbook for Devs",
+      "oneSentenceSummary": "This article provides a practical, research-backed decision algorithm for developers to build optimal AI agent systems, emphasizing starting with a single agent, measuring performance, and choosing team topologies based on task structure.",
+      "summary": "This article serves as a practical handbook for developers on building effective AI agent systems. It begins by framing the common challenge of organizing AI agents, drawing on insights from a Google Research, DeepMind, and MIT paper. The core contribution is a step-by-step decision algorithm that guides developers through key choices: checking budget, starting with a single agent, measuring its performance against a 45% success rate threshold, assessing task parallelism, and selecting between centralized or decentralized team topologies. The article emphasizes that more agents are not always better and that coordination benefits depend on matching the communication topology to the task structure, not on scaling the number of agents. It also provides concrete guidelines, such as capping team size at 3-4 agents and limiting each agent to 1-3 tools. The second half of the article includes three code examples using Python, Ollama, and the CrewAI framework to demonstrate a single agent for sequential tasks, a centralized team, and a decentralized team, all applied to financial document analysis and market research scenarios. The article concludes by stressing the importance of building evaluations (evals) to measure accuracy, efficiency, and trajectory before scaling agent systems.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "AI Agents",
+        "Multi-Agent Systems",
+        "Agent Architecture",
+        "LLM",
+        "CrewAI"
+      ],
+      "mainPoints": [
+        {
+          "point": "Start with a single agent and only scale to multiple agents if the single agent's performance is below 45% and the task is naturally parallel.",
+          "explanation": "The article presents a decision algorithm based on research showing that a single agent is often sufficient. Adding agents is only beneficial when the task can be split into independent subtasks and the single agent's success rate is low."
+        },
+        {
+          "point": "Choose agent team topology based on task type: centralized for structured analysis, decentralized for exploration.",
+          "explanation": "A centralized model, with a manager agent coordinating specialists, is better for sequential, analytical tasks like financial reports. A decentralized model, where agents collaborate peer-to-peer, is suited for open-ended research or audits."
+        },
+        {
+          "point": "Cap the number of agents in a team to 3-4 and limit each agent to 1-3 tools to avoid performance degradation.",
+          "explanation": "Research indicates that agent performance degrades beyond 3-4 agents. Similarly, giving each agent too many tools reduces its effectiveness. The principle is to keep teams small and focused."
+        },
+        {
+          "point": "Build evaluations (evals) to measure accuracy, efficiency, and trajectory before scaling agent systems.",
+          "explanation": "Evals are essential for validating agent performance on real-world data. They help ensure the system is reliable and can be trusted before it is deployed across an organization."
+        }
+      ],
+      "keyQuotes": [
+        "Companies are shipping agent systems almost by guessing.",
+        "The main question was: What is the best organizational structure for a team of AI agents?",
+        "If a single agent's real-world success rate is more than 45%, then there's typically no need to create a team of agents for the task.",
+        "Coordination benefits arise from matching communication topology to task structure, not from scaling the number of agents.",
+        "In AI and engineering in general, if you can't measure the system's performance, you can't trust the system."
+      ],
+      "url": "https://www.freecodecamp.org/news/how-to-build-optimal-ai-agents-that-actually-work-a-handbook-for-devs/",
+      "readUrl": "https://www.bestblogs.dev/article/de799956",
+      "enclosureUrl": null,
+      "domain": "freecodecamp.org",
+      "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/f1ca2c84-0c3f-4f20-84f2-9bad5cc1c915.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_074370",
+      "sourceName": "freeCodeCamp.org",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045349_8bfbd118",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 91,
+      "readCount": 91,
+      "wordCount": 5496,
+      "readTime": 22,
+      "mediaDuration": null,
+      "authors": [
+        "Tiago Capelo Monteiro"
+      ],
+      "publishTimeStamp": 1778535042000,
+      "publishDateStr": "05-11",
+      "publishDateTimeStr": "2026-05-11 21:30:42",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_2029622732594499630",
+        "type": "TWITTER",
+        "title": "OpenAI Launches GPT-5.4 with Native Computer Use and 1M Context",
+        "oneSentenceSummary": "Sam Altman announces the release of GPT-5.4, featuring enhanced knowledge work, native computer use, and a 1-million-token context window.",
+        "url": "https://x.com/sama/status/2029622732594499630",
+        "sourceName": "Sam Altman(@sama)"
+      },
+      {
+        "id": "RAW_2024519780976177645",
+        "type": "TWITTER",
+        "title": "Google DeepMind Launches Gemini 3.1 Pro with 2x Reasoning Performance",
+        "oneSentenceSummary": "Google DeepMind releases Gemini 3.1 Pro, featuring a 77.1% score on the ARC-AGI-2 benchmark, doubling the performance of the previous version.",
+        "url": "https://x.com/demishassabis/status/2024519780976177645",
+        "sourceName": "Demis Hassabis(@demishassabis)"
+      },
+      {
+        "id": "RAW_0ac78bce",
+        "type": "ARTICLE",
+        "title": "How AI Changed the Economics of Writing Clean Code",
+        "oneSentenceSummary": "AI has collapsed the cost of writing code, making the economic argument against abstractions like interfaces obsolete, while the cognitive cost of reading code remains unchanged, making clean abstractions more valuable than ever.",
+        "url": "https://www.freecodecamp.org/news/how-ai-changed-the-economics-of-writing-clean-code/",
+        "sourceName": "freeCodeCamp.org"
+      },
+      {
+        "id": "RAW_2023817132581208353",
+        "type": "TWITTER",
+        "title": "Anthropic Releases Claude Sonnet 4.6 with 1M Context Window",
+        "oneSentenceSummary": "Anthropic announces Claude Sonnet 4.6, featuring major upgrades in coding, reasoning, and a 1-million-token context window.",
+        "url": "https://x.com/claudeai/status/2023817132581208353",
+        "sourceName": "Claude(@claudeai)"
+      },
+      {
+        "id": "RAW_a3a25526",
+        "type": "ARTICLE",
+        "title": "How to Build a Self-Learning RAG System with Knowledge Reflection",
+        "oneSentenceSummary": "This tutorial shows you how to build a self-learning RAG system that synthesizes connections between documents during ingestion, creating retrievable reflection artifacts that make the knowledge base smarter over time.",
+        "url": "https://www.freecodecamp.org/news/how-to-build-a-self-learning-rag-system-with-knowledge-reflection/",
+        "sourceName": "freeCodeCamp.org"
+      },
+      {
+        "id": "RAW_cb35eff4",
+        "type": "ARTICLE",
+        "title": "How to Build Reusable Architecture for Large Next.js Applications",
+        "oneSentenceSummary": "A comprehensive guide to building scalable, layered architecture for large Next.js applications using App Router colocation, feature-based structures, Turborepo, and Server Components.",
+        "url": "https://www.freecodecamp.org/news/reusable-architecture-for-large-nextjs-applications/",
+        "sourceName": "freeCodeCamp.org"
+      },
+      {
+        "id": "RAW_199cbc01",
+        "type": "ARTICLE",
+        "title": "The Claude Code Handbook: A Professional Introduction to Building with AI-Assisted Development",
+        "oneSentenceSummary": "A comprehensive professional guide to Claude Code, Anthropic's agentic AI developer tool, detailing its capabilities, model selection, and the transformative shift toward AI-assisted software engineering.",
+        "url": "https://www.freecodecamp.org/news/claude-code-handbook/",
+        "sourceName": "freeCodeCamp.org"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_862b9f1",
+        "type": "VIDEO",
+        "title": "Martin Fowler & Kent Beck: Frameworks for reinventing software， again and again",
+        "oneSentenceSummary": "Software legends Martin Fowler and Kent Beck discuss how AI redefines software engineering, emphasizing that core practices like TDD and modularity remain essential for human-AI collaboration.",
+        "url": "https://www.youtube.com/watch?v=CZs8J1ZD0CE",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_94e0792b",
+        "type": "ARTICLE",
+        "title": "How to Unblock Your AI PR Review Bottleneck: A Tech Lead’s Guide to Building a Codebase-Aware Reviewer",
+        "oneSentenceSummary": "This article presents a tech lead's practical guide to building a custom, codebase-aware AI PR reviewer by moving team knowledge into structured memory files like AGENTS.md and CLAUDE.md, rather than relying on generic third-party tools.",
+        "url": "https://www.freecodecamp.org/news/how-to-unblock-ai-pr-review-bottleneck-handbook/",
+        "sourceName": "freeCodeCamp.org"
+      }
+    ]
+  }
+}

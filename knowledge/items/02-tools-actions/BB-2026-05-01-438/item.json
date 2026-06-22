@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-05",
+  "id": "BB-2026-05-01-438",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-438/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-438",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-438/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-438/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-438/raw/discovery.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-438/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-438/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-438/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / LangChain Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / LangChain Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Infrastructure",
+    "Security",
+    "Developer Tools"
+  ],
+  "title": "Give your AI agent its own computer",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/dc9482cb",
+      "https://www.langchain.com/blog/give-your-ai-agent-its-own-computer"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.langchain.com/blog/give-your-ai-agent-its-own-computer",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/dc9482cb"
+  }
+}

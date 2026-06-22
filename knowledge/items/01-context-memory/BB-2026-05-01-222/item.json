@@ -1,0 +1,74 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-14",
+  "id": "BB-2026-05-01-222",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-222/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-222",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-222/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-222/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-222/raw/display-document.html",
+      "knowledge/items/01-context-memory/BB-2026-05-01-222/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-222/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-222/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / OpenAI Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / OpenAI Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "OpenAI",
+    "ChatGPT",
+    "AI Safety",
+    "Sensitive Conversations",
+    "Contextual Awareness"
+  ],
+  "title": "Helping ChatGPT better recognize context in sensitive conversations",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+      "https://openai.com/index/building-codex-windows-sandbox",
+      "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations",
+      "https://openai.com/index/codex-for-almost-everything",
+      "https://openai.com/index/introducing-gpt-5-5",
+      "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+      "https://www.anthropic.com/news/claude-opus-4-7",
+      "https://www.bestblogs.dev/en/article/3f70012a",
+      "https://www.youtube.com/watch?v=-7JSa_luc6k",
+      "https://x.com/AnthropicAI/status/2041578392852517128",
+      "https://x.com/OpenAI/status/2047376561205325845",
+      "https://x.com/sama/status/2029622732594499630"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/3f70012a"
+  }
+}

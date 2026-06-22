@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "花叔"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045504_01003017",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_53c4d042",
+  "keyQuotes": [
+    "What's truly valuable is that it gives me a solution I never thought of but instantly love.",
+    "Good design isn't chosen from a template library; it grows from your real needs.",
+    "AI's job is to help you avoid the worst option and then present you with tangible outputs to choose from.",
+    "The canvas, layers, and toolbars of design software inherently assume you are the one doing the hands-on work. But a 'skill' assumes you are the one making decisions and judgments."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The author believes that when 'making something' becomes increasingly cheap, the only irreplaceable ability is the decision of 'which one to choose.' AI's role is to produce multiple high-quality outputs in parallel, freeing users to focus on decision-making.",
+      "point": "The core value of AI design tools is not to make what you already wanted faster, but to give you a solution you never thought of but instantly love."
+    },
+    {
+      "explanation": "'Collide' breaks inertia through randomness; 'Borrow' transfers techniques from award-winning works; 'Simulate' mimics top designers' thinking to design from scratch. These three logics run in parallel, ensuring diverse output styles instead of converging on safe minimalism.",
+      "point": "v2 fundamentally solves the problem of monotonous design styles through three parallel logics: 'Collide, Borrow, and Simulate.'"
+    },
+    {
+      "explanation": "For content-heavy fields like science communication and travel, where images are vital, v2 requires gathering real images first (e.g., from Wikimedia Commons) before starting the design. This is the dividing line between a 'demo that looks okay' and a 'usable finished product.'",
+      "point": "Content-driven designs must adopt an 'image-first' approach; otherwise, no matter how polished they are, they remain empty shells."
+    },
+    {
+      "explanation": "Using the failed case of a 'DJI Pocket 4 launch animation,' the author illustrates that AI confidently makes false assertions based on training data. v2 sets 'fact verification before assumption' as the zeroth principle: when specific products, version numbers, or specifications are involved, search and verify first.",
+      "point": "Fact verification must override all design processes; AI's memory is unreliable."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "The author rewrote the open-source project Huashu-Design from v1 to v2, addressing three core issues of AI design tools—monotonous output, hollow content, and factual errors—through three parallel design logics, image-first approach, and fact verification.",
+  "originalTitle": "开源两个月 16k+ star！我把 Huashu-Design 推翻重写了",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-08 07:03:00",
+  "publishTimeStamp": 1780873380000,
+  "qualified": false,
+  "readCount": 88,
+  "readTime": 13,
+  "readUrl": "https://www.bestblogs.dev/article/53c4d042",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_a79406",
+  "sourceImage": "https://image.jido.dev/20251127045504_01003017",
+  "sourceName": "花叔",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is the author's technical retrospective and product reflection on their open-source project Huashu-Design 2.0. The project has garnered over 16k stars on GitHub and is positioned as an AI-driven design agent capable of generating high-quality visual outputs such as websites, app prototypes, PPTs, and animations. The author candidly analyzes three core flaws of v1: 1) Design styles converged towards 'safe minimalism,' leading to repetitive outputs; 2) Content-driven websites lacked real images, becoming empty shells; 3) AI fabricated product facts based on training data, resulting in unusable designs. To address these issues, v2 introduces three parallel design logics (random collision, learning from award-winning works, simulating top designer thinking) to achieve stylistic diversity; adds an 'image-first' step to ensure content-driven designs have real material support; and prioritizes 'fact verification before assumption' as the highest principle to avoid factual errors. The article also discusses the advantages of HTML Deck over traditional PPT and the applicable boundaries of the project. Overall, it is an insightful, case-driven, and original practical sharing piece.",
+  "tags": [
+    "AI Coding",
+    "AI Products & Applications",
+    "AI Workflow",
+    "AI Agent",
+    "Prompt Engineering"
+  ],
+  "title": "Open-Source for Two Months with 16k+ Stars! I Rewrote Huashu-Design from Scratch",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247490678&idx=1&sn=6515542f27d0d170476f9ce7b2e4e613",
+  "wordCount": 3120
+}

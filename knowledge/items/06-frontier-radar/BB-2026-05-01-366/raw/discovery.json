@@ -1,0 +1,88 @@
+{
+  "id": "RAW_518f45a1",
+  "notExist": null,
+  "originalTitle": "创业者闭门探讨：Make for Agent ，其实还是 Make for Human",
+  "title": "Founders' Closed-Door Discussion: Make for Agent, Still Make for Human",
+  "oneSentenceSummary": "This article documents a closed-door discussion among Agent entrepreneurs, with the core insight being that the real bottleneck for current Agent products lies not in grand visions, but in entry-level issues closest to humans, such as identity, permissions, accountability chains, and human sense of control. Make for Agent is essentially Make for Responsibility.",
+  "summary": "This article is a distilled record of a closed-door Meetup themed 'Make for Agent' by Ma Duoling, a senior researcher at Geek Park. It points out that the real pain points for current Agent entrepreneurs are not about distant technological prospects, but fundamental issues like identity, permissions, context, sense of control, and accountability attribution. The discussion revolves around several micro-divergences: whether Agents need IM, whether humans should intervene in goals, processes, or results, whether Agents should have persistent identities, and whether enterprise customers buy efficiency or control. The article extracts seven core product insights: limited identity, responsibility-based communication, prioritizing responsibility containers, intervening at critical breakpoints, context infrastructure, positioning in the accountability chain, and dual-sided design. The final conclusion is that the core of Make for Agent is not designing interfaces for AI, but redesigning the accountability chain within products. When Agents become execution units, goals, permissions, context, actions, and consequences are systematically decoupled for the first time, and products can no longer avoid designing the accountability chain.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Agent",
+    "Product Design",
+    "Accountability Chain",
+    "Identity System",
+    "Human-in-the-loop"
+  ],
+  "mainPoints": [
+    {
+      "point": "The first-principle problem for Agent products is the identity system, not the interface.",
+      "explanation": "Without an independent identity, there can be no fine-grained permissions or clear accountability. Agents need to possess limited identities, limited permissions, and limited liability, much like organizational members, to be trusted and adopted by enterprises."
+    },
+    {
+      "point": "Agents do not need social IM, but they need responsibility-based communication.",
+      "explanation": "Communication between Agents should focus on authorization, status, context, and traceability, rather than human-like pleasantries and expressions. The visibility of communication should be an adjustable product layer, and critical moments must be traceable by humans."
+    },
+    {
+      "point": "Human-in-the-loop should focus on 'what to manage' rather than 'when to intervene'.",
+      "explanation": "Humans should not be continuously approving in the process, but should intervene at the critical breakpoints of the accountability chain: setting goals, defining power boundaries, and validating results. Products should provide an adjustable sense of control, such as an air-wall mechanism."
+    },
+    {
+      "point": "To judge if a scenario is suitable for Agents, first check if it has sufficient 'accountability containers'.",
+      "explanation": "Software engineering (Git, CI/CD, Code Review) naturally provides accountability infrastructure, which is why Vibe Coding is currently the most profitable Agent scenario. In scenarios lacking accountability containers, the more Agents do, the more anxious the organization becomes."
+    },
+    {
+      "point": "The essence of Make for Agent is Make for Responsibility.",
+      "explanation": "Agents cause goals, permissions, context, actions, and consequences within a product to be systematically decoupled. Product design must re-manifest the accountability chain, simultaneously satisfying the human need for control and the Agent's need for economy and agency."
+    }
+  ],
+  "keyQuotes": [
+    "Agents don't need instant messaging; it's humans who need instant messaging. Currently, Agents are all accommodating humans because humans can't understand how Agents communicate with each other.",
+    "The first-principle problem of Make for Agent is not the interface, but the identity system—how a non-human executor can obtain limited identity, limited permissions, and limited liability within an organization.",
+    "Human-in-the-loop should not mean 'a human in the process'; more accurately, it means 'a human at the critical breakpoints of the accountability chain'.",
+    "To judge if a scenario is suitable for Agents, don't look at whether Agents can do it, but whether the scenario has a good enough accountability container.",
+    "Make for Agent, the core is actually Make for Responsibility."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524402&idx=1&sn=af0ef7a741dd33ddb0e5a6830b758dea",
+  "readUrl": "https://www.bestblogs.dev/article/518f45a1",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045419_08d80bcb",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_caf83c",
+  "sourceName": "Founder Park",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045419_08d80bcb",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 58,
+  "wordCount": 7424,
+  "readTime": 30,
+  "mediaDuration": null,
+  "authors": [
+    "Founder Park"
+  ],
+  "publishTimeStamp": 1779793260000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 19:01:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

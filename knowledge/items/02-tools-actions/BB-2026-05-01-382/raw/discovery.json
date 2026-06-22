@@ -1,0 +1,88 @@
+{
+  "id": "RAW_bb0e84a5",
+  "notExist": null,
+  "originalTitle": "爆了的 AI 编码工具，联合创始人亲口说工程师还有救",
+  "title": "The AI Coding Tool That Blew Up: Its Co-Founder Says Engineers Still Have Hope",
+  "oneSentenceSummary": "OpenCode co-founder Dax Raad, with rare honesty, deconstructs three core illusions that AI coding tools create in real engineering teams, and shares profound insights on product taste, engineering culture, and being anti-hype.",
+  "summary": "This article is compiled from an in-depth interview with Dax Raad, co-founder of OpenCode, on The Pragmatic Engineer Podcast. With a candid attitude, Dax systematically reflects on three major problems AI coding tools cause in engineering teams: First, a surge in code output does not mean the product is getting better; feature bloat instead leads to system chaos. Second, AI quietly silences engineers' \"guilt,\" making it too easy to write hacky code and thereby stealing their judgment. Third, most engineers are not using AI to increase output, but to go home earlier with the time saved, which contradicts the \"productivity multiplier\" narrative vendors sell to CFOs. The article also delves into OpenCode's entrepreneurial journey, product strategy (prioritizing experience and adoption first, then optimizing the underlying layer), business model (inference services and console), and Dax's unique insights on engineering culture, product taste, technical debt cleanup, and career development for engineers. He emphasizes that as AI makes code generation increasingly cheap, what is truly scarce is judgment, restraint, and sensitivity to systemic consequences.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Coding",
+    "OpenCode",
+    "Engineering Culture",
+    "Product Taste",
+    "Technical Debt"
+  ],
+  "mainPoints": [
+    {
+      "point": "AI coding tools create the illusion that 'doing it faster equals doing it better.'",
+      "explanation": "Feature bloat makes the product like a Frankenstein monster—every piece is stitched on, but the whole is out of control. Product managers and engineers need to be more restrained than ever, because being able to ship ten times the features doesn't mean there are ten times the good ideas worth shipping."
+    },
+    {
+      "point": "AI is quietly silencing engineers' 'guilt' and stealing their judgment.",
+      "explanation": "Previously, engineers would feel a 'sting' when applying a patch. This feedback loop helped calibrate judgment. Now, agents do the dirty work, the landmines are still there, but the engineer no longer feels them. This distorts system design decisions, patching over what should be refactored."
+    },
+    {
+      "point": "Most engineers are not using AI to increase output, but to save time.",
+      "explanation": "In an organization without high-powered incentives, the most natural outcome is not to do ten times more work, but to do roughly the same amount and keep the saved time for oneself. This is perfectly rational on an individual level, but it's a completely different story from the 'productivity multiplier' narrative vendors sell to CFOs."
+    },
+    {
+      "point": "The essence of product work is not stacking features, but thinking about how new features interact with old ones.",
+      "explanation": "The essence of good product work is not stacking features, but thinking about how a new feature interacts with existing ones. A truly good product absorbs a large number of problems and finds a solution that addresses fifty of them at once. In the AI era, products 'rot' faster, and quality may become an even stronger differentiator, but quality must be embodied at every level of the company."
+    },
+    {
+      "point": "An engineer's greatest advantage is the ability to enter any industry and become an expert in it.",
+      "explanation": "Software engineering skills are transferable, but if you also become an expert in a specific industry, the combination is incredibly powerful. Engineers don't need to decide at 22 which industry to spend their life in. Every year they spend in an industry, their understanding of it may surpass 99% of people."
+    }
+  ],
+  "keyQuotes": [
+    "When you used to write a patch yourself, you'd feel something was off, a vague unease. The second or third time you wrote it, that feeling would compound. You knew you were planting landmines for the future. Now, because 'something else' is handling it for you, it dulls that uncomfortable feeling.",
+    "You could easily spend a year figuring out 'what the right direction actually is.' Once the direction is right, building might indeed be faster. But if you ask me for my gut feeling, I'd say: before, I spent about 95% of my energy thinking about what to do and 5% on doing it; now, I spend about 96% thinking and 4% doing.",
+    "There's probably only one truly good idea in your product. Your most important job is to let the user experience that idea as quickly as possible.",
+    "Many good ideas are simple, so everyone repeats them. But simple doesn't mean easy to practice. If you say you believe in taste and quality, are you really willing to do the 'irrational' things for it?",
+    "When AI makes generating code increasingly cheap, what is truly scarce? — Not typing code faster, but judging what is worth doing and what is not."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247629172&idx=2&sn=af5ff9ae769976abf17ab7a25bbe0442",
+  "readUrl": "https://www.bestblogs.dev/article/bb0e84a5",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045448_c6196ec1",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_3ded7b",
+  "sourceName": "硅星人Pro",
+  "priority": "LOW",
+  "sourceImage": "https://image.jido.dev/20251127045448_c6196ec1",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 34,
+  "wordCount": 15771,
+  "readTime": 64,
+  "mediaDuration": null,
+  "authors": [
+    "硅星人Pro"
+  ],
+  "publishTimeStamp": 1780019760000,
+  "publishDateStr": "05-29",
+  "publishDateTimeStr": "2026-05-29 09:56:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-21",
+  "id": "BB-2026-05-01-257",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-257/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-257",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-257/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-257/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-257/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-257/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-257/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-257/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM",
+    "Control Layer",
+    "Production",
+    "Structured Output",
+    "Prompt Engineering"
+  ],
+  "title": "Prompt Engineering Isn’t Enough — I Built a Control Layer That Works in Production",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://towardsdatascience.com/prompt-engineering-isnt-enough-i-built-a-control-layer-that-works-in-production/",
+      "https://www.bestblogs.dev/article/b9260481"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/prompt-engineering-isnt-enough-i-built-a-control-layer-that-works-in-production/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/b9260481"
+  }
+}

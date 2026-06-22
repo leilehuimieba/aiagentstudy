@@ -1,0 +1,17 @@
+{
+  "title": "Fault Tolerance in LangGraph: Retries, Timeouts and Error Handlers",
+  "summary": "Production agents fail in ways prototypes never do. This post walks through the three fault tolerance primitives built into LangGraph: RetryPolicy for automatic retries with backoff, TimeoutPolicy for wall-clock and idle-based caps, and error_handler for cleanup logic once retries are exhausted. Learn how they compose, why having them inside the workflow engine matters, and how to use the SAGA pattern to handle multi-step workflows with real-world side effects.",
+  "published": "Thu, 04 Jun 2026 21:12:58 GMT",
+  "updated": "",
+  "id": "https://www.langchain.com/blog/fault-tolerance-in-langgraph",
+  "authors": [
+    ""
+  ],
+  "links": [
+    {
+      "href": "https://www.langchain.com/blog/fault-tolerance-in-langgraph",
+      "rel": "alternate",
+      "type": "text/html"
+    }
+  ]
+}

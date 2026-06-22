@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Amy Ru"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a2232d2a135dfff6db8368c_green-74%20characters%20max.png",
+  "domain": "langchain.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_dc9482cb",
+  "keyQuotes": [
+    "Every agent needs a computer.",
+    "A container boundary is not an isolation boundary. For untrusted, model-generated code, you need hardware-level separation.",
+    "It's the difference between an agent that can *think* and an agent that can *act*."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The article argues that the feedback loop of running code, seeing errors, and fixing them is what makes agents like Cursor or Claude Code useful, and this requires a full computer, not just a token stream.",
+      "point": "Production agents need a secure, stateful execution environment, not just an API call."
+    },
+    {
+      "explanation": "Containers share a kernel with the host, making them vulnerable to kernel exploits like Copy Fail (CVE-2026-31431). Hardware-level virtualization is required for true isolation.",
+      "point": "Containers are insufficient for isolating untrusted, model-generated code."
+    },
+    {
+      "explanation": "Each sandbox is a full machine with its own kernel, combining the speed of a serverless function with the statefulness of a VM, enabling agents to install dependencies, edit files, and resume sessions.",
+      "point": "LangSmith Sandboxes provide hardware-virtualized microVMs with instant startup and persistent state."
+    },
+    {
+      "explanation": "Snapshots allow forking and restoring mid-session, blueprints enable pre-warmed environments for fast boot, and the auth proxy keeps secrets out of the agent runtime.",
+      "point": "Features like snapshots, forks, and blueprints enable efficient, production-ready agent workflows."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "LangChain introduces LangSmith Sandboxes, hardware-virtualized microVMs that give each AI agent its own secure, stateful computer for code execution, addressing the isolation and security gaps of containers and local environments.",
+  "originalTitle": "Give your AI agent its own computer",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 08:00:00",
+  "publishTimeStamp": 1780617600000,
+  "qualified": false,
+  "readCount": 69,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/dc9482cb",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_88bf28",
+  "sourceImage": "https://image.jido.dev/20260527045328_69a17e4a429d54e956e2a763_favicon.png",
+  "sourceName": "LangChain Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article from the LangChain Blog argues that for AI agents to move from demos to production, they need more than a token stream—they need a place to work. It explains the limitations of running agent-generated code locally or in Docker containers, citing real-world supply chain attacks and kernel exploits to illustrate the security risks. The core solution presented is LangSmith Sandboxes: hardware-virtualized microVMs that provide each agent with its own filesystem, shell, package manager, and persistent state, isolated at the hardware level. The article details key features like instant startup, snapshots and forks for branching workflows, pre-warmed blueprints, service URLs, and an auth proxy. It provides concrete use cases, including coding assistants, data analysts, CI agents, and RL training harnesses, and includes a testimonial from monday.com. The piece concludes by framing this infrastructure shift as the difference between an agent that can think and one that can act.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Infrastructure",
+    "Security",
+    "Developer Tools"
+  ],
+  "title": "Give your AI agent its own computer",
+  "translateContent": null,
+  "url": "https://www.langchain.com/blog/give-your-ai-agent-its-own-computer",
+  "wordCount": 1364
+}

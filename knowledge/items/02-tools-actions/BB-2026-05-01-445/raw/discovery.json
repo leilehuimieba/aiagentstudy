@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "阿里云开发者"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_fcbdb6fa",
+  "keyQuotes": [
+    "Use a powerful Agent (Claude Code) to build the evaluation Harness engineering, upgrading the evaluation logic from 'Code' to 'Prompt', enabling systematic and rapid evaluation of business Agents.",
+    "The essence of an evaluation Harness is a set of structured evaluation rules + execution flow. Traditional practice encodes this into Python scripts, while we encode it into Agent prompts—more flexible, more readable, and easier to iterate.",
+    "One person + Claude Code completes the work that originally required a test developer, data annotator, and analyst."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Traditional evaluation relies on writing Python/Java scripts, whereas this scheme encodes evaluation standards, execution processes, and scoring rules into a single evaluation Agent's prompt, making it more flexible, readable, and easier to iterate, achieving \"Evaluation as Documentation\".",
+      "point": "Core Innovation: Upgrading evaluation logic from \"Code\" to \"Prompt\"."
+    },
+    {
+      "explanation": "Leveraging Claude Code's powerful capabilities in code generation, structured output, and multi-turn collaboration, it automatically completes evaluation scheme design, dataset construction, evaluation Agent prompt writing, and result analysis, freeing humans from tedious script writing.",
+      "point": "The Harness scheme is built by a top-tier Agent, not manually written."
+    },
+    {
+      "explanation": "The framework includes L1 General Foundation Metrics (format compliance rate, field completeness rate), L2 Capability Type Metrics (classification accuracy, recall, MAE, etc.), and L3 Agent-Specific Metrics. When a new Agent is integrated, metrics can be selected as needed, achieving unified and reusable evaluation standards.",
+      "point": "A unified three-layer metric framework has been established."
+    },
+    {
+      "explanation": "Through actual data comparison, the full process for a single Agent is compressed from the traditional ~1.5 weeks to 1-2 days, with an acceleration ratio of up to 10x in the evaluation scheme design and script development phases, greatly reducing the validation cost of Prompt iteration.",
+      "point": "Significantly improves evaluation efficiency, enabling \"Day-level startup, Hour-level iteration\"."
+    },
+    {
+      "explanation": "The article explicitly points out limitations such as LLM-as-Judge bias, evaluation set scale constrained by manual GT annotation, and reliance on evaluation platform stability. It offers specific suggestions like manual spot-checking as a safety net and using small but high-quality evaluation sets, reflecting the rigor of engineering practice.",
+      "point": "Candidly discusses the limitations and applicable scenarios of the scheme."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article proposes an innovative evaluation scheme that uses a top-tier Agent (Claude Code) as the builder of the Harness engineering, transforming evaluation logic from code into Prompts to achieve systematic and rapid evaluation of business Agents.",
+  "originalTitle": "基于顶级 Agent（Claude Code）的 Harness 工程搭建式业务 Agent 评测方案",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 08:30:00",
+  "publishTimeStamp": 1780619400000,
+  "qualified": false,
+  "readCount": 153,
+  "readTime": 22,
+  "readUrl": "https://www.bestblogs.dev/article/fcbdb6fa",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_26c5f1",
+  "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "sourceName": "阿里云开发者",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Addressing the core contradiction between the rapid iteration of business Agents and the slow construction of traditional evaluation engineering, this article proposes a \"Harness Engineering Building\" evaluation scheme. The core idea is to use a powerful Agent (Claude Code) as the builder and operator of the evaluation engineering, transforming the evaluation logic from traditional Python scripts into more flexible, readable, and easily iterable Agent prompts. The article details the three-layer architecture of Harness (Rule Layer, Data Layer, Execution Logic Layer, Output Layer), a unified three-layer metric framework (L1 General Foundation, L2 Capability Type, L3 Specific Metrics), and a five-step construction method from evaluation scheme design to result analysis. Through practical cases and efficiency comparisons (compressing the full process for a single Agent from 1.5 weeks to 1-2 days), it demonstrates significant advantages in scenarios such as Prompt iteration validation and multi-Agent horizontal comparison, and candidly discusses limitations like LLM-as-Judge bias and evaluation set scale. Originating from the frontline practice of the Alibaba Cloud Developer Team, the methodology is complete and highly actionable.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Evaluation",
+    "Prompt Engineering",
+    "AI Engineering"
+  ],
+  "title": "Harness Engineering-Based Business Agent Evaluation Scheme Using Top-Tier Agent (Claude Code)",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560657&idx=1&sn=cfae16a1ec0158fe9a406b0ccf4185ca",
+  "wordCount": 5392
+}

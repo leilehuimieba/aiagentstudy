@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "腾讯云开发者"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045410_4d44587a",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_4cc99691",
+  "keyQuotes": [
+    "Vibe Coding platforms appear to be AI products on the surface, but underneath they are a combined engineering feat of Agent Runtime, cloud sandbox, application backend, multi-tenant isolation, and pay-per-use billing.",
+    "When the producer of software shifts from humans to Agents, how should the cloud itself be redesigned?",
+    "The real opportunity lies in redesigning the cloud for how Agents work: a Brain/Hands separated runtime, declarative MCP tools, a one-tenant-per-environment multi-tenant model, and Serverless billing designed for long-tail applications."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Platforms need to solve a series of engineering problems including Agent runtime, security sandbox, application backend, multi-tenant isolation, and cost control, which are crucial for determining whether the platform can scale.",
+      "point": "The core challenge of Vibe Coding platforms lies in infrastructure, not LLM code generation capabilities."
+    },
+    {
+      "explanation": "The Agent Loop handles model inference and tool calls, the Sandbox executes untrusted code, the Session records state, and sensitive operations are completed via MCP Proxy and temporary credentials, enhancing security and recoverability.",
+      "point": "CloudBase adopts a Brain/Hands separation architecture, decoupling Agent orchestration from code execution."
+    },
+    {
+      "explanation": "Comparative experiments show that the CloudBase path is 3.8 times faster than traditional VM deployment, with a 52% reduction in Token consumption, as Agents spend 78% of their effort on coding rather than operational tasks.",
+      "point": "Encapsulating backend capabilities into declarative interfaces via MCP tools significantly reduces Agent Token consumption and runtime."
+    },
+    {
+      "explanation": "The platform environment is separated from user environments, with each user having independent data and compute boundaries; Serverless enables sub-second cold starts and scaling to zero, matching the short-task, high-concurrency work pattern of Agents, with billing based on actual usage.",
+      "point": "The 'N+1 multi-tenant architecture' and full-stack Serverless are key to scaling and cost control for Vibe Coding platforms."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article delves into the infrastructure challenges behind Vibe Coding platforms and introduces how Tencent Cloud CloudBase redesigns cloud infrastructure for AI Agents through Brain/Hands separation, MCP tools, multi-tenant isolation, and Serverless architecture.",
+  "originalTitle": "为 Agent 重新设计云：Vibe Coding 平台背后的基础设施",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 08:45:00",
+  "publishTimeStamp": 1780447500000,
+  "qualified": false,
+  "readCount": 67,
+  "readTime": 31,
+  "readUrl": "https://www.bestblogs.dev/article/4cc99691",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_efac5b",
+  "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+  "sourceName": "腾讯云开发者",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article begins by citing rapid growth data from platforms like Lovable, Vercel v0, Replit, and Loopit to argue that Vibe Coding platforms have evolved from 'toys' into 'serious business,' with the core being enabling non-technical users to generate usable software through natural language. Subsequently, it breaks down the four major engineering challenges underpinning such platforms: continuous Agent operation and security isolation, backend completeness of generated applications (databases, authentication, storage, etc.), multi-tenant isolation, and cost control. To address these challenges, the article details Tencent Cloud CloudBase's solutions, with core ideas including: adopting a Brain/Hands separation architecture to decouple Agent orchestration from code execution; encapsulating backend capabilities (databases, cloud functions, etc.) into declarative interfaces directly callable by Agents via MCP tools; implementing an 'N+1 multi-tenant architecture' for user environment isolation; and leveraging full-stack Serverless for pay-per-use billing and sub-second cold starts. The article also provides comparative experimental data against traditional VM deployment, showing that the CloudBase path can increase speed by 3.8 times and reduce Token consumption by 52%. Finally, it demonstrates the practical application of this solution through two customer cases: Tencent's 'Toast' app and GenieAI (CodeBuddy), and uses the historical analogy of 'distributed electricity supply' to argue for the necessity of redesigning the cloud for Agents.",
+  "tags": [
+    "AI Coding",
+    "Vibe Coding",
+    "Cloud Native",
+    "AI Agent",
+    "MCP Protocol"
+  ],
+  "title": "Redesigning the Cloud for Agents: The Infrastructure Behind Vibe Coding Platforms",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695805&idx=1&sn=f100ca4bb61e5ae6890f2667bfeeb185",
+  "wordCount": 7582
+}

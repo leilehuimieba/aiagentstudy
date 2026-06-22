@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "angela shi"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/loupe_O7LDeH0Qo_v3_card.jpg",
+  "domain": "towardsdatascience.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_5265f8ad",
+  "keyQuotes": [
+    "RAG is not machine learning, and the ML toolkit solves the wrong problem. This is the single most expensive misconception in enterprise RAG today.",
+    "In ML, 'the model was wrong on 8% of cases' is a feature of the system. In RAG, 'the system gave a wrong answer 8% of the time' is a bug.",
+    "The deeper reason RAG isn't machine learning is that, for most of the decisions inside the system, you already know the answer, or someone on your team does.",
+    "The right response isn't a heatmap of attention weights or a feature attribution score. It's: 'I looked at pages 12, 47, and 89 of this contract. Here's the exact text I used.'",
+    "The job of an enterprise RAG system is to amplify that expertise at scale, not replace it."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "ML predicts unknown answers from data; RAG retrieves known answers from documents. The system either finds the answer or it doesn't, making failures individually fixable rather than statistical noise.",
+      "point": "RAG is a search and engineering problem, not a machine learning problem."
+    },
+    {
+      "explanation": "These are configuration choices, not learnable parameters. No single chunk size can serve all question types. The correct approach is structural routing: different question types use different retrieval strategies.",
+      "point": "Hyperparameter optimization (chunk size, top-k) is the wrong activity for RAG."
+    },
+    {
+      "explanation": "Train/test splits are meaningless because the system doesn't learn. Aggregate accuracy hides which question types fail. Per-intent breakdowns (point_lookup, section_retrieval, comparison) reveal the real problems.",
+      "point": "Evaluation in RAG measures coverage and quality, not generalization."
+    },
+    {
+      "explanation": "The system's trace (which passages were retrieved, which source was used) is the explanation. Citations let domain experts verify answers directly, requiring no SHAP, LIME, or attention visualization.",
+      "point": "RAG is inherently explainable; ML explainability tools are unnecessary."
+    },
+    {
+      "explanation": "Domain experts already know where answers live and how to interpret documents. The system's job is to amplify that expertise at scale through better parsing, question understanding, retrieval, and generation.",
+      "point": "The intelligence of a RAG system lives in the team, not the model."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article argues that RAG systems are fundamentally search and engineering problems, not machine learning problems, and that importing ML tools like hyperparameter optimization, train/test evaluation, and explainability frameworks misdirects effort and hides the real failure modes.",
+  "originalTitle": "RAG Is Not Machine Learning， and the ML Toolkit Solves the Wrong Problem",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-02",
+  "publishDateTimeStr": "2026-06-02 02:50:03",
+  "publishTimeStamp": 1780339803000,
+  "qualified": false,
+  "readCount": 139,
+  "readTime": 24,
+  "readUrl": "https://www.bestblogs.dev/article/5265f8ad",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "sourceName": "Towards Data Science",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article presents a strong thesis: RAG is not machine learning, and applying the ML toolkit to RAG projects is the most expensive misconception in enterprise RAG today. It argues that ML solves prediction problems where the true answer is unknown, while RAG solves retrieval and generation problems where the answer already exists in the document. The author identifies three specific ML reflexes that misfire in RAG: hyperparameter optimization (chunk size, top-k, etc.) which treats configuration choices as learnable parameters; evaluation datasets with train/test splits which measure coverage and quality, not generalization; and explainability frameworks like SHAP which are unnecessary because RAG is inherently explainable via citations and trace logs. The article advocates for a structural engineering approach: route questions by type, evaluate per failure mode, and amplify domain expertise rather than replace it. It concludes by framing RAG as a search engine plus an LLM scribe, with two distinct failure modes that require different diagnostic paths.",
+  "tags": [
+    "RAG",
+    "Machine Learning",
+    "Information Retrieval",
+    "Enterprise AI",
+    "Search Systems"
+  ],
+  "title": "RAG Is Not Machine Learning， and the ML Toolkit Solves the Wrong Problem",
+  "translateContent": null,
+  "url": "https://towardsdatascience.com/rag-is-not-machine-learning-and-the-ml-toolkit-solves-the-wrong-problem/",
+  "wordCount": 5835
+}

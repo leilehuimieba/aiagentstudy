@@ -1,0 +1,88 @@
+{
+  "id": "RAW_7952a1b8",
+  "notExist": null,
+  "originalTitle": "从个人提速到团队提效：小米 AI Coding 工程化实践",
+  "title": "From Individual Acceleration to Team Efficiency: Xiaomi's AI Coding Engineering Practices",
+  "oneSentenceSummary": "Xiaomi's retail R&D team shares three layers of engineering practices for transitioning from individual AI coding acceleration to team-wide efficiency: the unified workflow VAF, the code knowledge base VKF, and the collaboration workstation eight-claw, with the core focus on lowering barriers, consolidating knowledge, and achieving process transparency.",
+  "summary": "This article, authored by Xiaomi's technical team, systematically elaborates on the bottlenecks and solutions encountered after scaling AI coding engineering to hundreds of people. It points out that improvements in individual coding efficiency do not directly translate into organizational efficiency gains. The real bottlenecks lie in the loss during requirement translation, delays in decision feedback loops, and the scattering of context across terminals. To address this, the team built three layers of engineering practices: The first layer is the unified workflow VAF (Vibe Agentic Flow), which lowers the barrier to AI usage through a menu-driven, low-threshold process, enabling even developers unfamiliar with AI to get started, and introduces a convergence coordination pattern to support multi-service collaboration. The second layer is the code knowledge base VKF (Vibe Knowledge Flow). After the failure of VKF 1.0, which attempted to translate code into documentation, the team repositioned it as a knowledge index for code, helping AI find entry points and critical paths in real code faster and more accurately, rather than replacing the code itself. The third layer is the collaboration workstation eight-claw, an AI collaboration bot built within Feishu. It uses 'topics' as the smallest governance unit for parallel execution, making the AI's work process transparent within the team's collaboration space, thus solving the problems of information opacity and parallel collaboration. The article concludes by distilling four design principles and emphasizes that the accumulation of knowledge and collaboration is the organizational capability hardest to replicate in the AI era.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "AI Coding",
+    "Engineering Practices",
+    "Team Efficiency",
+    "Workflow",
+    "Knowledge Base"
+  ],
+  "mainPoints": [
+    {
+      "point": "The core bottleneck of AI engineering is organizational collaboration, not individual productivity.",
+      "explanation": "As individual coding speed increases, requirement translation, decision feedback delays, and scattered context become more prominent obstacles. Improving team efficiency requires solving the problem of information loss during its flow within the organization."
+    },
+    {
+      "point": "Lowering the barrier to AI adoption is more important than pushing the upper limit of AI capability.",
+      "explanation": "The overall capability of a team is determined by the 80% majority. By using standardized workflows like VAF with menus, developers unfamiliar with AI can use it reliably, enabling scaled efficiency gains."
+    },
+    {
+      "point": "A code knowledge base should serve as an index, not a substitute explanation for the code.",
+      "explanation": "The VKF 1.0 attempt to translate code into documentation failed due to precision loss. VKF 2.0 was repositioned as a knowledge directory and index for code, helping AI find key locations in real code faster, rather than replacing the code itself."
+    },
+    {
+      "point": "The AI work process must be integrated into the team's collaboration space to achieve process transparency.",
+      "explanation": "By embedding AI tasks as 'topics' in Feishu via eight-claw, the decision-making process, execution status, and outputs become visible to the team, solving the problems of parallel collaboration and information opacity."
+    },
+    {
+      "point": "The accumulation of knowledge and collaboration is the most critical organizational asset in the AI era.",
+      "explanation": "Toolchains and models will iterate rapidly, but the explicit, structured knowledge accumulated by a team in a specific business domain, along with records of the collaboration process, provide long-term benefits and are difficult to replicate."
+    }
+  ],
+  "keyQuotes": [
+    "With AI, every individual developer has become faster, but the organization has not.",
+    "AI not being smart enough is not the bottleneck; getting people to use it first is. Lowering the barrier is more important than raising the ceiling.",
+    "Giving AI more code is less effective than giving it a knowledge index. A knowledge index is more important than code ingestion.",
+    "It's not enough for everyone to use AI well; parallel collaboration and process transparency are the keys to organizational efficiency.",
+    "Toolchains will evolve; knowledge and collaboration are what endure."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzUxMDQxMDMyNg==&mid=2247519507&idx=1&sn=07163d2e559df24395ec0db4f5579536",
+  "readUrl": "https://www.bestblogs.dev/article/7952a1b8",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045354_13870ac6",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_4c0db4",
+  "sourceName": "小米技术",
+  "priority": "LOW",
+  "sourceImage": "https://image.jido.dev/20251127045354_13870ac6",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 65,
+  "wordCount": 6782,
+  "readTime": 28,
+  "mediaDuration": null,
+  "authors": [
+    "小米技术"
+  ],
+  "publishTimeStamp": 1779958800000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 17:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

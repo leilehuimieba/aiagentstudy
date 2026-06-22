@@ -1,0 +1,179 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T8d4c453732974bab90df8a9173302158",
+  "data": {
+    "metaData": {
+      "id": "RAW_bf31b558",
+      "notExist": null,
+      "originalTitle": "Building production AI agents on Elasticsearch: 5 key lessons",
+      "title": "Building production AI agents on Elasticsearch: 5 key lessons",
+      "oneSentenceSummary": "Elastic's Field Technology team shares five key lessons from a year of building and deploying production AI agents, based on analysis of over one million messages, emphasizing retrieval relevance, log observability, and the counterintuitive value of high token usage.",
+      "summary": "This article presents five critical lessons learned by Elastic's Field Technology team after one year of deploying five AI agents (including customer-facing and internal support assistants, a case summarizer, and a sales assistant) that handled over one million messages. The core insight is that AI success hinges on the feedback loop from interaction logs, not just model selection. Key findings include: 1) Logs are the richest signal for AI observability, enabling Context Performance Monitoring. 2) AI adoption follows a power law, with 8% of power users generating 80% of sessions. 3) Partial retrieval in RAG is worse than no retrieval, producing lower quality scores (8.15/10) than no context at all (9.18/10). 4) Setting strict confidence thresholds for retrieval makes knowledge gaps visible and prevents quality degradation. 5) High token usage correlates with higher quality and user satisfaction, challenging the assumption that it is merely a cost problem. The article advocates for treating interaction logs as a strategic asset and prioritizing retrieval relevance over volume.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "AI Agents",
+        "RAG",
+        "Elasticsearch",
+        "Retrieval Augmented Generation",
+        "Production AI"
+      ],
+      "mainPoints": [
+        {
+          "point": "Interaction logs are the most valuable signal for improving AI systems.",
+          "explanation": "Elastic built a centralized AI gateway to analyze conversation logs, transforming them into metrics for use case patterns, user engagement, and response accuracy, a process they call Context Observability."
+        },
+        {
+          "point": "AI tool adoption follows a power law distribution, concentrated among power users.",
+          "explanation": "8% of users generated 80% of all sessions, and these power users increasingly asked complex, technical questions over time, indicating a customer maturity curve that requires the knowledge base to evolve."
+        },
+        {
+          "point": "Partial retrieval in RAG produces worse answers than no retrieval at all.",
+          "explanation": "When the system returned tangentially relevant documents, the LLM used them anyway, resulting in an average quality score of 8.15/10, lower than the 9.18/10 achieved when no documents were retrieved."
+        },
+        {
+          "point": "Strict confidence thresholds for retrieval are critical for quality and visibility.",
+          "explanation": "Setting a threshold where the system returns nothing if no document clears it prevents quality degradation from partial context and makes knowledge gaps visible, turning failed retrievals into a roadmap for content improvement."
+        },
+        {
+          "point": "High token usage correlates with higher quality and user satisfaction, not just higher cost.",
+          "explanation": "Sessions exceeding 50,000 tokens averaged a quality score of 9.74/10, significantly higher than the global average, as they involved high-value engineering work with the AI acting as a technical partner."
+        }
+      ],
+      "keyQuotes": [
+        "The success of any AI initiative is about the feedback loop. The most impactful improvements do not come from selecting a specific large language model (LLM). They come from a dedicated focus on retrieval relevance and treating interaction logs as a strategic asset.",
+        "Partial retrieval produces worse answers than no context at all.",
+        "The correct behavior is to set a strict confidence threshold and return nothing when no document clears it. 'I don't know' is a far more valuable and safer response than a confidently wrong one.",
+        "The right question to ask is not 'how do we reduce token usage?' but 'what is the equivalent human cost of this task, and what did we save?'",
+        "Every query that returns nothing is a direct signal of an unmet user need."
+      ],
+      "url": "https://www.elastic.co/blog/building-ai-agents-elasticsearch-platform",
+      "readUrl": "https://www.bestblogs.dev/article/bf31b558",
+      "enclosureUrl": null,
+      "domain": "elastic.co",
+      "cover": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt1f10069fb5f29d1c/6a05cfcd846a88a0493674bd/AI_in_review_(1).png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_99dd38",
+      "sourceName": "Elastic Blog",
+      "priority": "LOW",
+      "sourceImage": "https://image.jido.dev/20251127070121_478dc1dd",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 6,
+      "wordCount": 1680,
+      "readTime": 7,
+      "mediaDuration": null,
+      "authors": [
+        "Chris Blaisure",
+        "Riya Juneja"
+      ],
+      "publishTimeStamp": 1778773621000,
+      "publishDateStr": "05-14",
+      "publishDateTimeStr": "2026-05-14 15:47:01",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_46aae185",
+        "type": "ARTICLE",
+        "title": "Elastic on Elastic: How we monitor our own services, websites, and operations",
+        "oneSentenceSummary": "This article details Elastic's 'Customer Zero' strategy, demonstrating how they utilize their own observability platform to unify data ingestion, proactive monitoring, AI-assisted investigation, and automated incident response.",
+        "url": "https://www.elastic.co/blog/how-we-monitor-at-elastic",
+        "sourceName": "Elastic Blog"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_504ce725",
+        "type": "ARTICLE",
+        "title": "Harness design for long-running application development",
+        "oneSentenceSummary": "This article explores Anthropic's multi-agent harness design (Planner, Generator, Evaluator) for long-running autonomous coding, detailing how to overcome context anxiety and self-evaluation bias to build complex full-stack applications.",
+        "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_c10e7c8b",
+        "type": "ARTICLE",
+        "title": "What's new in ECK: AutoOps Cloud Connected, air-gapped registry support, and composable configuration policies",
+        "oneSentenceSummary": "Elastic Cloud on Kubernetes (ECK) 3.3.1 introduces AutoOps Cloud Connected for automated monitoring, a self-hosted package registry for air-gapped environments, and composable stack configuration policies for scalable management.",
+        "url": "https://www.elastic.co/blog/whats-new-elastic-cloud-on-kubernetes",
+        "sourceName": "Elastic Blog"
+      },
+      {
+        "id": "RAW_240e2d92",
+        "type": "ARTICLE",
+        "title": "Catching invisible errors: How I built a duplicate detection agent for Kenya's HIV program",
+        "oneSentenceSummary": "A solutions architect built a multi-agent duplicate detection system on Elasticsearch to catch invisible patient record errors in Kenya's HIV program, reducing a 56% miss rate and saving an estimated $195,000 annually.",
+        "url": "https://www.elastic.co/blog/agent-builder-hackathon-catching-invisible-errors",
+        "sourceName": "Elastic Blog"
+      },
+      {
+        "id": "RAW_862b9f1",
+        "type": "VIDEO",
+        "title": "Martin Fowler & Kent Beck: Frameworks for reinventing software， again and again",
+        "oneSentenceSummary": "Software legends Martin Fowler and Kent Beck discuss how AI redefines software engineering, emphasizing that core practices like TDD and modularity remain essential for human-AI collaboration.",
+        "url": "https://www.youtube.com/watch?v=CZs8J1ZD0CE",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_2023817132581208353",
+        "type": "TWITTER",
+        "title": "Anthropic Releases Claude Sonnet 4.6 with 1M Context Window",
+        "oneSentenceSummary": "Anthropic announces Claude Sonnet 4.6, featuring major upgrades in coding, reasoning, and a 1-million-token context window.",
+        "url": "https://x.com/claudeai/status/2023817132581208353",
+        "sourceName": "Claude(@claudeai)"
+      },
+      {
+        "id": "RAW_8657a8f7",
+        "type": "ARTICLE",
+        "title": "PHAROS: 4 agents， 60 seconds， 1 missed drug safety signal away from disaster",
+        "oneSentenceSummary": "PHAROS is an open-source multi-agent system built during an Elasticsearch hackathon that automates pharmacovigilance signal detection, regulatory document generation, and alerting in under 60 seconds.",
+        "url": "https://www.elastic.co/blog/agent-builder-hackathon-pharos",
+        "sourceName": "Elastic Blog"
+      },
+      {
+        "id": "RAW_5b033aac",
+        "type": "ARTICLE",
+        "title": "Gauntlet: What happens when your agent's tools fight back",
+        "oneSentenceSummary": "Gauntlet is an adversarial fuzz-testing system for AI agents that uses a mocking agent to automatically find security vulnerabilities and prompt injection bugs by mutating tool call responses.",
+        "url": "https://www.elastic.co/blog/agent-builder-hackathon-gauntlet",
+        "sourceName": "Elastic Blog"
+      }
+    ]
+  }
+}

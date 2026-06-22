@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Context/State",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "11-07",
+  "id": "BB-2026-05-01-305",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-305/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-305",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-305/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-305/raw/meta.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-305/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-305/summary.md"
+  },
+  "schema_version": 1,
+  "source": "OpenReview",
+  "source_id": "openreview",
+  "source_name": "OpenReview",
+  "status": "Abstract + key excerpts + source captured",
+  "tags": [
+    "webarena",
+    "functional-correctness",
+    "reproducibility",
+    "web-agents",
+    "long-horizon-tasks"
+  ],
+  "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+  "topic": "04-evaluation-guardrails",
+  "type": "paper",
+  "urls": {
+    "all_source_urls": [
+      "https://openreview.net/forum?id=zlsj9akpaa"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://openreview.net/forum?id=zlsj9akpaa",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

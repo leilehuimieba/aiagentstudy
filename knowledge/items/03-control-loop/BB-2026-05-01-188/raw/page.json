@@ -1,0 +1,178 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T2bc5a08ffa514eaa9de4922e11e6d82c",
+  "data": {
+    "metaData": {
+      "id": "RAW_1ca8b942",
+      "notExist": null,
+      "originalTitle": "Building a general-purpose accessibility agent—and what we learned in the process",
+      "title": "Building a general-purpose accessibility agent—and what we learned in the process",
+      "oneSentenceSummary": "GitHub shares the architecture, successes, and lessons learned from building an experimental general-purpose accessibility agent that has reviewed 3,535 pull requests with a 68% resolution rate.",
+      "summary": "This article details GitHub's experimental general-purpose accessibility agent, designed to provide just-in-time accessibility answers and automatically remediate simple, objective issues before they reach production. The agent has reviewed 3,535 pull requests with a 68% resolution rate, with top issues including structural clarity, interactive control naming, and status messages. Key architectural decisions include using a sub-agent architecture with a passive reviewer and an active implementer, executing instructions in a linear order, and using template schemas for consistent communication. The article emphasizes that the agent is not a silver bullet but an augmentation tool, and that its effectiveness depends on being trained on manually audited and remediated accessibility issues. It also covers critical limitations: evaluating code complexity to avoid unsafe changes, identifying high-risk patterns like drag-and-drop and rich text editors, reducing the LLM's bias toward generating code, and acknowledging that 36% of WCAG A and AA success criteria cannot be detected automatically. The agent's output is periodically manually reviewed to refine instructions.",
+      "featuredReason": "GitHub Copilot's team walks through building a general-purpose accessibility agent, from product framing to technical choices and lessons learned in the wild. Great read for engineers and PMs working on AI agents, accessibility, and platform-level agent systems.",
+      "translateContent": null,
+      "tags": [
+        "Accessibility",
+        "AI Agent",
+        "LLM",
+        "GitHub Copilot",
+        "WCAG"
+      ],
+      "mainPoints": [
+        {
+          "point": "The accessibility agent is designed to augment, not replace, human accessibility efforts.",
+          "explanation": "The agent automates simple, objective fixes and provides just-in-time answers, while complex issues and high-risk patterns are escalated to the human accessibility team."
+        },
+        {
+          "point": "Training the agent on a corpus of manually audited and remediated accessibility issues is critical for its effectiveness.",
+          "explanation": "LLMs have a bias toward producing inaccessible code because they are trained on decades of inaccessible code. A structured, organization-specific issue repository provides high-quality examples for the agent to learn from."
+        },
+        {
+          "point": "A sub-agent architecture with a passive reviewer and an active implementer, using template schemas, improves token efficiency and output consistency.",
+          "explanation": "Sandboxed sub-agents communicate through structured templates, enabling escalation checkpoints, complexity-based behavior, filtering, and traceability, while preventing costly direct communication."
+        },
+        {
+          "point": "The agent must be constrained with anti-gaming instructions and complexity scoring to prevent unsafe or low-quality code generation.",
+          "explanation": "The agent evaluates code complexity and avoids high-risk patterns (e.g., drag-and-drop, rich text editors). Anti-gaming instructions prevent the LLM from circumventing its own intervention rules."
+        },
+        {
+          "point": "36% of WCAG A and AA success criteria cannot be detected automatically, highlighting the need for manual evaluation.",
+          "explanation": "While LLM agents are making inroads, automated checks cannot cover all accessibility barriers. Manual identification during design and prototyping remains essential."
+        }
+      ],
+      "keyQuotes": [
+        "The social model of disability teaches us that access barriers—and consequently impairment—can be created because of how an environment is built.",
+        "LLMs have an unfortunate bias towards producing accessibility antipatterns since every major LLM currently available is trained on decades of inaccessible code.",
+        "It is entirely possible to have code that passes automated accessibility checks, yet is functionally unusable.",
+        "We had to create anti-gaming instructions to prevent the LLM from creating sneaky ways to get around its instructions to not generate code when human expertise is needed.",
+        "The accessibility agent is not a 'silver bullet' that can automatically address every hypothetical scenario."
+      ],
+      "url": "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/",
+      "readUrl": "https://www.bestblogs.dev/article/1ca8b942",
+      "enclosureUrl": null,
+      "domain": "github.blog",
+      "cover": "https://image.jido.dev/20260515211926_generic-github-copilot-blocks-logo.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_9315eb",
+      "sourceName": "The GitHub Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045348_fb760d4b",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 32,
+      "wordCount": 2251,
+      "readTime": 10,
+      "mediaDuration": null,
+      "authors": [
+        "Natalie Guevara"
+      ],
+      "publishTimeStamp": 1778860800000,
+      "publishDateStr": "Yesterday",
+      "publishDateTimeStr": "2026-05-15 16:00:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_38f3d520",
+        "type": "ARTICLE",
+        "title": "From latency to instant: Modernizing GitHub Issues navigation performance",
+        "oneSentenceSummary": "GitHub's Issues Performance team redesigned navigation data flow with client-side caching, preheating, and a service worker to shift perceived latency from network-bound to instant, achieving dramatic improvements in HPC percentiles.",
+        "url": "https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/",
+        "sourceName": "The GitHub Blog"
+      },
+      {
+        "id": "RAW_bb0cccea",
+        "type": "ARTICLE",
+        "title": "Improving token efficiency in GitHub Agentic Workflows",
+        "oneSentenceSummary": "GitHub's engineering team shares a systematic approach to reducing token costs in agentic CI workflows, using API proxy observability, automated auditing, MCP tool pruning, and CLI substitution to achieve 19-62% cost reductions across production workflows.",
+        "url": "https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/",
+        "sourceName": "The GitHub Blog"
+      },
+      {
+        "id": "RAW_b7dc179c",
+        "type": "ARTICLE",
+        "title": "The uphill climb of making diff lines performant",
+        "oneSentenceSummary": "GitHub details its architectural overhaul of the Pull Request Files changed tab, achieving massive performance gains through React component simplification, event delegation, O(1) data structures, and window virtualization.",
+        "url": "https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/",
+        "sourceName": "The GitHub Blog"
+      },
+      {
+        "id": "RAW_1369401",
+        "type": "VIDEO",
+        "title": "Andrej Karpathy on Code Agents， AutoResearch， and the Loopy Era of AI",
+        "oneSentenceSummary": "Andrej Karpathy explores the paradigm shift from manual programming to agent orchestration, the automation of AI research, and the profound implications for software engineering and education.",
+        "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+        "sourceName": "No Priors"
+      },
+      {
+        "id": "RAW_9e0a0be",
+        "type": "VIDEO",
+        "title": "Codex Now Integrates Directly with Chrome on macOS and Windows",
+        "oneSentenceSummary": "OpenAI introduces a new Chrome extension for Codex on macOS and Windows, enabling the AI to operate directly within a user's live browser session to perform complex, parallel automation tasks using their active profile and direct code execution.",
+        "url": "https://www.youtube.com/watch?v=b6Mxcv1pyBU",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_2029622732594499630",
+        "type": "TWITTER",
+        "title": "OpenAI Launches GPT-5.4 with Native Computer Use and 1M Context",
+        "oneSentenceSummary": "Sam Altman announces the release of GPT-5.4, featuring enhanced knowledge work, native computer use, and a 1-million-token context window.",
+        "url": "https://x.com/sama/status/2029622732594499630",
+        "sourceName": "Sam Altman(@sama)"
+      },
+      {
+        "id": "RAW_2024519780976177645",
+        "type": "TWITTER",
+        "title": "Google DeepMind Launches Gemini 3.1 Pro with 2x Reasoning Performance",
+        "oneSentenceSummary": "Google DeepMind releases Gemini 3.1 Pro, featuring a 77.1% score on the ARC-AGI-2 benchmark, doubling the performance of the previous version.",
+        "url": "https://x.com/demishassabis/status/2024519780976177645",
+        "sourceName": "Demis Hassabis(@demishassabis)"
+      },
+      {
+        "id": "RAW_4a7b92a8",
+        "type": "ARTICLE",
+        "title": "Validating agentic behavior when “correct” isn’t deterministic",
+        "oneSentenceSummary": "This article presents a novel validation framework for autonomous AI agents that uses dominator analysis on execution traces to distinguish essential outcomes from incidental noise, moving beyond brittle step-by-step testing.",
+        "url": "https://github.blog/ai-and-ml/generative-ai/validating-agentic-behavior-when-correct-isnt-deterministic/",
+        "sourceName": "The GitHub Blog"
+      },
+      {
+        "id": "RAW_3727eb85",
+        "type": "ARTICLE",
+        "title": "Under the hood: Security architecture of GitHub Agentic Workflows",
+        "oneSentenceSummary": "This article explores the multi-layered security architecture of GitHub Agentic Workflows, detailing how isolation, zero-secret policies, and vetted execution mitigate the risks of non-deterministic AI agents.",
+        "url": "https://github.blog/ai-and-ml/generative-ai/under-the-hood-security-architecture-of-github-agentic-workflows/",
+        "sourceName": "The GitHub Blog"
+      }
+    ]
+  }
+}

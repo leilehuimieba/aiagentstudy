@@ -1,0 +1,384 @@
+{
+  "content": "Cloudflare recently announced the closed beta of Flagship, a new feature flag service built directly into its global edge platform. The service lets teams control feature rollouts and experiment with changes without redeploying code, while evaluating flags locally in Cloudflare Workers rather than calling external flag services.\n\nBuilt on OpenFeature, Flagship lets developers control feature visibility in their applications without redeploying code. Developers can define flags with targeting rules and percentage-based rollouts, and then evaluate them directly in their Workers via a native binding.\n\nAccording to Cloudflare, the service built on the global edge platform removes network round-trip times and enables sub-millisecond evaluation at the edge. Rohan Mukherjee, system engineer at Cloudflare, and Abhishek Kankani, head of emerging technology and incubation at Cloudflare, write:\n\nFlagship supports the patterns you'd expect from a feature flag service and the ones that become critical when AI-generated code is landing in production daily. Flag values can be boolean, strings, numbers, or full JSON objects — useful for configuration blocks, UI theme definitions, or routing users to different API versions without maintaining separate code paths.\n\nSource: Cloudflare blog\n\nOpenFeature is a CNCF open standard that provides a vendor-neutral API for feature flagging, allowing applications to integrate with different flag management systems without changing application code. Pete Hodgson, head of technology at Tribe AI, comments on LinkedIn:\n\nWelcome to the OpenFeature party, Cloudflare! (...) More validation that delivery platforms powered by open standards are a win for the platform vendor, a win for their customers, and a win for the industry overall. Less vendor lock-in, less wasted effort re-implementing common features, and more opportunity for deep extensions from the community.\n\nAnnounced during the Cloudflare Agent Week, Flagship supports targeting rules and gradual rollouts, and aligns with the OpenFeature standard, positioning it as a native alternative to third-party feature flag platforms for applications already running on Cloudflare, particularly those operating AI-driven or agent-based workloads that require low latency and rapid iteration.\n\nEach flag can include multiple rules, evaluated in order of priority: the first matching rule determines the variation, and the rule may include conditions and an optional percentage rollout. Mukherjee and Kankani explain how flag rollout works:\n\nUnlike gradual deployments, which split traffic between different uploaded versions of your Worker, feature flags let you roll out behavior by percentage within a single version that is serving 100% of traffic. Any rule can include a percentage rollout. Instead of serving a variation to everyone who matches the conditions, you serve it to a percentage of them.\n\nOn Reddit, many highlighted the zero-latency edge evaluation as the main benefit, with the native integration with Workers reducing operational overhead compared to external feature flag services such as LaunchDarkly and Split.io. User thejord_it comments:\n\nFeature flags are becoming commoditized infrastructure, like caching or logging. Cloudflare, Vercel (with Edge Config), and eventually AWS will all have native flag evaluation. The \"feature flag as a $100K/year SaaS\" era is ending.\n\nCloudflare has also made available a browser client provider that prefetches selected flags, caches them with a configurable TTL, and evaluates them synchronously from the local cache. Flagship is currently available in closed beta.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/e36d0437#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=f152e8",
+      "text": "InfoQ",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://www.infoq.com/news/2026/05/cloudflare-flagship-openfeature/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://blog.cloudflare.com/flagship/",
+      "text": "Cloudflare recently announced the closed beta of Flagship",
+      "title": ""
+    },
+    {
+      "href": "https://www.cncf.io/projects/openfeature/",
+      "text": "OpenFeature",
+      "title": ""
+    },
+    {
+      "href": "https://www.linkedin.com/in/roerohan/",
+      "text": "Rohan Mukherjee",
+      "title": ""
+    },
+    {
+      "href": "https://www.linkedin.com/in/abhishekkankani/",
+      "text": "Abhishek Kankani",
+      "title": ""
+    },
+    {
+      "href": "https://www.linkedin.com/posts/beingagile_welcome-to-the-openfeature-party-cloudflare-share-7451748048201814016-uPSa?utm_source=share&utm_medium=member_desktop&rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY",
+      "text": "comments on LinkedIn",
+      "title": ""
+    },
+    {
+      "href": "https://www.reddit.com/r/CloudFlare/comments/1so2efh/introducing_flagship_feature_flags_built_for_the/",
+      "text": "Reddit",
+      "title": ""
+    },
+    {
+      "href": "https://www.reddit.com/r/CloudFlare/comments/1so2efh/comment/ogwc2nj/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+      "text": "comments",
+      "title": ""
+    },
+    {
+      "href": "https://www.cloudflare.com/lp/flagship-private-beta/",
+      "text": "closed beta",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/960fb5f2?entry=related_article",
+      "text": "Project Think: building the next generation of AI agents on Cloudflare",
+      "title": "Cloudflare introduces Project Think, a set of serverless primitives and an opinionated base class for building durable, long-running AI agents that can survive crashes, execute sandboxed code, coordinate sub-agents, and self-author extensions, fundamentally changing the economics of agent deployment."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/7e4131fc?entry=related_article",
+      "text": "Agents have their own computers with Sandboxes GA",
+      "title": "Cloudflare announces the general availability of its Sandboxes and Cloudflare Containers, detailing a suite of new features that provide AI agents with secure, scalable, and stateful development environments."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8db2ea5f?entry=related_article",
+      "text": "Stripe’s Docdb: How Zero-Downtime Data Movement Powers Trillion-Dollar Payment Processing",
+      "title": "This article details how Stripe built a zero-downtime data movement platform, DocDB, to horizontally scale its MongoDB-based database infrastructure to process trillions of dollars in payments annually."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/ef3084e8?entry=related_article",
+      "text": "The DPoP Storage Paradox: Why Browser-Based Proof-of-Possession Remains an Unsolved Problem",
+      "title": "This article dissects the DPoP storage paradox in browsers, where non-extractable CryptoKeys in IndexedDB remain vulnerable to XSS-based signing oracle attacks, and evaluates the BFF pattern and memory-only approaches as mitigations."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/c857f67e?entry=related_article",
+      "text": "MCP in the Java World: Bringing Architectural Strategy to LLM Integrations",
+      "title": "MCP Java SDK transforms LLM integration from ad-hoc tool calling into a disciplined architectural pattern, introducing protocol-level contracts, anti-corruption layers, and governance for enterprise Java systems."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8b57be6d?entry=related_article",
+      "text": "4 Patterns of AI Native Development",
+      "title": "Patrick Debois outlines four evolving patterns of AI-native development—shifting from producer to manager, implementation to intent, delivery to discovery, and content to knowledge."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/0efed9f1?entry=related_article",
+      "text": "Sandboxing AI agents, 100x faster",
+      "title": "Cloudflare introduces Dynamic Worker Loader, an isolate-based sandboxing API that executes AI-generated code 100x faster and more efficiently than traditional containers."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/79ff2031?entry=related_article",
+      "text": "AI Gateway’s next evolution: an inference layer designed for agents",
+      "title": "Cloudflare announces the evolution of its AI Gateway into a unified inference layer, offering a single API to access over 70 models from 12+ providers, with features like automatic failover, cost monitoring, and support for custom models, specifically designed to meet the demands of building reliable and fast AI agents."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/cade0910?entry=related_article",
+      "text": "Building the agentic cloud: everything we launched during Agents Week 2026",
+      "title": "Cloudflare concludes its inaugural Agents Week by announcing a comprehensive suite of new products and features across compute, security, agent tooling, and web infrastructure, all designed to establish the foundation for the 'agentic cloud' where AI agents are a primary workload."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/39b642f7?entry=related_article",
+      "text": "Agents， Architecture， & Amnesia: Becoming AI-Native Without Losing Our Minds",
+      "title": "This talk warns against 'architectural amnesia' in the rush to adopt AI agents, arguing that increased autonomy demands more governance, not less, and that we must return to engineering fundamentals like identity, traceability, and trade-off analysis."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Cloudflare launches Flagship, an edge-native feature flag service built on OpenFeature, enabling sub-millisecond flag evaluation within Workers without exter...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Cloudflare, Feature Flags, OpenFeature, Edge Computing, Cloudflare Workers",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs · Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Cloudflare Introduces Flagship: an Edge-Native Feature Fl...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Cloudflare launches Flagship, an edge-native feature flag service built on OpenFeature, enabling sub-millisecond flag evaluation within Workers without exter...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/e36d0437",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/e36d0437/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-05-05 06:24:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Renato Losio",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Cloudflare",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Feature Flags",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "OpenFeature",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Edge Computing",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Cloudflare Workers",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Cloudflare Introduces Flagship: an Edge-Native Feature Fl...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Cloudflare launches Flagship, an edge-native feature flag service built on OpenFeature, enabling sub-millisecond flag evaluation within Workers without exter...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/e36d0437/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Cloudflare Introduces Flagship: an Edge-Native Feature Fl...",
+  "url": "https://www.bestblogs.dev/en/article/e36d0437"
+}

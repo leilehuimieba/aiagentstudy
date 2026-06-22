@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Fuller"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-uploads.huggingface.co/production/uploads/65b12ed52be9660f0b7e5f72/zJb7AUFeIDNyokJYMK1Ae.jpeg",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_461b71e6",
+  "keyQuotes": [
+    "Agent logic is software primitives, such as knowledge graphs, algorithms, program analysis libraries, which operate at the agentic layer (within an agent harness) and can intentionally steer the LLM in the direction of the enterprise workflow, reducing the context space.",
+    "This approach when applied to multiple mission-critical legacy systems (up to 1M lines of code and 1K programs) maintains marginally superior app understanding performance with ~30× lower token consumption than a baseline frontier LLM-only approach.",
+    "With the arrival of this agentic AI era, as we seek to further enhance society in part through economies of scale, we should continue this trend and fully leverage agent logic to simplify model context and intelligently traverse enterprise workflows at the core; only then will scalable adoption at optimal operating costs be truly feasible."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The article argues that for AI to succeed in complex, dynamic, and policy-bound enterprise workflows, it needs structured guidance. Agent logic—software primitives like knowledge graphs and program analysis—steers the LLM, reducing context and improving performance.",
+      "point": "Scalable enterprise AI requires 'agent logic', not just larger LLMs."
+    },
+    {
+      "explanation": "By pre-indexing information and guiding the LLM's focus, agent logic minimizes unnecessary context. The article cites examples like a 30x reduction in token consumption for legacy code understanding and up to 15x for test generation, directly impacting operational costs.",
+      "point": "Agent logic dramatically reduces token consumption and cost."
+    },
+    {
+      "explanation": "Across multiple benchmarks (ITBench, AssetOpsBench), agents equipped with agent logic consistently outperformed baseline LLMs and even state-of-the-art coding agents. This includes up to 4.0x improvement in incident investigation and boosting compliance success rates from single digits to over 80%.",
+      "point": "Agent logic improves performance and reliability over LLM-only approaches."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article argues that scalable enterprise AI adoption depends not on larger LLMs but on integrating 'agent logic'—software primitives like knowledge graphs and program analysis—to guide models within complex workflows, achieving superior performance and cost-efficiency.",
+  "originalTitle": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-01",
+  "publishDateTimeStr": "2026-06-01 21:51:18",
+  "publishTimeStamp": 1780321878000,
+  "qualified": false,
+  "readCount": 81,
+  "readTime": 9,
+  "readUrl": "https://www.bestblogs.dev/article/461b71e6",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article from IBM Research posits that the key to scalable enterprise AI adoption lies not in ever-larger language models, but in the strategic application of 'agent logic'. The authors define agent logic as software primitives—such as knowledge graphs, program analysis libraries, and algorithmic orchestration—that operate at the agentic layer to intentionally steer an LLM, reducing its context space and guiding it through complex, dynamic, and policy-constrained enterprise workflows. The article presents four detailed case studies from IBM's own products: 1) Legacy code modernization with watsonx Code Assistant for Z, achieving ~30x lower token consumption; 2) Automated test generation with Aster, showing 20-45% coverage improvements with up to 15x fewer tokens; 3) Proactive incident response with the Instana I3 agent, outperforming ReAct agents by up to 4.0x; and 4) IT compliance automation, boosting success rates from single digits to over 80%. Two additional domain case studies in healthcare and industrial maintenance further validate the approach. The core thesis is that agent logic provides the necessary 'GPS' for LLMs, enabling them to navigate enterprise systems with higher accuracy, lower cost, and greater reliability, thereby making scalable AI adoption a practical reality.",
+  "tags": [
+    "Agent Logic",
+    "Enterprise AI",
+    "LLM",
+    "Program Analysis",
+    "Knowledge Graphs"
+  ],
+  "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+  "wordCount": 2074
+}

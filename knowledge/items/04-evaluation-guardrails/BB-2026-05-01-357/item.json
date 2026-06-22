@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-31",
+  "id": "BB-2026-05-01-357",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-357/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-357",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-357/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-357/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-357/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-357/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-357/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-357/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / OpenClaw Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / OpenClaw Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "OpenClaw",
+    "AI Agent",
+    "Host Exec",
+    "Approval Mode",
+    "Enterprise AI"
+  ],
+  "title": "Safer Than YOLO: Auto Mode for Exec Approvals",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://openclaw.ai/blog/safer-than-yolo-auto-mode-for-exec-approvals/",
+      "https://www.bestblogs.dev/article/98816042"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://openclaw.ai/blog/safer-than-yolo-auto-mode-for-exec-approvals/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/98816042"
+  }
+}

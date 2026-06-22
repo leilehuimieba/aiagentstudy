@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-02",
+  "id": "BB-2026-05-01-474",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-474/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-474",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-474/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-474/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-474/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-474/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-474/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-474/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hugging Face - Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hugging Face - Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "Computer Use",
+    "LLM",
+    "Model Quantization",
+    "Local AI"
+  ],
+  "title": "Holo3.1: Fast & Local Computer Use Agents",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/blog/Hcompany/holo31",
+      "https://www.bestblogs.dev/article/0aaaa20f"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://huggingface.co/blog/Hcompany/holo31",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/0aaaa20f"
+  }
+}

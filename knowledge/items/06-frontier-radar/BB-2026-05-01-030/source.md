@@ -2,12 +2,16 @@
 
 - Title: DeepSeek-V4 预览版发布
 - BestBlogs URL: https://www.bestblogs.dev/explore/topics/deepseek-v4-preview-release
-- Original publisher URL: https://www.bestblogs.dev/article/95d5e07c
-- Original link text: DeepSeek-V4 预览版：迈入百万上下文普惠时代
-DeepSeek
-· 2026-04-24
+- Original publisher URL: https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c
+- Original link text: DeepSeek-V4 预览版：迈入百万上下文普惠时代（主参考条目外部原文）
 
-官方发布原文，作为事实基准。
+- Primary BestBlogs reference URL: https://www.bestblogs.dev/article/95d5e07c
+
+## External Original Mapping
+
+- Topic-page note: this is a BestBlogs topic aggregation page, not a single-source article page.
+- External original chosen for evidence baseline: the primary BestBlogs reference `https://www.bestblogs.dev/article/95d5e07c`
+- Mapped external original URL: https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c
 
 ## Captured Page Metadata
 

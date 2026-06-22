@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    "Context/State",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-24",
+  "id": "BB-2026-05-01-313",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/05-security-techniques/BB-2026-05-01-313/article.md",
+    "item_dir": "knowledge/items/05-security-techniques/BB-2026-05-01-313",
+    "raw_dir": "knowledge/items/05-security-techniques/BB-2026-05-01-313/raw",
+    "raw_files": [
+      "knowledge/items/05-security-techniques/BB-2026-05-01-313/raw/meta.json"
+    ],
+    "source": "knowledge/items/05-security-techniques/BB-2026-05-01-313/source.md",
+    "summary": "knowledge/items/05-security-techniques/BB-2026-05-01-313/summary.md"
+  },
+  "schema_version": 1,
+  "source": "Web Security Academy",
+  "source_id": "portswigger",
+  "source_name": "Web Security Academy",
+  "status": "Key excerpts + source captured",
+  "tags": [
+    "ssti",
+    "labs",
+    "context-detection",
+    "object-chain",
+    "exploitation-workflow"
+  ],
+  "title": "Server-side template injection",
+  "topic": "05-security-techniques",
+  "type": "web_article",
+  "urls": {
+    "all_source_urls": [
+      "https://portswigger.net/web-security/server-side-template-injection"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://portswigger.net/web-security/server-side-template-injection",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

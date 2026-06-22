@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-20",
+  "id": "BB-2026-05-01-243",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-243/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-243",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-243/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-243/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-243/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-243/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-243/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-243/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Martin Fowler",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Martin Fowler",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Coding Agents",
+    "Static Code Analysis",
+    "ESLint",
+    "Code Maintainability",
+    "Software Engineering"
+  ],
+  "title": "Maintainability sensors for coding agents",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://martinfowler.com/articles/sensors-for-coding-agents.html",
+      "https://www.bestblogs.dev/article/0c8ed596"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://martinfowler.com/articles/sensors-for-coding-agents.html",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/0c8ed596"
+  }
+}

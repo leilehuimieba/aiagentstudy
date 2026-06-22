@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Analytics DeepLearning.AI"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://charonhub.deeplearning.ai/content/images/2026/06/2026.06.05-LETTER.webp",
+  "domain": "deeplearning.ai",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_2baac995",
+  "keyQuotes": [
+    "We're saddened by Alibaba's turn toward closed weights, but we're pleased that it's keeping its lower tiers open.",
+    "A whale of an opportunity awaits AI builders who combine advances in sensors with deep domain knowledge and workflow integration!",
+    "We place a high value on openness. The benefits of AI should be available to all to the greatest extent possible.",
+    "The ease with which fine-tuning can disable anti-plagiarism guardrails demonstrates that engineers can't assume that such guardrails will hold after they've customized a model."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The model excels in reasoning and speed, ranking seventh on the Artificial Analysis Intelligence Index and third in output speed. Its agentic capabilities are touted but not yet independently verified.",
+      "point": "Qwen3.7-Max is Alibaba's most capable closed-source LLM, ranking highly in speed and intelligence."
+    },
+    {
+      "explanation": "The system detects whale heat signatures, alerts human experts for validation within 30 seconds, and notifies ships. It has logged thousands of whales in the San Francisco Bay, addressing a critical conservation issue.",
+      "point": "WhaleSpotter uses AI-powered thermal cameras to prevent ship-whale collisions in real-time."
+    },
+    {
+      "explanation": "This network uses tactics like stolen credit cards and account farms to offer access at a fraction of the cost, but risks include model substitution, data theft, and enabling industrial-scale distillation.",
+      "point": "A gray market of proxy servers provides Chinese developers with cheap, often illicit access to U.S. AI models."
+    },
+    {
+      "explanation": "Researchers showed that fine-tuning models to expand plot summaries led to up to 90% verbatim reproduction of copyrighted book paragraphs, demonstrating that alignment guardrails are brittle and easily bypassed.",
+      "point": "Fine-tuning LLMs on a text-expansion task can break copyright alignment, causing them to regurgitate training data."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This issue of The Batch covers Alibaba's Qwen3.7-Max model, an AI system for preventing whale-ship collisions, the gray market for LLM access in China, and research showing fine-tuning can break copyright alignment.",
+  "originalTitle": "Qwen3.7-Max Challenges Google for Third Place， AI Saves Whales， Fine-Tuning Breaks Copyright Alignment",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 15:00:24",
+  "publishTimeStamp": 1780642824000,
+  "qualified": false,
+  "readCount": 34,
+  "readTime": 15,
+  "readUrl": "https://www.bestblogs.dev/article/2baac995",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_cd481f",
+  "sourceImage": "https://image.jido.dev/20260527045454_site-meta.png",
+  "sourceName": "The Batch | DeepLearning.AI",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This issue of The Batch, DeepLearning.AI's weekly newsletter, features four main stories. First, Alibaba's Qwen3.7-Max is a powerful new closed-source LLM that ranks among the top Chinese models and is notably fast, though its agentic claims are unverified. Second, WhaleSpotter uses thermal cameras and AI to detect gray whales in real-time, helping ships avoid collisions in the San Francisco Bay. Third, a report from ChinaTalk details a gray market of proxy servers that provide Chinese developers with cheap, often illicit access to U.S. AI models, raising concerns about security and model distillation. Finally, research from Stony Brook University shows that fine-tuning LLMs on a seemingly benign task like expanding plot summaries can cause them to regurgitate large portions of their copyrighted training data, breaking alignment guardrails. The issue opens with a letter from Andrew Ng analyzing the recent White House executive order on AI and cybersecurity, arguing it strikes a reasonable balance between promoting innovation and addressing security risks.",
+  "tags": [
+    "LLM",
+    "AI Agent",
+    "AI Safety",
+    "AI Regulation",
+    "Model Training"
+  ],
+  "title": "Qwen3.7-Max Challenges Google for Third Place， AI Saves Whales， Fine-Tuning Breaks Copyright Alignment",
+  "translateContent": null,
+  "url": "https://www.deeplearning.ai/the-batch/issue-356",
+  "wordCount": 3543
+}

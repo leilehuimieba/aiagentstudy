@@ -2,12 +2,12 @@
 
 ## Article
 
-- Title: ???????? Claude Code??? 17 ????????
+- Title: 像带新人一样引导 Claude Code：来自 17 年开发经验的启示
 - Source: BestBlogs / Claude Blog
 - URL: https://www.bestblogs.dev/article/c1ecbe08
 - Date: 2026-04-27
 - Topic: `03-control-loop`
-- Tags: Claude Code, ?????, AI ????, ?????, ??
+- Tags: Claude Code, agent onboarding, context engineering, legacy codebase, MCP
 
 ## Model Mapping
 

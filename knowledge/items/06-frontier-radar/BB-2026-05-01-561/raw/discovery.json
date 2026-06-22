@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "十字路口Crossing"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_ed61bb66",
+  "keyQuotes": [
+    "We are now very close to this critical point.",
+    "Models and harnesses are both means to achieve higher intelligence.",
+    "When you can do anything, the criteria for deciding what not to do are the most critical.",
+    "Vibe Coding is definitely not Vibe Engineering.",
+    "The endgame of intelligence must be delivering end-to-end results."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "IO pointed out that white-collar work primarily revolves around engineering creation and creative expression. Therefore, while strengthening Coding capabilities, MiniMax continues to invest in multimodal content generation like voice, images, and video, differentiating itself from most domestic model companies that only bet on Coding.",
+      "point": "MiniMax advances both Coding and content generation, believing both are core to AGI productivity."
+    },
+    {
+      "explanation": "IO believes there is about a two-generation gap between domestic models and those in the US. The priority is to first build a good 3T model before tackling the 10T model. Challenges include the failure of Scaling Law extrapolation, scarcity of high-quality data (a 10T model requires 200T data), and the tendency for larger models to overfit noise.",
+      "point": "The 10T model is MiniMax's next key milestone but faces systemic challenges."
+    },
+    {
+      "explanation": "Multiple guests pointed out that while AI has dramatically increased code output speed, steps like review, testing, and deployment verification have not kept pace, leading to code quality loss of control and QA breakdown. MiniMax's Chief Architect, Adao, emphasized that equal effort must be invested in verification and delivery as in R&D and production.",
+      "point": "In the Vibe Coding era, verification and delivery capabilities lag significantly behind production efficiency, requiring equal effort."
+    },
+    {
+      "explanation": "IO believes the limit of intelligence is not assisting with writing code or analyzing reports, but directly completing end-to-end value delivery such as vulnerability fixes or investment decisions. Achieving this leap requires 10T-level super-large models and deep collaboration with top industry experts.",
+      "point": "The endgame of AI is delivering end-to-end results; we are currently in a transition window from assistance to autonomous decision-making."
+    },
+    {
+      "explanation": "IO stated that when money cannot directly be exchanged for unlimited computing power, the core competition in AI R&D shifts from capital to talent and algorithms, placing startups on a relatively fair starting line free from the resource dominance of big companies.",
+      "point": "Chip export restrictions have actually fostered competition for startups, shifting the core focus to talent and algorithms."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "MiniMax founder Yan Junjie deeply shared the progress of the M3 model, plans for a 10T model, multimodal strategy, and thoughts on the endgame of AI at the Dev Meetup, and discussed engineering practices and challenges in the era of Vibe Coding with several developers.",
+  "originalTitle": "对话 MiniMax 闫俊杰：M3、10X 计划、10T 模型、和智能的终局",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-16 12:39:00",
+  "publishTimeStamp": 1781584740000,
+  "qualified": false,
+  "readCount": 20,
+  "readTime": 57,
+  "readUrl": "https://www.bestblogs.dev/article/ed61bb66",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_f63517",
+  "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+  "sourceName": "十字路口Crossing",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is a transcript of an on-site conversation at the MiniMax Dev Meetup from the 'Crossing' podcast. MiniMax founder and CEO Yan Junjie (IO) engaged in an in-depth discussion with several developers on topics including the M3 model, the 10T model plan, AI Coding practices, and multimodal strategy. IO shared MiniMax's iterative journey from M1 to M3, emphasizing that general consumption is an objective metric for measuring model value, and revealed that M3 is close to the critical point where users can use Sonnet/Opus-level models without restrictions. He proposed that the 10T model is a milestone that must be conquered, but faces systemic challenges such as data quality and the failure of Scaling Law extrapolation. In terms of AI Coding, multiple guests discussed issues like code quality loss of control and verification lag brought about by Vibe Coding, emphasizing the need to return to engineering fundamentals. IO also elaborated on MiniMax's differentiated strategy of advancing both Coding and content generation, and the concept of introducing industry experts through the '10x' project to enhance model vertical capabilities. The Q&A session covered practical issues such as M3 inference speed optimization, instruction-following improvements, private deployment, and applications in the financial sector.",
+  "tags": [
+    "AI Models",
+    "AI Agent",
+    "AI Coding",
+    "Multimodal AI",
+    "Model Training & Inference"
+  ],
+  "title": "Dialogue with MiniMax Yan Junjie: M3, 10X Plan, 10T Model, and the Endgame of Intelligence",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109179&idx=1&sn=b9d58da51a4cce1ac87ee3286001f34c",
+  "wordCount": 14076
+}

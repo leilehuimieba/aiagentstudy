@@ -1,0 +1,174 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T15a0d813d89246878f71607728a28173",
+  "data": {
+    "metaData": {
+      "id": "RAW_4ba0b250",
+      "notExist": null,
+      "originalTitle": "Development environments for cloud agents · Cursor",
+      "title": "Development environments for cloud agents · Cursor",
+      "oneSentenceSummary": "Cursor introduces new tools for teams to configure, govern, and maintain development environments for cloud agents, enabling fleets of parallelized agents to handle end-to-end engineering tasks.",
+      "summary": "This Cursor changelog announces a major update focused on development environments for cloud agents. The release introduces multi-repo environment support, allowing agents to work across multiple repositories with session reuse. It improves Dockerfile-based environment configuration as code, including build secrets for secure access to private registries and upgraded layer caching for 70% faster builds. The update also enhances agent-led environment setup with interactive validation and clear failure handling. New governance and security controls include environment version history with rollback, admin permissions, audit logs, and scoped egress and secrets. These features enable teams to run fleets of parallelized agents that can take engineering tasks from start to finish within fully controlled environments.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Cursor",
+        "Cloud Agents",
+        "Development Environments",
+        "AI Coding",
+        "DevOps"
+      ],
+      "mainPoints": [
+        {
+          "point": "Cloud agents now support multi-repo environments for end-to-end task handling.",
+          "explanation": "Agents can be configured with all necessary repositories in a single environment, with session reuse, enabling them to complete complex engineering tasks that span multiple codebases."
+        },
+        {
+          "point": "Environment configuration is now managed as code with improved Dockerfile support.",
+          "explanation": "Teams can define, debug, and review environments using Dockerfiles, with build secrets for secure access to private registries and upgraded layer caching for 70% faster rebuilds."
+        },
+        {
+          "point": "Agent-led environment setup is more interactive and robust.",
+          "explanation": "Cursor now asks questions, flags missing credentials, and validates setup. On failure, it defaults to a base image with clear warnings instead of immediately failing."
+        },
+        {
+          "point": "New governance and security controls provide full visibility and access management.",
+          "explanation": "Features include environment version history with rollback, admin-only rollback permissions, audit logs, and scoped egress and secrets at the environment level."
+        }
+      ],
+      "keyQuotes": [
+        "To take engineering tasks from start to finish, agents need a development environment similar to the setup on your laptop: cloned repositories, installed dependencies, credentials for internal toolchains, and access to build systems.",
+        "This release introduces new tools for teams to configure development environments for their agents.",
+        "Together, this makes it easier for teams to run fleets of parallelized agents that handle tasks from end-to-end, inside development environments you fully control.",
+        "Builds that hit the cache run 70% faster.",
+        "Every development environment now has its own version history that users can review and roll back."
+      ],
+      "url": "https://cursor.com/changelog/05-13-26",
+      "readUrl": "https://www.bestblogs.dev/article/4ba0b250",
+      "enclosureUrl": null,
+      "domain": "cursor.com",
+      "cover": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/OG%20Images/opengraph-changelog-may-13-2026.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_a88d43f5",
+      "sourceName": "Cursor Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://cursor.com/marketing-static/icon-192x192.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 3,
+      "wordCount": 357,
+      "readTime": 2,
+      "mediaDuration": null,
+      "authors": [
+        "Cursor Team"
+      ],
+      "publishTimeStamp": 1778630400000,
+      "publishDateStr": "05-13",
+      "publishDateTimeStr": "2026-05-13 00:00:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_b23e1b48",
+        "type": "ARTICLE",
+        "title": "Cursor 3.0: New Interface and Parallel Agents",
+        "oneSentenceSummary": "Cursor 3.0 introduces a redesigned interface featuring parallel agent execution, native git worktree integration, and side-by-side agent tabs for enhanced AI-assisted development.",
+        "url": "https://cursor.com/changelog/3-0",
+        "sourceName": "Cursor Blog"
+      },
+      {
+        "id": "RAW_67644639",
+        "type": "ARTICLE",
+        "title": "Introducing Composer 2 · Cursor",
+        "oneSentenceSummary": "Cursor introduces Composer 2, a frontier-level coding model that leverages continued pretraining and reinforcement learning to achieve significant benchmark gains at a highly competitive price.",
+        "url": "https://cursor.com/blog/composer-2",
+        "sourceName": "Cursor Blog"
+      },
+      {
+        "id": "RAW_d8c375d8",
+        "type": "ARTICLE",
+        "title": "Codex for (almost) everything",
+        "oneSentenceSummary": "OpenAI announces a major update to Codex, expanding its capabilities beyond coding to include computer operation, web interaction, image generation, and deeper integration across the software development lifecycle with new features like memory, automations, and over 90 plugins.",
+        "url": "https://openai.com/index/codex-for-almost-everything",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_77d5e14",
+        "type": "VIDEO",
+        "title": "Build Hour: API & Codex",
+        "oneSentenceSummary": "This OpenAI Build Hour session introduces 'Harness Engineering,' a methodology for optimizing codebases to enable autonomous AI agents to handle full software development tasks.",
+        "url": "https://www.youtube.com/watch?v=rhsSqr0jdFw",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_63cbae4c",
+        "type": "ARTICLE",
+        "title": "Meet the new Cursor 3: A Unified Workspace for AI Agents",
+        "oneSentenceSummary": "Cursor 3 introduces a unified, agent-centric workspace that supports multi-repo development, seamless local-to-cloud handoff, and parallel agent execution.",
+        "url": "https://cursor.com/blog/cursor-3",
+        "sourceName": "Cursor Blog"
+      },
+      {
+        "id": "RAW_4b07215e",
+        "type": "ARTICLE",
+        "title": "Improving Composer through real-time RL",
+        "oneSentenceSummary": "Cursor introduces \"real-time RL,\" a training methodology that uses live production inference tokens and user feedback to iteratively improve the Composer model every five hours.",
+        "url": "https://cursor.com/blog/real-time-rl-for-composer",
+        "sourceName": "Cursor Blog"
+      },
+      {
+        "id": "RAW_f884575",
+        "type": "VIDEO",
+        "title": "Boris Cherny: How We Built Claude Code",
+        "oneSentenceSummary": "Boris Cherny, creator of Claude Code, discusses the tool's evolution at Anthropic, emphasizing a 'build for the future' philosophy, multi-agent orchestration, and the radical 150% productivity boost in AI-native engineering.",
+        "url": "https://www.youtube.com/watch?v=PQU9o_5rHC4",
+        "sourceName": "Y Combinator"
+      },
+      {
+        "id": "RAW_2046719798596517952",
+        "type": "TWITTER",
+        "title": "Cursor and SpaceX Partner to Scale AI Coding with Stargate-Class Infrastructure",
+        "oneSentenceSummary": "Cursor CEO Michael Truell announces a strategic partnership with SpaceX to leverage massive compute infrastructure for scaling the Cursor Composer and building advanced coding models.",
+        "url": "https://x.com/mntruell/status/2046719798596517952",
+        "sourceName": "Michael Truell(@mntruell)"
+      },
+      {
+        "id": "RAW_4bab59bf",
+        "type": "ARTICLE",
+        "title": "Run cloud agents in your own infrastructure · Cursor",
+        "oneSentenceSummary": "Cursor introduces self-hosted cloud agents, allowing enterprises to run AI coding agents within their own secure infrastructure while maintaining full control over code and tool execution.",
+        "url": "https://cursor.com/blog/self-hosted-cloud-agents",
+        "sourceName": "Cursor Blog"
+      },
+      {
+        "id": "RAW_3b1c0638",
+        "type": "ARTICLE",
+        "title": "Introducing Claude Opus 4.7",
+        "oneSentenceSummary": "Anthropic has released Claude Opus 4.7, a significant upgrade over Opus 4.6 with major improvements in advanced software engineering, vision capabilities, instruction following, and autonomous long-horizon reasoning, while implementing new cyber safeguards and maintaining the same pricing.",
+        "url": "https://www.anthropic.com/news/claude-opus-4-7",
+        "sourceName": "Anthropic News"
+      }
+    ]
+  }
+}

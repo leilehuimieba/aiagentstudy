@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-25",
+  "id": "BB-2026-05-01-365",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-365/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-365",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-365/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-365/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-365/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-365/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-365/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-365/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 百度Geek说",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 百度Geek说",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Agentic Delivery",
+    "Executable Engine",
+    "Multi-round Repair"
+  ],
+  "title": "RenderFlow: Agentic Code Delivery Practices for Baidu's Vertical Search Presentation Service",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247606907&idx=1&sn=16ee44f4deaee5fac7cc7d3a7a78bfe2",
+      "https://www.bestblogs.dev/article/315cb4a3"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247606907&idx=1&sn=16ee44f4deaee5fac7cc7d3a7a78bfe2",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/315cb4a3"
+  }
+}

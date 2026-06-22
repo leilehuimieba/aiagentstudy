@@ -1,0 +1,83 @@
+{
+  "id": "RAW_b9304ecd",
+  "notExist": null,
+  "originalTitle": "verify-data：一个端到端的数据验数 Agent Skill",
+  "title": "verify-data: An End-to-End Data Validation Agent Skill",
+  "oneSentenceSummary": "This article systematically introduces the verify-data Agent Skill developed by the Alibaba Cloud team, which automates the entire data validation process through natural language interaction, compressing traditional manual validation from 2-4 hours to under 30 minutes.",
+  "summary": "The article provides a detailed introduction to verify-data, an end-to-end data validation Agent Skill designed for data development teams. This skill automates the entire process through natural language interaction, from table structure retrieval, baseline table discovery, code logic analysis, validation SQL generation, execution, to report publishing. Core capabilities include a two-stage automatic baseline table discovery strategy, 10 standardized validation SQL templates, Code Diff-driven risk scanning, 4 degradation validation strategies, and automatic generation of review-grade reports. The article systematically elaborates on multiple dimensions including background pain points, core architecture, practical cases, design principles, lessons learned, current challenges, and future outlook. The author emphasizes that standardization is more important than intelligence, lesson records are core assets, and red-line constraints are key to ensuring Agent reliability. The solution is implemented based on MaxCompute, DataWorks, and DingTalk documents, but the core design ideas are platform-agnostic.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Agent Skill",
+    "Data Validation",
+    "Data Quality",
+    "AI Agent",
+    "Big Data"
+  ],
+  "mainPoints": [
+    {
+      "point": "verify-data standardizes and automates the data validation process through Agent Skill, significantly improving efficiency.",
+      "explanation": "Traditional manual data validation takes 2-4 hours. verify-data reduces this to under 30 minutes through a 7-9 step main process with conditionally triggered sub-steps, transforming the workflow from writing multiple SQL queries manually to triggering actions with a single sentence."
+    },
+    {
+      "point": "The two-stage automatic baseline table discovery strategy solves the core pain point of incorrect baseline table selection.",
+      "explanation": "A two-stage strategy involving candidate set discovery through data lineage and precise ranking of metrics/dimensions automatically calculates a composite score to select the optimal baseline table. It supports joint coverage with multiple baseline tables and provides 4 degradation strategies as fallback when no baseline table is available."
+    },
+    {
+      "point": "10 standardized SQL templates and Code Diff risk scanning ensure validation coverage and depth.",
+      "explanation": "10 template types cover key validation items such as total count comparison, join inflation detection, and date dimension join validation. Code Diff scans 8 types of risk signals and generates quantitative evidence SQL, moving from knowing how much the difference is to knowing why the difference exists."
+    },
+    {
+      "point": "Lesson records and red-line constraints are core guarantees for the reliability of Agent tools.",
+      "explanation": "19 lessons learned are documented in lessons-learned.md to prevent repeated mistakes. 4 mandatory red-line constraints govern Agent behavior at the process level, preventing failures in edge cases."
+    }
+  ],
+  "keyQuotes": [
+    "Standardization is more important than intelligence: The most critical aspects of data validation are coverage and repeatability. 10 standardized templates are far more reliable than 'letting AI improvise'.",
+    "Lesson records are core assets: The 19 practical experiences recorded in lessons-learned.md are all real pitfalls encountered. Without these, the Agent will repeatedly make the same mistakes.",
+    "Red lines must be hard: Key red lines are enforced at the process level, not as 'suggestions' but as 'mandatory' rules. Agent tools without red lines are prone to failure in edge cases.",
+    "Start with the highest-frequency scenarios: Don't try to cover all scenarios from the start. We first implemented S1 for new table launches and S2 for iteration comparisons, which account for 80% of validation needs."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560354&idx=1&sn=7f27739c5166be3e08890a75756e5811",
+  "readUrl": "https://www.bestblogs.dev/article/b9304ecd",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_26c5f1",
+  "sourceName": "阿里云开发者",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 115,
+  "wordCount": 9388,
+  "readTime": 38,
+  "mediaDuration": null,
+  "authors": [
+    "阿里云开发者"
+  ],
+  "publishTimeStamp": 1779841800000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 08:30:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

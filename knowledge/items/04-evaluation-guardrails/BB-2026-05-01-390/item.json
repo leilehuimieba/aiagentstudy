@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-26",
+  "id": "BB-2026-05-01-390",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-390/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-390",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-390/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-390/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-390/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-390/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-390/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-390/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "Data Governance",
+    "Data Architecture",
+    "Domain-Driven Design",
+    "Infrastructure Investment",
+    "Scalability"
+  ],
+  "title": "The Domain Shift: Moving Data Governance from Product Triage to Infrastructure Investment",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://towardsdatascience.com/the-domain-shift-moving-data-governance-from-product-triage-to-infrastructure-investment/",
+      "https://www.bestblogs.dev/article/ffe547b8"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/the-domain-shift-moving-data-governance-from-product-triage-to-infrastructure-investment/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/ffe547b8"
+  }
+}

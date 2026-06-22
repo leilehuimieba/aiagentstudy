@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-18",
+  "id": "BB-2026-05-01-254",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-254/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-254",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-254/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-254/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-254/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-254/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-254/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-254/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / InfoQ",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / InfoQ",
+  "status": "Full text + source captured",
+  "tags": [
+    "Context Engineering",
+    "Agentic Architecture",
+    "AI Agents",
+    "Software Architecture",
+    "Prompt Engineering"
+  ],
+  "title": "Context is the Key to the Agentic Architecture Revolution: A Conversation with Baruch Sadogursky",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/0c4caf52",
+      "https://www.infoq.com/podcasts/context-key-agentic-architecture-revolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.infoq.com/podcasts/context-key-agentic-architecture-revolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/0c4caf52"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "RAW_35ee76b9",
+  "notExist": null,
+  "originalTitle": "Agentic Engineering 六条最佳实践",
+  "title": "Six Best Practices for Agentic Engineering",
+  "oneSentenceSummary": "Starting from first principles and based on three axioms and five assumptions, this article systematically proposes six best practices for Agentic Engineering, aiming to deeply integrate AI Agents into the entire software engineering lifecycle to enhance R&D efficiency.",
+  "summary": "This article presents a methodology for AI collaboration derived deductively from fundamental facts, with the core idea of treating AI Agents as deep collaborators in software engineering. The author first establishes three axioms: information loss in the intention-to-code chain, the essential characteristics of LLMs (context determines output, probabilistic output, limited working memory), and human cognition as a scarce resource. It then examines five common assumptions—such as feeding code to AI enables project understanding, or AI is unsuitable for complex systems—and points out their fallacies. Based on this, the article proposes six best practices: Context Engineering (Spec-First, Docs as Code, progressive disclosure), human-machine division of labor (Johari Window model), full-chain AI participation (from requirements to coding), small tasks with multi-layer validation, Knowledge as Code (encoding knowledge into structured Skills), and an Error-Driven feedback loop. Together, these practices form a comprehensive methodology for AI-assisted software development.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Agentic Engineering",
+    "AI Collaboration",
+    "Software Engineering",
+    "Context Engineering",
+    "Best Practices"
+  ],
+  "mainPoints": [
+    {
+      "point": "Software engineering is fundamentally an intention-to-code chain; AI changes the loss rate at each stage but does not eliminate the chain itself.",
+      "explanation": "Every step in transforming vague intent into executable code incurs information loss. AI's role is to reduce loss at each stage, not to bypass the entire transformation process."
+    },
+    {
+      "point": "Context Engineering is the core practice, emphasizing Spec-First, Docs as Code, and progressive disclosure.",
+      "explanation": "Maximize the quality of AI's understanding of project context by first producing a structured Spec to anchor intent, managing documentation and code in the same repository with version control, and loading context on demand rather than all at once."
+    },
+    {
+      "point": "Human-machine division of labor should follow the Johari Window model, achieving automation in the open area, knowledge injection in the blind area, AI supplementation in the potential area, and collaborative exploration in the unknown area.",
+      "explanation": "Adopt different strategies based on the distribution of knowledge between humans and AI, optimizing the allocation of engineers' cognitive bandwidth. Let AI handle what it excels at, while humans focus on decision-making and review."
+    },
+    {
+      "point": "Small tasks combined with multi-layer validation are key to preventing the exponential accumulation of AI errors.",
+      "explanation": "Tighter constraints and shorter step sizes reduce the likelihood of AI errors. Multi-layer validation—including Spec Review, Code Review, automated testing, and integration testing—aligns with the intention-to-code chain to ensure quality."
+    },
+    {
+      "point": "Knowledge as Code encodes team best practices into structured Skills, enabling version-controlled knowledge distribution.",
+      "explanation": "Encode knowledge such as coding standards and design principles into AI-executable Skills, making AI a vehicle for knowledge distribution. Every team member automatically benefits from the team's best practices during collaboration."
+    }
+  ],
+  "keyQuotes": [
+    "The essence of software engineering is to gradually refine the vague intent in the human mind into executable code through requirements → design → coding → testing. Each step incurs loss; AI changes the loss rate at each stage but does not eliminate the chain itself.",
+    "The bottleneck in the AI era is the upper limit of human review and decision-making bandwidth. The optimal strategy is to optimize the allocation of engineers' cognitive bandwidth.",
+    "It's not that AI isn't smart enough; it's that key knowledge hasn't been structured and provided to it.",
+    "Tighter constraints and shorter step sizes prevent the exponential accumulation of errors."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695703&idx=1&sn=a7fe5648293a3475d2e2541f1f3410d7",
+  "readUrl": "https://www.bestblogs.dev/article/35ee76b9",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045410_4d44587a",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_efac5b",
+  "sourceName": "腾讯云开发者",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_PRACTICE",
+  "aiSubCategoryDesc": "Engineering Practice",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 139,
+  "wordCount": 931,
+  "readTime": 4,
+  "mediaDuration": null,
+  "authors": [
+    "腾讯云开发者"
+  ],
+  "publishTimeStamp": 1780015500000,
+  "publishDateStr": "05-29",
+  "publishDateTimeStr": "2026-05-29 08:45:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

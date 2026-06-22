@@ -1,0 +1,79 @@
+{
+  "id": "RAW_af4d392e",
+  "notExist": null,
+  "originalTitle": "Introducing Composer 2.5 · Cursor",
+  "title": "Introducing Composer 2.5 · Cursor",
+  "oneSentenceSummary": "Cursor announces Composer 2.5, a substantial improvement in intelligence and behavior for sustained coding tasks, trained with targeted RL feedback, 25x more synthetic data, and a new optimizer.",
+  "summary": "Cursor has released Composer 2.5, a significant upgrade to its AI coding agent. The new version demonstrates marked improvements in handling long-running, complex tasks, following intricate instructions, and overall collaboration quality. The improvements stem from three key training innovations: targeted reinforcement learning with textual feedback to correct localized errors, a 25x increase in synthetic task generation grounded in real codebases to push model intelligence, and a new Sharded Muon optimizer with dual-mesh HSDP for efficient large-scale training. Composer 2.5 is built on the same open-source Kimi K2.5 checkpoint as its predecessor. The blog post also details a future collaboration with SpaceXAI to train a significantly larger model from scratch. Pricing is set at $0.50/M input and $2.50/M output tokens, with a faster variant available at a higher cost.",
+  "featuredReason": "Cursor officially announces Composer 2.5, a first-party release from one of the leading AI coding tools. The post details capability upgrades for the in-editor AI assistant. Recommended for developers tracking AI coding tool evolution, current Cursor users, and product researchers who want a first look at where the Composer line is heading next.",
+  "translateContent": null,
+  "tags": [
+    "Cursor",
+    "Composer 2.5",
+    "AI Coding Agent",
+    "Reinforcement Learning",
+    "Synthetic Data"
+  ],
+  "mainPoints": [
+    {
+      "point": "Composer 2.5 uses targeted RL with textual feedback to improve localized model behaviors.",
+      "explanation": "Instead of relying on a noisy final reward signal, the model receives specific hints at the point of error in a long rollout, allowing for more precise correction of mistakes like bad tool calls or confusing explanations."
+    },
+    {
+      "point": "Training with 25x more synthetic tasks, grounded in real codebases, drives intelligence gains.",
+      "explanation": "To continue improving beyond solving standard problems, Cursor dynamically creates harder tasks, such as feature deletion and reimplementation, using existing tests as verifiable rewards."
+    },
+    {
+      "point": "A new Sharded Muon optimizer with dual-mesh HSDP enables efficient training of large models.",
+      "explanation": "The optimizer distributes orthogonalization across shards and uses separate HSDP layouts for expert and non-expert weights, overlapping communication and computation to keep optimizer step time low."
+    }
+  ],
+  "keyQuotes": [
+    "It's a substantial improvement in intelligence and behavior over Composer 2. It is better at sustained work on long-running tasks, follows complex instructions more reliably, and is more pleasant to collaborate with.",
+    "To address this, we trained Composer 2.5 with targeted textual feedback. The idea is to provide feedback directly at the point in the trajectory where the model could have behaved better.",
+    "One downstream consequence of large scale synthetic task creation is that it can cause unexpected reward hacking. As the model became more adept, Composer 2.5 was able to find increasingly sophisticated workarounds to solve the task at hand.",
+    "Together with SpaceXAI, we're training a significantly larger model from scratch, using 10x more total compute."
+  ],
+  "url": "https://cursor.com/blog/composer-2-5",
+  "readUrl": "https://www.bestblogs.dev/article/af4d392e",
+  "enclosureUrl": null,
+  "domain": "cursor.com",
+  "cover": "https://image.jido.dev/20260518214121_cursor-composer2.5-og-2400x1200.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_a88d43f5",
+  "sourceName": "Cursor Blog",
+  "priority": "HIGH",
+  "sourceImage": "https://cursor.com/marketing-static/icon-192x192.png",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 93,
+  "readCount": 390,
+  "wordCount": 1086,
+  "readTime": 5,
+  "mediaDuration": null,
+  "authors": [
+    "Cursor Team"
+  ],
+  "publishTimeStamp": 1779062400000,
+  "publishDateStr": "05-18",
+  "publishDateTimeStr": "2026-05-18 08:00:00",
+  "qualified": true,
+  "stickTop": false,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

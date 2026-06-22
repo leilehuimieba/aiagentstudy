@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-18",
+  "id": "BB-2026-05-01-277",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-277/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-277",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-277/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-277/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-277/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-277/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-277/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-277/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "Production Debt",
+    "AI Engineering",
+    "LLM",
+    "Enterprise AI",
+    "Agentic Systems"
+  ],
+  "title": "Why Your AI Demo Will Die in Production",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://towardsdatascience.com/why-your-ai-demo-will-die-in-production/",
+      "https://www.bestblogs.dev/article/380ec148"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/why-your-ai-demo-will-die-in-production/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/380ec148"
+  }
+}

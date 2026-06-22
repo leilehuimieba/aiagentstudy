@@ -1,0 +1,83 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-13",
+  "id": "BB-2026-05-01-197",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-197/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-197",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-197/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-197/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-197/raw/display-document.html",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-197/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-197/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-197/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / The Cloudflare Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / The Cloudflare Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Cloudflare",
+    "Containers",
+    "Browser Run",
+    "D1",
+    "Queues"
+  ],
+  "title": "Browser Run: now running on Cloudflare Containers， it’s faster and more scalable",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://agents.cloudflare.com/",
+      "https://blog.cloudflare.com/browser-run-containers/",
+      "https://blog.cloudflare.com/cloudflare-containers-coming-2025/",
+      "https://chromedevtools.github.io/devtools-protocol/",
+      "https://developers.cloudflare.com/browser-rendering/get-started/",
+      "https://developers.cloudflare.com/browser-rendering/rest-api/",
+      "https://developers.cloudflare.com/browser-rendering/rest-api/crawl-endpoint/",
+      "https://developers.cloudflare.com/browser-run/",
+      "https://developers.cloudflare.com/browser-run/quick-actions/",
+      "https://developers.cloudflare.com/browser-run/quick-actions/crawl-endpoint/",
+      "https://developers.cloudflare.com/changelog/post/2026-01-30-kv-reduced-minimum-cachettl/",
+      "https://developers.cloudflare.com/containers/",
+      "https://developers.cloudflare.com/d1/",
+      "https://developers.cloudflare.com/d1/configuration/data-location/#available-location-hints",
+      "https://developers.cloudflare.com/d1/platform/limits/#concurrency-and-throughput",
+      "https://developers.cloudflare.com/kv/",
+      "https://developers.cloudflare.com/queues/configuration/batching-retries/#batching",
+      "https://www.bestblogs.dev/en/article/e8e66179",
+      "https://www.cloudflare.com/developer-platform/products/cloudflare-queues/",
+      "https://www.cloudflare.com/en-gb/the-net/top-of-mind-security/customer-zero/",
+      "https://www.cloudflare.com/learning/access-management/what-is-browser-isolation/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://blog.cloudflare.com/browser-run-containers/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/e8e66179"
+  }
+}

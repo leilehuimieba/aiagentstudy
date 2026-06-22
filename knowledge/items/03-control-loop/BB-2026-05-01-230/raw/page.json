@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T53801567e1d144e9aa98450cc1588e6a",
+  "data": {
+    "metaData": {
+      "id": "RAW_f40a0a25",
+      "notExist": null,
+      "originalTitle": "Agent Harness 解析：智能体架构深度拆解",
+      "title": "Agent Harness Analysis: A Deep Dive into Agent Architecture",
+      "oneSentenceSummary": "This article provides an in-depth analysis of the Agent Harness concept, defining it as the complete software infrastructure surrounding an LLM, and systematically explains its 12 core components, operational loop, and implementation approaches in mainstream frameworks.",
+      "summary": "Starting from common challenges encountered in production-grade AI Agent development, the article formally introduces the concept of Agent Harness—the complete software infrastructure wrapping an LLM, including orchestration loops, tools, memory, and context management. It points out that while model capabilities are important, it is the surrounding Harness that truly determines the performance of production-grade Agents. The author breaks down the 12 core components of a production-grade Harness, such as orchestration loops, tools, memory, context management, prompt construction, output parsing, state management, error handling, guardrails and safety, validation loops, and sub-Agent orchestration. The article also demonstrates the actual operation of the Harness loop through a step-by-step walkthrough and compares the implementation patterns of mainstream frameworks including Anthropic, OpenAI, LangGraph, CrewAI, and AutoGen. Finally, it summarizes seven key decisions every Harness faces and emphasizes the importance of Harness as a core product differentiator.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Agent Harness",
+        "AI Agent",
+        "LLM",
+        "Architecture Design",
+        "Engineering Practice"
+      ],
+      "mainPoints": [
+        {
+          "point": "Agent Harness is the complete software infrastructure wrapping an LLM and is the key factor determining production-grade Agent performance.",
+          "explanation": "Using a case study of LangChain on TerminalBench, the article demonstrates that changing only the Harness without modifying model weights can significantly improve Agent performance, proving that Harness is an engineering area more worthy of attention than the model itself."
+        },
+        {
+          "point": "A production-grade Harness includes 12 core components, such as orchestration loops, tools, memory, and context management.",
+          "explanation": "The article breaks down these components in detail and points out that context management is where many Agents silently fail, requiring strategies such as compression, observation masking, and just-in-time retrieval to combat context decay."
+        },
+        {
+          "point": "Mainstream frameworks (Anthropic, OpenAI, LangGraph, etc.) implement the Harness pattern in different ways.",
+          "explanation": "Anthropic adopts a thin Harness and dumb loop, delegating intelligence to the model; OpenAI's SDK is code-first; LangGraph models the Harness as an explicit state graph. These different implementations reflect varying trade-offs in Harness thickness."
+        },
+        {
+          "point": "Harness design faces seven key decisions, including single/multi-Agent, ReAct/plan-execute, and Harness thickness.",
+          "explanation": "The article recommends prioritizing single-Agent solutions and notes that as model capabilities improve, the Harness should trend thinner but will not disappear. Harness design is central to product differentiation."
+        }
+      ],
+      "keyQuotes": [
+        "If you are not the model itself, you are the harness.",
+        "A bare LLM is a CPU with no memory, no hard drive, and no I/O. The context window is RAM—fast but limited; external databases are the hard drive—large but slow; tool integration is device drivers; the Harness is the operating system.",
+        "Next time your agent fails, don't blame the model—look at the Harness.",
+        "Two products using the same model can achieve vastly different performance based solely on Harness design."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247514676&idx=1&sn=6f5b9a9cd20649760f46c92cd96348a0",
+      "readUrl": "https://www.bestblogs.dev/article/f40a0a25",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045502_4228f359",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_03cf5e",
+      "sourceName": "AI寒武纪",
+      "priority": "LOW",
+      "sourceImage": "https://image.jido.dev/20251127045502_4228f359",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 88,
+      "readCount": 80,
+      "wordCount": 6790,
+      "readTime": 28,
+      "mediaDuration": null,
+      "authors": [
+        "AI寒武纪"
+      ],
+      "publishTimeStamp": 1778491860000,
+      "publishDateStr": "05-11",
+      "publishDateTimeStr": "2026-05-11 09:31:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_83fa2a78",
+        "type": "ARTICLE",
+        "title": "Investing 10,000 RMB in AI: A Year of Tools, Practices, and Reflections",
+        "oneSentenceSummary": "A systematic summary of a veteran developer's practical experience in the AI wave, covering everything from MAC toolchain optimization and Harness Engineering architectural constraints to building an Agent-driven automated learning loop.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695194&idx=1&sn=030591ea76020210c5f06692fb30243f",
+        "sourceName": "腾讯云开发者"
+      },
+      {
+        "id": "RAW_74aee00",
+        "type": "PODCAST",
+        "title": "Vol.89 AI Industry 2025 Annual Summary Supplement (V4 \"Can't Wait\" Edition) --- 70-page PPT Solo",
+        "oneSentenceSummary": "A panoramic review of the AI industry dynamics in China and the US in early 2025, deeply deconstructing capital expenditures, the explosion of Agent technology, and AI's impact on the software industry.",
+        "url": "https://www.xiaoyuzhoufm.com/episode/69adf2bdc8cdeb38c28a1a81",
+        "sourceName": "屠龙之术"
+      },
+      {
+        "id": "RAW_25a7e4e8",
+        "type": "ARTICLE",
+        "title": "Karpathy Decodes the AI Cognitive Divide: The Elite Circle's Collective AI Fever",
+        "oneSentenceSummary": "Andrej Karpathy points out a severe cognitive divide in society regarding AI, rooted in the vast differences in technical capabilities, reward mechanisms, and use cases between the free models used by the general public and the cutting-edge agents used by developers.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513944&idx=2&sn=c657eea9c1df91b809caf498cc26fb63",
+        "sourceName": "AI寒武纪"
+      },
+      {
+        "id": "RAW_066fed88",
+        "type": "ARTICLE",
+        "title": "Blockbuster! Anthropic Launches Another Platform-Level Product: Solving the 'Harness' Problem and Turning Agent 'Pets' into 'Cattle'",
+        "oneSentenceSummary": "Anthropic has launched the Claude Managed Agents platform, which decouples an agent's 'brain' (controller), 'hands' (sandbox/tools), and 'memory' (session logs) to provide fully managed infrastructure, significantly improving the efficiency and stability of production-grade AI agent development.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513928&idx=1&sn=3721591f28dc9400bf34a101f2880e3f",
+        "sourceName": "AI寒武纪"
+      },
+      {
+        "id": "RAW_6f17468b",
+        "type": "ARTICLE",
+        "title": "GPT-5.4 Released: OpenAI's First Unified Model, Truly Native",
+        "oneSentenceSummary": "OpenAI releases GPT-5.4, creating the first unified Agent model that supports native Computer Use by integrating reasoning, coding, and computer interaction.",
+        "url": "https://www.qbitai.com/2026/03/384345.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_c06680fc",
+        "type": "ARTICLE",
+        "title": "Major Release! Anthropic's Official Comprehensive Guide to Creating Skills: The Ultimate Step-by-Step Manual",
+        "oneSentenceSummary": "This is Anthropic's official comprehensive guide to building Claude Skills, detailing the full lifecycle from planning and design to technical architecture and distribution, helping developers customize efficient AI workflows through standardized instruction packages.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513162&idx=1&sn=d8252d7889f00b83ca3d39f739570e94",
+        "sourceName": "AI寒武纪"
+      },
+      {
+        "id": "RAW_4d9e60d6",
+        "type": "ARTICLE",
+        "title": "Head of OpenAI Codex: Programming as We Know It Is Over",
+        "oneSentenceSummary": "The Head of OpenAI Codex reveals a paradigm shift in AI programming from 'pairing' to 'delegation,' arguing that the essence of programming is moving from manual coding to plan review and automated auditing.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247512811&idx=1&sn=4e33e5f844ccd547b3891de1f97c4b1c",
+        "sourceName": "AI寒武纪"
+      },
+      {
+        "id": "RAW_2adc9c3e",
+        "type": "ARTICLE",
+        "title": "Understanding Hermes in One Article: How the New Top-Tier Agent Self-Evolves from Experience",
+        "oneSentenceSummary": "This article provides an in-depth analysis of the core innovation of the Hermes Agent—the Skills closed-loop system—detailing its complete implementation mechanism, from experience extraction and knowledge storage to intelligent retrieval and self-improvement, along with its engineering trade-offs and security considerations.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695259&idx=1&sn=30ef327bcbbb3e349abd812da627c5f2",
+        "sourceName": "腾讯云开发者"
+      },
+      {
+        "id": "RAW_5c79977a",
+        "type": "ARTICLE",
+        "title": "What You Don't Know About Claude Code: Architecture, Governance, and Engineering Practices - Tw93",
+        "oneSentenceSummary": "This article provides an in-depth analysis of Claude Code's six-layer architecture and engineering practices, proposing a systematic Agent development methodology from context governance and skill design to a verification loop.",
+        "url": "https://tw93.fun/2026-03-12/claude.html",
+        "sourceName": "Tw93 Blog"
+      },
+      {
+        "id": "RAW_be3637aa",
+        "type": "ARTICLE",
+        "title": "Anthropic Unveils Long-Term Agent Development Architecture: Leveraging GAN Mechanisms for Claude to Autonomously Build Full-Stack Apps",
+        "oneSentenceSummary": "This article provides an in-depth analysis of Anthropic's 'Harness' multi-agent architecture, which achieves autonomous construction and iterative optimization of AI Agents in long-term complex tasks by introducing a generator-evaluator adversarial mechanism.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513629&idx=1&sn=c07fd107eab09cce0ee40a4f822e0957",
+        "sourceName": "AI寒武纪"
+      }
+    ]
+  }
+}

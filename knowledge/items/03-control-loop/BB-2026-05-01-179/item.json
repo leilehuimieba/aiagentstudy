@@ -1,0 +1,68 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "Yesterday",
+  "id": "BB-2026-05-01-179",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-179/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-179",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-179/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-179/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-179/raw/display-document.html",
+      "knowledge/items/03-control-loop/BB-2026-05-01-179/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-179/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-179/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 阿里云开发者",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 阿里云开发者",
+  "status": "Full text + source captured",
+  "tags": [
+    "AgentScope",
+    "Harness Framework",
+    "Java",
+    "Enterprise Agent",
+    "Workspace"
+  ],
+  "title": "The First Java Harness Framework Arrives: AgentScope Brings OpenClaw to Enterprise Distributed Scenarios",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://github.com/agentscope-ai/agentscope-java/blob/main/docs/zh/harness/filesystem.md",
+      "https://github.com/agentscope-ai/agentscope-java/blob/main/docs/zh/harness/overview.md",
+      "https://java.agentscope.io",
+      "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560070&idx=1&sn=e1589f74f2fae81901f2dac4b06322c1",
+      "https://www.bestblogs.dev/en/article/321aed16"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560070&idx=1&sn=e1589f74f2fae81901f2dac4b06322c1",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/321aed16"
+  }
+}

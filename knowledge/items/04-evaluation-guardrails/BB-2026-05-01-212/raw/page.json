@@ -1,0 +1,177 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Tcb758979ae124aca901347b81306e4fa",
+  "data": {
+    "metaData": {
+      "id": "RAW_9dae62a9",
+      "notExist": null,
+      "originalTitle": "阿里巴巴&蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地",
+      "title": "Alibaba & Ant Group LoongSuite GenAI Observability Semantic Convention: From Unified Data Language to Large-Scale Implementation",
+      "oneSentenceSummary": "Alibaba and Ant Group jointly released the LoongSuite GenAI Observability Semantic Convention, which extends the OTel standard with Agent Entry/Step Spans, Skill semantics, and Token-level inference observability, along with the GenAI Utils tool library for engineering implementation.",
+      "summary": "This article details the LoongSuite GenAI Observability Semantic Convention jointly launched by Alibaba and Ant Group. It first explains the core value of OTel SemConv as a unified observability data language, highlighting its key role in standardizing data metrics, supporting performance, cost, quality, and security governance, and reducing integration costs. The article then focuses on three major enhancements LoongSuite brings to OTel GenAI semantics: First, the addition of Entry/Step Spans to address the issue of overly long Trace chains in Agent long-running tasks, enabling clear display of Agent execution trajectories by round. Second, the addition of Skill semantics to provide observability for the business function aggregation layer, solving pain points such as functional domain attribution, health metric statistics, and link confusion. Third, the addition of Token-level inference observability, which extends observability from the request level down to the Token granularity. By collecting the generation time, sub-stage processes, and candidate probability distribution for each Token, it achieves white-box observability of the inference engine. The article also introduces the accompanying GenAI Utils tool library, which uses a layered and decoupled architecture to encapsulate the complexity of the semantic convention into a simple API, significantly reducing the integration cost for instrumentation library developers. Finally, two real-world cases demonstrate the practical effectiveness of Token-level observability in locating slow Tokens and addressing irrelevant answer issues.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Observability",
+        "OpenTelemetry",
+        "GenAI",
+        "AI Agent",
+        "Semantic Convention"
+      ],
+      "mainPoints": [
+        {
+          "point": "OTel SemConv is the core of a unified observability data language, with LoongSuite providing vendor-specific enhancements on this basis.",
+          "explanation": "OTel SemConv unifies data metrics across systems through standardized fields. LoongSuite performs semantic modeling for content not yet covered by OTel in Alibaba's numerous GenAI application scenarios, forming an enhanced standard."
+        },
+        {
+          "point": "The addition of Entry/Step Spans solves the problem of overly long Trace chains in Agent long-running tasks.",
+          "explanation": "Entry Span restores original input and output, while Step Span organizes Span structures by ReAct rounds, making multi-round Agent execution trajectories clearly observable and facilitating top-down problem diagnosis."
+        },
+        {
+          "point": "The addition of Skill semantics provides observability for the business function aggregation layer.",
+          "explanation": "Skill, as an orchestration unit between Agent and Tool, uses gen_ai.skill.* attributes to achieve functional domain attribution, health metric statistics, and differentiation of concurrent multi-Skill links."
+        },
+        {
+          "point": "Token-level inference observability extends observability to a microscopic granularity, achieving white-box inference engine monitoring.",
+          "explanation": "By collecting the generation time, sub-stage processes, and candidate probability distribution for each Token, combined with engine concurrency analysis, it can precisely locate the root cause of slow Tokens and accuracy anomalies."
+        },
+        {
+          "point": "The GenAI Utils tool library reduces instrumentation library development costs through a layered and decoupled architecture.",
+          "explanation": "The instrumentation layer only extracts data, while GenAI Utils centrally manages telemetry output. Specification upgrades only require modifying the tool library in one place, automatically taking effect in all downstream instrumentation libraries."
+        }
+      ],
+      "keyQuotes": [
+        "SemConv is the soul of OTel, and promoting its gradual improvement and progression to Stable is the most important work for the community.",
+        "A unified semantic convention can support four practical needs: technical troubleshooting, business analysis, evaluation, and compliance.",
+        "For the first time, many previously 'black-box' processes inside the inference engine are broken down to the Token granularity, creating a transparent, explainable, and attributable white-box system.",
+        "GenAI Utils allows instrumentation library developers to focus only on 'what data to extract from the framework' without worrying about 'how to output telemetry data according to the specification.'"
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509356&idx=1&sn=b4b26f0b4332fe031b751b750e935ebe",
+      "readUrl": "https://www.bestblogs.dev/article/9dae62a9",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045353_28e1f7e8",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_5e63f2",
+      "sourceName": "阿里技术",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045353_28e1f7e8",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 11,
+      "wordCount": 6992,
+      "readTime": 28,
+      "mediaDuration": null,
+      "authors": [
+        "阿里技术"
+      ],
+      "publishTimeStamp": 1778583480000,
+      "publishDateStr": "05-12",
+      "publishDateTimeStr": "2026-05-12 10:58:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_5823bd86",
+        "type": "ARTICLE",
+        "title": "elasticpp: A C++ Kernel Engine Reshaping Elasticsearch Query Performance",
+        "oneSentenceSummary": "This article details how Alibaba's Intelligent Engine team rewrote the Elasticsearch query kernel using C++ (the elasticpp plugin) to eliminate JVM GC jitter and significantly improve long-tail query performance.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509344&idx=1&sn=175b485d1285fe82f6efae54e6ee2fae",
+        "sourceName": "阿里技术"
+      },
+      {
+        "id": "RAW_93462cd7",
+        "type": "ARTICLE",
+        "title": "Harness Is Not the Goal, Knowledge Is the Moat — Knowledge Accumulation Practices of an AI Engineering Delivery Team",
+        "oneSentenceSummary": "Based on the engineering delivery practices of an AI Team, this article proposes that knowledge accumulation is more important than workflow orchestration, and systematically introduces a complete methodology encompassing a five-layer knowledge storage architecture, a three-level maturity system, and how workflows serve knowledge accumulation.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801437&idx=1&sn=c5e13bae6cc04ef21f1ef819128e50e9",
+        "sourceName": "腾讯技术工程"
+      },
+      {
+        "id": "RAW_83fa2a78",
+        "type": "ARTICLE",
+        "title": "Investing 10,000 RMB in AI: A Year of Tools, Practices, and Reflections",
+        "oneSentenceSummary": "A systematic summary of a veteran developer's practical experience in the AI wave, covering everything from MAC toolchain optimization and Harness Engineering architectural constraints to building an Agent-driven automated learning loop.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695194&idx=1&sn=030591ea76020210c5f06692fb30243f",
+        "sourceName": "腾讯云开发者"
+      },
+      {
+        "id": "RAW_7a6e51dd",
+        "type": "ARTICLE",
+        "title": "Buckling Up for 'Vibe Programming': Alibaba Group's AI Code Review Practices and Benchmark Open Sourcing",
+        "oneSentenceSummary": "This article introduces Alibaba Group's AI code review practices based on an Agent architecture, discussing how to mitigate 'vibe programming' risks through human-AI collaboration and custom rules, and unveils AACR-Bench, the industry's first repository-level context-aware evaluation benchmark.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509195&idx=1&sn=612b82d4bc6b1bca8610e4284b0f6151",
+        "sourceName": "阿里技术"
+      },
+      {
+        "id": "RAW_94d408d4",
+        "type": "ARTICLE",
+        "title": "From Multi-Agent Orchestration to AI Autonomous Decision-Making: Architectural Evolution of the Asset Loss Prevention System",
+        "oneSentenceSummary": "This article explores the architectural evolution of Alibaba's asset loss prevention system from multi-agent orchestration (V1) to single-agent autonomous decision-making (V2), achieving a doubling of precision and recall through long context, MCP toolchains, and Git-based knowledge management.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509229&idx=1&sn=5f7352bb8eec781aaa64d22d3ab0a23e",
+        "sourceName": "阿里技术"
+      },
+      {
+        "id": "RAW_8c2c877a",
+        "type": "ARTICLE",
+        "title": "The AI Native Era: Where Is R&D Organization Headed?",
+        "oneSentenceSummary": "This article delves into the paradigm shift of R&D organizations in the AI Native era, proposing that organizational structures will evolve from human-centric Org Charts to Execution Graphs that include both humans and AI Agents, and systematically analyzes core issues such as new bottlenecks, management collapse, and the governance of three types of work.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509351&idx=1&sn=628125e60d7350335699eaddfaf30fef",
+        "sourceName": "阿里技术"
+      },
+      {
+        "id": "RAW_2adc9c3e",
+        "type": "ARTICLE",
+        "title": "Understanding Hermes in One Article: How the New Top-Tier Agent Self-Evolves from Experience",
+        "oneSentenceSummary": "This article provides an in-depth analysis of the core innovation of the Hermes Agent—the Skills closed-loop system—detailing its complete implementation mechanism, from experience extraction and knowledge storage to intelligent retrieval and self-improvement, along with its engineering trade-offs and security considerations.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695259&idx=1&sn=30ef327bcbbb3e349abd812da627c5f2",
+        "sourceName": "腾讯云开发者"
+      },
+      {
+        "id": "RAW_f4dfb251",
+        "type": "ARTICLE",
+        "title": "Don't Let Format Kill Ideas: Logics-Parsing V2 Defines New Boundaries for Document Parsing",
+        "oneSentenceSummary": "Alibaba has released Logics-Parsing V2, an end-to-end multimodal document parsing model based on Qwen3-VL, achieving SOTA structured reconstruction for complex layouts, formulas, musical scores, and mind maps.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509201&idx=1&sn=39647c4f8adc9500be2db02d2102c7e0",
+        "sourceName": "阿里技术"
+      },
+      {
+        "id": "RAW_5c79977a",
+        "type": "ARTICLE",
+        "title": "What You Don't Know About Claude Code: Architecture, Governance, and Engineering Practices - Tw93",
+        "oneSentenceSummary": "This article provides an in-depth analysis of Claude Code's six-layer architecture and engineering practices, proposing a systematic Agent development methodology from context governance and skill design to a verification loop.",
+        "url": "https://tw93.fun/2026-03-12/claude.html",
+        "sourceName": "Tw93 Blog"
+      },
+      {
+        "id": "RAW_6f17468b",
+        "type": "ARTICLE",
+        "title": "GPT-5.4 Released: OpenAI's First Unified Model, Truly Native",
+        "oneSentenceSummary": "OpenAI releases GPT-5.4, creating the first unified Agent model that supports native Computer Use by integrating reasoning, coding, and computer interaction.",
+        "url": "https://www.qbitai.com/2026/03/384345.html",
+        "sourceName": "量子位"
+      }
+    ]
+  }
+}

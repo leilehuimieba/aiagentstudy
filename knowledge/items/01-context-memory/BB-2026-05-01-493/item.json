@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-02",
+  "id": "BB-2026-05-01-493",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-493/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-493",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-493/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-493/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-493/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-493/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-493/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-493/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Datawhale",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Datawhale",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Tool Use",
+    "Agent Framework",
+    "Hugging Face"
+  ],
+  "title": "One Article to Understand the Core Concepts of AI Agents: From Model, Tool, Skill to Harness Engineering",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723203&idx=1&sn=15c5e4f2052664f4557d26278ab68067",
+      "https://www.bestblogs.dev/article/d49e90af"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723203&idx=1&sn=15c5e4f2052664f4557d26278ab68067",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/d49e90af"
+  }
+}

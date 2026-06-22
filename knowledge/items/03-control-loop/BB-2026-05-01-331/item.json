@@ -1,0 +1,68 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Tools/Actions",
+    "Control Loop",
+    "Memory",
+    "Evaluation",
+    "Permission",
+    "Task/Subagent",
+    "Protocol Extension"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-05-26",
+  "id": "BB-2026-05-01-331",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-331/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-331",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-331/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-331/raw/evidence.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-331/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-331/summary.md"
+  },
+  "schema_version": 1,
+  "source": "自产综合分析 / knowledge base + claw-code + FlagHunter 源码",
+  "source_id": "",
+  "source_name": "自产综合分析 / knowledge base + claw-code + FlagHunter 源码",
+  "status": "Full analysis + 4-Phase plan + code sketches",
+  "tags": [
+    "Claude Code",
+    "Claw Code",
+    "FlagHunter",
+    "PentestAgent",
+    "Agent Architecture",
+    "Intelligence",
+    "Harness Design",
+    "Improvement Plan"
+  ],
+  "title": "Claude Code 成功原因深度解构 + FlagHunter 智能化完整改进方案",
+  "topic": "03-control-loop",
+  "type": "web_article",
+  "urls": {
+    "all_source_urls": [],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": ""
+  }
+}

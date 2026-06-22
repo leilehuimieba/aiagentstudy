@@ -1,0 +1,83 @@
+{
+  "id": "RAW_fc0bb3b3",
+  "notExist": null,
+  "originalTitle": "All the news from the Google I/O 2026 Developer keynote",
+  "title": "All the news from the Google I/O 2026 Developer keynote",
+  "oneSentenceSummary": "Google I/O 2026 Developer keynote announces Gemini 3.5 models, the Antigravity 2.0 agent platform, and new tools for building Android and web apps with AI agents.",
+  "summary": "This article summarizes the key developer announcements from the Google I/O 2026 keynote. The central theme is the transition from AI assistants to autonomous agents. Major announcements include the Gemini 3.5 series of models and the upgraded Antigravity 2.0 platform, which features a new CLI, orchestration for subagents, and built-in security. For Android development, Google introduced the Android CLI and open-sourced Android skills for agents, a Migration agent to convert cross-platform code to native Kotlin, and the Android Bench leaderboard. For web development, they proposed the WebMCP open standard for browser-based agents, launched Modern Web Guidance for coding agents, and introduced Chrome DevTools for agents and the HTML-in-Canvas API. The article positions these tools as a unified ecosystem for building agent-driven applications.",
+  "featuredReason": "A concise developer-keynote recap centered on the shift from AI assistants to autonomous agents. It covers Antigravity 2.0, Android CLI, migration agents, WebMCP, and agent-oriented Chrome DevTools, making it a useful entry point for understanding Google's direction across app development, web tooling, and mobile workflows.",
+  "translateContent": null,
+  "tags": [
+    "Google I/O",
+    "Gemini 3.5",
+    "Antigravity",
+    "AI Agents",
+    "Android Development"
+  ],
+  "mainPoints": [
+    {
+      "point": "Google is shifting focus from AI assistants to autonomous agents that can navigate complex workflows.",
+      "explanation": "The keynote's core message is that AI is evolving from a tool that assists to an agent that independently executes tasks, with Antigravity 2.0 as the primary platform for orchestrating these agents."
+    },
+    {
+      "point": "Antigravity 2.0 and the new Antigravity SDK provide powerful surfaces for building and customizing agents.",
+      "explanation": "The platform now includes a CLI for developer productivity, support for specialized subagents, and an SDK for deploying agents on custom infrastructure, all with built-in security features like sandboxing and credential masking."
+    },
+    {
+      "point": "New tools like the Android CLI and Migration agent aim to revolutionize Android app development with AI.",
+      "explanation": "The Android CLI allows any agent to interact with Android Studio's build tools, while the Migration agent can automatically convert React Native, web, or iOS code into native Kotlin Android apps, reducing migration time from weeks to hours."
+    },
+    {
+      "point": "WebMCP is proposed as an open standard to enable browser-based AI agents to interact with web applications.",
+      "explanation": "This standard would allow developers to expose structured tools (like JavaScript functions) to agents, enabling more reliable and precise task execution within the browser, with an origin trial starting in Chrome 149."
+    }
+  ],
+  "keyQuotes": [
+    "We've transitioned from AI that simply assists you, to agents that can independently navigate complex tasks across your entire workflow.",
+    "We're bringing the models, infrastructure, and platforms together across Google to help you build anything you can imagine.",
+    "The agent analyzes code and does the heavy lifting, turning migrations that would have taken weeks into just hours.",
+    "WebMCP is a proposed open web standard that allows developers to expose structured tools, like JavaScript functions and HTML forms, so browser-based AI agents can execute complex tasks with greater speed, reliability, and precision."
+  ],
+  "url": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+  "readUrl": "https://www.bestblogs.dev/article/fc0bb3b3",
+  "enclosureUrl": null,
+  "domain": "developers.googleblog.com",
+  "cover": "https://image.jido.dev/20260519221945_GoogleForDevelopers-ComboIO-Wagta.2e16d0ba.fill-1200x600_984jqJ0.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045351_06c33c55",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "NEWS",
+  "aiSubCategoryDesc": "AI News",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 93,
+  "readCount": 366,
+  "wordCount": 754,
+  "readTime": 4,
+  "mediaDuration": null,
+  "authors": [
+    "The Google I/O team"
+  ],
+  "publishTimeStamp": 1779148800000,
+  "publishDateStr": "05-19",
+  "publishDateTimeStr": "2026-05-19 08:00:00",
+  "qualified": true,
+  "stickTop": false,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

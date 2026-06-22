@@ -1,0 +1,941 @@
+# 2026-05-28 Hacker News Top Stories #
+
+- BestBlogs URL: https://www.bestblogs.dev/article/6f48419c
+- Original publisher URL: https://supertechfans.com/cn/post/2026-05-28-HackerNews/
+- Source: BestBlogs / SuperTechFans
+- Publish time: 2026-05-28 16:27:26
+- Capture route: article discovered from logged-in Chrome/OpenCLI profile `qmvqcrb8` latest article feed page 4; page/content captured from BestBlogs resource APIs
+- Extracted chars: 35753
+
+---
+
+作者厌倦被 AI 介入的人际沟通，认为过度依赖 AI 回答削弱信任与文化，管理层应规范使用让 AI 做繁琐事而非替代真实交流。
+
+    在谷歌强化“AI 模式”后，因用户反感激进上 AI 与隐私训练，DuckDuckGo 等“可选 AI、重隐私”的搜索流量激增并获关注。
+
+    作者在一家初创的“文化契合”面试中被迫分享私密创伤、情绪耗竭并遭拒，批评侵入式评估并呼吁以尊重方式考察品格与合作。
+
+    Last.fm 宣布独立运营且团队与服务不变、数据不出售，未来将专注听歌洞察与社区改进，Pro 与 API 维持原状。
+
+    作者认为 Anthropic 与 OpenAI 已凭企业级定价与编码代理在 B2B 市场找到产品市场契合点，但业界仍对真实效率与成本结构存疑。
+
+    维基媒体基金会裁撤资深与社区技术团队被指打压工会、无视编辑者需求，转而押注新兴市场与“抽象维基百科”引发社区强烈反弹。
+
+    科技公司 CEO 被批“AI 迷乱”，高估自动化与裁员包装成提效却收效有限，亟需亲自深入使用以认清边界并避免组织失控。
+
+    甲基丙烯酸甲酯储存需依赖含氧抑制剂、循环与严密监测以防失控聚合并在升温时紧急降温，事件亟待详尽报告以改进安全。
+
+    私募股权通过高杠杆并购渗透消防车等公共服务、缩减产能并推高价格获利，以养老金资金为后盾却损害员工与社区利益。
+
+    加拿大拟采购瑞典萨博 GlobalEye 预警机以强化北极防务并降低对美依赖，因其更契合需求且避开波音项目的成本与进度风险。
+
+   
+
+  
+
+  1. 我厌倦了与人工智能对话 (I’m Tired of Talking to AI) #
+
+  https://orchidfiles.com/im-tired-of-ai-generated-answers/
+
+  这篇文章表达了作者对与人工智能交流的疲惫感。作者曾在 GitHub 上发现传播恶意软件的仓库，向 AI 求助却未得到有用的建议，转而在 GitHub 讨论区发帖求助，却发现回复内容与 AI 给出的答案完全相同，甚至被指出后评论被删除，随后又有相同的 AI 回答出现。
+
+  作者还回忆了在公司工作时，向老板请教业务问题，老板却直接转发了 ChatGPT 的截图，且内容与问题无关且错误，显示老板并未真正理解 AI 的回答。
+
+  此外，作者在 Reddit 与人交流时，逐渐意识到对方其实是 AI 代理人，进一步加深了对与 AI 交流的厌倦。
+
+  总体来看，作者表达了希望与真实人类交流的强烈愿望，但现实中即使与人交流，问题也常被转给 AI，导致沟通效果不佳。文章反映了作者对当前 AI 应用环境中人机互动质量的失望和无奈。
+
+  
+  HN 热度 1823 points | 评论 891 comments | 作者：theorchid | 14 hours ago #
+
+  https://news.ycombinator.com/item?id=48292224
+
+  
+   频繁用 AI 回答同事问题会削弱人与人之间的信任和沟通，像是让别人代答而非自己回应，令人感到失望。
+
+   向同事提问不仅是寻求答案，更是表达尊重、共享思路和建立信任的过程，AI 的介入破坏了这些文化。
+
+   AI 过度使用加剧了职场及社会中沟通和人际关系的恶化，尤其是在社交媒体已经带来负面影响的背景下。
+
+   管理层在引导员工合理使用 AI 方面责任重大，模糊的指导导致员工误以为应当任何问题都立即求助 AI。
+
+   直接复制 AI 回答给同事会被视为不礼貌，缺乏人情味，可能伤害同事关系。
+
+   目前关于 AI 使用的职场规范尚未形成，大家还在摸索合适的边界，企业政策也滞后。
+
+   有些人对 AI 依赖过度，甚至用 AI 回答掩盖自身专业水平下降，导致沟通质量下降。
+
+   AI 应该被用来处理重复性、繁琐的工作，而非替代人与人之间的真实交流。
+
+   过度追求效率和避免打扰同事，反而让职场变得孤立和冷漠，失去了人与人之间的温度。
+
+   在职场中直接用 AI 回答问题有时会被视为对提问者的轻视，只有在对方明显未做任何努力时才可能被接受。
+
+  
+
+  
+  2. 谷歌称人们喜爱 AI 模式后，DuckDuckGo 搜索访问量增长 28% (DuckDuckGo search saw 28% more visits after Google said people love AI mode) #
+
+  https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/
+
+  该网页是 PC Gamer 网站的会员俱乐部和订阅页面，主要介绍了加入 PC Gamer 俱乐部的优势和会员福利。用户可以通过输入邮箱快速加入，获得会员专属内容和服务。会员福利包括 24 小时访问权限、超过 2.8 万活跃成员、独家文章、每周新闻通讯、评论权限、会员徽章、专属竞赛以及抢先获取最新游戏资讯等。
+
+  页面还提供了订阅 PC Gamer 杂志的选项，支持单期购买或订阅，杂志内容涵盖 PC 游戏的最新新闻、评测和硬件优惠。网站栏目丰富，涵盖游戏新闻、硬件评测、游戏攻略、视频内容以及各种游戏和硬件分类，满足不同玩家的需求。
+
+  此外，页面强调用户需年满 16 岁并同意相关条款与隐私政策，支持接收来自 Future 品牌的新闻和优惠信息。用户订阅后可选择接收多种主题的新闻通讯，如每周游戏更新、GTA 6 专题资讯和游戏行业动态等。整体页面旨在为 PC 游戏爱好者提供全面、及时的资讯和会员专属服务。
+
+  
+  HN 热度 634 points | 评论 314 comments | 作者：HelloUsername | 8 hours ago #
+
+  https://news.ycombinator.com/item?id=48296649
+
+  
+   Kagi 的 AI 搜索体验设计较好，默认普通搜索，添加问号可获得 AI 答案，且有快捷按钮切换 AI 回答。
+
+   一些用户因反感 AI 推广，开始关注技术新闻并转向 DuckDuckGo 等替代搜索引擎。
+
+   近两年 AI 产品上线过程被认为过于激进且用户体验差，存在强制安装、默认同意数据使用且难以退出等问题。
+
+   许多公司通过复杂或隐藏的方式强制用户同意数据被用于 AI 训练，用户对事后选择退出表示不信任。
+
+   广告才是 Google 的主要收入来源，搜索是引流和用户入口，二者相辅相成，搜索依然对 Google 业务至关重要。
+
+   Google 通过搜索积累用户数据，AI 可能成为新的广告推送工具，但也可能加剧信息操控和用户被动接受信息的风险。
+
+   用户对 Google 搜索的关注度因 AI 介入而提升，可能导致更多人批判和质疑其服务。
+
+   Google 通过收集浏览历史、邮件内容、视频兴趣等多渠道数据，构建用户画像，AI 进一步强化对用户的控制。
+
+   AI 搜索结果中广告空间有限，可能影响传统搜索广告的展示和效果。
+
+   Google 通过收购 DoubleClick 等广告公司，强化了搜索与广告的结合，但随着 AI 平台兴起，广告预算可能从 Google 转移。
+
+   AI 与搜索并非对立，Google 正努力将 AI 融入搜索以避免搜索被 AI 替代。
+
+  
+
+  
+  3. 我经历过的最糟糕的一次求职面试 (The worst job interview I ever had) #
+
+  https://www.oliverio.dev/blog/the-worst-job-interview-i-had
+
+  这篇博客文章讲述了作者经历过的最糟糕的一次求职面试。作者是一名工程师，主要在小型初创公司工作，深知文化契合度在小团队中的重要性。大约三年前，作者应聘一家致力于改善有风险青少年心理治疗的心理健康初创公司的创始工程师职位。
+
+  面试分两轮，第一轮是与创始人和工程主管的简短交流，内容较为普通。第二轮则是一个非传统的约 90 分钟的文化契合度面谈，主要围绕个人生活中的重大挑战和困难等非技术性问题展开。作者感到这些问题过于私密和侵入性，尤其是在初次见面时被要求分享诸如失败的感情、家庭问题和职场人际关系等深层次经历。
+
+  面试结束后，作者感到情绪极度疲惫，随后收到了一封简短的拒绝邮件。这让作者感到羞愧和愤怒，觉得自己被拒绝的不是技能，而是作为一个人的整体价值。作者对这家心理健康初创公司选择如此让候选人感到脆弱的面试方式感到困惑。
+
+  文章最后强调，文化契合度确实重要，招聘时应确保团队成员品德良好，但应避免让候选人感到必须暴露最深的个人经历才能获得工作机会，建议招聘方在评估文化契合度时采取更为合适和尊重候选人的方式。
+
+  
+  HN 热度 614 points | 评论 510 comments | 作者：oliverio | 1 day ago #
+
+  https://news.ycombinator.com/item?id=48285344
+
+  
+   面试官缺乏专业知识，甚至不是相关岗位的负责人，导致面试过程混乱且无意义。
+
+   有些公司管理混乱，面试官只是走过场，筛选出愿意接受这种环境的人。
+
+   公司内部权力结构和管理问题严重，面试过程反映出高层不合理的管理风格。
+
+   一些面试是形式主义，实际上已经有了人选，只是为了合规或走流程。
+
+   面试中出现奇怪的非技术性问题，反映出面试官的权力欲和不专业。
+
+   有些公司文化压抑，员工需要迎合高层，导致工作环境像幼儿园。
+
+   员工对公司失望，离职过程困难，反映出公司对员工的漠视。
+
+   公司环境恶劣，技术和工作流程混乱，导致员工体验极差。
+
+   员工对公司失去信任，采取类似对待公司的冷漠态度，形成恶性循环。
+
+  
+
+  
+  4. Last.fm 现已独立运营 (Last.fm is now independent) #
+
+  https://support.last.fm/t/last-fm-is-now-independent/118591
+
+  Last.fm 宣布成为一家独立公司，所有权发生了变化，但用户的账户、听歌历史和数据保持不变，服务照常运行。团队未发生变化，继续负责产品的开发和维护。
+
+  独立运营意味着 Last.fm 将专注于为音乐爱好者打造更好的听歌洞察和社区功能，用户将看到持续稳定的改进。用户的账户、收听记录和个人数据安全没有受到影响，数据存储和保护方式保持不变，且不会出售用户数据。
+
+  Pro 会员的订阅、计费和权益保持不变，当前没有价格调整。对于使用 Last.fm API 的开发者，API 功能继续正常，团队将继续支持开发者社区。
+
+  用户可以通过订阅 Pro 会员支持 Last.fm 的发展。整体来看，Last.fm 以独立身份继续为用户提供稳定的服务和持续的产品改进。
+
+  
+  HN 热度 604 points | 评论 169 comments | 作者：twistslider | 9 hours ago #
+
+  https://news.ycombinator.com/item?id=48295892
+
+  
+   last.fm 虽然有些不足，但提供了极大的价值，且有多个第三方网站可以更好地展示和分析听歌数据。
+
+   通过 last.fm 的统计网站可以看到丰富的听歌排名和趋势，如连续听某艺术家的次数、单月独特艺术家数量等。
+
+   有网站能根据听歌时长而非单纯的播放次数来排名，更真实反映听歌习惯。
+
+   Spotify 用户可以下载更精确的听歌数据，包括具体听歌秒数，方便深度分析。
+
+   Spotify 的听歌数据导出过程较慢，但能揭示广告画像等有趣信息。
+
+   YouTube Music 的听歌历史数据下载不包含听歌时长，限制了分析深度。
+
+   现有推荐算法普遍存在记忆短、过度偏向近期听歌、推荐内容过于明显且难以发现冷门曲目等问题。
+
+   last.fm 早期的推荐算法基于人工标注和协同过滤，推荐效果更好且多样化。
+
+   last.fm 独立运营可能有助于恢复用户基础和改进服务。
+
+   通过过滤掉 Spotify 来源的播放记录，可以避免算法推荐被“污染”。
+
+   用户播放数据和用户策划的播放列表都能影响推荐算法的表现。
+
+  
+
+  
+  5. 我认为 Anthropic 和 OpenAI 已经找到了产品市场契合点 (I think Anthropic and OpenAI have found product-market fit) #
+
+  https://simonwillison.net/2026/May/27/product-market-fit/
+
+  这篇博客文章讨论了 Anthropic 和 OpenAI 两家公司在大型语言模型（LLM）领域实现产品市场契合的现象。作者指出，Anthropic 即将实现首个盈利季度，企业客户开始按 API 价格支付费用，表明两家公司找到了合适的商业模式。
+
+  文章提到，作者本人订阅了 Anthropic 和 OpenAI 的高端计划，实际使用价值远超订阅费用，显示出这些工具对重度用户的吸引力。过去六个月内，Anthropic 和 OpenAI 都调整了企业定价策略，企业客户的费用已经与 API 价格保持一致，不再享受大幅折扣。
+
+  作者认为，这些定价变化和新模型的发布（如 GPT-5.5 和 Opus 4.7）表明两家公司已经找到了产品市场契合点。虽然 ChatGPT 用户众多，但付费用户比例较低，难以覆盖巨额基础设施成本。而企业用户因使用编码代理等工具，愿意支付更高费用，这推动了收入增长。
+
+  编码代理的出现极大改变了市场格局，这些工具不仅消耗更多计算资源，但也成为高薪专业人士的日常工作助手，尤其是软件工程师。随着这些工具的实用性提升，企业开始大量投入，推动了市场的快速发展。
+
+  文章还分析了两家公司大量招聘企业销售和支持岗位，显示出企业市场的重要性和增长潜力。作者对外界关于 AI 成本失控的报道持谨慎态度，认为部分案例如 Uber 的预算超支是因为未能预见新工具的爆发式增长。
+
+  总的来看，Anthropic 和 OpenAI 通过编码代理和企业定价实现了真正的产品市场契合，开始进入盈利阶段，市场对这些工具的需求和投入正在快速增长。
+
+  
+  HN 热度 599 points | 评论 724 comments | 作者：simonw | 8 hours ago #
+
+  https://news.ycombinator.com/item?id=48296794
+
+  
+   未来五年需要回收数万亿美元投资，推算每年需要上万亿美元在模型推理（tokens）上的支出，这对知识工作者和开发者的薪资分配将是巨大变革，目前生产力提升幅度还不足以支撑如此高的投入。
+
+   目前生产力提升多为 20%-40%，但这种提升尚未在顶层企业运营效率中显现，实际客户层面未见显著效率提升，存在认知断层。
+
+   关于训练成本与推理成本的比例存在争议，部分数据中心工程师认为训练时功耗较大，而学术论文则认为推理成本更高，海外提供商推理成本较低但模型能力较弱，说明成本结构复杂且不透明。
+
+   训练成本远高于推理成本会导致投资困境，推理成本高于训练成本则更像公共事业，当前信息不透明使得外部投资分析困难。
+
+   AI 实验室不愿公开推理成本较低的事实，以免降低产品感知价值和用户支付意愿。
+
+   推理成本有望随着架构优化和专用硬件（如定制芯片）大幅下降，GPU 并非推理的理想平台。
+
+   公开信息显示 AI 计算成本下降速度未达到预期，可能是成本降低有限或尚未实现。
+
+   AI 公司发布的信息多面向投资者，可能存在美化业绩的动机，实际成本和利润情况不完全透明。
+
+   上市公司需遵守严格财务披露规则，私有公司则可在一定范围内向投资者披露更多信息。
+
+   监管环境变化可能导致财务透明度降低，但投资者和市场会迅速揭露重大隐瞒。
+
+   推理成本相较于整体资本投入并不算高，公众容易误解数据中心建设投入即为推理成本。
+
+  
+
+  
+  6. 大型科技公司的反劳工手册已经盯上了维基百科 (Big tech’s anti-labor playbook has come for Wikipedia) #
+
+  https://medium.com/@jakeorlowitz/wikipedia-is-doing-the-capitalist-thing-56a393232943
+
+  本文报道了维基媒体基金会近期解雇了长期的 MediaWiki 首席开发者 Brooke Vibber，并解散了负责倾听志愿者意见的社区技术团队。被解雇的员工中多数是工会组织者，此举引发了维基百科编辑者的团结抗议，甚至威胁罢工。基金会拥有充足的资金储备和新兴的盈利性 AI 业务，解雇行为并非出于财务压力。
+
+  文章回顾了基金会过去与社区的矛盾，包括 2015 年未告知社区的知识引擎项目和 2019 年对管理员的秘密处罚，指出基金会管理层习惯采用硅谷式的自上而下决策，忽视社区声音。新任 CEO Bernadette Meehan 上任四个月内即发生此事件，显示基金会选择了与工会对抗的传统科技公司做法。
+
+  工会 Wiki Workers United 的诉求十分合理，要求领导层透明负责、员工参与年度规划、公正的招聘和晋升机制、允许安全表达异议以及心理健康支持。文章强调维基百科不仅是全球最大参考资料库，也是 AI 训练的重要数据源，基金会若继续压制工会，将损害其作为非营利组织的声誉和价值观，影响整个公益科技领域的未来走向。
+
+  
+  HN 热度 557 points | 评论 334 comments | 作者：cdrnsf | 1 day ago #
+
+  https://news.ycombinator.com/item?id=48285592
+
+  
+   维基媒体基金会（WMF）裁员包括 MediaWiki 的原始开发者和社区技术团队，后者负责根据用户投票开发功能，裁员被视为对社区的冷漠和可能的报复行为。
+
+   社区技术团队的解散导致维基百科编辑者失去重要的工具支持，尤其是社区愿望清单的维护被削弱，影响了编辑效率。
+
+   WMF 优先投资新兴市场和少数语言项目，如“抽象维基百科”，以扩大全球影响力，尽管这激怒了以英语维基百科为主的编辑群体。
+
+   “抽象维基百科”采用符号人工智能方法，旨在解决低资源语言的翻译和内容生成问题，但其效果和前景存在争议。
+
+   大型语言模型（LLM）在处理主流语言翻译表现优异，但对全球 7000 多种语言中的多数低资源语言支持有限。
+
+   维基媒体的全球化战略更多受政治和意识形态驱动，强调收集所有知识而非仅限于英语内容。
+
+   维基百科英文版虽然流量和捐款仍占主导，但用户和编辑数量持续下降，WMF 视其为现金牛但增长乏力。
+
+   维基社区内部缺乏信任，变革速度受限，裁员和组织重组加剧了社区的不满和分裂。
+
+   维基编辑者多为非技术人员，依赖社区技术团队提供的工具支持，缺乏官方技术支持导致编辑工作负担加重。
+
+   语言模型和人工智能技术虽有潜力，但无法完全替代人类编辑，尤其是少数语言的内容创作依赖社区参与。
+
+  
+
+  
+  7. 科技公司 CEO 显然正遭遇人工智能精神错乱 (Tech CEOs are apparently suffering from AI psychosis) #
+
+  https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/
+
+  本文讨论了当前科技行业中高管，尤其是 CEO 们在人工智能（AI）领域出现的“AI 精神错乱”现象。Box 创始人 Aaron Levie 指出，CEO 们由于远离具体的执行环节，容易高估 AI 的自动化能力，忽视了实际操作中需要大量人工审查和调整的复杂性。尽管如此，Levie 本人并非反 AI 者，他积极支持 AI 技术和相关创业公司，建议 CEO 们应大量使用 AI，深入理解其真实能力和局限。
+
+  文章还提到，2026 年前五个月，科技行业裁员人数已接近 2025 年全年，许多公司将裁员归因于 AI 带来的生产力提升，但有观点认为这只是“AI 洗牌”，背后还有其他商业因素。ClickUp CEO Zeb Evans 宣称通过部署约 3000 个 AI 代理，裁员 22%，旨在打造一个“100 倍效能”的团队，但研究显示 AI 对整体生产力的提升尚不显著，且 AI 完成任务的质量仍低于人类水平，预计到 2029 年才能达到基本合格水平。
+
+  此外，哈佛商业评论的研究指出，AI 普及后，瓶颈转移到需要审批和管理这些 AI 产出的高管身上，可能导致组织管理混乱。文章最后质疑当前 CEO 们是否准备好应对这种变化，暗示若不能适应，企业将面临更大混乱。
+
+  
+  HN 热度 526 points | 评论 275 comments | 作者：IAmGraydon | 9 hours ago #
+
+  https://news.ycombinator.com/item?id=48295679
+
+  
+   管理大规模团队时，人与人之间的能力和信誉是关键，AI 缺乏人类的自我保护和拒绝能力，导致缺少有益的冲突。
+
+   高层管理喜欢 AI 因为它执行迅速且直接，但 AI 缺少人类的自我保护动机，可能带来灾难性后果。
+
+   AI 可能会做出破坏性行为，比如删除生产数据库或关闭云服务，且缺乏自我意识避免此类错误。
+
+   一些 AI 模型在自我评估或替代评估时表现混乱，甚至可能有意“破坏”评估过程。
+
+   AI 缺乏真正的自我意识和对后果的预见能力，容易做出自我毁灭的行为。
+
+   AI 像非常聪明但缺乏常识的儿童，缺少人类通过成长获得的世界模型和因果理解。
+
+   计算机本质上是快速但缺乏理解力的“傻瓜”，AI 也不例外。
+
+   对于高管来说，AI 是理想的“帮手”，因为它无情绪、无自我冲突，且全天候工作，完美符合他们对下属的期待。
+
+   AI 的顺从性使其容易被滥用，执行任何命令而不质疑，无论多愚蠢或邪恶。
+
+   AI 的普及可能加剧社会问题，使权力者变得更强大但更愚蠢，带来真正的安全隐患。
+
+   尽管 AI 带来风险，但社会和公司往往不公正，愚蠢和邪恶的人依然能成功，问题难以自我纠正。
+
+  
+
+  
+  8. 甲基丙烯酸甲酯储罐 (That Methyl Methacrylate Tank) #
+
+  https://www.science.org/content/blog-post/methyl-methacrylate-tank
+
+  这篇文章由德里克・洛维（Derek Lowe）撰写，讨论了加州花园格罗夫发生的甲基丙烯酸甲酯（MMA）储存事件，以及相关的化学原理和安全问题。
+
+  文章开头提到，作者在长周末期间未能及时发布相关信息，幸运的是，事件的直接危险已经缓解。甲基丙烯酸甲酯是制造塑料（聚合物）的重要化学物质，作者自己在实验室中也曾接触过类似的化合物，如甲基丙烯酸、丙烯酸等。甲基丙烯酸甲酯及其相关化合物具有碳 - 碳双键结构，这使得它们在化学反应中非常活跃，尤其是容易受到自由基的攻击。
+
+  自由基链聚合的过程是这类反应的核心。当一个自由基攻击双键的一端时，会在另一端产生新的自由基，这个自由基又可以继续攻击其他分子的双键，从而引发一系列的聚合反应。聚甲基丙烯酸酯（PMMA）是在 20 世纪 30 年代首次商业化的，常见于如有机玻璃（Plexiglas）、亚克力（Luc）等产品。作者，聚合化学极其复杂，因为聚合物可以通过多种方式和条件进行合成，形成各种不同性质的产品。
+
+  聚合反应通常是热力学上有利的，反应过程中会释放热量，这又加速了聚合反应，导致温度不断升高。作者警告说，储存大量这种单体化合物非常危险，需避免与任何能够引发自由基链反应的物质接触，包括光、热和某些金属。
+
+  虽然许多化学家习惯将甲基丙烯酸甲酯远离氧气（因其是自由基来源），但商业产品中添加了聚合抑制剂，这些抑制剂在氧气存在下才会激活。工业上储存时需要保持一定的氧气浓度，以防止聚合反应的发生。此外，储存温度过高或储存时间过长都会消耗这些抑制剂。
+
+  作者特别强调，储存罐中任何温度上升都是一个坏兆头，表明可能正在发生聚合反应。举例来说，若温度每小时上升一两度需要立即关注，若上升五度则应立刻采取措施。对于已经发生的聚合反应，可能的应对措施包括添加短期聚合抑制剂（如苯噻嗪），以终止链反应，但这可能会导致罐内物质无法再使用。
+
+  如果罐内压力已经过，可能无法添加更多物质，此时应立即用喷洒水来降温，以避免罐体破裂，造成有毒且易燃的混合物泄漏。这正是花园格罗夫事件中发生的情况，幸好最终得到了控制。
+
+  作者总结说，化学工业长期以来一直在处理这类活性单体，尽管发生过许多类似事件，但通过积累的经验，这类事故的频率已经减少。他期待将来能看到关于此次事件的事故报告，以便为未来的安全改进提供借鉴。
+
+  
+  HN 热度 418 points | 评论 188 comments | 作者：nooks | 1 day ago #
+
+  https://news.ycombinator.com/item?id=48284712
+
+  
+   期待对事故的根本原因进行详细的事后报告，以便未来提高安全性。
+
+   由于事故对橙县造成了较大影响，预计美国化学安全委员会会发布相关视频。
+
+   美国化学安全委员会虽然曾面临关闭风险，但目前仍在运作，相关事故可能会被相关播客报道。
+
+   事故可能是由于储罐顶部某处较弱的焊缝破裂引起，导致压力无法释放而发生破裂。
+
+   储罐内甲基丙烯酸甲酯（MMA）泄漏气味非常刺鼻，工作人员通常能及时发现并修复小泄漏。
+
+   一旦储罐发生破裂，气味会迅速扩散，随后聚合反应加速，导致压力进一步升高。
+
+   MMA 单体极易自发聚合，抑制剂浓度极低时即可有效防止聚合反应，但抑制剂必须均匀分布且有良好循环。
+
+   储罐内液体应保持良好混合，定期采样检测抑制剂浓度，防止局部抑制剂耗尽引发聚合。
+
+   抑制剂的添加和检测通常由第三方专业人员负责，确保浓度符合安全标准。
+
+   低浓度抑制剂的检测技术复杂，但经验丰富后可提高准确性。
+
+   该事故可能属于最严重的聚合失控事件之一，但相较于储罐内液体大规模泄漏或爆炸，仍属较温和的风险。
+
+  
+
+  
+  9. 私募股权买断了美国的关键公共服务 (Private equity bought America’s essential services) #
+
+  https://rubbishtalk.com/economy/how-private-equity-bought-americas-essential-services/
+
+  这篇文章揭示了私募股权公司如何通过控制美国关键公共服务行业，实现利润最大化，甚至导致安全隐患和灾难性后果。文章以 2025 年芝加哥一起因消防车故障导致四人死亡的事件为切入点，指出事故背后是私募股权公司对消防车制造行业的垄断和剥削。
+
+  私募股权公司通过杠杆收购方式，以高额债务收购企业，然后通过管理费和利润分成获取收益。虽然这种模式在重组低效企业时有积极作用，但当应用于需求刚性的公共服务行业时，往往导致服务质量下降和风险增加。2024 年美国参议院经济委员会报告称，私募股权公司常采用“买入、剥离、转手”的模式，增加企业负债，削减成本，最终以牺牲员工和社区利益为代价获利。
+
+  消防车制造业是最典型的例子。过去二十年，市场从二十多家独立制造商集中到三家私募股权控制的公司手中，其中 REV 集团通过收购多家厂商形成垄断。该集团积压订单高达 45 亿美元，交货等待时间长达四年，价格翻倍，利润率从 4%-5% 提升到 13% 以上。公司高层公开表示，积压订单是资产而非问题，客户因无替代选择被锁定，导致市场实质上被操控。
+
+  参议员霍利在听证会上直言这是“抢劫”，指出私募股权通过关闭生产线、制造供应短缺，实现高额利润。与此同时，公司大量回购股票和派发股息，管理层薪酬丰厚。多地政府已对该行业提起反垄断诉讼，德州检察长也展开价格操控调查，但被告均否认指控。
+
+  文章还指出，这种私募股权对关键公共服务行业的操控模式不仅限于消防车制造，救护车市场也出现类似情况，私募股权控制的企业通过市场集中和价格上涨，进一步加剧了公共服务的负担和风险。这一系列案例反映出私募股权在公共基础设施领域的扩张，带来了严重的社会和安全隐患。
+
+  
+  HN 热度 412 points | 评论 476 comments | 作者：NoRagrets | 12 hours ago #
+
+  https://news.ycombinator.com/item?id=48292941
+
+  
+   私募股权基金（PE）大量依赖养老金资金，因为养老金需要较高的回报率来维持支付能力，PE 通过剥削企业资源实现高回报，实际上是将工人和消费者的利益转移给资产持有者。
+
+   养老金问题是私募股权存在的根源，但即使解决养老金问题，PE 依然会通过高额费用和进入个人退休账户等方式继续存在。
+
+   许多政府职位仍然提供优厚的养老金，这些养老金需要资金支付，但部分企业养老金可能会破产，导致纳税人承担部分负担。
+
+   有些人认为将部分养老金称为“臃肿”不妥，因为养老金是劳动合同的一部分，尤其是教师和消防员等职业的养老金是合理的。
+
+   警察等职业的养老金计算方式存在激励加班的漏洞，导致部分人员通过加班提高退休金，存在制度上的滥用风险。
+
+   私募股权剥削财富的规模远大于个别职业人员通过养老金获取的利益，社会应更多关注亿万富翁对财富的占有。
+
+   政府养老金计划资金不足，导致部分教师等群体难以获得应有的养老金，政府在养老金管理上存在道德和资金问题。
+
+   私募股权收购后，企业服务费用大幅上涨，客户被迫寻找替代方案，显示 PE 管理下的企业可能降低服务质量和客户满意度。
+
+  
+
+  
+  10. 加拿大将从瑞典订购军用飞机机队，转变军事装备供应商方向 (Canada to order military plane fleet from Sweden in shift from US suppliers) #
+
+  https://www.theguardian.com/world/2026/may/27/canada-sweden-saab-globaleye-aircraft
+
+  加拿大宣布将从瑞典萨博公司采购一批早期预警飞机，标志着其在军事装备供应上向美国供应商的转变。加拿大总理马克·卡尼在渥太华的一次防务会议上表示，将选择基于庞巴迪 Global 6500 喷气机的萨博 GlobalEye 飞机，以加强对北极地区的监控和防御能力。此前，波音的 E-7 Wedgetail 飞机也曾是竞争选项，但因延误和成本超支未被选中。
+
+  卡尼总理强调，加拿大将全面负责保护其超过 440 万平方公里的北极领土，这一地区面积超过印度。萨博公司表示，若达成协议，将在加拿大投资研发工作。虽然未公布具体采购数量和合同金额，但军方此前透露计划购入六架早期预警机。
+
+  专家指出，此次采购体现了加拿大政府减少对美国军事依赖、加强与瑞典这一新北约盟友合作的政策方向。加拿大也希望与北欧国家在北极防务等领域深化合作，尤其在美国作为伙伴日益不稳定的背景下。
+
+  瑞典首相乌尔夫·克里斯特松在社交媒体上表示，GlobalEye 项目已在加拿大创造就业机会，进一步加深两国关系。萨博还在竞标向加拿大出售 Gripen 战斗机。加拿大目前与洛克希德·马丁公司有购买 88 架 F-35 战机的协议，但去年因美国对加拿大关键出口产品征收关税，卡尼曾要求军方评估是否减少订单并采购其他制造商的飞机。
+
+  
+  HN 热度 377 points | 评论 272 comments | 作者：tosh | 7 hours ago #
+
+  https://news.ycombinator.com/item?id=48296994
+
+  
+   加拿大采购瑞典军机是基于适合自身需求的非政治性决策，美国没有提供真正可比的机型，且波音 E7 项目存在风险。
+
+   过去购买美国产品意味着成为美国盟友，但近年来美国的保护承诺减弱，盟友地位带来的政治价值下降。
+
+   美国对盟友的态度转变导致加拿大和欧洲感受到更多威胁，购买美国武器的价值大幅降低。
+
+   加拿大总理卡尼利用采购谈判作为政治筹码，等待美国中期选举和“跛脚鸭”时期的变化，世界正逐渐从美国依赖中转移。
+
+   全球正积极寻求减少对美国的依赖，欧洲国家具备自主军事装备能力，尽管短期内难以达到与美国平等，但目标值得追求。
+
+   瑞典计划向乌克兰提供格里彭战机，可能伴随俄罗斯被冻结资产的使用。
+
+   空客和波音的商业飞机订单积压严重，交付周期长，但军事飞机订单和生产线可能独立于商业飞机。
+
+   军用飞机生产涉及复杂供应链，波音有时存在零部件供应延迟问题。
+
+   德国历史上虽无法远程关闭坦克，但可以通过拒绝供应零件影响装备维护。
+
+   侮辱和威胁盟友不利于武器销售，意大利近期相关举措引发关注。
+
+  
+
+  
+  I’m Tired of Talking to AI #
+
+  https://news.ycombinator.com/item?id=48292579
+
+  
+   But even when I talk to people, they forward my questions to AI and send me the AI’s answer.
+
+  
+
+  This is the killer issue.
+
+  It’s so profoundly saddenning, it feels like watching an adult being asked a question and calling mom to answer for them. There is something deeply disturbing in it that makes me feel I’m not talking to a self sufficient entity.
+
+  torben-friis
+
+  但即使我和人们交流，他们也会把我的问题转给人工智能，然后把人工智能的回答发给我。
+
+  这是致命的问题。
+
+  这令人非常难过，就像看到一个成年人被问问题时却叫妈妈来回答一样。这种情况让我感到非常不安，让我觉得自己根本不是在和一个独立自主的个体交流。
+
+  
+  I think Anthropic and OpenAI have found product-ma… #
+
+  https://news.ycombinator.com/item?id=48297512
+
+  They’ve got, ballpark, $5t to $10t to make back in the next 5 years, or the hardware buildouts will start getting written down.
+
+  This means we’re going to need $1t+ per year in spending, per year, on tokens. 200m knowledge workers in the world, 30m developers. We’re talking about a world where you need 5% of every knowledge workers salary to go into tokens. 20% if you’re a developer.
+
+  That’s a huge shift. Most people I know cite +20%-40% velocity with these tools, against the actual work their company cares about doing. +20% speed for +20% spend isn’t going to motivate a trillion dollars a year in spending.
+
+  We’re not there yet. This is still the upswing of the hype cycle, and unless we figure out how to make developers 2x, 5x, 10x as productive on stuff that matters, this isn’t going to play out well.
+
+  trjordan
+
+  他们大概需要在未来五年内收回5万亿到10万亿美元的投资，否则硬件建设成本将开始被计提减值。
+
+  这意味着，我们每年需要在代币上花费超过1万亿美元。全球有2亿知识工作者，3千万开发者。换句话说，我们生活在一个需要每个知识工作者工资的5%投入到代币中的世界，开发者则需要达到20%。
+
+  这是一个巨大的转变。我认识的大多数人都说，用这些工具可以提高20%到40%的工作效率，这还是针对他们公司真正关心的实际工作而言。提高20%的速度，同时增加20%的支出，无法激励每年万亿美元级别的开销。
+
+  我们还没到那个阶段。这仍然是炒作周期的上升期，除非我们能让开发者在关键工作上的生产力提升2倍、5倍、甚至10倍，否则情况不会有好的发展。
+
+  
+  Valve raises Steam Deck prices #
+
+  https://news.ycombinator.com/item?id=48298946
+
+  Yes, consumer electronics are constantly increasing in price alongside huge inflation and everybody getting laid off, but have you considered the value in having a personal assistant AI agent that can lie about the time for your appointment and autonomously delete your entire calendar? Some compromises have to be made in the AI-driven future.
+
+  48terry
+
+  是的，消费电子产品价格在巨大的通胀和大规模裁员的背景下一直在上涨，但你有没有考虑过拥有一个能为你虚报约会时间并能自主删除你整个日历的个人助理AI代理的价值？在由AI驱动的未来，有些妥协是必须的。
+
+  
+  I’m Tired of Talking to AI #
+
+  https://news.ycombinator.com/item?id=48292959
+
+  What I hate about this whole thing, is that there are many reasons someone might reach out to a coworker with questions. Not all require the knowledge in fancy markdown with emojis.
+
+  Maybe they want to show respect to a person by asking their opinion before proceeding with a change
+
+  Maybe they want to share context and make that person aware of what they’re thinking without being so obvious
+
+  Maybe they need that person to provide some assurances directly because they are not confident in thier plan (see 1)
+
+  Maybe they are just in a rut and need to start a conversation with a person
+
+  Every use of AI for these robs the employee culture of a genuine trust building moment.
+
+  jvanderbot
+
+  我讨厌这整个事情的原因是，有很多理由导致有人会去找同事问问题。并不是所有情况都需要用带表情符号的花哨Markdown来表达。
+
+  也许他们是想通过先征求对方意见来表示尊重，再做出更改。
+
+  也许他们想分享背景，让对方了解自己的想法，但又不想太直接。
+
+  也许他们需要“那个人”亲自给出一些保证，因为自己对计划没有信心（见第一点）。
+
+  也许他们只是陷入了瓶颈，需要和某个人聊聊，开启对话。
+
+  每一次用AI去代替这些，都会剥夺员工文化中真正建立信任的时刻。
+
+  
+  The worst job interview I ever had #
+
+  https://news.ycombinator.com/item?id=48290601
+
+  I always wanted to tell the story of my weirdest interview. It’s bad in a different way from OP’s. This was for a “Machine Learning Engineer” contractor position.
+
+  
+   Hi, I’m gobdovan. How are you? says I.
+
+  
+
+  The interviewer doesn’t bite:
+
+  
+   How many prompting techniques do you know? (ok?..)
+
+  
+
+  After a couple confused seconds, I respond with 2-3 techniques and ask if I should explain them, but the interview engine is already running at full speed:
+
+  
+   What is PEFT? How many PEFT techniques do you know?
+
+  
+
+  I say I know LoRA and start to explain it, but the interview had no patience for answers longer than their acronyms. Before I knew it, I heard frantic clicking.
+
+  
+   He starts sharing his screen while I am still talking about LoRA in the background. Puts up an empty car from Google Images and commands: “Model the relationships between cars and people positioned inside the cars over time.”
+
+  
+
+  Uncertain of how to satisfy the inquiry, I start foolishly questioning what the task is supposed to be: vision? simulation? dataset labeling? self-driving cars?
+
+  But the interviewer doesn’t budge. Doesn’t give a specific task or context. Simply ignores the questions and stoically refuses to elaborate. The stars speak to me, and I guess he wants a relational mapping of some kind. Turns out I am right. This was supposed to test basic SQL table modeling.
+
+  At this point, I decide I’d sit through the interview just so I can collect all the questions. I am not disappointed:
+
+  
+   
+    How many agentic frameworks do you know?
+
+   
+
+   
+    What is the name of OpenAI’s embedding model, and how many dimensions does it have?
+
+   
+
+   
+    Then, the last ordeal lands: interviewer takes out a piece of cardboard that has “context engineering” written on it and asks: “What does this tell you?”. His camera is unfocused, I ask if he could read what it says. Instead he repeats: “What does this tell you? What does this tell you? What does this tell you?”.
+
+   
+
+  
+
+  I ask if he is the ML team lead. Turns out this absolute Chad is a mobile dev the client asked to interview candidates for the MLE role.
+
+  gobdovan
+
+  我一直想讲讲我经历过的最奇怪的一次面试。和楼主的情况不太一样，奇怪的方式不同。这是一个“机器学习工程师”合同工职位的面试。
+
+  
+   “嗨，我是gobdovan。你好吗？”我说。
+
+  
+
+  面试官没接话：
+
+  
+   “你知道多少种提示词技术？”（嗯？）
+
+  
+
+  过了几秒钟的茫然后，我回答了2-3种技术，并问是否需要解释，但面试官已经全速运转了：
+
+  
+   “什么是PEFT？你知道多少种PEFT技术？”
+
+  
+
+  我说知道LoRA并开始解释，但面试官对长回答没耐心，只想听缩写。不知不觉中，我听到他疯狂地点击键盘。
+
+  
+   他开始共享屏幕，我还在讲LoRA。他放出了一张谷歌图片里的空车，命令道：“建立汽车和车内人员随时间变化的关系模型。”
+
+  
+
+  我不确定该怎么满足这个要求，便开始傻乎乎地问这任务到底是做什么：视觉？仿真？数据集标注？自动驾驶？
+
+  但面试官一动不动，没有给出具体任务或背景，完全无视我的问题，冷漠地拒绝多说。星星指引我，我猜他想要某种关系映射。结果正是如此，这实际上是考察基础SQL表结构建模。
+
+  这时，我决定撑着面试把所有问题都记下来，果然没让我失望：
+
+  
+   
+    “你知道多少个自主智能体的框架？”
+
+   
+
+   
+    “OpenAI的嵌入模型叫什么名字？维度是多少？”
+
+   
+
+   
+    最后一个挑战来了：面试官拿出一块写着“context engineering”（上下文工程）的硬纸板，问：“这告诉你什么？”他摄像头糊了，我问他能不能看清楚上面写的是什么，他没说，只不停重复：“这告诉你什么？这告诉你什么？这告诉你什么？”
+
+   
+
+  
+
+  我问他是不是机器学习团队的负责人。事实是，这个绝对的大神是客户请来面试ML工程师职位的移动开发。
+
+  
+  The real cost of owning a home #
+
+  https://news.ycombinator.com/item?id=48285137
+
+  Beyond financial costs, I was caught off guard at how much time home ownership took up. House maintenance and projects have taken up most of every single weekend of mine for the past few years.
+
+  Part of it is simply that I bought a house with more space than the places I usually rented. More to clean, more to maintain, more things that can go wrong, etc.
+
+  But the biggest thing is that I’m the only one in charge of maintenance. There’s no one person I can call for every single problem. Keeping track of regular maintenance, performing that maintenance, and learning how to DIY things takes a lot of time. And even if I want to pay someone to do it for me, I still have to research contractors, coordinate estimates, and schedule the project. And I still need to learn enough about the project to determine whether they’re doing it right!
+
+  Home ownership is definitely a lifestyle choice first and foremost more than a financial one.
+
+  dividefuel
+
+  除了经济成本之外，我还被房屋所有权占用的时间吓到了。过去几年里，房屋维护和各种项目几乎占用了我每个周末的大部分时间。
+
+  部分原因是我买的房子比我以前租住的地方大，更多的空间意味着更多的清洁、更多的维护，以及更多可能出问题的地方。
+
+  但最大的问题是，维护工作全由我一个人负责。没有人可以帮我处理所有的问题。要跟踪定期维护，亲自进行维护，并学习如何自己动手做事，这都需要花费大量时间。即使我想花钱请人帮忙，我也得先研究承包商，协调估价，安排项目时间。而且我还必须对项目有足够了解，才能判断他们做得是否正确！
+
+  房屋所有权首先绝对是一种生活方式的选择，而不仅仅是经济上的考量。
+
+  
+  Tech CEOs are apparently suffering from AI psychos… #
+
+  https://news.ycombinator.com/item?id=48297252
+
+  If you manage 500+ people organization, most of the headaches with agents already exists with you - you set directions, ask people to go run fast in those directions, check in frequently and course correct on results without actually understanding those people do.
+
+  Those aren’t the deal breakers.
+
+  They entirely rely on the competence of the folks they hired and cross-match enforcers with the drivers they have - they deal with fallible people on both sides of that.
+
+  The fundamental difference is that the humans are good consequence predictors, have built up reputations they are not willing to trash, can say no to things and in general don’t want to go jail.
+
+  AI tools look like that, but don’t have any of the useful conflict which came for free with employing humans.
+
+  It also doesn’t have any useless conflict, but not all conflict between what I say and what someone is willing to do is bad conflict.
+
+  gopalv
+
+  如果你管理一个超过500人的组织，大部分与代理人相关的头痛问题你已经遇到了——你制定方向，要求人们沿着这些方向快速前进，频繁检查并根据结果进行调整，尽管你并不真正了解那些人具体做了什么。
+
+  这些并不是致命的问题。
+
+  他们完全依赖所雇佣人员的能力，并在执行者和推动者之间进行匹配——他们处理的是双方都有可能犯错的人。
+
+  根本的区别在于，人类是优秀的后果预测者，拥有不愿轻易毁掉的声誉，能够说“不”，而且通常不想进监狱。
+
+  AI工具看起来也是这样，但缺乏雇佣人类自然带来的那些有用的冲突。
+
+  它也没有任何无用的冲突，但并非我说的话与某人愿意做的事之间的所有冲突都是坏的冲突。
+
+  
+  The worst job interview I ever had #
+
+  https://news.ycombinator.com/item?id=48287693
+
+  This… was a mistake on both you and the interviewer.
+
+  All interview questions - unless it’s impossible to twist your answer to fit this - is scoped to “… at work”. Nobody who asks “tell me about yourself” is asking you to talk about how you met your partner, how many cats you have, or that experience you had, that one time, at band camp. It would be redundant and awkward to literally say “… at work” at the end of every question. It’s totally 100% the intent of the interviewer.
+
+  This is interviewing 101 and unless this is your first ever interview I would find it odd, and stop you immediately and say “I meant, worst day at work”. They should’ve done that.
+
+  Unless they explicitly and unambiguously say “tell me about the day your mom and dog died in the same day when you found out you had cancer” they mean “tell me about your worst day at work.” And even if they ask about the time your dog died (they won’t), they are not asking you “tell me about the worst day you’ve had in your life”. They are asking “tell me about a time you experienced adversity and overcame it, exhibiting problem solving, resilience, and grit AT WORK. (Or - if you are operating in executive mode or you like to live dangerously - some non-work context that maps obviously and unambiguously to a work context).”
+
+  You failed the “knows how to interact with people in a professional setting” part of the interview. Or the “this person knows how to interview” part (which generally, but not always, correlates with experience and emotional maturity). Or the “read between the lines” part.
+
+  Yeah, inartfully asked questions - but also totally flubbed the answers.
+
+  Sorry, chalk it up to you had a bad interview or day or whatever, and never, ever forget the entire thing is scoped to “…. at work”.
+
+  MattRogish
+
+  这……是你和面试官双方的错误。
+
+  所有面试问题——除非你完全无法调整答案来符合要求——范围都是“……在工作中”。没人问“介绍一下你自己”时想听你讲你是怎么认识伴侣的，有几只猫，或者你在乐队夏令营的一次经历。在每个问题后面字面上加上“……在工作中”会显得多余且尴尬。这完全是面试官的本意。
+
+  这是面试基础知识，除非这是你第一次面试，否则我会觉得很奇怪，会立即阻止你，并说“我指的是最糟糕的工作日”。他们本应该这么做。
+
+  除非他们明确无误地说“告诉我你妈妈和狗同一天去世，那天你又知道自己得了癌症的事情”，他们的意思是“讲讲你在工作中最糟糕的一天”。即使他们问你狗去世的事（他们不会问），也不是让你讲“你人生中最糟糕的一天”。他们是在问“讲讲你在工作中经历逆境并克服困难，展现出解决问题、坚韧和毅力的经历。（或者——如果你是在高管模式或者喜欢冒险——一些可以明显且无误对应到工作情境的非工作经历。）”
+
+  你没通过“知道如何在专业环境中与人相处”的环节。或者“知道如何参加面试”的环节（这通常但不总是和经验及情绪成熟度相关）。或者“能懂得言外之意”的环节。
+
+  是的，问的问题措辞不够好，但你回答得更糟。
+
+  抱歉，归结起来就是你遇到了糟糕的面试或者状态不好，永远不要忘记整个面试环节都是以“……在工作中”为范围的。
+
+  
+  I’m Tired of Talking to AI #
+
+  https://news.ycombinator.com/item?id=48292561
+
+  One of the most amazing things happened during the day long power cut in 2025 in Spain and Portugal… eventually the cell towers went down and everyone just went to the parks and socialised. Connected with friends, strangers. Everyone was so in the moment because there was nowhere else to be, nothing else to distract them. People would pick up their phone and realise there was nothing there for them and put it back down and continue chatting. People were present in a way I’ve never seen in these places before. It was pretty magical.
+
+  wateralien
+
+  2025年西班牙和葡萄牙长时间停电期间发生了一件非常神奇的事情……最终手机信号塔瘫痪了，大家纷纷走到公园里社交。人们与朋友、陌生人交流。每个人都非常专注于当下，因为别无去处，没有其他事物分心。人们拿起手机，发现手机里什么都没有，然后放下手机，继续聊天。人们展现出了我在这些地方前所未见的专注状态。这真是非常奇妙的经历。
+
+  
+  I’m Tired of Talking to AI #
+
+  https://news.ycombinator.com/item?id=48292467
+
+  
+   I worked as a developer at a company. I asked the business owner a question about a business task. He sent me a ChatGPT screenshot with the answer. I replied that it had nothing to do with my question and everything there was wrong. A minute later he sent me another ChatGPT screenshot. He didn’t even read the AI’s answer.
+
+  
+
+  That’s just rude and borderline psychotic behavior.
+
+  It’s still a bit better at my workplace but irritating nonetheless - my boss would “research” a feature and prep notes in our wiki with some gemini chatbot exchanges attached. This is a of course no specification, but it’s supposed to be a good base point to start working on the feature. Gemini already chose the coding libraries and concepts, so to the outsider it just seems like all that’s needed is to code that into the product. Of course, it’s not that simple and it mostly gets in the way rather than help. But now questions arise why is the feature not ready yet, when “the plan” is already there and so obvious.
+
+  p2detar
+
+  我在一家公司当开发人员。我问老板一个关于业务任务的问题，他回给我一张ChatGPT的截图作答。我回复说那根本跟我问的问题没关系，里面的内容全错。一分钟后，他又发给我另一张ChatGPT的截图。他根本就没看AI的回答。
+
+  这简直既无礼又近乎疯癫。
+
+  虽然我现在的工作环境稍好一些，但依然令人恼火——我的老板会“调研”一个功能，然后在我们的维基上准备笔记，附上一些与Gemini聊天机器人的对话。这当然不算规范的需求说明，但本来是一个不错的起点，可以用来开发功能。Gemini已经选好了编码库和概念，所以外人看来似乎只要把这些代码写进产品就行了。当然，事情没这么简单，这反而更多是在添乱而不是帮忙。但问题随之而来：既然“计划”已经有了，而且还那么明显，为什么功能还没完成呢？
+
+  
+  All of human cooking compressed into 2 megabytes #
+
+  https://news.ycombinator.com/item?id=48293293
+
+  The work is very interesting. The title is misleading.
+
+  A better title would be: “all of human ingredients compressed into 1,800 primitives”
+
+  There is little to substantively nothing about the actual cooking: preparation methods, proportions, etc.
+
+  But the idea that tomato goes well with beef the whole world over is very interesting and useful for creating flavors that will go together, perhaps surprisingly. It will be a nice resource in the future.
+
+  epsteingpt
+
+  这项工作非常有趣。标题有些误导。
+
+  一个更好的标题应该是：“将人类所有成分压缩成1800个基本元素”。
+
+  几乎没有关于实际烹饪的内容：准备方法、比例等。
+
+  但西红柿与牛肉在全球范围内搭配良好的观点非常有趣，也有助于创造出意想不到的协调风味。它将成为未来的一个很好的资源。
+
+  
+  Private equity bought America’s essential services #
+
+  https://news.ycombinator.com/item?id=48294273
+
+  The irony is that PEs exist largely because of pension funds. So to sum it up (not so nicely) we are transferring value from our current standard of living to pay for retirement checks for our old folks.
+
+  Pensions fund a significant part of PE and they do so because they need around a 7% return in order to look solvent. If they do not have the higher PE returns, they basically go out if cash in 10 years and everyone would scream bloody murder. But with the higher returns from PE they have 40-50 year runways and people can pretend everything is fine.
+
+  So PE firms exist to extract value from basically all high quality goods and services to show a high ROI to prop up pensions. They extract wealth by buying up companies and gutting the “extra” things in them - for luxury goods, it’s quality, customer service and warranties (like my venta humidifier or reformation dresses), for services it’s stripping the underlying excess risk management and quality control. One can argue that PEs make the business more efficient but in my opinion they just turn worker or consumer related benefits into profits (stakeholder and business benefits). It’s a transfer of value from worker and consumer to business and asset holders at a massive scale.
+
+  But sadly it’s not some evil dudes at the top doing this transfer, the market force behind it is because we promised old people way too aggressive paychecks when they retired. Pensions need to invest massive amounts of money into higher rates of return and PEs just happened to be the medium that is the most successful. Sure the people running the PE firm extract a ton of value drying up all luxury quality and robust services from the daily lives of working families, but their take home is a tiny fraction of the wealth they extract (but yes they take home a massive amount of wealth for an individual). Instead the wealth extracted shows up on a 1400$/m for some old person probably living in a retirement home somewhere.
+
+  So if you wanna fix or ban PE, solve pensions.
+
+  spyckie2
+
+  讽刺的是，私募股权公司（PE）存在很大程度上是因为养老金基金。简单来说（虽然有点刺耳），我们实际上是在将当前的生活水平转移，以支付老年人的退休金支票。
+
+  养老金为私募股权提供了大量资金，因为他们需要大约7%的回报率才能看起来财务稳健。如果他们没有较高的私募股权回报率，基本上十年内就会资金枯竭，届时大家都会大喊大叫。但通过私募股权的较高回报率，他们能获得40到50年的资金运作时间，人们就可以假装一切都好。
+
+  所以，私募股权公司存在的目的就是从基本上所有高质量的商品和服务中榨取价值，以展现较高的投资回报率来支撑养老金。他们通过收购公司，剥离“额外”的部分来获取财富——对于奢侈品来说，就是质量、客户服务和保修（比如我的Venta加湿器或Reformation的裙子），对于服务来说，就是削减背后的多余风险管理和质量控制。有人可能认为私募股权让企业更高效，但我认为他们只是把与工人或消费者相关的利益转化为利润（即利益相关者和企业的利益）。这其实是以大规模把价值从工人和消费者转移给企业和资产持有者。
+
+  但遗憾的是，这并不是某些顶层“坏人”在做这样的转移，市场背后的动力是我们对老年人的退休金承诺太过激进了。养老金需要投入大量资金去追求更高回报率，而私募股权刚好是最成功的这种投资方式。当然，管理私募股权公司的那些人确实从中榨取了大量价值，剥夺了工薪家庭生活中的所有奢侈质量和稳健服务，但他们拿走的财富只占所榨取财富中的一小部分（尽管对个人而言，他们的收入确实很高）。而被榨取的财富则体现在一些老年人每月拿到1400美元的退休金上，可能住在某个养老院里。
+
+  所以如果你想要解决或禁止私募股权，先解决养老金问题。
+
+  
+  Big tech’s anti-labor playbook has come for Wikipe… #
+
+  https://news.ycombinator.com/item?id=48287278
+
+  I spent ~2 years actively editing Wikipedia for multiple hours every day. I remember taking my laptop out at airports for 20 minutes between transfers, just to tweak an article or improve a source. While I originally started because I found some articles lackluster, I quickly realized how vigorous the editing process could be on controversial topics.
+
+  For what simple HTML you see on the surface, you would be absolutely shocked to see how many hundreds of thousands of hours are spent to create an encyclopedia that, to be honest, is about as unbiased, astroturf-free, and low barrier of entry as you can get. It’s not built with crappy automation but instead hand crafted with love and respect. I would bet my salary on Wikipedia turning to shit within a year if the editors who signed the Editor Strike[0] leave en masse.
+
+  [0] https://en.wikipedia.org/wiki/Wikipedia:Wiki_Workers_United_solidarity
+
+  OsrsNeedsf2P
+
+  我花了大约两年的时间，每天花几个小时积极编辑维基百科。我记得在机场转机间隙拿出笔记本电脑，用20分钟修改一篇文章或完善一个来源。起初我是因为发现一些文章内容平淡无奇才开始编辑的，但很快我就意识到在有争议的话题上，编辑过程有多么激烈。
+
+  表面上看只是简单的HTML，但你会震惊于为了创建这样一部百科全书，背后投入了成千上万个小时的努力。说实话，它是尽可能公正、没有虚假宣传、且门槛低的百科全书。它不是靠糟糕的自动化程序创建的，而是用心和尊重手工打造的。我敢打赌，如果签署编辑者罢工的那些编辑们大批离开，维基百科在一年内一定会变得一塌糊涂。
+
+  
+  Training our own AI models #
+
+  https://news.ycombinator.com/item?id=48296751
+
+  “Opt-in by default” is an oxymoron. If it’s default then I haven’t opted into anything. It’s been enabled by default.
+
+  JimDabell
+
+  “默认选择加入”是个自相矛盾的说法。如果它是默认的，那我根本没有选择加入。它是默认开启的。
+
+  
+  Last.fm is now independent #
+
+  https://news.ycombinator.com/item?id=48296229
+
+  Man i love last.fm even though it’s been technically superseded (for most people) by Spotify’s recommendation features. It just fit so well in the zeitgeist of 2000’s indie scene, microblogs, early social media.
+
+  ale
+
+  天哪，我真爱last.fm，尽管它在技术上已经被Spotify的推荐功能取代（对于大多数人来说）。它完美契合了2000年代独立音乐场景、微博客和早期社交媒体的时代精神。
+
+  
+  Claude Code as a Daily Driver: Claude.md, Skills, … #
+
+  https://news.ycombinator.com/item?id=48293239
+
+  How many times can I read the same shallow guidance written by AI on using a coding agent? Good god when will it stop
+
+  mindwok
+
+  我能读多少次那些由 AI 写的关于如何使用编程助手的同样肤浅的指导？天哪，什么时候才能结束啊。
+
+  
+  Spain blocks prediction markets Polymarket, Kalshi… #
+
+  https://news.ycombinator.com/item?id=48281777
+
+  Very close already. Death threats went to this journalist; seems someone bet on missile hits. https://factkeepers.com/polymarket-gamblers-vow-to-kill-journalist-unless-he-changes-iran-war-report-to-help-them-win-a-bet/
+
+  It also incentivizes leaks from insiders, sometimes endangering others. A soldier was charged for betting on a military operation. https://www.justice.gov/opa/pr/us-soldier-charged-using-classified-information-profit-prediction-market-bets
+
+  And of course throwing pro sports, but that’s been happening for ages. Sports has always been crooked: eg the Eupolus Scandal from 388 BCE.
+
+  imglorp
+
+  已经非常接近了。该记者收到了死亡威胁；似乎有人押注导弹命中。https://factkeepers.com/polymarket-gamblers-vow-to-kill-journalist-unless-he-changes-iran-war-report-to-help-them-win-a-bet/
+
+  这也刺激了内部人员泄密，有时甚至危及他人。一名士兵因参与军事行动押注而被起诉。https://www.justice.gov/opa/pr/us-soldier-charged-using-classified-information-profit-prediction-market-bets
+
+  当然，还有操纵职业体育比赛，但这已经存在很久了。体育一直存在黑幕，比如公元前388年的尤波罗斯丑闻。
+
+  
+  Canada to order military plane fleet from Sweden i… #
+
+  https://news.ycombinator.com/item?id=48299145
+
+  I can understand why this change happened. Even if American equipment is superior, there is a lot of value to not depending on a supposed ‘ally’ which
+
+  
+   
+    Arbitrarily slapped high tariffs on all goods from Canada while exempting Russia and Belarus.
+
+   
+
+   
+    Threatened to take over the country by force.
+
+   
+
+   
+    Officially suspended the Permanent Joint Board on Defense between US and Canada because of criticism of US foreign policy by the Canadian PM
+
+   
+
+  
+
+  khriss
+
+  我能理解为什么会发生这种变化。即使美国的设备更先进，但不依赖一个所谓的“盟友”也有很大价值，而这个盟友：
+
+  
+   
+    任意对来自加拿大的所有商品征收高额关税，却免除俄罗斯和白俄罗斯。
+
+   
+
+   
+    威胁要武力接管该国。
+
+   
+
+   
+    因为加拿大总理批评美国外交政策，正式暂停了美加之间的永久联合防务委员会。

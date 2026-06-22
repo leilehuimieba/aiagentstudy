@@ -1,0 +1,35 @@
+{
+  "item_id": "BB-2026-05-01-325",
+  "capture_date": "2026-05-26",
+  "repo": {
+    "url": "https://github.com/anthropics/claude-code",
+    "head": "39e853e4074d90f27afdfb7ea601e0fc378bd0c5",
+    "tag": "v2.1.150",
+    "local_path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claude-code"
+  },
+  "npm": {
+    "wrapper": "@anthropic-ai/claude-code@2.1.150",
+    "wrapper_tarball": "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.1.150.tgz",
+    "native_packages": [
+      {
+        "name": "@anthropic-ai/claude-code-win32-x64",
+        "version": "2.1.150",
+        "unpacked_size": 234249434,
+        "tarball": "https://registry.npmjs.org/@anthropic-ai/claude-code-win32-x64/-/claude-code-win32-x64-2.1.150.tgz"
+      },
+      {
+        "name": "@anthropic-ai/claude-code-linux-x64",
+        "version": "2.1.150",
+        "unpacked_size": 238524698,
+        "tarball": "https://registry.npmjs.org/@anthropic-ai/claude-code-linux-x64/-/claude-code-linux-x64-2.1.150.tgz"
+      }
+    ],
+    "local_path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claude-code-npm\\package"
+  },
+  "related_kb_items": [
+    "BB-2026-05-01-104",
+    "BB-2026-05-01-205",
+    "BB-2026-05-01-171",
+    "BB-2026-05-01-172"
+  ]
+}

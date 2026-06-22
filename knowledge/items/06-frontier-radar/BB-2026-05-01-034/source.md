@@ -2,7 +2,16 @@
 
 - Title: 前沿大模型横评 2026 春
 - BestBlogs URL: https://www.bestblogs.dev/explore/topics/frontier-llm-2026-spring
-- Original publisher URL: Not found on page during capture.
+- Original publisher URL: https://openai.com/index/introducing-gpt-5-5
+- Original link text: Introducing GPT-5.5（主参考条目外部原文）
+
+- Primary BestBlogs reference URL: https://www.bestblogs.dev/article/a6d9083a
+
+## External Original Mapping
+
+- Topic-page note: this is a BestBlogs topic aggregation page, not a single-source article page.
+- External original chosen for evidence baseline: the primary BestBlogs reference `https://www.bestblogs.dev/article/a6d9083a`
+- Mapped external original URL: https://openai.com/index/introducing-gpt-5-5
 
 ## Captured Page Metadata
 

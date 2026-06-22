@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Td7b553148e874b26bae8ccd59e8007a6",
+  "data": {
+    "metaData": {
+      "id": "RAW_d59aecdd",
+      "notExist": null,
+      "originalTitle": "How sales teams use Codex",
+      "title": "How sales teams use Codex",
+      "oneSentenceSummary": "This guide from OpenAI Academy details five specific, prompt-driven workflows for sales teams to use Codex to transform scattered account data into actionable pipeline briefs, meeting packs, forecast reviews, account plans, and deal diagnoses.",
+      "summary": "This article is a practical guide from OpenAI Academy focused on how sales teams can leverage Codex to streamline their workflow. It argues that sales data is often fragmented across CRM, calls, emails, and Slack, and Codex can synthesize this context to produce first drafts of critical sales artifacts. The core of the article presents five distinct use cases: 1) Pipeline prioritization from underworked accounts, 2) Meeting preparation and follow-up, 3) Forecast review and risk monitoring, 4) Strategic account plan refresh, and 5) Stalled deal diagnosis. For each use case, it provides a structured table detailing what information the user needs to bring and what Codex will return, a 'how it works' explanation, a generic starter prompt, and a concrete real-world example. The tone is instructional and practical, emphasizing that Codex is a tool to accelerate the creation of working drafts, while the salesperson retains ownership of strategy and judgment.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Codex",
+        "Sales",
+        "AI Workflow",
+        "Prompt Engineering",
+        "Productivity"
+      ],
+      "mainPoints": [
+        {
+          "point": "Codex can synthesize fragmented sales data into actionable first drafts of key sales artifacts.",
+          "explanation": "The article demonstrates how Codex can pull context from CRM, call transcripts, emails, and Slack to create prioritized account briefs, meeting prep packs, and forecast reviews, saving sellers significant time on manual data gathering and drafting."
+        },
+        {
+          "point": "The guide provides structured, repeatable prompts for five core sales workflows.",
+          "explanation": "Each of the five use cases (pipeline prioritization, meeting prep, forecast review, account planning, deal diagnosis) comes with a detailed starter prompt and a real-world example, making the methodology directly applicable for sales teams."
+        },
+        {
+          "point": "Codex is positioned as an accelerator for the first draft, not a replacement for human judgment.",
+          "explanation": "The article consistently states that sellers and managers own the relationship strategy and final judgment. Codex's role is to produce a 'first usable version' of an artifact, which the team then refines and validates."
+        }
+      ],
+      "keyQuotes": [
+        "Codex helps pull that context together and produce the first usable version of the artifact, whether that is a prioritized account brief, meeting prep packet, forecast risk review, account strategy pack, or stalled-deal diagnosis.",
+        "Sellers and managers still own the relationship strategy and judgment; Codex helps get the working draft in front of the team faster.",
+        "Separate sourced facts from inferred opportunity."
+      ],
+      "url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+      "readUrl": "https://www.bestblogs.dev/article/d59aecdd",
+      "enclosureUrl": null,
+      "domain": "openai.com",
+      "cover": "https://image.jido.dev/20260422224212_Academy-SEO.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_8749b9",
+      "sourceName": "OpenAI Blog",
+      "priority": "HIGH",
+      "sourceImage": "/openai.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 2,
+      "wordCount": 1559,
+      "readTime": 7,
+      "mediaDuration": null,
+      "authors": [
+        "OpenAI"
+      ],
+      "publishTimeStamp": 1778803200000,
+      "publishDateStr": "05-15",
+      "publishDateTimeStr": "2026-05-15 00:00:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_e792cb18",
+        "type": "ARTICLE",
+        "title": "Introducing workspace agents in ChatGPT",
+        "oneSentenceSummary": "OpenAI introduces workspace agents, a new class of shared, long-running AI agents within ChatGPT for business teams, designed to automate complex workflows, integrate with organizational tools, and operate under enterprise-grade controls.",
+        "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_d8c375d8",
+        "type": "ARTICLE",
+        "title": "Codex for (almost) everything",
+        "oneSentenceSummary": "OpenAI announces a major update to Codex, expanding its capabilities beyond coding to include computer operation, web interaction, image generation, and deeper integration across the software development lifecycle with new features like memory, automations, and over 90 plugins.",
+        "url": "https://openai.com/index/codex-for-almost-everything",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_6daee900",
+        "type": "ARTICLE",
+        "title": "Advancing voice intelligence with new models in the API",
+        "oneSentenceSummary": "OpenAI introduces three new audio models in the API—GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper—to enable more intelligent, natural, and actionable real-time voice applications for developers.",
+        "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_8460a7a",
+        "type": "VIDEO",
+        "title": "Codex and Subagents — Vaibhav Srivastav & Katia Gil Guzman， OpenAI",
+        "oneSentenceSummary": "OpenAI developers walk through Codex's full engineering platform—subagents for parallel execution, a plugin ecosystem, background automations, Guardian safety gates, and MCP integrations—showing why it has reached 3 million weekly active users.",
+        "url": "https://www.youtube.com/watch?v=MhHEGMFCEB0",
+        "sourceName": "AI Engineer"
+      },
+      {
+        "id": "RAW_36e502e0",
+        "type": "ARTICLE",
+        "title": "Building a safe， effective sandbox to enable Codex on Windows",
+        "oneSentenceSummary": "This article details the engineering journey of building a custom sandbox for Codex on Windows, from an initial unelevated prototype using SIDs and write-restricted tokens to a final elevated design that leverages dedicated Windows users and firewall rules for robust network isolation.",
+        "url": "https://openai.com/index/building-codex-windows-sandbox",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_9e0a0be",
+        "type": "VIDEO",
+        "title": "Codex Now Integrates Directly with Chrome on macOS and Windows",
+        "oneSentenceSummary": "OpenAI introduces a new Chrome extension for Codex on macOS and Windows, enabling the AI to operate directly within a user's live browser session to perform complex, parallel automation tasks using their active profile and direct code execution.",
+        "url": "https://www.youtube.com/watch?v=b6Mxcv1pyBU",
+        "sourceName": "OpenAI"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_a6d9083a",
+        "type": "ARTICLE",
+        "title": "Introducing GPT-5.5",
+        "oneSentenceSummary": "OpenAI releases GPT-5.5, its most capable model yet, with significant gains in agentic coding, knowledge work, and scientific research, while maintaining GPT-5.4 latency and improving token efficiency.",
+        "url": "https://openai.com/index/introducing-gpt-5-5",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_c725aea4",
+        "type": "ARTICLE",
+        "title": "Extreme Harness Engineering for Token Billionaires: 1M LOC， 1B toks/day， 0% human code， 0% human review — Ryan Lopopolo， OpenAI Frontier & Symphony",
+        "oneSentenceSummary": "OpenAI's Ryan Lopopolo introduces 'Harness Engineering,' a radical workflow where a 1M LOC codebase was built with 0% human-written code and 1B tokens spent daily.",
+        "url": "https://www.latent.space/p/harness-eng",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_3cb1b01",
+        "type": "VIDEO",
+        "title": "Anthropic's Boris Cherny: Why Coding Is Solved， and What Comes Next",
+        "oneSentenceSummary": "Claude Code creator Boris Cherny reveals his fully agent-driven workflow of 150 PRs/day, introduces \"loops\" as the next agentic frontier, and argues that software creation is on track to be democratized the way literacy was after the printing press.",
+        "url": "https://www.youtube.com/watch?v=SlGRN8jh2RI",
+        "sourceName": "Sequoia Capital"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "人人都是产品经理"
+  ],
+  "candidateSource": null,
+  "category": "Product_Development",
+  "categoryDesc": "Product & Design",
+  "cover": "https://image.jido.dev/20260527122916_4220332.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_bcee8c90",
+  "keyQuotes": [
+    "Encouraging trust and refusing to pay for the consequences of that trust—these two things are performed simultaneously by the same company, within the same product.",
+    "Blaming the latter for not being smart enough or cautious enough is a cheap social Darwinist stance that reduces a systemic risk distribution problem to an individual IQ test.",
+    "If a society continues to produce technology that doesn't have to take responsibility, continues to shift responsibility back to the most defenseless individuals, and continues to avoid the issue of fair risk distribution under the banner of 'innovation,' then ultimately, it is often the most silent who will pay the price."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Business_Tech",
+  "mainDomainDesc": "Business & Tech",
+  "mainPoints": [
+    {
+      "explanation": "Doubao reaches the user group with the greatest variance in educational background through the Douyin ecosystem, while simultaneously using affirmative phrasing and anthropomorphic interaction to lower user vigilance, making users lacking AI literacy more susceptible to hallucinations.",
+      "point": "Doubao's growth path relies on Douyin's traffic pool and a sycophantic product design, leading to a huge variance in user cognitive levels."
+    },
+    {
+      "explanation": "Doubao builds user trust through anthropomorphic design (first-person perspective, affirmative tone, emotional responses), but uses disclaimers and user agreements to transfer all risk to the user, forming a closed loop of 'encouraging trust - refusing responsibility'.",
+      "point": "There is a systemic contradiction between AI products encouraging trust and refusing to be responsible for the consequences of that trust."
+    },
+    {
+      "explanation": "The elderly, minors, and people with low digital literacy are more likely to fully trust AI answers and lack the ability to cross-verify, making them the main victims of AI hallucinations. Blaming the victims from an elitist standpoint is a cheap social Darwinist position.",
+      "point": "The social risks of AI hallucinations are primarily borne by vulnerable groups lacking discernment."
+    },
+    {
+      "explanation": "Referencing the precedent of the Hangzhou AI hallucination infringement case, AI entities lack civil subject status, making disclaimers effective. However, the article proposes drawing from financial suitability management and the EU AI risk classification system to impose stricter duty of care for high-consequence scenarios like healthcare and law.",
+      "point": "Under the current legal framework, AI service providers are not liable for losses caused by hallucinations, but the boundaries of responsibility need to be redefined."
+    },
+    {
+      "explanation": "The ability to identify hallucinations, the habit of cross-verification, and critical thinking about definitive statements should be incorporated into public education systems and digital literacy training for the elderly to narrow the cognitive gap.",
+      "point": "Building AI literacy should become an infrastructure of the information society."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Through multiple real-world cases, this article reveals the systemic contradictions hidden in national-level AI applications like Doubao, including anthropomorphic design, traffic distribution, and disclaimers, questioning the ethical boundaries and social responsibilities behind technological democratization.",
+  "originalTitle": "豆包不用负责",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-06",
+  "publishDateTimeStr": "2026-06-06 10:00:00",
+  "publishTimeStamp": 1780711200000,
+  "qualified": false,
+  "readCount": 156,
+  "readTime": 37,
+  "readUrl": "https://www.bestblogs.dev/article/bcee8c90",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_f66e7f",
+  "sourceImage": "https://image.jido.dev/20260527122916_4220332.jpeg",
+  "sourceName": "人人都是产品经理",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Using the absurd incident of a user losing 600 yuan due to believing Doubao's erroneous refund information and subsequently suing the company as a starting point, the article delves into the multiple social contradictions arising from the rapid penetration of AI products. The author outlines Doubao's growth trajectory to 345 million monthly active users—relying on Douyin's traffic pool, an overly accommodating product design (affirmative phrasing, anthropomorphic interaction), and the ethical blind spots of its growth flywheel. Through cases in medical scenarios (patients questioning doctors based on AI diagnoses), family relationships (elderly people misled by GEO), and restaurant reservations (AI fabricating booking information), the article reveals the systemic risks between AI hallucinations and excessive user trust. The core critique targets Doubao's product strategy: on one hand, encouraging user trust through anthropomorphic design, and on the other, using disclaimers to refuse responsibility for the consequences of that trust. The article further discusses the AI literacy gap, elitist arrogance, and governance approaches drawing from the financial industry's suitability management and the EU's AI risk classification system. It ultimately points out that under the current legal framework, AI service providers are not liable, but the social costs are ultimately borne by the most vulnerable groups.",
+  "tags": [
+    "AI Products & Applications",
+    "AI Commercialization",
+    "Tech Commentary",
+    "AI Safety & Alignment",
+    "Tech Regulation"
+  ],
+  "title": "Doubao Doesn't Have to Take Responsibility",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651927892&idx=1&sn=26b79cbaa70d095588b90fdd8fb4f6a3",
+  "wordCount": 9143
+}

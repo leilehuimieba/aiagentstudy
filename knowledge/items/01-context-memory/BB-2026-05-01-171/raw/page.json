@@ -1,0 +1,170 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T916bee8d8dbf4095a036d98ec984d2aa",
+  "data": {
+    "metaData": {
+      "id": "RAW_243d2340",
+      "notExist": null,
+      "originalTitle": "How Claude Code works in large codebases: Best practices and where to start | Claude",
+      "title": "How Claude Code works in large codebases: Best practices and where to start | Claude",
+      "oneSentenceSummary": "This article provides a comprehensive guide on deploying Claude Code in large codebases, emphasizing that success depends more on the 'harness' of configuration layers (CLAUDE.md, hooks, skills, plugins, LSP, MCP) than on the model alone, and outlines proven patterns for making codebases navigable, maintaining configurations, and assigning organizational ownership.",
+      "summary": "This article from the official Claude Blog details best practices for deploying Claude Code in large, complex codebases, including multi-million-line monorepos and legacy systems. It argues that the model's capabilities are secondary to the 'harness'—the ecosystem of five extension points: CLAUDE.md files, hooks, skills, plugins, and MCP servers, supplemented by LSP integrations and subagents. The article details three key configuration patterns observed in successful deployments: making the codebase navigable through lean, layered CLAUDE.md files and LSP; actively maintaining these configurations as models evolve; and assigning clear ownership for Claude Code management and adoption. It provides a practical checklist and emphasizes that organizational investment in infrastructure and a dedicated owner (DRI) is as critical as technical setup for widespread adoption.",
+      "featuredReason": "Anthropic's team reviews how Claude Code actually works inside multi-million-line monorepos, decades-old legacy systems, and dozens-of-repos microservices. The key insight: ditch RAG embedding indexes in favor of agentic search — Claude navigates with grep and cross-references like a real engineer, sidestepping the stale-index trap where renamed functions still surface weeks later. Three patterns matter most: layered CLAUDE.md files, LSP integration, and clear team ownership.",
+      "translateContent": null,
+      "tags": [
+        "Claude Code",
+        "Large Codebases",
+        "AI Coding",
+        "Software Engineering",
+        "Best Practices"
+      ],
+      "mainPoints": [
+        {
+          "point": "The 'harness' around the model is more critical than the model itself for success in large codebases.",
+          "explanation": "Claude Code's performance is determined by the ecosystem of CLAUDE.md files, hooks, skills, plugins, and MCP servers. These components provide context, enforce rules, and distribute expertise, making the tool effective at scale."
+        },
+        {
+          "point": "Effective deployments invest in making the codebase navigable through layered context and symbol-level search.",
+          "explanation": "Lean, hierarchical CLAUDE.md files provide progressive context, while LSP integrations enable symbol-level navigation, preventing Claude from getting lost in large codebases or misinterpreting text-based searches."
+        },
+        {
+          "point": "Organizational ownership and infrastructure investment are essential for driving adoption.",
+          "explanation": "Dedicated teams or a single DRI (Directly Responsible Individual) should manage the Claude Code configuration, curate plugins, and establish conventions. This prevents knowledge from becoming tribal and ensures a productive first experience for all developers."
+        }
+      ],
+      "keyQuotes": [
+        "One of the most common misconceptions about Claude Code is that its capabilities are solely defined by the model used. In practice, the ecosystem built around the model—the harness—determines how Claude Code performs more than the model alone.",
+        "Agentic search avoids those failure modes. There's no embedding pipeline or centralized index to maintain as thousands of engineers commit new code. Each developer's instance works from the live codebase.",
+        "The organizations that got it right invested in the organizational layer, too. The rollouts that spread fastest had a dedicated infrastructure investment before broad access.",
+        "Teams should expect to do a meaningful configuration review every three to six months, but it's also worth doing one whenever performance feels like it's plateaued after major model releases.",
+        "Bottoms-up adoption generates enthusiasm but can fragment without someone to centralize what works."
+      ],
+      "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+      "readUrl": "https://www.bestblogs.dev/article/243d2340",
+      "enclosureUrl": null,
+      "domain": "claude.com",
+      "cover": "https://image.jido.dev/20260416004451_68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_154bc38a",
+      "sourceName": "Claude Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/689f4a9aff1f63fde75cf733_favicon.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 93,
+      "readCount": 869,
+      "wordCount": 2710,
+      "readTime": 11,
+      "mediaDuration": null,
+      "authors": [
+        "Claude Blog"
+      ],
+      "publishTimeStamp": 1778688000000,
+      "publishDateStr": "05-13",
+      "publishDateTimeStr": "2026-05-13 16:00:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_94694e50",
+        "type": "ARTICLE",
+        "title": "Best practices for computer and browser use with Claude | Claude",
+        "oneSentenceSummary": "This article provides official best practices for integrating Claude's computer and browser use capabilities, focusing on screenshot scaling, resolution selection, click accuracy optimization, thinking effort tuning, and prompt injection defense.",
+        "url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_504ce725",
+        "type": "ARTICLE",
+        "title": "Harness design for long-running application development",
+        "oneSentenceSummary": "This article explores Anthropic's multi-agent harness design (Planner, Generator, Evaluator) for long-running autonomous coding, detailing how to overcome context anxiety and self-evaluation bias to build complex full-stack applications.",
+        "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_bf9ab35c",
+        "type": "ARTICLE",
+        "title": "Claude Code auto mode: a safer way to skip permissions",
+        "oneSentenceSummary": "Claude Code's new Auto mode uses a two-stage model-based classifier and prompt-injection probes to autonomously gate dangerous actions, balancing developer productivity with security.",
+        "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_c1ecbe08",
+        "type": "ARTICLE",
+        "title": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude",
+        "oneSentenceSummary": "Brendan MacLean, principal developer of the 700,000-line Skyline codebase, applies his 17-year methodology of onboarding human developers to Claude Code, using context, skills, and MCP integrations to make a legacy codebase manageable again.",
+        "url": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_862b9f1",
+        "type": "VIDEO",
+        "title": "Martin Fowler & Kent Beck: Frameworks for reinventing software， again and again",
+        "oneSentenceSummary": "Software legends Martin Fowler and Kent Beck discuss how AI redefines software engineering, emphasizing that core practices like TDD and modularity remain essential for human-AI collaboration.",
+        "url": "https://www.youtube.com/watch?v=CZs8J1ZD0CE",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_c31f1686",
+        "type": "ARTICLE",
+        "title": "Multi-agent coordination patterns: Five approaches and when to use them | Claude",
+        "oneSentenceSummary": "Anthropic outlines five core multi-agent coordination patterns—Generator-verifier, Orchestrator-subagent, Agent teams, Message bus, and Shared-state—providing a decision framework for selecting the right architecture based on task complexity and context needs.",
+        "url": "https://claude.com/blog/multi-agent-coordination-patterns",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_6ebdeb6e",
+        "type": "ARTICLE",
+        "title": "The Advisor Strategy: Boosting Claude Sonnet with Opus",
+        "oneSentenceSummary": "Anthropic introduces the 'advisor tool' for the Claude API, enabling a cost-effective strategy where smaller models (Sonnet/Haiku) execute tasks and only consult a larger model (Opus) for high-level guidance.",
+        "url": "https://claude.com/blog/the-advisor-strategy",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_3b1c0638",
+        "type": "ARTICLE",
+        "title": "Introducing Claude Opus 4.7",
+        "oneSentenceSummary": "Anthropic has released Claude Opus 4.7, a significant upgrade over Opus 4.6 with major improvements in advanced software engineering, vision capabilities, instruction following, and autonomous long-horizon reasoning, while implementing new cyber safeguards and maintaining the same pricing.",
+        "url": "https://www.anthropic.com/news/claude-opus-4-7",
+        "sourceName": "Anthropic News"
+      },
+      {
+        "id": "RAW_1369401",
+        "type": "VIDEO",
+        "title": "Andrej Karpathy on Code Agents， AutoResearch， and the Loopy Era of AI",
+        "oneSentenceSummary": "Andrej Karpathy explores the paradigm shift from manual programming to agent orchestration, the automation of AI research, and the profound implications for software engineering and education.",
+        "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+        "sourceName": "No Priors"
+      }
+    ]
+  }
+}

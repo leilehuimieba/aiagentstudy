@@ -1,0 +1,88 @@
+{
+  "id": "RAW_b71c47ef",
+  "notExist": null,
+  "originalTitle": "重新定义 Skill 开发：保姆级教程&一站式开发助手发布",
+  "title": "Redefining Skill Development: A Step-by-Step Guide & One-Stop Development Assistant Launch",
+  "oneSentenceSummary": "This article systematically introduces the concept of AI Agent Skill, including its directory structure, writing standards, release process, and cross-platform challenges. It also launches a one-stop Skill development assistant, skill-dev-aio, designed to free developers from tedious tool learning and allow them to focus on experience and judgment.",
+  "summary": "Based on internal practices at Alibaba, this article provides a comprehensive guide to developing and managing AI Agent Skills. It begins with the essence of Skill (a structured instruction document) and an analogy (developing an operations manual), explaining its three-level loading mechanism in detail. Subsequently, the article covers the Skill directory structure, the YAML header and Markdown body writing standards for the SKILL.md file, and provides a complete workflow from installation to release. It deeply analyzes three major pain points in the Skill ecosystem: cross-platform consistency, version management, and development/debugging efficiency, offering specific strategies and best practices. Finally, the article announces the launch of the one-stop Skill development assistant, skill-dev-aio, which integrates features like creation, publishing, evaluation, querying, migration, and batch updates, aiming to lower the barrier to Skill development and let developers focus on experience and judgment.",
+  "featuredReason": "A practical guide for developers turning repeated workflows into reusable Agent Skills. It explains trigger design, file structure, authoring conventions, release, debugging, evaluation, and cross-platform migration, then ties those ideas to the skill-dev-aio assistant. Read it if you want a concrete operating model for building Skills rather than another abstract prompt-engineering essay.",
+  "translateContent": null,
+  "tags": [
+    "AI Agent",
+    "Skill",
+    "Agent Development",
+    "Workflow Automation",
+    "Best Practices"
+  ],
+  "mainPoints": [
+    {
+      "point": "Skill is a structured instruction document for AI Agents, providing information on demand through a progressive loading mechanism.",
+      "explanation": "Skill defines trigger conditions, workflows, and resources through a YAML header and Markdown body. It employs a three-level loading strategy (name/description, body, additional resources) to conserve the Agent's context window and ensure precise execution."
+    },
+    {
+      "point": "Writing high-quality Skills requires following a four-step creative mindset and writing principles, with particular emphasis on crafting the description.",
+      "explanation": "From determining trigger timing, input/output, and general flow to supplementing details, a four-step method ensures a clear Skill structure. The description is the trigger entry point and must contain rich keywords and scenarios, avoiding being too general. The body should use imperative sentences, explain the rationale, and control length."
+    },
+    {
+      "point": "The Skill ecosystem faces three major pain points: cross-platform consistency, version management, and development/debugging efficiency, which need to be addressed through standards and practices.",
+      "explanation": "Cross-platform issues can be resolved through the 'Three Purity' principle, comment isolation, and a 'Three Checks' checklist. Version management requires introducing release rigor (Code Review, canary releases) and automatic update mechanisms. Development and debugging efficiency can be improved through methods like hot reloading, symbolic links, and Eval-Driven Dev, compressing iteration time from minutes to seconds."
+    },
+    {
+      "point": "Self-evolution of Skills is the future direction, but it requires eval as a safety net to prevent self-degradation.",
+      "explanation": "Through execution records, binary evaluation, and reflection mechanisms, Skills can automatically iterate and optimize. However, this must be paired with regression testing and version snapshots to prevent the Agent from introducing conflicting rules to pass a single case, leading to overall performance degradation."
+    },
+    {
+      "point": "The one-stop Skill development assistant, skill-dev-aio, aims to lower the development barrier, enabling developers to focus on experience and judgment.",
+      "explanation": "This tool integrates six major functions: quick creation, one-click publishing, performance scoring, querying, cross-platform migration, and batch updates. It encapsulates the complex Skill development process into a single Skill, allowing developers to efficiently manage and iterate their skills without needing to delve into tool details."
+    }
+  ],
+  "keyQuotes": [
+    "Skill doesn't replace 'you'; it replaces the repetitive, tedious, error-prone tasks that shouldn't occupy your brain in the first place.",
+    "What you should be anxious about isn't 'being replaced by Skill,' but 'not having learned to use Skill yet.'",
+    "The real bottleneck isn't writing; it's 'making the Agent see the updated version after you change it.'",
+    "Self-modification without eval as a safety net is a slow suicide.",
+    "We should place our value on Experience and Judgment."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560111&idx=1&sn=d90140ce9a63a953c990c1696a01beef",
+  "readUrl": "https://www.bestblogs.dev/article/b71c47ef",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045355_2bca1ae8",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_26c5f1",
+  "sourceName": "阿里云开发者",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045355_2bca1ae8",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 93,
+  "readCount": 1356,
+  "wordCount": 7997,
+  "readTime": 32,
+  "mediaDuration": null,
+  "authors": [
+    "阿里云开发者"
+  ],
+  "publishTimeStamp": 1779064200000,
+  "publishDateStr": "05-18",
+  "publishDateTimeStr": "2026-05-18 08:30:00",
+  "qualified": true,
+  "stickTop": false,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

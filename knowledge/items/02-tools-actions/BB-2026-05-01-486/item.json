@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-03",
+  "id": "BB-2026-05-01-486",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-486/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-486",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-486/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-486/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-486/raw/discovery.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-486/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-486/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-486/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Anthropic News",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Anthropic News",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Safety & Alignment",
+    "Cybersecurity",
+    "AI Agent",
+    "Red Teaming",
+    "MITRE ATT&CK"
+  ],
+  "title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "https://www.bestblogs.dev/article/d632aa80"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/d632aa80"
+  }
+}

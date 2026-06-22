@@ -1,0 +1,90 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-03-24",
+  "id": "BB-2026-05-01-143",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-143/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-143",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-143/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-143/raw/dom-full.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-143/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-143/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Anthropic Engineering",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Anthropic Engineering",
+  "status": "Full text + source captured",
+  "tags": [
+    "Claude Code",
+    "AI 智能体",
+    "AI 安全",
+    "自动模式",
+    "提示词注入"
+  ],
+  "title": "Claude Code 自动模式：一种更安全的跳过权限确认方式",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "http://code.claude.com/docs/en/permission-modes#eliminate-prompts-with-auto-mode",
+      "https://www-cdn.anthropic.com/14e4fb01875d2a69f646fa5e574dea2b1c0ff7b5.pdf",
+      "https://www.anthropic.com/engineering/claude-code-auto-mode",
+      "https://www.bestblogs.dev/",
+      "https://www.bestblogs.dev/article/3b1c0638?entry=related_article",
+      "https://www.bestblogs.dev/article/4463b68b?entry=related_article",
+      "https://www.bestblogs.dev/article/46822472?entry=related_article",
+      "https://www.bestblogs.dev/article/504ce725?entry=related_article",
+      "https://www.bestblogs.dev/article/70b91279?entry=related_article",
+      "https://www.bestblogs.dev/article/a6d9083a?entry=related_article",
+      "https://www.bestblogs.dev/article/bf9ab35c",
+      "https://www.bestblogs.dev/articles?sourceid=b5aa963e",
+      "https://www.bestblogs.dev/docs",
+      "https://www.bestblogs.dev/explore",
+      "https://www.bestblogs.dev/explore/brief",
+      "https://www.bestblogs.dev/explore/newsletter",
+      "https://www.bestblogs.dev/explore/sources",
+      "https://www.bestblogs.dev/explore/topics",
+      "https://www.bestblogs.dev/library/bookmarks",
+      "https://www.bestblogs.dev/library/highlights",
+      "https://www.bestblogs.dev/library/history",
+      "https://www.bestblogs.dev/library/review",
+      "https://www.bestblogs.dev/reading/brief",
+      "https://www.bestblogs.dev/reading/feed",
+      "https://www.bestblogs.dev/reading/follow",
+      "https://www.bestblogs.dev/settings",
+      "https://www.bestblogs.dev/status/2019467372609040752?entry=related_article",
+      "https://www.bestblogs.dev/status/2041578392852517128?entry=related_article",
+      "https://www.bestblogs.dev/status/2047376561205325845?entry=related_article",
+      "https://www.bestblogs.dev/video/862b9f1?entry=related_article"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/bf9ab35c"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Taff7a0a5a70442ba90727bbae2cca577",
+  "data": {
+    "metaData": {
+      "id": "RAW_17cd71a0",
+      "notExist": null,
+      "originalTitle": "在 Anthropic 的读心术之外，大模型黑盒迎来了真正的法医  | Hao 好聊论文",
+      "title": "Beyond Anthropic's Mind Reading: True Forensics for the Black Box of Large Models | Hao's Paper Chat",
+      "oneSentenceSummary": "This article provides an in-depth interpretation of Goodfire's VPD (Verified Parameter Decomposition) method, comparing it with Anthropic's SAE approach. It argues for the necessity of interpretability research at the model weight level, marking a crucial step for AI to evolve from alchemy to science.",
+      "summary": "Using Anthropic's dominance in the interpretability field as a starting point, the article introduces the VPD (Verified Parameter Decomposition) method proposed by Goodfire. It first outlines three technical routes for interpretability: linear probes, SAE (Sparse Autoencoders), and parameter decomposition, pointing out that SAE suffers from an inherent 'feature splitting' problem where the number of features found is influenced by dictionary size, leading to instability. VPD, in contrast, directly decomposes model weights. Through two key techniques, 'adversarial ablation' and 'frequency minimization,' it identifies approximately 6,500-7,000 physically real 'gears' within the model. Using two case studies—'distributed synergy of attention heads' and 'the model autonomously learning grammar'—the article demonstrates VPD's unique advantage in revealing the internal mechanical principles of models. Finally, it places VPD within the broader context of 'AI scientification,' arguing that it marks a shift in interpretability from 'peripheral observation' to 'deep surgery,' offering new possibilities for model alignment, safety auditing, and fine-grained editing.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Large Model Interpretability",
+        "VPD",
+        "SAE",
+        "Goodfire",
+        "Anthropic"
+      ],
+      "mainPoints": [
+        {
+          "point": "The SAE method suffers from a 'feature splitting' problem, where the number of features found is determined by the dictionary size, not by the model itself.",
+          "explanation": "Features found by SAE can be fragmented, reorganized, and shifted depending on the dictionary size, making circuit diagrams built on these features unstable and unreliable as a foundation for the model's true structure."
+        },
+        {
+          "point": "Through the two key techniques of 'adversarial ablation' and 'frequency minimization,' VPD identifies physically real computational units within the model.",
+          "explanation": "Adversarial ablation isolates the gear under test by constructing extreme contexts, preventing compensation from other gears; frequency minimization uses non-linear penalties to force the model to merge fragmented features, stably identifying approximately 6,500-7,000 core gears."
+        },
+        {
+          "point": "VPD reveals that the internal mechanisms of models are distributed synergies across macro-structures, rather than a simple 'one component for one function' model.",
+          "explanation": "For example, the gear responsible for 'attending to the previous word' does not reside in a specific attention head but is uniformly distributed across all attention heads, overturning conventional understanding."
+        },
+        {
+          "point": "The VPD approach upgrades interpretability from 'peripheral observation' to 'deep surgery,' allowing for physical-level modifications to the model.",
+          "explanation": "Unlike the temporary interventions of SAE, VPD can permanently remove or modify the physical gears inside the model, enabling physical removal of capabilities, auditable causal chains, and model stitching and editing."
+        }
+      ],
+      "keyQuotes": [
+        "VPD is not an isolated paper; it is a signal flare in the current wave of the 'AI scientification' movement.",
+        "Over the past two years, the SAE camp has gradually elevated its positioning to 'I can do neuroanatomy.' Goodfire's paper is a gentle but firm course correction: what you do is functional MRI; real anatomy is done this way.",
+        "VPD sacrifices the intuitive readability of human language. You may not be able to perfectly define a certain gear in natural language, but in return, you gain complete physical control over the machine.",
+        "The past decade of AI has had a strange situation: engineering progress has far outpaced scientific explanation. ...This is essentially no different from alchemy before the birth of chemistry.",
+        "We are probably standing at a turning point. Looking back, we today might be remembered as the last generation who could make models exhibit emergent intelligence based solely on experience and intuition."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691568118&idx=1&sn=e6b0051af4c8dc24b171a2248686b325",
+      "readUrl": "https://www.bestblogs.dev/article/17cd71a0",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_b475c7",
+      "sourceName": "腾讯科技",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "MODELS",
+      "aiSubCategoryDesc": "AI Models",
+      "category": "Business_Tech",
+      "categoryDesc": "Business & Tech",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 33,
+      "wordCount": 8167,
+      "readTime": 33,
+      "mediaDuration": null,
+      "authors": [
+        "腾讯科技"
+      ],
+      "publishTimeStamp": 1778468100000,
+      "publishDateStr": "05-11",
+      "publishDateTimeStr": "2026-05-11 02:55:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_0eb56b31",
+        "type": "ARTICLE",
+        "title": "Q1 2026: AI Agents Come of Age | 2026 Q1 AI Trend White Paper",
+        "oneSentenceSummary": "This article provides an in-depth analysis of four structural trends in AI Agents for Q1 2026: long-horizon productization, harness engineering, recursive R&D, and the Skill ecosystem, revealing the flywheel effect as Agents evolve from tools into independent 'new colleagues'.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566882&idx=1&sn=7c3c4f547cd381c0265079fc65991f48",
+        "sourceName": "腾讯科技"
+      },
+      {
+        "id": "RAW_9e0fdd94",
+        "type": "ARTICLE",
+        "title": "Google to Reclaim the Throne? Gemini 3.1 Pro Reasoning Scores Double, Hallucination Rates Decline, Prices Unchanged",
+        "oneSentenceSummary": "Google releases Gemini 3.1 Pro, significantly boosting reasoning capabilities through an innovative 'three-level thinking' mode, doubling its ARC-AGI-2 score, and challenging OpenAI and Anthropic's leadership with a 'more for the same price' strategy.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691565054&idx=1&sn=9b94c9bd90484f1026f813f5bb7174f4",
+        "sourceName": "腾讯科技"
+      },
+      {
+        "id": "RAW_5b7ab5d5",
+        "type": "ARTICLE",
+        "title": "Understanding Harness Engineering: Finding the Shell That Keeps AI from Going Rogue—Insights from 14 Engineering Articles | Hao's Trend Talk",
+        "oneSentenceSummary": "This article provides an in-depth analysis of \"Harness Engineering,\" a core technology in the AI Agent field. It reveals how to compensate for model shortcomings through a three-layer management architecture and proposes the logic of \"Compensation Surface Migration\" that evolves with model capabilities.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566633&idx=1&sn=e8c2ba401e2a6f4fee1f8583159f5ecd",
+        "sourceName": "腾讯科技"
+      },
+      {
+        "id": "RAW_71f5de13",
+        "type": "ARTICLE",
+        "title": "Why Did Hermes Take Over from OpenClaw in Just Two Months?",
+        "oneSentenceSummary": "This article provides an in-depth comparison between the rising open-source AI Agent star Hermes and its predecessor OpenClaw, arguing that Hermes' success stems not from functional superiority but from encapsulating decision complexity—such as skill auto-evolution and proactive memory management—within underlying deterministic rules. This engineering safety net allowed it to deliver an automated 'gets better with use' experience precisely when the underlying technology was just barely sufficient.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691567081&idx=1&sn=818da2e31c305032dbabf37b44c79bec",
+        "sourceName": "腾讯科技"
+      },
+      {
+        "id": "RAW_77f3363",
+        "type": "PODCAST",
+        "title": "#427. A Conversation with the Head of Claude Code: The Paradigm Shift from Engineer to 'Builder'",
+        "oneSentenceSummary": "A conversation with an Anthropic lead exploring how the AI coding tool Claude Code is reshaping software engineering, signaling a paradigm shift from 'programmer' to 'builder'.",
+        "url": "https://www.xiaoyuzhoufm.com/episode/6997386f66e2c30377d209aa",
+        "sourceName": "跨国串门儿计划"
+      },
+      {
+        "id": "RAW_b802bf6",
+        "type": "PODCAST",
+        "title": "#450. The 'Printing Press' Moment for Programmers: A Conversation with Claude Code Creator Boris Cherny on the Evolution of AI Programming",
+        "oneSentenceSummary": "A conversation with Boris Cherny, creator of Claude Code, exploring how AI agents are revolutionizing software engineering paradigms and the future role of engineers.",
+        "url": "https://www.xiaoyuzhoufm.com/episode/69a95f49d7ec33e774549f3a",
+        "sourceName": "跨国串门儿计划"
+      },
+      {
+        "id": "RAW_eea36552",
+        "type": "ARTICLE",
+        "title": "Claude Sonnet 4.6 Released",
+        "oneSentenceSummary": "Anthropic releases Claude Sonnet 4.6, featuring a 1-million-token context window, a leap in Computer Use performance, and intelligence levels approaching the Opus class, all while maintaining the same price.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247513208&idx=1&sn=1054fd1767e6d1f803e3648239594947",
+        "sourceName": "赛博禅心"
+      },
+      {
+        "id": "RAW_ba9a21ac",
+        "type": "ARTICLE",
+        "title": "Claude's Strongest Sonnet Model 4.6 is Here, Featuring a Million-Token Context Window",
+        "oneSentenceSummary": "Anthropic has released the Claude Sonnet 4.6 model, focusing on upgrades to its million-token long context, computer use capabilities, and coding performance, with overall performance approaching or even surpassing the Opus level in some tests.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651017513&idx=2&sn=781e04048d4f59a46572accfa0603ee8",
+        "sourceName": "机器之心"
+      },
+      {
+        "id": "RAW_4734ede9",
+        "type": "ARTICLE",
+        "title": "Understanding GPT-5.4: Surpassing Human Experts in 83% of Tasks, with an $80 Cost Just to Say Hello",
+        "oneSentenceSummary": "OpenAI releases its flagship model GPT-5.4, featuring native Computer Use capabilities and an agent-oriented design, outperforming human experts in 83% of professional tasks.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691565484&idx=1&sn=fe7b6e3465269fc59531099b72a3a0d4",
+        "sourceName": "腾讯科技"
+      },
+      {
+        "id": "RAW_a4391a3",
+        "type": "PODCAST",
+        "title": "140. A 4-Hour Interview with Yao Shunyu: Let Me Be a Little Crazy! Training Models at Anthropic and Gemini, Tech Predictions, and the End of Heroism",
+        "oneSentenceSummary": "An in-depth conversation with former Anthropic and Google DeepMind researcher Yao Shunyu, sharing frontline experience training Claude 3.7/4.5 and Gemini 3, exploring that model capabilities have not plateaued, the arrival of the AI collectivism era, and the true driving forces behind technological development.",
+        "url": "https://www.xiaoyuzhoufm.com/episode/6a00aa051b7bd50295dfe41d",
+        "sourceName": "张小珺Jùn｜商业访谈录"
+      }
+    ]
+  }
+}

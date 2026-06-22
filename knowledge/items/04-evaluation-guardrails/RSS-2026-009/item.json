@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "Fri, 05 Jun 2026 06:44:49 GMT",
+    "updated": ""
+  },
+  "date": "2026-06-05",
+  "id": "RSS-2026-009",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/RSS-2026-009/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-009",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-009/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-009/raw/feed-entry.json",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-009/raw/page-text.txt",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-009/raw/page.html"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/RSS-2026-009/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/RSS-2026-009/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / Latent Space",
+  "source_id": "latent-space",
+  "source_name": "Latent Space",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "Latent Space",
+    "RSS",
+    "AI Agent",
+    "Agentic AI",
+    "LLM",
+    "RAG",
+    "Benchmark",
+    "Evaluation"
+  ],
+  "title": "[AINews] not much happened today",
+  "topic": "04-evaluation-guardrails",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://www.latent.space/feed",
+      "https://www.latent.space/p/ainews-not-much-happened-today-7a8"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://www.latent.space/feed",
+    "original_url": "https://www.latent.space/p/ainews-not-much-happened-today-7a8",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.latent.space/p/ainews-not-much-happened-today-7a8"
+  }
+}

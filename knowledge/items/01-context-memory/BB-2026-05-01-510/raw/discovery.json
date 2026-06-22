@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "字节跳动技术团队"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045356_0393a1bf",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_1b5377fa",
+  "keyQuotes": [
+    "You're not using an AI tool — you're feeding a goldfish that forgets everything every morning.",
+    "True AI collaboration should understand you better the more you use it, not require you to reintroduce yourself every time.",
+    "OpenViking is the 'memory hub' connecting you and all your AI Agent tools."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Current AI Agent tools have isolated sessions, preventing design specifications and historical decisions from being inherited, forcing users to repeatedly describe context, making the Agent less effective over time.",
+      "point": "The core bottleneck of Agent collaboration is the lack of a structured, cross-session long-term memory foundation."
+    },
+    {
+      "explanation": "It connects with tools like Trae, Codex, and Claude Code, automatically extracting and structurally storing four types of memory (entities, events, preferences, profile) during conversations.",
+      "point": "OpenViking acts as the Agent's memory hub via the MCP protocol, enabling cross-tool memory sharing."
+    },
+    {
+      "explanation": "It first uses an LLM to understand the user's task intent, then routes the query to the corresponding level of the memory tree for recursive search, improving recall accuracy.",
+      "point": "Its recall mechanism uses a two-stage strategy of 'intent analysis + hierarchical retrieval,' rather than simple keyword matching."
+    },
+    {
+      "explanation": "Multiple sessions, SubAgents, or different Agent tools within the same project can share a single project memory, preventing context breaks and style inconsistencies.",
+      "point": "Cross-session, cross-SubAgent, and cross-platform memory sharing is the core value of OpenViking."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "OpenViking is an Agent memory hub centered on the MCP protocol, using structured memory extraction, intent analysis, and hierarchical retrieval to solve the problem of broken context in frontend development across sessions, agents, and platforms.",
+  "originalTitle": "你的 Agent 每次都“失忆”？这个工具彻底治好了我的前端开发焦虑",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-08 17:08:00",
+  "publishTimeStamp": 1780909680000,
+  "qualified": false,
+  "readCount": 42,
+  "readTime": 17,
+  "readUrl": "https://www.bestblogs.dev/article/1b5377fa",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_aeae8d",
+  "sourceImage": "https://image.jido.dev/20251127045356_0393a1bf",
+  "sourceName": "字节跳动技术团队",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article, published by the ByteDance technical team, introduces their open-source Agent memory management tool, OpenViking. It starts from the common pain point of frontend developers using AI Agents: \"memory loss\" — the Agent cannot inherit context across sessions, tools, or SubAgents, forcing developers to repeatedly describe design specifications and historical decisions for each collaboration. OpenViking uses the MCP protocol to connect with tools like Trae, Codex, and Claude Code, automatically extracting and structurally storing four types of memory during conversations: entities, events, preferences, and profile. Its recall mechanism employs a two-stage strategy of \"intent analysis + hierarchical retrieval\": first, it uses an LLM to understand the user's task intent, then routes the query to the corresponding level of the memory tree for recursive search. The article demonstrates the complete workflow through a case study of \"building a product Playground webpage,\" covering everything from automatic specification sedimentation, one-sentence recall, incremental specification addition, to the final effect comparison. Finally, it provides the MCP configuration steps and rule templates for integrating OpenViking into Trae.",
+  "tags": [
+    "AI Agent",
+    "MCP Protocol",
+    "AI Coding",
+    "Context Engineering",
+    "Frontend Development"
+  ],
+  "title": "Your Agent Always \"Loses Memory\"? This Tool Completely Cured My Frontend Development Anxiety",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520252&idx=1&sn=965325b6e00360e3d3bd90f561598f17",
+  "wordCount": 4067
+}

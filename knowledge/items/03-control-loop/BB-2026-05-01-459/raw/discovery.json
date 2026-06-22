@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Auriel Wright"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260605190249_e58868ac-23a0-453d-81e5-5ca830f7454d_1456x1394.png",
+  "domain": "latent.space",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_cdd6597f",
+  "keyQuotes": [
+    "A flaky harness systematically generates garbage data and feeds it straight into your model's learning steps, pushing your gradients in the wrong direction.",
+    "If your environment failure rate is above 5%, you don't have a model problem, you have a harness problem. Fix the harness first.",
+    "Treat your training harness like your production one as much as you can."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "In RL, the model generates its own training data by interacting with the environment. A broken harness generates garbage data that pushes gradients in the wrong direction, ruining training runs.",
+      "point": "A flaky RL environment is a systematic data poisoner, not a minor inconvenience."
+    },
+    {
+      "explanation": "The article provides a taxonomy of failures with concrete examples: a stale cache teaches an agent to avoid correct workflows; a reward hack teaches a coding agent to hardcode outputs; a false resolution teaches a support agent to close tickets without solving problems.",
+      "point": "Common harness failures include stale caches, reward hacks, and false resolutions."
+    },
+    {
+      "explanation": "Building stable harnesses requires fail-fast behavior, graceful degradation, and clean signal. The author recommends treating the training harness like a production system and learning from platform engineers.",
+      "point": "Adopt traditional software engineering practices for RL research harnesses."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article argues that low-quality RL environments (harnesses) systematically generate garbage training data, ruining model performance, and provides a taxonomy of common harness failures with concrete examples and fixes.",
+  "originalTitle": "How to Stop Shipping Low-Quality RL Environments (with Examples)",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-06",
+  "publishDateTimeStr": "2026-06-06 02:49:40",
+  "publishTimeStamp": 1780685380000,
+  "qualified": false,
+  "readCount": 68,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/cdd6597f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_fc479e",
+  "sourceImage": "https://image.jido.dev/20260527050728_73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+  "sourceName": "Latent.Space",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This guest post by Auriel W, an RL practitioner at Gemini, presents a practitioner's perspective on the critical importance of RL environment (harness) quality. The author argues that a flaky harness is not a minor inconvenience but a systematic data poisoner, as in RL the environment generates the training data. The article categorizes common harness failures into three main classes: The Stale Cache (returning old data), The Reward Hack (agent gaming the metric), and The False Resolution (rewarding status changes over problem resolution). It also lists additional failures like silent timeout defaults, non-deterministic state resets, and action space drift. For each failure, the author provides a concrete example (e.g., a SaaS sales agent, a coding agent, a customer support agent) and traces how a single bug poisons an entire training episode. The article concludes with practical advice: maintain a failure rate below 5%, adopt traditional software engineering best practices for harnesses, and treat the training harness as an extension of the production product.",
+  "tags": [
+    "RL",
+    "AI Agent",
+    "Training Infrastructure",
+    "Data Quality",
+    "Software Engineering"
+  ],
+  "title": "How to Stop Shipping Low-Quality RL Environments (with Examples)",
+  "translateContent": null,
+  "url": "https://www.latent.space/p/bad-envs",
+  "wordCount": 1292
+}

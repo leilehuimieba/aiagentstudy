@@ -1,0 +1,461 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-09",
+  "default_browser_profile": "qmvqcrb8",
+  "groups": [
+    {
+      "id": "papers-primary",
+      "name": "Primary AI Paper Sources",
+      "priority": 1,
+      "purpose": "Latest research papers, benchmarks, model training, model optimization, AI-agent papers.",
+      "sources": [
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/",
+          "api": "https://export.arxiv.org/api/query",
+          "rss_examples": [
+            "https://rss.arxiv.org/rss/cs.AI",
+            "https://rss.arxiv.org/rss/cs.CL",
+            "https://rss.arxiv.org/rss/cs.LG",
+            "https://rss.arxiv.org/rss/stat.ML"
+          ],
+          "capture_route": "api-first",
+          "browser_needed": false,
+          "landing_topics": ["01-context-memory", "03-control-loop", "04-evaluation-guardrails", "06-frontier-radar"],
+          "queries": ["agent", "large language model", "tool use", "computer use", "post-training", "inference optimization", "RAG"]
+        },
+        {
+          "id": "openreview",
+          "name": "OpenReview",
+          "url": "https://openreview.net/",
+          "docs": "https://docs.openreview.net/getting-started/using-the-api",
+          "capture_route": "api-first",
+          "browser_needed": false,
+          "landing_topics": ["04-evaluation-guardrails", "06-frontier-radar"],
+          "queries": ["ICLR", "NeurIPS", "ICML", "TMLR", "agent benchmark", "tool use"]
+        },
+        {
+          "id": "semantic-scholar",
+          "name": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/",
+          "api": "https://api.semanticscholar.org/graph/v1",
+          "docs": "https://api.semanticscholar.org/api-docs/graph",
+          "capture_route": "api-first",
+          "browser_needed": false,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["paper metadata enrichment", "citations", "references", "authors", "TLDR"]
+        },
+        {
+          "id": "huggingface-papers",
+          "name": "Hugging Face Papers",
+          "url": "https://huggingface.co/papers/trending",
+          "capture_route": "browser-or-http",
+          "browser_needed": true,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["daily trending papers", "models", "agents", "datasets", "benchmarks"]
+        },
+        {
+          "id": "acl-anthology",
+          "name": "ACL Anthology",
+          "url": "https://aclanthology.org/",
+          "capture_route": "http-or-api",
+          "browser_needed": false,
+          "landing_topics": ["01-context-memory", "06-frontier-radar"],
+          "queries": ["LLM", "retrieval", "tool use", "agents", "NLP"]
+        },
+        {
+          "id": "papers-with-code",
+          "name": "Papers with Code",
+          "url": "https://paperswithcode.com/",
+          "capture_route": "browser-or-http",
+          "browser_needed": true,
+          "landing_topics": ["04-evaluation-guardrails", "06-frontier-radar"],
+          "queries": ["benchmarks", "leaderboards", "code release", "state of the art"]
+        },
+        {
+          "id": "alphaxiv",
+          "name": "alphaXiv",
+          "url": "https://www.alphaxiv.org/",
+          "capture_route": "browser",
+          "browser_needed": true,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["arxiv discussion", "paper comments", "community discussion"]
+        }
+      ]
+    },
+    {
+      "id": "official-labs",
+      "name": "Official Labs and AI Companies",
+      "priority": 1,
+      "purpose": "Authoritative model releases, safety notes, research updates, product and policy announcements.",
+      "sources": [
+        {
+          "id": "openai-news",
+          "name": "OpenAI News",
+          "url": "https://openai.com/news/",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "04-evaluation-guardrails", "06-frontier-radar"],
+          "queries": ["models", "agents", "safety", "research", "product"]
+        },
+        {
+          "id": "anthropic-news",
+          "name": "Anthropic News",
+          "url": "https://www.anthropic.com/news",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "04-evaluation-guardrails", "06-frontier-radar"],
+          "queries": ["Claude", "Claude Code", "safety", "interpretability", "agents"]
+        },
+        {
+          "id": "google-deepmind",
+          "name": "Google DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/",
+          "rss": "https://deepmind.google/blog/rss.xml",
+          "capture_route": "rss-or-http",
+          "browser_needed": false,
+          "landing_topics": ["04-evaluation-guardrails", "06-frontier-radar"],
+          "queries": ["Gemini", "agents", "world models", "safety", "research"]
+        },
+        {
+          "id": "meta-ai",
+          "name": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["Llama", "models", "multimodal", "open source"]
+        },
+        {
+          "id": "microsoft-research-ai",
+          "name": "Microsoft Research AI",
+          "url": "https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["04-evaluation-guardrails", "06-frontier-radar"],
+          "queries": ["AI agents", "benchmarks", "research", "systems"]
+        },
+        {
+          "id": "nvidia-technical-blog-ai",
+          "name": "NVIDIA Technical Blog AI",
+          "url": "https://developer.nvidia.com/blog/category/artificial-intelligence/",
+          "rss": "https://developer.nvidia.com/blog/category/artificial-intelligence/feed/",
+          "capture_route": "rss-or-http",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "06-frontier-radar"],
+          "queries": ["inference optimization", "GPU", "quantization", "deployment"]
+        },
+        {
+          "id": "huggingface-blog",
+          "name": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog",
+          "rss": "https://huggingface.co/blog/feed.xml",
+          "capture_route": "rss-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "03-control-loop", "06-frontier-radar"],
+          "queries": ["agents", "models", "datasets", "training", "inference"]
+        },
+        {
+          "id": "mistral-news",
+          "name": "Mistral AI News",
+          "url": "https://mistral.ai/news",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["models", "agents", "enterprise", "open models"]
+        },
+        {
+          "id": "qwen-blog",
+          "name": "Qwen Blog",
+          "url": "https://qwenlm.github.io/blog/",
+          "capture_route": "http",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "06-frontier-radar"],
+          "queries": ["Qwen", "agent", "coding", "multimodal", "benchmarks"]
+        },
+        {
+          "id": "deepseek-news",
+          "name": "DeepSeek",
+          "url": "https://www.deepseek.com/",
+          "capture_route": "browser-or-http",
+          "browser_needed": true,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["DeepSeek", "model release", "technical report"]
+        },
+        {
+          "id": "kimi",
+          "name": "Kimi / Moonshot AI",
+          "url": "https://kimi.moonshot.cn/",
+          "capture_route": "browser",
+          "browser_needed": true,
+          "landing_topics": ["02-tools-actions", "06-frontier-radar"],
+          "queries": ["Kimi", "Kimi Work", "browser", "agent"]
+        }
+      ]
+    },
+    {
+      "id": "agent-engineering",
+      "name": "Agent Engineering and Practitioner Sources",
+      "priority": 2,
+      "purpose": "Practical agent frameworks, harnesses, RAG, context engineering, tool use, coding agents, production lessons.",
+      "sources": [
+        {
+          "id": "langchain-blog",
+          "name": "LangChain Blog",
+          "url": "https://blog.langchain.com/",
+          "rss": "https://blog.langchain.com/rss.xml",
+          "capture_route": "rss-or-http",
+          "browser_needed": false,
+          "landing_topics": ["01-context-memory", "02-tools-actions", "03-control-loop"],
+          "queries": ["LangGraph", "agent harness", "memory", "evals", "LangSmith"]
+        },
+        {
+          "id": "llamaindex-blog",
+          "name": "LlamaIndex Blog",
+          "url": "https://www.llamaindex.ai/blog",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["01-context-memory", "02-tools-actions"],
+          "queries": ["RAG", "retrieval", "agents", "workflows"]
+        },
+        {
+          "id": "vercel-ai-blog",
+          "name": "Vercel AI",
+          "url": "https://vercel.com/blog/category/ai",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions"],
+          "queries": ["AI SDK", "agents", "frontend AI", "tool calls"]
+        },
+        {
+          "id": "simon-willison",
+          "name": "Simon Willison's Weblog",
+          "url": "https://simonwillison.net/",
+          "rss": "https://simonwillison.net/atom/everything/",
+          "capture_route": "rss-or-http",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "04-evaluation-guardrails", "06-frontier-radar"],
+          "queries": ["LLM", "agents", "tools", "evals", "security"]
+        },
+        {
+          "id": "latent-space",
+          "name": "Latent Space",
+          "url": "https://www.latent.space/",
+          "rss": "https://www.latent.space/feed",
+          "capture_route": "rss-or-http",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "06-frontier-radar"],
+          "queries": ["AI engineering", "agents", "model releases", "podcast"]
+        },
+        {
+          "id": "the-gradient",
+          "name": "The Gradient",
+          "url": "https://thegradient.pub/",
+          "rss": "https://thegradient.pub/rss/",
+          "capture_route": "rss-or-http",
+          "browser_needed": false,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["AI research essays", "theory", "policy"]
+        },
+        {
+          "id": "ahead-of-ai",
+          "name": "Ahead of AI",
+          "url": "https://magazine.sebastianraschka.com/",
+          "rss": "https://magazine.sebastianraschka.com/feed",
+          "capture_route": "rss-or-http",
+          "browser_needed": false,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["model training", "LLM architecture", "optimization"]
+        },
+        {
+          "id": "lilian-weng",
+          "name": "Lilian Weng Blog",
+          "url": "https://lilianweng.github.io/",
+          "capture_route": "http",
+          "browser_needed": false,
+          "landing_topics": ["01-context-memory", "03-control-loop", "04-evaluation-guardrails"],
+          "queries": ["agents", "prompting", "RL", "safety"]
+        }
+      ]
+    },
+    {
+      "id": "model-optimization",
+      "name": "Model Training and Optimization",
+      "priority": 2,
+      "purpose": "Training recipes, inference optimization, quantization, serving, GPU systems, long context, KV cache.",
+      "sources": [
+        {
+          "id": "vllm",
+          "name": "vLLM Blog / Docs",
+          "url": "https://blog.vllm.ai/",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "06-frontier-radar"],
+          "queries": ["serving", "KV cache", "inference", "speculative decoding"]
+        },
+        {
+          "id": "unsloth",
+          "name": "Unsloth Blog",
+          "url": "https://unsloth.ai/blog",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "06-frontier-radar"],
+          "queries": ["fine-tuning", "LoRA", "RL", "training efficiency"]
+        },
+        {
+          "id": "together-ai-blog",
+          "name": "Together AI Blog",
+          "url": "https://www.together.ai/blog",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "06-frontier-radar"],
+          "queries": ["inference", "training", "open models", "serving"]
+        },
+        {
+          "id": "databricks-ai-blog",
+          "name": "Databricks AI Blog",
+          "url": "https://www.databricks.com/blog/category/solutions/ai-ml",
+          "capture_route": "http-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions", "06-frontier-radar"],
+          "queries": ["Mosaic", "training", "enterprise AI", "data"]
+        },
+        {
+          "id": "modal-blog",
+          "name": "Modal Blog",
+          "url": "https://modal.com/blog",
+          "capture_route": "http",
+          "browser_needed": false,
+          "landing_topics": ["02-tools-actions"],
+          "queries": ["GPU", "inference", "deployment", "serverless"]
+        }
+      ]
+    },
+    {
+      "id": "chinese-ai",
+      "name": "Chinese AI and Engineering Sources",
+      "priority": 2,
+      "purpose": "Chinese AI ecosystem, local model releases, engineering practice, translated research, production cases.",
+      "sources": [
+        {
+          "id": "jiqizhixin",
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/",
+          "capture_route": "browser-or-bestblogs",
+          "browser_needed": true,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["大模型", "智能体", "论文", "评测"]
+        },
+        {
+          "id": "qbitai",
+          "name": "量子位",
+          "url": "https://www.qbitai.com/",
+          "capture_route": "browser-or-bestblogs",
+          "browser_needed": true,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["大模型", "AI Agent", "模型发布", "评测"]
+        },
+        {
+          "id": "paperweekly",
+          "name": "PaperWeekly",
+          "url": "https://www.paperweekly.site/",
+          "capture_route": "browser-or-bestblogs",
+          "browser_needed": true,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["论文", "大模型", "多智能体", "训练"]
+        },
+        {
+          "id": "datawhale",
+          "name": "Datawhale",
+          "url": "https://datawhale.club/",
+          "capture_route": "browser-or-bestblogs",
+          "browser_needed": true,
+          "landing_topics": ["01-context-memory", "03-control-loop"],
+          "queries": ["AI Agent", "大模型", "教程", "Harness"]
+        },
+        {
+          "id": "infoq-cn",
+          "name": "InfoQ 中文",
+          "url": "https://www.infoq.cn/",
+          "capture_route": "browser-or-bestblogs",
+          "browser_needed": true,
+          "landing_topics": ["02-tools-actions", "04-evaluation-guardrails", "06-frontier-radar"],
+          "queries": ["AI", "Agent", "架构", "工程实践"]
+        },
+        {
+          "id": "aliyun-dev",
+          "name": "阿里云开发者",
+          "url": "https://developer.aliyun.com/",
+          "capture_route": "browser-or-bestblogs",
+          "browser_needed": true,
+          "landing_topics": ["02-tools-actions", "03-control-loop"],
+          "queries": ["Agent", "大模型", "云原生", "工程实践"]
+        },
+        {
+          "id": "tencent-tech-engineering",
+          "name": "腾讯技术工程",
+          "url": "https://cloud.tencent.com/developer",
+          "capture_route": "browser-or-bestblogs",
+          "browser_needed": true,
+          "landing_topics": ["01-context-memory", "03-control-loop", "04-evaluation-guardrails"],
+          "queries": ["AI Agent", "Harness", "知识库", "工程实践"]
+        }
+      ]
+    },
+    {
+      "id": "community-signals",
+      "name": "Community Signals",
+      "priority": 3,
+      "purpose": "Early signals, discussion, skepticism, code release buzz. These are not authoritative unless cross-checked.",
+      "sources": [
+        {
+          "id": "hacker-news",
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/",
+          "api": "https://hacker-news.firebaseio.com/v0/",
+          "capture_route": "api-or-browser",
+          "browser_needed": false,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["AI", "LLM", "agent", "OpenAI", "Anthropic"]
+        },
+        {
+          "id": "reddit-machinelearning",
+          "name": "Reddit r/MachineLearning",
+          "url": "https://www.reddit.com/r/MachineLearning/",
+          "capture_route": "browser-or-rss",
+          "browser_needed": true,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["Papers", "Discussion", "Research", "LLM"]
+        },
+        {
+          "id": "reddit-localllama",
+          "name": "Reddit r/LocalLLaMA",
+          "url": "https://www.reddit.com/r/LocalLLaMA/",
+          "capture_route": "browser-or-rss",
+          "browser_needed": true,
+          "landing_topics": ["02-tools-actions", "06-frontier-radar"],
+          "queries": ["local models", "fine-tuning", "quantization", "inference"]
+        },
+        {
+          "id": "github-trending",
+          "name": "GitHub Trending",
+          "url": "https://github.com/trending",
+          "capture_route": "browser-or-http",
+          "browser_needed": true,
+          "landing_topics": ["02-tools-actions", "06-frontier-radar"],
+          "queries": ["LLM", "agent", "RAG", "inference", "training"]
+        },
+        {
+          "id": "product-hunt-ai",
+          "name": "Product Hunt AI",
+          "url": "https://www.producthunt.com/categories/ai-agents",
+          "capture_route": "browser",
+          "browser_needed": true,
+          "landing_topics": ["06-frontier-radar"],
+          "queries": ["AI products", "agents", "tools"]
+        }
+      ]
+    }
+  ]
+}

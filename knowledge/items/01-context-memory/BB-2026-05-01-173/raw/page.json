@@ -1,0 +1,142 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T07748c53fc9445d595d1c05a0d0e87c0",
+  "data": {
+    "metaData": {
+      "id": "RAW_7be5372c",
+      "notExist": null,
+      "originalTitle": "Build Long-running AI agents that pause， resume， and never lose context with ADK",
+      "title": "Build Long-running AI agents that pause， resume， and never lose context with ADK",
+      "oneSentenceSummary": "This tutorial demonstrates how to build production-grade, long-running AI agents using Google's Agent Development Kit (ADK) that can pause, resume, and maintain context over days or weeks through durable state machines, persistent sessions, and event-driven resumption.",
+      "summary": "This article from the Google Developers Blog presents a comprehensive architectural guide for building long-running AI agents that can survive idle periods, server restarts, and multi-day workflows. Using a New Hire Onboarding Coordinator Agent as a concrete example, the author walks through three key architectural shifts that separate production agents from stateless demo chatbots: implementing durable memory schemas via explicit state machines instead of relying on raw conversation history, using event-driven dormancy gates with webhooks instead of active polling, and employing multi-agent delegation for specialized sub-tasks. The tutorial provides complete Python code examples using the ADK framework, including state schema definition, persistent SQLite session storage, webhook endpoints for external event handling, and a resume handler that hydrates sessions and applies state transitions atomically. It also covers golden evaluation tests for validating multi-day flows and deployment to Google's Agent Runtime. The core insight is that stateless agents fail on real enterprise workflows due to prompt context pollution, token cost explosion, and reasoning hallucinations over idle time, and the solution is a fundamentally different architecture where agent state is explicit, durable, and decoupled from raw chat history.",
+      "featuredReason": "HR onboarding stretches two weeks. Invoice disputes drag for days. Sales prospecting plays out over a month. Real enterprise workflows are mostly idle time, and a stateless chatbot forgets everything the moment a container restarts. Google's ADK team walks through a full New Hire Onboarding Coordinator implementation with three architectural shifts: structured memory schemas instead of raw JSON in a vector DB, event-driven dormancy gates instead of polling or blocked threads, and multi-agent delegation instead of monolithic prompts. Source on GitHub. Required reading before agents touch a real enterprise pipeline.",
+      "translateContent": null,
+      "tags": [
+        "Agent Development Kit",
+        "Long-running Agents",
+        "State Machine",
+        "Persistent Sessions",
+        "Event-driven Architecture"
+      ],
+      "mainPoints": [
+        {
+          "point": "Stateless agents fail on real enterprise workflows due to context pollution, token costs, and hallucinations over idle time.",
+          "explanation": "Standard conversational loops that append all history to prompts break down over days or weeks because irrelevant chatter accumulates, token budgets explode, and models hallucinate intermediate steps that never happened during long pauses."
+        },
+        {
+          "point": "Durable state machines replace raw conversation history as the source of truth for agent progress.",
+          "explanation": "By defining explicit state schemas with named constants (e.g., START, WELCOME_SENT, DOCUMENTS_SIGNED) and reading the current step from session state variables, the agent cannot skip steps or hallucinate progress."
+        },
+        {
+          "point": "Event-driven webhook endpoints enable true idle-time dormancy with scale-to-zero capability.",
+          "explanation": "Instead of active polling or blocked threads, the agent sleeps completely during idle periods. External webhooks wake the agent, hydrate the persisted session, and apply state transitions atomically via state_delta before the next inference call."
+        },
+        {
+          "point": "Multi-agent delegation keeps reasoning sharp by giving each sub-agent a focused prompt and narrow tool set.",
+          "explanation": "Stuffing all tools into a single agent's system prompt degrades reasoning quality. Delegating specialized tasks (e.g., IT provisioning) to dedicated sub-agents with focused instructions maintains clarity even after weeks of accumulated state."
+        }
+      ],
+      "keyQuotes": [
+        "The fix isn't a bigger context window. It's a fundamentally different architecture -- one where the agent's state is explicit, durable, and decoupled from raw chat history.",
+        "Idle time is the defining challenge of long-running agents. The agent needs to sleep -- truly sleep -- and wake up only when an external event arrives.",
+        "Every tool call creates an automatic checkpoint. If the container crashes immediately after send_welcome_packet runs, the state has already been written.",
+        "Stateless agents are a subset of what agents can be. The patterns in this tutorial transform agents from conversational toys into production background processes."
+      ],
+      "url": "https://developers.googleblog.com/build-long-running-ai-agents-that-pause-resume-and-never-lose-context-with-adk/",
+      "readUrl": "https://www.bestblogs.dev/article/7be5372c",
+      "enclosureUrl": null,
+      "domain": "developers.googleblog.com",
+      "cover": "https://image.jido.dev/20260512213019_Gemini_Generated_Image_ffv5cwffv5.2e16d0ba.fill-1200x600.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_059894",
+      "sourceName": "Google Developers Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://image.jido.dev/20251127045351_06c33c55",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 93,
+      "readCount": 592,
+      "wordCount": 2482,
+      "readTime": 10,
+      "mediaDuration": null,
+      "authors": [
+        "Shubham Saboo",
+        "Eric Dong"
+      ],
+      "publishTimeStamp": 1778544000000,
+      "publishDateStr": "05-12",
+      "publishDateTimeStr": "2026-05-12 00:00:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_45e72c03",
+        "type": "ARTICLE",
+        "title": "Production-Ready AI Agents: 5 Lessons from Refactoring a Monolith",
+        "oneSentenceSummary": "This article details five critical engineering lessons from refactoring a brittle AI agent prototype into a production-ready system, covering orchestration, structured outputs, dynamic RAG, observability, and cost control using Google's Agent Development Kit.",
+        "url": "https://developers.googleblog.com/production-ready-ai-agents-5-lessons-from-refactoring-a-monolith/",
+        "sourceName": "Google Developers Blog"
+      },
+      {
+        "id": "RAW_2aa7833e",
+        "type": "ARTICLE",
+        "title": "Announcing ADK for Java 1.0.0: Building the Future of AI Agents in Java",
+        "oneSentenceSummary": "Google announces the 1.0.0 release of the Agent Development Kit (ADK) for Java, providing a robust framework for building AI agents with grounding tools, plugin architecture, and human-in-the-loop workflows.",
+        "url": "https://developers.googleblog.com/announcing-adk-for-java-100-building-the-future-of-ai-agents-in-java/",
+        "sourceName": "Google Developers Blog"
+      },
+      {
+        "id": "RAW_048d846e",
+        "type": "ARTICLE",
+        "title": "Long-running Agents",
+        "oneSentenceSummary": "This article provides a comprehensive, practitioner-focused analysis of long-running AI agents, detailing the core engineering challenges (finite context, no persistent state, no self-verification) and the convergent architectural patterns (brain/hands/session split, planner/worker/judge roles) adopted by Anthropic, Cursor, and Google.",
+        "url": "https://addyo.substack.com/p/long-running-agents",
+        "sourceName": "Elevate"
+      },
+      {
+        "id": "RAW_237b1eec",
+        "type": "ARTICLE",
+        "title": "Closing the knowledge gap with agent skills",
+        "oneSentenceSummary": "Google DeepMind introduces agent skills as a lightweight mechanism to bridge the LLM knowledge gap, significantly improving Gemini 3 models' accuracy in using the latest SDKs.",
+        "url": "https://developers.googleblog.com/closing-the-knowledge-gap-with-agent-skills/",
+        "sourceName": "Google Developers Blog"
+      },
+      {
+        "id": "RAW_7c744e68",
+        "type": "ARTICLE",
+        "title": "Build Better AI Agents: 5 Developer Tips from the Agent Bake-Off",
+        "oneSentenceSummary": "This article distills five key architectural patterns for building production-ready AI agents, based on lessons from Google's competitive Agent Bake-Off, emphasizing multi-agent workflows, modularity, multimodality, open protocols, and deterministic execution.",
+        "url": "https://developers.googleblog.com/build-better-ai-agents-5-developer-tips-from-the-agent-bake-off/",
+        "sourceName": "Google Developers Blog"
+      },
+      {
+        "id": "RAW_ac4eb389",
+        "type": "ARTICLE",
+        "title": "Developer’s Guide to AI Agent Protocols",
+        "oneSentenceSummary": "A comprehensive technical guide to the six essential protocols (MCP, A2A, UCP, AP2, A2UI, and AG-UI) that standardize how AI agents interact with data, other agents, commerce, payments, and user interfaces.",
+        "url": "https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/",
+        "sourceName": "Google Developers Blog"
+      }
+    ]
+  }
+}

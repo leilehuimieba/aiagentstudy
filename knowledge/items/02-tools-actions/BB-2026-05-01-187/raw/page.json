@@ -1,0 +1,174 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Td83464ac7cd54d63a6b3cc9462fd8d6b",
+  "data": {
+    "metaData": {
+      "id": "RAW_5087293a",
+      "notExist": null,
+      "originalTitle": "How Anthropic's cybersecurity team built a threat detection platform with Claude Code | Claude",
+      "title": "How Anthropic's cybersecurity team built a threat detection platform with Claude Code | Claude",
+      "oneSentenceSummary": "Anthropic's cybersecurity team built CLUE, a threat detection platform using Claude Code, that automates alert triage, natural language log querying, and investigation, achieving significant time savings and reduced false positives.",
+      "summary": "This article details how Jackie Bow's Detection Platform Engineering team at Anthropic built CLUE (Claude Looks Up Evidence), a detection and response platform that leverages Claude Code and tool use to automate and enhance cybersecurity operations. The platform addresses the common problem of security analysts being overwhelmed by data and alerts, requiring context-switching between multiple tools. CLUE consists of two main components: CLUE Triage, which performs first-pass alert enrichment and dispositioning, and CLUE Investigate, which allows analysts to query security logs using natural language. The platform connects to Anthropic's internal systems (Slack, docs, code repos, data warehouses) to provide crucial context for alerts. Key results include a reduction in false positives from ~33% to 7%, automated processing of 12,000 queries and 27,000 tool calls in 30 days, and an estimated 5-10x time savings. The team is exploring future directions like proactive threat hunting, using investigation transcripts as a knowledge base, and embracing non-deterministic investigation paths.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Claude Code",
+        "Cybersecurity",
+        "AI Agent",
+        "Threat Detection",
+        "Security Automation"
+      ],
+      "mainPoints": [
+        {
+          "point": "CLUE automates alert triage and investigation using Claude, reducing false positives and analyst workload.",
+          "explanation": "CLUE Triage enriches alerts with internal context (Slack, docs, code) and assigns dispositions, dropping false positive rates from ~33% to 7%. CLUE Investigate allows natural language queries of security logs, automating complex investigations that previously took hours."
+        },
+        {
+          "point": "Claude Code enabled rapid development of the CLUE platform, collapsing traditional timelines from weeks to days.",
+          "explanation": "The team had a proof of concept running in a day and a full implementation within a week. Claude Code acted as both a design partner and collaborator, allowing the team to build features they previously lacked the technical capacity for."
+        },
+        {
+          "point": "The key differentiator is CLUE's access to internal context via tool use, not just external logs.",
+          "explanation": "By connecting to Slack, internal documentation, code repositories, and data warehouses, Claude can contextualize alerts with institutional knowledge, distinguishing real threats from benign activity like planned maintenance."
+        },
+        {
+          "point": "The team is embracing non-deterministic investigation paths, inspired by the 'bitter lesson' of AI.",
+          "explanation": "Instead of rigid, pre-defined playbooks, CLUE gives Claude boundaries (tools and data access) but allows it to explore its own investigation strategies, often finding context that human-designed processes would miss."
+        }
+      ],
+      "keyQuotes": [
+        "I can finally build the tools I always wished I had.",
+        "That was when I realized I'm not bound by my own technical limitations anymore. I can build whatever I can think of.",
+        "Claude is much better at writing precise queries than humans are.",
+        "The next generation of tools should give models the capability to investigate and let them find better approaches than we would have prescribed.",
+        "That internal context is the missing piece that really helps alerts be contextualized for your environment."
+      ],
+      "url": "https://claude.com/blog/how-anthropic-uses-claude-cybersecurity",
+      "readUrl": "https://www.bestblogs.dev/article/5087293a",
+      "enclosureUrl": null,
+      "domain": "claude.com",
+      "cover": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_154bc38a",
+      "sourceName": "Claude Blog",
+      "priority": "HIGH",
+      "sourceImage": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/689f4a9aff1f63fde75cf733_favicon.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 30,
+      "wordCount": 1630,
+      "readTime": 7,
+      "mediaDuration": null,
+      "authors": [
+        "Claude Blog"
+      ],
+      "publishTimeStamp": 1778515200000,
+      "publishDateStr": "05-11",
+      "publishDateTimeStr": "2026-05-11 16:00:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_c31f1686",
+        "type": "ARTICLE",
+        "title": "Multi-agent coordination patterns: Five approaches and when to use them | Claude",
+        "oneSentenceSummary": "Anthropic outlines five core multi-agent coordination patterns—Generator-verifier, Orchestrator-subagent, Agent teams, Message bus, and Shared-state—providing a decision framework for selecting the right architecture based on task complexity and context needs.",
+        "url": "https://claude.com/blog/multi-agent-coordination-patterns",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_8f3d453",
+        "type": "VIDEO",
+        "title": "Building Claude Code with Boris Cherny",
+        "oneSentenceSummary": "Boris Cherny, creator of Claude Code, discusses his 100% AI-driven workflow, Anthropic's unique engineering culture, and why software engineers are transitioning from 'scribes' to 'authors' in the AI era.",
+        "url": "https://www.youtube.com/watch?v=julbw1JuAz0",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_94694e50",
+        "type": "ARTICLE",
+        "title": "Best practices for computer and browser use with Claude | Claude",
+        "oneSentenceSummary": "This article provides official best practices for integrating Claude's computer and browser use capabilities, focusing on screenshot scaling, resolution selection, click accuracy optimization, thinking effort tuning, and prompt injection defense.",
+        "url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_bf9ab35c",
+        "type": "ARTICLE",
+        "title": "Claude Code auto mode: a safer way to skip permissions",
+        "oneSentenceSummary": "Claude Code's new Auto mode uses a two-stage model-based classifier and prompt-injection probes to autonomously gate dangerous actions, balancing developer productivity with security.",
+        "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_2041578392852517128",
+        "type": "TWITTER",
+        "title": "Anthropic Introduces Project Glasswing and Claude Mythos Preview",
+        "oneSentenceSummary": "Anthropic launches Project Glasswing, a software security initiative powered by their new frontier model, Claude Mythos Preview, designed to identify critical vulnerabilities.",
+        "url": "https://x.com/AnthropicAI/status/2041578392852517128",
+        "sourceName": "Anthropic(@AnthropicAI)"
+      },
+      {
+        "id": "RAW_243d2340",
+        "type": "ARTICLE",
+        "title": "How Claude Code works in large codebases: Best practices and where to start | Claude",
+        "oneSentenceSummary": "This article provides a comprehensive guide on deploying Claude Code in large codebases, emphasizing that success depends more on the 'harness' of configuration layers (CLAUDE.md, hooks, skills, plugins, LSP, MCP) than on the model alone, and outlines proven patterns for making codebases navigable, maintaining configurations, and assigning organizational ownership.",
+        "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_72e3cf5",
+        "type": "VIDEO",
+        "title": "Head of Claude Code: What happens after coding is solved | Boris Cherny",
+        "oneSentenceSummary": "Boris Cherny, Head of Claude Code at Anthropic, discusses the transition to 100% AI-generated software development and the emergence of autonomous agents like Co-work.",
+        "url": "https://www.youtube.com/watch?v=We7BZVKbCVw",
+        "sourceName": "Lenny's Podcast"
+      },
+      {
+        "id": "RAW_c1ecbe08",
+        "type": "ARTICLE",
+        "title": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude",
+        "oneSentenceSummary": "Brendan MacLean, principal developer of the 700,000-line Skyline codebase, applies his 17-year methodology of onboarding human developers to Claude Code, using context, skills, and MCP integrations to make a legacy codebase manageable again.",
+        "url": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_9e0a0be",
+        "type": "VIDEO",
+        "title": "Codex Now Integrates Directly with Chrome on macOS and Windows",
+        "oneSentenceSummary": "OpenAI introduces a new Chrome extension for Codex on macOS and Windows, enabling the AI to operate directly within a user's live browser session to perform complex, parallel automation tasks using their active profile and direct code execution.",
+        "url": "https://www.youtube.com/watch?v=b6Mxcv1pyBU",
+        "sourceName": "OpenAI"
+      }
+    ]
+  }
+}

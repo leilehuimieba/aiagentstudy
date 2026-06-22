@@ -1,0 +1,83 @@
+{
+  "id": "RAW_9ff08480",
+  "notExist": null,
+  "originalTitle": "Supercharging GitHub Copilot：指令、技能、钩子、智能体实战指南",
+  "title": "Supercharging GitHub Copilot: A Practical Guide to Instructions, Skills, Hooks, and Agents",
+  "oneSentenceSummary": "This article details how to upgrade GitHub Copilot from an autocomplete tool to a deeply customized AI teammate that understands your project architecture, using four components: Instructions, Skills, Hooks, and Agents.",
+  "summary": "Based on the author's practical experience with a FastAPI + SQLite project, this article systematically explains how to leverage four advanced features of GitHub Copilot to improve the quality and consistency of AI-assisted programming. Instructions are used to set coding styles and non-negotiable rules; Skills encapsulate multi-step tasks (such as database migrations) into reusable workflows; Hooks act as safety guardrails, automatically intercepting unsafe operations when specific events are triggered; Agents define AI expert roles that can orchestrate the previous three components and execute complex tasks. The article provides specific file structures, configuration examples, and collaborative workflows, pointing out that most developers only use 20% of Copilot's capabilities.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "GitHub Copilot",
+    "AI Programming",
+    "Instructions",
+    "Skills",
+    "Hooks"
+  ],
+  "mainPoints": [
+    {
+      "point": "Instructions set coding rules and project conventions that are always true.",
+      "explanation": "Define coding styles, framework conventions, and security rules in the `.github/copilot-instructions.md` file, enabling Copilot to automatically follow the project architecture without repeated prompting."
+    },
+    {
+      "point": "Skills encapsulate multi-step tasks into reusable workflows.",
+      "explanation": "Create `.skill.md` files in the `.github/skills/` directory to describe standardized processes like database migrations or deployments, which can be triggered with a single command."
+    },
+    {
+      "point": "Hooks act as safety guardrails, automatically intercepting unsafe operations.",
+      "explanation": "Define `.hook.md` files in the `.github/hooks/` directory, setting trigger points like `beforeCommand` to prevent dangerous actions such as directly manipulating database files."
+    },
+    {
+      "point": "Agents package the previous three components into callable AI expert roles.",
+      "explanation": "Define a role name, toolset, and responsibilities in an `.agent.md` file. For example, a `fastapi-expert` Agent can automatically follow backend rules, use migration Skills, and run tests."
+    }
+  ],
+  "keyQuotes": [
+    "Most developers think GitHub Copilot is just autocomplete. It's not.",
+    "With Instructions, Skills, Hooks, and Agents, you can turn Copilot into an AI teammate that understands your project.",
+    "You define the behavior once... Copilot will always work that way, like a trained teammate.",
+    "If you're developing with Copilot but haven't used these features yet — you're wasting 80% of its potential."
+  ],
+  "url": "https://www.wangjun.dev/2026/05/supercharging-github-copilot-skills-hooks-agents-instructions/",
+  "readUrl": "https://www.bestblogs.dev/article/9ff08480",
+  "enclosureUrl": null,
+  "domain": "wangjun.dev",
+  "cover": "https://image.jido.dev/20260526124451_1*ID6SFgF6yvRe_Wu4tRT7Lw.png",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SRC_5f7b07d0",
+  "sourceName": "王俊博客",
+  "priority": "MEDIUM",
+  "sourceImage": null,
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "aiSubCategoryDesc": "AI Coding",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 20,
+  "wordCount": 1552,
+  "readTime": 7,
+  "mediaDuration": null,
+  "authors": [
+    "王俊博客"
+  ],
+  "publishTimeStamp": 1779724800000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 00:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

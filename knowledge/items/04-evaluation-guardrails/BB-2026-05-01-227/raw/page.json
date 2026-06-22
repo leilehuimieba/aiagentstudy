@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T368a895945c84710a0a5588324d847b5",
+  "data": {
+    "metaData": {
+      "id": "RAW_c32fdd2b",
+      "notExist": null,
+      "originalTitle": "【第 3698 期】AI 可观测性：大语言模型与智能体的全链路透视",
+      "title": "[Issue 3698] AI Observability: Full-Stack Tracing for LLMs and Agents",
+      "oneSentenceSummary": "This article systematically introduces the concept, importance, core components, and implementation methods of AI observability, with a focus on the differences between LLM observability and agent observability, while comparing the pros and cons of open-source solutions (MLflow) and commercial SaaS tools.",
+      "summary": "Compiled by Frontend Morning Reading from the official MLflow blog, this article provides a comprehensive overview of AI observability as a practice. It first points out that the non-deterministic nature of AI systems (e.g., model states, retrieval context differences) renders traditional monitoring ineffective, necessitating observability to capture the full execution context. The article then elaborates on the importance of AI observability from four dimensions: debugging complexity, cost control, quality and reliability, and compliance and governance. The core section distinguishes between LLM observability (tracing prompts, responses, token usage, etc., for a single model call) and agent observability (tracing multi-step workflows, tool calls, reasoning chains, etc.). It also introduces common application scenarios such as debugging hallucinations, monitoring production behavior, optimizing costs, A/B testing prompts, capturing production regressions, and ensuring compliance. Finally, the article outlines the six core components of AI observability (tracing, evaluation, monitoring, cost and latency tracking, human feedback, and governance) and uses MLflow as an example to demonstrate how to quickly implement observability with a single line of code, while comparing the differences between open-source solutions (MLflow) and commercial SaaS tools in terms of data sovereignty, cost, and flexibility.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "AI Observability",
+        "LLM",
+        "Agent",
+        "MLflow",
+        "Tracing"
+      ],
+      "mainPoints": [
+        {
+          "point": "The non-deterministic nature of AI systems renders traditional monitoring ineffective, requiring observability to capture the full execution context.",
+          "explanation": "Unlike traditional software, AI applications (especially LLMs and agents) produce non-deterministic outputs; the same input can yield different results due to factors like model state or retrieval context. Observability captures end-to-end information such as prompts, responses, and tool calls, helping teams understand the reasoning behind each output."
+        },
+        {
+          "point": "LLM observability and agent observability differ fundamentally in the granularity of tracing.",
+          "explanation": "LLM observability focuses on a single model call, tracing prompts, responses, and token consumption. In contrast, agent observability extends to multi-step workflows, capturing the complete execution graph, including tool call sequences, reasoning chains, and error retries, to debug complex behaviors."
+        },
+        {
+          "point": "AI observability offers significant value in cost control and quality assurance.",
+          "explanation": "By tracking token usage and per-request costs, teams can identify high-cost queries and optimize model selection, potentially reducing expenses by 30%-50%. Additionally, automated evaluation and monitoring enable early detection of quality issues like hallucinations and performance regressions before they impact users."
+        },
+        {
+          "point": "Open-source solutions (MLflow) offer advantages over commercial SaaS tools in data sovereignty and cost predictability.",
+          "explanation": "Open-source solutions like MLflow allow teams to fully control telemetry data, deploy on their own infrastructure, and avoid per-seat fees or usage limits, preventing vendor lock-in. While commercial SaaS tools offer convenience, they may raise privacy and compliance concerns and become costly at scale."
+        }
+      ],
+      "keyQuotes": [
+        "The non-deterministic nature of AI systems leaves traditional monitoring struggling to keep up.",
+        "AI observability captures the full execution context—including prompts, model responses, tool calls, retrieval results, and evaluation scores—empowering teams to understand the 'why' behind every output.",
+        "Agent observability makes every step of the reasoning process transparent: you can clearly see which tools were called, what parameters were passed, what information the agent gleaned from each step, and how it decided on the next action.",
+        "Organizations building production-grade AI applications are increasingly choosing MLflow because it provides enterprise-level observability without compromising on data sovereignty, cost predictability, or flexibility."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279085&idx=1&sn=5d37952256d053f8cfd2ca80abfc9fb7",
+      "readUrl": "https://www.bestblogs.dev/article/c32fdd2b",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045411_c7b47d14",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_bc895d",
+      "sourceName": "前端早读课",
+      "priority": "MEDIUM",
+      "sourceImage": "https://image.jido.dev/20251127045411_c7b47d14",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 89,
+      "readCount": 11,
+      "wordCount": 3754,
+      "readTime": 16,
+      "mediaDuration": null,
+      "authors": [
+        "前端早读课"
+      ],
+      "publishTimeStamp": 1778720520000,
+      "publishDateStr": "05-14",
+      "publishDateTimeStr": "2026-05-14 01:02:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_aee9f20b",
+        "type": "ARTICLE",
+        "title": "[Issue 3677] Deep Dive into the .claude/ Folder: The Hidden Control Center of Claude Code",
+        "oneSentenceSummary": "This article provides a deep dive into Claude Code's core configuration directory, .claude/, detailing how to fine-tune your AI programming assistant using instruction files, custom commands, skills, and agents.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278835&idx=1&sn=4e93359b8c4aeb263947a58a0f553a5f",
+        "sourceName": "前端早读课"
+      },
+      {
+        "id": "RAW_186884e3",
+        "type": "ARTICLE",
+        "title": "[Episode 3689] The Inner Workings of MDN's New Frontend",
+        "oneSentenceSummary": "This article details how MDN transitioned from a monolithic React application burdened with technical debt to a lightweight, decoupled, high-performance modern frontend architecture centered around Lit, Web Components, and custom server components, sharing insights into its technology selection, architectural design, and overall improvement in development experience.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278964&idx=1&sn=2cc25711f66f3c3672c4186db5961a6b",
+        "sourceName": "前端早读课"
+      },
+      {
+        "id": "RAW_1e9d9524",
+        "type": "ARTICLE",
+        "title": "[Issue 3665] WebMCP: A New Standard Enabling Every Website to Interact with AI Agents",
+        "oneSentenceSummary": "WebMCP is an emerging W3C standard that allows websites to interact directly with AI agents through structured tools (JS functions or HTML forms), replacing inefficient screenshot recognition and DOM parsing.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278670&idx=1&sn=84b6ee5fcefb778448e75503a51aa54f",
+        "sourceName": "前端早读课"
+      },
+      {
+        "id": "RAW_84834826",
+        "type": "ARTICLE",
+        "title": "[Issue 3660] Stop Writing Tests for Coverage: This Is How Truly Reliable Unit Tests Should Be Done",
+        "oneSentenceSummary": "This article explores how to build truly reliable unit tests by testing \"behavior\" rather than \"implementation,\" emphasizing pragmatic methods like mocking system boundaries, using in-memory databases, and HTTP recording to boost deployment confidence.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278637&idx=1&sn=f6788ebf5585eda0b718b2f724366fac",
+        "sourceName": "前端早读课"
+      },
+      {
+        "id": "RAW_2902aba4",
+        "type": "ARTICLE",
+        "title": "The Evolution of Agent/Skills/Teams Architectures and Principles of Technology Selection",
+        "oneSentenceSummary": "This article systematically reviews the evolutionary trajectory of AI Agents from monolithic to multi-agent, then to Skills pluginization and Teams parallel collaboration, and, drawing on the latest research from Google and Anthropic, provides a scientific methodology for selection.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558921&idx=1&sn=3fddd356f8f072b31742f0e8be772b63",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_a799716e",
+        "type": "ARTICLE",
+        "title": "GLM-5.1 Open Source: A Model Capable of 8 Hours of Independent Work",
+        "oneSentenceSummary": "Zhipu AI releases its flagship model GLM-5.1, featuring breakthrough Long-Horizon Task capabilities that allow it to work independently for 8 hours and deliver engineering-grade results.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493695&idx=1&sn=3c096efd1739c7e0266befeef6ebcd4d",
+        "sourceName": "智谱"
+      },
+      {
+        "id": "RAW_6a36852d",
+        "type": "ARTICLE",
+        "title": "【Episode 3686】From Node.js to Bun: A Complete Record of a 5x Throughput Leap",
+        "oneSentenceSummary": "This article details the Trigger.dev team's complete process of migrating their critical service, Firestarter, from Node.js to Bun. Through four rounds of performance optimization (removing SQLite, migrating the HTTP stack, streamlining hot paths, and compiling to a binary) and fixing a Bun-specific memory leak, they ultimately achieved significant results: a 5x increase in throughput, a substantial reduction in latency, and decreased memory usage.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278944&idx=1&sn=bd4a7e4187c77a8f821007ae28b8ec88",
+        "sourceName": "前端早读课"
+      },
+      {
+        "id": "RAW_70e2f298",
+        "type": "ARTICLE",
+        "title": "Harness Engineering: How I Spent a Week Boosting AI Coding Rate to 90% in an Enterprise App",
+        "oneSentenceSummary": "This article systematically introduces Harness Engineering, a new AI coding paradigm that elevates the AI code rate of an enterprise Java application from 25% to over 90% by building a four-element system of rules, skills, knowledge, and change management.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559842&idx=1&sn=71ee08bf0421ad2f1aa4dd7a58901c5f",
+        "sourceName": "阿里云开发者"
+      },
+      {
+        "id": "RAW_74aee00",
+        "type": "PODCAST",
+        "title": "Vol.89 AI Industry 2025 Annual Summary Supplement (V4 \"Can't Wait\" Edition) --- 70-page PPT Solo",
+        "oneSentenceSummary": "A panoramic review of the AI industry dynamics in China and the US in early 2025, deeply deconstructing capital expenditures, the explosion of Agent technology, and AI's impact on the software industry.",
+        "url": "https://www.xiaoyuzhoufm.com/episode/69adf2bdc8cdeb38c28a1a81",
+        "sourceName": "屠龙之术"
+      },
+      {
+        "id": "RAW_95d5e07c",
+        "type": "ARTICLE",
+        "title": "DeepSeek-V4 Preview: Ushering in the Era of Million-Token Context for Everyone",
+        "oneSentenceSummary": "DeepSeek releases the V4 preview, offering Pro and Flash versions with million-token context as standard, achieving open-source leadership in Agent, reasoning, and knowledge capabilities, and open-sourcing the model simultaneously.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c",
+        "sourceName": "DeepSeek"
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "RAW_713aafca",
+  "notExist": null,
+  "originalTitle": "Advanced Error Handling in Dart: Records， Result Types， Monads， and Freezed Exceptions",
+  "title": "Advanced Error Handling in Dart: Records， Result Types， Monads， and Freezed Exceptions",
+  "oneSentenceSummary": "This article presents a comprehensive, production-grade approach to error handling in Dart, progressing from lightweight record types to sealed Result classes, monadic patterns, Either with dartz, and typed exceptions with Freezed.",
+  "summary": "This article provides a thorough guide to modern error handling in Dart and Flutter, moving beyond traditional try/catch blocks. It systematically introduces four increasingly sophisticated patterns: Dart Records as lightweight result containers, a proper sealed `AppResult` type with compiler-enforced handling, the monadic pattern with `map` and `flatMap` for chaining operations, the `Either` type from the `dartz` package, and finally, typed, exhaustive exceptions using Freezed. The author argues that exceptions are invisible in function signatures, carry no type information, and are easily ignored by the compiler, leading to runtime crashes. The proposed solution makes failures a first-class part of the type system, ensuring they are visible, typed, and impossible to ignore. The article culminates in a full architecture example showing how these patterns integrate across the data, repository, domain, and presentation layers of a clean architecture Flutter application.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Dart",
+    "Error Handling",
+    "Flutter",
+    "Result Type",
+    "Monads"
+  ],
+  "mainPoints": [
+    {
+      "point": "Traditional exception-based error handling in Dart is fundamentally flawed for production applications.",
+      "explanation": "Exceptions are invisible in function signatures, carry no type information at the call site, and the compiler cannot enforce their handling. This leads to runtime crashes and makes codebases fragile, especially in large teams."
+    },
+    {
+      "point": "Dart Records provide a lightweight, immediate improvement by encoding success and failure as a single return type.",
+      "explanation": "Using a record type like `({E? e, T? data})` makes the possibility of failure visible in the function signature, a significant step up from raw exceptions. This pattern is best used with sealed classes as namespaces for static factory methods."
+    },
+    {
+      "point": "A sealed `AppResult<T>` class with a `when()` method provides compiler-enforced exhaustive handling of success and failure paths.",
+      "explanation": "This pattern makes both the success and failure callbacks required at the call site, preventing developers from accidentally forgetting to handle an error. It is a robust, type-safe foundation for domain-layer error handling."
+    },
+    {
+      "point": "Extending the sealed Result type with `map` and `flatMap` enables the monadic pattern for cleanly chaining sequential operations.",
+      "explanation": "`flatMap` allows chaining multiple operations that each return an `AppResult`, with the first failure automatically short-circuiting the entire chain. This eliminates deeply nested error handling and centralizes error management."
+    },
+    {
+      "point": "Freezed-generated sealed exceptions provide typed, immutable, and exhaustively matchable error models.",
+      "explanation": "Using Freezed to define an `iException` sealed class generates `when`, `map`, and other methods for free. This allows for precise, compiler-verified pattern matching on different failure types (e.g., network, auth, validation), replacing fragile string-based checks."
+    }
+  ],
+  "keyQuotes": [
+    "Every failure path is a social contract between the author and the caller --- and social contracts break under pressure, in large teams, and at 2am during an incident.",
+    "The solution is to make failures a first-class part of your function signatures, your type system, and your compiler checks.",
+    "The compiler won't let you call `when()` without handling both cases. You can't forget the error path. You can't forget the success path.",
+    "Each layer has the result type that suits its responsibility. Conversion happens at the boundaries.",
+    "By the end, failures in your codebase will be typed, visible, compiler-enforced, and impossible to ignore."
+  ],
+  "url": "https://www.freecodecamp.org/news/advanced-error-handling-in-dart-records-result-types-monads-and-freezed-exceptions/",
+  "readUrl": "https://www.bestblogs.dev/article/713aafca",
+  "enclosureUrl": null,
+  "domain": "freecodecamp.org",
+  "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/21795781-af21-4c57-9457-6c58f22af656.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_PRACTICE",
+  "aiSubCategoryDesc": "Engineering Practice",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 10,
+  "wordCount": 3882,
+  "readTime": 16,
+  "mediaDuration": null,
+  "authors": [
+    "Oluwaseyi Fatunmole"
+  ],
+  "publishTimeStamp": 1779918206000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 05:43:26",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

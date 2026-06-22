@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "6IT"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://6it.dev/assets/1300.a16c5b00.jpg",
+  "domain": "6it.dev",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_cc5bac6f",
+  "keyQuotes": [
+    "the farther physically our electrical signal has to go, the slower our access is.",
+    "characteristic times of electronic signals are restricted by so-called parasitic capacitances, and parasitic capacitances in general are proportional to the length of the connection",
+    "we would *not* recommend using `[[likely]]`/`[[unlikely]]` attributes, *unless you are at least 200% sure that the branch is indeed very unlikely*.",
+    "for a de-pessimized C++ program relying mostly on vectors, we expect effects related to DTLB misses to be observably smaller to that of the programs written in C-style and relying on node-based data structures",
+    "heap data should be considered as uncached (sic!) -- that is, unless we *know* that we recently accessed something nearby"
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "The article explains that parasitic capacitances, which are proportional to connection length, govern signal speeds. This principle applies from on-chip caches to network cables, with latencies increasing by orders of magnitude at each level.",
+      "point": "Physical distance is the primary driver of memory access latency in modern CPUs."
+    },
+    {
+      "explanation": "While CPUs can theoretically achieve 10-12 Retired Instructions Per Cycle (RIPC), in practice, achieving even 4 is difficult and is usually limited to ALU-bound algorithms, not RAM-bound ones.",
+      "point": "Modern superscalar CPUs can retire multiple instructions per cycle, but achieving high RIPC is challenging."
+    },
+    {
+      "explanation": "Modern CPUs use runtime statistics for branch prediction. These attributes only help for totally new branch instructions, which are rare. The authors recommend using them only when you are 'at least 200% sure' the branch is very unlikely, such as for error handling.",
+      "point": "The `[[likely]]`/`[[unlikely]]` attributes have limited effectiveness due to dynamic branch prediction."
+    },
+    {
+      "explanation": "Linear data structures like `std::vector` minimize pressure on the Data TLB (DTLB). The authors note that TLB issues are more relevant for apps using enormous amounts of RAM (databases, JVM) or in virtualized environments, and can often be mitigated with huge pages.",
+      "point": "For de-pessimized C++ programs using vectors, DTLB misses are less of a concern than for C-style node-based programs."
+    },
+    {
+      "explanation": "Unlike stack data, which is almost guaranteed to be cached, heap data caching is unreliable. The article emphasizes that linear scans of `std::vector` benefit from caching, but operations like `binary_search` over large vectors do not.",
+      "point": "Heap data should be considered uncached unless accessing recently accessed or linearly scanned memory."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article provides a detailed, bottom-up explanation of CPU physics and memory hierarchy, from register operations and cache latencies to main memory and network access times, with practical advice for C++ developers.",
+  "originalTitle": "6IT",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-13",
+  "publishDateTimeStr": "2026-06-13 12:37:08",
+  "publishTimeStamp": 1781325428000,
+  "qualified": false,
+  "readCount": 15,
+  "readTime": 15,
+  "readUrl": "https://www.bestblogs.dev/article/cc5bac6f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This is the draft of a chapter from a forthcoming book on efficient C++ programming for modern 64-bit CPUs. It begins with the fundamental principle that physical distance correlates with access latency, driven by parasitic capacitance. The article then systematically explores the memory hierarchy: core-level operations (register-register, ALU, L1/L2 cache latencies), chip-level (L3 cache, main memory), motherboard-level (RAM, NVMe/SSD/HDD latencies, fsync costs), and the outside world (LAN, Wi-Fi, ISP, inter-city network latencies). It includes detailed discussions on branch mispredictions and the `[[likely]]`/`[[unlikely]]` attributes, TLB (Translation Lookaside Buffer) and its impact on vector vs. node-based data structures, and a C/C++ perspective on memory storage (stack, static, heap, thread-local). The article is rich with specific cycle-time numbers and references to authoritative sources like Agner Fog and Denis Bakhvalov.",
+  "tags": [
+    "Performance Optimization",
+    "CPU Architecture",
+    "Memory Hierarchy",
+    "C++",
+    "System Design"
+  ],
+  "title": "6IT",
+  "translateContent": null,
+  "url": "https://6it.dev/blog/on-cpu-physics-and-cpu-cycles-80730",
+  "wordCount": 3590
+}

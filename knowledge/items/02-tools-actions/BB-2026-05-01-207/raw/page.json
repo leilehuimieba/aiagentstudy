@@ -1,0 +1,169 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "Teff5665144204b1da941cb2e48e074b6",
+  "data": {
+    "metaData": {
+      "id": "RAW_9e58ff82",
+      "notExist": null,
+      "originalTitle": "Codex 更新远程控制，你也终于可以在手机上随时随地 Vibe Coding 了。",
+      "title": "Codex Remote Control Update: Now You Can Vibe Code Anywhere on Your Phone",
+      "oneSentenceSummary": "OpenAI has launched a remote control feature for Codex, allowing users to remotely control Codex running on their home computer via ChatGPT on their phone, enabling a space-unrestricted Vibe Coding experience.",
+      "summary": "This article introduces OpenAI's new remote control feature for Codex, which allows users to remotely connect to and control Codex running on their home computer through the ChatGPT app on their phone. The author details the setup process: enabling mobile settings in Codex on the computer, generating a QR code, scanning it with the phone to authorize login, and achieving real-time synchronization between the phone and computer. Once connected, the phone can send new tasks, view worker threads, check outputs, approve commands, and more. All files, credentials, and permissions remain on the local computer, with communication secured by a relay layer. The author compares this experience with Claude Code's remote control, finding Codex to have fewer bugs and a smoother experience, and shares a real-world case of modifying a project while traveling. The article also outlines other recent important updates to Codex, including Computer Use (background computer control), a built-in browser (supporting direct annotations and comments), a Chrome extension (leveraging logged-in browser state to interact with websites), and integration with gpt-image-2 for generating images directly within code. The author believes the competition between Codex and Claude Code mirrors the golden age of iOS vs. Android and recommends using both to adapt to changes.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Codex",
+        "Remote Control",
+        "Vibe Coding",
+        "AI Programming",
+        "OpenAI"
+      ],
+      "mainPoints": [
+        {
+          "point": "Codex launches remote control, enabling phone-based programming on a desktop computer.",
+          "explanation": "Users can remotely connect to Codex on their home computer via the ChatGPT app on their phone, enabling a space-unrestricted Vibe Coding experience with a simple setup process, real-time synchronization, and task management."
+        },
+        {
+          "point": "Codex's remote control experience is superior to Claude Code's, with fewer bugs.",
+          "explanation": "The author finds Codex's remote control experience smoother, noting that Claude Code often suffers from bugs like selector rendering errors, while Codex's synchronization and operations are more stable and reliable."
+        },
+        {
+          "point": "Codex has been updated frequently, with its feature completeness continuously improving.",
+          "explanation": "Beyond remote control, Codex has also introduced features like Computer Use, a built-in browser, a Chrome extension, and in-code image generation. Paired with GPT-5.5, it has received positive feedback and its usage share is approaching that of Claude Code."
+        }
+      ],
+      "keyQuotes": [
+        "You can use ChatGPT on your phone to directly remote control Codex on your home computer, enabling a vibe coding experience without space limitations.",
+        "Your phone message is just a router sending messages to Codex on your home computer.",
+        "The back-and-forth pace between Codex and Claude Code honestly reminds me of the golden age when iOS and Android were copying each other's homework.",
+        "I think you need to use both of these products. That way, no matter how the wind blows, you won't be left behind."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682286&idx=1&sn=596aee2a6de3542e1e322d76913d738f",
+      "readUrl": "https://www.bestblogs.dev/article/9e58ff82",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045441_36cb882d",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_86a0b5",
+      "sourceName": "数字生命卡兹克",
+      "priority": "MEDIUM",
+      "sourceImage": "https://image.jido.dev/20251127045441_36cb882d",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 89,
+      "readCount": 38,
+      "wordCount": 3401,
+      "readTime": 14,
+      "mediaDuration": null,
+      "authors": [
+        "数字生命卡兹克"
+      ],
+      "publishTimeStamp": 1778812140000,
+      "publishDateStr": "05-15",
+      "publishDateTimeStr": "2026-05-15 02:29:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_352c89c1",
+        "type": "ARTICLE",
+        "title": "How to Write Great Skills? Deconstructing the Design Behind skill-creator!",
+        "oneSentenceSummary": "By deconstructing the design of Codex's skill-creator, this article proposes an AI Skill writing methodology centered on conciseness, based on a three-layer architecture, and guided by a 'spectrum of freedom' principle.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247719753&idx=1&sn=d0bdf9aed64c8f9dc32e02a72302ced9",
+        "sourceName": "Datawhale"
+      },
+      {
+        "id": "RAW_66d6464a",
+        "type": "ARTICLE",
+        "title": "Beyond Cognitive Reconstruction: Stepping into the Engineering Revolution of Agentic Engineering",
+        "oneSentenceSummary": "This article provides a deep dive into the practical journey of Tencent engineers transitioning from Vibe Coding to Agentic Engineering, proposing an AI-assisted engineering system centered on context management and tool-oriented design.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801026&idx=1&sn=3e12f0888b3c232ed7218caf90df5f0a",
+        "sourceName": "腾讯技术工程"
+      },
+      {
+        "id": "RAW_485c8409",
+        "type": "ARTICLE",
+        "title": "Sharing 10 Hidden Claude Code Commands You Might Not Know.",
+        "oneSentenceSummary": "This article details 10 practical hidden commands and shortcuts for Anthropic's official command-line tool, Claude Code, aimed at boosting developer efficiency and interaction in AI-assisted programming.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647680919&idx=1&sn=95032bfc6270f229e713598805d26ebf",
+        "sourceName": "数字生命卡兹克"
+      },
+      {
+        "id": "RAW_24ccb0ba",
+        "type": "ARTICLE",
+        "title": "Claude Can Now Directly Control Your PC WeChat: This Is the True Next-Level Agent.",
+        "oneSentenceSummary": "This article introduces Anthropic's new 'Computer Use' and 'Dispatch' features for Claude, demonstrating real-world Agent scenarios such as remotely controlling PC WeChat via mobile to summarize messages and post to Moments.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647680984&idx=1&sn=ecbe236bf31aa18fcff2e1fcdd56f9a7",
+        "sourceName": "数字生命卡兹克"
+      },
+      {
+        "id": "RAW_74aee00",
+        "type": "PODCAST",
+        "title": "Vol.89 AI Industry 2025 Annual Summary Supplement (V4 \"Can't Wait\" Edition) --- 70-page PPT Solo",
+        "oneSentenceSummary": "A panoramic review of the AI industry dynamics in China and the US in early 2025, deeply deconstructing capital expenditures, the explosion of Agent technology, and AI's impact on the software industry.",
+        "url": "https://www.xiaoyuzhoufm.com/episode/69adf2bdc8cdeb38c28a1a81",
+        "sourceName": "屠龙之术"
+      },
+      {
+        "id": "RAW_5624ebe6",
+        "type": "ARTICLE",
+        "title": "Doubao Input Method Mac Version Officially Launched: Everyone Should Try AI Voice Input",
+        "oneSentenceSummary": "This article recommends the Doubao Input Method Mac version, arguing that its AI voice input feature is mature enough to significantly enhance efficiency in AI conversations and daily text input, making it a productivity tool worth trying for all tech professionals.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682201&idx=1&sn=57321ea63b1ad5839bb682670c764d2a",
+        "sourceName": "数字生命卡兹克"
+      },
+      {
+        "id": "RAW_ef138a82",
+        "type": "ARTICLE",
+        "title": "Kimi K2.6 Released and Open-Sourced, Significantly Advancing Code and Agent Cluster Capabilities",
+        "oneSentenceSummary": "Moonshot AI has released and open-sourced the Kimi K2.6 model, achieving significant improvements in code capabilities, long-horizon task execution, and Agent cluster collaboration, and announced the start of the Claw Group internal beta.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488415&idx=1&sn=e494d0a74bc414a45f65d327bc97cd22",
+        "sourceName": "月之暗面 Kimi"
+      },
+      {
+        "id": "RAW_6f17468b",
+        "type": "ARTICLE",
+        "title": "GPT-5.4 Released: OpenAI's First Unified Model, Truly Native",
+        "oneSentenceSummary": "OpenAI releases GPT-5.4, creating the first unified Agent model that supports native Computer Use by integrating reasoning, coding, and computer interaction.",
+        "url": "https://www.qbitai.com/2026/03/384345.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_fa6eee25",
+        "type": "ARTICLE",
+        "title": "GPT-5.4 Released Late at Night: The Perfect Model for OpenClaw Has Arrived",
+        "oneSentenceSummary": "This article reports on the release of GPT-5.4, highlighting its balanced performance and technical updates in coding capabilities, world knowledge, and Agent collaboration (OpenClaw).",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647680455&idx=1&sn=72f6e792e3a85f07250949a9f1236ea6",
+        "sourceName": "数字生命卡兹克"
+      },
+      {
+        "id": "RAW_95e51272",
+        "type": "ARTICLE",
+        "title": "This AI Hotspot Website, Encapsulating 3 Years of My Self-Media Experience, Is Now Free for Everyone.",
+        "oneSentenceSummary": "The author publicly shares his AI hotspot monitoring website, AIHOT, and details its information curation architecture and iterative experience, which combines source filtering, AI scoring, and code-based rules.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682019&idx=1&sn=13723968587c20aa81d71ed8c3b52fae",
+        "sourceName": "数字生命卡兹克"
+      }
+    ]
+  }
+}

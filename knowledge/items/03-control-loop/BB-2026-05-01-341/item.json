@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-26",
+  "id": "BB-2026-05-01-341",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-341/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-341",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-341/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-341/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-341/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-341/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-341/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-341/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯云开发者",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯云开发者",
+  "status": "Full text + source captured",
+  "tags": [
+    "Agent",
+    "OpenClaw",
+    "System Prompt",
+    "Skill Mechanism",
+    "Source Code Analysis"
+  ],
+  "title": "Unremarkable Source Code Hides the Core Secret of Agents?",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695603&idx=1&sn=1753f7e5a63067c16db284bc22fbe238",
+      "https://www.bestblogs.dev/article/6d24ef3c"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695603&idx=1&sn=1753f7e5a63067c16db284bc22fbe238",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/6d24ef3c"
+  }
+}

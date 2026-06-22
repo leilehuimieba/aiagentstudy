@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "莫崇宇"
+  ],
+  "candidateSource": null,
+  "category": "News_Media",
+  "categoryDesc": "News & Media",
+  "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/36.png",
+  "domain": "ifanr.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_42e93f45",
+  "keyQuotes": [
+    "The PC is no longer just a tool operated by people; it is also becoming an AI assistant that can continuously run tasks.",
+    "In the first phase of AI, model companies dominated the industry narrative; in the second phase, platform companies may lead industry implementation.",
+    "Who chooses the model, who assigns tasks, who manages the Agents, and who defines permissions and audits, is closer to the core gateway of enterprise AI."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The MAI Thinking 1 reasoning model uses a sparse MoE architecture with 35B active parameters and supports a 256K context window; the MAI Code 1 Flash surpasses Claude Haiku 4.5 on coding benchmarks and is already integrated into GitHub Copilot.",
+      "point": "Microsoft releases its in-house MAI model family, covering reasoning, code, image, and speech, reducing reliance on OpenAI."
+    },
+    {
+      "explanation": "Based on the Nvidia RTX Spark platform, this device features a 20-core CPU and 128GB of unified memory, comes pre-loaded with a development toolchain, and supports local model execution and Agent debugging, positioning it as a 'dream machine' for developers.",
+      "point": "The Surface RTX Spark Dev Box turns a PC into a local Agent workstation, providing 1 petaflop of AI compute power."
+    },
+    {
+      "explanation": "The desktop terminal is based on a MediaTek chip, supporting identity recognition and Copilot interaction; the wearable badge is based on a Qualcomm chip, targeting mobile work scenarios and supporting hands-free voice recording and medical care process verification.",
+      "point": "Project Solara explores new Agent terminal form factors, including a desktop terminal and a wearable badge."
+    },
+    {
+      "explanation": "The Windows suite allows users to control an Agent's read-only, writable, or hidden permissions for folders, and configure clipboard and network access permissions. A live demo showed the Agent was unable to delete files in a read-only folder.",
+      "point": "OpenClaw on Windows provides enterprise-grade security guardrails for personal Agents, enabling fine-grained permission control."
+    },
+    {
+      "explanation": "Through an integrated layout of model catalogs, Agent management, permission governance, local compute power, and terminal devices, Microsoft is attempting to transform AI from a model dividend into a platform business, defining the standard infrastructure for enterprise AI deployment.",
+      "point": "Microsoft is transitioning from a model company to a platform company, vying for the core enterprise AI gateway."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "At Build 2026, Microsoft unveiled its in-house MAI model family, the Surface RTX Spark Dev Box local AI workstation, the Project Solara Agent terminal device, and the OpenClaw enterprise security solution, showcasing a comprehensive enterprise AI ecosystem spanning from models to platforms.",
+  "originalTitle": "刚刚，Windows「梦中神机」来了，把你的 PC 变成 Agent 工位",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 22:12:42",
+  "publishTimeStamp": 1780495962000,
+  "qualified": false,
+  "readCount": 163,
+  "readTime": 15,
+  "readUrl": "https://www.bestblogs.dev/article/42e93f45",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4ecd55",
+  "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+  "sourceName": "爱范儿",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article provides an in-depth report on the core announcements from Microsoft Build 2026. It begins by examining the shifting relationship between Microsoft and OpenAI, noting that Microsoft is moving from relying on OpenAI's model dividends to building its own AI platform. Key releases include: seven in-house MAI models (reasoning, code, image, speech, transcription), among which the MAI Thinking 1 reasoning model uses a sparse MoE architecture with 35B active parameters, and the MAI Code 1 Flash surpasses Claude Haiku 4.5 on the SWE Bench Pro benchmark; the Surface RTX Spark Dev Box, offering 1 petaflop of AI compute and 128GB of unified memory, positioned as a local Agent workstation for developers; Project Solara, exploring new Agent terminal form factors, including a desktop terminal and a wearable badge; and OpenClaw on Windows, providing enterprise-grade security controls for personal Agents. The article also covers updates to GitHub Copilot, the Agent 365 governance platform, Web IQ contextual capabilities, the Microsoft Discovery research platform, and the Majorana 2 quantum chip. It concludes that Microsoft is transitioning from a model company to a platform company, vying for the core enterprise AI gateway.",
+  "tags": [
+    "AI Platform",
+    "Microsoft",
+    "AI Model",
+    "AI Agent",
+    "AI Hardware"
+  ],
+  "title": "Just In: Windows' 'Dream Machine' Turns Your PC into an Agent Workstation",
+  "translateContent": null,
+  "url": "https://www.ifanr.com/1667971?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "wordCount": 3721
+}

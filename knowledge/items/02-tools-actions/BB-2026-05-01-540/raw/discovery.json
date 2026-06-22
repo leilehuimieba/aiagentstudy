@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "腾讯技术工程"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_6a34c7b0",
+  "keyQuotes": [
+    "Eval = Agent Input → Execution → Capture Execution Process (Trace + Output) → A Set of Check Rules → Comparable Scores",
+    "Use code for judgment whenever possible, use models when necessary, and use humans for calibration.",
+    "Every change should quickly produce a comparable score, replacing intuition with data and spot checks with full coverage."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "A single evaluation method cannot address both the hard indicators (e.g., file existence, correct calls) and soft indicators (e.g., reasoning quality, suggestion quality) of Agent outputs. The three types of scorers have different focuses, with a priority order of deterministic > rubric > human.",
+      "point": "Agent evaluation must adopt a combination of 'deterministic scorer + rubric scorer + human scorer.'"
+    },
+    {
+      "explanation": "These five dimensions progress from 'did it do it right?' to 'is it user-friendly?' P0 prioritizes functional correctness and robustness/safety, P1 covers process quality and efficiency/cost, and P2 supplements experience and alignment as needed.",
+      "point": "Evaluation dimensions should cover five categories: functional correctness, process quality, efficiency and cost, robustness and safety, and experience alignment."
+    },
+    {
+      "explanation": "Each scenario includes both positive and negative test cases. Core logic cases need to cover each business branch flow chart one by one, and their quantity is typically 2-3 times the sum of the other three scenario types.",
+      "point": "Test case design must cover four scenarios: triggering, core logic, output quality, and error tolerance, with core logic cases being the most numerous."
+    },
+    {
+      "explanation": "A baseline is a snapshot of expected results for a single test case, confirmed manually after its first execution. Every subsequent execution is compared against this baseline, serving both the deterministic and rubric scorers.",
+      "point": "Baseline management is the core of the evaluation system, establishing expected processes and outcomes through a 'run first, then confirm' approach."
+    },
+    {
+      "explanation": "Capability evaluation guides optimization directions, while regression evaluation prevents drift. The regression test set only grows, and CI runs it every time.",
+      "point": "The evaluation system should distinguish between capability evaluation and regression evaluation; once capability cases achieve stable pass rates, they 'graduate' to the regression suite."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article systematically introduces the Tencent TEG team's practical framework for evaluating AI Agents, proposing a comprehensive evaluation system composed of three types of scorers: deterministic scorers, rubric scorers, and human scorers, covering five dimensions—functional correctness, process quality, efficiency and cost, robustness and safety, and experience alignment—validated through the TPerf performance analysis Agent project.",
+  "originalTitle": "AI Agent & Skill 测评方案及落地实践",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-16 17:33:00",
+  "publishTimeStamp": 1781602380000,
+  "qualified": false,
+  "readCount": 71,
+  "readTime": 68,
+  "readUrl": "https://www.bestblogs.dev/article/6a34c7b0",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_958ae8",
+  "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "sourceName": "腾讯技术工程",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Starting from three major pain points of AI Agents in production environments—non-determinism, black-box nature, and cascading error amplification—the article argues for the necessity of establishing an automated evaluation system. Its core contribution is a complete evaluation framework: first, it defines a combination strategy of 'deterministic scorer + rubric scorer + human scorer,' clarifying their respective application scenarios and priorities; second, it breaks down evaluation dimensions into five categories—functional correctness, process quality, efficiency and cost, robustness and safety, and experience alignment—providing sub-items, evaluation methods, and typical indicators for each dimension. On the implementation level, the article details four scenarios for test case design (triggering, core logic, output quality, and error tolerance), a negative scoring system, baseline establishment and update mechanisms, and key engineering issues (trace output, environment isolation, stability assessment, report generation). Finally, using the TPerf performance AI analysis Agent as a practical case study, it demonstrates how to apply the general methodology to create specific scoring criteria, case organization, and baseline management processes. The article is clearly structured with detailed examples, serving as a directly reusable practical guide for Agent evaluation.",
+  "tags": [
+    "AI Agent",
+    "AI Evaluation",
+    "LLM",
+    "Engineering Practice",
+    "AI Products & Applications"
+  ],
+  "title": "AI Agent & Skill Evaluation: A Framework and Practical Implementation",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802062&idx=1&sn=a5983c28a6df652c9873b577a493571f",
+  "wordCount": 16989
+}

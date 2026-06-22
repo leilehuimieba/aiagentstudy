@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-13",
+  "id": "BB-2026-05-01-542",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-542/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-542",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-542/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-542/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-542/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-542/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-542/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-542/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / freeCodeCamp",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / freeCodeCamp",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Coding",
+    "LangChain",
+    "Mastra"
+  ],
+  "title": "Mastra vs LangChain: Building an AI Agent Pipeline and Analyzing the Data",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/704aa9a4",
+      "https://www.freecodecamp.org/news/mastra-vs-langchain-building-an-ai-agent-pipeline-and-analyzing-the-data/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.freecodecamp.org/news/mastra-vs-langchain-building-an-ai-agent-pipeline-and-analyzing-the-data/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/704aa9a4"
+  }
+}

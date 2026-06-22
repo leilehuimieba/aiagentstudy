@@ -1,0 +1,88 @@
+{
+  "id": "RAW_999ebcec",
+  "notExist": null,
+  "originalTitle": "Stragglers， Not Failures: How Adaptive Hedged Requests Reduce p99 Latency by 74 Percent",
+  "title": "Stragglers， Not Failures: How Adaptive Hedged Requests Reduce p99 Latency by 74 Percent",
+  "oneSentenceSummary": "Adaptive hedged requests using DDSketch for real-time latency distribution learning and a token bucket for load protection reduce p99 latency by 74% in fan-out architectures, outperforming static thresholds without manual configuration.",
+  "summary": "This article addresses the problem of tail latency in distributed systems, specifically the p99 degradation caused by stragglers (slow but not failed requests) in fan-out architectures. It argues that retries, the standard response to latency, are counterproductive for stragglers as they add load to already-struggling back-ends. The proposed solution is an adaptive hedging mechanism that uses DDSketch to learn the real-time latency distribution per host, fires a backup request when a primary request exceeds the current p90 latency, and uses a token bucket budget to prevent load amplification during genuine outages. The article provides a detailed explanation of the algorithm, including the use of a tumbling window for adapting to changing conditions, and presents benchmark results showing a 74% reduction in p99 latency (from 65ms to 17.3ms) with only 8.9% overhead, matching the best hand-tuned static threshold without any manual configuration. It also discusses the application of this technique to LLM inference, where measuring Time to First Token (TTFT) is critical, and provides a reference implementation as a Go library.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Tail Latency",
+    "Hedged Requests",
+    "DDSketch",
+    "Distributed Systems",
+    "Performance Engineering"
+  ],
+  "mainPoints": [
+    {
+      "point": "Stragglers, not failures, are the primary cause of high p99 latency in fan-out architectures, and retries exacerbate the problem.",
+      "explanation": "A straggler is a request that completes slowly, unlike a failure which doesn't complete. Retrying a straggler adds load to an already pressured back-end, making the tail latency worse. Hedging, which races a backup request against a slow primary, is the correct intervention."
+    },
+    {
+      "point": "Static hedge thresholds fail in production because latency distributions are dynamic, shifting with load, deployments, and time of day.",
+      "explanation": "A threshold that works in a benchmark or at 3 AM becomes either too aggressive or too conservative during peak traffic, requiring continuous manual tuning that rarely happens. An adaptive mechanism that learns the distribution from live traffic is necessary."
+    },
+    {
+      "point": "DDSketch provides a practical, O(1) solution for real-time quantile estimation with relative-error guarantees, enabling adaptive hedging.",
+      "explanation": "DDSketch is a streaming quantile sketch that provides a p90 estimate with ±1% accuracy, constant memory usage, and ~35ns overhead per request. A tumbling window of two sketches ensures the estimate adapts to changing conditions by aging out stale data."
+    },
+    {
+      "point": "A token bucket budget is essential to prevent load amplification during genuine outages, ensuring graceful degradation.",
+      "explanation": "Without a budget, hedging every slow request during an outage would double back-end load. A token bucket, refilled at a percentage of estimated RPS, limits the hedge rate. During an outage, the budget exhausts quickly, automatically stopping hedging."
+    },
+    {
+      "point": "For LLM inference, adaptive hedging must measure Time to First Token (TTFT), not Time to First Byte (TTFB), to be effective.",
+      "explanation": "Streaming LLM endpoints send HTTP headers almost immediately, so a hedge calibrated on header arrival time fires on every request. Measuring latency at the first body byte (TTFT) correctly identifies stragglers caused by prefill computation or cache misses."
+    }
+  ],
+  "keyQuotes": [
+    "Stragglers, requests that complete slowly rather than fail, are the primary driver of p99 latency in fan-out architectures and retries make them worse by adding load to already-struggling back-ends.",
+    "Static hedge thresholds appear effective in benchmarks but break in production as latency distributions shift with load, deployments, and time of day, requiring continuous manual tuning that rarely happens in practice.",
+    "The right tool for stragglers is a hedged request: Send a backup while the primary is still in flight and use whichever responds first. The loser is cancelled.",
+    "Tail latency in distributed systems is a statistics problem, not a code problem.",
+    "The key distinction is that retries are reactive (they wait for failure, then resend), while hedges are proactive (they detect slowness and race a backup)."
+  ],
+  "url": "https://www.infoq.com/articles/adaptive-hedged-requests-p99-latency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "readUrl": "https://www.bestblogs.dev/article/999ebcec",
+  "enclosureUrl": null,
+  "domain": "infoq.com",
+  "cover": "https://res.infoq.com/articles/adaptive-hedged-requests-p99-latency/en/headerimage/adaptive-hedged-requests-p99-latency-header-1779785816730.jpg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_PRACTICE",
+  "aiSubCategoryDesc": "Engineering Practice",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 6,
+  "wordCount": 3365,
+  "readTime": 14,
+  "mediaDuration": null,
+  "authors": [
+    "Prathamesh Bhope"
+  ],
+  "publishTimeStamp": 1779958800000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 17:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

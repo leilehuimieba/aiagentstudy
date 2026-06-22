@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "Hacker News"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://fergusfinn.com/saral-og.jpg",
+  "domain": "fergusfinn.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_f5ca4d76",
+  "keyQuotes": [
+    "The tokens have to go and meet their experts, wherever they might be in the network fabric. It's the job of the EP communication kernel to make that happen.",
+    "Throughput spends a round trip to keep memory tight; low latency spends memory, in the form of mostly-empty worst-case buffers, to remove the round trip."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Because the router decides which tokens go to which experts at each step, the communication pattern is not fixed. This necessitates specialized kernels that can handle variable, lumpy token distributions across the network fabric.",
+      "point": "Expert Parallelism requires dynamic, runtime-dependent communication, unlike other parallelism strategies."
+    },
+    {
+      "explanation": "By first exchanging small integer counts of tokens to be sent, each rank can compute the exact size and layout of its receive buffer via a prefix sum. This avoids worst-case padding, which is critical for prefill where batches are large and HBM is scarce.",
+      "point": "The high-throughput kernel uses a coordination pass to allocate a compact buffer, saving HBM for KV cache."
+    },
+    {
+      "explanation": "For decode, where batches are small and the coordination round trip is a significant overhead, the kernel uses a pre-computed formula to write directly into a fixed, private region for each source rank. This removes the round trip but requires worst-case padding and a cap on tokens per dispatch.",
+      "point": "The low-latency kernel skips coordination by pre-allocating fixed buffers, trading memory for speed."
+    },
+    {
+      "explanation": "Combine reuses the routing information from dispatch to reverse the process. It unpermutes the expert-grouped outputs, sends them back through the fabric, and sums the contributions from multiple experts for each token at its home rank.",
+      "point": "The combine operation mirrors dispatch, summing partial expert outputs back to the token's home rank."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article dissects the design of high-performance Expert Parallelism (EP) communication kernels for MoE LLM inference, contrasting a throughput-optimized 'ask-then-send' shape with a latency-optimized 'send-without-asking' shape.",
+  "originalTitle": "Anatomy of a high-performance EP kernel",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-11",
+  "publishDateTimeStr": "2026-06-11 00:04:11",
+  "publishTimeStamp": 1781107451000,
+  "qualified": false,
+  "readCount": 21,
+  "readTime": 14,
+  "readUrl": "https://www.bestblogs.dev/article/f5ca4d76",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article provides a deep technical analysis of the communication kernels used for Expert Parallelism (EP) in Mixture-of-Experts (MoE) large language model inference. It focuses on the 'dispatch' and 'combine' operations that move token activations between GPUs to meet their assigned experts. The author builds up the anatomy of two primary kernel shapes, as pioneered by DeepSeek's DeepEP library. The high-throughput shape uses a coordination pass to learn the exact number of tokens each expert will receive, allowing for a compact, dynamically-sized buffer that saves HBM memory. The low-latency shape, crucial for the decode phase, skips the coordination round trip by pre-allocating fixed, worst-case-sized buffers for each source rank, trading memory for speed. The article details the mechanics of each approach, including the use of prefix sums, RDMA queues, NVLink forwarding, per-source-rank layouts, and per-expert permutation. It concludes by discussing the evolution of these kernels, including DeepEP V2's move to NCCL, the UCCL project for broader hardware support, and ongoing work on load balancing and fused compute-communication primitives.",
+  "tags": [
+    "AI Infrastructure",
+    "LLM Inference",
+    "Expert Parallelism",
+    "MoE",
+    "DeepEP"
+  ],
+  "title": "Anatomy of a high-performance EP kernel",
+  "translateContent": null,
+  "url": "https://fergusfinn.com/blog/anatomy-of-a-high-performance-ep-kernel/",
+  "wordCount": 3281
+}

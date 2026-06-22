@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "Thu, 04 Jun 2026 21:12:58 GMT",
+    "updated": ""
+  },
+  "date": "2026-06-04",
+  "id": "RSS-2026-003",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/RSS-2026-003/article.md",
+    "item_dir": "knowledge/items/03-control-loop/RSS-2026-003",
+    "raw_dir": "knowledge/items/03-control-loop/RSS-2026-003/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/RSS-2026-003/raw/feed-entry.json",
+      "knowledge/items/03-control-loop/RSS-2026-003/raw/page-text.txt",
+      "knowledge/items/03-control-loop/RSS-2026-003/raw/page.html"
+    ],
+    "source": "knowledge/items/03-control-loop/RSS-2026-003/source.md",
+    "summary": "knowledge/items/03-control-loop/RSS-2026-003/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / LangChain Blog",
+  "source_id": "langchain-blog",
+  "source_name": "LangChain Blog",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "LangChain Blog",
+    "RSS",
+    "AI Agent",
+    "LLM",
+    "Tool Use"
+  ],
+  "title": "Fault Tolerance in LangGraph: Retries, Timeouts and Error Handlers",
+  "topic": "03-control-loop",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.langchain.com/rss.xml",
+      "https://www.langchain.com/blog/fault-tolerance-in-langgraph"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://blog.langchain.com/rss.xml",
+    "original_url": "https://www.langchain.com/blog/fault-tolerance-in-langgraph",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.langchain.com/blog/fault-tolerance-in-langgraph"
+  }
+}

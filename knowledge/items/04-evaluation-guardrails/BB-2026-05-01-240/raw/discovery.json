@@ -1,0 +1,84 @@
+{
+  "id": "RAW_8fdfe4e8",
+  "notExist": null,
+  "originalTitle": "让 Skill 自己训练自己：8 阶段 Loop、3 层评测、5 维 AND 门控，从此实现自进化",
+  "title": "Let Skill Train Itself: 8-Stage Loop, 3-Tier Evaluation, 5-Dimensional AND Gating for Self-Evolution",
+  "oneSentenceSummary": "This paper proposes and implements a self-evolving framework called skill-evolver, which integrates Karpathy's autoresearch outer loop, Anthropic's skill-creator evaluation engine, and Stanford Meta-Harness's trace diagnosis concept. It enables AI Skills to autonomously iterate, evaluate, roll back, and optimize like training a model, validated by 19 rounds of zero-rollback self-evolution and a real business scenario.",
+  "summary": "Starting from the pain points of stability, boundaries, and rule conflicts encountered in AI Skill development, the author systematically proposes a training framework for Skill self-evolution—skill-evolver. Drawing an analogy to the deep learning training paradigm, the framework treats Skill as a trainable object and designs an 8-stage iterative loop, a three-tier evaluation pipeline (L1 Quick Gatekeeper, L2 Dev Eval, L3 Strict Eval), a 5-dimensional AND gating mechanism, and a Trace diagnosis method based on original execution traces. The author validates the framework's effectiveness by having skill-evolver self-evolve for 19 rounds (all passing gating with zero rollbacks) and a real customer service Q&A Skill optimization case (recall rate improved from 86% to 98.67%). The article concludes by discussing practical challenges such as LLM evaluation noise, GT quality ceiling, and cost, while emphasizing the engineering principle of 'verify at every step' and the complementary value of AI in exploring beyond human cognitive boundaries.",
+  "featuredReason": "This piece reframes Skill authoring as an engineering loop: trainable, evaluable, and rollbackable. Its eight-stage cycle, three-layer evaluation pipeline, five-dimensional AND gate, and trace-based diagnosis make self-evolving Skills concrete rather than speculative. It is worth reading for anyone building reliable agent workflows and evaluation systems.",
+  "translateContent": null,
+  "tags": [
+    "Skill Self-Evolution",
+    "AI Agent",
+    "LLM Evaluation",
+    "AutoResearch",
+    "Meta-Harness"
+  ],
+  "mainPoints": [
+    {
+      "point": "A Skill should not be a handcrafted artifact, but an object that can be trained, rolled back, and optimized.",
+      "explanation": "The author proposes drawing from the deep learning training paradigm, transforming Skill development from manual debugging to data-driven iterative optimization. The core is to define GT data and evaluation metrics, allowing the loop to automatically converge toward the goal."
+    },
+    {
+      "point": "The skill-evolver framework fuses three proven concepts: the outer loop skeleton, the evaluation engine, and trace diagnosis.",
+      "explanation": "The framework integrates Karpathy's autoresearch iterative loop, Anthropic's skill-creator evaluation capabilities, and Stanford Meta-Harness's raw trace-driven diagnosis, forming a complete closed loop."
+    },
+    {
+      "point": "5-dimensional AND gating and layered mutation are key engineering constraints ensuring iteration quality.",
+      "explanation": "Through AND logic gating across 5 dimensions (e.g., quality, cost, safety), it eliminates the possibility of a high score in one dimension masking issues in others. Layered mutation controls the granularity of changes, gradually escalating from low-cost modifications to avoid blind large-scale changes."
+    },
+    {
+      "point": "The core value of meta-evolution lies in exploring boundaries that human developers cannot reach.",
+      "explanation": "The 19 rounds of self-evolution uncovered 14 test cases the author had never thought of. These cases stemmed from real issues discovered by the tool during actual operation, not from manual presets, demonstrating AI's unique value in exploring cognitive blind spots."
+    }
+  ],
+  "keyQuotes": [
+    "Writing a Skill that can run is not hard—you can throw together a SKILL.md and the model will follow it. But making it work reliably is a different story.",
+    "Instead of writing longer prompts to 'convince' it to follow rules, write the rules into code—if the gating function fails, just git revert HEAD, no negotiation.",
+    "The most valuable thing about meta-evolution is not the time saved by automation; it's that it runs a path for a user you've never met, a path you yourself would never traverse.",
+    "A Skill should not be a handcrafted artifact; it should be an object that can be trained, rolled back, and optimized.",
+    "Humans optionally contribute at the edge."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695568&idx=1&sn=492ca1e98155a9fea668213173cab654",
+  "readUrl": "https://www.bestblogs.dev/article/8fdfe4e8",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045410_4d44587a",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_efac5b",
+  "sourceName": "腾讯云开发者",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 92,
+  "readCount": 435,
+  "wordCount": 7896,
+  "readTime": 32,
+  "mediaDuration": null,
+  "authors": [
+    "腾讯云开发者"
+  ],
+  "publishTimeStamp": 1779151560000,
+  "publishDateStr": "05-19",
+  "publishDateTimeStr": "2026-05-19 08:46:00",
+  "qualified": true,
+  "stickTop": false,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

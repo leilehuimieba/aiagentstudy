@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-13",
+  "id": "BB-2026-05-01-213",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-213/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-213",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-213/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-213/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-213/raw/display-document.html",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-213/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-213/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-213/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 量子位",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 量子位",
+  "status": "Full text + source captured",
+  "tags": [
+    "Agent Benchmark",
+    "Frontier-Eng Bench",
+    "Engineering Optimization",
+    "Auto Research",
+    "Iterative Optimization"
+  ],
+  "title": "The Era of Auto Research: 47 Tasks Without Standard Answers Become the Ultimate Test for Agent Capabilities",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/en/article/b60182be",
+      "https://www.qbitai.com/2026/05/416754.html"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.qbitai.com/2026/05/416754.html",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/b60182be"
+  }
+}

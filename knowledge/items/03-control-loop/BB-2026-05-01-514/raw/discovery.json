@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Lester Leong"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim-v3.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_74c97796",
+  "keyQuotes": [
+    "Emergence is contingent, not durable. Behavior you observe and write up from one population of agents can vanish when you change the population, even if nothing else changes.",
+    "You do not control a market of agents by shocking its inputs. Supply and demand levers only bias choices the agents are still free to make, and a heterogeneous council will frequently decline.",
+    "Emergence for texture, authored control for the moments that have to happen. The craft is knowing which is which, and where the seam sits.",
+    "When the cheap stand-in and the real agents disagree, the stand-in is the one lying, and any result that only reproduces under the stand-in is not a result."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "A crash that emerged reliably under one single model vanished when the agent population was changed to a heterogeneous council of five different models. A single impressive run is an anecdote, not a system property.",
+      "point": "Emergent behavior is contingent, not a durable property of the system."
+    },
+    {
+      "explanation": "Attempts to force a crash via rumor, inventory glut, or larger short positions failed against the live council. These levers only bias choices the agents are free to decline.",
+      "point": "You cannot reliably control a market of heterogeneous agents by shocking its inputs."
+    },
+    {
+      "explanation": "The solution was to impose the crash as a fact at the settlement seam, after all agent decisions are made. This separates emergent texture from authored control for moments that must happen.",
+      "point": "Reliable outcomes come from authoring at a deterministic seam, not from pushing harder on emergent inputs."
+    },
+    {
+      "explanation": "A fix that worked against a simple rule-based test policy failed against the real heterogeneous agents. When the stand-in and real agents disagree, the stand-in is lying.",
+      "point": "Cheap simulators can provide false confidence."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article details how a simulated economic crash, emergent under a single AI model, vanished when replaced by a heterogeneous council of five small models, teaching the author that emergence is contingent and reliable outcomes require authored control at a deterministic seam.",
+  "originalTitle": "The crash that vanished: control and emergence in a five-model economy",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-08 21:10:48",
+  "publishTimeStamp": 1780924248000,
+  "qualified": false,
+  "readCount": 32,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/74c97796",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The author recounts a lesson from the Build Small Hackathon. Initially, a single small model running five woodland creatures produced an emergent bank-run-style crash when a rumor triggered a sell-off. However, when the system was rebuilt with a council of five distinct small models from different labs (OpenAI, NVIDIA, OpenBMB, and a fine-tuned model), the same rumor caused the agents to hoard honey instead of dumping it, making the crash disappear. The author describes three failed attempts to force the crash by manipulating economic inputs (rumor, inventory glut, larger short), which worked against a simple test policy but failed against the live heterogeneous agents. The resolution was to author the crash as a deterministic override at the settlement seam, after all agent trading is complete. The key takeaway is that emergent behavior from one agent population is not durable; you cannot reliably control a market of diverse agents by shocking inputs; and cheap simulators can give false confidence. The craft lies in knowing where to let emergence run and where to impose authored control.",
+  "tags": [
+    "AI Agent",
+    "Emergence",
+    "Multi-Agent Systems",
+    "Simulation",
+    "LLM"
+  ],
+  "title": "The crash that vanished: control and emergence in a five-model economy",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v3",
+  "wordCount": 1258
+}

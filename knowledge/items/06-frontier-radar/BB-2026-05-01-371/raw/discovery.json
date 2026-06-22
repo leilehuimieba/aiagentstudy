@@ -1,0 +1,84 @@
+{
+  "id": "RAW_66047258",
+  "notExist": null,
+  "originalTitle": "TogetherAI 开源 OSCAR：超越 TurboQuant! 面向真实 Serving 的 2-bit KV Cache 量化",
+  "title": "TogetherAI Open Sources OSCAR: Surpassing TurboQuant! 2-bit KV Cache Quantization for Real-World Serving",
+  "oneSentenceSummary": "Together AI has open-sourced OSCAR, a 2-bit KV Cache quantization scheme designed for real-world long-context serving. By employing attention-aware rotation techniques, it significantly reduces memory footprint and boosts inference throughput while maintaining model performance comparable to BF16 precision.",
+  "summary": "This article details Together AI's open-source OSCAR (Offline Spectral Covariance-Aware Rotation) scheme, which aims to solve the KV Cache memory bottleneck in long-context LLM inference. OSCAR's core innovation lies not in simply reconstructing the K/V vectors with low error, but in analyzing the attention mechanism to push quantization noise into directions that are insensitive to attention. Specifically, OSCAR uses query covariance to guide key rotation and score-weighted value covariance to guide value rotation, combined with Hadamard transform and bit-reversal techniques, achieving efficient quantization at approximately 2.28 effective bits per KV element. On the system implementation side, OSCAR has been integrated into SGLang, managing KV Cache with a three-stage token pool (BF16 sink + INT2 history + BF16 recent), and is compatible with paged KV and prefix cache. Evaluation results show that on models like Qwen3 and GLM-4.7, OSCAR's performance at 2-bit precision is close to BF16, improving by up to 40.1 points over 3-bit TurboQuant, achieving up to ~3x decode speedup and up to ~7x job-level throughput improvement. The article also provides a quick practical guide for deploying OSCAR on SGLang.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "KV Cache",
+    "Quantization",
+    "OSCAR",
+    "Together AI",
+    "SGLang"
+  ],
+  "mainPoints": [
+    {
+      "point": "OSCAR uses attention-aware rotation techniques to steer quantization noise towards directions insensitive to attention.",
+      "explanation": "Unlike traditional methods that aim for low reconstruction error of K/V vectors, OSCAR uses query covariance and score-weighted value covariance to guide the generation of rotation matrices, ensuring that the quantized KV Cache has minimal impact on attention computation."
+    },
+    {
+      "point": "OSCAR achieves performance close to BF16 at approximately 2.28 BPE, significantly outperforming other 2-bit and 3-bit schemes.",
+      "explanation": "On models like Qwen3-8B, OSCAR shows minimal performance gap compared to BF16 on tasks such as GPQA and HumanEval, and significantly outperforms QuaRot-INT2 and TurboQuant, demonstrating its ability to maintain model quality under high compression rates."
+    },
+    {
+      "point": "OSCAR is integrated into SGLang with a three-stage token pool design, balancing precision and efficiency.",
+      "explanation": "During runtime, the KV Cache is divided into three segments: BF16 sink, INT2 history, and BF16 recent. This protects the precision of attention sinks and recent context while drastically compressing the memory footprint of historical KV, and is compatible with paged KV and prefix cache."
+    },
+    {
+      "point": "OSCAR delivers significant memory savings and inference acceleration in long-context scenarios.",
+      "explanation": "Compared to BF16, OSCAR can reduce KV Cache memory by approximately 8x, achieving up to ~3x decode speedup and ~7x job-level throughput improvement under 100k context, making it particularly suitable for Agent scenarios with long prefix reuse."
+    }
+  ],
+  "keyQuotes": [
+    "OSCAR's core idea is: don't just aim to reconstruct the K/V vectors themselves, but to preserve the way attention truly consumes these KV values.",
+    "OSCAR's advantage is not just making the numerical distribution smoother, but pushing quantization noise into directions that are relatively insensitive to attention.",
+    "OSCAR doesn't simply 'add a rotation'; it incorporates rotation, clipping, and grouping into the objective function of attention quality.",
+    "OSCAR is designed for deployable enterprise workloads, not just to show the paper's bleak error data.",
+    "The key insight from OSCAR is: for 2-bit KV Cache to truly go online, rotation must not only 'exist' but be aligned with attention; simultaneously, it must be designed together within a real serving system."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247508580&idx=1&sn=c0318290e24f95a10445b639cd6208b3",
+  "readUrl": "https://www.bestblogs.dev/article/66047258",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045451_592a693d",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_fdd993",
+  "sourceName": "魔搭ModelScope社区",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045451_592a693d",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 50,
+  "wordCount": 4697,
+  "readTime": 19,
+  "mediaDuration": null,
+  "authors": [
+    "魔搭ModelScope社区"
+  ],
+  "publishTimeStamp": 1779700440000,
+  "publishDateStr": "05-25",
+  "publishDateTimeStr": "2026-05-25 17:14:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

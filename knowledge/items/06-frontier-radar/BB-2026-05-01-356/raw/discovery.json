@@ -1,0 +1,83 @@
+{
+  "id": "RAW_316ae95e",
+  "notExist": null,
+  "originalTitle": "近 9 倍训练加速：DiT 里的残差流，正在成为收敛瓶颈",
+  "title": "Nearly 9x Training Acceleration: Residual Stream in DiT Becomes a Convergence Bottleneck",
+  "oneSentenceSummary": "Nanjing University and Alibaba jointly propose Diffusion-Adaptive Routing (DAR), which replaces the fixed residual summation in DiT with a learnable, time-dynamic cross-layer routing mechanism, achieving nearly 9x training acceleration and improved generation quality.",
+  "summary": "This paper, a collaboration between the LAMDA Lab at Nanjing University and the Alibaba Intelligent Engine Team, systematically analyzes the limitations of standard residual connections in Diffusion Transformers (DiT) within the context of diffusion models. The study finds that fixed-weight residual summation leads to hidden state explosion in deeper layers, gradient attenuation, and inter-layer redundancy, while failing to adapt to the varying information needs of different denoising stages. To address this, the paper proposes Diffusion-Adaptive Routing (DAR), which reframes the residual stream as a learnable, time-dynamic cross-layer information routing mechanism. DAR allows each layer to selectively aggregate information from the outputs of previous layers via softmax routing and introduces timestep awareness, enabling routing weights to adapt dynamically based on the noise stage. To control memory overhead, DAR adopts a chunked aggregation strategy, balancing historical information retention with computational efficiency. On ImageNet 256x256, DAR reduces the FID of SiT-XL/2 from 9.67 to 7.56 and achieves baseline convergence quality with approximately 8.75x fewer training iterations. When combined with REPA, it yields about 2x acceleration in the early training phase. Additionally, DAR demonstrates the ability to preserve high-frequency details in the post-training and distillation of Qwen-Image. This work redefines the residual stream from a default engineering detail to an architectural variable worthy of systematic study.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Diffusion Transformer",
+    "DiT",
+    "Residual Stream",
+    "Cross-Layer Routing",
+    "Training Acceleration"
+  ],
+  "mainPoints": [
+    {
+      "point": "Standard residual connections become a convergence bottleneck in DiT, causing deep state explosion, gradient attenuation, and inter-layer redundancy.",
+      "explanation": "Fixed-weight residual summation causes hidden state magnitudes to grow nearly 100x along the network depth, leads to rapid gradient decay in backpropagation, and results in adjacent block output similarities consistently above 0.9, limiting model expressiveness and training efficiency."
+    },
+    {
+      "point": "DAR replaces fixed residual summation with a learnable, time-dynamic softmax routing mechanism, allowing each layer to select its information source based on the denoising stage.",
+      "explanation": "By using query-key scoring and softmax aggregation of historical layer outputs, and incorporating timestep embeddings to make routing weights adapt dynamically to the noise stage, DAR solves the problem of fixed summation failing to meet the information needs of different denoising phases."
+    },
+    {
+      "point": "DAR achieves 8.75x training acceleration on ImageNet 256x256, reducing FID from 9.67 to 7.56, and is orthogonal to REPA.",
+      "explanation": "Experiments show DAR improves FID by 2.11 under ODE sampling and achieves 6.92 under SDE; when combined with REPA, it reaches an FID of 7.09 at 100K iterations, surpassing the result of REPA alone at 200K, demonstrating the complementary nature of their optimization directions."
+    },
+    {
+      "point": "The chunked aggregation strategy balances historical information retention with memory overhead, with an optimal chunk size of approximately 4.",
+      "explanation": "Through rate-distortion analysis, the optimal chunk size is theoretically predicted to be between 3.7 and 4.9, consistent with the best-performing c4 in experiments, avoiding the memory explosion of dense routing and the information loss from excessive compression."
+    }
+  ],
+  "keyQuotes": [
+    "Information aggregation in DiT should no longer remain a fixed, incremental residual summation; it should be designed as a learnable, time-dynamic, non-incremental routing mechanism.",
+    "DAR views the residual stream as an information aggregation process along the depth dimension. Instead of directly summing the outputs of previous layers, it allows the current layer to perform a softmax routing over historical outputs to determine which sources are more valuable.",
+    "The benefit of DAR is not simply increasing connection density, but enabling the connection pattern to adapt dynamically with depth and timestep.",
+    "Model performance depends not only on how each layer computes internally, but also on how information flows between layers. The residual stream is not a default choice; it is a part of the generative model architecture that can be learned, tuned, and is worth redesigning."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509566&idx=1&sn=ace75be905d15523692f57dcd02142a4",
+  "readUrl": "https://www.bestblogs.dev/article/316ae95e",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20260527050038_b20a9a1.jpeg",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_5e63f2",
+  "sourceName": "阿里技术",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527050038_b20a9a1.jpeg",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 12,
+  "wordCount": 4340,
+  "readTime": 18,
+  "mediaDuration": null,
+  "authors": [
+    "阿里技术"
+  ],
+  "publishTimeStamp": 1779792600000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 18:50:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

@@ -1,0 +1,84 @@
+{
+  "id": "RAW_ffe547b8",
+  "notExist": null,
+  "originalTitle": "The Domain Shift: Moving Data Governance from Product Triage to Infrastructure Investment",
+  "title": "The Domain Shift: Moving Data Governance from Product Triage to Infrastructure Investment",
+  "oneSentenceSummary": "This article argues that effective data governance at scale requires shifting the analytical focus from individual products to the broader business domain, treating governance as an infrastructure investment rather than a reactive triage process.",
+  "summary": "The article addresses a critical bottleneck in modern data governance: how to measure and scale governance effectiveness as an organization's data product portfolio grows. The author argues that the default operating model of continuous triage—reviewing individual products against compliance checklists—fails at scale, leading to burnout and hidden systemic failures. The core insight is to shift the unit of analysis from the product to the domain (e.g., Finance, HR). By aggregating product-level compliance data across domains, organizations can surface patterns, such as a specific governance pillar (e.g., RBAC, data lineage) failing uniformly across multiple domains, which indicates an infrastructure-level problem rather than isolated product issues. The article introduces a Domain Maturity Heatmap as a diagnostic tool to visualize these patterns, enabling leadership to prioritize systemic fixes (e.g., fixing a metadata harvesting tool) over individual product tickets. This approach redefines governance from a quality control gate to an infrastructure investment, allowing entire domains to scale and comply organically. The author also cautions that the heatmap identifies where a system is failing, but not why, requiring specialist investigation for root cause analysis.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Data Governance",
+    "Data Architecture",
+    "Domain-Driven Design",
+    "Infrastructure Investment",
+    "Scalability"
+  ],
+  "mainPoints": [
+    {
+      "point": "The default product-level triage model for data governance fails at scale.",
+      "explanation": "Managing governance by reviewing individual product tickets against a checklist is manageable for small portfolios but becomes unsustainable and reactive at enterprise scale, leading to burnout and hidden systemic issues."
+    },
+    {
+      "point": "Shifting the unit of analysis from the product to the domain reveals systemic infrastructure failures.",
+      "explanation": "Aggregating compliance data across a business domain (e.g., Finance, HR) shows that recurring issues like missing RBAC or lineage are often not isolated product failures but symptoms of a single, organization-wide infrastructure gap."
+    },
+    {
+      "point": "A Domain Maturity Heatmap is a practical tool for visualizing and prioritizing systemic governance gaps.",
+      "explanation": "This grid maps business domains against governance pillars, using binary control validation to show where failures cluster. This helps leadership prioritize fixing a failing pillar across multiple domains over resolving individual product tickets."
+    },
+    {
+      "point": "Treating governance as an infrastructure investment, not a quality control gate, enables organic scaling.",
+      "explanation": "By fixing systemic architectural gaps first (e.g., a broken metadata harvesting tool), compliance improves across all dependent domains as a natural consequence, shifting the operating model from reactive triage to proactive enablement."
+    }
+  ],
+  "keyQuotes": [
+    "The insight that resolved the tension was not about individual products at all. It was about the domain.",
+    "Product-by-product resolution addresses localised symptoms rather than root architectural causes.",
+    "The domain lens collapses those four separate conversations into one. Fix the standard once, at the right level, and the correction propagates across every function it touches.",
+    "Prioritising a systemic pillar failure over a product-level backlog ensures that the governance function acts as an infrastructure investment rather than a quality control gate.",
+    "Product-level governance is necessary. It is not sufficient."
+  ],
+  "url": "https://towardsdatascience.com/the-domain-shift-moving-data-governance-from-product-triage-to-infrastructure-investment/",
+  "readUrl": "https://www.bestblogs.dev/article/ffe547b8",
+  "enclosureUrl": null,
+  "domain": "towardsdatascience.com",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/05/ChatGPT-Image-May-22-2026-01_27_30-PM.jpg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceName": "Towards Data Science",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_PRACTICE",
+  "aiSubCategoryDesc": "Engineering Practice",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 22,
+  "wordCount": 1448,
+  "readTime": 6,
+  "mediaDuration": null,
+  "authors": [
+    "Alle Sravani"
+  ],
+  "publishTimeStamp": 1779796800000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 20:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

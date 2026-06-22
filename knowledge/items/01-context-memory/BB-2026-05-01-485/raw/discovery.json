@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Pranav Bhasker"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://res.infoq.com/articles/spark-oom-kubernetes-misconfigurations/en/headerimage/spark-oom-kubernetes-misconfigurations-header-1780044756757.jpg",
+  "domain": "infoq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_72544a86",
+  "keyQuotes": [
+    "The eventual root cause was not a Spark configuration issue at all. Instead, two infrastructure-level settings introduced during the migration interacted in an unexpected way.",
+    "Alone, each factor was manageable... Together, all executors were forced onto one node while their shuffle spill consumed node RAM instead of disk, which rapidly exhausted memory under load and triggered repeated OOM kills.",
+    "Cloud migrations do not just move workloads; they also change the infrastructure contract those workloads depend on."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "RAM-backed scratch dirs (`spark.kubernetes.local.dirs.tmpfs=true`) and a hard `podAffinity` rule forced all executors onto one node, concentrating shuffle spill in node RAM and exhausting memory.",
+      "point": "Two compounded infrastructure misconfigurations caused the OOM failures, not Spark tuning issues."
+    },
+    {
+      "explanation": "Smaller test runs did not generate enough shuffle data to trigger the catastrophic interaction between colocation and RAM-backed spill, giving a false signal of stability.",
+      "point": "The problem only surfaced under production-scale load, evading pre-migration testing."
+    },
+    {
+      "explanation": "Replacing hard affinity with preferred anti-affinity spread executors across nodes, disabling tmpfs and increasing volume sizes allowed disk-backed spill, and validating node memory headroom ensured safe operation.",
+      "point": "The fix required three coordinated changes: scheduling, storage, and validation."
+    },
+    {
+      "explanation": "On-premises configurations for scheduler constraints and storage semantics were not carried over, highlighting the need for explicit audit checklists during migration.",
+      "point": "Cloud migrations change the infrastructure contract; configuration parity is critical."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article investigates repeated Spark executor OOM failures on Kubernetes after a cloud migration, tracing the root cause to two compounded infrastructure misconfigurations: RAM-backed local scratch directories and a hard podAffinity rule forcing executor colocation.",
+  "originalTitle": "Two Misconfigurations That Caused Spark OOM Failures on Kubernetes",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 17:00:00",
+  "publishTimeStamp": 1780477200000,
+  "qualified": false,
+  "readCount": 15,
+  "readTime": 14,
+  "readUrl": "https://www.bestblogs.dev/article/72544a86",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+  "sourceName": "InfoQ",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article documents a real-world incident where a Spark batch pipeline, stable for years on-premises, began experiencing daily executor OOM failures after migrating to Azure Kubernetes Service (AKS). The author details a systematic investigation that ruled out common Spark tuning issues like heap undersizing and data skew. The root cause was traced to two compounded infrastructure misconfigurations introduced during the lift-and-shift migration: setting `spark.kubernetes.local.dirs.tmpfs=true`, which backed shuffle spill directories with node RAM instead of disk, and a hard `podAffinity` rule that forced all four executors onto a single 64GB node. This combination concentrated memory pressure, causing the kernel OOM killer to terminate executors during shuffle-heavy stages. The article provides a step-by-step timeline of the investigation, a clear root cause analysis explaining the compounding effect, and the specific fixes applied: disabling tmpfs, increasing scratch volume sizes from 1Gi to 10Gi, and replacing the hard affinity rule with a preferred podAntiAffinity. The resolution resulted in zero OOM incidents over six months. The article concludes with a practical OOM prevention checklist for Spark-on-Kubernetes deployments and discusses broader implications for cloud migrations.",
+  "tags": [
+    "Spark",
+    "Kubernetes",
+    "Cloud Migration",
+    "Performance Optimization",
+    "Data Engineering"
+  ],
+  "title": "Two Misconfigurations That Caused Spark OOM Failures on Kubernetes",
+  "translateContent": null,
+  "url": "https://www.infoq.com/articles/spark-oom-kubernetes-misconfigurations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "wordCount": 3269
+}

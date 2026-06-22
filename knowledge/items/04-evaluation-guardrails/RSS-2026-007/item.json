@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-09",
+    "opencli_profile": "",
+    "published": "Tue, 09 Jun 2026 06:12:33 GMT",
+    "updated": ""
+  },
+  "date": "2026-06-09",
+  "id": "RSS-2026-007",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/RSS-2026-007/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-007",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-007/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-007/raw/feed-entry.json",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-007/raw/page-text.txt",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-007/raw/page.html"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/RSS-2026-007/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/RSS-2026-007/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / Latent Space",
+  "source_id": "latent-space",
+  "source_name": "Latent Space",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "Latent Space",
+    "RSS",
+    "AI Agent",
+    "Agentic AI",
+    "Benchmark",
+    "Evaluation",
+    "Safety"
+  ],
+  "title": "[AINews] FrontierCode: Benchmarking for Code Quality over Slop",
+  "topic": "04-evaluation-guardrails",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://www.latent.space/feed",
+      "https://www.latent.space/p/ainews-frontiercode-benchmarking"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://www.latent.space/feed",
+    "original_url": "https://www.latent.space/p/ainews-frontiercode-benchmarking",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.latent.space/p/ainews-frontiercode-benchmarking"
+  }
+}

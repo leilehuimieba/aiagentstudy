@@ -1,0 +1,344 @@
+{
+  "content": "关注腾讯云开发者，一手技术干货提前解锁👇\n\n01\n\nClaude Code\n\n1.1 持久化指令文件\n\n没有这个文件时，每次对话都像从头开始，相同的规则和错误可能反复出现。\n\n代价：文件需要随项目更新维护，否则可能误导智能体。\n\n1.2 作用域上下文组装\n\n将指令按不同范围（如组织、项目）拆分，让智能体能动态加载最相关的规则。\n\n代价：规则分散在多个文件，可读性变差，且不同范围规则可能冲突。\n\n1.3 分层记忆\n\n将记忆分为三层：常驻的精华摘要、按需加载的细节、仅支持搜索的完整历史，以节省Token。\n\n代价：实现更复杂。需设计信息如何分层、流动，并确保索引与实际数据同步。\n\n1.4 做梦整理\n\n定期在后台对记忆进行去重、清理和重组，类似“垃圾回收”，以保持记忆整洁有效。\n\n代价：整理本身消耗资源，且可能误删有用信息。\n\n1.5 渐进式上下文压缩\n\n新的对话保留细节，稍旧的做轻量总结，更早的则压缩成简短摘要，适合长对话任务。\n\n代价：压缩必有信息损失。后续需要细节时，智能体可能会“编造”。\n\n1.6 工作流与编排\n\n这类模式核心是“分离”，通过拆解任务流程来提升复杂任务的处理质量和可控性。\n\n探索-规划-行动循环\n\n严格分为三步：只读探索、与用户对齐的规划、拥有写权限的执行，避免盲目操作。适用于不熟悉的代码库或复杂修改。\n\n代价：流程更慢，小任务会显得“笨重”。\n\n上下文隔离子智能体\n\n为不同阶段（如调研、执行）创建拥有独立上下文和权限的子智能体，防止信息相互污染。适合长会话、多阶段任务。\n\n代价：需要额外协调信息传递，传多或传少都有问题。\n\n分支-合并并行\n\n将可并行的子任务分发给多个在独立环境中工作的子智能体，最后合并结果，以提升效率。\n\n代价：合并更复杂，处理代码冲突的难度增加。\n\n1.7 工具与权限\n\n这类模式关注如何安全、高效地管理智能体的能力。\n\n渐进式工具扩展\n\n开始时只提供最必要的工具，复杂工具按需动态加载，降低智能体的选择成本和出错概率。\n\n命令风险分类\n\n根据命令类型、参数和影响，自动评估其风险等级（安全、有风险、危险），并采取自动执行、请求确认或直接拦截等不同策略。\n\n单用途工具设计\n\n将常用操作（如读文件、搜索）封装为专用工具，而非依赖通用Shell命令，以提高可理解性、可审查性和权限控制粒度。\n\n1.8 自动化\n\n确定性生命周期钩子\n\n在智能体生命周期的关键节点（如会话开始、工具调用后）自动触发预设动作（如代码格式化），由系统确保关键流程被执行，不依赖可能被模型遗忘的指令。\n\n02\n\nClaude Managed Agents\n\n2.1 宠物与牲畜基础设施哲学\n\nSession（会话）是宠物：精心培育、持久保存、不可丢失。\n\nHarness（控制器）和 Sandbox（沙盒）是牲畜：可以随时创建、销毁、替换。\n\n2.2 智能体三件套解耦\n\n一个智能体由三个核心组件构成：\n\nClaude（大脑）：负责推理和决策。\n\nHarness（双手）：驱动运行循环，调用Claude API并将工具调用路由到执行环境。\n\nSandbox（工作台）：Claude在其中编写代码、编辑文件、运行命令的隔离环境。\n\nSession：不可变的事件流\n\nSession核心接口只有两个：记录事件（emitEvent()）和读取事件(getEvents())。它是只追加的日志，天然支持重放和状态恢复，赋予智能体容错能力。\n\nHarness：驱动循环\n\nHarness是控制中心，它执行一个循环：从Session取上下文 → 调用Claude → 记录响应 → 如有工具调用则路由到Sandbox执行 → 记录结果 → 循环。Harness本身无状态，所有状态都在Session中，因此可随时替换或重启。\n\nSandbox：隔离的执行环境\n\n每个Sandbox完全隔离，有自己的文件系统、进程和网络。关键特性是可隔离、可重建、可扩展。\n\n核心安全设计：凭证永不进沙盒\n\n采用保险库(vault) + 代理(proxy)架构：\n\n所有第三方凭证存储在独立的保险库中，Harness和Sandbox都无法直接访问。\n\n当需要调用外部工具时，通过代理从保险库按需获取凭证并执行请求。凭证始终不会暴露给Sand盒中的代码。\n\n优势：遵循最小权限原则，所有外部调用可审计，凭证可统一轮换。\n\n2.3 多智能体协作模式\n\n得益于三组件解耦，自然支持多种协作模式：\n\n多脑一手：多个Claude实例共享一个Sandbox。适用于多角度分析同一份代码（如安全审查+性能优化）。\n\n一脑多手：一个Claude实例控制多个Sandbox。适用于需在不同环境（如Python和Node.js）中同时执行任务。\n\n多脑多手：多个Claude实例各有自己的Sandbox，通过共享Session协调。适用于最复杂的多步骤任务。\n\n2.4 上下文工程：保持大脑专注\n\n为管理长任务中的上下文窗口，引入多种技术：\n\n上下文压缩：当上下文窗口将满时，将早期对话压缩成总结，腾出空间。原始数据仍完整保留在Session中。\n\n记忆工具：让Claude能主动将重要信息写入持久存储，后续可主动检索，类似人类记笔记。\n\n上下文裁剪：在发送给Claude前，智能地裁剪不相关的上下文，只保留当前任务需要的部分。\n\n三者协同，确保Claude始终获得最相关的上下文。\n\n2.5 性能优化：显著降低响应延迟\n\n关键在于将大脑（推理）从容器（Sandbox）中解耦。解耦前，每次推理都需等待Sandbox容器完全启动。解耦后，编排层从Session日志拉取事件后，推理可立即开始，使得首Token延迟降低60-90%。\n\n03\n\nHermes：会进化的智能体\n\n3.1 五段式循环\n\n规划 → 执行 → 观察 → 学习 → 适应\n\n3.2 五层记忆架构\n\nL1 短期记忆（便利贴）：\n\n当前对话的临时信息。\n\nL2 技能手册（肌肉记忆）：\n\n完成复杂任务（如涉及5次以上工具调用）后，自动生成SKILL.md文件，记录完整的解决步骤，形成可复用的流程。\n\nL3 知识库（语义记忆）\n\n如何理解语义记忆？\n\n简单讲就是利用向量存储这个技术，来实现模糊检索，原理是：即使字面不同，但语义相近的文本，其向量在数学空间中的位置也很接近。\n\n举例查询进度报告技能：\n\n“进度报告” vs “项目周报” → 相似度 0.92（很高！）\n\n“进度报告” vs “预订机票” → 相似度 0.15（很低）\n\n返回结果：返回最相关的技能：生成项目周报.md\n\nL4 对你的了解（用户建模）\n\n首先什么是黑格尔“辩证式”：\n\n黑格尔“辩证式”就是AI内部在讨论：“我对用户的理解对吗？新证据说明了什么？怎么更新我的理解？”\n\n越来越懂你的朋友：\n\n不是一次判断就定终身，允许你改变、允许情况复杂，通过不断观察、思考、调整，越来越懂真实的你。\n\n这就像最好的朋友：知道你“通常”怎样，但也理解你“有时”会例外\n\n比喻：\n\n旧版本：“林总喜欢喝美式”\n\n新发现：今天林总点了拿铁\n\n冲突：旧版本 和 新证据矛盾\n\n解决方案：不直接覆盖成“喜欢拿铁”，而是升级：\n\n“林总平时喝美式，但周三下午会换拿铁”\n\nL5 工作日志（长期档案）\n\nFTS5全文检索+LLM摘要：跨会话搜索历史对话，永久存储\n\nLLM 摘要（写读书笔记）：每次长谈后，AI 会自动用一两句话总结核心结论，写在笔记本的“摘要区”。\n\nFTS5 全文检索（给笔记本加智能目录）：AI 会给笔记本的每一页（包括详细对话和摘要）的所有关键词，自动生成一个超快的电子索\n\n-End-\n\n原创作者｜张碧泉",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/b9e79f8b#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=efac5b",
+      "text": "腾讯云开发者",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695469&idx=1&sn=9ba77be5cdb4a9031a708c7361d7a026",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/409d9979?entry=related_article",
+      "text": "RAG is Dead? No, Grep is Back!",
+      "title": "Based on the leaked source code of Claude Code, this article deeply deconstructs its abandonment of RAG and vector retrieval in favor of an LLM-driven multi-round iterative Grep search mechanism. It compares this approach with Cursor and Codex, demonstrating the feasibility and design philosophy of a zero-index solution in code search scenarios."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/83fa2a78?entry=related_article",
+      "text": "Investing 10,000 RMB in AI: A Year of Tools, Practices, and Reflections",
+      "title": "A systematic summary of a veteran developer's practical experience in the AI wave, covering everything from MAC toolchain optimization and Harness Engineering architectural constraints to building an Agent-driven automated learning loop."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/f5d1601a?entry=related_article",
+      "text": "Thinking About Agentic Engineering from First Principles",
+      "title": "This article systematically derives six core best practices for Agentic Engineering from first principles and introduces a modular, Skill-based open-source framework, aiming to combine engineering discipline with AI capabilities to reliably improve software engineering quality under complex constraints."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/93462cd7?entry=related_article",
+      "text": "Harness Is Not the Goal, Knowledge Is the Moat — Knowledge Accumulation Practices of an AI Engineering Delivery Team",
+      "title": "Based on the engineering delivery practices of an AI Team, this article proposes that knowledge accumulation is more important than workflow orchestration, and systematically introduces a complete methodology encompassing a five-layer knowledge storage architecture, a three-level maturity system, and how workflows serve knowledge accumulation."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/58852dc5?entry=related_article",
+      "text": "You Don't Know Agent: Principles, Architecture and Engineering Practice - Tw93",
+      "title": "This article systematically sorts out the core engineering practices of Agent architecture, covering key technical dimensions such as Agent Loop, Harness, context engineering, tool design, memory systems, multi-Agent organization, evaluation and tracing, and demonstrates the implementation of design principles through the OpenClaw open-source implementation."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/2cbb4f88?entry=related_article",
+      "text": "5 Lessons Learned from 400 Million Tokens: What Happened When 6 AI Agents Wrote Code for 4 Days Straight?",
+      "title": "Through a four-day multi-agent automated programming experiment, this article reveals that 'glue code' and engineering stability are more challenging and critical than prompt design when building AI systems."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/5c79977a?entry=related_article",
+      "text": "What You Don't Know About Claude Code: Architecture, Governance, and Engineering Practices - Tw93",
+      "title": "This article provides an in-depth analysis of Claude Code's six-layer architecture and engineering practices, proposing a systematic Agent development methodology from context governance and skill design to a verification loop."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/2adc9c3e?entry=related_article",
+      "text": "Understanding Hermes in One Article: How the New Top-Tier Agent Self-Evolves from Experience",
+      "title": "This article provides an in-depth analysis of the core innovation of the Hermes Agent—the Skills closed-loop system—detailing its complete implementation mechanism, from experience extraction and knowledge storage to intelligent retrieval and self-improvement, along with its engineering trade-offs and security considerations."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/5b7ab5d5?entry=related_article",
+      "text": "Understanding Harness Engineering: Finding the Shell That Keeps AI from Going Rogue—Insights from 14 Engineering Articles | Hao's Trend Talk",
+      "title": "This article provides an in-depth analysis of \"Harness Engineering,\" a core technology in the AI Agent field. It reveals how to compensate for model shortcomings through a three-layer management architecture and proposes the logic of \"Compensation Surface Migration\" that evolves with model capabilities."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/podcast/af0d968?entry=related_article",
+      "text": "From Clawdbot to the 2026 AI Coding Explosion | A Conversation with PingCAP CTO Dongxu",
+      "title": "PingCAP CTO Dongxu analyzes the technical evolution of AI Coding crossing the singularity, Agent self-evolution, and the transformation of human value in the future."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "This article systematically outlines the core patterns and design philosophies of three AI agent architectures—Claude Code, Claude Managed Agents, and Hermes...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Harness Engineering, Claude Code, Claude Managed Agents, Hermes, Agent Architecture",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs · Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Harness Engineering: Core Patterns and Philosophy | BestB...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "This article systematically outlines the core patterns and design philosophies of three AI agent architectures—Claude Code, Claude Managed Agents, and Hermes...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/b9e79f8b",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/b9e79f8b/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-04-29 00:46:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "腾讯云开发者",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Harness Engineering",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Claude Code",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Claude Managed Agents",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Hermes",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Agent Architecture",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Harness Engineering: Core Patterns and Philosophy | BestB...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "This article systematically outlines the core patterns and design philosophies of three AI agent architectures—Claude Code, Claude Managed Agents, and Hermes...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/b9e79f8b/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Harness Engineering: Core Patterns and Philosophy | BestB...",
+  "url": "https://www.bestblogs.dev/en/article/b9e79f8b"
+}

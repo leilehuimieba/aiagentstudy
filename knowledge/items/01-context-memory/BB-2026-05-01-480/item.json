@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-05",
+  "id": "BB-2026-05-01-480",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-480/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-480",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-480/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-480/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-480/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-480/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-480/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-480/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / The Batch / DeepLearning.AI",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / The Batch / DeepLearning.AI",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM",
+    "AI Agent",
+    "AI Safety",
+    "AI Regulation",
+    "Model Training"
+  ],
+  "title": "Qwen3.7-Max Challenges Google for Third Place， AI Saves Whales， Fine-Tuning Breaks Copyright Alignment",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/2baac995",
+      "https://www.deeplearning.ai/the-batch/issue-356"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.deeplearning.ai/the-batch/issue-356",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/2baac995"
+  }
+}

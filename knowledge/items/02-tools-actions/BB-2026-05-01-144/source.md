@@ -1,0 +1,105 @@
+# Source Evidence
+
+- Title: 2026-05-05 Hacker News Top Stories #
+- BestBlogs URL: https://www.bestblogs.dev/en/article/12c375c5
+- Original publisher URL: https://supertechfans.com/cn/post/2026-05-05-HackerNews/
+- Original link text: View Source →
+
+## Captured Page Metadata
+
+- Browser title: 2026-05-05 Hacker News Top Stories # | BestBlogs.dev
+- Description: This article curates the top ten trending topics on Hacker News for May 5, 2026, covering AI programming tools, tech business mergers and acquisitions, hardw...
+- Date: 2026-05-05
+
+## Evidence Links Captured
+
+- BestBlogs: https://www.bestblogs.dev/
+- My Brief: https://www.bestblogs.dev/en/reading/brief
+- My Following: https://www.bestblogs.dev/en/reading/follow
+- For You: https://www.bestblogs.dev/en/reading/feed
+- Explore: https://www.bestblogs.dev/en/explore
+- Daily Brief: https://www.bestblogs.dev/en/explore/brief
+- Weekly Picks: https://www.bestblogs.dev/en/explore/newsletter
+- Topics: https://www.bestblogs.dev/en/explore/topics
+- Sources: https://www.bestblogs.dev/en/explore/sources
+- Reading History: https://www.bestblogs.dev/en/library/history
+- My Bookmarks: https://www.bestblogs.dev/en/library/bookmarks
+- My Notes: https://www.bestblogs.dev/en/library/highlights
+- My Reviews: https://www.bestblogs.dev/en/library/review
+- Settings: https://www.bestblogs.dev/en/settings
+- Help Center: https://www.bestblogs.dev/en/docs
+- SuperTechFans: https://www.bestblogs.dev/articles?sourceid=01455c
+- View Source →: https://supertechfans.com/cn/post/2026-05-05-HackerNews/
+- #: https://www.bestblogs.dev/en/article/12c375c5#1-%e5%9c%a8%e5%81%a5%e8%ba%ab%e6%88%bf%e4%b8%8e%e9%99%8c%e7%94%9f%e4%ba%ba%e4%ba%a4%e8%b0%88-talking-to-strangers-at-the-gym
+- https://thienantran.com/talking-to-35-strangers-at-the-gym/: https://thienantran.com/talking-to-35-strangers-at-the-gym/
+- #: https://www.bestblogs.dev/en/article/12c375c5#hn-%e7%83%ad%e5%ba%a6-1083-points--%e8%af%84%e8%ae%ba-515-comments--%e4%bd%9c%e8%80%85thitran--13-hours-ago
+- https://news.ycombinator.com/item?id=48007438: https://news.ycombinator.com/item?id=48007438
+- #: https://www.bestblogs.dev/en/article/12c375c5#2-deepclaude%e7%bb%93%e5%90%88-deepseek-v4-pro-%e7%9a%84-claude-%e4%bb%a3%e7%a0%81%e4%bb%a3%e7%90%86%e5%be%aa%e7%8e%af-deepclaude--claude-code-agent-loop-with-deepseek-v4-pro
+- https://github.com/aattaran/deepclaude: https://github.com/aattaran/deepclaude
+- #: https://www.bestblogs.dev/en/article/12c375c5#hn-%e7%83%ad%e5%ba%a6-650-points--%e8%af%84%e8%ae%ba-273-comments--%e4%bd%9c%e8%80%85alattaran--1-day-ago
+- https://news.ycombinator.com/item?id=48002136: https://news.ycombinator.com/item?id=48002136
+- #: https://www.bestblogs.dev/en/article/12c375c5#3-gamestop-%e6%8f%90%e5%87%ba-555-%e4%ba%bf%e7%be%8e%e5%85%83%e6%94%b6%e8%b4%ad-ebay-%e7%9a%84%e8%a6%81%e7%ba%a6-gamestop-makes-555b-takeover-offer-for-ebay
+- https://www.bbc.co.uk/news/articles/cn0p8yled1do: https://www.bbc.co.uk/news/articles/cn0p8yled1do
+- #: https://www.bestblogs.dev/en/article/12c375c5#hn-%e7%83%ad%e5%ba%a6-629-points--%e8%af%84%e8%ae%ba-588-comments--%e4%bd%9c%e8%80%85n1b0m--15-hours-ago
+- https://news.ycombinator.com/item?id=48006402: https://news.ycombinator.com/item?id=48006402
+- #: https://www.bestblogs.dev/en/article/12c375c5#4-%e8%ae%a9%e6%88%91%e4%bb%ac%e6%94%b6%e8%b4%ad-spirit-%e8%88%aa%e7%a9%ba-lets-buy-spirit-air
+- https://letsbuyspiritair.com/: https://letsbuyspiritair.com/
+- #: https://www.bestblogs.dev/en/article/12c375c5#hn-%e7%83%ad%e5%ba%a6-569-points--%e8%af%84%e8%ae%ba-541-comments--%e4%bd%9c%e8%80%85bjhess--1-day-ago
+- https://news.ycombinator.com/item?id=48002777: https://news.ycombinator.com/item?id=48002777
+- #: https://www.bestblogs.dev/en/article/12c375c5#5-%e4%bb%8e-2027-%e5%b9%b4%e8%b5%b7%e6%ac%a7%e7%9b%9f%e5%b0%86%e5%bc%ba%e5%88%b6%e8%a6%81%e6%b1%82%e6%99%ba%e8%83%bd%e6%89%8b%e6%9c%ba%e9%85%8d%e5%a4%87%e5%8f%af%e6%8b%86%e5%8d%b8%e7%94%b5%e6%b1%a0-removable-batteries-in-smartphones-will-be-mandatory-in-the-eu-starting-in-2027
+- https://www.ecopv-eu.com/en/blog-en/replaceable-smartphone-batteries-2027-eu-regulation/: https://www.ecopv-eu.com/en/blog-en/replaceable-smartphone-batteries-2027-eu-regulation/
+- #: https://www.bestblogs.dev/en/article/12c375c5#hn-%e7%83%ad%e5%ba%a6-549-points--%e8%af%84%e8%ae%ba-492-comments--%e4%bd%9c%e8%80%85rdeboo--9-hours-ago
+- https://news.ycombinator.com/item?id=48009697: https://news.ycombinator.com/item?id=48009697
+- #: https://www.bestblogs.dev/en/article/12c375c5#6-%e4%bc%a6%e6%95%a6%e6%96%b0%e9%9b%95%e5%83%8f%e7%96%91%e4%b8%ba%e7%8f%ad%e5%85%8b%e6%96%af%e4%bd%9c%e5%93%81%e6%8f%8f%e7%bb%98%e4%b8%80%e4%bd%8d%e8%a2%ab%e6%97%97%e5%b8%9c%e8%92%99%e7%9c%bc%e7%9a%84%e8%a5%bf%e8%a3%85%e7%94%b7%e5%a3%ab-new-statue-in-london-attributed-to-banksy-of-a-suited-man-blinded-by-a-flag
+- https://www.smithsonianmag.com/smart-news/attributed-to-banksy-a-new-statue-of-a-suited-man-blinded-by-a-flag-and-walking-off-a-ledge-appeared-in-central-london-180988662/: https://www.smithsonianmag.com/smart-news/attributed-to-banksy-a-new-statue-of-a-suited-man-blinded-by-a-flag-and-walking-off-a-ledge-appeared-in-central-london-180988662/
+- #: https://www.bestblogs.dev/en/article/12c375c5#hn-%e7%83%ad%e5%ba%a6-543-points--%e8%af%84%e8%ae%ba-532-comments--%e4%bd%9c%e8%80%85dryadin--1-day-ago
+- https://news.ycombinator.com/item?id=48000152: https://news.ycombinator.com/item?id=48000152
+- #: https://www.bestblogs.dev/en/article/12c375c5#7-byomesh%e5%85%a8%e6%96%b0-lora-%e7%bd%91%e7%8a%b6%e6%97%a0%e7%ba%bf%e7%94%b5%e5%b8%a6%e5%ae%bd%e6%8f%90%e5%8d%87-100-%e5%80%8d-byomesh--new-lora-mesh-radio-offers-100x-the-bandwidth
+- https://partyon.xyz/@nullagent/116499715071759135: https://partyon.xyz/@nullagent/116499715071759135
+- #: https://www.bestblogs.dev/en/article/12c375c5#hn-%e7%83%ad%e5%ba%a6-469-points--%e8%af%84%e8%ae%ba-150-comments--%e4%bd%9c%e8%80%85nullagent--1-day-ago
+- https://news.ycombinator.com/item?id=47999636: https://news.ycombinator.com/item?id=47999636
+- #: https://www.bestblogs.dev/en/article/12c375c5#8-%e6%99%ba%e8%83%bd%e4%bb%a3%e7%90%86%e7%bc%96%e7%a8%8b%e6%98%af%e4%b8%80%e7%a7%8d%e9%99%b7%e9%98%b1-agentic-coding-is-a-trap
+- https://larsfaye.com/articles/agentic-coding-is-a-trap: https://larsfaye.com/articles/agentic-coding-is-a-trap
+- #: https://www.bestblogs.dev/en/article/12c375c5#hn-%e7%83%ad%e5%ba%a6-423-points--%e8%af%84%e8%ae%ba-330-comments--%e4%bd%9c%e8%80%85ayoisaiah--1-day-ago
+- https://news.ycombinator.com/item?id=48002442: https://news.ycombinator.com/item?id=48002442
+- #: https://www.bestblogs.dev/en/article/12c375c5#9-issues-%e5%92%8c-webhooks-%e4%ba%8b%e4%bb%b6--%e5%b7%b2%e8%a7%a3%e5%86%b3-incident-with-issues-and-webhooks--resolved
+- https://www.githubstatus.com/incidents/72q3n8yxthcy: https://www.githubstatus.com/incidents/72q3n8yxthcy
+- #: https://www.bestblogs.dev/en/article/12c375c5#hn-%e7%83%ad%e5%ba%a6-419-points--%e8%af%84%e8%ae%ba-252-comments--%e4%bd%9c%e8%80%85gen220--8-hours-ago
+- https://news.ycombinator.com/item?id=48010301: https://news.ycombinator.com/item?id=48010301
+- #: https://www.bestblogs.dev/en/article/12c375c5#talking-to-strangers-at-the-gym
+- https://news.ycombinator.com/item?id=48008672: https://news.ycombinator.com/item?id=48008672
+- #: https://www.bestblogs.dev/en/article/12c375c5#deepclaude--claude-code-agent-loop-with-deepseek-
+- https://news.ycombinator.com/item?id=48002640: https://news.ycombinator.com/item?id=48002640
+- #: https://www.bestblogs.dev/en/article/12c375c5#gamestop-makes-555b-takeover-offer-for-ebay
+- https://news.ycombinator.com/item?id=48006580: https://news.ycombinator.com/item?id=48006580
+- https://investor.gamestop.com/news-releases/news-details/2026/GameStop-Announces-Long-Term-Performance-Award-for-Ryan-Cohen/default.aspx: https://investor.gamestop.com/news-releases/news-details/2026/GameStop-Announces-Long-Term-Performance-Award-for-Ryan-Cohen/default.aspx
+- #: https://www.bestblogs.dev/en/article/12c375c5#removable-batteries-in-smartphones-will-be-mandato
+- https://news.ycombinator.com/item?id=48009960: https://news.ycombinator.com/item?id=48009960
+- #: https://www.bestblogs.dev/en/article/12c375c5#lets-buy-spirit-air
+- https://news.ycombinator.com/item?id=48003932: https://news.ycombinator.com/item?id=48003932
+- #: https://www.bestblogs.dev/en/article/12c375c5#agentic-coding-is-a-trap
+- https://news.ycombinator.com/item?id=48003369: https://news.ycombinator.com/item?id=48003369
+- #: https://www.bestblogs.dev/en/article/12c375c5#gamestop-makes-555b-takeover-offer-for-ebay-1
+- https://news.ycombinator.com/item?id=48008525: https://news.ycombinator.com/item?id=48008525
+- #: https://www.bestblogs.dev/en/article/12c375c5#lets-buy-spirit-air-1
+- https://news.ycombinator.com/item?id=48003498: https://news.ycombinator.com/item?id=48003498
+- https://youtu.be/ggUduBmvQ_4?si=cyysP7aH_CIEDZRq: https://youtu.be/ggUduBmvQ_4?si=cyysP7aH_CIEDZRq
+- #: https://www.bestblogs.dev/en/article/12c375c5#new-statue-in-london-attributed-to-banksy-of-a-s
+- https://news.ycombinator.com/item?id=48000980: https://news.ycombinator.com/item?id=48000980
+- #: https://www.bestblogs.dev/en/article/12c375c5#security-through-obscurity-is-not-bad
+- https://news.ycombinator.com/item?id=48000195: https://news.ycombinator.com/item?id=48000195
+- #: https://www.bestblogs.dev/en/article/12c375c5#does-employment-slow-cognitive-decline-evidence-f
+- https://news.ycombinator.com/item?id=48012294: https://news.ycombinator.com/item?id=48012294
+- #: https://www.bestblogs.dev/en/article/12c375c5#talking-to-strangers-at-the-gym-1
+- https://news.ycombinator.com/item?id=48008887: https://news.ycombinator.com/item?id=48008887
+- #: https://www.bestblogs.dev/en/article/12c375c5#lets-buy-spirit-air-2
+- https://news.ycombinator.com/item?id=48003876: https://news.ycombinator.com/item?id=48003876
+- #: https://www.bestblogs.dev/en/article/12c375c5#new-statue-in-london-attributed-to-banksy-of-a-s-1
+- https://news.ycombinator.com/item?id=48002674: https://news.ycombinator.com/item?id=48002674
+- #: https://www.bestblogs.dev/en/article/12c375c5#talking-to-strangers-at-the-gym-2
+- https://news.ycombinator.com/item?id=48009041: https://news.ycombinator.com/item?id=48009041
+- #: https://www.bestblogs.dev/en/article/12c375c5#microsoft-edge-stores-all-passwords-in-memory-in-c
+- https://news.ycombinator.com/item?id=48013060: https://news.ycombinator.com/item?id=48013060
+- https://devblogs.microsoft.com/oldnewthing/20060508-22/?p=31283: https://devblogs.microsoft.com/oldnewthing/20060508-22/?p=31283
+- https://devblogs.microsoft.com/oldnewthing/20060508-22/?p=31283: https://devblogs.microsoft.com/oldnewthing/20060508-22/?p=31283
+- #: https://www.bestblogs.dev/en/article/12c375c5#deepclaude--claude-code-agent-loop-with-deepseek--1

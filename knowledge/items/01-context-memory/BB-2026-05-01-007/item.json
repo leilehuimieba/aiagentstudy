@@ -1,0 +1,79 @@
+{
+  "blocks": [
+    "Context/State",
+    "Tools/Actions",
+    "Evaluation/Guardrails"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "2026-04-30",
+  "id": "BB-2026-05-01-007",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-007/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-007",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-007/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-007/raw/extract.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-007/raw/source-links.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-007/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-007/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯云开发者",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯云开发者",
+  "status": "Full text + source captured",
+  "tags": [
+    "RAG",
+    "Grep",
+    "code search",
+    "context engineering",
+    "AI Agent"
+  ],
+  "title": "RAG 已死？不，是 Grep 回归了！",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2601.23254",
+      "https://dev.to/sagarmk/how-i-built-a-claude-code-plugin-that-intercepts-grep-and-replaces-it-with-semantic-search-500h",
+      "https://developers.openai.com/cookbook/examples/gpt-5/codex_prompting_guide",
+      "https://every.to/podcast/transcript-how-to-use-claude-code-like-the-people-who-built-it",
+      "https://github.com/openai/codex/issues/609",
+      "https://milvus.io/zh/blog/why-im-against-claude-codes-grep-only-retrieval-it-just-burns-too-many-tokens.md",
+      "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695473&idx=1&sn=517ef2bad8a85f2f31c1ef309c1eae76",
+      "https://news.ycombinator.com/item?id=43164253",
+      "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny",
+      "https://openai.com/index/unrolling-the-codex-agent-loop/",
+      "https://read.engineerscodex.com/p/how-cursor-indexes-codebases-fast",
+      "https://turbopuffer.com/customers/cursor",
+      "https://vadim.blog/claude-code-no-indexing",
+      "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "https://www.bestblogs.dev/article/409d9979",
+      "https://www.latent.space/p/claude-code",
+      "https://x.com/bcherny/status/2017824286489383315",
+      "https://zhuanlan.zhihu.com/p/1993974927498433157"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695473&idx=1&sn=517ef2bad8a85f2f31c1ef309c1eae76",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/409d9979"
+  }
+}

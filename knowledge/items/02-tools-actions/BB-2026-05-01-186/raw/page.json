@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T10a9180b424647e0a6694f04b46e7c5d",
+  "data": {
+    "metaData": {
+      "id": "RAW_dcf387de",
+      "notExist": null,
+      "originalTitle": "How Pinterest Built a Production MCP Ecosystem",
+      "title": "How Pinterest Built a Production MCP Ecosystem",
+      "oneSentenceSummary": "This article details how Pinterest built a production-grade MCP ecosystem, focusing on the architectural decisions, security model, and platform investments required to turn the protocol into a scalable internal tool for AI agents.",
+      "summary": "The article explores Pinterest's journey in adopting the Model Context Protocol (MCP) to connect AI agents with internal tools like Presto, Spark, and Airflow. It highlights that while MCP provides a standardized communication protocol, the real engineering effort lies in building the surrounding infrastructure. Pinterest made three key architectural bets: deploying cloud-hosted servers for consistent security, using many small domain-specific servers to manage access control and token consumption, and creating a unified deployment pipeline to reduce operational overhead. The security model features two layers of authorization: coarse-grained checks at the network edge via Envoy and fine-grained, tool-level checks using a decorator pattern. The ecosystem is integrated into existing engineer workflows, including an internal chat app, IDE plugins, and CLI agents. As of January 2025, the system handles 66,000 invocations per month, saving an estimated 7,000 hours. The article concludes that the protocol is necessary but insufficient; the platform work around it is what makes a production system viable.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "MCP",
+        "Pinterest",
+        "AI Agents",
+        "Production Architecture",
+        "Internal Tools"
+      ],
+      "mainPoints": [
+        {
+          "point": "MCP solves the N x M integration problem by providing a standard protocol, but the real work is in the surrounding infrastructure.",
+          "explanation": "Pinterest found that implementing the protocol was easy, but building a central registry, layered auth, a deployment pipeline, and observability was the critical engineering challenge."
+        },
+        {
+          "point": "Pinterest chose cloud-hosted, domain-specific MCP servers over local or monolithic alternatives.",
+          "explanation": "Cloud hosting enables consistent security and governance. Small servers keep tool lists relevant, control access per domain, and prevent token exhaustion in the AI's context window."
+        },
+        {
+          "point": "A two-layer authorization model provides defense in depth for AI agents accessing sensitive internal systems.",
+          "explanation": "Envoy handles coarse-grained network-level checks, while tool-level decorators enforce fine-grained permissions. This prevents unauthorized access even if one layer has a misconfiguration."
+        },
+        {
+          "point": "The ecosystem is embedded into existing engineer workflows, not a separate interface.",
+          "explanation": "MCP tools are available in the internal chat app, IDE plugins, and CLI agents, making the AI agent's capabilities feel native to the tools engineers already use daily."
+        }
+      ],
+      "keyQuotes": [
+        "MCP only defines the communication protocol. It does not handle authentication, authorization, deployment, service discovery, or governance. Those are the problems Pinterest had to solve on its own.",
+        "The MCP spec provides the grammar, and Pinterest had to build the entire school system around it.",
+        "Without this investment, the bet around many small servers would have collapsed under its own operational weight.",
+        "The most important lesson is where the effort actually went. The MCP protocol gave Pinterest a shared language between AI surfaces and tools. That was necessary but far from sufficient."
+      ],
+      "url": "https://blog.bytebytego.com/p/how-pinterest-built-a-production",
+      "readUrl": "https://www.bestblogs.dev/article/dcf387de",
+      "enclosureUrl": null,
+      "domain": "blog.bytebytego.com",
+      "cover": "https://image.jido.dev/20260511164306_c0acd8c0-dcbb-4462-914c-207889b0bd28_2576x1520.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_996ae6",
+      "sourceName": "ByteByteGo Newsletter",
+      "priority": "MEDIUM",
+      "sourceImage": "https://image.jido.dev/20251127045340_e6a8dc8d",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Programming_Technology",
+      "categoryDesc": "Programming",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 91,
+      "readCount": 80,
+      "wordCount": 2600,
+      "readTime": 11,
+      "mediaDuration": null,
+      "authors": [
+        "ByteByteGo"
+      ],
+      "publishTimeStamp": 1778513477000,
+      "publishDateStr": "05-11",
+      "publishDateTimeStr": "2026-05-11 15:31:17",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_98530d37",
+        "type": "ARTICLE",
+        "title": "How LinkedIn Feed Uses LLMs to Serve 1.3 Billion Users",
+        "oneSentenceSummary": "This article details LinkedIn's engineering journey to replace its complex, multi-system Feed retrieval architecture with a unified LLM-powered model, addressing challenges in data representation, training efficiency, sequential ranking, and massive-scale serving infrastructure.",
+        "url": "https://blog.bytebytego.com/p/how-linkedin-feed-uses-llms-to-serve",
+        "sourceName": "ByteByteGo Newsletter"
+      },
+      {
+        "id": "RAW_504ce725",
+        "type": "ARTICLE",
+        "title": "Harness design for long-running application development",
+        "oneSentenceSummary": "This article explores Anthropic's multi-agent harness design (Planner, Generator, Evaluator) for long-running autonomous coding, detailing how to overcome context anxiety and self-evaluation bias to build complex full-stack applications.",
+        "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+        "sourceName": "Anthropic Engineering"
+      },
+      {
+        "id": "RAW_32b70faa",
+        "type": "ARTICLE",
+        "title": "A Guide to Context Engineering for LLMs",
+        "oneSentenceSummary": "A comprehensive guide to context engineering that explains why more context can degrade LLM performance and outlines four core strategies—Write, Select, Compress, and Isolate—to optimize model outputs.",
+        "url": "https://blog.bytebytego.com/p/a-guide-to-context-engineering-for",
+        "sourceName": "ByteByteGo Newsletter"
+      },
+      {
+        "id": "RAW_9ffaba9a",
+        "type": "ARTICLE",
+        "title": "New in Claude Managed Agents: dreaming， outcomes， and multiagent orchestration | Claude",
+        "oneSentenceSummary": "Claude Managed Agents introduces dreaming for self-improving memory, outcomes for rubric-based self-correction, and multiagent orchestration for complex task delegation.",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_862b9f1",
+        "type": "VIDEO",
+        "title": "Martin Fowler & Kent Beck: Frameworks for reinventing software， again and again",
+        "oneSentenceSummary": "Software legends Martin Fowler and Kent Beck discuss how AI redefines software engineering, emphasizing that core practices like TDD and modularity remain essential for human-AI collaboration.",
+        "url": "https://www.youtube.com/watch?v=CZs8J1ZD0CE",
+        "sourceName": "The Pragmatic Engineer"
+      },
+      {
+        "id": "RAW_e94961a3",
+        "type": "ARTICLE",
+        "title": "The Architecture Behind Open-Source LLMs",
+        "oneSentenceSummary": "This article provides a comparative analysis of the architectural and training innovations driving frontier open-weight LLMs, focusing on MoE, attention mechanisms, and post-training strategies.",
+        "url": "https://blog.bytebytego.com/p/the-architecture-behind-open-source",
+        "sourceName": "ByteByteGo Newsletter"
+      },
+      {
+        "id": "RAW_d21561e8",
+        "type": "ARTICLE",
+        "title": "How Spotify Ships to 675 Million Users Every Week Without Breaking Things",
+        "oneSentenceSummary": "This article explores Spotify's release architecture, detailing how they ship weekly updates to 675 million users using trunk-based development, layered exposure rings, and automated state machines.",
+        "url": "https://blog.bytebytego.com/p/how-spotify-ships-to-675-million",
+        "sourceName": "ByteByteGo Newsletter"
+      },
+      {
+        "id": "RAW_2023817132581208353",
+        "type": "TWITTER",
+        "title": "Anthropic Releases Claude Sonnet 4.6 with 1M Context Window",
+        "oneSentenceSummary": "Anthropic announces Claude Sonnet 4.6, featuring major upgrades in coding, reasoning, and a 1-million-token context window.",
+        "url": "https://x.com/claudeai/status/2023817132581208353",
+        "sourceName": "Claude(@claudeai)"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_480e1e0c",
+        "type": "ARTICLE",
+        "title": "The Algorithm That Powers Your X (Twitter) Post",
+        "oneSentenceSummary": "A technical deep dive into X's open-sourced recommendation engine, detailing its Rust/Python architecture, Grok-based transformer scoring, and the multi-stage pipeline for real-time feed generation.",
+        "url": "https://blog.bytebytego.com/p/the-algorithm-that-powers-your-x",
+        "sourceName": "ByteByteGo Newsletter"
+      }
+    ]
+  }
+}

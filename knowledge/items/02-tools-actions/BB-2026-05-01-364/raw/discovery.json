@@ -1,0 +1,83 @@
+{
+  "id": "RAW_1b6b25f2",
+  "notExist": null,
+  "originalTitle": "我们如何用 A2UI + Vue，让大模型长出“可交互界面”",
+  "title": "How We Built an Interactive UI for LLMs with A2UI + Vue",
+  "oneSentenceSummary": "This article details how Bilibili's commercial advertising team built a complete generative UI system from Agent to frontend by developing a Vue renderer based on Google's A2UI protocol, enabling AI assistants to evolve from outputting text to generating interactive interfaces.",
+  "summary": "This article focuses on the core challenge of evolving AI assistants from text output to interactive interface generation. Based on a unified AI assistant framework, Bilibili's commercial advertising team identified the limitations of template-based solutions in complex multi-business scenarios and chose Google's A2UI protocol as the foundation. They developed a custom Vue renderer and a complete Agent toolchain, forming a comprehensive generative UI system. The article elaborates on key designs such as Runtime Schema assembly, a dual validation mechanism (structural and transitional validation), dual SSE channel output, and Wrapper component extensions. This solution achieves frontend-backend decoupling and protocol standardization, reducing business integration time from days to hours, and empowering the Agent with true interface generation capabilities. The article also demonstrates the complete workflow from user prompt input to component rendering through chart and form DEMO examples.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "A2UI",
+    "Generative UI",
+    "Vue Renderer",
+    "AI Assistant",
+    "LLM"
+  ],
+  "mainPoints": [
+    {
+      "point": "Built a generative UI system by developing a Vue renderer based on Google's A2UI protocol.",
+      "explanation": "The A2UI protocol was chosen for its standardization, declarative nature, incremental update support, framework independence, and security control. Based on this, a custom Vue renderer was developed, establishing a complete pipeline from Agent to frontend."
+    },
+    {
+      "point": "Ensured the safety and stability of AI-generated UI through Runtime Schema assembly and a dual validation mechanism.",
+      "explanation": "A whitelist of available components is dynamically assembled based on business identifiers to achieve capability isolation. A two-layer validation mechanism, including structural and transitional validation, prevents rendering anomalies caused by unstable model output."
+    },
+    {
+      "point": "Adopted dual SSE channel output to separate text streams and structured data, improving UI rendering reliability.",
+      "explanation": "Text streams and A2UI JSON data are transmitted through two independent SSE channels without interference. Even if structured data is lost, the text stream can serve as a fallback for display, ensuring rendering reliability."
+    },
+    {
+      "point": "Designed the Wrapper component system and DataModel to reduce integration costs for business teams.",
+      "explanation": "Business teams only need to follow a unified specification to write Vue components, wrap them with a Wrapper, and register them for use, without understanding the renderer's internal logic. DataModel enables unified state storage and path-level data binding."
+    }
+  ],
+  "keyQuotes": [
+    "How can AI assistants evolve from 'outputting text' to 'generating interfaces'?",
+    "Template-based solutions cast the Agent in the role of a 'form filler' rather than a 'designer', preventing it from dynamically determining the UI form based on context.",
+    "This is not merely a frontend rendering problem, but a systemic challenge involving LLM generation, protocol standards, backend validation, frontend rendering, and multi-business governance.",
+    "For the Agent: shifting from 'memorizing data formats' to 'understanding UI description languages', granting it true 'interface generation' capabilities."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Njc0NTgwMg==&mid=2247504267&idx=1&sn=e3163144d913971f97fb015c3b791e1d",
+  "readUrl": "https://www.bestblogs.dev/article/1b6b25f2",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20260527123515_08a437a.jpeg",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_1e4894",
+  "sourceName": "哔哩哔哩技术",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20260527123515_08a437a.jpeg",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 61,
+  "wordCount": 4843,
+  "readTime": 20,
+  "mediaDuration": null,
+  "authors": [
+    "哔哩哔哩技术"
+  ],
+  "publishTimeStamp": 1779854400000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 12:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

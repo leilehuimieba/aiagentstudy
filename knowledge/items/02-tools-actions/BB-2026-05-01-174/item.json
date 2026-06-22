@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "Yesterday",
+  "id": "BB-2026-05-01-174",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-174/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-174",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-174/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-174/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-174/raw/display-document.html",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-174/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-174/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-174/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / OpenAI Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / OpenAI Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Codex",
+    "Windows Sandbox",
+    "Security",
+    "Software Engineering",
+    "Agentic Workflows"
+  ],
+  "title": "Building a safe， effective sandbox to enable Codex on Windows",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://openai.com/codex/",
+      "https://www.bestblogs.dev/en/article/36e502e0"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://openai.com/codex/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/36e502e0"
+  }
+}

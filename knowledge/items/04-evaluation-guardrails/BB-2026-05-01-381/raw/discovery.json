@@ -1,0 +1,79 @@
+{
+  "id": "RAW_b3a55351",
+  "notExist": null,
+  "originalTitle": "Qwen-Image-Bench：56 个创作级考点，定义生图评测新标准！",
+  "title": "Qwen-Image-Bench: 56 Creative Benchmarks Defining a New Standard for Image Generation Evaluation",
+  "oneSentenceSummary": "Tongyi Lab introduces Qwen-Image-Bench, a set of 56 fine-grained creative benchmarks for text-to-image evaluation designed by a team of professional artists, along with the open-source automated evaluation model Q-Judger, aiming to bridge the evaluation gap between basic generation and professional creation.",
+  "summary": "This article introduces Qwen-Image-Bench, the latest text-to-image evaluation benchmark released by Tongyi Lab. Developed with the participation of a team of professional visual and aesthetic design artists, this benchmark aims to address the issue that existing T2I evaluations only focus on basic semantic alignment and image quality, while ignoring the aesthetic intuition, world knowledge, and logical reasoning abilities required in real creative scenarios. Qwen-Image-Bench deconstructs creative ability into 5 core capability pillars and 17 typical creative scenarios, further refined into 56 quantifiable evaluation dimensions covering high-frequency real-world scenarios such as visual storytelling, brand design, game art, and comic creation. The benchmark includes 1000 bilingual (Chinese and English) hierarchical prompts, each precisely covering 4+ third-level dimension test points. Additionally, the article introduces the open-source automated evaluation model Q-Judger, whose evaluation results show significant correlation (Spearman 0.92) with professional assessments from senior human artists. Through multiple practical case comparisons, the article demonstrates the capability differences of various models in dimensions such as fashion styling, artistic style, product design, and game UI, pointing out that current T2I models have obvious gaps in subfields like text accuracy, information visualization, and cross-language generation, with world knowledge and logical reasoning abilities being the watershed that determines whether a model can enter the first tier.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Qwen-Image-Bench",
+    "Text-to-Image Evaluation",
+    "T2I",
+    "Multimodal Model",
+    "Q-Judger"
+  ],
+  "mainPoints": [
+    {
+      "point": "Existing T2I evaluation standards cannot measure the true creative ability of models.",
+      "explanation": "Current evaluations mostly focus on basic semantic adherence and image quality, ignoring the aesthetic intuition, world knowledge, and logical reasoning abilities required in professional creation scenarios, leading to poor performance of high-scoring models in actual advanced creation."
+    },
+    {
+      "point": "Qwen-Image-Bench deconstructs creative ability into 56 fine-grained test points.",
+      "explanation": "Designed by a team of professional artists, covering 17 creative scenarios including visual storytelling, brand design, and game art, achieving multi-dimensional and quantifiable evaluation through 1000 hierarchical prompts, aiming to identify the strengths and weaknesses of different models."
+    },
+    {
+      "point": "The accompanying open-source automated evaluation model Q-Judger achieves efficient evaluation.",
+      "explanation": "Q-Judger supports fine-grained scoring from 56 dimensions including image quality, aesthetics, and image-text consistency, with evaluation results highly correlated with human experts (Spearman 0.92), providing quantifiable closed-loop feedback for model optimization."
+    }
+  ],
+  "keyQuotes": [
+    "When AI evolves from 'being able to generate images' to replacing professional photography and even deeply participating in artistic creation, how should we evaluate a model's 'true creative ability'?",
+    "Because 'high scores' do not equal 'good usability'.",
+    "'Drawing correctly' and 'drawing beautifully' are just the starting points; 'understanding creation' is the ultimate goal.",
+    "Top-tier models need to understand human creative needs and mobilize their own knowledge and logical reasoning abilities. Behind this lies the deep synergy of language understanding, knowledge integration, and the model's aesthetic sense and creative execution."
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501322&idx=1&sn=b7133e4650fd3ecbdd80a69ec3780a98",
+  "readUrl": "https://www.bestblogs.dev/article/b3a55351",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20260527050603_c063770.jpeg",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_2ce88a",
+  "sourceName": "通义实验室",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20260527050603_c063770.jpeg",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "MODELS",
+  "aiSubCategoryDesc": "AI Models",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 37,
+  "wordCount": 2550,
+  "readTime": 11,
+  "mediaDuration": null,
+  "authors": [
+    "通义实验室"
+  ],
+  "publishTimeStamp": 1779961680000,
+  "publishDateStr": "05-28",
+  "publishDateTimeStr": "2026-05-28 17:48:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Z.AI"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-uploads.huggingface.co/production/uploads/67066ea38a79951d7b8d4195/iaTHtYOBgeY0C3Xx3vymr.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_9afcc106",
+  "keyQuotes": [
+    "A 1M context is easy to claim, but much harder to keep reliable under real engineering pressure.",
+    "Across all three benchmarks, GLM-5.2 is the highest-ranked open-source model, showing that its 1M context has translated into practical long-horizon delivery capability.",
+    "Coding RL is especially vulnerable to reward hacking because the reward is typically a verifiable pass/fail signal."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The model is trained to maintain quality across long, messy coding-agent trajectories, not just accept more tokens, making it a practical substrate for sustained engineering work.",
+      "point": "GLM-5.2 delivers a 'solid' 1M-token context, engineered for real-world agentic workloads."
+    },
+    {
+      "explanation": "By reusing the same indexer across every four sparse attention layers, the model significantly reduces computational cost, enabling efficient long-context inference.",
+      "point": "The IndexShare architecture reduces per-token FLOPs by 2.9x at 1M context."
+    },
+    {
+      "explanation": "It trails only closed-source frontier models like Claude Opus 4.8 on FrontierSWE, PostTrainBench, and SWE-Marathon, demonstrating practical long-horizon delivery capability.",
+      "point": "GLM-5.2 is the highest-ranked open-source model on long-horizon coding benchmarks."
+    },
+    {
+      "explanation": "The system uses a two-stage detection process (rule-based filter + LLM judge) to block hacked actions during training, preventing model collapse and ensuring genuine capability improvement.",
+      "point": "A novel anti-hacking module is introduced for coding RL to prevent reward hacking."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "GLM-5.2 is a new open-source flagship model from Z.AI, engineered for long-horizon agentic tasks with a solid 1M-token context, improved architecture (IndexShare), and advanced coding capabilities with flexible effort levels.",
+  "originalTitle": "GLM-5.2: Built for Long-Horizon Tasks",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Today",
+  "publishDateTimeStr": "2026-06-17 17:01:25",
+  "publishTimeStamp": 1781686885000,
+  "qualified": false,
+  "readCount": 23,
+  "readTime": 11,
+  "readUrl": "https://www.bestblogs.dev/article/9afcc106",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article introduces GLM-5.2, the latest flagship model from Z.AI, designed specifically for long-horizon tasks. The model's key advancement is a 'solid' 1M-token context that maintains quality across long, messy coding-agent trajectories, not just accepting more tokens. It introduces the IndexShare architecture to reduce computational cost, and an improved MTP layer for speculative decoding. The model demonstrates strong performance on long-horizon coding benchmarks like FrontierSWE, PostTrainBench, and SWE-Marathon, where it is the highest-ranked open-source model, and on standard coding benchmarks like Terminal-Bench 2.1 and SWE-bench Pro. GLM-5.2 also introduces effort level control for balancing performance and latency. The article details the architecture for 1M context, including IndexShare for DSA and MTP with IndexShare and KVShare, and discusses efficient serving strategies. It also covers the 'slime' infrastructure for agentic RL post-training and a novel anti-hacking approach for coding RL to prevent reward hacking. The model is released under an MIT open-source license.",
+  "tags": [
+    "LLM",
+    "Model Release",
+    "Long Context",
+    "AI Agent",
+    "Open Source"
+  ],
+  "title": "GLM-5.2: Built for Long-Horizon Tasks",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+  "wordCount": 2661
+}

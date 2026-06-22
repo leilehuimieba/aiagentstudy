@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-28",
+  "id": "BB-2026-05-01-381",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-381/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-381",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-381/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-381/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-381/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-381/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-381/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-381/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 通义实验室",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 通义实验室",
+  "status": "Full text + source captured",
+  "tags": [
+    "Qwen-Image-Bench",
+    "Text-to-Image Evaluation",
+    "T2I",
+    "Multimodal Model",
+    "Q-Judger"
+  ],
+  "title": "Qwen-Image-Bench: 56 Creative Benchmarks Defining a New Standard for Image Generation Evaluation",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501322&idx=1&sn=b7133e4650fd3ecbdd80a69ec3780a98",
+      "https://www.bestblogs.dev/article/b3a55351"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501322&idx=1&sn=b7133e4650fd3ecbdd80a69ec3780a98",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/b3a55351"
+  }
+}

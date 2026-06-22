@@ -1,0 +1,76 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-13",
+  "id": "BB-2026-05-01-178",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-178/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-178",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-178/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-178/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-178/raw/display-document.html",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-178/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-178/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-178/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agents",
+    "Evaluation",
+    "RAG",
+    "LLM",
+    "Production"
+  ],
+  "title": "Building an Evaluation Harness for Production AI Agents: A 12-Metric Framework From 100+ Deployments",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://arxiv.org/abs/2309.15217",
+      "https://github.com/confident-ai/deepeval",
+      "https://github.com/explodinggradients/ragas",
+      "https://github.com/openai/human-eval",
+      "https://opentelemetry.io/",
+      "https://towardsdatascience.com/building-an-evaluation-harness-for-production-ai-agents-a-12-metric-framework-from-100-deployments/",
+      "https://www.bestblogs.dev/en/article/ed72fe59",
+      "https://www.intuz.com/",
+      "https://www.intuz.com/ai-agents-for-business-automation",
+      "https://www.intuz.com/custom-ai-development",
+      "https://www.intuz.com/get-started?utm_source=tds&utm_medium=article&utm_campaign=eval_harness_2026",
+      "https://www.langchain.com/langsmith",
+      "https://www.linkedin.com/in/patrickhq",
+      "https://www.trulens.org/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/building-an-evaluation-harness-for-production-ai-agents-a-12-metric-framework-from-100-deployments/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/ed72fe59"
+  }
+}

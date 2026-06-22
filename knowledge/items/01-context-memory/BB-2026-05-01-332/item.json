@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-30",
+  "id": "BB-2026-05-01-332",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-332/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-332",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-332/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-332/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-332/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-332/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-332/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-332/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "RAG",
+    "Embeddings",
+    "Enterprise AI",
+    "Retrieval",
+    "Vector Search"
+  ],
+  "title": "Embeddings Aren’t Magic: The Predictable Failure Modes of RAG Retrieval",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://towardsdatascience.com/embeddings-arent-magic-the-predictable-failure-modes-of-rag-retrieval-enterprise-document-intelligence-vol-1-2/",
+      "https://www.bestblogs.dev/article/47f5946d"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/embeddings-arent-magic-the-predictable-failure-modes-of-rag-retrieval-enterprise-document-intelligence-vol-1-2/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/47f5946d"
+  }
+}

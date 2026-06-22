@@ -1,0 +1,85 @@
+{
+  "entry_id": "BB-2026-05-01-330",
+  "created": "2026-05-26T15:00:00+08:00",
+  "type": "source_analysis",
+  "evidence": [
+    {
+      "type": "source_code",
+      "path": "D:\\webstudy\\FlagHunter\\pentestagent\\agents\\base_agent.py",
+      "description": "BaseAgent 主循环 _run_loop() — 核心控制流",
+      "key_findings": [
+        "ReAct loop: while iteration < max_iterations",
+        "纯文本响应视为 thinking out loud，continue 不停",
+        "tool_calls 并发执行",
+        "计划完成 → 摘要 → 退出",
+        "无 permission check",
+        "无 subagent spawn 能力"
+      ]
+    },
+    {
+      "type": "source_code",
+      "path": "D:\\webstudy\\FlagHunter\\pentestagent\\tools\\registry.py",
+      "description": "工具注册表 — 全局 dict + register_tool 装饰器",
+      "key_findings": [
+        "全局 _tools: Dict[str, Tool]",
+        "Tool.execute() 直接调用 execute_fn，无 permission gate",
+        "支持 enable/disable 切换",
+        "无 ToolSearch 工具"
+      ]
+    },
+    {
+      "type": "source_code",
+      "path": "D:\\webstudy\\FlagHunter\\pentestagent\\tools\\executor.py",
+      "description": "ToolExecutor — 工具执行器",
+      "key_findings": [
+        "有 flag 扫描、stealth 延迟、cookie 注入、缺失工具提示等增强功能",
+        "但 agent loop 不经过 ToolExecutor，而是直接调 _execute_single",
+        "导致 ToolExecutor 的增强逻辑被绕过"
+      ]
+    },
+    {
+      "type": "source_code",
+      "path": "D:\\webstudy\\FlagHunter\\pentestagent\\llm\\memory.py",
+      "description": "ConversationMemory — 上下文管理",
+      "key_findings": [
+        "token 计数 + 分块 LLM 摘要",
+        "有 summary cache",
+        "无 CLAUDE.md 式项目记忆",
+        "无 session 持久化"
+      ]
+    },
+    {
+      "type": "comparative_source",
+      "path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claw-code\\rust\\crates\\runtime\\src\\conversation.rs",
+      "description": "claw-code ConversationRuntime — 对照参考",
+      "key_findings": [
+        "AssistantEvent 枚举: Thinking/TextDelta/ToolUse/Usage/PromptCache/MessageStop",
+        "TurnSummary 结构化 turn 输出",
+        "ApiClient + ToolExecutor trait 解耦",
+        "AutoCompactionEvent 自动压缩",
+        "SessionTracer 集成",
+        "HookRunner + HookAbortSignal 集成"
+      ]
+    },
+    {
+      "type": "comparative_source",
+      "path": "D:\\newwork\\aiagentstudy\\knowledge\\raw\\external\\claw-code\\rust\\crates\\runtime\\src\\permission_enforcer.rs",
+      "description": "claw-code PermissionEnforcer — 对照参考",
+      "key_findings": [
+        "check() + check_with_required_mode() + check_file_write() + check_bash()",
+        "PermissionPolicy 分层",
+        "独立于 tool dispatch 的权限层"
+      ]
+    }
+  ],
+  "gap_summary": {
+    "critical": ["权限门禁层 (PermissionEnforcer)", "子代理系统 (Agent tool + subagent runtime)"],
+    "important": ["思考与行动分离 (AssistantEvent 模型)", "工具搜索 (ToolSearch)", "Hook 系统"],
+    "nice_to_have": ["会话持久化", "Task Registry", "MCP Client Bridge", "LSP 集成"]
+  },
+  "recommended_first_steps": [
+    "在 _execute_single 中注入 permission check",
+    "添加 Agent 工具支持最小子代理 (Explore/General)",
+    "区分 reasoning_content 和 action content"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-12",
+  "id": "BB-2026-05-01-221",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-221/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-221",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-221/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-221/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-221/raw/display-document.html",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-221/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-221/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-221/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / OpenAI Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / OpenAI Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "Parameter Golf",
+    "Machine Learning",
+    "AI Coding Agents",
+    "OpenAI",
+    "Research Competition"
+  ],
+  "title": "What Parameter Golf taught us",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+      "https://openai.com/index/building-codex-windows-sandbox",
+      "https://openai.com/index/codex-for-almost-everything",
+      "https://openai.com/index/introducing-gpt-5-5",
+      "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+      "https://openai.com/index/what-parameter-golf-taught-us",
+      "https://www.bestblogs.dev/en/article/5499bd5a",
+      "https://www.youtube.com/watch?v=-7JSa_luc6k",
+      "https://www.youtube.com/watch?v=NCKQL0op30E",
+      "https://www.youtube.com/watch?v=b6Mxcv1pyBU",
+      "https://x.com/OpenAI/status/2047376561205325845",
+      "https://x.com/sama/status/2029622732594499630"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://openai.com/index/what-parameter-golf-taught-us",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/5499bd5a"
+  }
+}

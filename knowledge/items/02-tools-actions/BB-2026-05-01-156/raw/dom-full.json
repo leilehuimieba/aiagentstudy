@@ -1,0 +1,379 @@
+{
+  "content": "\n\n\nVoice AI only feels natural if conversation moves at the speed of speech. When the network gets in the way, people hear it immediately as awkward pauses, clipped interruptions, or delayed barge-in. That matters for ChatGPT voice, for developers building with the Realtime API, for agents working in interactive workflows, and for models that need to process audio while a user is still talking.\n\nAt OpenAI’s scale, that translates into three concrete requirements:\n\nGlobal reach for more than 900 million weekly active users\nFast connection setup so a user can start speaking as soon as a session begins\nLow and stable media round-trip time, with low jitter and packet loss, so turn-taking feels crisp\n\nThe team at OpenAI responsible for real-time AI interactions recently rearchitected our WebRTC stack to address three constraints that started to collide at scale: one-port-per-session media termination does not fit OpenAI infrastructure well, stateful ICE (Interactive Connectivity Establishment) and DTLS (Datagram Transport Layer Security) sessions need stable ownership, and global routing has to keep first-hop latency low. In this post, we walk through the split relay plus transceiver architecture we built to preserve standard WebRTC behavior for clients while changing how packets are routed inside OpenAI’s infrastructure.\n\nWebRTC lets us make real-time AI products\n\nWebRTC is an open standard for sending low-latency audio, video, and data between browsers, mobile apps, and servers. It’s often associated with peer-to-peer calling, but it’s also a practical foundation for client-to-server real-time systems because it standardizes the hard parts of interactive media: ICE for connectivity establishment and NAT (Network Address Translation) traversal, DTLS and SRTP (Secure Real-time Transport Protocol) for encrypted transport, codec negotiation for compressing and decoding audio, RTCP (Real-time Transport Control Protocol) for quality control, and client-side features such as echo cancellation and jitter buffering.\n\nThat standardization matters for AI products. Without WebRTC, every client would need a different answer for how to establish connectivity across NATs, encrypt media, negotiate codecs (the coder-decoders selected for transmission and decompression) and adapt to changing network conditions. With WebRTC, we can build on a protocol stack that’s already implemented across browsers and mobile platforms, focusing our own work on the infrastructure that connects real-time media to models.\n\nWe also build on the WebRTC ecosystem itself, including mature open-source implementations and the standard work that keeps browsers, mobile apps, and servers interoperable. Foundational work by Justin Uberti (one of WebRTC’s original architects) and Sean DuBois (creator and maintainer of Pion) made it possible for teams like ours to build on battle-tested media infrastructure rather than reinvent low-level transport, encryption, and congestion-control behavior. We’re fortunate that both Justin and Sean are now colleagues here at OpenAI, helping guide how we bring WebRTC and real-time AI closer together.\n\nFor AI, the most important property is that audio arrives as a continuous stream. A spoken agent can begin transcribing, reasoning, calling tools, or generating speech while the user is still talking, instead of waiting for a full upload. That’s the difference between a system that feels conversational and one that feels like push-to-talk.\n\nChoosing a media architecture\n\nOnce we chose WebRTC, the next question was where to terminate it (where we’d accept and own the WebRTC connection—for example, at the edge) and how to connect those sessions to the inference backend. Termination matters because it determines how we handle real-time session state, media transport, routing, latency, and failure isolation.\n\nAn SFU, or selective forwarding unit, is a media server that receives one WebRTC stream from each participant and selectively forwards streams to the others. In this model, the SFU terminates a separate WebRTC connection for every participant, and the AI joins as another participant in the session. That can be a good fit for products that are inherently multiparty, such as group calls, classrooms, or collaborative meetings. It keeps audio codecs, RTCP messages, data channels, recording, and per-stream policy in one place.1\n\nEven in client-to-AI products, an SFU is often the default starting point because it lets teams reuse one proven system for signaling, media routing, recording, observability, and future extensions such as human handoff or adding more participants.\n\nOur workload is different. Most sessions are 1:1—one user talking to one model, or one application talking to one real-time agent—with latency sensitivity on every turn. For that shape of traffic, we chose a transceiver model: a WebRTC edge service terminates the client connection and then converts media and events into simpler internal protocols for model inference, transcription, speech generation, tool use, and orchestration.\n\nIn this design, the transceiver is the only service that owns the WebRTC session state, including ICE connectivity checks, the DTLS handshake, SRTP encryption keys, and session lifecycle. “Termination” here means the transceiver is the endpoint that completes those handshakes and encrypts or decrypts the media. Keeping that state in one place made session ownership easier to reason about, and it let backend services scale like ordinary services instead of acting as WebRTC peers themselves.\n\nThe core deployment problem: WebRTC meets Kubernetes\n\nAfter choosing the transceiver model, our first implementation was a single Go service built on Pion that handled both signaling and media termination. It powers ChatGPT voice, the Realtime API’s WebRTC endpoint, and a number of research projects.\n\nOperationally, the transceiver service does two jobs:\n\nSignaling: SDP negotiation, codec selection, ICE credentials, and session setup\nMedia: Terminating downstream WebRTC connections and maintaining upstream connections to backend services for inference and orchestration\n\nWe wanted the service to run like the rest of our infrastructure: on Kubernetes, where workloads can scale up and down, and move across hosts as demand changes. But the conventional one-port-per-session WebRTC model fits that environment poorly, because it depends on large public UDP port ranges that are difficult to expose, secure, and preserve as pods are added, removed, or rescheduled.2\n\nPort exhaustion\n\nThe first problem was the one-port-per-session model itself. At high concurrency, that means exposing and managing very large UDP port ranges.\n\nCloud load balancers and Kubernetes services are not designed around tens of thousands of public UDP ports per service. Each additional range adds operational complexity in load balancer config, health checking, firewall policy, and rollout safety.3\nLarge UDP port ranges are hard to secure because they expand the externally reachable surface area and make network policy harder to audit.\nThey’re also a poor fit for autoscaling. Pods are constantly added, removed, and rescheduled in Kubernetes. Requiring each pod to reserve and advertise a large stable port range makes that elasticity brittle.4\n\nThis is why many WebRTC systems move toward a single UDP port per server, with application-level demultiplexing behind that port.5\n\nState stickiness\n\nSingle-port-per-server designs solve port count, but they introduce a second problem: preserving ownership of each session across a fleet.\n\nICE and DTLS are stateful protocols. The process that created a session needs to keep receiving that session’s packets so it can validate connectivity checks, complete the DTLS handshake, decrypt SRTP, and process later session changes such as ICE restarts. If packets for the same session land on a different process, setup can fail or media can break.\n\nThat gave us a specific target: expose a small, fixed UDP surface to the public internet, while still routing every packet to the transceiver that owns the corresponding WebRTC session.\n\nComparison of WebRTC media architectures\n\nWe evaluated several ways to get there, including TURN (Traversal Using Relays around NAT), where an edge relay terminates client allocations and forwards traffic on their behalf.2\n\nApproach\n\n\t\n\nPros\n\n\t\n\nCons\n\n\n\n\nUnique IP:port per session (also known as native direct UDP)\n\n\t\n\nDirect client-to-server media path\n\nNo forwarding layer in the data path\n\n\t\n\nRequires one public UDP port per session\n\nLarge port ranges are difficult to expose and secure\n\nPoor fit for Kubernetes and cloud load balancers\n\n\n\n\nUnique IP:port per server\n\n\t\n\nMuch smaller public UDP footprint than per-session exposure\n\nOne shared socket per server can demultiplex many sessions\n\n\t\n\nWorks cleanly on a single host, but not across a shared load-balanced fleet by itself\n\nSession demultiplexing on a single host only helps after a packet reaches that host; across a load-balanced fleet, the first packet can still land on the wrong instance, so you still need a deterministic way to steer each session to the process that owns it\n\n\n\n\n\n\n\nTURN relay (protocol-terminating)\n\n\t\n\nClients only need to reach the TURN relay address and port\n\nCan centralize policy at the edge\n\n\t\n\nTURN allocations add setup round trips\n\nMoving or recovering allocations across TURN servers is still difficult\n\n\n\n\nStateless forwarder + stateful terminator (OpenAI’s relay + transceiver)\n\n\t\n\nSmall public UDP footprint\n\nTransceiver still owns the full WebRTC session\n\n\t\n\nAdds one forwarding hop before media reaches the owning transceiver\n\nRequires custom coordination between relay and transceiver\n\nArchitecture overview: relay + transceiver\n\nThe architecture we shipped splits packet routing from protocol termination. Signaling still reaches the transceiver for session setup, while media enters through the relay first. The relay is a lightweight UDP forwarding layer with a small public footprint, and the transceiver is the stateful WebRTC endpoint behind it.\n\nThe relay does not decrypt media, run ICE state machines, or participate in codec negotiation. It reads enough packet metadata to choose a destination, then forwards the packet to the transceiver that owns the session. The transceiver still sees a normal WebRTC flow and still owns all protocol state. From the client’s perspective, nothing about the WebRTC session changes.\n\nRouting on ICE credentials\n\nFirst-packet routing is the key step in this setup. A relay has to route the first packet from a client before any session exists on the packet path itself rather than by pausing on an external lookup service.\n\nEvery WebRTC session already carries a protocol-native routing hook: the ICE username fragment, or ufrag, a short identifier exchanged during session setup and echoed in STUN connectivity checks. We generate the server-side ufrag so it contains just enough routing metadata for relay to infer the destination cluster and owning transceiver.\n\nDuring signaling, the transceiver allocates session state and returns a shared relay VIP and UDP port in the SDP answer. A VIP is a virtual IP address fronting the relay fleet; combined with the port, it gives the client a single stable destination, such as `203.0.113.10:3478`, even though many relay instances sit behind it. The client’s first media-path packet is usually a STUN (Session Traversal Utilities for NAT) binding request, which ICE uses to verify that packets can reach the advertised address.\n\nRelay parses just enough of that first STUN packet to read the server ufrag, decode the routing hint, and forward the packet to the owning transceiver. Each transceiver listens on a shared UDP socket, meaning one operating system endpoint bound to an internal IP:port, not one socket per session. After the relay creates a session from the client’s source IP:port to that transceiver destination, subsequent DTLS, RTP, and RTCP packets flow within the session without re-decoding the ufrag.\n\nThe relay’s session is purposefully minimal, consisting only of an in-memory session to inform packet forwarding, along with necessary counters for monitoring and timers for session expiration and cleanup. This design choice maintains packet routing directly on the packet path. If a relay restarts and loses the session, the next STUN packet rebuilds the session from the ufrag routing hint. To make it even more reliable, a Redis cache is employed to hold the mapping of <client IP + Port, transceiver IP + Port> once the route is established so that it can be recovered much earlier, before the next STUN packet arrives.\n\nGlobal Relay and geo-steered signaling\n\nOnce we reduced the public UDP surface to a small number of stable addresses and ports, we could deploy the same relay pattern globally. Global Relay is our fleet of geographically distributed relay ingress points that all implement the same packet-forwarding behavior.\n\nBroad geographic ingress shortens the first client-to-OpenAI hop because a packet can enter our network at a relay close to the user, in both geography and network topology, instead of crossing the public internet to a distant region first. In practical terms, that means lower latency, less jitter, and fewer avoidable loss bursts before traffic reaches our backbone.6\n\nWe use Cloudflare geo and proximity steering for signaling so the initial HTTP or WebSocket request reaches a nearby transceiver cluster. The request context dictates the session’s location and which Global Relay ingress point is advertised to the client. The SDP answer provides the Global Relay address, while the ufrag contains sufficient information for Global Relay to route media to the designated cluster and relay to route to the destination transceiver.\n\nTogether, geo-steered signaling and Global Relay put both setup and media on a nearby entry path while keeping the session anchored to one transceiver. That reduces the round-trip time for signaling and for the first ICE connectivity check, which directly shortens how long a user waits before speech can start.\n\nRelay implementation and performance\n\nWe wrote the relay service in Go and kept the implementation narrow on purpose. On Linux, the kernel’s networking stack receives UDP packets from the machine’s network interface and delivers them to a socket, the operating system endpoint that a process reads after binding an IP:Port. Relay runs in userspace, so a regular Go process reads packet headers from that socket, updates a small amount of flow state, and forwards packets without terminating WebRTC. We did not need any kernel-bypass framework, which would let a userspace process poll network queues directly for higher packet rates but also add operational complexity.\n\nKey design choices:\n\nNo protocol termination: Relay parses only STUN headers/ufrag; it uses cached state for subsequent DTLS, RTP, and RTCP, keeping packets opaque.\nEphemeral state: It maintains a small, short-timeout, in-memory map of client address to transceiver destination for flow state and observability.\nHorizontal scalability: Multiple relay instances run in parallel behind a load balancer. State is not hard WebRTC state, so restarts cause minimal traffic drops and quick flow recovery.\n\nEfficiency measures:\n\nSO_REUSEPORT is a Linux socket option that allows multiple relay workers on the same machine to bind the same UDP port. The kernel then distributes incoming packets across those workers, which avoids a single read-loop bottleneck.\nruntime.LockOSThread pins each UDP-reading goroutine to a specific OS thread. Combined with SO_REUSEPORT, that tends to keep packets from the same flow (the source and destination IP:Port plus protocol) on the same CPU core, improving cache locality and reducing context switching.\nPre-allocated buffers and minimal copying keep parsing and allocation overhead low to avoid garbage collection in Go.\n\nThis implementation handled our global real-time media traffic with a relatively small relay footprint, so we kept the simpler design instead of taking on a kernel bypass route.\n\nResults and learnings\n\nThis architecture lets us run WebRTC media in Kubernetes without exposing thousands of UDP ports. That matters because a smaller and fixed UDP surface is easier to secure and load balance, and it lets the infrastructure scale without reserving large public port ranges. With better infra support from Kubernetes and more security due to smaller surface area, this design also preserves standard WebRTC behavior for clients and confirms that an SFU-less design was the right default for our workload. Most of our sessions are point-to-point, latency-sensitive, and easier to scale when inference services don’t need to behave like WebRTC peers.\n\nThe broader lesson is that the best place to add complexity is in a thin routing layer, not in every backend service, and not in custom client behavior. Encoding routing metadata into a protocol-native field gave us deterministic first-packet routing, a small public UDP footprint, and enough flexibility to place ingress close to users around the world.\n\nA few choices were especially important:\n\nPreserve protocol semantics at the edge. Clients still speak standard WebRTC, which keeps browser and mobile interoperability intact.\nKeep hard session states in one place. Transceiver owns ICE, DTLS, SRTP, and session lifecycle; relay only forwards packets.\nRoute on information already present in setup. The ICE ufrag gave us a first-packet routing hook without adding a hot-path lookup dependency.\nOptimize for the common case before reaching for kernel bypass. A narrow Go implementation with careful use of SO_REUSEPORT, thread pinning, and low-allocation parsing was enough for our workload.\n\nReal-time voice AI only works when infrastructure makes latency feel invisible. For us, that meant changing the shape of our WebRTC deployment without changing what clients expect from WebRTC itself.\n\n2026\nAuthor\nYi Zhang, William McDonald\nReferences\n\n1. How Discord Handles Two and Half Million Concurrent Voice Users using WebRTC⁠\n(opens in a new window)\n\n2. GitHub - l7mp/stunner: A Kubernetes media gateway for WebRTC⁠\n(opens in a new window)\n\n3. WebRTC Ports in a nutshell [Examples] - BlogGeek.me⁠\n(opens in a new window)\n\n4. Deploy to Kubernetes - LiveKit docs⁠\n(opens in a new window)\n\n5. Use only a single UDP port instead a big port range for media connection - mediasoup⁠\n(opens in a new window)\n\n6. Cloudflare Calls: millions of cascading trees all the way down",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/85c11f72#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=8749b9",
+      "text": "O\nOpenAI Blog",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://openai.com/news/?tags=2026",
+      "text": "2026",
+      "title": ""
+    },
+    {
+      "href": "https://discord.com/blog/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc",
+      "text": "How Discord Handles Two and Half Million Concurrent Voice Users using WebRTC⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://github.com/l7mp/stunner",
+      "text": "GitHub - l7mp/stunner: A Kubernetes media gateway for WebRTC⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://bloggeek.me/webrtc-ports-ip-addresses/",
+      "text": "WebRTC Ports in a nutshell [Examples] - BlogGeek.me⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://docs.livekit.io/home/self-hosting/kubernetes/",
+      "text": "Deploy to Kubernetes - LiveKit docs⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://mediasoup.discourse.group/t/use-only-a-single-udp-port-instead-a-big-port-range-for-media-connection/3328",
+      "text": "Use only a single UDP port instead a big port range for media connection - mediasoup⁠\n(opens in a new window)",
+      "title": ""
+    },
+    {
+      "href": "https://blog.cloudflare.com/cloudflare-calls-anycast-webrtc/",
+      "text": "Cloudflare Calls: millions of cascading trees all the way down",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/e792cb18?entry=related_article",
+      "text": "Introducing workspace agents in ChatGPT",
+      "title": "OpenAI introduces workspace agents, a new class of shared, long-running AI agents within ChatGPT for business teams, designed to automate complex workflows, integrate with organizational tools, and operate under enterprise-grade controls."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/a647d6a?entry=related_article",
+      "text": "State of the Claw",
+      "title": "OpenClaw founder and OpenAI engineer Peter Steinberger discusses the unprecedented growth and security challenges of the OpenClaw project, shares his unique AI-assisted development workflow, and explores the evolving concept of 'engineer taste' in the AI era."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/a392d2a?entry=related_article",
+      "text": "Harness Engineering: How to Build Software When Humans Steer, Agents Execute",
+      "title": "OpenAI engineer Ryan Lopopolo introduces 'Harness Engineering,' a paradigm shift where engineers design systems and automated guardrails to orchestrate hundreds of AI agents, transforming from coders to directors of software development."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/46822472?entry=related_article",
+      "text": "Scaling Managed Agents: Decoupling the brain from the hands",
+      "title": "Anthropic details the architectural evolution of Managed Agents, focusing on decoupling the 'brain' (LLM/harness) from the 'hands' (sandboxes/tools) to improve scalability, reliability, and security."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/7e4131fc?entry=related_article",
+      "text": "Agents have their own computers with Sandboxes GA",
+      "title": "Cloudflare announces the general availability of its Sandboxes and Cloudflare Containers, detailing a suite of new features that provide AI agents with secure, scalable, and stateful development environments."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/52f8c2e7?entry=related_article",
+      "text": "Speeding up agentic workflows with WebSockets in the Responses API",
+      "title": "OpenAI engineers detail how they redesigned the Responses API to use persistent WebSocket connections, reducing agentic workflow latency by up to 40% by eliminating redundant network overhead and enabling faster models like GPT‑5.3‑Codex‑Spark to reach their full inference speed potential."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/d8c375d8?entry=related_article",
+      "text": "Codex for (almost) everything",
+      "title": "OpenAI announces a major update to Codex, expanding its capabilities beyond coding to include computer operation, web interaction, image generation, and deeper integration across the software development lifecycle with new features like memory, automations, and over 90 plugins."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/cade0910?entry=related_article",
+      "text": "Building the agentic cloud: everything we launched during Agents Week 2026",
+      "title": "Cloudflare concludes its inaugural Agents Week by announcing a comprehensive suite of new products and features across compute, security, agent tooling, and web infrastructure, all designed to establish the foundation for the 'agentic cloud' where AI agents are a primary workload."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/80a29c25?entry=related_article",
+      "text": "Workspace agents",
+      "title": "This article from the OpenAI Blog introduces the concept of workspace agents in ChatGPT, explaining their core components, design anatomy, common workflow patterns, and providing a practical guide for using, building, testing, and scaling these agents for repeatable, structured business tasks."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/a6d9083a?entry=related_article",
+      "text": "Introducing GPT-5.5",
+      "title": "OpenAI releases GPT-5.5, its most capable model yet, with significant gains in agentic coding, knowledge work, and scientific research, while maintaining GPT-5.4 latency and improving token efficiency."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "OpenAI rearchitected its WebRTC stack using a split relay and transceiver model to deliver low-latency voice AI at scale, solving port exhaustion and state s...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "WebRTC, System Design, Infrastructure, Kubernetes, Low-Latency",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs · Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "How OpenAI delivers low-latency voice AI at scale | BestB...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "OpenAI rearchitected its WebRTC stack using a split relay and transceiver model to deliver low-latency voice AI at scale, solving port exhaustion and state s...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/85c11f72",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/85c11f72/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-05-04 00:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "OpenAI",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "WebRTC",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "System Design",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Infrastructure",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Kubernetes",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Low-Latency",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "How OpenAI delivers low-latency voice AI at scale | BestB...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "OpenAI rearchitected its WebRTC stack using a split relay and transceiver model to deliver low-latency voice AI at scale, solving port exhaustion and state s...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/85c11f72/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "How OpenAI delivers low-latency voice AI at scale | BestB...",
+  "url": "https://www.bestblogs.dev/en/article/85c11f72"
+}

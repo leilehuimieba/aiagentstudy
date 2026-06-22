@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "Martin Fowler"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://martinfowler.com/logo-sq.png",
+  "domain": "martinfowler.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_3e145d04",
+  "keyQuotes": [
+    "In a degraded codebase, the model does not see 'technical debt' as debt. It sees examples. It sees precedent. It sees a style to continue.",
+    "The cost of building has collapsed, but the cost of aligning organisationally has not. If anything, it's gone up.",
+    "Spawning agents is not the skill. Anyone can run 20. The real skill is designing the system around the one serial resource that cannot be cloned or parallelized. That resource is your attention.",
+    "Publishing a report online is essentially a form of data injection into the pool of knowledge that is the internet. When the report includes fake information... it can 'poison the well' by misleading future researchers.",
+    "The productivity gains from AI got captured by output volume rather than output quality. The org's expectations rose to absorb the speed-up, and the slack that used to exist between tasks, the unstructured time where strategic thinking actually happens, got eaten first because it's invisible on a dashboard."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Greg Wilson lists common flawed metrics like lines of code or developer surveys. Fowler agrees that productivity is inherently unmeasurable, but argues that asking developers for their feelings, while weak, is often the best available signal in a world of poor quantitative measures.",
+      "point": "Measuring AI's impact on developer productivity is fundamentally flawed, but qualitative metrics can still offer some value."
+    },
+    {
+      "explanation": "Benedict Evans points out that despite a century of automating accounting, the number of accountants grew. The Jevons paradox (cheaper things increase demand) and the fundamental transformation of job roles make it nearly impossible to predict AI's effect on employment.",
+      "point": "Historical automation of professions like accounting did not eliminate jobs but transformed them, making AI job impact forecasts highly uncertain."
+    },
+    {
+      "explanation": "Stephen O'Grady's analysis shows that while closed models lead in innovation, open models are closing the gap much faster than before. What is frontier today quickly becomes table stakes, suggesting no sustainable competitive advantage from model capability alone.",
+      "point": "Open AI models are catching up to closed models at an accelerating pace, eroding any capability moat."
+    },
+    {
+      "explanation": "GPTZero's investigation found over half the references in an Ernst & Young report were hallucinations. Jason Koebler describes the 'Zombie Internet' where humans must write defensively to avoid being mistaken for AI, leading to a pervasive sense of distrust and mental fatigue.",
+      "point": "AI-generated slop, including hallucinated citations, is poisoning the internet's knowledge base and causing psychological harm to human readers."
+    },
+    {
+      "explanation": "Andy Osmani argues that while you can spawn many AI agents, any task requiring genuine human understanding (e.g., resolving merge conflicts) must acquire the 'lock' of your attention. The real skill is designing workflows that minimize this bottleneck.",
+      "point": "The human developer is the bottleneck in multi-agent workflows, analogous to Python's Global Interpreter Lock (GIL)."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Martin Fowler's June 2026 fragments explore the flawed metrics for AI productivity, the historical resilience of jobs to automation, the narrowing gap between open and closed AI models, the dangers of hallucinated citations, the use of AI for security defense, the concept of generative debt, the psychological toll of AI slop, the human bottleneck in multi-agent workflows, and the organizational cost of AI-driven speed.",
+  "originalTitle": "Fragments: June  2",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-02",
+  "publishDateTimeStr": "2026-06-02 17:21:00",
+  "publishTimeStamp": 1780392060000,
+  "qualified": false,
+  "readCount": 22,
+  "readTime": 8,
+  "readUrl": "https://www.bestblogs.dev/article/3e145d04",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_913551",
+  "sourceImage": "https://image.jido.dev/20260602012138_1c6a554",
+  "sourceName": "Martin Fowler",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This collection of short essays by Martin Fowler covers a wide range of topics at the intersection of AI and software engineering. Greg Wilson's critique of dodgy AI productivity metrics is discussed, with Fowler adding his own perspective that while flawed, qualitative self-assessments can still be useful. Benedict Evans' historical analysis argues that automation has not eliminated professions like accounting, but changed their nature, making job impact forecasts for AI highly uncertain. Stephen O'Grady's data shows open models are catching up to closed ones faster, with no clear capability moats. A GPTZero investigation reveals hallucinated citations in an Ernst & Young report, highlighting the risk of poisoning the internet's knowledge pool. Mozilla's use of AI to find 423 security bugs in Firefox in a single month demonstrates AI's defensive potential. Pavel Voronin introduces the concept of 'generative debt,' where LLMs amplify existing codebase cruft. Jason Koebler's essay on the 'Zombie Internet' describes the psychological damage of AI slop. Andy Osmani uses the Python GIL as a metaphor for the human bottleneck in multi-agent workflows. Finally, Jamie Hurst from Booking.com provides a realistic account of how AI's productivity gains are captured by output volume, eroding time for mentoring and strategic thinking.",
+  "tags": [
+    "AI Productivity",
+    "AI and Jobs",
+    "Open Source AI",
+    "AI Hallucinations",
+    "AI Security"
+  ],
+  "title": "Fragments: June  2",
+  "translateContent": null,
+  "url": "https://martinfowler.com/fragments/2026-06-02.html",
+  "wordCount": 1821
+}

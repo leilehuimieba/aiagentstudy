@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Moritz Reuss"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/WAM_Blog_Post_Header-660x370.png",
+  "domain": "developer.nvidia.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_da120804",
+  "keyQuotes": [
+    "WAMs offer a different starting point. They use pretrained video or world-model backbones that already model how scene dynamics change under language conditioning. If that prior transfers to behavior generation, the remaining video-to-action gap may be smaller than learning language-to-action grounding directly.",
+    "My take: WAMs will become the second major recipe for robot foundation models, alongside VLM-based VLAs. The open questions are which formulation of them wins, and which parts of the model architecture and pipeline actually matter. It is likely that the winner is neither pure VLA nor pure WAM, but a hybrid of both.",
+    "The generated rollout is surprisingly good for a model that was not explicitly trained as a robot policy. ... Still, the result illustrates why video backbones are attractive for robotics: the model has a useful prior for what robot-object interaction should look like, even though it is not yet reliable enough for control."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "VLAs suffer from a 'grounding gap' where language-to-action mapping must be learned from limited robot data. WAMs start from a backbone that already understands how language conditions visual scene dynamics, potentially reducing the amount of grounding that needs to be learned.",
+      "point": "WAMs offer a different starting point than VLAs by using pretrained video backbones instead of VLM backbones."
+    },
+    {
+      "explanation": "Unlike the more converged VLA recipe, WAMs are being explored through multiple formulations. The three main paradigms are inverse dynamics (predict video, then infer action), joint prediction (predict video and action together), and representation-only (use video backbone as a feature extractor).",
+      "point": "The WAM design space is still actively diverging across three key axes: paradigm, action integration, and architecture."
+    },
+    {
+      "explanation": "Zero-shot, Veo 3.1 generated plausible trajectories for a robot task, but exhibited artifacts like morphing gripper types and failing to fully execute the action. This illustrates the potential of video priors and the need for WAM fine-tuning to turn 'imagination into reliable control'.",
+      "point": "A qualitative experiment with Veo 3.1 shows frontier video models have a useful prior for robot-object interaction, but are not yet reliable for control."
+    },
+    {
+      "explanation": "The central question is whether WAMs represent a real paradigm shift or a short hype cycle. The author's take is that they are a genuine shift, and the most successful systems may merge parts of both VLA and WAM recipes.",
+      "point": "The author predicts WAMs will become a second major recipe for robot foundation models, potentially converging with VLAs into a hybrid approach."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article argues that World-Action Models (WAMs), which use pretrained video backbones instead of VLM backbones, are emerging as a second major paradigm for robot foundation models, potentially overcoming the grounding gap faced by VLM-based VLAs.",
+  "originalTitle": "Pretrained to Imagine， Fine-Tuned to Act: The Rise of World-Action Models",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-15",
+  "publishDateTimeStr": "2026-06-15 10:01:57",
+  "publishTimeStamp": 1781488917000,
+  "qualified": false,
+  "readCount": 36,
+  "readTime": 47,
+  "readUrl": "https://www.bestblogs.dev/article/da120804",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceImage": "https://image.jido.dev/20260527052034_799230b",
+  "sourceName": "NVIDIA Technical Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article provides a comprehensive survey and analysis of the emerging World-Action Model (WAM) paradigm for robot foundation models. It contrasts WAMs with the more established Vision-Language-Action (VLA) models, which start from VLM backbones. The core hypothesis is that WAMs, by leveraging pretrained video backbones that already model how language maps to visual change, can better bridge the 'language-to-action grounding gap' that limits VLAs. The author organizes the WAM design space along three axes: paradigm (inverse dynamics, joint prediction, representation-only), action integration (default tokens, action-as-image, latent actions), and architecture (monolithic, mixture-of-transformers, hierarchical). It includes a qualitative experiment with Google's Veo 3.1 to illustrate the potential of video priors, and discusses practical considerations like compute cost and inference speed. The author's central take is that WAMs will become a major recipe alongside VLAs, and the eventual winner may be a hybrid of both approaches. The post is richly referenced with citations to key papers (e.g., DreamZero, Cosmos Policy, Pi-0, UniPi) and includes a detailed glossary.",
+  "tags": [
+    "AI Agent",
+    "World Model",
+    "Robotics",
+    "VLA",
+    "WAM"
+  ],
+  "title": "Pretrained to Imagine， Fine-Tuned to Act: The Rise of World-Action Models",
+  "translateContent": null,
+  "url": "https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/",
+  "wordCount": 11543
+}

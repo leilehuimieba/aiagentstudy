@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "silentbob"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260606125906_d6b694a.webp",
+  "domain": "lesswrong.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_b15d12f6",
+  "keyQuotes": [
+    "It now takes a lot of agency to understand things, because you don't have to anymore. People can solve hard problems without understanding them, and many do.",
+    "The software world is currently betting the minds of millions of engineers on the continued progress of coding agents.",
+    "Coding agents have to solve many problems through guesswork and an incomplete picture of the software they work with. This is often good enough for them to find a solution. But often this just means applying isolated patches rather than finding clean, wholesome solutions.",
+    "Being able to develop software 1000x as quickly may not be all that useful when the market feedback still comes in at 1x speed."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Human engineers have vast, non-verbal context (historical decisions, non-functional requirements, team dynamics) that is not captured in code or easily written down. LLMs rely on lossy text representations, leading to incomplete understanding and sub-optimal solutions.",
+      "point": "The biggest bottleneck for coding agents is the lack of deep, implicit context."
+    },
+    {
+      "explanation": "Agents must make assumptions to be useful, but this leads to 'isolated patches' rather than clean, maintainable solutions. This degrades code quality over time, especially when many different agent instances work on the same codebase.",
+      "point": "Coding agents' propensity to make assumptions is a feature that also creates significant tech debt."
+    },
+    {
+      "explanation": "Because agents can solve hard problems without the engineer understanding them, the skill of deep problem-solving atrophies. This creates a dangerous dependency if AI progress stalls or fails to keep up with the problems it creates.",
+      "point": "Widespread use of coding agents risks 'cognitive decline' among engineers."
+    },
+    {
+      "explanation": "Faster code generation doesn't automatically accelerate code review, testing, product decisions, or market feedback. This leads to context switching for engineers and a potential flood of lower-quality code ('slop') that overwhelms existing processes.",
+      "point": "Increased development speed from automation creates hidden coordination costs."
+    },
+    {
+      "explanation": "Speed is not the only factor. Faster shipping can lower strategic decision quality and overwhelm users. The market provides feedback at human timescales, limiting the immediate advantage of hyper-fast development.",
+      "point": "The link between development velocity and business success is weaker than assumed."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article argues that while coding agents have become remarkably capable, their impact on large software organizations is limited by fundamental bottlenecks like context, tech debt accumulation, coordination overhead, and cognitive decline, making full-scale automation far harder than it appears.",
+  "originalTitle": "Why Software Automation Is Hard — LessWrong",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-06",
+  "publishDateTimeStr": "2026-06-06 16:56:05",
+  "publishTimeStamp": 1780736165000,
+  "qualified": false,
+  "readCount": 54,
+  "readTime": 20,
+  "readUrl": "https://www.bestblogs.dev/article/b15d12f6",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+  "sourceName": "LessWrong",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The author, a 15-year programming veteran, presents a nuanced and critical analysis of the current state of software automation. While acknowledging the transformative power of coding agents for individual developers and small projects, the article systematically dismantles the naive assumption that this translates directly to 10x productivity gains in larger organizations. The core argument is structured around several key bottlenecks: the profound challenge of context (LLMs lack the vast, implicit, and non-verbal context that human engineers possess); the tendency of agents to make unchecked assumptions, leading to tech debt and 'isolated patches' rather than clean solutions; the accumulation of technical debt and the erosion of engineers' deep understanding of their codebase ('cognitive decline'); increased coordination overhead as agents generate more output that requires human review and integration; and the diminishing returns of speed when strategic judgment and market feedback remain on human timescales. The author also presents a 'bull case' where these problems are solved by even more capable agents, but ultimately concludes that the path to automation is fraught with challenges that are often underestimated.",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "Software Engineering",
+    "Developer Tools",
+    "Engineering Culture"
+  ],
+  "title": "Why Software Automation Is Hard — LessWrong",
+  "translateContent": null,
+  "url": "https://www.lesswrong.com/posts/KzXptMbuDsYLrppss/why-software-automation-is-hard",
+  "wordCount": 4879
+}

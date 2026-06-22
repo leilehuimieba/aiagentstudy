@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-15",
+  "id": "BB-2026-05-01-529",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-529/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-529",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-529/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-529/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-529/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-529/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-529/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-529/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Stratechery by Ben Thompson",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Stratechery by Ben Thompson",
+  "status": "Full text + source captured",
+  "tags": [
+    "Anthropic",
+    "AI Safety",
+    "Business Strategy",
+    "Tech Industry Analysis",
+    "AI Policy"
+  ],
+  "title": "Anthropic’s Safety Superpower",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://stratechery.com/2026/anthropics-safety-superpower/",
+      "https://www.bestblogs.dev/article/c79f0324"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://stratechery.com/2026/anthropics-safety-superpower/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/c79f0324"
+  }
+}

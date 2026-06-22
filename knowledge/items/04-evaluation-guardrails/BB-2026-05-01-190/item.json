@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-15",
+  "id": "BB-2026-05-01-190",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-190/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-190",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-190/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-190/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-190/raw/display-document.html",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-190/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-190/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-190/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 大淘宝技术",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 大淘宝技术",
+  "status": "Full text + source captured",
+  "tags": [
+    "Agent Evaluation",
+    "LLM-as-a-Judge",
+    "Intelligent Shopping Assistant",
+    "Multimodal",
+    "Benchmark"
+  ],
+  "title": "Agent Evaluation Practices for Intelligent Shopping Assistants",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://deepresearch-bench.github.io/",
+      "https://github.com/THUDM/VisualAgentBench",
+      "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543468&idx=1&sn=f87e00d562d95669959e6690436c3df0",
+      "https://widesearch-seed.github.io/",
+      "https://www.bestblogs.dev/en/article/dcc796ec"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543468&idx=1&sn=f87e00d562d95669959e6690436c3df0",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/dcc796ec"
+  }
+}

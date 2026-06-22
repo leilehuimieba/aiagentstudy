@@ -1,0 +1,266 @@
+<html>
+ <head></head>
+ <body>
+  <p class="wp-block-paragraph">Three months into a healthcare AI deployment, our client’s compliance officer asked us a question we couldn’t answer.</p>
+  <p class="wp-block-paragraph">“How do you know your agent isn’t hallucinating patient symptoms?”</p>
+  <p class="wp-block-paragraph">We had unit tests. We had integration tests. We had a model that performed beautifully on the demo dataset. What we didn’t have was an evaluation harness that could measure hallucination rate, context faithfulness, or tool-selection accuracy in production.</p>
+  <p class="wp-block-paragraph">That gap nearly killed the project. Six weeks later, we had a 12-metric evaluation framework running against every agent response, every tool call, every retrieval operation. The compliance team signed off. The agent shipped.</p>
+  <p class="wp-block-paragraph">Across the 100+ enterprise AI agent deployments we’ve shipped since then, that framework has evolved into the playbook below. If you’re building production AI agents, this is the evaluation harness we wish we’d had on day one.</p>
+  <h2 class="wp-block-heading">The 12-Metric Framework at a Glance</h2>
+  <figure id="12-metric-framework" class="wp-block-table">
+   <table class="has-tds-gray-color has-text-color has-link-color has-fixed-layout">
+    <thead>
+     <tr>
+      <th class="has-text-align-center"><strong>Category</strong></th>
+      <th class="has-text-align-center"><strong>Metric</strong></th>
+      <th class="has-text-align-center"><strong>What It Measures</strong></th>
+      <th class="has-text-align-center"><strong>Critical Threshold</strong></th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td class="has-text-align-center"><strong>Retrieval</strong></td>
+      <td class="has-text-align-center">Context Relevance</td>
+      <td class="has-text-align-center">Are retrieved chunks relevant to the query?</td>
+      <td class="has-text-align-center">&gt;0.85</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Retrieval</strong></td>
+      <td class="has-text-align-center">Context Recall</td>
+      <td class="has-text-align-center">Did we retrieve all relevant info available?</td>
+      <td class="has-text-align-center">&gt;0.90</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Retrieval</strong></td>
+      <td class="has-text-align-center">Context Precision</td>
+      <td class="has-text-align-center">Are top-ranked chunks the most relevant?</td>
+      <td class="has-text-align-center">&gt;0.80</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Retrieval</strong></td>
+      <td class="has-text-align-center">Retrieval Latency</td>
+      <td class="has-text-align-center">How fast did the retrieval complete?</td>
+      <td class="has-text-align-center">&lt;200ms p95</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Generation</strong></td>
+      <td class="has-text-align-center">Answer Faithfulness</td>
+      <td class="has-text-align-center">Does the answer match retrieved context?</td>
+      <td class="has-text-align-center">&gt;0.95</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Generation</strong></td>
+      <td class="has-text-align-center">Answer Relevance</td>
+      <td class="has-text-align-center">Does the answer address the user’s question?</td>
+      <td class="has-text-align-center">&gt;0.90</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Generation</strong></td>
+      <td class="has-text-align-center">Hallucination Rate</td>
+      <td class="has-text-align-center">How often does the model invent facts?</td>
+      <td class="has-text-align-center">&lt;2%</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Agent</strong></td>
+      <td class="has-text-align-center">Tool Selection Accuracy</td>
+      <td class="has-text-align-center">Did the agent pick the right tool?</td>
+      <td class="has-text-align-center">&gt;0.92</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Agent</strong></td>
+      <td class="has-text-align-center">Tool Execution Success</td>
+      <td class="has-text-align-center">Did tool calls succeed?</td>
+      <td class="has-text-align-center">&gt;0.98</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Agent</strong></td>
+      <td class="has-text-align-center">Multi-Step Coherence</td>
+      <td class="has-text-align-center">Did the agent maintain logical flow?</td>
+      <td class="has-text-align-center">&gt;0.85</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Production</strong></td>
+      <td class="has-text-align-center">Cost per Query</td>
+      <td class="has-text-align-center">Token + infra cost per request</td>
+      <td class="has-text-align-center">&lt;$0.05 typical</td>
+     </tr>
+     <tr>
+      <td class="has-text-align-center"><strong>Production</strong></td>
+      <td class="has-text-align-center">P99 Latency</td>
+      <td class="has-text-align-center">End-to-end response time</td>
+      <td class="has-text-align-center">&lt;3s</td>
+     </tr>
+    </tbody>
+   </table>
+  </figure>
+  <p class="wp-block-paragraph">Three categories cover the agent’s internal operations (retrieval, generation, and agent behavior). The fourth category measures what production cares about (cost and latency). Skip any one of these categories at your own risk.</p>
+  <h2 class="wp-block-heading">Why Most Teams Skip Evaluation (and Pay for It Later)</h2>
+  <p class="wp-block-paragraph">Across the projects we’ve audited, three patterns explain why teams ship AI agents without proper evaluation infrastructure.</p>
+  <p class="wp-block-paragraph"><strong>Pattern 1: “We’ll add evaluation after the MVP.”</strong></p>
+  <p class="wp-block-paragraph">This is the most common and most expensive pattern. By the time the MVP ships, the team has built a UI, an API, integrations, and onboarded customers. Now they have to add evaluation infrastructure to a system that’s already in production, with users sending unpredictable queries. The retrofit takes 4-6 weeks. The data collection lag means they can’t catch a regression for days. By then, the trust damage is done.</p>
+  <p class="wp-block-paragraph"><strong>Pattern 2: “Accuracy is enough.”</strong></p>
+  <p class="wp-block-paragraph">Accuracy on a held-out test set is necessary but not sufficient. A RAG agent can have 95% accuracy on benchmark questions and still hallucinate 30% of the time on real user queries that fall outside the benchmark distribution. Production traffic is always different from your eval set. Without faithfulness, hallucination rate, and tool-selection metrics, you’re flying blind.</p>
+  <p class="wp-block-paragraph"><strong>Pattern 3: “Manual spot-checks are fine.”</strong></p>
+  <p class="wp-block-paragraph">Manual review works at 100 queries per day. It breaks at 10,000. The teams that try to scale manual review either burn out their engineers or accept that they’re not actually reviewing the volume they claim to. Automated evaluation isn’t optional once you cross a few thousand queries per day.</p>
+  <p class="wp-block-paragraph">The framework below addresses all three patterns. Build it before you ship, instrument every layer, and let the metrics tell you what your manual reviews can’t.</p>
+  <p class="wp-block-paragraph">For teams building&nbsp;<a href="https://www.intuz.com/ai-agents-for-business-automation">AI agents for business automation</a>, the evaluation harness often determines whether the project ships to production at all.</p>
+  <p class="wp-block-paragraph">The framework groups 12 metrics into four categories. Each category answers a different question about how your agent is performing.</p>
+  <h3 class="wp-block-heading">Category 1: Retrieval Metrics (4)</h3>
+  <p class="wp-block-paragraph">If your agent uses retrieval (RAG, knowledge base lookup, document search), retrieval quality is the foundation. Bad retrieval upstream means no amount of clever prompting downstream can save the response.</p>
+  <h4 class="wp-block-heading">1. Context Relevance</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;What fraction of the retrieved chunks are actually relevant to the user’s query?</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;Most RAG failures we see in production trace back to retrieval rather than generation. The model can only work with what you feed it. If you retrieve 10 chunks and only 3 are relevant, you’ve polluted the context and forced the model to filter signal from noise.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;For each query, an LLM-as-judge evaluator scores each retrieved chunk on a 0-1 relevance scale relative to the query. We average across the top-k retrieved chunks.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;&gt;0.85 average relevance across top-10 chunks. Below 0.7 indicates a retrieval problem worth investigating before chasing model improvements.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;When we see context relevance drop below 0.75 in production, the cause is almost always one of three things: index drift (new documents not chunked properly), query intent shift (users asking different questions than the eval set), or chunking strategy mismatch (chunks too large or too small for the query type).</p>
+  <h4 class="wp-block-heading">2. Context Recall</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;Did we retrieve ALL the information needed to answer the query, or did we miss relevant chunks?</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;Recall is the silent killer of RAG systems. Low recall means the answer is incomplete or wrong, but the model has no way to signal “I don’t have enough context.” It will confidently generate from partial information.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;This requires a labeled eval set in which human evaluators have identified all chunks containing information relevant to a benchmark query. We then compute the fraction of those “ground truth relevant” chunks that our retrieval actually returned.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;&gt;0.90 recall on benchmark queries. Below 0.80 means you’re systematically missing information, which leads to confident-but-wrong answers.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;Recall drops are usually a symptom of an embedding model mismatch (your embedding model isn’t capturing the semantics of your domain) or of chunk-size issues (information is split across chunks in ways that defeat similarity search). The fix is often re-chunking, not re-modeling.</p>
+  <h4 class="wp-block-heading">3. Context Precision</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;Of the retrieved chunks, are the most relevant ones ranked at the top?</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;Most production RAG systems pass only the top 3-5 chunks to the LLM context window due to token budgets. If your top-1 chunk is irrelevant but the relevant one is at position 7, you’ve effectively retrieved nothing useful.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;We compute Mean Reciprocal Rank (MRR) — the average position of the first relevant chunk in the ranked retrieval results.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;MRR &gt;0.80 — your first relevant chunk should be in position 1 or 2 most of the time.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;Precision improves dramatically when you add a reranker after the initial vector search. We’ve seen MRR jump from 0.55 to 0.92 by adding a BGE reranker on top of pgvector retrieval. The latency cost is ~50ms; the precision gain is worth it.</p>
+  <h4 class="wp-block-heading">4. Retrieval Latency</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;Time from query receipt to when retrieved chunks are ready, measured at p95.</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;End-to-end agent response time is dominated by retrieval at scale. If retrieval takes 800ms, the user waits 800ms before the LLM even starts thinking.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;Standard application performance monitoring on the retrieval service. We log the retrieval time for every query and report p50, p95, and p99.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;p95 retrieval latency &lt;200ms. p99 &lt;500ms.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;Latency spikes usually correlate with one of the following: index size growth without re-tuning HNSW parameters, network hops between the embedding service and the vector DB, or cold-start cache misses. Investigate which of the three before assuming you need a faster vector DB.</p>
+  <h3 class="wp-block-heading">Category 2: Generation Metrics (3)</h3>
+  <p class="wp-block-paragraph">Once the right context is retrieved, the quality of the generation determines whether the user receives a useful response. Three metrics matter here.</p>
+  <h4 class="wp-block-heading">5. Answer Faithfulness</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;Does the generated answer accurately reflect the retrieved context, or does it contradict or fabricate information?</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;This is the most important metric for any AI agent serving regulated industries. An unfaithful answer in healthcare, fintech, or legal contexts is a compliance failure. Even outside regulation, faithfulness directly determines user trust.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;For each generated answer, an LLM-as-judge evaluator extracts atomic claims from the answer, then checks each claim against the retrieved context. The faithfulness score is the fraction of claims supported by the context.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;&gt;0.95 faithfulness in regulated industries. &gt;0.90 in general use cases. Anything below 0.85 needs immediate investigation.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;Faithfulness drops usually indicate one of three causes: temperature settings too high (turn it down to 0.0-0.3 for production), context window overflow (your retrieved chunks plus prompt exceed context limits and the model hallucinates from training data), or prompt template encouraging extrapolation (“Based on the context, what do you think about…”).</p>
+  <h4 class="wp-block-heading">6. Answer Relevance</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;Does the generated answer actually address what the user asked, or does it wander off-topic?</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;Relevance is distinct from faithfulness. An answer can be 100% faithful to context yet not address the user’s actual question. Both metrics must be high simultaneously for a good response.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;LLM-as-judge evaluator generates 3-5 questions that the answer would be a good response to, then computes semantic similarity between those generated questions and the original user query.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;&gt;0.90 relevance. Below 0.80, the agent is answering adjacent questions, not the user’s question.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;Relevance issues often trace back to query rewriting steps in agentic flows. If your agent rewrites “How do I cancel my subscription?” into “What is the cancellation policy?” and then answers the rewritten query, the original intent gets lost.</p>
+  <h4 class="wp-block-heading">7. Hallucination Rate</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;How often does the model generate facts, names, numbers, or claims that have no basis in the retrieved context or in verifiable reality?</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;Hallucination rate is the metric your CTO will ask about. Faithfulness measures fidelity to context; hallucination rate measures fabrication beyond context. They overlap but aren’t identical — a model can be faithful to bad context, or unfaithful in benign ways.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;We sample 5% of production queries daily and run them through a dedicated hallucination detection pipeline that flags claims requiring fact-check, then human-reviews the flagged subset.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;&lt;2% hallucination rate for production agents. &lt;0.5% for regulated industry deployments.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;Hallucination spikes by query type. Open-ended questions hallucinate more than yes/no. Numeric questions hallucinate more than categorical ones. Build query-type classification into your eval pipeline so you can target investigation.</p>
+  <h3 class="wp-block-heading">Category 3: Agent-Specific Metrics (3)</h3>
+  <p class="wp-block-paragraph">If your AI system is an agent (multi-step, tool-using, goal-directed) rather than a simple RAG pipeline, three additional metrics matter.</p>
+  <h4 class="wp-block-heading">8. Tool Selection Accuracy</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;When the agent has a choice of tools, does it pick the right one for the user’s intent?</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;Modern agents have access to dozens of tools — search, calculators, calendars, database queries, and API calls. Wrong tool selection cascades — the agent then tries to make a square peg fit a round hole, generating incorrect results downstream.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;Build a labeled eval set of (query, correct_tool) pairs. Run the agent against the queries and compute the accuracy of tool selection at the first decision point.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;&gt;0.92 for binary tool choices. &gt;0.85 for choices among 5+ tools.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;Tool selection accuracy drops as the number of available tools grows. We’ve seen 95% accuracy with 3 tools collapse to 70% with 12 tools. The fix is usually clearer tool descriptions, fewer tools per agent (decompose into specialized sub-agents), or fine-tuning on tool-use traces from production.</p>
+  <h4 class="wp-block-heading">9. Tool Execution Success</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;Of the tool calls the agent makes, what fraction execute successfully (correct arguments, valid responses, no errors)?</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;An agent can pick the right tool and still call it incorrectly — wrong argument format, missing required fields, malformed input. Tool execution success isolates this failure mode.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;Track every tool call in production with success/failure status, error categorization, and retry attempts. Compute success rate per tool, per query type, and per time window.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;&gt;0.98 tool execution success rate. Below 0.95 indicates systematic argument-construction problems.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;The most common failure mode is the agent confidently constructing arguments in a format that doesn’t match the tool’s actual schema (e.g., passing a date string when the API expects ISO 8601). The fix is structured-output enforcement (function calling, JSON Schema validation) at the tool boundary.</p>
+  <h4 class="wp-block-heading">10. Multi-Step Coherence</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;When the agent executes a multi-step plan, does the logical flow remain coherent across steps?</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;Single-step accuracy is necessary but not sufficient for agentic behavior. An agent that picks the right tool in step 1, gets a good result, then forgets that result by step 4 has failed, even though every individual step succeeded.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;Trace-level evaluation. For each multi-step trace, an LLM-as-judge evaluator scores whether each step builds on prior steps coherently and whether the final output reflects the full reasoning chain.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;&gt;0.85 coherence on traces of 4+ steps. Below 0.75, your agent is essentially doing multiple disconnected single-step queries.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;Coherence drops with trace length. We see 95%+ coherence on 2-step traces collapse to 60% on 6-step traces. The fix is either decomposition (splitting a 6-step task into 2 separate 3-step tasks with an explicit handoff) or memory architecture (persistent state across steps rather than re-prompting with the full history each time).</p>
+  <h3 class="wp-block-heading">Category 4: Production Metrics (2)</h3>
+  <p class="wp-block-paragraph">The first ten metrics measure what the agent does. These two metrics measure what production cares about.</p>
+  <h4 class="wp-block-heading">11. Cost per Query</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;Total cost (token cost + infrastructure cost + tool call costs) per user query, averaged across production traffic.</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;AI agents have a unique cost profile — a single user query can trigger 5-15 LLM calls (rewriting, retrieval grading, tool selection, generation, verification). Token sprawl turns a $0.02 query into a $0.30 query without anyone noticing until the monthly bill arrives.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;Instrument every LLM call with token usage logging, every tool call with associated API costs, and every infrastructure dependency with prorated cost. Aggregate per query, then per query type, then per time window.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;Varies by use case. Internal employee tools: &lt;$0.10/query is acceptable. Customer-facing products: &lt;$0.05/query for sustainable economics. In regulated industries, cost matters less than other metrics.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;Cost spikes usually trace to one of: prompt length growth (your system prompt grew over time), retry storms (failures triggering re-execution loops), or context window inflation (retrieved chunks getting longer as your knowledge base grows). All three are easy to instrument and fix.</p>
+  <p class="wp-block-paragraph">For teams seeing cost-per-query trending upward unsustainably,&nbsp;<a href="https://www.intuz.com/custom-ai-development">the build-vs-buy decision</a>&nbsp;often shifts toward custom infrastructure with capped costs rather than per-token API pricing.</p>
+  <h4 class="wp-block-heading">12. P99 Latency</h4>
+  <p class="wp-block-paragraph"><strong>What it measures:</strong>&nbsp;End-to-end time from user query to final response, measured at the 99th percentile.</p>
+  <p class="wp-block-paragraph"><strong>Why it matters:</strong>&nbsp;Average latency hides the failure modes that frustrate users. A system with 1-second average latency but 15-second p99 has users abandoning sessions after 4-5 slow responses. P99 is what users remember.</p>
+  <p class="wp-block-paragraph"><strong>How we measure it:</strong>&nbsp;Standard application performance monitoring. We log the end-to-end latency for every query and report p50, p95, p99, and max. We track these per query type because conversational queries should be much faster than analytical queries.</p>
+  <p class="wp-block-paragraph"><strong>Target threshold:</strong>&nbsp;p99 &lt;3 seconds for conversational agents. p99 &lt;10 seconds for analytical agents that perform multi-step reasoning. Beyond 10 seconds, users disengage.</p>
+  <p class="wp-block-paragraph"><strong>Production note:</strong>&nbsp;P99 latency is almost always dominated by one of three things: retrieval (vector DB cold cache), tool calls (external API timeouts), or LLM generation for long outputs (hitting token-by-token streaming bottlenecks). Identify the dominant cause before optimizing the wrong layer.</p>
+  <h2 class="wp-block-heading">A Decision Tree: Which Metrics to Prioritize First</h2>
+  <p class="wp-block-paragraph">Twelve metrics are a lot to instrument simultaneously. Here’s how we sequence implementation across project phases.</p>
+  <p class="wp-block-paragraph"><strong>Phase 1 (Pre-launch — Week 0-2):</strong>&nbsp;Implement retrieval metrics (context relevance, recall, precision) plus answer faithfulness. These four catch the most common pre-launch failure modes.</p>
+  <p class="wp-block-paragraph"><strong>Phase 2 (Soft launch — Week 3-6):</strong>&nbsp;Add hallucination rate, answer relevance, and tool selection accuracy. These catch issues that only emerge with real user traffic.</p>
+  <p class="wp-block-paragraph"><strong>Phase 3 (Production stable — Week 7+):</strong>&nbsp;Add cost per query, P99 latency, tool execution success, multi-step coherence, and retrieval latency. These optimize the running system rather than catch launch-blocking failures.</p>
+  <p class="wp-block-paragraph"><strong>Use case modifiers:</strong></p>
+  <ul class="wp-block-list">
+   <li class="wp-block-list-item"><strong>Regulated industry (healthcare, fintech, legal):</strong>&nbsp;Prioritize faithfulness and hallucination rate above everything else. Aim for &gt;0.97 faithfulness and &lt;0.5% hallucination rate from day one.</li>
+   <li class="wp-block-list-item"><strong>High-volume consumer product:</strong>&nbsp;Prioritize cost per query and P99 latency. Faithfulness matters but not at the expense of unit economics.</li>
+   <li class="wp-block-list-item"><strong>Internal employee tools:</strong>&nbsp;Prioritize tool execution success and multi-step coherence. Employees forgive slow responses but not broken workflows.</li>
+  </ul>
+  <h2 class="wp-block-heading">How This Framework Compares to Existing Tools</h2>
+  <p class="wp-block-paragraph">You don’t have to build all 12 metrics from scratch. Several open-source and commercial tools cover subsets of this framework.</p>
+  <p class="wp-block-paragraph"><strong>Ragas</strong>&nbsp;covers context relevance, recall, precision, faithfulness, and answer relevance well. It’s the strongest open-source starting point for RAG-specific metrics. Doesn’t cover agent-specific metrics or production health.</p>
+  <p class="wp-block-paragraph"><strong>TruLens</strong>&nbsp;covers similar RAG metrics with stronger observability tooling. Better integration with LangChain and LlamaIndex. Requires more setup than Ragas.</p>
+  <p class="wp-block-paragraph"><strong>DeepEval</strong>&nbsp;offers a broader metric library with good agent-specific support (tool selection, faithfulness). Newer than Ragas, smaller community.</p>
+  <p class="wp-block-paragraph"><strong>LangSmith</strong>&nbsp;provides production monitoring and evaluation for LangChain-based agents. Strong on traces and observability, weaker on offline benchmark evaluation.</p>
+  <p class="wp-block-paragraph"><strong>Why we built our own framework on top:</strong>&nbsp;None of the existing tools cover all 12 metrics in one place, and the agent-specific metrics (tool selection accuracy, multi-step coherence) are particularly underserved. We use Ragas for RAG metrics, custom evaluators for agent metrics, and standard APM tools (Datadog, OpenTelemetry) for production health metrics. The framework above is the unified view across all three.</p>
+  <h2 class="wp-block-heading">Implementation Reality: What It Actually Costs to Build This</h2>
+  <p class="wp-block-paragraph">Setting up the full 12-metric framework takes 2-3 weeks of focused engineering effort, assuming you have an LLM-judge evaluator already configured.</p>
+  <p class="wp-block-paragraph"><strong>Time breakdown:</strong></p>
+  <ul class="wp-block-list">
+   <li class="wp-block-list-item">Eval set construction (labeled queries + ground truth): 4-6 days</li>
+   <li class="wp-block-list-item">Metric implementation (Ragas or custom): 3-5 days</li>
+   <li class="wp-block-list-item">CI/CD integration (run eval on every PR): 2-3 days</li>
+   <li class="wp-block-list-item">Production monitoring instrumentation: 3-5 days</li>
+   <li class="wp-block-list-item">Dashboards and alerting: 2-3 days</li>
+  </ul>
+  <p class="wp-block-paragraph"><strong>Tooling we use across deployments:</strong></p>
+  <ul class="wp-block-list">
+   <li class="wp-block-list-item"><strong>Eval orchestration:</strong>&nbsp;Ragas + custom evaluators in Python</li>
+   <li class="wp-block-list-item"><strong>LLM-as-judge:</strong>&nbsp;GPT-4 for high-stakes evaluation, Claude Sonnet for cost-sensitive eval, Llama 3 70B for fully self-hosted compliance environments</li>
+   <li class="wp-block-list-item"><strong>Storage:</strong>&nbsp;PostgreSQL for eval results, S3 for raw traces</li>
+   <li class="wp-block-list-item"><strong>Dashboards:</strong>&nbsp;Grafana for production metrics, Streamlit for offline eval reports</li>
+   <li class="wp-block-list-item"><strong>Alerting:</strong>&nbsp;PagerDuty integration for threshold breaches</li>
+  </ul>
+  <p class="wp-block-paragraph"><strong>Common pitfalls we’ve watched teams hit:</strong></p>
+  <ol class="wp-block-list">
+   <li class="wp-block-list-item"><strong>Using the same model for generation and judging.</strong>&nbsp;This produces inflated scores. Use a different model family for the judge than for the generator.</li>
+   <li class="wp-block-list-item"><strong>Skipping the labeled eval set.</strong>&nbsp;Without ground truth labels, you can’t compute recall or measure regression. The labeling cost is real but pays back within the first month.</li>
+   <li class="wp-block-list-item"><strong>Running eval only on success cases.</strong>&nbsp;You need failure cases in your eval set, or you’ll never catch regressions. Sample production failures aggressively.</li>
+   <li class="wp-block-list-item"><strong>Treating eval scores as absolute.</strong>&nbsp;Track trends and deltas, not absolute scores. A 0.85 score that drops to 0.78 over a week is more meaningful than the absolute number.</li>
+  </ol>
+  <h2 class="wp-block-heading">Frequently Asked Questions</h2>
+  <h3 class="wp-block-heading">What Is the Minimum Eval Setup for a New AI Agent Project?</h3>
+  <p class="wp-block-paragraph">For a new project, implement context relevance, answer faithfulness, and tool selection accuracy. These three catch 70% of pre-launch failures with minimal setup overhead. Skip the production metrics until you have actual production traffic.</p>
+  <h3 class="wp-block-heading">How Often Should We Run the Full Eval Suite?</h3>
+  <p class="wp-block-paragraph">Run offline eval (against labeled benchmark set) on every code change that affects retrieval, prompts, or agent logic. Run online eval (sampled production traffic) continuously, with daily rollup reports. Full benchmark re-runs are expensive but should happen at least weekly to catch regressions.</p>
+  <h3 class="wp-block-heading">Should We Use LLM-as-Judge or Human Evaluation?</h3>
+  <p class="wp-block-paragraph">Both are sequenced. Use LLM-as-judge for scale (evaluate 100% of production traffic at low cost), use human evaluation for calibration (evaluate a 1-2% sample to verify the LLM judge agrees with human consensus). When the LLM judge and human evaluation diverge, retrain the judge prompt.</p>
+  <h3 class="wp-block-heading">What Is the Difference Between Offline and Online Evaluation?</h3>
+  <p class="wp-block-paragraph">Offline evaluation runs against a labeled benchmark dataset with known correct answers. Online evaluation runs against real production traffic, where you don’t know the ground truth answer in advance, so you measure proxy signals (faithfulness, relevance, hallucination) rather than accuracy. Both are necessary. Offline catches regressions before they ship. Online catches issues that emerge from real user behavior.</p>
+  <h3 class="wp-block-heading">How Do We Handle Evaluation for Non-Deterministic Agents?</h3>
+  <p class="wp-block-paragraph">Run each evaluation query 3-5 times and report the mean and variance of scores. High variance indicates the agent’s behavior is unstable, which is itself a signal worth investigating. For production traffic, sample sufficiently to overcome the noise from variance.</p>
+  <h3 class="wp-block-heading">What Metrics Matter Most for RAG Versus Agentic Systems?</h3>
+  <p class="wp-block-paragraph">Pure RAG systems: prioritize the four retrieval metrics plus faithfulness. Agentic systems: add tool selection accuracy, tool execution success, and multi-step coherence on top of the RAG metrics. The production metrics (cost, latency) matter equally for both.</p>
+  <h3 class="wp-block-heading">How Do We Measure User Satisfaction in Eval?</h3>
+  <p class="wp-block-paragraph">User satisfaction is downstream of the 12 metrics above. If your faithfulness, relevance, and latency metrics are all in target range, satisfaction will track. Direct satisfaction signals (thumbs-up/down, follow-up questions, session abandonment) are useful as production health indicators but lag behind the metrics that cause them.</p>
+  <h3 class="wp-block-heading">What Is the Eval Cost — Is It Worth It?</h3>
+  <p class="wp-block-paragraph">LLM-as-judge evaluation costs roughly 30-50% of your inference cost (every production query also gets evaluated by an LLM). For a $4K/month inference budget, expect $1,200-$2,000/month in eval costs. The ROI is preventing a single production incident that would cost engineer-weeks to debug or trust-damage to recover from. After the first prevented incident, eval pays for itself indefinitely.</p>
+  <h2 class="wp-block-heading">Closing Thought</h2>
+  <p class="wp-block-paragraph">The teams shipping AI agents successfully in 2026 aren’t the ones with the best models. They’re the ones with the best evaluation infrastructure. Models are commodities. Evaluation is differentiation.</p>
+  <p class="wp-block-paragraph">If you’re building production AI agents and want a second opinion on your evaluation framework grounded in 100+ deployments,&nbsp;<a href="https://www.intuz.com/get-started?utm_source=tds&amp;utm_medium=article&amp;utm_campaign=eval_harness_2026">the Intuz team is happy to help</a>.</p>
+  <h2 class="wp-block-heading">Resources</h2>
+  <ul class="wp-block-list">
+   <li class="wp-block-list-item"><a href="https://github.com/explodinggradients/ragas">Ragas — open-source RAG evaluation framework</a></li>
+   <li class="wp-block-list-item"><a href="https://www.trulens.org/">TruLens — evaluation and tracking for LLM applications</a></li>
+   <li class="wp-block-list-item"><a href="https://github.com/confident-ai/deepeval">DeepEval — open-source LLM evaluation framework</a></li>
+   <li class="wp-block-list-item"><a href="https://www.langchain.com/langsmith">LangSmith — LangChain’s observability and eval platform</a></li>
+   <li class="wp-block-list-item"><a href="https://opentelemetry.io/">OpenTelemetry — production observability standard</a></li>
+   <li class="wp-block-list-item"><a href="https://github.com/openai/human-eval">HumanEval benchmark — Github</a></li>
+   <li class="wp-block-list-item"><a href="https://arxiv.org/abs/2309.15217">Ragas paper — automatic evaluation of RAG</a></li>
+  </ul>
+  <hr class="wp-block-separator has-alpha-channel-opacity is-style-dotted">
+  <p class="wp-block-paragraph"><em>Pratik K Rupareliya is the Co-Founder and Head of Strategy at&nbsp;<a href="https://www.intuz.com/">Intuz</a>, where he leads enterprise AI strategy across 100+ deployments spanning healthcare, fintech, manufacturing, and retail. Connect with him on&nbsp;<a href="https://www.linkedin.com/in/patrickhq">LinkedIn</a>.</em></p>
+  <p class="wp-block-paragraph"></p>
+ </body>
+</html>

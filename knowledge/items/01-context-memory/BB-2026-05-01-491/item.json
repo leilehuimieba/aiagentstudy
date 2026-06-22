@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-07",
+  "id": "BB-2026-05-01-491",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-491/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-491",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-491/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-491/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-491/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-491/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-491/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-491/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / FRB: Speeches",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / FRB: Speeches",
+  "status": "Full text + source captured",
+  "tags": [
+    "Financial Regulation",
+    "Macroeconomics",
+    "Monetary Policy",
+    "Banking",
+    "Financial Stability"
+  ],
+  "title": "Speech by Governor Barr on supervision and regulation",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/d0db1b4d",
+      "https://www.federalreserve.gov/newsevents/speech/barr20260606a.htm"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.federalreserve.gov/newsevents/speech/barr20260606a.htm",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/d0db1b4d"
+  }
+}

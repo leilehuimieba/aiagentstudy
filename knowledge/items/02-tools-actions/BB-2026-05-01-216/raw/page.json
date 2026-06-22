@@ -1,0 +1,178 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T5beaeea017c94aa29fd4c56f5febed8d",
+  "data": {
+    "metaData": {
+      "id": "RAW_bdf26239",
+      "notExist": null,
+      "originalTitle": "Sea's View on the Future of Agentic Software Development with Codex",
+      "title": "Sea's View on the Future of Agentic Software Development with Codex",
+      "oneSentenceSummary": "Sea Co-Founder David Chen discusses how rolling out OpenAI's Codex across the organization is shifting software development from productivity gains to a fundamental reconfiguration of engineering teams, with developers evolving into system orchestrators.",
+      "summary": "In this interview from OpenAI's Executive Function series, David Chen, Co-Founder of Sea and CPO of Shopee, explains the strategic rationale behind deploying Codex across Sea's entire development organization. He describes how Codex goes beyond autocomplete to provide deep contextual awareness of Sea's massive microservices architecture, reducing the cognitive load of tracing dependencies and understanding legacy logic. Internal data shows 87% weekly active users among developers, with 73% of high-raters recommending it to colleagues. Chen emphasizes that AI agents are increasingly operating within CI/CD pipelines, reasoning through product requirements and autonomously proposing implementations. He argues that Southeast Asia is uniquely positioned as a proving ground for AI-native development due to its complex, multilingual, fragmented markets. Looking ahead, Chen predicts a fundamental reconfiguring of engineering teams where developers evolve into system orchestrators focused on product judgment and system design, while AI agents handle operational execution. He also discusses Sea's partnership with OpenAI to host a regional Codex Hackathon Series across Asia to democratize access to advanced AI tools and build a compounding AI-native talent ecosystem.",
+      "featuredReason": null,
+      "translateContent": null,
+      "tags": [
+        "Codex",
+        "AI-Assisted Development",
+        "Agentic Workflows",
+        "Engineering Teams",
+        "Southeast Asia"
+      ],
+      "mainPoints": [
+        {
+          "point": "Codex provides deep contextual awareness of large, disparate codebases, reducing friction in navigating microservices architectures.",
+          "explanation": "In Sea's massive microservices environment, the primary challenge is not typing syntax but tracing dependencies and understanding legacy logic. Codex acts as a localized knowledge engine, allowing engineers to shift cognitive load to higher-level tasks like architectural design."
+        },
+        {
+          "point": "Developers are using Codex to 'think better', not just type faster, with AI agents operating within CI/CD pipelines.",
+          "explanation": "Sea is transitioning from passive autocomplete to integrated agentic workflows where AI agents reason through product requirements, propose test-driven implementations, surface edge cases, and accelerate debugging loops."
+        },
+        {
+          "point": "AI-assisted development drives engineering discipline by enabling rapid prototyping and exhaustive test coverage.",
+          "explanation": "By allowing AI to rapidly prototype alternative implementations and generate comprehensive tests, Sea is moving faster while systematically paying down technical debt and shipping more resilient systems."
+        },
+        {
+          "point": "Southeast Asia is uniquely positioned as a proving ground for AI-native software development.",
+          "explanation": "The region's developers must solve highly complex, multilingual problems across fragmented commerce, payment, logistics, and communication networks, making it an ideal environment for AI-native development."
+        },
+        {
+          "point": "Engineering teams will reconfigure as developers evolve into system orchestrators focused on product judgment and system design.",
+          "explanation": "As AI agents abstract away the implementation layer, developers will spend the majority of their time on higher-level tasks, with development cycles becoming more iterative and continuous as experimentation costs fall."
+        }
+      ],
+      "keyQuotes": [
+        "Agentic AI coding tools like Codex are not just about improving localised productivity. They represent a structural multiplier that can help our engineering organisation ramp up speed, responsiveness, and effectiveness amid an increasingly complex operating environment.",
+        "The most profound shift is realizing our developers are using Codex to 'think better', not just type faster.",
+        "We are actively transitioning from using AI as a passive autocomplete mechanism to integrated agentic workflows.",
+        "The winners will be those who relentlessly redesign their engineering culture and workflows around human-AI collaboration today, rather than bolting it onto legacy processes tomorrow.",
+        "By upskilling the region's developers today, we are collectively accelerating Southeast Asia's trajectory as a global hub for AI-driven innovation."
+      ],
+      "url": "https://openai.com/index/sea-david-chen",
+      "readUrl": "https://www.bestblogs.dev/article/bdf26239",
+      "enclosureUrl": null,
+      "domain": "openai.com",
+      "cover": "https://image.jido.dev/20260515040302_EF_Ep20_16.9.png",
+      "language": "en_US",
+      "languageDesc": "English",
+      "sourceId": "SOURCE_8749b9",
+      "sourceName": "OpenAI Blog",
+      "priority": "HIGH",
+      "sourceImage": "/openai.png",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "AI_CODING",
+      "aiSubCategoryDesc": "AI Coding",
+      "category": "Artificial_Intelligence",
+      "categoryDesc": "Artificial Intelligence",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 90,
+      "readCount": 8,
+      "wordCount": 963,
+      "readTime": 4,
+      "mediaDuration": null,
+      "authors": [
+        "OpenAI"
+      ],
+      "publishTimeStamp": 1778790600000,
+      "publishDateStr": "05-14",
+      "publishDateTimeStr": "2026-05-14 20:30:00",
+      "qualified": false,
+      "stickTop": null,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_a6d9083a",
+        "type": "ARTICLE",
+        "title": "Introducing GPT-5.5",
+        "oneSentenceSummary": "OpenAI releases GPT-5.5, its most capable model yet, with significant gains in agentic coding, knowledge work, and scientific research, while maintaining GPT-5.4 latency and improving token efficiency.",
+        "url": "https://openai.com/index/introducing-gpt-5-5",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_6daee900",
+        "type": "ARTICLE",
+        "title": "Advancing voice intelligence with new models in the API",
+        "oneSentenceSummary": "OpenAI introduces three new audio models in the API—GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper—to enable more intelligent, natural, and actionable real-time voice applications for developers.",
+        "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_2047376561205325845",
+        "type": "TWITTER",
+        "title": "OpenAI Introduces GPT-5.5: A New Class of Intelligence for Agents",
+        "oneSentenceSummary": "OpenAI announces GPT-5.5, a new model designed for complex goal understanding and autonomous task completion, now available in ChatGPT and Codex.",
+        "url": "https://x.com/OpenAI/status/2047376561205325845",
+        "sourceName": "OpenAI(@OpenAI)"
+      },
+      {
+        "id": "RAW_c725aea4",
+        "type": "ARTICLE",
+        "title": "Extreme Harness Engineering for Token Billionaires: 1M LOC， 1B toks/day， 0% human code， 0% human review — Ryan Lopopolo， OpenAI Frontier & Symphony",
+        "oneSentenceSummary": "OpenAI's Ryan Lopopolo introduces 'Harness Engineering,' a radical workflow where a 1M LOC codebase was built with 0% human-written code and 1B tokens spent daily.",
+        "url": "https://www.latent.space/p/harness-eng",
+        "sourceName": "Latent Space"
+      },
+      {
+        "id": "RAW_c1ecbe08",
+        "type": "ARTICLE",
+        "title": "Onboarding Claude Code like a new developer: Lessons from 17 years of development | Claude",
+        "oneSentenceSummary": "Brendan MacLean, principal developer of the 700,000-line Skyline codebase, applies his 17-year methodology of onboarding human developers to Claude Code, using context, skills, and MCP integrations to make a legacy codebase manageable again.",
+        "url": "https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development",
+        "sourceName": "Claude Blog"
+      },
+      {
+        "id": "RAW_e792cb18",
+        "type": "ARTICLE",
+        "title": "Introducing workspace agents in ChatGPT",
+        "oneSentenceSummary": "OpenAI introduces workspace agents, a new class of shared, long-running AI agents within ChatGPT for business teams, designed to automate complex workflows, integrate with organizational tools, and operate under enterprise-grade controls.",
+        "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_36e502e0",
+        "type": "ARTICLE",
+        "title": "Building a safe， effective sandbox to enable Codex on Windows",
+        "oneSentenceSummary": "This article details the engineering journey of building a custom sandbox for Codex on Windows, from an initial unelevated prototype using SIDs and write-restricted tokens to a final elevated design that leverages dedicated Windows users and firewall rules for robust network isolation.",
+        "url": "https://openai.com/index/building-codex-windows-sandbox",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_d8c375d8",
+        "type": "ARTICLE",
+        "title": "Codex for (almost) everything",
+        "oneSentenceSummary": "OpenAI announces a major update to Codex, expanding its capabilities beyond coding to include computer operation, web interaction, image generation, and deeper integration across the software development lifecycle with new features like memory, automations, and over 90 plugins.",
+        "url": "https://openai.com/index/codex-for-almost-everything",
+        "sourceName": "OpenAI Blog"
+      },
+      {
+        "id": "RAW_199cbc01",
+        "type": "ARTICLE",
+        "title": "The Claude Code Handbook: A Professional Introduction to Building with AI-Assisted Development",
+        "oneSentenceSummary": "A comprehensive professional guide to Claude Code, Anthropic's agentic AI developer tool, detailing its capabilities, model selection, and the transformative shift toward AI-assisted software engineering.",
+        "url": "https://www.freecodecamp.org/news/claude-code-handbook/",
+        "sourceName": "freeCodeCamp.org"
+      },
+      {
+        "id": "RAW_9e0a0be",
+        "type": "VIDEO",
+        "title": "Codex Now Integrates Directly with Chrome on macOS and Windows",
+        "oneSentenceSummary": "OpenAI introduces a new Chrome extension for Codex on macOS and Windows, enabling the AI to operate directly within a user's live browser session to perform complex, parallel automation tasks using their active profile and direct code execution.",
+        "url": "https://www.youtube.com/watch?v=b6Mxcv1pyBU",
+        "sourceName": "OpenAI"
+      }
+    ]
+  }
+}

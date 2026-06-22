@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-18",
+    "opencli_profile": "",
+    "published": "Wed, 10 Jun 2026 16:24:11 +0000",
+    "updated": ""
+  },
+  "date": "2026-06-10",
+  "id": "RSS-2026-021",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/RSS-2026-021/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-021",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-021/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-021/raw/feed-entry.json",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-021/raw/page-text.txt",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-021/raw/page.html"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/RSS-2026-021/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/RSS-2026-021/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / Google DeepMind Blog",
+  "source_id": "google-deepmind",
+  "source_name": "Google DeepMind Blog",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "Google DeepMind Blog",
+    "RSS",
+    "LLM",
+    "Evaluation",
+    "Inference"
+  ],
+  "title": "DiffusionGemma: 4x faster text generation",
+  "topic": "04-evaluation-guardrails",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+      "https://deepmind.google/blog/rss.xml"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://deepmind.google/blog/rss.xml",
+    "original_url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-11",
+  "id": "BB-2026-05-01-548",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-548/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-548",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-548/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-548/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-548/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-548/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-548/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-548/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / InfoQ 中文",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / InfoQ 中文",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "RCA",
+    "AI Coding",
+    "Observability",
+    "Engineering Practice"
+  ],
+  "title": "Exploring RCA Agent in Complex Business Scenarios",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286819&idx=2&sn=803565661ca00c316b89845bcb430b4f",
+      "https://www.bestblogs.dev/article/f59fa08b"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286819&idx=2&sn=803565661ca00c316b89845bcb430b4f",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/f59fa08b"
+  }
+}

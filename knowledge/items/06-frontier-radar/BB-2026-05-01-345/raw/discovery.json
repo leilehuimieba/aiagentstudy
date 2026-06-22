@@ -1,0 +1,88 @@
+{
+  "id": "RAW_519d67f3",
+  "notExist": null,
+  "originalTitle": "Architecting Cloud-Native Kafka: From Tiered Storage Towards a Diskless Future",
+  "title": "Architecting Cloud-Native Kafka: From Tiered Storage Towards a Diskless Future",
+  "oneSentenceSummary": "This article analyzes Apache Kafka's architectural evolution from a hardware-bound system to a cloud-native, disaggregated platform, covering tiered storage, FinOps cost attribution, next-generation consumer rebalancing, virtual clusters, share groups, and the diskless future.",
+  "summary": "This comprehensive technical article examines the ongoing architectural transformation of Apache Kafka as it adapts to cloud-native environments. It begins by framing the economic pressures that drive this evolution, using a case study of Discover Financial Services to illustrate the cost realities of running Kafka in the cloud. The article then delves into several key Kafka Improvement Proposals (KIPs) that represent major architectural shifts. It covers KIP-405 (Tiered Storage), which decouples compute and capacity by moving cold data to object storage, and the associated FinOps risks like request amplification. The article details KIP-1267, which proposes cost attribution metrics for tiered storage, and provides a practical implementation guide using Prometheus and Grafana. It then explores KIP-848 (Next-Generation Consumer Rebalance Protocol), which enables safe Kubernetes autoscaling by eliminating stop-the-world rebalances. The article also discusses KIP-1134 (Virtual Clusters) for improved multi-tenancy and KIP-932 (Share Groups), which introduces queue-like semantics for partition-independent parallelism. Finally, it examines KIP-1150 (Diskless Topics), a controversial proposal to eliminate local broker disks entirely, weighing its potential for massive cost savings against significant trade-offs in latency, data integrity, and garbage collection. The article provides actionable guidance for architects and platform teams on when to adopt each new capability.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Apache Kafka",
+    "Cloud-Native",
+    "Tiered Storage",
+    "FinOps",
+    "KIP-848"
+  ],
+  "mainPoints": [
+    {
+      "point": "Kafka's cloud-native transition is driven by the need to manage cloud unit economics, shifting from hardware-bound to disaggregated architectures.",
+      "explanation": "The article frames this as an 'economic operating system' where platform teams must build telemetry-driven chargeback pipelines and cost-aware governance to manage variable cloud expenses, illustrated by Discover Financial Services' migration."
+    },
+    {
+      "point": "Tiered Storage (KIP-405) reduces block storage costs but introduces FinOps risks from object storage API request amplification.",
+      "explanation": "While offloading cold data to S3 can save over 90% on storage, misconfigured consumers replaying historical data can trigger thousands of GET requests per second, spiking API bills. The article recommends tuning fetch sizes and monitoring KIP-1267 metrics."
+    },
+    {
+      "point": "The Next-Generation Consumer Rebalance Protocol (KIP-848) makes Kubernetes-native autoscaling safe by eliminating stop-the-world rebalances.",
+      "explanation": "Legacy rebalancing forced all consumers to halt during scale events. KIP-848 shifts coordination to the server side, enabling incremental, cooperative rebalancing that allows safe HPA-driven scaling with tools like KEDA."
+    },
+    {
+      "point": "Share Groups (KIP-932) decouple consumer parallelism from partition count, enabling queue-like semantics for task distribution workloads.",
+      "explanation": "This allows hundreds of consumers to process records from a single partition independently, ideal for background jobs. However, it sacrifices ordering guarantees, making it unsuitable for event processing pipelines requiring strict chronological order."
+    },
+    {
+      "point": "Diskless Topics (KIP-1150) promise massive cost savings by eliminating local disks, but introduce significant latency, data integrity, and garbage collection risks.",
+      "explanation": "The proposal shifts durability to object storage, potentially reducing infrastructure costs by over 94% for high-volume ingress. However, P99 latency balloons to ~1.5 seconds, and the 'Upload-then-Commit' pattern risks orphaned segments and breaks exactly-once semantics."
+    }
+  ],
+  "keyQuotes": [
+    "To survive the cloud, Kafka is maturing from a strictly hardware-bound system into a highly disaggregated architecture governed by strict financial controls.",
+    "While Tiered Storage heavily reduces block storage expenditures, the introduction of cloud object storage APIs creates a severe FinOps risk.",
+    "Under the legacy consumer rebalance protocol, whenever a new consumer instance joined a group, the entire group was forced to halt processing.",
+    "Share Groups explicitly sacrifice partition-level ordering guarantees to achieve uncapped horizontal parallelism.",
+    "Diskless topics should remain strictly experimental for core transactional applications."
+  ],
+  "url": "https://www.infoq.com/articles/architecting-cloud-native-kafka/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "readUrl": "https://www.bestblogs.dev/article/519d67f3",
+  "enclosureUrl": null,
+  "domain": "infoq.com",
+  "cover": "https://res.infoq.com/articles/architecting-cloud-native-kafka/en/headerimage/architecting-cloud-native-kafka-header-1779433382367.jpg",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "priority": "HIGH",
+  "sourceImage": "https://image.jido.dev/20251127045345_2791f722",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_BACKEND",
+  "aiSubCategoryDesc": "Backend & Architecture",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "readCount": 57,
+  "wordCount": 4241,
+  "readTime": 17,
+  "mediaDuration": null,
+  "authors": [
+    "Viquar Khan"
+  ],
+  "publishTimeStamp": 1779786000000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 17:00:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

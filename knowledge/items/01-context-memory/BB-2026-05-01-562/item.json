@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-15",
+  "id": "BB-2026-05-01-562",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-562/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-562",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-562/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-562/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-562/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-562/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-562/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-562/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / LangChain Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / LangChain Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "LLM",
+    "AI Agent",
+    "Fine-Tuning",
+    "Model Evaluation",
+    "AI Engineering"
+  ],
+  "title": "Building a 100x Cheaper Trace Judge with Fireworks",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/d92ae42f",
+      "https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/d92ae42f"
+  }
+}

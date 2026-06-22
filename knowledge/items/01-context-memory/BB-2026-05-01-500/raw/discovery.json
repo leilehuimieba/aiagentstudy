@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "数字生命卡兹克"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045441_36cb882d",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_c8916b4b",
+  "keyQuotes": [
+    "Taste is scarce, typing is not.",
+    "Building is cheap. Arguing is expensive.",
+    "Pick your noisiest workflow. Ask if it still earns its place."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Productivity_Growth",
+  "mainDomainDesc": "Productivity & Growth",
+  "mainPoints": [
+    {
+      "explanation": "With code generation speed greatly increased, the new challenge becomes how to verify code correctness and keep up with the review pace; processes need to be redesigned around the new bottleneck.",
+      "point": "The bottleneck in AI-era software engineering has shifted from 'writing code' to 'verification, review, and security.'"
+    },
+    {
+      "explanation": "Instead of writing lengthy design documents, discuss directly in PRs or prototypes, iterate quickly with internal user feedback, and avoid over-planning waste.",
+      "point": "Adopt JIT planning: prototype first, documentation later."
+    },
+    {
+      "explanation": "Whenever something is repeated more than three times, reflexively ask 'Can this be automated?' Start with a small task, accumulate wins, and ultimately change the way you work.",
+      "point": "Automating repetitive tasks should become a team's muscle memory."
+    },
+    {
+      "explanation": "AI handles 60-70% of the work, such as style checks, linting, and bug catching, while humans focus on areas requiring deep judgment, such as legal compliance, security boundaries, and product direction.",
+      "point": "Code review adopts a 'trust but verify' model: AI handles mechanical work, humans focus on professional judgment."
+    },
+    {
+      "explanation": "As environments and tools change, many old processes lose their meaning. Someone needs to step up and ask, 'Does this meeting/process still deserve its place?'",
+      "point": "Proactively review and eliminate outdated processes and meetings."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article interprets insights shared by Fiona Fung, Engineering Director of the Claude Code team, distilling 5 working principles for an AI-native organization covering planning, automation, code review, team roles, and process changes, along with the author's own practical reflections.",
+  "originalTitle": "分享 Claude Code 团队内部的 5 条工作原则，我觉得每一条都值得学习。",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-03",
+  "publishDateTimeStr": "2026-06-03 10:02:00",
+  "publishTimeStamp": 1780452120000,
+  "qualified": false,
+  "readCount": 76,
+  "readTime": 22,
+  "readUrl": "https://www.bestblogs.dev/article/c8916b4b",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_86a0b5",
+  "sourceImage": "https://image.jido.dev/20251127045441_36cb882d",
+  "sourceName": "数字生命卡兹克",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Based on a public talk by Fiona Fung, Engineering Director of the Claude Code team, this article systematically outlines 5 core principles of engineering management in an AI-native organization. The author first points out that the bottleneck in software engineering in the AI era has shifted from 'writing code is too expensive' to 'verification, review, and security,' necessitating a redesign of upstream and downstream processes around code. The specific principles include: adopting JIT planning (prototype first, documentation later); automating repetitive tasks to build team muscle memory; using AI to handle 60-70% of mechanical work in code reviews while humans focus on professional judgment; blurring role boundaries (PMs write code, engineers use AI to draft copy); and proactively reviewing and eliminating outdated processes and meetings. The author provides resonant interpretations of each principle based on their own team's practices, emphasizing the core mindset of 'automating repetitive tasks, eliminating useless processes, and delegating judgments that don't require human input to AI.'",
+  "tags": [
+    "AI Workflow",
+    "Engineering Management",
+    "Team Collaboration",
+    "AI Coding",
+    "Automation"
+  ],
+  "title": "5 Working Principles from the Claude Code Team That Are Worth Learning",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682883&idx=1&sn=6c9cbd20d8f6e7dbabe4a36b53bad5fe",
+  "wordCount": 5331
+}

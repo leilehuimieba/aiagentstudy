@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "马扶摇"
+  ],
+  "candidateSource": null,
+  "category": "News_Media",
+  "categoryDesc": "News & Media",
+  "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/nvidia-food-2.jpg",
+  "domain": "ifanr.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_2f366f79",
+  "keyQuotes": [
+    "The era of designing computing products for human users is over. In the future, we should design computing hardware for the needs of intelligent agents.",
+    "AI is not only reshaping the way hardware is designed but has finally begun to reshape some software UI interaction norms that have been set in stone for over a decade.",
+    "Can a SoC with a CPU that is two years old and a GPU that is one year old and not fully powered, truly be ready for the agent needs of the next 10 to 20 years?"
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Business_Tech",
+  "mainDomainDesc": "Business & Tech",
+  "mainPoints": [
+    {
+      "explanation": "The article points out that Jensen believes agents will replace traditional LLMs as the primary way computing power is used. Their closed-loop model of 'observe-reason-plan-use tools' requires fundamental changes in hardware regarding memory, scheduling, and power consumption.",
+      "point": "Jensen Huang proposes 'designing hardware for agents' as the core of the next computing paradigm."
+    },
+    {
+      "explanation": "As an ARM SoC integrating CPU, GPU, and unified memory, the N1X supports NVIDIA's entire technology stack (RTX, CUDA, DLSS, TensorRT), aiming to create a versatile laptop 'designed for agent operations,' but it is essentially based on the previous generation Grace Blackwell platform.",
+      "point": "The RTX Spark N1X is NVIDIA's key product for bringing enterprise AI concepts down to the consumer market."
+    },
+    {
+      "explanation": "The article argues that the full suite of NVIDIA technology adaptations brought by RTX Spark is a major boon for Win on ARM, but it cannot solve the platform's long-standing issues in other experiences, leaving the competition with macOS and Linux uncertain.",
+      "point": "NVIDIA and Microsoft join forces, attempting to address the ecosystem shortcomings of Windows on ARM."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Set against the backdrop of NVIDIA GTC and Microsoft Build, this article deeply interprets Jensen Huang's core assertion of 'designing hardware for agents' and analyzes how the RTX Spark N1X processor brings this concept to the consumer PC market, while rationally pointing out its technological generational gaps and ecosystem risks.",
+  "originalTitle": "英伟达：带领 PC，重铸 PC｜硬哲学",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-08 19:59:44",
+  "publishTimeStamp": 1780919984000,
+  "qualified": false,
+  "readCount": 62,
+  "readTime": 15,
+  "readUrl": "https://www.bestblogs.dev/article/2f366f79",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4ecd55",
+  "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+  "sourceName": "爱范儿",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Starting from the keynote of NVIDIA GTC, the article systematically outlines the core viewpoint proposed by Jensen Huang: computing hardware design is shifting from 'designed for human users' to 'designed for intelligent agents.' The author details four reasons why agents will become the next core of computing power (freeing productivity, reducing hidden resource consumption, ignoring quantity limits, and being more versatile than LLMs), and introduces the Vera Rubin enterprise platform designed for this purpose. The article focuses on NVIDIA's first consumer-grade CPU—the RTX Spark N1X—analyzing its ARM architecture, collaboration with MediaTek, 1 PFLOPS AI computing power, comprehensive technical adaptation for the Windows on ARM ecosystem (RTX, CUDA, DLSS, etc.), and partner products like the Microsoft Surface Laptop Ultra. At the same time, the article maintains a rational perspective, pointing out that the N1X is essentially based on the previous generation Grace Blackwell platform, not the latest architecture, and that the long-standing shortcomings of the Win on ARM ecosystem have not been resolved by NVIDIA's entry. The full text offers both forward-looking judgments on industry trends and technical breakdowns and risk warnings for specific products.",
+  "tags": [
+    "NVIDIA",
+    "AI Chips",
+    "Agent",
+    "PC Hardware",
+    "Windows on ARM"
+  ],
+  "title": "NVIDIA: Leading the PC, Reforging the PC | Hard Philosophy",
+  "translateContent": null,
+  "url": "https://www.ifanr.com/1668041?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "wordCount": 3719
+}

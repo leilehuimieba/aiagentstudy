@@ -1,0 +1,79 @@
+{
+  "blocks": [
+    "Goal",
+    "Control Loop",
+    "Tools/Actions",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "05-11",
+  "id": "BB-2026-05-01-191",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-191/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-191",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-191/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-191/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-191/raw/display-document.html",
+      "knowledge/items/03-control-loop/BB-2026-05-01-191/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-191/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-191/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / freeCodeCamp.org",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / freeCodeCamp.org",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agents",
+    "Multi-Agent Systems",
+    "Agent Architecture",
+    "LLM",
+    "CrewAI"
+  ],
+  "title": "How to Build Optimal AI Agents That Actually Work – A Handbook for Devs",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://github.com/crewAIInc/crewAI",
+      "https://github.com/ipython/ipython",
+      "https://github.com/joke2k/faker",
+      "https://github.com/langchain-ai/langchain-community",
+      "https://github.com/langchain-ai/langchain/blob/master/libs/partners/ollama/README.md",
+      "https://github.com/ollama/ollama-python",
+      "https://github.com/python/cpython/blob/main/Lib/socket.py",
+      "https://github.com/python/cpython/blob/main/Lib/subprocess.py",
+      "https://github.com/python/cpython/blob/main/Lib/threading.py",
+      "https://github.com/python/cpython/blob/main/Modules/timemodule.c",
+      "https://github.com/tiagomonteiro0715/How-to-Build-Optimal-AI-Agents-That-Actually-Work-Handbook",
+      "https://mastra.ai/blog/principles-of-ai-engineering",
+      "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/",
+      "https://www.bestblogs.dev/en/article/de799956",
+      "https://www.freecodecamp.org/news/how-to-build-optimal-ai-agents-that-actually-work-a-handbook-for-devs/",
+      "https://www.freecodecamp.org/news/the-math-behind-artificial-intelligence-book/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.freecodecamp.org/news/how-to-build-optimal-ai-agents-that-actually-work-a-handbook-for-devs/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/en/article/de799956"
+  }
+}

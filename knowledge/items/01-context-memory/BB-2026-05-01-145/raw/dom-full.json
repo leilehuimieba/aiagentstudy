@@ -1,0 +1,374 @@
+{
+  "content": "Figma has published a detailed account of how it built an in-house Redis proxy service called FigCache, replacing a fragmented caching stack that had become a liability for site availability. The system, described in a post by software engineer Kevin Lin, has been in production since the second half of 2025 and has delivered what the company describes as six nines of uptime across its caching layer.\n\n\"Scalability and reliability gaps in our Redis platform were a growing threat to Figma's site availability.\"\nKevin Lin, Software Engineer, Figma\n\nThe move is the second major storage rearchitecture Figma has undertaken in quick succession. In 2024, the company completed a nine-month project to horizontally shard its Postgres stack, building a bespoke proxy service called DBProxy to intercept, parse and route SQL queries across physical shards. FigCache extends that pattern into the ephemeral data layer, applying the same philosophy: build a proxy tier that absorbs operational complexity so that application code does not have to.\n\nThe symptoms that motivated the project were familiar to anyone who has run Redis at scale. Connection volumes were creeping towards hard limits. Rapid scale-ups of client services produced thundering herds of new connection requests, saturating Redis I/O and degrading availability. A sprawl of independent client libraries had grown up over time, each with its own observability behaviour, making it difficult to diagnose incidents quickly. Lin writes that the team initially built service-specific workarounds, including a custom client-side connection pooling layer, but concluded these were \"isolating Redis outages from top-level site availability\" rather than solving the underlying structural problems.\n\nThe decision to build rather than adopt an existing open source proxy came down to the limits of what was available. Lin notes that existing solutions shipped with \"rudimentary RPC servers that were not capable of extracting full, annotated arguments from arbitrary inbound Redis commands.\" Without that semantic awareness, Figma could not implement the runtime guardrails it needed, nor define custom commands that the proxy itself could intercept and handle. The company also needed to support a fragmented existing client base: some services were Redis Cluster-aware, some used TLS, some did neither. A proprietary layer allowed the team to build shims that handled all these variants transparently, including a Redis Cluster emulation mode that presented the proxy to cluster-aware clients as a fake cluster.\n\n\"Extending existing open source Redis proxies with custom business logic proved heavyweight and logistically brittle, requiring maintenance of a source code fork that would be difficult to keep in sync with upstream.\"\nKevin Lin, Software Engineer, Figma\n\nFigCache itself is a stateless service built on ResPC, a Go library the team wrote to provide an RPC framework over the Redis Serialization Protocol (RESP). The proxy sits between client applications and a fleet of Redis clusters on AWS ElastiCache. Its architecture separates a frontend layer, which handles connection management and protocol-aware command parsing, from a backend layer that manages connection multiplexing and command execution against upstream clusters. This separation is what makes the system extensible: new behaviours can be introduced at either layer without disrupting the other.\n\nOne of the more unusual design choices is how FigCache's backend is configured. Rather than static configuration files, the engine tree that governs how commands are routed and processed is expressed as a Starlark program, evaluated at runtime in a virtual machine, which then renders a Protobuf-structured configuration consumed by the server. This means operators can change routing logic, key-prefix-based rejection rules, and command-type splitting purely through configuration, without redeploying server binaries.\n\nThe proxy also handles a class of problem that Redis Cluster normally surfaces to clients as an error. Redis Cluster returns CROSSSLOT errors when a pipeline or transaction spans multiple hash slots, since those operations may touch different physical shards. FigCache includes a fanout filter engine that intercepts eligible multi-shard pipelines and executes them internally as a parallelised scatter-gather, dispatching individual commands and aggregating responses before returning them to the client. From the application's perspective, the error never appears.\n\nFirst-party client libraries in Go, Ruby, and TypeScript sit alongside the proxy. These are wrappers over existing open source clients already in use in Figma's codebase, which meant the team avoided building a proprietary protocol from scratch. Migrating a service to FigCache was, in the simplest cases, a one-line configuration change to update an endpoint.\n\nThe migration strategy was designed to be reversible at every stage. Traffic was shifted service by service, with feature flags allowing instant reversion without code changes or binary deployments. For large workloads such as Figma's main API service, traffic was shifted incrementally across independent domains rather than switched all at once. Before any live rollout, the team ran extensive benchmarks including a weekly distributed stress test on production that surges throughput to an order of magnitude above typical organic peaks.\n\nThe approach has parallels elsewhere in the industry. At lastminute.com, engineers rearchitected a search aggregation system in 2024 to use Redis as an intermediary result store, decoupling supplier search drivers from the aggregation service via RabbitMQ. The goal was similar: reduce coupling, improve scalability, and isolate components from one another's failure modes. Figma's approach goes further by centralising the Redis access tier itself rather than simply rethinking how data flows into it.\n\nThe wider Redis ecosystem has also seen some changes in recent years. In May 2025, Redis returned to open source licensing under AGPLv3 after a year of controversy following its move to the more restrictive SSPLv1 license in March 2024. That shift had prompted the creation of the Valkey fork. Redis 8.0, released alongside the licensing change, includes performance improvements the project describes as up to 87% faster commands and up to 2x higher throughput. Figma's decision to build an abstraction layer that can swap out the backend storage system looks prudent in that context: Lin notes that FigCache is designed to support alternative backends including AWS MemoryDB and Figma's own Postgres stack behind the same RESP-based interface.\n\nThe question of whether to build or buy this kind of infrastructure is one many engineering teams face. Sneha Wasankar, writing on dev.to about Redis caching strategies in production, notes that the choice of cache-aside, write-through, or write-behind patterns often matters less than the reliability of the infrastructure sitting beneath them. Figma's post is largely an argument that, at sufficient scale, the infrastructure itself becomes the product.\n\nFigCache eliminated the thundering herd connection failures that had contributed to multiple high-severity incidents. Shard failovers, cluster scaling, hardware rotations and OS upgrades are now zero-downtime background operations. The team runs failovers frequently across the entire Redis footprint as a standing exercise of the system's resilience. Observability across the entire caching stack is now unified, with metrics, logs and traces giving engineers a consistent view of latency, throughput, payload sizes and command cardinality across all workloads. The time to diagnose incidents, Lin writes, has dropped from hours or days to minutes.\n\nFigCache's Starlark-based configuration system and composable engine tree are the parts of the design most likely to attract interest from engineers facing similar problems. Building a proxy that is transparent to existing clients while being extensible enough to absorb years of future requirements is a hard constraint to satisfy. Whether the approach generalises beyond Figma's specific combination of languages, deployment patterns and operational history is a question the post leaves open.",
+  "links": [
+    {
+      "href": "https://www.bestblogs.dev/en/article/80114ef2#main-content",
+      "text": "Skip to main content",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/",
+      "text": "BestBlogs",
+      "title": "BestBlogs.dev"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "",
+      "title": "My Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/follow",
+      "text": "",
+      "title": "My Following"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/feed",
+      "text": "",
+      "title": "For You"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "",
+      "title": "Explore"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/brief",
+      "text": "",
+      "title": "Daily Brief"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/newsletter",
+      "text": "",
+      "title": "Weekly Picks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/topics",
+      "text": "",
+      "title": "Topics"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore/sources",
+      "text": "",
+      "title": "Sources"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/history",
+      "text": "",
+      "title": "Reading History"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/bookmarks",
+      "text": "",
+      "title": "My Bookmarks"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/highlights",
+      "text": "",
+      "title": "My Notes"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/library/review",
+      "text": "",
+      "title": "My Reviews"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "",
+      "title": "Settings"
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/docs",
+      "text": "",
+      "title": "Help Center"
+    },
+    {
+      "href": "https://www.bestblogs.dev/articles?sourceid=f152e8",
+      "text": "InfoQ",
+      "title": "View More From This Source"
+    },
+    {
+      "href": "https://www.infoq.com/news/2026/05/figma-redis-figcache/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "text": "View Source →",
+      "title": ""
+    },
+    {
+      "href": "https://www.figma.com/blog/figmas-next-generation-data-caching-platform/",
+      "text": "post by software engineer Kevin Lin",
+      "title": ""
+    },
+    {
+      "href": "https://www.figma.com/blog/how-figmas-databases-team-lived-to-tell-the-scale/",
+      "text": "completed a nine-month project",
+      "title": ""
+    },
+    {
+      "href": "https://www.figma.com/blog/figmas-next-generation-data-caching-platform/",
+      "text": "Starlark program",
+      "title": ""
+    },
+    {
+      "href": "https://www.infoq.com/news/2024/01/lastminute-search-rabbitmq-redis/",
+      "text": "rearchitected a search aggregation system",
+      "title": ""
+    },
+    {
+      "href": "https://www.infoq.com/news/2025/05/redis-agpl-license/",
+      "text": "returned to open source licensing under AGPLv3",
+      "title": ""
+    },
+    {
+      "href": "https://dev.to/sneha_wasankar/redis-caching-strategies-what-actually-works-in-production-3l1h",
+      "text": "dev.to about Redis caching strategies in production",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/57a2ca0c?entry=related_article",
+      "text": "The Multi-Agent Trap",
+      "title": "This article analyzes the 'Multi-Agent Trap' where unstructured AI architectures amplify errors, providing a research-backed playbook of proven patterns and failure prevention strategies for production-grade agentic systems."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/ef3084e8?entry=related_article",
+      "text": "The DPoP Storage Paradox: Why Browser-Based Proof-of-Possession Remains an Unsolved Problem",
+      "title": "This article dissects the DPoP storage paradox in browsers, where non-extractable CryptoKeys in IndexedDB remain vulnerable to XSS-based signing oracle attacks, and evaluates the BFF pattern and memory-only approaches as mitigations."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/85c11f72?entry=related_article",
+      "text": "How OpenAI delivers low-latency voice AI at scale",
+      "title": "OpenAI rearchitected its WebRTC stack using a split relay and transceiver model to deliver low-latency voice AI at scale, solving port exhaustion and state stickiness in Kubernetes."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8db2ea5f?entry=related_article",
+      "text": "Stripe’s Docdb: How Zero-Downtime Data Movement Powers Trillion-Dollar Payment Processing",
+      "title": "This article details how Stripe built a zero-downtime data movement platform, DocDB, to horizontally scale its MongoDB-based database infrastructure to process trillions of dollars in payments annually."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/a647d6a?entry=related_article",
+      "text": "State of the Claw",
+      "title": "OpenClaw founder and OpenAI engineer Peter Steinberger discusses the unprecedented growth and security challenges of the OpenClaw project, shares his unique AI-assisted development workflow, and explores the evolving concept of 'engineer taste' in the AI era."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/video/a392d2a?entry=related_article",
+      "text": "Harness Engineering: How to Build Software When Humans Steer, Agents Execute",
+      "title": "OpenAI engineer Ryan Lopopolo introduces 'Harness Engineering,' a paradigm shift where engineers design systems and automated guardrails to orchestrate hundreds of AI agents, transforming from coders to directors of software development."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/c857f67e?entry=related_article",
+      "text": "MCP in the Java World: Bringing Architectural Strategy to LLM Integrations",
+      "title": "MCP Java SDK transforms LLM integration from ad-hoc tool calling into a disciplined architectural pattern, introducing protocol-level contracts, anti-corruption layers, and governance for enterprise Java systems."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/8b57be6d?entry=related_article",
+      "text": "4 Patterns of AI Native Development",
+      "title": "Patrick Debois outlines four evolving patterns of AI-native development—shifting from producer to manager, implementation to intent, delivery to discovery, and content to knowledge."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/68065f88?entry=related_article",
+      "text": "Lessons from building Claude Code: Prompt caching is everything | Claude",
+      "title": "This article details the critical, often unintuitive, lessons learned from optimizing prompt caching in Claude Code, emphasizing that designing an agent's entire architecture around prefix-matching caching is essential for performance and cost."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/article/39b642f7?entry=related_article",
+      "text": "Agents， Architecture， & Amnesia: Becoming AI-Native Without Losing Our Minds",
+      "title": "This talk warns against 'architectural amnesia' in the rush to adopt AI agents, arguing that increased autonomy demands more governance, not less, and that we must return to engineering fundamentals like identity, traceability, and trade-off analysis."
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/reading/brief",
+      "text": "Reading",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/explore",
+      "text": "Explore",
+      "title": ""
+    },
+    {
+      "href": "https://www.bestblogs.dev/en/settings",
+      "text": "Me",
+      "title": ""
+    }
+  ],
+  "metas": [
+    {
+      "content": "width=device-width, initial-scale=1, interactive-widget=resizes-content",
+      "name": "viewport",
+      "property": null
+    },
+    {
+      "content": "#ffffff",
+      "name": "theme-color",
+      "property": null
+    },
+    {
+      "content": "Figma built a custom Redis proxy called FigCache to replace a fragmented caching stack, achieving six nines of uptime and eliminating thundering herd connect...",
+      "name": "description",
+      "property": null
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": "application-name",
+      "property": null
+    },
+    {
+      "content": "Redis, Figma, System Design, Caching, Proxy",
+      "name": "keywords",
+      "property": null
+    },
+    {
+      "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+      "name": "robots",
+      "property": null
+    },
+    {
+      "content": "index, follow",
+      "name": "googlebot",
+      "property": null
+    },
+    {
+      "content": "yes",
+      "name": "mobile-web-app-capable",
+      "property": null
+    },
+    {
+      "content": "BestBlogs · Discover High-Quality Content That Truly Fits You",
+      "name": "apple-mobile-web-app-title",
+      "property": null
+    },
+    {
+      "content": "default",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "property": null
+    },
+    {
+      "content": "Figma Builds In-House Redis Proxy to Hit Six Nines Uptime...",
+      "name": null,
+      "property": "og:title"
+    },
+    {
+      "content": "Figma built a custom Redis proxy called FigCache to replace a fragmented caching stack, achieving six nines of uptime and eliminating thundering herd connect...",
+      "name": null,
+      "property": "og:description"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/80114ef2",
+      "name": null,
+      "property": "og:url"
+    },
+    {
+      "content": "BestBlogs.dev",
+      "name": null,
+      "property": "og:site_name"
+    },
+    {
+      "content": "en_US",
+      "name": null,
+      "property": "og:locale"
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/80114ef2/opengraph-image?696e70e5d7b1d782",
+      "name": null,
+      "property": "og:image"
+    },
+    {
+      "content": "image/png",
+      "name": null,
+      "property": "og:image:type"
+    },
+    {
+      "content": "1200",
+      "name": null,
+      "property": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": null,
+      "property": "og:image:height"
+    },
+    {
+      "content": "article",
+      "name": null,
+      "property": "og:type"
+    },
+    {
+      "content": "2026-05-05 07:00:00",
+      "name": null,
+      "property": "article:published_time"
+    },
+    {
+      "content": "Matt Saunders",
+      "name": null,
+      "property": "article:author"
+    },
+    {
+      "content": "Redis",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Figma",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "System Design",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Caching",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "Proxy",
+      "name": null,
+      "property": "article:tag"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:site",
+      "property": null
+    },
+    {
+      "content": "@hongming731",
+      "name": "twitter:creator",
+      "property": null
+    },
+    {
+      "content": "Figma Builds In-House Redis Proxy to Hit Six Nines Uptime...",
+      "name": "twitter:title",
+      "property": null
+    },
+    {
+      "content": "Figma built a custom Redis proxy called FigCache to replace a fragmented caching stack, achieving six nines of uptime and eliminating thundering herd connect...",
+      "name": "twitter:description",
+      "property": null
+    },
+    {
+      "content": "https://www.bestblogs.dev/en/article/80114ef2/twitter-image?73c5f827eed818fd",
+      "name": "twitter:image",
+      "property": null
+    },
+    {
+      "content": "image/png",
+      "name": "twitter:image:type",
+      "property": null
+    },
+    {
+      "content": "1200",
+      "name": "twitter:image:width",
+      "property": null
+    },
+    {
+      "content": "675",
+      "name": "twitter:image:height",
+      "property": null
+    }
+  ],
+  "title": "Figma Builds In-House Redis Proxy to Hit Six Nines Uptime...",
+  "url": "https://www.bestblogs.dev/en/article/80114ef2"
+}

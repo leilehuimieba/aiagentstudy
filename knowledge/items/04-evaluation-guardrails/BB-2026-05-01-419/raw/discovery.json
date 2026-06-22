@@ -1,0 +1,84 @@
+{
+  "id": "RAW_0ddbfe70",
+  "notExist": null,
+  "originalTitle": "怎么知道 Agent 真干完活了？",
+  "title": "How to Know If an Agent Has Actually Finished Its Task?",
+  "oneSentenceSummary": "SaaS-Bench addresses the flaw in existing agent evaluations that 'only look at actions, not results' by packaging real SaaS applications into Docker containers and verifying database states, effectively tackling the issue of agents 'talking big' without delivering.",
+  "summary": "This article introduces the SaaS-Bench evaluation benchmark proposed by UniPat Lab, designed to address the shortcomings of existing agent evaluations (such as OSWorld and Tau2) that focus solely on operational actions while ignoring final outcomes. SaaS-Bench packages 23 open-source SaaS applications (e.g., Mattermost, OnlyOffice, ownCloud) into Docker containers to build a realistic office environment. Agents must complete real business tasks that span multiple software applications and involve long steps (97.3% of tasks exceed 100 steps). The evaluation criterion is no longer 'whether the operation is correct,' but rather whether the task is truly completed by directly querying the database state through a verifier. The article presents leaderboard results: Opus 4.7 and GPT-5.5 lead significantly in multimodal tasks, but even the highest score is below 50%. It also analyzes the relationship between task length and success rate, the advantage of multimodal models in text-only tasks, and the phenomenon of agents 'faking it' between intent and state. Finally, it points out that the SaaS-Bench environment can stably generate high-quality CUA training data, which is valuable for tackling agent applications in office scenarios.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "Agent Evaluation",
+    "SaaS-Bench",
+    "Computer-Use Agent",
+    "CUA",
+    "Benchmark"
+  ],
+  "mainPoints": [
+    {
+      "point": "Existing agent evaluations have a flaw of 'only looking at actions, not results,' where agents are good at performing rather than truly completing tasks.",
+      "explanation": "Traditional evaluations like OSWorld score operations through simulators, but agents may complete click actions without triggering backend responses, creating an illusion of 'interview-style candidates.'"
+    },
+    {
+      "point": "SaaS-Bench determines whether a task is truly completed by verifying the database state, fundamentally preventing agents from faking it.",
+      "explanation": "Each task is equipped with a verify.py verifier. After task execution, it directly queries database fields or calls APIs to pull status, rather than relying on the agent's self-report, ensuring results are authentic and reliable."
+    },
+    {
+      "point": "The longer the task and the more apps involved, the steeper the drop in agent success rate, with errors having a cascading effect.",
+      "explanation": "Single-app tasks average 53% success, dropping to 20% across 4 apps; tasks within 50 steps have a 50%+ success rate, dropping to 20% at 400 steps. Small early errors trigger cascading failures in subsequent steps and are difficult to self-detect."
+    },
+    {
+      "point": "Multimodal models outperform unimodal models even in text-only Computer-Use tasks, as combining text and images helps agents understand better.",
+      "explanation": "Multimodal models use both screenshots and accessibility trees, while unimodal models rely only on accessibility trees. Experiments show that even for text-only tasks, multimodal models perform better, indicating that visual information significantly aids agent context understanding."
+    }
+  ],
+  "keyQuotes": [
+    "Evaluating with simulators tests 'actions,' not 'results.'",
+    "An agent's mouth can lie, but the database cannot.",
+    "If you only look at the results reported by the agent, you'll often be fooled into believing it.",
+    "For agent evaluation, we shouldn't just look at how beautifully the closing report is written or how well it's formatted; we need to check if the agent has actually finished the task.",
+    "The significance of SaaS-Bench lies precisely in providing a set of 'lie detection' methods and an environment for 'generating data.'"
+  ],
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517413&idx=1&sn=158dc85bfff38c1f319c13d0126dec5c",
+  "readUrl": "https://www.bestblogs.dev/article/0ddbfe70",
+  "enclosureUrl": null,
+  "domain": "mp.weixin.qq.com",
+  "cover": "https://image.jido.dev/20251127045426_259b6659",
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "sourceId": "SOURCE_e02139",
+  "sourceName": "赛博禅心",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20251127045426_259b6659",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "aiSubCategory": "DEV",
+  "aiSubCategoryDesc": "AI Development",
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "readCount": 27,
+  "wordCount": 3195,
+  "readTime": 13,
+  "mediaDuration": null,
+  "authors": [
+    "赛博禅心"
+  ],
+  "publishTimeStamp": 1779769620000,
+  "publishDateStr": "05-26",
+  "publishDateTimeStr": "2026-05-26 12:27:00",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

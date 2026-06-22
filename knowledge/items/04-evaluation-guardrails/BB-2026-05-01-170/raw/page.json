@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "code": null,
+  "message": null,
+  "requestId": "T2fb0cab2a1bb4b65bb2ce3c99386a3af",
+  "data": {
+    "metaData": {
+      "id": "RAW_70ea435c",
+      "notExist": null,
+      "originalTitle": "Agent Infra 实践复盘：Kimi 如何搭建 Agent 背后的 Database 服务",
+      "title": "Agent Infra Practice Review: How Kimi Built the Database Service Behind Its Agent",
+      "oneSentenceSummary": "PingCAP CTO Huang Dongxu reviews the practice of TiDB Cloud providing database support for Kimi K2.6 Agent website building service, revealing the core challenges and architectural choices of data infrastructure in the Agent era.",
+      "summary": "This article, written by PingCAP co-founder and CTO Huang Dongxu, reviews the collaboration details of TiDB Cloud becoming the database provider for Kimi K2.6 Agent website building service. The article first points out that the core competition in the second half of the Agent era lies in stably and continuously delivering services, rather than model capabilities themselves. Kimi K2.6 targets general users, providing a full-process service from code generation to online hosting. Its core challenge lies in infrastructure costs under massive long-tail tenants. The article compares the architectural differences between traditional Serverless databases (such as Supabase, Neon) and TiDB Cloud: the former assigns real database instances to each Agent, with costs scaling linearly; the latter achieves extreme elasticity and cost control through a virtual database layer and underlying distributed KV storage. The article summarizes three core strategic decisions: minimizing the friction for Agents to use Infra tools (second-level creation), unifying the tech stack to improve the success rate of generated code, and achieving extremely low costs through architectural innovation. Finally, the author points out that \"one agent, one sandbox, one storage, one database\" has become a common paradigm for AI Agent teams.",
+      "featuredReason": "PingCAP co-founder Huang Dongxu walks through what it took for TiDB Cloud to become the database backbone of Kimi K2.6 Agent. Kimi K2.6 lets anyone describe an app in plain text and get a working end-to-end deployment — the challenge isn't code generation, it's hosting cost across millions of dynamically created tiny sites. One Supabase instance per agent? Cost explosion. A single Postgres with multi-schema tenancy? Breaks past ten thousand tenants. TiDB Cloud's virtual database interface delivers tenant isolation, a unified stack, and instant elasticity at a per-tenant cost that actually works under subscription economics. The first real reference case for agent-native data infra.",
+      "translateContent": null,
+      "tags": [
+        "Agent Infra",
+        "TiDB Cloud",
+        "Kimi",
+        "Serverless Database",
+        "AI Website Building"
+      ],
+      "mainPoints": [
+        {
+          "point": "The core competition in the second half of the Agent era is stably and continuously delivering services, not model capabilities.",
+          "explanation": "When model capabilities converge, whether an Agent can stably run the generated results and continuously provide services to users becomes the key to commercial success. The case of Kimi K2.6 proves this point."
+        },
+        {
+          "point": "For Agent services targeting general users, the core challenge lies in infrastructure costs under massive long-tail tenants.",
+          "explanation": "Kimi K2.6 targets users without a technical background, with a massive user base. Each user's generated site requires an independent database. If traditional solutions are adopted, costs will scale linearly with the number of tenants, making commercialization unfeasible."
+        },
+        {
+          "point": "TiDB Cloud achieves extreme elasticity and cost control through a virtual database layer and underlying distributed KV storage.",
+          "explanation": "Unlike traditional Serverless databases that assign real instances to each tenant, TiDB Cloud introduces a virtual database interface, supported by a unified underlying distributed KV storage, achieving second-level creation, on-demand elasticity, hot/cold data separation, and significantly reducing costs."
+        },
+        {
+          "point": "Data infrastructure in the Agent era needs to simultaneously satisfy multi-tenant isolation, a unified tech stack, and instant elasticity.",
+          "explanation": "The core reason Kimi chose TiDB is that it simultaneously excels at \"per-tenant multi-tenant isolation, unified stack, and instant elasticity,\" rather than pursuing extreme performance on a single metric."
+        }
+      ],
+      "keyQuotes": [
+        "The core competition in the second half of the Agent era is: whether the things and results delivered by the Agent can run stably in front of real users and be continuously delivered.",
+        "The competition for data Infra in the Agent-native era is quite different from the past 30 years. In the past, it was about single-point performance... but not now. Now it's about: when these four things happen simultaneously, who can provide the smoothest experience?",
+        "The core reason for choosing TiDB is not about achieving extreme performance on a single metric — but rather that when it comes to doing 'per-tenant multi-tenant isolation, unified stack, and instant elasticity' all at once, it is one of the few systems where each item is 'sufficient and convenient.'",
+        "A user might have 10 or even 100 Agents running around them, each requiring its own state and data... Including Kimi, some AI Agent teams operating as a business model have converged on the same paradigm: one agent, one sandbox, one storage, one database."
+      ],
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524198&idx=1&sn=485677104b97dcc14190ee0518087188",
+      "readUrl": "https://www.bestblogs.dev/article/70ea435c",
+      "enclosureUrl": null,
+      "domain": "mp.weixin.qq.com",
+      "cover": "https://image.jido.dev/20251127045419_08d80bcb",
+      "language": "zh_CN",
+      "languageDesc": "Chinese",
+      "sourceId": "SOURCE_caf83c",
+      "sourceName": "Founder Park",
+      "priority": "MEDIUM",
+      "sourceImage": "https://image.jido.dev/20251127045419_08d80bcb",
+      "mainDomain": "Artificial_Intelligence",
+      "mainDomainDesc": "Artificial Intelligence",
+      "aiSubCategory": "DEV",
+      "aiSubCategoryDesc": "AI Development",
+      "category": "Business_Tech",
+      "categoryDesc": "Business & Tech",
+      "resourceType": "ARTICLE",
+      "resourceTypeDesc": "Article",
+      "score": 92,
+      "readCount": 446,
+      "wordCount": 3259,
+      "readTime": 14,
+      "mediaDuration": null,
+      "authors": [
+        "Founder Park"
+      ],
+      "publishTimeStamp": 1778586960000,
+      "publishDateStr": "05-12",
+      "publishDateTimeStr": "2026-05-12 11:56:00",
+      "qualified": true,
+      "stickTop": false,
+      "processFlowStatus": "COMPLETED",
+      "processFlowStatusDesc": "Completed",
+      "customPropertyValues": {},
+      "sourceVisibility": "SYSTEM",
+      "recommendReason": null,
+      "recallSource": null,
+      "candidateSource": null,
+      "selectionReason": null,
+      "fallbackApplied": null,
+      "personalized": null
+    },
+    "relatedArticles": [
+      {
+        "id": "RAW_80573055",
+        "type": "ARTICLE",
+        "title": "Chinese AI Founder Returns to the GTC Stage: Yang Zhilin Tells a Romantic Story of Breaking Intelligence Limits with Technical Language | Jazzyear",
+        "oneSentenceSummary": "Moonshot AI founder Yang Zhilin shared Kimi's core technical innovations at GTC 2026, covering token efficiency, long context, agent swarms, and Attention Residuals architecture, aiming to push the upper limits of AI model capabilities through infrastructure-level open source.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247551088&idx=1&sn=1bc28636ea58dfc7f176e21a992f74e0",
+        "sourceName": "甲子光年"
+      },
+      {
+        "id": "RAW_56f3366c",
+        "type": "ARTICLE",
+        "title": "What Are We Really Discussing When We Talk About Harness? | In-Depth Dialogue: MiniMax × Hermes Agent",
+        "oneSentenceSummary": "This article compiles an in-depth dialogue hosted by Crossroads, featuring the MiniMax Agent team and the head of Hermes Agent. It delves into the core topics surrounding the shift in hype from OpenClaw to Hermes, exploring the definitions of Agent and Harness, multi-agent collaboration, self-evolution, the gap between Chinese and US models, and entrepreneurial opportunities in Agent Infra.",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649107318&idx=1&sn=d1b544111c7d3e43cade7a0a906aa46f",
+        "sourceName": "十字路口Crossing"
+      },
+      {
+        "id": "RAW_7117df66",
+        "type": "ARTICLE",
+        "title": "Prompt Engineering and Context Engineering are Outdated: It's the Era of Harness Engineering",
+        "oneSentenceSummary": "This article introduces Harness Engineering, a new paradigm in AI development, emphasizing that the core work of engineers is shifting from writing code to designing operating environments and feedback loops for AI Agents.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247523279&idx=1&sn=ee25366cb30dc002c12e1f000affd91f",
+        "sourceName": "Founder Park"
+      },
+      {
+        "id": "RAW_17658b47",
+        "type": "ARTICLE",
+        "title": "Conversation with CREAO: A 20-Person Team, Launching 8 Features Daily — Before Pivoting the Product, We First Pivoted the Organization",
+        "oneSentenceSummary": "This article is an in-depth interview with AI startup CREAO, revealing its transition from a Vibe Coding tool to a Super Agent platform. The core lies in a thorough AI Native organizational transformation, delegating 95% of development work to AI, achieving extreme iteration speed and product pivot capability.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247523871&idx=1&sn=f6e117b003b2cfe2b431d7b8004c9efa",
+        "sourceName": "Founder Park"
+      },
+      {
+        "id": "RAW_1a8f717c",
+        "type": "ARTICLE",
+        "title": "The Era of Single Agents is Over, AI Agents Are Now Working in Teams",
+        "oneSentenceSummary": "This article provides an in-depth evaluation of Moonshot AI's newly open-sourced K2.6 model, focusing on the practical performance of its multi-Agent cluster collaboration capabilities. It validates the paradigm shift from a single agent to team-based, engineering-oriented collaboration through two complex tasks: generating multi-format reports and building a full-stack website.",
+        "url": "https://www.qbitai.com/2026/04/404130.html",
+        "sourceName": "量子位"
+      },
+      {
+        "id": "RAW_7dee92a3",
+        "type": "ARTICLE",
+        "title": "A Conversation with Elys Founder Tristan: The Human Soul is the Sum of All Context; We Have Never Been Truly Connected",
+        "oneSentenceSummary": "A conversation with Elys founder Tristan exploring an AI social philosophy centered on \"Context Engineering,\" aiming to create low-entropy connections between people by digitizing the \"soul.\"",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247523088&idx=1&sn=5ec0d3903638b28408683757552525a1",
+        "sourceName": "Founder Park"
+      },
+      {
+        "id": "RAW_23e840fe",
+        "type": "ARTICLE",
+        "title": "The OpenClaw Ecosystem is Exploding: We Deconstructed Over 40 Related Products on Product Hunt",
+        "oneSentenceSummary": "This article provides an in-depth deconstruction of the AI Agent ecosystem built around the OpenClaw framework, covering five core tracks—social, memory, deployment, security, and hardware—revealing the trend of the internet shifting from \"serving humans\" to \"serving Agents.\"",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247523115&idx=1&sn=a152e8e6cdb7da36f7c66becbd56dbca",
+        "sourceName": "Founder Park"
+      },
+      {
+        "id": "RAW_c2980e6b",
+        "type": "ARTICLE",
+        "title": "Notion Custom Agents Retrospective: Rewritten 5 Times in Three Years, One of the Most Successful New Features in Notion's History",
+        "oneSentenceSummary": "This article, based on an in-depth interview with Notion AI's Head of Engineering Sarah Sachs and Tech Lead Simon Last, thoroughly reviews the winding development journey of Notion Custom Agents from 2022 to the present, its core design philosophy, team management principles, and forward-looking thoughts on the future of AI Agents.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247523808&idx=1&sn=0a6aea0c1f3f9c5c6e86eff9592fd30b",
+        "sourceName": "Founder Park"
+      },
+      {
+        "id": "RAW_7e955660",
+        "type": "ARTICLE",
+        "title": "A Hundred OpenClaw Products Are Flooding In: Here Are Our Recent Recommendations",
+        "oneSentenceSummary": "This article systematically reviews representative AI products emerging from the OpenClaw framework, covering foundation model provider integrations, low-barrier desktop tools, and Agent skill protocols.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247522839&idx=1&sn=a522275172e405f388026842ee9de0d8",
+        "sourceName": "Founder Park"
+      },
+      {
+        "id": "RAW_ef138a82",
+        "type": "ARTICLE",
+        "title": "Kimi K2.6 Released and Open-Sourced, Significantly Advancing Code and Agent Cluster Capabilities",
+        "oneSentenceSummary": "Moonshot AI has released and open-sourced the Kimi K2.6 model, achieving significant improvements in code capabilities, long-horizon task execution, and Agent cluster collaboration, and announced the start of the Claw Group internal beta.",
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488415&idx=1&sn=e494d0a74bc414a45f65d327bc97cd22",
+        "sourceName": "月之暗面 Kimi"
+      }
+    ]
+  }
+}

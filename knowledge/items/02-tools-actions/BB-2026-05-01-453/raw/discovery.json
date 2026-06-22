@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "PaperWeekly"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260527051841_6604c0c.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_716f6010",
+  "keyQuotes": [
+    "Tokens are no longer just a technical unit in model input and output; they are becoming a core resource affecting system cost, latency, security, and scalability.",
+    "Lower inference costs do not necessarily mean lower total consumption. On the contrary, cost reductions may stimulate more demand, leading to a continued rise in overall token usage. This resembles the Jevons-like dynamics in economics.",
+    "Security should not be viewed as an external compliance module attached to Agent systems, but should be incorporated as an endogenous constraint of Token Economics."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Generating tokens consumes computational capital, billing by token makes them a pricing unit, and task complexity can be quantified through token expenditure, providing a unified analytical language for Agent system optimization.",
+      "point": "Tokens are endowed with three economic attributes: factors of production, medium of exchange, and unit of account."
+    },
+    {
+      "explanation": "The cost structures of internal tokens (e.g., chain-of-thought, planning) and external tokens (e.g., retrieval, API calls) differ; systems need to weigh the marginal cost of \"letting the model think more\" versus \"calling external tools.\"",
+      "point": "Single agents must find the optimal cost substitution between internal reasoning tokens and external tool invocation tokens."
+    },
+    {
+      "explanation": "An increase in the number of agents brings communication tokens, coordination costs, and scheduling friction. The key challenge is finding the optimal balance between specialization gains and collaboration friction, rather than simply having more agents.",
+      "point": "In multi-agent systems, communication costs may grow superlinearly, offsetting the benefits of specialized division of labor."
+    },
+    {
+      "explanation": "At the macro level, cost reduction does not necessarily decrease total consumption; instead, it may cause usage to continue growing due to demand elasticity, posing new challenges for platform pricing and resource governance.",
+      "point": "Lower inference costs may stimulate demand, leading to an increase in total token consumption (Jevons paradox)."
+    },
+    {
+      "explanation": "The paper constructs a cost model under security constraints, revealing the trade-off between defense expenditure and expected attack losses. The optimal security investment depends on the equilibrium between the two.",
+      "point": "Security should be treated as an endogenous constraint of the token economy, not an external add-on module."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Zhejiang University and Alibaba Cloud jointly released a Token Economics survey, systematically reviewing LLM Agent token consumption, cost optimization, collaboration, and security governance from both computing and economics perspectives.",
+  "originalTitle": "浙大×阿里云首发 Token 经济学综述：重估 LLM Agent 的 Token 世界",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-05",
+  "publishDateTimeStr": "2026-06-05 18:07:00",
+  "publishTimeStamp": 1780654020000,
+  "qualified": false,
+  "readCount": 68,
+  "readTime": 12,
+  "readUrl": "https://www.bestblogs.dev/article/716f6010",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_c682cf",
+  "sourceImage": "https://image.jido.dev/20260527051841_6604c0c.jpeg",
+  "sourceName": "PaperWeekly",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is an interpretation of the survey paper \"Token Economics for LLM Agents: A Dual-View Study from Computing and Economics\" jointly released by Zhejiang University and Alibaba Cloud. The paper points out that as LLM Agents move into high-stakes scenarios such as finance, law, and healthcare, tokens have evolved from a technical unit into a core resource affecting system cost, latency, security, and scalability. The paper proposes a Dual-View framework that links computer science Agent optimization problems with economic theories (factors of production, medium of exchange, unit of account) and constructs a four-dimensional classification system: single-agent token efficiency (trade-offs between reasoning and tool invocation), multi-agent collaboration costs (communication and division of labor friction), Agent ecosystem pricing and governance (platform economy and Jevons paradox), and the security dimension (equilibrium between defense expenditure and attack losses). The paper also outlines six major trends and five emerging opportunities, including differentiable token budgets, real-time token markets, and agent-level token scaling laws.",
+  "tags": [
+    "LLM",
+    "AI Agent",
+    "Token Economics",
+    "Cost Optimization",
+    "Multi-Agent Systems"
+  ],
+  "title": "Zhejiang University × Alibaba Cloud Release First Token Economics Survey: Re-evaluating the Token World of LLM Agents",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247720747&idx=2&sn=42c9180b73ba9e390059b0b588e961c8",
+  "wordCount": 2913
+}

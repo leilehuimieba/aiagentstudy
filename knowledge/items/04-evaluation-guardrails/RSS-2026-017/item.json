@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Model"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "2026-06-18",
+    "opencli_profile": "",
+    "published": "2026-06-17T03:56:10+00:00",
+    "updated": "2026-06-17T03:56:10+00:00"
+  },
+  "date": "2026-06-17",
+  "id": "RSS-2026-017",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/RSS-2026-017/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-017",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/RSS-2026-017/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-017/raw/feed-entry.json",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-017/raw/page-text.txt",
+      "knowledge/items/04-evaluation-guardrails/RSS-2026-017/raw/page.html"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/RSS-2026-017/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/RSS-2026-017/summary.md"
+  },
+  "schema_version": 1,
+  "source": "RSS / Simon Willison's Weblog",
+  "source_id": "simon-willison",
+  "source_name": "Simon Willison's Weblog",
+  "status": "RSS metadata + article text captured",
+  "tags": [
+    "Simon Willison's Weblog",
+    "RSS",
+    "LLM",
+    "RAG",
+    "Tool Use"
+  ],
+  "title": "— a still that plays",
+  "topic": "04-evaluation-guardrails",
+  "type": "rss_article",
+  "urls": {
+    "all_source_urls": [
+      "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
+      "https://simonwillison.net/atom/everything/"
+    ],
+    "candidate_url": "",
+    "feed_url": "https://simonwillison.net/atom/everything/",
+    "original_url": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything"
+  }
+}

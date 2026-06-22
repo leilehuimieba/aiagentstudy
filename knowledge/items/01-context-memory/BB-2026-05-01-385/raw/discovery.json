@@ -1,0 +1,83 @@
+{
+  "id": "RAW_155cf24c",
+  "notExist": null,
+  "originalTitle": "How CockroachDB Built Vector Indexing at Scale",
+  "title": "How CockroachDB Built Vector Indexing at Scale",
+  "oneSentenceSummary": "This article explains how CockroachDB built C-SPANN, a vector index that treats the index as ordinary table data to satisfy distributed SQL constraints like no central coordinator, persistent storage, and real-time updates.",
+  "summary": "The article details the engineering behind CockroachDB's C-SPANN vector index, designed to meet the strict architectural requirements of a distributed SQL database. It begins by explaining the need for approximate nearest neighbor search and the limitations of traditional indexes for vector data. The core of the article describes the six key constraints CockroachDB imposed (no central coordinator, no large in-memory structures, minimal network hops, sharding compatibility, no hot spots, incremental updates) and how C-SPANN satisfies them by storing index partitions as ordinary key-value rows within CockroachDB's existing storage engine. This approach allows the index to inherit the database's built-in capabilities for splitting, rebalancing, caching, and replication. The article also covers index maintenance (splitting/merging partitions), vector quantization using RaBitQ for 94% size reduction, and multi-tenant partitioning via prefix columns. It concludes by discussing the trade-offs, noting that while C-SPANN excels at integrating vectors with transactional data and multi-region deployments, specialized vector databases may be better for pure vector workloads requiring minimal latency.",
+  "featuredReason": null,
+  "translateContent": null,
+  "tags": [
+    "CockroachDB",
+    "Vector Index",
+    "C-SPANN",
+    "Distributed Systems",
+    "Approximate Nearest Neighbor"
+  ],
+  "mainPoints": [
+    {
+      "point": "CockroachDB's C-SPANN vector index treats the index as ordinary table data, not a separate system.",
+      "explanation": "By storing index partitions as key-value rows within CockroachDB's existing storage engine, the index automatically inherits the database's built-in capabilities for splitting, rebalancing, caching, and replication, eliminating the need for new infrastructure."
+    },
+    {
+      "point": "C-SPANN was designed to satisfy six strict architectural constraints for a distributed SQL database.",
+      "explanation": "These constraints include no central coordinator, no large in-memory structures, minimal network hops, sharding compatibility, no hot spots, and support for incremental updates, which ruled out popular algorithms like HNSW and IVF."
+    },
+    {
+      "point": "The index uses a hierarchical K-means tree for search and RaBitQ quantization for storage efficiency.",
+      "explanation": "The tree structure allows for parallel search across partitions, while RaBitQ reduces vector size by 94% (to ~200 bytes per vector), with a reranking step using full-precision vectors to maintain accuracy."
+    },
+    {
+      "point": "Multi-tenancy is handled through prefix columns, creating separate K-means trees per user or region.",
+      "explanation": "This design ensures that query performance scales with the number of vectors per user, not the total index size, and enables locality-aware data storage for compliance with data domiciling requirements."
+    }
+  ],
+  "keyQuotes": [
+    "The CockroachDB team treated the vector index as ordinary table data and inherited their existing distributed machinery for free, so splits, caching, sharding, replication, and multi-region behavior all worked from day one because they already worked for everything else in the database.",
+    "C-SPANN refused several compromises that most vector databases quietly accept.",
+    "Freshness in CockroachDB is real-time and transactional rather than batched or eventually consistent, which means a vector inserted in a transaction becomes searchable as soon as that transaction commits.",
+    "The algorithm is the part that gets the headlines, but the integration is what makes the system possible."
+  ],
+  "url": "https://blog.bytebytego.com/p/how-cockroachdb-built-vector-indexing",
+  "readUrl": "https://www.bestblogs.dev/article/155cf24c",
+  "enclosureUrl": null,
+  "domain": "blog.bytebytego.com",
+  "cover": "https://image.jido.dev/20260525162304_58352b2e-8406-420a-a97d-c11734237c85_2322x1608.png",
+  "language": "en_US",
+  "languageDesc": "English",
+  "sourceId": "SOURCE_996ae6",
+  "sourceName": "ByteByteGo Newsletter",
+  "priority": "MEDIUM",
+  "sourceImage": "https://image.jido.dev/20260527123114_8a5609ae-1239-4400-9491-6010a15c4d60_504x504.png",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "aiSubCategory": "SE_BACKEND",
+  "aiSubCategoryDesc": "Backend & Architecture",
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "readCount": 29,
+  "wordCount": 2446,
+  "readTime": 10,
+  "mediaDuration": null,
+  "authors": [
+    "ByteByteGo"
+  ],
+  "publishTimeStamp": 1779723038000,
+  "publishDateStr": "05-25",
+  "publishDateTimeStr": "2026-05-25 23:30:38",
+  "qualified": false,
+  "stickTop": null,
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "customPropertyValues": {},
+  "sourceVisibility": "SYSTEM",
+  "recommendReason": null,
+  "recallSource": null,
+  "candidateSource": null,
+  "selectionReason": null,
+  "fallbackApplied": null,
+  "personalized": null
+}

@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-16",
+  "id": "BB-2026-05-01-564",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-564/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-564",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-564/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-564/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-564/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-564/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-564/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-564/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / freeCodeCamp",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / freeCodeCamp",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Engineering",
+    "Production AI",
+    "Agent Loop"
+  ],
+  "title": "How to Build a Production-Safe Agent Loop: From Exit Conditions to Audit Trails",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/73f184be",
+      "https://www.freecodecamp.org/news/how-to-build-a-production-safe-agent-loop-from-exit-conditions-to-audit-trails/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.freecodecamp.org/news/how-to-build-a-production-safe-agent-loop-from-exit-conditions-to-audit-trails/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/73f184be"
+  }
+}
