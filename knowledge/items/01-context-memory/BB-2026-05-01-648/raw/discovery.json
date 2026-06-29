@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "大淘宝技术"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045404_f9729af6",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_7e12363e",
+  "keyQuotes": [
+    "The true metric should be: the number of manual interventions needed until requirements go live. Only when this number is minimized can we prove that large models truly improve efficiency.",
+    "Longer context ≠ better performance. This is a fundamental limitation of the attention mechanism, not that the model 'isn't smart enough'.",
+    "No one truly understands this system.",
+    "The value of Vibecoding lies in immediate feedback and exploration efficiency; the value of Spec-driven development lies in structure and traceability. The problem is that pure Vibecoding leads to cognitive chaos, while pure Spec-driven development leads to rigid processes."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The author proposes replacing 'adoption rate' with 'number of manual interventions required until requirements go live' as the core metric—only when manual intervention is minimized can true efficiency gains be proven.",
+      "point": "The key to AI Coding efficiency is not increasing code generation volume, but reducing the number of manual interventions."
+    },
+    {
+      "explanation": "Transformer's O(n²) computational complexity and attention collapse cause information in the middle of the context to be easily overwhelmed, and continuous dialogue in agents accumulates noise, with irreversible information loss after compression.",
+      "point": "The attention mechanism of large models leads to significantly degraded performance under long contexts; the 'effective context' is much smaller than the 'maximum context'."
+    },
+    {
+      "explanation": "Vibecoding is flexible but leads to cognitive overload; Spec-driven is structured but rigid. Splitting 'deep analysis' and 'coding execution' into independent phases, each using its own optimal tool, achieves both flexibility and traceability.",
+      "point": "The contradiction between Vibecoding and Spec-driven development can be reconciled through 'separation of responsibilities': an external DeepResearch Agent handles context preparation, while the IDE focuses on coding."
+    },
+    {
+      "explanation": "Current D2C tools only perform visual-level conversion without semantic understanding. Specflow overlays semantic tags on top of IR, enabling the AI to truly 'read' design intent and avoid deviations caused by inferring from coordinates and colors.",
+      "point": "The underutilization of multimodal capabilities (images, design drafts) is the fundamental reason for poor visual fidelity."
+    },
+    {
+      "explanation": "PRD analysis, UI analysis, and technical solution reports are saved independently, supporting retries, team import/export, and incremental updates only for affected parts when requirements change, avoiding complete overhauls.",
+      "point": "Deep analysis results should be persisted, reusable, and support incremental updates to adapt to real-world business requirement changes."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article deeply analyzes the root causes of AI Coding efficiency bottlenecks—namely, the attention mechanism of large models and the context dilemma—and proposes an external DeepResearch Agent to separate the responsibilities of context preparation and code execution, achieving precise context and structured task flow to reduce the number of manual interventions.",
+  "originalTitle": "场景营销前端 AI Coding — 从问题到方案",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 21:09:00",
+  "publishTimeStamp": 1782133740000,
+  "qualified": false,
+  "readCount": 25,
+  "readTime": 63,
+  "readUrl": "https://www.bestblogs.dev/article/7e12363e",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_efc2de",
+  "sourceImage": "https://image.jido.dev/20251127045404_f9729af6",
+  "sourceName": "大淘宝技术",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article first points out that the actual efficiency improvement of current AI Coding tools is far below expectations, primarily due to the O(n²) computational limitation of the Transformer attention mechanism, attention collapse under long contexts, and a mismatch in human-AI collaboration patterns. It then reviews two mainstream practices—Vibecoding and Spec-driven development—analyzing their respective advantages and limitations: Vibecoding is flexible but prone to cognitive overload and code rot, while Spec-driven development is structured but rigid and contrary to developers' cognitive habits. On this basis, the author proposes six core principles: respecting cognitive laws, separation of responsibilities, prioritizing multimodality, persistence and reuse, incremental updates, and maintaining human control. The article then details the design of the team's self-developed Specflow Agent (an independent client based on the Claude Agent SDK): multiple role-based SubAgents (Product, Design, Technology) conduct in-depth analysis of PRDs, design drafts, and codebases, producing structured task contexts that are then handed over to IDEs such as Cursor/Qoder for execution, thereby decoupling the analysis phase from the coding phase. It also covers engineering practices such as a task management board, MCP bidirectional communication, incremental updates, and team reuse.",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "AI Agent",
+    "Context Engineering",
+    "Prompt Engineering"
+  ],
+  "title": "Frontend AI Coding for Scenario Marketing — From Problems to Solutions",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544388&idx=1&sn=a8a494898588bbce7e5c3c0f523d2a25",
+  "wordCount": 15520
+}

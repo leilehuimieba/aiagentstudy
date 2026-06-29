@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Model",
+    "Frontier Radar",
+    "Product Workflow"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-24",
+  "id": "BB-2026-05-01-663",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/06-frontier-radar/BB-2026-05-01-663/article.md",
+    "item_dir": "knowledge/items/06-frontier-radar/BB-2026-05-01-663",
+    "raw_dir": "knowledge/items/06-frontier-radar/BB-2026-05-01-663/raw",
+    "raw_files": [
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-663/raw/content.json",
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-663/raw/discovery.json",
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-663/raw/page.json"
+    ],
+    "source": "knowledge/items/06-frontier-radar/BB-2026-05-01-663/source.md",
+    "summary": "knowledge/items/06-frontier-radar/BB-2026-05-01-663/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / The Pragmatic Engineer",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / The Pragmatic Engineer",
+  "status": "Full text + source captured",
+  "tags": [
+    "Cloud Reliability",
+    "AWS",
+    "Availability Zone",
+    "Fault Tolerance",
+    "Distributed Systems"
+  ],
+  "title": "Reliability fail: No automated zone failover for Coinbase’s global trading service",
+  "topic": "06-frontier-radar",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://blog.pragmaticengineer.com/coinbase-fail/",
+      "https://www.bestblogs.dev/article/55ff574f"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://blog.pragmaticengineer.com/coinbase-fail/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/55ff574f"
+  }
+}

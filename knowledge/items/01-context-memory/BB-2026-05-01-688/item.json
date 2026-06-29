@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-23",
+  "id": "BB-2026-05-01-688",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-688/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-688",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-688/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-688/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-688/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-688/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-688/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-688/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / The Guardian",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / The Guardian",
+  "status": "Full text + source captured",
+  "tags": [
+    "UK Politics",
+    "Brexit",
+    "EU Referendum",
+    "Political Campaign",
+    "Oral History"
+  ],
+  "title": "'Canaries in the coalmine of populism': an oral history of the Brexit campaign, told by those with a front row seat",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/48717cec",
+      "https://www.theguardian.com/politics/2026/jun/23/brexit-campaign-oral-history-front-row-seat"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.theguardian.com/politics/2026/jun/23/brexit-campaign-oral-history-front-row-seat",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/48717cec"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Datawhale"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045505_b03e263f",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_b920a27e",
+  "keyQuotes": [
+    "“I don't prompt Claude anymore. I have loops that are running. They're the ones that are prompting Claude and figuring out what to do. My job is to write loops.”",
+    "“You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.”",
+    "“Great prompt + weak verification will fail; mediocre prompt + strong verification will converge.”",
+    "“A loop amplifies your judgment.”"
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Prompts require foreseeing all information at once; Context Engineering uses RAG and system prompts to provide more complete context; Harness gives Agents multi-step execution capability; Loop replaces the process of humans repeatedly triggering Agents with an automated system, allowing humans to instead design decision loops.",
+      "point": "Loop Engineering is the natural result of the Prompt → Context → Harness → Loop evolution, and its core is freeing humans from the repetitive process of manually triggering Agents."
+    },
+    {
+      "explanation": "The controller (reading deviation signals and deciding corrections) needs Skills (project rules) and Memory (persistent state); the actuator (operating on the real world) needs Connectors (connecting external services) and Worktrees (isolated parallel workspaces); the sensor (measuring results) needs Sub-agents (independent verification to avoid blind spots); Automations provide trigger conditions to run the loop automatically.",
+      "point": "The six components can be uniformly explained with a cybernetic framework: the controller needs Skills and Memory, the actuator needs Connectors and Worktrees, the sensor needs Sub-agents, and the loop requires Automations."
+    },
+    {
+      "explanation": "A sensor that only returns pass/fail forces the controller to guess blindly; a sensor that returns specific failing test cases, assertion failures, or diffs can drastically reduce the search space. 'Great prompt + weak verification will fail; mediocre prompt + strong verification will converge.'",
+      "point": "Sensors (verification) are key to convergence speed; designing good sensors is more important than strengthening the model itself."
+    },
+    {
+      "explanation": "Without an objective pass/fail standard (such as 'elegant' or 'good'), a closed loop is a false loop—even if another LLM scores it, it's unreliable. The task should appear at least once a week to be worth automating; tokens will be wasted on retries and exploration. Starting sequence: first write Skills to clarify intent, then write sensors to precisely define 'done when', and finally wrap with a cron trigger.",
+      "point": "The prerequisite for building a Loop is the ability to write objective automated checks, and the task must be repetitive with an acceptable token budget; unmeasurable goals are unsuitable for Loops."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article traces the evolution from Prompt Engineering to Loop Engineering, explains the six-component principle using a cybernetic framework, and provides conditions for determining whether to build a Loop.",
+  "originalTitle": "一文搞懂！Loop Engineering 的进化史和本质",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 22:00:00",
+  "publishTimeStamp": 1782223200000,
+  "qualified": false,
+  "readCount": 177,
+  "readTime": 22,
+  "readUrl": "https://www.bestblogs.dev/article/b920a27e",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4688eb",
+  "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+  "sourceName": "Datawhale",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Starting with the shared insight from the head of Anthropic Claude Code and the founder of OpenClaw, the article points out that the industry has shifted from 'writing prompts' to 'designing loops.' The author first uses an evolutionary chain (Prompt → Context → Harness → Loop) to explain the core bottleneck addressed at each stage, introducing the starting point of Loop Engineering—freeing humans from the repetitive process of manually triggering Agents. It then details the six components (Automations, Worktrees, Skills, Connectors, Sub-agents, Memory/State) and uses a CI fix scenario to demonstrate the complete running loop. The core part uses cybernetics (goal → execution → measure deviation → feedback correction) to uniformly explain why each component exists: the controller needs Skills and Memory, the actuator needs Connectors and Worktrees, the sensor needs Sub-agents, and the loop requires Automations. The article further discusses three loop outcomes (convergent correct, convergent wrong, divergent), emphasizing that sensor quality determines convergence speed: 'Great prompt + weak verification will fail; mediocre prompt + strong verification will converge.' Finally, it provides conditions for determining whether to build a Loop: the ability to write objective automated checks, repetitive tasks, and acceptable token budget; unmeasurable goals are unsuitable for Loops; the starting sequence should be to write Skills first, then sensors, and finally wrap with a cron trigger.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Coding",
+    "Engineering Practice",
+    "Context Engineering"
+  ],
+  "title": "A Comprehensive Guide: The Evolution and Essence of Loop Engineering",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723682&idx=1&sn=07b7025a091060fc7cd45d9e8bc9c14f",
+  "wordCount": 5252
+}

@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-23",
+  "id": "BB-2026-05-01-584",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-584/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-584",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-584/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-584/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-584/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-584/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-584/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-584/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 机器之心",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 机器之心",
+  "status": "Full text + source captured",
+  "tags": [
+    "OCR",
+    "Document Parsing",
+    "Attention Mechanism",
+    "Long-Range Inference",
+    "Open Source Project"
+  ],
+  "title": "Baidu Open-Sources Unlimited OCR, Achieves Long-Range Parsing; Core Author 'YY' Suspected from DeepSeek",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651040687&idx=2&sn=11f7171bdd0d0f945fccf4d07599b020",
+      "https://www.bestblogs.dev/article/aa765f04"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651040687&idx=2&sn=11f7171bdd0d0f945fccf4d07599b020",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/aa765f04"
+  }
+}

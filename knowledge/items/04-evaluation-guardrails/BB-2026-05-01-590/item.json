@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-22",
+  "id": "BB-2026-05-01-590",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-590/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-590",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-590/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-590/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-590/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-590/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-590/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-590/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hugging Face - Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hugging Face - Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "OCR",
+    "Computer Vision",
+    "PaddlePaddle",
+    "Hugging Face",
+    "Text Detection"
+  ],
+  "title": "PP\\-OCRv6 on Hugging Face: 50\\-Language OCR from 1\\.5M to 34\\.5M Parameters",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+      "https://www.bestblogs.dev/article/cebb2067"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/cebb2067"
+  }
+}

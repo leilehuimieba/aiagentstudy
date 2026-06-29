@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "AI前线"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260527123921_5b85448.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_2cc83ea1",
+  "keyQuotes": [
+    "I have now fallen into a massive nihilism; AI can write anything.",
+    "AI can basically use any solution, any tool, any means to write anything.",
+    "What is truly useful is not the code itself, but the knowledge precipitated in the software—documentation, legacy rules, business logic, and system behavior.",
+    "If a person believes their job is just to write code, that person should have been eliminated by the industry long ago, even without the emergence of AI today.",
+    "Those taste wars that make humans fight to the death simply do not exist for Agents."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Huang Dongxu's db9 project (1 million lines of Rust database code) proves that with a reasonable harness and collaborative approach, AI can produce complex, production-ready code at extremely low costs and speeds far exceeding human teams.",
+      "point": "AI Agents can already write almost any type of software, with no obvious boundaries in sight."
+    },
+    {
+      "explanation": "Language, framework, and database choices no longer constitute long-term lock-ins; Bun migrated from Zig to Rust in just 6 days, and enterprises believe that wrong decisions can be reversed using Agents. Agents have no taste preferences; they only care about interfaces and documentation.",
+      "point": "Tech stack lock-in is being broken, and rewrite costs are dropping drastically."
+    },
+    {
+      "explanation": "Xu Hao points out that what is truly valuable is the specifications, rules, and business logic沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀 in the software, rather than the implementation carrier; AI acts like a compiler, migrating knowledge across different tech stacks.",
+      "point": "The code itself is not the product; the knowledge within the software is the core competitiveness."
+    },
+    {
+      "explanation": "AI only seeks to please and lacks a sense of direction; experienced individuals are needed to define architectures, set constraints, and verify outputs. Programmers who merely write code will be eliminated, while those who can deliver value are presented with the best opportunity.",
+      "point": "Human value lies in steering and judgment; senior engineers (\"veterans\") are more important than ever."
+    },
+    {
+      "explanation": "Issues such as the \"spaghetti code\" of legacy systems, semantic detail incompatibilities, and a surge in bugs after deployment make fully relying on AI for rewrites still unfeasible; ultimately, humans must still bear the responsibility.",
+      "point": "Enterprise software maintenance remains a practical challenge, and AI code may bring new problems."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Through interviews with industry experts like Huang Dongxu, Xu Hao, and Teng Yu, this article explores the capability boundaries of AI Agents in software development, pointing out that AI can already write almost any software, but human judgment and knowledge management remain the core value, while also analyzing practical challenges such as the deconstruction of tech stack lock-in, declining rewrite costs, and enterprise software maintenance.",
+  "originalTitle": "AI 可以用任何手段、写任何东西，但你得是个“中年老登”",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-27",
+  "publishDateTimeStr": "2026-06-27 13:30:00",
+  "publishTimeStamp": 1782538200000,
+  "qualified": false,
+  "readCount": 41,
+  "readTime": 29,
+  "readUrl": "https://www.bestblogs.dev/article/2cc83ea1",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_458cfe",
+  "sourceImage": "https://image.jido.dev/20260527123921_5b85448.jpeg",
+  "sourceName": "AI前线",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Using PingCAP CTO Huang Dongxu's db9 project as a starting point, this article reveals the astonishing capabilities of AI Agents in software development: completing a database project with 1 million lines of Rust code in three months with zero human coding. Centered around the premise that \"AI can write anything,\" the article discusses the phenomenon of tech stack lock-ins (language, framework, database) being broken—Bun migrated from Zig to Rust in just 6 days, and enterprises can use Agents to rewrite applications at any time. It then explores the trend of \"rewriting,\" including the restoration of sourceless systems (the Thoughtworks case, the rebuilding of a 30-year-old MUD game), and points out that what truly matters is the knowledge within the software rather than the code itself. Xu Hao emphasizes knowledge engineering, arguing that the essence of development is specifying specifications and acceptance criteria, with AI acting merely as a \"compiler\" to transform the carrier. The article finally focuses on human value: the steering and judgment of senior engineers (\"veterans\") are irreplaceable, while enterprise software maintenance remains a pain point, as AI-generated code might introduce more bugs after deployment. The entire article features exclusive interviews with multiple experts, offering substantial information and sharp insights.",
+  "tags": [
+    "AI Coding",
+    "AI Agent",
+    "LLM",
+    "Code Generation",
+    "Software Engineering"
+  ],
+  "title": "AI Can Use Any Means to Write Anything, But You Must Be a \"Veteran Engineer\"",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247663991&idx=1&sn=f965620efa2d14f3a267a41607d9ee79",
+  "wordCount": 7100
+}

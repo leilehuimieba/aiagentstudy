@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "ByteByteGo"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260623221531_c8d830e6-0d98-4583-af68-4676eaaf7f07_1769x2048.png",
+  "domain": "blog.bytebytego.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_ea0d869f",
+  "keyQuotes": [
+    "I have now stopped writing most of the code myself and started acting like an engineering manager directing a team of agents.",
+    "The most common mistakes I see people make about delegation to both humans and agents are: asking for an action, not an outcome; not explaining the why; taking back control.",
+    "They're often designed to lock you into a particular vendor, when in reality you benefit a lot from being able to switch to whichever newer model works best, even if it comes from a different vendor."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Common mistakes are asking for an action instead of an outcome, not explaining the why, and taking back control after a mistake. The right approach is to give corrective feedback and let the agent improve.",
+      "point": "Engineers should delegate to agents like managers delegate to junior engineers, focusing on outcomes and giving feedback."
+    },
+    {
+      "explanation": "High-quality speech recognition (e.g., OpenSuperWhisper running Whisper locally) lets you talk 3x faster than you type, applicable to prompting agents and any text input.",
+      "point": "Voice input dramatically accelerates prompting and is a key productivity lever."
+    },
+    {
+      "explanation": "Using Lavish Editor, the agent renders a plan as an interactive HTML page that supports visual feedback, making iteration faster and more precise than editing markdown.",
+      "point": "For complex work, create an interactive visual plan before handing off for autonomous implementation."
+    },
+    {
+      "explanation": "Avoid 'fancy gimmicks' like auto-managed memory that tie you to one provider; maintain the ability to switch models easily as better ones emerge.",
+      "point": "Keep the agent stack agnostic to avoid vendor lock-in and retain flexibility."
+    },
+    {
+      "explanation": "Store explicit testing instructions in AGENTS.md per project, allowing the agent to run the real app and validate its own work before coming back to you.",
+      "point": "Pre-define end-to-end validation instructions so agents can self-verify their changes."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "A former Meta L8 engineer shares his complete agentic engineering setup—terminal-centric, keyboard-driven—using agents as autonomous teammates for planning, implementation, and validation.",
+  "originalTitle": "An Ex-Meta L8’s Agentic Engineering Setup",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 23:31:20",
+  "publishTimeStamp": 1782228680000,
+  "qualified": false,
+  "readCount": 54,
+  "readTime": 18,
+  "readUrl": "https://www.bestblogs.dev/article/ea0d869f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_996ae6",
+  "sourceImage": "https://image.jido.dev/20260527123114_8a5609ae-1239-4400-9491-6010a15c4d60_504x504.png",
+  "sourceName": "ByteByteGo Newsletter",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Kun Chen, ex-Meta L8 principal engineer, details his personal agentic engineering workflow that has enabled him to ship 30+ high-quality PRs per day. The setup is built entirely in the terminal: WezTerm, tmux, Neovim, and agent harnesses like Claude Code and OpenCode. Chen emphasizes writing prompts like a manager (asking for outcomes, not actions; explaining the why; giving feedback), using voice input for speed (OpenSuperWhisper), and planning complex work with interactive HTML artifacts via his open-source Lavish Editor. Implementation is fully autonomous once the plan is set, with agents validating their own changes end-to-end. The post uses a real project—'Hi Bit', an AI tutor for his son—as a concrete example.",
+  "tags": [
+    "AI Coding",
+    "Agentic Engineering",
+    "Developer Tools",
+    "Prompt Engineering",
+    "Terminal & CLI"
+  ],
+  "title": "An Ex-Meta L8’s Agentic Engineering Setup",
+  "translateContent": null,
+  "url": "https://blog.bytebytego.com/p/an-ex-meta-l8s-agentic-engineering",
+  "wordCount": 4355
+}

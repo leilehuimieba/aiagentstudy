@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "快手技术"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045456_510118ec",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_c674d376",
+  "keyQuotes": [
+    "It pushes the boundary of recommendation systems from 'distributing existing content' to 'creating potential supply'.",
+    "From finding videos, to producing videos.",
+    "In the past, recommendation systems answered: where is the content the user wants to watch? RaG begins to answer: what should the content the user wants to watch look like?"
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "By predicting user interest semantics and generating personalized videos, the recommendation system transforms from a content distributor into the upstream brain of the content production chain.",
+      "point": "RaG advances recommendation systems from 'finding videos' to 'producing videos'."
+    },
+    {
+      "explanation": "By performing discrete quantization on content and creativity separately, the codebook collision rate is reduced (from 18.24% to 2.62%), providing a cleaner semantic interface.",
+      "point": "D-SIDs decouple the content semantics and creative semantics of videos."
+    },
+    {
+      "explanation": "Autoregressively outputting 'generatable content intents' that can be consumed by the generation system upgrades recommendation results from candidates to production blueprints.",
+      "point": "GRM predicts interest semantic tokens rather than specific video IDs."
+    },
+    {
+      "explanation": "Using user feedback as the primary objective and treating interest alignment and video quality as constraints, it dynamically adjusts weights via PID control to avoid multi-objective RL oscillation.",
+      "point": "SCRL jointly optimizes user feedback, interest alignment, and video quality within a unified framework."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Kuaishou proposes the Recommendation-as-Generation (RaG) system, evolving recommendation systems from retrieving existing content to directly generating personalized videos based on user interests, with online A/B testing showing a 1.870% relative increase in ad revenue over a strong baseline.",
+  "originalTitle": "从「找视频」到「产视频」：快手 RaG 推动推荐系统迈向完全生成时代",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 11:59:00",
+  "publishTimeStamp": 1782446340000,
+  "qualified": false,
+  "readCount": 21,
+  "readTime": 22,
+  "readUrl": "https://www.bestblogs.dev/article/c674d376",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_d7d427",
+  "sourceImage": "https://image.jido.dev/20251127045456_510118ec",
+  "sourceName": "快手技术",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article details Kuaishou's latest advancement in recommendation systems, RaG (Recommendation-as-Generation), which aims to break through the limitations of the traditional 'retrieve-and-rank' paradigm, shifting recommendation systems from 'finding videos' to 'producing videos'. Core innovations include: Disentangled Semantic IDs (D-SIDs), which decouple videos into content semantics and creative semantics as a unified semantic interface; Generative Recommendation Model (GRM), which autoregressively predicts user interest semantic tokens; Instruction Model, which translates semantics into shot-level production instructions; Video Generation Agents (VGAs), which organize video generation via a multi-Agent pipeline; and Synergistic Cross-Domain Reward Learning (SCRL), which incorporates user feedback, interest alignment, and video quality into closed-loop optimization. The article also elaborates on the industrial deployment architecture (online recommendation + nearline generation + cache expansion) and presents online experimental results: GRM improves upon traditional DLRMs by 3.526%, and the complete RaG further improves by 1.870% on top of GRM. Finally, the article discusses the paradigm expansion trend of recommendation systems from content distribution to content creation.",
+  "tags": [
+    "Recommendation System",
+    "Video Generation",
+    "AIGC",
+    "Ad Tech",
+    "Multimodal Model"
+  ],
+  "title": "From 'Finding Videos' to 'Producing Videos': Kuaishou's RaG Propels Recommendation Systems into the Fully Generative Era",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500854&idx=1&sn=ed6f38238cb5c2d55026d8d3bd3982ff",
+  "wordCount": 5324
+}

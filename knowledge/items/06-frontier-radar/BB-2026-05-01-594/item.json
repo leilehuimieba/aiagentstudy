@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Model",
+    "Frontier Radar",
+    "Product Workflow"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-23",
+  "id": "BB-2026-05-01-594",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/06-frontier-radar/BB-2026-05-01-594/article.md",
+    "item_dir": "knowledge/items/06-frontier-radar/BB-2026-05-01-594",
+    "raw_dir": "knowledge/items/06-frontier-radar/BB-2026-05-01-594/raw",
+    "raw_files": [
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-594/raw/content.json",
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-594/raw/discovery.json",
+      "knowledge/items/06-frontier-radar/BB-2026-05-01-594/raw/page.json"
+    ],
+    "source": "knowledge/items/06-frontier-radar/BB-2026-05-01-594/source.md",
+    "summary": "knowledge/items/06-frontier-radar/BB-2026-05-01-594/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Engineering at Meta",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Engineering at Meta",
+  "status": "Full text + source captured",
+  "tags": [
+    "AV1",
+    "Video Codec",
+    "Real-Time Communication",
+    "Rate Control",
+    "Error Resilience"
+  ],
+  "title": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
+  "topic": "06-frontier-radar",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://engineering.fb.com/2026/06/22/video-engineering/adopting-av1-for-real-time-communication-rtc-meta/",
+      "https://www.bestblogs.dev/article/46b40515"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://engineering.fb.com/2026/06/22/video-engineering/adopting-av1-for-real-time-communication-rtc-meta/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/46b40515"
+  }
+}

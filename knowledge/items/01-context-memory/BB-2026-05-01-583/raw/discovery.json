@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "大淘宝技术"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045404_f9729af6",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_35406486",
+  "keyQuotes": [
+    "A Skill is not \"injecting a function into a model,\" but rather encapsulating a \"reusable, verifiable, and bounded\" business process into a stable capability unit.",
+    "AI's ceiling depends on the quality of the domain knowledge you inject.",
+    "The transition from traditional data science to AI data science is not about letting AI replace us, but about freeing our energy from repetitive \"running data, generating charts, and writing reports\" to focus on the more valuable tasks of \"defining problems, designing solutions, and driving implementation.\""
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "SKILL.md is only responsible for defining trigger conditions, step orchestration, and exception handling, without embedding large chunks of implementation code. Specific logic is delegated to scripts/, improving analysis stability through structured instructions rather than pure code.",
+      "point": "The essence of a Skill is a domain expert manual; its core is process orchestration rather than code injection."
+    },
+    {
+      "explanation": "SKILL.md controls the process, config.yaml defines parameter templates (using auto or empty values as placeholders), scripts/ solidifies deterministic logic, and references/ provides progressive knowledge disclosure—this design prevents Agent attention decay in long contexts and enables Skill reuse across scenarios.",
+      "point": "The four-layer architecture separation (orchestration / parameters / implementation / knowledge) achieves controllability and scalability."
+    },
+    {
+      "explanation": "These include: using Description to clarify trigger scenarios, providing processes rather than code in SKILL.md, using structured output templates, treating config as a template rather than a form, controlling length, and utilizing progressive disclosure.",
+      "point": "5 key techniques for developing high-quality Skills."
+    },
+    {
+      "explanation": "For example, Frontend Slides uses NON-NEGOTIABLE tags to repeatedly emphasize rules, explicitly lists anti-pattern checklists, and collects user information all at once. These are all effective techniques to combat AI's instability in long contexts.",
+      "point": "Engineering methods to counter Agent attention decay can be learned from the Follow Builders and Frontend Slides cases."
+    },
+    {
+      "explanation": "Skills productize team methodologies, improving analysis efficiency while achieving knowledge retention and standardization. However, this requires significant time investment in testing (accounting for 70-80% of development) and attention to token consumption.",
+      "point": "The core of AI data science transformation is freeing up human effort, standardizing repetitive data runs and chart generation, and focusing on defining business problems and designing solutions."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article systematically elaborates on the four-layer engineering architecture of QoderWork Skills (orchestration / parameters / implementation / knowledge), and shares practical methodologies for transitioning from traditional data science to AI data science through the author's self-developed User Insight and AB Testing Skill cases.",
+  "originalTitle": "QoderWork Skills 开发实践：从传统数科到 AI 数科的转型探索-我的 Skills 进阶之旅",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 16:38:00",
+  "publishTimeStamp": 1782463080000,
+  "qualified": false,
+  "readCount": 62,
+  "readTime": 28,
+  "readUrl": "https://www.bestblogs.dev/article/35406486",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_efc2de",
+  "sourceImage": "https://image.jido.dev/20251127045404_f9729af6",
+  "sourceName": "大淘宝技术",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The author, Zi Sui (from the Taobao & Tmall Group Live Streaming Technology Team), details the QoderWork Skills development system and engineering philosophy based on personal practice. The article first identifies the pain points of data science teams repeatedly running data and manually generating reports, introducing the value of Skills as \"digital assistants.\" The core section proposes a four-layer separation architecture: SKILL.md (orchestration layer, solely responsible for process guidance), config.yaml (parameter template layer, avoiding hardcoding business values), scripts/ (implementation layer, solidifying complex logic like statistical tests and field detection), and references/ (knowledge layer, enabling progressive information disclosure). Subsequently, by deconstructing the design concepts of excellent community Skills (Follow Builders, Frontend Slides)—such as Frontend Slides' use of \"NON-NEGOTIABLE\" tags, anti-pattern lists, and one-shot data collection instructions—it demonstrates the concrete form of this architecture in practice. The author also shares two self-developed Skills: User Insight Report Generation (including RFM segmentation and the PIA insight framework) and AB Testing Analysis (including mandatory SRM checks, automatic method selection, and a conclusion determination matrix), summarizing the development methodology: Description is the soul, provide processes rather than code, templates are more controllable than free-form generation, config is a template not a form, and control the length. Finally, the author compares Idealab's RAG practices with QoderWork Skills, arguing that AI's ceiling depends on the quality of injected domain knowledge, and the core of data science transformation is freeing up human effort to focus on high-value business problems.",
+  "tags": [
+    "AI Agent",
+    "Prompt Engineering",
+    "AI Coding",
+    "Domain Knowledge Engineering",
+    "LLM"
+  ],
+  "title": "QoderWork Skills Development Practice: Exploring the Transition from Traditional Data Science to AI Data Science - My Skills Advancement Journey",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544598&idx=1&sn=dc8678c46fc224211a0b384fc7e83cfc",
+  "wordCount": 6926
+}

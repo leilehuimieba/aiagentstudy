@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-26",
+  "id": "BB-2026-05-01-694",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-694/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-694",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-694/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-694/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-694/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-694/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-694/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-694/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hacker News",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hacker News",
+  "status": "Full text + source captured",
+  "tags": [
+    "Image Generation",
+    "Kuramoto Oscillators",
+    "Physical Computing",
+    "AI Research",
+    "Model Release"
+  ],
+  "title": "Introducing Un-0: Generating Images with Coupled Oscillators - Unconventional AI",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
+      "https://www.bestblogs.dev/article/2fb7cc9f"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/2fb7cc9f"
+  }
+}

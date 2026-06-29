@@ -1,6 +1,6 @@
 # Current Knowledge Coverage
 
-Last organized: 2026-06-18
+Last organized: 2026-06-29
 
 Use this page to understand what is already in the AI-agent knowledge base before starting another collection pass.
 
@@ -8,13 +8,13 @@ Use this page to understand what is already in the AI-agent knowledge base befor
 
 | Area | Count | Notes |
 | --- | ---: | --- |
-| BestBlogs full captures | 561 | Main curated article corpus. Latest ID: `BB-2026-05-01-573`. |
+| BestBlogs full captures | 701 | Main curated article corpus. Latest ID: `BB-2026-05-01-713`. |
 | arXiv paper captures | 10 | Paper metadata and abstracts, indexed in `paper-index.md`. |
 | RSS article captures | 28 | Official/engineering/newsletter captures, indexed in `source-article-index.md`. |
 | Browser source snapshots | 8 | OpenCLI Browser Bridge rendered source radar pages. |
 | Candidate promotions | 1 | Durable items promoted from candidate radar. |
-| Total catalog rows | 608 | Retrieval should be rebuilt after meaningful collection. |
-| Retrieval chunks | 6904 | SQLite FTS chunks generated from `articles-meta.jsonl`. |
+| Total catalog rows | 748 | Retrieval should be rebuilt after meaningful collection. |
+| Retrieval chunks | 8728 | SQLite FTS chunks generated from `articles-meta.jsonl`. |
 | Candidate inbox | 45 | Radar candidates waiting for promote/defer/reject review. |
 
 ## Candidate Queue
@@ -30,12 +30,12 @@ Use this page to understand what is already in the AI-agent knowledge base befor
 
 | Topic | Count |
 | --- | ---: |
-| `01-context-memory` | 159 |
-| `02-tools-actions` | 137 |
-| `03-control-loop` | 80 |
-| `04-evaluation-guardrails` | 104 |
+| `01-context-memory` | 226 |
+| `02-tools-actions` | 167 |
+| `03-control-loop` | 90 |
+| `04-evaluation-guardrails` | 111 |
 | `05-security-techniques` | 4 |
-| `06-frontier-radar` | 124 |
+| `06-frontier-radar` | 147 |
 
 ## Reading Order
 
@@ -49,7 +49,7 @@ Use this page to understand what is already in the AI-agent knowledge base befor
 
 | Need | Command |
 | --- | --- |
-| Latest BestBlogs articles | `.\kb.ps1 capture --profile qmvqcrb8 --page 1 --page-size 20 --discovery-date 2026-06-18` |
+| Latest BestBlogs articles | `.\kb.ps1 capture --profile qmvqcrb8 --page 1 --page-size 20 --discovery-date 2026-06-29` (run `opencli browser qmvqcrb8 open https://www.bestblogs.dev/` first) |
 | Latest arXiv candidates | `.\kb.ps1 capture-arxiv --latest-candidates --limit 5` |
 | RSS sources | `.\kb.ps1 capture-rss --ids langchain-blog simon-willison latent-space --limit 5` |
 | Browser-rendered source radar | `.\kb.ps1 capture-browser --ids openai-news jiqizhixin github-trending huggingface-papers --profile qmvqcrb8 --limit 4` |

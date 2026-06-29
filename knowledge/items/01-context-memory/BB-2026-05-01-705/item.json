@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-27",
+  "id": "BB-2026-05-01-705",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-705/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-705",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-705/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-705/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-705/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-705/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-705/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-705/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / The Guardian",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / The Guardian",
+  "status": "Full text + source captured",
+  "tags": [
+    "Child Sexual Abuse",
+    "Online Fantasy",
+    "Legal Reform",
+    "Victim Impact",
+    "Family Trauma"
+  ],
+  "title": "My dad bragged online about sexually abusing me. But he was making it all up",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/356531b8",
+      "https://www.theguardian.com/society/2026/jun/27/my-dad-bragged-online-fantasy-sexual-abuse-made-it-up"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.theguardian.com/society/2026/jun/27/my-dad-bragged-online-fantasy-sexual-abuse-made-it-up",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/356531b8"
+  }
+}

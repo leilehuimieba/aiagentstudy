@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-22",
+  "id": "BB-2026-05-01-669",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-669/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-669",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-669/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-669/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-669/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-669/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-669/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-669/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hacker News",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hacker News",
+  "status": "Full text + source captured",
+  "tags": [
+    "Microprocessor Architecture",
+    "Floating Point Unit",
+    "Barrel Shifter",
+    "Chip Design",
+    "Reverse Engineering"
+  ],
+  "title": "Die analysis of the 8087 math coprocessor's fast bit shifter",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/b36e16c6",
+      "https://www.righto.com/2020/05/die-analysis-of-8087-math-coprocessors.html"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.righto.com/2020/05/die-analysis-of-8087-math-coprocessors.html",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/b36e16c6"
+  }
+}

@@ -1,0 +1,1602 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 7,
+    "dataList": [
+      {
+        "authors": [
+          "Unconventional AI"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://unconv.ai/wp-content/uploads/2026/06/un-0.mosaichero.png",
+        "domain": "unconv.ai",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_2fb7cc9f",
+        "keyQuotes": [
+          "We built Un-0, an image generator powered by a simulated system of coupled oscillators.",
+          "On ImageNet 64×64 it reaches FID 6.74, matching the quality of leading conventional image generation methods when they were first published.",
+          "the oscillators are doing useful computation.",
+          "We believe it is possible to quickly push beyond Un-0; it is still early in the journey to reseat modern AI on physical dynamics and reach ~1000x energy-efficiency gains."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The model learns a coupling matrix and natural frequencies for each oscillator; inference evolves the system over time, and a small decoder reads out final phases as image latents.",
+            "point": "Un-0 uses coupled Kuramoto oscillators as the core computation instead of conventional neural network layers."
+          },
+          {
+            "explanation": "Removing dynamics or fixing oscillator weights significantly degrades FID, confirming that the trained nonlinear dynamics are essential for generation quality.",
+            "point": "Ablation studies demonstrate that the learned dynamics perform useful computation beyond random reservoirs or decoder-only baselines."
+          },
+          {
+            "explanation": "The model's performance sits alongside NCSN, DCGAN-TTUR, and BigGAN when first published, though it still trails later state-of-the-art like EDM and GDD.",
+            "point": "Un-0 matches early conventional generative models in quality on ImageNet 64×64 (FID 6.74) and expands the Pareto frontier for small models."
+          },
+          {
+            "explanation": "Coupled oscillators can be implemented directly in CMOS or other analog circuits, allowing the physics of the system to compute the dynamics, bypassing inefficient digital simulation.",
+            "point": "The work is motivated by potential 1000× energy efficiency gains through physical computing substrates."
+          },
+          {
+            "explanation": "The authors encourage the community to experiment with and extend models grounded in physical dynamics, noting that significant improvements are still possible.",
+            "point": "All model weights, training code, and ablation code are open-sourced to facilitate further research."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Un-0 is an image generator using coupled Kuramoto oscillators as the core computation, achieving competitive FID scores on CIFAR-10 and ImageNet 64×64, with all code and weights open-sourced.",
+        "originalTitle": "Introducing Un-0: Generating Images with Coupled Oscillators - Unconventional AI",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 01:04:53",
+        "publishTimeStamp": 1782407093000,
+        "qualified": false,
+        "readCount": 4,
+        "readTime": 21,
+        "readUrl": "https://www.bestblogs.dev/article/2fb7cc9f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Un-0, developed by Unconventional AI, introduces a generative image model that replaces conventional neural network layers with a simulated system of coupled oscillators (Kuramoto model). The oscillators evolve according to learned coupling strengths and natural frequencies, and a lightweight decoder converts the final oscillator phases into pixel images. On ImageNet 64×64, Un-0 reaches an FID of 6.74, matching the quality of early leading generative methods when first published. On CIFAR-10, it achieves FID 8.76 using 19.4M parameters. Ablation studies confirm that the learned dynamics contribute non-trivially beyond random reservoirs or decoder-only baselines. While the model still trails state-of-the-art conventional generators, it expands the Pareto frontier for small models and demonstrates a viable path toward energy-efficient physical computing substrates. The authors release model weights, training, and ablation code to encourage further exploration.",
+        "tags": [
+          "Image Generation",
+          "Kuramoto Oscillators",
+          "Physical Computing",
+          "AI Research",
+          "Model Release"
+        ],
+        "title": "Introducing Un-0: Generating Images with Coupled Oscillators - Unconventional AI",
+        "translateContent": null,
+        "url": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
+        "wordCount": 5097
+      },
+      {
+        "authors": [
+          "Paige Williams"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://media.newyorker.com/photos/6a304de66005eb7245a8fa9e/16:9/w_1280,c_limit/r49386.jpg",
+        "domain": "newyorker.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c0ee8803",
+        "keyQuotes": [
+          "Owning a car is not just a logistical issue; it is an identity issue. I have been an obsessively self-sufficient, licensed driver since age fifteen, no matter where in the world I’ve lived. Giving that up felt like a sort of death.",
+          "By the time a repo man shows up at someone's house to take their vehicle, they're oftentimes in bankruptcy, divorce, fighting with their spouse constantly. Financial ruin sometimes, even. Their life's falling apart.",
+          "Repo agents have been shot, stabbed, hit by cars. They've been beaten with tire irons, bottles, planks, chains.",
+          "The cost of doing this business has skyrocketed, but the price that's paid has been stagnant.",
+          "Subprime delinquencies have reached their highest levels since 2010."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Finance_Economy",
+        "mainDomainDesc": "Finance & Economy",
+        "mainPoints": [
+          {
+            "explanation": "The article opens with this stark fact and returns to it throughout, grounding Pitman's stories in a macroeconomic crisis where wages cannot keep up with the rising costs of cars, insurance, and fuel.",
+            "point": "Auto debt in the U.S. has reached $1.7 trillion, and repossessions are at levels unseen since the Great Recession."
+          },
+          {
+            "explanation": "The Uniform Commercial Code permits repossession without a court order as long as there is no 'breach of the peace,' a vague standard. Forwarders act as middlemen, squeezing agent margins and adding costs for borrowers.",
+            "point": "The repo industry is lightly regulated, with vast differences between states and a problematic reliance on forwarders."
+          },
+          {
+            "explanation": "The article connects its reporting to broader themes: a car is essential for work and daily life, and losing one can be devastating. The author's own emotional experience selling her car reinforces the point.",
+            "point": "Owning a car is deeply tied to identity and economic survival, especially for low-income and rural Americans."
+          },
+          {
+            "explanation": "Agents are frequently attacked; at least seven were killed in 2023. The industry's outlaw image persists despite efforts to professionalize, and Pitman's own videos show both calm professionalism and dangerous outbursts.",
+            "point": "Repo agents operate in a gray zone between enforcement and extortion, and the job carries significant risk."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This New Yorker piece profiles a Utah repo man named Matthew Pitman, using his career and the booming RepoNut YouTube channel as a window into America’s $1.7 trillion auto-debt crisis and the brutal, unregulated world of vehicle repossession.",
+        "originalTitle": "The Repo Man Coming for Your Ride",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 14:00:00",
+        "publishTimeStamp": 1782108000000,
+        "qualified": false,
+        "readCount": 4,
+        "readTime": 37,
+        "readUrl": "https://www.bestblogs.dev/article/c0ee8803",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_417544cc",
+        "sourceImage": "https://image.jido.dev/20260603215300_dc41295",
+        "sourceName": "The New Yorker Full Feed",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article follows Matthew Pitman, a veteran repo agent who runs the popular YouTube channel RepoNut, to explore the mechanics and human toll of the auto-repossession industry at a moment when American auto debt has reached $1.7 trillion and repossessions are at Great Recession levels. It details Pitman's methods—surveillance, GPS tagging, psychologically deft doorstep negotiations—and the physical dangers of the job (agents are shot, stabbed, killed). The piece expands into the broader economic forces behind the surge: rising car prices (average $50,000+), long loan terms (96 months), high subprime delinquencies, stagnant wages, and a fragmented legal landscape that leaves debtors vulnerable. It also examines the role of middleman forwarders, industry efforts to professionalize, and the emotional weight of losing a vehicle, which the author connects to her own experience selling her car. Through Pitman's story and interviews with other agents, the article paints a vivid picture of an industry on the front line of America's affordability crisis.",
+        "tags": [
+          "Consumer Debt",
+          "Auto Loans",
+          "Repossession",
+          "Economy & Society",
+          "Income Inequality"
+        ],
+        "title": "The Repo Man Coming for Your Ride",
+        "translateContent": null,
+        "url": "https://www.newyorker.com/magazine/2026/06/29/the-repo-man-coming-for-your-ride",
+        "wordCount": 9212
+      },
+      {
+        "authors": [
+          "Eliza Griswold"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://media.newyorker.com/photos/6a304de6612032e03d778ba1/16:9/w_1280,c_limit/r49274.jpg",
+        "domain": "newyorker.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_0c11c177",
+        "keyQuotes": [
+          "The best way to do it when you're explaining how to take care of an animal, you always say, 'Copy God's natural design.'",
+          "You don't have to stay poor. You don't have to accept being worse off than your parents. . . . You don't have to support leaders who lied to you and took advantage of you for your vote.",
+          "He's homophobic, so I'm not a fan. I also think he's racist."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "News_Media",
+        "mainDomainDesc": "News & Media",
+        "mainPoints": [
+          {
+            "explanation": "Kirk's message that America was founded as a Christian nation and that believers must reclaim control of society resonates with young followers who feel their values are under attack.",
+            "point": "Charlie Kirk's Christian nationalism has found a fertile ground among teens in Palm Beach County, linking faith with patriotism."
+          },
+          {
+            "explanation": "Lockdowns, mask mandates, and inconsistent health protocols led many adolescents to question government and expert guidance, aligning with Kirk's warnings about authoritarian overreach.",
+            "point": "The COVID-19 pandemic fueled teens' distrust of authority, making them receptive to Kirk's anti-establishment and anti-vaccine stance."
+          },
+          {
+            "explanation": "While the clubs provide community and debating opportunities for like-minded students, they also spark backlash from liberal peers, reflecting broader national divides.",
+            "point": "Club America chapters create a platform for conservative teens but also intensify school polarization."
+          },
+          {
+            "explanation": "His death turned him into a martyr figure, inspiring teens to start new chapters and rededicate themselves to his vision, even as some members wrestled with the direction of the movement.",
+            "point": "Kirk's assassination galvanized his young followers, accelerating the expansion of Club America despite internal dissent."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A deep report on how Charlie Kirk's Christian nationalist youth movement, Club America, is shaping teenagers in Palm Beach County, blending faith, patriotism, and political polarization.",
+        "originalTitle": "The Teen Believers in a Christian America",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 14:00:00",
+        "publishTimeStamp": 1782108000000,
+        "qualified": false,
+        "readCount": 4,
+        "readTime": 27,
+        "readUrl": "https://www.bestblogs.dev/article/0c11c177",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_417544cc",
+        "sourceImage": "https://image.jido.dev/20260603215300_dc41295",
+        "sourceName": "The New Yorker Full Feed",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article, from The New Yorker's Annals of Religion, offers an in-depth look at the rise of Club America, the high-school offshoot of Turning Point USA, following the assassination of its founder, Charlie Kirk. Through intimate portraits of teenage followers in Palm Beach County—including Gracie Bell Joyce, a sixteen-year-old unschooler who started a local chapter—and students at the elite Benjamin School, the reporter examines how Kirk's fusion of evangelical Christianity and far-right politics has galvanized a generation. The piece also captures the tensions within schools and among peers, as liberal students like Liam Duffy push back against Kirk's rhetoric on race, gender, and immigration. By weaving together personal stories, historical context on the Seven Mountains Mandate, and the impact of the COVID-19 pandemic on teens' distrust of authority, the article provides a nuanced exploration of the current youth religious-right movement in America.",
+        "tags": [
+          "Christian nationalism",
+          "Youth activism",
+          "US politics",
+          "Religion & society",
+          "Conservative movement"
+        ],
+        "title": "The Teen Believers in a Christian America",
+        "translateContent": null,
+        "url": "https://www.newyorker.com/magazine/2026/06/29/the-teen-believers-in-a-christian-america",
+        "wordCount": 6629
+      },
+      {
+        "authors": [
+          "Merve Emre"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://media.newyorker.com/photos/69efcc5ccb9f6b093ebb4258/16:9/w_1280,c_limit/Emre-La%CC%81szlo%CC%81-Krasznahorkai.jpg",
+        "domain": "newyorker.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_8132a12f",
+        "keyQuotes": [
+          "I consider practically all of my books to have been failures, and if this sequence of failures had not occurred, I would have finished my career after my first book.",
+          "Everything that is beautiful—whether natural or created by human beings, whether created by God or by life itself—exists in an inviolable domain, which never changes. Only we change, only our relationship to this domain changes.",
+          "When a human being loses his sense of identity, there will be a need for so-called national identity and similarly idiotic ideas.",
+          "The first movement of despair, when a person is uncertain, when they feel frail, is to start looking for a form that will free them from this uncertainty, and then these political ideologies start coming very easily."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "He argues that emotionally charged declarations cannot be broken into tidy sentences, which drove his shift toward fluid, confessional prose after middle age.",
+            "point": "Krasznahorkai's long sentences mimic the 'explosive confession' of spoken language."
+          },
+          {
+            "explanation": "This perfectionism is rooted in flaws he perceives in rhythm, melody, and form when forced to read his own texts aloud with film director Béla Tarr.",
+            "point": "He considers all his books failures, which paradoxically compels him to keep writing."
+          },
+          {
+            "explanation": "While beauty (art, nature) remains inviolable, contemporary humans can no longer experience it as transcendent due to commodification and a culture of pleasure.",
+            "point": "The sacred connection to beauty has been ruptured in modern technical civilization."
+          },
+          {
+            "explanation": "He criticizes the use of tradition to create enemies and laments that younger generations inherit a world where 'the entire occurrence of human civilization' as one epoch is over.",
+            "point": "Cultural populism distorts tradition into a political ideology, which he finds dangerous."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "In an exclusive interview, Nobel laureate László Krasznahorkai discusses his evolving sentences, his obsession with failure, and the erosion of a sacred connection to beauty in modern technical civilization.",
+        "originalTitle": "László Krasznahorkai Writes Because He Fails",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-28 14:00:00",
+        "publishTimeStamp": 1782626400000,
+        "qualified": false,
+        "readCount": 3,
+        "readTime": 17,
+        "readUrl": "https://www.bestblogs.dev/article/8132a12f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_7d7c4977",
+        "sourceImage": "https://image.jido.dev/20260603215201_dc41295",
+        "sourceName": "The New Yorker",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This New Yorker interview with 2025 Nobel literature laureate László Krasznahorkai, conducted by Merve Emre, delves deep into his creative philosophy. Krasznahorkai explains how his notoriously long, spiraling sentences emerged from a desire to mimic „explosive confession“ in spoken language, an approach he developed after years of dissatisfaction with his own work. He reveals that he considers nearly all his books failures, a perfectionism that drives him to write. The conversation explores his central theme: the loss of a transcendent, sacred relationship to beauty in a disenchanted, pleasure-driven technical age. Krasznahorkai laments that while beauty endures (Michelangelo, the Acropolis), fewer people can truly experience it. He critiques the commodification of culture and the rise of traditionalist populism. The interview offers a rare, intimate portrait of a major literary figure's mind — his influences (Dostoevsky, Bach, Japanese art), his creative process (pacing rooms, composing sentences internally), and his melancholic yet sharp diagnosis of modern cultural crisis.",
+        "tags": [
+          "Literature & Writing",
+          "Cultural Criticism",
+          "Interviews",
+          "Aesthetics",
+          "Philosophy & Ideas"
+        ],
+        "title": "László Krasznahorkai Writes Because He Fails",
+        "translateContent": null,
+        "url": "https://www.newyorker.com/culture/the-new-yorker-interview/laszlo-krasznahorkai-writes-because-he-fails",
+        "wordCount": 4073
+      },
+      {
+        "authors": [
+          "Conor O'Neill"
+        ],
+        "candidateSource": null,
+        "category": "Sports",
+        "categoryDesc": "Sports",
+        "cover": "https://static01.nyt.com/athletic/uploads/wp/2026/06/16004315/GettyImages-2281147149.jpg?width=1200&height=630&fit=cover",
+        "domain": "nytimes.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3c849a86",
+        "keyQuotes": [
+          "History shows that World Cup minnows have always been capable of battling admirably against the odds, and the class of 2026 is no exception.",
+          "Fears that they would be swallowed up by the established favourites, though, have proved well wide of the mark."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "The tournament has a 2.3 goal average winning margin and average team ranking of 32.4, suggesting a diluted field, but standout performances like Cape Verde's draws show resilience.",
+            "point": "Expanded World Cup increases average winning margin and low average ranking, but that doesn't capture underdog stories."
+          },
+          {
+            "explanation": "Most ranking mismatches end in draws for lower-ranked teams, with only two wins by teams ranked 30+ places below opponents (Ghana and South Africa), consistent with historical patterns.",
+            "point": "Upsets are mostly draws rather than wins; historical underdog win rate hasn't risen significantly."
+          },
+          {
+            "explanation": "There have been eight matches with ranking gap >50 in this tournament alone (previously six total from 1994-2022), yet lower-ranked teams avoid defeat in about 50% of severe mismatches, similar to past tournaments.",
+            "point": "More ranking mismatches occur due to expansion, but underdog performance rate remains similar."
+          },
+          {
+            "explanation": "The article compares to 2002 World Cup where Senegal and South Korea earned wins that sparked deep runs, but overall underdog success rates are consistent across eras.",
+            "point": "Historical comparison shows minnows have always been capable of battling against the odds."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article examines whether the gap between top and bottom teams has narrowed in the expanded 2026 World Cup, using data to show that while average winning margins are higher, minnows have produced resilient draws, though upsets are mostly draws rather than wins.",
+        "originalTitle": "It’s the biggest World Cup but is the gap between best and worst teams smaller than ever?",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 18:00:13",
+        "publishTimeStamp": 1782468013000,
+        "qualified": false,
+        "readCount": 3,
+        "readTime": 4,
+        "readUrl": "https://www.bestblogs.dev/article/3c849a86",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b143d403",
+        "sourceImage": "https://www.nytimes.com/athletic/static/img/transparent-background-dark-favicon-144x144.png",
+        "sourceName": "Soccer - The Athletic",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article analyzes the competitive balance of the 2026 World Cup after its expansion to 48 teams. It presents data showing the tournament has the lowest average FIFA ranking (32.4) on record and a higher average winning margin (2.3 goals) than previous group stages. However, the author argues that these surface-level statistics mask compelling underdog stories, such as Cape Verde holding Spain and Uruguay to draws, and Curacao drawing with Ecuador after a heavy loss. The analysis uses historical comparisons to show that underdogs have always been competitive in World Cups, avoiding defeat roughly once every three encounters. While the expanded format creates more ranking mismatches, the rate of upset wins has not dramatically increased; most surprises are draws. The article concludes that fears of minnows being overwhelmed have proved unfounded, and the class of 2026 continues a tradition of spirited resistance.",
+        "tags": [
+          "Football / Soccer",
+          "World Cup",
+          "Tactical Analysis",
+          "Sports Data",
+          "Competitive Balance"
+        ],
+        "title": "It’s the biggest World Cup but is the gap between best and worst teams smaller than ever?",
+        "translateContent": null,
+        "url": "https://www.nytimes.com/athletic/7393482/2026/06/26/competitive-biggest-world-cup/",
+        "wordCount": 821
+      },
+      {
+        "authors": [
+          "Emily Cureton Cook"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://www.propublica.org/wp-content/uploads/2026/06/20260404-Nash-DeschutesIrrigation_101-SOCIAL_maxHeight_3000_maxWidth_3000.jpg?w=1200",
+        "domain": "propublica.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_4605aaef",
+        "keyQuotes": [
+          "At the same time, a few miles upstream, state law encouraged landowners to soak some of Oregon's most expensive real estate and least productive farmland, a ProPublica and Oregon Public Broadcasting analysis of water use has found.",
+          "Waste is like pornography: You know it when you see it.",
+          "The river always loses.",
+          "We're just wasting water. Really. We are."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "News_Media",
+        "mainDomainDesc": "News & Media",
+        "mainPoints": [
+          {
+            "explanation": "Oregon's 'first in time, first in right' system protects COID's allocation, forcing downstream farmers with junior rights to lose their water.",
+            "point": "Senior water rights legally entitle COID to divert over half the Deschutes River during drought."
+          },
+          {
+            "explanation": "Satellite data shows 45% of diverted water is lost in canals and 29% percolates or evaporates after delivery, leaving just 26% for crop consumption, almost entirely grass and pasture.",
+            "point": "Only one of every four gallons COID takes is absorbed by crops; most is wasted."
+          },
+          {
+            "explanation": "Oregon courts rarely find waste, allowing landowners to irrigate aesthetic lawns and luxury landscapes without consequence.",
+            "point": "The legal definition of 'beneficial use' is so broad that growing any non-native crop qualifies."
+          },
+          {
+            "explanation": "COID actively patrols for unused land and sends letters warning landowners to keep irrigating, or risk cancellation of their water rights.",
+            "point": "The 'use it or lose it' rule incentivizes overconsumption to retain water rights."
+          },
+          {
+            "explanation": "While COID landowners enjoy abundant water, farmers like Chris Casad fallowed fields, and fish habitats suffer from reduced river flows of about 50% below ecological targets.",
+            "point": "Downstream farmers and ecosystems bear the cost of this inequitable system."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This investigation reveals how Oregon's century-old water rights law allows a wealthy irrigation district to waste vast amounts of water on grass and luxury estates while downstream farmers suffer crippling shortages during drought.",
+        "originalTitle": "An Oregon Law Lets One Wealthy Region Turn the Desert Green. When Drought Hits， Farmers Pay the Price.",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 17:00:00",
+        "publishTimeStamp": 1782464400000,
+        "qualified": false,
+        "readCount": 3,
+        "readTime": 21,
+        "readUrl": "https://www.bestblogs.dev/article/4605aaef",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_94ff64b6",
+        "sourceImage": "https://image.jido.dev/20260623050512_propublica-rss-logo.png",
+        "sourceName": "ProPublica",
+        "sourceVisibility": "SYSTEM",
+        "summary": "ProPublica and Oregon Public Broadcasting analyze satellite data and state records to expose the inequities of Oregon's water allocation system. The Deschutes River is heavily diverted by the Central Oregon Irrigation District (COID), which holds senior water rights from the early 1900s. During a historic drought, only 26% of the diverted water was consumed by crops—mostly grass and pasture—while the rest leaked, evaporated, or ran off. Meanwhile, downstream farmers like Chris Casad in Jefferson County were forced to fallow fields and face financial ruin. The article traces the legal doctrine of 'beneficial use' and 'waste,' showing how loosely defined terms allow wealthy landowners—including Phil Knight's horse ranch and a luxury estate sold for $4.8 million—to maintain green lawns and low-value crops. The state has rarely canceled water rights, and COID actively monitors to ensure landowners use water at least once every five years to avoid losing rights. The report combines data visualizations, historical context, personal stories, and expert interviews to argue that the system prioritizes property rights over ecological health and economic fairness.",
+        "tags": [
+          "Water Rights",
+          "Drought",
+          "Agriculture",
+          "Oregon",
+          "Investigative Journalism"
+        ],
+        "title": "An Oregon Law Lets One Wealthy Region Turn the Desert Green. When Drought Hits， Farmers Pay the Price.",
+        "translateContent": null,
+        "url": "https://www.propublica.org/article/deschutes-river-oregon-water-rights",
+        "wordCount": 5194
+      },
+      {
+        "authors": [
+          "Anna North"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://platform.vox.com/wp-content/uploads/sites/2/2026/06/Vox_MAHA_AP26143069137363.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.534031413613&w=1200",
+        "domain": "vox.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_f94be18f",
+        "keyQuotes": [
+          "\"It was our votes from MAHA and Kennedy that brought Trump into power, and so we definitely feel that they owe us what they promised,\" MAHA influencer Kelly Ryerson said.",
+          "\"MAHA will absolutely not budge on vaccines,\" Dunning told me.",
+          "\"He'd definitely be in the principal's office,\" Dunning said of Trump's health performance grade. \"We are not happy.\""
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "News_Media",
+        "mainDomainDesc": "News & Media",
+        "mainPoints": [
+          {
+            "explanation": "Trump's administration has sidelined vaccine skeptics, expanded glyphosate production, and rolled back chemical regulations, angering MAHA activists who feel betrayed.",
+            "point": "The MAHA-MAGA alliance is fracturing over broken health policy promises."
+          },
+          {
+            "explanation": "In Iowa, MAHA-backed Zach Lahn defeated Trump's candidate in the gubernatorial primary, signaling the movement's power to swing races outside MAGA control.",
+            "point": "MAHA is emerging as an independent political force, backing its own candidates."
+          },
+          {
+            "explanation": "Polls show MAHA voters prioritize reducing ultraprocessed foods and pesticides over vaccine reduction, but many activists refuse to compromise on immunization.",
+            "point": "Democrats have potential common ground with MAHA on food safety and environmental issues, but vaccines remain a major wedge."
+          },
+          {
+            "explanation": "With about a third of Americans identifying with the movement, its voters could abandon Trump, stay home, or even break for Democrats, reshaping electoral calculations.",
+            "point": "MAHA could become a decisive swing bloc in the 2028 election."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "The MAHA movement, once a key part of Trump's coalition, is now breaking away over unmet health policy promises, potentially reshaping the 2028 electoral landscape.",
+        "originalTitle": "MAHA is breaking up with Trump. Now what?",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 19:00:00",
+        "publishTimeStamp": 1782385200000,
+        "qualified": false,
+        "readCount": 3,
+        "readTime": 11,
+        "readUrl": "https://www.bestblogs.dev/article/f94be18f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_fdac8cb8",
+        "sourceImage": "https://image.jido.dev/20260604223051_vox_logo_rss_light_mode.png",
+        "sourceName": "Vox",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article examines the growing rift between the Make America Healthy Again (MAHA) movement and the Trump administration. Led by RFK Jr., MAHA supporters—many health-conscious and anti-vaccine—helped elect Trump but are now deeply disappointed by his administration's rollback of vaccine skepticism, pro-pesticide policies, and failure to deliver on health reforms. The piece documents key flashpoints: Trump's executive order boosting glyphosate production, the ouster of Kennedy's allies at HHS, and primary victories by MAHA-backed candidates like Zach Lahn in Iowa. It explores MAHA's evolution from a MAGA ally into an independent political force, and analyzes the difficult path for Democrats who share MAHA's concerns about food and environmental safety but clash over vaccine skepticism. With polling showing a third of Americans identify with MAHA, the movement could become a decisive swing bloc in 2028, though its deep distrust of institutions makes it unpredictable for either party.",
+        "tags": [
+          "US Politics",
+          "Health Policy",
+          "Elections",
+          "RFK Jr.",
+          "Donald Trump"
+        ],
+        "title": "MAHA is breaking up with Trump. Now what?",
+        "translateContent": null,
+        "url": "https://www.vox.com/politics/493107/maha-moms-maga-trump-rfk-jr-2026-2028",
+        "wordCount": 2602
+      },
+      {
+        "authors": [
+          "南方人物周刊"
+        ],
+        "candidateSource": null,
+        "category": "Lifestyle_Culture",
+        "categoryDesc": "Lifestyle & Culture",
+        "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7TNZTePrCt7qsoBoxhbr5Qo1nL3FYRRJ8EmiaNE1eloXg/0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_71fa38b7",
+        "keyQuotes": [
+          "Understanding each other is always more important than extracting interests.",
+          "I believe the problem of modern China was not 'arrogance,' not the 'tributary system' — the real problem was state governance capacity.",
+          "Diplomacy should not consist solely of negotiations. This might sound a bit silly, but diplomacy should also include 'joy.'"
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "The Dutch learned from the British lessons and complied with tributary rituals, receiving exceptional treatment from the Qianlong Emperor, including access to the innermost restricted areas of the Forbidden City — a privilege no European had ever received before.",
+            "point": "The successful 1795 Dutch mission to China challenges the China-West conflict narrative centered on Macartney's failure."
+          },
+          {
+            "explanation": "The Macartney mission made excessive demands (such as leasing coastal colonies), yet the Qing court had already shown flexibility; after the mission's failure, British attendants like George Barrow wrote travel accounts attributing the outcome to Chinese arrogance, and this narrative became the Western mainstream.",
+            "point": "The 'Qing arrogance and closure' narrative was an excuse the British invented for their failure, later inherited by historians like John King Fairbank."
+          },
+          {
+            "explanation": "Andrade points out that the Qing learned quite well during the Self-Strengthening Movement, but the government was severely aged and internally fractured; Japan, after the fall of the shogunate, gained an opportunity for a fresh start, while the massive and rigid Qing failed to rebuild itself, ultimately losing the 1894 Sino-Japanese War.",
+            "point": "The core of modern China's decline lay in the aging of state governance capacity, not cultural conservatism or the tributary system."
+          },
+          {
+            "explanation": "Before the mid-18th century, China's military technology was on par with the West; Europe broke through through frantic innovation driven by intense internal warfare, while China enjoyed 80 years of peace — this divergence was the result of specific historical circumstances.",
+            "point": "The military Great Divergence between China and the West was a recent contingency, not a long-term inevitability."
+          },
+          {
+            "explanation": "Using examples like Qianlong showing the Dutch mission ice games and fireworks, Andrade illustrates that diplomacy should not consist solely of negotiations — interpersonal understanding and joyful experiences matter just as much.",
+            "point": "Contemporary international relations should emphasize 'understanding each other' and 'interesting diplomacy,' incorporating joy and cultural exchange."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through an exclusive interview with American sinologist Tonio Andrade, this article uses the story of the successful 1795 Dutch mission to China to challenge the 'Qing arrogance and closure' narrative shaped by the failed Macartney mission, and reexamines the Great Divergence between China and the West from historical, political, and national power perspectives.",
+        "originalTitle": "1795 年，荷兰使团在北京获顶格礼遇，英国人为何泼脏水？",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 17:30:00",
+        "publishTimeStamp": 1782379800000,
+        "qualified": false,
+        "readCount": 3,
+        "readTime": 33,
+        "readUrl": "https://www.bestblogs.dev/article/71fa38b7",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_557d1877",
+        "sourceImage": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7TNZTePrCt7qsoBoxhbr5Qo1nL3FYRRJ8EmiaNE1eloXg/0",
+        "sourceName": "南方人物周刊",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article centers on an in-depth conversation between Southern People Weekly reporter and Tonio Andrade, recounting a forgotten history: in 1795, the Dutch mission received top-level treatment in Beijing, forming a stark contrast to the failure of the British Macartney mission two years earlier. By mining Dutch archives, mission diaries, Korean records, and Qing court documents, Andrade还原了荷兰人如何吸取英国人教训、入乡随俗，最终赢得乾隆欢心并获准参观紫禁城最深处。文章进而剖析了英国随员如何塑造'中国人傲慢'的叙事，并被费正清等历史学家继承，成为解释中国衰落的主流框架。欧阳泰反驳了这种观点，认为近代中国的问题不在于朝贡体系或傲慢，而在于国家治理能力的老化与僵化，并以工业革命后欧洲内部的激烈竞争为参照，指出中西军事大分流是一个晚近的偶然事件。最后，欧阳泰呼吁在当今国际紧张局势下，外交应包含更多'快乐'与相互理解。",
+        "tags": [
+          "History",
+          "China Relations",
+          "Sinology",
+          "Cultural Studies",
+          "In-Depth Reporting"
+        ],
+        "title": "In 1795, the Dutch Mission Received Top-Level Treatment in Beijing — Why Did the British Smear Them?",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MTY0MzI5NDcwMQ==&mid=2651372745&idx=1&sn=479c299e5383c4d65c901efe87815297",
+        "wordCount": 8070
+      },
+      {
+        "authors": [
+          "Cem Dervis"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260605151743_y18.svg",
+        "domain": "dervis.de",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_41c63aff",
+        "keyQuotes": [
+          "When a digital store labels a movie, game, or book as a purchase, the transaction is usually a revocable license rather than ownership of the file.",
+          "Digital storefronts generally sell access rather than property. If the service or account relationship ends, access to the library can end with it.",
+          "A Blu-ray disc, game cartridge, or printed book generally cannot be removed from a shelf by a remote policy change."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "When you 'buy' a digital movie, game, or book, you typically receive a license that can be revoked if the store loses rights, shuts down, or changes policy. Multiple lawsuits and platform shutdowns prove this.",
+            "point": "Digital purchases are revocable licenses, not property ownership."
+          },
+          {
+            "explanation": "The article documents over a dozen cases where purchased content disappeared: Disney+ removed original films, Sony erased Discovery seasons, and stores like Nintendo eShop shut down, making thousands of games permanently unavailable.",
+            "point": "Digital content can be removed or delisted without notice."
+          },
+          {
+            "explanation": "Blu-ray delivers 50–128 Mbps video with lossless audio, far exceeding streaming quality. Discs require no account or internet connection, and cannot be remotely altered or deleted.",
+            "point": "Physical media offer superior quality and long-term access."
+          },
+          {
+            "explanation": "Streaming subscription costs have increased significantly, while content can be downgraded (e.g., compressed audio) or have features removed. Physical media maintain consistent quality with no recurring fees.",
+            "point": "Digital ecosystems can raise prices and restrict usage arbitrarily."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article argues that digital purchases are revocable licenses rather than true ownership, using extensive case studies to show how content can be removed, altered, or lost, making physical media a more reliable choice for preservation, quality, and consumer rights.",
+        "originalTitle": "The Case for Physical Media Ownership | Cem Dervis",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 08:00:00",
+        "publishTimeStamp": 1782518400000,
+        "qualified": false,
+        "readCount": 2,
+        "readTime": 25,
+        "readUrl": "https://www.bestblogs.dev/article/41c63aff",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article builds a comprehensive case for physical media ownership by dissecting the nature of digital transactions. It explains that most 'purchases' are actually revocable licenses, citing legal cases and consumer lawsuits. It then catalogs numerous instances where digital content was removed from users' libraries due to license expirations, service shutdowns, or platform policy changes—including examples from Disney+, HBO Max, PlayStation Store, Nintendo eShop, and Google Stadia. The piece also compares streaming quality (bitrate, compression artifacts, lossy audio) unfavorably to Blu-ray, highlights subscription price hikes, and documents cases of remote deletion (e.g., Amazon's removal of Orwell's *1984*) and post-release alterations (e.g., Disney+ edits to Star Wars). The conclusion is implicit: physical media gives the buyer actual control, resale value, and offline access that digital licenses cannot match.",
+        "tags": [
+          "Physical Media",
+          "Digital Rights",
+          "DRM",
+          "Streaming",
+          "Content Ownership"
+        ],
+        "title": "The Case for Physical Media Ownership | Cem Dervis",
+        "translateContent": null,
+        "url": "https://dervis.de/physical/",
+        "wordCount": 6139
+      },
+      {
+        "authors": [
+          "William Davies"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://i.guim.co.uk/img/media/7afa993ce3aea9e304af1da7ea3b7c7fee504f6f/758_1324_2489_1991/master/2489.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9462516bc6eae647f5f2ebf75f47f3d3",
+        "domain": "theguardian.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_aea3b4b9",
+        "keyQuotes": [
+          "Control is a watchword of our times.",
+          "If an animal doesn't have the capacity to connect behaviour and punishment when there is a delay between the two, what happens if you eliminate the delay?",
+          "Freedom from guilt would mean living in the moment and forgetting one's sins: in other words, becoming more like dogs."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Productivity_Growth",
+        "mainDomainDesc": "Productivity & Growth",
+        "mainPoints": [
+          {
+            "explanation": "The author ties his daily failed attempts to control Dusty to broader societal phenomena like Brexit's 'take back control' and workplace surveillance, showing how control is both desired and elusive.",
+            "point": "The struggle to control a dog mirrors the modern human obsession with control over every aspect of life."
+          },
+          {
+            "explanation": "Behaviorism replaces punishment with rewards, yet when it fails, the blame shifts to the handler's environment – and extreme versions (shock collars) reveal its potential for coercion.",
+            "point": "Positive reinforcement avoids moral language but has its own limitations and dark side."
+          },
+          {
+            "explanation": "During the teenage phase, the dog appears to unlearn commands, forcing the owner to either resort to punishment or accept temporary helplessness, highlighting the fragility of reward-based control.",
+            "point": "Dog adolescence challenges the logic of behaviorism and tests the owner's commitment to non-punitive methods."
+          },
+          {
+            "explanation": "Nietzsche argued that guilt enables humans to connect delayed actions to consequences; dogs live in the moment. Modern dog training's rejection of moral judgment ironically mimics a Nietzschean critique of moral discipline.",
+            "point": "Human guilt and moral responsibility are what distinguish us from dogs, but behaviorism tries to eliminate that distinction."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A sociologist reflects on the challenge of training his chaotic boxer dog, drawing parallels to broader questions of power, control, and the limits of behaviorism and morality.",
+        "originalTitle": "What training my chaotic dog taught me about power， control – and human beings",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 12:00:04",
+        "publishTimeStamp": 1782360004000,
+        "qualified": false,
+        "readCount": 2,
+        "readTime": 17,
+        "readUrl": "https://www.bestblogs.dev/article/aea3b4b9",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_58ee9643",
+        "sourceImage": "https://image.jido.dev/20260604114532_guardian-logo-rss.c45beb1bafa34b347ac333af2e6fe23f.png",
+        "sourceName": "The Guardian",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author, a sociologist, recounts the struggle of training his high-energy boxer puppy Dusty, from the humiliation of failed park encounters to the despair of adolescence. He draws on dog-training experts like Steve Mann and links behaviorism's positive reinforcement to Nietzsche's critique of morality and guilt. The narrative explores how the quest for control over a dog mirrors society's broader anxieties about surveillance, power, and autonomy. The article questions whether behaviorist techniques are sufficient when moral language fails, and reflects on the neuroscience of puppy socialization and the conceptual gap between punishment and understanding. Ultimately, it suggests that the experience of trying and failing to control a chaotic animal reveals deep truths about human nature and social control.",
+        "tags": [
+          "Dog Training",
+          "Behavioral Science",
+          "Control",
+          "Personal Growth",
+          "Philosophy"
+        ],
+        "title": "What training my chaotic dog taught me about power， control – and human beings",
+        "translateContent": null,
+        "url": "https://www.theguardian.com/news/ng-interactive/2026/jun/25/what-training-my-chaotic-dog-taught-me-about-power-control-and-human-beings",
+        "wordCount": 4044
+      },
+      {
+        "authors": [
+          "Hua Hsu"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://media.newyorker.com/photos/6a316b8a214688e278aaf34b/16:9/w_1280,c_limit/r49122.jpg",
+        "domain": "newyorker.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_dd40ddfd",
+        "keyQuotes": [
+          "The reason they call it the American Dream is because you have to be asleep to believe it.",
+          "The American Dream is at once a story of unyielding, collective progress and something we experience individually. Success is relative, and failure is easily internalized as our fault alone.",
+          "Can we hold to the good and escape from the bad?",
+          "I picked the cotton, and I carried it to market, and I built the railroads under someone else's whip for nothing. For nothing.",
+          "The dream is not losing."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "James Truslow Adams named the dream in 1931 to highlight its precarious state and need for fortification, not to celebrate an existing reality.",
+            "point": "The American Dream was coined during the Depression as a deliberate project to reinvigorate a faltering national faith."
+          },
+          {
+            "explanation": "While economic expansion created broad middle-class stability, African Americans remained excluded, and James Baldwin argued that the dream was built on the backs of enslaved labor.",
+            "point": "Postwar prosperity made the dream real for many, but its benefits were never equally distributed."
+          },
+          {
+            "explanation": "Success is relative and failure feels personal, leading to the 'fear of falling' and a politics focused on individual status rather than class-based action.",
+            "point": "The dream's emphasis on individual striving internalizes failure and erodes collective solidarity."
+          },
+          {
+            "explanation": "Pew finds only 47% trust the dream today; Gen Z hopes for debt-free stability, not riches; and some Americans now look abroad for mobility.",
+            "point": "Contemporary disillusionment is measurable and generational."
+          },
+          {
+            "explanation": "Adams's vision was not about cars and salaries but about a social order enabling each person's full potential—a vision Hsu's students are still searching for.",
+            "point": "Reimagining the American Dream requires recovering its original collective, non-materialist spirit."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article traces the origin and evolution of the American Dream from James Truslow Adams's 1931 coinage, through postwar prosperity, civil rights critiques, economic stagnation, and contemporary disillusionment, arguing that its future depends on reimagining the dream collectively.",
+        "originalTitle": "The Curious Career of “the American Dream”",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 14:00:00",
+        "publishTimeStamp": 1782108000000,
+        "qualified": false,
+        "readCount": 2,
+        "readTime": 15,
+        "readUrl": "https://www.bestblogs.dev/article/dd40ddfd",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_417544cc",
+        "sourceImage": "https://image.jido.dev/20260603215300_dc41295",
+        "sourceName": "The New Yorker Full Feed",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Hua Hsu's essay explores the curious career of the American Dream, a phrase coined by historian James Truslow Adams during the Great Depression in his book “The Epic of America.” Originally a vision of a society where everyone could reach their fullest potential regardless of birth, it became a national creed and global brand. Hsu examines how the dream was both realized and betrayed: postwar economic expansion made upward mobility a reality for many, but racial subjugation and growing inequality exposed its limits. He revisits the 1965 Baldwin-Buckley debate, the changing meaning of success in the 1960s, and the decline of economic mobility since the 1970s (Chetty's research shows the likelihood of outearning one's parents fell from 92% to 50%). The article also reports on contemporary indicators of disillusionment—Pew polling, Gen Z's modest hopes, the rise of crypto and prediction markets, and even the trend of Americans moving abroad or fetishizing China. Hsu visits the Milken Center for Advancing the American Dream, a museum of exceptionalism, and reflects on the gap between its polished narrative and the reality of a militarized D.C. and ongoing immigration crackdowns. Finally, he describes teaching a class on the American Dream, where students grapple with whether the dream still means anything and what alternative visions might replace it. The essay concludes by returning to Adams's original emphasis on collective self-improvement and the open reading room of the Library of Congress, suggesting that the dream's future lies in learning to dream differently.",
+        "tags": [
+          "American Dream",
+          "Cultural History",
+          "Social Mobility",
+          "American Identity",
+          "Political Discourse"
+        ],
+        "title": "The Curious Career of “the American Dream”",
+        "translateContent": null,
+        "url": "https://www.newyorker.com/magazine/2026/06/29/the-curious-career-of-the-american-dream",
+        "wordCount": 3637
+      },
+      {
+        "authors": [
+          "Harriet Grant"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://i.guim.co.uk/img/media/3ca7413229a0cc970aa164aa79e666c6f27da696/0_1460_6000_4800/master/6000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d184e902f594ff53b37339fe4d80abd0",
+        "domain": "theguardian.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_356531b8",
+        "keyQuotes": [
+          "He was an ordinary man. A good dad. There aren't signs and no one should be expected to spot them before it happens.",
+          "I get why people ask if I'm sure he didn't abuse me. But this isn't just a random, unusual thing; it happens all the time.",
+          "Once you are in that space, you will learn you aren't alone; other people will encourage your sexual interest in children."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "The CPS dropped charges against Mark because the messages were exchanged in a private chat with a recipient who responded in kind, making it hard to prove intent to deprave or corrupt under the Obscene Publications Act.",
+            "point": "Fantasy child abuse chat can be legally protected if shared privately between like-minded participants."
+          },
+          {
+            "explanation": "Emily was told by police that she was not a victim under the law—the 'victim' was the undercover officer who read the messages. This caused lasting psychological harm and dissociation.",
+            "point": "Victims of fantasy abuse face unique trauma and lack legal recognition."
+          },
+          {
+            "explanation": "Clare McGlynn and Michael Sheath explain that community chat creates an echo chamber where boundaries are pushed, encouraging real-world abuse.",
+            "point": "Experts warn that online fantasy chat normalizes and escalates child abuse interest."
+          },
+          {
+            "explanation": "Amendments to the Crime and Policing Act now ban step-incest and adult-performer child role-play in porn, but no specific offence covers written advocacy of child sexual abuse.",
+            "point": "Emily’s personal advocacy spurred legislative change but a legal gap remains."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A woman recounts how her father was arrested for allegedly sexually abusing her after fantasizing about it online—only for the charges to be dropped due to a legal loophole, sparking her campaign for law reform.",
+        "originalTitle": "My dad bragged online about sexually abusing me. But he was making it all up",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 19:00:03",
+        "publishTimeStamp": 1782558003000,
+        "qualified": false,
+        "readCount": 1,
+        "readTime": 17,
+        "readUrl": "https://www.bestblogs.dev/article/356531b8",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_58ee9643",
+        "sourceImage": "https://image.jido.dev/20260604114532_guardian-logo-rss.c45beb1bafa34b347ac333af2e6fe23f.png",
+        "sourceName": "The Guardian",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This Guardian feature tells the story of Emily, whose father Mark was arrested after an undercover police officer discovered him describing detailed fantasies of sexually abusing her in online chat rooms. Despite Emily’s insistence that the abuse never happened, the police pursued charges for indecent communication. However, the Crown Prosecution Service dropped the case, arguing that because Mark’s messages were shared privately with an apparently like-minded recipient, they could not prove the material was intended to be indecent or obscene. The article follows Emily and her mother Fiona through the shock of the arrest, the unraveling of their family, and Emily’s subsequent determination to challenge the legal gap. It includes expert commentary from law professor Clare McGlynn and child abuse expert Michael Sheath, who argue that such fantasy chat normalizes and escalates interest in child abuse. Emily’s advocacy—meeting with her MP and the minister for victims—has contributed to recent legislative amendments banning step-incest pornography and performer role-playing as children, but a specific offence for text-based advocacy of child sexual abuse remains absent.",
+        "tags": [
+          "Child Sexual Abuse",
+          "Online Fantasy",
+          "Legal Reform",
+          "Victim Impact",
+          "Family Trauma"
+        ],
+        "title": "My dad bragged online about sexually abusing me. But he was making it all up",
+        "translateContent": null,
+        "url": "https://www.theguardian.com/society/2026/jun/27/my-dad-bragged-online-fantasy-sexual-abuse-made-it-up",
+        "wordCount": 4153
+      },
+      {
+        "authors": [
+          "Simon Hattenstone"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://i.guim.co.uk/img/media/175395b6e334cc5d8455932d2bb7a49eb2ce3062/0_357_6292_5033/master/6292.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d096d3741dff3e86f91e05331acfadee",
+        "domain": "theguardian.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_7b65c9b1",
+        "keyQuotes": [
+          "I just want to quit tennis right now.",
+          "I love that you can change anything at any time. You have to win 24 points to win a set and it's two sets. And if something goes wrong you still have the third set.",
+          "In real life, I try to avoid any conflict. I like to spread the joy. In real life, I'm a different person."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "After leading comfortably, the wind and lack of roof closure contributed to her loss of 10 straight games. In the interview, she defends her post-match comments as honest reactions and shows self-awareness about her emotional nature.",
+            "point": "Sabalenka's French Open collapse stemmed from external conditions and her own emotional volatility, yet she accepts it as part of her process."
+          },
+          {
+            "explanation": "Sabalenka explains that she and her team have agreed that releasing anger on court (yelling, throwing rackets) helps her reset and continue competing, contrasting with the traditional ideal of stoicism which she found destructive.",
+            "point": "Her on-court aggression and outbursts are a deliberate coping mechanism, not a lack of control."
+          },
+          {
+            "explanation": "The article recounts her apology to Gauff after insulting comments and the subsequent TikTok dance that mended their relationship, illustrating Sabalenka's warmth and desire for harmony away from tennis.",
+            "point": "Off court, she is a different person—avoiding conflict, spreading joy, and building genuine friendships with rivals like Coco Gauff."
+          },
+          {
+            "explanation": "Sergey Sabalenko died suddenly when Aryna was 19, and her obsessive drive to win two majors by age 25 became a mission; she achieved it and now holds multiple titles, but still carries that inspiration.",
+            "point": "Her father's death and their shared dream of Grand Slam titles remain a powerful motivator."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "An in-depth Guardian interview with world No 1 Aryna Sabalenka explores her emotional collapse at the French Open, her personal growth, and the duality between her fierce on-court persona and warm off-court character.",
+        "originalTitle": "‘I understand why some people think I’m a bitch’: world No 1 Aryna Sabalenka on screaming， stunt matches， and why she’s much nicer off court",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 13:00:35",
+        "publishTimeStamp": 1782536435000,
+        "qualified": false,
+        "readCount": 1,
+        "readTime": 18,
+        "readUrl": "https://www.bestblogs.dev/article/7b65c9b1",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_58ee9643",
+        "sourceImage": "https://image.jido.dev/20260604114532_guardian-logo-rss.c45beb1bafa34b347ac333af2e6fe23f.png",
+        "sourceName": "The Guardian",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is a detailed profile and interview with Aryna Sabalenka, the world No 1 in women's tennis, conducted by The Guardian ahead of Wimbledon. It opens with her shocking French Open quarter-final loss to Diana Shnaider, where she lost 10 consecutive games after being a set and a break up, leading her to say she wanted to quit tennis. The interview dives into her mindset after that collapse, her relationship with on-court emotions, past controversies (such as her post-match comments about Coco Gauff), and her reconciliatory TikTok dance with Gauff. Sabalenka reflects on her childhood in Belarus, the death of her father at age 43, and how his dream of her winning Grand Slams drove her. She discusses her powerful playing style (fastest forehand and serve in the women's game), her acceptance of emotional outbursts as a necessary release, and her transformation into a more controlled player while still being authentic. The article also touches on her engagement, her expensive jewellery, and her off-court personality—different from the fierce competitor on court. Throughout, the journalist presents a nuanced portrait of a complex athlete who is self-aware, funny, and warm in person, despite her reputation for implosions.",
+        "tags": [
+          "Tennis",
+          "Player Profile",
+          "Mental Health in Sports",
+          "Aryna Sabalenka",
+          "Sports Psychology"
+        ],
+        "title": "‘I understand why some people think I’m a bitch’: world No 1 Aryna Sabalenka on screaming， stunt matches， and why she’s much nicer off court",
+        "translateContent": null,
+        "url": "https://www.theguardian.com/sport/2026/jun/27/aryna-sabalenka-interview-tennis-world-no-1-women-not-quitting-french-open",
+        "wordCount": 4450
+      },
+      {
+        "authors": [
+          "Justin Chang"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://media.newyorker.com/photos/6a3d8e474199f3e91c167170/16:9/w_1280,c_limit/Chang-Romeria_image_20.jpg",
+        "domain": "newyorker.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_e48e5763",
+        "keyQuotes": [
+          "\"Sometimes it's calm, blue, peaceful. Sometimes wild, choppy,\" her mom wrote of this very sea, viewed from the apartment she shared with Marina's father.",
+          "\"If cinema is a sinking vessel, as so many are eager to suggest, its rusty hull may yet contain treasures worth scraping off and scrutinizing anew.\"",
+          "\"There's no time\"—a line that, depending on how you read it, sounds either ominous or liberating."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "Marina's journey to Vigo to secure a scholarship forces her to confront family secrets, addiction, and loss, with the film's calm surface giving way to sudden emotional intensity.",
+            "point": "\"Romería\" uses a pilgrimage structure to explore identity and belonging through a young woman's quest for official family recognition."
+          },
+          {
+            "explanation": "The return of a lost fishing boat transports two men to 1993, offering alternative identities and relationships, while Jenkin's meticulous, sensorially rich filmmaking grounds the fantastical in gritty realism.",
+            "point": "\"Rose of Nevada\" employs a ghost-ship premise and time travel to examine grief, community decay, and the chance for new lives."
+          },
+          {
+            "explanation": "Simón's semi-autobiographical approach relies on restrained observation and a late flashback, whereas Jenkin's film is overtly supernatural and crafted with a hand-cranked Bolex camera, creating a uniquely urgent visual language.",
+            "point": "Both films are mysteries of hidden pasts, lost loved ones, and the search for truth, yet they diverge in tone and technique."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This film review by Justin Chang analyzes Carla Simón's 'Romería' and Mark Jenkin's 'Rose of Nevada,' exploring their coastal settings, mysteries, and the restorative power of cinema.",
+        "originalTitle": "The Coastal Mysteries of “Romería” and “Rose of Nevada”",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 00:50:57",
+        "publishTimeStamp": 1782492657000,
+        "qualified": false,
+        "readCount": 1,
+        "readTime": 8,
+        "readUrl": "https://www.bestblogs.dev/article/e48e5763",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_7d7c4977",
+        "sourceImage": "https://image.jido.dev/20260603215201_dc41295",
+        "sourceName": "The New Yorker",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Justin Chang's review of two new films examines how 'Romería' and 'Rose of Nevada' use coastal landscapes—Spain's northwest shore and a Cornish village—to frame stories of hidden identities, past tragedies, and time travel. Chang highlights Simón's semi-autobiographical tale of an orphaned teen seeking her lineage, filmed with restrained realism that erupts into a poignant flashback sequence, and Jenkin's ghost-ship fable of two men transported to 1993, shot with a spring-wound Bolex camera that evokes cinematic time travel. The review delves into each film's themes of memory, loss, and the possibility of starting over, praising their emotional depth and technical craft while positioning them as a meaningful double bill. Chang's analysis underscores how both directors manipulate time and place to achieve resonant, melancholy mysteries.",
+        "tags": [
+          "Film Review",
+          "Mystery",
+          "Drama",
+          "Time Travel",
+          "Cinematography"
+        ],
+        "title": "The Coastal Mysteries of “Romería” and “Rose of Nevada”",
+        "translateContent": null,
+        "url": "https://www.newyorker.com/culture/the-current-cinema/the-coastal-mysteries-of-romeria-and-rose-of-nevada",
+        "wordCount": 1939
+      },
+      {
+        "authors": [
+          "Maddie Stone",
+          "Amy Westervelt",
+          "and Katie Worth"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://www.propublica.org/wp-content/uploads/2026/06/Wedges-OGD.jpg?resize=2000,1050",
+        "domain": "propublica.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3dac5700",
+        "keyQuotes": [
+          "Chaps, I have had a go at rewriting the paper.",
+          "made the solution seem easy.",
+          "We've just wasted so much time, meeting goals to limit global warming has become 'functionally impossible.'"
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "News_Media",
+        "mainDomainDesc": "News & Media",
+        "mainPoints": [
+          {
+            "explanation": "The $15 million grant was the largest corporate gift in Princeton's history and was used to amplify research that kept fossil fuels central, focusing heavily on carbon capture and storage.",
+            "point": "BP funded Princeton's Carbon Mitigation Initiative to find climate solutions compatible with continued fossil fuel use."
+          },
+          {
+            "explanation": "Emails and documents show BP's climate adviser proposed rewrites, and CEO John Browne contributed phrasing used in the paper's title. This collaboration exceeded normal academic norms.",
+            "point": "BP executives were deeply involved in shaping the 'Wedges' paper, reviewing drafts and suggesting language."
+          },
+          {
+            "explanation": "ProPublica's reporting shows the technology still faces financial and technical hurdles and is unlikely to work at the scale needed. The paper's optimistic framing made climate solutions seem easier than they are.",
+            "point": "The 'Wedges' paper oversold the readiness of carbon capture technology, describing it as already deployed at scale."
+          },
+          {
+            "explanation": "Without full disclosure of BP's involvement, the paper was widely accepted as independent science. Its ideas—like expanding natural gas—have helped perpetuate fossil fuel dominance.",
+            "point": "The paper's influence has persisted for decades, shaping policy, education, and UN reports, while obscuring BP's role."
+          },
+          {
+            "explanation": "Since the 1990s, oil companies have funded research centers, held veto power over studies, and amplified research that delays a transition away from fossil fuels, crowding out alternative approaches.",
+            "point": "The fossil fuel industry's funding of university research has systematically steered the global climate response toward industry-friendly solutions."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "An investigation reveals that BP secretly shaped the influential 'Wedges' climate paper by funding Princeton, reviewing drafts, and promoting technologies that kept fossil fuels central to climate solutions.",
+        "originalTitle": "Beyond Denial: How Oil Execs Shaped a Landmark Climate Study",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 00:28:01",
+        "publishTimeStamp": 1782404881000,
+        "qualified": false,
+        "readCount": 1,
+        "readTime": 27,
+        "readUrl": "https://www.bestblogs.dev/article/3dac5700",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_94ff64b6",
+        "sourceImage": "https://image.jido.dev/20260623050512_propublica-rss-logo.png",
+        "sourceName": "ProPublica",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This ProPublica and Drilled investigation details how BP's $15 million donation to Princeton University's Carbon Mitigation Initiative led to the creation of the paradigm-setting 'Wedges' climate paper. The paper made climate change seem solvable without abandoning fossil fuels, heavily promoting carbon capture and storage. BP executives reviewed multiple drafts, suggested language, and even attempted a rewrite. The paper's overselling of carbon capture technology, which remains unproven at scale, has influenced U.S. policy and international climate reports for two decades. The investigation reveals a coordinated strategy by oil companies to shape academic research, steer public perception, and delay a transition away from fossil fuels by funding research aligned with their interests.",
+        "tags": [
+          "Climate Change",
+          "Investigative Journalism",
+          "Fossil Fuels",
+          "Carbon Capture",
+          "Corporate Influence"
+        ],
+        "title": "Beyond Denial: How Oil Execs Shaped a Landmark Climate Study",
+        "translateContent": null,
+        "url": "https://www.propublica.org/article/wedges-climate-research-bp-fossil-fuel-princeton",
+        "wordCount": 6674
+      },
+      {
+        "authors": [
+          "三联生活周刊"
+        ],
+        "candidateSource": null,
+        "category": "Lifestyle_Culture",
+        "categoryDesc": "Lifestyle & Culture",
+        "cover": "https://image.jido.dev/20260527052057_9200e88.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3315b9a9",
+        "keyQuotes": [
+          "From the early internet addiction treatments characterized by electroshock, to later closed correctional institutions named 'traditional Chinese studies academies' and 'special training camps', and now to various institutions appearing in the forms of 'education consulting companies' and 'family education courses', this system continuously changes its external packaging and operational discourse, but its core remains unchanged—it is always built on the same social anxiety: concerns about out-of-control adolescents and even adults, and the expectation of 'quick correction'."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "News_Media",
+        "mainDomainDesc": "News & Media",
+        "mainPoints": [
+          {
+            "explanation": "Students often suffer physical punishment such as being beaten with rulers, forced to run, made to kneel with a tire around them, or other forms of corporal punishment for behaviors like talking back or stealing cigarettes; instructors can arbitrarily inflict violence. The institutions create the illusion of reform by isolating communication, enforcing gratitude brainwashing, and staging videos.",
+            "point": "Closed behavioral correction institutions employ violent punishment and psychological control as core methods."
+          },
+          {
+            "explanation": "Parents, driven by their children's problems such as school aversion, gaming addiction, and rebelliousness, and lacking effective channels for help, are attracted by the institutions' promises of 'quick correction' and staged videos, paying tuition fees ranging from 30,000 to 100,000 yuan per year. The industry's profit margins exceed 100%.",
+            "point": "Parental anxiety is precisely harvested by businesses, forming a gray industry with annual revenue exceeding 70 billion yuan."
+          },
+          {
+            "explanation": "From electroshock therapy to traditional Chinese studies academies, and then to education consulting companies on short-video platforms, the model continuously changes its name and appearance, but it is always built on parents' worries about their uncontrollable children and their expectations of 'quick correction'.",
+            "point": "The industry's form evolves with public opinion and platforms, but its core remains unchanged—exploiting social anxiety."
+          },
+          {
+            "explanation": "These institutions need to obtain licenses from multiple departments—education, civil affairs, and health—but in reality, most operate solely on a business license. Once reported or exposed, they move and rename, even restricting parents' visits.",
+            "point": "There is a severe lack of regulation; most institutions have no compliance qualifications and operate transiently."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through firsthand accounts from multiple affected students, parents, and industry insiders, this article deeply exposes the industrial chain of closed institutions operating under the guise of internet addiction treatment and rebellion correction, revealing how violent punishment, psychological manipulation, and profiteering models exploit parental anxiety to prey on families.",
+        "originalTitle": "700 亿元狂飙的失控产业背后：谁在收割一代焦虑家长？",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 12:08:00",
+        "publishTimeStamp": 1782360480000,
+        "qualified": false,
+        "readCount": 1,
+        "readTime": 25,
+        "readUrl": "https://www.bestblogs.dev/article/3315b9a9",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_dc76509f",
+        "sourceImage": "https://image.jido.dev/20260527052057_9200e88.jpeg",
+        "sourceName": "三联生活周刊",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is an in-depth investigative report from Sanlian Life Weekly. Through interviews with multiple teenagers who were sent to internet addiction treatment or special training institutions in Henan and other places, their parents, former instructors, psychological counselors, and scholars, it comprehensively reveals the dark side of the 'juvenile behavioral correction' industry with annual revenue exceeding 70 billion yuan. The article starts with specific cases—14-year-old Wu Rong was tricked by her parents into 'Lixuan Education' under the pretext of a police investigation, where she underwent 540 days of military-style management and ruler-based corporal punishment; 13-year-old Liu Jiahao suffered physical abuse at the 'Yashengsi Quality Education Base', including running with a tire around his body. The report traces the evolution of the industry: from Yang Yongxin's electroshock therapy to traditional Chinese studies academies and special training camps, and to the current form of education consulting companies and family education courses that attract customers through short-video platforms. Parents, anxious about their children's school aversion, rebelliousness, and gaming addiction, pay high fees (30,000 to 50,000 yuan per year) for 'quick correction' services, but the institutions often respond with violence, brainwashing, and fabricated videos. Scholars and lawyers point out that these institutions generally lack proper qualifications for education, medical care, and accommodation, and supervision is severely lacking. Many victims say such experiences leave long-term psychological trauma and further deteriorate their relationship with their parents, but parents are often unaware of this.",
+        "tags": [
+          "Social Issues",
+          "Family Education",
+          "Industry Trends",
+          "Investigative Reporting",
+          "Adolescent Psychology"
+        ],
+        "title": "Behind the 70 Billion Yuan Runaway Uncontrolled Industry: Who Is Preying on a Generation of Anxious Parents?",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MTc5MTU3NTYyMQ==&mid=2651588080&idx=1&sn=30fd5b9f209a16c7a01b9ad1452335d8",
+        "wordCount": 6130
+      },
+      {
+        "authors": [
+          "CSDN"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527130532_74bcc81.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_87f785ef",
+        "keyQuotes": [
+          "Research is a Markov decision process.",
+          "AI can never have its 'lawyer license revoked' because it lacks legal standing and cannot bear legal responsibility.",
+          "The truly valuable skills often lie at the lowest level of the system.",
+          "First make something, and the signals will naturally appear."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Vlad received a bonus from Jeff Dean for solving GPU memory overflows and adjusting the compiler, showing that 'doing the dirty work' is the true core value in AI competition, not just publishing papers.",
+            "point": "Frontier labs value low-level engineering and system optimization the most."
+          },
+          {
+            "explanation": "Due to the one-shot nature and huge cost of large model training, researchers must predict the final loss based on scaling laws (e.g., Kaplan, Chinchilla) rather than trial and error.",
+            "point": "The core of pre-training research is designing a training recipe with predictable scaling laws."
+          },
+          {
+            "explanation": "Using Gemini 2.0 Flash's pipeline prefill as an example, changing the model distribution broke the high-bandwidth memory bottleneck, significantly reducing latency for MoE models—the core victory of the 5-person team's 40-day sprint.",
+            "point": "Inference co-design is key to improving model efficiency—jointly optimizing architecture and hardware utilization."
+          },
+          {
+            "explanation": "Nate Lintz originally wrote search backend infrastructure; by solving LLM inference and compute overhead in business problems, he eventually internally transferred to become a pillar of DeepMind's inference core design.",
+            "point": "Ordinary engineers can pivot by helping LLMs go to production and solving inference overhead in practice."
+          },
+          {
+            "explanation": "Vlad uses the lawyer license example to point out that humans must sign off on AI's outputs; the distribution of responsibility and trust is the underlying logic of professional existence, and it is the ultimate line that programmers will not be replaced.",
+            "point": "AI cannot replace humans because it lacks the legal capacity to assume responsibility."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article is a compilation of a podcast interview with Vlad Feinberg, head of pre-training for DeepMind Gemini. It reveals the behind-the-scenes story of how Gemini 2.0 Flash was trained by a 5-person team working non-stop for 40 days, and delves into pre-training research, quantization, inference co-design, and the career transition path for programmers in the AI era.",
+        "originalTitle": "40 天不睡、5 人死磕！DeepMind 主管爆 Gemini 大战 DeepSeek 惨烈内幕，聊普通程序员的转型之路",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 17:48:00",
+        "publishTimeStamp": 1782208080000,
+        "qualified": false,
+        "readCount": 101,
+        "readTime": 65,
+        "readUrl": "https://www.bestblogs.dev/article/87f785ef",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_69dd9d",
+        "sourceImage": "https://image.jido.dev/20260527130532_74bcc81.jpeg",
+        "sourceName": "CSDN",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article is a compilation by CSDN of a podcast interview with Vlad Feinberg, head of pre-training at Google DeepMind Gemini. Vlad shares how he received an on-the-spot bonus from Jeff Dean for solving Bard's compiler and hyperparameter issues, emphasizing the core value of 'doing the dirty work' engineering capabilities in AI competition. He reveals that Gemini 2.0 Flash was trained by just a 5-person team working 24-hour shifts between Silicon Valley and Paris for 40 consecutive days without sleep. He also exposes that the Wall Street Journal deliberately omitted Gemini 2.0 Flash Thinking, which topped the LMSYS leaderboard, when comparing with DeepSeek to create an 'open-source surpassing' narrative. The article delves into the essence of pre-training research—designing a 'recipe' for predictable scaling laws—and underlying technical principles such as quantization, distillation, and pipeline prefill. Vlad uses the example that 'AI cannot have its lawyer license revoked' to illustrate human irreplaceability, and points out that ordinary engineers can transition to cutting-edge teams by helping LLMs land in practice and solving inference overhead through real-world accumulation. He also gives specific job-seeking advice: contribute to open-source projects like vLLM or TensorRT, implement a Transformer from scratch, and record an explanatory video. The full text is dense with information, covering both technical inside stories and career guidance.",
+        "tags": [
+          "Large Language Models",
+          "Model Pre-training",
+          "AI Engineering Practice",
+          "AI Job Seeking & Career Growth",
+          "Model Quantization"
+        ],
+        "title": "40 Days No Sleep, 5 People Grind It Out! DeepMind Director Reveals Gemini vs DeepSeek's Brutal Inside Story, and the Career Pivot for Ordinary Programmers",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247832407&idx=1&sn=b4147da5fc96c9142d2e359739973073",
+        "wordCount": 16131
+      },
+      {
+        "authors": [
+          "Datawhale"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045505_b03e263f",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_88c32945",
+        "keyQuotes": [
+          "What I wanted wasn't 'a comprehensive judgment from one smart AI,' but the judgment that comes from five biased experts arguing with each other.",
+          "Predictions are no longer one-way output; they can flow back and correct themselves.",
+          "Now, whether AI tools are worth using is no longer about chat—it's about the harness wrapped around them."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The author designed 5 Agents with distinct personalities (Data Analyst, Tactician, Risk Officer, etc.), allowing them to analyze independently without seeing each other's conclusions. When they agree, the result is more reliable; when they conflict, it indicates high uncertainty in the match.",
+            "point": "Replace single AI judgment with multi-role Agent parallel analysis, using role conflict to enhance conclusion reliability."
+          },
+          {
+            "explanation": "Kimi K2.7 natively understands image structures, directly extracting scores, matchups, venues, spectator counts, etc., from ESPN fixture screenshots, and cross-referencing with online data, simplifying data base construction.",
+            "point": "Use multimodal LLMs to directly read screenshots, eliminating the OCR parsing step."
+          },
+          {
+            "explanation": "After each prediction, record causes of errors (e.g., underestimating a weak team's defensive resilience) and feed these lessons into subsequent predictions, forming a 'predict → reflect → correct' closed loop, gradually improving the hit rate.",
+            "point": "Build a review Loop through error logs and scheduled tasks, enabling Agent self-evolution."
+          },
+          {
+            "explanation": "The author points out that simply replacing teams with stocks and fixtures with earnings reports makes the skeleton and methods fully reusable, highlighting that the core value of AI Agent harness lies in orchestration, decomposition, and memory—not domain specificity.",
+            "point": "This harness framework is transferable across scenarios."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "The author uses Kimi Code's /swarm feature to build a harness with 5 Agents predicting the World Cup in parallel, achieving a 58% hit rate (beating a coin flip) through role differentiation, multimodal data base, and a review loop, validating the transferability of multi-agent systems.",
+        "originalTitle": "我的 harness 实操拆解：5 个 Agent 并行预测世界杯！",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 22:07:00",
+        "publishTimeStamp": 1782137220000,
+        "qualified": false,
+        "readCount": 100,
+        "readTime": 12,
+        "readUrl": "https://www.bestblogs.dev/article/88c32945",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4688eb",
+        "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+        "sourceName": "Datawhale",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is the author's practical record of building a multi-agent prediction system using the Kimi Code command-line Agent. The core design includes: using ESPN fixture screenshots as the data source (leveraging K2.7's multimodal recognition to directly read scores and fixtures), defining 5 independent roles (Data Analyst, Tactician, Risk Officer, etc.) for parallel analysis via /swarm to avoid opinion convergence; adding an error log and scheduled tasks to form a daily loop, allowing Agents to adjust judgments based on past mistakes. The article provides hit rate comparisons against the Opta supercomputer and a coin flip (7 out of 12 matches, 58%), and showcases a case where Agents self-corrected after a failed prediction. The author emphasizes that the value of current AI tools lies in the ability of the external harness, not just chat, and that this framework can be transferred to scenarios like stock prediction.",
+        "tags": [
+          "AI Agent",
+          "AI Coding",
+          "Prompt Engineering",
+          "AI Workflow",
+          "Model Evaluation and Benchmarking"
+        ],
+        "title": "My Harness Walkthrough: 5 Agents Predict the World Cup in Parallel!",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723661&idx=1&sn=911048aaf1f81ebff0294cd91120f7e5",
+        "wordCount": 2791
+      },
+      {
+        "authors": [
+          "idoubi"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://cdn.v2ex.com/avatar/1346/b43a/551588_xlarge.png?m=1700445305",
+        "domain": "v2ex.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_976d0fef",
+        "keyQuotes": [
+          "Good architecture is not designed; it is evolved. But before you start iterating, think through separation of storage and compute, multi-tenant isolation, and fallback fault tolerance — it will save you a lot of time.",
+          "Multi-tenancy is not a feature; it is an architectural decision. The earlier you address it, the easier it becomes.",
+          "If two components have different failure domains, don't make them share a process.",
+          "Context management is the core competency of an Agent. An Agent that knows how to save tokens can survive."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The article affirms OpenClaw's product innovations such as multi-platform access, the SOUL mechanism, memory retrieval, proactive notifications, conversational installation, and multi-agent collaboration. At the same time, it points out serious engineering issues like single points of failure in its monolithic Node.js architecture, lack of multi-tenancy, high resource consumption, and poor cloud-native compatibility, making it unsuitable for production-grade platforms.",
+            "point": "OpenClaw's product innovations are worth learning from, but its engineering architecture has fundamental flaws."
+          },
+          {
+            "explanation": "OpenClaw was designed for a single user, and adding multi-tenancy later almost required a rewrite. FastClaw designed the (user_id, agent_id) isolation model from the first line of code and achieved native multi-tenancy through a Scope-based four-layer configuration inheritance.",
+            "point": "Multi-tenancy is not a feature; it is an architectural decision, and the sooner it is addressed, the easier it becomes."
+          },
+          {
+            "explanation": "FastClaw uses a stateless Gateway compute layer combined with a storage layer consisting of SQLite/Postgres plus S3. Any pod can handle any request, supporting horizontal scaling and switching storage backends at any time.",
+            "point": "Separation of storage and compute is the foundation of horizontal scaling and cloud-native readiness."
+          },
+          {
+            "explanation": "FastClaw isolates plugins via subprocesses, isolates code execution via Docker/E2B, and isolates writes via database transactions. It also implements a layer-by-layer fallback chain for LLM providers, tool providers, and sandboxes to ensure service continuity when external dependencies fail.",
+            "point": "Isolation is the prerequisite for reliability, and all external dependencies should have fallbacks."
+          },
+          {
+            "explanation": "The article summarizes practices such as streamlining SOUL files, on-demand memory retrieval, periodic session summarization, and layered tool descriptions, emphasizing that an Agent that can save tokens is the only one that can survive in a production environment.",
+            "point": "Context management is the core competency of an Agent; token awareness determines operational cost."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on over a year of hands-on experience with OpenClaw and hosting 500+ users, the author systematically summarizes the pros and cons of the OpenClaw architecture and shares core design principles and trade-offs in FastClaw's architecture, offering transferable engineering insights for Agent infrastructure design.",
+        "originalTitle": "从 OpenClaw 到 FastClaw：如何设计优秀的多 Agent 架构",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 19:31:14",
+        "publishTimeStamp": 1782127874000,
+        "qualified": false,
+        "readCount": 88,
+        "readTime": 23,
+        "readUrl": "https://www.bestblogs.dev/article/976d0fef",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_17e31348",
+        "sourceImage": "https://image.jido.dev/20260603223120_bdd3a34",
+        "sourceName": "V2EX",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article traces the author's journey from using OpenClaw for personal use to providing hosting services, and then to designing FastClaw from scratch. It first highlights OpenClaw's product innovations in areas like the SOUL mechanism, memory retrieval, multi-platform access, and proactive notifications, then delves into the fundamental flaws of its monolithic Node.js architecture, including single points of failure, lack of multi-tenancy, high resource usage, and poor cloud-native friendliness. Building on this, the author proposes FastClaw's design principles: separation of storage and compute, multi-tenancy with RBAC, session isolation, high concurrency, single-binary distribution, low memory footprint, plugin isolation, fallback chains, etc., and demonstrates how to implement these concepts in Go using architecture diagrams and code examples. Finally, it summarizes transferable lessons such as \"multi-tenancy is an architectural decision,\" \"storage determines everything,\" \"isolation is the prerequisite for reliability,\" \"fallbacks are essential,\" and \"tokens are money.\" The article combines product thinking with engineering depth, providing direct reference value for Agent platform developers.",
+        "tags": [
+          "AI Agent",
+          "Agent Architecture",
+          "AI Platform",
+          "Architecture Design",
+          "Engineering Practice"
+        ],
+        "title": "From OpenClaw to FastClaw: How to Design a Great Multi-Agent Architecture",
+        "translateContent": null,
+        "url": "https://www.v2ex.com/t/1222063#reply0",
+        "wordCount": 5567
+      },
+      {
+        "authors": [
+          "Datawhale"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045505_b03e263f",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_08d6d8e7",
+        "keyQuotes": [
+          "In the two years of speculative decoding research, the focus has been on \"how many drafts are written and how accurate they are,\" but DSpark turns its attention to another overlooked aspect: verification.",
+          "There is a vivid example of this drawback of parallel drafts: when the context simultaneously supports two continuations like 'of course' and 'no problem,' independent predictions may produce 'of problem' or 'no course'.",
+          "Under the premise of maintaining throughput, V4-Flash achieves a per-user generation speed increase of 60%–85%, and V4-Pro achieves 57%–78%."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "By adding a lightweight serial module (Markov head) after the parallel backbone, it compensates for sequential information between tokens with extremely low latency, eliminates multimodal collision at the tail of parallel drafts, and achieves acceptance lengths that comprehensively surpass existing solutions.",
+            "point": "DSpark balances parallel speed and autoregressive coherence through a semi-autoregressive draft model."
+          },
+          {
+            "explanation": "Using a confidence head and STS calibration to obtain true survival probability, the hardware-aware scheduler automatically shortens verification length under high concurrency, allocating compute power to queued requests and avoiding the waste of fixed-length verification.",
+            "point": "DSpark introduces dynamic verification scheduling, pruning invalid verification according to load."
+          },
+          {
+            "explanation": "In production environments of V4-Flash and V4-Pro, DSpark significantly increases per-user generation speed while maintaining throughput; under strict latency requirements, it can leverage concurrency capacity by several orders of magnitude.",
+            "point": "Online tests show 60%–85% generation speed improvement, reaching a new Pareto frontier in throughput and speed."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "An in-depth interpretation of the DSpark speculative decoding framework jointly released by DeepSeek and Peking University, which replaces MTP-1 with semi-autoregressive drafts and dynamic scheduling, boosting V4's online generation speed by 60%–85%.",
+        "originalTitle": "刚刚，DeepSeek V4 新成果发布，推理速度更快了！",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 23:21:00",
+        "publishTimeStamp": 1782573660000,
+        "qualified": false,
+        "readCount": 79,
+        "readTime": 12,
+        "readUrl": "https://www.bestblogs.dev/article/08d6d8e7",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 89,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4688eb",
+        "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+        "sourceName": "Datawhale",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article systematically introduces the newly deployed speculative decoding framework DSpark for DeepSeek V4 and its accompanying training framework DeepSpec. It first reviews the pros and cons of two mainstream approaches to speculative decoding (autoregressive drafting and parallel drafting), then focuses on two core innovations of DSpark: 1) Semi-autoregressive draft: By adding a lightweight serial module (Markov head by default) after the parallel backbone, it solves the multimodal collision problem at the tail of parallel drafts with extremely low latency (0.2%–1.3%). Measured acceptance length improves by 26.7%–30.9% compared to Eagle3 and 16.3%–18.4% compared to DFlash. 2) Dynamic verification scheduling: Using a confidence head and STS calibration to obtain reliable survival probability, a hardware-aware scheduler dynamically determines verification length based on load, avoiding the waste of compute power on invalid verification under high concurrency. Production data show that, with throughput remaining flat, per-user generation speed improves by 60%–85% on V4-Flash and 57%–78% on V4-Pro. The article also points out limitations of DSpark — the fixed cost of drafting for complex requests persists — and suggests future directions. Overall, it is an in-depth interpretation with high information density, clear technical principles, and solid engineering deployment results.",
+        "tags": [
+          "Speculative Decoding",
+          "DeepSeek V4",
+          "Inference Acceleration",
+          "Large Language Model",
+          "Engineering Practice"
+        ],
+        "title": "Just Now: DeepSeek V4 New Results Released, Inference Speed Gets Faster!",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723779&idx=1&sn=8f11646fe0bf88170e822247e536ae64",
+        "wordCount": 2779
+      }
+    ],
+    "pageCount": 167,
+    "pageSize": 20,
+    "totalCount": 3331
+  },
+  "message": null,
+  "requestId": "T2cf6786872724e69891fd33ca6e9fe98",
+  "success": true
+}

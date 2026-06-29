@@ -1,0 +1,86 @@
+{
+  "authors": [
+    "AlexZhang",
+    "cuicheng",
+    "Jun Zhang",
+    "Manhui Lin",
+    "Yue Zhang",
+    "yubo",
+    "leo-q8"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn-uploads.huggingface.co/production/uploads/652b2e9166313ebb6197e706/l156KP0e5PRyDrE4woHoM.jpeg",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_cebb2067",
+  "keyQuotes": [
+    "Evaluate PP-OCRv6 online, then integrate lightweight, production-ready OCR with PaddlePaddle, Transformers, or ONNX Runtime backend."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The tiny (1.5M) targets edge devices, small (7.7M) suits mobile/desktop, and medium (34.5M) maximizes accuracy for server-side pipelines.",
+      "point": "PP-OCRv6 provides three model tiers from 1.5M to 34.5M parameters, balancing accuracy and deployment constraints."
+    },
+    {
+      "explanation": "Detection Hmean increased by +4.6 percentage points and recognition accuracy by +5.1 percentage points, validated on PaddleOCR's internal multi-scenario benchmarks.",
+      "point": "It achieves up to 86.2% detection Hmean and 83.2% recognition accuracy, significantly improving over PP-OCRv5_server."
+    },
+    {
+      "explanation": "These components enhance multi-scale text detection and recognition quality for challenging inputs such as multilingual, small, dense, or low-resolution text.",
+      "point": "Architecture improvements include PPLCNetV4 backbone, RepLKFPN for detection, and EncoderWithLightSVTR for recognition."
+    },
+    {
+      "explanation": "Covering Simplified Chinese, Traditional Chinese, English, Japanese, and 46 Latin-script languages, this reduces the need for separate OCR models across common multilingual scenarios.",
+      "point": "The medium and small tiers support 50 languages in a single model family."
+    },
+    {
+      "explanation": "This flexibility allows developers to choose the runtime that best fits their environment, with code examples provided for each backend through the PaddleOCR library.",
+      "point": "Multiple inference backends are available: Paddle Inference, Transformers, and ONNX Runtime."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "PP-OCRv6 is a new multilingual OCR model family by PaddleOCR, offering three tiers from 1.5M to 34.5M parameters with up to 50-language support and improved accuracy over its predecessor.",
+  "originalTitle": "PP\\-OCRv6 on Hugging Face: 50\\-Language OCR from 1\\.5M to 34\\.5M Parameters",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 21:18:56",
+  "publishTimeStamp": 1782134336000,
+  "qualified": false,
+  "readCount": 48,
+  "readTime": 4,
+  "readUrl": "https://www.bestblogs.dev/article/cebb2067",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This blog post from Hugging Face introduces PP-OCRv6, the latest generation of PaddleOCR's universal OCR models. It details three model tiers (tiny, small, medium) ranging from 1.5M to 34.5M parameters, achieving up to 86.2% detection Hmean and 83.2% recognition accuracy on in-house benchmarks. Key technical improvements include the PPLCNetV4 backbone, RepLKFPN for text detection, and EncoderWithLightSVTR for recognition. The medium and small tiers support 50 languages. The post provides quick-start code examples using PaddleOCR with multiple inference backends: Paddle Inference, Transformers, and ONNX Runtime. It also links to an online demo, model collection, and documentation, making it easy for developers to evaluate and integrate the models into production OCR pipelines.",
+  "tags": [
+    "OCR",
+    "Computer Vision",
+    "PaddlePaddle",
+    "Hugging Face",
+    "Text Detection"
+  ],
+  "title": "PP\\-OCRv6 on Hugging Face: 50\\-Language OCR from 1\\.5M to 34\\.5M Parameters",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+  "wordCount": 894
+}

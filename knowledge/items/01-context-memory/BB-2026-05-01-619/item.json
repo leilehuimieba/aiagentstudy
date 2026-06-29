@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-26",
+  "id": "BB-2026-05-01-619",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-619/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-619",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-619/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-619/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-619/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-619/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-619/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-619/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 字节跳动技术团队",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 字节跳动技术团队",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "System Design",
+    "Architecture Evolution",
+    "Context Engineering"
+  ],
+  "title": "Volcengine AI Search 10-Million-Level Agent Architecture Evolution and Practice: From ReAct Three-Node to Unified Policy",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520575&idx=1&sn=6d3a2d35f06bf57d763e1a41c5e00a6f",
+      "https://www.bestblogs.dev/article/b02cc219"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520575&idx=1&sn=6d3a2d35f06bf57d763e1a41c5e00a6f",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/b02cc219"
+  }
+}

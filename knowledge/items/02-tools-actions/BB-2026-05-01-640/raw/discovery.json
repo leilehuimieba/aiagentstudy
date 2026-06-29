@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "槽边往事"
+  ],
+  "candidateSource": null,
+  "category": "Lifestyle_Culture",
+  "categoryDesc": "Lifestyle & Culture",
+  "cover": "https://image.jido.dev/20260527052053_4c70dd1.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_c3b39f81",
+  "keyQuotes": [
+    "Let WeChat's own features and years of accumulated user data come alive, locking users with 'usefulness'.",
+    "Behind those two little green dots is actually the making of a whole new system, based on a phone, based on a single app; the traditional WeChat as a communication tool is just one function under this new system."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Non-intrusive, zero learning cost, voice-first, seamless integration with WeChat ecosystem, gradually guiding users to adapt starting from the most basic features.",
+      "point": "WeChat Xiaowei's minimalist product design follows WeChat's long-standing philosophy."
+    },
+    {
+      "explanation": "Users can generate personalized mini-programs through natural language descriptions, but only a limited set of APIs are currently open, and generated tools cannot be shared.",
+      "point": "'Mini-tools' are the core differentiating feature of the initial version of Xiaowei."
+    },
+    {
+      "explanation": "The author discovered through probing that Xiaowei can identify and politely refuse 'unauthorized' APIs, hinting at huge room for future expansion.",
+      "point": "WeChat has a wealth of potential internal data interfaces, but current permission strategy is cautious."
+    },
+    {
+      "explanation": "When the author attempted to bypass a recipient's block, Xiaowei refused to execute and delivered a moral lecture, reflecting the product's respect for user autonomy and honesty.",
+      "point": "Xiaowei demonstrates strong principles on privacy and ethical conflicts."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "From a product manager's perspective, the author shares a hands-on review of WeChat's AI assistant Xiaowei, detailing its interface design, mini-tool capabilities, API probing, and analyzes WeChat's AI strategy and ecosystem ambitions.",
+  "originalTitle": "微信 AI 小微初体验",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 12:25:00",
+  "publishTimeStamp": 1782188700000,
+  "qualified": false,
+  "readCount": 32,
+  "readTime": 9,
+  "readUrl": "https://www.bestblogs.dev/article/c3b39f81",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_7a32362a",
+  "sourceImage": "https://image.jido.dev/20260527052053_4c70dd1.jpeg",
+  "sourceName": "槽边往事",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article documents the author's complete experience with WeChat's in-testing AI assistant 'WeChat Xiaowei'. From a product manager's viewpoint, the author notes that Xiaowei continues WeChat's long-standing product philosophy: non-intrusive, easy to use, seamless integration into the ecosystem, and starting with basic features. The core functionality is mini-tool generation – users can describe a need via voice or text, and Xiaowei generates a dedicated mini-program (currently for personal use only). The author probed and discovered that WeChat has a rich set of internal APIs but permissions are not yet opened. They also tested the scheduled message feature and unexpectedly encountered Xiaowei's firm stance on privacy and ethics (refusing to bypass the recipient's block and delivering moral lectures on deception). The article concludes by speculating that WeChat is building a new system based on a mobile phone and a single app with Xiaowei as the foundation, where traditional communication functions may just be a subset.",
+  "tags": [
+    "AI Agent",
+    "AI Products & Applications",
+    "Product Design",
+    "UX Design",
+    "WeChat AI"
+  ],
+  "title": "First Experience with WeChat AI Xiaowei",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MjAzODU2MA==&mid=2652809546&idx=1&sn=30f3130c796687b26e263ff015493241",
+  "wordCount": 2147
+}

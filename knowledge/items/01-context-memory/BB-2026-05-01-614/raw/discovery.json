@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "十字路口Crossing"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_8b737736",
+  "keyQuotes": [
+    "Whenever Claude makes a mistake, I don't ask it to try a different way; I ask it to write it into CLAUDE.md or make it a skill.",
+    "I no longer talk to the agent; I talk to a loop, a routine, which prompts Claude on my behalf.",
+    "It's only human — when you click agree on 99% of requests, your eyes glaze over by the end.",
+    "Build the loop, stay the engineer. You can let the machines run the loop, but you can't lose your identity as an engineer."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Boris believes that as model capabilities improve, the human role should shift from directly commanding agents to designing a loop system that can autonomously discover tasks, invoke agents, and verify results — that is, 'Loop Engineering.'",
+      "point": "Core workflow shifts from prompting models to designing loop systems."
+    },
+    {
+      "explanation": "Whenever Claude makes a mistake, instead of asking it to try again differently, you write the correct approach or rules into CLAUDE.md or Skills. The accumulation of these single corrections has a compounding effect, making the agent increasingly autonomous.",
+      "point": "Capturing mistakes and experience is crucial; the key is writing them into CLAUDE.md."
+    },
+    {
+      "explanation": "Traditional linting and type checking are already automated. The real barrier is whether the agent can simulate user operations (e.g., running a desktop application), discover and fix edge cases through self-testing, and form a closed-loop validation.",
+      "point": "The core of validation is getting the agent to actually run things, not just rely on unit tests."
+    },
+    {
+      "explanation": "When users click 'agree' on 99% of confirmation requests, their attention wanders. Routing security checks to another model can actually intercept suspicious operations more reliably and is safer than human oversight.",
+      "point": "Auto mode is safer than step-by-step confirmation."
+    },
+    {
+      "explanation": "Claude Code lowers the barrier to writing code, enabling designers, product managers, finance professionals, and other non-engineering roles to directly participate in development. In the future, everyone will combine product and engineering roles, delivering end-to-end.",
+      "point": "Role fusion: AI benefits anyone with curiosity and product taste."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Claude Code co-creators Boris and Cat review the evolution of their team's internal workflow over the past year of AI coding, with the core insight that engineers' primary work is shifting from writing code to designing loop systems that can autonomously discover tasks, assign them, and execute them (Loop Engineering).",
+  "originalTitle": "Claude Code 主创复盘疯狂的一年｜对话 Boris & Cat",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 19:14:00",
+  "publishTimeStamp": 1782126840000,
+  "qualified": false,
+  "readCount": 64,
+  "readTime": 30,
+  "readUrl": "https://www.bestblogs.dev/article/8b737736",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_f63517",
+  "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+  "sourceName": "十字路口Crossing",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is a compilation of an in-depth interview from 'Crossroads' with Boris Cherny, head of Claude Code, and Cat Wu, product lead. The article unfolds in a conversational format, reviewing the fundamental changes in the Anthropic team's internal working methods over the past year since Claude Code's launch. The core narrative is that AI coding has undergone a shift from 'prompt engineering' to 'context engineering' to 'loop engineering.' Boris shares his new methodology: instead of prompting the agent one by one, he 'writes a loop and lets it prompt Claude for me,' revealing that roughly half of his engineering work is now done remotely via a phone. Cat shares her practice of 'writing mistakes into CLAUDE.md and letting it verify by running itself,' and marvels at the experience where 'another person's Claude' automatically fixed her bug. The article also discusses trends like 'everyone writes code' (designers, finance using Claude Code), 'auto mode is safer than step-by-step confirmation,' and 'role fusion.' Towards the end, the author organizes Addy Osmani's framework for Loop Engineering, discussing five components (Automations, Worktrees, Skills, Plugins, Sub-agents) and the memory layer (State), and reminds engineers to stay clear-headed with the concepts of 'understanding debt' and 'cognitive surrender.'",
+  "tags": [
+    "AI Agent",
+    "AI Coding",
+    "Developer Tools",
+    "AI Workflows",
+    "Engineering Practices"
+  ],
+  "title": "Claude Code Co-creators Reflect on a Wild Year | A Conversation with Boris & Cat",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109401&idx=1&sn=acf1fe8c20b64233fd9bb7ea1d8453ba",
+  "wordCount": 7309
+}

@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "InfoQ 中文"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527130453_c4b7ab1.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_9300243b",
+  "keyQuotes": [
+    "Future intelligence depends on the expansion of more complex 'Context' inputs.",
+    "The core of a full-modal unified architecture is 'representation unity': using discretization technology to convert continuous signals such as speech, image, and video into discrete symbols similar to text.",
+    "Data has always been the most core source of differentiation between different models.",
+    "We have verified that the path of 'unified representation' is feasible and yields clear benefits.",
+    "The industry will ultimately move in this direction; it is an inevitable law of large model development."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Qiu Xipeng believes large models have three expandable directions (pretraining scale, inference path, input dimensions), and Context Intelligence focuses on the latter, emphasizing unified processing of multimodal information such as text, speech, image, and video, as well as external information like user preferences and physical scenes.",
+      "point": "Context Intelligence is the inevitable direction for large model development, with the core being expanding the depth and breadth of input dimensions."
+    },
+    {
+      "explanation": "Unlike traditional 'bridge-style' approaches, the MOSS series preserves each modality's characteristics at the tokenization layer but fully shares the language model paradigm in downstream model layers, thereby improving scalability and training efficiency.",
+      "point": "Full-modal unified discrete modeling achieves representation unity by converting signals from different modalities into discrete tokens."
+    },
+    {
+      "explanation": "Audio is compressed to 12.5 Hz frame rate, video uses variable frame rate sampling to reduce token consumption; MOSS-VL decouples visual encoding from inference decoding; KV cache compression achieves over 90% reduction through low-rank modifications, making long-context deployment feasible.",
+      "point": "Inference optimization addresses the computational pressure from context expansion through three concurrent approaches: representation compression, model architecture, and system-level improvements."
+    },
+    {
+      "explanation": "Given the high cost of real-world multimodal data collection, Qiu proposes a three-step method: design scenarios using text-based large models, convert them into multimodal data, then perform fine-grained annotation. He also explores building simulation sandboxes through world models to autonomously generate contextual data.",
+      "point": "The primary source of high-quality contextual data is the synthesis pipeline and world models."
+    },
+    {
+      "explanation": "As models evolve toward complex contexts, the ability to accumulate and process long-trajectory, multimodal, high-complexity contextual data will determine the actual performance gaps between models.",
+      "point": "Data processing pipelines are the core differentiation barrier among models."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Through an exclusive interview with Mosi AI founder Qiu Xipeng, this article delves into the MOSS full-modal technology system, covering the definition of Context Intelligence, unified discrete modeling, inference optimization, and high-quality contextual data construction, revealing the evolution direction of multimodal AI architecture.",
+  "originalTitle": "MOSS 全模态技术体系全解析：统一离散化建模、推理优化与情境数据构建路径",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 12:55:00",
+  "publishTimeStamp": 1782104100000,
+  "qualified": false,
+  "readCount": 35,
+  "readTime": 22,
+  "readUrl": "https://www.bestblogs.dev/article/9300243b",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceImage": "https://image.jido.dev/20260527130453_c4b7ab1.jpeg",
+  "sourceName": "InfoQ 中文",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is an in-depth interview by InfoQ with Professor Qiu Xipeng, a Fudan University professor and founder of Mosi AI. As the publisher of China's first conversational large language model MOSS, Qiu systematically elaborates on the technical path of 'Context Intelligence' he proposed. The article first defines Context Intelligence as the inevitable direction for large model development, encompassing five stages: perception, representation, delivery, persistence, and feedback loop. It then details the architecture design and collaboration mechanisms of the MOSS series sub-models: MOSS-Audio (general audio understanding), MOSS-VL (video understanding), and MOSS-TTS (high-fidelity speech synthesis), emphasizing a unified representation centered on discrete tokens. On technical challenges, Qiu analyzes how to address computational pressure from context expansion from three levels: representation compression, model architecture, and inference system, and compares the essential differences between 'full-modal unified discrete modeling' and mainstream 'bridge-style' approaches. Addressing data bottlenecks, the article proposes constructing high-quality contextual data through synthesis pipelines and world models, pointing out that data processing pipelines are the core differentiation barrier among models. Finally, Qiu summarizes the practical references the MOSS series provides for the industry in three aspects: approach, methodology, and ecosystem, emphasizing the role of open-source strategies in driving ecosystem prosperity.",
+  "tags": [
+    "Multimodal AI",
+    "LLM",
+    "Context Intelligence",
+    "Model Training and Inference",
+    "AI Products and Applications"
+  ],
+  "title": "Complete Analysis of the MOSS Full-Modal Technology System: Unified Discrete Modeling, Inference Optimization, and Contextual Data Construction Pathways",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651287490&idx=1&sn=5bbce67700d93c8c3ece905011bd64a7",
+  "wordCount": 5411
+}

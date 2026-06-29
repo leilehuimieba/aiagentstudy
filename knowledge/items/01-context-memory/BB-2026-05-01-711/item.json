@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-22",
+  "id": "BB-2026-05-01-711",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-711/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-711",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-711/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-711/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-711/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-711/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-711/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-711/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Datawhale",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Datawhale",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "AI Coding",
+    "Prompt Engineering",
+    "AI Workflow",
+    "Model Evaluation and Benchmarking"
+  ],
+  "title": "My Harness Walkthrough: 5 Agents Predict the World Cup in Parallel!",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723661&idx=1&sn=911048aaf1f81ebff0294cd91120f7e5",
+      "https://www.bestblogs.dev/article/88c32945"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723661&idx=1&sn=911048aaf1f81ebff0294cd91120f7e5",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/88c32945"
+  }
+}

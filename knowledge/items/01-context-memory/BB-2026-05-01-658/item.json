@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-26",
+  "id": "BB-2026-05-01-658",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-658/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-658",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-658/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-658/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-658/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-658/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-658/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-658/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 快手技术",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 快手技术",
+  "status": "Full text + source captured",
+  "tags": [
+    "Recommendation System",
+    "Video Generation",
+    "AIGC",
+    "Ad Tech",
+    "Multimodal Model"
+  ],
+  "title": "From 'Finding Videos' to 'Producing Videos': Kuaishou's RaG Propels Recommendation Systems into the Fully Generative Era",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500854&idx=1&sn=ed6f38238cb5c2d55026d8d3bd3982ff",
+      "https://www.bestblogs.dev/article/c674d376"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500854&idx=1&sn=ed6f38238cb5c2d55026d8d3bd3982ff",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/c674d376"
+  }
+}

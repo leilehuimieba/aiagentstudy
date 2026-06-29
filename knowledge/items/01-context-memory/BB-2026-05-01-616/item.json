@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-26",
+  "id": "BB-2026-05-01-616",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-616/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-616",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-616/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-616/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-616/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-616/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-616/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-616/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "Multi-Agent Systems",
+    "AI Memory",
+    "RAG",
+    "Context Graph",
+    "LLM Engineering"
+  ],
+  "title": "Vector RAG Isn’t Enough — I Built a Context Graph Layer for Multi-Agent Memory",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://towardsdatascience.com/vector-rag-isnt-enough-i-built-a-context-graph-layer-for-multi-agent-memory/",
+      "https://www.bestblogs.dev/article/0b2a6406"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/vector-rag-isnt-enough-i-built-a-context-graph-layer-for-multi-agent-memory/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/0b2a6406"
+  }
+}

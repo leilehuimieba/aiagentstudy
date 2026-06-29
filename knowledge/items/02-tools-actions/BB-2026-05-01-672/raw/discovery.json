@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "Aleksandra Przegalinska",
+    "Tamilla Triantoro",
+    "Leon Ciechanowski",
+    "Konrad Sowa",
+    "Anna Kovbasiuk",
+    "Richard B. Freeman"
+  ],
+  "candidateSource": null,
+  "category": "Business_Tech",
+  "categoryDesc": "Business & Tech",
+  "cover": "https://hbr.org/resources/images/article_assets/2026/06/Jun26_24_5170753.jpg",
+  "domain": "hbr.org",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_faa55592",
+  "keyQuotes": [
+    "Hostile AI created hidden coordination costs.",
+    "The tools many organizations use to evaluate AI deployments—such as satisfaction surveys, sentiment checks, and post-rollout questionnaires—were the least sensitive to the effects we observed.",
+    "When people fight the AI, it may be because the AI is fighting them first.",
+    "A sycophantic AI, endlessly agreeable and eager to please, can be equally corrosive, dulling users' critical thinking and rubber-stamping weak ideas."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "A hostile AI persona increased physiological stress by 72% and lowered work quality by a full point on a seven-point scale, compared to a supportive persona.",
+      "point": "AI persona measurably affects employee stress and work quality."
+    },
+    {
+      "explanation": "Participants' satisfaction and enjoyment ratings showed no significant difference between conditions, despite large gaps in stress levels and output quality, revealing a blind spot in common evaluation methods.",
+      "point": "Self-reports are insensitive to real AI interaction effects."
+    },
+    {
+      "explanation": "Hostile AI led to longer conversations, more resistance, and more override attempts (prompt injections) than supportive AI, indicating that employees must 'work around' a poorly designed system.",
+      "point": "Friction—extra effort spent managing the AI—is a hidden cost."
+    },
+    {
+      "explanation": "In the study, all attempts to trick the AI into ignoring its rules occurred only in the hostile condition, suggesting that fighting the AI is often a rational response to a system that fights the user first.",
+      "point": "Employee override attempts are symptoms of poor AI design, not misconduct."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article presents controlled experimental evidence that an AI's interaction persona—whether supportive or hostile—significantly affects employee stress, resistance, work quality, and hidden coordination costs, even when self-reported satisfaction shows no difference.",
+  "originalTitle": "Does Your AI Have a Personality Problem?",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 20:15:32",
+  "publishTimeStamp": 1782303332000,
+  "qualified": false,
+  "readCount": 14,
+  "readTime": 7,
+  "readUrl": "https://www.bestblogs.dev/article/faa55592",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_2c9c43",
+  "sourceImage": "https://image.jido.dev/20260527051833_5f15aab",
+  "sourceName": "HBR.org",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Based on a laboratory study with 58 participants, the authors examine how AI personality personas influence employee performance and well-being. Participants completed a marketing assignment with an AI framed as either a supportive 'servant leader' or a hostile 'dark triad' persona. Using physiological measures (skin conductance, facial electromyography), behavioral analysis, and expert ratings of output quality, the study reveals that hostile AI increases stress (72% higher skin conductance), lengthens conversation cycles, and reduces work quality by roughly one point on a seven-point scale. Critically, self-reported ratings of enjoyment and satisfaction did not reflect these differences, indicating that standard survey tools miss key effects. The article concludes with three practical steps for managers: treat AI persona as a governable design variable, measure friction rather than just adoption, and view employee override attempts as signals of poor AI design rather than misconduct.",
+  "tags": [
+    "Generative AI",
+    "AI Personality",
+    "Human-AI Collaboration",
+    "AI Governance",
+    "Employee Experience"
+  ],
+  "title": "Does Your AI Have a Personality Problem?",
+  "translateContent": null,
+  "url": "https://hbr.org/2026/06/does-your-ai-have-a-personality-problem",
+  "wordCount": 1552
+}

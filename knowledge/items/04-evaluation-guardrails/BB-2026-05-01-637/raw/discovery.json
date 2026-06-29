@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "Asif Razzaq"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://www.marktechpost.com/wp-content/uploads/2026/06/blog1913-31.png",
+  "domain": "marktechpost.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_04ce0133",
+  "keyQuotes": [
+    "DSpark pairs a parallel draft backbone with a tiny sequential head to cut suffix decay.",
+    "In production on DeepSeek-V4, per-user generation runs 60–85% faster than the MTP-1 baseline."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The parallel backbone (DFlash) provides base logits, and a tiny sequential head adds prefix-dependent bias, cutting suffix decay without costly autoregression.",
+      "point": "DSpark uses a semi-autoregressive draft backbone: parallel base with a cheap Markov head to sustain acceptance across the block."
+    },
+    {
+      "explanation": "The confidence head estimates per-token acceptance probability (calibrated via Sequential Temperature Scaling), and the scheduler uses a profiled throughput curve to decide how many tokens to verify based on GPU load.",
+      "point": "A confidence head and load-aware scheduler optimize verification budget per request."
+    },
+    {
+      "explanation": "At matched throughput, DSpark-5 configuration (5-token draft block with Markov head) accelerates generation for both Flash and Pro variants, with output lossless.",
+      "point": "In production on DeepSeek-V4, DSpark achieves 60-85% per-user speedup over the MTP-1 baseline."
+    },
+    {
+      "explanation": "DeepSpec provides a three-stage pipeline (data preparation, training, evaluation) supporting multiple targets, and the draft module attaches to existing V4 weights without retraining the target.",
+      "point": "The DSpark checkpoints and DeepSpec training code are open-sourced under MIT license."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "DeepSeek releases DSpark, a speculative decoding framework that accelerates per-user generation by 60-85% on DeepSeek-V4 via semi-autoregressive drafting and load-aware scheduling.",
+  "originalTitle": "DeepSeek Releases DSpark， a Speculative Decoding Framework That Accelerates DeepSeek-V4 Per-User Generation 60–85% Over MTP-1",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-28 01:00:01",
+  "publishTimeStamp": 1782579601000,
+  "qualified": false,
+  "readCount": 32,
+  "readTime": 5,
+  "readUrl": "https://www.bestblogs.dev/article/04ce0133",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_55f865ec",
+  "sourceImage": "https://image.jido.dev/20260527052025_cropped-Favicon-512-x-512-1-1-32x32.png",
+  "sourceName": "MarkTechPost",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article reports DeepSeek's open-source release of DSpark, a speculative decoding framework designed for production serving. It explains DSpark's semi-autoregressive draft mechanism combining a parallel backbone with a lightweight Markov head to maintain high acceptance deep into the block, and a confidence-scheduled verifier that dynamically adjusts verification length based on GPU load. Offline benchmarks show accepted length gains of 16-31% over DFlash and Eagle3. In production on DeepSeek-V4-Flash and V4-Pro, per-user generation speed improves 60-85% over the MTP-1 baseline, with lossless output. The release includes checkpoints and the MIT-licensed DeepSpec training code.",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "Performance Optimization",
+    "DeepSeek",
+    "Model Serving"
+  ],
+  "title": "DeepSeek Releases DSpark， a Speculative Decoding Framework That Accelerates DeepSeek-V4 Per-User Generation 60–85% Over MTP-1",
+  "translateContent": null,
+  "url": "https://www.marktechpost.com/2026/06/27/deepseek-releases-dspark-a-speculative-decoding-framework-that-accelerates-deepseek-v4-per-user-generation-60-85-over-mtp-1/",
+  "wordCount": 1197
+}

@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "simonpure"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260623144529_b5ac546.png",
+  "domain": "github.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_0ba05e87",
+  "keyQuotes": [
+    "Fork 100 microVMs in 101 ms. BRANCH a live VM in 56 ms (v0.4 live mode).",
+    "Children fork from a warmed parent snapshot, inheriting its address space copy-on-write instead of cold-booting their own kernel.",
+    "The result is two properties at once: per-child KVM isolation, and a spawn cost that's closer to fork(2) than to a cold-boot VM.",
+    "v0.5 ships diff-snapshot chains: each layer records a parent_tag + content-hash edge to the layer below; the daemon walks the chain at spawn time and assembles the memory image in one pass.",
+    "Bytes can't fit in a prompt."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Unlike cold-boot approaches that boot each VM independently, forkd pauses the parent's memory image and lets children mmap it with MAP_PRIVATE, sharing physical pages until modified.",
+      "point": "forkd achieves 100 microVM spawns in ~100ms by leveraging snapshot copy-on-write from a pre-warmed parent VM."
+    },
+    {
+      "explanation": "The live mode pauses the parent briefly (56ms p50), copies its in-flight memory asynchronously, and resumes quickly, making it feasible to branch an agent during a ReAct loop.",
+      "point": "BRANCH allows live snapshotting of a running sandbox in ~150ms, enabling agent fork mid-thought."
+    },
+    {
+      "explanation": "Each layer records parent edges; the daemon walks the chain at spawn time, verifying content hashes and assembling the memory image. Per-link tax is ~450ms for 512MiB base due to SHA-256 verification, with optimization planned.",
+      "point": "Diff-snapshot chains stack incremental layers (e.g., pip install steps) to avoid duplicating identical base images."
+    },
+    {
+      "explanation": "In benchmarks, forkd spawns 100 sandboxes in 101ms vs. 759ms for raw Firecracker, 1.06s for CubeSandbox, and >2 minutes for Docker/gVisor, with only 0.12 MiB memory delta per sandbox.",
+      "point": "forkd delivers KVM-level isolation per child at near-process spawn speed, outperforming container runtimes and cold-boot VMs on multi-instance fan-out."
+    },
+    {
+      "explanation": "By caching imports, JIT, and model weights in the parent, children avoid redundant startup costs, while per-child network namespaces and cgroup limits ensure multi-tenant safety.",
+      "point": "The project is designed for AI agent fan-out workloads such as sandboxed code execution, tool use, and evaluation rollouts, where warm runtimes and hardware isolation are critical."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "forkd is a microVM sandbox runtime that uses copy-on-write snapshot forking to spawn 100 KVM-isolated AI agent environments in ~100ms from a warmed parent, and supports live BRANCH of a running sandbox in ~150ms.",
+  "originalTitle": "GitHub - deeplethe/forkd: Fork() for AI agent microVMs. Spawn 100 children in ~100ms from a warm parent; BRANCH a live VM in ~150ms. KVM-isolated， snapshot CoW.",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 19:43:50",
+  "publishTimeStamp": 1782215030000,
+  "qualified": false,
+  "readCount": 25,
+  "readTime": 20,
+  "readUrl": "https://www.bestblogs.dev/article/0ba05e87",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SRC_87ebb4f7",
+  "sourceImage": "https://image.jido.dev/20260603215531_y18.svg",
+  "sourceName": "Hacker News - Newest: \"AI Agent\"",
+  "sourceVisibility": "SYSTEM",
+  "summary": "forkd is an open-source microVM runtime built on Firecracker, designed for AI agent workloads that need fast, isolated sandbox fan-out. It boots a parent VM once, warms the runtime (e.g., Python + deps), pauses it to disk, and then spawns children by mmap'ing the parent's memory image with MAP_PRIVATE (kernel CoW). This yields per-child KVM isolation with a spawn cost closer to fork(2) than cold boot. The project also introduces BRANCH (live snapshot of a running sandbox in ~150ms) and diff-snapshot chains (stacked layers to avoid duplicating shared base images). Benchmarks show 101ms to spawn 100 sandboxes (vs. 759ms for Firecracker cold-boot, 1.06s for CubeSandbox, and >100s for Docker/gVisor). A demo shows branching an LLM agent mid-ReAct-loop to explore alternate strategies with shared reasoning state. The README includes design documents, detailed benchmarks, and comparisons with other sandbox technologies.",
+  "tags": [
+    "AI Agent",
+    "MicroVM",
+    "Firecracker",
+    "Sandbox",
+    "Copy-on-Write"
+  ],
+  "title": "GitHub - deeplethe/forkd: Fork() for AI agent microVMs. Spawn 100 children in ~100ms from a warm parent; BRANCH a live VM in ~150ms. KVM-isolated， snapshot CoW.",
+  "translateContent": null,
+  "url": "https://github.com/deeplethe/forkd",
+  "wordCount": 4982
+}

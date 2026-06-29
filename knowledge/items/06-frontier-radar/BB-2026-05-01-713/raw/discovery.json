@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Datawhale"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045505_b03e263f",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_08d6d8e7",
+  "keyQuotes": [
+    "In the two years of speculative decoding research, the focus has been on \"how many drafts are written and how accurate they are,\" but DSpark turns its attention to another overlooked aspect: verification.",
+    "There is a vivid example of this drawback of parallel drafts: when the context simultaneously supports two continuations like 'of course' and 'no problem,' independent predictions may produce 'of problem' or 'no course'.",
+    "Under the premise of maintaining throughput, V4-Flash achieves a per-user generation speed increase of 60%–85%, and V4-Pro achieves 57%–78%."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "By adding a lightweight serial module (Markov head) after the parallel backbone, it compensates for sequential information between tokens with extremely low latency, eliminates multimodal collision at the tail of parallel drafts, and achieves acceptance lengths that comprehensively surpass existing solutions.",
+      "point": "DSpark balances parallel speed and autoregressive coherence through a semi-autoregressive draft model."
+    },
+    {
+      "explanation": "Using a confidence head and STS calibration to obtain true survival probability, the hardware-aware scheduler automatically shortens verification length under high concurrency, allocating compute power to queued requests and avoiding the waste of fixed-length verification.",
+      "point": "DSpark introduces dynamic verification scheduling, pruning invalid verification according to load."
+    },
+    {
+      "explanation": "In production environments of V4-Flash and V4-Pro, DSpark significantly increases per-user generation speed while maintaining throughput; under strict latency requirements, it can leverage concurrency capacity by several orders of magnitude.",
+      "point": "Online tests show 60%–85% generation speed improvement, reaching a new Pareto frontier in throughput and speed."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "An in-depth interpretation of the DSpark speculative decoding framework jointly released by DeepSeek and Peking University, which replaces MTP-1 with semi-autoregressive drafts and dynamic scheduling, boosting V4's online generation speed by 60%–85%.",
+  "originalTitle": "刚刚，DeepSeek V4 新成果发布，推理速度更快了！",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-27",
+  "publishDateTimeStr": "2026-06-27 23:21:00",
+  "publishTimeStamp": 1782573660000,
+  "qualified": false,
+  "readCount": 79,
+  "readTime": 12,
+  "readUrl": "https://www.bestblogs.dev/article/08d6d8e7",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4688eb",
+  "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+  "sourceName": "Datawhale",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article systematically introduces the newly deployed speculative decoding framework DSpark for DeepSeek V4 and its accompanying training framework DeepSpec. It first reviews the pros and cons of two mainstream approaches to speculative decoding (autoregressive drafting and parallel drafting), then focuses on two core innovations of DSpark: 1) Semi-autoregressive draft: By adding a lightweight serial module (Markov head by default) after the parallel backbone, it solves the multimodal collision problem at the tail of parallel drafts with extremely low latency (0.2%–1.3%). Measured acceptance length improves by 26.7%–30.9% compared to Eagle3 and 16.3%–18.4% compared to DFlash. 2) Dynamic verification scheduling: Using a confidence head and STS calibration to obtain reliable survival probability, a hardware-aware scheduler dynamically determines verification length based on load, avoiding the waste of compute power on invalid verification under high concurrency. Production data show that, with throughput remaining flat, per-user generation speed improves by 60%–85% on V4-Flash and 57%–78% on V4-Pro. The article also points out limitations of DSpark — the fixed cost of drafting for complex requests persists — and suggests future directions. Overall, it is an in-depth interpretation with high information density, clear technical principles, and solid engineering deployment results.",
+  "tags": [
+    "Speculative Decoding",
+    "DeepSeek V4",
+    "Inference Acceleration",
+    "Large Language Model",
+    "Engineering Practice"
+  ],
+  "title": "Just Now: DeepSeek V4 New Results Released, Inference Speed Gets Faster!",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723779&idx=1&sn=8f11646fe0bf88170e822247e536ae64",
+  "wordCount": 2779
+}

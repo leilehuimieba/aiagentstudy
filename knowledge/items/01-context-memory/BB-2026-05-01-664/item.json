@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-27",
+  "id": "BB-2026-05-01-664",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-664/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-664",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-664/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-664/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-664/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-664/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-664/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-664/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 经济观察报",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 经济观察报",
+  "status": "Full text + source captured",
+  "tags": [
+    "Hardware",
+    "Shenzhen",
+    "Smart Hardware",
+    "Industry chain",
+    "Business Competition"
+  ],
+  "title": "China's Hardware, Shenzhen's Fold",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MjM5OTExMjYwMA==&mid=2670386839&idx=1&sn=9333312d54ca502e294acde15ab8961b",
+      "https://www.bestblogs.dev/article/ecf6fc39"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5OTExMjYwMA==&mid=2670386839&idx=1&sn=9333312d54ca502e294acde15ab8961b",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/ecf6fc39"
+  }
+}

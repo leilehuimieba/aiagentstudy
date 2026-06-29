@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "Anubhab Banerjee"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/vram_conductor_overview.jpg",
+  "domain": "towardsdatascience.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_0807a4a4",
+  "keyQuotes": [
+    "The fix is not 'a better algorithm.' It is the simplest of all: bookkeeping.",
+    "Book before you build. Always.",
+    "Failure that explains itself is the most beautiful thing.",
+    "Same animal in a new zoo."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Each process reserves VRAM for the full context window (e.g., 6.5 GB for Llama 1B with large context), leaving insufficient space for other processes. The OOM is caused by KV cache reservation, not the model itself.",
+      "point": "Multiple llama-completion processes fail in parallel due to upfront KV cache pre-allocation, not model weights."
+    },
+    {
+      "explanation": "The daemon maintains a ledger of allocated bytes and admits a new agent only if current usage plus estimated need stays under a configurable cap (e.g., 90%). This prevents OOM at registration time.",
+      "point": "A VRAM ledger with simple admission control solves the overcommitment problem."
+    },
+    {
+      "explanation": "If you load the model first and check budget second, you waste I/O and risk races. The daemon reserves VRAM in the ledger before any GGUF is loaded, and rolls back on failure, leaving no trace.",
+      "point": "The order of operations matters: book (reserve in ledger) before build (load model)."
+    },
+    {
+      "explanation": "By initializing llama_backend once and sharing a refcounted model map, the daemon reuses weights and avoids hundreds of megabytes of per-process driver overhead.",
+      "point": "Sharing a single llama backend avoids redundant CUDA context overhead."
+    },
+    {
+      "explanation": "Just as a base station decides whether to admit a new call without degrading existing ones, the daemon rejects new agents before they load if they would exceed VRAM capacity, with clear error codes.",
+      "point": "The problem mirrors Connection Admission Control (CAC) in cellular networks."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article explains why running multiple LLM-based agents in parallel on a single low-VRAM GPU fails due to KV cache pre-allocation, and presents a small C++ daemon (lmxd) that enforces VRAM bookkeeping to solve the problem.",
+  "originalTitle": "3 Agents. 3 LLMs. 1 Aging GPU: Engineering Parallel Inference on Bare Metal",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-25",
+  "publishDateTimeStr": "2026-06-25 23:00:00",
+  "publishTimeStamp": 1782399600000,
+  "qualified": false,
+  "readCount": 32,
+  "readTime": 18,
+  "readUrl": "https://www.bestblogs.dev/article/0807a4a4",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "sourceName": "Towards Data Science",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article addresses the practical challenge of running three AI agents, each using a different small LLM, on a single GTX 1080 with only 8 GB VRAM. The naive approach of launching separate llama-completion processes fails because each process pre-reserves a large KV cache for the full context window, causing the second and third processes to OOM. The author introduces lmxd, a ~1500-line C++ daemon that acts as a VRAM bookkeeper. Agents communicate with the daemon over a Unix socket using a simple text protocol (REGISTER, DECODE, etc.). The daemon maintains a ledger that enforces a 90% VRAM cap, admits new agents only if the estimated memory fits, and loads models in a shared backend to avoid redundant CUDA context overhead. The article provides detailed code snippets, explains the critical order of operations (book before build), and presents benchmark results on the same hardware, showing that the daemon successfully admits all three agents where the naive approach admits only one. It also covers KV-swap mechanisms for time-slicing decode across agents, and draws an insightful analogy to Connection Admission Control (CAC) in cellular networks.",
+  "tags": [
+    "System Design",
+    "GPU Inference",
+    "AI Engineering",
+    "Multi-Agent Systems",
+    "Performance Optimization"
+  ],
+  "title": "3 Agents. 3 LLMs. 1 Aging GPU: Engineering Parallel Inference on Bare Metal",
+  "translateContent": null,
+  "url": "https://towardsdatascience.com/3-agents-3-llms-1-aging-gpu-engineering-parallel-inference-on-bare-metal/",
+  "wordCount": 4295
+}

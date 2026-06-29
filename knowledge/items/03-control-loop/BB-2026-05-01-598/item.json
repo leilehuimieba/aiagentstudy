@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-24",
+  "id": "BB-2026-05-01-598",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-598/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-598",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-598/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-598/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-598/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-598/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-598/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-598/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / The Guardian",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / The Guardian",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Liability",
+    "AI Regulation",
+    "Section 230",
+    "AI Overviews",
+    "Corporate Responsibility"
+  ],
+  "title": "If an AI chatbot misleads you, who is to blame? | Bruce Schneier and Nathan E Sanders",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/64c770aa",
+      "https://www.theguardian.com/commentisfree/2026/jun/24/ai-errors-companies-responsibility"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.theguardian.com/commentisfree/2026/jun/24/ai-errors-companies-responsibility",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/64c770aa"
+  }
+}

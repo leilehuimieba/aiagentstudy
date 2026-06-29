@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "腾讯技术工程"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_1433cfe9",
+  "keyQuotes": [
+    "The bottleneck of this model is that humans become the bottleneck of the loop.",
+    "Shift humans from being operators inside the loop to supervisors and goal setters above the loop.",
+    "Loop Engineering is not meant to replace ReAct, but to add an orchestration layer on top of ReAct.",
+    "Key changes still require human review; Loop does not replace Code Review."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Traditional AI interaction is a 'question-and-answer' model, where humans become the bottleneck of the loop. Loop Engineering sets goals and completion conditions for humans, allowing AI to autonomously decide execution steps and iterate continuously until the goal is achieved or unreachable.",
+      "point": "The core of Loop Engineering is to shift humans from being operators within the loop to supervisors above the loop."
+    },
+    {
+      "explanation": "ReAct solves 'how to do' within a single task, while Loop Engineering solves 'what to do, who does it, when to stop, and how to continue' across tasks. The two collaborate: ReAct serves as the execution layer, and Loop Engineering serves as the orchestration layer.",
+      "point": "Loop Engineering and ReAct are in an Outer Loop vs. Inner Loop relationship."
+    },
+    {
+      "explanation": "/goal is suitable for substantive work with clear end states and is condition-driven; /loop is for time-driven monitoring and inspection; Automations are for long-term scheduled tasks across sessions. The three cover different scenarios.",
+      "point": "CodeBuddy implements different driving modes of loops through three mechanisms: /goal, /loop, and Automations."
+    },
+    {
+      "explanation": "All state is stored in external files (such as Memory, CODEBUDDY.md, Rules), and each loop starts from a fresh context, completely solving the problem of model forgetting and information drift, while supporting checkpoint restart.",
+      "point": "State externalization is a key design principle of Loop Engineering."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article provides an in-depth introduction to Loop Engineering, a new paradigm in AI programming, explaining its differences from ReAct, its core architecture, and demonstrating how to use mechanisms such as /goal and /loop to implement autonomous loop systems with the CodeBuddy tool.",
+  "originalTitle": "Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 17:22:00",
+  "publishTimeStamp": 1782120120000,
+  "qualified": false,
+  "readCount": 176,
+  "readTime": 24,
+  "readUrl": "https://www.bestblogs.dev/article/1433cfe9",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_958ae8",
+  "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "sourceName": "腾讯技术工程",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Written by the Tencent Technical Engineering team, this article systematically introduces the concept of Loop Engineering proposed by Google engineer Addy Osmani. It first clarifies the essence of Loop Engineering—building autonomous loop systems around large models to upgrade AI from a single-response tool to a long-term autonomous agent, positioning it as the 'third revolution in AI programming' after Prompt Engineering and ReAct. It then provides a detailed comparison between Loop Engineering and ReAct, pointing out that ReAct is an Inner Loop (single task execution) while Loop Engineering is an Outer Loop (cross-task orchestration), and that the two are an evolutionary rather than a replacement relationship. The core of the article proposes a five-stage loop mechanism (Discover → Plan → Execute → Verify → Iterate), a dual-loop model, and a six-element building framework, emphasizing the philosophy of state externalization. It then focuses on the CodeBuddy tool, introducing three loop modes—/goal (condition-driven), /loop (time-driven), and Automations (cross-session scheduled tasks)—with their respective applicable scenarios, and provides multiple practical cases including module migration, CI monitoring, Team mode adversarial verification, Skills knowledge solidification, MCP connectors, and Rules and Memory state externalization. Finally, it summarizes best practices, common pitfalls, and a pattern selection guide. The article combines theory with practice and is highly actionable.",
+  "tags": [
+    "AI Coding",
+    "Agent",
+    "LLM",
+    "ReAct",
+    "Development Tools"
+  ],
+  "title": "Loop Engineering Practice Guide: Building Autonomous Loop Systems in Code Buddy",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802117&idx=1&sn=a91a32e0b00305c1a30f4a6684c3c6b2",
+  "wordCount": 5856
+}

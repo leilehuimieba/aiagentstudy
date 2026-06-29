@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Hacker News"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://alephneuro.com/blog/mindeye-1.jpg",
+  "domain": "alephneuro.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_3638c14d",
+  "keyQuotes": [
+    "We've been building a new type of hardware that requires no drilling, and gives you MRI-level detail of the brain.",
+    "We think there are two requirements in a general-purpose mind interface. The first is that it has to be able to see a large part of the brain. ... The second requirement is detail, or resolution.",
+    "It's the world's first 3D image of ultrasound localization microscopy in a human brain through a skull, and achieves a resolution that's 100 times greater volumetrically than comparable CT."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Business_Tech",
+  "mainDomainDesc": "Business & Tech",
+  "mainPoints": [
+    {
+      "explanation": "By injecting microbubbles and localizing their centers frame by frame, the system achieves super-resolution beyond the diffraction limit, producing 3D vascular maps that rival MRI detail.",
+      "point": "Ultrasound can image brain vasculature through the intact skull with unprecedented resolution."
+    },
+    {
+      "explanation": "EEG and MEG offer wide field-of-view but blurry signals; implanted electrodes offer high resolution but cover <0.001% of the brain. Ultrasound-based neurovascular imaging bridges both requirements.",
+      "point": "The key trade-off in mind interfaces is field-of-view versus resolution."
+    },
+    {
+      "explanation": "Conditions like stroke, Alzheimer's, and traumatic brain injury leave vascular changes at scales current CT/MRI cannot resolve, and this public release accelerates investigation.",
+      "point": "The open-sourced pipeline and dataset enable broader research into vascular signatures of diseases."
+    },
+    {
+      "explanation": "Current ultrasound probes capture terabytes of raw data per hour but compress it to 0.1%. ML models trained on large datasets could recover far more signal from natural red blood cell scattering.",
+      "point": "Contrast-free imaging is the ultimate goal, achievable through hardware improvements and end-to-end machine learning."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "A neurotechnology company unveils the first 3D ultrasound localization microscopy image of a living human brain through an intact skull, achieving volumetric resolution 100x greater than CT.",
+  "originalTitle": "Ultrasound imaging of the brain — Aleph",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 19:51:11",
+  "publishTimeStamp": 1782474671000,
+  "qualified": false,
+  "readCount": 10,
+  "readTime": 4,
+  "readUrl": "https://www.bestblogs.dev/article/3638c14d",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article from Aleph Neuro describes a milestone in brain imaging: using ultrasound and microbubbles to create the most detailed vascular image of a living human brain through the skull, without surgery. The technique exploits the neurovascular coupling—active neurons trigger blood flow changes—and sends ultrasound waves through the skull to map blood flow from red blood cells or injected microbubbles. By localizing millions of microbubble centroids, super-resolution is achieved, beating the diffraction limit. The resulting 3D image shows vessels as small as arterioles, with resolution 100 times greater volumetrically than comparable CT. The company also open-sources the processing pipeline and dataset, aiming to advance applications in stroke, Alzheimer's, and traumatic brain injury. Future work targets contrast-free imaging using machine learning to recover weak signals from red blood cells alone.",
+  "tags": [
+    "Ultrasound Imaging",
+    "Neurotechnology",
+    "Brain Imaging",
+    "Medical Imaging",
+    "Super-Resolution"
+  ],
+  "title": "Ultrasound imaging of the brain — Aleph",
+  "translateContent": null,
+  "url": "https://alephneuro.com/blog/ultrasound-brain",
+  "wordCount": 917
+}

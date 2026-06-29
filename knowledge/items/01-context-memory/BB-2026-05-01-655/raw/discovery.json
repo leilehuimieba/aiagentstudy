@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "Mervyn Anthony"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://res.infoq.com/articles/rdla-offline-first-reactive-android-data-layer/en/headerimage/rdla-offline-first-reactive-android-data-layer-header-1781776366032.jpg",
+  "domain": "infoq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_4f0d0408",
+  "keyQuotes": [
+    "Reactive Data Layer Architecture (RDLA) eliminates the 'boilerplate tax' of traditional Clean Architecture by enforcing a strict separation between public API data definition and private implementation sourcing.",
+    "The UI never queries data in a 'one-shot' fashion. Instead, it subscribes to cold streams (Flow) of data.",
+    "RDLA addresses these challenges by treating the local cache as the definitive UI buffer while utilizing Kotlin Coroutines and suspendCancellableCoroutine bridges to serialize physical hardware operations."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Classic Clean forces pass-through Use Case classes for every read operation. RDLA removes this overhead by making the repository's `Flow` directly observable by the presentation layer, while still supporting traditional Use Cases for non-trivial business logic.",
+      "point": "RDLA eliminates the boilerplate tax of Clean Architecture by allowing direct observation of repository reactive streams for simple CRUD operations, reserving use cases only for complex multi-domain logic."
+    },
+    {
+      "explanation": "UI always reads from Room database. Background refresh is triggered via cache staleness checks, and failures are swallowed to keep the UI responsive. This design decouples network availability from UI rendering.",
+      "point": "The local cache serves as the single source of truth; network is used only to populate the database, ensuring offline-first behavior and instant UI updates."
+    },
+    {
+      "explanation": "The ViewModel observes repository flows and maps them directly to UI state; it never manually polls or coordinates data refresh. Background sync updates propagate automatically through Room's reactive queries.",
+      "point": "RDLA integrates with MVVM by converting the ViewModel from an active synchronizer to a passive transformer using `stateIn` for persistent state and `SharedFlow` for transient events."
+    },
+    {
+      "explanation": "For hardware interfaces like Bluetooth LE, the article recommends using `suspendCancellableCoroutine` to serialize commands. Offline writes are queued locally and synced in the background, with WorkManager ensuring completion even if the app is killed.",
+      "point": "The architecture addresses mobile-specific constraints such as BLE GATT race conditions and offline mutation queues, using scoped coroutines and WorkManager for reliable synchronization."
+    },
+    {
+      "explanation": "By grouping features that share storage concerns under a common Room instance, RDLA reduces database connection overhead while maintaining clear boundaries between different feature domains.",
+      "point": "RDLA organizes related data into transaction groups (e.g., Cardio Transaction Group) to share a single Room database instance, promoting module cohesion without tight coupling."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article introduces the Reactive Data Layer Architecture (RDLA), a mobile-optimized pattern that bridges reactive UI frameworks and mobile storage constraints by enforcing a strict separation between public API data definition and private implementation sourcing, with a focus on offline-first behavior, reactive streams, and decoupled synchronization.",
+  "originalTitle": "Beyond CLEAN and MVP: Architecting an Offline-first Reactive Data Layer in Android",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 17:00:00",
+  "publishTimeStamp": 1782291600000,
+  "qualified": false,
+  "readCount": 22,
+  "readTime": 16,
+  "readUrl": "https://www.bestblogs.dev/article/4f0d0408",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceImage": "https://image.jido.dev/20260623052915_apple-touch-icon.png",
+  "sourceName": "InfoQ",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The Reactive Data Layer Architecture (RDLA) is presented as a concrete pattern designed to overcome the boilerplate and synchronization shortcomings of traditional MVP and Clean Architecture when applied to mobile development. RDLA enforces three core principles: reactive push-based streams via Kotlin Flow, local cache as the single source of truth, and encapsulated caching and sync logic within repository implementations. The article maps RDLA modules to Clean Architecture layers and shows how it drives a unidirectional data flow within MVVM, transforming the ViewModel into a passive transformer. A detailed implementation of a Health Metric Tracking System illustrates the API module, implementation module with cache management and stale-triggered background refresh, Room local storage with transaction groups, and UI consumption via StateFlow and SharedFlow. The architecture explicitly handles mobile-specific challenges like BLE GATT race conditions and offline mutations, using scoped coroutines and WorkManager for reliable background synchronization. The code examples demonstrate practical techniques such as `Cached` wrappers, `distinctUntilChanged()`, and using `appScope` to survive screen exits.",
+  "tags": [
+    "Android",
+    "Architecture",
+    "Clean Architecture",
+    "Offline-first",
+    "Reactive Data Layer"
+  ],
+  "title": "Beyond CLEAN and MVP: Architecting an Offline-first Reactive Data Layer in Android",
+  "translateContent": null,
+  "url": "https://www.infoq.com/articles/rdla-offline-first-reactive-android-data-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "wordCount": 3778
+}

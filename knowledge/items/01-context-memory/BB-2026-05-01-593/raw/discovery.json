@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "Gidudu Nicholas"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/028c67b6-cda1-499a-9418-9695c64421b8.png",
+  "domain": "freecodecamp.org",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_c7c34649",
+  "keyQuotes": [
+    "BuildContext is an Element.",
+    "Widgets describe what you want, Elements manage the lifecycle and identity of that description over time, and RenderObjects do the actual measuring, positioning, and painting that puts pixels on the screen.",
+    "`mounted` isn't a magic safety flag bolted onto `State`. It's a direct reflection of whether the underlying Element is still alive in the tree."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Widgets are immutable configuration descriptors, Elements manage identity and lifecycle across rebuilds, and RenderObjects handle actual layout and painting.",
+      "point": "Flutter uses three concurrent trees: Widget, Element, and RenderObject."
+    },
+    {
+      "explanation": "The `context` parameter in `build()` is the Element managing the widget's position. Understanding this demystifies ancestor lookups and scoping.",
+      "point": "BuildContext is an Element, not a separate abstraction."
+    },
+    {
+      "explanation": "After setState, the Element is marked dirty; on the next frame, Flutter rebuilds, reconciles by type and key, and propagates changes to RenderObjects for relayout and repaint.",
+      "point": "setState triggers a six-step process involving all three trees."
+    },
+    {
+      "explanation": "When a widget is removed from the tree, its Element is deactivated. Accessing its context to walk ancestors is unsafe; check `mounted` to guard.",
+      "point": "Using context after an async gap breaks because the Element may be deactivated."
+    },
+    {
+      "explanation": "Methods like `Theme.of(context)` traverse upward through Element parents to find the nearest InheritedWidget, relying on the live tree structure.",
+      "point": "Ancestor lookup works by walking the Element parent chain."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article provides a deep dive into Flutter's rendering internals, explaining the three trees (Widget, Element, RenderObject), what BuildContext actually is, and how setState works step by step, helping developers understand and fix common context-related errors.",
+  "originalTitle": "How Flutter Renders Under the Hood: BuildContext and Element Tree Explained",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 23:47:45",
+  "publishTimeStamp": 1782229665000,
+  "qualified": false,
+  "readCount": 23,
+  "readTime": 24,
+  "readUrl": "https://www.bestblogs.dev/article/c7c34649",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_074370",
+  "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+  "sourceName": "freeCodeCamp",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The author shares their personal journey of learning Flutter's internals, starting from mysterious errors like 'Looking up a deactivated widget's ancestor is unsafe'. They explain Flutter's three fundamental trees: the Widget Tree (immutable configuration), the Element Tree (long-lived manager of widget identity and lifecycle), and the RenderObject Tree (performs layout, painting). The core insight is that BuildContext is an Element. The article then walks through the six steps of a setState call, covering how Elements are marked dirty, rebuilt, and reconciled based on type and key. It explains why using context after an async gap can fail (because the Element may be deactivated) and how the `mounted` check works. Ancestor lookup is revealed as walking the parent chain of Elements. The article also touches on Keys (ValueKey, ObjectKey, GlobalKey) and common rendering bugs, culminating in an end-to-end example. By understanding these trees, developers can diagnose context-related errors without guessing.",
+  "tags": [
+    "Flutter",
+    "Mobile Development",
+    "UI Framework",
+    "Widget Tree",
+    "Element Tree"
+  ],
+  "title": "How Flutter Renders Under the Hood: BuildContext and Element Tree Explained",
+  "translateContent": null,
+  "url": "https://www.freecodecamp.org/news/how-flutter-renders-under-the-hood-buildcontext-and-element-tree-explained/",
+  "wordCount": 5835
+}

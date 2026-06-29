@@ -1,0 +1,81 @@
+{
+  "authors": [
+    "腾讯技术工程"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_a0f9d2c7",
+  "keyQuotes": [
+    "This article will analyze the design concepts, core algorithms, and measured benefits of each technology one by one from the five dimensions of operator optimization and fusion, parallelism strategies, multi-level caching, MTP and asynchronous scheduling optimization, and quantization and sparsity, comprehensively revealing the extreme performance optimization practices of the Hy3 Preview model on Hopper cards from operators to the system.",
+    "In the causal architecture, the head tokens of the sequence participate in all subsequent aggregation computations, and the error will recursively amplify layer by layer; the impact of tail tokens is limited only to the local area."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Traditional static split-kv cannot balance long and short sequences; the new scheme allocates greedily based on global Tile volume, achieving up to 2.95x acceleration for single-batch long texts and 1.59x-1.76x for mixed-length batches.",
+      "point": "Dynamic Attention scheduling unifies Tile partitioning for parallel tasks, fundamentally resolving load imbalance under long sequences."
+    },
+    {
+      "explanation": "FP32 weights are split into high-bit and low-bit BF16, executing two BF16 GEMMs and combining them, avoiding type conversion, with a measured acceleration of 2.86x-3.22x.",
+      "point": "Dual BF16 reconstruction for FP32 computation balances precision and performance in numerically sensitive scenarios like MoE routing."
+    },
+    {
+      "explanation": "Through PDL bubble-free chaining and register-level data flow, it achieves 1.5x-1.6x acceleration compared to mainstream solutions in TP=8 scenarios, and 1.2x-1.5x in EP=8 scenarios.",
+      "point": "FusedMoE integrates the 5 stages of routing, Gate-Up, Down, and aggregation into a unified pipeline, eliminating bubbles."
+    },
+    {
+      "explanation": "While maintaining 8-card deployment and unchanged precision, TTFT is reduced by 29.9% for 16k inputs and 24.5% for 32k inputs.",
+      "point": "Prefill TPSP parallelism strategy significantly reduces TTFT through SP partitioning and communication-computation fusion."
+    },
+    {
+      "explanation": "Combined multi-level optimizations systematically eliminate low-bit quantization errors, matching the BF16 baseline or remaining within a 1% gap on multi-domain evaluation sets.",
+      "point": "W4A8 quantization + Attn FP8 achieves lossless precision through GPTQ, Smooth, Hadamard rotation, and QAT lightweight fine-tuning, improving throughput by 28%+."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article breaks down the full-stack inference optimization solution for the Tencent Hunyuan Hy3 model on Hopper cards, covering operators, fusion, parallelism, caching, and quantization, demonstrating significant performance improvements in real-world tests.",
+  "originalTitle": "腾讯混元 AI Infra 如何优化 Hy3 Preview：一次大模型推理性能提升的技术拆解",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 17:36:00",
+  "publishTimeStamp": 1782466560000,
+  "qualified": false,
+  "readCount": 49,
+  "readTime": 25,
+  "readUrl": "https://www.bestblogs.dev/article/a0f9d2c7",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_958ae8",
+  "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+  "sourceName": "腾讯技术工程",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article details the full-stack performance optimization practices of the Tencent Hunyuan AI Infra inference team for the Hy3 Preview model on Hopper cards. The optimization covers five major dimensions: operator optimization and fusion, parallelism strategies, multi-level caching, MTP asynchronous scheduling, and quantization and sparsity. At the operator level, it achieved dynamic Attention scheduling for load balancing (up to 2.95x acceleration), Router GEMM dual BF16 reconstruction for FP32 computation (2.86x-3.22x acceleration), and FusedMoE full-pipeline integration (1.2x-1.6x acceleration). In terms of operator fusion, 5 operators including Rope+Norm+Quant were deeply fused into a single Kernel (~5x acceleration), AllReduce+Norm+Add communication-computation fusion was achieved (1.68x acceleration), sampling fusion (2.5x-5.5x acceleration), and GEMM+ReduceScatter fine-grained communication-computation fusion (1.68x-1.81x acceleration). For parallelism strategies, Prefill adopted the TPSP architecture reducing TTFT by 24.5%-29.9%, while Decode used DP+EP cross-node hybrid parallelism bringing a 15.7%-44.7% end-to-end throughput improvement. Multi-level caching built a GPU→CPU→KVStore three-tier system, expanding effective cache capacity. MTP asynchronous scheduling optimization removed CPU synchronization dependencies, reducing bubbles by 5-10ms and improving end-to-end performance by 10%-20%. For quantization compression, W4A8+Attn FP8 with lossless precision was achieved through GPTQ+Smoothing+Smooth+QAT, improving throughput by 28%+; the sparse attention Stem algorithm approached full attention precision at a 25% computation budget, reducing 128K context Prefill latency by 3.6 times. Overall optimization achieved 50ms TPOP and 4s TTFT SLO constraints on 5000 real-world data entries (average input 68k, average output 0.9k), demonstrating extreme performance improvements from operators to the system level.",
+  "tags": [
+    "LLM Inference",
+    "LLM",
+    "Performance Optimization",
+    "Operator Optimization",
+    "Model Quantization"
+  ],
+  "title": "How Tencent Hunyuan AI Infra Optimizes Hy3 Preview: A Technical Breakdown of LLM Inference Performance Improvements",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802370&idx=1&sn=933bed02fa58d278084e12946d3fa8ce",
+  "wordCount": 6076
+}

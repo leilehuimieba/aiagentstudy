@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Datawhale"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045505_b03e263f",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_88c32945",
+  "keyQuotes": [
+    "What I wanted wasn't 'a comprehensive judgment from one smart AI,' but the judgment that comes from five biased experts arguing with each other.",
+    "Predictions are no longer one-way output; they can flow back and correct themselves.",
+    "Now, whether AI tools are worth using is no longer about chat—it's about the harness wrapped around them."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The author designed 5 Agents with distinct personalities (Data Analyst, Tactician, Risk Officer, etc.), allowing them to analyze independently without seeing each other's conclusions. When they agree, the result is more reliable; when they conflict, it indicates high uncertainty in the match.",
+      "point": "Replace single AI judgment with multi-role Agent parallel analysis, using role conflict to enhance conclusion reliability."
+    },
+    {
+      "explanation": "Kimi K2.7 natively understands image structures, directly extracting scores, matchups, venues, spectator counts, etc., from ESPN fixture screenshots, and cross-referencing with online data, simplifying data base construction.",
+      "point": "Use multimodal LLMs to directly read screenshots, eliminating the OCR parsing step."
+    },
+    {
+      "explanation": "After each prediction, record causes of errors (e.g., underestimating a weak team's defensive resilience) and feed these lessons into subsequent predictions, forming a 'predict → reflect → correct' closed loop, gradually improving the hit rate.",
+      "point": "Build a review Loop through error logs and scheduled tasks, enabling Agent self-evolution."
+    },
+    {
+      "explanation": "The author points out that simply replacing teams with stocks and fixtures with earnings reports makes the skeleton and methods fully reusable, highlighting that the core value of AI Agent harness lies in orchestration, decomposition, and memory—not domain specificity.",
+      "point": "This harness framework is transferable across scenarios."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "The author uses Kimi Code's /swarm feature to build a harness with 5 Agents predicting the World Cup in parallel, achieving a 58% hit rate (beating a coin flip) through role differentiation, multimodal data base, and a review loop, validating the transferability of multi-agent systems.",
+  "originalTitle": "我的 harness 实操拆解：5 个 Agent 并行预测世界杯！",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 22:07:00",
+  "publishTimeStamp": 1782137220000,
+  "qualified": false,
+  "readCount": 100,
+  "readTime": 12,
+  "readUrl": "https://www.bestblogs.dev/article/88c32945",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4688eb",
+  "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+  "sourceName": "Datawhale",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is the author's practical record of building a multi-agent prediction system using the Kimi Code command-line Agent. The core design includes: using ESPN fixture screenshots as the data source (leveraging K2.7's multimodal recognition to directly read scores and fixtures), defining 5 independent roles (Data Analyst, Tactician, Risk Officer, etc.) for parallel analysis via /swarm to avoid opinion convergence; adding an error log and scheduled tasks to form a daily loop, allowing Agents to adjust judgments based on past mistakes. The article provides hit rate comparisons against the Opta supercomputer and a coin flip (7 out of 12 matches, 58%), and showcases a case where Agents self-corrected after a failed prediction. The author emphasizes that the value of current AI tools lies in the ability of the external harness, not just chat, and that this framework can be transferred to scenarios like stock prediction.",
+  "tags": [
+    "AI Agent",
+    "AI Coding",
+    "Prompt Engineering",
+    "AI Workflow",
+    "Model Evaluation and Benchmarking"
+  ],
+  "title": "My Harness Walkthrough: 5 Agents Predict the World Cup in Parallel!",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723661&idx=1&sn=911048aaf1f81ebff0294cd91120f7e5",
+  "wordCount": 2791
+}

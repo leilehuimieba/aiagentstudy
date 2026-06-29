@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "angela shi"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/sticky_note_ETRPjvb0KM0_v3_card.jpg",
+  "domain": "towardsdatascience.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_b00e30e3",
+  "keyQuotes": [
+    "The cheap fix is to ask. The right fix is to ask, then learn the default so the next case is silent.",
+    "Without the learned-default table, silent inference is just guessing.",
+    "The cost is two schemas and one table column. The benefit is that the system stops asking the easy questions and only asks the ambiguous ones."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "When a ParsedQuestion field is ambiguous, the system should ask one focused clarification, record the user's answer as a learned default, and apply it automatically in future equivalent queries.",
+      "point": "Clarify once, then learn the default: the right fix is to ask, store, and silently apply later."
+    },
+    {
+      "explanation": "ClarificationRequest is emitted for each missing field; ClarificationDefault tracks candidate values, weighted votes, and confidence. A gate function decides based on confidence whether to ask, apply silently, or ask occasionally.",
+      "point": "Two Pydantic schemas formalize the loop: ClarificationRequest and ClarificationDefault."
+    },
+    {
+      "explanation": "When a default value fails (returns null), the system falls back to asking and then refines the default by adding sub-conditions (e.g., page 1 kind), improving future accuracy.",
+      "point": "Learned defaults are stratified on failure detection to handle edge cases."
+    },
+    {
+      "explanation": "With confidence thresholds (below 0.6 always ask, above 0.85 apply silently), the system learns which defaults are reliable and stops bothering the user for predictable cases.",
+      "point": "The pattern reduces user friction over time: easy questions become silent, only ambiguous ones trigger clarifications."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article proposes a pattern for handling vague user queries in RAG systems: ask one focused clarification, learn the default from the answer, and stay silent on subsequent similar questions.",
+  "originalTitle": "When RAG Users Ask Vague Questions: Clarify Once， Learn the Default",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 21:30:00",
+  "publishTimeStamp": 1782135000000,
+  "qualified": false,
+  "readCount": 73,
+  "readTime": 9,
+  "readUrl": "https://www.bestblogs.dev/article/b00e30e3",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "sourceName": "Towards Data Science",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article extends the question-parsing brick of an enterprise RAG system to handle ambiguous fields common in production queries. It identifies five failure modes (ambiguous field type, missing page scope, ambiguous date scope, ambiguous intent, implicit entity) and introduces two Pydantic schemas: `ClarificationRequest` to ask the user and `ClarificationDefault` to learn from the answer. A worked broker example demonstrates the loop: first time the system asks, records the answer, and later reuses the learned default silently. The update rules and gate function are provided in Python. The pattern is positioned as distinct from multi-turn dialogue; it emphasizes learning across requests rather than within a conversation. The article also discusses boundaries, deferred concerns (multi-field, adversarial users, cross-tenant sharing), and how the pattern integrates with storage and evaluation infrastructure.",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Question Parsing",
+    "Structured Output",
+    "Agent Design Patterns"
+  ],
+  "title": "When RAG Users Ask Vague Questions: Clarify Once， Learn the Default",
+  "translateContent": null,
+  "url": "https://towardsdatascience.com/when-rag-users-ask-vague-questions-clarify-once-learn-the-default/",
+  "wordCount": 2206
+}

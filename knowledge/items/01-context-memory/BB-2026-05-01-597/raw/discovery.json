@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Anthropic News"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn.sanity.io/images/4zrzovbb/website/b9ba85fd4d8beaf4efe04a4cf6cec14761e52c78-2400x1260.jpg",
+  "domain": "anthropic.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_69b0b9ea",
+  "keyQuotes": [
+    "Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team's code is created by our internal version of Claude Tag.",
+    "@Claude is multiplayer. Within a given Slack channel, there's one Claude that interacts with everyone.",
+    "@Claude takes initiative. If \"ambient\" behavior is enabled, Claude will proactively keep you updated about whatever it thinks you might need to know."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Claude joins as a team member, accesses selected channels and tools, and performs tasks asynchronously while building ongoing context.",
+      "point": "Claude Tag enables teams to tag @Claude in Slack channels for task delegation."
+    },
+    {
+      "explanation": "Multiple users can interact with the same Claude instance, it learns from channel history, can flag relevant info automatically, and works on tasks over hours or days.",
+      "point": "It features multiplayer, contextual learning, proactive initiative, and async operation."
+    },
+    {
+      "explanation": "Claude's access to data and tools is scoped per channel; admins set token limits and audit logs for transparency.",
+      "point": "Administrators have fine-grained control over permissions, tool access, and spending."
+    },
+    {
+      "explanation": "The feature is already used extensively within Anthropic beyond engineering, including product metrics, support tickets, and debugging.",
+      "point": "At Anthropic, 65% of product team code is now generated via Claude Tag's internal version."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Anthropic launches Claude Tag, a new Slack-integrated feature enabling teams to @Claude for collaborative, asynchronous task delegation with context memory and proactive capabilities.",
+  "originalTitle": "Introducing Claude Tag",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 00:00:00",
+  "publishTimeStamp": 1782144000000,
+  "qualified": false,
+  "readCount": 9,
+  "readTime": 4,
+  "readUrl": "https://www.bestblogs.dev/article/69b0b9ea",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_8b9413",
+  "sourceImage": "https://image.jido.dev/20260612221055_apple-touch-icon.png",
+  "sourceName": "Anthropic News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Anthropic announces Claude Tag, a new way for teams to work with Claude, starting as a Slack integration. Users can grant Claude access to selected channels and tools, then tag @Claude to delegate tasks. Claude builds context from channel activity, can take proactive initiative, works asynchronously, and supports multiplayer collaboration. At Anthropic, 65% of the product team's code is now created via an internal version of Claude Tag. The feature is available in beta for Claude Enterprise and Team customers, with tight administrative controls over tool access, data permissions, and spending limits. It works with Opus 4.8 and replaces the existing Claude in Slack app.",
+  "tags": [
+    "AI Agent",
+    "Team Collaboration",
+    "Product Launch",
+    "Slack",
+    "Claude"
+  ],
+  "title": "Introducing Claude Tag",
+  "translateContent": null,
+  "url": "https://www.anthropic.com/news/introducing-claude-tag",
+  "wordCount": 830
+}

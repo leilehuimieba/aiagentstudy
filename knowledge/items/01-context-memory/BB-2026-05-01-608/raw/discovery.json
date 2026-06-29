@@ -1,0 +1,73 @@
+{
+  "authors": [
+    "阿里云开发者"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_dba7e57b",
+  "keyQuotes": [
+    "The essence of Harness Engineering is not to make the Agent smarter, but to make it more controllable.",
+    "Trading confidence for automation level"
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The Agent is responsible for log parsing, root cause diagnosis, and rule matching, while all data retrieval and action execution (e.g., API calls, retries, GitLab archiving) are handled by deterministic scripts to ensure auditability and controllability.",
+      "point": "Agent + Script Collaboration Paradigm: Let the Agent handle semantic reasoning, let scripts handle deterministic operations."
+    },
+    {
+      "explanation": "The system calculates the historical retry success rate from the case library, dynamically adjusts the diagnostic confidence, and then feeds it into the decision tree. New faults default to manual confirmation; after multiple successful handlings of the same type, the system automatically upgrades to fully automatic, achieving progressive trust.",
+      "point": "Trading Confidence for Automation Level: Conservative handling for low experience, gradual expansion for high experience."
+    },
+    {
+      "explanation": "Unmatched unknown cases are clustered by error code, then analyzed by the Agent to generate new rule drafts. Existing rules are monitored and revised based on retry success rates to prevent rule rigidity.",
+      "point": "Self-Evolving Rule Mechanism: The system continuously learns from its own experience."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article details a 7x24 automated operations system built on Devix, which uses Agent + script collaboration, a hierarchical decision engine, and a self-evolving rule mechanism to achieve an engineering closed loop for fault diagnosis, graded response, and continuous learning.",
+  "originalTitle": "当 Agent 替你值班：基于 Devix 构建 7x24 自动化运维 Harness Engineering",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 09:47:00",
+  "publishTimeStamp": 1782179220000,
+  "qualified": false,
+  "readCount": 110,
+  "readTime": 28,
+  "readUrl": "https://www.bestblogs.dev/article/dba7e57b",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_26c5f1",
+  "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+  "sourceName": "阿里云开发者",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article from the Alibaba Cloud developer team documents how they used the Devix platform to build a complete automated operations system (Harness Engineering). Starting from the pain points of late-night alert dashboards, the author identifies three major problems with traditional manual operations: slowness, repetition, and discontinuity. It also argues against pure AI solutions, citing their instability and lack of memory. The core design philosophy is 'Agent handles semantic understanding and reasoning; scripts handle data retrieval and action execution,' forming a three-layer pipeline: semantic diagnosis layer (Agent), decision rule layer (script retrieval + Agent comprehensive decision), and action execution layer (scripts). The system runs as a 7x24 public service via Devix's cloud-resident Sandbox, integrating monitoring alerts, log parsing, correlation analysis, graded decision-making (auto-retry / button confirmation / code fix / investigation suggestion / escalate to human), DingTalk interaction, and case study accumulation. The article focuses on the confidence adjustment mechanism of the decision engine and the path of rule self-evolution (new rule discovery, effect evaluation, security audit), along with three security defenses. Finally, it summarizes key experiences: the Agent+script collaboration paradigm, trading confidence for automation level, and the self-evolving mechanism.",
+  "tags": [
+    "AI Agent",
+    "Automated Operations",
+    "DevOps",
+    "Fault Diagnosis",
+    "Decision Engine"
+  ],
+  "title": "When the Agent Takes Your Shift: Building 7x24 Automated Operations with Devix - Harness Engineering",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561199&idx=1&sn=c62b6db6dcc2bd3e63bc8bc4aa7498bf",
+  "wordCount": 6818
+}

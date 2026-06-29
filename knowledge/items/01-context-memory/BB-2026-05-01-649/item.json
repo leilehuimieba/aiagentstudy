@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-26",
+  "id": "BB-2026-05-01-649",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-649/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-649",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-649/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-649/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-649/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-649/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-649/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-649/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "RAG",
+    "AI Evaluation",
+    "Overfitting",
+    "Machine Learning",
+    "Goodhart's Law"
+  ],
+  "title": "Water Cooler Small Talk， Ep. 11: Overfitting in RAG evaluation",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://towardsdatascience.com/water-cooler-small-talk-ep-11-overfitting-in-rag-evaluation/",
+      "https://www.bestblogs.dev/article/2d145514"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/water-cooler-small-talk-ep-11-overfitting-in-rag-evaluation/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/2d145514"
+  }
+}

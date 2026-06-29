@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "机器之心"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045346_3bc9a61a",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_aa765f04",
+  "keyQuotes": [
+    "Unlimited OCR did not start from scratch. On the contrary, it is built directly on top of DeepSeek OCR.",
+    "The one occurs at the encoder side, the other at the decoder side. Individually, each stands on its own; together, they are unexpectedly coherent."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "R-SWA makes the model always attend to visual reference tokens and the most recent 128 output tokens, simulating a human-like 'soft forgetting' copying process, so that decoding computation overhead does not increase with output length.",
+      "point": "Unlimited OCR limits the output KV cache to a fixed window via R-SWA, solving memory and latency expansion in long-range parsing."
+    },
+    {
+      "explanation": "It leads in all tests including PPTs, newspapers, and magazines, indicating that R-SWA is applicable not only to simple text but also to complex layouts, and accuracy does not degrade due to the window limit.",
+      "point": "Unlimited OCR surpasses DeepSeek OCR by 6 percentage points with a score of 93.23% on OmniDocBench, showing consistent performance on complex layouts."
+    },
+    {
+      "explanation": "It is built directly on DeepSeek OCR, specifically addressing KV cache expansion at the decoder side, rather than using page-by-page processing or external concatenation, representing a complementary technical approach between the encoder and decoder sides.",
+      "point": "The model modifies the decoder based on DeepSeek OCR's DeepEncoder, achieving truly continuous parsing without relying on external schedulers."
+    },
+    {
+      "explanation": "The report cites DeepSeek OCR 40 times, has a bold and narrative style, the technical director signed as 'YY' has an unknown whereabouts, and combined with personnel departures from DeepSeek, it is speculated to be the same team.",
+      "point": "The technical report style and author signature imply the core author may be from the DeepSeek team."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Baidu open-sourced Unlimited OCR, which uses Reference Sliding Window Attention (R-SWA) to parse dozens of pages in a single forward pass, surpassing DeepSeek OCR on OmniDocBench and sparking speculation that the core author is from DeepSeek.",
+  "originalTitle": "百度开源无限 OCR，跑通长程解析，核心作者 YY 疑是来自 DeepSeek",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 15:20:00",
+  "publishTimeStamp": 1782199200000,
+  "qualified": false,
+  "readCount": 59,
+  "readTime": 19,
+  "readUrl": "https://www.bestblogs.dev/article/aa765f04",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_e24314",
+  "sourceImage": "https://image.jido.dev/20251127045346_3bc9a61a",
+  "sourceName": "机器之心",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article reports that Baidu has open-sourced the Unlimited OCR model. Building on DeepSeek OCR as a baseline, it replaces multi-head attention with Reference Sliding Window Attention (R-SWA), which limits the output-side KV Cache to a fixed window (default 128 tokens), thereby keeping computation and memory overhead constant during decoding, enabling true single-forward-pass long-range document parsing. Experiments show that Unlimited OCR achieves a total score of 93.23% on OmniDocBench v1.5, surpassing DeepSeek OCR by 6 percentage points, and performs consistently on complex layouts such as PPTs and magazines. In long-range tests, the edit distance for documents with 40+ pages is below 0.11, and Distinct-35 is approximately 97%. The article also analyzes the complementary relationship between R-SWA and DeepSeek OCR's encoder DeepEncoder, and speculates that the core author may be from DeepSeek, based on the technical report style, the author signature \"YY\", and personnel departures from DeepSeek.",
+  "tags": [
+    "OCR",
+    "Document Parsing",
+    "Attention Mechanism",
+    "Long-Range Inference",
+    "Open Source Project"
+  ],
+  "title": "Baidu Open-Sources Unlimited OCR, Achieves Long-Range Parsing; Core Author 'YY' Suspected from DeepSeek",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651040687&idx=2&sn=11f7171bdd0d0f945fccf4d07599b020",
+  "wordCount": 4627
+}

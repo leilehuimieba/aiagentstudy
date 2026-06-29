@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "阿里技术"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527050038_b20a9a1.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_eb89e83b",
+  "keyQuotes": [
+    "Real secrets should stay outside the sandbox, injected by the platform based on rules over a controlled egress path.",
+    "The sandbox handles execution, the Vault handles authorization, and the egress policy handles the boundary.",
+    "Credential Vault is not about making it more convenient for the sandbox to store secrets, but about making it so the sandbox no longer needs to store real secrets."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "AI Agent execution paths are long and unpredictable; once secrets enter sandbox environment variables, command lines, or configuration files, a loss of control at any point in the toolchain can lead to secret leakage.",
+      "point": "Directly exposing secrets inside the sandbox amplifies risks like Prompt Injection, malicious dependencies, and log leaks."
+    },
+    {
+      "explanation": "The host SDK writes real credentials and binding rules into the sidecar, while the sandbox process only holds fake API Keys; when a matching outbound request passes through, the sidecar automatically injects the real auth header, ensuring secrets never enter the sandbox.",
+      "point": "Credential Vault injects authentication information into outbound requests via an egress sidecar, keeping only fake values inside the sandbox."
+    },
+    {
+      "explanation": "Whether it is HTTP Basic Auth, Header Token, or complex path matching, Credential Vault can achieve precise authorization through binding rules.",
+      "point": "This solution applies to various developer tool scenarios, such as model APIs, Git clones, and internal APIs."
+    },
+    {
+      "explanation": "Only allow the service hosts that tools truly need, and then use the Vault to restrict credentials to a narrower request scope, enhancing the precision of security boundaries.",
+      "point": "It is recommended to pair with a default-deny egress network policy to achieve multi-dimensional binding of credentials to services, paths, and methods."
+    },
+    {
+      "explanation": "Two layers of sidecars will conflict within the same network namespace, so platforms must pay attention to the compatibility of deployment environments.",
+      "point": "Currently, it does not support coexistence with transparent service mesh sidecars like Istio/Envoy."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "OpenSandbox introduces the Credential Vault feature, which injects credentials outside the sandbox via an egress proxy, eliminating the need for AI Agent sandboxes to store real secrets.",
+  "originalTitle": "OpenSandbox 再进化：Credential Vault 让真实密钥不再进入沙箱",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 16:07:00",
+  "publishTimeStamp": 1782461220000,
+  "qualified": false,
+  "readCount": 57,
+  "readTime": 8,
+  "readUrl": "https://www.bestblogs.dev/article/eb89e83b",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_5e63f2",
+  "sourceImage": "https://image.jido.dev/20260527050038_b20a9a1.jpeg",
+  "sourceName": "阿里技术",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article analyzes the security risks of using secrets directly within AI Agent sandboxes, such as Prompt Injection, malicious dependencies, and log leaks. It then introduces OpenSandbox's new Credential Vault solution: real credentials are stored outside the sandbox, and an egress sidecar injects authentication information into outbound requests based on rules; only fake values are used inside the sandbox, ensuring that secrets never enter environment variables, command lines, file systems, or logs. The article uses typical scenarios like Claude Code calling model APIs, cloning private Git repositories, and accessing internal APIs to illustrate how it works, and recommends pairing it with a default-deny egress network policy to achieve finer-grained security boundaries. It also notes that it currently does not support coexistence with transparent service mesh sidecars. Finally, it concludes that this feature advances sandbox isolation from the process/file/network layer to the credential isolation layer, serving as a crucial complement to the productionization of AI Agents.",
+  "tags": [
+    "AI Agent",
+    "AI Safety & Alignment",
+    "Sandbox Security",
+    "Credential Management",
+    "OpenSandbox"
+  ],
+  "title": "OpenSandbox Evolved: Credential Vault Keeps Real Secrets Out of the Sandbox",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509853&idx=1&sn=ddffff2caf6f9e08a10dba04a8adb384",
+  "wordCount": 1972
+}

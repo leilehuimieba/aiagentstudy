@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "Olivier Wulveryck"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://blog.owulveryck.info/assets/team-topologies-agentique/octo_team_topologies_agentique.en.svg",
+  "domain": "blog.owulveryck.info",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_3fa5680e",
+  "keyQuotes": [
+    "The agentic platform defines what needs to be provided. Team Topologies defines who provides it, and how teams interact to make it happen.",
+    "Cognitive load does not disappear with AI --- it transforms. It first becomes an anticipation burden: everything the human must foresee before launching the agent, or the output will fall short.",
+    "The developer does not disappear: they shift. They no longer produce the application --- they build the platform that enables others to produce it."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Where human roles once spread complexity over time, agents produce instantly. The human must foresee all questions upfront, creating a throughput problem the platform must absorb.",
+      "point": "Cognitive load in agentic production compresses from sequential roles to an anticipation burden on a single person."
+    },
+    {
+      "explanation": "The platform guarantees production reliability (deployment, monitoring, systemic guardrails). Business teams focus on intent and dynamic context, not end-to-end operations.",
+      "point": "Stream-aligned teams can be non-technical business teams because the platform absorbs operational and technical complexity."
+    },
+    {
+      "explanation": "Observable criteria include guardrail coverage, pipeline reliability, self-service share, documentation completeness, and audit trails. Without these, the platform cannot absorb operational responsibility.",
+      "point": "The platform matures when guardrails are automatic, deployments are self-service, and decision traceability exists."
+    },
+    {
+      "explanation": "When three teams reinvent the same guardrail, it becomes a candidate for systemization. The platform product owner generalizes and documents it, preventing local reinvention and scaling reliability.",
+      "point": "A graduation path (rule of three) ensures guardrails move from team-specific to platform-owned."
+    },
+    {
+      "explanation": "Centralized deployment, monitoring, and usage metrics give systemic visibility. The platform's product owner tracks active applications, flags those that fail security checks, and triggers deprecation.",
+      "point": "Ease of production must be matched by ease of oversight to prevent shadow IT."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article applies Team Topologies to the agentic platform, defining team types and interactions to distribute the transformed cognitive load of AI-driven production.",
+  "originalTitle": "Who Does What? Team Topologies for the Agentic Platform",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 18:00:00",
+  "publishTimeStamp": 1782122400000,
+  "qualified": false,
+  "readCount": 31,
+  "readTime": 12,
+  "readUrl": "https://www.bestblogs.dev/article/3fa5680e",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article extends Team Topologies (Skelton & Pais) to the context of AI agents producing applications. It argues that cognitive load in agentic production does not disappear but compresses onto a single person, becoming an \"anticipation burden\" and \"cognitive throughput\" problem. The agentic platform absorbs part of this burden by making itself queryable by agents. The author adapts the four team types: stream-aligned teams become non-technical business teams; the platform team provides systemic context, guardrails, and tooling as self-service; enabling teams temporarily bridge gaps; complicated subsystem teams handle deep AI infrastructure. Three interaction modes—facilitating, X-as-a-Service, collaboration—evolve as teams and platform mature. Governance (shadow IT prevention) and a graduation path (rule of three for guardrail systemization) are proposed to make the model sustainable. The article concludes that business teams can become stream-aligned without coding, as the platform absorbs technical complexity, while developers shift to building the platform.",
+  "tags": [
+    "AI Agent",
+    "Team Topologies",
+    "Platform Engineering",
+    "Cognitive Load",
+    "Organizational Design"
+  ],
+  "title": "Who Does What? Team Topologies for the Agentic Platform",
+  "translateContent": null,
+  "url": "https://blog.owulveryck.info/2026/06/22/who-does-what-team-topologies-for-the-agentic-platform.html",
+  "wordCount": 2816
+}

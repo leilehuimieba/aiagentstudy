@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-26",
+  "id": "BB-2026-05-01-698",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-698/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-698",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-698/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-698/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-698/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-698/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-698/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-698/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Soccer - The Athletic",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Soccer - The Athletic",
+  "status": "Full text + source captured",
+  "tags": [
+    "Football / Soccer",
+    "World Cup",
+    "Tactical Analysis",
+    "Sports Data",
+    "Competitive Balance"
+  ],
+  "title": "It’s the biggest World Cup but is the gap between best and worst teams smaller than ever?",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/3c849a86",
+      "https://www.nytimes.com/athletic/7393482/2026/06/26/competitive-biggest-world-cup/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.nytimes.com/athletic/7393482/2026/06/26/competitive-biggest-world-cup/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/3c849a86"
+  }
+}

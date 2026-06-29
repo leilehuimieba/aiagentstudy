@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Gergely Orosz"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/2023/05/Big-Tech---startups---from-the-inside.png",
+  "domain": "blog.pragmaticengineer.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_55ff574f",
+  "keyQuotes": [
+    "Having no automated failovers is incredibly amateurish for an operation of Coinbase's scale.",
+    "Our matching engine was pinned to a single building.",
+    "There was no automated cross-zone failover."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "The architecture uses a Raft-based cluster inside an AWS Cluster Placement Group, which requires low latency between nodes. This prevents cross-zone deployment, but the company failed to implement automated failover to another zone when the primary AZ failed.",
+      "point": "Coinbase's matching engine is pinned to a single AWS availability zone due to latency constraints from Raft consensus."
+    },
+    {
+      "explanation": "Coinbase handles trillions of dollars per year but had no mechanism to recover from a single-AZ outage. The recovery required emergency code changes and manual quorum rebuilding, causing a 10-hour outage. Uber in 2016, with a fraction of the financial volume, had regular failover drills across regions.",
+      "point": "The lack of automated cross-zone failover is amateurish for a company of Coinbase's scale."
+    },
+    {
+      "explanation": "CEO Brian Armstrong highlighted non-technical teams shipping production code via AI, which seems at odds with the fact that Coinbase in 2026 has worse infrastructure basics than Uber had a decade ago. Previous outage promises to review deployment strategy were evidently not acted upon.",
+      "point": "Coinbase's engineering culture appears misprioritized, with CEO boasting about AI-generated code while basic infrastructure reliability is lacking."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Coinbase's global trading service went offline for nearly 10 hours due to a single-AZ dependency and lack of automated cross-zone failover, revealing serious reliability gaps despite its massive scale.",
+  "originalTitle": "Reliability fail: No automated zone failover for Coinbase’s global trading service",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 00:30:59",
+  "publishTimeStamp": 1782232259000,
+  "qualified": false,
+  "readCount": 20,
+  "readTime": 4,
+  "readUrl": "https://www.bestblogs.dev/article/55ff574f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_52d75b43",
+  "sourceImage": "https://image.jido.dev/20260527052019_favicon.png",
+  "sourceName": "The Pragmatic Engineer",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article analyzes the May 7, 2026 outage at Coinbase that lasted nearly 10 hours, coinciding with an AWS regional failure. Coinbase confirmed its matching engine is pinned to a single AWS availability zone because of latency requirements from distributed consensus (Raft). However, the company had no automated failover to another zone, requiring emergency code changes to recover. The author contrasts this with Uber's 2016 preparation (regular failover drills) and criticizes Coinbase's engineering culture, especially CEO Brian Armstrong's focus on AI-generated code while basic infrastructure reliability is neglected. A previous outage in October 2025 led to a promise to review deployment strategy, but the single-AZ dependency was not addressed.",
+  "tags": [
+    "Cloud Reliability",
+    "AWS",
+    "Availability Zone",
+    "Fault Tolerance",
+    "Distributed Systems"
+  ],
+  "title": "Reliability fail: No automated zone failover for Coinbase’s global trading service",
+  "translateContent": null,
+  "url": "https://blog.pragmaticengineer.com/coinbase-fail/",
+  "wordCount": 879
+}

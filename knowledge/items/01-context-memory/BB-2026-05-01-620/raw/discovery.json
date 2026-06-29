@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "AINLP"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045506_e620592f",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_f547eb02",
+  "keyQuotes": [
+    "Scaling laws are one of the most critical empirical discoveries in deep learning.",
+    "Kaplan et al.'s conclusion is \"models should grow faster than data\" (), while Chinchilla's conclusion is \"whenever model size doubles, the number of training tokens should also double\" ().",
+    "Although scaling laws have a clean formulation, in practice, fitting scaling laws can be unexpectedly sensitive to seemingly trivial procedural choices."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Training loss decreases as a power law with the increase of model parameters, dataset token count, and total compute, appearing as a straight line on a log-log plot. This pattern can be used to predict the performance of larger-scale models.",
+      "point": "The core of scaling laws is the power-law relationship between model size, data volume, and compute, which is one of the most critical empirical discoveries in deep learning."
+    },
+    {
+      "explanation": "Kaplan suggests that model size should grow faster than data, while Chinchilla argues that parameters and tokens should scale proportionally. The divergence is primarily caused by the proportion of embedding parameters in the small model regime and the local power-law exponent differences of non-embedding parameters.",
+      "point": "Kaplan et al. and Chinchilla offer different conclusions on compute-optimal allocation, with the discrepancy stemming from experimental scale and parameter definitions."
+    },
+    {
+      "explanation": "Muennighoff et al. and Lovelace et al. respectively propose modeling repeated data as a decay in effective token count and introducing an overfitting penalty term, thereby recalculating the optimal model size under limited unique data.",
+      "point": "When data is constrained, repeated data leads to overfitting, and scaling laws require modification with an effective data decay term."
+    },
+    {
+      "explanation": "Besiroglu et al.'s replication study shows that rounding loss values, minor noise, and the choice of fitting data range can significantly alter the fitted parameters, leading to large deviations between predictions and actual results.",
+      "point": "Practical fitting of scaling laws is highly sensitive to details like precision, noise, and fitting regions, making it prone to erroneous extrapolation."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article systematically reviews the research context of LLM Scaling Laws, from early machine learning loss predictability and Kaplan vs. Chinchilla compute-optimal allocation, to data-constrained regimes and sensitive pitfalls in practical fitting, providing a comprehensive and in-depth guide to understanding scaling laws.",
+  "originalTitle": "翁荔最新万字长文：大模型 Scaling Laws，要谨慎理解",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 14:00:00",
+  "publishTimeStamp": 1782453600000,
+  "qualified": false,
+  "readCount": 51,
+  "readTime": 34,
+  "readUrl": "https://www.bestblogs.dev/article/f547eb02",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_6d214b",
+  "sourceImage": "https://image.jido.dev/20251127045506_e620592f",
+  "sourceName": "AINLP",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article is translated from a blog post published by Lilian Weng in June 2026, serving as the complete Chinese translation of her \"Scaling Laws, Carefully\" essay. The author starts with the predictability of early machine learning loss, reviewing Amari et al.'s four learning curve theories, Hestness et al.'s empirical power-law discoveries, and Rosenfeld et al.'s modeling of error as a joint function of model size and data size. She then deeply analyzes the classic scaling laws of Kaplan et al. (2020), pointing out the divergence between its conclusion that \"model size should grow faster than data\" and the Chinchilla paper (Hoffmann et al., 2022), explaining the sources of this divergence: the non-negligible proportion of embedding parameters in the small model regime, differences in experimental scale, etc. The article further explores scaling laws under data-constrained scenarios, introducing Hernandez et al.'s double descent phenomenon with data repetition, and the modified modeling for data-constrained training by Muennighoff et al. and Lovelace et al. Finally, it strongly warns about the tricky aspects of fitting scaling laws in practice, using Besiroglu et al.'s replication study of Chinchilla's Method 3 as an example to demonstrate how loss precision, noise, and the choice of fitting region can lead to significant deviations in predictions, accompanied by an interactive toy simulation. The entire article cites 15 references, features a clear structure and rigorous argumentation, making it a rare systematic review in the field of LLM scaling laws.",
+  "tags": [
+    "Scaling Laws",
+    "LLM",
+    "Model Training",
+    "Data Scale",
+    "Compute Optimization"
+  ],
+  "title": "Lilian Weng's Latest 10,000-Word Essay: Understanding LLM Scaling Laws Carefully",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650452401&idx=1&sn=76196084fc28f66cf4850b6a1730180a",
+  "wordCount": 8259
+}

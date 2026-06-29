@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "Elizabeth Goodman"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image1-14-660x370.png",
+  "domain": "developer.nvidia.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_f7655d96",
+  "keyQuotes": [
+    "We treat this as a System 1 / System 2 problem, analogous to the fast, instinctive responses and the slower, deliberate reasoning in human decision-making.",
+    "The goal is the player's experience, which boils down to whether the companion feels like a good teammate.",
+    "If we could give just one piece of advice, it would be to get that loop running early, and to keep it cheap enough to run often.",
+    "one player asked Ally to look out for a Beryl in the first match, and from the next match onward Ally started finding it without being asked."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Unlike scripted bots, the CPC uses ASR + SLM + TTS to understand player intent, reason about game state, and respond dynamically in real time, aiming to feel like a real squadmate.",
+      "point": "PUBG Ally is a co-playable character (CPC) distinct from NPCs, designed to cooperate and adapt via natural voice interaction."
+    },
+    {
+      "explanation": "Cloud round-trips were too slow for live squad communication. The quantized Mistral-NeMo-Minitron-2B runs on GPUs with as low as 8GB VRAM, providing responsive, predictable response times.",
+      "point": "A local 2B-parameter SLM was chosen over cloud LLMs to meet latency constraints and fit within GPU VRAM headroom."
+    },
+    {
+      "explanation": "A behavior tree handles fast actions (movement, combat) at game tick rate, while the language model handles deliberate tasks (interpreting intent, generating speech). Reflex-level actions never wait on the model.",
+      "point": "A System 1/System 2 architecture separates reactive gameplay from language reasoning."
+    },
+    {
+      "explanation": "KRAFTON limited scope to one map and a fixed item taxonomy, used a teacher model to generate grounded responses, and distilled those behaviors into the on-device SLM. Ally fetches real-time game data via tool calls to stay accurate.",
+      "point": "Domain adaptation was achieved by constraining the game world, teacher-student distillation, and agentic grounding in live engine state."
+    },
+    {
+      "explanation": "Long-term memory stores player profiles, preferred weapons, and past match results. Short-term memory handles within-match context. Player feedback showed that cross-match memory turned Ally from a per-match assistant into an ongoing teammate.",
+      "point": "Structured long-term memory lets Ally remember players across matches, enhancing perceived companionship."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "KRAFTON details how they built PUBG Ally, a co-playable character powered by NVIDIA ACE, using on-device ASR, a 2B-parameter small language model, and TTS for real-time, grounded AI teammates.",
+  "originalTitle": "Q&A: How KRAFTON Built PUBG Ally， a Co-Playable Character Powered by NVIDIA ACE",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-27",
+  "publishDateTimeStr": "2026-06-27 05:14:35",
+  "publishTimeStamp": 1782508475000,
+  "qualified": false,
+  "readCount": 15,
+  "readTime": 10,
+  "readUrl": "https://www.bestblogs.dev/article/f7655d96",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceImage": "https://image.jido.dev/20260527052034_799230b",
+  "sourceName": "NVIDIA Technical Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "In this Q&A, KRAFTON's research lead and project manager explain the architecture and design decisions behind PUBG Ally, an AI teammate for PUBG: BATTLEGROUNDS that runs entirely on-device using NVIDIA ACE. The system combines automatic speech recognition, a quantized Mistral-NeMo-Minitron-2B small language model (SLM), and custom text-to-speech. Key engineering choices include running the SLM locally to avoid network latency, implementing a System 1/System 2 separation (behavior tree for reactive actions, language model for intent and speech), and constraining the game world to a single map and fixed item taxonomy for tractable domain adaptation. PUBG Ally supports English, Korean, and Chinese, uses teacher-student distillation for domain-specific knowledge, and includes structured long-term memory that persists across matches. The interviews also cover testing methodologies for non-deterministic AI, advice for other studios, and future directions for co-playable characters.",
+  "tags": [
+    "AI Agent",
+    "Small Language Model",
+    "On-Device AI",
+    "Game AI",
+    "Speech Recognition"
+  ],
+  "title": "Q&A: How KRAFTON Built PUBG Ally， a Co-Playable Character Powered by NVIDIA ACE",
+  "translateContent": null,
+  "url": "https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/",
+  "wordCount": 2321
+}

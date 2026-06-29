@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-25",
+  "id": "BB-2026-05-01-639",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-639/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-639",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-639/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-639/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-639/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-639/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-639/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-639/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "System Design",
+    "GPU Inference",
+    "AI Engineering",
+    "Multi-Agent Systems",
+    "Performance Optimization"
+  ],
+  "title": "3 Agents. 3 LLMs. 1 Aging GPU: Engineering Parallel Inference on Bare Metal",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://towardsdatascience.com/3-agents-3-llms-1-aging-gpu-engineering-parallel-inference-on-bare-metal/",
+      "https://www.bestblogs.dev/article/0807a4a4"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/3-agents-3-llms-1-aging-gpu-engineering-parallel-inference-on-bare-metal/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/0807a4a4"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "Hacker News"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_tB5dwJJRoOxkhI3J9zWRQVz3b1nTSjQptS1H9zf3FJtL-h2KqmUFS_UlVdKrpr-AHhJsYnCJ3bgN7CwKznN7PbdUOmKvVjA0Xt-CzDPGZiyLFEe5gKat7nFx8K_M1wRbajvbD4=w1200-h630-p-k-no-nu",
+  "domain": "righto.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_b36e16c6",
+  "keyQuotes": [
+    "The result was the floating-point architecture of the 8087. This became the IEEE 754 standard used in almost all modern computers, so I consider the 8087 one of the most influential chips ever designed.",
+    "Since shifts are so essential to performance, the 8087 uses a 'barrel shifter', which can shift a number by any number of bits in a single step.",
+    "One of the key innovations of the 8087's shifter is its bidirectional design: data can be passed through the shifter in reverse to shift bits the opposite direction.",
+    "To make the chip possible, Intel developed new techniques."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "The bit shifter shifts by 0–7 bits, and the byte shifter shifts by 0–7 bytes, combining to cover the full 63-bit range without sequential shifting, which improves performance.",
+      "point": "The 8087's barrel shifter uses a two-stage design (bit shifter + byte shifter) to shift by 0–63 bits in a single cycle."
+    },
+    {
+      "explanation": "Instead of separate left/right shifters, the 8087 uses pass transistors that can pass signals both ways, with driver circuits on both sides that reverse roles depending on the shift direction.",
+      "point": "Bidirectional shifting is achieved using pass-transistor logic, allowing data to flow in either direction through the same circuit."
+    },
+    {
+      "explanation": "By alternating the two types of wiring, the spacing between lines can be smaller than between same-type lines, allowing the shifter to fit within the 8087's limited die area.",
+      "point": "The layout uses alternating diffusion and polysilicon wires to pack lines tightly, saving chip area."
+    },
+    {
+      "explanation": "The 6-bit shift number is selected by multiplexers from these sources and decoded to activate one of eight bit-shift lines and one of eight byte-shift lines.",
+      "point": "Three sources provide the shift amount: microcode, loop counter (for CORDIC algorithms), and leading-zero counter (for normalization)."
+    },
+    {
+      "explanation": "With guidance from William Kahan, the 8087's precise floating-point design set the foundation for the universal IEEE 754 standard used in virtually all modern computers.",
+      "point": "The 8087's floating-point architecture became the IEEE 754 standard, making it one of the most influential chips ever designed."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article provides an in-depth die analysis of the Intel 8087 floating-point coprocessor's fast barrel shifter, explaining its two-stage design, bidirectional pass-transistor logic, and layout optimizations that made the 8087's high-performance floating-point operations possible.",
+  "originalTitle": "Die analysis of the 8087 math coprocessor's fast bit shifter",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 21:40:16",
+  "publishTimeStamp": 1782135616000,
+  "qualified": false,
+  "readCount": 16,
+  "readTime": 12,
+  "readUrl": "https://www.bestblogs.dev/article/b36e16c6",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article starts with the historical significance of the Intel 8087 coprocessor, which introduced the IEEE 754 floating-point standard and dramatically accelerated floating-point operations on early microcomputers. It then focuses on the die of the 8087, specifically its high-speed barrel shifter—a critical component for addition, subtraction, normalization, and transcendental operations. The shifter uses a two-stage design: a bit shifter (0–7 bits) and a byte shifter (0–7 bytes), allowing arbitrary shifts up to 63 bits in a single step. The author explains the transistor-level implementation with NMOS pass-transistor logic, which enables bidirectional data flow. Detailed die photos and diagrams illustrate the physical layout, including the alternating silicon and polysilicon wiring that saves space. The article also describes the driver circuits, multiplexer/decoder logic, and how the shift amount is selected from microcode, a loop counter, or a leading-zero counter. The conclusion places the shifter in the context of the 8087's overall performance advantage and notes that Intel later integrated FPUs into their processors.",
+  "tags": [
+    "Microprocessor Architecture",
+    "Floating Point Unit",
+    "Barrel Shifter",
+    "Chip Design",
+    "Reverse Engineering"
+  ],
+  "title": "Die analysis of the 8087 math coprocessor's fast bit shifter",
+  "translateContent": null,
+  "url": "https://www.righto.com/2020/05/die-analysis-of-8087-math-coprocessors.html",
+  "wordCount": 2989
+}

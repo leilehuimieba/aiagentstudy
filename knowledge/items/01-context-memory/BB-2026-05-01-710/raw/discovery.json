@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "CSDN"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527130532_74bcc81.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_87f785ef",
+  "keyQuotes": [
+    "Research is a Markov decision process.",
+    "AI can never have its 'lawyer license revoked' because it lacks legal standing and cannot bear legal responsibility.",
+    "The truly valuable skills often lie at the lowest level of the system.",
+    "First make something, and the signals will naturally appear."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Vlad received a bonus from Jeff Dean for solving GPU memory overflows and adjusting the compiler, showing that 'doing the dirty work' is the true core value in AI competition, not just publishing papers.",
+      "point": "Frontier labs value low-level engineering and system optimization the most."
+    },
+    {
+      "explanation": "Due to the one-shot nature and huge cost of large model training, researchers must predict the final loss based on scaling laws (e.g., Kaplan, Chinchilla) rather than trial and error.",
+      "point": "The core of pre-training research is designing a training recipe with predictable scaling laws."
+    },
+    {
+      "explanation": "Using Gemini 2.0 Flash's pipeline prefill as an example, changing the model distribution broke the high-bandwidth memory bottleneck, significantly reducing latency for MoE models—the core victory of the 5-person team's 40-day sprint.",
+      "point": "Inference co-design is key to improving model efficiency—jointly optimizing architecture and hardware utilization."
+    },
+    {
+      "explanation": "Nate Lintz originally wrote search backend infrastructure; by solving LLM inference and compute overhead in business problems, he eventually internally transferred to become a pillar of DeepMind's inference core design.",
+      "point": "Ordinary engineers can pivot by helping LLMs go to production and solving inference overhead in practice."
+    },
+    {
+      "explanation": "Vlad uses the lawyer license example to point out that humans must sign off on AI's outputs; the distribution of responsibility and trust is the underlying logic of professional existence, and it is the ultimate line that programmers will not be replaced.",
+      "point": "AI cannot replace humans because it lacks the legal capacity to assume responsibility."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article is a compilation of a podcast interview with Vlad Feinberg, head of pre-training for DeepMind Gemini. It reveals the behind-the-scenes story of how Gemini 2.0 Flash was trained by a 5-person team working non-stop for 40 days, and delves into pre-training research, quantization, inference co-design, and the career transition path for programmers in the AI era.",
+  "originalTitle": "40 天不睡、5 人死磕！DeepMind 主管爆 Gemini 大战 DeepSeek 惨烈内幕，聊普通程序员的转型之路",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 17:48:00",
+  "publishTimeStamp": 1782208080000,
+  "qualified": false,
+  "readCount": 101,
+  "readTime": 65,
+  "readUrl": "https://www.bestblogs.dev/article/87f785ef",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_69dd9d",
+  "sourceImage": "https://image.jido.dev/20260527130532_74bcc81.jpeg",
+  "sourceName": "CSDN",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article is a compilation by CSDN of a podcast interview with Vlad Feinberg, head of pre-training at Google DeepMind Gemini. Vlad shares how he received an on-the-spot bonus from Jeff Dean for solving Bard's compiler and hyperparameter issues, emphasizing the core value of 'doing the dirty work' engineering capabilities in AI competition. He reveals that Gemini 2.0 Flash was trained by just a 5-person team working 24-hour shifts between Silicon Valley and Paris for 40 consecutive days without sleep. He also exposes that the Wall Street Journal deliberately omitted Gemini 2.0 Flash Thinking, which topped the LMSYS leaderboard, when comparing with DeepSeek to create an 'open-source surpassing' narrative. The article delves into the essence of pre-training research—designing a 'recipe' for predictable scaling laws—and underlying technical principles such as quantization, distillation, and pipeline prefill. Vlad uses the example that 'AI cannot have its lawyer license revoked' to illustrate human irreplaceability, and points out that ordinary engineers can transition to cutting-edge teams by helping LLMs land in practice and solving inference overhead through real-world accumulation. He also gives specific job-seeking advice: contribute to open-source projects like vLLM or TensorRT, implement a Transformer from scratch, and record an explanatory video. The full text is dense with information, covering both technical inside stories and career guidance.",
+  "tags": [
+    "Large Language Models",
+    "Model Pre-training",
+    "AI Engineering Practice",
+    "AI Job Seeking & Career Growth",
+    "Model Quantization"
+  ],
+  "title": "40 Days No Sleep, 5 People Grind It Out! DeepMind Director Reveals Gemini vs DeepSeek's Brutal Inside Story, and the Career Pivot for Ordinary Programmers",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247832407&idx=1&sn=b4147da5fc96c9142d2e359739973073",
+  "wordCount": 16131
+}

@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Jake Broekhuizen"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a3c01c9a318cdaf1ffa880c_Youtube-Introduction%20to%20LangChain%20(1).png",
+  "domain": "langchain.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_35c6d909",
+  "keyQuotes": [
+    "Memory is durable context that an agent can retrieve across runs to guide its behavior.",
+    "Not everything should be a memory update. Most trace data should remain history.",
+    "The same symptom can point to different fixes."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "It includes facts, preferences, past interactions, instructions, skills, and learned patterns. Long-term memory is further split into semantic (knowledge), episodic (experience), and procedural (behavior rules) types.",
+      "point": "Memory is durable context that an agent retrieves across runs to guide behavior."
+    },
+    {
+      "explanation": "Capture traces via observability, analyze traces to find useful signal (explicit feedback, recurring issues, missed instructions), and update durable context (facts, instructions, skills) in a versioned store.",
+      "point": "The memory loop consists of capture, analyze, and update phases."
+    },
+    {
+      "explanation": "Only a small subset of signals—like confirmed user preferences or clear recurring mistakes—should be promoted to durable context. Many issues are better fixed as evals, code changes, or tool schema updates.",
+      "point": "Not everything should become a memory update—most trace data remains history."
+    },
+    {
+      "explanation": "If the runtime caches prompts or tools, memory commits need a refresh path; otherwise the system may store the correct update while running with stale context.",
+      "point": "Ensure future runs actually read the updated memory."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article from LangChain presents a structured approach to building memory for AI agents, covering conceptual framing, a three-step loop (capture, analyze, update), and a concrete implementation using LangSmith's observability, engine, and context hub.",
+  "originalTitle": "How to Build Memory into AI Agents",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 08:00:00",
+  "publishTimeStamp": 1782259200000,
+  "qualified": false,
+  "readCount": 65,
+  "readTime": 5,
+  "readUrl": "https://www.bestblogs.dev/article/35c6d909",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_88bf28",
+  "sourceImage": "https://image.jido.dev/20260527045328_69a17e4a429d54e956e2a763_favicon.png",
+  "sourceName": "LangChain Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article introduces the concept of memory for AI agents, distinguishing between short-term (working) and long-term memory, and further categorizing long-term memory into semantic, episodic, and procedural types inspired by cognitive science. It outlines a high-level memory loop: capture traces via observability, analyze traces to find improvement signals (e.g., recurring errors, user preferences), and update memory (facts, instructions, skills) through a versioned store. The post then maps this loop to LangSmith components—Observability, Engine, and Context Hub—showing how to operationalize the process. Finally, it offers design principles: not every trace should become a memory update, ensure future runs can read the update, and protect important behavior with evals. The article is practical, rooted in real experience, and provides a clear blueprint for developers building memory into agent systems.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Memory Systems",
+    "LangSmith",
+    "Agent Development"
+  ],
+  "title": "How to Build Memory into AI Agents",
+  "translateContent": null,
+  "url": "https://www.langchain.com/blog/how-to-give-your-agent-memory",
+  "wordCount": 1166
+}

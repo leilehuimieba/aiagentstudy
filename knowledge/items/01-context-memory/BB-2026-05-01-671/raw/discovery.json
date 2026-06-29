@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "Andy Thelander"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/06/shopify_everywhere_edition-cover.webp?x68649",
+  "domain": "tympanus.net",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_5e6e0a40",
+  "keyQuotes": [
+    "The biggest lesson was that high-end browser work is mostly pipeline work, building the factory to build the item at scale.",
+    "keep scroll-driven values out of React renders",
+    "That changed the collaboration loop. Instead of 'design hands-off, engineering rebuilds,' the loop became: tune the real scene, test it in the browser, check the tiered fallbacks, then ship the same underlying configuration."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Positions are quantized within bounding boxes and colors are chroma-subsampled; loads run in a worker. Falls back to Draco .bin when needed.",
+      "point": "Custom point cloud format (.mdpc) reduces network cost and decodes efficiently."
+    },
+    {
+      "explanation": "Tier resolved via GPU detection and WebGL support; mobile capped aggressively to avoid memory pressure. DPR also clamped per tier.",
+      "point": "Device tiering (Tiers 0–3) ensures the experience runs on diverse GPUs."
+    },
+    {
+      "explanation": "Preprocessed video slices are treated as a 3D texture and raymarched with a hard step cap. A practical browser-friendly approach.",
+      "point": "Volumetric light is achieved with raymarched KTX2 video textures, not true volumetrics."
+    },
+    {
+      "explanation": "Top half stores color, bottom half alpha; NEAREST filtering avoids bleed. Fallback from requestVideoFrameCallback to requestAnimationFrame.",
+      "point": "Transparent video uses stacked RGB/alpha frames and WebGL2 reconstruction for cross-browser support."
+    },
+    {
+      "explanation": "The Playground and page consume identical JSON presets for camera, lighting, post‑processing. Designers tune real scenes and move directly to production.",
+      "point": "Creative tooling and production share the same scene preset, eliminating re-interpretation."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Shopify shares the technical architecture behind Spring '26 Edition's cinematic web experience, covering custom point cloud format, volumetric light rendering, device tiering, and a designer-friendly playground workflow.",
+  "originalTitle": "Engineering the Web Experience Behind Shopify’s Spring ’26 Edition: Everywhere",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 17:34:40",
+  "publishTimeStamp": 1782466480000,
+  "qualified": false,
+  "readCount": 14,
+  "readTime": 7,
+  "readUrl": "https://www.bestblogs.dev/article/5e6e0a40",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_ec8f7304",
+  "sourceImage": "https://image.jido.dev/20260623052533_apple-touch-icon.png",
+  "sourceName": "Codrops",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This in-depth technical walkthrough by Shopify's Principal Product Designer Andy Thelander details the engineering decisions behind the Spring '26 Edition 'Everywhere' launch page. It covers the rendering architecture combining WebGL for atmosphere and DOM for content, a custom .mdpc point cloud format for efficient GPU storage, volumetric light from video using raymarched KTX2 textures, and a stacked-video technique for cross-browser transparent video. The article explains a device tiering system (Tiers 0-3) for performance, a fluid simulation shared across effects, and scroll-driven uniforms kept outside React renders. A key innovation is the 'Playground' that uses the same scene preset as production, enabling designers to tune real scenes in browser. The piece emphasizes pipeline engineering and practical constraints for high-end web work.",
+  "tags": [
+    "WebGL",
+    "Three.js",
+    "Performance Optimization",
+    "Creative Development",
+    "Rendering Architecture"
+  ],
+  "title": "Engineering the Web Experience Behind Shopify’s Spring ’26 Edition: Everywhere",
+  "translateContent": null,
+  "url": "https://tympanus.net/codrops/2026/06/26/engineering-the-web-experience-behind-shopifys-spring-26-edition-everywhere/",
+  "wordCount": 1550
+}

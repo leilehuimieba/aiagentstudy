@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Latent.Space"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260622214325_transcoded-1781895509.png",
+  "domain": "latent.space",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_c4be1c11",
+  "keyQuotes": [
+    "The risks of extremely smart AI increasingly feel like gray swan events: an event that everyone can see coming.",
+    "AI systems have inherent vulnerabilities of their own. They can be tricked in ways people can be tricked, so you need a different security mindset.",
+    "The next major AI incident may be a gray swan: unlikely, but clearly visible before it happens."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Unlike traditional software, AI can be tricked in ways humans can be tricked, and correlated failures across widely used models create a new exploit class.",
+      "point": "AI security requires a different mindset because AI systems have unique vulnerabilities."
+    },
+    {
+      "explanation": "Gray Swan's specialized red-teaming model, trained on data from human experts, can find more breaks in a fixed time window than even skilled human participants.",
+      "point": "Automated red teaming (Shade) now outperforms human red teamers at breaking models."
+    },
+    {
+      "explanation": "Safety and robustness are not emergent properties of larger models; they require explicit training, and larger models are not inherently better at red teaming themselves.",
+      "point": "Frontier models do not automatically become more robust as they scale."
+    },
+    {
+      "explanation": "As agents use tools and browse the web, they are vulnerable to indirect prompt injection, and the first major AI security incident is considered a 'gray swan'—visible beforehand but not prevented.",
+      "point": "Prompt injection in agentic systems (e.g., coding agents) is a critical and likely inevitable breach vector."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "An in-depth podcast interview with Gray Swan co-founders on why AI security fundamentally differs from traditional cybersecurity, the rise of automated red teaming, and why prompt injection in agentic systems represents a new class of inevitable vulnerabilities.",
+  "originalTitle": "Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson， Gray Swan",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 05:06:55",
+  "publishTimeStamp": 1782162415000,
+  "qualified": false,
+  "readCount": 69,
+  "readTime": 48,
+  "readUrl": "https://www.bestblogs.dev/article/c4be1c11",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_fc479e",
+  "sourceImage": "https://image.jido.dev/20260527050728_73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+  "sourceName": "Latent.Space",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This episode from Latent.Space features Zico Kolter and Matt Fredrikson, co-founders of Gray Swan, discussing the current state of AI red teaming. They explain that AI security is not merely 'cybersecurity with AI'—AI systems have inherent, novel vulnerabilities (e.g., prompt injection, adversarial attacks) that require a dedicated security mindset. The conversation covers Gray Swan's two-pronged approach: a community-driven red teaming arena (15,000+ participants) and automated red teaming with their model 'Shade,' which can now outperform human red teamers in controlled experiments. They introduce 'The Lethal Trifecta' (untrusted data, private data, exfiltration) and highlight that frontier models do not automatically become more robust with scale. The guests also discuss agent-native identity, permissions, the inevitability of a major AI prompt-injection breach, and the potential for AI security to become part of insurance and compliance stacks.",
+  "tags": [
+    "AI Security",
+    "Red Teaming",
+    "Prompt Injection",
+    "LLM",
+    "AI Agents"
+  ],
+  "title": "Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan",
+  "translateContent": null,
+  "url": "https://www.latent.space/p/gray-swan",
+  "wordCount": 11825
+}

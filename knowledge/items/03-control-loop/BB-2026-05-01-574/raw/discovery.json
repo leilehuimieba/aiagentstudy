@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Manish Ramavat"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/106d9ec2-0ef5-4bec-b2c6-8473b3bd671f.png",
+  "domain": "freecodecamp.org",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_4be45766",
+  "keyQuotes": [
+    "LLMs are excellent at fixing errors when you tell them exactly what's wrong. They're terrible at finding their own errors.",
+    "The validator doesn't reason — it executes.",
+    "Build the validator first and the agent second. Your validator IS your spec.",
+    "Stop asking LLMs to verify themselves for deterministic output. Give them a mirror that actually reflects reality."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The author explains that asking an LLM to critique its own output is like asking someone bad at math to grade another person's math. False positives (approving wrong output) are dangerous for production systems.",
+      "point": "LLM-based reflection is unreliable for structured output because the same model cannot reliably detect its own errors."
+    },
+    {
+      "explanation": "Validators parse JSON exactly, check numerical bounds, enforce cross-field rules deterministically, and never hallucinate. They outsource the 'finding' part to code that is perfect at it.",
+      "point": "Deterministic validators (schema checks, business rules) provide perfect, fast detection of errors that LLMs miss."
+    },
+    {
+      "explanation": "Feeding specific error messages (e.g., 'replicas > 5 requires cpu_limit >= 1.0') allows the LLM to fix them almost every time, because LLMs are excellent at correcting when told precisely what is wrong.",
+      "point": "The effective pattern is generate → validate (deterministic) → feed exact errors back → retry."
+    },
+    {
+      "explanation": "If correctness is defined by hard constraints (JSON schema, SQL parsing, code compilation), use this loop. If 'correct' is subjective (tone, persuasiveness), reflection remains appropriate.",
+      "point": "This pattern is only suitable for output that can be validated deterministically; for subjective quality, reflection or human review is still needed."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article argues that using LLM-based reflection to fix structured AI agent output is unreliable, and proposes a deterministic generate-validate-retry loop as a more reliable alternative.",
+  "originalTitle": "What to Do When Reflection Won't Fix Your AI Agent's Output",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 06:18:16",
+  "publishTimeStamp": 1782166696000,
+  "qualified": false,
+  "readCount": 76,
+  "readTime": 9,
+  "readUrl": "https://www.bestblogs.dev/article/4be45766",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 92,
+  "selectionReason": null,
+  "sourceId": "SOURCE_074370",
+  "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+  "sourceName": "freeCodeCamp",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The author shares production experience at a large-scale web company where LLM reflection (having an LLM critique its own structured output) failed to reliably fix errors, often producing 'confidently wrong' approved output. The proposed solution separates error detection (using deterministic validators like JSON Schema and custom business rules) from error correction (feeding exact error messages back to the LLM for targeted fixes). A complete LangGraph implementation is provided, demonstrating a generate-validate-retry loop that achieves near-perfect correctness. The article also discusses when this pattern is applicable (deterministic constraints) vs. when subjective quality still requires reflection or human review. Key insight: LLMs are good at fixing specific errors but bad at finding their own; deterministic validators excel at perfect detection.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Prompt Engineering",
+    "Production AI",
+    "LangGraph"
+  ],
+  "title": "What to Do When Reflection Won't Fix Your AI Agent's Output",
+  "translateContent": null,
+  "url": "https://www.freecodecamp.org/news/what-to-do-when-reflection-won-t-fix-your-ai-agent-s-output/",
+  "wordCount": 2043
+}

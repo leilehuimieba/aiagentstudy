@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "Maria Mouschoutzi"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/Capture-2.jpg",
+  "domain": "towardsdatascience.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_2d145514",
+  "keyQuotes": [
+    "The test set is meaningful only if the model has genuinely never seen it before.",
+    "When a measure becomes a target, it ceases to be a good measure."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Each adjustment based on evaluation results makes the set part of the development process, invalidating its role as unseen test data.",
+      "point": "Using the evaluation set to fix issues and then re-evaluating on the same set causes overfitting."
+    },
+    {
+      "explanation": "These practices all compromise the independence of the test set, leading to inflated scores that don't reflect real-world performance.",
+      "point": "Three common ways overfitting occurs in RAG: tuning prompts on the evaluation set, cherry-picking questions, and building questions from indexed documents."
+    },
+    {
+      "explanation": "Following classical ML best practices—keeping a test set untouched, avoiding iterative tuning on it—prevents overfitting and ensures evaluation measures true generalization.",
+      "point": "The solution is a genuinely held-out test set, independent question construction, and skepticism toward suspiciously high metrics."
+    },
+    {
+      "explanation": "The author argues that the issue stems from failing to adhere to rigorous evaluation protocols, especially because natural language QA sets feel different from traditional numeric datasets.",
+      "point": "Overfitting in RAG is a process discipline problem, not a technical one."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article warns that repeatedly fixing issues identified during RAG evaluation on the same test set causes overfitting, turning the evaluation set into a training set and inflating scores.",
+  "originalTitle": "Water Cooler Small Talk， Ep. 11: Overfitting in RAG evaluation",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 23:00:00",
+  "publishTimeStamp": 1782486000000,
+  "qualified": false,
+  "readCount": 24,
+  "readTime": 8,
+  "readUrl": "https://www.bestblogs.dev/article/2d145514",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "sourceName": "Towards Data Science",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article uses a water cooler anecdote to illustrate a subtle but common pitfall in RAG evaluation: treating the evaluation set as a development tool by iteratively tuning prompts or retrieval logic based on its results. This behavior effectively merges the evaluation set with the training process, leading to overfitting. The author explains the ML fundamentals of training/validation/test splits, then details three ways this happens in RAG—tuning prompts on the evaluation set, cherry-picking questions the system handles well, and building test questions from indexed documents. The antidote is to maintain a genuinely held-out test set, build questions independently of system behavior, and treat suspiciously high metrics with skepticism. The article also connects the issue to Goodhart's Law ('When a measure becomes a target, it ceases to be a good measure') and reward hacking, emphasizing that overfitting is a process discipline problem, not purely technical.",
+  "tags": [
+    "RAG",
+    "AI Evaluation",
+    "Overfitting",
+    "Machine Learning",
+    "Goodhart's Law"
+  ],
+  "title": "Water Cooler Small Talk， Ep. 11: Overfitting in RAG evaluation",
+  "translateContent": null,
+  "url": "https://towardsdatascience.com/water-cooler-small-talk-ep-11-overfitting-in-rag-evaluation/",
+  "wordCount": 1968
+}

@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "Engineering at Meta"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://engineering.fb.com/wp-content/uploads/2026/06/Meta-AV1-for-RTC-hero.png",
+  "domain": "engineering.fb.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_46b40515",
+  "keyQuotes": [
+    "The motivation for switching to a more advanced video codec is straightforward — it delivers the same visual quality while using much less bandwidth.",
+    "If devices can accommodate higher encoding complexity, the bitrate reductions are even greater.",
+    "Because modern codecs support a larger set of coding tools, a well-designed encoder has more opportunities to find better trade-offs between quality and complexity.",
+    "There is a trade-off: Compared to a tightly dependent prediction chain (where each frame references the immediately preceding frame), a temporal-layer structure is typically less compression-efficient, so leaving TL enabled all the time can degrade quality at a given bitrate.",
+    "We encourage SoC vendors to invest in HW AV1 across all device tiers to meet the AV1 requirements to deliver an improved viewer experience, device battery savings and enhanced network operator infrastructure efficiency."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "In offline tests under Meta's product settings, AV1 achieved a 20% bitrate reduction on low-end devices and more on capable hardware, directly translating to better quality for users on slow networks.",
+      "point": "AV1 provides at least 20% bitrate reduction over H.264 in RTC settings, with greater gains on higher-end devices."
+    },
+    {
+      "explanation": "Meta developed an ultra-low-complexity preset that matches H.264's computational cost, allowing AV1 to be enabled on a much wider range of devices than originally thought possible.",
+      "point": "A low-complexity encoder preset makes AV1 feasible on mid-range and low-end phones without increasing power compared to H.264."
+    },
+    {
+      "explanation": "Meta built a framework using real-world performance metrics to compute an rtc_score per device, then refined it with AV1-specific data, expanding coverage significantly.",
+      "point": "ML-based device eligibility outperforms simple heuristics like memory or release year for determining AV1 capabilities."
+    },
+    {
+      "explanation": "The system monitors per-frame latency and adjusts encoder presets or switches to H.264 when a device cannot keep up, also supporting asymmetric codec use where one side decodes AV1 but encodes H.264.",
+      "point": "Adaptive codec switching based on encoding/decoding latency and battery level prevents video freezes and extends call duration."
+    },
+    {
+      "explanation": "TL offers graceful degradation under packet loss by keeping base-layer continuity, while LTR enables fast recovery from frame loss using previously acknowledged reference frames, both tuned to avoid compression efficiency loss when the network is healthy.",
+      "point": "Temporal layers and long-term reference frames provide efficient error resilience without the overhead of keyframes."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Meta describes the multi-year journey to deploy AV1 across Messenger and WhatsApp, covering codec selection, ML-based device eligibility, adaptive rate control, and error resilience for real-time video calls.",
+  "originalTitle": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 00:16:39",
+  "publishTimeStamp": 1782144999000,
+  "qualified": false,
+  "readCount": 17,
+  "readTime": 17,
+  "readUrl": "https://www.bestblogs.dev/article/46b40515",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_011b29",
+  "sourceImage": "https://image.jido.dev/20251127045335_7198b2a9",
+  "sourceName": "Engineering at Meta",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article from Meta Engineering details the technical and operational challenges of adopting the AV1 video codec for real-time communication (RTC) at scale. The motivation is clear: AV1 delivers the same visual quality as H.264/AVC with at least 20% bitrate reduction, which is critical for bandwidth-constrained networks common in emerging markets. The authors present a low-complexity encoder that matches H.264 power consumption, enabling AV1 on mid-range and low-end mobile devices. Device eligibility is determined through an ML-based framework that uses real-world performance metrics to generate an rtc_score, iteratively refined from Model V1.1 to V2. To handle dynamic network conditions, Meta developed adaptive encoder preset adjustment and latency-aware codec switching between AV1 and H.264, including an asymmetric codec design where a device can decode AV1 while encoding H.264. The article also covers accurate rate control using VBV delay metrics to prevent both overshoot and undershoot, and error resilience through temporal layers (TL) and long-term reference (LTR) frames. TL is enabled adaptively to trade compression efficiency for robustness under packet loss, while LTR provides fast recovery without forcing a full keyframe. The piece concludes with ongoing work on group calls and a call for hardware AV1 support across device tiers. The article is rich with real data, practical trade-offs, and concrete implementation details, representing a valuable reference for engineers working on video streaming or RTC infrastructure.",
+  "tags": [
+    "AV1",
+    "Video Codec",
+    "Real-Time Communication",
+    "Rate Control",
+    "Error Resilience"
+  ],
+  "title": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
+  "translateContent": null,
+  "url": "https://engineering.fb.com/2026/06/22/video-engineering/adopting-av1-for-real-time-communication-rtc-meta/",
+  "wordCount": 4035
+}

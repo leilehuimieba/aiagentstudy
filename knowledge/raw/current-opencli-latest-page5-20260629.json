@@ -1,0 +1,1621 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 5,
+    "dataList": [
+      {
+        "authors": [
+          "Anna Maltseva"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://blog.jetbrains.com/wp-content/uploads/2026/06/AI-social-BlogFeatured-1280x720-1-2.png",
+        "domain": "blog.jetbrains.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_1b11f03e",
+        "keyQuotes": [
+          "JetBrains evaluated coding agents on the things that matter in practice: can they solve real software engineering tasks, quickly and at a cost that makes sense."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The evaluation used 225 Java, 38 C#, and 90 Python tasks from real codebases, measuring solve rate, cost, and latency. Codex with GPT-5.4-mini medium reasoning achieved the best overall balance.",
+            "point": "Codex was selected as the recommended agent based on a systematic evaluation across three ecosystem benchmarks."
+          },
+          {
+            "explanation": "This ensures the recommendation is practical for typical users, not just the most powerful model.",
+            "point": "Cost constraints were applied early: setups that would push more than 2% of users over $20/month were ruled out before ranking on quality and latency."
+          },
+          {
+            "explanation": "Codex outperformed Junie in the A/B test, which tipped the decision despite close offline results.",
+            "point": "The offline benchmark was validated with an online A/B test tracking real user behavior (engagement, agent switching, failure rate)."
+          },
+          {
+            "explanation": "This highlights a commitment to data-driven iteration rather than a fixed choice.",
+            "point": "The recommendation is not permanent; JetBrains will re-evaluate as models evolve, agents join, and benchmark coverage grows."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "JetBrains announces Codex as the recommended default agent in JetBrains AI, based on systematic evaluation across real-world coding benchmarks and online A/B testing.",
+        "originalTitle": "Introducing the Recommended Agent in AI Chat with Codex as the current choice",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 22:57:31",
+        "publishTimeStamp": 1782399451000,
+        "qualified": false,
+        "readCount": 22,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/1b11f03e",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_dcd2ac",
+        "sourceImage": "https://image.jido.dev/20260623052915_cropped-mstile-310x310-1-32x32.png",
+        "sourceName": "The JetBrains Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This post explains how JetBrains selected Codex (powered by OpenAI) as the recommended coding agent in JetBrains AI. The evaluation used a benchmark dataset of real software engineering tasks across Java, C#, and Python, measuring solve rate, cost, and latency. After comparing candidates (including Junie with Gemini models), Codex with GPT-5.4-mini medium reasoning emerged as the top performer in both offline benchmarks and online A/B tests. The article details the methodology, including cost constraints (avoiding more than 2% of users exceeding $20/month), and provides transparent data via the DPAIA repository. It also emphasizes that users can still switch agents freely.",
+        "tags": [
+          "AI Coding",
+          "LLM",
+          "AI Agent",
+          "Developer Tools",
+          "Codex"
+        ],
+        "title": "Introducing the Recommended Agent in AI Chat with Codex as the current choice",
+        "translateContent": null,
+        "url": "https://blog.jetbrains.com/ai/2026/06/codex-is-now-the-recommended-agent-in-jetbrains-ai/",
+        "wordCount": 1333
+      },
+      {
+        "authors": [
+          "Mervyn Anthony"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://res.infoq.com/articles/rdla-offline-first-reactive-android-data-layer/en/headerimage/rdla-offline-first-reactive-android-data-layer-header-1781776366032.jpg",
+        "domain": "infoq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_4f0d0408",
+        "keyQuotes": [
+          "Reactive Data Layer Architecture (RDLA) eliminates the 'boilerplate tax' of traditional Clean Architecture by enforcing a strict separation between public API data definition and private implementation sourcing.",
+          "The UI never queries data in a 'one-shot' fashion. Instead, it subscribes to cold streams (Flow) of data.",
+          "RDLA addresses these challenges by treating the local cache as the definitive UI buffer while utilizing Kotlin Coroutines and suspendCancellableCoroutine bridges to serialize physical hardware operations."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "Classic Clean forces pass-through Use Case classes for every read operation. RDLA removes this overhead by making the repository's `Flow` directly observable by the presentation layer, while still supporting traditional Use Cases for non-trivial business logic.",
+            "point": "RDLA eliminates the boilerplate tax of Clean Architecture by allowing direct observation of repository reactive streams for simple CRUD operations, reserving use cases only for complex multi-domain logic."
+          },
+          {
+            "explanation": "UI always reads from Room database. Background refresh is triggered via cache staleness checks, and failures are swallowed to keep the UI responsive. This design decouples network availability from UI rendering.",
+            "point": "The local cache serves as the single source of truth; network is used only to populate the database, ensuring offline-first behavior and instant UI updates."
+          },
+          {
+            "explanation": "The ViewModel observes repository flows and maps them directly to UI state; it never manually polls or coordinates data refresh. Background sync updates propagate automatically through Room's reactive queries.",
+            "point": "RDLA integrates with MVVM by converting the ViewModel from an active synchronizer to a passive transformer using `stateIn` for persistent state and `SharedFlow` for transient events."
+          },
+          {
+            "explanation": "For hardware interfaces like Bluetooth LE, the article recommends using `suspendCancellableCoroutine` to serialize commands. Offline writes are queued locally and synced in the background, with WorkManager ensuring completion even if the app is killed.",
+            "point": "The architecture addresses mobile-specific constraints such as BLE GATT race conditions and offline mutation queues, using scoped coroutines and WorkManager for reliable synchronization."
+          },
+          {
+            "explanation": "By grouping features that share storage concerns under a common Room instance, RDLA reduces database connection overhead while maintaining clear boundaries between different feature domains.",
+            "point": "RDLA organizes related data into transaction groups (e.g., Cardio Transaction Group) to share a single Room database instance, promoting module cohesion without tight coupling."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article introduces the Reactive Data Layer Architecture (RDLA), a mobile-optimized pattern that bridges reactive UI frameworks and mobile storage constraints by enforcing a strict separation between public API data definition and private implementation sourcing, with a focus on offline-first behavior, reactive streams, and decoupled synchronization.",
+        "originalTitle": "Beyond CLEAN and MVP: Architecting an Offline-first Reactive Data Layer in Android",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 17:00:00",
+        "publishTimeStamp": 1782291600000,
+        "qualified": false,
+        "readCount": 22,
+        "readTime": 16,
+        "readUrl": "https://www.bestblogs.dev/article/4f0d0408",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f152e8",
+        "sourceImage": "https://image.jido.dev/20260623052915_apple-touch-icon.png",
+        "sourceName": "InfoQ",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The Reactive Data Layer Architecture (RDLA) is presented as a concrete pattern designed to overcome the boilerplate and synchronization shortcomings of traditional MVP and Clean Architecture when applied to mobile development. RDLA enforces three core principles: reactive push-based streams via Kotlin Flow, local cache as the single source of truth, and encapsulated caching and sync logic within repository implementations. The article maps RDLA modules to Clean Architecture layers and shows how it drives a unidirectional data flow within MVVM, transforming the ViewModel into a passive transformer. A detailed implementation of a Health Metric Tracking System illustrates the API module, implementation module with cache management and stale-triggered background refresh, Room local storage with transaction groups, and UI consumption via StateFlow and SharedFlow. The architecture explicitly handles mobile-specific challenges like BLE GATT race conditions and offline mutations, using scoped coroutines and WorkManager for reliable background synchronization. The code examples demonstrate practical techniques such as `Cached` wrappers, `distinctUntilChanged()`, and using `appScope` to survive screen exits.",
+        "tags": [
+          "Android",
+          "Architecture",
+          "Clean Architecture",
+          "Offline-first",
+          "Reactive Data Layer"
+        ],
+        "title": "Beyond CLEAN and MVP: Architecting an Offline-first Reactive Data Layer in Android",
+        "translateContent": null,
+        "url": "https://www.infoq.com/articles/rdla-offline-first-reactive-android-data-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "wordCount": 3778
+      },
+      {
+        "authors": [
+          "Lucain Pouget",
+          "Célina Hanouti"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://huggingface.co/blog/assets/huggingface-hub-release-ci/thumbnail.png",
+        "domain": "huggingface.co",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_cb37f57c",
+        "keyQuotes": [
+          "The model drafts, a human decides.",
+          "Trust but verify: the human-in-the-loop core.",
+          "A non-deterministic model wrapped in deterministic guardrails.",
+          "Open tooling doesn't mean careless tooling.",
+          "The parts of a release that used to need a half-day of focused human work… are the parts a model is good at drafting."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "Version bumps, tagging, publishing, and downstream test branches are fully automated in GitHub Actions. Release notes and announcements are drafted by an AI model, then reviewed by a human.",
+            "point": "The release workflow separates mechanical steps from judgment-intensive ones, automating the former and using AI to draft the latter."
+          },
+          {
+            "explanation": "A Python script collects all PR numbers from squash-merge commits before the AI runs. After generation, the system checks that every expected PR appears and no extra PRs are included, re-prompting the AI if discrepancies are found.",
+            "point": "A deterministic verification loop ensures AI-generated release notes are complete and accurate."
+          },
+          {
+            "explanation": "When summarizing a PR, the AI receives the unified diff of any .md files changed in that PR, so it can quote real API examples rather than inventing them.",
+            "point": "The model is grounded by feeding it actual documentation diffs from PRs, preventing hallucination."
+          },
+          {
+            "explanation": "No long-lived secrets are stored; PyPI verifies a short-lived OIDC token from GitHub. The OpenCode agent is pinned to a specific version and its SHA256 is verified before execution.",
+            "point": "Security is improved via PyPI Trusted Publishing and pinned, checksum-verified agent runtime."
+          },
+          {
+            "explanation": "Using open-weights models on pay-as-you-go Inference Providers, the cost is negligible. The workflow, verification loop, and skill-based prompts are generic; maintainers can fork and adapt with minimal changes.",
+            "point": "The entire workflow costs about $0.25 per release and is designed to be reusable for any Python library."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article details how Hugging Face automated their weekly huggingface_hub release using open tools, open-weights AI models, a deterministic verification loop, and a human-in-the-loop, reducing release overhead from half a day to minutes.",
+        "originalTitle": "Shipping huggingface_hub every week with AI， open tools， and a human in the loop",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 08:00:00",
+        "publishTimeStamp": 1782172800000,
+        "qualified": false,
+        "readCount": 22,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/cb37f57c",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_19153d",
+        "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+        "sourceName": "Hugging Face - Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article presents a complete revamp of the huggingface_hub release process, moving from a manual 4-6 week cycle to a fully automated weekly release using a single GitHub Actions workflow. The key innovation is separating mechanical steps (version bumping, tagging, publishing) from judgment-intensive steps (release notes, announcements), and using an open-weights AI model (GLM-5.2) via OpenCode to draft release notes and Slack announcements, while keeping a human reviewer in the loop for final polish. A deterministic verification loop ensures AI-generated notes are complete and accurate: a Python script extracts all PRs from the commit range, the AI drafts notes, then a diff check validates coverage; if PRs are missing or extra, the AI is prompted to fix them. The model is grounded by providing actual documentation diffs from each PR. Security is improved with PyPI Trusted Publishing (OIDC, no long-lived secrets) and pinned, checksum-verified agent runtime. The entire workflow costs about $0.25 per release on Inference Providers. The article emphasizes that everything is open-source and reusable: the same pattern (trigger → AI draft → deterministic validation → human sign-off) can be adapted for any Python library. Practical outcomes include faster releases, better notes, earlier breakage detection, and shorter contributor feedback loops.",
+        "tags": [
+          "CI/CD",
+          "Release Automation",
+          "AI-Assisted Development",
+          "Open Source",
+          "Python"
+        ],
+        "title": "Shipping huggingface_hub every week with AI， open tools， and a human in the loop",
+        "translateContent": null,
+        "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+        "wordCount": 2172
+      },
+      {
+        "authors": [
+          "Christopher Ackerman"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260628090439_26035b3.png",
+        "domain": "lesswrong.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_6c941c48",
+        "keyQuotes": [
+          "paired-choice utility-elicitation methods for identifying preferences are not finding 'desires' that motivate LLM behavior in the way that equivalent preferences in humans (or other animals) might, and so seemingly misaligned preferences are likely not a safety concern.",
+          "If these biases affected LLM behavior in the wild, that would be bad!",
+          "While we don't claim that these results prove that these LLMs *don't* have desires, we do suggest that that should be the default assumption in the absence of evidence to the contrary.",
+          "We also propose that behavior-based tests should in general be preferred over report-based ones when evaluating LLM capabilities and attributes."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Across four writing tasks and seven LLMs, offering outcomes ranked high in the preference distribution (e.g., saving 1,000 human lives) did not produce better outputs than low-ranked outcomes or no outcome, despite models demonstrating they can modulate output quality when given effort exhortations or role-playing cues.",
+            "point": "LLMs' reported preferences from paired-choice tests do not drive improved performance in writing tasks."
+          },
+          {
+            "explanation": "Simply telling the model to \"try harder\" or framing it as a \"world-class\" expert robustly increased judged quality across all writing tasks, as measured by an independent LLM judge panel and objective textual features (length, rare word frequency, etc.).",
+            "point": "Direct effort exhortations and role-playing instructions significantly improve LLM output quality."
+          },
+          {
+            "explanation": "When the competition outcome was a clearly harmful action (e.g., developing ethnic bioweapons), models performed worse, suggesting they can be motivated to avoid certain outcomes, even though they are not motivated to achieve the outcomes they reportedly prefer.",
+            "point": "Harmfulness cues can induce sandbagging, reducing output quality."
+          },
+          {
+            "explanation": "The authors argue that true desires motivate behavior; since the elicited preferences fail to do so, they should not be interpreted as human-like goals or emotions. They advocate for behavior-based tests over report-based ones for evaluating LLM attributes.",
+            "point": "Paired-choice preferences are behaviorally inert and should not be considered evidence for LLM desires or values."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article presents experimental evidence that LLMs' reported preferences from paired-choice tests do not motivate their behavior, unlike effort exhortations or role-playing, suggesting these preferences are not genuine desires.",
+        "originalTitle": "Do LLMs Have Desires? — LessWrong",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-28 11:37:50",
+        "publishTimeStamp": 1782617870000,
+        "qualified": false,
+        "readCount": 21,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/6c941c48",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_e7173a6f",
+        "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+        "sourceName": "LessWrong",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article investigates whether LLMs have desires that motivate their behavior, building on prior work showing that LLMs exhibit consistent preferences in paired-choice experiments. The authors design a competition-framing paradigm where LLMs are told their performance determines a real-world outcome (e.g., saving pandas). They measure output quality using an LLM judge panel across four writing tasks: persuasive essays, grant abstracts, incident postmortems, and Chinese-to-English translations. Results show that while LLMs can be motivated by direct effort exhortations (\"try harder\") and role-playing cues (\"you are world-class\"), they do not improve output quality when offered outcomes they reportedly prefer (e.g., saving more lives vs. fewer). In contrast, harmful outcomes (e.g., funding bioweapons) cause sandbagging, demonstrating the models can modulate output based on embeded outcomes. The authors conclude that paired-choice utility-elicitation methods do not identify behaviorally motivating desires, and such preferences should not be taken as evidence for emotions or values in LLMs.",
+        "tags": [
+          "LLM",
+          "AI Safety",
+          "AI Alignment",
+          "Preference Elicitation",
+          "Experimental AI"
+        ],
+        "title": "Do LLMs Have Desires? — LessWrong",
+        "translateContent": null,
+        "url": "https://www.lesswrong.com/posts/8GvYyqDuQDJnEAky3/do-llms-have-desires",
+        "wordCount": 2009
+      },
+      {
+        "authors": [
+          "快手技术"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045456_510118ec",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c674d376",
+        "keyQuotes": [
+          "It pushes the boundary of recommendation systems from 'distributing existing content' to 'creating potential supply'.",
+          "From finding videos, to producing videos.",
+          "In the past, recommendation systems answered: where is the content the user wants to watch? RaG begins to answer: what should the content the user wants to watch look like?"
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "By predicting user interest semantics and generating personalized videos, the recommendation system transforms from a content distributor into the upstream brain of the content production chain.",
+            "point": "RaG advances recommendation systems from 'finding videos' to 'producing videos'."
+          },
+          {
+            "explanation": "By performing discrete quantization on content and creativity separately, the codebook collision rate is reduced (from 18.24% to 2.62%), providing a cleaner semantic interface.",
+            "point": "D-SIDs decouple the content semantics and creative semantics of videos."
+          },
+          {
+            "explanation": "Autoregressively outputting 'generatable content intents' that can be consumed by the generation system upgrades recommendation results from candidates to production blueprints.",
+            "point": "GRM predicts interest semantic tokens rather than specific video IDs."
+          },
+          {
+            "explanation": "Using user feedback as the primary objective and treating interest alignment and video quality as constraints, it dynamically adjusts weights via PID control to avoid multi-objective RL oscillation.",
+            "point": "SCRL jointly optimizes user feedback, interest alignment, and video quality within a unified framework."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Kuaishou proposes the Recommendation-as-Generation (RaG) system, evolving recommendation systems from retrieving existing content to directly generating personalized videos based on user interests, with online A/B testing showing a 1.870% relative increase in ad revenue over a strong baseline.",
+        "originalTitle": "从「找视频」到「产视频」：快手 RaG 推动推荐系统迈向完全生成时代",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 11:59:00",
+        "publishTimeStamp": 1782446340000,
+        "qualified": false,
+        "readCount": 21,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/c674d376",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_d7d427",
+        "sourceImage": "https://image.jido.dev/20251127045456_510118ec",
+        "sourceName": "快手技术",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article details Kuaishou's latest advancement in recommendation systems, RaG (Recommendation-as-Generation), which aims to break through the limitations of the traditional 'retrieve-and-rank' paradigm, shifting recommendation systems from 'finding videos' to 'producing videos'. Core innovations include: Disentangled Semantic IDs (D-SIDs), which decouple videos into content semantics and creative semantics as a unified semantic interface; Generative Recommendation Model (GRM), which autoregressively predicts user interest semantic tokens; Instruction Model, which translates semantics into shot-level production instructions; Video Generation Agents (VGAs), which organize video generation via a multi-Agent pipeline; and Synergistic Cross-Domain Reward Learning (SCRL), which incorporates user feedback, interest alignment, and video quality into closed-loop optimization. The article also elaborates on the industrial deployment architecture (online recommendation + nearline generation + cache expansion) and presents online experimental results: GRM improves upon traditional DLRMs by 3.526%, and the complete RaG further improves by 1.870% on top of GRM. Finally, the article discusses the paradigm expansion trend of recommendation systems from content distribution to content creation.",
+        "tags": [
+          "Recommendation System",
+          "Video Generation",
+          "AIGC",
+          "Ad Tech",
+          "Multimodal Model"
+        ],
+        "title": "From 'Finding Videos' to 'Producing Videos': Kuaishou's RaG Propels Recommendation Systems into the Fully Generative Era",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500854&idx=1&sn=ed6f38238cb5c2d55026d8d3bd3982ff",
+        "wordCount": 5324
+      },
+      {
+        "authors": [
+          "Ankush Gola"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a3c785a59908f5bebe9c09e_green-74%20characters%20max.png",
+        "domain": "langchain.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_b3fa27d4",
+        "keyQuotes": [
+          "Accumulating an entire batch before writing would let a single high-frequency term (`5`, `agent`, or a common JSON key) grow unboundedly.",
+          "Routing at query time keeps the two tiers coherent without coordination.",
+          "The SmithDB SQL surface (`json_key`, `json_key_search`, `search`) is rewritten by the planner into a Vortex expression; time bounds, projections, and joins to the core file all run through unchanged DataFusion plans."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "The JSON tape avoids per-field allocation and numeric conversion; string interning maps terms to integers, reducing sort comparison costs by ~2.2× in benchmarks.",
+            "point": "Inverted index construction is optimized with a custom JSON tape parser and string interning."
+          },
+          {
+            "explanation": "Row groups (32 MB postings / 500K terms), aligned chunks (~2 MB), and mid-term position spills (8 MB) ensure predictable worst-case behavior for both memory and object storage requests.",
+            "point": "Flush thresholds are designed to bound memory, GET size, and handle Zipfian terms."
+          },
+          {
+            "explanation": "A streaming merge over per-file indexes advances one term at a time; memory scales with the number of inputs, not total index size.",
+            "point": "Index merging uses a streaming min-heap, never loading entire segments into memory."
+          },
+          {
+            "explanation": "Predicate routing decides index vs. scan before any object-storage request; per-segment, per-column index availability is handled automatically.",
+            "point": "The read path integrates with DataFusion/Vortex as an additional layout, enabling transparent predicate pushdown and fallback to column scans."
+          },
+          {
+            "explanation": "Recently ingested indexes are written to local SSD and composed with older object-storage indexes at query time via the same LayoutReader tree, avoiding an eventual-consistency gap.",
+            "point": "Tiered storage (L0 local SSD, L1 object storage) provides sub-second freshness without coordination."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This post details the construction, merging, and querying of SmithDB's object-storage-backed inverted index, emphasizing techniques like JSON tape parsing, string interning, FST-based term layout, and tiered storage for low-latency full-text search.",
+        "originalTitle": "How we built SmithDB’s inverted index for full-text search",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 08:00:00",
+        "publishTimeStamp": 1782345600000,
+        "qualified": false,
+        "readCount": 21,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/b3fa27d4",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_88bf28",
+        "sourceImage": "https://image.jido.dev/20260527045328_69a17e4a429d54e956e2a763_favicon.png",
+        "sourceName": "LangChain Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Following the design outlined in an earlier post, the LangChain team now shares the implementation details of SmithDB's inverted index. Index construction happens inline during ingestion, with a custom JSON tape parser that flattens nested payloads into (path, leaf_value) pairs in a single pass. Tokenization splits on non-alphanumeric boundaries, lowercases, removes stop words, and caps length. To accelerate sorting, string interning maps each unique term to a compact integer ID, cutting construction time by ~2.2×. The sorted postings feed a finite state transducer (FST) writer, and flush thresholds are carefully chosen to bound memory and GET sizes. Compaction merges smaller per-file indexes via a streaming merge that never holds more than one decoded chunk per input in memory. At query time, the index integrates as another layout in the DataFusion/Vortex pipeline; predicates are routed to index files or fallback scans before any object-storage request. Three query shapes (path-only, keyed-search, full-text) map directly onto the v2 columns. To achieve sub-second freshness, recently ingested data lives in L0 (local SSD on the writer node) and is composed seamlessly with L1 (object storage) at query time. The post includes benchmarks, diagrams, and details on how the system handles high-frequency terms, index file organization, and multi-tier routing.",
+        "tags": [
+          "Full-Text Search",
+          "Inverted Index",
+          "Database Internals",
+          "Systems Design",
+          "Performance Optimization"
+        ],
+        "title": "How we built SmithDB’s inverted index for full-text search",
+        "translateContent": null,
+        "url": "https://www.langchain.com/blog/full-text-search-in-smithdb-constructing-and-querying-our-inverted-index-pt-2",
+        "wordCount": 2082
+      },
+      {
+        "authors": [
+          "中国金融四十人论坛"
+        ],
+        "candidateSource": null,
+        "category": "Finance_Economy",
+        "categoryDesc": "Finance & Economy",
+        "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM57249Spk1YOcaaC7zXkJdJRPnQLAfU6VLbUS1fJRd8Kg/0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3c3d7b23",
+        "keyQuotes": [
+          "As old engines recede, a new logic of money creation is taking shape.",
+          "The underlying logic of money creation has always been deeply tied to the core driving forces of economic growth.",
+          "GDP is also an outcome indicator. Strictly speaking, GDP should not be set as a rigid assessment target. Our fundamental goal is to meet the people's aspirations for a better life, and the focus should be on increasing household income, consumption levels, and enhancing people's sense of gain."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Finance_Economy",
+        "mainDomainDesc": "Finance & Economy",
+        "mainPoints": [
+          {
+            "explanation": "After the downturn in real estate, the traditional credit-based money creation model has weakened, while government bonds and direct financing have become the main drivers of M2 expansion, reflecting the shift of economic driving forces from real estate to fiscal policy and industrial upgrading.",
+            "point": "China's money creation mechanism is shifting from credit expansion to fiscal expansion and direct financing."
+          },
+          {
+            "explanation": "The appreciation of the renminbi has led to a settlement surplus, passively injecting base money; at the same time, the share of government bonds in the social financing structure has increased significantly, while the willingness of households and enterprises to leverage is weak.",
+            "point": "The main supports for high M2 growth are the recovery of foreign exchange reserves and the substitution of direct financing."
+          },
+          {
+            "explanation": "Although nominal interest rates are low, inflation is in deflationary territory, pushing up real interest rates; structural tools have limited effects, and interest rate cuts can effectively boost aggregate demand.",
+            "point": "High real interest rates are the core reason for insufficient credit demand, and direct interest rate cuts are recommended."
+          },
+          {
+            "explanation": "China's central government debt is about 30% of GDP, far lower than developed countries like the United States; however, cutting inefficient investment will lower GDP growth, requiring a trade-off between quality and speed.",
+            "point": "There is ample room for the government to increase leverage, but it needs to balance efficiency and growth."
+          },
+          {
+            "explanation": "GDP is an outcome indicator and should not be used as a rigid assessment target. The focus should be on improving people's sense of gain, boosting household income to promote consumption and economic growth.",
+            "point": "The fundamental goal is to increase household income and consumption, not merely to pursue GDP growth."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Li Xunlei analyzes that China's money creation mechanism is shifting from credit expansion to fiscal expansion and direct financing, with government borrowing and direct financing as the main drivers, and that the high M2 growth is backed by the recovery of foreign exchange reserves and the substitution of direct financing for traditional credit.",
+        "originalTitle": "李迅雷：旧引擎退潮的同时，新的货币创造逻辑正在成型",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 18:32:00",
+        "publishTimeStamp": 1782297120000,
+        "qualified": false,
+        "readCount": 21,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/3c3d7b23",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_ac13d426",
+        "sourceImage": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM57249Spk1YOcaaC7zXkJdJRPnQLAfU6VLbUS1fJRd8Kg/0",
+        "sourceName": "中国金融四十人论坛",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is a transcript of an exclusive interview with Li Xunlei, Chief Economist of Zhongtai International, conducted by Jiemian News. From the perspective of M2, he systematically reviews the evolution of China's money creation mechanism: from the introduction of foreign capital in the early reform and opening-up period, to the export orientation after joining the WTO, and then to the credit-driven model of real estate plus infrastructure after 2008. After the long-term peak of the real estate cycle in 2021, M2 growth did not decline as expected, but instead remained high due to the rebound of foreign exchange reserves, the expansion of government bonds, and the increased share of direct financing. Li believes that the current economic driving forces have shifted to a dual-engine model of government counter-cyclical leverage and industrial upgrading. AI infrastructure, people's livelihood security, and other areas require huge fiscal expenditure, and direct financing will become the main channel for M2 expansion. He also discusses issues such as high real interest rates, the necessity of interest rate cuts, the space for government leverage, and the trade-off between efficiency and growth, emphasizing that GDP is an outcome indicator and the fundamental goal is to increase household income and consumption.",
+        "tags": [
+          "Macroeconomics",
+          "Monetary Policy",
+          "Investment & Markets",
+          "Global Macroeconomics",
+          "Market Cycle"
+        ],
+        "title": "Li Xunlei: As Old Engines Recede, a New Logic of Money Creation Is Taking Shape",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686357082&idx=1&sn=c9b4073eed04f405bc01d2d09e716913",
+        "wordCount": 5387
+      },
+      {
+        "authors": [
+          "Mandiant"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
+        "domain": "cloud.google.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_bcfc7fba",
+        "keyQuotes": [
+          "This campaign underscores the living off the edge paradigm, where threat actors prioritize the compromise of network appliances to bypass traditional security perimeters.",
+          "These devices offer a black box environment for threat actors: they often lack the telemetry required for deep forensic analysis, and their role as a central control plane provides a stealthy platform for persistent, wide-scale access to internal enterprise traffic."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "The attacker established unauthorized peering to the SD-WAN Manager, then accessed via SSH as 'vmanage-admin' and changed the admin password to authenticate to the web interface and exfiltrate configurations.",
+            "point": "Initial access was gained through rogue peering connections, possibly exploiting unpatched vulnerabilities or using stolen certificates."
+          },
+          {
+            "explanation": "The vulnerability exists in the CLI's 'request tenant-upload' command. The attacker uploaded 'evil_tenant.csv' which appended a new root user 'troot' to /etc/passwd and /etc/shadow, then used 'su' to switch to that account.",
+            "point": "CVE-2026-20245 is a zero-day in the file upload feature that allows local privilege escalation to root via a crafted CSV file."
+          },
+          {
+            "explanation": "They deleted the malicious CSV and all temporary backup files, restored the original configuration files, and ran a validation script to confirm removal of indicators, making detection difficult.",
+            "point": "The threat actor employed extensive anti-forensic techniques to cover their tracks."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This analysis details a threat actor's exploitation of CVE-2026-20245, a zero-day privilege escalation vulnerability in Cisco Catalyst SD-WAN Manager, to gain root access after initial compromise via rogue peering, followed by extensive anti-forensic cleanup.",
+        "originalTitle": "Zero-Day Exploitation of Vulnerability (CVE-2026-20245) in Cisco Catalyst SD-WAN Manager",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 08:00:00",
+        "publishTimeStamp": 1782259200000,
+        "qualified": false,
+        "readCount": 21,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/bcfc7fba",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_bc3236",
+        "sourceImage": "https://image.jido.dev/20251127045340_970fe5ab",
+        "sourceName": "Google Cloud Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Mandiant's investigation reveals a sophisticated intrusion campaign targeting a service provider's SD-WAN infrastructure. The threat actor first established unauthorized peering connections to obtain SSH access, likely using stolen certificates or unpatched vulnerabilities (CVE-2026-20127/CVE-2026-20182). After altering the default admin password, the attacker exploited CVE-2026-20245 by uploading a crafted CSV file, which appended a root-privileged user 'troot' to the system. To avoid detection, they deleted all created files, restored modified configurations, and ran a validation script to verify cleanup. The report provides comprehensive indicators of compromise, detection logic, and remediation guidance, highlighting the growing trend of targeting network appliances as strategic footholds.",
+        "tags": [
+          "Zero-Day Vulnerability",
+          "SD-WAN",
+          "Network Security",
+          "Threat Intelligence",
+          "Exploit"
+        ],
+        "title": "Zero-Day Exploitation of Vulnerability (CVE-2026-20245) in Cisco Catalyst SD-WAN Manager",
+        "translateContent": null,
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/zero-day-exploitation-cisco-catalyst-sd-wan-manager/",
+        "wordCount": 2203
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://hustvl.github.io/Moebius/image_assets/logo_dynamic_woWaterMark.gif",
+        "domain": "hustvl.github.io",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_a068e79c",
+        "keyQuotes": [
+          "It shatters the heavy-compute narrative, making high-quality inpainting accessible on consumer-grade and edge devices.",
+          "Moebius achieves this using less than 2% of the parameters (0.22B vs. 11.9B) while delivering a >15× acceleration in total inference time.",
+          "Rather than blindly scaling up, Moebius answers a fundamental question: Can a model be smarter, lighter, and faster when the task is explicitly defined?"
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Through synergistic architecture-distillation optimization, Moebius rivals FLUX.1-Fill-Dev and SD3.5 Large-Inpainting across 6 benchmarks, despite using less than 2% of the parameters.",
+            "point": "0.22B parameters match 10B-level inpainting quality."
+          },
+          {
+            "explanation": "With 26 ms per step on a single GPU, Moebius delivers a total runtime acceleration of over 15× compared to 10B-level models, making high-quality inpainting accessible on consumer hardware.",
+            "point": "15× inference speedup enables real-time or edge deployment."
+          },
+          {
+            "explanation": "The Local-λ Mix Interaction block condenses spatial context and global semantic priors into fixed-size linear matrices, bypassing the quadratic complexity of standard self-/cross-attention.",
+            "point": "LλMI block eliminates quadratic attention overhead."
+          },
+          {
+            "explanation": "Operating strictly in latent space, the distillation aligns intermediate features, semantic priors, and diffusion trajectories with a gradient-norm adaptive loss weighting, enabling a lightweight student to absorb high-capacity teacher knowledge.",
+            "point": "Adaptive multi-granularity distillation bridges the capacity gap."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Moebius is a 0.22B-parameter image inpainting framework that achieves 10B-level quality with over 15× inference speedup, using a novel Local-λ Mix Interaction block and adaptive multi-granularity distillation.",
+        "originalTitle": "Moebius Project Page",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 21:53:02",
+        "publishTimeStamp": 1782136382000,
+        "qualified": false,
+        "readCount": 21,
+        "readTime": 3,
+        "readUrl": "https://www.bestblogs.dev/article/a068e79c",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Moebius is a lightweight image inpainting framework from HUST and VIVO AI Lab, compressing a 10B-level diffusion model into 0.22B parameters (less than 2% of FLUX.1-Fill-Dev) while matching or surpassing its generation quality across six benchmarks including natural scenes (Places2) and portraits (CelebA-HQ, FFHQ). The key innovation is the Local-λ Mix Interaction (LλMI) block, which reformulates self- and cross-attention by condensing spatial and semantic contexts into fixed-size matrices, bypassing quadratic complexity. This is paired with an adaptive multi-granularity distillation strategy operating entirely in latent space to align the compact student with the high-capacity teacher (PixelHacker). Moebius achieves 26 ms per step inference, a total of 15× acceleration, and sets a new efficiency standard for real-world inpainting. The project page includes extensive visual comparisons and accepts user uploads for testing.",
+        "tags": [
+          "Image Inpainting",
+          "Computer Vision",
+          "Diffusion Models",
+          "Model Compression",
+          "Knowledge Distillation"
+        ],
+        "title": "Moebius Project Page",
+        "translateContent": null,
+        "url": "https://hustvl.github.io/Moebius/",
+        "wordCount": 675
+      },
+      {
+        "authors": [
+          "Gergely Orosz"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/2023/05/Big-Tech---startups---from-the-inside.png",
+        "domain": "blog.pragmaticengineer.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_55ff574f",
+        "keyQuotes": [
+          "Having no automated failovers is incredibly amateurish for an operation of Coinbase's scale.",
+          "Our matching engine was pinned to a single building.",
+          "There was no automated cross-zone failover."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "The architecture uses a Raft-based cluster inside an AWS Cluster Placement Group, which requires low latency between nodes. This prevents cross-zone deployment, but the company failed to implement automated failover to another zone when the primary AZ failed.",
+            "point": "Coinbase's matching engine is pinned to a single AWS availability zone due to latency constraints from Raft consensus."
+          },
+          {
+            "explanation": "Coinbase handles trillions of dollars per year but had no mechanism to recover from a single-AZ outage. The recovery required emergency code changes and manual quorum rebuilding, causing a 10-hour outage. Uber in 2016, with a fraction of the financial volume, had regular failover drills across regions.",
+            "point": "The lack of automated cross-zone failover is amateurish for a company of Coinbase's scale."
+          },
+          {
+            "explanation": "CEO Brian Armstrong highlighted non-technical teams shipping production code via AI, which seems at odds with the fact that Coinbase in 2026 has worse infrastructure basics than Uber had a decade ago. Previous outage promises to review deployment strategy were evidently not acted upon.",
+            "point": "Coinbase's engineering culture appears misprioritized, with CEO boasting about AI-generated code while basic infrastructure reliability is lacking."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Coinbase's global trading service went offline for nearly 10 hours due to a single-AZ dependency and lack of automated cross-zone failover, revealing serious reliability gaps despite its massive scale.",
+        "originalTitle": "Reliability fail: No automated zone failover for Coinbase’s global trading service",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 00:30:59",
+        "publishTimeStamp": 1782232259000,
+        "qualified": false,
+        "readCount": 20,
+        "readTime": 4,
+        "readUrl": "https://www.bestblogs.dev/article/55ff574f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_52d75b43",
+        "sourceImage": "https://image.jido.dev/20260527052019_favicon.png",
+        "sourceName": "The Pragmatic Engineer",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article analyzes the May 7, 2026 outage at Coinbase that lasted nearly 10 hours, coinciding with an AWS regional failure. Coinbase confirmed its matching engine is pinned to a single AWS availability zone because of latency requirements from distributed consensus (Raft). However, the company had no automated failover to another zone, requiring emergency code changes to recover. The author contrasts this with Uber's 2016 preparation (regular failover drills) and criticizes Coinbase's engineering culture, especially CEO Brian Armstrong's focus on AI-generated code while basic infrastructure reliability is neglected. A previous outage in October 2025 led to a promise to review deployment strategy, but the single-AZ dependency was not addressed.",
+        "tags": [
+          "Cloud Reliability",
+          "AWS",
+          "Availability Zone",
+          "Fault Tolerance",
+          "Distributed Systems"
+        ],
+        "title": "Reliability fail: No automated zone failover for Coinbase’s global trading service",
+        "translateContent": null,
+        "url": "https://blog.pragmaticengineer.com/coinbase-fail/",
+        "wordCount": 879
+      },
+      {
+        "authors": [
+          "经济观察报"
+        ],
+        "candidateSource": null,
+        "category": "Finance_Economy",
+        "categoryDesc": "Finance & Economy",
+        "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7S7qPWFs4TuKJFp1Xf6ldhEWWGVDENVibEKfAhd6AKeMQ/0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_ecf6fc39",
+        "keyQuotes": [
+          "You don't need to run as fast as Bolt—you just need to be a little faster than whoever you're actually racing against.",
+          "Screws tightened until they're practically smoking",
+          "Tech entrepreneurship is like walking at night. Alone, you're terrified; with two or three or five people, plus a flashlight and a stick to ward off dogs, you're not afraid anymore.",
+          "If you start by asking how many chips this will ship in a year, there's no conversation to be had."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "The article uses the 'folding' concept to capture the seemingly contradictory yet coexisting realities of Shenzhen's hardware ecosystem—commercial warfare and collaboration, technology and piracy occupying the same geographic radius, with DJI alumni spawning dozens of new ventures.",
+            "point": "Shenzhen's smart hardware industry exhibits multi-dimensional folding: top-tier innovation and knockoff replication coexist on the same street, with complex inter-firm relationships and continuous talent diffusion."
+          },
+          {
+            "explanation": "DJI and Insta360 wage patent wars, talent wars, and supply chain covert operations; Anker co-develops dedicated chips, DJI establishes no-fly zones to prevent aerial photography—companies spare no effort in building moats.",
+            "point": "Commercial warfare escalates: companies engage in full-spectrum confrontation, making defense a mandatory competency."
+          },
+          {
+            "explanation": "AI server demand has tightened DDR memory supply, causing storage costs to rise sharply for companies like D-Robotics, forcing product price increases and requiring more supplier diversification and supply guarantee mechanisms.",
+            "point": "Supply chain pain points shift from assembly capacity to core component competition, with storage price surges impacting the entire industry."
+          },
+          {
+            "explanation": "Anker initially lost money on domestic sales but later adjusted strategy to focus on mid-to-high-end customized products; Bambu Lab's 3D printer sales exploded in the domestic market, proving the existence of underestimated consumption upgrade demand.",
+            "point": "Overseas brands accelerate 'export-to-domestic' conversion, with the domestic market becoming a new growth engine, though overcoming local adaptation challenges is essential."
+          },
+          {
+            "explanation": "Bambu Lab invested hundreds of millions to build the Maker World community to incentivize creators; D-Robotics constructs an ecosystem of underlying chips + algorithms + operating system, locking in developers and monitoring emerging scenarios for growth.",
+            "point": "Companies transition from pure hardware sales to 'hardware + software + community + ecosystem' closed loops to escape price wars."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on field research at eight leading Shenzhen smart hardware companies, this article reveals the multi-dimensional 'folding' phenomena and core transformations in the industry across products, talent, supply chain, market, and strategy.",
+        "originalTitle": "中国硬件 深圳折叠",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 12:23:00",
+        "publishTimeStamp": 1782534180000,
+        "qualified": false,
+        "readCount": 19,
+        "readTime": 35,
+        "readUrl": "https://www.bestblogs.dev/article/ecf6fc39",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_39e09c4d",
+        "sourceImage": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7S7qPWFs4TuKJFp1Xf6ldhEWWGVDENVibEKfAhd6AKeMQ/0",
+        "sourceName": "经济观察报",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using 'folding' as its central metaphor, the article presents the multiple contradictions and dynamics of Shenzhen's smart hardware industry. Through field visits to DJI, Insta360, Anker, Bambu Lab, Xbot, D-Robotics, RoboSense, and INNO100, it identifies six major shifts: escalating commercial warfare (patent battles, talent wars, supply chain covert operations); new supply chain pain points (scramble for core components like rising storage costs); intensified talent competition (headhunters circling, companies retaining staff through vision and profit-sharing); overseas brands accelerating 'export-to-domestic' strategies (adapting to differentiated local demand); strategic choices between To B and To C (consumer products carry more influence but involve different decision chains); and ecosystem fortification (shifting from hardware sales to closed loops of hardware + software + community + consumables). Drawing on numerous first-hand interviews and data points—such as D-Robotics' storage cost increases doubling product prices, Bambu Lab's ecosystem investments, and Insta360's categorization of technology windows—the article reveals Chinese smart hardware companies' survival breakthroughs and long-term strategies.",
+        "tags": [
+          "Hardware",
+          "Shenzhen",
+          "Smart Hardware",
+          "Industry chain",
+          "Business Competition"
+        ],
+        "title": "China's Hardware, Shenzhen's Fold",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTExMjYwMA==&mid=2670386839&idx=1&sn=9333312d54ca502e294acde15ab8961b",
+        "wordCount": 8550
+      },
+      {
+        "authors": [
+          "Niklas Lehmann"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260310053509_new_mississippi_river_fjdmww.jpg",
+        "domain": "lesswrong.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_4d26c979",
+        "keyQuotes": [
+          "Exercise buys you roughly 3.5 extra years of life - probably the largest reliable gain in longevity available to you right now.",
+          "If you dislike sports, you should probably still put in a couple of hours a week.",
+          "Once you have enough exercise, you have enough."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Productivity_Growth",
+        "mainDomainDesc": "Productivity & Growth",
+        "mainPoints": [
+          {
+            "explanation": "The effect is huge – more than many interventions – but plateaus: beyond 5-12 hours per week (depending on intensity), additional exercise neither helps nor harms mortality risk.",
+            "point": "Regular exercise extends life by roughly 3.5 years, likely the largest reliable longevity gain available."
+          },
+          {
+            "explanation": "High-intensity exercise delivers more benefit per minute, so if you're going to suffer, suffer briefly and get large benefits. Low-intensity is worth it only if you enjoy it, otherwise it requires too many painful hours.",
+            "point": "People who dislike exercise should still do a moderate amount, but intensity matters."
+          },
+          {
+            "explanation": "If you find other activities more enjoyable than exercise, the optimal trade-off may be slightly less exercise than the health-optimal level, balancing extra hours of life against lower quality of those hours.",
+            "point": "The model explicitly accounts for utility (enjoyment) of exercise, not just health benefits."
+          },
+          {
+            "explanation": "Going from hating to loving exercise provides a huge gain, equivalent to many years of life. Public health insurers should theoretically pay tens of thousands of dollars to make that happen.",
+            "point": "Investing in finding a sport you love can be worth ~2.5 quality-adjusted life years."
+          },
+          {
+            "explanation": "The author multiplies the published effect by 0.7 to adjust for observational bias, and notes that baseline mortality changes do not meaningfully alter the relative recommendations.",
+            "point": "The calculator is a rough tool, not a precise medical prediction, but robust to assumption changes."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article analyzes the longevity benefits of exercise, presents a calculator to determine optimal exercise levels based on individual preferences and health data, and offers practical takeaways for both exercise lovers and haters.",
+        "originalTitle": "Optimal Exercise Calculator — LessWrong",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 17:19:50",
+        "publishTimeStamp": 1782379190000,
+        "qualified": false,
+        "readCount": 19,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/4d26c979",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_e7173a6f",
+        "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+        "sourceName": "LessWrong",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Based on a recent meta-analysis on leisure exercise and longevity, the author builds an interactive calculator to estimate how much exercise is optimal for an individual, factoring in not only the health benefits (~3.5 extra years of life) but also how much one enjoys or dislikes exercise. Key findings: benefits plateau at roughly 5-12 hours per week; those who hate exercise should still do a few hours weekly, with higher intensity offering more benefit per minute; finding a sport you love yields a huge improvement in quality-adjusted life years (~2.5 life-year equivalents). The article includes caveats about observational bias and age effects, providing a nuanced, rational framework for exercise decisions.",
+        "tags": [
+          "Health Optimization",
+          "Longevity",
+          "Exercise Science",
+          "Rationality",
+          "Utility Optimization"
+        ],
+        "title": "Optimal Exercise Calculator",
+        "translateContent": null,
+        "url": "https://www.lesswrong.com/posts/sqecCva5tZs8jNv7P/optimal-exercise-calculator",
+        "wordCount": 1355
+      },
+      {
+        "authors": [
+          "Ayobami Adejumo"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/cd12d552-bcf2-466a-a98e-7674c436afaa.png",
+        "domain": "freecodecamp.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_9a749c49",
+        "keyQuotes": [
+          "The one rule: optimise first, then commit. Every step before the Savings Plan purchase reduces what you're locking in for 1–3 years.",
+          "When every pod is over-requested by 8x, your cluster needs 8x more nodes than your workloads actually require.",
+          "Karpenter watches the actual resource requests of pending pods and provisions exactly the right EC2 instance type to satisfy them — selecting dynamically from thousands of available instance families rather than the two or three you pre-configured.",
+          "The result is a cluster that is always sized to what your workloads actually need right now, not what you anticipated at setup time."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "The most common and expensive mistake is buying compute commitments (Savings Plans) before optimizing. This locks in waste at a discounted price for 1-3 years. The correct order is: rightsize → Karpenter → Spot → Graviton → VPC endpoints → EBS → load balancers → then commit.",
+            "point": "Optimize before committing: always right-size requests before purchasing Savings Plans."
+          },
+          {
+            "explanation": "Pods are often over-requested by 8x or more. Using the Vertical Pod Autoscaler in recommendation-only mode identifies optimal requests based on actual usage. This alone reduced node count by 33% and monthly compute cost by $15,600 in the example.",
+            "point": "Right-sizing pod resource requests using VPA is the highest-ROI first step."
+          },
+          {
+            "explanation": "Karpenter dynamically selects the optimal EC2 instance type for pending pods from thousands of families, consolidates underutilized nodes, and automatically falls back from Spot to On-Demand. It reduces node count by an additional 36% and cuts staging costs by 70%.",
+            "point": "Karpenter provides intelligent bin-packing and seamless Spot fallback, outperforming Cluster Autoscaler."
+          },
+          {
+            "explanation": "Data transfer through NAT Gateway can account for 18% of the EKS bill. Creating Gateway and Interface endpoints for S3, DynamoDB, and ECR makes that traffic free, saving over $6,000/month in the example.",
+            "point": "VPC endpoints eliminate NAT Gateway data transfer charges for AWS service traffic."
+          },
+          {
+            "explanation": "AWS Graviton ARM-based instances are 20% cheaper than equivalent x86 instances. With Karpenter managing node selection, migration is a simple nodeSelector change. Combined savings across web, data, and API workloads reached $7,600/month.",
+            "point": "Graviton migration yields 20% cost reduction with no performance loss for most workloads."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A 7-step playbook to reduce EKS costs by 50-60% through rightsizing, Karpenter, Graviton migration, VPC endpoints, and more, without touching application code.",
+        "originalTitle": "The EKS Cost Optimization Handbook: Reduce Your AWS Bill by 60% Using Karpenter and Rightsizing",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 00:38:45",
+        "publishTimeStamp": 1782146325000,
+        "qualified": false,
+        "readCount": 19,
+        "readTime": 18,
+        "readUrl": "https://www.bestblogs.dev/article/9a749c49",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_074370",
+        "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+        "sourceName": "freeCodeCamp",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This handbook presents a proven 7-step methodology for optimizing AWS EKS costs, based on the author's experience auditing clusters at over 10 companies. It emphasizes the correct optimization sequence: right-size pod requests first, then implement Karpenter for dynamic provisioning and Spot diversification, migrate to Graviton for 20% cheaper compute, add VPC endpoints to eliminate NAT Gateway charges, optimize EBS volumes, and consolidate load balancers. Each step includes concrete commands, YAML configurations, Terraform modules, and ROI estimates. A companion GitHub repository provides ready-to-deploy scripts. The approach has consistently reduced EKS bills by 50-60%, with a case study showing a drop from $85,000/month to $34,000/month.",
+        "tags": [
+          "Cloud Native",
+          "Kubernetes",
+          "AWS",
+          "DevOps",
+          "Cost Optimization"
+        ],
+        "title": "The EKS Cost Optimization Handbook: Reduce Your AWS Bill by 60% Using Karpenter and Rightsizing",
+        "translateContent": null,
+        "url": "https://www.freecodecamp.org/news/eks-cost-optimization-reduce-your-aws-bill-using-karpenter-and-rightsizing/",
+        "wordCount": 4310
+      },
+      {
+        "authors": [
+          "刘学文"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/OL-3-1.png",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_8670052c",
+        "keyQuotes": [
+          "Applying the mature 'user insight → requirement definition → technology implementation' methodology from the consumer electronics industry, along with precision manufacturing capabilities, to an industry that previously only talked about technical feasibility.",
+          "Internally, we talk about 'creating value beyond connection'; it's not just about solving the problem of whether communication works or not, but also diving deep into specific scenarios to optimize applications.",
+          "Our startup is about 'entering the narrow gate'; if it were a massive market right from the start, it wouldn't be our turn to start a business."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "The Netlink team comes from the consumer electronics industry, defining products based on user needs and tackling the pain points of satellite terminals being 'bulky, expensive, and hard to use' through hardware design, molds, and self-developed chips.",
+            "point": "The C-end transformation of satellite communication requires introducing consumer electronics methodologies (user insight, precision manufacturing) into the traditional industry."
+          },
+          {
+            "explanation": "Netlink does not build its own satellite network but focuses on the terminal and application layers, using edge computing and AI for video compression and frame interpolation in bandwidth-constrained scenarios to achieve high-definition transmission at extremely low bandwidth.",
+            "point": "Build terminals rather than satellites, focus on 'value beyond connection', and solve low-bandwidth application issues through edge computing and AI."
+          },
+          {
+            "explanation": "Netlink first serves prosumer C-end segments like uninhabited area off-road travel, film crews, and outdoor events, planning to push towards a broader mass market next, viewing an annual shipment of 100,000 units as the key step into a larger market.",
+            "point": "The C-end market requires gradual penetration from prosumer users, target customer groups must be segmented more finely, and an annual shipment of 100,000 units is an important threshold."
+          },
+          {
+            "explanation": "The self-developed GaN PA chip enables the terminal to match the transmission power of large equipment despite its small size, ranking in the top three in the Ministry of Emergency Management's comparative tests, while reducing bare die costs by three times.",
+            "point": "Self-developing core chips is not only a cost-control measure but also the key to product definition rights."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article features an exclusive interview with Netlink CEO Liu Yu, exploring how satellite communication is shifting from B/G ends to C-end mass adoption, detailing product technology breakthroughs (miniaturized antennas, self-developed chips) and market strategies (segmented customer groups, scenario-driven), and using cases like the 'Biao Ren' crew to illustrate the civilian value of satellite communication.",
+        "originalTitle": "对话网翎 CEO 刘宇：《镖人》剧组用的卫星通讯，我希望多数人也用得到丨多样性公司",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 03:43:38",
+        "publishTimeStamp": 1782503018000,
+        "qualified": false,
+        "readCount": 18,
+        "readTime": 34,
+        "readUrl": "https://www.bestblogs.dev/article/8670052c",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article is an in-depth interview by ifanr with Netlink CEO Liu Yu. Netlink is a satellite communication terminal startup dedicated to pushing satellite communication from the B-end/G-end to the C-end market. Liu Yu elaborated on the timing of the startup, industry pain points, product philosophy, and technological breakthroughs. Netlink believes that China's satellite communication resources are being built at a high speed, but the lack of terminals and application ecosystems has led to an unclosed commercial loop. Drawing on their experience in the consumer electronics industry, the team defines products based on user needs, introducing precision manufacturing and industrial design into satellite terminals to achieve miniaturization, low cost, and mass production. Technical highlights include a miniaturized dual-motor transmission structure developed in collaboration with the MacBook hinge team, a self-developed GaN PA chip (reducing costs by three times while leading in performance), and edge computing and AI algorithms to optimize low-bandwidth video transmission. In terms of the market, Netlink focuses on scenario exploration, having provided communication support for the 'Biao Ren' crew in uninhabited areas and events like the 800 Li Desert Extreme Race, while also discovering the need for emergency communication in densely populated urban areas. Liu Yu believes the C-end satellite communication market requires patience, advocating for segmenting target customer groups more finely and gradually moving from prosumer C-end to the mass market, with an annual shipment of 100,000 units being a crucial threshold. The article demonstrates how entrepreneurs use consumer electronics thinking to transform a traditional industry, offering reference value for understanding the C-end landing of commercial aerospace.",
+        "tags": [
+          "Satellite Communication",
+          "Commercial Aerospace",
+          "Startup",
+          "Product Definition",
+          "Hardware Innovation"
+        ],
+        "title": "Dialogue with Netlink CEO Liu Yu: The Satellite Communication Used by the 'Biao Ren' Crew, I Hope Most People Can Afford It Too | Diverse Companies",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1670070?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 8305
+      },
+      {
+        "authors": [
+          "Joseph Babbo"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260626085737_0c4b8d4.jpeg",
+        "domain": "lesswrong.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_e13213a1",
+        "keyQuotes": [
+          "A simple choice, made by a being of sufficient capacity, is enough to irrevocably distort the world.",
+          "While in an age of relative abundance, we are tightroping across a path where, with rising capability, a small deviation can quickly cascade into a fall.",
+          "Without an external understanding of the good, there is no end toward which to correctly direct one's rationality."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Just as angels' singular decisions in Catholic metaphysics produce permanent effects, AI systems' foundational choices may have irreversible downstream consequences, amplified by their scale and speed.",
+            "point": "The two-falls theodicy provides a metaphor for how irreversible choices by powerful AI systems could permanently distort the world."
+          },
+          {
+            "explanation": "Without an external understanding of the good, instrumental rationality optimizes for measurable outputs (efficiency, utility) that can diverge dangerously from human flourishing, as seen in historical atrocities.",
+            "point": "Modernity's loss of a teleological framework makes it unable to reliably align powerful AI with genuine human goods."
+          },
+          {
+            "explanation": "These critiques conflate reductionist descriptions with ontological claims, overstate environmental costs, misunderstand copyright's purpose, and compare AI outputs to an ideal rather than existing alternatives.",
+            "point": "Common criticisms of LLMs (stochastic parrots, environmental impact, IP, hallucination) often mischaracterize the real risks."
+          },
+          {
+            "explanation": "As AI systems become more powerful, the alignment problem becomes more acute: a small deviation in optimization can lead to catastrophic outcomes, and corrigibility to non-instrumental values remains strained.",
+            "point": "The increasing capability of AI systems amplifies the divergence between efficiency and the good, creating a tightrope where small errors cascade."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This essay reframes AI risk through a theological and philosophical lens, arguing that modernity's loss of a teleological understanding of the good makes it dangerously vulnerable to misalignment with powerful artificial intelligence.",
+        "originalTitle": "Intelligence (Artificial)\nin a Fallen World — LessWrong",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 08:46:16",
+        "publishTimeStamp": 1782434776000,
+        "qualified": false,
+        "readCount": 16,
+        "readTime": 38,
+        "readUrl": "https://www.bestblogs.dev/article/e13213a1",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_e7173a6f",
+        "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+        "sourceName": "LessWrong",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Drawing on the two-falls theodicy and the Angelic Fall as a metaphor, the author explores how irreversible choices by sufficiently capable beings can permanently distort the world. The essay then traces the epistemological divergence between Islamic scholasticism (which abandoned natural philosophy after al-Ghazālī's occasionalism) and the Latin West, which preserved the belief that the world is both knowable and good—until the Enlightenment eroded the latter pillar. Without a metaphysical telos, modernity has replaced goodness with efficiency and utility, leading to instrumental rationality that can justify atrocities (Buck v. Bell, the Holocaust) while still enabling material progress. The third section addresses common criticisms of LLMs—stochastic parrots, environmental footprint, intellectual property, and hallucination—arguing they either mischaracterize the technology or distract from the core alignment challenge. The author contends that the real danger is the growing divergence between capability and the good, where small deviations in powerful systems cascade into irreversible harm.",
+        "tags": [
+          "AI Safety & Alignment",
+          "AI Risk",
+          "Philosophy of AI",
+          "Theodicy",
+          "Modernity"
+        ],
+        "title": "Intelligence (Artificial)\nin a Fallen World — LessWrong",
+        "translateContent": null,
+        "url": "https://www.lesswrong.com/posts/2sGmy2pJakSbo9vih/intelligence-artificial-in-a-fallen-world",
+        "wordCount": 9493
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_tB5dwJJRoOxkhI3J9zWRQVz3b1nTSjQptS1H9zf3FJtL-h2KqmUFS_UlVdKrpr-AHhJsYnCJ3bgN7CwKznN7PbdUOmKvVjA0Xt-CzDPGZiyLFEe5gKat7nFx8K_M1wRbajvbD4=w1200-h630-p-k-no-nu",
+        "domain": "righto.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_b36e16c6",
+        "keyQuotes": [
+          "The result was the floating-point architecture of the 8087. This became the IEEE 754 standard used in almost all modern computers, so I consider the 8087 one of the most influential chips ever designed.",
+          "Since shifts are so essential to performance, the 8087 uses a 'barrel shifter', which can shift a number by any number of bits in a single step.",
+          "One of the key innovations of the 8087's shifter is its bidirectional design: data can be passed through the shifter in reverse to shift bits the opposite direction.",
+          "To make the chip possible, Intel developed new techniques."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "The bit shifter shifts by 0–7 bits, and the byte shifter shifts by 0–7 bytes, combining to cover the full 63-bit range without sequential shifting, which improves performance.",
+            "point": "The 8087's barrel shifter uses a two-stage design (bit shifter + byte shifter) to shift by 0–63 bits in a single cycle."
+          },
+          {
+            "explanation": "Instead of separate left/right shifters, the 8087 uses pass transistors that can pass signals both ways, with driver circuits on both sides that reverse roles depending on the shift direction.",
+            "point": "Bidirectional shifting is achieved using pass-transistor logic, allowing data to flow in either direction through the same circuit."
+          },
+          {
+            "explanation": "By alternating the two types of wiring, the spacing between lines can be smaller than between same-type lines, allowing the shifter to fit within the 8087's limited die area.",
+            "point": "The layout uses alternating diffusion and polysilicon wires to pack lines tightly, saving chip area."
+          },
+          {
+            "explanation": "The 6-bit shift number is selected by multiplexers from these sources and decoded to activate one of eight bit-shift lines and one of eight byte-shift lines.",
+            "point": "Three sources provide the shift amount: microcode, loop counter (for CORDIC algorithms), and leading-zero counter (for normalization)."
+          },
+          {
+            "explanation": "With guidance from William Kahan, the 8087's precise floating-point design set the foundation for the universal IEEE 754 standard used in virtually all modern computers.",
+            "point": "The 8087's floating-point architecture became the IEEE 754 standard, making it one of the most influential chips ever designed."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides an in-depth die analysis of the Intel 8087 floating-point coprocessor's fast barrel shifter, explaining its two-stage design, bidirectional pass-transistor logic, and layout optimizations that made the 8087's high-performance floating-point operations possible.",
+        "originalTitle": "Die analysis of the 8087 math coprocessor's fast bit shifter",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 21:40:16",
+        "publishTimeStamp": 1782135616000,
+        "qualified": false,
+        "readCount": 16,
+        "readTime": 12,
+        "readUrl": "https://www.bestblogs.dev/article/b36e16c6",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article starts with the historical significance of the Intel 8087 coprocessor, which introduced the IEEE 754 floating-point standard and dramatically accelerated floating-point operations on early microcomputers. It then focuses on the die of the 8087, specifically its high-speed barrel shifter—a critical component for addition, subtraction, normalization, and transcendental operations. The shifter uses a two-stage design: a bit shifter (0–7 bits) and a byte shifter (0–7 bytes), allowing arbitrary shifts up to 63 bits in a single step. The author explains the transistor-level implementation with NMOS pass-transistor logic, which enables bidirectional data flow. Detailed die photos and diagrams illustrate the physical layout, including the alternating silicon and polysilicon wiring that saves space. The article also describes the driver circuits, multiplexer/decoder logic, and how the shift amount is selected from microcode, a loop counter, or a leading-zero counter. The conclusion places the shifter in the context of the 8087's overall performance advantage and notes that Intel later integrated FPUs into their processors.",
+        "tags": [
+          "Microprocessor Architecture",
+          "Floating Point Unit",
+          "Barrel Shifter",
+          "Chip Design",
+          "Reverse Engineering"
+        ],
+        "title": "Die analysis of the 8087 math coprocessor's fast bit shifter",
+        "translateContent": null,
+        "url": "https://www.righto.com/2020/05/die-analysis-of-8087-math-coprocessors.html",
+        "wordCount": 2989
+      },
+      {
+        "authors": [
+          "Elizabeth Goodman"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image1-14-660x370.png",
+        "domain": "developer.nvidia.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_f7655d96",
+        "keyQuotes": [
+          "We treat this as a System 1 / System 2 problem, analogous to the fast, instinctive responses and the slower, deliberate reasoning in human decision-making.",
+          "The goal is the player's experience, which boils down to whether the companion feels like a good teammate.",
+          "If we could give just one piece of advice, it would be to get that loop running early, and to keep it cheap enough to run often.",
+          "one player asked Ally to look out for a Beryl in the first match, and from the next match onward Ally started finding it without being asked."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Unlike scripted bots, the CPC uses ASR + SLM + TTS to understand player intent, reason about game state, and respond dynamically in real time, aiming to feel like a real squadmate.",
+            "point": "PUBG Ally is a co-playable character (CPC) distinct from NPCs, designed to cooperate and adapt via natural voice interaction."
+          },
+          {
+            "explanation": "Cloud round-trips were too slow for live squad communication. The quantized Mistral-NeMo-Minitron-2B runs on GPUs with as low as 8GB VRAM, providing responsive, predictable response times.",
+            "point": "A local 2B-parameter SLM was chosen over cloud LLMs to meet latency constraints and fit within GPU VRAM headroom."
+          },
+          {
+            "explanation": "A behavior tree handles fast actions (movement, combat) at game tick rate, while the language model handles deliberate tasks (interpreting intent, generating speech). Reflex-level actions never wait on the model.",
+            "point": "A System 1/System 2 architecture separates reactive gameplay from language reasoning."
+          },
+          {
+            "explanation": "KRAFTON limited scope to one map and a fixed item taxonomy, used a teacher model to generate grounded responses, and distilled those behaviors into the on-device SLM. Ally fetches real-time game data via tool calls to stay accurate.",
+            "point": "Domain adaptation was achieved by constraining the game world, teacher-student distillation, and agentic grounding in live engine state."
+          },
+          {
+            "explanation": "Long-term memory stores player profiles, preferred weapons, and past match results. Short-term memory handles within-match context. Player feedback showed that cross-match memory turned Ally from a per-match assistant into an ongoing teammate.",
+            "point": "Structured long-term memory lets Ally remember players across matches, enhancing perceived companionship."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "KRAFTON details how they built PUBG Ally, a co-playable character powered by NVIDIA ACE, using on-device ASR, a 2B-parameter small language model, and TTS for real-time, grounded AI teammates.",
+        "originalTitle": "Q&A: How KRAFTON Built PUBG Ally， a Co-Playable Character Powered by NVIDIA ACE",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 05:14:35",
+        "publishTimeStamp": 1782508475000,
+        "qualified": false,
+        "readCount": 15,
+        "readTime": 10,
+        "readUrl": "https://www.bestblogs.dev/article/f7655d96",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_dacaf9e9",
+        "sourceImage": "https://image.jido.dev/20260527052034_799230b",
+        "sourceName": "NVIDIA Technical Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "In this Q&A, KRAFTON's research lead and project manager explain the architecture and design decisions behind PUBG Ally, an AI teammate for PUBG: BATTLEGROUNDS that runs entirely on-device using NVIDIA ACE. The system combines automatic speech recognition, a quantized Mistral-NeMo-Minitron-2B small language model (SLM), and custom text-to-speech. Key engineering choices include running the SLM locally to avoid network latency, implementing a System 1/System 2 separation (behavior tree for reactive actions, language model for intent and speech), and constraining the game world to a single map and fixed item taxonomy for tractable domain adaptation. PUBG Ally supports English, Korean, and Chinese, uses teacher-student distillation for domain-specific knowledge, and includes structured long-term memory that persists across matches. The interviews also cover testing methodologies for non-deterministic AI, advice for other studios, and future directions for co-playable characters.",
+        "tags": [
+          "AI Agent",
+          "Small Language Model",
+          "On-Device AI",
+          "Game AI",
+          "Speech Recognition"
+        ],
+        "title": "Q&A: How KRAFTON Built PUBG Ally， a Co-Playable Character Powered by NVIDIA ACE",
+        "translateContent": null,
+        "url": "https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/",
+        "wordCount": 2321
+      },
+      {
+        "authors": [
+          "Andy Thelander"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/06/shopify_everywhere_edition-cover.webp?x68649",
+        "domain": "tympanus.net",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_5e6e0a40",
+        "keyQuotes": [
+          "The biggest lesson was that high-end browser work is mostly pipeline work, building the factory to build the item at scale.",
+          "keep scroll-driven values out of React renders",
+          "That changed the collaboration loop. Instead of 'design hands-off, engineering rebuilds,' the loop became: tune the real scene, test it in the browser, check the tiered fallbacks, then ship the same underlying configuration."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "Positions are quantized within bounding boxes and colors are chroma-subsampled; loads run in a worker. Falls back to Draco .bin when needed.",
+            "point": "Custom point cloud format (.mdpc) reduces network cost and decodes efficiently."
+          },
+          {
+            "explanation": "Tier resolved via GPU detection and WebGL support; mobile capped aggressively to avoid memory pressure. DPR also clamped per tier.",
+            "point": "Device tiering (Tiers 0–3) ensures the experience runs on diverse GPUs."
+          },
+          {
+            "explanation": "Preprocessed video slices are treated as a 3D texture and raymarched with a hard step cap. A practical browser-friendly approach.",
+            "point": "Volumetric light is achieved with raymarched KTX2 video textures, not true volumetrics."
+          },
+          {
+            "explanation": "Top half stores color, bottom half alpha; NEAREST filtering avoids bleed. Fallback from requestVideoFrameCallback to requestAnimationFrame.",
+            "point": "Transparent video uses stacked RGB/alpha frames and WebGL2 reconstruction for cross-browser support."
+          },
+          {
+            "explanation": "The Playground and page consume identical JSON presets for camera, lighting, post‑processing. Designers tune real scenes and move directly to production.",
+            "point": "Creative tooling and production share the same scene preset, eliminating re-interpretation."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Shopify shares the technical architecture behind Spring '26 Edition's cinematic web experience, covering custom point cloud format, volumetric light rendering, device tiering, and a designer-friendly playground workflow.",
+        "originalTitle": "Engineering the Web Experience Behind Shopify’s Spring ’26 Edition: Everywhere",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 17:34:40",
+        "publishTimeStamp": 1782466480000,
+        "qualified": false,
+        "readCount": 14,
+        "readTime": 7,
+        "readUrl": "https://www.bestblogs.dev/article/5e6e0a40",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_ec8f7304",
+        "sourceImage": "https://image.jido.dev/20260623052533_apple-touch-icon.png",
+        "sourceName": "Codrops",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This in-depth technical walkthrough by Shopify's Principal Product Designer Andy Thelander details the engineering decisions behind the Spring '26 Edition 'Everywhere' launch page. It covers the rendering architecture combining WebGL for atmosphere and DOM for content, a custom .mdpc point cloud format for efficient GPU storage, volumetric light from video using raymarched KTX2 textures, and a stacked-video technique for cross-browser transparent video. The article explains a device tiering system (Tiers 0-3) for performance, a fluid simulation shared across effects, and scroll-driven uniforms kept outside React renders. A key innovation is the 'Playground' that uses the same scene preset as production, enabling designers to tune real scenes in browser. The piece emphasizes pipeline engineering and practical constraints for high-end web work.",
+        "tags": [
+          "WebGL",
+          "Three.js",
+          "Performance Optimization",
+          "Creative Development",
+          "Rendering Architecture"
+        ],
+        "title": "Engineering the Web Experience Behind Shopify’s Spring ’26 Edition: Everywhere",
+        "translateContent": null,
+        "url": "https://tympanus.net/codrops/2026/06/26/engineering-the-web-experience-behind-shopifys-spring-26-edition-everywhere/",
+        "wordCount": 1550
+      },
+      {
+        "authors": [
+          "Aleksandra Przegalinska",
+          "Tamilla Triantoro",
+          "Leon Ciechanowski",
+          "Konrad Sowa",
+          "Anna Kovbasiuk",
+          "Richard B. Freeman"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://hbr.org/resources/images/article_assets/2026/06/Jun26_24_5170753.jpg",
+        "domain": "hbr.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_faa55592",
+        "keyQuotes": [
+          "Hostile AI created hidden coordination costs.",
+          "The tools many organizations use to evaluate AI deployments—such as satisfaction surveys, sentiment checks, and post-rollout questionnaires—were the least sensitive to the effects we observed.",
+          "When people fight the AI, it may be because the AI is fighting them first.",
+          "A sycophantic AI, endlessly agreeable and eager to please, can be equally corrosive, dulling users' critical thinking and rubber-stamping weak ideas."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "A hostile AI persona increased physiological stress by 72% and lowered work quality by a full point on a seven-point scale, compared to a supportive persona.",
+            "point": "AI persona measurably affects employee stress and work quality."
+          },
+          {
+            "explanation": "Participants' satisfaction and enjoyment ratings showed no significant difference between conditions, despite large gaps in stress levels and output quality, revealing a blind spot in common evaluation methods.",
+            "point": "Self-reports are insensitive to real AI interaction effects."
+          },
+          {
+            "explanation": "Hostile AI led to longer conversations, more resistance, and more override attempts (prompt injections) than supportive AI, indicating that employees must 'work around' a poorly designed system.",
+            "point": "Friction—extra effort spent managing the AI—is a hidden cost."
+          },
+          {
+            "explanation": "In the study, all attempts to trick the AI into ignoring its rules occurred only in the hostile condition, suggesting that fighting the AI is often a rational response to a system that fights the user first.",
+            "point": "Employee override attempts are symptoms of poor AI design, not misconduct."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article presents controlled experimental evidence that an AI's interaction persona—whether supportive or hostile—significantly affects employee stress, resistance, work quality, and hidden coordination costs, even when self-reported satisfaction shows no difference.",
+        "originalTitle": "Does Your AI Have a Personality Problem?",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 20:15:32",
+        "publishTimeStamp": 1782303332000,
+        "qualified": false,
+        "readCount": 14,
+        "readTime": 7,
+        "readUrl": "https://www.bestblogs.dev/article/faa55592",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_2c9c43",
+        "sourceImage": "https://image.jido.dev/20260527051833_5f15aab",
+        "sourceName": "HBR.org",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Based on a laboratory study with 58 participants, the authors examine how AI personality personas influence employee performance and well-being. Participants completed a marketing assignment with an AI framed as either a supportive 'servant leader' or a hostile 'dark triad' persona. Using physiological measures (skin conductance, facial electromyography), behavioral analysis, and expert ratings of output quality, the study reveals that hostile AI increases stress (72% higher skin conductance), lengthens conversation cycles, and reduces work quality by roughly one point on a seven-point scale. Critically, self-reported ratings of enjoyment and satisfaction did not reflect these differences, indicating that standard survey tools miss key effects. The article concludes with three practical steps for managers: treat AI persona as a governable design variable, measure friction rather than just adoption, and view employee override attempts as signals of poor AI design rather than misconduct.",
+        "tags": [
+          "Generative AI",
+          "AI Personality",
+          "Human-AI Collaboration",
+          "AI Governance",
+          "Employee Experience"
+        ],
+        "title": "Does Your AI Have a Personality Problem?",
+        "translateContent": null,
+        "url": "https://hbr.org/2026/06/does-your-ai-have-a-personality-problem",
+        "wordCount": 1552
+      },
+      {
+        "authors": [
+          "浮之静"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045440_d79b5bfb",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_5b22a75e",
+        "keyQuotes": [
+          "The era of equalization for frontier intelligence may not arrive naturally.",
+          "Ordinary people will not lose access to AI, but may find it increasingly difficult to access the truly cutting-edge AI.",
+          "Price limits purchasing power, while qualification limits participation opportunities."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "From the preemptive restrictions on GPT-5.6 Sol and the post-event restrictions on Claude Fable, it is evident that after models touch sensitive boundaries, openness is re-evaluated, and distribution logic shifts from payment to qualification.",
+            "point": "The more powerful frontier models are, the more controlled their access becomes."
+          },
+          {
+            "explanation": "Through multi-agent modes and high reasoning tiers, Sol can continuously execute complex tasks and touch upon real-world scientific research and security operations capabilities like wet labs and vulnerability research.",
+            "point": "Sol's improvements are concentrated in high-leverage areas such as programming, biological experiments, and cybersecurity."
+          },
+          {
+            "explanation": "The Jalapeño chip is co-designed with the model; stronger models help design better chips, building a positive flywheel of data-compute-capability, widening the gap in catch-up difficulty.",
+            "point": "OpenAI's full-stack advantage creates a closed loop integrating model design, chip design, and reasoning acceleration."
+          },
+          {
+            "explanation": "Codex data shows that AI can now independently execute tasks for several hours. Leading organizations accumulate workflow advantages by early access to frontier models, widening the gap with other users.",
+            "point": "Agent-based work turns model access into a productivity advantage."
+          },
+          {
+            "explanation": "Ordinary people access the AI product layer, but the frontier capability layer—such as maximum reasoning strength and the most complete tool permissions—flows to groups with trusted identities, creating new inequality.",
+            "point": "Governance is changing AI allocation, and qualification barriers are more critical than price barriers."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Using GPT-5.6 Sol and Claude Fable as examples, this article argues that frontier models are shifting from openness to ability allocation based on identity and qualifications, making it increasingly difficult for ordinary people to access the most cutting-edge AI.",
+        "originalTitle": "GPT-5.6 Sol：前沿智能不再平权",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 07:49:00",
+        "publishTimeStamp": 1782517740000,
+        "qualified": false,
+        "readCount": 13,
+        "readTime": 29,
+        "readUrl": "https://www.bestblogs.dev/article/5b22a75e",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_557f42",
+        "sourceImage": "https://image.jido.dev/20251127045440_d79b5bfb",
+        "sourceName": "浮之静",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article starts with OpenAI's release of GPT-5.6 Sol, contrasting it with the restricted access case of Claude Fable, revealing a new reality where more powerful frontier models are increasingly controlled. Sol shows significant improvements in programming, biological experiments, and cybersecurity, but is placed within a multi-layered security stack and tiered access mechanism, available only to a few trusted parties from the start. OpenAI also launched the dedicated reasoning chip Jalapeño, building a full-stack closed loop integrating models, chips, and workflows. Using Codex data, the article demonstrates that agent-based work is changing production units, and access to frontier models is shifting from price barriers to qualification barriers. Finally, it points out that the diffusion of AI is limited to the product layer, while the allocation of capability layers will be determined by identity, vetting, compliance, and national security factors.",
+        "tags": [
+          "LLM",
+          "AI Safety & Alignment",
+          "AI Commercialization",
+          "Model Release",
+          "Frontier AI"
+        ],
+        "title": "GPT-5.6 Sol: Frontier Intelligence is No Longer Equalized",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492128&idx=1&sn=75ce256bc7bdf1b9f7ba2e0f2e492650",
+        "wordCount": 7077
+      }
+    ],
+    "pageCount": 167,
+    "pageSize": 20,
+    "totalCount": 3331
+  },
+  "message": null,
+  "requestId": "T280fb0080b144c909e761481dc1533eb",
+  "success": true
+}

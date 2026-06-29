@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Hacker News"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://hustvl.github.io/Moebius/image_assets/logo_dynamic_woWaterMark.gif",
+  "domain": "hustvl.github.io",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_a068e79c",
+  "keyQuotes": [
+    "It shatters the heavy-compute narrative, making high-quality inpainting accessible on consumer-grade and edge devices.",
+    "Moebius achieves this using less than 2% of the parameters (0.22B vs. 11.9B) while delivering a >15× acceleration in total inference time.",
+    "Rather than blindly scaling up, Moebius answers a fundamental question: Can a model be smarter, lighter, and faster when the task is explicitly defined?"
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Through synergistic architecture-distillation optimization, Moebius rivals FLUX.1-Fill-Dev and SD3.5 Large-Inpainting across 6 benchmarks, despite using less than 2% of the parameters.",
+      "point": "0.22B parameters match 10B-level inpainting quality."
+    },
+    {
+      "explanation": "With 26 ms per step on a single GPU, Moebius delivers a total runtime acceleration of over 15× compared to 10B-level models, making high-quality inpainting accessible on consumer hardware.",
+      "point": "15× inference speedup enables real-time or edge deployment."
+    },
+    {
+      "explanation": "The Local-λ Mix Interaction block condenses spatial context and global semantic priors into fixed-size linear matrices, bypassing the quadratic complexity of standard self-/cross-attention.",
+      "point": "LλMI block eliminates quadratic attention overhead."
+    },
+    {
+      "explanation": "Operating strictly in latent space, the distillation aligns intermediate features, semantic priors, and diffusion trajectories with a gradient-norm adaptive loss weighting, enabling a lightweight student to absorb high-capacity teacher knowledge.",
+      "point": "Adaptive multi-granularity distillation bridges the capacity gap."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Moebius is a 0.22B-parameter image inpainting framework that achieves 10B-level quality with over 15× inference speedup, using a novel Local-λ Mix Interaction block and adaptive multi-granularity distillation.",
+  "originalTitle": "Moebius Project Page",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 21:53:02",
+  "publishTimeStamp": 1782136382000,
+  "qualified": false,
+  "readCount": 21,
+  "readTime": 3,
+  "readUrl": "https://www.bestblogs.dev/article/a068e79c",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Moebius is a lightweight image inpainting framework from HUST and VIVO AI Lab, compressing a 10B-level diffusion model into 0.22B parameters (less than 2% of FLUX.1-Fill-Dev) while matching or surpassing its generation quality across six benchmarks including natural scenes (Places2) and portraits (CelebA-HQ, FFHQ). The key innovation is the Local-λ Mix Interaction (LλMI) block, which reformulates self- and cross-attention by condensing spatial and semantic contexts into fixed-size matrices, bypassing quadratic complexity. This is paired with an adaptive multi-granularity distillation strategy operating entirely in latent space to align the compact student with the high-capacity teacher (PixelHacker). Moebius achieves 26 ms per step inference, a total of 15× acceleration, and sets a new efficiency standard for real-world inpainting. The project page includes extensive visual comparisons and accepts user uploads for testing.",
+  "tags": [
+    "Image Inpainting",
+    "Computer Vision",
+    "Diffusion Models",
+    "Model Compression",
+    "Knowledge Distillation"
+  ],
+  "title": "Moebius Project Page",
+  "translateContent": null,
+  "url": "https://hustvl.github.io/Moebius/",
+  "wordCount": 675
+}

@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Pratik R"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/routing-layer-pareto-trap-iceberg.jpg",
+  "domain": "towardsdatascience.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_a676552d",
+  "keyQuotes": [
+    "We had not won. We had just moved the cost somewhere we were not measuring.",
+    "The classifier is well-calibrated exactly where it does not need to be, and poorly calibrated exactly where it does.",
+    "The combined geometry is unforgiving. The cheap-model tier handles the easy bulk well, fails opaquely on the hidden long tail, and degrades further as the distribution drifts.",
+    "Cost savings on the inference layer are measured by the team that built the routing system. The cost of quality loss is borne by the customer experience, the human support team, and the retention function, none of which are owned by the team that did the optimization."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The classifier sees only surface forms; queries that appear simple (like 'where is my charge from') can hide complex intents (fraud, reconciliation). The cheap model fails confidently on those, and the error is invisible to aggregate metrics.",
+      "point": "Routing layers that send 'simple' queries to cheap models create a hidden long-tail failure mode."
+    },
+    {
+      "explanation": "Aggregate human review mixes both tiers, offline regressions use static distributions, and in-product feedback has low signal-to-noise. None of them segment by routing tier, so the cheap-model degradation stays undetected for months.",
+      "point": "Standard monitoring architectures structurally miss the quality loss."
+    },
+    {
+      "explanation": "Inference savings appear on one dashboard; the increased human support volume, satisfaction decline, and churn hit different budgets and metrics, creating a net-negative optimization for the company.",
+      "point": "The cost savings are visible; the downstream quality costs are invisible and borne by different teams."
+    },
+    {
+      "explanation": "Per-tier human review, tier-specific regression suites, and routing-labeled feedback events enable early detection of quality drift. The aggregate alone is structurally unreliable.",
+      "point": "The fix is to split every quality signal by routing tier before the layer goes live."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "A team built a routing layer to cut AI inference costs by 60%, but the quality loss on the cheap model went undetected for months, causing customer satisfaction drops and churn—ultimately costing 4–5x the savings.",
+  "originalTitle": "We Built a Routing Layer to Cut Our AI Costs. It Broke the Product.",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-27",
+  "publishDateTimeStr": "2026-06-27 23:00:00",
+  "publishTimeStamp": 1782572400000,
+  "qualified": false,
+  "readCount": 36,
+  "readTime": 17,
+  "readUrl": "https://www.bestblogs.dev/article/a676552d",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "sourceName": "Towards Data Science",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article recounts a post-mortem of a production AI support agent that implemented a cost-optimization routing layer. The team trained a classifier to route 'simple' queries (65% of traffic) to a cheaper model, cutting inference costs by 60%. However, the cheap model failed on the long tail of queries that looked simple but contained hidden complexity (e.g., fraudulent charges hidden behind a billing status query). The existing monitoring architecture—aggregated human review, static regression suites, and low-signal feedback widgets—could not detect the quality gap. By the time the team noticed declining satisfaction and churn, the cumulative cost of the damage was 4–5x the savings. The article explains the structural reasons (surface form vs. deep intent, confident failures of small models, distribution drift) and presents two other cases from different industries. It concludes with a concrete measurement architecture fix: per-tier quality monitoring, stratified sampling, and end-to-end routing-label propagation.",
+  "tags": [
+    "AI in Production",
+    "Cost Optimization",
+    "Model Routing",
+    "Quality Monitoring",
+    "LLM"
+  ],
+  "title": "We Built a Routing Layer to Cut Our AI Costs. It Broke the Product.",
+  "translateContent": null,
+  "url": "https://towardsdatascience.com/we-built-a-routing-layer-to-cut-our-ai-costs-it-broke-the-product/",
+  "wordCount": 4051
+}

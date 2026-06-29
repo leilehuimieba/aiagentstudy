@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-23",
+  "id": "BB-2026-05-01-656",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-656/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-656",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-656/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-656/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-656/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-656/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-656/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-656/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hugging Face - Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hugging Face - Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "CI/CD",
+    "Release Automation",
+    "AI-Assisted Development",
+    "Open Source",
+    "Python"
+  ],
+  "title": "Shipping huggingface_hub every week with AI， open tools， and a human in the loop",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://huggingface.co/blog/huggingface-hub-release-ci",
+      "https://www.bestblogs.dev/article/cb37f57c"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/cb37f57c"
+  }
+}

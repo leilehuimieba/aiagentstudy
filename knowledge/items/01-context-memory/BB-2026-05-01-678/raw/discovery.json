@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "Hacker News"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260605151743_y18.svg",
+  "domain": "ziglang.org",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_24c8e207",
+  "keyQuotes": [
+    "The new definition of @bitCast is that it reinterprets the logical bits of one type as the logical bits of a different type.",
+    "As a general rule, the new semantics tend to match the behavior of the old semantics on little-endian targets.",
+    "the headline feature of this new linker is its support for fast incremental compilation.",
+    "wall_time 150ms ± 5.52ms ... wall_time 14.3ms ± 744us ... ⚡- 90.4% ± 0.4%",
+    "the Zig compiler itself... saw around 5% performance improvements from the better optimization."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "This change allows @bitCast to work consistently across endianness, enables new operations like bitcasting between arrays and vectors (e.g., [2]u3 to @Vector(3, u2)), and simplifies backend implementation. It also allowed deprecating old, ill-defined memory-based behavior.",
+      "point": "The @bitCast builtin now uses logical bit layouts instead of memory reinterpretation, making semantics target-independent."
+    },
+    {
+      "explanation": "Previously, Zig directly used LLVM's bit-int types (e.g., i13) which are poorly optimized. By zero/sign-extending to i8/i16 etc. when storing, the compiler gains access to well-tested LLVM optimization paths, yielding ~5% performance improvement even for the Zig compiler itself.",
+      "point": "The LLVM backend now lowers non-ABI integer types to ABI-sized types in memory, fixing missed optimizations and miscompilations."
+    },
+    {
+      "explanation": "The configurer compiles build.zig logic in debug mode and serializes the build graph. The maker runs in release mode as a separate process. Caching avoids re-running build.zig when nothing changes (e.g., adding -freference-trace). Benchmark results show wall time dropped from 150ms to 14.3ms for `zig build --help`.",
+      "point": "The build system was reworked to separate configurer and maker processes, achieving 90%+ faster `zig build` commands."
+    },
+    {
+      "explanation": "The new ELF linker (previously disabled by default) can now build the self-hosted Zig compiler with LLVM and LLD libraries enabled. Incremental rebuilds take ~30ms, as demonstrated with Andrew's Tetris clone. DWARF debug info support is still missing but is the next priority.",
+      "point": "The ELF linker now supports incremental compilation with external libraries and C sources."
+    },
+    {
+      "explanation": "While LLVM code generation time cannot be sped up, the Zig compiler's own analysis phase benefits from incremental recompilation. This means compilation errors are reported much faster, and successful builds also see a modest speedup.",
+      "point": "Incremental compilation with the LLVM backend is now available, reducing compile error feedback time."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This devlog details recent improvements to the Zig programming language compiler, including new @bitCast semantics, LLVM backend integer lowering changes, a reworked build system with dramatic speed improvements, an ELF linker supporting incremental compilation, and LLVM incremental compilation support.",
+  "originalTitle": "Devlog ⚡ Zig Programming Language",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-25",
+  "publishDateTimeStr": "2026-06-25 22:19:28",
+  "publishTimeStamp": 1782397168000,
+  "qualified": false,
+  "readCount": 11,
+  "readTime": 24,
+  "readUrl": "https://www.bestblogs.dev/article/24c8e207",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The Zig devlog covers several major compiler enhancements. The most significant change is a redefinition of the @bitCast builtin: instead of memory-based reinterpretation, it now operates on logical bit layouts, making semantics endian-agnostic and enabling operations like bitcasting between arrays and vectors. This also facilitated improvements to the LLVM backend, where non-ABI integer types (e.g., u4, i13) are now stored as ABI-sized types in memory, restoring missed LLVM optimizations and yielding ~5% performance improvement for the Zig compiler itself. The ELF linker (introduced in 0.16.0) has been extended to support incremental compilation with external libraries, allowing rebuilds in ~30ms. The build system was reworked to separate configurer and maker processes: `build.zig` logic runs only when needed and is cached, while the actual build execution runs in release mode, resulting in 90%+ faster `zig build` commands (e.g., `zig build --help` dropped from 150ms to 14.3ms). Additionally, incremental compilation with the LLVM backend is now available, speeding up compile error detection and improving turnaround for successful builds. The devlog also mentions minor changes like allowing @bitCast on enums and disallowing it on vectors of pointers. All improvements are available on the master branch and will be part of the upcoming 0.17.0 release.",
+  "tags": [
+    "Zig",
+    "Compiler Development",
+    "LLVM Backend",
+    "ELF Linker",
+    "Build System"
+  ],
+  "title": "Devlog ⚡ Zig Programming Language",
+  "translateContent": null,
+  "url": "https://ziglang.org/devlog/2026/#2026-06-25",
+  "wordCount": 5950
+}

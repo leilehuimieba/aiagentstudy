@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Tools/Actions",
+    "Control Loop",
+    "Deliverable"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-25",
+  "id": "BB-2026-05-01-687",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/02-tools-actions/BB-2026-05-01-687/article.md",
+    "item_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-687",
+    "raw_dir": "knowledge/items/02-tools-actions/BB-2026-05-01-687/raw",
+    "raw_files": [
+      "knowledge/items/02-tools-actions/BB-2026-05-01-687/raw/content.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-687/raw/discovery.json",
+      "knowledge/items/02-tools-actions/BB-2026-05-01-687/raw/page.json"
+    ],
+    "source": "knowledge/items/02-tools-actions/BB-2026-05-01-687/source.md",
+    "summary": "knowledge/items/02-tools-actions/BB-2026-05-01-687/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Pinterest Engineering Blog",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Pinterest Engineering Blog",
+  "status": "Full text + source captured",
+  "tags": [
+    "CDC",
+    "Schema Evolution",
+    "Data Engineering",
+    "Apache Flink",
+    "Apache Spark"
+  ],
+  "title": "Automated Schema Evolution in Pinterest’s Next-Generation DB Ingestion Framework",
+  "topic": "02-tools-actions",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://medium.com/pinterest-engineering/automated-schema-evolution-in-pinterests-next-generation-db-ingestion-framework-36c5c07070de?source=rss----4c5a5f6279b6---4",
+      "https://www.bestblogs.dev/article/3d0c6045"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://medium.com/pinterest-engineering/automated-schema-evolution-in-pinterests-next-generation-db-ingestion-framework-36c5c07070de?source=rss----4c5a5f6279b6---4",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/3d0c6045"
+  }
+}

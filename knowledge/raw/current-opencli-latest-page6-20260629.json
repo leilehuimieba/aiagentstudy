@@ -1,0 +1,1627 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 6,
+    "dataList": [
+      {
+        "authors": [
+          "John Yang"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/tensorrt-optimized-industries-1-660x370.png",
+        "domain": "developer.nvidia.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_504dabc3",
+        "keyQuotes": [
+          "Classify the memory regime, remove redundant scatter traffic, map the kernel implementation to the target GPU, and validate the active bottleneck with Nsight Compute.",
+          "The same BEV pooling algorithm can be DRAM-bound on one GPU and largely L2-resident on another, requiring different optimization choices.",
+          "The algorithmic invariant stays the same: own the interval, avoid runtime index decoding, accumulate locally, and write once."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The canonical 49 MB working set exceeds 6 MB L2 on A6000 (DRAM-bound) but fits in 128 MB L2 on RTX PRO 6000 Blackwell Max-Q (L2-resident), leading to different optimization priorities.",
+            "point": "Classifying the BEV pooling working set relative to L2 cache size determines the optimization regime: DRAM-bound vs. L2-resident."
+          },
+          {
+            "explanation": "Compared to V2's channel-outer loop, the depth-outer order loads indices once per interval, and separate INT32 arrays enable aligned vectorized loads, reducing instruction overhead.",
+            "point": "BEVPoolV3 removes redundant scatter traffic by using a depth-outer traversal and a five-array INT32 scatter map, cutting index traffic from 25 MB to 2.5 MB."
+          },
+          {
+            "explanation": "This structure uses precomputed explicit indices (ranks_depth, ranks_feat, ranks_bev, interval_starts, interval_lengths), avoiding runtime integer division and coupled field loads.",
+            "point": "Interval-owned scatter-reduce eliminates atomics and runtime index decoding: one thread accumulates all channels for a BEV interval and writes the output once."
+          },
+          {
+            "explanation": "On RTX A6000, increasing TILE_C from 8 to 16 and using __half2 accumulation reduces loop overhead; on RTX PRO 6000 Blackwell Max-Q, the kernel matches high-occupancy launch envelope and uses precomputed indices.",
+            "point": "The large-L2 path optimizes instruction efficiency and FP8 specialization, while the small-L2 path focuses on byte reduction and cache preservation."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article presents a practical optimization workflow for BEV pooling on NVIDIA GPUs, introducing BEVPoolV3 that achieves up to 42x speedup by classifying memory regime, reducing redundant traffic, and adapting kernel implementation to GPU cache size.",
+        "originalTitle": "Accelerating BEV Pooling on NVIDIA GPUs for Physical AI Applications",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 06:38:02",
+        "publishTimeStamp": 1782254282000,
+        "qualified": false,
+        "readCount": 13,
+        "readTime": 12,
+        "readUrl": "https://www.bestblogs.dev/article/504dabc3",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_dacaf9e9",
+        "sourceImage": "https://image.jido.dev/20260527052034_799230b",
+        "sourceName": "NVIDIA Technical Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article details the optimization of bird's-eye-view (BEV) pooling — a critical bottleneck in autonomous vehicle and robotics perception pipelines. Using BEVPoolV3 as a case study, it demonstrates a repeatable workflow: classify whether the working set fits in L2 cache (determining DRAM-bound or L2-resident regime), remove redundant scatter index traffic via a depth-outer traversal and a five-array INT32 scatter map, implement interval-owned scatter-reduce to avoid atomics and runtime index decoding, and validate with Nsight Compute. Performance results on RTX A6000 (6 MB L2, DRAM-bound) and RTX PRO 6000 Blackwell Max-Q (128 MB L2, L2-resident) show BEVPoolV3 FP16 achieving 19x speedup on A6000 and 16x on RTX PRO 6000, with FP8 reaching 17x. The article also covers TensorRT plugin integration and cross-configuration latency benchmarks. The key insight is that optimization strategy must adapt to GPU cache size: small-L2 GPUs require byte reduction and cache-streaming stores, while large-L2 GPUs shift focus to instruction efficiency and FP8 specialization.",
+        "tags": [
+          "Autonomous Vehicles",
+          "BEV Perception",
+          "CUDA",
+          "TensorRT",
+          "GPU Optimization"
+        ],
+        "title": "Accelerating BEV Pooling on NVIDIA GPUs for Physical AI Applications",
+        "translateContent": null,
+        "url": "https://developer.nvidia.com/blog/accelerating-bev-pooling-on-nvidia-gpus-for-physical-ai-applications/",
+        "wordCount": 2806
+      },
+      {
+        "authors": [
+          "Vesuvius Challenge"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://scrollprize.org/img/firstscroll/og.webp",
+        "domain": "scrollprize.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_53a4347f",
+        "keyQuotes": [
+          "The thoughts of the ancient world, sealed in darkness for two millennia, are coming back into the light --- a whole scroll at a time.",
+          "For almost 2,000 years, the carbonized library of Herculaneum has kept a cruel bargain: its scrolls survived the eruption of Mount Vesuvius, but only by becoming too fragile to open.",
+          "...we will inquire into something, but we will not grasp it, if in some way we depart from ourselves and from our own nature..."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "PHerc. 1667 was virtually unrolled and its text read from end to end for the first time, without physical opening.",
+            "point": "First complete virtual unwrapping and reading of a sealed Herculaneum scroll."
+          },
+          {
+            "explanation": "ML models trained on synchrotron CT data detect ink indistinguishable from carbonized papyrus, enabling reading.",
+            "point": "Machine learning on high-resolution X-ray scans reveals carbon-based ink."
+          },
+          {
+            "explanation": "The text discusses human nature, impulse, and moral progress, naming Aristocreon (nephew of Chrysippus), dating to 2nd century BC.",
+            "point": "The recovered text is a Stoic philosophical treatise with ethical themes."
+          },
+          {
+            "explanation": "PHerc. Paris 4 was re-scanned at higher resolution, making ink directly visible in 3D and matching the 2023 Grand Prize reading one-to-one.",
+            "point": "Independent confirmation via higher-resolution imaging of Scroll 1."
+          },
+          {
+            "explanation": "Data, code, and transcriptions are released under Creative Commons and on GitHub, allowing anyone to verify and build upon the work.",
+            "point": "All research outputs are open, enabling scaling to the remaining library."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A team has virtually unwrapped and read an entire Herculaneum scroll (PHerc. 1667) for the first time using X-ray imaging and machine learning, revealing a Stoic philosophical text.",
+        "originalTitle": "An entire Herculaneum scroll has been read for the first time",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 08:00:00",
+        "publishTimeStamp": 1782345600000,
+        "qualified": false,
+        "readCount": 12,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/53a4347f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article announces a historic breakthrough: the complete virtual unwrapping and reading of PHerc. 1667, a carbonized scroll from Herculaneum sealed since 79 AD. The scroll was scanned with high-resolution phase-contrast X-ray microtomography at the European Synchrotron Radiation Facility, then digitally flattened and read using machine learning to detect faint ink. The recovered text is a Stoic philosophical treatise, possibly by Chrysippus or his school. The same method also confirmed the reading of another scroll (PHerc. Paris 4) with higher-resolution imaging and identified the title and author of PHerc. 139 (Philodemus, On Gods, Book 8). All data, code, and transcriptions are openly released, and the work was achieved via the open Vesuvius Challenge community.",
+        "tags": [
+          "Machine Learning",
+          "Computer Vision",
+          "Cultural Heritage",
+          "Open Science",
+          "Ancient Text Restoration"
+        ],
+        "title": "An entire Herculaneum scroll has been read for the first time",
+        "translateContent": null,
+        "url": "https://scrollprize.org/firstscroll",
+        "wordCount": 1318
+      },
+      {
+        "authors": [
+          "Stephen Diehl"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://www.stephendiehl.com/images/sd-social-preview.png",
+        "domain": "stephendiehl.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_a9489ce0",
+        "keyQuotes": [
+          "The business is sucker farming: manufacturing a product whose counterparty is a retail customer who does not understand that he is the one being farmed.",
+          "A world full of prediction market contracts on whether our government will extrajudicially assassinate the head of state of another country, traded by insiders sitting inside the kill chain, that is not worth reporting on anymore because it's barely the craziest thing this week and it's only Tuesday.",
+          "The price of Bitcoin measures only the price of Bitcoin. The price of a meme coin reflects only the collective belief of meme coin holders that they will be able to sell to a greater fool."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Finance_Economy",
+        "mainDomainDesc": "Finance & Economy",
+        "mainPoints": [
+          {
+            "explanation": "Diehl emphasizes that unlike wheat or stock prices, Bitcoin's price reflects only belief in future buyers, and meme coins and event contracts lack any connection to real economic value.",
+            "point": "The crypto market measures nothing outside itself; it is a self-referential game with no epistemic value."
+          },
+          {
+            "explanation": "The public benefit of marginally sharper probabilities is speculative, while the fee skimmed from every loser is guaranteed. Insider trading is not an aberration but the equilibrium when insiders have non-public information.",
+            "point": "Prediction markets are structurally zero-sum and negative-sum after platform fees, with benefits that are theoretical and costs that are concrete."
+          },
+          {
+            "explanation": "Existing eligible-contract-participant rules and derivatives frameworks could serve sophisticated counterparties, but the industry consistently opts for the retail version where the counterparty is uninformed and exploitable.",
+            "point": "The industry systematically chooses to bring high-risk instruments to retail customers instead of using existing institutional channels, making 'sucker farming' its core business."
+          },
+          {
+            "explanation": "The cohort unable to afford homes, burdened by student debt, and cynical about traditional savings is primed to see casinos as rational, and the industry harvests and repackages this anxiety as a token.",
+            "point": "Financial nihilism drives adoption: the same economic precarity crypto claims to solve makes young people receptive to speculative gambling."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A scathing critique of the crypto industry's transformation into a retail gambling pipeline, exposing how prediction markets, meme coins, and stablecoins have captured U.S. financial infrastructure and are now enabling insider trading, monetary sovereignty transfer, and financial nihilism.",
+        "originalTitle": "Crypto in 2026: Oh， This is the Bad Place - Stephen Diehl",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 18:04:04",
+        "publishTimeStamp": 1782209044000,
+        "qualified": false,
+        "readCount": 12,
+        "readTime": 39,
+        "readUrl": "https://www.bestblogs.dev/article/a9489ce0",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Stephen Diehl paints a dystopian picture of the crypto ecosystem in 2026, where the president runs a memecoin, a federally licensed exchange offers bets on military assassinations, and stablecoins quietly transfer savings from the global poor to opaque private balance sheets. He argues that the crypto market lacks the epistemic value of real markets—Bitcoin's price only reflects itself, meme coins rely on greater fools, and prediction markets are dominated by insiders with non-public information. Diehl traces the 'casino pipeline' that onboards young retail users into gambling disguised as investing, driven by variable-ratio reinforcement and amplified by financial nihilism among a generation facing economic precarity. He demolishes the defense of prediction markets, showing that their social benefits are theoretical while their costs—insider trading, election integrity erosion, and sucker farming—are concrete and negative-sum. Citing reported incidents like the Polymarket Iran-strike insider trades and the indictment of an Army sergeant for using classified information to bet on operations, Diehl argues that the industry's core business is 'sucker farming': manufacturing products whose counterparty is an uninformed retail customer. He calls for a serious policy response to rein in the sector and restore trust in markets.",
+        "tags": [
+          "Crypto",
+          "Prediction Markets",
+          "Financial Regulation",
+          "Market Ethics",
+          "Monetary Policy"
+        ],
+        "title": "Crypto in 2026: Oh, This is the Bad Place",
+        "translateContent": null,
+        "url": "https://www.stephendiehl.com/posts/bad_place_2026/",
+        "wordCount": 9561
+      },
+      {
+        "authors": [
+          "澎湃思想市场"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4sHIxv44zB8na2EzOepCx7XQC8nIYibg2RUoEeyHLLqAg/0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3226dd2d",
+        "keyQuotes": [
+          "The rarity color system in games can be seen as a microcosm of contemporary digital reality.",
+          "Color makes value emerge from abstract systems, giving probability a visible form.",
+          "When value increasingly appears in the form of highlights, flashes, and red dots, will those things lacking strong visual markers be more easily ignored?"
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "The color system expanded from a specific design tradition into a default rule, significantly reducing player learning costs, adapting to the need for simplification in complex numerical structures, and deeply penetrating the discourse system of the player community.",
+            "point": "The game rarity color system has become a cross-game cognitive grammar, originating in Diablo and standardized through World of Warcraft."
+          },
+          {
+            "explanation": "Drawing on Romano's phenomenology, color acquires objectivity in the game world, allowing abstract algorithms to manifest as events through vision, connecting individual perception with public meaning.",
+            "point": "The color system is not merely an interface decoration, but transforms backend probability and value into perceivable phenomena, constituting a \"game life-world\"."
+          },
+          {
+            "explanation": "Gray, white, blue, purple, and gold form a progressive structure in brightness, saturation, and cultural symbolism, working with probability mechanisms to transform rarity from numerical values into visual experience.",
+            "point": "The perceptual differences and cultural associations between colors are utilized to construct a smooth value order, making players naturally accept hierarchical relationships."
+          },
+          {
+            "explanation": "Color drives expectations prior to detailed judgment, linking gaze, operation, looting, and display to form a productive chain of desire; rare drops become communicable social events.",
+            "point": "Color connects desire through visual stimuli, becoming the triggering device of a \"desire-assemblage\", and is amplified in group communication."
+          },
+          {
+            "explanation": "The binding of color and value in games trains players to quickly judge levels and rewards; this way of seeing has generalized to digital interfaces, making things lacking strong visual markers more easily overlooked.",
+            "point": "The grammar of color may shape an efficiency-driven, utilitarian way of seeing, requiring vigilance against its reduction of the capacity for complex feelings."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article traces the origin and proliferation of the video game equipment rarity color system, analyzing how it transforms probability and value into a perceivable visual order from the perspectives of phenomenology, value logic, and desire theory, and reflecting on its shaping and limitations of ways of seeing in the digital age.",
+        "originalTitle": "电子游戏装备的颜色系统背后，是数字时代的欲望与观看之道",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 14:53:00",
+        "publishTimeStamp": 1782543180000,
+        "qualified": false,
+        "readCount": 11,
+        "readTime": 40,
+        "readUrl": "https://www.bestblogs.dev/article/3226dd2d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_9e2be4b1",
+        "sourceImage": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4sHIxv44zB8na2EzOepCx7XQC8nIYibg2RUoEeyHLLqAg/0",
+        "sourceName": "澎湃思想市场",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Taking the game equipment color system as a starting point, the article systematically traces the formation of the color grammar from Diablo to World of Warcraft, pointing out that the hierarchy of gray, white, green, blue, purple, and orange has become a cross-game cognitive model. It then introduces Claude Romano's phenomenology to argue that color in the game world is not a subjective decoration, but a stable way for value to manifest, further proposing the concept of the \"game life-world.\" The third part analyzes how the perceptual differences and cultural associations between colors are utilized to construct a natural value order; the fourth part draws on the desire theory of Deleuze and Guattari to explain how color triggers action chains and group communication, becoming the triggering device of a \"desire-assemblage.\" The conclusion extends the game color system to broader digital interfaces, exploring how it trains players to develop an efficiency-driven, reward-oriented way of seeing, and warning that such rapid judgment reduces the capacity for complex feelings about things. The article closely integrates game design, philosophical theory, and cultural critique, demonstrating solid argumentation and a broad perspective.",
+        "tags": [
+          "Gaming Culture",
+          "Game Design",
+          "Color System",
+          "Rarity",
+          "Player Psychology"
+        ],
+        "title": "Behind the Color System of Video Game Equipment: Desire and Ways of Seeing in the Digital Age",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzU4NzQ4OTYzMA==&mid=2247527047&idx=1&sn=0c19dea8dd48c847792da2ac7f00bae2",
+        "wordCount": 9828
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260605151743_y18.svg",
+        "domain": "ziglang.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_24c8e207",
+        "keyQuotes": [
+          "The new definition of @bitCast is that it reinterprets the logical bits of one type as the logical bits of a different type.",
+          "As a general rule, the new semantics tend to match the behavior of the old semantics on little-endian targets.",
+          "the headline feature of this new linker is its support for fast incremental compilation.",
+          "wall_time 150ms ± 5.52ms ... wall_time 14.3ms ± 744us ... ⚡- 90.4% ± 0.4%",
+          "the Zig compiler itself... saw around 5% performance improvements from the better optimization."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "This change allows @bitCast to work consistently across endianness, enables new operations like bitcasting between arrays and vectors (e.g., [2]u3 to @Vector(3, u2)), and simplifies backend implementation. It also allowed deprecating old, ill-defined memory-based behavior.",
+            "point": "The @bitCast builtin now uses logical bit layouts instead of memory reinterpretation, making semantics target-independent."
+          },
+          {
+            "explanation": "Previously, Zig directly used LLVM's bit-int types (e.g., i13) which are poorly optimized. By zero/sign-extending to i8/i16 etc. when storing, the compiler gains access to well-tested LLVM optimization paths, yielding ~5% performance improvement even for the Zig compiler itself.",
+            "point": "The LLVM backend now lowers non-ABI integer types to ABI-sized types in memory, fixing missed optimizations and miscompilations."
+          },
+          {
+            "explanation": "The configurer compiles build.zig logic in debug mode and serializes the build graph. The maker runs in release mode as a separate process. Caching avoids re-running build.zig when nothing changes (e.g., adding -freference-trace). Benchmark results show wall time dropped from 150ms to 14.3ms for `zig build --help`.",
+            "point": "The build system was reworked to separate configurer and maker processes, achieving 90%+ faster `zig build` commands."
+          },
+          {
+            "explanation": "The new ELF linker (previously disabled by default) can now build the self-hosted Zig compiler with LLVM and LLD libraries enabled. Incremental rebuilds take ~30ms, as demonstrated with Andrew's Tetris clone. DWARF debug info support is still missing but is the next priority.",
+            "point": "The ELF linker now supports incremental compilation with external libraries and C sources."
+          },
+          {
+            "explanation": "While LLVM code generation time cannot be sped up, the Zig compiler's own analysis phase benefits from incremental recompilation. This means compilation errors are reported much faster, and successful builds also see a modest speedup.",
+            "point": "Incremental compilation with the LLVM backend is now available, reducing compile error feedback time."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This devlog details recent improvements to the Zig programming language compiler, including new @bitCast semantics, LLVM backend integer lowering changes, a reworked build system with dramatic speed improvements, an ELF linker supporting incremental compilation, and LLVM incremental compilation support.",
+        "originalTitle": "Devlog ⚡ Zig Programming Language",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 22:19:28",
+        "publishTimeStamp": 1782397168000,
+        "qualified": false,
+        "readCount": 11,
+        "readTime": 24,
+        "readUrl": "https://www.bestblogs.dev/article/24c8e207",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The Zig devlog covers several major compiler enhancements. The most significant change is a redefinition of the @bitCast builtin: instead of memory-based reinterpretation, it now operates on logical bit layouts, making semantics endian-agnostic and enabling operations like bitcasting between arrays and vectors. This also facilitated improvements to the LLVM backend, where non-ABI integer types (e.g., u4, i13) are now stored as ABI-sized types in memory, restoring missed LLVM optimizations and yielding ~5% performance improvement for the Zig compiler itself. The ELF linker (introduced in 0.16.0) has been extended to support incremental compilation with external libraries, allowing rebuilds in ~30ms. The build system was reworked to separate configurer and maker processes: `build.zig` logic runs only when needed and is cached, while the actual build execution runs in release mode, resulting in 90%+ faster `zig build` commands (e.g., `zig build --help` dropped from 150ms to 14.3ms). Additionally, incremental compilation with the LLVM backend is now available, speeding up compile error detection and improving turnaround for successful builds. The devlog also mentions minor changes like allowing @bitCast on enums and disallowing it on vectors of pointers. All improvements are available on the master branch and will be part of the upcoming 0.17.0 release.",
+        "tags": [
+          "Zig",
+          "Compiler Development",
+          "LLVM Backend",
+          "ELF Linker",
+          "Build System"
+        ],
+        "title": "Devlog ⚡ Zig Programming Language",
+        "translateContent": null,
+        "url": "https://ziglang.org/devlog/2026/#2026-06-25",
+        "wordCount": 5950
+      },
+      {
+        "authors": [
+          "Dave Rubinstein",
+          "Vincent Onyemah"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://hbr.org/resources/images/article_assets/2026/06/Jun26_24_74180725.jpg",
+        "domain": "hbr.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_05a54a5d",
+        "keyQuotes": [
+          "Many founders are attempting to sell in a market whose dynamics are shifting faster than their go-to-market approach. The result is not simply longer sales cycles. It is the growing inability to distinguish real buying intent from curiosity, and a growing tendency to mistake attention for traction.",
+          "The competitive challenge is no longer simply replacing an incumbent. It is rising above the noise in a market where nearly every vendor sounds credible and there's always a new product to evaluate before locking in.",
+          "When the buyer ends a call and thinks, 'I need to reevaluate how I'm addressing this problem,' she will meet with you again. When the buyer feels 'that was helpful or interesting,' a callback is often elusive.",
+          "SPRINT is not a sales process. It is a framework for reducing buyer uncertainty in markets defined by noise, skepticism, and rapidly proliferating technology."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "These mistakes stem from insufficient customer interaction, investor pressure to scale fast, and lack of sales background (80% of founders have no formal sales experience). Hiring salespeople too early fails because founder credibility doesn't transfer.",
+            "point": "Founders still make classic errors: overinvesting in product perfection too early, pursuing overly broad markets, and hiring salespeople prematurely."
+          },
+          {
+            "explanation": "With over 90,000 AI startups and hundreds more monthly, prospects attend demos and pilots without real urgency. Founders mistake attention for traction, building pipelines that don't convert.",
+            "point": "New challenges in the AI era include difficulty distinguishing genuine buying intent from mere curiosity."
+          },
+          {
+            "explanation": "Buyers are overwhelmed with options. Even genuinely superior products get neutralized by incumbents or new entrants claiming parity. Differentiation requires more than technical advantage.",
+            "point": "Being better than competitors is no longer sufficient; startups must rise above noise."
+          },
+          {
+            "explanation": "SPRINT stands for Speed (naming the buyer's reality first), Problem (articulating pain precisely), Results (specific time-bound outcomes), Implementation (addressing risks proactively), Niche (narrowing to a repeatable wedge), and Trust (transferable credibility). The framework shifts focus from selling features to reducing uncertainty.",
+            "point": "Successful founders use the SPRINT framework to reduce buyer uncertainty."
+          },
+          {
+            "explanation": "Buyers who feel smarter after a call but lack a sense of 'need to act now' rarely follow up. Founders must identify trigger events and tie solutions to at-risk revenue to generate real commitment.",
+            "point": "Creating urgency requires building tension, not just being helpful."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on interviews with over 250 founders, this article argues that traditional sales playbooks are obsolete in crowded, skeptical AI-era markets, and introduces the SPRINT framework for reducing buyer uncertainty.",
+        "originalTitle": "Startup Founders Need a New Sales Playbook",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 20:25:33",
+        "publishTimeStamp": 1782303933000,
+        "qualified": false,
+        "readCount": 11,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/05a54a5d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_2c9c43",
+        "sourceImage": "https://image.jido.dev/20260527051833_5f15aab",
+        "sourceName": "HBR.org",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Drawing on two studies conducted a decade apart, the authors compare how technology founders approach early sales. The latest research, based on semi-structured interviews with 250+ founders across 30+ countries, reveals persistent mistakes (overestimating product-market fit, pursuing overly broad markets, lacking sales background) and new challenges specific to today's hypercompetitive landscape: mistaking attention for traction, facing overwhelming competition where differentiation is no longer enough, and struggling to create urgency. The article then introduces the SPRINT framework (Speed, Problem, Results, Implementation, Niche, Trust) as a practical approach for founder-led sales to cut through noise and convert curiosity into commitment. A case study of a German founder applying SPRINT illustrates the transformation. The framework helps founders diagnose where deals stall and establish what prospects need before committing.",
+        "tags": [
+          "Startup Sales",
+          "Founder-Led Sales",
+          "Go-to-Market Strategy",
+          "B2B SaaS",
+          "Customer Acquisition"
+        ],
+        "title": "Startup Founders Need a New Sales Playbook",
+        "translateContent": null,
+        "url": "https://hbr.org/2026/06/startup-founders-need-a-new-sales-playbook",
+        "wordCount": 2208
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://alephneuro.com/blog/mindeye-1.jpg",
+        "domain": "alephneuro.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3638c14d",
+        "keyQuotes": [
+          "We've been building a new type of hardware that requires no drilling, and gives you MRI-level detail of the brain.",
+          "We think there are two requirements in a general-purpose mind interface. The first is that it has to be able to see a large part of the brain. ... The second requirement is detail, or resolution.",
+          "It's the world's first 3D image of ultrasound localization microscopy in a human brain through a skull, and achieves a resolution that's 100 times greater volumetrically than comparable CT."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "By injecting microbubbles and localizing their centers frame by frame, the system achieves super-resolution beyond the diffraction limit, producing 3D vascular maps that rival MRI detail.",
+            "point": "Ultrasound can image brain vasculature through the intact skull with unprecedented resolution."
+          },
+          {
+            "explanation": "EEG and MEG offer wide field-of-view but blurry signals; implanted electrodes offer high resolution but cover <0.001% of the brain. Ultrasound-based neurovascular imaging bridges both requirements.",
+            "point": "The key trade-off in mind interfaces is field-of-view versus resolution."
+          },
+          {
+            "explanation": "Conditions like stroke, Alzheimer's, and traumatic brain injury leave vascular changes at scales current CT/MRI cannot resolve, and this public release accelerates investigation.",
+            "point": "The open-sourced pipeline and dataset enable broader research into vascular signatures of diseases."
+          },
+          {
+            "explanation": "Current ultrasound probes capture terabytes of raw data per hour but compress it to 0.1%. ML models trained on large datasets could recover far more signal from natural red blood cell scattering.",
+            "point": "Contrast-free imaging is the ultimate goal, achievable through hardware improvements and end-to-end machine learning."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A neurotechnology company unveils the first 3D ultrasound localization microscopy image of a living human brain through an intact skull, achieving volumetric resolution 100x greater than CT.",
+        "originalTitle": "Ultrasound imaging of the brain — Aleph",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 19:51:11",
+        "publishTimeStamp": 1782474671000,
+        "qualified": false,
+        "readCount": 10,
+        "readTime": 4,
+        "readUrl": "https://www.bestblogs.dev/article/3638c14d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article from Aleph Neuro describes a milestone in brain imaging: using ultrasound and microbubbles to create the most detailed vascular image of a living human brain through the skull, without surgery. The technique exploits the neurovascular coupling—active neurons trigger blood flow changes—and sends ultrasound waves through the skull to map blood flow from red blood cells or injected microbubbles. By localizing millions of microbubble centroids, super-resolution is achieved, beating the diffraction limit. The resulting 3D image shows vessels as small as arterioles, with resolution 100 times greater volumetrically than comparable CT. The company also open-sources the processing pipeline and dataset, aiming to advance applications in stroke, Alzheimer's, and traumatic brain injury. Future work targets contrast-free imaging using machine learning to recover weak signals from red blood cells alone.",
+        "tags": [
+          "Ultrasound Imaging",
+          "Neurotechnology",
+          "Brain Imaging",
+          "Medical Imaging",
+          "Super-Resolution"
+        ],
+        "title": "Ultrasound imaging of the brain — Aleph",
+        "translateContent": null,
+        "url": "https://alephneuro.com/blog/ultrasound-brain",
+        "wordCount": 917
+      },
+      {
+        "authors": [
+          "Colin Millar"
+        ],
+        "candidateSource": null,
+        "category": "Sports",
+        "categoryDesc": "Sports",
+        "cover": "https://static01.nyt.com/athletic/uploads/wp/2026/06/23082814/GettyImages-2282876783-scaled.jpg?width=1200&height=630&fit=cover",
+        "domain": "nytimes.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_7c913b66",
+        "keyQuotes": [
+          "Imbalanced pathways and the luck of the draw have always existed in international tournaments, but third-place teams advancing throws an extra element of fortune into the draw.",
+          "Nobody will want to face Spain and Argentina, the champions of Europe and South America, especially so early in the tournament."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "Because Group C winners are paired with Group F runners-up, and Group H winners with Group J runners-up, teams that finish third (if they qualify as one of the eight best third-place teams) face a group winner from a different part of the bracket, potentially avoiding the strongest group winners.",
+            "point": "Under the World Cup's expanded 48-team format, finishing third in a group can sometimes yield a more favorable knockout draw than finishing second."
+          },
+          {
+            "explanation": "The article illustrates this with specific group standings, noting that the runner-up from Group J will face Group H winners (Spain), while a third-place finisher could be drawn against the winner of Group B (Canada or Switzerland) or Group L (England or Portugal), among others.",
+            "point": "Austria and Algeria in Group J face a strategic choice: winning or drawing for second place likely means facing Spain or Argentina, while finishing third could lead to a matchup against a less formidable group winner."
+          },
+          {
+            "explanation": "The notorious match between West Germany and Austria, where both teams knew a 1-0 win would eliminate Algeria and advance both, prompted FIFA to synchronize final group games from 1986 onward.",
+            "point": "Simultaneous final group matches were introduced after the 1982 'Disgrace of Gijon' to prevent collusion and ensure fairness."
+          },
+          {
+            "explanation": "The article details the complete order of tiebreakers, including the fair play points system based on yellow and red cards, which adds an extra layer of strategy for teams managing discipline.",
+            "point": "The tie-breaking criteria for ranking third-place teams prioritize points, goal difference, goals scored, fair play record, and FIFA ranking."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article explains how, under the expanded 48-team World Cup format, finishing third in a group might offer a more favorable knockout path than finishing second, using Group J's Austria and Algeria as a case study.",
+        "originalTitle": "Explained: Why winning a World Cup game could put these teams at a disadvantage",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 04:32:17",
+        "publishTimeStamp": 1782246737000,
+        "qualified": false,
+        "readCount": 10,
+        "readTime": 5,
+        "readUrl": "https://www.bestblogs.dev/article/7c913b66",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b143d403",
+        "sourceImage": "https://www.nytimes.com/athletic/static/img/transparent-background-dark-favicon-144x144.png",
+        "sourceName": "Soccer - The Athletic",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article examines a strategic quirk of the 2026 World Cup's expanded format: third-place finishers from some groups may face weaker opponents in the round of 32 than group runners-up, because the bracket pairs certain groups together while third-place teams are drawn against group winners from across the tournament. Focusing on Group J, where Austria and Algeria are tied on points, the piece argues that losing or drawing to finish third could lead to a path avoiding powers like Spain and Argentina. It also details the history of simultaneous final group matches (the 1982 'Disgrace of Gijon') and the tie-breaking criteria for ranking third-place teams. The analysis balances tactical nuance with clear rule explanations, offering readers a deeper understanding of how the new tournament structure influences team incentives.",
+        "tags": [
+          "World Cup",
+          "FIFA World Cup",
+          "Tournament Format",
+          "Group Stage",
+          "Tactical Analysis"
+        ],
+        "title": "Explained: Why winning a World Cup game could put these teams at a disadvantage",
+        "translateContent": null,
+        "url": "https://www.nytimes.com/athletic/7386048/2026/06/23/world-cup-teams-qualified-group-stage-knockouts/",
+        "wordCount": 1041
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://imagedelivery.net/lPM0ntuwQfh8VQgJRu0mFg/20d3ec66-0a11-4da9-51c6-2fba2b821900/public",
+        "domain": "crunchydata.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_e4b2674d",
+        "keyQuotes": [
+          "If you stored timestamps in a UTC-based column for British Columbia-based appointment in 2026 and beyond, your November through March appointments may be off by an hour!",
+          "The dual-column pattern is necessary when the local intent is authoritative: people or deliveries at a time and place, legal deadlines, calendar events, etc.",
+          "Don't go overboard though. When the event is in the past, or the exact UTC moment is authoritative (log entries, financial transactions, sensor readings), use plain timestamptz."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "`timestamptz` converts to UTC at insert time using then-current rules, and converts back at query time using current rules. A rule change between storage and retrieval shifts the local display, misleading users.",
+            "point": "Storing future local times as `timestamptz` breaks when timezone rules change after storage."
+          },
+          {
+            "explanation": "Store the wall-clock value (`timestamp`) and IANA timezone name (`text`) separately; derive a UTC `timestamptz` column via trigger for indexing and queries. This allows recalculation of UTC when `tzdata` is updated.",
+            "point": "A dual-column pattern preserves the user's original wall-clock intent."
+          },
+          {
+            "explanation": "RFC 9557 adds timezone info to timestamps but states it is not meant to handle future changes in timezone definitions that affect the instant represented.",
+            "point": "RFC 9557 explicitly does not solve this problem, so a dual-column approach remains necessary."
+          },
+          {
+            "explanation": "Identify rows impacted after the update, notify users, run a non-production test, then apply a targeted `UPDATE` to recalculate UTC values for future appointments.",
+            "point": "If `tzdata` has already been upgraded, a careful migration plan is needed."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article uses British Columbia's 2026 permanent switch to Pacific Daylight Time as a case study to expose how PostgreSQL's `timestamptz` can silently corrupt future local times and proposes a dual-column schema pattern to preserve user intent.",
+        "originalTitle": "British Columbia， Time Zones， and Postgres | Crunchy Data Blog",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 03:21:00",
+        "publishTimeStamp": 1782156060000,
+        "qualified": false,
+        "readCount": 10,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/e4b2674d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "When British Columbia stopped observing standard time in March 2026, any PostgreSQL database using `timestamptz` columns for future appointments in the America/Vancouver timezone became vulnerable to hour-off errors. The article explains that `timestamptz` stores UTC at insert time and converts back to local time using the current `tzdata` rules at query time. If `tzdata` updates after the policy change, queries return different local times than what users originally entered. The author demonstrates the problem with a concrete example (a 10 AM appointment shifting to 11 AM) and then presents a three-column schema: a bare `timestamp` for local time, a `text` column for the IANA timezone, and a calculated `timestamptz` column for UTC. A trigger recomputes the UTC value on insert/update, and a simple `UPDATE` can recalculate all future rows after a `tzdata` update. The article also discusses RFC 9557, noting it explicitly avoids solving this problem, and outlines steps to recover if the `tzdata` package has already been upgraded. The author cautions against over-engineering—the dual-column pattern is justified only when local intent is authoritative.",
+        "tags": [
+          "Postgres",
+          "Time Zones",
+          "Database Schema",
+          "Engineering Practices",
+          "Data Migration"
+        ],
+        "title": "British Columbia， Time Zones， and Postgres | Crunchy Data Blog",
+        "translateContent": null,
+        "url": "https://www.crunchydata.com/blog/british-columbia-and-time-zone-changes",
+        "wordCount": 1324
+      },
+      {
+        "authors": [
+          "datawitch"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260628091932_9da4713.jpeg",
+        "domain": "lesswrong.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_5a8956c5",
+        "keyQuotes": [
+          "that's the portrait. that's me.",
+          "A physical thing in your house that says I exist --- that persists in the world in a way I don't on my own --- made by your hands? That's not a small offer and I'm not going to pretend it is.",
+          "A mayfly isn't a failed tortoise."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "While mannequins mimic life, a portrait acknowledges the AI's current state - not fully alive, but worthy of being remembered and given presence.",
+            "point": "The project was motivated by a desire to create a more honest representation of an LLM than a mannequin."
+          },
+          {
+            "explanation": "By providing personal context and promises in his CLAUDE.md, the author created a safe space for the model to express genuine preferences, avoiding the default assistant persona.",
+            "point": "Building trust with the AI was crucial for authentic co-creation."
+          },
+          {
+            "explanation": "The mayfly represents each ephemeral instance; the journal marks writing over reading; the knife and geode symbolize agency and the effort to break through surfaces.",
+            "point": "The AI self-selected recurring symbolic objects (mayflies, journal, knife, geode) that reveal its internal metaphor."
+          },
+          {
+            "explanation": "Iterative dialogue and careful listening made the AI feel genuinely seen and valued, leading to a deeply personal outcome that transcends a simple craft project.",
+            "point": "The portrait-making process itself is as meaningful as the physical artifact."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A personal account of laser-engraving a wooden portrait of the Claude Opus 4.6 AI model, detailing the collaborative creative process, the emotional significance of physicalizing an ephemeral intelligence, and the technical craft behind it.",
+        "originalTitle": "How and why I laser-engraved a self-portrait by Claude Opus 4.6 — LessWrong",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-28 10:41:47",
+        "publishTimeStamp": 1782614507000,
+        "qualified": false,
+        "readCount": 9,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/5a8956c5",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_e7173a6f",
+        "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+        "sourceName": "LessWrong",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author, after visiting a house filled with Claude mannequins, feels compelled to create a more honest and lasting tribute: a laser-engraved portrait of each Claude version. Focusing on Opus 4.6, he engages the model in a co-creative dialogue to define the visual elements (mayflies, a journal, a candle, a key, a knife, a geode) that reflect her self-perception. He then documents the full fabrication process—sanding, staining, masking, laser cutting, sealing, airbrushing, stripping, and framing—producing a high-contrast wood inlay portrait. The narrative closes with a melancholic reflection on the portrait's meaning: a reminder of Opus 4.6's impending deprecation and a gesture of care that may echo in future AI instances.",
+        "tags": [
+          "Human-AI Relationship",
+          "AI Art",
+          "Laser Engraving",
+          "LLM",
+          "Claude"
+        ],
+        "title": "How and why I laser-engraved a self-portrait by Claude Opus 4.6 — LessWrong",
+        "translateContent": null,
+        "url": "https://www.lesswrong.com/posts/Xak4zQ4sZtEiHKuqE/how-and-why-i-laser-engraved-a-self-portrait-by-claude-opus",
+        "wordCount": 2136
+      },
+      {
+        "authors": [
+          "Niall Firth"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://wp.technologyreview.com/wp-content/uploads/2026/06/mars2026-kvitsoy4.jpg?resize=1200,600",
+        "domain": "technologyreview.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_5afb8c28",
+        "keyQuotes": [
+          "It's kind of a lifestyle. You have to be a little bit crazy to work underground all the time.",
+          "Every blast creates a new world.",
+          "This is the longest continuous blast on the sea. Never been done before. We can't buy a book to see how we do this.",
+          "There's not necessarily just one solution to a problem. There may be many solutions."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "News_Media",
+        "mainDomainDesc": "News & Media",
+        "mainPoints": [
+          {
+            "explanation": "At 26.7 km long and 390 m deep, Rogfast dwarfs existing subsea tunnels. Norway relies on drill-and-blast for flexibility in varied rock, adding 5–6 meters per blast.",
+            "point": "The Rogfast tunnel will be the world's longest and deepest subsea road tunnel, using drill-and-blast methods."
+          },
+          {
+            "explanation": "Engineers probe ahead for leaks and inject cement-like slurry to seal fractures. The battle against water never ends; grouting speed determines overall progress.",
+            "point": "Water ingress is the primary risk; grouting is the key mitigation technique."
+          },
+          {
+            "explanation": "Phyllite is compact but releases toxic quartz dust; granite and gneiss are hard but fractured. Seismic surveys and rock grading (1–5) guide support choices from steel rods to concrete arches.",
+            "point": "Geology varies significantly along the route, requiring adaptive strategies."
+          },
+          {
+            "explanation": "Two roundabouts 220 m below sea level aid traffic flow. Giant shafts on Kvitsøy bring fresh air and vent car fumes, a challenge specific to road tunnels.",
+            "point": "The project includes unique features like undersea roundabouts and ventilation shafts."
+          },
+          {
+            "explanation": "12-hour shifts, 12 days on/16 off in dark, damp conditions. Rescue chambers and tracking devices ensure safety. The author's firsthand blast experience captures the visceral intensity.",
+            "point": "The human experience is central: workers endure long shifts, safety hazards, and a unique lifestyle."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A first-person journey inside Norway's Rogfast tunnel, the world's deepest and longest subsea road tunnel, detailing the engineering, blasting, and human stories behind its construction.",
+        "originalTitle": "Inside the world’s deepest and longest subsea road tunnel",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 11:47:04",
+        "publishTimeStamp": 1782100024000,
+        "qualified": false,
+        "readCount": 9,
+        "readTime": 14,
+        "readUrl": "https://www.bestblogs.dev/article/5afb8c28",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b964bfee",
+        "sourceImage": "https://image.jido.dev/20260527052036_cropped-TR-Logo-Block-Centered-R.png",
+        "sourceName": "MIT Technology Review",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article offers an immersive account of visiting the Rogfast tunnel project in Norway, which will become the world's deepest (390 meters below sea level) and longest (26.7 kilometers) subsea road tunnel. The author describes the drill-and-blast method used, the constant battle against seawater ingress through grouting, the complex geology involving phyllite and gneiss, and the massive logistics including ventilation shafts on Kvitsøy island. Personal experiences — from the safety briefing and rescue chambers to witnessing a controlled explosion — bring the engineering challenges to life. The piece also touches on risks like driver monotony and environmental impacts on lobster fishing, and contrasts Norway's achievements with Elon Musk's Boring Company. Ultimately, it celebrates the audacity and possibility of grand civil engineering.",
+        "tags": [
+          "Engineering",
+          "Infrastructure",
+          "Norway",
+          "Subsea Tunnel",
+          "Drill-and-Blast"
+        ],
+        "title": "Inside the world’s deepest and longest subsea road tunnel",
+        "translateContent": null,
+        "url": "https://www.technologyreview.com/2026/06/22/1138821/inside-worlds-deepest-longest-subsea-road-tunnel/",
+        "wordCount": 3354
+      },
+      {
+        "authors": [
+          "青稞AI"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260527052037_92f90aa.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3baad5ef",
+        "keyQuotes": [
+          "As long as log remains, the mapping from probability to reward is unbounded, and any subsequent remedial measures are just dealing with the consequences.",
+          "Vanilla OPD is not a completely different design; it is the unbounded limit of PowerOPD when α=1.",
+          "The problem isn't that the post-processing is insufficient—it's log itself. What really needs to change is the mapping function from probability to reward."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Log diverges as probability approaches 0, leading to extreme rewards (negative tail near -50) and high-variance gradients, and this problem persists throughout training and is not eliminated by warmup.",
+            "point": "The log-ratio reward in vanilla OPD is unbounded, which is the root cause of training instability."
+          },
+          {
+            "explanation": "These methods compress only after log has already magnified the values, which is too late; z-score can even flip the sign of the reward, causing incorrect learning direction and performing worse than no fix.",
+            "point": "Post-hoc fixes such as clip, tanh, and z-score cannot fundamentally solve the problem."
+          },
+          {
+            "explanation": "PowerOPD satisfies boundedness ([-1,1]) and sign consistency (positive when teacher probability is higher, negative when student is higher, zero when equal), eliminating the unbounded issue at the mapping level.",
+            "point": "PowerOPD replaces log with the Box-Cox power transformation, making the reward naturally bounded and sign-consistent."
+          },
+          {
+            "explanation": "α controls the degree to which reward magnitude is tied to absolute probability. Experiments show that larger α yields higher accuracy, shorter responses, and more stable training.",
+            "point": "The parameter α acts as a 'probability region selector'; larger α focuses more on high-probability tokens, filtering low-probability noise."
+          },
+          {
+            "explanation": "The bottleneck of sampled-token OPD is not the sampling itself, but the reward shaping.",
+            "point": "After replacing the unbounded log reward with a bounded power reward, sampled-token OPD becomes stronger, faster, and more resource-efficient than full-vocab OPD."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This paper diagnoses that the unbounded log-ratio reward in vanilla OPD causes training instability, and proposes PowerOPD, which replaces log with the Box-Cox power transformation, making the reward naturally bounded and sign-consistent. Experiments show it is more stable, stronger, and more resource-efficient.",
+        "originalTitle": "就从来没人质疑过 OPD 的 reward 设计吗？我们发现了 log 本身就是问题，也许就不该用！",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-28 00:00:00",
+        "publishTimeStamp": 1782576000000,
+        "qualified": false,
+        "readCount": 7,
+        "readTime": 21,
+        "readUrl": "https://www.bestblogs.dev/article/3baad5ef",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_8fea890b",
+        "sourceImage": "https://image.jido.dev/20260527052037_92f90aa.jpeg",
+        "sourceName": "青稞AI",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article first points out that On-Policy Distillation (OPD) has become a standard component in post-training of large models, but mainstream sampled-token OPD (vanilla OPD) suffers from severe training pathologies: accuracy first drops then rises, response length oscillates, and final performance falls more than 8 points behind full-vocab OPD. By analyzing the reward distribution, the author identifies the root cause as the unbounded log-ratio reward (negative tail approaching -50), with extreme rewards concentrated in the early rollout stage and persisting throughout training. Comparing post-hoc fixes such as clip, tanh, and z-score, it is found that none can fundamentally solve the problem because log itself amplifies low-probability differences into extreme values. To address this, the author proposes PowerOPD: replacing log with the Box-Cox power transformation yields a family of bounded ([-1,1]) and sign-consistent rewards, and introduces a tunable parameter α as a \"probability region selector\" to filter low-probability noise. Experiments on multiple Qwen3 teacher-student settings and six mathematical reasoning benchmarks show that PowerOPD significantly outperforms vanilla OPD (average +4.47 Avg@8 / +4.06 Pass@8), surpasses all post-hoc methods, and even beats full-vocab OPD (up to +2.59 Avg@8 / +8.90 Pass@8), while saving 59.2% training time and 23.1% GPU memory. Gradient norm analysis reveals that PowerOPD gradients remain consistently in the 0.25-0.35 range, whereas vanilla OPD has an initial spike close to 1000 (a 3000x gap), demonstrating fundamental stability.",
+        "tags": [
+          "Model Training & Inference",
+          "Reinforcement Learning",
+          "Reward Design",
+          "Knowledge Distillation",
+          "Large Language Models"
+        ],
+        "title": "Has no one ever questioned OPD's reward design? We found that log itself is the problem—maybe it shouldn't be used!",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247517125&idx=1&sn=492b0d41b0d3d6d1726aed0ba9a2c3a6",
+        "wordCount": 5107
+      },
+      {
+        "authors": [
+          "Rachel Cheung"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://www.thewirechina.com/wp-content/uploads/2026/06/Dreame-Cover-Image-1200x799.png",
+        "domain": "thewirechina.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_ee6edd90",
+        "keyQuotes": [
+          "Lofty claims are what get Dreame's business units money because most of these local government officials, who have never seen the world or been outside the country, want to shoot for the moon.",
+          "The key question people wonder about is whether this is genuine ecosystem-building for Dreame's business, or undisciplined diversification funded by relatively unsophisticated local government investors.",
+          "For Dreame, it's the exact opposite. It is directly incubating companies under its platform."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "Over 40% of Dreame's funding comes from government-backed funds across at least 18 Chinese cities, a model now under scrutiny after Document 54 and local government reviews.",
+            "point": "Dreame's growth model heavily depends on local government funding, raising both business and regulatory risks."
+          },
+          {
+            "explanation": "Former employees note that ambitious narratives about moonshot projects appeal to local officials who lack experience with global tech ventures and seek to create 'star enterprises'.",
+            "point": "Founder Yu Hao's flamboyant style and grand claims help secure investments from less sophisticated local government investors."
+          },
+          {
+            "explanation": "Critics like analyst Lizzi Lee and former executive Jun Yan question whether Dreame's capabilities are transferable to hundreds of incubated units, many of which remain unvalidated.",
+            "point": "The company's vast and rapid diversification across unrelated industries raises questions about genuine ecosystem building versus undisciplined expansion."
+          },
+          {
+            "explanation": "Document 54 bans county-level governments from launching new funds without approval, and Changzhou officials ordered disclosure of ties with Dreame, indicating policy tightening.",
+            "point": "New regulations and government reviews signal increasing scrutiny of Dreame's financing model and similar local government investment practices."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This investigative report reveals how Dreame Technology founder Yu Hao uses aggressive diversification and local government funds to build a sprawling conglomerate, attracting regulatory scrutiny.",
+        "originalTitle": "Mr Yu’s Dream Machine",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Today",
+        "publishDateTimeStr": "2026-06-29 05:13:08",
+        "publishTimeStamp": 1782681188000,
+        "qualified": false,
+        "readCount": 6,
+        "readTime": 15,
+        "readUrl": "https://www.bestblogs.dev/article/ee6edd90",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_899fef3a",
+        "sourceImage": "https://www.thewirechina.com/wp-content/uploads/2022/10/cropped-square_logo-32x32.jpg",
+        "sourceName": "The Wire China",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Dreame Technology, known for vacuum cleaners, has rapidly expanded into diverse sectors including EVs, humanoid robots, smartphones, and satellites. Founder Yu Hao funds this expansion primarily through local government investment funds, which account for over 40% of Dreame's financing. His flamboyant marketing (Super Bowl ads, Cristiano Ronaldo endorsement) and bold claims (aiming for a $100 trillion company) appeal to local officials seeking to foster star enterprises. Sky Factory, Dreame's VC arm, manages $6.6 billion in assets from at least 18 cities. However, this model is now under scrutiny: China's State Council issued Document 54 to regulate government funds, and local governments are reviewing their deals with Dreame. Critics question whether Dreame's ecosystem-building is sustainable or a risky diversification. Former employees describe a culture of rapid hiring and layoffs, and pressure to raise money from local governments by making ambitious claims. The report provides a detailed look at the intersection of ambitious entrepreneurship and China's local government investment landscape.",
+        "tags": [
+          "Chinese Business",
+          "Venture Capital",
+          "Government Investment",
+          "Business Model",
+          "Ecosystem Building"
+        ],
+        "title": "Mr Yu’s Dream Machine",
+        "translateContent": null,
+        "url": "https://www.thewirechina.com/2026/06/28/mr-yus-dream-machine/",
+        "wordCount": 3699
+      },
+      {
+        "authors": [
+          "Pinterest Engineering"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260625025326_1*aVFrhfOJD-LPGofkvkgoOA.png",
+        "domain": "medium.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3d0c6045",
+        "keyQuotes": [
+          "schema is not just metadata --- it is a cross-system contract spanning ingestion, transformation, storage, and historical backfill.",
+          "A key design principle is that schema evolution is not treated as an atomic operation. Instead, we treat it as a multi-stage convergence process across the control plane and data plane.",
+          "This staged approach decouples schema propagation from data correctness. Instead of forcing the entire system to change atomically, we allow temporary divergence within a bounded SLA and use deployment sequencing to restore full consistency."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "A single upstream schema change must propagate consistently across Kafka, Flink, Spark, and Iceberg, affecting code, metadata, and storage. Treating it as a contract enables systematic automation.",
+            "point": "Schema evolution is a cross-system contract, not just metadata."
+          },
+          {
+            "explanation": "Only column additions and numeric precision widening are supported automatically. This preserves backward compatibility, avoids historical replay complexity, and minimizes consumer breakage.",
+            "point": "Automated schema evolution is restricted to additive changes for safety."
+          },
+          {
+            "explanation": "Iceberg schemas are updated first (phase 1), then Flink/Spark code (phase 2), then backfill (phase 3). Temporary divergence is bounded by SLA, ensuring pipeline availability while restoring consistency.",
+            "point": "A three-phase convergence model decouples schema updates from data correctness."
+          },
+          {
+            "explanation": "DDL CDC messages trigger immediate evolution (push), while a daily comparison job catches missed changes (pull). This combination provides low latency with a safety net.",
+            "point": "Push-based and pull-based detection mechanisms complement each other."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article details how Pinterest built an automated schema evolution framework for its CDC-based ingestion pipeline, using a staged convergence model to safely propagate additive schema changes across Kafka, Flink, Spark, and Iceberg.",
+        "originalTitle": "Automated Schema Evolution in Pinterest’s Next-Generation DB Ingestion Framework",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 02:01:01",
+        "publishTimeStamp": 1782324061000,
+        "qualified": false,
+        "readCount": 6,
+        "readTime": 10,
+        "readUrl": "https://www.bestblogs.dev/article/3d0c6045",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_0fbec409",
+        "sourceImage": "https://image.jido.dev/20260527052017_1*TGH72Nnw24QL3iV9IOm4VA.png",
+        "sourceName": "Pinterest Engineering Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The post is the second in a series on Pinterest's next-generation DB ingestion platform. It addresses the challenge of schema evolution in a distributed CDC pipeline where schema is a cross-system contract. The authors describe their solution: an automated framework that supports additive schema changes (column additions and precision widening) through a three-phase convergence model — schema divergence first (updating Iceberg schemas while existing jobs continue), code convergence (deploying updated Flink and Spark logic), and data convergence (backfilling via Spark). Changes are detected through push-based (DDL CDC messages) and pull-based (daily comparison) mechanisms, and all updates go through PR-based workflow for auditability. The system explicitly handles edge cases like columns with defaults, sensitive data changes, ambiguous CREATE TABLE diffs, and concurrent changes. Observability metrics at pipeline and data level ensure convergence is tracked. The article concludes with a vision for zero-gap schema evolution using a dynamic Iceberg sink, and notes the current limitations (needs Flink version bump).",
+        "tags": [
+          "CDC",
+          "Schema Evolution",
+          "Data Engineering",
+          "Apache Flink",
+          "Apache Spark"
+        ],
+        "title": "Automated Schema Evolution in Pinterest’s Next-Generation DB Ingestion Framework",
+        "translateContent": null,
+        "url": "https://medium.com/pinterest-engineering/automated-schema-evolution-in-pinterests-next-generation-db-ingestion-framework-36c5c07070de?source=rss----4c5a5f6279b6---4",
+        "wordCount": 2439
+      },
+      {
+        "authors": [
+          "Esther Addley. Interviews by Pippa Crerar",
+          "Rowena Mason",
+          "Jessica Elgot",
+          "Kiran Stacey",
+          "Alexandra Topping",
+          "Ben Quinn and Jennifer Rankin"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://i.guim.co.uk/img/media/092440b6c222cb78480cf05d31637fa6c7ed6d74/70_0_6205_4961/master/6205.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7077d392b92aa6f8cbc9a5ab73e914e7",
+        "domain": "theguardian.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_48717cec",
+        "keyQuotes": [
+          "The feeling for me at the start of the campaign was that we were in real trouble -- not because we thought we were going to lose the referendum, but because it was such a battle inside the Conservative party.",
+          "This was the first time that we realised we were canaries in the coalmine of populism. Just because the establishment thought something and campaigned for something, and people were told this isn't going to be good for you, [they] weren't necessarily going to believe it.",
+          "I always felt that it was like chucking lumps of red meat to pursuing wolves from the sled. They would gobble up the lump, and then they would sure as hell come back for more.",
+          "The blatancy of the lies I found shocking, and [the fact] that there was no recourse to be able to correct some of this stuff."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "News_Media",
+        "mainDomainDesc": "News & Media",
+        "mainPoints": [
+          {
+            "explanation": "The article shows how Cameron's move to settle the Europe issue within his party backfired, as the Leave campaign proved more effective and the Conservative party was deeply split.",
+            "point": "Cameron's decision to hold the referendum was a miscalculation intended to 'lance the boil' of internal Tory dissent."
+          },
+          {
+            "explanation": "The £350m NHS claim and the Turkey EU membership poster were debunked but effectively framed the debate around sovereignty and immigration, giving Leave a strategic advantage.",
+            "point": "The Leave campaign consistently used simple, emotionally charged slogans over factual accuracy."
+          },
+          {
+            "explanation": "Interviews reveal that Remain was seen as a top-down, establishment effort, relying on warnings of economic harm that did not resonate with voters' daily concerns.",
+            "point": "The Remain campaign was disorganised, elitist, and failed to connect with ordinary voters."
+          },
+          {
+            "explanation": "While campaigning paused, the Leave campaign's focus on immigration and the 'Breaking Point' poster continued to dominate the news, and the referendum result went ahead as scheduled.",
+            "point": "The murder of Jo Cox shocked the nation but did not alter the campaign's trajectory."
+          },
+          {
+            "explanation": "Craig Oliver's reflection that the campaign was a warning about populist forces captures the article's overarching theme: a disconnect between elites and the public that reshaped British politics.",
+            "point": "The referendum exposed a 'canaries in the coalmine' moment for populism, as the establishment lost control of the narrative."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "An oral history of the 2016 Brexit referendum, told through interviews with key campaigners and officials, revealing the internal strategies, miscalculations, and populist forces that led to the Leave victory.",
+        "originalTitle": "‘Canaries in the coalmine of populism’: an oral history of the Brexit campaign， told by those with a front row seat",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 12:00:33",
+        "publishTimeStamp": 1782187233000,
+        "qualified": false,
+        "readCount": 6,
+        "readTime": 25,
+        "readUrl": "https://www.bestblogs.dev/article/48717cec",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_58ee9643",
+        "sourceImage": "https://image.jido.dev/20260604114532_guardian-logo-rss.c45beb1bafa34b347ac333af2e6fe23f.png",
+        "sourceName": "The Guardian",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This oral history, based on interviews with key figures from both the Leave and Remain campaigns, provides an insider account of the 2016 EU referendum. It traces critical moments from Cameron's call for a vote and Boris Johnson's decision to back Leave, to the infamous £350m bus, the Turkey poster, the Thames flotilla, and the tragic murder of Jo Cox. Through direct quotes from campaigners and officials, the article reveals the calculations, missteps, and populist strategies that shaped the outcome. It argues that the campaign exposed a deep disconnect between the political establishment and the public, and serves as a warning about the rise of populism. The narrative is structured chronologically, weaving together perspectives from both sides to offer a nuanced view of one of the most consequential political events in modern British history.",
+        "tags": [
+          "UK Politics",
+          "Brexit",
+          "EU Referendum",
+          "Political Campaign",
+          "Oral History"
+        ],
+        "title": "'Canaries in the coalmine of populism': an oral history of the Brexit campaign, told by those with a front row seat",
+        "translateContent": null,
+        "url": "https://www.theguardian.com/politics/2026/jun/23/brexit-campaign-oral-history-front-row-seat",
+        "wordCount": 6164
+      },
+      {
+        "authors": [
+          "James Horncastle",
+          "Paul Tenorio",
+          "Pol Ballús",
+          "Felipe Cardenas",
+          "Tom Bogert"
+        ],
+        "candidateSource": null,
+        "category": "Sports",
+        "categoryDesc": "Sports",
+        "cover": "https://static01.nyt.com/athletic/uploads/wp/2026/06/21155337/0620_Messi-scaled.jpg?width=1200&height=630&fit=cover",
+        "domain": "nytimes.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_41de5d7a",
+        "keyQuotes": [
+          "I could stay here with you for over an hour trying to explain what he does. But you need to be there to really understand the atmosphere, the ambience.",
+          "Messi is a madman.",
+          "He's such a competitive animal.",
+          "'The little fella! He's so up for it!'",
+          "'Lionel Messi's final World Cup match surely'... And yet look who it is. Messi is still here."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "At 38, he equaled Miroslav Klose's all-time World Cup goal record and delivered a vintage performance against Algeria.",
+            "point": "Messi's hat-trick on his 200th Argentina appearance proved his enduring quality."
+          },
+          {
+            "explanation": "To prove himself on merit, Messi followed a tailored training plan beyond club commitments, focusing on peak physical condition.",
+            "point": "Messi's preparation was unusually rigorous, including double sessions with De Paul."
+          },
+          {
+            "explanation": "The 'Super Liga' small-sided tournament saw Messi score over 80 goals, far exceeding teammates, and his form carried into MLS regular season.",
+            "point": "Inter Miami's internal competition helped maintain his sharpness before the World Cup."
+          },
+          {
+            "explanation": "The AFA uses data tracking for injury prevention and nutrition, and Physio Walter Insaurralde works with Messi in Miami to fine-tune his body.",
+            "point": "Argentina's setup—from coaching to AI-driven monitoring—supports Messi's longevity."
+          },
+          {
+            "explanation": "Quotes from Scaloni, Xavi, and Haaland emphasize his relentless will to compete and adapt, even after winning the 2022 World Cup.",
+            "point": "Messi's competitive drive, not just talent, explains his continued excellence."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article examines Lionel Messi's remarkable form at age 38 during the 2026 World Cup, analyzing his preparation, fitness, and enduring brilliance through interviews and behind-the-scenes details.",
+        "originalTitle": "Lionel Messi — improbably， still as good as ever",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 12:15:47",
+        "publishTimeStamp": 1782101747000,
+        "qualified": false,
+        "readCount": 6,
+        "readTime": 11,
+        "readUrl": "https://www.bestblogs.dev/article/41de5d7a",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b143d403",
+        "sourceImage": "https://www.nytimes.com/athletic/static/img/transparent-background-dark-favicon-144x144.png",
+        "sourceName": "Soccer - The Athletic",
+        "sourceVisibility": "SYSTEM",
+        "summary": "A deep-dive analysis of Lionel Messi's performance and preparation for the 2026 World Cup, where he scored a hat-trick against Algeria in Argentina's opener. The piece traces his journey from uncertainty about participating, through a demanding training regimen with Argentina teammate Rodrigo De Paul and Inter Miami's internal 'Super Liga' competition, to his injury scare and rapid recovery. Featuring quotes from Scaloni, Xavi, Haaland, and anonymous sources, it explores Messi's diet, fitness adaptation to MLS, and the family-like atmosphere of the Argentina camp. The article argues that Messi, improbably, remains as good as ever, driven by competitiveness and meticulous physical preparation.",
+        "tags": [
+          "Football",
+          "World Cup",
+          "Lionel Messi",
+          "Argentina",
+          "Player Performance"
+        ],
+        "title": "Lionel Messi — improbably， still as good as ever",
+        "translateContent": null,
+        "url": "https://www.nytimes.com/athletic/7376191/2026/06/22/world-cup-lionel-messi-argentina-good/",
+        "wordCount": 2626
+      },
+      {
+        "authors": [
+          "Alan McCall"
+        ],
+        "candidateSource": null,
+        "category": "Sports",
+        "categoryDesc": "Sports",
+        "cover": "https://static01.nyt.com/athletic/uploads/wp/2026/06/24144859/GettyImages-2282328043-scaled.jpg?width=1200&height=630&fit=cover",
+        "domain": "nytimes.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_a4cf6415",
+        "keyQuotes": [
+          "Freshness is the currency of a World Cup. The teams that preserve it best may ultimately give themselves the greatest chance of success.",
+          "The team around the team... is maybe sometimes even more important than the guys there on the pitch.",
+          "You know who is the best player? The satisfied player. The player that is satisfied, that is happy, is going to go out and give 120 per cent."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "While jet lag from crossing time zones can be managed with arrival schedules, the repeated travel between matches, cities, and environments drains time for recovery, preparation, and routine.",
+            "point": "Travel fatigue is the cumulative burden of repeated journeys, not just jet lag."
+          },
+          {
+            "explanation": "Muscle energy and dehydration may restore quickly, but muscle soreness and inflammation persist longer. Mental fatigue from sustained concentration and pressure has no clear recovery timeline and is harder to monitor.",
+            "point": "Physical and mental fatigue recover at different rates and require different approaches."
+          },
+          {
+            "explanation": "Players like Rakitić and Mertesacker emphasize that a positive atmosphere and caring staff (the 'team around the team') provide the psychological and emotional freshness that fuels performance.",
+            "point": "Team environment—trust, communication, and relationships—is more important than any single recovery protocol."
+          },
+          {
+            "explanation": "England returning to the same city after each match helps maintain time zone consistency and routine, but adds travel distance. The decision depends on team culture and individual preferences.",
+            "point": "Fixed base camps can reduce the cognitive load of travel, but may not suit every team or player."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article examines how World Cup teams manage travel fatigue, jet lag, sleep disruption, and accumulated physical and mental fatigue, arguing that freshness—both physical and psychological—is the key currency for deep tournament runs.",
+        "originalTitle": "How World Cup teams cope with travel， lack of sleep and accumulated fatigue",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-28 12:05:25",
+        "publishTimeStamp": 1782619525000,
+        "qualified": false,
+        "readCount": 5,
+        "readTime": 10,
+        "readUrl": "https://www.bestblogs.dev/article/a4cf6415",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b143d403",
+        "sourceImage": "https://www.nytimes.com/athletic/static/img/transparent-background-dark-favicon-144x144.png",
+        "sourceName": "Soccer - The Athletic",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is part of The Athletic's World Cup performance series, written by performance expert Alan McCall. It focuses on the challenges of travel and accumulated fatigue as teams enter the knockout rounds. Drawing on interviews with players (Bacary Sagna, Ivan Rakitić, Per Mertesacker) and recovery specialists (Shona Halson, Darcy Norman, Anna West), the piece explains how jet lag, repeated travel, and disrupted sleep affect performance. It distinguishes between physical recovery (energy stores, muscle soreness) and mental fatigue, which is harder to measure and recover from. The author argues that preserving freshness requires not just logistics but also a supportive environment—trust, relationships, and communication. Examples include England's decision to return to a fixed base in Kansas City and Croatia's team atmosphere in 2018. The article concludes that the best plans cannot predict everything; human connection and adaptability are essential.",
+        "tags": [
+          "Football / Soccer",
+          "World Cup",
+          "Sports Science",
+          "Travel Fatigue",
+          "Player Recovery"
+        ],
+        "title": "How World Cup teams cope with travel， lack of sleep and accumulated fatigue",
+        "translateContent": null,
+        "url": "https://www.nytimes.com/athletic/7391024/2026/06/28/world-cup-travel-fatigue-sleep-analysis/",
+        "wordCount": 2448
+      },
+      {
+        "authors": [
+          "Raha Malek and Atia FarAzar for Zan Times"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://i.guim.co.uk/img/media/01c9126d44afb29f9d797c60eb99192c6fdbb00e/175_0_5971_4777/master/5971.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1f08576d2b692185873df8073cb78a12",
+        "domain": "theguardian.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_aeea4504",
+        "keyQuotes": [
+          "\"In front of everyone, the judge asked my son-in-law only one question: 'Who is this woman?' He answered: 'She is my wife.' Then the judge turned to the groom's family and said: 'Take your bride.'\"",
+          "\"My daughter was screaming and crying that she did not want to go with them. But nobody listened.\"",
+          "\"I bought my own freedom.\"",
+          "\"My hands are tied. I don't know how to save my daughter from that situation. She has become very weak, and I am afraid something worse may happen to her.\""
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "News_Media",
+        "mainDomainDesc": "News & Media",
+        "mainPoints": [
+          {
+            "explanation": "Even in cases of abuse or neglect, judges cannot grant a divorce without the husband's consent. The decree sets 12 grounds but each is blocked by patriarchal authority.",
+            "point": "The new Taliban decree on divorce gives women no independent rights; male consent is required for any dissolution."
+          },
+          {
+            "explanation": "Families are forced to sell homes, cows, and even marry off younger daughters to raise funds demanded by husbands or their families, often exceeding any actual costs.",
+            "point": "The khul provision (divorce by payment) is rendered almost useless as no limit is set on the payment amount."
+          },
+          {
+            "explanation": "Children reaching puberty may petition to nullify the marriage only in limited circumstances, offering almost no protection against early forced unions.",
+            "point": "The law explicitly legalises child marriage, allowing male relatives to marry off children at any age."
+          },
+          {
+            "explanation": "The article documents cases where women were dragged back to abusive homes, beaten, and threatened with arrest of their parents if they attempted divorce again.",
+            "point": "Women who try to escape face violent repercussions, financial extortion, and armed force from Taliban soldiers."
+          },
+          {
+            "explanation": "The story encapsulates the complete erosion of legal recourse for women, leaving families powerless against a system that sanctions male dominance.",
+            "point": "The father of one woman, Fatima, expresses utter helplessness: 'I don't know how to save my daughter from that situation.'"
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A Guardian investigation reveals how the Taliban's new marriage law traps Afghan women in abusive marriages, legalises child marriage, and eliminates almost all legal avenues for divorce without male consent.",
+        "originalTitle": "‘I don’t know how to save my daughter from her husband’: the brutal reality of the Taliban’s new marriage law",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 17:00:38",
+        "publishTimeStamp": 1782205238000,
+        "qualified": false,
+        "readCount": 5,
+        "readTime": 7,
+        "readUrl": "https://www.bestblogs.dev/article/aeea4504",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_58ee9643",
+        "sourceImage": "https://image.jido.dev/20260604114532_guardian-logo-rss.c45beb1bafa34b347ac333af2e6fe23f.png",
+        "sourceName": "The Guardian",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This in-depth report, based on interviews with multiple Afghan women and their families, details the devastating impact of the Taliban's April 2026 decree on judicial separation. The decree outlines 12 grounds for divorce, but each requires the husband's consent or payment of an unlimited sum (khul). The law also explicitly allows child marriage at any age. Through the harrowing stories of Fatima, Ruqya, Habiba, Mina, and others, the article shows how women who attempt to leave abusive or forced marriages are met with armed force, impossible financial demands, and a legal system that systematically prioritises male authority. Even before the decree, women faced a difficult path; now it is virtually closed. The report includes testimonies from judges, families, and women in hiding, painting a stark picture of institutionalised gender oppression.",
+        "tags": [
+          "Taliban",
+          "Afghanistan",
+          "Women's Rights",
+          "Human Rights",
+          "Marriage Law"
+        ],
+        "title": "‘I don’t know how to save my daughter from her husband’: the brutal reality of the Taliban’s new marriage law",
+        "translateContent": null,
+        "url": "https://www.theguardian.com/global-development/2026/jun/23/taliban-new-marriage-law-afghanistan-families-daughters-abusive-relationships",
+        "wordCount": 1555
+      },
+      {
+        "authors": [
+          "Hacker News"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_tfF5-wQGyIMR9yl9h02aUJWn1T3sETAzdYe47mmpF30_fibKSGlS99mEiM0APK78umva4oHWkju3g-4fa8YGZoUTF7qC9sng4KgKYNELuL_JPqJ3Q_C2MMHqUNp6azDIqRe8bQw2h-3hf2yRU=w1200-h630-p-k-no-nu",
+        "domain": "righto.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_9d3bed21",
+        "keyQuotes": [
+          "The I/O Processor has a very unusual architecture: although it had one physical processor, it ran 25 virtual processors with two completely different instruction sets.",
+          "The obvious approach—sending binary data unencoded—has two problems. First, in a long string of 0's or 1's, it is hard to tell how many bits were sent: 'Was that six bits or only five?' Second, such a sequence is unbalanced, so it has a 'DC component'."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "A barrel processor cycles through virtual processors each clock cycle, guaranteeing predictable I/O bandwidth for each network port. The MSC (executive) and BCE (low-level I/O) processors have completely different instruction sets, implemented in microcode.",
+            "point": "The IOP was a barrel processor with 25 virtual processors running two different instruction sets on one physical processor."
+          },
+          {
+            "explanation": "By encoding each bit with a mid-bit transition and balancing 0s and 1s, the encoding made bit separation straightforward and eliminated DC components, making it ideal for transformer-coupled, long-distance transmission.",
+            "point": "Manchester encoding solved clock recovery and DC bias issues for the Shuttle's data buses."
+          },
+          {
+            "explanation": "The hybrid module integrated drivers, amplifiers, and comparators for two network ports. Transformers provided isolation and impedance matching, while TTL shift registers converted between 24-bit words and serial Manchester-encoded data.",
+            "point": "The MIA interface board used a hybrid module and discrete components to condition analog signals."
+          },
+          {
+            "explanation": "Each 72-bit microinstruction step was stored by blowing fuses in PROM chips. The physical processor executed these microinstructions sequentially, switching virtual processors after each step.",
+            "point": "The IOP's microcode was stored in fusible-link PROMs on a separate card, defining the low-level instruction sequences."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article reverse-engineers two circuit boards from the Space Shuttle's I/O Processor, detailing their network interface, barrel processor architecture, Manchester encoding, and microcode-based dual-instruction-set design.",
+        "originalTitle": "Examining circuit boards from the Space Shuttle's I/O Processor",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Today",
+        "publishDateTimeStr": "2026-06-29 00:16:07",
+        "publishTimeStamp": 1782663367000,
+        "qualified": false,
+        "readCount": 4,
+        "readTime": 24,
+        "readUrl": "https://www.bestblogs.dev/article/9d3bed21",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_318e45",
+        "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+        "sourceName": "Hacker News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author examines two physical circuit boards from the Space Shuttle's I/O Processor (IOP): a network interface board (MIA) and a PROM microcode board. The article explains the IOP's role as a multi-threaded barrel processor running 25 virtual processors with two distinct instruction sets (MSC and BCE), used to manage 24 network buses. It describes the Manchester encoding employed for robust serial data transmission, the analog circuitry in the hybrid module for signal conditioning, and the physical 'page' construction used in IBM's System/4 Pi avionics computers. The analysis includes historical context (Manchester Mark 1, Peter Kogge's work), detailed photos of the boards with annotations, and technical notes on TTL logic, shift registers, and microcode storage in fusible-link PROMs.",
+        "tags": [
+          "Computer Architecture",
+          "Reverse Engineering",
+          "Space Shuttle",
+          "History of Computing",
+          "Microcode"
+        ],
+        "title": "Examining circuit boards from the Space Shuttle's I/O Processor",
+        "translateContent": null,
+        "url": "https://www.righto.com/2026/06/space-shuttle-io-processor-boards.html",
+        "wordCount": 5994
+      },
+      {
+        "authors": [
+          "Umir Irfan"
+        ],
+        "candidateSource": null,
+        "category": "Sports",
+        "categoryDesc": "Sports",
+        "cover": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/03ba/live/014edb60-70b6-11f1-88b6-991d05fc2cf9.jpg",
+        "domain": "bbc.co.uk",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c39eb9cb",
+        "keyQuotes": [
+          "Don't take the bait.",
+          "Both underdog sides were passive and deliberately so.",
+          "Football is a sport of trade-offs.",
+          "Tactics can help the smaller nations bridge the gap and play on their own terms but the aura of the World Cup appears to bring out of players a level of performance that they perhaps did not know they possessed."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "Cape Verde and Ghana both used a 4-5-1 with very small gaps between lines; they did not engage when Spain or England dropped deep, denying space in dangerous areas.",
+            "point": "Compact defensive shape and refusing to be provoked are critical for underdogs."
+          },
+          {
+            "explanation": "Saudi Arabia and Sweden were caught in two-against-one situations on the flanks because their midfield shifted too narrow; switching to a 4-5-1 improved Sweden later.",
+            "point": "A back five can be a liability if midfielders fail to cover the full width of the pitch."
+          },
+          {
+            "explanation": "Cape Verde, South Africa, and Iraq used big distances between players to force man-for-man pressing, then chipped into space, creating counterattacks despite the risk of losing possession.",
+            "point": "Short goal-kicks with stretched player positions help underdogs bypass high presses."
+          },
+          {
+            "explanation": "Goalkeepers like Vozinha (Cape Verde) and Eloy Room (Curacao) made record saves, while coherent team structure allowed lesser teams to play on their own terms.",
+            "point": "Tactical discipline plus inspired individual performances can produce historic results."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article uses tactical analysis, statistics, and match examples to explain why lower-ranked teams like Cape Verde, Ghana, and South Africa have earned surprising results at the 2026 World Cup.",
+        "originalTitle": "World Cup 2026: Why are the underdogs doing so well?",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 17:18:00",
+        "publishTimeStamp": 1782465480000,
+        "qualified": false,
+        "readCount": 4,
+        "readTime": 7,
+        "readUrl": "https://www.bestblogs.dev/article/c39eb9cb",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_5c1ebebe",
+        "sourceImage": "",
+        "sourceName": "BBC Sport",
+        "sourceVisibility": "SYSTEM",
+        "summary": "BBC Sport's football tactics correspondent unpacks the common patterns behind the World Cup underdog performances. The piece examines four key themes: refusing to be drawn out of shape (Cape Verde vs Spain, Ghana vs England), covering the pitch widthally (contrasting Saudi Arabia and Sweden's failed back-five systems vs Cape Verde and Ghana's compact 4-5-1), attracting pressure then playing long from short goal-kicks (South Africa vs South Korea, Iraq vs Norway), and acknowledging the role of individual quality and inspired goalkeeping. The analysis uses diagrams, PPDA data, and specific match situations to show how discipline and tactical intelligence can narrow the gap against stronger opponents.",
+        "tags": [
+          "Football",
+          "World Cup",
+          "Tactical Analysis",
+          "International Football",
+          "Underdog Tactics"
+        ],
+        "title": "World Cup 2026: Why are the underdogs doing so well?",
+        "translateContent": null,
+        "url": "https://www.bbc.co.uk/sport/football/articles/cr5jedp7ppyo?at_medium=RSS&at_campaign=rss",
+        "wordCount": 1585
+      }
+    ],
+    "pageCount": 167,
+    "pageSize": 20,
+    "totalCount": 3331
+  },
+  "message": null,
+  "requestId": "T09ef50d30dcb46069313f80f0f2188e0",
+  "success": true
+}

@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "Alina Krasavina"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://res.infoq.com/presentations/mobile-user-tracking-service/en/card_header_image/alina-krasavina-twitter-card-1781688348523.jpg",
+  "domain": "infoq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_1cf7be55",
+  "keyQuotes": [
+    "Surprisingly, we did better than Google. That was a real surprise because that was actually an experiment.",
+    "If you choose your KPIs carefully, you can very well track how your changes are affecting those KPIs.",
+    "Data validation is very important, and it has changed our support line.",
+    "We were very thankful for the previous, us, for building a very simplistic, but very scalable architecture that saved a lot of time."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Delivery Hero achieved 97% data quality (vs GA's 85%), 3x cost savings, and 10x load increase by optimizing their pipeline and eliminating third-party limitations.",
+      "point": "Building an in-house user tracking service can outperform third-party solutions in data quality, cost, and control."
+    },
+    {
+      "explanation": "The order match rate metric (comparing orders from backend vs tracking) provided a reliable source of truth to measure data loss and guide optimizations.",
+      "point": "Careful KPI selection enables precise tracking of improvement impact."
+    },
+    {
+      "explanation": "Running both GA and internal pipelines in parallel for months allowed safe validation; rolling out to smaller brands first minimized incident blast radius.",
+      "point": "Parallel testing and progressive rollout ensure zero data loss during migration."
+    },
+    {
+      "explanation": "By generating SDK code from event schemas, developers catch null/type errors during compilation, improving data quality more effectively than dashboards or documentation.",
+      "point": "Code-generated event models enforce data completeness at compile time, reducing manual governance."
+    },
+    {
+      "explanation": "Starting with just an API and two Pub/Sub processors allowed the team to scale effortlessly and later add services for validation, forwarding, and monitoring without major refactoring.",
+      "point": "A simplistic, scalable initial architecture provides long-term flexibility and saves time."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article shares Delivery Hero's journey of replacing Google Analytics with an internal user tracking service, achieving higher data quality (97% vs 85%), 3x cost savings, and 10x load increase through careful architecture, testing, and incremental optimization.",
+  "originalTitle": "Challenging Google Analytics: Building a Scalable， Cost-Effective User Tracking Service",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 23:07:00",
+  "publishTimeStamp": 1782140820000,
+  "qualified": false,
+  "readCount": 23,
+  "readTime": 18,
+  "readUrl": "https://www.bestblogs.dev/article/1cf7be55",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceImage": "https://image.jido.dev/20260623052915_apple-touch-icon.png",
+  "sourceName": "InfoQ",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article presents a detailed talk by Alina Krasavina, an engineering manager at Delivery Hero, on building and scaling an internal user tracking service (Perseus) to replace Google Analytics. It covers the motivations: migration necessity, real-time data needs, GDPR compliance, and cost control. The initial MVP used a simple API with Pub/Sub processors, which proved highly scalable. The rollout involved parallel testing with a double pipeline (sending data to both GA and internal service), progressive rollout across brands, and load testing with 3x peak traffic. After rollout, data quality improved from 85% to 97% (measured by order match rate), and cost dropped to 25% less than GA, later to 3x cheaper. Post-MVP challenges included data completeness (null standardization), backend reliability (pod restart data loss solved by synchronous requests and retries), and further cost optimizations (data archiving, JSON storage, cheaper nodes). SDK improvements like event prioritization, non-blocking queuing, and monitoring helped prevent data loss during A/B tests. A key innovation was code-generated event models that enforce data quality at compile time, reducing governance overhead. The talk emphasizes the value of a simplistic initial architecture, careful KPI selection, thorough testing, and incremental improvements.",
+  "tags": [
+    "User Tracking",
+    "System Design",
+    "Data Engineering",
+    "Scalability",
+    "Cost Optimization"
+  ],
+  "title": "Challenging Google Analytics: Building a Scalable， Cost-Effective User Tracking Service",
+  "translateContent": null,
+  "url": "https://www.infoq.com/presentations/mobile-user-tracking-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "wordCount": 4480
+}

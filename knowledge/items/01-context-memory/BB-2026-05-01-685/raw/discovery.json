@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "青稞AI"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260527052037_92f90aa.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_3baad5ef",
+  "keyQuotes": [
+    "As long as log remains, the mapping from probability to reward is unbounded, and any subsequent remedial measures are just dealing with the consequences.",
+    "Vanilla OPD is not a completely different design; it is the unbounded limit of PowerOPD when α=1.",
+    "The problem isn't that the post-processing is insufficient—it's log itself. What really needs to change is the mapping function from probability to reward."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Log diverges as probability approaches 0, leading to extreme rewards (negative tail near -50) and high-variance gradients, and this problem persists throughout training and is not eliminated by warmup.",
+      "point": "The log-ratio reward in vanilla OPD is unbounded, which is the root cause of training instability."
+    },
+    {
+      "explanation": "These methods compress only after log has already magnified the values, which is too late; z-score can even flip the sign of the reward, causing incorrect learning direction and performing worse than no fix.",
+      "point": "Post-hoc fixes such as clip, tanh, and z-score cannot fundamentally solve the problem."
+    },
+    {
+      "explanation": "PowerOPD satisfies boundedness ([-1,1]) and sign consistency (positive when teacher probability is higher, negative when student is higher, zero when equal), eliminating the unbounded issue at the mapping level.",
+      "point": "PowerOPD replaces log with the Box-Cox power transformation, making the reward naturally bounded and sign-consistent."
+    },
+    {
+      "explanation": "α controls the degree to which reward magnitude is tied to absolute probability. Experiments show that larger α yields higher accuracy, shorter responses, and more stable training.",
+      "point": "The parameter α acts as a 'probability region selector'; larger α focuses more on high-probability tokens, filtering low-probability noise."
+    },
+    {
+      "explanation": "The bottleneck of sampled-token OPD is not the sampling itself, but the reward shaping.",
+      "point": "After replacing the unbounded log reward with a bounded power reward, sampled-token OPD becomes stronger, faster, and more resource-efficient than full-vocab OPD."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This paper diagnoses that the unbounded log-ratio reward in vanilla OPD causes training instability, and proposes PowerOPD, which replaces log with the Box-Cox power transformation, making the reward naturally bounded and sign-consistent. Experiments show it is more stable, stronger, and more resource-efficient.",
+  "originalTitle": "就从来没人质疑过 OPD 的 reward 设计吗？我们发现了 log 本身就是问题，也许就不该用！",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-28 00:00:00",
+  "publishTimeStamp": 1782576000000,
+  "qualified": false,
+  "readCount": 7,
+  "readTime": 21,
+  "readUrl": "https://www.bestblogs.dev/article/3baad5ef",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_8fea890b",
+  "sourceImage": "https://image.jido.dev/20260527052037_92f90aa.jpeg",
+  "sourceName": "青稞AI",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article first points out that On-Policy Distillation (OPD) has become a standard component in post-training of large models, but mainstream sampled-token OPD (vanilla OPD) suffers from severe training pathologies: accuracy first drops then rises, response length oscillates, and final performance falls more than 8 points behind full-vocab OPD. By analyzing the reward distribution, the author identifies the root cause as the unbounded log-ratio reward (negative tail approaching -50), with extreme rewards concentrated in the early rollout stage and persisting throughout training. Comparing post-hoc fixes such as clip, tanh, and z-score, it is found that none can fundamentally solve the problem because log itself amplifies low-probability differences into extreme values. To address this, the author proposes PowerOPD: replacing log with the Box-Cox power transformation yields a family of bounded ([-1,1]) and sign-consistent rewards, and introduces a tunable parameter α as a \"probability region selector\" to filter low-probability noise. Experiments on multiple Qwen3 teacher-student settings and six mathematical reasoning benchmarks show that PowerOPD significantly outperforms vanilla OPD (average +4.47 Avg@8 / +4.06 Pass@8), surpasses all post-hoc methods, and even beats full-vocab OPD (up to +2.59 Avg@8 / +8.90 Pass@8), while saving 59.2% training time and 23.1% GPU memory. Gradient norm analysis reveals that PowerOPD gradients remain consistently in the 0.25-0.35 range, whereas vanilla OPD has an initial spike close to 1000 (a 3000x gap), demonstrating fundamental stability.",
+  "tags": [
+    "Model Training & Inference",
+    "Reinforcement Learning",
+    "Reward Design",
+    "Knowledge Distillation",
+    "Large Language Models"
+  ],
+  "title": "Has no one ever questioned OPD's reward design? We found that log itself is the problem—maybe it shouldn't be used!",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247517125&idx=1&sn=492b0d41b0d3d6d1726aed0ba9a2c3a6",
+  "wordCount": 5107
+}

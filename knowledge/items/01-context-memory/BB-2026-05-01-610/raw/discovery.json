@@ -1,0 +1,75 @@
+{
+  "authors": [
+    "通义实验室"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260527050603_c063770.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_8810d85f",
+  "keyQuotes": [
+    "Rather than trial and error in real environments, it's better to first teach AI to 'predict what the environment will do'.",
+    "CPT injects, SFT activates, RL refines.",
+    "Controllable simulation shapes agent behavior in ways that real environments cannot achieve.",
+    "Next-state prediction teaches the agent to simulate environmental responses before acting."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "CPT injects environment knowledge, SFT activates chain-of-thought reasoning, and RL refines simulation authenticity. The overall approach outperforms GPT-5.4 on AgentWorldBench, achieving an 8.66-point improvement even at small model scale, validating the pipeline's effectiveness.",
+      "point": "The three-stage world model training pipeline (CPT → SFT → RL) systematically enhances environment modeling ability."
+    },
+    {
+      "explanation": "By using natural language instructions to control simulator behavior (e.g., injecting API errors, paginated responses, etc.), performance improves by 12.3 on MCPMark and 16.3 on WideSearch. On WideSearch, it even surpasses Real RL trained with real search engines (F1 50.3% vs 45.6%).",
+      "point": "Controllable simulation enables Sim RL to surpass real-environment training on multiple tasks."
+    },
+    {
+      "explanation": "After single-round, non-tool-call LWM RL warm-up training, direct transfer to multi-round tool-call benchmarks yields improvements of 11.3, 9.7, and 9.0 respectively on three completely unseen domains (Claw-Eval, QwenClawBench, etc.), without any additional fine-tuning.",
+      "point": "Next-state prediction serves as a transferable meta-reasoning ability, enabling cross-task generalization."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Tongyi Lab open-sources Qwen-AgentWorld, the first native language world model that starts environment modeling from the continued pre-training stage, surpassing state-of-the-art models like GPT-5.4 on AgentWorldBench, and demonstrating two application paradigms: controllable simulation and cross-task generalization.",
+  "originalTitle": "Qwen-AgentWorld 开源：让 Agent 学会“先预测，再行动”",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 11:32:00",
+  "publishTimeStamp": 1782271920000,
+  "qualified": false,
+  "readCount": 79,
+  "readTime": 16,
+  "readUrl": "https://www.bestblogs.dev/article/8810d85f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_2ce88a",
+  "sourceImage": "https://image.jido.dev/20260527050603_c063770.jpeg",
+  "sourceName": "通义实验室",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article introduces Tongyi Lab's open-source Qwen-AgentWorld, the first language world model covering seven domains. Through a three-stage training pipeline—CPT (Continued Pre-Training) → SFT (Supervised Fine-Tuning) → RL (Reinforcement Learning)—it surpasses models like GPT-5.4 and Claude Opus 4.8 on AgentWorldBench. The article details key design choices in the training process (round-level informational entropy loss masking, chain-of-thought rejection sampling, hybrid reward signals) and introduces the AgentWorldBench evaluation benchmark. On the application side, two paradigms are explored: as a decoupled environment simulator, controllable Sim RL outperforms real-environment training on MCP and search tasks and generalizes to unseen environments; as a unified agent foundation model, LWM warm-up training yields significant gains in untouched domains, indicating that next-state prediction is a transferable meta-reasoning ability. The project is open-sourced.",
+  "tags": [
+    "AI Agent",
+    "World Model",
+    "Model Training and Inference",
+    "Reinforcement Learning",
+    "Model Evaluation and Benchmark"
+  ],
+  "title": "Qwen-AgentWorld Open-Source: Teaching Agents to 'Predict First, Act Later'",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501600&idx=1&sn=3cac493d78bbf5098bb03ed6d5a3f31d",
+  "wordCount": 3958
+}

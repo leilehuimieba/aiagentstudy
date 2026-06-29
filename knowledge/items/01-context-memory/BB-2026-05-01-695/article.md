@@ -1,0 +1,1013 @@
+# The Repo Man Coming for Your Ride
+
+- BestBlogs URL: https://www.bestblogs.dev/article/c0ee8803
+- Original publisher URL: https://www.newyorker.com/magazine/2026/06/29/the-repo-man-coming-for-your-ride
+- Source: BestBlogs / The New Yorker Full Feed
+- Publish time: 2026-06-22 14:00:00
+- Capture route: article discovered from OpenCLI Browser Bridge profile `qmvqcrb8` latest article feed page 7; page/content captured from BestBlogs resource APIs
+- Extracted chars: 63391
+
+---
+
+Matthew Pitman started in the automobile-repossession industry as a teen-ager, coiling cables at a tow lot in his home town, Phoenix. This was the eighties. His boss went by Joker and wore a “badge” around his neck, like a cop. Law-enforcement officers are sworn to serve the public; repossessors work for banks. Pitman justifies conflating the two by saying that a lot of repo guys are “ex-law enforcement, ex-military,” which is true, and that all repossessors “have to have complete balls of brass.” He became a repo man in his early twenties and called himself the Ninja. The license plate on his first work truck read “GOTCHA.”
+
+           Pitman moved to Orem, Utah, to repo there and across the state. He had been in the business for well over a decade when, in the fall of 2006, the Spanish-language scripted series “Operación Repo” became the No. 1 program on Telemundo. A reviewer described the show as “a telenovela on Red Bull” and “Judge Judy with a choke hold”; it depicted a family repo business in the San Fernando Valley whose employees brawled with debtors, and with one another. An English-language version, “Operation Repo,” débuted a couple of years later, teeing up a glut of derivative content. Pitman decided that he could do better than what the popular culture had to offer. He already filmed his repos, for liability purposes, a defensive protocol that was becoming industry standard. In January, 2008, he started a YouTube channel. He applied for a new vanity license plate that read “REPO N UT,” for “Repo in Utah.” The plate came back in error, sans spaces—“REPONUT.” Pitman kept both the plate and the nickname, reluctantly. “I hated the ‘nut,’ because I’m not nuts,” he told me. “I’m a very grounded, not-crazy person.”
+
+           Pitman is six feet tall, with hazel eyes and blond hair, which he keeps buzzed on the sides and floppy on top, or slicked into a stubby pony. He wears wraparound sunglasses with a bandanna or a backward baseball cap, or both. His land speed is a consistent half sprint. He speaks in complete, fluid sentences but, at times, jackhammer fast. No topic escapes his enthusiasm (“I love festivals!”) or his powers of observation (the “little lobster-claw hands” of the Starbucks mermaid, the absence of residential surveillance cameras). His autodidactic impulses may lead him to the history of clock towers or to the interplanetary rarity of wood. Absolute is his opinion on the superiority of Dobermans (“Dobies”), which, he believes, don’t shed as much as other breeds. “Dog hair? Forget it,” he said the other day. “If I got a car bad enough, I’ll put a garbage bag over the seat before I’ll sit in it, it’s so gross. After a day of working, you go home, and you literally have a separate hamper for your work clothes. We get grease, we get solvents, we get grime.” Repo, he declared, “is not quite as manly as underwater welding, but it’s a pretty manly job.”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           Pitman called his YouTube channel RepoNut. GoPro was his camera of choice. He would clamp one to the windshield trim of his rig, point it at himself, and just talk. Each “INSTANT SEIZURE ORDER,” issued by a lender, gave him cause to monologue about the endless variables of his trade. Repoing a BMW X series (all-wheel drive) is different from repoing a Honda Civic (front-wheel drive). A good repo agent adjusts for terrain, weather, angle, blockage, flat tires, dead batteries, locked doors, and human interference. Repo agents have been shot, stabbed, hit by cars. They’ve been beaten with tire irons, bottles, planks, chains. During the COVID-19 pandemic, some states temporarily banned repos; when orders resumed, there was a spike in violence against repossessors. In 2023, at least seven were killed—the highest number on record. This spring, the North American Repossessors Summit (NARS), a convention put on by the industry’s leading trade group, the American Recovery Association (A.R.A.), opened with a harrowing video montage of wounded, terrified repo agents steering out of the line of fire, shrieking, “Oh, my God!” and “Motherfucker!” and “I’m shot, I’m shot, I’m shot, I’m shot, I’m shot! I need help!” One driver, visibly shaking after having narrowly avoided a bullet, screamed, “I can’t do this shit no more!” People in the audience were crying. The lights came up, and NARS awarded medals to two drivers who had sustained gunshot wounds, one in the head. Their peers gave them a standing ovation.
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           
+            
+           
+
+           
+            Repossessors have been known to intimidate debtors, and sometimes to resort to violence. Though the industry is trying to shed its outlaw image, Pitman says that having “complete balls of brass” is part of the job.
+           
+
+          
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           Pitman operated on a core belief that “when people like you, they won’t harm you.” He disarmed debtors with friendly banter. “Beautiful Jeep!” he’d say. “Did you build that out yourself?” On RepoNut, he once explained, “By the time a repo man shows up at someone’s house to take their vehicle, they’re oftentimes in bankruptcy, divorce, fighting with their spouse constantly. Financial ruin sometimes, even. Their life’s falling apart.” He recorded and posted anyway.
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           RepoNut started during the Great Recession. Nearly nine million jobs were lost between December of 2007 and early 2010. Forced to make tough spending choices, many Americans prioritized their car payment over the mortgage, weighing the urgent need for personal transportation—work and groceries, church and medical appointments—against the relatively slow-moving process of home foreclosure. Even so, at the recession’s peak, in 2009, 1.8 million cars were repossessed, according to Cox Automotive, an unprecedented number. Pitman’s was the face that thousands of consumers saw, or didn’t, when the financial system came for them.
+
+           Repossessors and tow-truck drivers work different jobs but use the same equipment. The tow truck was patented in 1918 by Ernest Holmes, Sr., the owner of an auto-repair shop in Chattanooga, Tennessee, who pulled vehicles out of ditches using a modified Cadillac and chains. Today’s tow trucks, also known as wreckers, are computerized work stations with integrated digital dashboards, camera systems, blind-spot monitoring, and hydraulic rotators. Pitman eventually switched from a wrecker to a “sneaker” unit, a heavy-duty Ford F-series pickup equipped with a steel boom, shaped like a cross, that can be maneuvered with joysticks from inside the cab. He could extend the boom, like a stinger, to “hook” and lift a vehicle’s front or back wheels within seconds.
+
+           The tactical aspects of repo interested him more than the mechanical. Pitman liked finding cars that drivers didn’t want found. He got his taste for “investigating” in childhood, after smelling Burger King on his parents’ clothes and watching them lie about where they’d been. Their deception “didn’t hurt me,” he said. “I just found it interesting.” He began to figure out, ahead of time, what everyone was getting for Christmas, and followed his older brother when he sneaked out at night, learning that there was power in discovering information, and in withholding it.
+
+           When Pitman started in repo, orders arrived by fax; agents used foldout maps. He got ahead by working dead paper. Fresh eyes on an unfulfilled assignment generated leads that lesser repo guys never saw. A target vehicle that went missing from the address listed on a loan account might be parked down the block, or in a friend’s driveway or a cousin’s garage, or in a storage unit, a church parking lot, a barn. Pitman once tracked a vehicle to a shipping container headed for Hawaii. A debtor’s grandparents’ house was often a good place to look: older people don’t move around that much. Pitman observed that you could tell a lot about a family by how close together everybody lived—data, potentially, for later. Hard-core hiders are called skips, as in skipped town. A skip could maintain spotless op sec and still be undone by an associate’s social-media incontinence; Pitman once noticed a license plate in the background of a photo on the Facebook feed of a target’s relative, traced the plate to an unchecked address, and drove by the house. There sat his repo.
+
+           
+            
+              
+              
+               
+               
+                “As the kid gets bigger, the bag gets smaller.”
+               
+
+               
+                Cartoon by Amy Hwang
+               
+
+               
+                
+                 
+                  Copy link to cartoon
+                   
+                    
+                     Copy link to cartoon
+                     
+                      
+                     
+                     
+                      
+                       
+                      
+                      
+                       
+                      
+                     
+                    
+                   
+
+                  
+                   
+
+                  
+
+                 
+
+                 Shop
+                  
+                   
+                    Shop
+                    
+                     
+                    
+                    
+                     
+                      
+                     
+                     
+                      
+                     
+                    
+                   
+                  
+
+                
+
+               
+
+              
+ 
+             
+            
+
+           
+           Once a vehicle is hooked, a repossessor may still need the key—sometimes the emergency brake is on or the car needs to be put in neutral, and an inventory of the car’s contents must be taken, too. Having the key is easier and cheaper than cutting a new one. Asking for it required Pitman to “make contact” with the debtor, which usually started with knocking on a door. If a debtor refused to coöperate, Pitman might ingratiate himself, explaining, truthfully, that having the key sure would help him out, or that, without it, the lienholder would bundle the cost of making a new one into the price of getting the vehicle out of hock. Most people were reasonable. Most repos go smoothly. If the vibe soured, Pitman explained that his job was simply to transport collateral for the lender. One of his rigs had a large decal on the back window: “Why are you pissed at ME? I didn’t miss YOUR payment.”
+
+           Outside the truck, Pitman wore the GoPro on his forehead, making it clear that he was recording. It is unlikely that the people losing their cars knew that their interactions with him would live forever on the internet, with some of their private information exposed and the repo man getting the final word. In one video, a debtor, wearing a “Ridin’ on Faith” T-shirt, stands in her driveway and denies the true whereabouts of a Land Rover that Pitman knew perfectly well was sitting out back. Pitman floated in text: “Lie #1 . . .” When that same debtor then says, “You’ve been in my back yard why?,” Pitman replies, “When you signed the contract for the title loan, you gave them the right, if the loan goes into default, for us to come out and pick up the vehicle.” That frame read “Did that answer you snootie question?”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           Less well-off people handle repossession better than “rich people,” Pitman told me, because they “know what to expect.” The “nightmare” is the guy who’s “got a Hummer, and his business is tanking, and he’s got a boat, a motor home, Jet Skis, four-wheelers. Those people don’t react well. They’re very entitled. They’re very ‘How dare you?’ and ‘I’m calling my lawyer,’ ‘My brother’s a cop.’ You don’t get any of that from people that are living in a single-wide trailer.” In a video titled “Dealing With People Who Think The Rest Of Us Owe Them Something,” a youngish mom wearing fur-lined boots and a leather motorcycle jacket emerges from a large home, stands at the bumper of her repossessed Jeep Wrangler, and, fists balled in frustration, cries, “Oh!” and “This is what happens when I leave the payments up to my frickin’ husband!” The husband later confronts Pitman in a parking lot. Pitman calls the police. He tends to be obsequious with law-enforcement officers, as if to advance his notion of professional alignment. The responding officer tells him, “You’re both guilty of disorderly conduct.”
+
+           RepoNut titles became nesting narratives: “Fireman Returns From Call To Find Repoman In Action,” “Almost Lost This One To A Closed Garage,” “It’s Pouring Repos In This Never Ending Recession,” “Another Fun Day Dealing With Upset People,” “You Never Know What You’ll Find Or Where You’ll Find It,” “Load And Go At The Local Horse Park.” A sharky tension hangs over the second most popular installment, wherein Pitman hustles to tow a faded 2001 G.M.C. Yukon from a parking lot before security sees him. As he clears the property boundary, he sighs like a fighter pilot crossing into international airspace. The video was viewed more than 3.2 million times. Pitman suspected that gearhead teen-age boys were a big part of the RepoNut audience. Other repossessors definitely watched, too, to see how Pitman handled the assignments—and himself.
+
+           One night, Pitman had a repo order for a certain BMW, which he spotted at a Chevron station. A young guy was about to get behind the wheel. Pitman, who works alone yet often speaks in the first-person plural, rolled up and informed him, “We have an order of repossession for this vehicle. You guys want to clean some stuff out of it before we take it?”
+
+           The kid wanted to drive the BMW home. Pitman clamped a G.P.S. tracking device to its undercarriage and followed him. At an apartment complex, a distraught woman came to Pitman’s window with a phone and tried to get him to speak with a man on the other end of the line. She said, “He has the money for me to pay two payments!” The repo man’s job is not to accept the handoff of a phone, or to engage explanations. Joker used to say to debtors, “Tell your story on the bus.” Pitman told the woman that there was nothing he could do. “We don’t deal with the money,” he said. “You need to call your bank.”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           
+            
+           
+
+           
+            Pitman got his taste for “investigating” in childhood, after his mother and father lied to him about going to Burger King. “It didn’t hurt me,” he said. “I just found it interesting.”
+           
+
+          
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           “Yeah, but can you give me till tomorrow morning? I swear to God, I can’t get to work, and I promise you’ll have it!”
+
+           “I can’t give you till tomorrow morning,” Pitman said. “We’re gonna pick the vehicle up right now. You need to understand that.”
+
+           “Please. Please! I am a single mom. I’m doing everything I can. Please! I’ll be there first thing in the morning!”
+
+           “Ma’am,” Pitman said. “You’ll be able to get your vehicle back, but we are picking it up tonight, O.K.?”
+
+           “Please? For God’s sake!”
+
+           “Ma’am. You need to get to the point where you understand that we’re picking the vehicle up tonight, O.K.?”
+
+           The woman wailed, “What do I do?”
+
+           Before long, she was apologizing to Pitman and saying, “I have never had this happen.”
+
+           “I see a lot of people trip out,” he told her. She handed over her key. Afterward, Pitman told RepoNut followers, “Through very trained and controlled verbal skills, we were able to calm her down and deal with the situation. That’s how we want all our repos to go.”
+
+           RepoNut amassed nearly two hundred thousand subscribers. Pitman allowed advertising and ultimately banked a quarter of a million dollars, supplementing his repo income. Lenders pay recovery agents, on average, three hundred and fifty dollars per completed repossession. That rate hasn’t changed much in decades, a fact that repossessors constantly point out. “The cost of doing this business has skyrocketed, but the price that’s paid has been stagnant,” Vaughn Clemmons, a former president of the A.R.A., told me at the NARS conference, in Orlando. “I got a hundred-and-twenty-thousand-dollar tow truck. I have a forty-thousand-dollar camera system and drivers that are sent out to Nashville or Memphis to get hands-on training. Forget the gas—it’s the other variables that really hurt, when you can’t draw a line and say, ‘How am I making this money back?’ ”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           One increasingly dominant player in the field is the forwarder, a middleman between lenders and repo agents. If a lender in Maryland needs a car repossessed in Seattle and doesn’t know any agents there, a forwarder with a national repo database may manage the job, from assignment to resolution. (At NARS, repo agents would have had a chance to express their opinion of this arrangement at a charity Dunk-a-Forwarder booth, but the dunking was cancelled, because of rain.) Forwarders can increase competition among repossessors and squeeze their margins, forcing them to rely on volume to stay in business. A saying in the trade is “No metal, no money.”
+
+           The Consumer Financial Protection Bureau was just starting to look into forwarders when President Donald Trump, during his second term, began to dismantle the agency. (The C.F.P.B. has reported that borrowers pay more in repo charges when a forwarder is involved.) The A.R.A., meanwhile, has been arguing for a fee structure that takes the pressure off hooking at all costs. Payment only upon completion can lead to haste, which can generate confusion and mistakes. In some cases, a repo driver has taken a vehicle without realizing that a child was inside. At least one was an infant, asleep in the back seat.
+
+           Americans currently owe a staggering $1.7 trillion in automobile debt—only two in ten new cars, and four in ten used cars, are purchased outright. Last year, repossessions reached levels not seen since the Great Recession. The repos were concentrated among lower-income borrowers, who, on average, pay higher interest rates. Insurance, car parts, maintenance, parking, housing, food—the cost of daily life has been rising. Because of Trump’s war with Iran, the price of fuel recently spiked to nearly five dollars a gallon (and more, for diesel). Wages aren’t keeping up.
+
+           In January, I had to sell my own car, because it was too expensive and illogical to keep in Manhattan. I cried as I drove to a CarMax on Long Island, feeling as distraught as I’d been on another morning, many years ago, in another city, when I took an acutely ill pet to the veterinarian to be euthanized. I am aware that comparing the two is ridiculous. CarMax gives you a free Lyft home after the sale. That poor driver had to listen to me sniffle in shameful despair all the way back to the city. A wealthy friend in another part of the country cheerily insisted that I wasn’t stranded—I could always travel by bus! It took me days to realize why this well-intended suggestion was so devastating. Owning a car is not just a logistical issue; it is an identity issue. I have been an obsessively self-sufficient, licensed driver since age fifteen, no matter where in the world I’ve lived. Giving that up felt like a sort of death. Imagine the anxiety, then, for the overwhelming number of Americans who rely on a private vehicle to get to work. The National Consumer Law Center, a watchdog group, has reported that, “for those living on low incomes or in rural or other areas not well served by public transportation, survival often depends upon the availability of a car.”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           As in American politics and homeownership, the middle has fallen out. Last September, the average price for a new car surpassed fifty thousand dollars for the first time. Electronics account for nearly half of that cost; each vehicle contains as many as three thousand individual microchips. (These chips, most of which come from Taiwan, are manufactured in semiconductor plants that cost billions of dollars to build and operate. Car and Driver has reported that microprocessors and chips have become “practically a commodity in the same vein as steel and aluminum.”) In May, the personal-finance guru Ramit Sethi told the Times, “Americans love to buy gargantuan eighty-five-thousand-dollar trucks. Then they also discover that they don’t have a lot in savings.”
+
+           Since 2019, the average monthly payment for a new car has risen by about three hundred dollars. One in five new-car buyers is paying more than a thousand dollars a month, and lenders are writing loans for astonishing ninety-six-month terms. “They’ll get you in, whether you can afford it or not,” one repo-industry veteran told me at NARS. Overhearing this, another said, “That’s why I buy used cars—with cash.”
+
+           Banks and credit unions tend to serve prime borrowers, those with high credit scores; subprime borrowers have fewer options, such as independent finance companies and buy-here-pay-here lots, which typically require weekly or twice-monthly payments, charge higher interest rates, and are quick to repossess. (Subprime delinquencies have reached their highest levels since 2010.) A lender may wait until a borrower misses multiple payments to reclaim the collateral—it is more cost-efficient to keep a driver in a car (and a loan) than it is to repossess, remarket, and resell the vehicle. Yet even a single missed payment can trigger a repo order.
+
+           
+            
+              
+              
+               
+               
+                Cartoon by Roz Chast
+               
+
+               
+                
+                 
+                  Copy link to cartoon
+                   
+                    
+                     Copy link to cartoon
+                     
+                      
+                     
+                     
+                      
+                       
+                      
+                      
+                       
+                      
+                     
+                    
+                   
+
+                  
+                   
+
+                  
+
+                 
+
+                 Shop
+                  
+                   
+                    Shop
+                    
+                     
+                    
+                    
+                     
+                      
+                     
+                     
+                      
+                     
+                    
+                   
+                  
+
+                
+
+               
+
+              
+ 
+             
+            
+
+           
+           There is little federal oversight of the repo industry, only adjacent laws on fair lending and privacy. The Uniform Commercial Code (U.C.C.) permits repossessors to take vehicles without a court order, as long as they avoid any “breach of the peace,” a term so broad that even the A.R.A. is pushing for a standardized definition. Early repo guys were known to intimidate debtors, and sometimes to resort to violence. The history of repo is littered with “all kinds of trickery,” Art Christensen, a New Jersey repo man for the past sixty-six years and a co-founder of the NARS conference, told me. I’ve heard about schemes involving pizza delivery, or luring debtors into the open with the promise of free concert tickets. Pitman used to plant spy cams and spoof phone numbers. In “Repo Blood: A Century of Auto Repossession History,” Kevin W. Armstrong, a former repossessor, writes, “Living the credo that ‘nothing is illegal unless you get caught,’ garage doors and gates were only minor barriers. . . . We got away with murder.”
+
+           The U.C.C. is not federal law; it is a legal framework, established in 1952, intended to streamline interstate business practices—a contract signed in New Mexico should hold up in Maine. States use the U.C.C. to draft laws that govern repossession, but, as with guns and cannabis, regulations vary from place to place. That is why it is legal in Utah, but not in Massachusetts, to repossess a vehicle in a driveway, and why California and Florida require state licensing for repo agents but other states overwhelmingly don’t, and why debtors in Kansas, and almost nowhere else, have a grace period of twenty days to resolve an account delinquency before a repo man shows up.
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           Pitman, who called himself a “security enforcer,” worked in a state with few restrictions and where no special licensing is required. In Utah, it is legal to peaceably repossess a vehicle anytime on public or private property, as long as the repossessor doesn’t cut a lock or enter an enclosed area. When I asked Pitman who, really, was looking over a repo agent’s shoulder, he said, “The finance company—the ones that send you the money.”
+
+           Before RepoNut came into being, Pitman, who was divorced with children, met a grocery-store clerk named Shanda, who was also divorced with children. He tried to impress her by breaking into her car (“I can open up any lock in seconds”) and leaving flowers and a CD, by System of a Down, on her steering wheel. They got married in the autumn of 2007. Shanda had misgivings about Pitman working nights—which is when debtors, and their cars, tend to be home—and in sketchy circumstances. Yet his income allowed her to quit her job. They lived in a two-story house with a two-car garage, which Pitman turned into a workshop where he parked his Kawasaki motorcycle and liked to fabricate sound systems maximized for the bone-rattling bass of E.D.M. and metal. Shanda, who had dark hair and eyes and a gentle demeanor, kept windowsills filled with plants. She did woodworking and drove a 2008 Ford Mustang painted in grabber orange, with black racing stripes. She occasionally rode along on repos, videoing Pitman. She did not watch RepoNut, though. She told her husband that seeing him manipulate others made it hard for her to trust him.
+
+           Pitman had been episodically surveilling a house for a delinquent luxury S.U.V. when, one August weekend, the vehicle turned up, parked askew at the curb and hitched to a trailer that held a ski boat. “It’s been at the lake,” he told the camera. He went home to get his rig and pick up Shanda. Riding shotgun, she asked, “Are they rich people?” Pitman replied, “I don’t know about rich, but they’re in a nicer neighborhood.” By “nicer,” he meant an area with sidewalks, and tidy homes and lawns, with no automobiles in states of visible disrepair.
+
+           No one was outside when they arrived. Pitman quickly hooked and lifted the S.U.V. by the nose, and unhitched the boat trailer. He rang the doorbell. A woman answered. When Pitman told her what he’d come for, she said, “Well, it’s attached to a boat.” Pitman, who has a talent for sounding like a bystander, said, “The boat’s disconnected now.”
+
+           Several people came out of the house. A shirtless man in swim trunks demanded that Pitman drop the car. When he refused, the man lunged at the heavy-duty straps that Pitman had just ratcheted to the hoisted wheels. Pitman went off: “Please don’t touch my straps!” His speech was an unnatural blur. Panting in fury, he jumped into his rig and drove off, towing the S.U.V. “Stop, stop, stop, stop!” Shanda said. “Stop! Stop! Baby, stop!” The debtor was running alongside the rig.
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           
+            
+           
+
+           
+            Last September, the average price for a new car surpassed fifty thousand dollars for the first time. “They’ll get you in, whether you can afford it or not,” a repo-industry veteran said.
+           
+
+          
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           Pitman rounded a corner and stopped in the middle of the street. He jumped out to put dollies beneath the S.U.V.’s rear wheels, to make it easier and safer to tow. Dragging a vehicle can wreck the transmission and any number of other things. As the debtor caught up, Pitman yelled, “I’ll drag this fucker all the way to my yard!,” to which the debtor replied, “Dude.”
+
+           Pitman grew even more agitated. “You start touching my truck, I get pissed,” he screamed. “That’s my livelihood.” He kept telling the debtor to go get his key: “Gogetyourkey, gogetyourkey, gogetyourkey.”
+
+           “Don’t cause a scene,” the debtor said.
+
+           “You wanna see a scene? You wanna see a scene?”
+
+           “I’ll go and get my key.”
+
+           “Fuckin’ assmunch!” Pitman shrieked. “Touch my truck again!”
+
+           The man returned with a woman, presumably his wife, who calmly told Pitman, “I need to get the car seat out.” Her husband jumped behind the wheel of the S.U.V., the front end of which was still raised a couple of feet off the pavement. Pitman later told me, “I took him down to the ground in a choke hold, until he stopped fighting me,” but that never happened. After Pitman yelled some more, the debtor got out. Pitman fast-backed the repo rig down the street with the S.U.V. attached and the man, once again, following on foot. “Where’s he at?” Pitman asked Shanda.
+
+           “He’s on your truck,” she said.
+
+           The debtor had jumped onto the running board of Pitman’s moving rig and was clinging to the driver’s door.
+
+           Just then, the police showed up. The man’s family had called 911, apparently to report a theft. “It’s a repossession,” Pitman explained to the responding officers. He rambled about the Fourteenth Amendment and also said, “I was trying to get clear of the scene because the guy was going psycho.” Shanda was scared. The debtor’s wife looked embarrassed. The police eventually found Pitman’s paperwork to be in order and let him leave. Driving away, Pitman announced to the camera, “That, my friends, is rich people being stupid!”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           Later, his mind clearer, he titled the video “Drunk Debtor Gets Stupid And I Get Stupider How NOT To Be.” In the description, he wrote, “I messed up period.” He attributed his frenzied behavior to fatigue. “Drunk Debtor” became, by far, the most popular video on RepoNut, with more than 4.2 million views.
+
+           Not long after the swimsuit repo, Shanda was given a diagnosis of terminal colorectal cancer. She died on April 15, 2016, at the age of thirty-eight. Two days later, Pitman posted a photo montage of their life together, with wistful captions about a boy who met a girl whose cancer “cost him everything.” He went on living in their home, with Shanda’s daughter, Aysia, who was sixteen. Aysia liked to change her hair color and wear a classic cat eye. Pitman called her his daughter, and he referred to Shanda’s father, Paul Pace, as his father, though his own biological father was alive and well, in Arizona. Pace told me, “When Shanda first got sick, Matt would stay home with her and was probably better than any doctor or nurse. We’d go over there after her death, and he’d be curled up in a ball on the bed, with Shanda’s picture.”
+
+           Pitman all but stopped repoing. RepoNut became a repository for his musings about loss, juxtaposed with pronouncements about goals—a hundred thousand Facebook friends, a Kickstarter for a “repo academy.” He had already written twelve pages of a curriculum, which would include a primer on repo lingo such as “disco” (a disconnected phone) and “P.O.E.” (place of employment), as well as “boring stuff,” such as “applicable laws.”
+
+           Shanda was four months gone when, that August, Pitman posted a video of himself jamming out in his garage. He had dark circles beneath his eyes and sores on his face. A RepoNut follower commented, “I am a parole officer and deal with Meth addict daily. This is a perfect example of what this drug can do to the best of people.” Pitman suggested that he’d been “acting.” Another commenter wrote, on a subsequent video, “Matt, bro two words Drug Rehab.” Under yet another comment, Pitman replied, “Hydrate hydrate hydrate snort repeat lol j/k put down the pitchforks folks,” signing it “Methhew Health Druggy Pitman.”
+
+           By October, he was openly wishing for the “karma gods” to give him a “kick in the ass with good luck.” He needed money. His bedroom, where Shanda had died, was missing “a woman’s touch.” When RepoNut followers criticized his handling of a repossession where he had incorrectly told a debtor that it was “illegal” not to carry identification, Pitman retorted that only “a trained professional” could understand his tactics: “There’s a lot of mind-ninja stuff going on.”
+
+           
+            
+              
+              
+               
+               
+                “Hunting was terrible. Luckily, the supermarket had everything we needed.”
+               
+
+               
+                Cartoon by P. C. Vey
+               
+
+               
+                
+                 
+                  Copy link to cartoon
+                   
+                    
+                     Copy link to cartoon
+                     
+                      
+                     
+                     
+                      
+                       
+                      
+                      
+                       
+                      
+                     
+                    
+                   
+
+                  
+                   
+
+                  
+
+                 
+
+                 Shop
+                  
+                   
+                    Shop
+                    
+                     
+                    
+                    
+                     
+                      
+                     
+                     
+                      
+                     
+                    
+                   
+                  
+
+                
+
+               
+
+              
+ 
+             
+            
+
+           
+           Viewers watched his home become cluttered, then trashed. The power and the water got cut off. Aysia went to live somewhere else. A woman whom Pitman called “sweetie” came over with a young girl, seemingly her daughter, to help clean up. The little girl, gamely wielding a garbage bag, saw urine everywhere and cried, “It’s all over your floor? Your walls?” Pitman plunged a toilet full of dark liquid and called it mud. The Sheetrock had holes in it. He alleged “sabotage,” adding, “This is just about how everybody pictured it going, with my implosion.” Walking into Aysia’s bedroom one day, he said, “Smells like something died down here.” Then, “Is that a snakeskin?” He’d come across the remains of Aysia’s pet python.
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           Pitman moved out. Soon, RepoNut followers saw him in a tidy bedroom, backdropped by a framed poster with an inspirational message. (“You are braver than you believe.”) Leaning into his repo-academy idea, he showed a montage of TV news stories about bad repossessions and declared, “Fraud, violence, wrongful repossession, untrained agents.” He now planned to “expose” the repo industry, calling it “plagued with problems,” which he was “working feverishly to correct.” In 2018, RepoNut content tapered off. Followers assumed that Pitman had died.
+
+           Early this year, Pitman resurfaced on YouTube. I called him up. He’d been in prison. His life choices had culminated in “a complete state of self-denial and self-sabotage,” he told me. He had stolen, to support an addiction—the RepoNut commenters had been right. He had also been cited for numerous traffic violations: speeding, running a stop sign, driving with an expired registration, using faulty equipment, improperly changing lanes, driving under the influence. The day before the “Drunk Debtor” incident, he had been charged with driving on a suspended license. Shanda, after her diagnosis, had been prescribed oxycodone, which Pitman had been taking. “Once I was on the drugs, it was a downward spiral,” he told me. “It’s like a big magic trick. Everything you own disappears—the people, the things, your credibility. It seemed like every corner I turned I was just getting the crap kicked out of me.”
+
+           Pitman had been to prison once before, in Arizona, for theft and fencing: when he was nineteen, he got caught operating a motorcycle chop shop. It was after that incarceration that he became a repo agent. “Having felonies doesn’t keep you from being able to be in this industry,” he said. The National Consumer Law Center has noted that the “ranks of the repossession army are wide open to individuals without the resources, qualifications or ability to pass criminal records checks needed for more attractive jobs.”
+
+           That study, published in 2010, highlighted the industry’s lack of oversight, calling repossession “a crude, unregulated and naked exercise of force and guile.” What was true then is largely true today: most states require no special licensing, registration, training, or screening for repossessors, who work a sensitive job that puts them in direct contact with the public. In the United States, manicurists are better regulated than repo agents.
+
+           After his recent incarceration, Pitman lived at a men’s residential facility just north of Salt Lake City called Red Barn Academy, which promoted itself as a therapeutic community where “criminals, the homeless, and substance abusers can come and reinvent their lives free of charge!” Pitman told me that he had “relearned honesty, integrity, accountability” at Red Barn, calling these “a trifecta” of essentials for “any person that wants to live a good life and be a good, functional, supporting part of society.” He had got back his driver’s license and had fixed up a cobalt-blue F-150 pickup, whose vanity license plate read “ITHERTZ.”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           
+            
+           
+
+           
+            “Once I was on the drugs, it was a downward spiral,” Pitman said. “It’s like a big magic trick. Everything you own disappears.”
+           
+
+          
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           He had also returned to the repo industry—to a desk job, issuing seizure orders for a company that deals in industrial equipment for small businesses that do not qualify for traditional loans. Now, though, he was getting back into a repo rig, to drive full time. He had accepted a job and was moving to St. George, a city of about a hundred thousand, several hours south, in the upper Mojave Desert. Aysia, now in her late twenties, lived there, and she was about to have a baby. Pitman, who already had grandkids he did not see, was excited to be “a grandpa.” I flew to Salt Lake City.
+
+           Pitman had told me that he’d be packing up his house. This turned out to be a bedroom in a house that he had found on Facebook Marketplace. Strangers lived in the other bedrooms. One Sunday afternoon, I watched him dismantle a curtain rod, remove decorative burlap from the ceiling, and wrap stackable clothing bins in plastic. His bed was made. On the comforter lay a key chain outfitted with kitty knuckles, a plastic, hand-worn weapon with two super-sharp points.
+
+           A few weeks earlier, someone had broken into his truck and stolen his things, including a device that fires nonlethal projectiles. Wearing a tactical vest, Pitman had confronted the person he thought was responsible. When I asked who was behind the burglary, he nodded silently at his bedroom wall, implicating the tenant in the next room. I was standing in the hallway, in front of that guy’s closed door, where there was a handwritten sign: “YOUR ON CAMERA.”
+
+           Summer is summer to you and me; to a repo agent, it is a season of scorching metal. Pitman always finds the upside. What the universe delivered in desert heat it tempered with fewer frozen gas caps, and with “year-round motorcycle weather.” Even during his free fall, he had told RepoNut followers, “Change is good, guys!” and “Life happens to everybody!”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           A few days after I saw Pitman in Salt Lake City, I met him in St. George—red-rock buttes, electric-blue sky. Roses bloomed in creamy peaches and pinks, rattled, in their buds, by an unusual wind. Pitman drove to an industrial part of town, punched in a key code at an electronic gate, and pulled into a gravel tow lot that was partly ringed with abandoned R.V.s, tractor-trailer cabs, and other crusted wrecks. Inside a sublot secured by padlocks and chains sat two rows of recently repossessed vehicles. A semi arrived and deposited an intact tow camper—a 2005 Keystone Montana Mountaineer that Pitman had just bought, on Facebook Marketplace, for six thousand dollars, cash. His new boss was letting him live on the lot, rent-free, as a perk. The Mountaineer had no hookups, but Pitman had worked out a “modular” life plan. He already owned a generator and a microwave. He would join a twenty-four-hour gym, for the showers. He would do laundry at Aysia’s apartment. The repo job came with a gas card. Pitman showed me through the Mountaineer, which was about thirty feet long, with a bed on one end and a kitchen on the other, and said, “If life goes to shit, I’m not homeless.”
+
+           The tow lot was surrounded by chain-link fencing threaded with strips of plastic and topped by barbed wire. Pitman, pleased with the new setup, decreed it “security by obscurity.” How great it would be, he said, to put out the Mountaineer’s awning and sit, unbothered, beneath the deep night sky. On one of the fenceposts, someone had stuck a fake head on a pike. A Darth Vader mask hung on the inside of the electronic gate. Pitman decided that it meant either “we’re on the dark side” or “may the Force be with you.”
+
+           Pitman had been hired to cover the whole of southern Utah, from Nevada to Colorado. On his first day of work, he wore colorful patchwork pants, red Adidas high-tops, a backward San Francisco Giants baseball cap, and a hoodie that read “REPO LIFE” and “I’m addicted to my work. But I’m in recovery so it’s OK.” (His design.) He hadn’t operated a repo truck in years. His work rig was a Ford F-350 sneaker—the kind with the stinger. He mounted his Motorola phone on a vent and placed a mobile router on the dashboard. He set one laptop on the center console and a second laptop on an attached platform that reminded me of a cat tree. “I got a thousand passwords to remember again,” he said. “Having a really good memory makes all that easier.”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           The cat tree took up most of the passenger seat, so, for days, I rode nauseously in the back, looking over Pitman’s shoulder and trying to avoid the exhalations of his watermelon-flavored vape. One of the laptops ran a digital map; icons, shaped like inverted teardrops, marked addresses that lenders were paying Pitman’s company to pay Pitman to check, for collateral. Driving by the teardrops is called running addresses. Southern Utah was covered in teardrops.
+
+           
+            
+              
+              
+               
+               
+                “No, I don’t think I’m interested in an open-toed relationship.”
+               
+
+               
+                Cartoon by Adam Douglas Thompson
+               
+
+               
+                
+                 
+                  Copy link to cartoon
+                   
+                    
+                     Copy link to cartoon
+                     
+                      
+                     
+                     
+                      
+                       
+                      
+                      
+                       
+                      
+                     
+                    
+                   
+
+                  
+                   
+
+                  
+
+                 
+
+                 Shop
+                  
+                   
+                    Shop
+                    
+                     
+                    
+                    
+                     
+                      
+                     
+                     
+                      
+                     
+                    
+                   
+                  
+
+                
+
+               
+
+              
+ 
+             
+            
+
+           
+           Each corner of Pitman’s rig held an infrared camera whose beams of light bounced off the reflective surface of all visible license plates, reading them. The cameras, not so much hunting as scavenging, fed the numbers and their corresponding locations into a national database owned by a company that sells the information. If one of the scanned vehicles came up for repo later, the software could indicate where and when the plate had been seen. “We’re doing all the work,” Pitman observed. “We’re making their database stronger.” The camera system is called an advanced license-plate reader, commonly known as an L.P.R. (Law enforcement and toll roads use the same technology, which has prompted debates about mass surveillance.) Each time one of Pitman’s cameras read a plate, his laptop went ding. Driving around St. George, we heard ding . . .  ding . . .  ding. In crowded parking lots, dingding . . .  dingdingdingdingdingdingding. Plate numbers scrolled on his screen, with state abbreviations: UT, FL, MN, MT, NV, TN, DE.
+
+           Repossessors themselves are sometimes surveilled. At the NARS conference, I met a vender selling a camera-and-software system that monitors distracted driving, fatigue, and acceleration and braking patterns—a better “safety score” can lead to lower insurance premiums. A company called GridShark was demoing a “fleet intelligence” program: on a huge L.E.D. screen, I watched the real-time movements of agents and “spotters,” who drive camera cars, being traced, Pac-Man style, on a digital map of San Antonio. Bosses could see who was doing what, to deploy their drivers more efficiently. A repo-company owner named Paul Howard, thinking of the fuel savings alone, said, “I need this by Sunday night!” He couldn’t wait to use GridShark secretly for a week and then spring its existence on his drivers. Slackers would be outed.
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           
+            
+           
+
+           
+            Pitman moved to St. George, Utah, to be closer to his daughter Aysia. He lives in a camper parked on his employer’s tow lot.
+           
+
+          
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           Anytime Pitman’s laptop went wrrrrRRRR, it meant that the cameras had found a plate wanted on an active repo order. Those vehicles were to be hooked. On the map, a pink “V” inside a pink circle indicated a volly, or a voluntary repossession. This is when the debtor, aware that his vehicle is in jeopardy, makes an appointment, through the lender, to have a repossessor pick it up. Vollies happen about a quarter of the time. A subset of the volly demographic is the debtor who, per Pitman, “fucks with” the repo agent—glass in the driver’s seat, a razor blade taped to a door handle, sugar in the gas tank. “When they screw with you, they don’t think it through,” he told me. “It’s, like, I know where you live.”
+
+           For every completed repo, Pitman took and uploaded voluminous photos. He filled out online condition reports and checked off boxes pertaining to keys, battery, mileage, tires. At each fruitless address, he dictated his findings into his phone, updating files: “Single-family home, two-car garage, white Silverado backed in the driveway, not our collateral”; “Mobile-home park, Lexus backed into the driveway, no answer at the door.”
+
+           One afternoon, he hooked a Chevrolet Colorado in the driveway of a town house whose garage door stood open, revealing a neat space with an immaculate floor. Pitman knocked at both the interior door of the garage and the front door. He was just about to leave when a young man in sweats and slides with socks emerged to find the front end of his Chevy up in the air. Pitman brightly asked, “This been a pretty good truck?” The man replied quietly, “Yeah, it’s been amazing.” (Pitman later told me, “I knew exactly where his mind was at, in that moment.”) Pitman waited as the debtor, a construction worker, transferred a reflective vest, a jug of water, a pair of shoes, a backpack, and a sack of nine-millimetre bullets to the garage. He hadn’t been able to make a payment in three months. “Some things went south,” he said. “It is what it is.”
+
+           Another time, Pitman got a teardrop for a Toyota Camry. He failed to find it at the address listed on the loan. When he tried another address, his laptop went wrrrrRRRR. The Camry was sitting in the driveway of a one-story home whose front door was wide open. Pitman backed up and hooked the Camry, then confirmed the VIN on his way to the door.
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           A pair of industrial vats sat bubbling on the stoop, attached to propane-powered burners. Pitman knocked at the open door and hollered the name on his list. Out came a twenty-two-year-old woman in shorts and Birkenstocks. Pitman told her, “We’re picking up your car for the finance company. Is there anything you need to get out?”
+
+           “No. What?” she said.
+
+           As the woman followed Pitman to the driveway, her grandmother fell in behind, asking, “Por qué?”
+
+           “You need to call the bank,” Pitman told her. “They’ll tell you why they had us come out and pick it up.”
+
+           The grandmother said, “Pero ya ha pagado!”
+
+           The young woman gathered some of her things, leaving behind a hair clip, a ceramic mug, a piece of clothing, and invitations for an Easter worship service. This told Pitman that she planned to redeem the vehicle as soon as possible. In his experience, debtors with no plans for redemption either remove everything or leave everything.
+
+           Later, I returned to the house to talk to the young woman. She wasn’t home, but her mother, Liliana, was. “Debe mucho todavía,” she told me, adding that she had begged her daughter, who was still paying for college, not to sign a car loan with a high interest rate, which she recalled being nineteen per cent. “She work in a restaurant, she work in the dentist, she make eyelashes,” Liliana said. “She tried her best, but, you know, sometimes difficult to get the money that day.” Liliana, who is divorced, cleans for a living and sells homemade tamales on weekends. That’s what was cooking in the vats.
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           
+            
+           
+
+           
+            Pitman uses a “sneaker” unit, a heavy-duty Ford F-series pickup equipped with a steel boom, shaped like a cross, that can be maneuvered with joysticks from inside the cab, to hook a vehicle within seconds.
+           
+
+          
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           A Tesla appeared on the map. It was a volly, which goes on a credit report, same as an involuntary repossession, but does tend to save the debtor back-end fees on transportation and storage. At Pitman’s tow lot, I met a warehouse worker who told me that a credit union was charging him nine thousand dollars to redeem a Nissan Rogue. He said that he owed less than five grand on the loan itself. Pitman told me about companies that bag up the inventoried contents of repossessed vehicles and charge the debtors twenty-five dollars per bag to get back their own things. “That’s extortion!” he said. “That’s how these companies fleece America.”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           He found the Tesla parked where the debtor had said it would be, at a modest house near a golf course. A barefoot young woman in sweats and an anklet came out and told Pitman, “It’s gonna need new brakes.” Small children crowded at an open window, calling, “Mama!” As the woman went to look up information about the battery, Pitman tried to figure out how the Tesla’s doors worked. They raised, like wings.
+
+           The car’s interior was filthy. Repo agents find all kinds of things in vehicles—needles, poopy diapers, sex beads. Some companies require their agents to wear protective goggles and puncture-proof gloves. Pitman operates on instinct. He cranked the Tesla, backed it into the street, and hooked it. Watching from the driveway, the woman told me that she was getting a divorce. “It’s a D.V. situation,” she said, meaning domestic violence. One of her kids came outside and asked, “Are you gonna miss the Tesla?”
+
+           “No,” she said. “I am not.”
+
+           Pitman was looking for a Hyundai in the parking lot of a residential complex when we started talking about whether Utah should require repossessor licensing. He considers any kind of certification a “badge of honor.” He noted that good repossessors already “lean on the side of caution, to make sure we don’t get the finance company in trouble and we don’t get our repo company in trouble.” Insurance and bonding hedge against, among other things, what Pitman claims is “a big problem” in the repo industry: “sticky fingers.”
+
+           “Since we’re on the topic,” I said, “what were you busted for?”
+
+           “Possession of a deadly weapon,” he said. (It was an illegal handgun.) “I got busted with drugs on me while I was sitting in my car, in a parking lot.”
+
+           “What drugs?“
+
+           “Meth, heroin, pills.”
+
+           “This was after Shanda died.”
+
+           “Mm-hmm, yep.”
+
+           “Weren’t there burglary charges?”
+
+           “Mm-hmm. I broke into a storage unit, took some stuff that was not mine. They had video of my license plate. I wasn’t very smart about it.”
+
+           “Whose unit was it?”
+
+           “Just some random person’s.”
+
+           “Did you know something was in there that you wanted?”
+
+           “Nope. High on drugs, and I just helped myself to it.”
+
+           “How’d you break in?”
+
+           “I picked the lock.”
+
+           “What’d you get?”
+
+           “Sixty-eight hundred dollars’ worth of stuff. Because that’s what I had to pay in restitution. I don’t really remember.”
+
+           “What’d you do with the stuff?”
+
+           “Sold it. Gave it away. All of the above.”
+
+           “For drugs?”
+
+           “Yes, definitely,” he said. “I was homeless, living on the streets, and needed money.”
+
+           I once asked Pitman his opinion of the societal value of automobile repossession. “It’s a deterrent,” he said. At NARS, I continually asked the same question. A forwarder from Texas said, “If cars don’t get picked up and the lender continues to lose money, what do you think happens? How are they going to recoup that money? They’re going to raise interest rates on everybody.” Clemmons, the former A.R.A. president, told me, “Repossessions protect your ability to finance a car—if there was no one to retrieve these vehicles, there would be no financing, full stop.”
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           The NARS conference took place at a Hilton resort and convention center with an eighteen-hole golf course and a lazy-river swimming pool. One of the sessions happened outside, on a bricked plaza, where a crowd watched Danny and Sophia Pabon, who grew their business, Florida Repossession Agency, from a single truck to a forty-employee company, lead reënactments of scenarios that repo drivers encounter in the field: what to do if a competitor shows up at the same repo, or if a debtor uses G.P.S. to follow and confront a driver; how to safeguard against fentanyl exposure. Sophia, a Bronx native in her early forties, told me, “I have a lot of respect for this industry, and I feel like people don’t understand the importance of what we do and how it keeps our ecosystem of cars going.”
+
+           She disliked that repossessors were thought of as “the bad guys.” But the reputation is earned; Clemmons, who got his start in the eighties, in Cleveland, by proving himself handy with a slim jim, said, “You name it, we did it—going into garages, breaking and entering.” He and Christensen, the New Jersey repo man and NARS co-founder, are among those who have been working to reform the industry’s outlaw image and, as Christensen put it, push for “better ways to evolve.” Clemmons supports mandatory training in defensive driving, situational awareness, and de-escalation. “I’m not the kind of guy who wants regulation—I don’t want the government telling me what to do,” he said. “But I do believe we can force it upon ourselves. When there’s no standard, there’s chaos.” He liked the sound of bar associations, which censure lawyers for malfeasance. “Right now, in our space, there is no respected authority.”
+
+           At one NARS session, Al Gonzalez, a repossessor from Texas, asked Danny Pabon, his presentation partner, to name a reputation-killing behavior in their industry. Pabon replied, “Being sloppy on social media. I’ve seen people on LinkedIn be super professional, then you go on their Facebook and it’s a whole different person.” When Gonzalez asked what Pabon tells his employees about posting online, he replied, “They shouldn’t post anything online.”
+
+           In Utah, Pitman had just posted a new YouTube video, about returning to a repo rig and moving to St. George. Within twenty-four hours, it had more than nine thousand views. A fan welcomed back “the OG.” Pitman had already bought a Bluetooth mike, and he planned to learn St. George’s streets at pavement level, on an electric scooter. He had discovered the thrilling utility of flying a small drone into gated communities, to hover over windshields, capturing VINs. He had gone online and bought a badge that read “REPOSSESSION RECOVERY AGENT.” Shaped like a shield, it cost $39.94 at Agent Gear USA, a website that stands equally ready to serve the credentialling needs of any “BAIL ENFORCEMENT AGENT (BEA)” or “INTERNATIONAL SPECIAL AGENT.”
+
+           Pitman never wore his badge in front of me, but after I left I heard that it was hanging on a chain around his neck. In a small town called Hurricane, between St. George and Zion National Park, someone complained to the cops about a cosplaying repo man. A police detective rang Pitman and warned him about impersonating a law-enforcement officer.
+
+          
+
+         
+
+        
+
+       
+
+       
+        
+         
+          
+           There would be no new repoing on RepoNut, though: Pitman’s boss does not permit it. Pitman wasn’t even allowed to use RepoNut as his company login. He attributed these restrictions to jealousy, saying that other repossessors “don’t have the confidence or the abilities” to do what he does online. “Either you got the personality for it or you don’t.” He was stuck posting mostly deep thoughts and scenery. An entire archive of potential reruns—more than eight hundred videos—also lay at his disposal. “There’s a lot of people in this industry that absolutely hate the fact that I’ve done this and put these videos up on YouTube,” he once said, adding, “And I actually agree with them!” His most popular content contained “the worst shit shows—they’re me at my worst, they’re people at their worst.” (During the fact-checking process for this piece, Pitman made private most of his RepoNut videos, blaming criticisms from competitors who were “being Karens.”)
+
+           Pitman, who turns fifty-six in August, cannot see working repo much longer anyway. “At the end of the day, all I’m doing is making finance companies more money,” he told me. “The American financial system is broken. We’re forced into financial slavery. Even though I’ve been the pit bull at the end of the chain for that industry for forty years, it’s because I’m in my position that I—” Instead of finishing the sentence, he told me that he wanted his next career move to be “balancing the scale.”
+
+           He plans to turn the living space of his camper into a podcast studio for a new program, “Know Good,” where he will talk about everything that he has been through in life, including repo. Maybe he will tow the camper around the country and chat with other repo guys, asking, What’s your boss like? What’s your pay like? Can you live on that? Or maybe he could do ride-alongs and critique other repossessors’ techniques. He’d never seen New England, or Niagara Falls. Aysia, who is now a stay-at-home mom, told me that she hoped Pitman would not “transition out of repoing too fast,” though, because “repoing is definitely cool and fun, and I think he’s super good at it.” He recently bought Aysia her first car. ♦
+
+          
+
+         
+
+        
+
+       
+
+      
+
+      
+       
+        
+         
+          
+           
+          
+
+         
+
+        
+
+       
+
+      
+
+     
+
+    
+
+    
+     
+      
+       
+
+      
+
+     
+
+    
+
+   
+
+  
+
+  
+   
+    
+     
+      Published in the print edition of the June 29, 2026, issue, with the headline “Hot Pursuit.”
+     
+    
+
+   
+
+   
+    
+     
+      
+       
+        New Yorker Favorites
+
+       
+
+       
+        
+         
+          
+           The hidden harms of CPR.
+
+          
+
+         
+
+         
+          
+           The case against travel.
+
+          
+
+         
+
+         
+          
+           A scientist with a Ph.D. from Harvard fatally shot three of her colleagues. Then revelations about her family history came to light.
+
+          
+
+         
+
+         
+          
+           Play Catalogues, our new daily game, and bring order to the chaos.
+
+          
+
+         
+
+         
+          
+           A Marilyn Monroe-J.F.K. mystery.
+
+          
+
+         
+
+         
+          
+           Shouts & Murmurs: Ayn Rand reviews children’s movies.
+
+          
+
+         
+
+        
+
+        
+         
+          Sign up for our daily newsletter to receive the best stories from The New Yorker.
+
+         
+
+        
+
+       
+
+      
+
+     
+
+    
+
+   
+
+   
+    
+     
+      
+       
+        
+         
+        
+
+        
+         
+          Paige Williams, a staff writer, is the author of “The Dinosaur Artist” and a recipient of the National Magazine Award for feature writing.

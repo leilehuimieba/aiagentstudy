@@ -11,6 +11,21 @@ $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $Root
 
+# SQLite FTS5 'trigram' tokenizer needs SQLite >= 3.34. The default `python` may be an
+# older build (e.g. 3.8 with SQLite 3.28), which breaks the FTS index and search. Resolve
+# an interpreter with a new-enough SQLite for the FTS-build and query steps.
+function Get-SqlitePython {
+  $probe = "import sqlite3,sys; v=sqlite3.sqlite_version_info; sys.exit(0 if v >= (3,34,0) else 1)"
+  foreach ($cand in @("py", "python3", "python")) {
+    if (Get-Command $cand -ErrorAction SilentlyContinue) {
+      & $cand "-c" $probe 2>$null
+      if ($LASTEXITCODE -eq 0) { return $cand }
+    }
+  }
+  return "python"
+}
+$SqlitePython = Get-SqlitePython
+
 function Show-Help {
   @"
 AI Agent Study knowledge-base helper
@@ -61,7 +76,7 @@ function Invoke-Query([string]$Mode) {
   if (-not $Rest -or $Rest.Count -eq 0) {
     throw "Missing query. Example: .\kb.ps1 $Mode `"Claude`""
   }
-  & python "knowledge\raw\query-kb.py" @Rest --mode $Mode
+  & $SqlitePython "knowledge\raw\query-kb.py" @Rest --mode $Mode
 }
 
 function Show-Status {
@@ -189,7 +204,7 @@ switch ($Command) {
   }
   "rebuild" {
     & node "knowledge\raw\build-kb-retrieval.js"
-    & python "knowledge\raw\build-kb-fts.py"
+    & $SqlitePython "knowledge\raw\build-kb-fts.py"
   }
   "build-item-metadata" {
     & python "knowledge\raw\build-item-metadata.py" @Rest

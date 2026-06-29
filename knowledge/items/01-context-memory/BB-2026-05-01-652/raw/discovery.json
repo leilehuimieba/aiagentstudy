@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Subhanga Upadhyay"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/heads_q_heatmap_2b.png",
+  "domain": "towardsdatascience.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_2f139dd0",
+  "keyQuotes": [
+    "there exists a three-phase factual recall circuit within the Gemma model family",
+    "Facts are encoded as directions in the residual stream at the entity token. The residual stream dominates causally here, contributing 40× more than attention outputs and 18× more than MLP outputs.",
+    "I found that this three-phase circuit replicated at scale: storage shifted to layers 0–27, routing remained distributed with no significantly dominant head, and readout concentrated in the final layers, structurally identical to Gemma-2B, proportionally scaled",
+    "cross-model mechanistic comparisons are partly constrained by tokenizer-induced dataset drift, and reported differences should be interpreted with that caveat in mind"
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Storage happens in the residual stream at the entity token's position (layers 0–14 for 2B, 0–27 for 12B). Routing is distributed across attention heads with no single dominant head. Readout is a simple pass-through in the final layers.",
+      "point": "Factual recall in Gemma follows a three-phase circuit: storage, routing, and readout."
+    },
+    {
+      "explanation": "In Gemma-2B, residual stream damage (ΔLD = -11.47) is 18x larger than MLP output damage and 40x larger than attention output damage, confirming facts are encoded as directions in the stream.",
+      "point": "The residual stream dominates causal effect over individual sublayers in the storage phase."
+    },
+    {
+      "explanation": "Gemma-12B-IT shows the same structure proportionally: storage shifts to layers 0–27, routing remains distributed and even duller, and readout concentrates in the final layers.",
+      "point": "The three-phase circuit replicates at scale from 2B to 12B parameters."
+    },
+    {
+      "explanation": "Even models sharing the same tokenizer (SentencePiece) can map some words to different token IDs (e.g., 'hertz' as two tokens), causing prompt pair exclusion in larger models and requiring upfront token run checks.",
+      "point": "Tokenizer differences introduce dataset drift that constrains cross-model comparisons."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This paper presents a mechanistic interpretability study localizing a three-phase factual recall circuit (storage, routing, readout) in Gemma-2B and Gemma-12B-IT via activation patching, with the circuit scaling proportionally across model sizes.",
+  "originalTitle": "A Three-Phase Factual Recall Circuit in Gemma-2B and Gemma-12B-IT",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 23:00:00",
+  "publishTimeStamp": 1782313200000,
+  "qualified": false,
+  "readCount": 23,
+  "readTime": 7,
+  "readUrl": "https://www.bestblogs.dev/article/2f139dd0",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "sourceName": "Towards Data Science",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The author designs a battery of 60 clean/corrupt prompt pairs across 20 fact categories and uses activation patching with TransformerLens to isolate factual recall circuits in Gemma-2B and Gemma-12B-IT. A novel metric called TotalSwing is introduced to rank prompt pairs by signal strength. Four experiments progressively narrow down from full residual stream to individual attention heads. Results reveal a consistent three-phase circuit: (1) Storage in the residual stream at the entity token position (layers 0-14 in 2B, 0-27 in 12B), (2) Distributed routing via attention heads (no single dominant head), and (3) Readout as a pass-through in the final layers (layers 15-17 in 2B, proportionally in 12B). The circuit replicates at scale, but tokenizer differences cause dataset drift between models, a caveat for cross-model comparisons. The author discusses future work including path patching and SAE analysis, constrained by disk space limitations. The full codebase is open-sourced.",
+  "tags": [
+    "Mechanistic Interpretability",
+    "Activation Patching",
+    "LLM",
+    "Gemma",
+    "Factual Recall"
+  ],
+  "title": "A Three-Phase Factual Recall Circuit in Gemma-2B and Gemma-12B-IT",
+  "translateContent": null,
+  "url": "https://towardsdatascience.com/a-three-phase-factual-recall-circuit-in-gemma-2b-and-gemma-12b-it/",
+  "wordCount": 1738
+}

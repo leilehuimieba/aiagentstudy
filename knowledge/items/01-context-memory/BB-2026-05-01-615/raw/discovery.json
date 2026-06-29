@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "十字路口Crossing"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_e67ff5dc",
+  "keyQuotes": [
+    "What made you successful in the past may not carry you forward.",
+    "Don't mistake 'busyness' for 'progress.'",
+    "If you weren't afraid, what would you do? From time to time, do something that scares you.",
+    "Where users take detours is the next product opportunity."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "When AI enables everyone to submit code, the constraint shifts from 'who writes' to 'how to verify.' Teams need to codify what 'good' means into repo specifications, let Claude automate verification, and be cautious not to mistake 'being busy' for 'making progress.'",
+      "point": "Writing code is no longer the bottleneck; validation and measurement are the new bottlenecks."
+    },
+    {
+      "explanation": "One type can build end-to-end ideas into great products; the other guards deep areas like distributed systems that require rigorous oversight. The underlying principle is trust but verify.",
+      "point": "Only hire two types: product-oriented builders and deep system experts."
+    },
+    {
+      "explanation": "Give everyone the freedom to act independently, but they must clearly state the validation hypotheses and who is responsible. Freedom and accountability are two sides of the same coin, especially critical for an AI-native team.",
+      "point": "High agency must be paired with high accountability."
+    },
+    {
+      "explanation": "No dashboard can replace the feel of using the product firsthand; many critical judgments come from specific cases. When data and individual cases conflict, sometimes trust the case.",
+      "point": "Managers must live in the product and practice dogfooding."
+    },
+    {
+      "explanation": "What made you successful in the past may not carry you forward. When facing fear, first ask what's within your control, then go do the scary thing.",
+      "point": "The differentiator is a growth mindset; what holds people back is fear."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Fiona Fung, head of Claude Code, shares how to build an AI-native engineering team: writing code is no longer the bottleneck; validation and measurement become core; hiring focuses on either product-oriented builders or deep system experts; management is automated through an always-on Claude session, emphasizing high agency paired with high accountability.",
+  "originalTitle": "Claude Code 工程负责人 Fiona Fung：如何打造全世界最 AI Native 的工程团队?",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-27",
+  "publishDateTimeStr": "2026-06-27 11:21:00",
+  "publishTimeStamp": 1782530460000,
+  "qualified": false,
+  "readCount": 61,
+  "readTime": 41,
+  "readUrl": "https://www.bestblogs.dev/article/e67ff5dc",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_f63517",
+  "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+  "sourceName": "十字路口Crossing",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is compiled from an in-depth interview with Fiona Fung on Lenny's Podcast. Fiona is the engineering lead for Claude Code and Cowork, with over 25 years of experience in leadership roles at companies including IBM, Microsoft (working on Visual Studio and TypeScript), and Meta (founding Facebook Marketplace, working on AR glasses). The article revolves around the core insight that \"writing code is exiting the bottleneck position.\" Key themes discussed include: When designers and PMs can all submit code, validation replaces coding as the new bottleneck; teams should codify what \"good\" means into specifications stored in the repository, and let Claude verify against them; hiring is limited to two types—builders with product dreams and deep system experts who tackle tough problems, matched with the principle of \"trust but verify\"; management is being reshaped by asynchronous culture—a permanent Claude remote session is attached to all codebases, maintaining full awareness at all times. Routines go beyond cron jobs by having a \"brain\" that can autonomously generate prompts, dispatch agents, and produce reviewable PRs; high agency must be paired with high accountability—grant freedom while requiring clear validation hypotheses and responsible parties; managers must live in the product and practice dogfooding—when data and individual cases conflict, sometimes trust the case; the differentiator is a growth mindset, and what holds people back is fear—encourage doing things that scare you. The article also covers JIT (Just-in-Time) planning, role fusion for engineers, proactively managing quality with a \"bad & sad\" framework, and the culture of cutting useless processes. The compilation retains the essence of the original interview with added editor commentary, offering high value for engineering managers in the AI era.",
+  "tags": [
+    "AI Coding",
+    "AI Agent",
+    "Engineering Management",
+    "Developer Tools",
+    "AI Products & Applications"
+  ],
+  "title": "Fiona Fung, Engineering Lead at Claude Code: How to Build the Most AI-Native Engineering Team?",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109536&idx=1&sn=bc784fdeb9790f763fd274666c6975b7",
+  "wordCount": 10215
+}

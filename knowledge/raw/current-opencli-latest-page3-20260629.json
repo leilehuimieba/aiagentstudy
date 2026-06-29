@@ -1,0 +1,1615 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 3,
+    "dataList": [
+      {
+        "authors": [
+          "十字路口Crossing"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_8b737736",
+        "keyQuotes": [
+          "Whenever Claude makes a mistake, I don't ask it to try a different way; I ask it to write it into CLAUDE.md or make it a skill.",
+          "I no longer talk to the agent; I talk to a loop, a routine, which prompts Claude on my behalf.",
+          "It's only human — when you click agree on 99% of requests, your eyes glaze over by the end.",
+          "Build the loop, stay the engineer. You can let the machines run the loop, but you can't lose your identity as an engineer."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Boris believes that as model capabilities improve, the human role should shift from directly commanding agents to designing a loop system that can autonomously discover tasks, invoke agents, and verify results — that is, 'Loop Engineering.'",
+            "point": "Core workflow shifts from prompting models to designing loop systems."
+          },
+          {
+            "explanation": "Whenever Claude makes a mistake, instead of asking it to try again differently, you write the correct approach or rules into CLAUDE.md or Skills. The accumulation of these single corrections has a compounding effect, making the agent increasingly autonomous.",
+            "point": "Capturing mistakes and experience is crucial; the key is writing them into CLAUDE.md."
+          },
+          {
+            "explanation": "Traditional linting and type checking are already automated. The real barrier is whether the agent can simulate user operations (e.g., running a desktop application), discover and fix edge cases through self-testing, and form a closed-loop validation.",
+            "point": "The core of validation is getting the agent to actually run things, not just rely on unit tests."
+          },
+          {
+            "explanation": "When users click 'agree' on 99% of confirmation requests, their attention wanders. Routing security checks to another model can actually intercept suspicious operations more reliably and is safer than human oversight.",
+            "point": "Auto mode is safer than step-by-step confirmation."
+          },
+          {
+            "explanation": "Claude Code lowers the barrier to writing code, enabling designers, product managers, finance professionals, and other non-engineering roles to directly participate in development. In the future, everyone will combine product and engineering roles, delivering end-to-end.",
+            "point": "Role fusion: AI benefits anyone with curiosity and product taste."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Claude Code co-creators Boris and Cat review the evolution of their team's internal workflow over the past year of AI coding, with the core insight that engineers' primary work is shifting from writing code to designing loop systems that can autonomously discover tasks, assign them, and execute them (Loop Engineering).",
+        "originalTitle": "Claude Code 主创复盘疯狂的一年｜对话 Boris & Cat",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 19:14:00",
+        "publishTimeStamp": 1782126840000,
+        "qualified": false,
+        "readCount": 64,
+        "readTime": 30,
+        "readUrl": "https://www.bestblogs.dev/article/8b737736",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f63517",
+        "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+        "sourceName": "十字路口Crossing",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is a compilation of an in-depth interview from 'Crossroads' with Boris Cherny, head of Claude Code, and Cat Wu, product lead. The article unfolds in a conversational format, reviewing the fundamental changes in the Anthropic team's internal working methods over the past year since Claude Code's launch. The core narrative is that AI coding has undergone a shift from 'prompt engineering' to 'context engineering' to 'loop engineering.' Boris shares his new methodology: instead of prompting the agent one by one, he 'writes a loop and lets it prompt Claude for me,' revealing that roughly half of his engineering work is now done remotely via a phone. Cat shares her practice of 'writing mistakes into CLAUDE.md and letting it verify by running itself,' and marvels at the experience where 'another person's Claude' automatically fixed her bug. The article also discusses trends like 'everyone writes code' (designers, finance using Claude Code), 'auto mode is safer than step-by-step confirmation,' and 'role fusion.' Towards the end, the author organizes Addy Osmani's framework for Loop Engineering, discussing five components (Automations, Worktrees, Skills, Plugins, Sub-agents) and the memory layer (State), and reminds engineers to stay clear-headed with the concepts of 'understanding debt' and 'cognitive surrender.'",
+        "tags": [
+          "AI Agent",
+          "AI Coding",
+          "Developer Tools",
+          "AI Workflows",
+          "Engineering Practices"
+        ],
+        "title": "Claude Code Co-creators Reflect on a Wild Year | A Conversation with Boris & Cat",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109401&idx=1&sn=acf1fe8c20b64233fd9bb7ea1d8453ba",
+        "wordCount": 7309
+      },
+      {
+        "authors": [
+          "十字路口Crossing"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045458_5f2addf4",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_e67ff5dc",
+        "keyQuotes": [
+          "What made you successful in the past may not carry you forward.",
+          "Don't mistake 'busyness' for 'progress.'",
+          "If you weren't afraid, what would you do? From time to time, do something that scares you.",
+          "Where users take detours is the next product opportunity."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "When AI enables everyone to submit code, the constraint shifts from 'who writes' to 'how to verify.' Teams need to codify what 'good' means into repo specifications, let Claude automate verification, and be cautious not to mistake 'being busy' for 'making progress.'",
+            "point": "Writing code is no longer the bottleneck; validation and measurement are the new bottlenecks."
+          },
+          {
+            "explanation": "One type can build end-to-end ideas into great products; the other guards deep areas like distributed systems that require rigorous oversight. The underlying principle is trust but verify.",
+            "point": "Only hire two types: product-oriented builders and deep system experts."
+          },
+          {
+            "explanation": "Give everyone the freedom to act independently, but they must clearly state the validation hypotheses and who is responsible. Freedom and accountability are two sides of the same coin, especially critical for an AI-native team.",
+            "point": "High agency must be paired with high accountability."
+          },
+          {
+            "explanation": "No dashboard can replace the feel of using the product firsthand; many critical judgments come from specific cases. When data and individual cases conflict, sometimes trust the case.",
+            "point": "Managers must live in the product and practice dogfooding."
+          },
+          {
+            "explanation": "What made you successful in the past may not carry you forward. When facing fear, first ask what's within your control, then go do the scary thing.",
+            "point": "The differentiator is a growth mindset; what holds people back is fear."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Fiona Fung, head of Claude Code, shares how to build an AI-native engineering team: writing code is no longer the bottleneck; validation and measurement become core; hiring focuses on either product-oriented builders or deep system experts; management is automated through an always-on Claude session, emphasizing high agency paired with high accountability.",
+        "originalTitle": "Claude Code 工程负责人 Fiona Fung：如何打造全世界最 AI Native 的工程团队?",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 11:21:00",
+        "publishTimeStamp": 1782530460000,
+        "qualified": false,
+        "readCount": 61,
+        "readTime": 41,
+        "readUrl": "https://www.bestblogs.dev/article/e67ff5dc",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_f63517",
+        "sourceImage": "https://image.jido.dev/20251127045458_5f2addf4",
+        "sourceName": "十字路口Crossing",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is compiled from an in-depth interview with Fiona Fung on Lenny's Podcast. Fiona is the engineering lead for Claude Code and Cowork, with over 25 years of experience in leadership roles at companies including IBM, Microsoft (working on Visual Studio and TypeScript), and Meta (founding Facebook Marketplace, working on AR glasses). The article revolves around the core insight that \"writing code is exiting the bottleneck position.\" Key themes discussed include: When designers and PMs can all submit code, validation replaces coding as the new bottleneck; teams should codify what \"good\" means into specifications stored in the repository, and let Claude verify against them; hiring is limited to two types—builders with product dreams and deep system experts who tackle tough problems, matched with the principle of \"trust but verify\"; management is being reshaped by asynchronous culture—a permanent Claude remote session is attached to all codebases, maintaining full awareness at all times. Routines go beyond cron jobs by having a \"brain\" that can autonomously generate prompts, dispatch agents, and produce reviewable PRs; high agency must be paired with high accountability—grant freedom while requiring clear validation hypotheses and responsible parties; managers must live in the product and practice dogfooding—when data and individual cases conflict, sometimes trust the case; the differentiator is a growth mindset, and what holds people back is fear—encourage doing things that scare you. The article also covers JIT (Just-in-Time) planning, role fusion for engineers, proactively managing quality with a \"bad & sad\" framework, and the culture of cutting useless processes. The compilation retains the essence of the original interview with added editor commentary, offering high value for engineering managers in the AI era.",
+        "tags": [
+          "AI Coding",
+          "AI Agent",
+          "Engineering Management",
+          "Developer Tools",
+          "AI Products & Applications"
+        ],
+        "title": "Fiona Fung, Engineering Lead at Claude Code: How to Build the Most AI-Native Engineering Team?",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109536&idx=1&sn=bc784fdeb9790f763fd274666c6975b7",
+        "wordCount": 10215
+      },
+      {
+        "authors": [
+          "Emmimal P Alexander"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/Context-Graph.jpg",
+        "domain": "towardsdatascience.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_0b2a6406",
+        "keyQuotes": [
+          "Multi-agent systems lose cross-agent decisions because flat transcripts and vector search both have a structural blind spot — not just a noise problem.",
+          "The context graph wins on accuracy and uses about 18x fewer tokens per query than the raw dump. That is not a tradeoff—it is a win on both axes.",
+          "If you are shipping anything like this, handling fact supersession is not optional. It is the exact line between building a reliable memory layer and building a major liability."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "No single chunk or embedding contains both pieces of information, so similarity search cannot produce the correct answer regardless of model quality. This is the core problem the context graph solves.",
+            "point": "Flat memory stores (raw transcripts and vector RAG) have a structural blind spot for join queries that require combining two separately stated facts."
+          },
+          {
+            "explanation": "By filtering out distractors and writing only structured triples into a NetworkX multigraph, the system can walk from entity to entity along relationships like DEPENDS_ON or ASSIGNED_TO, retrieving combined information that flat stores miss.",
+            "point": "The context graph stores facts as entities and typed relationships, enabling graph traversal to answer multi-hop questions."
+          },
+          {
+            "explanation": "Using rule-based extraction, TF-IDF vectorizer, and substring matching for grading, the test is reproducible byte-for-byte. The graph's token efficiency (26.9 vs 490.9 tokens/query) is an additional practical advantage.",
+            "point": "The benchmark is fully deterministic (no LLM calls, no random state) to isolate architectural differences, and the results show clear superiority of the graph: 88.9% vs 61.1% vs 50.0% accuracy."
+          },
+          {
+            "explanation": "Graph nodes must be linked to query language via aliases, and fact supersession must be explicitly handled (old edges removed when a predicate is restated) to avoid returning outdated information with full confidence.",
+            "point": "Two production-critical bugs—entity vocabulary mismatch and stale fact retrieval—were discovered and fixed, highlighting real engineering challenges."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article presents a context graph layer for multi-agent memory that outperforms raw history dumps and vector-only RAG on join queries by storing facts as entities and relationships, achieving 88.9% accuracy at 26.9 tokens per query.",
+        "originalTitle": "Vector RAG Isn’t Enough — I Built a Context Graph Layer for Multi-Agent Memory",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 02:37:56",
+        "publishTimeStamp": 1782412676000,
+        "qualified": false,
+        "readCount": 58,
+        "readTime": 16,
+        "readUrl": "https://www.bestblogs.dev/article/0b2a6406",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_0c32dbfa",
+        "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+        "sourceName": "Towards Data Science",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author describes building a multi-agent system where agents frequently fail to recall decisions made by other agents, even when full transcripts are available. After identifying the issue as a structural retrieval problem rather than a token compression or staleness issue, they propose a context graph architecture that stores facts as (subject, predicate, object) triples in a NetworkX graph, enabling multi-hop traversal for join queries. A deterministic benchmark with 18 graded queries across five scenarios compares three architectures: raw history dump (61.1% accuracy, 490.9 tokens/query), vector-only RAG using TF-IDF (50.0%, 75.9 tokens/query), and the context graph (88.9%, 26.9 tokens/query). The graph wins both accuracy and efficiency, with the largest gap on join queries (80% vs 20%). The article also discusses two identified bugs—entity vocabulary mismatch and stale fact retrieval—and their fixes, which are critical for production use.",
+        "tags": [
+          "Multi-Agent Systems",
+          "AI Memory",
+          "RAG",
+          "Context Graph",
+          "LLM Engineering"
+        ],
+        "title": "Vector RAG Isn’t Enough — I Built a Context Graph Layer for Multi-Agent Memory",
+        "translateContent": null,
+        "url": "https://towardsdatascience.com/vector-rag-isnt-enough-i-built-a-context-graph-layer-for-multi-agent-memory/",
+        "wordCount": 3825
+      },
+      {
+        "authors": [
+          "腾讯云开发者"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045410_4d44587a",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_f5be38cf",
+        "keyQuotes": [
+          "Coding Agents can only reduce the cost of each line of \"code generation,\" but cannot reduce the cost of each line of \"code going live and serving long-term.\"",
+          "The real constraint of the system should not be placed in the generation phase, but should fall on the verification phase."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "When code generation speed exceeds human audit speed, continuing to rely on human verification is physically unscalable; scaling verification capabilities is the key to a healthy engineering closed loop.",
+            "point": "AI code generation reduces production costs, but verification and integration costs become the new bottleneck."
+          },
+          {
+            "explanation": "The real constraint of the system should not be placed in the generation phase (e.g., verbose specs), but in the verification phase—using executable and reproducible mechanisms such as AST checks and automated tests to filter candidate code.",
+            "point": "The core of the engineering paradigm should shift from generation to verification, building an executable and scalable judgment system."
+          },
+          {
+            "explanation": "Requirement owners (including Coding Agents) focus on incremental changes, while component owners are responsible for the quality of file directories. Through fine-grained OWNERS reviews and skills.md documentation of engineering experience, they alleviate the verification pressure brought by AI.",
+            "point": "Organizations can achieve a human-machine collaborative engineering system through role separation and a monorepo model."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article deeply analyzes the core challenge facing Infra engineering in the era of AI code generation: scaling verification capabilities is the true bottleneck, and proposes organizational and engineering collaborative solutions.",
+        "originalTitle": "每天 10 万行 AI 代码，人肉 Code Review 的崩塌是 Infra 工程的范式拐点",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 08:45:00",
+        "publishTimeStamp": 1782261900000,
+        "qualified": false,
+        "readCount": 57,
+        "readTime": 18,
+        "readUrl": "https://www.bestblogs.dev/article/f5be38cf",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_efac5b",
+        "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+        "sourceName": "腾讯云开发者",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article revolves around the contradiction between AI code generation and Infra engineering, pointing out that Coding Agents lower the cost of code generation, but verification and integration capabilities have not improved synchronously, amplifying system risks. The author analyzes the limitations of the \"human out of the loop\" model in Infra scenarios, emphasizing that the core of the engineering paradigm should shift from code generation to industrialization of verification capabilities. By comparing self-evolving systems in areas like autonomous driving, the author proposes building an executable and scalable judgment system. For organizational structure, the author imagines a scenario of generating 100,000 lines of code per day and proposes solutions such as a large Git monorepo, splitting roles into requirement owner and component owner, and fine-grained OWNERS reviews. Finally, the author explores the future value of engineers: humans may become the interface layer between AI and reality, responsible for constraints, review, accountability, and explanation. The article is logically rigorous, with independent perspectives, providing deep insights into the deep issues of software engineering in the AI era.",
+        "tags": [
+          "AI Coding",
+          "Infra Engineering",
+          "Code Review",
+          "Engineering Practice",
+          "Software Architecture"
+        ],
+        "title": "100,000 Lines of AI Code Per Day: The Collapse of Human Code Review Is a Paradigm Shift in Infra Engineering",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247696004&idx=1&sn=ad92d5f29ad82113916c858524a618eb",
+        "wordCount": 4255
+      },
+      {
+        "authors": [
+          "dbaplus社群"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045413_187dd537",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_a0fa9a45",
+        "keyQuotes": [
+          "Lesson one: not all scenarios need to use large models.",
+          "The vast majority of problems (over 90%) are caused by changes — no change, no failure.",
+          "Human-machine collaboration to address hallucinations: when destructive operations are involved, introduce a human-machine collaboration mechanism and add a confirmation step to ensure safety."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Cloud-native and microservices have increased the number of services to over 3,000 and monitoring items to tens of millions, making it difficult for traditional models to meet the \"1, 5, 10\" service level objectives, making an upgrade imperative.",
+            "point": "Traditional AIOps has clear limitations in data silos, loss of experience, human-machine interaction barriers, and generalization of single-point models."
+          },
+          {
+            "explanation": "First, improve ops development efficiency through AI-assisted programming; then build a knowledge base and MCP tools as foundational capabilities; finally, gradually transform high-frequency scenarios into AI Agents to form a tool matrix.",
+            "point": "Sina Weibo's AI system is built in three major steps and five key phases: AI-assisted programming, foundational capability building, and AI Agent construction."
+          },
+          {
+            "explanation": "The AI Agent automatically collects data, aggregates analysis, and outputs hot event summaries, traffic characteristics, root cause localization, and handling recommendations, greatly reducing response time. Traditional manual methods are inefficient and rely on personal experience.",
+            "point": "Hot event response, root cause analysis, and client crash analysis are the three AI Agent scenarios with the most significant implementation results."
+          },
+          {
+            "explanation": "In some scenarios, using AI to optimize automation strategies is more efficient and cost-effective; destructive operations require human-machine confirmation; small models can handle annotation tasks to balance efficiency and cost.",
+            "point": "Implementation experience emphasizes \"not all scenarios need large models,\" introducing AI-enhanced mechanisms, data cleaning, human-machine collaboration, and small model assistance."
+          },
+          {
+            "explanation": "The bottom layer is AI-assisted coding to improve development efficiency; the middle layer is the knowledge base and MCP tool API system; the top layer is Agent-assisted decision-making and enhanced automation, forming a complete intelligent operations system.",
+            "point": "AI + AIOps capabilities should be divided into three layers: AI-assisted development, foundational capability base, and AI Agent-assisted decision-making."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Sina Weibo shares its practical experience in deploying AI Agents for operations, leveraging knowledge bases, MCP tools, and a layered AI system to significantly improve efficiency in scenarios such as hot event response and root cause analysis.",
+        "originalTitle": "AI Agent 协作运维在新浪微博的落地与演进",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 07:15:00",
+        "publishTimeStamp": 1782342900000,
+        "qualified": false,
+        "readCount": 56,
+        "readTime": 16,
+        "readUrl": "https://www.bestblogs.dev/article/a0fa9a45",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_a234fa",
+        "sourceImage": "https://image.jido.dev/20251127045413_187dd537",
+        "sourceName": "dbaplus社群",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is a compilation of a speech by Ma Zhen, head of the basic platform at Sina Weibo's R&D center, at a technology conference. It provides a detailed introduction to the overall approach and implementation cases of AI Agent collaborative operations at Weibo. It first analyzes the escalating complexity of operations brought by cloud-native and multi-cloud environments, as well as the limitations of traditional AIOps such as data silos, loss of experience, and high human-machine interaction barriers. It then proposes a three-step strategy: AI-assisted programming, foundational capability building (operations knowledge base and MCP tool encapsulation), and AI Agent construction. It highlights three representative scenarios — Hot Event Response AI Agent, Root Cause Analysis Public Opinion Agent, and Client Crash Analysis — each outlining the pain points of traditional methods and the significant improvements brought by AI solutions. Finally, it summarizes insights from the implementation: not all scenarios require large models, importance of data cleaning and cost control, human-machine collaboration to address hallucinations, and assistance from smaller models. Overall, it presents a capability layering of AI + AIOps (AI-assisted development, foundational capability base, and AI Agent-assisted decision-making), offering a reference path for operations teams of similar scale.",
+        "tags": [
+          "AI Agent",
+          "AIOps",
+          "Intelligent Operations",
+          "Root Cause Analysis",
+          "Knowledge Base"
+        ],
+        "title": "AI Agent Collaborative Operations at Sina Weibo: Implementation and Evolution",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247636900&idx=1&sn=2f2b208f923efb976eabbb5026b15ec6",
+        "wordCount": 3873
+      },
+      {
+        "authors": [
+          "字节跳动技术团队"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045356_0393a1bf",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_b02cc219",
+        "keyQuotes": [
+          "Don't use LLMs for simple switch-cases.",
+          "Less talk about tricky Prompts, more talk about solid System Engineering.",
+          "The model itself hasn't gotten smarter; we just stopped interfering with it with garbage information.",
+          "Respect engineering principles and manage complexity well.",
+          "Let large models step down from the pedestal, get into the assembly line, and become extremely robust, stable, and fast industrial-grade productivity engines."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The three nodes require three independent decision flows per call, leading to a sharp deterioration in TTFT; state repetition between nodes causes attention dilution; new tools cannot be naturally integrated, forcing engineers to hard-code If-Else, degrading the system.",
+            "point": "The standard ReAct three-node architecture has three major sins in high-concurrency industrial scenarios: high latency, context oscillation, and broken control flow."
+          },
+          {
+            "explanation": "Predefined paths and hard rules are delegated to Workflow, while Agents only handle dynamic strategy decisions; tools act as strong contracts determining the system's lower bound; context management is independent as a module; the system is measured by multi-dimensional metrics rather than subjective feelings.",
+            "point": "Industry consensus shifts towards System Engineering: Workflow and Agent stratification, everything as a Tool, context independence, and production-level Eval."
+          },
+          {
+            "explanation": "Thought/Action/Iteration are merged into a single Policy node, completing planning, action selection, and termination determination in a single forward pass; all behaviors are encapsulated as Tools (including exit, deep thinking, etc.); Context Manager manages context via budget windows, semantic compression, and tiered eviction, reducing interference.",
+            "point": "The Unified Policy Agent solves the pain points of ReAct through unified control, unified behavior, and unified state."
+          },
+          {
+            "explanation": "By eliminating redundant nodes and denoising the context, the model's attention is focused on the core objective, reducing the decision distortion rate and breaking the conventional law that speed and quality are mutually exclusive.",
+            "point": "The new architecture achieves a dual improvement in speed and quality, with TTFT decreasing by 30% while recommendation and conversational quality significantly increase."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article details how the Volcengine AI Search team evolved the standard ReAct architecture into a Unified Policy Agent architecture, achieving a 30% reduction in TTFT and improved recommendation quality through Workflow and Agent stratification, and unified control/behavior/state.",
+        "originalTitle": "火山引擎 AI 搜索千万级 Agent 架构演进与实践：从 ReAct 三节点到 Unified Policy",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 17:00:00",
+        "publishTimeStamp": 1782464400000,
+        "qualified": false,
+        "readCount": 55,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/b02cc219",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_aeae8d",
+        "sourceImage": "https://image.jido.dev/20251127045356_0393a1bf",
+        "sourceName": "字节跳动技术团队",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article deeply analyzes the three major engineering sins of the standard ReAct architecture in enterprise-level AI search scenarios: extremely high latency, context oscillation, and broken control flow. Combining industry consensus, it proposes principles such as strict stratification of Workflow and Agent, everything as a Tool, and context independence. Based on this, the Volcengine AI Search team designed the Workflow + Unified Policy Agent (UP-ReAct) architecture, delegating deterministic processes to Workflow and dynamic decisions to Unified Policy, abstracting all behaviors as Tools, and managing state uniformly via Context Manager. In real e-commerce evaluations, this architecture reduced TTFT from 14.045s to 9.8s (a 30.22% decrease), improved recommendation accuracy by 3.76%, and enhanced conversational experience by 14.78%, breaking the conventional perception that speed and quality are mutually exclusive. The article emphasizes that system complexity should be properly managed through boundary划分, rather than stuffed into the model.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "System Design",
+          "Architecture Evolution",
+          "Context Engineering"
+        ],
+        "title": "Volcengine AI Search 10-Million-Level Agent Architecture Evolution and Practice: From ReAct Three-Node to Unified Policy",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520575&idx=1&sn=6d3a2d35f06bf57d763e1a41c5e00a6f",
+        "wordCount": 5483
+      },
+      {
+        "authors": [
+          "AINLP"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045506_e620592f",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_f547eb02",
+        "keyQuotes": [
+          "Scaling laws are one of the most critical empirical discoveries in deep learning.",
+          "Kaplan et al.'s conclusion is \"models should grow faster than data\" (), while Chinchilla's conclusion is \"whenever model size doubles, the number of training tokens should also double\" ().",
+          "Although scaling laws have a clean formulation, in practice, fitting scaling laws can be unexpectedly sensitive to seemingly trivial procedural choices."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Training loss decreases as a power law with the increase of model parameters, dataset token count, and total compute, appearing as a straight line on a log-log plot. This pattern can be used to predict the performance of larger-scale models.",
+            "point": "The core of scaling laws is the power-law relationship between model size, data volume, and compute, which is one of the most critical empirical discoveries in deep learning."
+          },
+          {
+            "explanation": "Kaplan suggests that model size should grow faster than data, while Chinchilla argues that parameters and tokens should scale proportionally. The divergence is primarily caused by the proportion of embedding parameters in the small model regime and the local power-law exponent differences of non-embedding parameters.",
+            "point": "Kaplan et al. and Chinchilla offer different conclusions on compute-optimal allocation, with the discrepancy stemming from experimental scale and parameter definitions."
+          },
+          {
+            "explanation": "Muennighoff et al. and Lovelace et al. respectively propose modeling repeated data as a decay in effective token count and introducing an overfitting penalty term, thereby recalculating the optimal model size under limited unique data.",
+            "point": "When data is constrained, repeated data leads to overfitting, and scaling laws require modification with an effective data decay term."
+          },
+          {
+            "explanation": "Besiroglu et al.'s replication study shows that rounding loss values, minor noise, and the choice of fitting data range can significantly alter the fitted parameters, leading to large deviations between predictions and actual results.",
+            "point": "Practical fitting of scaling laws is highly sensitive to details like precision, noise, and fitting regions, making it prone to erroneous extrapolation."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article systematically reviews the research context of LLM Scaling Laws, from early machine learning loss predictability and Kaplan vs. Chinchilla compute-optimal allocation, to data-constrained regimes and sensitive pitfalls in practical fitting, providing a comprehensive and in-depth guide to understanding scaling laws.",
+        "originalTitle": "翁荔最新万字长文：大模型 Scaling Laws，要谨慎理解",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 14:00:00",
+        "publishTimeStamp": 1782453600000,
+        "qualified": false,
+        "readCount": 51,
+        "readTime": 34,
+        "readUrl": "https://www.bestblogs.dev/article/f547eb02",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_6d214b",
+        "sourceImage": "https://image.jido.dev/20251127045506_e620592f",
+        "sourceName": "AINLP",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article is translated from a blog post published by Lilian Weng in June 2026, serving as the complete Chinese translation of her \"Scaling Laws, Carefully\" essay. The author starts with the predictability of early machine learning loss, reviewing Amari et al.'s four learning curve theories, Hestness et al.'s empirical power-law discoveries, and Rosenfeld et al.'s modeling of error as a joint function of model size and data size. She then deeply analyzes the classic scaling laws of Kaplan et al. (2020), pointing out the divergence between its conclusion that \"model size should grow faster than data\" and the Chinchilla paper (Hoffmann et al., 2022), explaining the sources of this divergence: the non-negligible proportion of embedding parameters in the small model regime, differences in experimental scale, etc. The article further explores scaling laws under data-constrained scenarios, introducing Hernandez et al.'s double descent phenomenon with data repetition, and the modified modeling for data-constrained training by Muennighoff et al. and Lovelace et al. Finally, it strongly warns about the tricky aspects of fitting scaling laws in practice, using Besiroglu et al.'s replication study of Chinchilla's Method 3 as an example to demonstrate how loss precision, noise, and the choice of fitting region can lead to significant deviations in predictions, accompanied by an interactive toy simulation. The entire article cites 15 references, features a clear structure and rigorous argumentation, making it a rare systematic review in the field of LLM scaling laws.",
+        "tags": [
+          "Scaling Laws",
+          "LLM",
+          "Model Training",
+          "Data Scale",
+          "Compute Optimization"
+        ],
+        "title": "Lilian Weng's Latest 10,000-Word Essay: Understanding LLM Scaling Laws Carefully",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650452401&idx=1&sn=76196084fc28f66cf4850b6a1730180a",
+        "wordCount": 8259
+      },
+      {
+        "authors": [
+          "智能涌现"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260527051842_70ebde1.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_ffc4417c",
+        "keyQuotes": [
+          "With each generation of models, we are betting against the consensus.",
+          "Once you care too much about what others think, chances are you haven't thought from first principles.",
+          "History has repeatedly proven that every attempt to decompose the world using human priors essentially underestimates its complexity. I recommend memorizing the full text of 'The Bitter Lesson'.",
+          "The world model is still in its pre-GPT era.",
+          "We believe that what should truly be predicted is not any human-defined hidden state, but the raw observations given to us by the world itself."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Cao Yue believes that video is a causal relationship in time sequence, making 'Predict Next Frame' the most natural paradigm. Magi-1 outperforms pure diffusion models like Nvidia Cosmos3-Super and Sora-2 on Physics-IQ.",
+            "point": "The autoregressive approach is the most essential way to model video data, surpassing diffusion models."
+          },
+          {
+            "explanation": "In 2025, Sand.ai decided to shift from Dense to MoE, with almost no one else in China taking the same path. MoE can significantly reduce training and inference costs while maintaining equivalent quality, making Scaling sustainable.",
+            "point": "Video models face an impossible triangle of cost, speed, and quality; the MoE architecture is the only breakthrough path."
+          },
+          {
+            "explanation": "Video encodes dimensions such as time, space, vision, and sound, offering the highest information density and volume. Cao Yue calls for bypassing human priors (e.g., state) and directly predicting pixels/frames, analogous to the ultimate victory of 'Predict Next Token' in LLMs.",
+            "point": "Video data is the most important path to the world model, and we should model raw observations rather than human-defined states."
+          },
+          {
+            "explanation": "Cao Yue believes the current discussion around the world model is too noisy, lacking a common definition and reliable data. A true world model must infer the next observation directly from the current observation, not from a human-defined hidden state.",
+            "point": "The world model is still in its pre-GPT era: insufficient data, unclear definition, and unconsolidated technical routes."
+          },
+          {
+            "explanation": "In the video model track, once the model unlocks its capabilities, the work of scaffolding on the product side is reduced, but end-to-end user feedback can feed back into model post-training. The VidMuse music agent has achieved millions of dollars in ARR, validating the path to productization.",
+            "point": "Startups must drive both models and products; they cannot simply be API sellers."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article, through an exclusive in-depth interview with Sand.ai founder Cao Yue, elaborates on his three-generation technical bets—from the autoregressive approach, synchronous audio-video output, to the MoE architecture—and argues that video data is the most crucial path towards the world model.",
+        "originalTitle": "独家｜获超亿美元融资，Sand.ai 曹越：为什么视频是通往世界模型最重要的路径",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 13:00:00",
+        "publishTimeStamp": 1782104400000,
+        "qualified": false,
+        "readCount": 49,
+        "readTime": 25,
+        "readUrl": "https://www.bestblogs.dev/article/ffc4417c",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_ef8832",
+        "sourceImage": "https://image.jido.dev/20260527051842_70ebde1.jpeg",
+        "sourceName": "智能涌现",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is an exclusive in-depth interview with Cao Yue, founder of Sand.ai, by The Intelligent Surge. It first reviews Sand.ai's development over nearly three years, including its bet on the autoregressive approach (Magi-1), the pioneering achievement of synchronous audio-video output (Gaga-1), and the non-consensual decision to shift to the MoE architecture (next-generation model). Cao Yue explains in detail the impossible triangle of cost, speed, and quality in video models, and argues that MoE is the key breakthrough. Amid the current overuse of the term 'world model,' Cao Yue offers a clear definition: the world model is still in its pre-GPT era, lacking sufficient data and a clear definition; video data, which encodes time, space, vision, and sound, is the most important data type for achieving the world model. He also advocates modeling raw observations rather than human-defined states to avoid repeating the failures of tokenization. On the application front, Sand.ai has launched the music agent product VidMuse, achieving millions of dollars in ARR, and insists on a dual-drive strategy of models and products. Finally, Cao Yue provides independent judgments on the competitive landscape (five players in three tiers), the reasons for Sora's shutdown, and China's advantages in video models. The article is dense with information, presents clear technical opinions, and incorporates strategic thinking.",
+        "tags": [
+          "World Model",
+          "Video Generation",
+          "Autoregressive",
+          "MoE Architecture",
+          "AI Entrepreneurship"
+        ],
+        "title": "Exclusive | After Securing Over USD 100 Million in Funding, Sand.ai's Cao Yue: Why Video Is the Most Important Path to the World Model",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkwMDQ2NDU2Nw==&mid=2247516888&idx=1&sn=f4e0ca5928765a5e7512916c1d0daaa0",
+        "wordCount": 6210
+      },
+      {
+        "authors": [
+          "非凡产研"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260602220632_a860999.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_5e70791d",
+        "keyQuotes": [
+          "Create dependency, not curiosity.",
+          "If you're just enhancing efficiency, people won't pay for it.",
+          "A demo is the cheapest competitive moat.",
+          "Data itself is a still photo; a data flywheel is a movie in playback.",
+          "Sleep under the customer's desk for two weeks."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Jim Lim pointed out that if no one notices when an Agent disappears, it is just a tool; only by creating \"dependency\"—where the customer's business process is interrupted—does it become mission-critical.",
+            "point": "Most AI Agent companies only create curiosity rather than dependency, and won't survive until 2030."
+          },
+          {
+            "explanation": "Yiliang believes that simply having data is not enough; the key lies in whether input data can be used to optimize models, and user feedback can be turned back into new data, forming an iterative loop.",
+            "point": "The true moat is the data flywheel, not static proprietary data."
+          },
+          {
+            "explanation": "Manasi emphasized the ability to 100% replace employees and immediately demonstrate ROI; Jeffrey noted that once integrated into workflows, customers \"can't leave\"; Jim believes that replacing employees rather than just enhancing efficiency is the prerequisite for getting paid.",
+            "point": "Agent companies that survive must possess three characteristics: irreplaceability, clear ROI, and workflow integration."
+          },
+          {
+            "explanation": "Jeffrey urged entrepreneurs to go directly to the target market, as Singapore is too comfortable; Jim suggested using the Political, Economic, Social, Technological, Legal, and Environmental framework to evaluate markets and choose the right soil.",
+            "point": "Globalization should start from Day 1, using PESTLE to select the first market."
+          },
+          {
+            "explanation": "Arun shared his own failure experience: fighting on three fronts in Singapore, Hong Kong, and India almost killed the company; only after refocusing did they return to the growth track.",
+            "point": "Entrepreneurs must focus extremely on a single pain point and avoid spreading themselves too thin."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "In a roundtable discussion, five top VCs stated bluntly that most AI Agent companies have only created curiosity rather than dependency, and won't survive until 2030; the key to survival is building customer dependency through irreplaceability, clear ROI, and workflow integration.",
+        "originalTitle": "大多数 AI Agent 公司，活不到 2030 年？",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 19:00:00",
+        "publishTimeStamp": 1782385200000,
+        "qualified": false,
+        "readCount": 47,
+        "readTime": 63,
+        "readUrl": "https://www.bestblogs.dev/article/5e70791d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SRC_b232afbf",
+        "sourceImage": "https://image.jido.dev/20260602220632_a860999.jpeg",
+        "sourceName": "非凡产研",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is compiled from a roundtable discussion at the Singapore Agent Summit, where five VCs (Golden Gate Ventures, Openspace Capital, 59st Ventures, Monk's Hill Ventures, Accel) shared their core criteria for evaluating AI Agent startups. The article first points out that most companies remain at the \"curious\" demo stage and fail to create \"dependency\"—meaning no one notices when the Agent disappears. The investors emphasize that the true moat is the \"data flywheel\" (proprietary data + iterative optimization), rather than static data; surviving companies must make Agents irreplaceable (replacing employee tasks), have quantifiable ROI (key metrics drop significantly when the Agent is unavailable), and deeply integrate into customer workflows. Additionally, globalization should start from Day 1, using the PESTLE framework to select the first market and focusing on a single pain point to the extreme. The five VCs also provided their respective \"startup first aid kit\" keywords, such as globalization, speed, resilience, unique insights, and data flywheel. The article concludes with \"sleeping under the customer's desk for two weeks,\" emphasizing that entrepreneurs must be extremely obsessed with customer pain points.",
+        "tags": [
+          "AI Agent",
+          "Startups & Investment",
+          "AI Commercialization",
+          "Data Flywheel",
+          "Globalization"
+        ],
+        "title": "Most AI Agent Companies Won't Survive Until 2030?",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521831&idx=1&sn=2f271f4bf1e9da0581a25f809ff8de50",
+        "wordCount": 15557
+      },
+      {
+        "authors": [
+          "刘学文"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/NIO-T.jpg",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_8b75c64e",
+        "keyQuotes": [
+          "The side-facing LiDARs are like two extra airbags NIO installed for the intelligent system.",
+          "The essence of data is computing power.",
+          "Testing is getting more and more 'intense', even more intense than playing video games.",
+          "The body of a car is still young, but will its brain age first?",
+          "If one extra LiDAR makes a difference visible to everyday users, then the existing system is too poor."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The NT2 platform chose advanced configurations like high-line-count LiDAR and four Orin chips, allowing a vehicle to continue receiving software upgrades over the next five to ten years, preventing the intelligent components from aging prematurely.",
+            "point": "Hardware pre-deployment is key to achieving a long-term intelligent life cycle."
+          },
+          {
+            "explanation": "Ren Shaoqing noted that Transformer's demand for memory bandwidth is 8 to 70 times that of CNN. Therefore, Shenji uses advanced processes and multi-channel design, aiming not to pile up TOPS but to ensure efficient execution of multimodal large models on the vehicle.",
+            "point": "The self-developed Shenji chip focuses not on absolute computing power but on high memory bandwidth to accommodate Transformer."
+          },
+          {
+            "explanation": "Instead of using NVIDIA's standard toolchain, NIO developed its own compiler for automatic operator optimization and graph optimization, reducing cross-chip model deployment time from one to two weeks to one to two days, while improving inference efficiency by over 20%.",
+            "point": "The self-developed AI compiler is the core tool for achieving unified deployment."
+          },
+          {
+            "explanation": "Truly valuable data consists of edge cases specific to a particular model, which must be screened through coordinated computing power on the vehicle and cloud rather than simple storage. Only by converting data into a scheduling of computing power can model performance be improved at an acceptable cost.",
+            "point": "The essence of data is computing power; the data closed loop is a computing power scheduling system."
+          },
+          {
+            "explanation": "As autonomous driving capabilities improve, piling mileage on traditional test vehicles becomes inefficient. NIO deploys a validation system via the cloud, utilizing hundreds of thousands of production vehicles (across NT2 and NT3) for active safety validation, achieving over 100 million kilometers validated per week, delivering quadruple the validation effect.",
+            "point": "Production vehicle distributed validation network is an inevitable path to improve testing efficiency."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through a conversation with NIO's autonomous driving head Ren Shaoqing, this article deeply analyzes how NIO achieves efficient adaptation and continuous iteration of a single world model across multiple generations of chips, platforms, and vehicle models through hardware pre-deployment, self-developed chips and AI compiler, unified deployment framework, and production vehicle validation network.",
+        "originalTitle": "对话蔚来高级副总裁任少卿：一个世界模型，如何适配两套芯片、四个平台和十几款车？",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 20:04:57",
+        "publishTimeStamp": 1782216297000,
+        "qualified": false,
+        "readCount": 44,
+        "readTime": 23,
+        "readUrl": "https://www.bestblogs.dev/article/8b75c64e",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Taking NIO's world model upgrade as a starting point, the article focuses on the core challenge of intelligent driving system engineering: how to make one model simultaneously adapt to Orin and Shenji chips, NT2 and NT3 platforms, and over a dozen models under NIO and Onvo brands. Ren Shaoqing starts with the hardware pre-deployment strategy, pointing out that the aggressive configuration of the NT2 platform (roof-mounted LiDAR, four Orin chips, 8-megapixel cameras) was a pre-deployment for the intelligent life cycle. At the chip level, the design of Shenji anticipated the memory bandwidth demands of Transformer, claiming that one Shenji chip can match the performance of four Orin chips. To address multi-platform differences, NIO developed its own AI compiler to achieve automatic operator optimization and unified deployment, compressing model deployment time from days to within two hours, and using AI agents to automate development processes. Data is redefined as computing power rather than storage, with the core being the screening of edge cases. NIO also built a distributed validation network using hundreds of thousands of production vehicles, with active safety validation exceeding 40 million kilometers per week. The article concludes by emphasizing safety goals, aiming to increase the accident-free safety mileage from 6.79 million kilometers to 10 million or even 100 million kilometers, ultimately returning to the essence of reducing accidents.",
+        "tags": [
+          "Autonomous Driving",
+          "World Model",
+          "AI Chip",
+          "AI Compiler",
+          "Data Closed Loop"
+        ],
+        "title": "Conversation with NIO Senior Vice President Ren Shaoqing: How to Adapt One World Model to Two Chips, Four Platforms, and Over a Dozen Vehicles?",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1669670?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 5679
+      },
+      {
+        "authors": [
+          "大淘宝技术"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045404_f9729af6",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_6bd595a6",
+        "keyQuotes": [
+          "Tools are made for AI to use, not for humans.",
+          "Don't build a pipeline—build a 'visual reference system' that AI can consult.",
+          "Design drafts are not inputs; they are reference materials.",
+          "The true value of an Agent lies not in generating a result in one shot, but in running its own autonomous loop of 'Observe → Plan → Execute → Reflect'."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Coding Agents already have coding capabilities, but feeding raw design draft data (complex layer trees, decorative layers, multi-state artboards) directly introduces a lot of noise. Engineering-level noise reduction and on-demand querying are needed to provide clean visual context.",
+            "point": "The essence of visual restoration is a context problem, not a code generation problem."
+          },
+          {
+            "explanation": "Traditional D2C attempts to generate complete code in one go, but code without business context is unusable. Tarot Pixel lets the Coding Agent query design details on demand, with implementation done by the Agent that has full project context.",
+            "point": "'Don't build a pipeline, build a library' — design drafts should serve as reference materials, not as inputs."
+          },
+          {
+            "explanation": "Agent tools need natural formats (prose, markdown), thorough documentation, graceful error handling, and the assumption that Agents may use them in unexpected ways—this differs from traditional API design thinking.",
+            "point": "Tools should be designed for Agents, not for humans."
+          },
+          {
+            "explanation": "The Agent continuously corrects within the 'Observe → Plan → Execute → Reflect' loop. Even if the first restoration is only 80% accurate, high quality can be achieved through conversational back-and-forth comparisons, meeting the dynamic needs of complex pages.",
+            "point": "The Agent's autonomous loop is more valuable than one-shot generation."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article introduces Tarot Pixel, an Agent-Native visual restoration solution: instead of generating code, it transforms design drafts into structured visual previews, allowing the Coding Agent to query on demand and implement autonomously, integrating visual restoration into the Agent's autonomous loop.",
+        "originalTitle": "场景营销前端 AI Coding — AI Native 的视觉稿还原",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 15:26:00",
+        "publishTimeStamp": 1782285960000,
+        "qualified": false,
+        "readCount": 42,
+        "readTime": 49,
+        "readUrl": "https://www.bestblogs.dev/article/6bd595a6",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_efc2de",
+        "sourceImage": "https://image.jido.dev/20251127045404_f9729af6",
+        "sourceName": "大淘宝技术",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Starting from the pain points of visual restoration in the AI Coding era, the article analyzes multiple structural contradictions of traditional D2C platforms: reliance on manual layer selection, image slicing, multi-state recognition, and decoupling of visual restoration from business logic. The core insight is that design drafts should enter the Agent workflow as reference materials, not as full data pushes. Tarot Pixel's design philosophy is 'Don't build a pipeline, build a library': it exports design drafts once into structured HTML previews, provides REST APIs for the Agent to query on demand—the engineering layer handles noise reduction and data extraction, while the AI layer focuses on semantic understanding. The Agent autonomously decides implementation methods within a closed loop of 'Observe → Plan → Execute → Reflect', and supports continuous conversational corrections. The article also compares two approaches—Pencil (IDE native) and Figma MCP—and emphasizes that tools should be built for AI, providing precise context in natural formats.",
+        "tags": [
+          "AI Coding",
+          "AI Agent",
+          "Frontend Development",
+          "Visual Restoration",
+          "Design Tools"
+        ],
+        "title": "Frontend AI Coding for Scenario Marketing — AI Native Visual Restoration from Design Drafts",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544417&idx=1&sn=b464075a0ff3f06d98f1919331b6b7ff",
+        "wordCount": 12086
+      },
+      {
+        "authors": [
+          "AI前线"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260527123921_5b85448.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_2cc83ea1",
+        "keyQuotes": [
+          "I have now fallen into a massive nihilism; AI can write anything.",
+          "AI can basically use any solution, any tool, any means to write anything.",
+          "What is truly useful is not the code itself, but the knowledge precipitated in the software—documentation, legacy rules, business logic, and system behavior.",
+          "If a person believes their job is just to write code, that person should have been eliminated by the industry long ago, even without the emergence of AI today.",
+          "Those taste wars that make humans fight to the death simply do not exist for Agents."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Huang Dongxu's db9 project (1 million lines of Rust database code) proves that with a reasonable harness and collaborative approach, AI can produce complex, production-ready code at extremely low costs and speeds far exceeding human teams.",
+            "point": "AI Agents can already write almost any type of software, with no obvious boundaries in sight."
+          },
+          {
+            "explanation": "Language, framework, and database choices no longer constitute long-term lock-ins; Bun migrated from Zig to Rust in just 6 days, and enterprises believe that wrong decisions can be reversed using Agents. Agents have no taste preferences; they only care about interfaces and documentation.",
+            "point": "Tech stack lock-in is being broken, and rewrite costs are dropping drastically."
+          },
+          {
+            "explanation": "Xu Hao points out that what is truly valuable is the specifications, rules, and business logic沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀沉淀 in the software, rather than the implementation carrier; AI acts like a compiler, migrating knowledge across different tech stacks.",
+            "point": "The code itself is not the product; the knowledge within the software is the core competitiveness."
+          },
+          {
+            "explanation": "AI only seeks to please and lacks a sense of direction; experienced individuals are needed to define architectures, set constraints, and verify outputs. Programmers who merely write code will be eliminated, while those who can deliver value are presented with the best opportunity.",
+            "point": "Human value lies in steering and judgment; senior engineers (\"veterans\") are more important than ever."
+          },
+          {
+            "explanation": "Issues such as the \"spaghetti code\" of legacy systems, semantic detail incompatibilities, and a surge in bugs after deployment make fully relying on AI for rewrites still unfeasible; ultimately, humans must still bear the responsibility.",
+            "point": "Enterprise software maintenance remains a practical challenge, and AI code may bring new problems."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through interviews with industry experts like Huang Dongxu, Xu Hao, and Teng Yu, this article explores the capability boundaries of AI Agents in software development, pointing out that AI can already write almost any software, but human judgment and knowledge management remain the core value, while also analyzing practical challenges such as the deconstruction of tech stack lock-in, declining rewrite costs, and enterprise software maintenance.",
+        "originalTitle": "AI 可以用任何手段、写任何东西，但你得是个“中年老登”",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 13:30:00",
+        "publishTimeStamp": 1782538200000,
+        "qualified": false,
+        "readCount": 41,
+        "readTime": 29,
+        "readUrl": "https://www.bestblogs.dev/article/2cc83ea1",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_458cfe",
+        "sourceImage": "https://image.jido.dev/20260527123921_5b85448.jpeg",
+        "sourceName": "AI前线",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using PingCAP CTO Huang Dongxu's db9 project as a starting point, this article reveals the astonishing capabilities of AI Agents in software development: completing a database project with 1 million lines of Rust code in three months with zero human coding. Centered around the premise that \"AI can write anything,\" the article discusses the phenomenon of tech stack lock-ins (language, framework, database) being broken—Bun migrated from Zig to Rust in just 6 days, and enterprises can use Agents to rewrite applications at any time. It then explores the trend of \"rewriting,\" including the restoration of sourceless systems (the Thoughtworks case, the rebuilding of a 30-year-old MUD game), and points out that what truly matters is the knowledge within the software rather than the code itself. Xu Hao emphasizes knowledge engineering, arguing that the essence of development is specifying specifications and acceptance criteria, with AI acting merely as a \"compiler\" to transform the carrier. The article finally focuses on human value: the steering and judgment of senior engineers (\"veterans\") are irreplaceable, while enterprise software maintenance remains a pain point, as AI-generated code might introduce more bugs after deployment. The entire article features exclusive interviews with multiple experts, offering substantial information and sharp insights.",
+        "tags": [
+          "AI Coding",
+          "AI Agent",
+          "LLM",
+          "Code Generation",
+          "Software Engineering"
+        ],
+        "title": "AI Can Use Any Means to Write Anything, But You Must Be a \"Veteran Engineer\"",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247663991&idx=1&sn=f965620efa2d14f3a267a41607d9ee79",
+        "wordCount": 7100
+      },
+      {
+        "authors": [
+          "Kyle Wiggers"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/F1-AlOdxpdaxe6a5BXuU7.png",
+        "domain": "huggingface.co",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_5020d758",
+        "keyQuotes": [
+          "The hybrid's edge is biggest on the words that say what a sentence is about and smallest on the grammatical words any model can nearly guess from syntax.",
+          "A single overall loss — the model's average error across all tokens — is too blunt to compare transformer and hybrid architectures.",
+          "We believe the best hybrid architectures will come from understanding, token by token, what each component of a model does well."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The hybrid's recurrent layers are better at tracking evolving semantic context, giving it an edge on meaning-bearing tokens.",
+            "point": "Hybrid models outperform transformers on content word prediction (nouns, verbs, adjectives)."
+          },
+          {
+            "explanation": "Attention's ability to directly attend to prior tokens makes it ideal for exact recall, where recurrence's compressed memory falls short.",
+            "point": "Transformers match or exceed hybrids on tokens that repeat earlier input, such as long n-gram copies."
+          },
+          {
+            "explanation": "By measuring loss only on specific token types (e.g., content words, non-repeats), researchers can detect model strengths and weaknesses that are hidden in the average.",
+            "point": "Overall loss is too coarse a metric; filtered token losses reveal architectural differences early in training."
+          },
+          {
+            "explanation": "Bracket matching is a well-known strength of attention, and the result confirms that recurrent layers do not add benefit there.",
+            "point": "The hybrid advantage disappears on closing brackets, a task attention handles natively."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article compares a transformer and a hybrid language model token by token, finding that the hybrid excels on meaning-bearing tokens while the transformer matches it on repeated or syntactic tokens.",
+        "originalTitle": "Which tokens does a hybrid model predict better?",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 00:11:42",
+        "publishTimeStamp": 1782403902000,
+        "qualified": false,
+        "readCount": 41,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/5020d758",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_19153d",
+        "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+        "sourceName": "Hugging Face - Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article presents a fine-grained analysis of token-level predictions between two 7B models: Olmo 3 (transformer) and Olmo Hybrid (a hybrid of attention and recurrent layers). By feeding both models the same passages and measuring loss gap per token, the authors show that the hybrid predicts content words (nouns, verbs, adjectives, adverbs) significantly better, while its advantage almost vanishes on tokens that are simple repetitions of earlier input or on closing brackets. The study uses controlled experiments with matched data and training, and validates findings with regression analyses. The work also proposes using filtered token losses (e.g., only meaning-bearing non-repeated tokens) as a more informative evaluation metric during pretraining, revealing architectural differences invisible to overall loss. The results highlight the complementary strengths of attention (exact recall) and recurrence (state tracking), and suggest that optimal hybrid architectures should leverage both.",
+        "tags": [
+          "LLM",
+          "Transformer",
+          "Hybrid Model",
+          "Token Prediction",
+          "Model Evaluation"
+        ],
+        "title": "Which tokens does a hybrid model predict better?",
+        "translateContent": null,
+        "url": "https://huggingface.co/blog/allenai/hybrid-token-prediction",
+        "wordCount": 1267
+      },
+      {
+        "authors": [
+          "Mateo Quiros"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5__keyword__blog-header__light_7VsKV.width-1300.png",
+        "domain": "deepmind.google",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_16a75c47",
+        "keyQuotes": [],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Developers can access computer use directly via the Gemini API and Enterprise Agent Platform, simplifying development of agentic workflows.",
+            "point": "Computer use is now built into Gemini 3.5 Flash, replacing the standalone model."
+          },
+          {
+            "explanation": "This opens up long-horizon automation tasks such as software testing and knowledge work in professional applications.",
+            "point": "The capability enables agents to see, reason, and act across browser, mobile, and desktop environments."
+          },
+          {
+            "explanation": "Enterprises can enforce user confirmation for irreversible actions and automatically halt tasks when indirect prompt injection is detected, with a defense-in-depth approach recommended.",
+            "point": "Safety measures include adversarial training and optional enterprise safeguards."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Google announces that computer use is now a built-in capability in Gemini 3.5 Flash, enabling developers to build agents that interact with browser, mobile, and desktop environments.",
+        "originalTitle": "Introducing computer use in Gemini 3.5 Flash",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-25",
+        "publishDateTimeStr": "2026-06-25 00:21:13",
+        "publishTimeStamp": 1782318073000,
+        "qualified": false,
+        "readCount": 41,
+        "readTime": 2,
+        "readUrl": "https://www.bestblogs.dev/article/16a75c47",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_cca1dc",
+        "sourceImage": "https://image.jido.dev/20260612221052_google_deepmind_2x_96dp.png",
+        "sourceName": "Google DeepMind News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Google DeepMind announces that computer use, previously a separate model, is now natively integrated into Gemini 3.5 Flash. The built-in tool allows developers to create custom agents that can see, reason, and take actions across browser, mobile, and desktop environments. The post highlights improved performance for long-horizon and enterprise automation tasks such as continuous software testing and knowledge work. To address safety, the model uses targeted adversarial training and offers optional enterprise safeguards like requiring user confirmation for sensitive actions and automatic task stopping upon indirect prompt injection. The post includes customer testimonials from Browserbase and provides links to try the demo, reference implementation, and API documentation.",
+        "tags": [
+          "Gemini 3.5 Flash",
+          "Computer Use",
+          "AI Agent",
+          "Enterprise Automation",
+          "Prompt Injection Safety"
+        ],
+        "title": "Introducing computer use in Gemini 3.5 Flash",
+        "translateContent": null,
+        "url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+        "wordCount": 330
+      },
+      {
+        "authors": [
+          "dbaplus社群"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045413_187dd537",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_ea013610",
+        "keyQuotes": [
+          "Upgrade traditional manual validation from 'writing multiple SQL queries + manual comparison' to 'one-sentence trigger + review-grade evidence output'.",
+          "Standardization is more important than intelligence: the key to validation is coverage and repeatability; 10 types of standardized templates are far more reliable than 'letting AI improvise'.",
+          "Lessons-learned records are core assets: the 19 real-world experiences documented in lessons-learned.md, each one is a real pitfall we stepped into.",
+          "Red lines must be hard: critical red lines are enforced at the process level, not 'suggestions' but 'mandatory'."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "When the user does not provide a base table, the Agent traces upstream tables via lineage and calculates a composite score based on lineage affinity, dimension overlap, and metric overlap. A score ≥ 0.7 leads to direct selection; if multiple tables can jointly cover metrics, they are compared in separate branches; if no suitable base table is found, fallback strategies are triggered.",
+            "point": "Base table auto-discovery is the core capability of verify-data, using a two-stage strategy of lineage-based candidate collection and metric/dimension ranking to automatically select the best comparison benchmark."
+          },
+          {
+            "explanation": "The templates include total comparison, data quality check, dimension-by-dimension comparison, dimension table partition validation, CUBE integrity check, summary row consistency, logical relationship validation, historical trend comparison, association explosion detection, and date association validation. Four of them are mandatory.",
+            "point": "10 types of standardized validation SQL templates ensure verification coverage; especially association explosion detection and date association validation are the most common reasons for review rejection."
+          },
+          {
+            "explanation": "In iterative validation scenarios, the Agent retrieves DEV and PROD running code, performs a structured diff, scans for 8 types of risk signals (data source changes, JOIN relationship changes, aggregation method changes, etc.), and generates quantified confirmation SQL for each high-risk signal.",
+            "point": "Code Diff-driven risk scanning pinpoints the impact of specific code changes on data, bridging the gap from 'knowing how much is different' to 'knowing why it's different'."
+          },
+          {
+            "explanation": "Four fallback strategies (CUBE self-consistency, DWD recomputation, separate branch metrics, static logic) are automatically selected based on table type. During fallback, in addition to running D-type consistency SQL, 8 types of risk scanning must be performed and V-type quantified confirmation SQL must be generated independently of the original logic.",
+            "point": "Fallback validation strategies ensure meaningful conclusions even without a base table, but they mandate additional code review and independent construction of V-type confirmation SQL to prevent self-confirming execution consistency."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides a detailed review of the design of Alibaba's production-grade data validation Agent Skill (verify-data), covering the full workflow from natural language trigger to automatically generating validation SQL, executing it, and producing reports, including architecture, core capabilities, real-world cases, design principles, and lessons learned.",
+        "originalTitle": "不用手搓 SQL 验数了！阿里生产级端到端 Agent Skill 完整设计复盘",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 07:15:00",
+        "publishTimeStamp": 1782256500000,
+        "qualified": false,
+        "readCount": 39,
+        "readTime": 38,
+        "readUrl": "https://www.bestblogs.dev/article/ea013610",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_a234fa",
+        "sourceImage": "https://image.jido.dev/20251127045413_187dd537",
+        "sourceName": "dbaplus社群",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article, aimed at data development teams, systematically introduces an end-to-end data validation Agent Skill called verify-data. Starting from the pain points of manual validation (insufficient coverage, wrong base table selection, code understanding偏差, conclusions without evidence, high overhead of consolidation), it explains the opportunity for Agent-driven validation. The core part breaks down the 7-9 step workflow of verify-data (which can actually reach 17 conditionally triggered steps), including automatic base table discovery (lineage + two-stage ranking of dimensions and metrics), 10 types of standardized validation SQL templates, Code Diff-driven scanning of 8 types of risk signals, 4 fallback validation strategies, partition pre-check and batched execution strategy, and three critical mandatory steps (base table suitability pre-check, dimension table CUBE detection, and logical mapping check). The effectiveness is demonstrated through four real-world scenarios: onboarding a new CUBE table, DEV vs PROD comparison, a brand-new metric without a base table, and dimension table validation. The article extracts four hard red lines (no skipping templates to write custom SQL, no guessing field mappings, fallback must incorporate code review, must verify all JOIN explosions and date associations), and provides a PASS/WARNING/FAIL conclusion system. Lessons learned include that NULLs in CUBE summary rows are normal behavior, tolerance for floating-point precision, and that DWD recomputation is structurally homogeneous and can only prove execution consistency. Current challenges include execution latency, permission dependencies, trust cost of fallback, and onboarding difficulty. Finally, it outlines three future directions: asynchronous execution, platform integration, and intelligent root cause localization.",
+        "tags": [
+          "Data Engineering",
+          "Agent",
+          "Data Validation",
+          "Data Quality",
+          "Big Data"
+        ],
+        "title": "No More Manual SQL for Data Validation! Complete Design Review of Alibaba's Production-Grade End-to-End Agent Skill",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247636834&idx=1&sn=f7e69b2d1c6a9cc1a54d2bf4a08f50b9",
+        "wordCount": 9416
+      },
+      {
+        "authors": [
+          "Pratik R"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/routing-layer-pareto-trap-iceberg.jpg",
+        "domain": "towardsdatascience.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_a676552d",
+        "keyQuotes": [
+          "We had not won. We had just moved the cost somewhere we were not measuring.",
+          "The classifier is well-calibrated exactly where it does not need to be, and poorly calibrated exactly where it does.",
+          "The combined geometry is unforgiving. The cheap-model tier handles the easy bulk well, fails opaquely on the hidden long tail, and degrades further as the distribution drifts.",
+          "Cost savings on the inference layer are measured by the team that built the routing system. The cost of quality loss is borne by the customer experience, the human support team, and the retention function, none of which are owned by the team that did the optimization."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The classifier sees only surface forms; queries that appear simple (like 'where is my charge from') can hide complex intents (fraud, reconciliation). The cheap model fails confidently on those, and the error is invisible to aggregate metrics.",
+            "point": "Routing layers that send 'simple' queries to cheap models create a hidden long-tail failure mode."
+          },
+          {
+            "explanation": "Aggregate human review mixes both tiers, offline regressions use static distributions, and in-product feedback has low signal-to-noise. None of them segment by routing tier, so the cheap-model degradation stays undetected for months.",
+            "point": "Standard monitoring architectures structurally miss the quality loss."
+          },
+          {
+            "explanation": "Inference savings appear on one dashboard; the increased human support volume, satisfaction decline, and churn hit different budgets and metrics, creating a net-negative optimization for the company.",
+            "point": "The cost savings are visible; the downstream quality costs are invisible and borne by different teams."
+          },
+          {
+            "explanation": "Per-tier human review, tier-specific regression suites, and routing-labeled feedback events enable early detection of quality drift. The aggregate alone is structurally unreliable.",
+            "point": "The fix is to split every quality signal by routing tier before the layer goes live."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A team built a routing layer to cut AI inference costs by 60%, but the quality loss on the cheap model went undetected for months, causing customer satisfaction drops and churn—ultimately costing 4–5x the savings.",
+        "originalTitle": "We Built a Routing Layer to Cut Our AI Costs. It Broke the Product.",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 23:00:00",
+        "publishTimeStamp": 1782572400000,
+        "qualified": false,
+        "readCount": 36,
+        "readTime": 17,
+        "readUrl": "https://www.bestblogs.dev/article/a676552d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_0c32dbfa",
+        "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+        "sourceName": "Towards Data Science",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article recounts a post-mortem of a production AI support agent that implemented a cost-optimization routing layer. The team trained a classifier to route 'simple' queries (65% of traffic) to a cheaper model, cutting inference costs by 60%. However, the cheap model failed on the long tail of queries that looked simple but contained hidden complexity (e.g., fraudulent charges hidden behind a billing status query). The existing monitoring architecture—aggregated human review, static regression suites, and low-signal feedback widgets—could not detect the quality gap. By the time the team noticed declining satisfaction and churn, the cumulative cost of the damage was 4–5x the savings. The article explains the structural reasons (surface form vs. deep intent, confident failures of small models, distribution drift) and presents two other cases from different industries. It concludes with a concrete measurement architecture fix: per-tier quality monitoring, stratified sampling, and end-to-end routing-label propagation.",
+        "tags": [
+          "AI in Production",
+          "Cost Optimization",
+          "Model Routing",
+          "Quality Monitoring",
+          "LLM"
+        ],
+        "title": "We Built a Routing Layer to Cut Our AI Costs. It Broke the Product.",
+        "translateContent": null,
+        "url": "https://towardsdatascience.com/we-built-a-routing-layer-to-cut-our-ai-costs-it-broke-the-product/",
+        "wordCount": 4051
+      },
+      {
+        "authors": [
+          "腾讯科技"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_7df2922b",
+        "keyQuotes": [
+          "The rocket has already ignited and lifted off, stop questioning whether it will take off.",
+          "The winners of the BlackBerry era were not the winners of the iPhone era.",
+          "Translation is a rigid demand but not high-frequency, AI Q&A is high-frequency but not a rigid demand; I haven't yet found that product which is both high-frequency and a rigid demand.",
+          "Rokid has never treated glasses as an accessory since day one."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Misa used \"rocket has ignited\" to describe the current stage, but believes that finding an exclusive, high-frequency, and rigid-demand scenario similar to \"Fruit Ninja\" in the iPhone era is the true iPhone 1 moment.",
+            "point": "The smart glasses industry has crossed the mass production threshold, but still needs a killer app to trigger an explosion."
+          },
+          {
+            "explanation": "Chinese users buy AI capabilities, and the product is an \"AI computing device in the form of glasses\"; overseas products like Meta Ray-Ban are mainly display-less fashion accessories, and the two paths will not converge in the short term.",
+            "point": "The routes of Chinese and overseas smart glasses are fundamentally different: AI-first vs. Fashion-first."
+          },
+          {
+            "explanation": "In the early days, Rokid relied on advance payments and betting agreements to gain trust; now, with a clear product roadmap, it has become the center of consensus in the industry chain, reducing supply chain risks.",
+            "point": "Supply chain trust is the key to mass production, and product judgment has replaced betting agreements."
+          },
+          {
+            "explanation": "The phone will degenerate into a communication, computing, and storage center, with interaction migrating to the glasses; Rokid has never treated glasses as an accessory since day one, but rather as a challenger to the phone.",
+            "point": "Glasses will not replace the phone, but they will change the phone's role."
+          },
+          {
+            "explanation": "Rokid expects to reach 2 million active users next year, at which point a standard Token revenue-sharing model will be introduced, and the developer ecosystem can truly start.",
+            "point": "Current installed base cannot sustain independent developers; 2 million units is the critical point for an ecosystem explosion."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Rokid founder Misa stated in an interview that the smart glasses \"rocket has ignited\" but the tipping point has not arrived; the industry still lacks a killer app, the ecosystem is in its early stages, and future focus should be on repurchase rates rather than market share.",
+        "originalTitle": "“尴尬”的智能眼镜，终于不用说“明年是元年了”",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 12:18:00",
+        "publishTimeStamp": 1782533880000,
+        "qualified": false,
+        "readCount": 36,
+        "readTime": 26,
+        "readUrl": "https://www.bestblogs.dev/article/7df2922b",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b475c7",
+        "sourceImage": "https://image.jido.dev/20251127045422_1d0ddad0",
+        "sourceName": "腾讯科技",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Based on the speech and in-depth interview of Rokid founder Misa at Rokid Open Day, the article comprehensively examines the latest progress in the smart glasses industry. Misa announced that Rokid's sales grew by 800% year-on-year, with products covering 166 countries and 50-60% of activated users wearing them all day, but he believes the industry is still in the BlackBerry era, with the starting gun yet to be fired. He compared the fundamental route differences between China (AI computing device form factor) and overseas (fashion accessory path), emphasizing that supply chain trust relies on product judgment rather than advance payments and betting agreements. Misa frankly stated that a killer app that is both high-frequency and rigid-demand has not yet been found, and expects to face direct competition from tech giants in 2027. He revealed that Rokid's YodaOS is Agent-centric and may adopt a Token-based billing model in the future, but the ecosystem needs 2 million active users to sustain independent developers. The article also covers privacy controversies, the social and commercial value of accessibility, and globalization and localization strategies, presenting the strategic thinking and practical challenges of a startup in the smart glasses field.",
+        "tags": [
+          "Smart Glasses",
+          "AI Hardware",
+          "Consumer Electronics",
+          "Startup",
+          "AI Products & Applications"
+        ],
+        "title": "\"Awkward\" Smart Glasses Finally Don't Have to Say \"Next Year Is the Year One\" Anymore",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569739&idx=1&sn=bc25ae00ced16bddba6f518b66e850ae",
+        "wordCount": 6280
+      },
+      {
+        "authors": [
+          "创业邦"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20260603134551_fd0a3a2.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_adb2ec33",
+        "keyQuotes": [
+          "The problem with knitting has never been 'can't find tutorials', but it's hard to actually finish a project.",
+          "It's still tutorials, but YarnPal no longer treats content as whole, uninterrupted units; instead, it uses decomposable, progressive 'projects' as units.",
+          "In today's efficiency-obsessed world, YarnPal offers a reverse way of thinking — perhaps what people really look forward to is a kind of controllable 'slowness'."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Product_Development",
+        "mainDomainDesc": "Product & Design",
+        "mainPoints": [
+          {
+            "explanation": "Traditional knitting apps offer massive tutorials but users often abandon them; YarnPal breaks content into actionable projects with progress tracking and step-by-step guidance, lowering the completion barrier and making users willing to pay for 'easier project completion'.",
+            "point": "YarnPal's key success lies in 'selling the process' rather than 'selling tutorials'."
+          },
+          {
+            "explanation": "US offline yarn stores commonly offer classes (around $75 each) and social events like Knit Night; YarnPal essentially digitalizes this 'instant guidance + problem solving' experience.",
+            "point": "The offline yarn store business model has already proven that users are willing to pay for accompanied service."
+          },
+          {
+            "explanation": "AI-generated patterns and knitting instructions often contain errors or are non-reproducible, while the paywall makes beautiful patterns shown in ads unavailable after the trial, leading to a flood of 1-star reviews.",
+            "point": "YarnPal's AI features are a double-edged sword, with experience gaps affecting user retention."
+          },
+          {
+            "explanation": "Revenue spikes (over $500k in January 2026) coincide with TikTok viral content and autumn/winter seasonality, followed by rapid decline; the parent company's aggressive strategy with multiple AI products also suggests long-term user value has yet to be validated.",
+            "point": "Growth primarily relies on seasonal traffic and marketing-driven new user acquisition, not word-of-mouth steady growth."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article analyzes how knitting app YarnPal uses structured project guidance and a 'selling the process' model instead of traditional tutorials to achieve $500k monthly revenue, while also revealing growth risks such as underperforming AI features and marketing gaps.",
+        "originalTitle": "年轻人复古织毛线，助攻 App 月入百万",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 11:39:00",
+        "publishTimeStamp": 1782185940000,
+        "qualified": false,
+        "readCount": 36,
+        "readTime": 14,
+        "readUrl": "https://www.bestblogs.dev/article/adb2ec33",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_30d2e8",
+        "sourceImage": "https://image.jido.dev/20260603134551_fd0a3a2.jpeg",
+        "sourceName": "创业邦",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Starting from YarnPal's breakout, the article contrasts the inefficiency of traditional knitting apps and free online tutorials, pointing out that knitters' biggest pain point isn't a lack of resources but difficulty in completing projects. YarnPal breaks tutorials into actionable project units with automatic progress tracking and step-by-step guidance, reducing the likelihood of giving up halfway, thus making users willing to pay. The article further compares this with the business model of US offline yarn stores (classes + socializing + guidance), arguing that YarnPal essentially brings the proven 'accompanied service' online. At the same time, through user review analysis, the article notes that YarnPal's AI features (pattern generation, Q&A, etc.) receive mixed reviews: 30% of users appreciate the onboarding and sense of achievement, while over 50% give negative reviews due to AI output errors, missing key steps, and content gaps behind the paywall. The article also observes that its growth comes from seasonal traffic and concentrated new user conversions, not long-term word-of-mouth; the parent company has multiple AI products in its portfolio, raising questions about business model sustainability. Finally, the article cites Generation Z's pursuit of 'digital detox' and 'controlled slowness' to explain the new commercial potential of this retro hobby.",
+        "tags": [
+          "Product Design",
+          "UX Design",
+          "Business Model & Strategy",
+          "User Behavior",
+          "AI Products & Applications"
+        ],
+        "title": "Youngsters Revive Knitting, Helping App Earn Millions Monthly",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650880011&idx=4&sn=fe97f85e1a3d6629b7b8a9b7c776a10a",
+        "wordCount": 3259
+      },
+      {
+        "authors": [
+          "arsalanshahid"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260624115125_636775b.png",
+        "domain": "github.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c077a653",
+        "keyQuotes": [
+          "The protocol for humans and agents doing real work together.",
+          "CHAP gives you one place to put those decisions and one shape to put them in.",
+          "Your next prompt revision for Cursor is no longer a guess. It cites the pattern by name."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Every human edit to an agent's output is captured as an 'override envelope' containing a diff, rationale, intent_preserved flag, and tags, enabling later analysis and prompt refinement.",
+            "point": "CHAP provides a structured way to record human overrides as supervision data."
+          },
+          {
+            "explanation": "Envelopes are linked by hash of the previous envelope, allowing full reconstruction of decisions even after log expiry or personnel changes.",
+            "point": "The protocol uses content-hash chaining for an immutable audit trail."
+          },
+          {
+            "explanation": "A high refining rate (intent_preserved=true) suggests retrieval issues; a high substituting rate (intent_preserved=false) suggests ambiguous policy or wrong task context. Tags enable aggregation over categories.",
+            "point": "intent_preserved and tags are key fields that distinguish different failure modes."
+          },
+          {
+            "explanation": "Agents use MCP for tools, A2A for agent-to-agent coordination, and CHAP to record the shared work with humans, providing composability with existing infrastructure.",
+            "point": "CHAP complements MCP and A2A without replacing them."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "CHAP is an open protocol for structured, auditable collaboration between humans and AI agents, recording human overrides as data for traceability and prompt improvement.",
+        "originalTitle": "GitHub - BrightbeamAI/chap: Collaborative Human Agent Protocol (CHAP)",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 19:14:10",
+        "publishTimeStamp": 1782299650000,
+        "qualified": false,
+        "readCount": 35,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/c077a653",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SRC_87ebb4f7",
+        "sourceImage": "https://image.jido.dev/20260603215531_y18.svg",
+        "sourceName": "Hacker News - Newest: \"AI Agent\"",
+        "sourceVisibility": "SYSTEM",
+        "summary": "CHAP (Collaborative Human Agent Protocol) addresses the problem of tracking human edits and decisions in AI agent workflows. It defines a set of methods and envelope structures (task.create, decide.override, audit.read) that allow agents to draft artifacts and humans to override them with structured diffs, rationales, and tags. These overrides are chained by content hash, forming an immutable audit trail. The protocol includes optional profiles for security signing and transparency logs. The repository provides TypeScript and Python reference implementations, MCP and A2A server transports, conformance tests, and twelve worked scenarios. CHAP does not replace MCP or A2A but sits alongside them as a recording layer for shared human-agent work.",
+        "tags": [
+          "AI Agent",
+          "AI Development",
+          "Protocol",
+          "Audit Trail",
+          "MCP Protocol"
+        ],
+        "title": "CHAP: Collaborative Human Agent Protocol",
+        "translateContent": null,
+        "url": "https://github.com/BrightbeamAI/chap",
+        "wordCount": 1428
+      },
+      {
+        "authors": [
+          "InfoQ 中文"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527130453_c4b7ab1.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_9300243b",
+        "keyQuotes": [
+          "Future intelligence depends on the expansion of more complex 'Context' inputs.",
+          "The core of a full-modal unified architecture is 'representation unity': using discretization technology to convert continuous signals such as speech, image, and video into discrete symbols similar to text.",
+          "Data has always been the most core source of differentiation between different models.",
+          "We have verified that the path of 'unified representation' is feasible and yields clear benefits.",
+          "The industry will ultimately move in this direction; it is an inevitable law of large model development."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Qiu Xipeng believes large models have three expandable directions (pretraining scale, inference path, input dimensions), and Context Intelligence focuses on the latter, emphasizing unified processing of multimodal information such as text, speech, image, and video, as well as external information like user preferences and physical scenes.",
+            "point": "Context Intelligence is the inevitable direction for large model development, with the core being expanding the depth and breadth of input dimensions."
+          },
+          {
+            "explanation": "Unlike traditional 'bridge-style' approaches, the MOSS series preserves each modality's characteristics at the tokenization layer but fully shares the language model paradigm in downstream model layers, thereby improving scalability and training efficiency.",
+            "point": "Full-modal unified discrete modeling achieves representation unity by converting signals from different modalities into discrete tokens."
+          },
+          {
+            "explanation": "Audio is compressed to 12.5 Hz frame rate, video uses variable frame rate sampling to reduce token consumption; MOSS-VL decouples visual encoding from inference decoding; KV cache compression achieves over 90% reduction through low-rank modifications, making long-context deployment feasible.",
+            "point": "Inference optimization addresses the computational pressure from context expansion through three concurrent approaches: representation compression, model architecture, and system-level improvements."
+          },
+          {
+            "explanation": "Given the high cost of real-world multimodal data collection, Qiu proposes a three-step method: design scenarios using text-based large models, convert them into multimodal data, then perform fine-grained annotation. He also explores building simulation sandboxes through world models to autonomously generate contextual data.",
+            "point": "The primary source of high-quality contextual data is the synthesis pipeline and world models."
+          },
+          {
+            "explanation": "As models evolve toward complex contexts, the ability to accumulate and process long-trajectory, multimodal, high-complexity contextual data will determine the actual performance gaps between models.",
+            "point": "Data processing pipelines are the core differentiation barrier among models."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through an exclusive interview with Mosi AI founder Qiu Xipeng, this article delves into the MOSS full-modal technology system, covering the definition of Context Intelligence, unified discrete modeling, inference optimization, and high-quality contextual data construction, revealing the evolution direction of multimodal AI architecture.",
+        "originalTitle": "MOSS 全模态技术体系全解析：统一离散化建模、推理优化与情境数据构建路径",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 12:55:00",
+        "publishTimeStamp": 1782104100000,
+        "qualified": false,
+        "readCount": 35,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/9300243b",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_8f2a9f",
+        "sourceImage": "https://image.jido.dev/20260527130453_c4b7ab1.jpeg",
+        "sourceName": "InfoQ 中文",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article is an in-depth interview by InfoQ with Professor Qiu Xipeng, a Fudan University professor and founder of Mosi AI. As the publisher of China's first conversational large language model MOSS, Qiu systematically elaborates on the technical path of 'Context Intelligence' he proposed. The article first defines Context Intelligence as the inevitable direction for large model development, encompassing five stages: perception, representation, delivery, persistence, and feedback loop. It then details the architecture design and collaboration mechanisms of the MOSS series sub-models: MOSS-Audio (general audio understanding), MOSS-VL (video understanding), and MOSS-TTS (high-fidelity speech synthesis), emphasizing a unified representation centered on discrete tokens. On technical challenges, Qiu analyzes how to address computational pressure from context expansion from three levels: representation compression, model architecture, and inference system, and compares the essential differences between 'full-modal unified discrete modeling' and mainstream 'bridge-style' approaches. Addressing data bottlenecks, the article proposes constructing high-quality contextual data through synthesis pipelines and world models, pointing out that data processing pipelines are the core differentiation barrier among models. Finally, Qiu summarizes the practical references the MOSS series provides for the industry in three aspects: approach, methodology, and ecosystem, emphasizing the role of open-source strategies in driving ecosystem prosperity.",
+        "tags": [
+          "Multimodal AI",
+          "LLM",
+          "Context Intelligence",
+          "Model Training and Inference",
+          "AI Products and Applications"
+        ],
+        "title": "Complete Analysis of the MOSS Full-Modal Technology System: Unified Discrete Modeling, Inference Optimization, and Contextual Data Construction Pathways",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651287490&idx=1&sn=5bbce67700d93c8c3ece905011bd64a7",
+        "wordCount": 5411
+      }
+    ],
+    "pageCount": 167,
+    "pageSize": 20,
+    "totalCount": 3335
+  },
+  "message": null,
+  "requestId": "Tf37ce7eb53884aefbeb6efbcfce474bb",
+  "success": true
+}

@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Hacker News"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://imagedelivery.net/lPM0ntuwQfh8VQgJRu0mFg/20d3ec66-0a11-4da9-51c6-2fba2b821900/public",
+  "domain": "crunchydata.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_e4b2674d",
+  "keyQuotes": [
+    "If you stored timestamps in a UTC-based column for British Columbia-based appointment in 2026 and beyond, your November through March appointments may be off by an hour!",
+    "The dual-column pattern is necessary when the local intent is authoritative: people or deliveries at a time and place, legal deadlines, calendar events, etc.",
+    "Don't go overboard though. When the event is in the past, or the exact UTC moment is authoritative (log entries, financial transactions, sensor readings), use plain timestamptz."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "`timestamptz` converts to UTC at insert time using then-current rules, and converts back at query time using current rules. A rule change between storage and retrieval shifts the local display, misleading users.",
+      "point": "Storing future local times as `timestamptz` breaks when timezone rules change after storage."
+    },
+    {
+      "explanation": "Store the wall-clock value (`timestamp`) and IANA timezone name (`text`) separately; derive a UTC `timestamptz` column via trigger for indexing and queries. This allows recalculation of UTC when `tzdata` is updated.",
+      "point": "A dual-column pattern preserves the user's original wall-clock intent."
+    },
+    {
+      "explanation": "RFC 9557 adds timezone info to timestamps but states it is not meant to handle future changes in timezone definitions that affect the instant represented.",
+      "point": "RFC 9557 explicitly does not solve this problem, so a dual-column approach remains necessary."
+    },
+    {
+      "explanation": "Identify rows impacted after the update, notify users, run a non-production test, then apply a targeted `UPDATE` to recalculate UTC values for future appointments.",
+      "point": "If `tzdata` has already been upgraded, a careful migration plan is needed."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article uses British Columbia's 2026 permanent switch to Pacific Daylight Time as a case study to expose how PostgreSQL's `timestamptz` can silently corrupt future local times and proposes a dual-column schema pattern to preserve user intent.",
+  "originalTitle": "British Columbia， Time Zones， and Postgres | Crunchy Data Blog",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 03:21:00",
+  "publishTimeStamp": 1782156060000,
+  "qualified": false,
+  "readCount": 10,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/e4b2674d",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "When British Columbia stopped observing standard time in March 2026, any PostgreSQL database using `timestamptz` columns for future appointments in the America/Vancouver timezone became vulnerable to hour-off errors. The article explains that `timestamptz` stores UTC at insert time and converts back to local time using the current `tzdata` rules at query time. If `tzdata` updates after the policy change, queries return different local times than what users originally entered. The author demonstrates the problem with a concrete example (a 10 AM appointment shifting to 11 AM) and then presents a three-column schema: a bare `timestamp` for local time, a `text` column for the IANA timezone, and a calculated `timestamptz` column for UTC. A trigger recomputes the UTC value on insert/update, and a simple `UPDATE` can recalculate all future rows after a `tzdata` update. The article also discusses RFC 9557, noting it explicitly avoids solving this problem, and outlines steps to recover if the `tzdata` package has already been upgraded. The author cautions against over-engineering—the dual-column pattern is justified only when local intent is authoritative.",
+  "tags": [
+    "Postgres",
+    "Time Zones",
+    "Database Schema",
+    "Engineering Practices",
+    "Data Migration"
+  ],
+  "title": "British Columbia， Time Zones， and Postgres | Crunchy Data Blog",
+  "translateContent": null,
+  "url": "https://www.crunchydata.com/blog/british-columbia-and-time-zone-changes",
+  "wordCount": 1324
+}

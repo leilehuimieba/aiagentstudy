@@ -1,0 +1,85 @@
+{
+  "authors": [
+    "Lucain Pouget",
+    "Célina Hanouti"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://huggingface.co/blog/assets/huggingface-hub-release-ci/thumbnail.png",
+  "domain": "huggingface.co",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_cb37f57c",
+  "keyQuotes": [
+    "The model drafts, a human decides.",
+    "Trust but verify: the human-in-the-loop core.",
+    "A non-deterministic model wrapped in deterministic guardrails.",
+    "Open tooling doesn't mean careless tooling.",
+    "The parts of a release that used to need a half-day of focused human work… are the parts a model is good at drafting."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "Version bumps, tagging, publishing, and downstream test branches are fully automated in GitHub Actions. Release notes and announcements are drafted by an AI model, then reviewed by a human.",
+      "point": "The release workflow separates mechanical steps from judgment-intensive ones, automating the former and using AI to draft the latter."
+    },
+    {
+      "explanation": "A Python script collects all PR numbers from squash-merge commits before the AI runs. After generation, the system checks that every expected PR appears and no extra PRs are included, re-prompting the AI if discrepancies are found.",
+      "point": "A deterministic verification loop ensures AI-generated release notes are complete and accurate."
+    },
+    {
+      "explanation": "When summarizing a PR, the AI receives the unified diff of any .md files changed in that PR, so it can quote real API examples rather than inventing them.",
+      "point": "The model is grounded by feeding it actual documentation diffs from PRs, preventing hallucination."
+    },
+    {
+      "explanation": "No long-lived secrets are stored; PyPI verifies a short-lived OIDC token from GitHub. The OpenCode agent is pinned to a specific version and its SHA256 is verified before execution.",
+      "point": "Security is improved via PyPI Trusted Publishing and pinned, checksum-verified agent runtime."
+    },
+    {
+      "explanation": "Using open-weights models on pay-as-you-go Inference Providers, the cost is negligible. The workflow, verification loop, and skill-based prompts are generic; maintainers can fork and adapt with minimal changes.",
+      "point": "The entire workflow costs about $0.25 per release and is designed to be reusable for any Python library."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article details how Hugging Face automated their weekly huggingface_hub release using open tools, open-weights AI models, a deterministic verification loop, and a human-in-the-loop, reducing release overhead from half a day to minutes.",
+  "originalTitle": "Shipping huggingface_hub every week with AI， open tools， and a human in the loop",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 08:00:00",
+  "publishTimeStamp": 1782172800000,
+  "qualified": false,
+  "readCount": 22,
+  "readTime": 9,
+  "readUrl": "https://www.bestblogs.dev/article/cb37f57c",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_19153d",
+  "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+  "sourceName": "Hugging Face - Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article presents a complete revamp of the huggingface_hub release process, moving from a manual 4-6 week cycle to a fully automated weekly release using a single GitHub Actions workflow. The key innovation is separating mechanical steps (version bumping, tagging, publishing) from judgment-intensive steps (release notes, announcements), and using an open-weights AI model (GLM-5.2) via OpenCode to draft release notes and Slack announcements, while keeping a human reviewer in the loop for final polish. A deterministic verification loop ensures AI-generated notes are complete and accurate: a Python script extracts all PRs from the commit range, the AI drafts notes, then a diff check validates coverage; if PRs are missing or extra, the AI is prompted to fix them. The model is grounded by providing actual documentation diffs from each PR. Security is improved with PyPI Trusted Publishing (OIDC, no long-lived secrets) and pinned, checksum-verified agent runtime. The entire workflow costs about $0.25 per release on Inference Providers. The article emphasizes that everything is open-source and reusable: the same pattern (trigger → AI draft → deterministic validation → human sign-off) can be adapted for any Python library. Practical outcomes include faster releases, better notes, earlier breakage detection, and shorter contributor feedback loops.",
+  "tags": [
+    "CI/CD",
+    "Release Automation",
+    "AI-Assisted Development",
+    "Open Source",
+    "Python"
+  ],
+  "title": "Shipping huggingface_hub every week with AI， open tools， and a human in the loop",
+  "translateContent": null,
+  "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+  "wordCount": 2172
+}

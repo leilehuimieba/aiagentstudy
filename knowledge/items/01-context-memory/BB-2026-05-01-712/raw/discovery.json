@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "idoubi"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://cdn.v2ex.com/avatar/1346/b43a/551588_xlarge.png?m=1700445305",
+  "domain": "v2ex.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_976d0fef",
+  "keyQuotes": [
+    "Good architecture is not designed; it is evolved. But before you start iterating, think through separation of storage and compute, multi-tenant isolation, and fallback fault tolerance — it will save you a lot of time.",
+    "Multi-tenancy is not a feature; it is an architectural decision. The earlier you address it, the easier it becomes.",
+    "If two components have different failure domains, don't make them share a process.",
+    "Context management is the core competency of an Agent. An Agent that knows how to save tokens can survive."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The article affirms OpenClaw's product innovations such as multi-platform access, the SOUL mechanism, memory retrieval, proactive notifications, conversational installation, and multi-agent collaboration. At the same time, it points out serious engineering issues like single points of failure in its monolithic Node.js architecture, lack of multi-tenancy, high resource consumption, and poor cloud-native compatibility, making it unsuitable for production-grade platforms.",
+      "point": "OpenClaw's product innovations are worth learning from, but its engineering architecture has fundamental flaws."
+    },
+    {
+      "explanation": "OpenClaw was designed for a single user, and adding multi-tenancy later almost required a rewrite. FastClaw designed the (user_id, agent_id) isolation model from the first line of code and achieved native multi-tenancy through a Scope-based four-layer configuration inheritance.",
+      "point": "Multi-tenancy is not a feature; it is an architectural decision, and the sooner it is addressed, the easier it becomes."
+    },
+    {
+      "explanation": "FastClaw uses a stateless Gateway compute layer combined with a storage layer consisting of SQLite/Postgres plus S3. Any pod can handle any request, supporting horizontal scaling and switching storage backends at any time.",
+      "point": "Separation of storage and compute is the foundation of horizontal scaling and cloud-native readiness."
+    },
+    {
+      "explanation": "FastClaw isolates plugins via subprocesses, isolates code execution via Docker/E2B, and isolates writes via database transactions. It also implements a layer-by-layer fallback chain for LLM providers, tool providers, and sandboxes to ensure service continuity when external dependencies fail.",
+      "point": "Isolation is the prerequisite for reliability, and all external dependencies should have fallbacks."
+    },
+    {
+      "explanation": "The article summarizes practices such as streamlining SOUL files, on-demand memory retrieval, periodic session summarization, and layered tool descriptions, emphasizing that an Agent that can save tokens is the only one that can survive in a production environment.",
+      "point": "Context management is the core competency of an Agent; token awareness determines operational cost."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Based on over a year of hands-on experience with OpenClaw and hosting 500+ users, the author systematically summarizes the pros and cons of the OpenClaw architecture and shares core design principles and trade-offs in FastClaw's architecture, offering transferable engineering insights for Agent infrastructure design.",
+  "originalTitle": "从 OpenClaw 到 FastClaw：如何设计优秀的多 Agent 架构",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 19:31:14",
+  "publishTimeStamp": 1782127874000,
+  "qualified": false,
+  "readCount": 88,
+  "readTime": 23,
+  "readUrl": "https://www.bestblogs.dev/article/976d0fef",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 89,
+  "selectionReason": null,
+  "sourceId": "SOURCE_17e31348",
+  "sourceImage": "https://image.jido.dev/20260603223120_bdd3a34",
+  "sourceName": "V2EX",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article traces the author's journey from using OpenClaw for personal use to providing hosting services, and then to designing FastClaw from scratch. It first highlights OpenClaw's product innovations in areas like the SOUL mechanism, memory retrieval, multi-platform access, and proactive notifications, then delves into the fundamental flaws of its monolithic Node.js architecture, including single points of failure, lack of multi-tenancy, high resource usage, and poor cloud-native friendliness. Building on this, the author proposes FastClaw's design principles: separation of storage and compute, multi-tenancy with RBAC, session isolation, high concurrency, single-binary distribution, low memory footprint, plugin isolation, fallback chains, etc., and demonstrates how to implement these concepts in Go using architecture diagrams and code examples. Finally, it summarizes transferable lessons such as \"multi-tenancy is an architectural decision,\" \"storage determines everything,\" \"isolation is the prerequisite for reliability,\" \"fallbacks are essential,\" and \"tokens are money.\" The article combines product thinking with engineering depth, providing direct reference value for Agent platform developers.",
+  "tags": [
+    "AI Agent",
+    "Agent Architecture",
+    "AI Platform",
+    "Architecture Design",
+    "Engineering Practice"
+  ],
+  "title": "From OpenClaw to FastClaw: How to Design a Great Multi-Agent Architecture",
+  "translateContent": null,
+  "url": "https://www.v2ex.com/t/1222063#reply0",
+  "wordCount": 5567
+}

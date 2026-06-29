@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "京东技术"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20260527123645_6312820.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_41109d0d",
+  "keyQuotes": [
+    "Any requirement, once it enters development, must go through at least six stages: 'evidence, hypothesis, scope, schedule, acceptance, and review'.",
+    "Adding a new requirement is not 'doing a little more', but a reallocation of resources."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Product_Development",
+  "mainDomainDesc": "Product & Design",
+  "mainPoints": [
+    {
+      "explanation": "Mapping the 8 Skills to the four stages of problem assessment, requirement definition, sprint execution, and post-launch review forms a reusable, lightweight working protocol.",
+      "point": "When an OPC team lacks dedicated product roles, Anthropic PM Skills can carry product judgment and workflow."
+    },
+    {
+      "explanation": "Using synthesize-research and metrics-review to determine if a problem is worth solving avoids wasting resources on the wrong requirements.",
+      "point": "Before entering requirement definition, problem assessment must be done first rather than directly writing a PRD."
+    },
+    {
+      "explanation": "Indiscriminately feeding materials to AI reduces output confidence; formatted input is a prerequisite for ensuring analysis quality.",
+      "point": "Before materials enter a Skill, they must be formatted according to five fields: source, time, subject, content, and association."
+    },
+    {
+      "explanation": "100% capacity planning leaves the team unable to handle uncertainty; reasonable buffering ensures sustainable delivery.",
+      "point": "Iteration plans should only allocate 70%-80% capacity, reserving a buffer for online issues and ad-hoc collaboration."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Drawing on Anthropic's Product Management Skills, the JD Health OPC team breaks down the full product cycle into four stages: problem assessment, requirement definition, sprint execution, and post-launch review, providing reusable prompt templates and material input specifications.",
+  "originalTitle": "京东健康 OPC 团队的产品全流程 Skill 探索",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 17:26:00",
+  "publishTimeStamp": 1782465960000,
+  "qualified": false,
+  "readCount": 49,
+  "readTime": 17,
+  "readUrl": "https://www.bestblogs.dev/article/41109d0d",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_146282",
+  "sourceImage": "https://image.jido.dev/20260527123645_6312820.jpeg",
+  "sourceName": "京东技术",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article details how the JD Health OPC (One Person Company) team adapted Anthropic's open-source 8 Product Management Skills (synthesize-research, metrics-review, competitive-brief, product-brainstorming, write-spec, roadmap-update, sprint-planning, stakeholder-update) to enhance their product workflow. The author notes that in an OPC team without dedicated product roles, this set of Skills provides a \"shared product-engineering decision-making framework\" that standardizes the process from requirement emergence to launch. The article unfolds across four stages: the first stage uses synthesize-research and metrics-review to determine if a problem is worth solving; the second stage uses product-brainstorming to diverge on solutions and write-spec to converge on requirement specifications; the third stage uses roadmap-update to determine priorities and sprint-planning to implement the iteration plan; the fourth stage uses metrics-review to review metrics and stakeholder-update to sync with different audiences. The article also provides a 5-field format for material input, prompt templates for each stage, a roadmap change description template, common pitfalls, and a minimal starting path.",
+  "tags": [
+    "Product Management",
+    "Requirement Management",
+    "Product Workflow",
+    "AI-Assisted Workflow",
+    "Team Collaboration"
+  ],
+  "title": "JD Health OPC Team's Exploration of Full-Cycle Product Skills",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502365&idx=1&sn=939804524a4d29f68e4170beb134dd89",
+  "wordCount": 4083
+}

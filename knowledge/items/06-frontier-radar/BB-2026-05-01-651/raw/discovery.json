@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "魔搭ModelScope社区"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045451_592a693d",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_18283f68",
+  "keyQuotes": [
+    "The collaborative design of Raw and Turbo decouples 'fine-tunability' and 'fast inference': LoRAs trained on Raw are designed to be directly transferable to Turbo for inference.",
+    "The design goal is to simultaneously possess broad aesthetic diversity and strong user control capabilities, avoiding the industry's prevalent issue of 'converging to a narrow set of default aesthetics'."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The Raw base checkpoint is suitable for fine-tuning and LoRA training, while Turbo, through distillation, can generate 2K images on consumer-grade GPUs in about 2 seconds, and LoRAs can be seamlessly transferred.",
+      "point": "Krea 2 is a 12B DiT text-to-image model, with the Raw and Turbo dual versions collaboratively designed to decouple fine-tunability and fast inference."
+    },
+    {
+      "explanation": "Drawing on the LLM paradigm (pre-training → mid-training → SFT → PO → RL → distillation), the PO stage introduces STPO to avoid policy drift, the RL stage uses joint training with multiple reward models, and distillation adopts TDM.",
+      "point": "Training adopts a multi-stage paradigm and multiple technical improvements."
+    },
+    {
+      "explanation": "LoRAs can be directly attached to Turbo for fast inference, expanding the scope of creative applications.",
+      "point": "The open-source release includes nine official style LoRAs, covering directions such as anime, photography, and painting."
+    },
+    {
+      "explanation": "Users can use Raw and Turbo on the web without a local GPU, supporting parameter adjustment and LoRA attachment; DiffSynth-Studio integration enables inference and training on a single 24GB VRAM GPU.",
+      "point": "The ModelScope AIGC section provides an entry for online inference and training, while also supporting local deployment."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "The Krea team open-sourced the 12B DiT text-to-image model Krea 2, featuring Raw/Turbo dual versions and nine official LoRAs, combining fine-tunability with fast inference, now available on the ModelScope AIGC section with local deployment supported.",
+  "originalTitle": "Krea 2 开源：12B DiT 文生图双版本 + 九款官方 LoRA 集齐发，魔搭 AIGC 专区已上线",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 18:55:00",
+  "publishTimeStamp": 1782471300000,
+  "qualified": false,
+  "readCount": 23,
+  "readTime": 10,
+  "readUrl": "https://www.bestblogs.dev/article/18283f68",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_fdd993",
+  "sourceImage": "https://image.jido.dev/20251127045451_592a693d",
+  "sourceName": "魔搭ModelScope社区",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article details the open-sourcing of Krea 2. Krea 2 is a 12B dense DiT text-to-image model that adopts the Qwen3-VL text encoder and Qwen Image VAE, ranking high on the Artificial Analysis text-to-image leaderboard. The open-source release includes Raw (base fine-tunable) and Turbo (8-step 2K image fast inference) dual versions, along with nine official LoRAs covering styles such as anime, photography, and painting. In terms of technical design, it draws on the LLM multi-stage training paradigm (pre-training → mid-training → SFT → PO → RL → distillation), introduces the STPO variant in the PO stage to avoid policy drift, uses multi-reward training in the RL stage (general aesthetics, instruction following, text rendering, artifacts and structure), and adopts Trajectory Distribution Matching (TDM) for distillation. The article also provides operational guidelines for online inference and training on the ModelScope AIGC section, as well as local deployment code examples based on DiffSynth-Studio, covering the full process of installation, inference parameters, and LoRA training.",
+  "tags": [
+    "Model Release",
+    "Text-to-Image",
+    "AI Image Generation",
+    "Open Source Model",
+    "LoRA"
+  ],
+  "title": "Krea 2 Open Source: 12B DiT Text-to-Image Dual Versions + Nine Official LoRAs Released, Now Available on ModelScope AIGC Section",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247510075&idx=1&sn=1e416a7bc1baed30263f0750e475ac02",
+  "wordCount": 2499
+}

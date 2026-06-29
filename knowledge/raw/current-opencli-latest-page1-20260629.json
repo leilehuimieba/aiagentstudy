@@ -1,0 +1,1612 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 1,
+    "dataList": [
+      {
+        "authors": [
+          "Manish Ramavat"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/106d9ec2-0ef5-4bec-b2c6-8473b3bd671f.png",
+        "domain": "freecodecamp.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_4be45766",
+        "keyQuotes": [
+          "LLMs are excellent at fixing errors when you tell them exactly what's wrong. They're terrible at finding their own errors.",
+          "The validator doesn't reason — it executes.",
+          "Build the validator first and the agent second. Your validator IS your spec.",
+          "Stop asking LLMs to verify themselves for deterministic output. Give them a mirror that actually reflects reality."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The author explains that asking an LLM to critique its own output is like asking someone bad at math to grade another person's math. False positives (approving wrong output) are dangerous for production systems.",
+            "point": "LLM-based reflection is unreliable for structured output because the same model cannot reliably detect its own errors."
+          },
+          {
+            "explanation": "Validators parse JSON exactly, check numerical bounds, enforce cross-field rules deterministically, and never hallucinate. They outsource the 'finding' part to code that is perfect at it.",
+            "point": "Deterministic validators (schema checks, business rules) provide perfect, fast detection of errors that LLMs miss."
+          },
+          {
+            "explanation": "Feeding specific error messages (e.g., 'replicas > 5 requires cpu_limit >= 1.0') allows the LLM to fix them almost every time, because LLMs are excellent at correcting when told precisely what is wrong.",
+            "point": "The effective pattern is generate → validate (deterministic) → feed exact errors back → retry."
+          },
+          {
+            "explanation": "If correctness is defined by hard constraints (JSON schema, SQL parsing, code compilation), use this loop. If 'correct' is subjective (tone, persuasiveness), reflection remains appropriate.",
+            "point": "This pattern is only suitable for output that can be validated deterministically; for subjective quality, reflection or human review is still needed."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article argues that using LLM-based reflection to fix structured AI agent output is unreliable, and proposes a deterministic generate-validate-retry loop as a more reliable alternative.",
+        "originalTitle": "What to Do When Reflection Won't Fix Your AI Agent's Output",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 06:18:16",
+        "publishTimeStamp": 1782166696000,
+        "qualified": false,
+        "readCount": 76,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/4be45766",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 92,
+        "selectionReason": null,
+        "sourceId": "SOURCE_074370",
+        "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+        "sourceName": "freeCodeCamp",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author shares production experience at a large-scale web company where LLM reflection (having an LLM critique its own structured output) failed to reliably fix errors, often producing 'confidently wrong' approved output. The proposed solution separates error detection (using deterministic validators like JSON Schema and custom business rules) from error correction (feeding exact error messages back to the LLM for targeted fixes). A complete LangGraph implementation is provided, demonstrating a generate-validate-retry loop that achieves near-perfect correctness. The article also discusses when this pattern is applicable (deterministic constraints) vs. when subjective quality still requires reflection or human review. Key insight: LLMs are good at fixing specific errors but bad at finding their own; deterministic validators excel at perfect detection.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "Prompt Engineering",
+          "Production AI",
+          "LangGraph"
+        ],
+        "title": "What to Do When Reflection Won't Fix Your AI Agent's Output",
+        "translateContent": null,
+        "url": "https://www.freecodecamp.org/news/what-to-do-when-reflection-won-t-fix-your-ai-agent-s-output/",
+        "wordCount": 2043
+      },
+      {
+        "authors": [
+          "Geir Jordet"
+        ],
+        "candidateSource": null,
+        "category": "Sports",
+        "categoryDesc": "Sports",
+        "cover": "https://static01.nyt.com/athletic/uploads/wp/2026/06/23043752/GettyImages-2279124210-scaled.jpg?width=1200&height=630&fit=cover",
+        "domain": "nytimes.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_e62b3e33",
+        "keyQuotes": [
+          "Penalties have never been more important to a World Cup.",
+          "His ability to react to and control the goalkeeper is a strength, but it is also his vulnerability."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "The additional 16 knockout matches increase the probability of shootouts, making penalty proficiency a decisive factor.",
+            "point": "Penalties are more critical than ever in the expanded 48-team World Cup."
+          },
+          {
+            "explanation": "The author's team analyzed 535 players from official senior matches, filtering by conversion rate, recent form, and psychological robustness, then added subjective factors like technique and stress coping.",
+            "point": "The ranking is built on a rigorous data methodology and expert judgment."
+          },
+          {
+            "explanation": "Players like Kane and Calhanoglu alternate between goalkeeper-dependent and independent techniques, while Mbappe's rapid style and composure in high-stakes situations (e.g., 2022 World Cup final) set him apart.",
+            "point": "Top takers exhibit technical flexibility and pressure management."
+          },
+          {
+            "explanation": "Despite career volume, Messi's 78% and Ronaldo's 76.6% over the last 30 kicks fall below the elite threshold, and both now play at lower club levels.",
+            "point": "Messi and Ronaldo are excluded due to below-average recent conversion rates."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article ranks the top 10 penalty takers at the 2026 World Cup based on data-driven analysis and expert assessment, excluding Messi and Ronaldo due to below-average recent conversion rates.",
+        "originalTitle": "The 10 best penalty takers at the 2026 World Cup (with apologies to Messi and Ronaldo)",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 12:14:40",
+        "publishTimeStamp": 1782274480000,
+        "qualified": false,
+        "readCount": 15,
+        "readTime": 12,
+        "readUrl": "https://www.bestblogs.dev/article/e62b3e33",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 92,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b143d403",
+        "sourceImage": "https://www.nytimes.com/athletic/static/img/transparent-background-dark-favicon-144x144.png",
+        "sourceName": "Soccer - The Athletic",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Geir Jordet, a soccer psychology expert, and his team compiled a dataset of 535 players' penalty records from official senior matches, filtering by conversion rate, volume, and other factors. The top 10 list prioritizes recent form, technical flexibility (goalkeeper-dependent vs. independent), and pressure performance. Notable entries include Harry Kane (1st) for his adaptive technique, Viktor Gyokeres (2nd) for pure power, and Raul Jimenez (3rd) for an astonishing 97.4% success rate. The article explains why global stars Messi (78%) and Ronaldo (declining 76.6%) are omitted, and provides deep tactical breakdowns for each player, including vulnerabilities.",
+        "tags": [
+          "Football",
+          "World Cup",
+          "Penalties",
+          "Tactical Analysis",
+          "Player Performance"
+        ],
+        "title": "The 10 best penalty takers at the 2026 World Cup (with apologies to Messi and Ronaldo)",
+        "translateContent": null,
+        "url": "https://www.nytimes.com/athletic/7384448/2026/06/24/best-penalty-takers-2026-world-cup/",
+        "wordCount": 2886
+      },
+      {
+        "authors": [
+          "财新"
+        ],
+        "candidateSource": null,
+        "category": "Finance_Economy",
+        "categoryDesc": "Finance & Economy",
+        "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zZicnRtyLiaicJKkUOcEhW7GyvVxQZLtgQSgibJCC3A7zzA/0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_61101459",
+        "keyQuotes": [
+          "\"Order-poaching\" is one of the most distorted forms of industry practice.",
+          "\"The essence of 'order-poaching' is agents switching to the referrer role, transforming from legitimately receiving 'commissions' to privately and illegally obtaining 'referral fees'.\""
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Finance_Economy",
+        "mainDomainDesc": "Finance & Economy",
+        "mainPoints": [
+          {
+            "explanation": "Agents exploit information asymmetry to privately redirect policies that should be completed through their own companies to brokerage firms, obtaining 'referral fees' far exceeding normal commissions and circumventing insurance companies' compliance monitoring.",
+            "point": "Hong Kong insurance 'order-poaching' is essentially agents illegally referring policies to extract excessive returns."
+          },
+          {
+            "explanation": "The whistleblower materials obtained by Caixin contain specific policy numbers, with dozens of agents involved, primarily from AIA, Prudential, and China Life, reflecting the systemic nature of this problem.",
+            "point": "Over 1,300 whistleblower documents implicate leading insurers, with involved amounts exceeding HK$200 million."
+          },
+          {
+            "explanation": "Unlicensed 'referrers' manufacture anxiety or promise rebates on platforms like Xiaohongshu and WeChat to induce mainland visitors to purchase insurance in Hong Kong, with some wealth management seminars also bundling Hong Kong insurance sales, forming a gray industry chain.",
+            "point": "Cross-border sales and social media have accelerated the spread of 'order-poaching'."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article conducts an in-depth investigation into the 'order-poaching' chaos in Hong Kong's insurance market, revealing how unlicensed referrers circumvent regulatory arbitrage based on first-hand whistleblower materials, and analyzes the long-term damage to the industry ecosystem.",
+        "originalTitle": "深度 | 香港保险“飞单”愈演愈烈 行业生态扭曲亟待治理",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 17:55:00",
+        "publishTimeStamp": 1782467700000,
+        "qualified": false,
+        "readCount": 4,
+        "readTime": 4,
+        "readUrl": "https://www.bestblogs.dev/article/61101459",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 92,
+        "selectionReason": null,
+        "sourceId": "SOURCE_cc9ccaad",
+        "sourceImage": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zZicnRtyLiaicJKkUOcEhW7GyvVxQZLtgQSgibJCC3A7zzA/0",
+        "sourceName": "财新",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using the explosive growth of Hong Kong's insurance market in 2025 as an entry point, the article notes that behind the 50.6% year-on-year premium growth, cross-border sales and 'shadow referrers' have become increasingly rampant. The author details the mechanics of 'order-poaching': licensed agents privately refer policies to brokerage firms to obtain 'referral fees' exceeding standard commissions, thereby bypassing their insurance companies' oversight. Whistleblower materials obtained by Caixin involving over 1,300 policies show that the agents involved came from leading insurers including AIA, Prudential, and China Life, with estimated policy amounts reaching HK$200 million. The article also clarifies the role distinctions among agents, brokers, and referrers, and cites industry perspectives calling for regulatory intervention to curb ecosystem deterioration.",
+        "tags": [
+          "Hong Kong Insurance",
+          "Order-Poaching",
+          "Insurance Regulation",
+          "Industry Ecosystem",
+          "Referrer"
+        ],
+        "title": "In-Depth | Hong Kong Insurance 'Order-Poaching' Escalates as Industry Ecosystem Distortion Demands Urgent Reform",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjY2NzgwMjU0MA==&mid=2650326573&idx=1&sn=f3d3666704c4daca174395b5fbc67850",
+        "wordCount": 886
+      },
+      {
+        "authors": [
+          "Datawhale"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045505_b03e263f",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_b920a27e",
+        "keyQuotes": [
+          "“I don't prompt Claude anymore. I have loops that are running. They're the ones that are prompting Claude and figuring out what to do. My job is to write loops.”",
+          "“You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.”",
+          "“Great prompt + weak verification will fail; mediocre prompt + strong verification will converge.”",
+          "“A loop amplifies your judgment.”"
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Prompts require foreseeing all information at once; Context Engineering uses RAG and system prompts to provide more complete context; Harness gives Agents multi-step execution capability; Loop replaces the process of humans repeatedly triggering Agents with an automated system, allowing humans to instead design decision loops.",
+            "point": "Loop Engineering is the natural result of the Prompt → Context → Harness → Loop evolution, and its core is freeing humans from the repetitive process of manually triggering Agents."
+          },
+          {
+            "explanation": "The controller (reading deviation signals and deciding corrections) needs Skills (project rules) and Memory (persistent state); the actuator (operating on the real world) needs Connectors (connecting external services) and Worktrees (isolated parallel workspaces); the sensor (measuring results) needs Sub-agents (independent verification to avoid blind spots); Automations provide trigger conditions to run the loop automatically.",
+            "point": "The six components can be uniformly explained with a cybernetic framework: the controller needs Skills and Memory, the actuator needs Connectors and Worktrees, the sensor needs Sub-agents, and the loop requires Automations."
+          },
+          {
+            "explanation": "A sensor that only returns pass/fail forces the controller to guess blindly; a sensor that returns specific failing test cases, assertion failures, or diffs can drastically reduce the search space. 'Great prompt + weak verification will fail; mediocre prompt + strong verification will converge.'",
+            "point": "Sensors (verification) are key to convergence speed; designing good sensors is more important than strengthening the model itself."
+          },
+          {
+            "explanation": "Without an objective pass/fail standard (such as 'elegant' or 'good'), a closed loop is a false loop—even if another LLM scores it, it's unreliable. The task should appear at least once a week to be worth automating; tokens will be wasted on retries and exploration. Starting sequence: first write Skills to clarify intent, then write sensors to precisely define 'done when', and finally wrap with a cron trigger.",
+            "point": "The prerequisite for building a Loop is the ability to write objective automated checks, and the task must be repetitive with an acceptable token budget; unmeasurable goals are unsuitable for Loops."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article traces the evolution from Prompt Engineering to Loop Engineering, explains the six-component principle using a cybernetic framework, and provides conditions for determining whether to build a Loop.",
+        "originalTitle": "一文搞懂！Loop Engineering 的进化史和本质",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 22:00:00",
+        "publishTimeStamp": 1782223200000,
+        "qualified": false,
+        "readCount": 177,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/b920a27e",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4688eb",
+        "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+        "sourceName": "Datawhale",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Starting with the shared insight from the head of Anthropic Claude Code and the founder of OpenClaw, the article points out that the industry has shifted from 'writing prompts' to 'designing loops.' The author first uses an evolutionary chain (Prompt → Context → Harness → Loop) to explain the core bottleneck addressed at each stage, introducing the starting point of Loop Engineering—freeing humans from the repetitive process of manually triggering Agents. It then details the six components (Automations, Worktrees, Skills, Connectors, Sub-agents, Memory/State) and uses a CI fix scenario to demonstrate the complete running loop. The core part uses cybernetics (goal → execution → measure deviation → feedback correction) to uniformly explain why each component exists: the controller needs Skills and Memory, the actuator needs Connectors and Worktrees, the sensor needs Sub-agents, and the loop requires Automations. The article further discusses three loop outcomes (convergent correct, convergent wrong, divergent), emphasizing that sensor quality determines convergence speed: 'Great prompt + weak verification will fail; mediocre prompt + strong verification will converge.' Finally, it provides conditions for determining whether to build a Loop: the ability to write objective automated checks, repetitive tasks, and acceptable token budget; unmeasurable goals are unsuitable for Loops; the starting sequence should be to write Skills first, then sensors, and finally wrap with a cron trigger.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "AI Coding",
+          "Engineering Practice",
+          "Context Engineering"
+        ],
+        "title": "A Comprehensive Guide: The Evolution and Essence of Loop Engineering",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723682&idx=1&sn=07b7025a091060fc7cd45d9e8bc9c14f",
+        "wordCount": 5252
+      },
+      {
+        "authors": [
+          "张子豪"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/ChatGPT3_20_58.png",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_00f2533c",
+        "keyQuotes": [
+          "AI has started to shift from 'answering questions' to genuinely 'getting a piece of work done for people.'",
+          "The expansion path of Codex is moving from people who write code to people who handle documents, data, research, sales, recruiting, legal, and operations.",
+          "When models can call tools, read and write files, and execute tasks, risks will enter real workflows."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The article cites the OpenAI report, noting that in the ChatGPT era, nearly half of usage was asking questions, whereas Codex enables users to use AI to execute tasks like debugging, refactoring, and environment setup, fundamentally changing the usage paradigm.",
+            "point": "AI is shifting from 'answering questions' to 'getting work done for people,' and Codex is a prime example."
+          },
+          {
+            "explanation": "97.9% of active employees use Codex, and Codex output tokens account for 99.8% of the total; power users run it for over 60 hours daily on average, indicating that the agent is deeply embedded into daily workflows.",
+            "point": "Over 90% of the workload for OpenAI internal employees is now handled by Codex, achieving near-full adoption."
+          },
+          {
+            "explanation": "Among external organizations, active non-developer Codex users grew 189 times, and among individual users, 130 times. Usage in roles like legal, recruiting, and operations is rising rapidly, showing the agent is breaking beyond coding boundaries.",
+            "point": "Codex users are rapidly expanding from developers to non-developers."
+          },
+          {
+            "explanation": "The proportion of users submitting tasks that take a skilled human over 1 hour doubled in six months, with 25.6% of users attempting heavy tasks lasting over 8 hours; skill usage rose from 5.4% to 26.6%, indicating users are automating repetitive work.",
+            "point": "Task complexity and concurrency continue to climb, and users are starting to accumulate reusable workflows."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Based on data from the OpenAI Codex research report, this article illustrates the paradigm shift of AI agents from answering questions to executing work, reveals that over 90% of internal workloads at OpenAI are now handled by Codex, highlights the explosive growth among non-developers and rising task complexity, and explores the implications for AI regulation.",
+        "originalTitle": "你的 Codex 可能只解锁了 1%，大神让它一天肝 71 小时",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 22:02:10",
+        "publishTimeStamp": 1782482530000,
+        "qualified": false,
+        "readCount": 171,
+        "readTime": 11,
+        "readUrl": "https://www.bestblogs.dev/article/00f2533c",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using the release of the OpenAI Codex usage report as a starting point, and set against the backdrop of the U.S. government requesting restrictions on the release of GPT-5.6, this article provides an in-depth analysis of how the AI agent product Codex is transforming the way we work. Report data shows: 97.9% of active OpenAI employees use Codex, with over 90% of their workload completed by Codex on average; among external organizations, the usage by non-developers has grown by over a hundredfold, expanding Codex from a developer tool to roles in legal, recruiting, and operations; users are submitting increasingly heavy tasks (the proportion of tasks that would take a skilled human over 1 hour rose from 35% to 70%), and running multiple agents concurrently has become the norm (peaking at 71 hours of daily runtime); users are beginning to accumulate reusable workflows (skill usage rate climbed to 26.6%). The article points out that as AI shifts from conversation to execution, risks enter real workflows and regulatory sensitivity rises accordingly—the phased release of GPT-5.6 is a direct reflection of this logic.",
+        "tags": [
+          "AI Agent",
+          "AI Products & Applications",
+          "AI Workflow",
+          "AI Commercialization",
+          "Enterprise AI"
+        ],
+        "title": "Your Codex May Only Be 1% Unlocked: Power Users Run It 71 Hours a Day",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1670118?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 2745
+      },
+      {
+        "authors": [
+          "Charles Ye"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260622202524_d1a80e5.webp",
+        "domain": "lesswrong.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_8f187d0e",
+        "keyQuotes": [
+          "Roles were designed to be discrete, architectural boundaries, imposed on an otherwise undifferentiated string. Yet internally, these aren't hard boundaries but soft inferences, reconstructed from a combination of other surface features.",
+          "The LLM doesn't have separate features for 'tagged as reasoning' and 'sounds like reasoning'. It has a single feature that means 'this is my reasoning', and both <think> and reasoning-like style activate it.",
+          "If sounding like a role is enough to become that role, then an attacker just needs to sound convincing.",
+          "A change nearly invisible to humans completely changes the LLM's role perception."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Using role probes, the authors show that stripping or changing tags does not affect the model's internal role perception—only the writing style matters. This means the intended secure boundary (tag) is routinely overridden by surface features.",
+            "point": "LLMs perceive roles based on writing style, not the actual tag."
+          },
+          {
+            "explanation": "By injecting text that mimics the model's reasoning style into a user prompt, attackers can make the LLM treat it as its own pre-validated reasoning, achieving high jailbreak success rates across models without needing model-specific exploits.",
+            "point": "CoT Forgery is a powerful new attack that exploits role confusion."
+          },
+          {
+            "explanation": "Simply prepending \"User: \" to a hidden command raises the model's internal 'Userness' perception, making it more likely to be treated as an instruction. This shows the tag alone doesn't guarantee security.",
+            "point": "Standard prompt injection works because injected commands inside <tool> tags can sound like <user> text."
+          },
+          {
+            "explanation": "The article discusses how role bleed can lead to subconscious steering—non-adversarial text (e.g., an enthusiastic product page) can shift the model's persona or decisions without explicit instructions, posing a broader risk.",
+            "point": "Role confusion is a general failure of soft boundaries, not limited to adversarial attacks."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article explains prompt injection as a failure of LLMs to perceive roles (e.g., <think>, <user>) by their tags, instead relying on writing style, enabling attacks like CoT Forgery and demonstrating role confusion through mechanistic probes.",
+        "originalTitle": "A Mechanistic Explanation of Prompt Injection (and why you should study roles) — LessWrong",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 22:42:19",
+        "publishTimeStamp": 1782139339000,
+        "qualified": false,
+        "readCount": 144,
+        "readTime": 22,
+        "readUrl": "https://www.bestblogs.dev/article/8f187d0e",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_e7173a6f",
+        "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+        "sourceName": "LessWrong",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article presents a mechanistic explanation of prompt injection based on how LLMs internally perceive role tags. The authors develop role probes to measure the LLM's internal belief about which role each token belongs to, and show that role perception is driven by writing style rather than the actual tag. This leads to role confusion: text that sounds like a user command or reasoning style overrides the assigned role tag. They introduce a new attack, CoT Forgery, which places fake reasoning inside a user prompt to trick the model into treating it as its own thinking, achieving ~60% success on jailbreak benchmarks. They also show that standard prompt injections on tool outputs succeed when the injected text sounds user-like (e.g., prepending \"User: \"). The core finding is that roles are soft boundaries reconstructed from surface features, not hard architectural boundaries, and this enables prompt injection. The article advocates for a new subfield studying the science of roles, and outlines open research directions including subconscious steering and principled role design.",
+        "tags": [
+          "LLM",
+          "Prompt Injection",
+          "AI Safety",
+          "AI Security",
+          "Role Confusion"
+        ],
+        "title": "A Mechanistic Explanation of Prompt Injection (and why you should study roles) — LessWrong",
+        "translateContent": null,
+        "url": "https://www.lesswrong.com/posts/d8xDGzCEYE639qqEv/a-mechanistic-explanation-of-prompt-injection-and-why-you",
+        "wordCount": 5449
+      },
+      {
+        "authors": [
+          "马扶摇"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/banner.jpg",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_9d5ab590",
+        "keyQuotes": [
+          "The A2A operation model is currently the one that maximizes data security, ensures user retention, and shares token overhead, effectively balancing the interests of all parties.",
+          "To help the Agent work better, you subconsciously make your needs more explicit, singular, and logical—essentially alienating yourself into a machine."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "A2A enables direct communication between intelligent agents, avoiding the data security risks and user retention issues of OCR screen-reading, while offering more flexible token cost sharing. It is currently the model that best balances the interests of all parties.",
+            "point": "A2A is the best technical path for coordinating interests between phone manufacturers and super apps, outperforming OCR screen-reading solutions."
+          },
+          {
+            "explanation": "In the test version, basic communication and payment entry points have been opened, but rich media and sensitive transaction features are not yet available, indicating Tencent's gradual approach to security and user experience.",
+            "point": "Current WeChat A2A functionality is limited, supporting only text messages, audio/video calls, and scan-to-pay, but not sending images, transfers, or other operations."
+          },
+          {
+            "explanation": "A2A operations involve multiple agent calls (phone agent, WeChat agent, mini-program agent), raising the question of how token costs are distributed among users, manufacturers, and developers. The computational waste from nested calls is also an engineering problem that must be solved.",
+            "point": "Computing cost sharing and nested call efficiency losses are substantial challenges for the A2A ecosystem."
+          },
+          {
+            "explanation": "If users become fully dependent on AI proxies, they may subconsciously make their needs more explicit, uniform, and logical—essentially alienating themselves into machine-like thinking. This is a side effect worth watching from a humanistic perspective.",
+            "point": "Relying entirely on AI agents may risk alienating user habits."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article analyzes the technical model of WeChat and domestic phone manufacturers using the A2A protocol to enable AI assistants to operate WeChat, compares the advantages and limitations of the OCR screen-reading approach, and explores potential issues such as computing costs, interest conflicts, and human alienation.",
+        "originalTitle": "微信终于要给 AI 手机开门了｜AI 器物志",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 18:46:39",
+        "publishTimeStamp": 1782125199000,
+        "qualified": false,
+        "readCount": 122,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/9d5ab590",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Starting from the common pain point that 'phone AI assistants cannot operate WeChat,' the article reports on WeChat's collaboration with manufacturers like Huawei, Xiaomi, Honor, and OPPO to launch the A2A assistant capability. Through actual testing on the Honor 500 Pro, it showcases the smooth experience of 'sending messages, making calls, opening scan/payment codes by voice,' but also notes that sending images/emojis and transfers are not yet supported. The author clearly distinguishes between two technical paths—A2A and OCR screen-reading + simulated clicks—pointing out that A2A better balances data security, user retention, and token cost sharing. The article also looks ahead to A2A's expansion to WeChat mini-programs, other apps, and even international giants (e.g., Google's Gemini Spark, Apple's AI Siri), while cautiously highlighting practical challenges like computing costs, nested call efficiency losses, and the human risk of 'alienation.' The content is well-informed, with comprehensive background and focused analysis without overstatement.",
+        "tags": [
+          "AI Agent",
+          "A2A Protocol",
+          "WeChat",
+          "Phone AI",
+          "Smart Assistant"
+        ],
+        "title": "WeChat Finally Opens the Door for AI Phones | AI Artifacts",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1669522?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 2022
+      },
+      {
+        "authors": [
+          "张子豪"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/image-1.png",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_e1b8b188",
+        "keyQuotes": [
+          "From 'users learning tools' to 'users directly getting results'",
+          "Whether an AI product succeeds or not ultimately comes down to this: it's not about how much it generated, but whether you actually used it, whether you actually got that result.",
+          "Elevating the baseline of AI products from 'generation' to 'delivery'."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "From Picchi's retouching style learning to Kaipai's auto-editing of talking videos, Meitu uses multi-Agent teams to replace user operations, outputting ready-to-use finished products and lowering the barrier to entry.",
+            "point": "Meitu's eight AI products collectively shift towards \"delivery-style AI,\" allowing users to directly obtain results without learning the tools."
+          },
+          {
+            "explanation": "Users can upload 3-10 sets of before-and-after photos to create an exclusive retouching model, or directly use presets from professional makeup artists to batch output retouching results with a consistent style.",
+            "point": "Picchi achieves personalized style memory and borrowing through \"Learn My Retouching\" and \"Learn Their Retouching\"."
+          },
+          {
+            "explanation": "By analyzing beats, sections, and emotions, MVLAND produces an MV in 10 minutes that would originally cost tens of thousands of yuan, solving the pain point of MV scarcity in the short-video era.",
+            "point": "MVLAND deeply understands musical structures to automatically generate mood-matching MVs."
+          },
+          {
+            "explanation": "The author believes that Meitu is no longer just competing on generation speed, but taking responsibility for the usability of the final results, covering scenarios like retouching, talking videos, e-commerce, and short dramas.",
+            "point": "Meitu's \"AI Imaging Team\" elevates the industry standard from \"generation\" to \"delivery\"."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Meitu released eight AI products at its Imaging Festival, shifting its core logic from \"making users learn tools\" to \"letting users directly get results,\" achieving \"delivery-style AI\" across scenarios like photo retouching, talking videos, MVs, and e-commerce materials through AI Agent teams.",
+        "originalTitle": "美图一口气发了 8 款产品，我挨个用完发现它们在干同一件事",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 20:53:04",
+        "publishTimeStamp": 1782478384000,
+        "qualified": false,
+        "readCount": 100,
+        "readTime": 19,
+        "readUrl": "https://www.bestblogs.dev/article/e1b8b188",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Based on the author's hands-on experience with the eight products released at the Meitu Imaging Festival, the article analyzes Meitu's latest strategic shift in the AI imaging field. It highlights Picchi (which learns personal retouching styles from user-uploaded before-and-after photos or borrows aesthetics from influencers), MVLAND (which deeply understands musical structures to automatically generate matching MVs), Kaipai (which fully auto-edits talking videos into finished clips), Meitu Design Studio (which generates a full set of e-commerce materials from a single product image), and RoboNeo (a tool for scaled short drama production). The article points out that unlike industry-standard AI tools that emphasize \"generation capabilities,\" Meitu this time focuses on \"delivering results.\" By building an \"AI imaging team\" composed of specialized Agents, it allows users to get finished products directly without learning complex tool operations. The author believes this approach of \"making AI adapt to people and being responsible for the results\" elevates the baseline of AI products from \"generation\" to \"delivery.\"",
+        "tags": [
+          "AI Products & Applications",
+          "AI Agent",
+          "AI Workflow",
+          "AI Commercialization",
+          "Image Generation"
+        ],
+        "title": "Meitu Released 8 Products at Once, and After Trying Them All, I Found They Are Doing the Same Thing",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1670054?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 4592
+      },
+      {
+        "authors": [
+          "Latent.Space"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260622214325_transcoded-1781895509.png",
+        "domain": "latent.space",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c4be1c11",
+        "keyQuotes": [
+          "The risks of extremely smart AI increasingly feel like gray swan events: an event that everyone can see coming.",
+          "AI systems have inherent vulnerabilities of their own. They can be tricked in ways people can be tricked, so you need a different security mindset.",
+          "The next major AI incident may be a gray swan: unlikely, but clearly visible before it happens."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Unlike traditional software, AI can be tricked in ways humans can be tricked, and correlated failures across widely used models create a new exploit class.",
+            "point": "AI security requires a different mindset because AI systems have unique vulnerabilities."
+          },
+          {
+            "explanation": "Gray Swan's specialized red-teaming model, trained on data from human experts, can find more breaks in a fixed time window than even skilled human participants.",
+            "point": "Automated red teaming (Shade) now outperforms human red teamers at breaking models."
+          },
+          {
+            "explanation": "Safety and robustness are not emergent properties of larger models; they require explicit training, and larger models are not inherently better at red teaming themselves.",
+            "point": "Frontier models do not automatically become more robust as they scale."
+          },
+          {
+            "explanation": "As agents use tools and browse the web, they are vulnerable to indirect prompt injection, and the first major AI security incident is considered a 'gray swan'—visible beforehand but not prevented.",
+            "point": "Prompt injection in agentic systems (e.g., coding agents) is a critical and likely inevitable breach vector."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "An in-depth podcast interview with Gray Swan co-founders on why AI security fundamentally differs from traditional cybersecurity, the rise of automated red teaming, and why prompt injection in agentic systems represents a new class of inevitable vulnerabilities.",
+        "originalTitle": "Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson， Gray Swan",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 05:06:55",
+        "publishTimeStamp": 1782162415000,
+        "qualified": false,
+        "readCount": 69,
+        "readTime": 48,
+        "readUrl": "https://www.bestblogs.dev/article/c4be1c11",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_fc479e",
+        "sourceImage": "https://image.jido.dev/20260527050728_73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+        "sourceName": "Latent.Space",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This episode from Latent.Space features Zico Kolter and Matt Fredrikson, co-founders of Gray Swan, discussing the current state of AI red teaming. They explain that AI security is not merely 'cybersecurity with AI'—AI systems have inherent, novel vulnerabilities (e.g., prompt injection, adversarial attacks) that require a dedicated security mindset. The conversation covers Gray Swan's two-pronged approach: a community-driven red teaming arena (15,000+ participants) and automated red teaming with their model 'Shade,' which can now outperform human red teamers in controlled experiments. They introduce 'The Lethal Trifecta' (untrusted data, private data, exfiltration) and highlight that frontier models do not automatically become more robust with scale. The guests also discuss agent-native identity, permissions, the inevitability of a major AI prompt-injection breach, and the potential for AI security to become part of insurance and compliance stacks.",
+        "tags": [
+          "AI Security",
+          "Red Teaming",
+          "Prompt Injection",
+          "LLM",
+          "AI Agents"
+        ],
+        "title": "Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan",
+        "translateContent": null,
+        "url": "https://www.latent.space/p/gray-swan",
+        "wordCount": 11825
+      },
+      {
+        "authors": [
+          "大淘宝技术"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045404_f9729af6",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_35406486",
+        "keyQuotes": [
+          "A Skill is not \"injecting a function into a model,\" but rather encapsulating a \"reusable, verifiable, and bounded\" business process into a stable capability unit.",
+          "AI's ceiling depends on the quality of the domain knowledge you inject.",
+          "The transition from traditional data science to AI data science is not about letting AI replace us, but about freeing our energy from repetitive \"running data, generating charts, and writing reports\" to focus on the more valuable tasks of \"defining problems, designing solutions, and driving implementation.\""
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "SKILL.md is only responsible for defining trigger conditions, step orchestration, and exception handling, without embedding large chunks of implementation code. Specific logic is delegated to scripts/, improving analysis stability through structured instructions rather than pure code.",
+            "point": "The essence of a Skill is a domain expert manual; its core is process orchestration rather than code injection."
+          },
+          {
+            "explanation": "SKILL.md controls the process, config.yaml defines parameter templates (using auto or empty values as placeholders), scripts/ solidifies deterministic logic, and references/ provides progressive knowledge disclosure—this design prevents Agent attention decay in long contexts and enables Skill reuse across scenarios.",
+            "point": "The four-layer architecture separation (orchestration / parameters / implementation / knowledge) achieves controllability and scalability."
+          },
+          {
+            "explanation": "These include: using Description to clarify trigger scenarios, providing processes rather than code in SKILL.md, using structured output templates, treating config as a template rather than a form, controlling length, and utilizing progressive disclosure.",
+            "point": "5 key techniques for developing high-quality Skills."
+          },
+          {
+            "explanation": "For example, Frontend Slides uses NON-NEGOTIABLE tags to repeatedly emphasize rules, explicitly lists anti-pattern checklists, and collects user information all at once. These are all effective techniques to combat AI's instability in long contexts.",
+            "point": "Engineering methods to counter Agent attention decay can be learned from the Follow Builders and Frontend Slides cases."
+          },
+          {
+            "explanation": "Skills productize team methodologies, improving analysis efficiency while achieving knowledge retention and standardization. However, this requires significant time investment in testing (accounting for 70-80% of development) and attention to token consumption.",
+            "point": "The core of AI data science transformation is freeing up human effort, standardizing repetitive data runs and chart generation, and focusing on defining business problems and designing solutions."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article systematically elaborates on the four-layer engineering architecture of QoderWork Skills (orchestration / parameters / implementation / knowledge), and shares practical methodologies for transitioning from traditional data science to AI data science through the author's self-developed User Insight and AB Testing Skill cases.",
+        "originalTitle": "QoderWork Skills 开发实践：从传统数科到 AI 数科的转型探索-我的 Skills 进阶之旅",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 16:38:00",
+        "publishTimeStamp": 1782463080000,
+        "qualified": false,
+        "readCount": 62,
+        "readTime": 28,
+        "readUrl": "https://www.bestblogs.dev/article/35406486",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_efc2de",
+        "sourceImage": "https://image.jido.dev/20251127045404_f9729af6",
+        "sourceName": "大淘宝技术",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author, Zi Sui (from the Taobao & Tmall Group Live Streaming Technology Team), details the QoderWork Skills development system and engineering philosophy based on personal practice. The article first identifies the pain points of data science teams repeatedly running data and manually generating reports, introducing the value of Skills as \"digital assistants.\" The core section proposes a four-layer separation architecture: SKILL.md (orchestration layer, solely responsible for process guidance), config.yaml (parameter template layer, avoiding hardcoding business values), scripts/ (implementation layer, solidifying complex logic like statistical tests and field detection), and references/ (knowledge layer, enabling progressive information disclosure). Subsequently, by deconstructing the design concepts of excellent community Skills (Follow Builders, Frontend Slides)—such as Frontend Slides' use of \"NON-NEGOTIABLE\" tags, anti-pattern lists, and one-shot data collection instructions—it demonstrates the concrete form of this architecture in practice. The author also shares two self-developed Skills: User Insight Report Generation (including RFM segmentation and the PIA insight framework) and AB Testing Analysis (including mandatory SRM checks, automatic method selection, and a conclusion determination matrix), summarizing the development methodology: Description is the soul, provide processes rather than code, templates are more controllable than free-form generation, config is a template not a form, and control the length. Finally, the author compares Idealab's RAG practices with QoderWork Skills, arguing that AI's ceiling depends on the quality of injected domain knowledge, and the core of data science transformation is freeing up human effort to focus on high-value business problems.",
+        "tags": [
+          "AI Agent",
+          "Prompt Engineering",
+          "AI Coding",
+          "Domain Knowledge Engineering",
+          "LLM"
+        ],
+        "title": "QoderWork Skills Development Practice: Exploring the Transition from Traditional Data Science to AI Data Science - My Skills Advancement Journey",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544598&idx=1&sn=dc8678c46fc224211a0b384fc7e83cfc",
+        "wordCount": 6926
+      },
+      {
+        "authors": [
+          "机器之心"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045346_3bc9a61a",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_aa765f04",
+        "keyQuotes": [
+          "Unlimited OCR did not start from scratch. On the contrary, it is built directly on top of DeepSeek OCR.",
+          "The one occurs at the encoder side, the other at the decoder side. Individually, each stands on its own; together, they are unexpectedly coherent."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "R-SWA makes the model always attend to visual reference tokens and the most recent 128 output tokens, simulating a human-like 'soft forgetting' copying process, so that decoding computation overhead does not increase with output length.",
+            "point": "Unlimited OCR limits the output KV cache to a fixed window via R-SWA, solving memory and latency expansion in long-range parsing."
+          },
+          {
+            "explanation": "It leads in all tests including PPTs, newspapers, and magazines, indicating that R-SWA is applicable not only to simple text but also to complex layouts, and accuracy does not degrade due to the window limit.",
+            "point": "Unlimited OCR surpasses DeepSeek OCR by 6 percentage points with a score of 93.23% on OmniDocBench, showing consistent performance on complex layouts."
+          },
+          {
+            "explanation": "It is built directly on DeepSeek OCR, specifically addressing KV cache expansion at the decoder side, rather than using page-by-page processing or external concatenation, representing a complementary technical approach between the encoder and decoder sides.",
+            "point": "The model modifies the decoder based on DeepSeek OCR's DeepEncoder, achieving truly continuous parsing without relying on external schedulers."
+          },
+          {
+            "explanation": "The report cites DeepSeek OCR 40 times, has a bold and narrative style, the technical director signed as 'YY' has an unknown whereabouts, and combined with personnel departures from DeepSeek, it is speculated to be the same team.",
+            "point": "The technical report style and author signature imply the core author may be from the DeepSeek team."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Baidu open-sourced Unlimited OCR, which uses Reference Sliding Window Attention (R-SWA) to parse dozens of pages in a single forward pass, surpassing DeepSeek OCR on OmniDocBench and sparking speculation that the core author is from DeepSeek.",
+        "originalTitle": "百度开源无限 OCR，跑通长程解析，核心作者 YY 疑是来自 DeepSeek",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 15:20:00",
+        "publishTimeStamp": 1782199200000,
+        "qualified": false,
+        "readCount": 59,
+        "readTime": 19,
+        "readUrl": "https://www.bestblogs.dev/article/aa765f04",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_e24314",
+        "sourceImage": "https://image.jido.dev/20251127045346_3bc9a61a",
+        "sourceName": "机器之心",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article reports that Baidu has open-sourced the Unlimited OCR model. Building on DeepSeek OCR as a baseline, it replaces multi-head attention with Reference Sliding Window Attention (R-SWA), which limits the output-side KV Cache to a fixed window (default 128 tokens), thereby keeping computation and memory overhead constant during decoding, enabling true single-forward-pass long-range document parsing. Experiments show that Unlimited OCR achieves a total score of 93.23% on OmniDocBench v1.5, surpassing DeepSeek OCR by 6 percentage points, and performs consistently on complex layouts such as PPTs and magazines. In long-range tests, the edit distance for documents with 40+ pages is below 0.11, and Distinct-35 is approximately 97%. The article also analyzes the complementary relationship between R-SWA and DeepSeek OCR's encoder DeepEncoder, and speculates that the core author may be from DeepSeek, based on the technical report style, the author signature \"YY\", and personnel departures from DeepSeek.",
+        "tags": [
+          "OCR",
+          "Document Parsing",
+          "Attention Mechanism",
+          "Long-Range Inference",
+          "Open Source Project"
+        ],
+        "title": "Baidu Open-Sources Unlimited OCR, Achieves Long-Range Parsing; Core Author 'YY' Suspected from DeepSeek",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651040687&idx=2&sn=11f7171bdd0d0f945fccf4d07599b020",
+        "wordCount": 4627
+      },
+      {
+        "authors": [
+          "阿里技术"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527050038_b20a9a1.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_eb89e83b",
+        "keyQuotes": [
+          "Real secrets should stay outside the sandbox, injected by the platform based on rules over a controlled egress path.",
+          "The sandbox handles execution, the Vault handles authorization, and the egress policy handles the boundary.",
+          "Credential Vault is not about making it more convenient for the sandbox to store secrets, but about making it so the sandbox no longer needs to store real secrets."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "AI Agent execution paths are long and unpredictable; once secrets enter sandbox environment variables, command lines, or configuration files, a loss of control at any point in the toolchain can lead to secret leakage.",
+            "point": "Directly exposing secrets inside the sandbox amplifies risks like Prompt Injection, malicious dependencies, and log leaks."
+          },
+          {
+            "explanation": "The host SDK writes real credentials and binding rules into the sidecar, while the sandbox process only holds fake API Keys; when a matching outbound request passes through, the sidecar automatically injects the real auth header, ensuring secrets never enter the sandbox.",
+            "point": "Credential Vault injects authentication information into outbound requests via an egress sidecar, keeping only fake values inside the sandbox."
+          },
+          {
+            "explanation": "Whether it is HTTP Basic Auth, Header Token, or complex path matching, Credential Vault can achieve precise authorization through binding rules.",
+            "point": "This solution applies to various developer tool scenarios, such as model APIs, Git clones, and internal APIs."
+          },
+          {
+            "explanation": "Only allow the service hosts that tools truly need, and then use the Vault to restrict credentials to a narrower request scope, enhancing the precision of security boundaries.",
+            "point": "It is recommended to pair with a default-deny egress network policy to achieve multi-dimensional binding of credentials to services, paths, and methods."
+          },
+          {
+            "explanation": "Two layers of sidecars will conflict within the same network namespace, so platforms must pay attention to the compatibility of deployment environments.",
+            "point": "Currently, it does not support coexistence with transparent service mesh sidecars like Istio/Envoy."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "OpenSandbox introduces the Credential Vault feature, which injects credentials outside the sandbox via an egress proxy, eliminating the need for AI Agent sandboxes to store real secrets.",
+        "originalTitle": "OpenSandbox 再进化：Credential Vault 让真实密钥不再进入沙箱",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 16:07:00",
+        "publishTimeStamp": 1782461220000,
+        "qualified": false,
+        "readCount": 57,
+        "readTime": 8,
+        "readUrl": "https://www.bestblogs.dev/article/eb89e83b",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_5e63f2",
+        "sourceImage": "https://image.jido.dev/20260527050038_b20a9a1.jpeg",
+        "sourceName": "阿里技术",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article analyzes the security risks of using secrets directly within AI Agent sandboxes, such as Prompt Injection, malicious dependencies, and log leaks. It then introduces OpenSandbox's new Credential Vault solution: real credentials are stored outside the sandbox, and an egress sidecar injects authentication information into outbound requests based on rules; only fake values are used inside the sandbox, ensuring that secrets never enter environment variables, command lines, file systems, or logs. The article uses typical scenarios like Claude Code calling model APIs, cloning private Git repositories, and accessing internal APIs to illustrate how it works, and recommends pairing it with a default-deny egress network policy to achieve finer-grained security boundaries. It also notes that it currently does not support coexistence with transparent service mesh sidecars. Finally, it concludes that this feature advances sandbox isolation from the process/file/network layer to the credential isolation layer, serving as a crucial complement to the productionization of AI Agents.",
+        "tags": [
+          "AI Agent",
+          "AI Safety & Alignment",
+          "Sandbox Security",
+          "Credential Management",
+          "OpenSandbox"
+        ],
+        "title": "OpenSandbox Evolved: Credential Vault Keeps Real Secrets Out of the Sandbox",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509853&idx=1&sn=ddffff2caf6f9e08a10dba04a8adb384",
+        "wordCount": 1972
+      },
+      {
+        "authors": [
+          "硅谷101"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045520_f3caed2e",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_32b5da89",
+        "keyQuotes": [
+          "An FDE is an engineer who works closely with clients to make AI applications truly operational, and who takes on the responsibility of making the product better.",
+          "The only constant is change, but compared to many other self-operated engineering roles, the road to FDE being fully automated by AI is still long.",
+          "Those who truly unleash value are the ones who ultimately leave behind a transformed business.",
+          "A common mistake many people make is to view AI only as a cost-cutting tool. But in reality, the true value of AI often lies in creating revenue and opening up new income opportunities.",
+          "As long as the complexity on the client side remains, there will always be gaps that AI cannot fully automate — and those gaps need FDEs to fill."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "An FDE is not just a deployment engineer but also plays the role of a CTO, co-creating with clients, understanding business pain points, leveraging AI coding tools for rapid iteration, and distilling experience into reusable skills, creating a snowball effect.",
+            "point": "The core responsibility of an FDE is to turn AI from a demo into an enterprise-grade workflow, while feeding frontline experience back into product improvements."
+          },
+          {
+            "explanation": "Jove points out that an FDE must be a qualified AI Agent developer capable of handling imperfect client environments, and must also have the ability to engage in conversations with CTOs and other executives. Therefore, junior engineers often cannot handle the role, and he prefers to hire senior talent with backgrounds as founding engineers or consultants.",
+            "point": "A high-quality FDE needs to possess strong engineering skills, client communication experience, and resilience under pressure."
+          },
+          {
+            "explanation": "Oliver believes that CFOs and executives are increasingly focused on AI ROI, but most enterprises still struggle to scale AI. Model companies must go deep into enterprises to build customized workflows in order to truly open up the market.",
+            "point": "Model companies proactively engage in deployment because simply selling models cannot solve the real problem of low enterprise adoption rates."
+          },
+          {
+            "explanation": "PE firms need to show LPs that they are at the forefront of AI, making partnerships with top AI brands a strong endorsement. At the same time, AI has huge potential to create value in traditional industries (e.g., healthcare, business services), and through deployment companies, PE firms can gain exposure to these high-growth opportunities.",
+            "point": "Behind PE firms' collaboration with model companies lies both the signal need to demonstrate AI leadership to LPs and the practical considerations of creating portfolio value and gaining exposure to high-return assets."
+          },
+          {
+            "explanation": "Through examples such as an AI sales assistant for an asset management company and a dairy health report for a dairy company, Oliver illustrates how AI can help enterprises enter previously unreachable markets or optimize core operations, thereby unlocking new revenue growth curves.",
+            "point": "The true value of AI lies in creating revenue, not just in reducing costs."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Through conversations with frontline practitioners, this article delves into the responsibilities and skill requirements of the FDE (Frontline Deployment Engineer) role, explores the business logic behind model companies partnering with PE firms to establish deployment companies, and examines the impact of the AI implementation wave on the consulting and private equity industries.",
+        "originalTitle": "OpenAI 联手 PE 砸下 40 亿美元，聊聊硅谷最火新职位 FDE",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 15:00:00",
+        "publishTimeStamp": 1782198000000,
+        "qualified": false,
+        "readCount": 57,
+        "readTime": 54,
+        "readUrl": "https://www.bestblogs.dev/article/32b5da89",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b51a7e",
+        "sourceImage": "https://image.jido.dev/20251127045520_f3caed2e",
+        "sourceName": "硅谷101",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Kicked off by OpenAI joining forces with 19 PE firms to invest over $4 billion in a deployment company, the article interviews Jove, head of the FDE team at Cresta, and Oliver, VP of Enterprise Business at Invisible Technologies, to provide a comprehensive analysis of the emerging FDE role. Starting from the day-to-day work of an FDE, Jove explains how FDEs turn AI from a demo into enterprise-grade workflows, draws parallels with the Palantir model, and discusses the division of labor between FDEs and FDPMs (Frontline Deployment Product Managers). He emphasizes that FDEs need solid engineering skills, client communication experience, and resilience under pressure, arguing that in the short term, FDEs will not be replaced by AI; instead, they will become more efficient as tools evolve, but the complexity gap will still require human intervention. Oliver, from the perspective of PE and consulting, analyzes the deep-rooted reasons why large model companies are proactively engaging in deployment — to address the pain points of low enterprise AI adoption rates and unfulfilled ROI. He highlights three motivations for PE firms collaborating with model companies: signal value (demonstrating AI leadership to LPs), portfolio value creation, and exposure to high-return assets. He also criticizes the misconception of viewing AI solely as a cost-cutting tool, emphasizing that the true value lies in revenue generation, and provides concrete examples such as an AI sales assistant for an asset management firm and a dairy health report for a dairy company. The article concludes by predicting that the consulting industry will see short-term growth due to AI transformation demand, but long-term value belongs to those companies that can leave behind a transformed business.",
+        "tags": [
+          "AI Implementation",
+          "FDE",
+          "AI Commercialization",
+          "Enterprise AI",
+          "AI Agent"
+        ],
+        "title": "OpenAI Teams Up with PE to Pour $4 Billion: Inside Silicon Valley's Hottest New Role — FDE",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4NjUwNTI0OA==&mid=2247498298&idx=1&sn=9d168b50201d6d58ca446a546605c23a",
+        "wordCount": 13458
+      },
+      {
+        "authors": [
+          "ByteByteGo"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260623221531_c8d830e6-0d98-4583-af68-4676eaaf7f07_1769x2048.png",
+        "domain": "blog.bytebytego.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_ea0d869f",
+        "keyQuotes": [
+          "I have now stopped writing most of the code myself and started acting like an engineering manager directing a team of agents.",
+          "The most common mistakes I see people make about delegation to both humans and agents are: asking for an action, not an outcome; not explaining the why; taking back control.",
+          "They're often designed to lock you into a particular vendor, when in reality you benefit a lot from being able to switch to whichever newer model works best, even if it comes from a different vendor."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Common mistakes are asking for an action instead of an outcome, not explaining the why, and taking back control after a mistake. The right approach is to give corrective feedback and let the agent improve.",
+            "point": "Engineers should delegate to agents like managers delegate to junior engineers, focusing on outcomes and giving feedback."
+          },
+          {
+            "explanation": "High-quality speech recognition (e.g., OpenSuperWhisper running Whisper locally) lets you talk 3x faster than you type, applicable to prompting agents and any text input.",
+            "point": "Voice input dramatically accelerates prompting and is a key productivity lever."
+          },
+          {
+            "explanation": "Using Lavish Editor, the agent renders a plan as an interactive HTML page that supports visual feedback, making iteration faster and more precise than editing markdown.",
+            "point": "For complex work, create an interactive visual plan before handing off for autonomous implementation."
+          },
+          {
+            "explanation": "Avoid 'fancy gimmicks' like auto-managed memory that tie you to one provider; maintain the ability to switch models easily as better ones emerge.",
+            "point": "Keep the agent stack agnostic to avoid vendor lock-in and retain flexibility."
+          },
+          {
+            "explanation": "Store explicit testing instructions in AGENTS.md per project, allowing the agent to run the real app and validate its own work before coming back to you.",
+            "point": "Pre-define end-to-end validation instructions so agents can self-verify their changes."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A former Meta L8 engineer shares his complete agentic engineering setup—terminal-centric, keyboard-driven—using agents as autonomous teammates for planning, implementation, and validation.",
+        "originalTitle": "An Ex-Meta L8’s Agentic Engineering Setup",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 23:31:20",
+        "publishTimeStamp": 1782228680000,
+        "qualified": false,
+        "readCount": 54,
+        "readTime": 18,
+        "readUrl": "https://www.bestblogs.dev/article/ea0d869f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_996ae6",
+        "sourceImage": "https://image.jido.dev/20260527123114_8a5609ae-1239-4400-9491-6010a15c4d60_504x504.png",
+        "sourceName": "ByteByteGo Newsletter",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Kun Chen, ex-Meta L8 principal engineer, details his personal agentic engineering workflow that has enabled him to ship 30+ high-quality PRs per day. The setup is built entirely in the terminal: WezTerm, tmux, Neovim, and agent harnesses like Claude Code and OpenCode. Chen emphasizes writing prompts like a manager (asking for outcomes, not actions; explaining the why; giving feedback), using voice input for speed (OpenSuperWhisper), and planning complex work with interactive HTML artifacts via his open-source Lavish Editor. Implementation is fully autonomous once the plan is set, with agents validating their own changes end-to-end. The post uses a real project—'Hi Bit', an AI tutor for his son—as a concrete example.",
+        "tags": [
+          "AI Coding",
+          "Agentic Engineering",
+          "Developer Tools",
+          "Prompt Engineering",
+          "Terminal & CLI"
+        ],
+        "title": "An Ex-Meta L8’s Agentic Engineering Setup",
+        "translateContent": null,
+        "url": "https://blog.bytebytego.com/p/an-ex-meta-l8s-agentic-engineering",
+        "wordCount": 4355
+      },
+      {
+        "authors": [
+          "腾讯技术工程"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_a0f9d2c7",
+        "keyQuotes": [
+          "This article will analyze the design concepts, core algorithms, and measured benefits of each technology one by one from the five dimensions of operator optimization and fusion, parallelism strategies, multi-level caching, MTP and asynchronous scheduling optimization, and quantization and sparsity, comprehensively revealing the extreme performance optimization practices of the Hy3 Preview model on Hopper cards from operators to the system.",
+          "In the causal architecture, the head tokens of the sequence participate in all subsequent aggregation computations, and the error will recursively amplify layer by layer; the impact of tail tokens is limited only to the local area."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Traditional static split-kv cannot balance long and short sequences; the new scheme allocates greedily based on global Tile volume, achieving up to 2.95x acceleration for single-batch long texts and 1.59x-1.76x for mixed-length batches.",
+            "point": "Dynamic Attention scheduling unifies Tile partitioning for parallel tasks, fundamentally resolving load imbalance under long sequences."
+          },
+          {
+            "explanation": "FP32 weights are split into high-bit and low-bit BF16, executing two BF16 GEMMs and combining them, avoiding type conversion, with a measured acceleration of 2.86x-3.22x.",
+            "point": "Dual BF16 reconstruction for FP32 computation balances precision and performance in numerically sensitive scenarios like MoE routing."
+          },
+          {
+            "explanation": "Through PDL bubble-free chaining and register-level data flow, it achieves 1.5x-1.6x acceleration compared to mainstream solutions in TP=8 scenarios, and 1.2x-1.5x in EP=8 scenarios.",
+            "point": "FusedMoE integrates the 5 stages of routing, Gate-Up, Down, and aggregation into a unified pipeline, eliminating bubbles."
+          },
+          {
+            "explanation": "While maintaining 8-card deployment and unchanged precision, TTFT is reduced by 29.9% for 16k inputs and 24.5% for 32k inputs.",
+            "point": "Prefill TPSP parallelism strategy significantly reduces TTFT through SP partitioning and communication-computation fusion."
+          },
+          {
+            "explanation": "Combined multi-level optimizations systematically eliminate low-bit quantization errors, matching the BF16 baseline or remaining within a 1% gap on multi-domain evaluation sets.",
+            "point": "W4A8 quantization + Attn FP8 achieves lossless precision through GPTQ, Smooth, Hadamard rotation, and QAT lightweight fine-tuning, improving throughput by 28%+."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article breaks down the full-stack inference optimization solution for the Tencent Hunyuan Hy3 model on Hopper cards, covering operators, fusion, parallelism, caching, and quantization, demonstrating significant performance improvements in real-world tests.",
+        "originalTitle": "腾讯混元 AI Infra 如何优化 Hy3 Preview：一次大模型推理性能提升的技术拆解",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 17:36:00",
+        "publishTimeStamp": 1782466560000,
+        "qualified": false,
+        "readCount": 49,
+        "readTime": 25,
+        "readUrl": "https://www.bestblogs.dev/article/a0f9d2c7",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_958ae8",
+        "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+        "sourceName": "腾讯技术工程",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article details the full-stack performance optimization practices of the Tencent Hunyuan AI Infra inference team for the Hy3 Preview model on Hopper cards. The optimization covers five major dimensions: operator optimization and fusion, parallelism strategies, multi-level caching, MTP asynchronous scheduling, and quantization and sparsity. At the operator level, it achieved dynamic Attention scheduling for load balancing (up to 2.95x acceleration), Router GEMM dual BF16 reconstruction for FP32 computation (2.86x-3.22x acceleration), and FusedMoE full-pipeline integration (1.2x-1.6x acceleration). In terms of operator fusion, 5 operators including Rope+Norm+Quant were deeply fused into a single Kernel (~5x acceleration), AllReduce+Norm+Add communication-computation fusion was achieved (1.68x acceleration), sampling fusion (2.5x-5.5x acceleration), and GEMM+ReduceScatter fine-grained communication-computation fusion (1.68x-1.81x acceleration). For parallelism strategies, Prefill adopted the TPSP architecture reducing TTFT by 24.5%-29.9%, while Decode used DP+EP cross-node hybrid parallelism bringing a 15.7%-44.7% end-to-end throughput improvement. Multi-level caching built a GPU→CPU→KVStore three-tier system, expanding effective cache capacity. MTP asynchronous scheduling optimization removed CPU synchronization dependencies, reducing bubbles by 5-10ms and improving end-to-end performance by 10%-20%. For quantization compression, W4A8+Attn FP8 with lossless precision was achieved through GPTQ+Smoothing+Smooth+QAT, improving throughput by 28%+; the sparse attention Stem algorithm approached full attention precision at a 25% computation budget, reducing 128K context Prefill latency by 3.6 times. Overall optimization achieved 50ms TPOP and 4s TTFT SLO constraints on 5000 real-world data entries (average input 68k, average output 0.9k), demonstrating extreme performance improvements from operators to the system level.",
+        "tags": [
+          "LLM Inference",
+          "LLM",
+          "Performance Optimization",
+          "Operator Optimization",
+          "Model Quantization"
+        ],
+        "title": "How Tencent Hunyuan AI Infra Optimizes Hy3 Preview: A Technical Breakdown of LLM Inference Performance Improvements",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802370&idx=1&sn=933bed02fa58d278084e12946d3fa8ce",
+        "wordCount": 6076
+      },
+      {
+        "authors": [
+          "京东技术"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527123645_6312820.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_41109d0d",
+        "keyQuotes": [
+          "Any requirement, once it enters development, must go through at least six stages: 'evidence, hypothesis, scope, schedule, acceptance, and review'.",
+          "Adding a new requirement is not 'doing a little more', but a reallocation of resources."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Product_Development",
+        "mainDomainDesc": "Product & Design",
+        "mainPoints": [
+          {
+            "explanation": "Mapping the 8 Skills to the four stages of problem assessment, requirement definition, sprint execution, and post-launch review forms a reusable, lightweight working protocol.",
+            "point": "When an OPC team lacks dedicated product roles, Anthropic PM Skills can carry product judgment and workflow."
+          },
+          {
+            "explanation": "Using synthesize-research and metrics-review to determine if a problem is worth solving avoids wasting resources on the wrong requirements.",
+            "point": "Before entering requirement definition, problem assessment must be done first rather than directly writing a PRD."
+          },
+          {
+            "explanation": "Indiscriminately feeding materials to AI reduces output confidence; formatted input is a prerequisite for ensuring analysis quality.",
+            "point": "Before materials enter a Skill, they must be formatted according to five fields: source, time, subject, content, and association."
+          },
+          {
+            "explanation": "100% capacity planning leaves the team unable to handle uncertainty; reasonable buffering ensures sustainable delivery.",
+            "point": "Iteration plans should only allocate 70%-80% capacity, reserving a buffer for online issues and ad-hoc collaboration."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Drawing on Anthropic's Product Management Skills, the JD Health OPC team breaks down the full product cycle into four stages: problem assessment, requirement definition, sprint execution, and post-launch review, providing reusable prompt templates and material input specifications.",
+        "originalTitle": "京东健康 OPC 团队的产品全流程 Skill 探索",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 17:26:00",
+        "publishTimeStamp": 1782465960000,
+        "qualified": false,
+        "readCount": 49,
+        "readTime": 17,
+        "readUrl": "https://www.bestblogs.dev/article/41109d0d",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_146282",
+        "sourceImage": "https://image.jido.dev/20260527123645_6312820.jpeg",
+        "sourceName": "京东技术",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article details how the JD Health OPC (One Person Company) team adapted Anthropic's open-source 8 Product Management Skills (synthesize-research, metrics-review, competitive-brief, product-brainstorming, write-spec, roadmap-update, sprint-planning, stakeholder-update) to enhance their product workflow. The author notes that in an OPC team without dedicated product roles, this set of Skills provides a \"shared product-engineering decision-making framework\" that standardizes the process from requirement emergence to launch. The article unfolds across four stages: the first stage uses synthesize-research and metrics-review to determine if a problem is worth solving; the second stage uses product-brainstorming to diverge on solutions and write-spec to converge on requirement specifications; the third stage uses roadmap-update to determine priorities and sprint-planning to implement the iteration plan; the fourth stage uses metrics-review to review metrics and stakeholder-update to sync with different audiences. The article also provides a 5-field format for material input, prompt templates for each stage, a roadmap change description template, common pitfalls, and a minimal starting path.",
+        "tags": [
+          "Product Management",
+          "Requirement Management",
+          "Product Workflow",
+          "AI-Assisted Workflow",
+          "Team Collaboration"
+        ],
+        "title": "JD Health OPC Team's Exploration of Full-Cycle Product Skills",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502365&idx=1&sn=939804524a4d29f68e4170beb134dd89",
+        "wordCount": 4083
+      },
+      {
+        "authors": [
+          "AlexZhang",
+          "cuicheng",
+          "Jun Zhang",
+          "Manhui Lin",
+          "Yue Zhang",
+          "yubo",
+          "leo-q8"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn-uploads.huggingface.co/production/uploads/652b2e9166313ebb6197e706/l156KP0e5PRyDrE4woHoM.jpeg",
+        "domain": "huggingface.co",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_cebb2067",
+        "keyQuotes": [
+          "Evaluate PP-OCRv6 online, then integrate lightweight, production-ready OCR with PaddlePaddle, Transformers, or ONNX Runtime backend."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The tiny (1.5M) targets edge devices, small (7.7M) suits mobile/desktop, and medium (34.5M) maximizes accuracy for server-side pipelines.",
+            "point": "PP-OCRv6 provides three model tiers from 1.5M to 34.5M parameters, balancing accuracy and deployment constraints."
+          },
+          {
+            "explanation": "Detection Hmean increased by +4.6 percentage points and recognition accuracy by +5.1 percentage points, validated on PaddleOCR's internal multi-scenario benchmarks.",
+            "point": "It achieves up to 86.2% detection Hmean and 83.2% recognition accuracy, significantly improving over PP-OCRv5_server."
+          },
+          {
+            "explanation": "These components enhance multi-scale text detection and recognition quality for challenging inputs such as multilingual, small, dense, or low-resolution text.",
+            "point": "Architecture improvements include PPLCNetV4 backbone, RepLKFPN for detection, and EncoderWithLightSVTR for recognition."
+          },
+          {
+            "explanation": "Covering Simplified Chinese, Traditional Chinese, English, Japanese, and 46 Latin-script languages, this reduces the need for separate OCR models across common multilingual scenarios.",
+            "point": "The medium and small tiers support 50 languages in a single model family."
+          },
+          {
+            "explanation": "This flexibility allows developers to choose the runtime that best fits their environment, with code examples provided for each backend through the PaddleOCR library.",
+            "point": "Multiple inference backends are available: Paddle Inference, Transformers, and ONNX Runtime."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "PP-OCRv6 is a new multilingual OCR model family by PaddleOCR, offering three tiers from 1.5M to 34.5M parameters with up to 50-language support and improved accuracy over its predecessor.",
+        "originalTitle": "PP\\-OCRv6 on Hugging Face: 50\\-Language OCR from 1\\.5M to 34\\.5M Parameters",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 21:18:56",
+        "publishTimeStamp": 1782134336000,
+        "qualified": false,
+        "readCount": 48,
+        "readTime": 4,
+        "readUrl": "https://www.bestblogs.dev/article/cebb2067",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_19153d",
+        "sourceImage": "https://image.jido.dev/20260602012141_c647423",
+        "sourceName": "Hugging Face - Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This blog post from Hugging Face introduces PP-OCRv6, the latest generation of PaddleOCR's universal OCR models. It details three model tiers (tiny, small, medium) ranging from 1.5M to 34.5M parameters, achieving up to 86.2% detection Hmean and 83.2% recognition accuracy on in-house benchmarks. Key technical improvements include the PPLCNetV4 backbone, RepLKFPN for text detection, and EncoderWithLightSVTR for recognition. The medium and small tiers support 50 languages. The post provides quick-start code examples using PaddleOCR with multiple inference backends: Paddle Inference, Transformers, and ONNX Runtime. It also links to an online demo, model collection, and documentation, making it easy for developers to evaluate and integrate the models into production OCR pipelines.",
+        "tags": [
+          "OCR",
+          "Computer Vision",
+          "PaddlePaddle",
+          "Hugging Face",
+          "Text Detection"
+        ],
+        "title": "PP\\-OCRv6 on Hugging Face: 50\\-Language OCR from 1\\.5M to 34\\.5M Parameters",
+        "translateContent": null,
+        "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+        "wordCount": 894
+      },
+      {
+        "authors": [
+          "硅谷101"
+        ],
+        "candidateSource": null,
+        "category": "Business_Tech",
+        "categoryDesc": "Business & Tech",
+        "cover": "https://image.jido.dev/20251127045520_f3caed2e",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_644e5ae0",
+        "keyQuotes": [
+          "We are all talking about the changes brought by AI, so which human capabilities become more important? I believe it's human judgment and aesthetics. If you don't know how to use AI right now, it's like trying to control your car with a TV remote.",
+          "If institutions still fail to recognize this and continue judging people using old methods like credentials, diplomas, and educational backgrounds, they will likely fall behind.",
+          "The greatest thing these courses gave me is essentially a standard—a set of standards about how the world works, what is better, and what is excellent.",
+          "I probably won't consider going to university. I prefer to gain personal abilities, especially the iteration of my way of thinking, through the 'One Small Step' program."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "The school has a 'One Small Step' program where students can register companies and run business projects. University is not the only exit; graduation standards include securing funding, achieving stable income, or transferring project results.",
+            "point": "Moonshot Academy offers a 'third path' distinct from the Gaokao and studying abroad: growing through real entrepreneurship and project-based learning during high school."
+          },
+          {
+            "explanation": "Math classes let students retrace the path of discovery taken by mathematicians, philosophy classes offer diverse perspectives, and mandatory honors courses aim to establish an internal standard of 'what is excellence'—capabilities more valuable than problem-solving skills in the AI era.",
+            "point": "The core of education shifts from knowledge transmission to cultivating judgment, aesthetics, and humanistic literacy."
+          },
+          {
+            "explanation": "Teachers and students call each other 'Guardians' and 'Learners.' Mentors provide long-term companionship, and the house system breaks down grade-level barriers, reducing a utilitarian mindset through low-competition activities like a 'Boredom Competition.'",
+            "point": "The mentorship and house systems reshape teacher-student relationships and the community ecosystem."
+          },
+          {
+            "explanation": "The elementary phase focuses on Chinese, English, math, arts, and sports, integrating science and society through thematic projects. Middle school introduces technology and design courses, while high school offers nearly a hundred courses and entrepreneurial support.",
+            "point": "Moonshot's education is systematically designed from elementary school, doing 'subtraction' in lower grades and 'addition' in higher grades."
+          },
+          {
+            "explanation": "His personal experience is proof that 'education doesn't have to be a single path,' and it also reflects the pioneering and experimental nature of Moonshot's philosophy.",
+            "point": "Founder Wang Xiqiao is himself a sample of a 'super high schooler,' having founded the school at 19 after giving up his place at the University of Southern California."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This in-depth report explores the innovative educational practices at Beijing's Moonshot Academy, showcasing how it uses project-based learning and real-world entrepreneurship to offer students a 'third path' distinct from the traditional Gaokao and studying abroad in the AI era.",
+        "originalTitle": "探访北京探月学校：AI 时代“超级高中生” 、大学外的第三种可能与中国创新教育",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 09:19:00",
+        "publishTimeStamp": 1782523140000,
+        "qualified": false,
+        "readCount": 36,
+        "readTime": 92,
+        "readUrl": "https://www.bestblogs.dev/article/644e5ae0",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b51a7e",
+        "sourceImage": "https://image.jido.dev/20251127045520_f3caed2e",
+        "sourceName": "硅谷101",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This is an in-depth report from Silicon Valley 101 on their visit to Beijing's Moonshot Academy. Through a two-day immersive experience, the article presents a comprehensive view of the school's educational philosophy and practices from the perspectives of its founder, teachers, and students. Founded by 19-year-old Wang Xiqiao, Moonshot Academy aims to cultivate 'individuals with inner abundance and active citizens.' The school has no traditional classrooms or fixed schedules. Its high school phase features the 'One Small Step' program, supporting student entrepreneurship (for example, Jiang Yin's project creating assistive tools for dyslexia has registered a company with a team of over 60 people). The curriculum emphasizes judgment, aesthetics, and humanities, complemented by practical spaces like a design studio and MakerSpace. The middle and elementary schools build foundational skills through project-based learning and a mentorship system. The article also objectively mentions external controversies regarding its high tuition fees and less prominent college admission results. Overall, it presents a cutting-edge exploration of educational transformation in the AI era—not training exam machines or study-abroad candidates, but enabling high schoolers to grow into 'super individuals' through real-world projects.",
+        "tags": [
+          "Education Innovation",
+          "AI Era Education",
+          "Project-Based Learning",
+          "Entrepreneurship Education",
+          "Humanistic Literacy"
+        ],
+        "title": "Inside Beijing's Moonshot Academy: 'Super High Schoolers' in the AI Era, a Third Path Beyond College, and China's Education Innovation",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4NjUwNTI0OA==&mid=2247498384&idx=1&sn=f2538a0be8c7e1cf22ae5941083b6086",
+        "wordCount": 22761
+      },
+      {
+        "authors": [
+          "simonpure"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260623144529_b5ac546.png",
+        "domain": "github.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_0ba05e87",
+        "keyQuotes": [
+          "Fork 100 microVMs in 101 ms. BRANCH a live VM in 56 ms (v0.4 live mode).",
+          "Children fork from a warmed parent snapshot, inheriting its address space copy-on-write instead of cold-booting their own kernel.",
+          "The result is two properties at once: per-child KVM isolation, and a spawn cost that's closer to fork(2) than to a cold-boot VM.",
+          "v0.5 ships diff-snapshot chains: each layer records a parent_tag + content-hash edge to the layer below; the daemon walks the chain at spawn time and assembles the memory image in one pass.",
+          "Bytes can't fit in a prompt."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Unlike cold-boot approaches that boot each VM independently, forkd pauses the parent's memory image and lets children mmap it with MAP_PRIVATE, sharing physical pages until modified.",
+            "point": "forkd achieves 100 microVM spawns in ~100ms by leveraging snapshot copy-on-write from a pre-warmed parent VM."
+          },
+          {
+            "explanation": "The live mode pauses the parent briefly (56ms p50), copies its in-flight memory asynchronously, and resumes quickly, making it feasible to branch an agent during a ReAct loop.",
+            "point": "BRANCH allows live snapshotting of a running sandbox in ~150ms, enabling agent fork mid-thought."
+          },
+          {
+            "explanation": "Each layer records parent edges; the daemon walks the chain at spawn time, verifying content hashes and assembling the memory image. Per-link tax is ~450ms for 512MiB base due to SHA-256 verification, with optimization planned.",
+            "point": "Diff-snapshot chains stack incremental layers (e.g., pip install steps) to avoid duplicating identical base images."
+          },
+          {
+            "explanation": "In benchmarks, forkd spawns 100 sandboxes in 101ms vs. 759ms for raw Firecracker, 1.06s for CubeSandbox, and >2 minutes for Docker/gVisor, with only 0.12 MiB memory delta per sandbox.",
+            "point": "forkd delivers KVM-level isolation per child at near-process spawn speed, outperforming container runtimes and cold-boot VMs on multi-instance fan-out."
+          },
+          {
+            "explanation": "By caching imports, JIT, and model weights in the parent, children avoid redundant startup costs, while per-child network namespaces and cgroup limits ensure multi-tenant safety.",
+            "point": "The project is designed for AI agent fan-out workloads such as sandboxed code execution, tool use, and evaluation rollouts, where warm runtimes and hardware isolation are critical."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "forkd is a microVM sandbox runtime that uses copy-on-write snapshot forking to spawn 100 KVM-isolated AI agent environments in ~100ms from a warmed parent, and supports live BRANCH of a running sandbox in ~150ms.",
+        "originalTitle": "GitHub - deeplethe/forkd: Fork() for AI agent microVMs. Spawn 100 children in ~100ms from a warm parent; BRANCH a live VM in ~150ms. KVM-isolated， snapshot CoW.",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 19:43:50",
+        "publishTimeStamp": 1782215030000,
+        "qualified": false,
+        "readCount": 25,
+        "readTime": 20,
+        "readUrl": "https://www.bestblogs.dev/article/0ba05e87",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SRC_87ebb4f7",
+        "sourceImage": "https://image.jido.dev/20260603215531_y18.svg",
+        "sourceName": "Hacker News - Newest: \"AI Agent\"",
+        "sourceVisibility": "SYSTEM",
+        "summary": "forkd is an open-source microVM runtime built on Firecracker, designed for AI agent workloads that need fast, isolated sandbox fan-out. It boots a parent VM once, warms the runtime (e.g., Python + deps), pauses it to disk, and then spawns children by mmap'ing the parent's memory image with MAP_PRIVATE (kernel CoW). This yields per-child KVM isolation with a spawn cost closer to fork(2) than cold boot. The project also introduces BRANCH (live snapshot of a running sandbox in ~150ms) and diff-snapshot chains (stacked layers to avoid duplicating shared base images). Benchmarks show 101ms to spawn 100 sandboxes (vs. 759ms for Firecracker cold-boot, 1.06s for CubeSandbox, and >100s for Docker/gVisor). A demo shows branching an LLM agent mid-ReAct-loop to explore alternate strategies with shared reasoning state. The README includes design documents, detailed benchmarks, and comparisons with other sandbox technologies.",
+        "tags": [
+          "AI Agent",
+          "MicroVM",
+          "Firecracker",
+          "Sandbox",
+          "Copy-on-Write"
+        ],
+        "title": "GitHub - deeplethe/forkd: Fork() for AI agent microVMs. Spawn 100 children in ~100ms from a warm parent; BRANCH a live VM in ~150ms. KVM-isolated， snapshot CoW.",
+        "translateContent": null,
+        "url": "https://github.com/deeplethe/forkd",
+        "wordCount": 4982
+      },
+      {
+        "authors": [
+          "Gidudu Nicholas"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/028c67b6-cda1-499a-9418-9695c64421b8.png",
+        "domain": "freecodecamp.org",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_c7c34649",
+        "keyQuotes": [
+          "BuildContext is an Element.",
+          "Widgets describe what you want, Elements manage the lifecycle and identity of that description over time, and RenderObjects do the actual measuring, positioning, and painting that puts pixels on the screen.",
+          "`mounted` isn't a magic safety flag bolted onto `State`. It's a direct reflection of whether the underlying Element is still alive in the tree."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "Widgets are immutable configuration descriptors, Elements manage identity and lifecycle across rebuilds, and RenderObjects handle actual layout and painting.",
+            "point": "Flutter uses three concurrent trees: Widget, Element, and RenderObject."
+          },
+          {
+            "explanation": "The `context` parameter in `build()` is the Element managing the widget's position. Understanding this demystifies ancestor lookups and scoping.",
+            "point": "BuildContext is an Element, not a separate abstraction."
+          },
+          {
+            "explanation": "After setState, the Element is marked dirty; on the next frame, Flutter rebuilds, reconciles by type and key, and propagates changes to RenderObjects for relayout and repaint.",
+            "point": "setState triggers a six-step process involving all three trees."
+          },
+          {
+            "explanation": "When a widget is removed from the tree, its Element is deactivated. Accessing its context to walk ancestors is unsafe; check `mounted` to guard.",
+            "point": "Using context after an async gap breaks because the Element may be deactivated."
+          },
+          {
+            "explanation": "Methods like `Theme.of(context)` traverse upward through Element parents to find the nearest InheritedWidget, relying on the live tree structure.",
+            "point": "Ancestor lookup works by walking the Element parent chain."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides a deep dive into Flutter's rendering internals, explaining the three trees (Widget, Element, RenderObject), what BuildContext actually is, and how setState works step by step, helping developers understand and fix common context-related errors.",
+        "originalTitle": "How Flutter Renders Under the Hood: BuildContext and Element Tree Explained",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 23:47:45",
+        "publishTimeStamp": 1782229665000,
+        "qualified": false,
+        "readCount": 23,
+        "readTime": 24,
+        "readUrl": "https://www.bestblogs.dev/article/c7c34649",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_074370",
+        "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+        "sourceName": "freeCodeCamp",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The author shares their personal journey of learning Flutter's internals, starting from mysterious errors like 'Looking up a deactivated widget's ancestor is unsafe'. They explain Flutter's three fundamental trees: the Widget Tree (immutable configuration), the Element Tree (long-lived manager of widget identity and lifecycle), and the RenderObject Tree (performs layout, painting). The core insight is that BuildContext is an Element. The article then walks through the six steps of a setState call, covering how Elements are marked dirty, rebuilt, and reconciled based on type and key. It explains why using context after an async gap can fail (because the Element may be deactivated) and how the `mounted` check works. Ancestor lookup is revealed as walking the parent chain of Elements. The article also touches on Keys (ValueKey, ObjectKey, GlobalKey) and common rendering bugs, culminating in an end-to-end example. By understanding these trees, developers can diagnose context-related errors without guessing.",
+        "tags": [
+          "Flutter",
+          "Mobile Development",
+          "UI Framework",
+          "Widget Tree",
+          "Element Tree"
+        ],
+        "title": "How Flutter Renders Under the Hood: BuildContext and Element Tree Explained",
+        "translateContent": null,
+        "url": "https://www.freecodecamp.org/news/how-flutter-renders-under-the-hood-buildcontext-and-element-tree-explained/",
+        "wordCount": 5835
+      }
+    ],
+    "pageCount": 167,
+    "pageSize": 20,
+    "totalCount": 3337
+  },
+  "message": null,
+  "requestId": "T1382ba75850944a780825fa3fa1624fc",
+  "success": true
+}

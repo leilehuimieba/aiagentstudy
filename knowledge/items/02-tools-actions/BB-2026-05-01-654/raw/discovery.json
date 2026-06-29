@@ -1,0 +1,76 @@
+{
+  "authors": [
+    "Anna Maltseva"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://blog.jetbrains.com/wp-content/uploads/2026/06/AI-social-BlogFeatured-1280x720-1-2.png",
+  "domain": "blog.jetbrains.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_1b11f03e",
+  "keyQuotes": [
+    "JetBrains evaluated coding agents on the things that matter in practice: can they solve real software engineering tasks, quickly and at a cost that makes sense."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The evaluation used 225 Java, 38 C#, and 90 Python tasks from real codebases, measuring solve rate, cost, and latency. Codex with GPT-5.4-mini medium reasoning achieved the best overall balance.",
+      "point": "Codex was selected as the recommended agent based on a systematic evaluation across three ecosystem benchmarks."
+    },
+    {
+      "explanation": "This ensures the recommendation is practical for typical users, not just the most powerful model.",
+      "point": "Cost constraints were applied early: setups that would push more than 2% of users over $20/month were ruled out before ranking on quality and latency."
+    },
+    {
+      "explanation": "Codex outperformed Junie in the A/B test, which tipped the decision despite close offline results.",
+      "point": "The offline benchmark was validated with an online A/B test tracking real user behavior (engagement, agent switching, failure rate)."
+    },
+    {
+      "explanation": "This highlights a commitment to data-driven iteration rather than a fixed choice.",
+      "point": "The recommendation is not permanent; JetBrains will re-evaluate as models evolve, agents join, and benchmark coverage grows."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "JetBrains announces Codex as the recommended default agent in JetBrains AI, based on systematic evaluation across real-world coding benchmarks and online A/B testing.",
+  "originalTitle": "Introducing the Recommended Agent in AI Chat with Codex as the current choice",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-25",
+  "publishDateTimeStr": "2026-06-25 22:57:31",
+  "publishTimeStamp": 1782399451000,
+  "qualified": false,
+  "readCount": 22,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/1b11f03e",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceImage": "https://image.jido.dev/20260623052915_cropped-mstile-310x310-1-32x32.png",
+  "sourceName": "The JetBrains Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This post explains how JetBrains selected Codex (powered by OpenAI) as the recommended coding agent in JetBrains AI. The evaluation used a benchmark dataset of real software engineering tasks across Java, C#, and Python, measuring solve rate, cost, and latency. After comparing candidates (including Junie with Gemini models), Codex with GPT-5.4-mini medium reasoning emerged as the top performer in both offline benchmarks and online A/B tests. The article details the methodology, including cost constraints (avoiding more than 2% of users exceeding $20/month), and provides transparent data via the DPAIA repository. It also emphasizes that users can still switch agents freely.",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "AI Agent",
+    "Developer Tools",
+    "Codex"
+  ],
+  "title": "Introducing the Recommended Agent in AI Chat with Codex as the current choice",
+  "translateContent": null,
+  "url": "https://blog.jetbrains.com/ai/2026/06/codex-is-now-the-recommended-agent-in-jetbrains-ai/",
+  "wordCount": 1333
+}

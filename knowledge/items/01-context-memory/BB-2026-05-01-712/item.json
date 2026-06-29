@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-22",
+  "id": "BB-2026-05-01-712",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-712/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-712",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-712/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-712/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-712/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-712/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-712/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-712/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / V2EX",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / V2EX",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "Agent Architecture",
+    "AI Platform",
+    "Architecture Design",
+    "Engineering Practice"
+  ],
+  "title": "From OpenClaw to FastClaw: How to Design a Great Multi-Agent Architecture",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/976d0fef",
+      "https://www.v2ex.com/t/1222063#reply0"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.v2ex.com/t/1222063#reply0",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/976d0fef"
+  }
+}

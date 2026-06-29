@@ -1,0 +1,73 @@
+{
+  "authors": [
+    "Mandiant"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
+  "domain": "cloud.google.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_bcfc7fba",
+  "keyQuotes": [
+    "This campaign underscores the living off the edge paradigm, where threat actors prioritize the compromise of network appliances to bypass traditional security perimeters.",
+    "These devices offer a black box environment for threat actors: they often lack the telemetry required for deep forensic analysis, and their role as a central control plane provides a stealthy platform for persistent, wide-scale access to internal enterprise traffic."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "The attacker established unauthorized peering to the SD-WAN Manager, then accessed via SSH as 'vmanage-admin' and changed the admin password to authenticate to the web interface and exfiltrate configurations.",
+      "point": "Initial access was gained through rogue peering connections, possibly exploiting unpatched vulnerabilities or using stolen certificates."
+    },
+    {
+      "explanation": "The vulnerability exists in the CLI's 'request tenant-upload' command. The attacker uploaded 'evil_tenant.csv' which appended a new root user 'troot' to /etc/passwd and /etc/shadow, then used 'su' to switch to that account.",
+      "point": "CVE-2026-20245 is a zero-day in the file upload feature that allows local privilege escalation to root via a crafted CSV file."
+    },
+    {
+      "explanation": "They deleted the malicious CSV and all temporary backup files, restored the original configuration files, and ran a validation script to confirm removal of indicators, making detection difficult.",
+      "point": "The threat actor employed extensive anti-forensic techniques to cover their tracks."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This analysis details a threat actor's exploitation of CVE-2026-20245, a zero-day privilege escalation vulnerability in Cisco Catalyst SD-WAN Manager, to gain root access after initial compromise via rogue peering, followed by extensive anti-forensic cleanup.",
+  "originalTitle": "Zero-Day Exploitation of Vulnerability (CVE-2026-20245) in Cisco Catalyst SD-WAN Manager",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 08:00:00",
+  "publishTimeStamp": 1782259200000,
+  "qualified": false,
+  "readCount": 21,
+  "readTime": 9,
+  "readUrl": "https://www.bestblogs.dev/article/bcfc7fba",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_bc3236",
+  "sourceImage": "https://image.jido.dev/20251127045340_970fe5ab",
+  "sourceName": "Google Cloud Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Mandiant's investigation reveals a sophisticated intrusion campaign targeting a service provider's SD-WAN infrastructure. The threat actor first established unauthorized peering connections to obtain SSH access, likely using stolen certificates or unpatched vulnerabilities (CVE-2026-20127/CVE-2026-20182). After altering the default admin password, the attacker exploited CVE-2026-20245 by uploading a crafted CSV file, which appended a root-privileged user 'troot' to the system. To avoid detection, they deleted all created files, restored modified configurations, and ran a validation script to verify cleanup. The report provides comprehensive indicators of compromise, detection logic, and remediation guidance, highlighting the growing trend of targeting network appliances as strategic footholds.",
+  "tags": [
+    "Zero-Day Vulnerability",
+    "SD-WAN",
+    "Network Security",
+    "Threat Intelligence",
+    "Exploit"
+  ],
+  "title": "Zero-Day Exploitation of Vulnerability (CVE-2026-20245) in Cisco Catalyst SD-WAN Manager",
+  "translateContent": null,
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/zero-day-exploitation-cisco-catalyst-sd-wan-manager/",
+  "wordCount": 2203
+}

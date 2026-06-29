@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-22",
+  "id": "BB-2026-05-01-611",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-611/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-611",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-611/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-611/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-611/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-611/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-611/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-611/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Question Parsing",
+    "Structured Output",
+    "Agent Design Patterns"
+  ],
+  "title": "When RAG Users Ask Vague Questions: Clarify Once， Learn the Default",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://towardsdatascience.com/when-rag-users-ask-vague-questions-clarify-once-learn-the-default/",
+      "https://www.bestblogs.dev/article/b00e30e3"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/when-rag-users-ask-vague-questions-clarify-once-learn-the-default/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/b00e30e3"
+  }
+}

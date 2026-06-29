@@ -1,0 +1,80 @@
+{
+  "authors": [
+    "字节跳动技术团队"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045356_0393a1bf",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_b02cc219",
+  "keyQuotes": [
+    "Don't use LLMs for simple switch-cases.",
+    "Less talk about tricky Prompts, more talk about solid System Engineering.",
+    "The model itself hasn't gotten smarter; we just stopped interfering with it with garbage information.",
+    "Respect engineering principles and manage complexity well.",
+    "Let large models step down from the pedestal, get into the assembly line, and become extremely robust, stable, and fast industrial-grade productivity engines."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The three nodes require three independent decision flows per call, leading to a sharp deterioration in TTFT; state repetition between nodes causes attention dilution; new tools cannot be naturally integrated, forcing engineers to hard-code If-Else, degrading the system.",
+      "point": "The standard ReAct three-node architecture has three major sins in high-concurrency industrial scenarios: high latency, context oscillation, and broken control flow."
+    },
+    {
+      "explanation": "Predefined paths and hard rules are delegated to Workflow, while Agents only handle dynamic strategy decisions; tools act as strong contracts determining the system's lower bound; context management is independent as a module; the system is measured by multi-dimensional metrics rather than subjective feelings.",
+      "point": "Industry consensus shifts towards System Engineering: Workflow and Agent stratification, everything as a Tool, context independence, and production-level Eval."
+    },
+    {
+      "explanation": "Thought/Action/Iteration are merged into a single Policy node, completing planning, action selection, and termination determination in a single forward pass; all behaviors are encapsulated as Tools (including exit, deep thinking, etc.); Context Manager manages context via budget windows, semantic compression, and tiered eviction, reducing interference.",
+      "point": "The Unified Policy Agent solves the pain points of ReAct through unified control, unified behavior, and unified state."
+    },
+    {
+      "explanation": "By eliminating redundant nodes and denoising the context, the model's attention is focused on the core objective, reducing the decision distortion rate and breaking the conventional law that speed and quality are mutually exclusive.",
+      "point": "The new architecture achieves a dual improvement in speed and quality, with TTFT decreasing by 30% while recommendation and conversational quality significantly increase."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article details how the Volcengine AI Search team evolved the standard ReAct architecture into a Unified Policy Agent architecture, achieving a 30% reduction in TTFT and improved recommendation quality through Workflow and Agent stratification, and unified control/behavior/state.",
+  "originalTitle": "火山引擎 AI 搜索千万级 Agent 架构演进与实践：从 ReAct 三节点到 Unified Policy",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 17:00:00",
+  "publishTimeStamp": 1782464400000,
+  "qualified": false,
+  "readCount": 55,
+  "readTime": 22,
+  "readUrl": "https://www.bestblogs.dev/article/b02cc219",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_aeae8d",
+  "sourceImage": "https://image.jido.dev/20251127045356_0393a1bf",
+  "sourceName": "字节跳动技术团队",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article deeply analyzes the three major engineering sins of the standard ReAct architecture in enterprise-level AI search scenarios: extremely high latency, context oscillation, and broken control flow. Combining industry consensus, it proposes principles such as strict stratification of Workflow and Agent, everything as a Tool, and context independence. Based on this, the Volcengine AI Search team designed the Workflow + Unified Policy Agent (UP-ReAct) architecture, delegating deterministic processes to Workflow and dynamic decisions to Unified Policy, abstracting all behaviors as Tools, and managing state uniformly via Context Manager. In real e-commerce evaluations, this architecture reduced TTFT from 14.045s to 9.8s (a 30.22% decrease), improved recommendation accuracy by 3.76%, and enhanced conversational experience by 14.78%, breaking the conventional perception that speed and quality are mutually exclusive. The article emphasizes that system complexity should be properly managed through boundary划分, rather than stuffed into the model.",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "System Design",
+    "Architecture Evolution",
+    "Context Engineering"
+  ],
+  "title": "Volcengine AI Search 10-Million-Level Agent Architecture Evolution and Practice: From ReAct Three-Node to Unified Policy",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520575&idx=1&sn=6d3a2d35f06bf57d763e1a41c5e00a6f",
+  "wordCount": 5483
+}

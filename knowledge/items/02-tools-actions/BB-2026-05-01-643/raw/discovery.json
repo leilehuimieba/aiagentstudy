@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "浮之静"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045440_d79b5bfb",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_58fb6bc9",
+  "keyQuotes": [
+    "Diagnostic logs can exist, but they must have clear levels, sampling, sanitization, retention, and size boundaries.",
+    "Debugging information can be abundant, but what is persisted by default must be minimal, stable, explainable, and controllable.",
+    "Stopping the bleeding can be done with a trigger, `sqlite_home` migration, or WAL cleanup. Curing the disease can only happen within Codex's own SQLite log sink."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Even with `RUST_LOG=warn` set, this sink has an independent filter chain, causing high-frequency noise such as WebSocket/SSE payloads to be persistently written to disk.",
+      "point": "Codex's SQLite log sink defaults to allowing TRACE-level logs from all targets, leading to massive amounts of useless data being written to disk."
+    },
+    {
+      "explanation": "After inserting a new row, index updates and old row deletions are triggered, resulting in actual SSD writes far exceeding the net file growth. Extrapolated yearly writes can reach 640 TB.",
+      "point": "SQLite's WAL mode and insert-prune cycle cause the file size to remain stable while the underlying write volume is enormous."
+    },
+    {
+      "explanation": "The trigger sacrifices feedback logs and is not a long-term solution; macOS's /tmp is not a ramdisk, making symlinks ineffective. The correct approach is to use `sqlite_home` to migrate to an external drive or wait for an upstream fix.",
+      "point": "The popular online mitigations—trigger blocking and symlinking to /tmp—each have serious limitations."
+    },
+    {
+      "explanation": "This includes setting a stricter default filter level, sanitizing payloads, adding a global size cap, and a configuration toggle. Users should not rely on workarounds.",
+      "point": "Upstream fixes should focus on boundary control for persistent logs."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article provides an in-depth analysis of the SSD write amplification issue caused by the OpenAI Codex logging system writing heavily at TRACE level to SQLite, presenting a chain of evidence, risk stratification, immediate mitigation measures, and upstream fix directions.",
+  "originalTitle": "Codex 日志正在燃烧你的 SSD",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 21:04:00",
+  "publishTimeStamp": 1782133440000,
+  "qualified": false,
+  "readCount": 28,
+  "readTime": 29,
+  "readUrl": "https://www.bestblogs.dev/article/58fb6bc9",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_557f42",
+  "sourceImage": "https://image.jido.dev/20251127045440_d79b5bfb",
+  "sourceName": "浮之静",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article dissects the logging system issue in OpenAI Codex: its persistent SQLite log sink defaults to accepting TRACE-level logs from all targets, bypassing the user-set `RUST_LOG=warn` filter, leading to continuous high-frequency writes to `logs_2.sqlite` and its WAL file during streaming output. From the source code perspective, the article explains the write amplification mechanism (WAL mode, multiple indexes, insert-prune cycle), cites data from open issues on GitHub such as #17320 and #28224 (e.g., 5 MiB/s write rate, extrapolated 640 TB writes per year), and points out that the file size users see may differ dramatically from actual SSD write volume. The author stratifies the risks to avoid over-panicking, while emphasizing that Mac users face higher risk. The article evaluates three mitigation measures circulating online (SQLite trigger to block inserts, symlink to /tmp or a ramdisk, migrating the SQLite directory to an external drive), detailing their limitations and proper usage. Finally, it proposes the truly necessary upstream fixes: narrowing the default filter, sanitizing protocol payloads, and adding a global size cap. The article cites specific code lines and issue links, with rigorous reasoning and practical advice.",
+  "tags": [
+    "AI Coding",
+    "Codex",
+    "Logging System",
+    "SQLite",
+    "Performance Optimization"
+  ],
+  "title": "Codex Logs Are Burning Your SSD",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492103&idx=1&sn=13991140d0353c1da41da421ad61bf0d",
+  "wordCount": 7074
+}

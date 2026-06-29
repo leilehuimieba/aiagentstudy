@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-22",
+  "id": "BB-2026-05-01-606",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-606/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-606",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-606/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-606/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-606/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-606/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-606/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-606/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 腾讯技术工程",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 腾讯技术工程",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Coding",
+    "Agent",
+    "LLM",
+    "ReAct",
+    "Development Tools"
+  ],
+  "title": "Loop Engineering Practice Guide: Building Autonomous Loop Systems in Code Buddy",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802117&idx=1&sn=a91a32e0b00305c1a30f4a6684c3c6b2",
+      "https://www.bestblogs.dev/article/1433cfe9"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802117&idx=1&sn=a91a32e0b00305c1a30f4a6684c3c6b2",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/1433cfe9"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Emmimal P Alexander"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/Context-Graph.jpg",
+  "domain": "towardsdatascience.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_0b2a6406",
+  "keyQuotes": [
+    "Multi-agent systems lose cross-agent decisions because flat transcripts and vector search both have a structural blind spot — not just a noise problem.",
+    "The context graph wins on accuracy and uses about 18x fewer tokens per query than the raw dump. That is not a tradeoff—it is a win on both axes.",
+    "If you are shipping anything like this, handling fact supersession is not optional. It is the exact line between building a reliable memory layer and building a major liability."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "No single chunk or embedding contains both pieces of information, so similarity search cannot produce the correct answer regardless of model quality. This is the core problem the context graph solves.",
+      "point": "Flat memory stores (raw transcripts and vector RAG) have a structural blind spot for join queries that require combining two separately stated facts."
+    },
+    {
+      "explanation": "By filtering out distractors and writing only structured triples into a NetworkX multigraph, the system can walk from entity to entity along relationships like DEPENDS_ON or ASSIGNED_TO, retrieving combined information that flat stores miss.",
+      "point": "The context graph stores facts as entities and typed relationships, enabling graph traversal to answer multi-hop questions."
+    },
+    {
+      "explanation": "Using rule-based extraction, TF-IDF vectorizer, and substring matching for grading, the test is reproducible byte-for-byte. The graph's token efficiency (26.9 vs 490.9 tokens/query) is an additional practical advantage.",
+      "point": "The benchmark is fully deterministic (no LLM calls, no random state) to isolate architectural differences, and the results show clear superiority of the graph: 88.9% vs 61.1% vs 50.0% accuracy."
+    },
+    {
+      "explanation": "Graph nodes must be linked to query language via aliases, and fact supersession must be explicitly handled (old edges removed when a predicate is restated) to avoid returning outdated information with full confidence.",
+      "point": "Two production-critical bugs—entity vocabulary mismatch and stale fact retrieval—were discovered and fixed, highlighting real engineering challenges."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article presents a context graph layer for multi-agent memory that outperforms raw history dumps and vector-only RAG on join queries by storing facts as entities and relationships, achieving 88.9% accuracy at 26.9 tokens per query.",
+  "originalTitle": "Vector RAG Isn’t Enough — I Built a Context Graph Layer for Multi-Agent Memory",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 02:37:56",
+  "publishTimeStamp": 1782412676000,
+  "qualified": false,
+  "readCount": 58,
+  "readTime": 16,
+  "readUrl": "https://www.bestblogs.dev/article/0b2a6406",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+  "sourceName": "Towards Data Science",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The author describes building a multi-agent system where agents frequently fail to recall decisions made by other agents, even when full transcripts are available. After identifying the issue as a structural retrieval problem rather than a token compression or staleness issue, they propose a context graph architecture that stores facts as (subject, predicate, object) triples in a NetworkX graph, enabling multi-hop traversal for join queries. A deterministic benchmark with 18 graded queries across five scenarios compares three architectures: raw history dump (61.1% accuracy, 490.9 tokens/query), vector-only RAG using TF-IDF (50.0%, 75.9 tokens/query), and the context graph (88.9%, 26.9 tokens/query). The graph wins both accuracy and efficiency, with the largest gap on join queries (80% vs 20%). The article also discusses two identified bugs—entity vocabulary mismatch and stale fact retrieval—and their fixes, which are critical for production use.",
+  "tags": [
+    "Multi-Agent Systems",
+    "AI Memory",
+    "RAG",
+    "Context Graph",
+    "LLM Engineering"
+  ],
+  "title": "Vector RAG Isn’t Enough — I Built a Context Graph Layer for Multi-Agent Memory",
+  "translateContent": null,
+  "url": "https://towardsdatascience.com/vector-rag-isnt-enough-i-built-a-context-graph-layer-for-multi-agent-memory/",
+  "wordCount": 3825
+}

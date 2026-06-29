@@ -1,0 +1,1602 @@
+{
+  "code": null,
+  "data": {
+    "currentPage": 2,
+    "dataList": [
+      {
+        "authors": [
+          "Engineering at Meta"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://engineering.fb.com/wp-content/uploads/2026/06/Meta-AV1-for-RTC-hero.png",
+        "domain": "engineering.fb.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_46b40515",
+        "keyQuotes": [
+          "The motivation for switching to a more advanced video codec is straightforward — it delivers the same visual quality while using much less bandwidth.",
+          "If devices can accommodate higher encoding complexity, the bitrate reductions are even greater.",
+          "Because modern codecs support a larger set of coding tools, a well-designed encoder has more opportunities to find better trade-offs between quality and complexity.",
+          "There is a trade-off: Compared to a tightly dependent prediction chain (where each frame references the immediately preceding frame), a temporal-layer structure is typically less compression-efficient, so leaving TL enabled all the time can degrade quality at a given bitrate.",
+          "We encourage SoC vendors to invest in HW AV1 across all device tiers to meet the AV1 requirements to deliver an improved viewer experience, device battery savings and enhanced network operator infrastructure efficiency."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Programming_Technology",
+        "mainDomainDesc": "Programming",
+        "mainPoints": [
+          {
+            "explanation": "In offline tests under Meta's product settings, AV1 achieved a 20% bitrate reduction on low-end devices and more on capable hardware, directly translating to better quality for users on slow networks.",
+            "point": "AV1 provides at least 20% bitrate reduction over H.264 in RTC settings, with greater gains on higher-end devices."
+          },
+          {
+            "explanation": "Meta developed an ultra-low-complexity preset that matches H.264's computational cost, allowing AV1 to be enabled on a much wider range of devices than originally thought possible.",
+            "point": "A low-complexity encoder preset makes AV1 feasible on mid-range and low-end phones without increasing power compared to H.264."
+          },
+          {
+            "explanation": "Meta built a framework using real-world performance metrics to compute an rtc_score per device, then refined it with AV1-specific data, expanding coverage significantly.",
+            "point": "ML-based device eligibility outperforms simple heuristics like memory or release year for determining AV1 capabilities."
+          },
+          {
+            "explanation": "The system monitors per-frame latency and adjusts encoder presets or switches to H.264 when a device cannot keep up, also supporting asymmetric codec use where one side decodes AV1 but encodes H.264.",
+            "point": "Adaptive codec switching based on encoding/decoding latency and battery level prevents video freezes and extends call duration."
+          },
+          {
+            "explanation": "TL offers graceful degradation under packet loss by keeping base-layer continuity, while LTR enables fast recovery from frame loss using previously acknowledged reference frames, both tuned to avoid compression efficiency loss when the network is healthy.",
+            "point": "Temporal layers and long-term reference frames provide efficient error resilience without the overhead of keyframes."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Meta describes the multi-year journey to deploy AV1 across Messenger and WhatsApp, covering codec selection, ML-based device eligibility, adaptive rate control, and error resilience for real-time video calls.",
+        "originalTitle": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 00:16:39",
+        "publishTimeStamp": 1782144999000,
+        "qualified": false,
+        "readCount": 17,
+        "readTime": 17,
+        "readUrl": "https://www.bestblogs.dev/article/46b40515",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_011b29",
+        "sourceImage": "https://image.jido.dev/20251127045335_7198b2a9",
+        "sourceName": "Engineering at Meta",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article from Meta Engineering details the technical and operational challenges of adopting the AV1 video codec for real-time communication (RTC) at scale. The motivation is clear: AV1 delivers the same visual quality as H.264/AVC with at least 20% bitrate reduction, which is critical for bandwidth-constrained networks common in emerging markets. The authors present a low-complexity encoder that matches H.264 power consumption, enabling AV1 on mid-range and low-end mobile devices. Device eligibility is determined through an ML-based framework that uses real-world performance metrics to generate an rtc_score, iteratively refined from Model V1.1 to V2. To handle dynamic network conditions, Meta developed adaptive encoder preset adjustment and latency-aware codec switching between AV1 and H.264, including an asymmetric codec design where a device can decode AV1 while encoding H.264. The article also covers accurate rate control using VBV delay metrics to prevent both overshoot and undershoot, and error resilience through temporal layers (TL) and long-term reference (LTR) frames. TL is enabled adaptively to trade compression efficiency for robustness under packet loss, while LTR provides fast recovery without forcing a full keyframe. The piece concludes with ongoing work on group calls and a call for hardware AV1 support across device tiers. The article is rich with real data, practical trade-offs, and concrete implementation details, representing a valuable reference for engineers working on video streaming or RTC infrastructure.",
+        "tags": [
+          "AV1",
+          "Video Codec",
+          "Real-Time Communication",
+          "Rate Control",
+          "Error Resilience"
+        ],
+        "title": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
+        "translateContent": null,
+        "url": "https://engineering.fb.com/2026/06/22/video-engineering/adopting-av1-for-real-time-communication-rtc-meta/",
+        "wordCount": 4035
+      },
+      {
+        "authors": [
+          "中国新闻周刊"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7IPhF5bMgNmQicGMYMOWiciaZp8Npj7VspibYbuGyNa4G0Tw/0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_89b76843",
+        "keyQuotes": [
+          "Philosophy is the quality inspector of thought and the cleanser of ideas; it consistently attempts to take the questions that trouble our minds as problems and subject them to careful and rigorous critique.",
+          "Our inner strength and fragility have become more unified than ever before.",
+          "Life is a lush valley, a rough terrain — not a checklist of smooth satisfaction, not an abstract map of a successful life.",
+          "The Way is not walked alone — perhaps this is what it means!"
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "Cheng Lesong believes that the task of philosophy is to examine the ways we frame questions and deploy concepts, guarding against the corruption of language and self-deception caused by conceptual misplacement and logical confusion.",
+            "point": "The value of philosophy lies in serving as a quality inspector of thought, placing the questions themselves under careful scrutiny."
+          },
+          {
+            "explanation": "People often mistake 'what I like' for a rational question, overlooking the desires and calculations behind it; only 'reflective sincerity' — grounded in lived experience and aimed at self-understanding — can reach the essence of life.",
+            "point": "Most confusion stems from faulty ways of questioning; one must return to genuine feeling and self-knowledge."
+          },
+          {
+            "explanation": "The confusion between information overload and sensory overload, anxiety about social competition, and the fear of failure cause people to indulge in the promise of 'starting to truly live,' forgetting that they are already living.",
+            "point": "In an age of meaning inflation, excessive reflection leads instead to mental fragility and inaction."
+          },
+          {
+            "explanation": "Both a closed self-consistency and a hasty self-negation are equally dangerous; philosophical clarity is a self-demand for sustained, active reflection, not a demand imposed on the world or on others.",
+            "point": "A mature intellectual life requires maintaining a balance between conviction and doubt."
+          },
+          {
+            "explanation": "Whether life is worth living is not a judgment to be outsourced to others, but an argument each person must complete through living itself; let everything happen, and move forward with resolve.",
+            "point": "Life is not a smooth experience checklist, but a journey that accommodates chaos and surprise and demands self-argumentation."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Cheng Lesong, head of Peking University's Philosophy Department, opened his commencement address with self-deprecating humor and went on to deeply articulate the value of philosophy as a quality inspector of thought and a cleanser of ideas, urging graduates to maintain a balance between reflective awareness and restraint in an age of anxiety and to live an authentic life.",
+        "originalTitle": "程乐松致辞，火了",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 13:51:00",
+        "publishTimeStamp": 1782539460000,
+        "qualified": false,
+        "readCount": 15,
+        "readTime": 12,
+        "readUrl": "https://www.bestblogs.dev/article/89b76843",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_051b71c0",
+        "sourceImage": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7IPhF5bMgNmQicGMYMOWiciaZp8Npj7VspibYbuGyNa4G0Tw/0",
+        "sourceName": "中国新闻周刊",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This is the full text of the 2026 commencement address delivered by Cheng Lesong, head of the Philosophy Department at Peking University. The speech opens with a self-deprecating take on the 'involution' of graduation speeches and the anxiety of 'preachy chicken soup,' before pivoting to a serious exploration of the nature of philosophy. Cheng Lesong argues that philosophy serves as a quality inspector of thought and a cleanser of ideas, and that its core lies in subjecting the very questions that trouble our minds to careful and critical scrutiny. He criticizes the contemporary tendency toward self-deception through faulty ways of questioning — such as submitting emotional matters to rational judgment — and emphasizes that reflective awareness and critical capacity are the gifts philosophy offers. The article delves into modern symptoms such as the confusion between information overload and sensory overload, the hollowing out of value caused by the inflation of meaning, and the mental fragility born of excessive reflection. He pushes back against the posture of 'seeing through everything' and advocates for a measured balance between conviction and doubt. In closing, he addresses the graduates: life is a lush valley, a rough terrain — march forward resolutely amid the clamor of voices and live out a genuine argument.",
+        "tags": [
+          "Philosophy & Ideas",
+          "Critical Thinking",
+          "Education & Campus",
+          "Personal Growth",
+          "Life & Culture"
+        ],
+        "title": "Cheng Lesong's Speech Went Viral",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDU1Mzg3Mw==&mid=2651737473&idx=1&sn=ec66e50d5aa80d79f9e71dc2a30e97f0",
+        "wordCount": 2818
+      },
+      {
+        "authors": [
+          "虹膜"
+        ],
+        "candidateSource": null,
+        "category": "Lifestyle_Culture",
+        "categoryDesc": "Lifestyle & Culture",
+        "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7ZWS3c9YG5ESNic3Q60CxHI8YMoPjJPfpxJ2DicwlVhicMQ/0",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_91530748",
+        "keyQuotes": [
+          "The hand is more honest than the brain.",
+          "Bresson proved that film's deepest power is to let the material world speak for itself.",
+          "He is not poor, not oppressed, not a victim of social injustice. His crime is purely voluntary, his isolation self-chosen."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Lifestyle_Culture",
+        "mainDomainDesc": "Lifestyle & Culture",
+        "mainPoints": [
+          {
+            "explanation": "He demands that his \"models\" rehearse repeatedly to remove traces of acting, using precise hand movements to convey rhythm and meaning, eliminating the face's traditional role as an emotional carrier.",
+            "point": "Bresson practices \"cinematography\" in Pickpocket, replacing psychological performance with physical movement."
+          },
+          {
+            "explanation": "A novel cannot directly perceive finger speed, theater cannot provide close-ups; only the camera can separate the hand from the body, giving it independent narrative and emotional functions.",
+            "point": "Close-ups of hands are a unique narrative device of the film medium."
+          },
+          {
+            "explanation": "Michel's theft is more like compulsive repetition than theory-driven; the body chooses corruption before the mind; the \"extraordinary man\" theory is only a post hoc rationalization.",
+            "point": "Pickpocket's adaptation of Crime and Punishment severs the causal chain between thought and action."
+          },
+          {
+            "explanation": "The entire film systematically suppresses emotional expression, and the ending instantly breaks the plane, releasing accumulated energy, influencing directors like Schrader.",
+            "point": "The repression-release strategy at the ending becomes a classic model of \"transcendental style.\""
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article deeply analyzes Bresson's classic film Pickpocket, explaining how it achieves \"cinematography\" by eliminating psychological performance and centering on hand movements, and contrasts it with Crime and Punishment to reveal a logic of physical corruption preceding thought, ultimately pointing to the unique power of letting the material world speak for itself.",
+        "originalTitle": "这部电影值得每年重温一次",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "Yesterday",
+        "publishDateTimeStr": "2026-06-28 20:32:00",
+        "publishTimeStamp": 1782649920000,
+        "qualified": false,
+        "readCount": 13,
+        "readTime": 14,
+        "readUrl": "https://www.bestblogs.dev/article/91530748",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_38d941d1",
+        "sourceImage": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7ZWS3c9YG5ESNic3Q60CxHI8YMoPjJPfpxJ2DicwlVhicMQ/0",
+        "sourceName": "虹膜",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Using a rewatch of Pickpocket as a starting point, the article systematically examines Bresson's theory of \"cinematography.\" The author argues that Bresson was more radical than the French New Wave, striving to strip cinema from theater by removing actors' expressions and reducing psychological description, allowing material elements like hands and objects to directly convey meaning. It focuses on the four-and-a-half-minute pickpocketing sequence at the train station, showing how close-ups of hands replace faces as the narrative core. The article further uses Crime and Punishment as a reference to reveal a profound shift after Bresson eliminates the protagonist's inner life: crime transforms from philosophically driven to a physical addiction. The conclusion notes that Bresson's repression-release structure influenced Schrader (American Gigolo, Taxi Driver), but Bresson refuses to excuse social factors, making Pickpocket colder and more honest. The argument is solid, the perspective unique, showcasing the depth of film criticism.",
+        "tags": [
+          "Bresson",
+          "Film Aesthetics",
+          "French Cinema",
+          "Classic Films",
+          "Film Analysis"
+        ],
+        "title": "This Film Is Worth Revisiting Every Year",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA3NzA1ODQzNA==&mid=2659384875&idx=1&sn=bcfb78144eccefb662005078abe30fc1",
+        "wordCount": 3296
+      },
+      {
+        "authors": [
+          "Anthropic News"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn.sanity.io/images/4zrzovbb/website/b9ba85fd4d8beaf4efe04a4cf6cec14761e52c78-2400x1260.jpg",
+        "domain": "anthropic.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_69b0b9ea",
+        "keyQuotes": [
+          "Tagging @Claude is now one of the main ways we get things done at Anthropic. Today, 65% of our product team's code is created by our internal version of Claude Tag.",
+          "@Claude is multiplayer. Within a given Slack channel, there's one Claude that interacts with everyone.",
+          "@Claude takes initiative. If \"ambient\" behavior is enabled, Claude will proactively keep you updated about whatever it thinks you might need to know."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Claude joins as a team member, accesses selected channels and tools, and performs tasks asynchronously while building ongoing context.",
+            "point": "Claude Tag enables teams to tag @Claude in Slack channels for task delegation."
+          },
+          {
+            "explanation": "Multiple users can interact with the same Claude instance, it learns from channel history, can flag relevant info automatically, and works on tasks over hours or days.",
+            "point": "It features multiplayer, contextual learning, proactive initiative, and async operation."
+          },
+          {
+            "explanation": "Claude's access to data and tools is scoped per channel; admins set token limits and audit logs for transparency.",
+            "point": "Administrators have fine-grained control over permissions, tool access, and spending."
+          },
+          {
+            "explanation": "The feature is already used extensively within Anthropic beyond engineering, including product metrics, support tickets, and debugging.",
+            "point": "At Anthropic, 65% of product team code is now generated via Claude Tag's internal version."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Anthropic launches Claude Tag, a new Slack-integrated feature enabling teams to @Claude for collaborative, asynchronous task delegation with context memory and proactive capabilities.",
+        "originalTitle": "Introducing Claude Tag",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 00:00:00",
+        "publishTimeStamp": 1782144000000,
+        "qualified": false,
+        "readCount": 9,
+        "readTime": 4,
+        "readUrl": "https://www.bestblogs.dev/article/69b0b9ea",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_8b9413",
+        "sourceImage": "https://image.jido.dev/20260612221055_apple-touch-icon.png",
+        "sourceName": "Anthropic News",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Anthropic announces Claude Tag, a new way for teams to work with Claude, starting as a Slack integration. Users can grant Claude access to selected channels and tools, then tag @Claude to delegate tasks. Claude builds context from channel activity, can take proactive initiative, works asynchronously, and supports multiplayer collaboration. At Anthropic, 65% of the product team's code is now created via an internal version of Claude Tag. The feature is available in beta for Claude Enterprise and Team customers, with tight administrative controls over tool access, data permissions, and spending limits. It works with Opus 4.8 and replaces the existing Claude in Slack app.",
+        "tags": [
+          "AI Agent",
+          "Team Collaboration",
+          "Product Launch",
+          "Slack",
+          "Claude"
+        ],
+        "title": "Introducing Claude Tag",
+        "translateContent": null,
+        "url": "https://www.anthropic.com/news/introducing-claude-tag",
+        "wordCount": 830
+      },
+      {
+        "authors": [
+          "Bruce Schneier and Nathan E Sanders"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://i.guim.co.uk/img/media/7a3f0b54d10cd58d94663d8e35d9d8f5df92b0ea/500_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=2de864f1e7c46ca7a731e1f3830c85ac",
+        "domain": "theguardian.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_64c770aa",
+        "keyQuotes": [
+          "Why hire human writers, lawyers or doctors when AIs are not only cheaper, but also absolve employers whenever they make a mistake?",
+          "There's nothing in the law that requires us to accommodate AI systems if they are fundamentally untrustworthy, just as we don't need to accommodate untrustworthy human systems.",
+          "To allow businesses to hide behind the excuse of faulty AI in those same circumstances would be a massive handout to companies, and would introduce disastrous incentives for corporate misbehavior."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Unlike traditional search results that merely index third-party content, AI overviews rewrite information with editorial discretion, akin to a newspaper article. The German court correctly held Google responsible.",
+            "point": "AI summaries are acts of publishing, not neutral transmission, making companies liable for errors."
+          },
+          {
+            "explanation": "If a human employee makes a false promise or gives wrong advice, the company is liable. The same principle should apply to AI-powered chatbots and agents, as reinforced by the Air Canada case.",
+            "point": "Companies should be legally responsible for their AI agents just as they are for human agents."
+          },
+          {
+            "explanation": "If companies can disavow AI mistakes, they have no reason to invest in accuracy. This would lead to widespread harm and destroy public confidence in AI systems, especially as they take on roles like purchasing agents or legal advisors.",
+            "point": "Allowing liability loopholes for AI would create perverse incentives and undermine trust."
+          },
+          {
+            "explanation": "Without accountability, use cases like AI lawyers, doctors, or personal assistants become commercially unviable and socially dangerous. The law should not accommodate untrustworthy AI systems any more than it accommodates untrustworthy humans.",
+            "point": "Proper liability allocation is essential for the viability of advanced AI applications."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A German court ruling holding Google liable for AI search summaries sparks a deep analysis of legal responsibility, arguing that companies must be accountable for their AI agents' errors or risk undermining trust.",
+        "originalTitle": "If an AI chatbot misleads you， who is to blame? | Bruce Schneier and Nathan E Sanders",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 18:00:41",
+        "publishTimeStamp": 1782295241000,
+        "qualified": false,
+        "readCount": 8,
+        "readTime": 5,
+        "readUrl": "https://www.bestblogs.dev/article/64c770aa",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_58ee9643",
+        "sourceImage": "https://image.jido.dev/20260604114532_guardian-logo-rss.c45beb1bafa34b347ac333af2e6fe23f.png",
+        "sourceName": "The Guardian",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This Guardian opinion piece by Bruce Schneier and Nathan E Sanders examines a landmark German court decision that declared Google liable for its AI overviews, rejecting defenses that users should not blindly trust AI. The authors trace the historical distinction between 'carriers' (like phone companies) and 'publishers' (like newspapers), and how internet companies have exploited Section 230's protections. They argue that AI summaries and chatbots function as publishers, exercising editorial discretion, and therefore companies should be fully responsible for their AI agents' outputs—just as they would be for human employees. The article cites the Air Canada chatbot case and the Ashley MacIsaac defamation lawsuit to illustrate real-world consequences. The authors conclude that allowing companies to hide behind faulty AI would create perverse incentives and erode trust, and they support holding AI systems to the same liability standards as human systems.",
+        "tags": [
+          "AI Liability",
+          "AI Regulation",
+          "Section 230",
+          "AI Overviews",
+          "Corporate Responsibility"
+        ],
+        "title": "If an AI chatbot misleads you, who is to blame? | Bruce Schneier and Nathan E Sanders",
+        "translateContent": null,
+        "url": "https://www.theguardian.com/commentisfree/2026/jun/24/ai-errors-companies-responsibility",
+        "wordCount": 1141
+      },
+      {
+        "authors": [
+          "Filipe Campante",
+          "Florian Ederer",
+          "Stan Veuger"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://foreignpolicy.com/wp-content/uploads/2026/06/World-Cup-Philadelphia-GettyImages-2282813778.jpg",
+        "domain": "foreignpolicy.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_9d268652",
+        "keyQuotes": [
+          "Resale prices reveal what soccer fans, both domestic and foreign, are most excited to see---or at least, what sellers believe fans desire most intensely.",
+          "A supporter in Germany or England can ordinarily reach all the European Championship matches---or the next World Cup in Morocco, Spain, and Portugal---with a short flight or train journey. A tournament spread across North America presents a fundamentally different proposition."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "Mexico adds $623, the US $571, and Canada $231 to the cheapest ticket price. Brazil adds $299, Argentina $312, and Portugal $442, reflecting diaspora demand and superstar appeal.",
+            "point": "Host nations and Latin American teams command the highest resale premiums."
+          },
+          {
+            "explanation": "Their teams generate multi-hundred-dollar premiums, driven by their global celebrity status and the sense of witnessing history.",
+            "point": "Aging superstars Messi and Ronaldo are the sport's biggest draws, surpassing younger stars."
+          },
+          {
+            "explanation": "High travel costs, tough U.S. immigration enforcement, and smaller expatriate communities in North America likely deter European supporters.",
+            "point": "European powers show resale price premiums below zero, suggesting weaker demand from European fans."
+          },
+          {
+            "explanation": "Miami's Latin American ties and high tourism make it the most expensive venue, while West Coast cities like San Francisco show negative city effects due to geography and travel distances.",
+            "point": "City effects vary dramatically, with Miami and Mexican host cities exceeding $800 premiums over Kansas City."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "By analyzing resale ticket prices, this article reveals that host country pride, aging superstars Messi and Ronaldo, and Latin American diaspora demand drive World Cup ticket prices, while European teams underperform due to travel costs and immigration policies.",
+        "originalTitle": "The Strange Logic of World Cup Ticket Prices",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 00:47:31",
+        "publishTimeStamp": 1782146851000,
+        "qualified": false,
+        "readCount": 8,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/9d268652",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_2a2301ba",
+        "sourceImage": "https://image.jido.dev/20260605152538_cropped-favicon-512_2017.png",
+        "sourceName": "Foreign Policy",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This analysis by three economists examines the 2026 FIFA World Cup group-stage ticket resale market (StubHub) to uncover what drives fan demand. By isolating team and city effects from the lowest single-ticket prices, the authors find that host nations (Mexico, US, Canada) command huge premiums, as do teams featuring Lionel Messi (Argentina) and Cristiano Ronaldo (Portugal). Brazil retains strong appeal. In contrast, traditional European powers (England, Germany, France, Netherlands) have negative estimated team effects, likely because European fans face high costs and stricter border policies. City effects show Miami and Mexican host cities dominate, while West Coast venues underperform. The authors also note that the data reflects pre-tournament expectations and has limitations, but provides a rare window into North American soccer fandom shaped by patriotism, immigration, and geography.",
+        "tags": [
+          "Football / Soccer",
+          "World Cup",
+          "Sports Economics",
+          "Data Analysis",
+          "Fan Behavior"
+        ],
+        "title": "The Strange Logic of World Cup Ticket Prices",
+        "translateContent": null,
+        "url": "https://foreignpolicy.com/2026/06/22/world-cup-fifa-soccer-resale-gouging-prices/",
+        "wordCount": 1426
+      },
+      {
+        "authors": [
+          "Patrick Brzeski"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://www.hollywoodreporter.com/wp-content/uploads/2025/08/Tony-Zameczkowski-headshot.jpg?w=1296&h=730&crop=1",
+        "domain": "hollywoodreporter.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_314f7263",
+        "keyQuotes": [
+          "We run our own race. Disney is Disney, a very different beast, and that's what we need to do — not be too distracted by competition.",
+          "It's not growth at all costs; it's really about being very mindful of our investments.",
+          "Japan is one of our biggest opportunities, and the amount of creativity and IP in the country is immense."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "Zameczkowski stresses mindful investment in local content, partnerships, and localization of payment methods, avoiding reckless spending to gain market share.",
+            "point": "Disney+ prioritizes sustainable growth over growth at all costs in APAC."
+          },
+          {
+            "explanation": "Shows like 'Perfect Crown' (43M watch hours) and 'Battle of Fates' demonstrate the power of local content to attract audiences globally, with remakes being planned across Asia.",
+            "point": "Korean original content has been a major surprise success, driving viewership and international travel."
+          },
+          {
+            "explanation": "After integrating ESPN into Disney+ in Australia/NZ, Disney+ is testing in Japan, Korea, Hong Kong, and Singapore with mostly U.S. sports, while acquiring localized rights like Korea's KeSPA esports league to learn and expand.",
+            "point": "Sports strategy is selective and incremental, starting with a soft launch of ESPN and local esports rights."
+          },
+          {
+            "explanation": "Despite past success with 'Gannibal', Japanese live-action has not yet exported like Korean content. Disney+ is investing in co-productions (e.g., 'Merry Berry Love') and hopes to replicate the Korean content export model.",
+            "point": "Japan represents a high-value opportunity for live-action content, which Disney plans to increase."
+          },
+          {
+            "explanation": "The ad tier improves accessibility and is being considered for other markets based on success, following the strategy of scaling first then monetizing via ads.",
+            "point": "The ad-supported tier is rolling out gradually, starting with Australia and New Zealand, with potential expansion."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Disney+ Asia Pacific SVP Tony Zameczkowski outlines the streamer's strategy for sustainable growth through local content, sports, and ecosystem integration, with Japan as a key untapped opportunity.",
+        "originalTitle": "Disney’s New Asia Streaming Boss on K-Drama， Sports and the Untapped Japan Opportunity",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 21:58:17",
+        "publishTimeStamp": 1782136697000,
+        "qualified": false,
+        "readCount": 8,
+        "readTime": 13,
+        "readUrl": "https://www.bestblogs.dev/article/314f7263",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_cd235198",
+        "sourceImage": "https://image.jido.dev/20260604224203_thr-site-icon.png",
+        "sourceName": "The Hollywood Reporter",
+        "sourceVisibility": "SYSTEM",
+        "summary": "In an exclusive interview at APOS, Disney+ Asia Pacific chief Tony Zameczkowski discusses the platform's regional strategy. He details the success of Korean content like 'Perfect Crown' and 'Battle of Fates', the soft launch of ESPN in select markets with localized esports rights (KeSPA in Korea), the potential for vertical short-form discovery (Verts), and the gradual rollout of the ad-supported tier. He emphasizes sustainable growth over cost, the importance of localization in payment and content, and the unique advantage of Disney's ecosystem (parks, cruise, Hulu, ESPN). On Japan, he sees immense creativity and plans more live-action productions, hoping they will eventually travel like Korean content. The interview also touches on the 'one Disney' vision and the need for focus amid competition.",
+        "tags": [
+          "Streaming",
+          "Content Strategy",
+          "Asia-Pacific",
+          "K-Drama",
+          "Sports Rights"
+        ],
+        "title": "Disney’s New Asia Streaming Boss on K-Drama， Sports and the Untapped Japan Opportunity",
+        "translateContent": null,
+        "url": "https://www.hollywoodreporter.com/business/business-news/disney-new-asia-streaming-boss-korean-drama-sports-japan-1236627088/",
+        "wordCount": 3022
+      },
+      {
+        "authors": [
+          "Charity Majors"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/5db364b135f49cf4d811889432c3e987476671b2-12000x6300.jpg?w=1200&h=630&auto=format",
+        "domain": "stackoverflow.blog",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_3b513061",
+        "keyQuotes": [
+          "Being good at running the business is not optional.",
+          "The most effective leaders are the ones who are kind, caring humans and skilled business operators.",
+          "If you really want to make your team feel good, the best thing you can possibly do for them is turn them into a high-performing team.",
+          "We earn the right to continue on."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Productivity_Growth",
+        "mainDomainDesc": "Productivity & Growth",
+        "mainPoints": [
+          {
+            "explanation": "The primary job of any manager is to run the business successfully—understanding strategy, market fit, and goals. Feelings are trailing indicators; inputs and business outcomes matter most.",
+            "point": "Leadership requires winning at business first, not just being nice to people."
+          },
+          {
+            "explanation": "Inexperienced managers often blame their past managers for lack of autonomy, but the real issues are often structural—changing requirements, unclear priorities, or competing stakeholder demands.",
+            "point": "Many managers misdiagnose team problems by focusing on symptoms like micromanagement instead of root causes like misalignment or lack of product-market fit."
+          },
+          {
+            "explanation": "Kind, caring leaders who are also skilled operators build the best businesses. Authoritarian operators come second, and nice but ineffective leaders lag behind.",
+            "point": "Humane leadership combined with strong business operations is the most effective combination."
+          },
+          {
+            "explanation": "Directors are tapped for systems thinking, courage, and credibility. Managers who insist all their team members are top performers undermine real improvement.",
+            "point": "To advance to director, focus on learning the business and building high-performing teams rather than being a cheerleader."
+          },
+          {
+            "explanation": "Complacency—like Twitter's pre-Elon culture—can lead to failure. The job is to continuously improve; if you don't, someone else will.",
+            "point": "Managers must earn their role by setting high standards and running their organization efficiently."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article advises engineering leaders to prioritize business success and avoid authoritarianism, emphasizing that humane leadership combined with strong business acumen is the key to building high-performing teams.",
+        "originalTitle": "Paging Charity! How can engineering leaders avoid becoming Bond villains?",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 22:00:27",
+        "publishTimeStamp": 1782482427000,
+        "qualified": false,
+        "readCount": 7,
+        "readTime": 7,
+        "readUrl": "https://www.bestblogs.dev/article/3b513061",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b6f2b7",
+        "sourceImage": "https://image.jido.dev/20260623052801_apple-touch-icon.png",
+        "sourceName": "Stack Overflow Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "In response to a reader's question about avoiding authoritarian leadership, Charity offers a nuanced perspective on engineering management. She argues that the industry cultivates authoritarianism by venerating winners and retconning their myths. The core of leadership is winning at business—understanding strategy, context, and goals. Many managers enter the role wanting to protect their teams from bad experiences, but they often misdiagnose problems like lack of product-market fit or misalignment as micromanagement. She advocates that humane, empathetic leaders can build better businesses long-term, but they must also be skilled operators. For advancement to director, she advises focusing on business learning and being honest about team performance rather than cheerleading. She concludes that managers must earn their roles by setting high standards and running the business efficiently, citing Twitter's collapse as a cautionary tale.",
+        "tags": [
+          "Engineering Management",
+          "Leadership",
+          "Business Acumen",
+          "Organizational Culture",
+          "High-Performing Teams"
+        ],
+        "title": "Paging Charity! How can engineering leaders avoid becoming Bond villains?",
+        "translateContent": null,
+        "url": "https://stackoverflow.blog/2026/06/26/paging-charity-how-can-engineering-leaders-avoid-becoming-bond-villains/",
+        "wordCount": 1634
+      },
+      {
+        "authors": [
+          "Oliver Kay"
+        ],
+        "candidateSource": null,
+        "category": "Sports",
+        "categoryDesc": "Sports",
+        "cover": "https://static01.nyt.com/athletic/uploads/wp/2026/06/24033814/0623-messironaldo-scaled.jpg?width=1200&height=630&fit=cover",
+        "domain": "nytimes.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_84aca098",
+        "keyQuotes": [
+          "I'm back! I'M BACK!",
+          "Just so they don't forget. Just so they don't forget.",
+          "The beauty of Messi is that he gives the impression of being as quick when running with the ball as without it.",
+          "It was like watching a brilliant, charismatic frontman who can no longer get around the stage and just can't hit the high notes anymore.",
+          "When I was a kid, Messi was scoring goals. Now I have a kid of my own... and Messi is still scoring goals."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "Messi dominates through efficiency, vision, and near-telepathic movement — walking at 4.72 km/h on average but constantly processing the game — while Ronaldo relies on explosive runs, finishing, and sheer will, as shown in his emphatic performance against Uzbekistan.",
+            "point": "Watching Messi and Ronaldo within 24 hours reveals their fundamentally different playing styles and relationship with pressure."
+          },
+          {
+            "explanation": "His two goals against Austria — one a composed first-time finish after a dummy, the other a relentless second-effort strike in stoppage time — epitomized his unique blend of precision and grit.",
+            "point": "Messi broke the all-time World Cup scoring record with his 18th and 19th goals, surpassing Miroslav Klose, and did so with trademark grace."
+          },
+          {
+            "explanation": "Following a 'difficult, dark week' after the scoreless opener against DR Congo, Ronaldo delivered with two classic finishes and an assist, reminding fans why he remains a starter at 41.",
+            "point": "Ronaldo's 'I'm back' moment after two goals against Uzbekistan answered doubts about his place in Portugal's starting lineup."
+          },
+          {
+            "explanation": "Fans from India, Malaysia, and beyond spent hundreds of dollars to see their idols, comparing Messi to a messiah and Ronaldo to a relatable fighter — a testament to their lasting cultural significance.",
+            "point": "The fan experience underscores the generational and global impact of both players."
+          },
+          {
+            "explanation": "Despite his struggles in recent tournaments, Ronaldo's 830 club goals, 145 international goals, and record Champions League tally should not be overshadowed by a few difficult games at age 41.",
+            "point": "The article pushes back against criticism of Ronaldo's legacy, arguing short-term analysis ignores his historic achievements."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "A first-hand account of watching Lionel Messi and Cristiano Ronaldo on consecutive World Cup days, capturing their contrasting styles, fan devotion, and enduring greatness in the twilight of their careers.",
+        "originalTitle": "Watching Lionel Messi and Cristiano Ronaldo in 24 hours. The World Cup is still in thrall to them",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 22:57:35",
+        "publishTimeStamp": 1782313055000,
+        "qualified": false,
+        "readCount": 7,
+        "readTime": 16,
+        "readUrl": "https://www.bestblogs.dev/article/84aca098",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_b143d403",
+        "sourceImage": "https://www.nytimes.com/athletic/static/img/transparent-background-dark-favicon-144x144.png",
+        "sourceName": "Soccer - The Athletic",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The Athletic's Oliver Kay chronicles a unique double-header: Lionel Messi against Austria in Arlington, where he broke the all-time World Cup scoring record with two goals, followed by Cristiano Ronaldo against Uzbekistan in Houston, where he scored twice to silence critics after a difficult opener. The article blends vivid match observation, Opta data comparisons (Messi's walking pace vs. his mental speed; Ronaldo's minimal build-up play but lethal finishing), and interviews with global fans who traveled to see both legends. It reflects on how Messi has found joy and freedom since 2021, while Ronaldo's legacy is debated amid his late-career struggles — but ultimately argues that both remain captivating forces on the world stage.",
+        "tags": [
+          "World Cup",
+          "Lionel Messi",
+          "Cristiano Ronaldo",
+          "Football / Soccer",
+          "Tactical Analysis"
+        ],
+        "title": "Watching Lionel Messi and Cristiano Ronaldo in 24 hours. The World Cup is still in thrall to them",
+        "translateContent": null,
+        "url": "https://www.nytimes.com/athletic/7389274/2026/06/24/lionel-messi-cristiano-ronaldo-world-cup-24-hours/",
+        "wordCount": 3760
+      },
+      {
+        "authors": [
+          "Shaun Walker"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://i.guim.co.uk/img/media/99031d0896a5e9d63663c1d5866817d3b7f20e94/0_642_4000_3200/master/4000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=cb59a6b0bd6f736bd635cf22ff292903",
+        "domain": "theguardian.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_d493e2ca",
+        "keyQuotes": [
+          "What do you do when your beloved father figure suddenly starts drinking and behaving in a way that is utterly incomprehensible? It's hard to know how to act.",
+          "Values are important, but you can't shoot values, you can't shoot flags, and you can't shoot strong speeches. There is no replacement for hard power."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "News_Media",
+        "mainDomainDesc": "News & Media",
+        "mainPoints": [
+          {
+            "explanation": "Interviews reveal a shift from cautious optimism about Trump's demands for higher spending to genuine alarm, as U.S. policy becomes unpredictable and access to decision-makers collapses for smaller allies.",
+            "point": "Eastern European leaders privately fear the U.S. may not defend them if Russia attacks, based on 18 months of Trump administration actions."
+          },
+          {
+            "explanation": "Cancelled troop rotations reversed by a Truth Social post, threats to annex Greenland from a NATO ally, and mixed messaging during Russian drone incursions demonstrate that U.S. commitment depends on Trump's personal relationships and mood.",
+            "point": "The Trump administration's chaotic implementation erodes trust more than its stated strategic shift away from Europe."
+          },
+          {
+            "explanation": "NATO chief Rutte's strategy of fawning diplomacy (including calling Trump 'daddy') keeps the alliance functional but is criticized as unsustainable, while some officials privately discuss contingency plans without public airing.",
+            "point": "Europe faces a strategic dilemma: appease Trump through flattery and spending hikes, or prepare publicly for potential U.S. withdrawal."
+          },
+          {
+            "explanation": "Technical coordination between U.S. and Polish forces worked effectively to shoot down drones, but Trump's dismissive social media posts and suggestion it 'could have been a mistake' deepened Eastern European distrust.",
+            "point": "The September 2025 Russian drone incursion into Poland tested NATO but revealed a gap between military cooperation and political messaging."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This Guardian investigation reveals how Eastern European leaders have privately concluded they can no longer rely on U.S. military support under Trump, based on interviews with dozens of officials across the region.",
+        "originalTitle": "All quiet on the eastern flank? Nato leaders fear they can no longer rely on US help if Russia attacks",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-27",
+        "publishDateTimeStr": "2026-06-27 15:01:04",
+        "publishTimeStamp": 1782543664000,
+        "qualified": false,
+        "readCount": 5,
+        "readTime": 18,
+        "readUrl": "https://www.bestblogs.dev/article/d493e2ca",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_58ee9643",
+        "sourceImage": "https://image.jido.dev/20260604114532_guardian-logo-rss.c45beb1bafa34b347ac333af2e6fe23f.png",
+        "sourceName": "The Guardian",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Based on extensive interviews with national leaders, defense ministers, intelligence chiefs, and diplomats across Eastern Europe, this article documents the 18-month erosion of trust in American security guarantees since Trump's second term. It traces key moments: Pete Hegseth's February 2025 speech declaring European security no longer a U.S. priority, the humiliating Oval Office showdown with Zelenskyy, the brief intelligence cutoff to Ukraine, the September 2025 Russian drone incursion into Polish airspace where Trump downplayed the attack, and the cancellation and reversal of U.S. troop rotations to Poland. The reporting captures a fundamental psychological shift: from viewing Trump's demands for higher European defense spending as a justified 'cold shower' to recognizing that U.S. commitment is now contingent on personal relationships and daily whims. European leaders are split between a strategy of flattery (personified by NATO chief Rutte) and quiet contingency planning. Smaller states like Latvia and Estonia report being locked out of decision-making circles. The piece concludes with the question of whether Europe should continue placating Trump or begin openly preparing for a future without the U.S.",
+        "tags": [
+          "NATO",
+          "Eastern Europe",
+          "US Foreign Policy",
+          "Geopolitics",
+          "European Security"
+        ],
+        "title": "All quiet on the eastern flank? Nato leaders fear they can no longer rely on US help if Russia attacks",
+        "translateContent": null,
+        "url": "https://www.theguardian.com/world/ng-interactive/2026/jun/27/nato-leaders-fear-they-can-no-longer-rely-on-us-help-if-russia-attacks-trump-eastern-europe",
+        "wordCount": 4314
+      },
+      {
+        "authors": [
+          "Barney Ronay in New York"
+        ],
+        "candidateSource": null,
+        "category": "Sports",
+        "categoryDesc": "Sports",
+        "cover": "https://i.guim.co.uk/img/media/d503ed6ed07d587b48de970374e7fd2d13c3be0e/1571_860_5540_4432/master/5540.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=b26a4d611ac27bb19a94eb6ef531a162",
+        "domain": "theguardian.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_e0d11aeb",
+        "keyQuotes": [
+          "It's an advert break. We know this. They know it.",
+          "The hydration break is an abomination, a desecration of the basic fabric of the sport, enacted by sleight of hand.",
+          "Football is supposed to be hard, a sport of endless variables, democratised by its own difficulty."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Sports",
+        "mainDomainDesc": "Sports",
+        "mainPoints": [
+          {
+            "explanation": "The article argues that FIFA uses player welfare as a pretext to introduce commercial stoppages, calling them 'hydration breaks' to soften the real intent of selling advertising time.",
+            "point": "Hydration breaks are actually ad breaks imposed by FIFA for revenue."
+          },
+          {
+            "explanation": "By splitting the game into four quarters, FIFA changes a core aspect of football: the relentless, uninterrupted flow that defines its difficulty and beauty.",
+            "point": "The breaks fundamentally alter football's structure and rhythm."
+          },
+          {
+            "explanation": "Mitigating measures like late kick‑offs already address heat; a quick water stop could suffice when needed, but three‑minute breaks are purely for commercial gain.",
+            "point": "FIFA's justification of player welfare is disingenuous."
+          },
+          {
+            "explanation": "Increased ad revenue boosts future TV rights and strengthens Infantino's political position, with visible self‑aggrandizement via on‑screen cuts to him during games.",
+            "point": "The change serves Infantino's power and FIFA's US‑centric ambitions."
+          },
+          {
+            "explanation": "The article warns that while football has survived commercial pressure, this structural change risks flattening the spectacle and should be resisted by fans.",
+            "point": "Football's resilience depends on its uninterrupted nature."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article critiques FIFA's introduction of hydration breaks (actually ad breaks) in the 2026 World Cup, arguing they fundamentally alter football's structure and are driven by commercial greed, not player welfare.",
+        "originalTitle": "Fifa unites the world – in anger at hydration breaks (AKA ad breaks) | Barney Ronay",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 12:00:09",
+        "publishTimeStamp": 1782446409000,
+        "qualified": false,
+        "readCount": 3,
+        "readTime": 7,
+        "readUrl": "https://www.bestblogs.dev/article/e0d11aeb",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SRC_e98549af",
+        "sourceImage": "https://image.jido.dev/20260603032215_guardian-logo-rss.c45beb1bafa34b347ac333af2e6fe23f.png",
+        "sourceName": "Football | The Guardian",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Barney Ronay's column dissects the universally booed hydration breaks at the 2026 World Cup, exposing them as thinly veiled advertising intervals. He traces the negative fan reaction across nations, notes that only Ralf Rangnick and Gianni Infantino seem to support them, and argues that the breaks amount to a structural change – turning football into a four‑quarter game – comparable to anything since the codification of 45‑minute halves in 1897. Ronay dismisses the player‑welfare pretext as a Trojan horse for FIFA's revenue ambitions, especially in the US market, and shows how the breaks allow coaches like Ancelotti to manipulate momentum, undermining the game's essence. He concludes that football's beauty lies in its uninterrupted, often difficult rhythm, and urges fans to keep booing this 'act of vandalism'.",
+        "tags": [
+          "Football / Soccer",
+          "FIFA",
+          "World Cup 2026",
+          "Commercialization",
+          "Sports Business"
+        ],
+        "title": "Fifa unites the world – in anger at hydration breaks (AKA ad breaks) | Barney Ronay",
+        "translateContent": null,
+        "url": "https://www.theguardian.com/football/2026/jun/26/fifa-unites-the-world-in-anger-at-hydration-breaks-aka-ad-breaks",
+        "wordCount": 1665
+      },
+      {
+        "authors": [
+          "Emily Wood"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://image.jido.dev/20260623050015_apple-touch-icon.png",
+        "domain": "searchengineland.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_e63784c4",
+        "keyQuotes": [
+          "LinkedIn is more expensive than Google on a raw CPC basis, but when you compare apples to apples (both platforms reaching cold, qualified B2B buyers), the gap narrows significantly.",
+          "My take is to use LinkedIn Ads to build intent and tell your story, and use Google Ads and Microsoft Ads to capture intent.",
+          "The ideal scenario is for your brand to become an active participant in the decision-making process, shaping the narrative instead of letting competitors do it for you."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Business_Tech",
+        "mainDomainDesc": "Business & Tech",
+        "mainPoints": [
+          {
+            "explanation": "When comparing non-branded Google Search ($12.48) with LinkedIn prospecting campaigns for lead generation or website conversions ($13.94), the CPC difference is only about 12%, making LinkedIn far more competitive than raw averages suggest.",
+            "point": "LinkedIn's blended average CPC ($11.12) is roughly double Google's ($5.45), but the gap nearly vanishes for cold, high-intent B2B audiences."
+          },
+          {
+            "explanation": "Lead gen campaigns ($31.29 CPC) are expensive but often justified by higher conversion rates and lead quality; video view CPC is misleading because CPV is the relevant metric. Website visit campaigns average $6.75, a more cost-effective option for traffic generation.",
+            "point": "LinkedIn CPCs vary dramatically by ad objective, from $4.45 (engagement) to $71.43 (video views), requiring objective-specific budget planning."
+          },
+          {
+            "explanation": "B2B SaaS had a larger and more diverse campaign mix, likely lowering its blended CPC. Professional services campaigns used very specific targeting, which can drive up CPCs. Lead gen CPCs for professional services were actually lower than for B2B SaaS, a notable exception.",
+            "point": "Industry matters: B2B SaaS sees lower CPCs (~$11 average) than professional services (~$15), but sample sizes differ."
+          },
+          {
+            "explanation": "Below $3k, meaningful lead volume is unlikely. For B2B companies with an ACV above $20k, starting at $5k/month is recommended. At scale, you can run brand awareness alongside direct response campaigns, including retargeting and list-based targeting.",
+            "point": "A practical budget framework: $3k–$5k/month minimum viable, $5k–$10k for testing, $10k+ for scaling with full-funnel campaigns."
+          },
+          {
+            "explanation": "Google captures existing demand from active researchers; LinkedIn creates new demand by reaching exact buyer personas early in the decision process. Combined, they form a complementary strategy that covers the full B2B funnel.",
+            "point": "The optimal channel mix: Google Ads for intent capture (branded/non-branded search, remarketing) and LinkedIn for audience-led demand generation, run in parallel."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article analyzes $700k+ in LinkedIn Ads spend to provide CPC benchmarks across objectives and industries, compares them with Google Ads, and offers budget and channel mix recommendations for B2B marketers.",
+        "originalTitle": "LinkedIn Ads CPC benchmarks: How costs compare with Google Ads",
+        "personalized": null,
+        "priority": "NORMAL",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-26",
+        "publishDateTimeStr": "2026-06-26 20:00:00",
+        "publishTimeStamp": 1782475200000,
+        "qualified": false,
+        "readCount": 2,
+        "readTime": 6,
+        "readUrl": "https://www.bestblogs.dev/article/e63784c4",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 91,
+        "selectionReason": null,
+        "sourceId": "SOURCE_ab841332",
+        "sourceImage": "https://image.jido.dev/20260623050015_apple-touch-icon.png",
+        "sourceName": "Search Engine Land",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Based on an analysis of over $700,000 in LinkedIn Ads spend (63,000+ clicks, 8.1 million impressions) and corresponding Google Ads data from the same B2B SaaS and professional services clients, the article delivers granular CPC benchmarks. It finds that while LinkedIn's blended average CPC ($11.12) is roughly double Google's ($5.45), the gap narrows significantly when comparing high-intent, cold audiences: non-branded Google Search averages $12.48 versus $13.94 for LinkedIn prospecting campaigns. The author breaks down LinkedIn CPCs by ad objective (ranging from $4.45 for engagement to $71.43 for video views) and by industry (B2B SaaS ~$11.02, professional services ~$15.25), then provides a budget framework ($3k–$5k minimum viable, $5k–$10k testing, $10k+ scaling) and recommends using Google/Microsoft Ads for intent capture and LinkedIn for audience-led demand generation. The article concludes that LinkedIn's higher raw CPC is often justified by access to specific professional audiences and earlier-stage influence in B2B buying cycles.",
+        "tags": [
+          "LinkedIn Ads",
+          "B2B Marketing",
+          "CPC Benchmarks",
+          "Google Ads",
+          "Digital Advertising"
+        ],
+        "title": "LinkedIn Ads CPC benchmarks: How costs compare with Google Ads",
+        "translateContent": null,
+        "url": "https://searchengineland.com/linkedin-ads-cpc-benchmarks-how-costs-compare-with-google-ads-481010",
+        "wordCount": 1454
+      },
+      {
+        "authors": [
+          "腾讯技术工程"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_1433cfe9",
+        "keyQuotes": [
+          "The bottleneck of this model is that humans become the bottleneck of the loop.",
+          "Shift humans from being operators inside the loop to supervisors and goal setters above the loop.",
+          "Loop Engineering is not meant to replace ReAct, but to add an orchestration layer on top of ReAct.",
+          "Key changes still require human review; Loop does not replace Code Review."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Traditional AI interaction is a 'question-and-answer' model, where humans become the bottleneck of the loop. Loop Engineering sets goals and completion conditions for humans, allowing AI to autonomously decide execution steps and iterate continuously until the goal is achieved or unreachable.",
+            "point": "The core of Loop Engineering is to shift humans from being operators within the loop to supervisors above the loop."
+          },
+          {
+            "explanation": "ReAct solves 'how to do' within a single task, while Loop Engineering solves 'what to do, who does it, when to stop, and how to continue' across tasks. The two collaborate: ReAct serves as the execution layer, and Loop Engineering serves as the orchestration layer.",
+            "point": "Loop Engineering and ReAct are in an Outer Loop vs. Inner Loop relationship."
+          },
+          {
+            "explanation": "/goal is suitable for substantive work with clear end states and is condition-driven; /loop is for time-driven monitoring and inspection; Automations are for long-term scheduled tasks across sessions. The three cover different scenarios.",
+            "point": "CodeBuddy implements different driving modes of loops through three mechanisms: /goal, /loop, and Automations."
+          },
+          {
+            "explanation": "All state is stored in external files (such as Memory, CODEBUDDY.md, Rules), and each loop starts from a fresh context, completely solving the problem of model forgetting and information drift, while supporting checkpoint restart.",
+            "point": "State externalization is a key design principle of Loop Engineering."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides an in-depth introduction to Loop Engineering, a new paradigm in AI programming, explaining its differences from ReAct, its core architecture, and demonstrating how to use mechanisms such as /goal and /loop to implement autonomous loop systems with the CodeBuddy tool.",
+        "originalTitle": "Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 17:22:00",
+        "publishTimeStamp": 1782120120000,
+        "qualified": false,
+        "readCount": 176,
+        "readTime": 24,
+        "readUrl": "https://www.bestblogs.dev/article/1433cfe9",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_958ae8",
+        "sourceImage": "https://image.jido.dev/20260527045543_19fddfe.jpeg",
+        "sourceName": "腾讯技术工程",
+        "sourceVisibility": "SYSTEM",
+        "summary": "Written by the Tencent Technical Engineering team, this article systematically introduces the concept of Loop Engineering proposed by Google engineer Addy Osmani. It first clarifies the essence of Loop Engineering—building autonomous loop systems around large models to upgrade AI from a single-response tool to a long-term autonomous agent, positioning it as the 'third revolution in AI programming' after Prompt Engineering and ReAct. It then provides a detailed comparison between Loop Engineering and ReAct, pointing out that ReAct is an Inner Loop (single task execution) while Loop Engineering is an Outer Loop (cross-task orchestration), and that the two are an evolutionary rather than a replacement relationship. The core of the article proposes a five-stage loop mechanism (Discover → Plan → Execute → Verify → Iterate), a dual-loop model, and a six-element building framework, emphasizing the philosophy of state externalization. It then focuses on the CodeBuddy tool, introducing three loop modes—/goal (condition-driven), /loop (time-driven), and Automations (cross-session scheduled tasks)—with their respective applicable scenarios, and provides multiple practical cases including module migration, CI monitoring, Team mode adversarial verification, Skills knowledge solidification, MCP connectors, and Rules and Memory state externalization. Finally, it summarizes best practices, common pitfalls, and a pattern selection guide. The article combines theory with practice and is highly actionable.",
+        "tags": [
+          "AI Coding",
+          "Agent",
+          "LLM",
+          "ReAct",
+          "Development Tools"
+        ],
+        "title": "Loop Engineering Practice Guide: Building Autonomous Loop Systems in Code Buddy",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802117&idx=1&sn=a91a32e0b00305c1a30f4a6684c3c6b2",
+        "wordCount": 5856
+      },
+      {
+        "authors": [
+          "莫崇宇"
+        ],
+        "candidateSource": null,
+        "category": "News_Media",
+        "categoryDesc": "News & Media",
+        "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/335-1.png",
+        "domain": "ifanr.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_32ae8196",
+        "keyQuotes": [
+          "Tokens have gradually become a basic consumable like water and electricity.",
+          "When a video model crosses the production quality inflection point, its accumulated understanding of the physical world becomes an important foundation for the world model.",
+          "The peak is still ahead, but the path is clear."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "It matches or surpasses Claude Opus 4.7 on benchmarks such as Terminal Bench and SciCode, and costs only 6 yuan per million token input, significantly reducing costs.",
+            "point": "Doubao 2.1 Pro is a flagship model that breaks through the production quality inflection point, with globally leading coding and Agent capabilities."
+          },
+          {
+            "explanation": "Compared to the mainstream 15-20 second limitation, this model supports more coherent shot expression and can collaborate with image models to produce high-quality science education videos.",
+            "point": "The Seedance 2.5 video model achieves 30-second generation length, joint input of 50 full-modality materials, and local video editing, leading the world."
+          },
+          {
+            "explanation": "Daily token call volume reaches 180 trillion, market share is 49.5%, tokens have become a basic consumable, and models continuously evolve through feedback.",
+            "point": "Volcano Engine transforms ByteDance's internal model capabilities into cloud services, with enterprises deeply using large models in core processes."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article reports on the 2026 Volcano Engine FORCE Original Power Conference, releasing models such as Doubao 2.1 Pro and Seedance 2.5, showcasing comprehensive breakthroughs in coding, video, image, and audio capabilities, and that large models have entered the core production workflow.",
+        "originalTitle": "刚刚，Seedance 2.5 正式发布，国产视频模型再次捅破天花板",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 01:36:00",
+        "publishTimeStamp": 1782236160000,
+        "qualified": false,
+        "readCount": 122,
+        "readTime": 11,
+        "readUrl": "https://www.bestblogs.dev/article/32ae8196",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4ecd55",
+        "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+        "sourceName": "爱范儿",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article covers the releases at the 2026 Volcano Engine FORCE Original Power Conference. Key highlights include the Doubao large model 2.1 Pro, which achieves top global tier in coding and Agent capabilities, with a cost of only 6 yuan per million token input, significantly reducing expenses; the Seedance 2.5 video model supports up to 30-second generation, joint input of 50 full-modality materials, and local video editing, breaking through mainstream model bottlenecks; the Seedream 5.0 Pro image model offers interactive precise editing and multi-layer separation; and the Seed-Audio 1.0 enables direct cinematic-quality sound effects generation. The article also notes that Doubao's daily token call volume reaches 180 trillion, with a 49.5% market share. Enterprises have deeply integrated large models into core processes, and Volcano Engine is transforming internal capabilities into cloud services delivered to customers.",
+        "tags": [
+          "AI Model",
+          "Video Generation",
+          "Large Language Model",
+          "AI Coding",
+          "AI Products & Applications"
+        ],
+        "title": "Just Now: Seedance 2.5 Officially Released, Domestic Video Model Breaks the Ceiling Again",
+        "translateContent": null,
+        "url": "https://www.ifanr.com/1669752?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "wordCount": 2533
+      },
+      {
+        "authors": [
+          "阿里云开发者"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_dba7e57b",
+        "keyQuotes": [
+          "The essence of Harness Engineering is not to make the Agent smarter, but to make it more controllable.",
+          "Trading confidence for automation level"
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "The Agent is responsible for log parsing, root cause diagnosis, and rule matching, while all data retrieval and action execution (e.g., API calls, retries, GitLab archiving) are handled by deterministic scripts to ensure auditability and controllability.",
+            "point": "Agent + Script Collaboration Paradigm: Let the Agent handle semantic reasoning, let scripts handle deterministic operations."
+          },
+          {
+            "explanation": "The system calculates the historical retry success rate from the case library, dynamically adjusts the diagnostic confidence, and then feeds it into the decision tree. New faults default to manual confirmation; after multiple successful handlings of the same type, the system automatically upgrades to fully automatic, achieving progressive trust.",
+            "point": "Trading Confidence for Automation Level: Conservative handling for low experience, gradual expansion for high experience."
+          },
+          {
+            "explanation": "Unmatched unknown cases are clustered by error code, then analyzed by the Agent to generate new rule drafts. Existing rules are monitored and revised based on retry success rates to prevent rule rigidity.",
+            "point": "Self-Evolving Rule Mechanism: The system continuously learns from its own experience."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article details a 7x24 automated operations system built on Devix, which uses Agent + script collaboration, a hierarchical decision engine, and a self-evolving rule mechanism to achieve an engineering closed loop for fault diagnosis, graded response, and continuous learning.",
+        "originalTitle": "当 Agent 替你值班：基于 Devix 构建 7x24 自动化运维 Harness Engineering",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-23",
+        "publishDateTimeStr": "2026-06-23 09:47:00",
+        "publishTimeStamp": 1782179220000,
+        "qualified": false,
+        "readCount": 110,
+        "readTime": 28,
+        "readUrl": "https://www.bestblogs.dev/article/dba7e57b",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_26c5f1",
+        "sourceImage": "https://image.jido.dev/20260527050139_5335db5.jpeg",
+        "sourceName": "阿里云开发者",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article from the Alibaba Cloud developer team documents how they used the Devix platform to build a complete automated operations system (Harness Engineering). Starting from the pain points of late-night alert dashboards, the author identifies three major problems with traditional manual operations: slowness, repetition, and discontinuity. It also argues against pure AI solutions, citing their instability and lack of memory. The core design philosophy is 'Agent handles semantic understanding and reasoning; scripts handle data retrieval and action execution,' forming a three-layer pipeline: semantic diagnosis layer (Agent), decision rule layer (script retrieval + Agent comprehensive decision), and action execution layer (scripts). The system runs as a 7x24 public service via Devix's cloud-resident Sandbox, integrating monitoring alerts, log parsing, correlation analysis, graded decision-making (auto-retry / button confirmation / code fix / investigation suggestion / escalate to human), DingTalk interaction, and case study accumulation. The article focuses on the confidence adjustment mechanism of the decision engine and the path of rule self-evolution (new rule discovery, effect evaluation, security audit), along with three security defenses. Finally, it summarizes key experiences: the Agent+script collaboration paradigm, trading confidence for automation level, and the self-evolving mechanism.",
+        "tags": [
+          "AI Agent",
+          "Automated Operations",
+          "DevOps",
+          "Fault Diagnosis",
+          "Decision Engine"
+        ],
+        "title": "When the Agent Takes Your Shift: Building 7x24 Automated Operations with Devix - Harness Engineering",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561199&idx=1&sn=c62b6db6dcc2bd3e63bc8bc4aa7498bf",
+        "wordCount": 6818
+      },
+      {
+        "authors": [
+          "Datawhale"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20251127045505_b03e263f",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_153f1dd0",
+        "keyQuotes": [
+          "The core value of Loop Engineering is not making the agent smarter, but making verification a built-in process.",
+          "In one-shot delivery, verification is your job; in loop delivery, verification is the system's job. You go from being a quality inspector back to being a demand stakeholder.",
+          "The instruction is: 'Forward the checker's complete failure report verbatim to the builder; do not interpret or filter it yourself.' Agents tend to summarize when passing information, but summaries lose line numbers, stack traces, and intermediate outputs that the builder needs to pinpoint the root cause."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "Traditional agents generate code in one shot and rely on manual checks, which can easily miss issues. Loop Engineering uses a builder to fix and a checker to verify, with the orchestrator automatically looping until all checks pass, freeing humans from repeated validation.",
+            "point": "Separate code writing and verification into two agents, using an orchestrator to loop through them, eliminating the blind spots of single-shot delivery."
+          },
+          {
+            "explanation": "builder.md and checker.md define tool isolation (builder has write permissions, checker has read/run permissions only), loop.md drives the loop, and CLAUDE.md sets six stop conditions to prevent infinite loops.",
+            "point": "A tripartite file structure: agent definitions, loop orchestrator, and stop rules."
+          },
+          {
+            "explanation": "Step-3.7-flash's high inference speed (400 TPS) and subscription-based pricing make it suitable for high-frequency loop calls, while slower models can lead to long wait times and trigger manual intervention.",
+            "point": "Model selection significantly affects the loop experience."
+          },
+          {
+            "explanation": "If the checker only shows the last error line and loses the full context, the builder may guess the root cause, wasting iterations. Similarly, if the orchestrator prematurely summarizes failure information, information loss occurs. Clear instructions must require verbatim forwarding.",
+            "point": "The completeness of checker reports and the fidelity of information transmission by the orchestrator are critical bottlenecks for loop efficiency."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article provides a detailed tutorial on building a Loop Engineering system based on Claude Code + step-3.7-flash using three files (builder, checker, loop orchestrator) plus a configuration, enabling an agent team to autonomously edit, review, and iterate.",
+        "originalTitle": "刚刚，全网爆火的 Loop Engineering，保姆教程来了！",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 22:08:00",
+        "publishTimeStamp": 1782310080000,
+        "qualified": false,
+        "readCount": 97,
+        "readTime": 21,
+        "readUrl": "https://www.bestblogs.dev/article/153f1dd0",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_4688eb",
+        "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+        "sourceName": "Datawhale",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article first explains the core idea of Loop Engineering: splitting code construction and verification into two dedicated agents (builder and checker), with an orchestrator looping through them, automatically running all checks until everything passes. It then provides a step-by-step walkthrough with complete code and explanations for three configuration files: builder.md (responsible only for writing and fixing), checker.md (responsible only for running checks and reporting), loop.md (driving the loop), and CLAUDE.md (stop rules). It also explains how to configure Claude Code to use the Step-3.7-flash model from StepFun. The author demonstrates the loop's operation and time consumption across different scenarios using four PRs submitted to the open-source project Step-Realtime-CLI. Finally, it summarizes common pitfalls encountered in practice: the builder tends to modify unrelated code, the checker's reports are often incomplete, and the orchestrator may prematurely summarize failure information. The article emphasizes that the true value of Loop Engineering lies in turning verification from a manual step into a built-in system process, transforming the user from a quality inspector back into a demand stakeholder.",
+        "tags": [
+          "AI Coding",
+          "LLM",
+          "Agent",
+          "Developer Tools",
+          "Prompt Engineering"
+        ],
+        "title": "Just Released: A Complete Beginner's Guide to the Internet-Famous Loop Engineering",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723692&idx=1&sn=79bbf6450a03de7e8163338ae1499b48",
+        "wordCount": 5036
+      },
+      {
+        "authors": [
+          "通义实验室"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://image.jido.dev/20260527050603_c063770.jpeg",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_8810d85f",
+        "keyQuotes": [
+          "Rather than trial and error in real environments, it's better to first teach AI to 'predict what the environment will do'.",
+          "CPT injects, SFT activates, RL refines.",
+          "Controllable simulation shapes agent behavior in ways that real environments cannot achieve.",
+          "Next-state prediction teaches the agent to simulate environmental responses before acting."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "CPT injects environment knowledge, SFT activates chain-of-thought reasoning, and RL refines simulation authenticity. The overall approach outperforms GPT-5.4 on AgentWorldBench, achieving an 8.66-point improvement even at small model scale, validating the pipeline's effectiveness.",
+            "point": "The three-stage world model training pipeline (CPT → SFT → RL) systematically enhances environment modeling ability."
+          },
+          {
+            "explanation": "By using natural language instructions to control simulator behavior (e.g., injecting API errors, paginated responses, etc.), performance improves by 12.3 on MCPMark and 16.3 on WideSearch. On WideSearch, it even surpasses Real RL trained with real search engines (F1 50.3% vs 45.6%).",
+            "point": "Controllable simulation enables Sim RL to surpass real-environment training on multiple tasks."
+          },
+          {
+            "explanation": "After single-round, non-tool-call LWM RL warm-up training, direct transfer to multi-round tool-call benchmarks yields improvements of 11.3, 9.7, and 9.0 respectively on three completely unseen domains (Claw-Eval, QwenClawBench, etc.), without any additional fine-tuning.",
+            "point": "Next-state prediction serves as a transferable meta-reasoning ability, enabling cross-task generalization."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "Tongyi Lab open-sources Qwen-AgentWorld, the first native language world model that starts environment modeling from the continued pre-training stage, surpassing state-of-the-art models like GPT-5.4 on AgentWorldBench, and demonstrating two application paradigms: controllable simulation and cross-task generalization.",
+        "originalTitle": "Qwen-AgentWorld 开源：让 Agent 学会“先预测，再行动”",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 11:32:00",
+        "publishTimeStamp": 1782271920000,
+        "qualified": false,
+        "readCount": 79,
+        "readTime": 16,
+        "readUrl": "https://www.bestblogs.dev/article/8810d85f",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_2ce88a",
+        "sourceImage": "https://image.jido.dev/20260527050603_c063770.jpeg",
+        "sourceName": "通义实验室",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article introduces Tongyi Lab's open-source Qwen-AgentWorld, the first language world model covering seven domains. Through a three-stage training pipeline—CPT (Continued Pre-Training) → SFT (Supervised Fine-Tuning) → RL (Reinforcement Learning)—it surpasses models like GPT-5.4 and Claude Opus 4.8 on AgentWorldBench. The article details key design choices in the training process (round-level informational entropy loss masking, chain-of-thought rejection sampling, hybrid reward signals) and introduces the AgentWorldBench evaluation benchmark. On the application side, two paradigms are explored: as a decoupled environment simulator, controllable Sim RL outperforms real-environment training on MCP and search tasks and generalizes to unseen environments; as a unified agent foundation model, LWM warm-up training yields significant gains in untouched domains, indicating that next-state prediction is a transferable meta-reasoning ability. The project is open-sourced.",
+        "tags": [
+          "AI Agent",
+          "World Model",
+          "Model Training and Inference",
+          "Reinforcement Learning",
+          "Model Evaluation and Benchmark"
+        ],
+        "title": "Qwen-AgentWorld Open-Source: Teaching Agents to 'Predict First, Act Later'",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501600&idx=1&sn=3cac493d78bbf5098bb03ed6d5a3f31d",
+        "wordCount": 3958
+      },
+      {
+        "authors": [
+          "angela shi"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://towardsdatascience.com/wp-content/uploads/2026/06/sticky_note_ETRPjvb0KM0_v3_card.jpg",
+        "domain": "towardsdatascience.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_b00e30e3",
+        "keyQuotes": [
+          "The cheap fix is to ask. The right fix is to ask, then learn the default so the next case is silent.",
+          "Without the learned-default table, silent inference is just guessing.",
+          "The cost is two schemas and one table column. The benefit is that the system stops asking the easy questions and only asks the ambiguous ones."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "When a ParsedQuestion field is ambiguous, the system should ask one focused clarification, record the user's answer as a learned default, and apply it automatically in future equivalent queries.",
+            "point": "Clarify once, then learn the default: the right fix is to ask, store, and silently apply later."
+          },
+          {
+            "explanation": "ClarificationRequest is emitted for each missing field; ClarificationDefault tracks candidate values, weighted votes, and confidence. A gate function decides based on confidence whether to ask, apply silently, or ask occasionally.",
+            "point": "Two Pydantic schemas formalize the loop: ClarificationRequest and ClarificationDefault."
+          },
+          {
+            "explanation": "When a default value fails (returns null), the system falls back to asking and then refines the default by adding sub-conditions (e.g., page 1 kind), improving future accuracy.",
+            "point": "Learned defaults are stratified on failure detection to handle edge cases."
+          },
+          {
+            "explanation": "With confidence thresholds (below 0.6 always ask, above 0.85 apply silently), the system learns which defaults are reliable and stops bothering the user for predictable cases.",
+            "point": "The pattern reduces user friction over time: easy questions become silent, only ambiguous ones trigger clarifications."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article proposes a pattern for handling vague user queries in RAG systems: ask one focused clarification, learn the default from the answer, and stay silent on subsequent similar questions.",
+        "originalTitle": "When RAG Users Ask Vague Questions: Clarify Once， Learn the Default",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-22",
+        "publishDateTimeStr": "2026-06-22 21:30:00",
+        "publishTimeStamp": 1782135000000,
+        "qualified": false,
+        "readCount": 73,
+        "readTime": 9,
+        "readUrl": "https://www.bestblogs.dev/article/b00e30e3",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_0c32dbfa",
+        "sourceImage": "https://image.jido.dev/20260527052020_cropped-Favicon-32x32.png",
+        "sourceName": "Towards Data Science",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article extends the question-parsing brick of an enterprise RAG system to handle ambiguous fields common in production queries. It identifies five failure modes (ambiguous field type, missing page scope, ambiguous date scope, ambiguous intent, implicit entity) and introduces two Pydantic schemas: `ClarificationRequest` to ask the user and `ClarificationDefault` to learn from the answer. A worked broker example demonstrates the loop: first time the system asks, records the answer, and later reuses the learned default silently. The update rules and gate function are provided in Python. The pattern is positioned as distinct from multi-turn dialogue; it emphasizes learning across requests rather than within a conversation. The article also discusses boundaries, deferred concerns (multi-field, adversarial users, cross-tenant sharing), and how the pattern integrates with storage and evaluation infrastructure.",
+        "tags": [
+          "RAG",
+          "LLM",
+          "Question Parsing",
+          "Structured Output",
+          "Agent Design Patterns"
+        ],
+        "title": "When RAG Users Ask Vague Questions: Clarify Once， Learn the Default",
+        "translateContent": null,
+        "url": "https://towardsdatascience.com/when-rag-users-ask-vague-questions-clarify-once-learn-the-default/",
+        "wordCount": 2206
+      },
+      {
+        "authors": [
+          "得物技术"
+        ],
+        "candidateSource": null,
+        "category": "Programming_Technology",
+        "categoryDesc": "Programming",
+        "cover": "https://image.jido.dev/20251127045403_cb8f24c8",
+        "domain": "mp.weixin.qq.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_16cf7e6c",
+        "keyQuotes": [
+          "If AI's role is just 'help you fill in fields', it will never bring a qualitative change. The real change should be — AI drives the process, and humans only confirm at key nodes.",
+          "The value leap of AI products almost always happens at the inflection point where AI shifts from a helper tool to a process driver.",
+          "Having operators select a budget pool from a dropdown list is more efficient and accurate than using natural language description for AI to guess.",
+          "Controllable process, correctness priority, lower operational burden — technical forms may change, but business constraints will not."
+        ],
+        "language": "zh_CN",
+        "languageDesc": "Chinese",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "In the first version, AI only assisted form filling, with limited efficiency gains; the second version made AI drive the process with human confirmation at key nodes, leading to a qualitative change. This aligns with the evolution pattern of Copilot, GPTs, and other products.",
+            "point": "The value leap of AI occurs at the inflection point where it changes from a 'helper tool' to a 'process driver'."
+          },
+          {
+            "explanation": "Based on practical experience, the article points out that most production scenarios are better suited for Workflow to ensure controllability, with local nodes using Agents for flexibility. LangGraph orchestration and interrupt/resume mechanisms are key to implementation.",
+            "point": "Enterprise AI applications should prioritize Workflow over fully autonomous Agents."
+          },
+          {
+            "explanation": "Each component is independently encapsulated, following the rule of 'no side effects on initialization, write operations only before construction', and registered via explicit selection and conditional injection tracks, so new components require no changes to the scheduling logic.",
+            "point": "The component module protocol achieves extensibility through a unified lifecycle and dual-track registration."
+          },
+          {
+            "explanation": "Stage 1 is read-only, progressively guiding information collection to generate a planning document; Stage 2 provides an aggregation workbench, reusing existing previewers and form engines for natural language editing and real-time preview.",
+            "point": "The two-stage architecture separates 'idea to plan' from 'plan to execution', reducing operators' cognitive load."
+          },
+          {
+            "explanation": "Natural language describes intent, structured UI confirms details, and visual preview checks results. AI explains 'why and what's missing' at each step, rather than fake progress bars, gradually building user trust.",
+            "point": "Good interaction is a mix of natural language and structured UI, with trust built through transparency."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "De Wu's tech team uses AI to reconstruct the community event creation process, gradually evolving from 'form filling' to a two-stage Agent architecture with 'AI-driven, human-confirmed' approach, and shares key trade-offs and architectural design in practice.",
+        "originalTitle": "从表单到 Agent：得物社区活动搭建的 AI 实践之路",
+        "personalized": null,
+        "priority": "MEDIUM",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 18:30:00",
+        "publishTimeStamp": 1782297000000,
+        "qualified": false,
+        "readCount": 72,
+        "readTime": 26,
+        "readUrl": "https://www.bestblogs.dev/article/16cf7e6c",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_af8ac9",
+        "sourceImage": "https://image.jido.dev/20251127045403_cb8f24c8",
+        "sourceName": "得物技术",
+        "sourceVisibility": "SYSTEM",
+        "summary": "This article details the complete evolution path of De Wu's community event creation system from form-driven to Agent-driven. The first version used AI to assist form filling, but the paradigm remained unchanged, resulting in limited efficiency gains. The second version, based on LangGraph, orchestrated workflows with interrupt/resume mechanisms, transforming operators from process executors to supervisors, and designed a component module protocol to address scalability. The third version further split into two stages: 'Plan Generation Skill' and 'Aggregation Workbench', supporting the full chain from idea to planning to venue creation, along with natural language editing and visual preview. The article discusses key decisions such as Workflow vs Agent selection, Human-in-the-loop interaction design, side effect control, and engineering compromises, concluding with three unchanging principles: controllable process, correctness priority, and lower operational burden. The article offers highly valuable engineering insights for AI product deployment.",
+        "tags": [
+          "AI Agent",
+          "AI Workflow",
+          "LangGraph",
+          "LLM",
+          "Engineering Practice"
+        ],
+        "title": "From Forms to Agents: De Wu's AI Practice in Building Community Events",
+        "translateContent": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247545481&idx=1&sn=3bba2e63d88f2b54d75943ba92b63686",
+        "wordCount": 6447
+      },
+      {
+        "authors": [
+          "Jake Broekhuizen"
+        ],
+        "candidateSource": null,
+        "category": "Artificial_Intelligence",
+        "categoryDesc": "Artificial Intelligence",
+        "cover": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a3c01c9a318cdaf1ffa880c_Youtube-Introduction%20to%20LangChain%20(1).png",
+        "domain": "langchain.com",
+        "enclosureUrl": null,
+        "fallbackApplied": null,
+        "featuredReason": null,
+        "id": "RAW_35c6d909",
+        "keyQuotes": [
+          "Memory is durable context that an agent can retrieve across runs to guide its behavior.",
+          "Not everything should be a memory update. Most trace data should remain history.",
+          "The same symptom can point to different fixes."
+        ],
+        "language": "en_US",
+        "languageDesc": "English",
+        "mainDomain": "Artificial_Intelligence",
+        "mainDomainDesc": "Artificial Intelligence",
+        "mainPoints": [
+          {
+            "explanation": "It includes facts, preferences, past interactions, instructions, skills, and learned patterns. Long-term memory is further split into semantic (knowledge), episodic (experience), and procedural (behavior rules) types.",
+            "point": "Memory is durable context that an agent retrieves across runs to guide behavior."
+          },
+          {
+            "explanation": "Capture traces via observability, analyze traces to find useful signal (explicit feedback, recurring issues, missed instructions), and update durable context (facts, instructions, skills) in a versioned store.",
+            "point": "The memory loop consists of capture, analyze, and update phases."
+          },
+          {
+            "explanation": "Only a small subset of signals—like confirmed user preferences or clear recurring mistakes—should be promoted to durable context. Many issues are better fixed as evals, code changes, or tool schema updates.",
+            "point": "Not everything should become a memory update—most trace data remains history."
+          },
+          {
+            "explanation": "If the runtime caches prompts or tools, memory commits need a refresh path; otherwise the system may store the correct update while running with stale context.",
+            "point": "Ensure future runs actually read the updated memory."
+          }
+        ],
+        "mediaDuration": null,
+        "notExist": null,
+        "oneSentenceSummary": "This article from LangChain presents a structured approach to building memory for AI agents, covering conceptual framing, a three-step loop (capture, analyze, update), and a concrete implementation using LangSmith's observability, engine, and context hub.",
+        "originalTitle": "How to Build Memory into AI Agents",
+        "personalized": null,
+        "priority": "HIGH",
+        "processFlowStatus": "COMPLETED",
+        "processFlowStatusDesc": "Completed",
+        "publishDateStr": "06-24",
+        "publishDateTimeStr": "2026-06-24 08:00:00",
+        "publishTimeStamp": 1782259200000,
+        "qualified": false,
+        "readCount": 65,
+        "readTime": 5,
+        "readUrl": "https://www.bestblogs.dev/article/35c6d909",
+        "recallSource": null,
+        "recommendReason": null,
+        "resourceType": "ARTICLE",
+        "resourceTypeDesc": "Article",
+        "score": 90,
+        "selectionReason": null,
+        "sourceId": "SOURCE_88bf28",
+        "sourceImage": "https://image.jido.dev/20260527045328_69a17e4a429d54e956e2a763_favicon.png",
+        "sourceName": "LangChain Blog",
+        "sourceVisibility": "SYSTEM",
+        "summary": "The article introduces the concept of memory for AI agents, distinguishing between short-term (working) and long-term memory, and further categorizing long-term memory into semantic, episodic, and procedural types inspired by cognitive science. It outlines a high-level memory loop: capture traces via observability, analyze traces to find improvement signals (e.g., recurring errors, user preferences), and update memory (facts, instructions, skills) through a versioned store. The post then maps this loop to LangSmith components—Observability, Engine, and Context Hub—showing how to operationalize the process. Finally, it offers design principles: not every trace should become a memory update, ensure future runs can read the update, and protect important behavior with evals. The article is practical, rooted in real experience, and provides a clear blueprint for developers building memory into agent systems.",
+        "tags": [
+          "AI Agent",
+          "LLM",
+          "Memory Systems",
+          "LangSmith",
+          "Agent Development"
+        ],
+        "title": "How to Build Memory into AI Agents",
+        "translateContent": null,
+        "url": "https://www.langchain.com/blog/how-to-give-your-agent-memory",
+        "wordCount": 1166
+      }
+    ],
+    "pageCount": 167,
+    "pageSize": 20,
+    "totalCount": 3336
+  },
+  "message": null,
+  "requestId": "T04467cf029154e7a81c230c6bc64efd9",
+  "success": true
+}

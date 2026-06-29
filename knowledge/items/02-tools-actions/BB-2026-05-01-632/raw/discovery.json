@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "arsalanshahid"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260624115125_636775b.png",
+  "domain": "github.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_c077a653",
+  "keyQuotes": [
+    "The protocol for humans and agents doing real work together.",
+    "CHAP gives you one place to put those decisions and one shape to put them in.",
+    "Your next prompt revision for Cursor is no longer a guess. It cites the pattern by name."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Every human edit to an agent's output is captured as an 'override envelope' containing a diff, rationale, intent_preserved flag, and tags, enabling later analysis and prompt refinement.",
+      "point": "CHAP provides a structured way to record human overrides as supervision data."
+    },
+    {
+      "explanation": "Envelopes are linked by hash of the previous envelope, allowing full reconstruction of decisions even after log expiry or personnel changes.",
+      "point": "The protocol uses content-hash chaining for an immutable audit trail."
+    },
+    {
+      "explanation": "A high refining rate (intent_preserved=true) suggests retrieval issues; a high substituting rate (intent_preserved=false) suggests ambiguous policy or wrong task context. Tags enable aggregation over categories.",
+      "point": "intent_preserved and tags are key fields that distinguish different failure modes."
+    },
+    {
+      "explanation": "Agents use MCP for tools, A2A for agent-to-agent coordination, and CHAP to record the shared work with humans, providing composability with existing infrastructure.",
+      "point": "CHAP complements MCP and A2A without replacing them."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "CHAP is an open protocol for structured, auditable collaboration between humans and AI agents, recording human overrides as data for traceability and prompt improvement.",
+  "originalTitle": "GitHub - BrightbeamAI/chap: Collaborative Human Agent Protocol (CHAP)",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 19:14:10",
+  "publishTimeStamp": 1782299650000,
+  "qualified": false,
+  "readCount": 35,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/c077a653",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SRC_87ebb4f7",
+  "sourceImage": "https://image.jido.dev/20260603215531_y18.svg",
+  "sourceName": "Hacker News - Newest: \"AI Agent\"",
+  "sourceVisibility": "SYSTEM",
+  "summary": "CHAP (Collaborative Human Agent Protocol) addresses the problem of tracking human edits and decisions in AI agent workflows. It defines a set of methods and envelope structures (task.create, decide.override, audit.read) that allow agents to draft artifacts and humans to override them with structured diffs, rationales, and tags. These overrides are chained by content hash, forming an immutable audit trail. The protocol includes optional profiles for security signing and transparency logs. The repository provides TypeScript and Python reference implementations, MCP and A2A server transports, conformance tests, and twelve worked scenarios. CHAP does not replace MCP or A2A but sits alongside them as a recording layer for shared human-agent work.",
+  "tags": [
+    "AI Agent",
+    "AI Development",
+    "Protocol",
+    "Audit Trail",
+    "MCP Protocol"
+  ],
+  "title": "CHAP: Collaborative Human Agent Protocol",
+  "translateContent": null,
+  "url": "https://github.com/BrightbeamAI/chap",
+  "wordCount": 1428
+}

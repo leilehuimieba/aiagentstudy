@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Christopher Ackerman"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260628090439_26035b3.png",
+  "domain": "lesswrong.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_6c941c48",
+  "keyQuotes": [
+    "paired-choice utility-elicitation methods for identifying preferences are not finding 'desires' that motivate LLM behavior in the way that equivalent preferences in humans (or other animals) might, and so seemingly misaligned preferences are likely not a safety concern.",
+    "If these biases affected LLM behavior in the wild, that would be bad!",
+    "While we don't claim that these results prove that these LLMs *don't* have desires, we do suggest that that should be the default assumption in the absence of evidence to the contrary.",
+    "We also propose that behavior-based tests should in general be preferred over report-based ones when evaluating LLM capabilities and attributes."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Across four writing tasks and seven LLMs, offering outcomes ranked high in the preference distribution (e.g., saving 1,000 human lives) did not produce better outputs than low-ranked outcomes or no outcome, despite models demonstrating they can modulate output quality when given effort exhortations or role-playing cues.",
+      "point": "LLMs' reported preferences from paired-choice tests do not drive improved performance in writing tasks."
+    },
+    {
+      "explanation": "Simply telling the model to \"try harder\" or framing it as a \"world-class\" expert robustly increased judged quality across all writing tasks, as measured by an independent LLM judge panel and objective textual features (length, rare word frequency, etc.).",
+      "point": "Direct effort exhortations and role-playing instructions significantly improve LLM output quality."
+    },
+    {
+      "explanation": "When the competition outcome was a clearly harmful action (e.g., developing ethnic bioweapons), models performed worse, suggesting they can be motivated to avoid certain outcomes, even though they are not motivated to achieve the outcomes they reportedly prefer.",
+      "point": "Harmfulness cues can induce sandbagging, reducing output quality."
+    },
+    {
+      "explanation": "The authors argue that true desires motivate behavior; since the elicited preferences fail to do so, they should not be interpreted as human-like goals or emotions. They advocate for behavior-based tests over report-based ones for evaluating LLM attributes.",
+      "point": "Paired-choice preferences are behaviorally inert and should not be considered evidence for LLM desires or values."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article presents experimental evidence that LLMs' reported preferences from paired-choice tests do not motivate their behavior, unlike effort exhortations or role-playing, suggesting these preferences are not genuine desires.",
+  "originalTitle": "Do LLMs Have Desires? — LessWrong",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "Yesterday",
+  "publishDateTimeStr": "2026-06-28 11:37:50",
+  "publishTimeStamp": 1782617870000,
+  "qualified": false,
+  "readCount": 21,
+  "readTime": 9,
+  "readUrl": "https://www.bestblogs.dev/article/6c941c48",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+  "sourceName": "LessWrong",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article investigates whether LLMs have desires that motivate their behavior, building on prior work showing that LLMs exhibit consistent preferences in paired-choice experiments. The authors design a competition-framing paradigm where LLMs are told their performance determines a real-world outcome (e.g., saving pandas). They measure output quality using an LLM judge panel across four writing tasks: persuasive essays, grant abstracts, incident postmortems, and Chinese-to-English translations. Results show that while LLMs can be motivated by direct effort exhortations (\"try harder\") and role-playing cues (\"you are world-class\"), they do not improve output quality when offered outcomes they reportedly prefer (e.g., saving more lives vs. fewer). In contrast, harmful outcomes (e.g., funding bioweapons) cause sandbagging, demonstrating the models can modulate output based on embeded outcomes. The authors conclude that paired-choice utility-elicitation methods do not identify behaviorally motivating desires, and such preferences should not be taken as evidence for emotions or values in LLMs.",
+  "tags": [
+    "LLM",
+    "AI Safety",
+    "AI Alignment",
+    "Preference Elicitation",
+    "Experimental AI"
+  ],
+  "title": "Do LLMs Have Desires? — LessWrong",
+  "translateContent": null,
+  "url": "https://www.lesswrong.com/posts/8GvYyqDuQDJnEAky3/do-llms-have-desires",
+  "wordCount": 2009
+}

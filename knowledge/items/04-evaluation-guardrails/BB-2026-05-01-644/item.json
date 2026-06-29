@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-27",
+  "id": "BB-2026-05-01-644",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-644/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-644",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-644/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-644/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-644/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-644/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-644/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-644/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hacker News",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hacker News",
+  "status": "Full text + source captured",
+  "tags": [
+    "Fintech",
+    "Financial Systems",
+    "Engineering Practices",
+    "Double-Entry Bookkeeping",
+    "Event Sourcing"
+  ],
+  "title": "Fintech Engineering Handbook",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://w.pitula.me/fintech-engineering-handbook/",
+      "https://www.bestblogs.dev/article/9b7ac3e7"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://w.pitula.me/fintech-engineering-handbook/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/9b7ac3e7"
+  }
+}

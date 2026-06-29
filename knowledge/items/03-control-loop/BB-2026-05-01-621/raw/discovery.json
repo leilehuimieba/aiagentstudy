@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "智能涌现"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260527051842_70ebde1.jpeg",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_ffc4417c",
+  "keyQuotes": [
+    "With each generation of models, we are betting against the consensus.",
+    "Once you care too much about what others think, chances are you haven't thought from first principles.",
+    "History has repeatedly proven that every attempt to decompose the world using human priors essentially underestimates its complexity. I recommend memorizing the full text of 'The Bitter Lesson'.",
+    "The world model is still in its pre-GPT era.",
+    "We believe that what should truly be predicted is not any human-defined hidden state, but the raw observations given to us by the world itself."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Cao Yue believes that video is a causal relationship in time sequence, making 'Predict Next Frame' the most natural paradigm. Magi-1 outperforms pure diffusion models like Nvidia Cosmos3-Super and Sora-2 on Physics-IQ.",
+      "point": "The autoregressive approach is the most essential way to model video data, surpassing diffusion models."
+    },
+    {
+      "explanation": "In 2025, Sand.ai decided to shift from Dense to MoE, with almost no one else in China taking the same path. MoE can significantly reduce training and inference costs while maintaining equivalent quality, making Scaling sustainable.",
+      "point": "Video models face an impossible triangle of cost, speed, and quality; the MoE architecture is the only breakthrough path."
+    },
+    {
+      "explanation": "Video encodes dimensions such as time, space, vision, and sound, offering the highest information density and volume. Cao Yue calls for bypassing human priors (e.g., state) and directly predicting pixels/frames, analogous to the ultimate victory of 'Predict Next Token' in LLMs.",
+      "point": "Video data is the most important path to the world model, and we should model raw observations rather than human-defined states."
+    },
+    {
+      "explanation": "Cao Yue believes the current discussion around the world model is too noisy, lacking a common definition and reliable data. A true world model must infer the next observation directly from the current observation, not from a human-defined hidden state.",
+      "point": "The world model is still in its pre-GPT era: insufficient data, unclear definition, and unconsolidated technical routes."
+    },
+    {
+      "explanation": "In the video model track, once the model unlocks its capabilities, the work of scaffolding on the product side is reduced, but end-to-end user feedback can feed back into model post-training. The VidMuse music agent has achieved millions of dollars in ARR, validating the path to productization.",
+      "point": "Startups must drive both models and products; they cannot simply be API sellers."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article, through an exclusive in-depth interview with Sand.ai founder Cao Yue, elaborates on his three-generation technical bets—from the autoregressive approach, synchronous audio-video output, to the MoE architecture—and argues that video data is the most crucial path towards the world model.",
+  "originalTitle": "独家｜获超亿美元融资，Sand.ai 曹越：为什么视频是通往世界模型最重要的路径",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 13:00:00",
+  "publishTimeStamp": 1782104400000,
+  "qualified": false,
+  "readCount": 49,
+  "readTime": 25,
+  "readUrl": "https://www.bestblogs.dev/article/ffc4417c",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_ef8832",
+  "sourceImage": "https://image.jido.dev/20260527051842_70ebde1.jpeg",
+  "sourceName": "智能涌现",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article is an exclusive in-depth interview with Cao Yue, founder of Sand.ai, by The Intelligent Surge. It first reviews Sand.ai's development over nearly three years, including its bet on the autoregressive approach (Magi-1), the pioneering achievement of synchronous audio-video output (Gaga-1), and the non-consensual decision to shift to the MoE architecture (next-generation model). Cao Yue explains in detail the impossible triangle of cost, speed, and quality in video models, and argues that MoE is the key breakthrough. Amid the current overuse of the term 'world model,' Cao Yue offers a clear definition: the world model is still in its pre-GPT era, lacking sufficient data and a clear definition; video data, which encodes time, space, vision, and sound, is the most important data type for achieving the world model. He also advocates modeling raw observations rather than human-defined states to avoid repeating the failures of tokenization. On the application front, Sand.ai has launched the music agent product VidMuse, achieving millions of dollars in ARR, and insists on a dual-drive strategy of models and products. Finally, Cao Yue provides independent judgments on the competitive landscape (five players in three tiers), the reasons for Sora's shutdown, and China's advantages in video models. The article is dense with information, presents clear technical opinions, and incorporates strategic thinking.",
+  "tags": [
+    "World Model",
+    "Video Generation",
+    "Autoregressive",
+    "MoE Architecture",
+    "AI Entrepreneurship"
+  ],
+  "title": "Exclusive | After Securing Over USD 100 Million in Funding, Sand.ai's Cao Yue: Why Video Is the Most Important Path to the World Model",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkwMDQ2NDU2Nw==&mid=2247516888&idx=1&sn=f4e0ca5928765a5e7512916c1d0daaa0",
+  "wordCount": 6210
+}

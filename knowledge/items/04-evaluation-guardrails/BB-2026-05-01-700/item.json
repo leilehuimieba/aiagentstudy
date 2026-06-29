@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Evaluation",
+    "Guardrails",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-25",
+  "id": "BB-2026-05-01-700",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-700/article.md",
+    "item_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-700",
+    "raw_dir": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-700/raw",
+    "raw_files": [
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-700/raw/content.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-700/raw/discovery.json",
+      "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-700/raw/page.json"
+    ],
+    "source": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-700/source.md",
+    "summary": "knowledge/items/04-evaluation-guardrails/BB-2026-05-01-700/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Vox",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Vox",
+  "status": "Full text + source captured",
+  "tags": [
+    "US Politics",
+    "Health Policy",
+    "Elections",
+    "RFK Jr.",
+    "Donald Trump"
+  ],
+  "title": "MAHA is breaking up with Trump. Now what?",
+  "topic": "04-evaluation-guardrails",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/f94be18f",
+      "https://www.vox.com/politics/493107/maha-moms-maga-trump-rfk-jr-2026-2028"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.vox.com/politics/493107/maha-moms-maga-trump-rfk-jr-2026-2028",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/f94be18f"
+  }
+}

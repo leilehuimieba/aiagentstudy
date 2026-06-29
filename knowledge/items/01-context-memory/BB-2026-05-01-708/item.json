@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-26",
+  "id": "BB-2026-05-01-708",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-708/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-708",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-708/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-708/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-708/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-708/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-708/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-708/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / ProPublica",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / ProPublica",
+  "status": "Full text + source captured",
+  "tags": [
+    "Climate Change",
+    "Investigative Journalism",
+    "Fossil Fuels",
+    "Carbon Capture",
+    "Corporate Influence"
+  ],
+  "title": "Beyond Denial: How Oil Execs Shaped a Landmark Climate Study",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/3dac5700",
+      "https://www.propublica.org/article/wedges-climate-research-bp-fossil-fuel-princeton"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.propublica.org/article/wedges-climate-research-bp-fossil-fuel-princeton",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/3dac5700"
+  }
+}

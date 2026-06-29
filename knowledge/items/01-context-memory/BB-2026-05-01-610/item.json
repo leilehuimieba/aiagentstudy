@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-24",
+  "id": "BB-2026-05-01-610",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-610/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-610",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-610/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-610/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-610/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-610/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-610/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-610/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 通义实验室",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 通义实验室",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "World Model",
+    "Model Training and Inference",
+    "Reinforcement Learning",
+    "Model Evaluation and Benchmark"
+  ],
+  "title": "Qwen-AgentWorld Open-Source: Teaching Agents to 'Predict First, Act Later'",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501600&idx=1&sn=3cac493d78bbf5098bb03ed6d5a3f31d",
+      "https://www.bestblogs.dev/article/8810d85f"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501600&idx=1&sn=3cac493d78bbf5098bb03ed6d5a3f31d",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/8810d85f"
+  }
+}

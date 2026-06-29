@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "Niklas Lehmann"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260310053509_new_mississippi_river_fjdmww.jpg",
+  "domain": "lesswrong.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_4d26c979",
+  "keyQuotes": [
+    "Exercise buys you roughly 3.5 extra years of life - probably the largest reliable gain in longevity available to you right now.",
+    "If you dislike sports, you should probably still put in a couple of hours a week.",
+    "Once you have enough exercise, you have enough."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Productivity_Growth",
+  "mainDomainDesc": "Productivity & Growth",
+  "mainPoints": [
+    {
+      "explanation": "The effect is huge – more than many interventions – but plateaus: beyond 5-12 hours per week (depending on intensity), additional exercise neither helps nor harms mortality risk.",
+      "point": "Regular exercise extends life by roughly 3.5 years, likely the largest reliable longevity gain available."
+    },
+    {
+      "explanation": "High-intensity exercise delivers more benefit per minute, so if you're going to suffer, suffer briefly and get large benefits. Low-intensity is worth it only if you enjoy it, otherwise it requires too many painful hours.",
+      "point": "People who dislike exercise should still do a moderate amount, but intensity matters."
+    },
+    {
+      "explanation": "If you find other activities more enjoyable than exercise, the optimal trade-off may be slightly less exercise than the health-optimal level, balancing extra hours of life against lower quality of those hours.",
+      "point": "The model explicitly accounts for utility (enjoyment) of exercise, not just health benefits."
+    },
+    {
+      "explanation": "Going from hating to loving exercise provides a huge gain, equivalent to many years of life. Public health insurers should theoretically pay tens of thousands of dollars to make that happen.",
+      "point": "Investing in finding a sport you love can be worth ~2.5 quality-adjusted life years."
+    },
+    {
+      "explanation": "The author multiplies the published effect by 0.7 to adjust for observational bias, and notes that baseline mortality changes do not meaningfully alter the relative recommendations.",
+      "point": "The calculator is a rough tool, not a precise medical prediction, but robust to assumption changes."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article analyzes the longevity benefits of exercise, presents a calculator to determine optimal exercise levels based on individual preferences and health data, and offers practical takeaways for both exercise lovers and haters.",
+  "originalTitle": "Optimal Exercise Calculator — LessWrong",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-25",
+  "publishDateTimeStr": "2026-06-25 17:19:50",
+  "publishTimeStamp": 1782379190000,
+  "qualified": false,
+  "readCount": 19,
+  "readTime": 6,
+  "readUrl": "https://www.bestblogs.dev/article/4d26c979",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+  "sourceName": "LessWrong",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Based on a recent meta-analysis on leisure exercise and longevity, the author builds an interactive calculator to estimate how much exercise is optimal for an individual, factoring in not only the health benefits (~3.5 extra years of life) but also how much one enjoys or dislikes exercise. Key findings: benefits plateau at roughly 5-12 hours per week; those who hate exercise should still do a few hours weekly, with higher intensity offering more benefit per minute; finding a sport you love yields a huge improvement in quality-adjusted life years (~2.5 life-year equivalents). The article includes caveats about observational bias and age effects, providing a nuanced, rational framework for exercise decisions.",
+  "tags": [
+    "Health Optimization",
+    "Longevity",
+    "Exercise Science",
+    "Rationality",
+    "Utility Optimization"
+  ],
+  "title": "Optimal Exercise Calculator",
+  "translateContent": null,
+  "url": "https://www.lesswrong.com/posts/sqecCva5tZs8jNv7P/optimal-exercise-calculator",
+  "wordCount": 1355
+}

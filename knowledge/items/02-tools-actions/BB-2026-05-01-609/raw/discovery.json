@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Datawhale"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20251127045505_b03e263f",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_153f1dd0",
+  "keyQuotes": [
+    "The core value of Loop Engineering is not making the agent smarter, but making verification a built-in process.",
+    "In one-shot delivery, verification is your job; in loop delivery, verification is the system's job. You go from being a quality inspector back to being a demand stakeholder.",
+    "The instruction is: 'Forward the checker's complete failure report verbatim to the builder; do not interpret or filter it yourself.' Agents tend to summarize when passing information, but summaries lose line numbers, stack traces, and intermediate outputs that the builder needs to pinpoint the root cause."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Traditional agents generate code in one shot and rely on manual checks, which can easily miss issues. Loop Engineering uses a builder to fix and a checker to verify, with the orchestrator automatically looping until all checks pass, freeing humans from repeated validation.",
+      "point": "Separate code writing and verification into two agents, using an orchestrator to loop through them, eliminating the blind spots of single-shot delivery."
+    },
+    {
+      "explanation": "builder.md and checker.md define tool isolation (builder has write permissions, checker has read/run permissions only), loop.md drives the loop, and CLAUDE.md sets six stop conditions to prevent infinite loops.",
+      "point": "A tripartite file structure: agent definitions, loop orchestrator, and stop rules."
+    },
+    {
+      "explanation": "Step-3.7-flash's high inference speed (400 TPS) and subscription-based pricing make it suitable for high-frequency loop calls, while slower models can lead to long wait times and trigger manual intervention.",
+      "point": "Model selection significantly affects the loop experience."
+    },
+    {
+      "explanation": "If the checker only shows the last error line and loses the full context, the builder may guess the root cause, wasting iterations. Similarly, if the orchestrator prematurely summarizes failure information, information loss occurs. Clear instructions must require verbatim forwarding.",
+      "point": "The completeness of checker reports and the fidelity of information transmission by the orchestrator are critical bottlenecks for loop efficiency."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article provides a detailed tutorial on building a Loop Engineering system based on Claude Code + step-3.7-flash using three files (builder, checker, loop orchestrator) plus a configuration, enabling an agent team to autonomously edit, review, and iterate.",
+  "originalTitle": "刚刚，全网爆火的 Loop Engineering，保姆教程来了！",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 22:08:00",
+  "publishTimeStamp": 1782310080000,
+  "qualified": false,
+  "readCount": 97,
+  "readTime": 21,
+  "readUrl": "https://www.bestblogs.dev/article/153f1dd0",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4688eb",
+  "sourceImage": "https://image.jido.dev/20251127045505_b03e263f",
+  "sourceName": "Datawhale",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article first explains the core idea of Loop Engineering: splitting code construction and verification into two dedicated agents (builder and checker), with an orchestrator looping through them, automatically running all checks until everything passes. It then provides a step-by-step walkthrough with complete code and explanations for three configuration files: builder.md (responsible only for writing and fixing), checker.md (responsible only for running checks and reporting), loop.md (driving the loop), and CLAUDE.md (stop rules). It also explains how to configure Claude Code to use the Step-3.7-flash model from StepFun. The author demonstrates the loop's operation and time consumption across different scenarios using four PRs submitted to the open-source project Step-Realtime-CLI. Finally, it summarizes common pitfalls encountered in practice: the builder tends to modify unrelated code, the checker's reports are often incomplete, and the orchestrator may prematurely summarize failure information. The article emphasizes that the true value of Loop Engineering lies in turning verification from a manual step into a built-in system process, transforming the user from a quality inspector back into a demand stakeholder.",
+  "tags": [
+    "AI Coding",
+    "LLM",
+    "Agent",
+    "Developer Tools",
+    "Prompt Engineering"
+  ],
+  "title": "Just Released: A Complete Beginner's Guide to the Internet-Famous Loop Engineering",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723692&idx=1&sn=79bbf6450a03de7e8163338ae1499b48",
+  "wordCount": 5036
+}

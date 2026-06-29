@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-28",
+  "id": "BB-2026-05-01-685",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-685/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-685",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-685/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-685/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-685/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-685/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-685/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-685/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / 青稞AI",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / 青稞AI",
+  "status": "Full text + source captured",
+  "tags": [
+    "Model Training & Inference",
+    "Reinforcement Learning",
+    "Reward Design",
+    "Knowledge Distillation",
+    "Large Language Models"
+  ],
+  "title": "Has no one ever questioned OPD's reward design? We found that log itself is the problem—maybe it shouldn't be used!",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247517125&idx=1&sn=492b0d41b0d3d6d1726aed0ba9a2c3a6",
+      "https://www.bestblogs.dev/article/3baad5ef"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247517125&idx=1&sn=492b0d41b0d3d6d1726aed0ba9a2c3a6",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/3baad5ef"
+  }
+}

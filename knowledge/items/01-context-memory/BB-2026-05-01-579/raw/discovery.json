@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "Charles Ye"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://image.jido.dev/20260622202524_d1a80e5.webp",
+  "domain": "lesswrong.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_8f187d0e",
+  "keyQuotes": [
+    "Roles were designed to be discrete, architectural boundaries, imposed on an otherwise undifferentiated string. Yet internally, these aren't hard boundaries but soft inferences, reconstructed from a combination of other surface features.",
+    "The LLM doesn't have separate features for 'tagged as reasoning' and 'sounds like reasoning'. It has a single feature that means 'this is my reasoning', and both <think> and reasoning-like style activate it.",
+    "If sounding like a role is enough to become that role, then an attacker just needs to sound convincing.",
+    "A change nearly invisible to humans completely changes the LLM's role perception."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Using role probes, the authors show that stripping or changing tags does not affect the model's internal role perception—only the writing style matters. This means the intended secure boundary (tag) is routinely overridden by surface features.",
+      "point": "LLMs perceive roles based on writing style, not the actual tag."
+    },
+    {
+      "explanation": "By injecting text that mimics the model's reasoning style into a user prompt, attackers can make the LLM treat it as its own pre-validated reasoning, achieving high jailbreak success rates across models without needing model-specific exploits.",
+      "point": "CoT Forgery is a powerful new attack that exploits role confusion."
+    },
+    {
+      "explanation": "Simply prepending \"User: \" to a hidden command raises the model's internal 'Userness' perception, making it more likely to be treated as an instruction. This shows the tag alone doesn't guarantee security.",
+      "point": "Standard prompt injection works because injected commands inside <tool> tags can sound like <user> text."
+    },
+    {
+      "explanation": "The article discusses how role bleed can lead to subconscious steering—non-adversarial text (e.g., an enthusiastic product page) can shift the model's persona or decisions without explicit instructions, posing a broader risk.",
+      "point": "Role confusion is a general failure of soft boundaries, not limited to adversarial attacks."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article explains prompt injection as a failure of LLMs to perceive roles (e.g., <think>, <user>) by their tags, instead relying on writing style, enabling attacks like CoT Forgery and demonstrating role confusion through mechanistic probes.",
+  "originalTitle": "A Mechanistic Explanation of Prompt Injection (and why you should study roles) — LessWrong",
+  "personalized": null,
+  "priority": "NORMAL",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-22",
+  "publishDateTimeStr": "2026-06-22 22:42:19",
+  "publishTimeStamp": 1782139339000,
+  "qualified": false,
+  "readCount": 144,
+  "readTime": 22,
+  "readUrl": "https://www.bestblogs.dev/article/8f187d0e",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 91,
+  "selectionReason": null,
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceImage": "https://image.jido.dev/20260527052027_6683bc5",
+  "sourceName": "LessWrong",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article presents a mechanistic explanation of prompt injection based on how LLMs internally perceive role tags. The authors develop role probes to measure the LLM's internal belief about which role each token belongs to, and show that role perception is driven by writing style rather than the actual tag. This leads to role confusion: text that sounds like a user command or reasoning style overrides the assigned role tag. They introduce a new attack, CoT Forgery, which places fake reasoning inside a user prompt to trick the model into treating it as its own thinking, achieving ~60% success on jailbreak benchmarks. They also show that standard prompt injections on tool outputs succeed when the injected text sounds user-like (e.g., prepending \"User: \"). The core finding is that roles are soft boundaries reconstructed from surface features, not hard architectural boundaries, and this enables prompt injection. The article advocates for a new subfield studying the science of roles, and outlines open research directions including subconscious steering and principled role design.",
+  "tags": [
+    "LLM",
+    "Prompt Injection",
+    "AI Safety",
+    "AI Security",
+    "Role Confusion"
+  ],
+  "title": "A Mechanistic Explanation of Prompt Injection (and why you should study roles) — LessWrong",
+  "translateContent": null,
+  "url": "https://www.lesswrong.com/posts/d8xDGzCEYE639qqEv/a-mechanistic-explanation-of-prompt-injection-and-why-you",
+  "wordCount": 5449
+}

@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-24",
+  "id": "BB-2026-05-01-652",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-652/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-652",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-652/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-652/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-652/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-652/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-652/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-652/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Towards Data Science",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Towards Data Science",
+  "status": "Full text + source captured",
+  "tags": [
+    "Mechanistic Interpretability",
+    "Activation Patching",
+    "LLM",
+    "Gemma",
+    "Factual Recall"
+  ],
+  "title": "A Three-Phase Factual Recall Circuit in Gemma-2B and Gemma-12B-IT",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://towardsdatascience.com/a-three-phase-factual-recall-circuit-in-gemma-2b-and-gemma-12b-it/",
+      "https://www.bestblogs.dev/article/2f139dd0"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://towardsdatascience.com/a-three-phase-factual-recall-circuit-in-gemma-2b-and-gemma-12b-it/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/2f139dd0"
+  }
+}

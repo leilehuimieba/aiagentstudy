@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "John Yang"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/tensorrt-optimized-industries-1-660x370.png",
+  "domain": "developer.nvidia.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_504dabc3",
+  "keyQuotes": [
+    "Classify the memory regime, remove redundant scatter traffic, map the kernel implementation to the target GPU, and validate the active bottleneck with Nsight Compute.",
+    "The same BEV pooling algorithm can be DRAM-bound on one GPU and largely L2-resident on another, requiring different optimization choices.",
+    "The algorithmic invariant stays the same: own the interval, avoid runtime index decoding, accumulate locally, and write once."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The canonical 49 MB working set exceeds 6 MB L2 on A6000 (DRAM-bound) but fits in 128 MB L2 on RTX PRO 6000 Blackwell Max-Q (L2-resident), leading to different optimization priorities.",
+      "point": "Classifying the BEV pooling working set relative to L2 cache size determines the optimization regime: DRAM-bound vs. L2-resident."
+    },
+    {
+      "explanation": "Compared to V2's channel-outer loop, the depth-outer order loads indices once per interval, and separate INT32 arrays enable aligned vectorized loads, reducing instruction overhead.",
+      "point": "BEVPoolV3 removes redundant scatter traffic by using a depth-outer traversal and a five-array INT32 scatter map, cutting index traffic from 25 MB to 2.5 MB."
+    },
+    {
+      "explanation": "This structure uses precomputed explicit indices (ranks_depth, ranks_feat, ranks_bev, interval_starts, interval_lengths), avoiding runtime integer division and coupled field loads.",
+      "point": "Interval-owned scatter-reduce eliminates atomics and runtime index decoding: one thread accumulates all channels for a BEV interval and writes the output once."
+    },
+    {
+      "explanation": "On RTX A6000, increasing TILE_C from 8 to 16 and using __half2 accumulation reduces loop overhead; on RTX PRO 6000 Blackwell Max-Q, the kernel matches high-occupancy launch envelope and uses precomputed indices.",
+      "point": "The large-L2 path optimizes instruction efficiency and FP8 specialization, while the small-L2 path focuses on byte reduction and cache preservation."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article presents a practical optimization workflow for BEV pooling on NVIDIA GPUs, introducing BEVPoolV3 that achieves up to 42x speedup by classifying memory regime, reducing redundant traffic, and adapting kernel implementation to GPU cache size.",
+  "originalTitle": "Accelerating BEV Pooling on NVIDIA GPUs for Physical AI Applications",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 06:38:02",
+  "publishTimeStamp": 1782254282000,
+  "qualified": false,
+  "readCount": 13,
+  "readTime": 12,
+  "readUrl": "https://www.bestblogs.dev/article/504dabc3",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceImage": "https://image.jido.dev/20260527052034_799230b",
+  "sourceName": "NVIDIA Technical Blog",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article details the optimization of bird's-eye-view (BEV) pooling — a critical bottleneck in autonomous vehicle and robotics perception pipelines. Using BEVPoolV3 as a case study, it demonstrates a repeatable workflow: classify whether the working set fits in L2 cache (determining DRAM-bound or L2-resident regime), remove redundant scatter index traffic via a depth-outer traversal and a five-array INT32 scatter map, implement interval-owned scatter-reduce to avoid atomics and runtime index decoding, and validate with Nsight Compute. Performance results on RTX A6000 (6 MB L2, DRAM-bound) and RTX PRO 6000 Blackwell Max-Q (128 MB L2, L2-resident) show BEVPoolV3 FP16 achieving 19x speedup on A6000 and 16x on RTX PRO 6000, with FP8 reaching 17x. The article also covers TensorRT plugin integration and cross-configuration latency benchmarks. The key insight is that optimization strategy must adapt to GPU cache size: small-L2 GPUs require byte reduction and cache-streaming stores, while large-L2 GPUs shift focus to instruction efficiency and FP8 specialization.",
+  "tags": [
+    "Autonomous Vehicles",
+    "BEV Perception",
+    "CUDA",
+    "TensorRT",
+    "GPU Optimization"
+  ],
+  "title": "Accelerating BEV Pooling on NVIDIA GPUs for Physical AI Applications",
+  "translateContent": null,
+  "url": "https://developer.nvidia.com/blog/accelerating-bev-pooling-on-nvidia-gpus-for-physical-ai-applications/",
+  "wordCount": 2806
+}

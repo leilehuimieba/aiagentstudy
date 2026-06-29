@@ -1,0 +1,70 @@
+{
+  "authors": [
+    "Mateo Quiros"
+  ],
+  "candidateSource": null,
+  "category": "Artificial_Intelligence",
+  "categoryDesc": "Artificial Intelligence",
+  "cover": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5__keyword__blog-header__light_7VsKV.width-1300.png",
+  "domain": "deepmind.google",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_16a75c47",
+  "keyQuotes": [],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Developers can access computer use directly via the Gemini API and Enterprise Agent Platform, simplifying development of agentic workflows.",
+      "point": "Computer use is now built into Gemini 3.5 Flash, replacing the standalone model."
+    },
+    {
+      "explanation": "This opens up long-horizon automation tasks such as software testing and knowledge work in professional applications.",
+      "point": "The capability enables agents to see, reason, and act across browser, mobile, and desktop environments."
+    },
+    {
+      "explanation": "Enterprises can enforce user confirmation for irreversible actions and automatically halt tasks when indirect prompt injection is detected, with a defense-in-depth approach recommended.",
+      "point": "Safety measures include adversarial training and optional enterprise safeguards."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Google announces that computer use is now a built-in capability in Gemini 3.5 Flash, enabling developers to build agents that interact with browser, mobile, and desktop environments.",
+  "originalTitle": "Introducing computer use in Gemini 3.5 Flash",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-25",
+  "publishDateTimeStr": "2026-06-25 00:21:13",
+  "publishTimeStamp": 1782318073000,
+  "qualified": false,
+  "readCount": 41,
+  "readTime": 2,
+  "readUrl": "https://www.bestblogs.dev/article/16a75c47",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_cca1dc",
+  "sourceImage": "https://image.jido.dev/20260612221052_google_deepmind_2x_96dp.png",
+  "sourceName": "Google DeepMind News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Google DeepMind announces that computer use, previously a separate model, is now natively integrated into Gemini 3.5 Flash. The built-in tool allows developers to create custom agents that can see, reason, and take actions across browser, mobile, and desktop environments. The post highlights improved performance for long-horizon and enterprise automation tasks such as continuous software testing and knowledge work. To address safety, the model uses targeted adversarial training and offers optional enterprise safeguards like requiring user confirmation for sensitive actions and automatic task stopping upon indirect prompt injection. The post includes customer testimonials from Browserbase and provides links to try the demo, reference implementation, and API documentation.",
+  "tags": [
+    "Gemini 3.5 Flash",
+    "Computer Use",
+    "AI Agent",
+    "Enterprise Automation",
+    "Prompt Injection Safety"
+  ],
+  "title": "Introducing computer use in Gemini 3.5 Flash",
+  "translateContent": null,
+  "url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+  "wordCount": 330
+}

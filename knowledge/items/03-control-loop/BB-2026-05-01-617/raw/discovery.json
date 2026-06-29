@@ -1,0 +1,73 @@
+{
+  "authors": [
+    "腾讯云开发者"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045410_4d44587a",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_f5be38cf",
+  "keyQuotes": [
+    "Coding Agents can only reduce the cost of each line of \"code generation,\" but cannot reduce the cost of each line of \"code going live and serving long-term.\"",
+    "The real constraint of the system should not be placed in the generation phase, but should fall on the verification phase."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "When code generation speed exceeds human audit speed, continuing to rely on human verification is physically unscalable; scaling verification capabilities is the key to a healthy engineering closed loop.",
+      "point": "AI code generation reduces production costs, but verification and integration costs become the new bottleneck."
+    },
+    {
+      "explanation": "The real constraint of the system should not be placed in the generation phase (e.g., verbose specs), but in the verification phase—using executable and reproducible mechanisms such as AST checks and automated tests to filter candidate code.",
+      "point": "The core of the engineering paradigm should shift from generation to verification, building an executable and scalable judgment system."
+    },
+    {
+      "explanation": "Requirement owners (including Coding Agents) focus on incremental changes, while component owners are responsible for the quality of file directories. Through fine-grained OWNERS reviews and skills.md documentation of engineering experience, they alleviate the verification pressure brought by AI.",
+      "point": "Organizations can achieve a human-machine collaborative engineering system through role separation and a monorepo model."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article deeply analyzes the core challenge facing Infra engineering in the era of AI code generation: scaling verification capabilities is the true bottleneck, and proposes organizational and engineering collaborative solutions.",
+  "originalTitle": "每天 10 万行 AI 代码，人肉 Code Review 的崩塌是 Infra 工程的范式拐点",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 08:45:00",
+  "publishTimeStamp": 1782261900000,
+  "qualified": false,
+  "readCount": 57,
+  "readTime": 18,
+  "readUrl": "https://www.bestblogs.dev/article/f5be38cf",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_efac5b",
+  "sourceImage": "https://image.jido.dev/20251127045410_4d44587a",
+  "sourceName": "腾讯云开发者",
+  "sourceVisibility": "SYSTEM",
+  "summary": "The article revolves around the contradiction between AI code generation and Infra engineering, pointing out that Coding Agents lower the cost of code generation, but verification and integration capabilities have not improved synchronously, amplifying system risks. The author analyzes the limitations of the \"human out of the loop\" model in Infra scenarios, emphasizing that the core of the engineering paradigm should shift from code generation to industrialization of verification capabilities. By comparing self-evolving systems in areas like autonomous driving, the author proposes building an executable and scalable judgment system. For organizational structure, the author imagines a scenario of generating 100,000 lines of code per day and proposes solutions such as a large Git monorepo, splitting roles into requirement owner and component owner, and fine-grained OWNERS reviews. Finally, the author explores the future value of engineers: humans may become the interface layer between AI and reality, responsible for constraints, review, accountability, and explanation. The article is logically rigorous, with independent perspectives, providing deep insights into the deep issues of software engineering in the AI era.",
+  "tags": [
+    "AI Coding",
+    "Infra Engineering",
+    "Code Review",
+    "Engineering Practice",
+    "Software Architecture"
+  ],
+  "title": "100,000 Lines of AI Code Per Day: The Collapse of Human Code Review Is a Paradigm Shift in Infra Engineering",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247696004&idx=1&sn=ad92d5f29ad82113916c858524a618eb",
+  "wordCount": 4255
+}

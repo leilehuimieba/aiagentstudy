@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "刘学文"
+  ],
+  "candidateSource": null,
+  "category": "News_Media",
+  "categoryDesc": "News & Media",
+  "cover": "https://s3.ifanr.com/wp-content/uploads/2026/06/NIO-T.jpg",
+  "domain": "ifanr.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_8b75c64e",
+  "keyQuotes": [
+    "The side-facing LiDARs are like two extra airbags NIO installed for the intelligent system.",
+    "The essence of data is computing power.",
+    "Testing is getting more and more 'intense', even more intense than playing video games.",
+    "The body of a car is still young, but will its brain age first?",
+    "If one extra LiDAR makes a difference visible to everyday users, then the existing system is too poor."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The NT2 platform chose advanced configurations like high-line-count LiDAR and four Orin chips, allowing a vehicle to continue receiving software upgrades over the next five to ten years, preventing the intelligent components from aging prematurely.",
+      "point": "Hardware pre-deployment is key to achieving a long-term intelligent life cycle."
+    },
+    {
+      "explanation": "Ren Shaoqing noted that Transformer's demand for memory bandwidth is 8 to 70 times that of CNN. Therefore, Shenji uses advanced processes and multi-channel design, aiming not to pile up TOPS but to ensure efficient execution of multimodal large models on the vehicle.",
+      "point": "The self-developed Shenji chip focuses not on absolute computing power but on high memory bandwidth to accommodate Transformer."
+    },
+    {
+      "explanation": "Instead of using NVIDIA's standard toolchain, NIO developed its own compiler for automatic operator optimization and graph optimization, reducing cross-chip model deployment time from one to two weeks to one to two days, while improving inference efficiency by over 20%.",
+      "point": "The self-developed AI compiler is the core tool for achieving unified deployment."
+    },
+    {
+      "explanation": "Truly valuable data consists of edge cases specific to a particular model, which must be screened through coordinated computing power on the vehicle and cloud rather than simple storage. Only by converting data into a scheduling of computing power can model performance be improved at an acceptable cost.",
+      "point": "The essence of data is computing power; the data closed loop is a computing power scheduling system."
+    },
+    {
+      "explanation": "As autonomous driving capabilities improve, piling mileage on traditional test vehicles becomes inefficient. NIO deploys a validation system via the cloud, utilizing hundreds of thousands of production vehicles (across NT2 and NT3) for active safety validation, achieving over 100 million kilometers validated per week, delivering quadruple the validation effect.",
+      "point": "Production vehicle distributed validation network is an inevitable path to improve testing efficiency."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Through a conversation with NIO's autonomous driving head Ren Shaoqing, this article deeply analyzes how NIO achieves efficient adaptation and continuous iteration of a single world model across multiple generations of chips, platforms, and vehicle models through hardware pre-deployment, self-developed chips and AI compiler, unified deployment framework, and production vehicle validation network.",
+  "originalTitle": "对话蔚来高级副总裁任少卿：一个世界模型，如何适配两套芯片、四个平台和十几款车？",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 20:04:57",
+  "publishTimeStamp": 1782216297000,
+  "qualified": false,
+  "readCount": 44,
+  "readTime": 23,
+  "readUrl": "https://www.bestblogs.dev/article/8b75c64e",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_4ecd55",
+  "sourceImage": "https://image.jido.dev/20251127045347_2a9312a0",
+  "sourceName": "爱范儿",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Taking NIO's world model upgrade as a starting point, the article focuses on the core challenge of intelligent driving system engineering: how to make one model simultaneously adapt to Orin and Shenji chips, NT2 and NT3 platforms, and over a dozen models under NIO and Onvo brands. Ren Shaoqing starts with the hardware pre-deployment strategy, pointing out that the aggressive configuration of the NT2 platform (roof-mounted LiDAR, four Orin chips, 8-megapixel cameras) was a pre-deployment for the intelligent life cycle. At the chip level, the design of Shenji anticipated the memory bandwidth demands of Transformer, claiming that one Shenji chip can match the performance of four Orin chips. To address multi-platform differences, NIO developed its own AI compiler to achieve automatic operator optimization and unified deployment, compressing model deployment time from days to within two hours, and using AI agents to automate development processes. Data is redefined as computing power rather than storage, with the core being the screening of edge cases. NIO also built a distributed validation network using hundreds of thousands of production vehicles, with active safety validation exceeding 40 million kilometers per week. The article concludes by emphasizing safety goals, aiming to increase the accident-free safety mileage from 6.79 million kilometers to 10 million or even 100 million kilometers, ultimately returning to the essence of reducing accidents.",
+  "tags": [
+    "Autonomous Driving",
+    "World Model",
+    "AI Chip",
+    "AI Compiler",
+    "Data Closed Loop"
+  ],
+  "title": "Conversation with NIO Senior Vice President Ren Shaoqing: How to Adapt One World Model to Two Chips, Four Platforms, and Over a Dozen Vehicles?",
+  "translateContent": null,
+  "url": "https://www.ifanr.com/1669670?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "wordCount": 5679
+}

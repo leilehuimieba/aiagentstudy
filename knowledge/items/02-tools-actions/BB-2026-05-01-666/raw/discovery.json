@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "Ayobami Adejumo"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://cdn.hashnode.com/uploads/covers/5e1e335a7a1d3fcc59028c64/cd12d552-bcf2-466a-a98e-7674c436afaa.png",
+  "domain": "freecodecamp.org",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_9a749c49",
+  "keyQuotes": [
+    "The one rule: optimise first, then commit. Every step before the Savings Plan purchase reduces what you're locking in for 1–3 years.",
+    "When every pod is over-requested by 8x, your cluster needs 8x more nodes than your workloads actually require.",
+    "Karpenter watches the actual resource requests of pending pods and provisions exactly the right EC2 instance type to satisfy them — selecting dynamically from thousands of available instance families rather than the two or three you pre-configured.",
+    "The result is a cluster that is always sized to what your workloads actually need right now, not what you anticipated at setup time."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Programming_Technology",
+  "mainDomainDesc": "Programming",
+  "mainPoints": [
+    {
+      "explanation": "The most common and expensive mistake is buying compute commitments (Savings Plans) before optimizing. This locks in waste at a discounted price for 1-3 years. The correct order is: rightsize → Karpenter → Spot → Graviton → VPC endpoints → EBS → load balancers → then commit.",
+      "point": "Optimize before committing: always right-size requests before purchasing Savings Plans."
+    },
+    {
+      "explanation": "Pods are often over-requested by 8x or more. Using the Vertical Pod Autoscaler in recommendation-only mode identifies optimal requests based on actual usage. This alone reduced node count by 33% and monthly compute cost by $15,600 in the example.",
+      "point": "Right-sizing pod resource requests using VPA is the highest-ROI first step."
+    },
+    {
+      "explanation": "Karpenter dynamically selects the optimal EC2 instance type for pending pods from thousands of families, consolidates underutilized nodes, and automatically falls back from Spot to On-Demand. It reduces node count by an additional 36% and cuts staging costs by 70%.",
+      "point": "Karpenter provides intelligent bin-packing and seamless Spot fallback, outperforming Cluster Autoscaler."
+    },
+    {
+      "explanation": "Data transfer through NAT Gateway can account for 18% of the EKS bill. Creating Gateway and Interface endpoints for S3, DynamoDB, and ECR makes that traffic free, saving over $6,000/month in the example.",
+      "point": "VPC endpoints eliminate NAT Gateway data transfer charges for AWS service traffic."
+    },
+    {
+      "explanation": "AWS Graviton ARM-based instances are 20% cheaper than equivalent x86 instances. With Karpenter managing node selection, migration is a simple nodeSelector change. Combined savings across web, data, and API workloads reached $7,600/month.",
+      "point": "Graviton migration yields 20% cost reduction with no performance loss for most workloads."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "A 7-step playbook to reduce EKS costs by 50-60% through rightsizing, Karpenter, Graviton migration, VPC endpoints, and more, without touching application code.",
+  "originalTitle": "The EKS Cost Optimization Handbook: Reduce Your AWS Bill by 60% Using Karpenter and Rightsizing",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 00:38:45",
+  "publishTimeStamp": 1782146325000,
+  "qualified": false,
+  "readCount": 19,
+  "readTime": 18,
+  "readUrl": "https://www.bestblogs.dev/article/9a749c49",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_074370",
+  "sourceImage": "https://image.jido.dev/20260527045830_favicon.png",
+  "sourceName": "freeCodeCamp",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This handbook presents a proven 7-step methodology for optimizing AWS EKS costs, based on the author's experience auditing clusters at over 10 companies. It emphasizes the correct optimization sequence: right-size pod requests first, then implement Karpenter for dynamic provisioning and Spot diversification, migrate to Graviton for 20% cheaper compute, add VPC endpoints to eliminate NAT Gateway charges, optimize EBS volumes, and consolidate load balancers. Each step includes concrete commands, YAML configurations, Terraform modules, and ROI estimates. A companion GitHub repository provides ready-to-deploy scripts. The approach has consistently reduced EKS bills by 50-60%, with a case study showing a drop from $85,000/month to $34,000/month.",
+  "tags": [
+    "Cloud Native",
+    "Kubernetes",
+    "AWS",
+    "DevOps",
+    "Cost Optimization"
+  ],
+  "title": "The EKS Cost Optimization Handbook: Reduce Your AWS Bill by 60% Using Karpenter and Rightsizing",
+  "translateContent": null,
+  "url": "https://www.freecodecamp.org/news/eks-cost-optimization-reduce-your-aws-bill-using-karpenter-and-rightsizing/",
+  "wordCount": 4310
+}

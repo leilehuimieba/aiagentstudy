@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-23",
+  "id": "BB-2026-05-01-592",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-592/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-592",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-592/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-592/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-592/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-592/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-592/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-592/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Hacker News - Newest: \"AI Agent\"",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Hacker News - Newest: \"AI Agent\"",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "MicroVM",
+    "Firecracker",
+    "Sandbox",
+    "Copy-on-Write"
+  ],
+  "title": "GitHub - deeplethe/forkd: Fork() for AI agent microVMs. Spawn 100 children in ~100ms from a warm parent; BRANCH a live VM in ~150ms. KVM-isolated， snapshot CoW.",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://github.com/deeplethe/forkd",
+      "https://www.bestblogs.dev/article/0ba05e87"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://github.com/deeplethe/forkd",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/0ba05e87"
+  }
+}

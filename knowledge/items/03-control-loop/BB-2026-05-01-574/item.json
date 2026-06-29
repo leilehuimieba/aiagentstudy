@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    "Goal",
+    "Context/State",
+    "Control Loop",
+    "Evaluation"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-23",
+  "id": "BB-2026-05-01-574",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/03-control-loop/BB-2026-05-01-574/article.md",
+    "item_dir": "knowledge/items/03-control-loop/BB-2026-05-01-574",
+    "raw_dir": "knowledge/items/03-control-loop/BB-2026-05-01-574/raw",
+    "raw_files": [
+      "knowledge/items/03-control-loop/BB-2026-05-01-574/raw/content.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-574/raw/discovery.json",
+      "knowledge/items/03-control-loop/BB-2026-05-01-574/raw/page.json"
+    ],
+    "source": "knowledge/items/03-control-loop/BB-2026-05-01-574/source.md",
+    "summary": "knowledge/items/03-control-loop/BB-2026-05-01-574/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / freeCodeCamp",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / freeCodeCamp",
+  "status": "Full text + source captured",
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Prompt Engineering",
+    "Production AI",
+    "LangGraph"
+  ],
+  "title": "What to Do When Reflection Won't Fix Your AI Agent's Output",
+  "topic": "03-control-loop",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://www.bestblogs.dev/article/4be45766",
+      "https://www.freecodecamp.org/news/what-to-do-when-reflection-won-t-fix-your-ai-agent-s-output/"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://www.freecodecamp.org/news/what-to-do-when-reflection-won-t-fix-your-ai-agent-s-output/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/4be45766"
+  }
+}

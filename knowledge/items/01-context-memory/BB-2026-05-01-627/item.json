@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    "Context/State",
+    "Memory",
+    "Tools/Actions"
+  ],
+  "candidate": {
+    "candidate_id": "",
+    "evidence_path": ""
+  },
+  "capture": {
+    "browser_status": "",
+    "capture_method": "",
+    "collection_date": "",
+    "opencli_profile": "",
+    "published": "",
+    "updated": ""
+  },
+  "date": "06-25",
+  "id": "BB-2026-05-01-627",
+  "paper": {
+    "arxiv_id": "",
+    "doi": ""
+  },
+  "paths": {
+    "article": "knowledge/items/01-context-memory/BB-2026-05-01-627/article.md",
+    "item_dir": "knowledge/items/01-context-memory/BB-2026-05-01-627",
+    "raw_dir": "knowledge/items/01-context-memory/BB-2026-05-01-627/raw",
+    "raw_files": [
+      "knowledge/items/01-context-memory/BB-2026-05-01-627/raw/content.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-627/raw/discovery.json",
+      "knowledge/items/01-context-memory/BB-2026-05-01-627/raw/page.json"
+    ],
+    "source": "knowledge/items/01-context-memory/BB-2026-05-01-627/source.md",
+    "summary": "knowledge/items/01-context-memory/BB-2026-05-01-627/summary.md"
+  },
+  "schema_version": 1,
+  "source": "BestBlogs / Google DeepMind News",
+  "source_id": "bestblogs",
+  "source_name": "BestBlogs / Google DeepMind News",
+  "status": "Full text + source captured",
+  "tags": [
+    "Gemini 3.5 Flash",
+    "Computer Use",
+    "AI Agent",
+    "Enterprise Automation",
+    "Prompt Injection Safety"
+  ],
+  "title": "Introducing computer use in Gemini 3.5 Flash",
+  "topic": "01-context-memory",
+  "type": "bestblogs_item",
+  "urls": {
+    "all_source_urls": [
+      "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "https://www.bestblogs.dev/article/16a75c47"
+    ],
+    "candidate_url": "",
+    "feed_url": "",
+    "original_url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+    "pdf_url": "",
+    "requested_url": "",
+    "source_url": "https://www.bestblogs.dev/article/16a75c47"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "得物技术"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045403_cb8f24c8",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_16cf7e6c",
+  "keyQuotes": [
+    "If AI's role is just 'help you fill in fields', it will never bring a qualitative change. The real change should be — AI drives the process, and humans only confirm at key nodes.",
+    "The value leap of AI products almost always happens at the inflection point where AI shifts from a helper tool to a process driver.",
+    "Having operators select a budget pool from a dropdown list is more efficient and accurate than using natural language description for AI to guess.",
+    "Controllable process, correctness priority, lower operational burden — technical forms may change, but business constraints will not."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "In the first version, AI only assisted form filling, with limited efficiency gains; the second version made AI drive the process with human confirmation at key nodes, leading to a qualitative change. This aligns with the evolution pattern of Copilot, GPTs, and other products.",
+      "point": "The value leap of AI occurs at the inflection point where it changes from a 'helper tool' to a 'process driver'."
+    },
+    {
+      "explanation": "Based on practical experience, the article points out that most production scenarios are better suited for Workflow to ensure controllability, with local nodes using Agents for flexibility. LangGraph orchestration and interrupt/resume mechanisms are key to implementation.",
+      "point": "Enterprise AI applications should prioritize Workflow over fully autonomous Agents."
+    },
+    {
+      "explanation": "Each component is independently encapsulated, following the rule of 'no side effects on initialization, write operations only before construction', and registered via explicit selection and conditional injection tracks, so new components require no changes to the scheduling logic.",
+      "point": "The component module protocol achieves extensibility through a unified lifecycle and dual-track registration."
+    },
+    {
+      "explanation": "Stage 1 is read-only, progressively guiding information collection to generate a planning document; Stage 2 provides an aggregation workbench, reusing existing previewers and form engines for natural language editing and real-time preview.",
+      "point": "The two-stage architecture separates 'idea to plan' from 'plan to execution', reducing operators' cognitive load."
+    },
+    {
+      "explanation": "Natural language describes intent, structured UI confirms details, and visual preview checks results. AI explains 'why and what's missing' at each step, rather than fake progress bars, gradually building user trust.",
+      "point": "Good interaction is a mix of natural language and structured UI, with trust built through transparency."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "De Wu's tech team uses AI to reconstruct the community event creation process, gradually evolving from 'form filling' to a two-stage Agent architecture with 'AI-driven, human-confirmed' approach, and shares key trade-offs and architectural design in practice.",
+  "originalTitle": "从表单到 Agent：得物社区活动搭建的 AI 实践之路",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 18:30:00",
+  "publishTimeStamp": 1782297000000,
+  "qualified": false,
+  "readCount": 72,
+  "readTime": 26,
+  "readUrl": "https://www.bestblogs.dev/article/16cf7e6c",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_af8ac9",
+  "sourceImage": "https://image.jido.dev/20251127045403_cb8f24c8",
+  "sourceName": "得物技术",
+  "sourceVisibility": "SYSTEM",
+  "summary": "This article details the complete evolution path of De Wu's community event creation system from form-driven to Agent-driven. The first version used AI to assist form filling, but the paradigm remained unchanged, resulting in limited efficiency gains. The second version, based on LangGraph, orchestrated workflows with interrupt/resume mechanisms, transforming operators from process executors to supervisors, and designed a component module protocol to address scalability. The third version further split into two stages: 'Plan Generation Skill' and 'Aggregation Workbench', supporting the full chain from idea to planning to venue creation, along with natural language editing and visual preview. The article discusses key decisions such as Workflow vs Agent selection, Human-in-the-loop interaction design, side effect control, and engineering compromises, concluding with three unchanging principles: controllable process, correctness priority, and lower operational burden. The article offers highly valuable engineering insights for AI product deployment.",
+  "tags": [
+    "AI Agent",
+    "AI Workflow",
+    "LangGraph",
+    "LLM",
+    "Engineering Practice"
+  ],
+  "title": "From Forms to Agents: De Wu's AI Practice in Building Community Events",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247545481&idx=1&sn=3bba2e63d88f2b54d75943ba92b63686",
+  "wordCount": 6447
+}

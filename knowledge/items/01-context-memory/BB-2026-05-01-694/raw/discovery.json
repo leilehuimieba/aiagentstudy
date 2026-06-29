@@ -1,0 +1,83 @@
+{
+  "authors": [
+    "Unconventional AI"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://unconv.ai/wp-content/uploads/2026/06/un-0.mosaichero.png",
+  "domain": "unconv.ai",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_2fb7cc9f",
+  "keyQuotes": [
+    "We built Un-0, an image generator powered by a simulated system of coupled oscillators.",
+    "On ImageNet 64×64 it reaches FID 6.74, matching the quality of leading conventional image generation methods when they were first published.",
+    "the oscillators are doing useful computation.",
+    "We believe it is possible to quickly push beyond Un-0; it is still early in the journey to reseat modern AI on physical dynamics and reach ~1000x energy-efficiency gains."
+  ],
+  "language": "en_US",
+  "languageDesc": "English",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "The model learns a coupling matrix and natural frequencies for each oscillator; inference evolves the system over time, and a small decoder reads out final phases as image latents.",
+      "point": "Un-0 uses coupled Kuramoto oscillators as the core computation instead of conventional neural network layers."
+    },
+    {
+      "explanation": "Removing dynamics or fixing oscillator weights significantly degrades FID, confirming that the trained nonlinear dynamics are essential for generation quality.",
+      "point": "Ablation studies demonstrate that the learned dynamics perform useful computation beyond random reservoirs or decoder-only baselines."
+    },
+    {
+      "explanation": "The model's performance sits alongside NCSN, DCGAN-TTUR, and BigGAN when first published, though it still trails later state-of-the-art like EDM and GDD.",
+      "point": "Un-0 matches early conventional generative models in quality on ImageNet 64×64 (FID 6.74) and expands the Pareto frontier for small models."
+    },
+    {
+      "explanation": "Coupled oscillators can be implemented directly in CMOS or other analog circuits, allowing the physics of the system to compute the dynamics, bypassing inefficient digital simulation.",
+      "point": "The work is motivated by potential 1000× energy efficiency gains through physical computing substrates."
+    },
+    {
+      "explanation": "The authors encourage the community to experiment with and extend models grounded in physical dynamics, noting that significant improvements are still possible.",
+      "point": "All model weights, training code, and ablation code are open-sourced to facilitate further research."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "Un-0 is an image generator using coupled Kuramoto oscillators as the core computation, achieving competitive FID scores on CIFAR-10 and ImageNet 64×64, with all code and weights open-sourced.",
+  "originalTitle": "Introducing Un-0: Generating Images with Coupled Oscillators - Unconventional AI",
+  "personalized": null,
+  "priority": "MEDIUM",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-26",
+  "publishDateTimeStr": "2026-06-26 01:04:53",
+  "publishTimeStamp": 1782407093000,
+  "qualified": false,
+  "readCount": 4,
+  "readTime": 21,
+  "readUrl": "https://www.bestblogs.dev/article/2fb7cc9f",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_318e45",
+  "sourceImage": "https://image.jido.dev/20260605151743_y18.svg",
+  "sourceName": "Hacker News",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Un-0, developed by Unconventional AI, introduces a generative image model that replaces conventional neural network layers with a simulated system of coupled oscillators (Kuramoto model). The oscillators evolve according to learned coupling strengths and natural frequencies, and a lightweight decoder converts the final oscillator phases into pixel images. On ImageNet 64×64, Un-0 reaches an FID of 6.74, matching the quality of early leading generative methods when first published. On CIFAR-10, it achieves FID 8.76 using 19.4M parameters. Ablation studies confirm that the learned dynamics contribute non-trivially beyond random reservoirs or decoder-only baselines. While the model still trails state-of-the-art conventional generators, it expands the Pareto frontier for small models and demonstrates a viable path toward energy-efficient physical computing substrates. The authors release model weights, training, and ablation code to encourage further exploration.",
+  "tags": [
+    "Image Generation",
+    "Kuramoto Oscillators",
+    "Physical Computing",
+    "AI Research",
+    "Model Release"
+  ],
+  "title": "Introducing Un-0: Generating Images with Coupled Oscillators - Unconventional AI",
+  "translateContent": null,
+  "url": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
+  "wordCount": 5097
+}

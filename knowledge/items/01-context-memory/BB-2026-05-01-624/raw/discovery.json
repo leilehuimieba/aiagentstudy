@@ -1,0 +1,79 @@
+{
+  "authors": [
+    "大淘宝技术"
+  ],
+  "candidateSource": null,
+  "category": "Programming_Technology",
+  "categoryDesc": "Programming",
+  "cover": "https://image.jido.dev/20251127045404_f9729af6",
+  "domain": "mp.weixin.qq.com",
+  "enclosureUrl": null,
+  "fallbackApplied": null,
+  "featuredReason": null,
+  "id": "RAW_6bd595a6",
+  "keyQuotes": [
+    "Tools are made for AI to use, not for humans.",
+    "Don't build a pipeline—build a 'visual reference system' that AI can consult.",
+    "Design drafts are not inputs; they are reference materials.",
+    "The true value of an Agent lies not in generating a result in one shot, but in running its own autonomous loop of 'Observe → Plan → Execute → Reflect'."
+  ],
+  "language": "zh_CN",
+  "languageDesc": "Chinese",
+  "mainDomain": "Artificial_Intelligence",
+  "mainDomainDesc": "Artificial Intelligence",
+  "mainPoints": [
+    {
+      "explanation": "Coding Agents already have coding capabilities, but feeding raw design draft data (complex layer trees, decorative layers, multi-state artboards) directly introduces a lot of noise. Engineering-level noise reduction and on-demand querying are needed to provide clean visual context.",
+      "point": "The essence of visual restoration is a context problem, not a code generation problem."
+    },
+    {
+      "explanation": "Traditional D2C attempts to generate complete code in one go, but code without business context is unusable. Tarot Pixel lets the Coding Agent query design details on demand, with implementation done by the Agent that has full project context.",
+      "point": "'Don't build a pipeline, build a library' — design drafts should serve as reference materials, not as inputs."
+    },
+    {
+      "explanation": "Agent tools need natural formats (prose, markdown), thorough documentation, graceful error handling, and the assumption that Agents may use them in unexpected ways—this differs from traditional API design thinking.",
+      "point": "Tools should be designed for Agents, not for humans."
+    },
+    {
+      "explanation": "The Agent continuously corrects within the 'Observe → Plan → Execute → Reflect' loop. Even if the first restoration is only 80% accurate, high quality can be achieved through conversational back-and-forth comparisons, meeting the dynamic needs of complex pages.",
+      "point": "The Agent's autonomous loop is more valuable than one-shot generation."
+    }
+  ],
+  "mediaDuration": null,
+  "notExist": null,
+  "oneSentenceSummary": "This article introduces Tarot Pixel, an Agent-Native visual restoration solution: instead of generating code, it transforms design drafts into structured visual previews, allowing the Coding Agent to query on demand and implement autonomously, integrating visual restoration into the Agent's autonomous loop.",
+  "originalTitle": "场景营销前端 AI Coding — AI Native 的视觉稿还原",
+  "personalized": null,
+  "priority": "HIGH",
+  "processFlowStatus": "COMPLETED",
+  "processFlowStatusDesc": "Completed",
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 15:26:00",
+  "publishTimeStamp": 1782285960000,
+  "qualified": false,
+  "readCount": 42,
+  "readTime": 49,
+  "readUrl": "https://www.bestblogs.dev/article/6bd595a6",
+  "recallSource": null,
+  "recommendReason": null,
+  "resourceType": "ARTICLE",
+  "resourceTypeDesc": "Article",
+  "score": 90,
+  "selectionReason": null,
+  "sourceId": "SOURCE_efc2de",
+  "sourceImage": "https://image.jido.dev/20251127045404_f9729af6",
+  "sourceName": "大淘宝技术",
+  "sourceVisibility": "SYSTEM",
+  "summary": "Starting from the pain points of visual restoration in the AI Coding era, the article analyzes multiple structural contradictions of traditional D2C platforms: reliance on manual layer selection, image slicing, multi-state recognition, and decoupling of visual restoration from business logic. The core insight is that design drafts should enter the Agent workflow as reference materials, not as full data pushes. Tarot Pixel's design philosophy is 'Don't build a pipeline, build a library': it exports design drafts once into structured HTML previews, provides REST APIs for the Agent to query on demand—the engineering layer handles noise reduction and data extraction, while the AI layer focuses on semantic understanding. The Agent autonomously decides implementation methods within a closed loop of 'Observe → Plan → Execute → Reflect', and supports continuous conversational corrections. The article also compares two approaches—Pencil (IDE native) and Figma MCP—and emphasizes that tools should be built for AI, providing precise context in natural formats.",
+  "tags": [
+    "AI Coding",
+    "AI Agent",
+    "Frontend Development",
+    "Visual Restoration",
+    "Design Tools"
+  ],
+  "title": "Frontend AI Coding for Scenario Marketing — AI Native Visual Restoration from Design Drafts",
+  "translateContent": null,
+  "url": "https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544417&idx=1&sn=b464075a0ff3f06d98f1919331b6b7ff",
+  "wordCount": 12086
+}
