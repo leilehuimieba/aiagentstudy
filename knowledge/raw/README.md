@@ -120,17 +120,27 @@ python knowledge\raw\capture-opencli-latest-page.py --profile qmvqcrb8 --page 1 
 
 The script discovers latest BestBlogs article entries through OpenCLI Browser Bridge, writes item folders, appends `knowledge/catalog/articles-index.md`, updates `AI_AGENT_MEMORY.md`, and saves raw page/content/discovery JSON.
 
-## File Families
+## Layout
 
-- `current-opencli-latest-page*.json`: list API snapshots.
-- `opencli-latest-batch-*.json`: batch reports.
-- `current-edge-*`, `edge-latest-*`: older Edge/OpenCLI capture runs.
-- `batch-*.json`: historical batch reports.
-- `external/`: external source material preserved as raw evidence.
-- `tmp*`, `test-*`, `*-direct.json`: temporary diagnostics; read only when debugging a related capture.
+The directory root holds only **stable scripts** (the ones `kb.ps1` and the build
+pipeline call) plus this README and `MANIFEST.md`. Everything historical was sorted
+into four subdirectories so the root stays scannable:
 
-Read `external/README.md` before opening `external/`; it contains multi-GB source mirrors and should not be scanned by default.
+- `reports/` — batch reports and capture-run outputs: `batch-*-report.json`,
+  `opencli-latest-batch-*.json`, dated `current-opencli-latest-page*-*.json`,
+  `current-edge-*` / `edge-latest-*`, `*-candidates*.json`, `*-scan-*.json`.
+- `evidence/` — page/source captures backing a specific item: `bestblogs-*`,
+  `http-*-page*.html`, `*-extract.txt`, `BB-*-state.txt` / `BB-*-html.html`, `*.png`.
+- `diagnostics/` — one-off & historical scripts (`add-*`, `capture-batch-*`,
+  `capture-edge-*`, `*-page5*`, `process-*`, smoke tests…) plus their debug JSON.
+  Many hardcode a stale absolute root and no longer run; keep them as provenance.
+- `external/` — external source material (multi-GB mirrors). Read
+  `external/README.md` first; it should not be scanned by default.
+- `meta/`, `source-candidates/`, `discovery/`, `inspect/`, `chunks/`, `tests/` —
+  pre-existing structured workspaces, unchanged.
 
 ## Rule
 
-Prefer stable scripts above. Treat older one-off capture scripts as historical evidence unless a current script fails and you need a comparison.
+Prefer the stable scripts at the root. Treat `diagnostics/` scripts as historical
+evidence unless a current script fails and you need a comparison; treat `reports/`
+and `evidence/` as read-only provenance, not an active interface.

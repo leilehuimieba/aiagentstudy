@@ -31,31 +31,50 @@ Each domain should have its own `catalog/`, `items/`, and `raw/` if it grows lar
 ### Product Experiments
 
 - `product/`: runnable product prototype and related product data.
-- `PRODUCT_ROADMAP.md`: product direction and planning notes.
+- `docs/PRODUCT_ROADMAP.md`: product direction and planning notes.
 
 Treat product code as a separate application surface. It may read from the knowledge base, but should not define the knowledge-base source of truth.
 
 ## Recommended Target Shape
 
-The current top-level shape is mostly good:
+Current top-level shape (root kept to entry + operational-state docs; reference
+docs live in `docs/`):
 
 ```text
 .
-|-- START_HERE.md
-|-- AGENTS.md
-|-- README.md
-|-- REPO_STRUCTURE.md
-|-- kb.ps1
+|-- START_HERE.md          # entry
+|-- AGENTS.md              # entry
+|-- README.md             # entry
+|-- REPO_STRUCTURE.md     # entry
+|-- kb.ps1                # entry
+|-- AI_AGENT_MEMORY.md    # operational state (written by capture scripts)
+|-- PROJECT_BOARD.md      # operational state (read by weekly-review/coverage)
+|-- PRODUCT_NOW.md        # operational state (read by weekly-review/coverage)
+|-- docs/                 # reference docs (onboarding + roadmap)
+|   |-- AI_AGENT_LEARNING_MODEL.md
+|   |-- OPENCLI_NOTES.md
+|   |-- KNOWLEDGE_BASE.md
+|   `-- PRODUCT_ROADMAP.md
 |-- knowledge/
 |   |-- catalog/
 |   |-- items/
 |   |-- retrieval/
 |   `-- raw/
+|       |-- <stable scripts + README.md + MANIFEST.md>
+|       |-- reports/      # batch reports & capture snapshots
+|       |-- evidence/     # page/source captures
+|       |-- diagnostics/  # one-off scripts & debug data
+|       `-- external/     # multi-GB source mirrors (gitignored)
 |-- study_spaces/
 `-- product/
 ```
 
-The main cleanup target is `knowledge/raw/`, because it currently mixes stable scripts, historical one-off scripts, raw page captures, batch reports, diagnostics, and multi-GB external source mirrors.
+`knowledge/raw/` was the main cleanup target (it mixed stable scripts, historical
+one-off scripts, raw page captures, batch reports, diagnostics, and multi-GB
+external mirrors). As of 2026-06-30 the loose root was sorted into the
+`reports/`, `evidence/`, `diagnostics/`, and `external/` subdirectories above;
+only the stable, `kb.ps1`-referenced scripts plus `README.md`/`MANIFEST.md` remain
+at the `knowledge/raw/` root.
 
 ## Raw Workspace Classification
 

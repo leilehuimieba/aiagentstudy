@@ -8,7 +8,7 @@ For module boundaries and cleanup policy, read `REPO_STRUCTURE.md`.
 > Scope note: `knowledge/` is the AI-agent learning knowledge base only.
 > Non-agent study materials should go under `study_spaces/` so they do not pollute agent retrieval, indexing, or audit flows.
 
-Read `AGENTS.md`, `AI_AGENT_MEMORY.md`, `AI_AGENT_LEARNING_MODEL.md`, `OPENCLI_NOTES.md`, and `KNOWLEDGE_BASE.md` first.
+Read `AGENTS.md`, `AI_AGENT_MEMORY.md`, `docs/AI_AGENT_LEARNING_MODEL.md`, `docs/OPENCLI_NOTES.md`, and `docs/KNOWLEDGE_BASE.md` first.
 
 For the knowledge base, use `knowledge/catalog/` first and read full articles only when needed.
 

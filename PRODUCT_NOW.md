@@ -2,7 +2,7 @@
 
 Cycle: 2026-06-18 to 2026-07-02
 
-This file is the two-week execution surface. Keep the long-term plan in `PRODUCT_ROADMAP.md`; keep only active work here.
+This file is the two-week execution surface. Keep the long-term plan in `docs/PRODUCT_ROADMAP.md`; keep only active work here.
 
 ## Current Reality
 

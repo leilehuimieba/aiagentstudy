@@ -40,21 +40,25 @@ Generated files live under `knowledge/retrieval/` and should be rebuilt, not han
 - `build-report.json`
 - `fts-report.json`
 
-## Batch Reports
+## reports/
 
-Files like `batch-*-report.json`, `opencli-latest-batch-*.json`, and `edge-latest-batch-*.json` record capture outcomes. Use them for provenance and debugging only.
+Batch reports and discovery snapshots: `batch-*-report.json`,
+`opencli-latest-batch-*.json`, `edge-latest-batch-*.json`, dated
+`current-opencli-latest-page*-*.json`, `current-edge-*`, `latest-*`,
+`candidates-*`, `weekly-*`. Use for provenance and auditing why an item was or was
+not captured — read-only.
 
-## Evidence Snapshots
+## evidence/
 
-Files like `current-opencli-latest-page*.json`, `current-edge-*`, `latest-*`, `candidates-*`, and `weekly-*` are raw discovery snapshots. They are useful when auditing why an item was or was not captured.
+Page/source captures backing a specific item: `bestblogs-*`, `http-*-page*.html`,
+`*-extract.txt`, `BB-*-state.txt` / `BB-*-html.html`, screenshots (`*.png`).
 
-## Historical Scripts
+## diagnostics/
 
-Files such as `add-*`, `capture-batch-*`, `capture-edge-*`, `capture-latest-live.js`, and one-off inspection scripts are historical. Do not use them as the default capture path unless the stable script fails and a comparison is needed.
-
-## Diagnostics
-
-Temporary smoke tests, `tmp-*`, `test-*`, extracted HTML, screenshots, and direct network responses should be treated as debugging material. Keep them out of root when possible.
+Historical one-off scripts (`add-*`, `capture-batch-*`, `capture-edge-*`,
+`capture-latest-live.js`, `*-page5*`, `process-*`) and debug data (smoke tests,
+`test-*`, `*-direct.json`, `*-debug.json`). Many hardcode a stale absolute root
+and no longer run; do not use them as the default capture path — keep as provenance.
 
 ## External Mirrors
 

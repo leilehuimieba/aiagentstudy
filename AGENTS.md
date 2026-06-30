@@ -4,9 +4,9 @@ Before answering user questions in this workspace, read:
 
 1. `README.md`
 2. `AI_AGENT_MEMORY.md`
-3. `AI_AGENT_LEARNING_MODEL.md`
-4. `OPENCLI_NOTES.md`
-5. `KNOWLEDGE_BASE.md`
+3. `docs/AI_AGENT_LEARNING_MODEL.md`
+4. `docs/OPENCLI_NOTES.md`
+5. `docs/KNOWLEDGE_BASE.md`
 
 Knowledge-base rule:
 

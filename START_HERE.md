@@ -8,9 +8,9 @@ This workspace is a durable AI-agent study knowledge base. Start here when you n
 2. `README.md`
 3. `REPO_STRUCTURE.md`
 4. `AI_AGENT_MEMORY.md`
-5. `AI_AGENT_LEARNING_MODEL.md`
-6. `OPENCLI_NOTES.md`
-7. `KNOWLEDGE_BASE.md`
+5. `docs/AI_AGENT_LEARNING_MODEL.md`
+6. `docs/OPENCLI_NOTES.md`
+7. `docs/KNOWLEDGE_BASE.md`
 8. `knowledge/catalog/README.md`
 9. `knowledge/catalog/map.md`
 10. `knowledge/catalog/articles-index.md`
@@ -32,7 +32,7 @@ Project management entry points:
 
 - `PROJECT_BOARD.md`: radar, capture, synthesis, and product workstreams.
 - `PRODUCT_NOW.md`: current two-week product execution plan.
-- `PRODUCT_ROADMAP.md`: long-term product direction.
+- `docs/PRODUCT_ROADMAP.md`: long-term product direction.
 
 ### Turn a captured item into an Obsidian card draft
 
