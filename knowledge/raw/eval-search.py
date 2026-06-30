@@ -25,7 +25,7 @@ def load_cases(path):
     return cases
 
 
-def run_query(case, limit):
+def run_query(case, limit, no_dense=False):
     cmd = [
         sys.executable,
         str(QUERY_SCRIPT),
@@ -40,7 +40,14 @@ def run_query(case, limit):
         cmd.extend(["--profile", case["profile"]])
     if case.get("expand_topic"):
         cmd.append("--expand-topic")
-    result = subprocess.run(cmd, cwd=ROOT, text=True, encoding="utf-8", capture_output=True, check=True)
+    if no_dense:
+        cmd.append("--no-dense")
+    # The dense channel loads torch, which can emit warnings to stderr in the OS
+    # codepage (GBK on zh-CN Windows). Decode loosely so capture never crashes;
+    # only stdout (pure UTF-8 JSON from query-kb) is parsed.
+    result = subprocess.run(
+        cmd, cwd=ROOT, text=True, encoding="utf-8", errors="replace", capture_output=True, check=True
+    )
     return json.loads(result.stdout)
 
 
@@ -72,6 +79,7 @@ def main():
     parser.add_argument("--cases", default=str(DEFAULT_EVALS), help="JSONL eval cases")
     parser.add_argument("--limit", type=int, default=10, help="Query limit for each case")
     parser.add_argument("--json", action="store_true", help="Emit machine-readable JSON")
+    parser.add_argument("--no-dense", action="store_true", help="Disable the dense channel (BM25-only baseline)")
     args = parser.parse_args()
 
     cases_path = Path(args.cases)
@@ -83,7 +91,7 @@ def main():
     totals = {"hit@5": 0.0, "recall@10": 0.0, "mrr": 0.0, "ndcg@10": 0.0}
 
     for case in cases:
-        rows = run_query(case, args.limit)
+        rows = run_query(case, args.limit, no_dense=args.no_dense)
         ids = [row["id"] for row in rows]
         relevant = set(case["relevant_ids"])
         hit_at_5 = 1.0 if any(item_id in relevant for item_id in ids[:5]) else 0.0

@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 import re
 import sqlite3
 import sys
@@ -8,6 +9,8 @@ from pathlib import Path
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).resolve().parents[2]
 DB_PATH = ROOT / "knowledge" / "retrieval" / "kb.sqlite"
@@ -557,46 +560,142 @@ def search_chunks(con, query, limit, topics=None):
     return rows
 
 
-def fuse_item_and_chunk_hits(con, item_hits, chunk_hits, limit, raw_query):
+# Dense (vector) RRF weight relative to each lexical channel. With bge-m3, weight
+# 1.0 (equal to each BM25 channel) is the empirical sweet spot: on the 52-case
+# lexical eval it holds hit@5/mrr at 1.0 and lifts recall@10 0.973->0.989, while
+# on the paraphrase eval it lifts recall@10 0.38->0.53. Override via KB_DENSE_WEIGHT.
+DENSE_RRF_WEIGHT = float(os.environ.get("KB_DENSE_WEIGHT", "1.0"))
+
+
+def search_chunks_dense(con, raw_query, limit, topics=None):
+    """Semantic recall channel: cosine over chunk embeddings.
+
+    Returns chunk-level hits shaped like search_chunks(). Silently returns []
+    when the embedding stack (knowledge/retrieval/.venv) or the prebuilt index
+    is unavailable, so the caller degrades to pure BM25.
+    """
+    try:
+        import embed_lib as E
+    except Exception:
+        return []
+    if not E.index_exists():
+        return []
+
+    vectors, meta = E.load_index()
+    if vectors is None or vectors.size == 0:
+        return []
+
+    try:
+        import numpy as np
+
+        qv = E.encode_query(raw_query)
+        scores = vectors @ qv  # both L2-normalized -> cosine similarity
+    except Exception:
+        return []
+
+    topic_set = set(topics) if topics else None
+    meta_topics = meta.get("topics") or []
+    meta_rowids = meta.get("chunk_rowids") or []
+    meta_items = meta.get("item_ids") or []
+
+    candidate_limit = max(limit * 16, 40)
+    order = np.argsort(-scores)
+
+    picked = []
+    for idx in order:
+        idx = int(idx)
+        if topic_set is not None and idx < len(meta_topics) and meta_topics[idx] not in topic_set:
+            continue
+        picked.append(idx)
+        if len(picked) >= candidate_limit:
+            break
+
+    if not picked:
+        return []
+
+    # Fetch heading + text for the picked chunk rowids to build snippets.
+    rowids = [meta_rowids[i] for i in picked if i < len(meta_rowids)]
+    placeholders = ", ".join("?" for _ in rowids)
+    chunk_meta = {}
+    for row in con.execute(
+        f"SELECT rowid, heading, chunk_text FROM chunks WHERE rowid IN ({placeholders})",
+        rowids,
+    ):
+        chunk_meta[row[0]] = (row[1], row[2])
+
+    hits = []
+    for rank, idx in enumerate(picked, start=1):
+        rowid = meta_rowids[idx] if idx < len(meta_rowids) else None
+        heading, chunk_text = chunk_meta.get(rowid, ("", ""))
+        snippet = (chunk_text or "").strip().replace("\n", " ")
+        if len(snippet) > 220:
+            snippet = snippet[:220].rstrip() + " ..."
+        hits.append(
+            {
+                "item_id": meta_items[idx] if idx < len(meta_items) else None,
+                "heading": heading or "",
+                "snippet_text": snippet,
+                "cosine": round(float(scores[idx]), 6),
+                "rank": rank,
+                "match_scope": "dense",
+            }
+        )
+    return hits
+
+
+def fuse_item_and_chunk_hits(con, item_hits, chunk_hits, limit, raw_query, dense_hits=None):
     fused = {}
 
-    for hit in item_hits:
-        item_id = hit["id"]
-        entry = fused.setdefault(
+    def entry_for(item_id):
+        return fused.setdefault(
             item_id,
             {
                 "score": 0.0,
                 "item_rank": None,
                 "chunk_rank": None,
+                "dense_rank": None,
                 "snippet_text": "",
                 "matched_heading": "",
-                "match_scope": "item",
+                "channels": [],
             },
         )
+
+    for hit in item_hits:
+        entry = entry_for(hit["id"])
         entry["score"] += rrf(hit["rank"])
         entry["item_rank"] = hit["rank"]
+        if "item" not in entry["channels"]:
+            entry["channels"].append("item")
         if not entry["snippet_text"]:
             entry["snippet_text"] = hit.get("snippet_text") or ""
 
     for hit in chunk_hits:
-        item_id = hit["item_id"]
-        entry = fused.setdefault(
-            item_id,
-            {
-                "score": 0.0,
-                "item_rank": None,
-                "chunk_rank": None,
-                "snippet_text": "",
-                "matched_heading": "",
-                "match_scope": "chunk",
-            },
-        )
+        entry = entry_for(hit["item_id"])
         if entry["chunk_rank"] is None:
             entry["score"] += rrf(hit["rank"])
             entry["chunk_rank"] = hit["rank"]
+            if "chunk" not in entry["channels"]:
+                entry["channels"].append("chunk")
             entry["matched_heading"] = hit.get("heading") or ""
-            entry["match_scope"] = "item+chunk" if entry["item_rank"] else "chunk"
             if hit.get("snippet_text"):
+                heading = hit.get("heading") or "Article"
+                # Lexical snippet has match brackets -> always preferred.
+                entry["snippet_text"] = f"{heading}: {hit['snippet_text']}"
+
+    for hit in dense_hits or []:
+        item_id = hit.get("item_id")
+        if not item_id:
+            continue
+        entry = entry_for(item_id)
+        if entry["dense_rank"] is None:
+            entry["score"] += DENSE_RRF_WEIGHT * rrf(hit["rank"])
+            entry["dense_rank"] = hit["rank"]
+            if "dense" not in entry["channels"]:
+                entry["channels"].append("dense")
+            if not entry["matched_heading"]:
+                entry["matched_heading"] = hit.get("heading") or ""
+            # Use dense snippet only if no lexical snippet captured it.
+            if not entry["snippet_text"] and hit.get("snippet_text"):
                 heading = hit.get("heading") or "Article"
                 entry["snippet_text"] = f"{heading}: {hit['snippet_text']}"
 
@@ -607,7 +706,7 @@ def fuse_item_and_chunk_hits(con, item_hits, chunk_hits, limit, raw_query):
             continue
         item["score"] = round(fusion["score"] * 1000, 6)
         item["snippet_text"] = fusion["snippet_text"]
-        item["match_scope"] = fusion["match_scope"]
+        item["match_scope"] = "+".join(fusion["channels"]) or "item"
         if fusion["matched_heading"]:
             item["matched_heading"] = fusion["matched_heading"]
         rows.append(item)
@@ -692,11 +791,12 @@ def fallback_scan(con, query, limit, topics=None):
     return rerank_rows(scored, query, limit)
 
 
-def select_rows(con, query, limit, topic=None, expand_topic=False):
+def select_rows(con, query, limit, topic=None, expand_topic=False, use_dense=True):
     topics = infer_topics(query, topic, expand_topic)
     item_hits = search_items(con, query, limit, topics)
     chunk_hits = search_chunks(con, query, limit, topics)
-    rows = fuse_item_and_chunk_hits(con, item_hits, chunk_hits, limit, query)
+    dense_hits = search_chunks_dense(con, query, limit, topics) if use_dense else []
+    rows = fuse_item_and_chunk_hits(con, item_hits, chunk_hits, limit, query, dense_hits)
     if not rows:
         rows = fallback_scan(con, query, limit, topics)
     return rows, topics
@@ -842,6 +942,11 @@ def main():
         action="store_true",
         help="Expand an explicit topic filter to likely related topics based on query hints",
     )
+    parser.add_argument(
+        "--no-dense",
+        action="store_true",
+        help="Disable the semantic (vector) recall channel; use pure BM25 only",
+    )
     parser.add_argument("--json", action="store_true", help="Emit JSON instead of text")
     parser.add_argument("--grouped", action="store_true", help="Group pack output into core, background, and evidence sections")
     parser.add_argument(
@@ -863,7 +968,9 @@ def main():
         expand_topic = False
 
     con = connect()
-    rows, topics = select_rows(con, args.query, limit, args.topic, expand_topic)
+    rows, topics = select_rows(
+        con, args.query, limit, args.topic, expand_topic, use_dense=not args.no_dense
+    )
     con.close()
 
     if args.mode == "pack":

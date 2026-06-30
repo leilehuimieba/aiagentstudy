@@ -42,12 +42,21 @@ OpenCLI/
 product/.env
 product/data/
 
+# Resident embedding daemon runtime state (pid/port lockfile + log)
+/knowledge/retrieval/.embed-daemon.json
+/knowledge/retrieval/.embed-daemon.log
+
 # Generated knowledge retrieval outputs; rebuild with .\kb.ps1 rebuild
 /knowledge/retrieval/articles-meta.json
 /knowledge/retrieval/articles-meta.jsonl
 /knowledge/retrieval/build-report.json
 /knowledge/retrieval/fts-report.json
 /knowledge/retrieval/kb.sqlite
+/knowledge/retrieval/embeddings.npy
+/knowledge/retrieval/embeddings-meta.json
+/knowledge/retrieval/embeddings-report.json
+# Vendored embedding model weights (multi-GB); re-fetch with the documented curl steps
+/knowledge/retrieval/models/
 
 # Local diagnostics and one-off browser/API captures kept out of the repo root
 /.opencli-list.yaml

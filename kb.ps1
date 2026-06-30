@@ -1,6 +1,6 @@
 param(
   [Parameter(Position = 0)]
-  [ValidateSet("search", "pack", "brief", "evidence", "rebuild", "build-item-metadata", "verify", "audit", "health", "repair-audit", "eval", "coverage", "weekly-review", "obsidian-card", "capture", "capture-arxiv", "capture-rss", "capture-browser", "watch", "bulk", "promote", "reject", "defer", "restore", "sources", "source-health", "probe-sources", "discover-sources", "doctor", "status", "help")]
+  [ValidateSet("search", "pack", "brief", "evidence", "rebuild", "rebuild-embeddings", "build-item-metadata", "verify", "audit", "health", "repair-audit", "eval", "coverage", "weekly-review", "obsidian-card", "capture", "capture-arxiv", "capture-rss", "capture-browser", "watch", "bulk", "promote", "reject", "defer", "restore", "sources", "source-health", "probe-sources", "discover-sources", "daemon", "doctor", "status", "help")]
   [string]$Command = "help",
 
   [Parameter(Position = 1, ValueFromRemainingArguments = $true)]
@@ -26,6 +26,21 @@ function Get-SqlitePython {
 }
 $SqlitePython = Get-SqlitePython
 
+# The dense (semantic) retrieval channel needs sentence-transformers, which lives
+# in a dedicated venv (knowledge/retrieval/.venv, Python 3.12 + new SQLite). When
+# present, prefer it for all Python steps so search runs hybrid BM25 + vector.
+# When absent, fall back to $SqlitePython and search degrades to pure BM25.
+function Get-VenvPython {
+  # Just check the interpreter exists; importing sentence_transformers here to
+  # "verify" would pull in torch (~4s) on every kb.ps1 call. query-kb.py already
+  # degrades to BM25 if the dense import fails, so a cheap existence check is enough.
+  $vpy = Join-Path $Root "knowledge\retrieval\.venv\Scripts\python.exe"
+  if (Test-Path -LiteralPath $vpy) { return $vpy }
+  return $null
+}
+$VenvPython = Get-VenvPython
+$QueryPython = if ($VenvPython) { $VenvPython } else { $SqlitePython }
+
 function Show-Help {
   @"
 AI Agent Study knowledge-base helper
@@ -37,7 +52,12 @@ Usage:
   .\kb.ps1 pack "Harness Engineering 权限 日志 验证" --profile deep --grouped
   .\kb.ps1 brief "browser use agents" [--limit 5]
   .\kb.ps1 evidence "Claude Code auto mode 原文 来源" [--limit 5]
-  .\kb.ps1 rebuild
+  .\kb.ps1 search "Claude Code 怎么判断任务真的完成" --no-dense   # BM25-only baseline
+  .\kb.ps1 daemon status            # is the resident bge-m3 embedding daemon up?
+  .\kb.ps1 daemon stop              # free its ~2.5GB RAM (restarts lazily on next query)
+  .\kb.ps1 daemon restart           # reload the model now (e.g. after rebuild-embeddings)
+  .\kb.ps1 rebuild                  # node retrieval + FTS + dense embeddings
+  .\kb.ps1 rebuild-embeddings       # rebuild only the dense vector index
   .\kb.ps1 build-item-metadata [--execute]
   .\kb.ps1 verify
   .\kb.ps1 audit
@@ -76,7 +96,18 @@ function Invoke-Query([string]$Mode) {
   if (-not $Rest -or $Rest.Count -eq 0) {
     throw "Missing query. Example: .\kb.ps1 $Mode `"Claude`""
   }
-  & $SqlitePython "knowledge\raw\query-kb.py" @Rest --mode $Mode
+  & $QueryPython "knowledge\raw\query-kb.py" @Rest --mode $Mode
+}
+
+function Build-Embeddings {
+  if (-not $VenvPython) {
+    Write-Warning "Dense index skipped: embedding venv not found at knowledge\retrieval\.venv"
+    Write-Output  "Create it to enable hybrid (BM25 + vector) search:"
+    Write-Output  "  py -V:Astral/CPython3.12.12 -m venv knowledge\retrieval\.venv"
+    Write-Output  "  knowledge\retrieval\.venv\Scripts\python -m pip install sentence-transformers numpy torch --index-url https://download.pytorch.org/whl/cpu"
+    return
+  }
+  & $VenvPython "knowledge\raw\build-kb-embeddings.py"
 }
 
 function Show-Status {
@@ -194,17 +225,21 @@ switch ($Command) {
     if (-not $Rest -or $Rest.Count -eq 0) {
       throw "Missing query. Example: .\kb.ps1 brief `"browser use agents`""
     }
-    & python "knowledge\raw\brief-kb.py" @Rest
+    & $QueryPython "knowledge\raw\brief-kb.py" @Rest
   }
   "evidence" {
     if (-not $Rest -or $Rest.Count -eq 0) {
       throw "Missing query. Example: .\kb.ps1 evidence `"Claude Code auto mode`""
     }
-    & python "knowledge\raw\evidence-kb.py" @Rest
+    & $QueryPython "knowledge\raw\evidence-kb.py" @Rest
   }
   "rebuild" {
     & node "knowledge\raw\build-kb-retrieval.js"
-    & $SqlitePython "knowledge\raw\build-kb-fts.py"
+    & $QueryPython "knowledge\raw\build-kb-fts.py"
+    Build-Embeddings
+  }
+  "rebuild-embeddings" {
+    Build-Embeddings
   }
   "build-item-metadata" {
     & python "knowledge\raw\build-item-metadata.py" @Rest
@@ -222,7 +257,7 @@ switch ($Command) {
     & python "knowledge\raw\repair-audit.py" @Rest
   }
   "eval" {
-    & python "knowledge\raw\eval-search.py" @Rest
+    & $QueryPython "knowledge\raw\eval-search.py" @Rest
   }
   "coverage" {
     & python "knowledge\raw\generate-current-coverage.py" @Rest
@@ -232,6 +267,31 @@ switch ($Command) {
   }
   "obsidian-card" {
     & python "knowledge\raw\generate-obsidian-card.py" @Rest
+  }
+  "daemon" {
+    # Control the resident bge-m3 embedding daemon. It is lazy-started on the
+    # first hybrid query (never on boot) and stays warm so later queries are <1s.
+    if (-not $VenvPython) {
+      Write-Warning "Embedding venv not found; the dense daemon needs knowledge\retrieval\.venv"
+      break
+    }
+    $sub = if ($Rest -and $Rest.Count -gt 0) { $Rest[0] } else { "status" }
+    switch ($sub) {
+      "status"  { & $VenvPython "knowledge\raw\embed_daemon.py" status }
+      "stop"    { & $VenvPython "knowledge\raw\embed_daemon.py" stop }
+      "start"   {
+        & $VenvPython "knowledge\raw\embed_daemon.py" status *> $null
+        if ($LASTEXITCODE -eq 0) { Write-Output "daemon: already running"; break }
+        Write-Output "Starting embedding daemon (loads bge-m3, ~10s)..."
+        & $VenvPython "-c" "import sys; sys.path.insert(0,'knowledge/raw'); import embed_daemon; p=embed_daemon.ensure_daemon(); print('daemon: started on port '+str(p) if p else 'daemon: failed to start (see knowledge/retrieval/.embed-daemon.log)')"
+      }
+      "restart" {
+        & $VenvPython "knowledge\raw\embed_daemon.py" stop
+        Write-Output "Reloading embedding daemon (loads bge-m3, ~10s)..."
+        & $VenvPython "-c" "import sys; sys.path.insert(0,'knowledge/raw'); import embed_daemon; p=embed_daemon.ensure_daemon(); print('daemon: started on port '+str(p) if p else 'daemon: failed to start (see knowledge/retrieval/.embed-daemon.log)')"
+      }
+      default   { Write-Output "Usage: .\kb.ps1 daemon [status|start|stop|restart]" }
+    }
   }
   "doctor" {
     & opencli doctor -v

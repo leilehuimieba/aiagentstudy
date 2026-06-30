@@ -1,0 +1,12 @@
+{"query":"对话历史太长超出窗口了怎么精简只保留要点","topic":"01-context-memory","relevant_ids":["BB-2026-05-01-323","BB-2026-05-01-205","BB-2026-05-01-020","BB-2026-05-01-330"]}
+{"query":"自动模式下怎么判断一个动作要不要拦下来要不要申请权限","relevant_ids":["BB-2026-05-01-143","BB-2026-05-01-357","BB-2026-05-01-104"]}
+{"query":"怎么让模型自己知道活到底干完了没有别提前就停下","topic":"04-evaluation-guardrails","relevant_ids":["BB-2026-05-01-419"]}
+{"query":"自动操作网页时怎么带上之前已经登录的会话不用重新登一遍","topic":"02-tools-actions","relevant_ids":["BB-2026-05-01-184"]}
+{"query":"流程里某一步失败了怎么自动重试和兜底别让整条链路崩掉","topic":"03-control-loop","relevant_ids":["RSS-2026-003"]}
+{"query":"用打分标准让智能体自己检查并修正自己输出的质量","topic":"04-evaluation-guardrails","relevant_ids":["RSS-2026-004"]}
+{"query":"用最小权限默认不信任的安全思路来管控智能体能做什么","topic":"04-evaluation-guardrails","relevant_ids":["BB-2026-05-01-391"]}
+{"query":"光靠向量相似度召回为什么不够还得配合关键词一起","topic":"01-context-memory","relevant_ids":["BB-2026-05-01-434","BB-2026-05-01-430"]}
+{"query":"智能体如何管理长期记忆并把信息有序地组织进上下文","topic":"01-context-memory","expand_topic":true,"relevant_ids":["BB-2026-05-01-020","BB-2026-05-01-238","BB-2026-05-01-326"]}
+{"query":"任务跑很久中途能不能停下来之后接着干而不丢失之前的状态","topic":"01-context-memory","relevant_ids":["BB-2026-05-01-173"]}
+{"query":"给智能体配一台属于它自己的电脑去执行操作","topic":"02-tools-actions","relevant_ids":["BB-2026-05-01-438"]}
+{"query":"光堆框架没用真正的壁垒是沉淀下来的知识","relevant_ids":["BB-2026-05-01-001"]}
